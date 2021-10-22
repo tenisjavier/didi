@@ -5,17 +5,17 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid bg-dark">
-        <a class="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid bg-dark">
+        <Link className="nav-link" to="/cl">
           <StaticImage
             src="../assets/images/didi-logo.png"
             alt="didi logo"
-            width="100"
+            width={100}
           />
-        </a>
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -23,17 +23,17 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link" to="/cl">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link" to="/cl">
                 Chile
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/cr">
+            <li className="nav-item">
+              <Link className="nav-link" to="/cr">
                 CostaRica
               </Link>
             </li>

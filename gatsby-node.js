@@ -9,13 +9,17 @@ const peruRoutes = require("./routes/peru-routes");
 
 // @desc: Creates all country dynamic routes from WP and other sources
 // @return: null
-exports.createPages = async ({ graphql, actions: { createPage } }) => {
+exports.createPages = async ({
+  graphql,
+  actions: { createPage },
+  reporter,
+}) => {
   await argentinaRoutes.init(graphql, createPage);
   await chileRoutes.init(graphql, createPage);
   await colombiaRoutes.init(graphql, createPage);
   await costaRicaRoutes.init(graphql, createPage);
   await ecuadorRoutes.init(graphql, createPage);
-  //await mexicoRoutes.init(graphql, createPage);
+  // await mexicoRoutes.init(graphql, createPage);
   await panamaRoutes.init(graphql, createPage);
   await peruRoutes.init(graphql, createPage);
 };
@@ -29,7 +33,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   createTypes(`
     type SitePage implements Node {
-      featuredImgSrc: File @link(from: "featuredImgSrc___NODE")
+      featuredImageUrl: File @link(from: "featuredImageUrl___NODE")
     }
   `);
 };
@@ -41,12 +45,7 @@ exports.onCreateNode = async ({
   cache,
   createNodeId,
 }) => {
-  // For all MarkdownRemark nodes that have a featured image url, call createRemoteFileNode
-  if (
-    node.internal.type === "SitePage" &&
-    node.context.featuredImageUrl !== null &&
-    node.context.featuredImageUrl !== undefined
-  ) {
+  if (node.internal.type === "SitePage" && node.context.featuredImageUrl) {
     let fileNode = await createRemoteFileNode({
       url: node.context.featuredImageUrl, // string that points to the URL of the image
       parentNodeId: node.id, // id of the parent node of the fileNode you are going to create

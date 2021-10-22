@@ -4,28 +4,25 @@ import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export const query = graphql`
-  query getPage($title: String!) {
-    sitePage(context: { title: { eq: $title } }) {
+  query getPage($id: String!) {
+    sitePage(id: { eq: $id }) {
       featuredImageUrl {
         childImageSharp {
           gatsbyImageData(placeholder: TRACED_SVG, width: 400)
         }
       }
-      context {
-        title
-      }
     }
   }
 `;
 
-const WpTemplate = ({ data }) => {
-  console.log(data);
-  const { title } = data.sitePage.context;
+const WpTemplate = ({ data, pageContext }) => {
+  const title = pageContext.title;
+
   const image = getImage(data.sitePage.featuredImageUrl);
   return (
     <Layout>
       <h1>{title}</h1>
-      <GatsbyImage image={image} alt={title} className="ej" />
+      <GatsbyImage image={image} alt="jeivi" className="ej" />
     </Layout>
   );
 };
