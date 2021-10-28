@@ -26,11 +26,11 @@ const DropMenu = ({index, p_item, p_link, items , links}) => {
         }
       };
     return ( 
-        <li className="nav-item" key={index} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+        <li className="nav-item" key={index} onMouseEnter={onMouseEnter}  onMouseLeave={onMouseLeave}>
             <Link className="nav-links" to={p_link}> {p_item} <FontAwesomeIcon  icon={faAngleDown}/></Link>
             {
                 drop ?
-                <ul onClick={handleClick} className={click ? 'drop-menu clicked' : 'drop-menu'}>
+                <ul onClick={handleClick} className={click ? 'drop-menu clicked' : 'drop-menu'} >
                 {items.map( (item, index) => (
                     <li key={index}>
                         <Link className="dropdown-link" to={links[index]} onClick={ () => setClick(false) } > 
@@ -39,7 +39,16 @@ const DropMenu = ({index, p_item, p_link, items , links}) => {
                     </li>
                 ))}
                 </ul>
-                :null
+                :
+                <ul onClick={handleClick} className='drop-menu clicked' >
+                {items.map( (item, index) => (
+                    <li key={index}>
+                        <Link className="dropdown-link" to={links[index]} onClick={ () => setClick(false) } > 
+                            {item} 
+                        </Link>
+                    </li>
+                ))}
+                </ul>
             }
             
         </li>

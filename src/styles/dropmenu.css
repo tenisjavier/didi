@@ -1,19 +1,20 @@
 .drop-menu{
-    width: 200px;
+    width: 230px;
     position: absolute;
     top: 80px;
     list-style: none;
     text-align: start;
     background-color: #ffffff;
     border-top: 1mm solid #ff7d41 ;
+    min-height: 100px;
 }
 
-.drop-menu li{
-    background-color: #ffffff;
-}
 
-.drop-menu li:hover{
+
+.drop-menu .dropdown-link:hover{
     background-color: #fdf8f4;
+    opacity: 0.7;
+    color: black;
 }
 
 .drop-menu.clicked{
@@ -22,11 +23,14 @@
 
 .dropdown-link{
     display: block;
-    width: 100%;
-    height: 20px;
+    width: 85%;
+    min-height: 20px;
     text-decoration: none;
     color: black;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .nav-item {
@@ -47,3 +51,48 @@
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
+
+.nav-links:hover svg{
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-item{
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .nav-links {
+      text-align: start;
+      margin: 0.2rem;
+      width: 80%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      opacity: 0.7;
+    }
+    .drop-menu.clicked{
+        width: 100%;
+        min-height: 80px;
+        background-color: transparent;
+        border: none;
+        display: block;
+        padding: 0;
+        position: static;
+    }
+    .dropdown-link{
+        display: block;
+        width: 85%;
+        max-height: 30px;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        margin: 5px;
+        padding: 5px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+}
