@@ -17,12 +17,14 @@ export const query = graphql`
 
 const WpTemplate = ({ data, pageContext }) => {
   const title = pageContext.title;
+  const content = pageContext.content;
 
   const image = getImage(data.sitePage.featuredImageUrl);
   return (
     <Layout>
       <h1>{title}</h1>
       <GatsbyImage image={image} alt="jeivi" className="ej" />
+      <p>{content}</p>
     </Layout>
   );
 };
