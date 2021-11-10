@@ -10,7 +10,7 @@ const Layout = ({children}) => {
     return (
         <>
         <Header tagList={tags} linkList={links} withSearch={isSearch}></Header>
-            <body style={{minHeight:"1000px", backgroundColor:"orange"}}>
+            <body style={{minHeight:"1000px", backgroundColor:"white"}}>
                 {children}
             </body>
         <Footer></Footer>

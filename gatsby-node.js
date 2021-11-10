@@ -1,4 +1,9 @@
+
+
+const chileGuias = require("./routes/chile-guia");
+
 const wpRoutes = require("./routes/wp-routes");
+
 
 // @desc: Creates all country dynamic routes from WP and other sources
 // @return: null
@@ -7,8 +12,12 @@ exports.createPages = async ({
   actions: { createPage },
   reporter,
 }) => {
+
+  await chileGuias.init(graphql, createPage);
+
   //create wp Routes for all Countries
   await wpRoutes.init(graphql, createPage);
+
 };
 
 // @desc: Creates ChildImageSharp for WP Image Urls
