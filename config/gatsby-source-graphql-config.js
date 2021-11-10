@@ -1,20 +1,13 @@
 // @desc: build the configuration for all the countries
 // @return: array of configs objects
 
+const { getCountries } = require("./countries-config");
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const countries = [
-  "Panama",
-  "CostaRica",
-  "Chile",
-  "Argentina",
-  "Peru",
-  "Ecuador",
-  // 'Mexico',
-  "Colombia",
-];
+const countries = getCountries();
 
 let wpConfig = [];
 let getConfig = () => {

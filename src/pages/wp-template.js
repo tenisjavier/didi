@@ -23,6 +23,7 @@ export const query = graphql`
 
 const WpTemplate = ({ data, pageContext }) => {
   const title = pageContext.title;
+
   const image = getImage(data.sitePage.featuredImageUrl);
   return (
     <Layout>
@@ -40,6 +41,7 @@ const WpTemplate = ({ data, pageContext }) => {
 
         </div>
       </main>
+
 
     </Layout>
   );

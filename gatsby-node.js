@@ -1,12 +1,9 @@
-const argentinaRoutes = require("./routes/argentina-routes");
-const chileRoutes = require("./routes/chile-routes");
-const colombiaRoutes = require("./routes/colombia-routes");
-const costaRicaRoutes = require("./routes/costarica-routes");
-const ecuadorRoutes = require("./routes/ecuador-routes");
-// const mexicoRoutes = require('./routes/costarica-routes')
-const panamaRoutes = require("./routes/panama-routes");
-const peruRoutes = require("./routes/peru-routes");
+
+
 const chileGuias = require("./routes/chile-guia");
+
+const wpRoutes = require("./routes/wp-routes");
+
 
 // @desc: Creates all country dynamic routes from WP and other sources
 // @return: null
@@ -15,15 +12,12 @@ exports.createPages = async ({
   actions: { createPage },
   reporter,
 }) => {
-  await argentinaRoutes.init(graphql, createPage);
-  await chileRoutes.init(graphql, createPage);
-  await colombiaRoutes.init(graphql, createPage);
-  await costaRicaRoutes.init(graphql, createPage);
-  await ecuadorRoutes.init(graphql, createPage);
-  // await mexicoRoutes.init(graphql, createPage);
-  await panamaRoutes.init(graphql, createPage);
-  await peruRoutes.init(graphql, createPage);
+
   await chileGuias.init(graphql, createPage);
+
+  //create wp Routes for all Countries
+  await wpRoutes.init(graphql, createPage);
+
 };
 
 // @desc: Creates ChildImageSharp for WP Image Urls
