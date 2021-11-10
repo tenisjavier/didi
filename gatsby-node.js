@@ -6,6 +6,7 @@ const ecuadorRoutes = require("./routes/ecuador-routes");
 // const mexicoRoutes = require('./routes/costarica-routes')
 const panamaRoutes = require("./routes/panama-routes");
 const peruRoutes = require("./routes/peru-routes");
+const chileGuias = require("./routes/chile-guia");
 
 // @desc: Creates all country dynamic routes from WP and other sources
 // @return: null
@@ -22,6 +23,7 @@ exports.createPages = async ({
   // await mexicoRoutes.init(graphql, createPage);
   await panamaRoutes.init(graphql, createPage);
   await peruRoutes.init(graphql, createPage);
+  await chileGuias.init(graphql, createPage);
 };
 
 // @desc: Creates ChildImageSharp for WP Image Urls
