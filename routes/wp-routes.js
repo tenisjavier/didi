@@ -16,6 +16,7 @@ const wpRoutesInit = async (graphql, createPage) => {
             nodes {
               title
               uri
+              excerpt
               content
               featuredImage {
                 node {
@@ -28,6 +29,7 @@ const wpRoutesInit = async (graphql, createPage) => {
             nodes {
               title
               uri
+              excerpt
               content
               featuredImage {
                 node {
@@ -40,6 +42,7 @@ const wpRoutesInit = async (graphql, createPage) => {
             nodes {
               title
               uri
+              excerpt
               content
               featuredImage {
                 node {
@@ -75,6 +78,7 @@ const wpRoutesInit = async (graphql, createPage) => {
             id: nodeId,
             title: node.title,
             featuredImageUrl: featuredImage,
+            excerpt: node.excerpt,
             content: node.content,
           },
         });

@@ -5,11 +5,15 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
-import "../styles/global.css";
 
 const GuiaTemplate = ({ pageContext }) => {
-  const title = pageContext.title;
-  const html_content = pageContext.content;
+  const { title, excerpt, content: html_content } = pageContext;
+
+  const dirtyExcerpt = excerpt.replace(/\n|\r/g, "");
+  const cleanExcerpt = DOMPurify.sanitize(dirtyExcerpt, {
+    USE_PROFILES: { html: true },
+  });
+
   const dirtyHTML = html_content.replace(/\n|\r/g, "");
   const cleanHTML = DOMPurify.sanitize(dirtyHTML, {
     USE_PROFILES: { html: true },
@@ -19,12 +23,7 @@ const GuiaTemplate = ({ pageContext }) => {
       <div class="header-sec">
         <div className="mx-96">
           <h1 className="text-5xl text-white font-bold mb-6">{title}</h1>
-          <p className="text-lg text-white w-2/4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi
-            cumque similique, eius odio rem quidem tenetur consectetur illum
-            nemo nobis excepturi eligendi amet iste asperiores omnis temporibus
-            minus inventore.
-          </p>
+          <p className="text-lg text-white w-2/4">{parse(cleanExcerpt)}</p>
         </div>
       </div>
 
@@ -37,7 +36,7 @@ const GuiaTemplate = ({ pageContext }) => {
               <FontAwesomeIcon icon={faHome} /> Inicio{" "}
             </Link>{" "}
             / <span> Guias </span> /{" "}
-            <span className="text-grey-333"> {title} </span>
+            <span className="text-grey-primay"> {title} </span>
           </p>
           <section className="main-text w-11/12 pb-12">
             {parse(cleanHTML)}

@@ -2,40 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.header-sec{
-    background-image: url(https://chile.didiglobal.com/wp-content/uploads/sites/16/2021/10/GettyImages-1129377251.png);
-    padding-top: 150px;
-    padding-bottom: 70px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 420px;
-    background-position-y: -30px;
+.header-sec {
+  background-image: url(https://chile.didiglobal.com/wp-content/uploads/sites/16/2021/10/GettyImages-1129377251.png);
+  padding-top: 150px;
+  padding-bottom: 70px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 420px;
+  background-position-y: -30px;
 }
 
-section.main-text h1{
-    @apply text-4xl text-grey-333 font-extrabold mb-5 mt-5
+section.main-text h1 {
+  @apply text-4xl text-grey-primary font-extrabold mb-5 mt-5;
 }
 
-section.main-text h2{
-    @apply text-3xl text-grey-333 font-extrabold mb-5 mt-5
+section.main-text h2 {
+  @apply text-3xl text-grey-primary font-extrabold mb-5 mt-5;
 }
 
-section.main-text p em{
-    @apply text-2xl mt-3 mb-5 font-light 
+section.main-text p em {
+  @apply text-2xl mt-3 mb-5 font-light;
 }
 
-section.main-text p a{
-    @apply text-xl mt-3 mb-5 font-normal text-yellow-500 hover:text-blue-600
+section.main-text p a {
+  @apply text-xl mt-3 mb-5 font-normal text-yellow-500 hover:text-blue-600;
 }
 
 section.main-text p {
-    @apply text-2xl mt-3 mb-3 font-light
+  @apply text-2xl mt-3 mb-3 font-light;
 }
 
 section.main-text ol {
-    @apply text-2xl mt-3 mb-3 font-light list-decimal
+  @apply text-2xl mt-3 mb-3 font-light list-decimal;
 }
 
-section.main-text ol li{
-    @apply mt-3 mb-3
+section.main-text ol li {
+  @apply mt-3 mb-3;
 }
