@@ -2,7 +2,6 @@ const path = require(`path`);
 const fetch = require(`node-fetch`);
 const { getCountries, getCountryCodes } = require("../config/countries-config");
 
-const countries = getCountries();
 const countryCodes = getCountryCodes();
 
 // @desc: Create Routes from API for all countries and pass pageContext to template
@@ -15,7 +14,6 @@ const apiRoutesInit = async (graphql, createPage) => {
 
   for (const node of data) {
     const countryCode = countryCodes[node.country];
-    console.log(node);
 
     if (countryCode) {
       for (const city of node.cities) {
