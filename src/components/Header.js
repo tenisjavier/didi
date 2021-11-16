@@ -18,7 +18,7 @@ const Header = ({tagList, linkList, withSearch}) => {
         <nav className="nav-color">
           <Link className="nav-link" to="/cl">
             <StaticImage
-              src="../assets/images/didi-logo.png"
+              src="../images/didi-logo.png"
               alt="didi logo"
               className="navbar-logo"
               width={100}

@@ -1,30 +1,19 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby";
+import DOMPurify from "dompurify";
+import parse from "html-react-parser";
 import '../styles/global.css';
 
-
-export const query = graphql`
-  query ($id: String!) {
-    sitePage(id: { eq: $id }) {
-      featuredImageUrl {
-        childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, width: 400)
-        }
-      }
-    }
-  }
-`;
-
-const WpTemplate = ({ data, pageContext }) => {
+const GuiaTemplate = ({ pageContext }) => {
   const title = pageContext.title;
-
-  const image = getImage(data.sitePage.featuredImageUrl);
+  const html_content = pageContext.content;
+  const dirtyHTML = html_content.replace(/\n|\r/g, "");
+  const cleanHTML = DOMPurify.sanitize(dirtyHTML, {
+    USE_PROFILES: { html: true },
+  });
   return (
     <Layout>
       <div class="header-sec">
@@ -37,14 +26,14 @@ const WpTemplate = ({ data, pageContext }) => {
       <main className='pt-16 min-h-screen'>
         <div className="container h-full mx-96">
           <p className="text-yellow-500 text-lg"> <Link to="/cl" className='hover:opacity-80'> <FontAwesomeIcon icon={faHome}/> Inicio </Link> / <span> Guias </span> / <span className="text-grey-333"> {title} </span></p>
-
-
+            <section className="main-text w-11/12 pb-12">
+              {parse(cleanHTML)}
+            </section>
         </div>
       </main>
-
 
     </Layout>
   );
 };
 
-export default WpTemplate;
+export default GuiaTemplate;
