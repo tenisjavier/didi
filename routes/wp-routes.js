@@ -52,8 +52,10 @@ const wpRoutesInit = async (graphql, createPage) => {
       }
     `);
 
-    // function to create pages from a WP parent node
-    const createPageFromNode = async (nodes) => {
+    // function to create pages from a WP parent node and a specific template
+    const createPageFromNode = async (nodes, template) => {
+      const templatePath = path.resolve(template);
+
       for (const node of nodes) {
         // send image url in context if exists
         let featuredImage = node.featuredImage
@@ -80,10 +82,16 @@ const wpRoutesInit = async (graphql, createPage) => {
     };
     // End of function Wp Pages Creation
 
-    const templatePath = path.resolve(`./src/pages/wp-template.js`);
-    await createPageFromNode(data[wpCountry].pages.nodes);
-    await createPageFromNode(data[wpCountry].allGuia.nodes);
-    await createPageFromNode(data[wpCountry].allArticulo.nodes);
+    const pageTemplate = `./src/templates/wp-page.js`;
+    const guideTemplate = `./src/templates/wp-guide.js`;
+    const articleTemplate = `./src/templates/wp-article.js`;
+
+    await createPageFromNode(data[wpCountry].pages.nodes, pageTemplate);
+    await createPageFromNode(data[wpCountry].allGuia.nodes, guideTemplate);
+    await createPageFromNode(
+      data[wpCountry].allArticulo.nodes,
+      articleTemplate
+    );
   }
 };
 

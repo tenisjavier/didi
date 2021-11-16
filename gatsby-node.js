@@ -1,4 +1,5 @@
 const wpRoutes = require("./routes/wp-routes");
+const apiRoutes = require("./routes/api-routes");
 
 // @desc: Creates all country dynamic routes from WP and other sources
 // @return: null
@@ -9,6 +10,7 @@ exports.createPages = async ({
 }) => {
   //create wp Routes for all Countries
   await wpRoutes.init(graphql, createPage);
+  await apiRoutes.init(graphql, createPage);
 };
 
 // @desc: Creates ChildImageSharp for WP Image Urls
