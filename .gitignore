@@ -1,4 +1,8 @@
 node_modules/
 .cache/
 public
-*.env
+
+# dotenv environment variables file
+.env
+.env.development
+.env.production
