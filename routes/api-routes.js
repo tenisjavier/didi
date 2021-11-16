@@ -1,6 +1,6 @@
 const path = require(`path`);
 const fetch = require(`node-fetch`);
-const { getCountries, getCountryCodes } = require("../config/countries-config");
+const { getCountryCodes } = require("../config/countries-config");
 
 const countryCodes = getCountryCodes();
 
