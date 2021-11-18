@@ -5,11 +5,27 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const GuiaTemplate = ({ pageContext }) => {
-  const { title, excerpt, content: html_content , featuredImageUrl} = pageContext;
-  console.log(featuredImageUrl);
+
+export const query = graphql`
+  query ($id: String!) {
+    sitePage(id: { eq: $id }) {
+      featuredImageUrl {
+        childImageSharp {
+          gatsbyImageData(placeholder: TRACED_SVG, width: 400)
+        }
+      }
+    }
+  }
+`;
+
+const GuiaTemplate = ({ data, pageContext }) => {
+  console.log("data", data);
+  const { title, excerpt, content: html_content } = pageContext;
+  const image = getImage(data.sitePage.featuredImageUrl);
+
   const dirtyExcerpt = excerpt.replace(/\n|\r/g, "");
   const cleanExcerpt = DOMPurify.sanitize(dirtyExcerpt, {
     USE_PROFILES: { html: true },
@@ -26,7 +42,9 @@ const GuiaTemplate = ({ pageContext }) => {
     <Layout>
       <div className="hidden header-sec lg:block" style={bg_img_style}>
         <div className=" ml-32 lg:ml-60 xl:ml-96">
-          <h1 className="lg:text-3xl xl:text-5xl text-white font-bold mb-6">{title}</h1>
+          <h1 className="lg:text-3xl xl:text-5xl text-white font-bold mb-6">
+            {title}
+          </h1>
           <p className="text-lg text-white w-2/4">{parse(cleanExcerpt)}</p>
         </div>
       </div>
@@ -42,11 +60,11 @@ const GuiaTemplate = ({ pageContext }) => {
             / <span> Guias </span> /{" "}
             <span className=" text-grey-primary"> {title} </span>
           </p>
-            <StaticImage
-              src="https://chile.didiglobal.com/wp-content/uploads/sites/16/2021/10/GettyImages-1129377251.png"
-              alt="page image"
-              className="w-full z-0 mt-8 lg:hidden"
-            />
+          <GatsbyImage
+            image={image}
+            alt="page image"
+            className="w-full z-0 mt-8 lg:hidden"
+          />
           <section className="main-text w-11/12 pb-12">
             {parse(cleanHTML)}
           </section>
