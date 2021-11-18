@@ -7,9 +7,9 @@
   padding-top: 150px;
   padding-bottom: 70px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 130%;
   min-height: 420px;
-  background-position-y: -30px;
+  background-position-y: -60px;
 }
 
 section.main-text h1 {
@@ -21,19 +21,19 @@ section.main-text h2 {
 }
 
 section.main-text p em {
-  @apply text-2xl mt-3 mb-5 font-light;
+  @apply text-lg lg:text-2xl mt-3 mb-5 font-light;
 }
 
 section.main-text p a {
-  @apply text-xl mt-3 mb-5 font-normal text-yellow-500 hover:text-blue-600;
+  @apply text-lg lg:text-xl mt-3 mb-5 font-normal text-yellow-500 hover:text-blue-600;
 }
 
 section.main-text p {
-  @apply text-2xl mt-3 mb-3 font-light;
+  @apply  text-lg lg:text-2xl mt-3 mb-3 font-light;
 }
 
 section.main-text ol {
-  @apply text-2xl mt-3 mb-3 font-light list-decimal;
+  @apply  text-lg lg:text-2xl mt-3 mb-3 font-light list-decimal;
 }
 
 section.main-text ol li {

@@ -1,5 +1,6 @@
 import React from 'react'
 import FooterLink from './FooterLink.js'
+
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,13 +18,13 @@ const Footer = () => {
                         {name: "Ecuador", link: 'https://chile.didiglobal.com/'},{name: "Ecuador", link: 'https://chile.didiglobal.com/'}]
     return (
         <footer>
-            <div className="bg-grey-333 h-32 border-b-2  border-white text-white ">
+            <div className="bg-grey-primary h-32 border-b-2  border-white text-white ">
                <div className="container h-full">
                    <FooterLink links={links}></FooterLink>
                </div>
             </div>
             
-            <div className="bg-grey-333 h-96 lg:h-80">
+            <div className="bg-grey-primary h-96 lg:h-80">
                 <div className="container h-full flex flex-wrap">
                     <div className="flex-initial flex flex-col justify-center items-start w-full h-1/2 lg:h-full lg:w-1/2 ">
                         <Link to="/cl">

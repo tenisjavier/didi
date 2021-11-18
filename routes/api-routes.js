@@ -22,6 +22,7 @@ const apiRoutesInit = async (graphql, createPage) => {
           component: templatePath,
           context: {
             id: city,
+            country: countryCode,
             city: city,
           },
         });

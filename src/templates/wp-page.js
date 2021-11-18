@@ -36,7 +36,7 @@ const WpTemplate = ({ data, pageContext }) => {
 
       <main className='pt-16 min-h-screen'>
         <div className="container h-full mx-96">
-          <p className="text-yellow-500 text-lg"> <Link to="/cl" className='hover:opacity-80'> <FontAwesomeIcon icon={faHome}/> Inicio </Link> / <span> Guias </span> / <span className="text-grey-333"> {title} </span></p>
+          <p className="text-yellow-500 text-lg"> <Link to="/cl" className='hover:opacity-80'> <FontAwesomeIcon icon={faHome}/> Inicio </Link> / <span> Guias </span> / <span className="text-grey-primary"> {title} </span></p>
 
 
         </div>

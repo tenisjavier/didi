@@ -15,7 +15,7 @@ const Header = ({ tagList, linkList, withSearch }) => {
 
   return (
     <>
-      <nav className="nav-color">
+      <nav className="nav-color z-10">
         <Link className="nav-link" to="/cl">
           <StaticImage
             src="../images/didi-logo.png"
