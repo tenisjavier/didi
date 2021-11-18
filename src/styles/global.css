@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 .header-sec {
-  background-image: url(https://chile.didiglobal.com/wp-content/uploads/sites/16/2021/10/GettyImages-1129377251.png);
   padding-top: 150px;
   padding-bottom: 70px;
   background-repeat: no-repeat;
-  background-size: 130%;
-  min-height: 420px;
+  background-size: 120%;
+  min-height: 480px;
   background-position-y: -60px;
 }
 
