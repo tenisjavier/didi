@@ -7,6 +7,9 @@ module.exports = {
         grey: {
           primary: "#333333",
         },
+        orange: {
+          primary: "#FF7D41",
+        },
       },
     },
   },

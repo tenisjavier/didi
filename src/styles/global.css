@@ -12,11 +12,15 @@
 }
 
 section.main-text h1 {
-  @apply text-4xl text-grey-primary font-extrabold mb-5 mt-5;
+  @apply text-2xl text-grey-primary font-extrabold mb-5 mt-5;
 }
 
 section.main-text h2 {
-  @apply text-3xl text-grey-primary font-extrabold mb-5 mt-5;
+  @apply text-2xl text-grey-primary font-extrabold mb-5 mt-5;
+}
+
+section.main-text h3 {
+  @apply text-xl text-orange-primary font-extrabold mb-5 mt-5;
 }
 
 section.main-text p em {
@@ -28,11 +32,11 @@ section.main-text p a {
 }
 
 section.main-text p {
-  @apply  text-lg lg:text-2xl mt-3 mb-3 font-light;
+  @apply text-lg lg:text-2xl mt-3 mb-3 font-light;
 }
 
 section.main-text ol {
-  @apply  text-lg lg:text-2xl mt-3 mb-3 font-light list-decimal;
+  @apply text-lg lg:text-2xl mt-3 mb-3 font-light list-decimal;
 }
 
 section.main-text ol li {

@@ -8,23 +8,22 @@ import parse from "html-react-parser";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-
 export const query = graphql`
   query ($id: String!) {
     sitePage(id: { eq: $id }) {
       featuredImageUrl {
         childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, width: 400)
+          gatsbyImageData(placeholder: TRACED_SVG, width: 1600)
         }
       }
     }
   }
 `;
 
-const GuiaTemplate = ({ data, pageContext }) => {
-  console.log("data", data);
+const GuideTemplate = ({ data, pageContext }) => {
   const { title, excerpt, content: html_content } = pageContext;
   const image = getImage(data.sitePage.featuredImageUrl);
+  console.log("image", image);
 
   const dirtyExcerpt = excerpt.replace(/\n|\r/g, "");
   const cleanExcerpt = DOMPurify.sanitize(dirtyExcerpt, {
@@ -36,21 +35,23 @@ const GuiaTemplate = ({ data, pageContext }) => {
     USE_PROFILES: { html: true },
   });
 
-  const bg_img_style = { backgroundImage: `url(${featuredImageUrl || "https://chile.didiglobal.com/wp-content/uploads/sites/16/2021/10/GettyImages-1129377251.png"})`};
-
   return (
     <Layout>
-      <div className="hidden header-sec lg:block" style={bg_img_style}>
-        <div className=" ml-32 lg:ml-60 xl:ml-96">
-          <h1 className="lg:text-3xl xl:text-5xl text-white font-bold mb-6">
-            {title}
-          </h1>
-          <p className="text-lg text-white w-2/4">{parse(cleanExcerpt)}</p>
+      {/* Section H1 Feature Image and Excerpt Desktop */}
+      <section className="relative">
+        <GatsbyImage
+          image={image}
+          alt={title}
+          className="hidden lg:block w-full"
+        />
+        <div className=" hidden  lg:block absolute bottom-10 left-16  text-white text-justify drop-shadow">
+          <h1 className=" font-bold  mb-4 text-4xl">{title}</h1>
+          <p className="text-lg w-2/4">{parse(cleanExcerpt)}</p>
         </div>
-      </div>
+      </section>
 
-      <main className="pt-32 lg:pt-16 min-h-screen flex justify-center">
-        <div className="container h-full mx-16 md:mx-28 lg:mx-52 xl:mx-96">
+      <main className="pt-32 lg:pt-16 flex min-h-screen justify-center">
+        <div className="container h-full mx-16">
           <p className="text-yellow-500 text-lg">
             {" "}
             <Link to="/cl" className="hover:opacity-80">
@@ -60,12 +61,15 @@ const GuiaTemplate = ({ data, pageContext }) => {
             / <span> Guias </span> /{" "}
             <span className=" text-grey-primary"> {title} </span>
           </p>
+          <h1 className=" font-bold  my-4 text-3xl text-center md:text-4xl lg:hidden">
+            {title}
+          </h1>
           <GatsbyImage
             image={image}
             alt="page image"
-            className="w-full z-0 mt-8 lg:hidden"
+            className="w-full z-0 lg:hidden"
           />
-          <section className="main-text w-11/12 pb-12">
+          <section className="main-text w-full pb-12">
             {parse(cleanHTML)}
           </section>
         </div>
@@ -74,4 +78,4 @@ const GuiaTemplate = ({ data, pageContext }) => {
   );
 };
 
-export default GuiaTemplate;
+export default GuideTemplate;

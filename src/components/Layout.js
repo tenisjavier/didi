@@ -38,9 +38,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header tagList={tags} linkList={links} withSearch={isSearch}></Header>
-      <body style={{ minHeight: "1000px", backgroundColor: "white" }}>
-        {children}
-      </body>
+      <body className="bg-white">{children}</body>
       <Footer></Footer>
     </>
   );
