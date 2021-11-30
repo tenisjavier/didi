@@ -11,6 +11,8 @@ module.exports = {
           primary: "#FF7D41",
         },
       },
+      display: ["group-hover"],
+      visibility: ["group-hover"],
     },
   },
   variants: {
