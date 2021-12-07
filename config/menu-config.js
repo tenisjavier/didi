@@ -166,7 +166,7 @@ const menuLinks = {
       ],
     },
   ],
-  co: [
+  cr: [
     {
       text: "DiDi Pasajero",
       url: "http://chile.didiglobal.com/pasajero",

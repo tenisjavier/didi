@@ -1,12 +1,8 @@
-import React from 'react'
-import Layout from '../../components/Layout'
+import React from "react";
+import HomeTemplate from "../../templates/home";
 
 const Index = () => {
-  return (
-    <Layout>
- <h1>Hola CL HOME</h1>
- </Layout>
-  )
-}
+  return <HomeTemplate></HomeTemplate>;
+};
 
-export default Index
+export default Index;

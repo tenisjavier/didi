@@ -25,10 +25,6 @@ const WpTemplate = ({ data, pageContext }) => {
     return { __html: content };
   }
 
-  function MyComponent() {
-    return <div dangerouslySetInnerHTML={createMarkup()} />;
-  }
-
   return (
     <Layout>
       <h1>{title}</h1>

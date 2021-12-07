@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";

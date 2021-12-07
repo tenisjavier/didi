@@ -25,7 +25,7 @@ const Menu = () => {
           "lg:block"
         }
       >
-        <ul className="flex flex-col h-screen items-center bg-grey-primary bg-opacity-80 lg:h-full lg:flex-row lg:bg-transparent">
+        <ul className="flex flex-col h-screen items-center pt-8 bg-grey-primary bg-opacity-80 lg:h-full lg:flex-row lg:bg-transparent lg:p-0">
           {menuLinks.map((menuLink, index) => (
             <NavItem key={index} link={menuLink.url} text={menuLink.text}>
               {menuLink.dropMenu ? (
@@ -41,7 +41,7 @@ const Menu = () => {
 
 const NavItem = (props) => {
   return (
-    <li className="flex flex-col group justify-center items-center p-4 text-white w-full lg:w-56">
+    <li className="flex flex-col group ml-8 lg:justify-center lg:items-center p-2 text-white w-full lg:w-44 lg:p-0 lg:ml-0">
       <a href={props.link} className="hover:text-white">
         {props.text}
       </a>
@@ -54,7 +54,7 @@ const DropdownMenu = (props) => {
   const DropdownItem = (props) => {
     return (
       <a
-        className="flex h-11 justify-center items-center hover:bg-grey-primary hover:text-white"
+        className="flex h-11 pl-12 items-center lg:justify-center lg:p-0 hover:bg-grey-primary hover:text-white"
         href={props.url}
       >
         {props.text}
@@ -63,7 +63,7 @@ const DropdownMenu = (props) => {
   };
 
   return (
-    <div className="w-full top-20 transition lg:opacity-0 group-hover:opacity-80 lg:absolute  lg:w-56 lg:bg-grey-primary lg:bg-opacity-80 lg:border-orange-primary border-t-2 overflow-hidden">
+    <div className="w-full top-20 transition lg:opacity-0 group-hover:opacity-80 lg:absolute  lg:w-56 lg:bg-grey-primary lg:bg-opacity-80 lg:border-orange-primary lg:border-t-2 overflow-hidden">
       {props.dropLinks.map((item, index) => (
         <DropdownItem key={index} url={item.url} text={item.text} />
       ))}

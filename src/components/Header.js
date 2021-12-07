@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Menu from "./Menu";
 import "../styles/header.css";
 
