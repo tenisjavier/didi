@@ -42,3 +42,11 @@ section.main-text ol {
 section.main-text ol li {
   @apply mt-3 mb-3;
 }
+
+.btn-pax {
+  @apply bg-orange-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
+}
+
+.btn-pax-light {
+  @apply bg-white hover:bg-blue-700 text-grey-primary font-bold py-2 px-4 rounded-full border-2 border-grey-primary;
+}
