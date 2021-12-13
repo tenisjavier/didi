@@ -5,8 +5,8 @@ import BtnPax from "../components/BtnPax";
 const HomeTemplate = () => {
   return (
     <Layout>
-      <div className="pt-28">
-        <BtnPax mode="light"></BtnPax>
+      <div className="py-28">
+        <BtnPax mode=""></BtnPax>
       </div>
     </Layout>
   );

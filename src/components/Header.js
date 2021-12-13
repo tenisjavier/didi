@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Menu from "./Menu";
-import "../styles/header.css";
 
 const Header = (props) => {
   return (
-    <nav className="w-full h-20 z-10 bg-grey-primary bg-opacity-80 fixed">
+    <nav className="w-full h-20 z-10 bg-gray-primary bg-opacity-80 fixed">
       <div className="flex justify-between items-center h-full">
         <Navlogo />
         <Menu></Menu>
