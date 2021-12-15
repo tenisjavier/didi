@@ -52,7 +52,7 @@ section.main-text ol li {
 }
 
 .btn-light {
-  @apply inline-block min-w-max bg-white hover:bg-gray-primary hover:text-white text-gray-primary font-semibold py-3 px-8 rounded-full border-2 border-gray-primary shadow-xl shadow-gray-primary/20 cursor-pointer;
+  @apply inline-block min-w-max bg-white hover:bg-gray-primary hover:text-white text-gray-primary font-semibold py-3 px-8 rounded-full  shadow-xl shadow-gray-primary/20 cursor-pointer;
 }
 .btn-light a {
   @apply hover:text-white;

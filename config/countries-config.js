@@ -22,12 +22,21 @@ const countryCodes = {
   Colombia: "co",
 };
 
+// @return: array with all countries
 const getCountries = () => {
   return countries;
 };
 
+// @return: object {country:code}
 const getCountryCodes = () => {
   return countryCodes;
 };
 
-module.exports = { getCountries, getCountryCodes };
+// @desc: from the current url path it will extract the country code
+// @return: countrycode
+const getCountryCodeFromUrl = () => {
+  const path = window.location.pathname;
+  return path.substring(1, path.length - 1);
+};
+
+module.exports = { getCountries, getCountryCodes, getCountryCodeFromUrl };

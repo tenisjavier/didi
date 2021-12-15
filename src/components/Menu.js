@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { getMenuLinks } from "../../config/menu-config";
+import { getCountryCodeFromUrl } from "../../config/countries-config";
 
+// @desc: Top Menu. Links from menu-config.
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const menuLinks = getMenuLinks("cl");
+  const menuLinks = getMenuLinks(getCountryCodeFromUrl());
 
   return (
     <div className="h-full">

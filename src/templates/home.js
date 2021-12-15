@@ -6,7 +6,7 @@ const HomeTemplate = () => {
   return (
     <Layout>
       <div className="py-28 px-8">
-        <Btn type="pax" mode=""></Btn>
+        <Btn type="pax" mode="light"></Btn>
       </div>
     </Layout>
   );

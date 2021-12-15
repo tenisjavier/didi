@@ -1,9 +1,12 @@
 import React from "react";
 import { getBtnLinks } from "../../config/btn-config";
+import { getCountryCodeFromUrl } from "../../config/countries-config";
 
-const BtnPax = (props) => {
+// @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
+// @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
+const Btn = (props) => {
   const mode = props.mode === "light" ? "btn-light" : "btn";
-  const btnData = getBtnLinks("cl");
+  const btnData = getBtnLinks(getCountryCodeFromUrl());
   let btnLink = props.link;
   let btnText = props.children;
 
@@ -21,4 +24,4 @@ const BtnPax = (props) => {
   );
 };
 
-export default BtnPax;
+export default Btn;
