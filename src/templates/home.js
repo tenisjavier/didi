@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import BtnPax from "../components/BtnPax";
+import Btn from "../components/Btn";
 
 const HomeTemplate = () => {
   return (
     <Layout>
-      <div className="py-28">
-        <BtnPax mode=""></BtnPax>
+      <div className="py-28 px-8">
+        <Btn type="pax" mode=""></Btn>
       </div>
     </Layout>
   );
