@@ -13,6 +13,9 @@ module.exports = {
       display: ["group-hover"],
       visibility: ["group-hover"],
     },
+    backgroundImage: {
+      "drv-orange": "url('../images/bg-image-orange-drv.jpg')",
+    },
   },
   variants: {
     extend: {},

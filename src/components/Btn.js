@@ -18,7 +18,7 @@ const Btn = (props) => {
     btnText = btnData.paxText;
   }
   return (
-    <div className={mode}>
+    <div className={mode + " my-2"}>
       <a href={btnLink}>{btnText}</a>
     </div>
   );

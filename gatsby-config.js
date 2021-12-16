@@ -1,5 +1,4 @@
-const gatsbySourceGraphqlConfig = require('./config/gatsby-source-graphql-config');
-
+const gatsbySourceGraphqlConfig = require("./config/gatsby-source-graphql-config");
 
 module.exports = {
   siteMetadata: {
@@ -9,7 +8,7 @@ module.exports = {
   plugins: [
     ...gatsbySourceGraphqlConfig.get(),
     `gatsby-plugin-image`,
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
