@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../../config/btn-config";
 import { getCountryCodeFromUrl } from "../../config/countries-config";
@@ -45,9 +44,9 @@ const SmartBanner = (props) => {
           <p>{bannerDesc}</p>
         </span>
         <div className={"btn ml-3 px-3 pt-2 " + btnBgColor}>
-          <Link to={btnLink} className={btnTextColor}>
+          <a href={btnLink} className={btnTextColor}>
             {btnText}
-          </Link>
+          </a>
         </div>
       </div>
     </div>
@@ -56,14 +55,12 @@ const SmartBanner = (props) => {
 const PaxLogo = () => {
   return (
     <div>
-      <Link to="/cl">
-        <StaticImage
-          src="../images/pax-logo.png"
-          alt="didi pasajero logo"
-          className=""
-          width={50}
-        />
-      </Link>
+      <StaticImage
+        src="../images/pax-logo.png"
+        alt="didi pasajero logo"
+        className=""
+        width={50}
+      />
     </div>
   );
 };
@@ -71,14 +68,12 @@ const PaxLogo = () => {
 const DrvLogo = () => {
   return (
     <div className="p-3">
-      <Link className="" to="/cl">
-        <StaticImage
-          src="../images/drv-logo.png"
-          alt="didi conductor logo"
-          className=""
-          width={50}
-        />
-      </Link>
+      <StaticImage
+        src="../images/drv-logo.png"
+        alt="didi conductor logo"
+        className=""
+        width={50}
+      />
     </div>
   );
 };
