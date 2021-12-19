@@ -26,7 +26,7 @@ const Footer = () => {
             
             <div className="bg-grey-primary h-96 lg:h-80">
                 <div className="container h-full flex flex-wrap">
-                    <div className="flex-initial flex flex-col justify-center items-start w-full h-1/2 lg:h-full lg:w-1/2 ">
+                    <div className="flex-initial flex flex-col justify-center items-center w-full h-1/2 lg:h-full lg:w-1/2 lg:items-start">
                         <Link to="/cl">
                             <StaticImage
                             src="../images/didi-logo.png"
@@ -35,7 +35,7 @@ const Footer = () => {
                             />
                         </Link>
 
-                        <div className="h-auto w-full pr-52">
+                        <div className="h-auto w-3/4 text-c lg:w-full lg:pr-52 lg:text-left">
                              {countries.map( (c, index) => {
                                 if(index === 0){
                                     return <a href={c.link} className="text-sm text-yellow-500 hover:text-yellow-300">{c.name}</a>
@@ -47,11 +47,14 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex-initial w-full flex justify-center items-center px-32 h-1/2 lg:h-full lg:w-1/2 ">
-                        <p className="flex-auto text-white text-3xl">Siguenos</p>
-                        <div className="flex-auto text-white text-5xl"><FontAwesomeIcon icon={faFacebookSquare} /></div>
-                        <div className="flex-auto text-white text-5xl"><FontAwesomeIcon icon={faInstagramSquare} /></div>
-                        <div className="flex-auto text-white text-5xl"><FontAwesomeIcon icon={faTwitterSquare} /></div>
+                    <div className="flex-initial w-full flex justify-center flex-wrap items-center px-24 xl:px-32 h-1/2 lg:h-full lg:w-1/2 ">
+                        <p className="flex-auto text-white text-3xl w-full text-c lg:w-auto lg:text-left">Siguenos</p>
+                        <div className="w-full flex lg:w-auto justify-center">
+                            <div className="mr-5 text-white text-5xl"><FontAwesomeIcon icon={faFacebookSquare} /></div>
+                            <div className="mr-5 text-white text-5xl"><FontAwesomeIcon icon={faInstagramSquare} /></div>
+                            <div className="mr-5 text-white text-5xl"><FontAwesomeIcon icon={faTwitterSquare} /></div>
+                        </div>
+ 
                     </div>
                 </div>
             </div>

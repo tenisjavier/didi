@@ -44,7 +44,7 @@ const GuideTemplate = ({ data, pageContext }) => {
           alt={title}
           className="hidden lg:block w-full"
         />
-        <div className=" hidden  lg:block absolute bottom-10 left-16  text-white text-justify drop-shadow">
+        <div className=" hidden  lg:block absolute bottom-10 left-28  text-white text-justify drop-shadow">
           <h1 className=" font-bold  mb-4 text-4xl">{title}</h1>
           <p className="text-lg w-1/3">{parse(cleanExcerpt)}</p>
         </div>
