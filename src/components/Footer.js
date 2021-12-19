@@ -1,16 +1,21 @@
-import React from 'react'
-import FooterLink from './FooterLink.js'
+import React from "react";
+import FooterLink from "./FooterLink.js";
 
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
-import { faInstagramSquare} from '@fortawesome/free-brands-svg-icons';
-import { faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-    const links = [{title:'Passajero', link: 'https://chile.didiglobal.com/'}, {title:'Socio Conductor', link: 'https://chile.didiglobal.com/'} ,{title:'Ciudades', link: 'https://chile.didiglobal.com/'},
-    {title:'DIDI Taxi', link: 'https://chile.didiglobal.com/'}, {title:'Seguridad', link: 'https://chile.didiglobal.com/'}]
+  const links = [
+    { title: "Passajero", link: "https://chile.didiglobal.com/" },
+    { title: "Socio Conductor", link: "https://chile.didiglobal.com/" },
+    { title: "Ciudades", link: "https://chile.didiglobal.com/" },
+    { title: "DIDI Taxi", link: "https://chile.didiglobal.com/" },
+    { title: "Seguridad", link: "https://chile.didiglobal.com/" },
+  ];
 
     const countries = [{name: "Argentina", link: 'https://chile.didiglobal.com/'}, {name: "Australia", link: 'https://chile.didiglobal.com/'},
                         {name: "Brasil", link: 'https://chile.didiglobal.com/'}, {name: "Chile", link: 'https://chile.didiglobal.com/'}, {name: "Columbia", link: 'https://chile.didiglobal.com/'},
@@ -58,9 +63,11 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
-        
-    )
-}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -12,11 +12,11 @@
 }
 
 section.main-text h1 {
-  @apply text-2xl text-grey-primary font-extrabold mb-5 mt-5;
+  @apply text-2xl text-gray-primary font-extrabold mb-5 mt-5;
 }
 
 section.main-text h2 {
-  @apply text-2xl text-grey-primary font-extrabold mb-5 mt-5;
+  @apply text-2xl text-gray-primary font-extrabold mb-5 mt-5;
 }
 
 section.main-text h3 {
@@ -43,12 +43,19 @@ section.main-text ol li {
   @apply mt-3 mb-3;
 }
 
-.btn-pax {
-  @apply bg-orange-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
+.btn {
+  @apply inline-block min-w-max bg-orange-primary hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full shadow-xl shadow-orange-primary/30 cursor-pointer;
 }
 
-.btn-pax-light {
-  @apply bg-white hover:bg-blue-700 text-grey-primary font-bold py-2 px-4 rounded-full border-2 border-grey-primary;
+.btn a {
+  @apply hover:text-white;
+}
+
+.btn-light {
+  @apply inline-block min-w-max bg-white hover:bg-gray-primary hover:text-white text-gray-primary font-semibold py-3 px-8 rounded-full  shadow-xl shadow-gray-primary/20 cursor-pointer;
+}
+.btn-light a {
+  @apply hover:text-white;
 }
 
 .text-c{

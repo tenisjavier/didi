@@ -1,10 +1,9 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        grey: {
+        gray: {
           primary: "#333333",
         },
         orange: {
@@ -13,6 +12,9 @@ module.exports = {
       },
       display: ["group-hover"],
       visibility: ["group-hover"],
+    },
+    backgroundImage: {
+      "drv-orange": "url('../images/bg-image-orange-drv.jpg')",
     },
   },
   variants: {
