@@ -11,6 +11,8 @@ const SectionDrvHeader = () => {
       textColor="white"
       image="bg-image-orange-drv"
       imageAlt="conductor didi"
+      mobileImage="bg-image-orange-home"
+      mobileImageAlt="conductor didi"
       btnType="drv"
       btnMode="light"
     ></SectionTemplate>

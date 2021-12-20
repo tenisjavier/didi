@@ -12,7 +12,11 @@ const SectionTemplate = (props) => {
     textColor,
     image,
     imageAlt,
+    mobileImage,
+    mobileImageAlt,
     btnType,
+    btnText,
+    btnLink,
     btnMode,
     alignItems,
   } = props;
@@ -35,8 +39,18 @@ const SectionTemplate = (props) => {
     return file.name === image;
   })[0];
 
+  var mobileResult = files.filter((file) => {
+    return file.name === mobileImage;
+  })[0];
+
   const pathToImage = getImage(result);
-  let sectionBtn = <Btn type={btnType} mode={btnMode}></Btn>;
+  const pathToMobileImage = getImage(mobileResult);
+
+  let sectionBtn = (
+    <Btn type={btnType} link={btnLink} mode={btnMode}>
+      {btnText}
+    </Btn>
+  );
 
   // if btnType is both will print pax first and drv second
   if (btnType === "both") {
@@ -69,7 +83,14 @@ const SectionTemplate = (props) => {
       <GatsbyImage
         image={pathToImage}
         alt={imageAlt}
-        className=" object-fill z-0 absolute h-full w-full"
+        className={`md:block object-fill z-0 absolute h-full w-full ${
+          mobileImage && "hidden"
+        }`}
+      ></GatsbyImage>
+      <GatsbyImage
+        image={pathToMobileImage}
+        alt={mobileImageAlt}
+        className="block md:hidden object-fill z-0 absolute h-full w-full"
       ></GatsbyImage>
     </section>
   );
