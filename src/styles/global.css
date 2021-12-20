@@ -57,3 +57,7 @@ section.main-text ol li {
 .btn-light a {
   @apply hover:text-white;
 }
+
+.text-c{
+  text-align: center;
+}
