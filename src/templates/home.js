@@ -11,7 +11,7 @@ const HomeTemplate = () => {
       <SectionDrvHeader></SectionDrvHeader>
       <SectionHomeHeader></SectionHomeHeader>
       <div className="py-28 px-8">
-        <Btn type="drv" mode=""></Btn>
+        <Btn type="pax" mode=""></Btn>
       </div>
     </Layout>
   );

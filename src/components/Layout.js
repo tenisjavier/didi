@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     <>
       <Header></Header>
       {children}
-      <SmartBanner type="pax"></SmartBanner>
+      <SmartBanner type="drv"></SmartBanner>
       <Footer></Footer>
     </>
   );

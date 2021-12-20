@@ -4,7 +4,7 @@ import Btn from "../Btn";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 // @desc: Template for static Sections with bg image, title and text
-// @props: title | desc | image The image name without extension | btnType 'drv'/'pax' | btnMode 'light'/none
+// @props: title | desc | image The image name without extension | btnType drv/pax/both | btnMode 'light'/none | alignItems items-start or items-end
 const SectionTemplate = (props) => {
   const {
     title,
@@ -14,7 +14,7 @@ const SectionTemplate = (props) => {
     imageAlt,
     btnType,
     btnMode,
-    textSide,
+    alignItems,
   } = props;
   const data = useStaticQuery(
     graphql`
@@ -36,9 +36,25 @@ const SectionTemplate = (props) => {
   })[0];
 
   const pathToImage = getImage(result);
+  let sectionBtn = <Btn type={btnType} mode={btnMode}></Btn>;
 
+  // if btnType is both will print pax first and drv second
+  if (btnType === "both") {
+    sectionBtn = (
+      <>
+        <Btn type="pax" mode={btnMode}></Btn>
+        <br></br>
+        <Btn type="drv" mode={btnMode}></Btn>
+      </>
+    );
+  }
   return (
-    <section className="flex relative flex-column justify-center  w-full min-h-[40rem] max-h-[45rem] bg-orange-primary ">
+    <section
+      className={
+        "flex relative flex-column justify-center  w-full min-h-[40rem] max-h-[45rem] bg-orange-primary " +
+        alignItems
+      }
+    >
       <div
         className={
           "md:w-1/2 lg:w-2/5 px-4 text-center text-" +
@@ -48,7 +64,7 @@ const SectionTemplate = (props) => {
       >
         <h2 className="text-2xl md:text-4xl pb-6 font-bold">{title}</h2>
         <p className="mb-5">{desc}</p>
-        <Btn type={btnType} mode={btnMode}></Btn>
+        {sectionBtn}
       </div>
       <GatsbyImage
         image={pathToImage}

@@ -8,8 +8,9 @@ const SectionHomeHeader = () => {
       textColor="white"
       image="bg-image-orange-home"
       imageAlt="conductor didi"
-      btnType="pax"
+      btnType="both"
       btnMode="light"
+      alignItems="items-start"
     ></SectionTemplate>
   );
 };
