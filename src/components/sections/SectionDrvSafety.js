@@ -7,11 +7,14 @@ const SectionDrvHeader = () => {
       title="EN DIDI, TU SEGURIDAD NO ES UN MITO"
       desc="Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje"
       textColor="white"
-      image="bg-blue-safety"
-      imageAlt="conductor didi"
+      //bgImage="bg-blue-safety"
+      bgColor="bg-sky-500"
+      image="funciones-de-seguridad-logo"
+      imageAlt="safety logo"
       btnText="Saber Más"
       btnLink="/seguridad/"
       btnMode="light"
+      reverse="true"
     ></SectionTemplate>
   );
 };

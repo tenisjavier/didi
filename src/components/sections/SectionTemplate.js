@@ -4,21 +4,26 @@ import Btn from "../Btn";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 // @desc: Template for static Sections with bg image, title and text
-// @props: title | desc | image The image name without extension | btnType drv/pax/both | btnMode 'light'/none | alignItems items-start or items-end
+// @props : title | desc | btnType drv/pax/both | btnMode 'light'/none | btnLink customLink| reverse "false" "true"
+// @props for images: bgImage and bgImageAlt | bgMobileImage and bgMobileImageAlt| image if you want an image next to the text
 const SectionTemplate = (props) => {
   const {
     title,
     desc,
     textColor,
+    bgImage,
+    bgImageAlt,
+    bgMobileImage,
+    bgMobileImageAlt,
+    bgColor,
     image,
     imageAlt,
-    mobileImage,
-    mobileImageAlt,
+    imageRounded,
     btnType,
     btnText,
     btnLink,
     btnMode,
-    alignItems,
+    reverse,
   } = props;
   const data = useStaticQuery(
     graphql`
@@ -36,15 +41,20 @@ const SectionTemplate = (props) => {
   );
   const files = data.allFile.nodes;
   var result = files.filter((file) => {
-    return file.name === image;
+    return file.name === bgImage;
   })[0];
 
   var mobileResult = files.filter((file) => {
-    return file.name === mobileImage;
+    return file.name === bgMobileImage;
   })[0];
 
-  const pathToImage = getImage(result);
+  var imageResult = files.filter((file) => {
+    return file.name === image;
+  })[0];
+
+  const pathToBgImage = getImage(result);
   const pathToMobileImage = getImage(mobileResult);
+  const pathToImage = getImage(imageResult);
 
   let sectionBtn = (
     <Btn type={btnType} link={btnLink} mode={btnMode}>
@@ -64,32 +74,35 @@ const SectionTemplate = (props) => {
   }
   return (
     <section
-      className={
-        "flex relative flex-column justify-center  w-full min-h-[40rem] max-h-[45rem] bg-orange-primary " +
-        alignItems
-      }
+      className={`flex flex-wrap relative items-center  w-full min-h-[40rem] max-h-[45rem] 
+        ${bgColor && bgColor} ${reverse && "flex-row-reverse"} ${
+        image ? "justify-around" : "justify-start"
+      }`}
     >
+      <GatsbyImage
+        image={pathToImage}
+        alt={imageAlt}
+        className={`z-10 w-96 m-4  ${image ? "block" : "hidden"}  ${
+          imageRounded && "rounded-full"
+        }`}
+      ></GatsbyImage>
       <div
-        className={
-          "md:w-1/2 lg:w-2/5 px-4 text-center text-" +
-          textColor +
-          " z-10 md:text-left md:pl-20 md:pr-0"
-        }
+        className={`md:w-1/2 lg:w-2/5 px-4 text-center text-${textColor} z-10 md:text-left md:pl-20 md:pr-0`}
       >
         <h2 className="text-2xl md:text-4xl pb-6 font-bold">{title}</h2>
         <p className="mb-5">{desc}</p>
         {sectionBtn}
       </div>
       <GatsbyImage
-        image={pathToImage}
-        alt={imageAlt}
+        image={pathToBgImage}
+        alt={bgImageAlt}
         className={`md:block object-fill z-0 absolute h-full w-full ${
-          mobileImage && "hidden"
+          bgMobileImage && "hidden"
         }`}
       ></GatsbyImage>
       <GatsbyImage
         image={pathToMobileImage}
-        alt={mobileImageAlt}
+        alt={bgMobileImageAlt}
         className="block md:hidden object-fill z-0 absolute h-full w-full"
       ></GatsbyImage>
     </section>
