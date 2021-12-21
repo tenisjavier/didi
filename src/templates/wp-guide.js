@@ -7,6 +7,7 @@ import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 export const query = graphql`
   query ($id: String!) {
@@ -35,16 +36,17 @@ const GuideTemplate = ({ data, pageContext }) => {
     USE_PROFILES: { html: true },
   });
 
+  const returnCountry = '/' + getCountryCodeFromUrl();
   return (
     <Layout>
       {/* Section H1 Feature Image and Excerpt Desktop */}
-      <section className="relative flex justify-center h-screen">
+      <section className="relative flex justify-center h-100">
         <GatsbyImage
           image={image}
           alt={title}
           className="hidden object-fill lg:block w-full"
         />
-        <div className=" hidden  lg:block absolute bottom-10 left-16 z-1  text-white text-justify drop-shadow">
+        <div className=" hidden  lg:block absolute bottom-16 left-16 xl:left-48 z-1  text-white text-justify drop-shadow">
 
           <h1 className=" font-bold  mb-4 text-4xl">{title}</h1>
           <p className="text-lg w-1/3">{parse(cleanExcerpt)}</p>
@@ -55,11 +57,11 @@ const GuideTemplate = ({ data, pageContext }) => {
         <div className="container h-full mx-16">
           <p className="text-yellow-500 text-lg">
             {" "}
-            <Link to="/cl" className="hover:opacity-80">
+            <Link to={returnCountry} className="hover:opacity-80">
               {" "}
               <FontAwesomeIcon icon={faHome} /> Inicio{" "}
             </Link>{" "}
-            / <span> Guias </span> /{" "}
+            / <Link to={returnCountry+'/guias'} className="hover:opacity-80"><span> Guias </span> </Link>/{" "}
             <span className=" text-grey-primary"> {title} </span>
           </p>
           <h1 className=" font-bold  my-4 text-3xl text-center md:text-4xl lg:hidden">
