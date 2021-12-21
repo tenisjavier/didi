@@ -7,29 +7,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { getFooterLinks, getCountriesLinks } from "../../config/footer-config";
+import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const Footer = () => {
-  const links = [
-    { title: "Passajero", link: "https://chile.didiglobal.com/" },
-    { title: "Socio Conductor", link: "https://chile.didiglobal.com/" },
-    { title: "Ciudades", link: "https://chile.didiglobal.com/" },
-    { title: "DIDI Taxi", link: "https://chile.didiglobal.com/" },
-    { title: "Seguridad", link: "https://chile.didiglobal.com/" },
-  ];
-
-    const countries = [{name: "Argentina", link: 'https://chile.didiglobal.com/'}, {name: "Australia", link: 'https://chile.didiglobal.com/'},
-                        {name: "Brasil", link: 'https://chile.didiglobal.com/'}, {name: "Chile", link: 'https://chile.didiglobal.com/'}, {name: "Columbia", link: 'https://chile.didiglobal.com/'},
-                        {name: "Ecuador", link: 'https://chile.didiglobal.com/'}, {name: "Japon", link: 'https://chile.didiglobal.com/'}, {name: "Ecuador", link: 'https://chile.didiglobal.com/'},{name: "Ecuador", link: 'https://chile.didiglobal.com/'},
-                        {name: "Ecuador", link: 'https://chile.didiglobal.com/'},{name: "Ecuador", link: 'https://chile.didiglobal.com/'}]
+    const links = getFooterLinks(getCountryCodeFromUrl());
+    const countries = getCountriesLinks();
     return (
         <footer>
-            <div className="bg-grey-primary h-32 border-b-2  border-white text-white ">
+            <div className="bg-gray-primary h-32 border-b-2  border-white text-white ">
                <div className="container h-full">
                    <FooterLink links={links}></FooterLink>
                </div>
             </div>
             
-            <div className="bg-grey-primary h-96 lg:h-80">
+            <div className="bg-gray-primary h-96 lg:h-80">
                 <div className="container h-full flex flex-wrap">
                     <div className="flex-initial flex flex-col justify-center items-center w-full h-1/2 lg:h-full lg:w-1/2 lg:items-start">
                         <Link to="/cl">
@@ -43,10 +35,10 @@ const Footer = () => {
                         <div className="h-auto w-3/4 text-c lg:w-full lg:pr-52 lg:text-left">
                              {countries.map( (c, index) => {
                                 if(index === 0){
-                                    return <a href={c.link} className="text-sm text-yellow-500 hover:text-yellow-300">{c.name}</a>
+                                    return <a href={c.link} key={index} className="text-sm text-yellow-500 hover:text-yellow-300">{c.name}</a>
                                 }
                                 else{
-                                    return <span className="text-white"> • <a href={c.link} className="text-sm text-yellow-500 hover:text-yellow-300">{c.name}</a></span>
+                                    return <span key={index} className="text-white"> • <a href={c.link} className="text-sm text-yellow-500 hover:text-yellow-300">{c.name}</a></span>
                                 }
                             })}
                         </div>
@@ -63,9 +55,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-          </div>
-        </div>
-      </div>
     </footer>
   );
 };
