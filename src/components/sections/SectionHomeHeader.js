@@ -8,6 +8,8 @@ const SectionHomeHeader = () => {
       textColor="white"
       image="bg-image-orange-home"
       imageAlt="conductor didi"
+      mobileImage="bg-image-orange-home"
+      mobileImageAlt="conductor didi"
       btnType="both"
       btnMode="light"
       alignItems="items-start"
