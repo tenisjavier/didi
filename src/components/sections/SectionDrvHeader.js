@@ -9,10 +9,10 @@ const SectionDrvHeader = () => {
       importantes. Por eso, nos preocupamos por tener tasas de servicio
       competitivas que beneficien los ingresos de los socios conductores."
       textColor="white"
-      image="bg-image-orange-drv"
-      imageAlt="conductor didi"
-      mobileImage="bg-image-orange-home"
-      mobileImageAlt="conductor didi"
+      bgImage="bg-image-orange-drv"
+      bgImageAlt="conductor didi"
+      bgMobileImage="bg-image-orange-home"
+      bgMobileImageAlt="conductor didi"
       btnType="drv"
       btnMode="light"
     ></SectionTemplate>

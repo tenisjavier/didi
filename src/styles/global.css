@@ -44,7 +44,7 @@ section.main-text ol li {
 }
 
 .btn {
-  @apply inline-block min-w-max bg-orange-primary hover:bg-green-300 text-white font-semibold py-3 px-8 rounded-full shadow-xl shadow-orange-primary/30 cursor-pointer;
+  @apply inline-block min-w-max bg-orange-primary hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-xl shadow-orange-primary/30 hover:text-white cursor-pointer;
 }
 
 .btn a {
@@ -58,6 +58,6 @@ section.main-text ol li {
   @apply hover:text-white;
 }
 
-.text-c{
+.text-c {
   text-align: center;
 }
