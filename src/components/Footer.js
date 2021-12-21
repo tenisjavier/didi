@@ -43,21 +43,26 @@ const Footer = () => {
                             })}
                         </div>
                     </div>
-          <div className="flex-initial w-full flex justify-center flex-wrap items-center px-24 xl:px-32 h-1/2 lg:h-full lg:w-1/2 ">
-            <p className="flex-auto text-white text-3xl w-full text-c lg:w-auto lg:text-left">
-              Siguenos
-            </p>
-            <div className="w-full flex lg:w-auto justify-center">
-              <div className="mr-5 text-white text-5xl">
-                <FontAwesomeIcon icon={faFacebookSquare} />
+
+
+              <div className="flex-initial w-full flex justify-center flex-wrap items-center px-24 xl:px-32 h-1/2 lg:h-full lg:w-1/2 ">
+                <p className="flex-auto text-white text-3xl w-full text-c lg:w-auto lg:text-left">
+                  Siguenos
+                </p>
+                <div className="w-full flex lg:w-auto justify-center">
+                  <div className="mr-5 text-white text-5xl">
+                    <FontAwesomeIcon icon={faFacebookSquare} />
+                  </div>
+                  <div className="mr-5 text-white text-5xl">
+                    <FontAwesomeIcon icon={faInstagramSquare} />
+                  </div>
+                  <div className="mr-5 text-white text-5xl">
+                    <FontAwesomeIcon icon={faTwitterSquare} />
+                  </div>
+                </div>
               </div>
-              <div className="mr-5 text-white text-5xl">
-                <FontAwesomeIcon icon={faInstagramSquare} />
-              </div>
-              <div className="mr-5 text-white text-5xl">
-                <FontAwesomeIcon icon={faTwitterSquare} />
-              </div>
-            </div>
+          </div>
+        </div>
     </footer>
   );
 };

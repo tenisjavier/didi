@@ -14,8 +14,6 @@ module.exports = {
           primary: "#FF7D41",
         },
       },
-      display: ["group-hover"],
-      visibility: ["group-hover"],
     },
     backgroundImage: {
       "drv-orange": "url('../images/bg-image-orange-drv.jpg')",
