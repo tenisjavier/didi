@@ -10,7 +10,7 @@ const Menu = () => {
   const menuLinks = getMenuLinks(getCountryCodeFromUrl());
 
   return (
-    <div className="h-full">
+    <div className="h-full flex items-center">
       <FontAwesomeIcon
         icon={faBars}
         className=" m-4 lg:hidden cursor-pointer text-white "
@@ -21,7 +21,7 @@ const Menu = () => {
       />
       <div
         className={
-          "h-full w-full " +
+          "w-full " +
           (open ? "absolute left-0 " : "hidden ") +
           "lg:block"
         }
@@ -55,7 +55,7 @@ const DropdownMenu = (props) => {
   const DropdownItem = (props) => {
     return (
       <a
-        className="flex h-11 pl-12 items-center lg:justify-center lg:p-0 hover:bg-gray-primary hover:text-white"
+        className="flex h-11 pl-12 items-center lg:justify-center lg:p-0 lg:bg-gray-primary lg:bg-opacity-80  hover:bg-opacity-100 hover:text-white"
         href={props.url}
       >
         {props.text}
@@ -64,7 +64,8 @@ const DropdownMenu = (props) => {
   };
 
   return (
-    <div className="w-full top-20 transition lg:opacity-0 group-hover:opacity-80 lg:absolute  lg:w-56 lg:bg-gray-primary lg:bg-opacity-80 lg:border-orange-primary lg:border-t-2 overflow-hidden">
+    <div className="w-full top-20 transition lg:opacity-0 group-hover:opacity-80 lg:absolute lg:w-56  lg:border-orange-primary lg:border-t-2 
+    lg:border-solid lg:border-x-0 lg:border-b-0 overflow-hidden">
       {props.dropLinks.map((item, index) => (
         <DropdownItem key={index} url={item.url} text={item.text} />
       ))}

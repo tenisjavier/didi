@@ -15,14 +15,14 @@ const Footer = () => {
     const countries = getCountriesLinks();
     return (
         <footer>
-            <div className="bg-gray-primary h-32 border-b-2  border-white text-white ">
-               <div className="container h-full">
+            <div className="bg-gray-primary h-32 border-buffer border-b-2 border-t-0 border-x-0 border-solid border-white text-white ">
+               <div className="container h-full mx-auto">
                    <FooterLink links={links}></FooterLink>
                </div>
             </div>
             
             <div className="bg-gray-primary h-96 lg:h-80">
-                <div className="container h-full flex flex-wrap">
+                <div className="container h-full flex flex-wrap mx-auto">
                     <div className="flex-initial flex flex-col justify-center items-center w-full h-1/2 lg:h-full lg:w-1/2 lg:items-start">
                         <Link to="/cl">
                             <StaticImage
