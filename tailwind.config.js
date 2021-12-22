@@ -20,7 +20,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend:{},
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 };

@@ -23,7 +23,7 @@ const ArticlesGrid = () => {
                     <Search placeholder="articulos"/>
                 </div> 
               
-               
+                <div class="border-8 border-indigo-600 h-16 w-44 border1 "></div>
             </main>
         </div>
      );
