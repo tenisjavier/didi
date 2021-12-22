@@ -14,9 +14,8 @@ const SectionDrvHeader = () => {
       image="driver-window"
       imageAlt="safety logo"
       imageRounded="full"
-      btnText="Saber Más"
-      btnLink="/seguridad/"
       btnType="drv"
+      btnMode=""
       reverse="true"
     ></SectionTemplate>
   );

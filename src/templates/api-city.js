@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import SectionTemplate from "../components/sections/SectionTemplate";
 
 const WpTemplate = ({ pageContext }) => {
   const { city, country } = pageContext;
@@ -9,10 +10,16 @@ const WpTemplate = ({ pageContext }) => {
   &key=${process.env.API_KEY}`;
   return (
     <Layout>
-      <h3 className="text-3xl text-orange-primary font-bold pt-32 m-5">
-        Conductor DiDi en {city}
-      </h3>
-      <img src={map_link} alt="map" />
+      <SectionTemplate
+        title={`Conductor DiDi en ${city}`}
+        desc={`DiDi te da seguridad en todas las ciudades del país`}
+        textColor="gray-primary"
+        bgColor="bg-white"
+        btnType="drv"
+        btnMode=""
+        map={map_link}
+        reverse="true"
+      ></SectionTemplate>
     </Layout>
   );
 };
