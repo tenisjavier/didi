@@ -2,6 +2,8 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Btn from "../Btn";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/none | btnLink customLink| reverse "false" "true"
@@ -19,6 +21,8 @@ const SectionTemplate = (props) => {
     image,
     imageAlt,
     imageRounded,
+    map,
+    bullets,
     btnType,
     btnText,
     btnLink,
@@ -74,9 +78,9 @@ const SectionTemplate = (props) => {
   }
   return (
     <section
-      className={`flex flex-wrap relative items-center  w-full min-h-[40rem] max-h-[45rem] 
+      className={`flex flex-wrap justify-center relative items-center  w-full min-h-[40rem] max-h-[55rem] 
         ${bgColor && bgColor} ${reverse && "flex-row-reverse"} ${
-        image ? "justify-around" : "justify-start"
+        image || map ? "md:justify-around" : "md:justify-start"
       }`}
     >
       <GatsbyImage
@@ -86,10 +90,37 @@ const SectionTemplate = (props) => {
           imageRounded && "rounded-full"
         }`}
       ></GatsbyImage>
+      <img
+        src={map}
+        alt={imageAlt}
+        className={`z-10 w-96 m-4  ${map ? "block" : "hidden"} `}
+      ></img>
       <div
         className={`md:w-1/2 lg:w-2/5 px-4 text-center text-${textColor} z-10 md:text-left md:pl-20 md:pr-0`}
       >
         <h2 className="text-2xl md:text-4xl pb-6 font-bold">{title}</h2>
+        {bullets && (
+          <>
+            <ul className="text-left">
+              {bullets.map((item) => {
+                return (
+                  <>
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faPlayCircle}
+                        className=" mr-4 text-orange-primary "
+                        size="lg"
+                      />
+                      {item}
+                    </li>
+                    <br></br>
+                  </>
+                );
+              })}
+            </ul>
+            <br></br>
+          </>
+        )}
         <p className="mb-5">{desc}</p>
         {sectionBtn}
       </div>
