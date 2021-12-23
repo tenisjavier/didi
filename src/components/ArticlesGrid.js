@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Search from './Search';
+import ArticleCard from './ArticleCard';
 const ArticlesGrid = () => {
     return ( 
         <div className="min-h-screen">
@@ -18,12 +19,19 @@ const ArticlesGrid = () => {
             </section>
 
             <main className="w-9/12 mx-auto h-full mt-10">
-                <div className="flex justify-between">
-                    <h1 className="text-black text-4xl font-bold">Últimos Artículos Publicados</h1>
-                    <Search placeholder="articulos"/>
+                <div className="flex justify-between flex-wrap items-center">
+                    <h1 className="text-black text-2xl lg:text-4xl font-bold w-full lg:w-1/2 text-center lg:text-left">Últimos Artículos Publicados</h1>
+                    <div className="w-full lg:w-1/3">
+                        <Search placeholder="articulos"/>
+                    </div>
                 </div> 
               
-                <div class="border-8 border-indigo-600 h-16 w-44 border1 "></div>
+                <div className="mt-6 flex flex-wrap justify-center lg:justify-between ">
+                    <ArticleCard />
+                    <ArticleCard />
+                    <ArticleCard />
+                    <ArticleCard />
+                </div>
             </main>
         </div>
      );

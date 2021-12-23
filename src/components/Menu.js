@@ -22,11 +22,11 @@ const Menu = () => {
       <div
         className={
           "w-full " +
-          (open ? "absolute left-0 " : "hidden ") +
+          (open ? "absolute left-0 top-20 " : "hidden ") +
           "lg:block"
         }
       >
-        <ul className="flex flex-col h-screen items-center pt-8 bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:bg-transparent lg:p-0">
+        <ul className="flex flex-col items-center m-0 py-6 bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:bg-transparent lg:p-0">
           {menuLinks.map((menuLink, index) => (
             <NavItem key={index} link={menuLink.url} text={menuLink.text}>
               {menuLink.dropMenu ? (
@@ -42,7 +42,8 @@ const Menu = () => {
 
 const NavItem = (props) => {
   return (
-    <li className="flex flex-col group ml-8 lg:justify-center lg:items-center p-2 text-white w-full lg:w-44 lg:p-0 lg:ml-0">
+    <li className="flex flex-col group ml-8 lg:justify-center lg:items-center 
+    p-2 text-white w-full lg:w-44 lg:p-0 lg:ml-0 ">
       <a href={props.link} className="hover:text-white">
         {props.text}
       </a>
@@ -64,7 +65,7 @@ const DropdownMenu = (props) => {
   };
 
   return (
-    <div className="w-full top-20 transition lg:opacity-0 group-hover:opacity-80 lg:absolute lg:w-56  lg:border-orange-primary lg:border-t-2 
+    <div className="w-full top-20 transition lg:opacity-0 group-hover:opacity-100 lg:absolute lg:w-56  lg:border-orange-primary lg:border-t-2 
     lg:border-solid lg:border-x-0 lg:border-b-0 overflow-hidden">
       {props.dropLinks.map((item, index) => (
         <DropdownItem key={index} url={item.url} text={item.text} />
