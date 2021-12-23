@@ -4,7 +4,7 @@ import SectionTemplate from "./SectionTemplate";
 const SectionHomeHeader = () => {
   return (
     <SectionTemplate
-      title="MUEVETE POR TU CIUDAD"
+      title="MUÉVETE POR TU CIUDAD"
       textColor="white"
       bgImage="bg-image-orange-home"
       bgImageAlt="conductor didi"

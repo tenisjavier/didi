@@ -3,13 +3,13 @@ module.exports = {
   theme: {
     extend: {
       borderWidth: {
-        '1': '1px',
-        '05': '0.5px',
+        1: "1px",
+        "05": "0.5px",
       },
       spacing: {
-        '100': '26rem',
-        '110': '30rem',
-        '128': '768px',
+        100: "26rem",
+        110: "30rem",
+        128: "768px",
       },
       colors: {
         gray: {
@@ -25,7 +25,7 @@ module.exports = {
     },
   },
   variants: {
-    extend:{},
+    extend: {},
   },
   plugins: [],
   corePlugins: {
