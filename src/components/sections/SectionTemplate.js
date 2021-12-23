@@ -96,9 +96,9 @@ const SectionTemplate = (props) => {
         className={`z-10 w-96 m-4  ${map ? "block" : "hidden"} `}
       ></img>
       <div
-        className={`md:w-1/2 lg:w-2/5 px-4 text-center text-${textColor} z-10 md:text-left md:pl-20 md:pr-0`}
+        className={`md:w-1/2  px-4 text-center text-${textColor} z-10 md:text-left md:pl-20 md:pr-0`}
       >
-        <h2 className="text-2xl md:text-4xl pb-6 font-bold">{title}</h2>
+        <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
         {bullets && (
           <>
             <ul className="text-left">

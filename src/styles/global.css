@@ -1,25 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body{
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+@layer base {
+  @font-face {
+    font-family: "Aspira";
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    src: url("../fonts/aspira-regular.woff2") format("woff2"),
+      url("../fonts/aspira-regular.woff") format("woff");
+  }
 }
 
-*, ::after, ::before {
+body {
+  margin: 0;
+  font-family: "Aspira", sans-serif;
+  line-height: 1.5em;
+}
+
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
-
-
-a{
+a {
   text-decoration: none;
-  color:inherit;
-  @apply hover:text-sky-600 transform duration-100
+  color: inherit;
+  @apply hover:text-sky-600 transform duration-100;
 }
-
 
 .header-sec {
   padding-top: 150px;
