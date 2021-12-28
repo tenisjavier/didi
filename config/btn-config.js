@@ -4,7 +4,7 @@ const btnLinks = {
   cl: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate Online",
+    drvText: "Regístrate como Conductor",
     paxText: "Descarga Didi Pasajero",
   },
   pe: {
