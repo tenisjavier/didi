@@ -24,7 +24,6 @@ export const query = graphql`
 const GuideTemplate = ({ data, pageContext }) => {
   const { title, excerpt, content: html_content } = pageContext;
   const image = getImage(data.sitePage.featuredImageUrl);
-  console.log("image", image);
 
   const dirtyExcerpt = excerpt.replace(/\n|\r/g, "");
   const cleanExcerpt = DOMPurify.sanitize(dirtyExcerpt, {
@@ -57,12 +56,12 @@ const GuideTemplate = ({ data, pageContext }) => {
         <div className="container h-full mx-16">
           <p className="text-yellow-500 text-lg">
             {" "}
-            <Link to={returnCountry} className="hover:opacity-80">
+            <Link to={returnCountry} className="hover:opacity-80 hover:text-sky-500">
               {" "}
               <FontAwesomeIcon icon={faHome} /> Inicio{" "}
             </Link>{" "}
-            / <Link to={returnCountry+'/guias'} className="hover:opacity-80"><span> Guias </span> </Link>/{" "}
-            <span className=" text-grey-primary"> {title} </span>
+            / <Link to={returnCountry+'/guias'} className="hover:opacity-80 hover:text-sky-500"><span> Guias </span> </Link>/{" "}
+            <span className=" text-gray-primary"> {title} </span>
           </p>
           <h1 className=" font-bold  my-4 text-3xl text-center md:text-4xl lg:hidden">
             {title}

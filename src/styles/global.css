@@ -28,7 +28,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  @apply hover:text-sky-600 transform duration-100;
 }
 
 .header-sec {
