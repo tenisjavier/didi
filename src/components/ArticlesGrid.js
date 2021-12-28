@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Search from './Search';
 import ArticleCard from './ArticleCard';
-const ArticlesGrid = () => {
+const ArticlesGrid = ({articulos}) => {
     return ( 
         <div className="min-h-screen">
             <section className="w-full h-72 bg-orange-primary pt-20">
@@ -27,10 +27,7 @@ const ArticlesGrid = () => {
                 </div> 
               
                 <div className="mt-6 flex flex-wrap justify-center lg:justify-between ">
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
+                    {articulos.map( (articulo, index) =>  <ArticleCard key={index} article={articulo} /> )}
                 </div>
             </main>
         </div>
