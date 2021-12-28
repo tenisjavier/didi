@@ -9,7 +9,6 @@ exports.createPages = async ({
   actions: { createPage },
   reporter,
 }) => {
-
   //create wp Routes for all Countries
   await wpRoutes.init(graphql, createPage);
   await apiRoutes.init(graphql, createPage);

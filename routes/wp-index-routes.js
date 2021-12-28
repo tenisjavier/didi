@@ -4,11 +4,10 @@ const { getCountries, getCountryCodes } = require("../config/countries-config");
 const countries = getCountries();
 const countryCodes = getCountryCodes();
 
-
 const wpIndexRoutesInit = async (graphql, createPage) => {
-    for (const country of countries) {
-        const wpCountry = "wp" + country;
-        const { data } = await graphql(`
+  for (const country of countries) {
+    const wpCountry = "wp" + country;
+    const { data } = await graphql(`
             {
                 ${wpCountry} {
                     allGuia {
@@ -73,7 +72,9 @@ const wpIndexRoutesInit = async (graphql, createPage) => {
         await createArticleIndex(data[wpCountry].allArticulo.nodes, articleIndexTemplate);
     };
 
-
-}
+    const pageTemplate = `./src/templates/wp-guide-index.js`;
+    await createIndexPage(data[wpCountry].allGuia.nodes, pageTemplate);
+  }
+};
 
 module.exports.init = wpIndexRoutesInit;

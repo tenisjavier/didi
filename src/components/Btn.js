@@ -12,10 +12,10 @@ const Btn = (props) => {
 
   if (props.type === "drv") {
     btnLink = btnData.drvLink;
-    btnText = btnData.drvText;
+    btnText = props.children ? props.children : btnData.drvText;
   } else if (props.type === "pax") {
     btnLink = btnData.paxLink;
-    btnText = btnData.paxText;
+    btnText = props.children ? props.children : btnData.paxText;
   }
 
   return (

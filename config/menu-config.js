@@ -4,7 +4,7 @@ const menuLinks = {
   cl: [
     {
       text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
+      url: "/cl/pasajero/",
       dropMenu: null,
     },
     {
