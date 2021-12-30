@@ -1,6 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
-import ColumnsSection from "../components/ColumnSection";
+import ColumnsSection from "../ColumnSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
@@ -8,7 +7,7 @@ import {
   faHeadphonesAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-const HomeTemplate = () => {
+const HomeColumns = () => {
   const bgColor = "bg-white";
   const columns = [
     {
@@ -19,7 +18,7 @@ const HomeTemplate = () => {
       image: <FontAwesomeIcon icon={faQuoteRight} size="4x" />,
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
-      btnMode: "dark",
+      btnMode: "light",
     },
     {
       title: "Legal",
@@ -36,17 +35,13 @@ const HomeTemplate = () => {
       desc: "Cuentas con DiDi 24/7 para escucharte, para ayudarte. \n Contáctanos: Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
       bgColor: "bg-white",
       bgTextColor: "text-gray-primary",
-      imge: <FontAwesomeIcon icon={faHeadphonesAlt} size="4x" />,
+      image: <FontAwesomeIcon icon={faHeadphonesAlt} size="4x" />,
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",
     },
   ];
-  return (
-    <Layout>
-      <ColumnsSection columns={columns} bgColor={bgColor}></ColumnsSection>
-    </Layout>
-  );
+  return <ColumnsSection columns={columns} bgColor={bgColor}></ColumnsSection>;
 };
 
-export default HomeTemplate;
+export default HomeColumns;

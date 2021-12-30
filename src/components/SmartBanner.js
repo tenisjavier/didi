@@ -43,7 +43,7 @@ const SmartBanner = (props) => {
           <p className="font-bold leading-3">{bannerTitle}</p>
           <p className="leading-3">{bannerDesc}</p>
         </span>
-        <div className={"btn ml-3 px-3 pt-2 " + btnBgColor}>
+        <div className={"btn-primary ml-3 px-3 pt-2 " + btnBgColor}>
           <a href={btnLink} className={btnTextColor}>
             {btnText}
           </a>
