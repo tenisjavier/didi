@@ -10,8 +10,8 @@ const PaxCTA = () => {
     bgColor: "bg-orange-primary",
     image: (
       <StaticImage
-        src="../../images/cl/woman-phone-car.png"
-        alt="conductor didi"
+        src="../../images/cl/cl-pax-why-didi.jpg"
+        alt="pasajera didi con celular"
         className="z-10 w-96 m-4 rounded-full"
       ></StaticImage>
     ),

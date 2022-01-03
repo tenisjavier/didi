@@ -41,40 +41,45 @@ const CTASection = (props) => {
   }
   return (
     <section
-      className={`flex flex-wrap justify-center relative items-center  w-full min-h-[40rem] max-h-[55rem] 
-        ${bgColor && bgColor} ${reverse && "flex-row-reverse"} ${
-        image ? "md:justify-around" : "md:justify-start"
-      }`}
+      className={`flex  relative justify-center items-center  w-full min-h-[40rem] max-h-[65rem] 
+        ${bgColor && bgColor}  `}
     >
-      {image}
       <div
-        className={`md:w-1/2  px-4 text-center text-${textColor} z-10 md:text-left md:pl-20 md:pr-0`}
+        className={`flex flex-wrap justify-center relative items-center md:mx-16  w-full max-w-6xl 
+        ${reverse && "flex-row-reverse"} ${
+          image ? "lg:justify-between" : "lg:justify-start"
+        }`}
       >
-        <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
-        {bullets && (
-          <>
-            <ul className="text-left">
-              {bullets.map((item) => {
-                return (
-                  <>
-                    <li>
-                      <FontAwesomeIcon
-                        icon={faPlayCircle}
-                        className=" mr-4 text-orange-primary "
-                        size="lg"
-                      />
-                      {item}
-                    </li>
-                    <br></br>
-                  </>
-                );
-              })}
-            </ul>
-            <br></br>
-          </>
-        )}
-        <p className="mb-5">{desc}</p>
-        {sectionBtn}
+        {image}
+        <div
+          className={`w-2/3 lg:w-1/2  px-4 text-center text-${textColor} z-10 lg:text-left`}
+        >
+          <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
+          {bullets && (
+            <>
+              <ul className="text-left list-none text-xl">
+                {bullets.map((item) => {
+                  return (
+                    <>
+                      <li>
+                        <FontAwesomeIcon
+                          icon={faPlayCircle}
+                          className=" mr-4 text-orange-primary "
+                          size="lg"
+                        />
+                        {item}
+                      </li>
+                      <br></br>
+                    </>
+                  );
+                })}
+              </ul>
+              <br></br>
+            </>
+          )}
+          <p className="mb-5">{desc}</p>
+          {sectionBtn}
+        </div>
       </div>
       {bgImage}
       {bgMobileImage}
