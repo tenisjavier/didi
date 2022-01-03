@@ -15,7 +15,8 @@ const ArticleCard = ({article}) => {
         hover:-translate-y-3 cursor-pointer hover:shadow-xl">
             <img
             src={article.featuredImage.node.mediaItemUrl}
-            className="w-full h-2/5 object-cover" />
+            className="w-full h-2/5 object-cover" 
+            alt="article"/>
             <div className="p-3">
                 <h1 className="group-hover:text-orange-primary transition duration-150 cursor-pointer">{article.title}</h1>
                 <p>{parse(cleanExcerpt)}</p>

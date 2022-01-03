@@ -35,45 +35,44 @@ const wpIndexRoutesInit = async (graphql, createPage) => {
                     }
                 }
             }
-        `);    
-        const createIndexPage = async (data, template) => {
-            const templatePath = path.resolve(template);
-            let pagePath = '/' + countryCodes[country] + '/guias';
-            let nodeId = "SitePage" + pagePath;
+        `);
+    const createIndexPage = async (data, template) => {
+      const templatePath = path.resolve(template);
+      let pagePath = "/" + countryCodes[country] + "/guias";
+      let nodeId = "SitePage" + pagePath;
 
-            createPage({
-                path: pagePath,
-                component: templatePath,
-                context:{
-                    id: nodeId,
-                    allData: data
-                }
-            })
-        }
+      createPage({
+        path: pagePath,
+        component: templatePath,
+        context: {
+          id: nodeId,
+          allData: data,
+        },
+      });
+    };
 
-        const createArticleIndex = async (data, template) => {
-            const templatePath = path.resolve(template);
-            let pagePath = '/' + countryCodes[country] + '/articulos';
-            let nodeId = "SitePage" + pagePath;
+    const createArticleIndex = async (data, template) => {
+      const templatePath = path.resolve(template);
+      let pagePath = "/" + countryCodes[country] + "/articulos";
+      let nodeId = "SitePage" + pagePath;
 
-            createPage({
-                path: pagePath,
-                component: templatePath,
-                context:{
-                    id: nodeId,
-                    allData: data
-                }
-            })
-        }
-
-        const pageTemplate = `./src/templates/wp-guide-index.js`;
-        const articleIndexTemplate = `./src/templates/wp-article-index.js`;
-        await createIndexPage(data[wpCountry].allGuia.nodes, pageTemplate);
-        await createArticleIndex(data[wpCountry].allArticulo.nodes, articleIndexTemplate);
+      createPage({
+        path: pagePath,
+        component: templatePath,
+        context: {
+          id: nodeId,
+          allData: data,
+        },
+      });
     };
 
     const pageTemplate = `./src/templates/wp-guide-index.js`;
+    const articleIndexTemplate = `./src/templates/wp-article-index.js`;
     await createIndexPage(data[wpCountry].allGuia.nodes, pageTemplate);
+    await createArticleIndex(
+      data[wpCountry].allArticulo.nodes,
+      articleIndexTemplate
+    );
   }
 };
 

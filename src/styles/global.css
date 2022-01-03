@@ -11,6 +11,19 @@
     src: url("../fonts/aspira-regular.woff2") format("woff2"),
       url("../fonts/aspira-regular.woff") format("woff");
   }
+  @font-face {
+    font-family: "Aspira";
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    src: url("../fonts/Aspira_Bold.otf") format("otf");
+  }
+
+  @font-face {
+    font-family: "Aspira";
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    src: url("../fonts/Aspira_Heavy.otf") format("otf");
+  }
 }
 
 body {
@@ -40,11 +53,11 @@ a {
 }
 
 section.main-text h1 {
-  @apply text-2xl text-gray-primary font-extrabold mb-5 mt-5;
+  @apply text-2xl text-gray-primary font-extrabold mb-5 mt-5 lg:text-4xl;
 }
 
 section.main-text h2 {
-  @apply text-2xl text-gray-primary font-extrabold mb-5 mt-5;
+  @apply text-2xl text-gray-primary font-extrabold mb-5 mt-5 lg:text-3xl underline decoration-orange-primary;
 }
 
 section.main-text h3 {
@@ -60,12 +73,17 @@ section.main-text p a {
 }
 
 section.main-text p {
-  @apply text-lg lg:text-2xl mt-3 mb-3 font-light;
+  @apply text-lg lg:text-2xl mt-3 mb-3 font-light text-gray-700;
 }
 
 section.main-text ol {
   @apply text-lg lg:text-2xl mt-3 mb-3 font-light list-decimal;
 }
+
+section.main-text ul {
+  @apply text-lg lg:text-2xl mt-3 mb-3 font-light underline decoration-sky-500;
+}
+
 
 section.main-text ol li {
   @apply mt-3 mb-3;
