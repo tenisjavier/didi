@@ -15,7 +15,7 @@ export const query = graphql`
     sitePage(id: { eq: $id }) {
       featuredImageUrl {
         childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, width: 400)
+          gatsbyImageData(placeholder: TRACED_SVG, width: 600, height: 450)
         }
       }
     }
@@ -59,8 +59,10 @@ const WpTemplate = ({ data, pageContext }) => {
             / <Link to={returnCountry+'/articulos'} className="hover:opacity-80 hover:text-sky-500"><span> Articulos </span> </Link>/{" "}
             <span className=" text-gray-primary"> {title} </span>
         </p>
-      <h1>{title}</h1>
-      <GatsbyImage image={image} alt="jeivi" className="ej" />
+      <h1 className="text-orange-primary text-3xl text-bold text-left lg:text-5xl text-center">{title}</h1>
+
+      <GatsbyImage image={image} alt="jeivi" className="lg:float-left lg:mr-4 lg:h-auto float-none h-80"/>
+      
       <section className="main-text w-full pb-12">
             {parse(cleanContent)}
       </section>
