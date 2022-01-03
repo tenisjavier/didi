@@ -8,8 +8,10 @@ module.exports = {
       },
       spacing: {
         100: "26rem",
+        105: "28rem",
         110: "30rem",
         128: "768px",
+        140: "880px",
       },
       colors: {
         gray: {
