@@ -1,25 +1,19 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import SectionTemplate from "../../components/sections/SectionTemplate";
+import PaxHero from "../../components/sections/PaxHero";
+import PaxColumns from "../../components/sections/PaxColumns";
+import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
+import HomeColumns from "../../components/sections/HomeColumns";
 
 const Pasajero = () => {
   return (
     <Layout>
-      <SectionPaxMain></SectionPaxMain>
+      <PaxHero></PaxHero>
+      <PaxColumns></PaxColumns>
+      <PaxWhyDiDi></PaxWhyDiDi>
+      <HomeColumns></HomeColumns>
     </Layout>
   );
 };
 
-const SectionPaxMain = () => {
-  const props = {
-    title: "MANEJA CON DiDi",
-    desc: "Para DiDi, los socios conductores y socios taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los socios conductores.",
-    textColor: "white",
-    bgImage: "bg-orange-drv-green",
-    bgImageAlt: "conductor didi",
-    btnType: "drv",
-    btnMode: "light",
-  };
-  return <SectionTemplate {...props}></SectionTemplate>;
-};
 export default Pasajero;

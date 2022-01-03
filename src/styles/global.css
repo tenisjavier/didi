@@ -89,11 +89,11 @@ section.main-text ol li {
   @apply mt-3 mb-3;
 }
 
-.btn {
+.btn-primary {
   @apply inline-block min-w-max bg-orange-primary hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-xl shadow-orange-primary/30 hover:text-white cursor-pointer;
 }
 
-.btn a {
+.btn-primary a {
   @apply hover:text-white;
 }
 
@@ -101,6 +101,13 @@ section.main-text ol li {
   @apply inline-block min-w-max bg-white hover:bg-gray-primary hover:text-white text-gray-primary font-semibold py-3 px-8 rounded-full  shadow-xl shadow-gray-primary/20 cursor-pointer;
 }
 .btn-light a {
+  @apply hover:text-white;
+}
+
+.btn-dark {
+  @apply inline-block min-w-max bg-gray-primary hover:bg-black hover:text-white text-white font-semibold py-3 px-8 rounded-full  shadow-xl shadow-gray-primary/20 cursor-pointer;
+}
+.btn-dark a {
   @apply hover:text-white;
 }
 
