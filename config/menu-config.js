@@ -9,15 +9,15 @@ const menuLinks = {
     },
     {
       text: "DiDi Conductor",
-      url: "/driver/",
+      url: "/cl/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/driver/",
+          url: "/cl/driver/",
         },
         {
           text: "Santiago",
-          url: "/driver/santiago",
+          url: "/cl/driver/santiago",
         },
         {
           text: "Regístrate Online",
@@ -27,17 +27,17 @@ const menuLinks = {
     },
     {
       text: "DiDi Taxi",
-      url: "/taxi/",
+      url: "/cl/taxi/",
       dropMenu: null,
     },
     {
       text: "Seguridad",
-      url: "/seguridad/",
+      url: "/cl/seguridad/",
       dropMenu: null,
     },
     {
       text: "Centro de Ayuda",
-      url: "/centro-de-ayuda/",
+      url: "/cl/centro-de-ayuda/",
       dropMenu: null,
     },
   ],

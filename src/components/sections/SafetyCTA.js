@@ -7,12 +7,12 @@ const SafetyCTA = () => {
     title: "EN DIDI, TU SEGURIDAD ES NUESTRA PRIORIDAD",
     desc: "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
     textColor: "white",
-    bgColor: "bg-sky-500",
+    bgColor: "bg-blue-primary",
     image: (
       <StaticImage
         src="../../images/cl/logo-funciones-seguridad.png"
         alt="seguridad logo"
-        className="z-10 w-96 m-4"
+        className="z-10 w-100 m-4"
       ></StaticImage>
     ),
 

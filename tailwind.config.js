@@ -20,6 +20,9 @@ module.exports = {
         orange: {
           primary: "#FF7D41",
         },
+        blue: {
+          primary: "#007DFF",
+        },
       },
     },
     backgroundImage: {

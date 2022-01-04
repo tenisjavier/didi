@@ -84,7 +84,6 @@ section.main-text ul {
   @apply text-lg lg:text-2xl mt-3 mb-3 font-light underline decoration-sky-500;
 }
 
-
 section.main-text ol li {
   @apply mt-3 mb-3;
 }
@@ -105,7 +104,7 @@ section.main-text ol li {
 }
 
 .btn-dark {
-  @apply inline-block min-w-max bg-gray-primary hover:bg-black hover:text-white text-white font-semibold py-3 px-8 rounded-full  shadow-xl shadow-gray-primary/20 cursor-pointer;
+  @apply inline-block min-w-max bg-gray-500 hover:bg-gray-primary hover:text-white text-white font-semibold py-3 px-8 rounded-full  shadow-xl shadow-gray-primary/20 cursor-pointer;
 }
 .btn-dark a {
   @apply hover:text-white;
