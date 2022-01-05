@@ -13,13 +13,6 @@ const HomeHero = () => {
         className="md:block object-fill z-0 absolute h-full w-full"
       ></StaticImage>
     ),
-    bgMobileImage: (
-      <StaticImage
-        src="../../images/cl/driver-window.jpg"
-        alt="conductor didi"
-        className="block md:hidden object-fill z-0 absolute h-full w-full"
-      ></StaticImage>
-    ),
     btnType: "both",
     btnMode: "light",
     alignItems: "items-start",

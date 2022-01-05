@@ -41,18 +41,18 @@ const CTASection = (props) => {
   }
   return (
     <section
-      className={`flex  relative justify-center items-center  w-full min-h-[40rem] max-h-[65rem] 
-        ${bgColor && bgColor}  `}
+      className={`flex relative justify-center items-center  w-full min-h-[40rem] 
+        ${bgColor && bgColor}`}
     >
       <div
-        className={`flex flex-wrap justify-center relative items-center md:mx-16  w-full max-w-6xl 
+        className={`flex flex-wrap justify-center relative items-center   w-full container mx-auto py-8 
         ${reverse && "flex-row-reverse"} ${
           image ? "lg:justify-between" : "lg:justify-start"
         }`}
       >
         {image}
         <div
-          className={`w-2/3 lg:w-1/2  px-4 text-center text-${textColor} z-10 lg:text-left`}
+          className={`w-11/12 lg:w-1/2  px-4 text-center text-${textColor} z-10 lg:text-left`}
         >
           <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
           {bullets && (

@@ -12,12 +12,11 @@ const TaxiWhyDidi = () => {
       "¿Más dudas? Tenemos expertos listos para ayudarle a completar su registro y responder cualquier duda que tenga. Teléfono: +56 2 29 38 93 02",
     ],
     textColor: "gray-primary",
-    bgColor: "bg-white",
     image: (
       <StaticImage
         src="../../images/cl/cl-taxi-why-didi.png"
-        alt="conductor didi"
-        className="z-10 w-96 m-4 rounded-full"
+        alt="conductor didi taxi"
+        className="z-10 w-100 m-4 rounded-full"
       ></StaticImage>
     ),
     btnType: "drv",

@@ -12,12 +12,11 @@ const PaxWhyDiDi = () => {
     ],
     desc: "Paga tus servicios con tarjeta de crédito o efectivo. ",
     textColor: "gray-primary",
-    bgColor: "bg-white",
     image: (
       <StaticImage
         src="../../images/cl/cl-pax-why-didi.jpg"
         alt="conductor didi"
-        className="z-10 w-96 m-4 rounded-full"
+        className="z-10 w-100 m-4 rounded-full"
       ></StaticImage>
     ),
     btnType: "pax",
