@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import DrvHero from "../../components/sections/DrvHero";
 import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
+import DrvVideoGrid from "../../components/sections/DrvVideoGrid";
 import DrvBanner from "../../components/sections/DrvBanner";
 import DrvFeatures from "../../components/sections/DrvFeatures";
 import HomeColumns from "../../components/sections/PaxColumns";
@@ -14,6 +15,7 @@ const Pasajero = () => {
     <Layout>
       <DrvHero></DrvHero>
       <DrvWhyDiDi></DrvWhyDiDi>
+      <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
       <DrvFeatures></DrvFeatures>
       <HomeColumns></HomeColumns>

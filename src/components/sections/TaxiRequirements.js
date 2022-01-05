@@ -1,7 +1,7 @@
 import React from "react";
-
 import Acordian from "../Acordian";
-const Requerimientos = () => {
+
+const TaxiRequirements = () => {
   const contenido = [
     {
       title: "Taxi",
@@ -34,4 +34,4 @@ const Requerimientos = () => {
   );
 };
 
-export default Requerimientos;
+export default TaxiRequirements;

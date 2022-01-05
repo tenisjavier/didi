@@ -23,6 +23,7 @@
     "dompurify": "^2.3.3",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
+    "gatsby-plugin-mdx": "^3.4.0",
     "gatsby-plugin-sharp": "^4.0.0",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-source-graphql": "^4.0.0",
