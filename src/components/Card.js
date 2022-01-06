@@ -18,12 +18,12 @@ const Card = (props) => {
 
   return (
     <div
-      className={`max-w-sm rounded bg-${bgColor} text-${textColor} text-center`}
+      className={`max-w-sm rounded ${bgColor} text-${textColor} text-center`}
     >
       <div className="mb-5">{image}</div>
 
       <div className="px-6 py-4 h-80 flex flex-col text-center items-center justify-between">
-        <h4 className={`font-bold text-xl mb-2 `}>{title}</h4>
+        <h4 className={`font-bold text-xl mb-k `}>{title}</h4>
         <p className="h-16 text-base">{desc}</p>
         <span className="flex justify-center">
           <Btn type={btnType} link={btnLink} mode={btnMode}>

@@ -7,7 +7,7 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
-const HomeColumns = () => {
+const PaxColumns = () => {
   const bgColor = "bg-white";
   const columns = [
     {
@@ -35,4 +35,4 @@ const HomeColumns = () => {
   return <ColumnsSection columns={columns} bgColor={bgColor}></ColumnsSection>;
 };
 
-export default HomeColumns;
+export default PaxColumns;
