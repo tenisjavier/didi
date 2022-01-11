@@ -113,3 +113,11 @@ section.main-text ol li {
 .text-c {
   text-align: center;
 }
+
+.accordion h5 {
+  @apply text-xl;
+}
+
+.accordion a {
+  @apply text-orange-primary;
+}

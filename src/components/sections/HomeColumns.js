@@ -8,14 +8,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const HomeColumns = () => {
-  const bgColor = "white";
+  const bgColor = "bg-gray-light";
   const columns = [
     {
       title: "Acerca de Nosotros",
       desc: "Somos la app de movilidad más grande del mundo.",
-      bgColor: "bg-white",
       textColor: "gray-primary",
-      image: <FontAwesomeIcon icon={faQuoteRight} size="4x" />,
+      image: <FontAwesomeIcon icon={faQuoteRight} size="3x" />,
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",
@@ -23,9 +22,8 @@ const HomeColumns = () => {
     {
       title: "Legal",
       desc: "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Chile.",
-      bgColor: "white",
       textColor: "gray-primary",
-      image: <FontAwesomeIcon icon={faExclamationCircle} size="4x" />,
+      image: <FontAwesomeIcon icon={faExclamationCircle} size="3x" />,
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",
@@ -33,9 +31,8 @@ const HomeColumns = () => {
     {
       title: "Centro de Ayuda",
       desc: "Cuentas con DiDi 24/7 para escucharte, para ayudarte. \n Contáctanos: Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
-      bgColor: "white",
       textColor: "gray-primary",
-      image: <FontAwesomeIcon icon={faHeadphonesAlt} size="4x" />,
+      image: <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" />,
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",

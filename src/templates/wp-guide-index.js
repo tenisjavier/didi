@@ -1,13 +1,13 @@
-import React from 'react'; 
-import Layout from '../components/Layout';
-import GuiasGrid from '../components/GuiasGrid';
-const Guias = ({pageContext}) => {
-    const { allData: guias } = pageContext;
-    return ( 
+import React from "react";
+import Layout from "../components/Layout";
+import GuidesGrid from "../components/sections/GuidesGrid";
+const Guias = ({ pageContext }) => {
+  const { allData: guias } = pageContext;
+  return (
     <Layout>
-        <GuiasGrid guias={guias}/>
+      <GuidesGrid guias={guias} />
     </Layout>
-    );
-}
+  );
+};
 
 export default Guias;

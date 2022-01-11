@@ -2,14 +2,15 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import AccordionSection from "../AccordionSection";
 
-const Requerimientos = () => {
+const HelpCenterFAQDrv = () => {
   const data = useStaticQuery(graphql`
     {
       allMdx(
         filter: {
-          frontmatter: { section: { eq: "cl-drv-requirements" } }
+          frontmatter: { section: { eq: "cl-faq-drv" } }
           fileAbsolutePath: {}
         }
+        sort: { fields: fileAbsolutePath }
       ) {
         nodes {
           body
@@ -28,17 +29,17 @@ const Requerimientos = () => {
       content: node.body,
     });
   });
-  const title = "Requerimientos";
+  const title = "Socio Conductor";
   return (
     <AccordionSection
-      items={items}
-      title={title}
-      bgColor="bg-gray-light"
-      bgAccordionColor="bg-white"
+      bgColor="bg-white"
       textColor="gray-primary"
       textAccordionColor="orange-primary"
+      bgAccordionColor="bg-gray-light"
+      title={title}
+      items={items}
     ></AccordionSection>
   );
 };
 
-export default Requerimientos;
+export default HelpCenterFAQDrv;

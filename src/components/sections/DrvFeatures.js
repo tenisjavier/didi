@@ -4,8 +4,7 @@ import CTASection from "../CTASection";
 
 const DrvFeatures = () => {
   const props = {
-    title:
-      "Trabajamos para que tengas la mejor experiencia! Por eso en nuestra app puedes:",
+    title: "Te damos la mejor experiencia. En nuestra App puedes:",
     bullets: [
       "Ver el destino de todos tus viajes las 24 horas.",
       "Tener más ingresos con nuestras promociones y referidos.",
@@ -13,6 +12,7 @@ const DrvFeatures = () => {
       "Apoyarte en nuestro equipo que está siempre listo para ayudarte. 7 días de la semana, 24 horas al día.",
     ],
     textColor: "gray-primary",
+    bgColor: "bg-gray-light",
     image: (
       <StaticImage
         src="../../images/cl/cl-drv-features.png"

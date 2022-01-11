@@ -22,9 +22,9 @@ const Card = (props) => {
     >
       <div className="mb-5">{image}</div>
 
-      <div className="px-6 py-4 h-80 flex flex-col text-center items-center justify-between">
+      <div className="px-6 py-4 flex flex-col text-center items-center justify-between">
         <h4 className={`font-bold text-xl mb-k `}>{title}</h4>
-        <p className="h-16 text-base">{desc}</p>
+        <p className="text-base">{desc}</p>
         <span className="flex justify-center">
           <Btn type={btnType} link={btnLink} mode={btnMode}>
             {btnText}
