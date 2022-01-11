@@ -16,12 +16,22 @@ module.exports = {
       colors: {
         gray: {
           primary: "#333333",
+          light: "#E7E7E7",
         },
         orange: {
           primary: "#FF7D41",
         },
         blue: {
           primary: "#007DFF",
+        },
+      },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
         },
       },
     },

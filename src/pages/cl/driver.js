@@ -18,10 +18,10 @@ const Pasajero = () => {
       <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
       <DrvFeatures></DrvFeatures>
-      <HomeColumns></HomeColumns>
       <SilderSection title="Hay un DiDi Para ti"></SilderSection>
       <DrvRequirements></DrvRequirements>
       <KnowMoreBanner></KnowMoreBanner>
+      <HomeColumns></HomeColumns>
     </Layout>
   );
 };

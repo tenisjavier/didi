@@ -1,7 +1,7 @@
 import React from "react";
 import Btn from "./Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -63,9 +63,9 @@ const CTASection = (props) => {
                     <>
                       <li>
                         <FontAwesomeIcon
-                          icon={faPlayCircle}
+                          icon={faCarSide}
                           className=" mr-4 text-orange-primary "
-                          size="lg"
+                          size="sm"
                         />
                         {item}
                       </li>
