@@ -30,6 +30,8 @@ const TaxiRequirements = () => {
     <AccordionSection
       title="Requerimientos"
       desc="Los requerimientos mínimos que debes cumplir para conectarte como socio conductor."
+      bgAccordionColor="bg-gray-light"
+      textAccordionColor="orange-primary"
       items={items}
     ></AccordionSection>
   );

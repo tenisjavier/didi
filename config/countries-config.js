@@ -32,10 +32,26 @@ const getCountryCodes = () => {
   return countryCodes;
 };
 
+// @desc: from the current url path it will extract the country
+// @return: country name
+const getCountryFromUrl = () => {
+  const countryCode = getCountryCodeFromUrl();
+  return (
+    Object.keys(countryCodes).find(
+      (key) => countryCodes[key] === countryCode
+    ) || "Global"
+  );
+};
+
 // @desc: from the current url path it will extract the country code
 // @return: countrycode
 const getCountryCodeFromUrl = () => {
   return window.location.pathname.split("/")[1];
 };
 
-module.exports = { getCountries, getCountryCodes, getCountryCodeFromUrl };
+module.exports = {
+  getCountries,
+  getCountryCodes,
+  getCountryFromUrl,
+  getCountryCodeFromUrl,
+};
