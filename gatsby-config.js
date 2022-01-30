@@ -1,4 +1,7 @@
 const gatsbySourceGraphqlConfig = require("./config/gatsby-source-graphql-config");
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
@@ -35,11 +38,11 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     {
-      resolve: `gatsby-source-strapi`,
+      resolve: `gatsby-source-contentful`,
       options: {
-        apiURL: `http://localhost:1337/api`,
-        queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`Guide`],
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
