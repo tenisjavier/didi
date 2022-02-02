@@ -1,8 +1,15 @@
 import React from "react";
-import Directory from "../../../templates/directory";
+import Layout from "../../../components/Layout";
+import PaxHero from "../../../components/sections/PaxHero";
+import DirectoryList from "../../../components/sections/DirectoryList";
 
 const Directions = () => {
-  return <Directory></Directory>;
+  return (
+    <Layout>
+      <PaxHero></PaxHero>
+      <DirectoryList></DirectoryList>
+    </Layout>
+  );
 };
 
 export default Directions;

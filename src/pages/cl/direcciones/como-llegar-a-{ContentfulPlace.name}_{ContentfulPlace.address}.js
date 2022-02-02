@@ -3,12 +3,14 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import PlaceHero from "../../../components/sections/PlaceHero";
 import PlaceMap from "../../../components/sections/PlaceMap";
+import DirectoryOriginList from "../../../components/sections/DirectoryOriginList";
 
 const PlaceTemplate = (props) => {
   return (
     <Layout>
       <PlaceHero data={props.data.contentfulPlace}></PlaceHero>
       <PlaceMap data={props.data}></PlaceMap>
+      <DirectoryOriginList data={props.data}></DirectoryOriginList>
     </Layout>
   );
 };

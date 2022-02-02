@@ -6,8 +6,6 @@ import CTASection from "../CTASection";
 const PlaceMap = ({ data }) => {
   const {
     name,
-    address,
-    placeId,
     geometry: { lat, lon },
   } = data.contentfulPlace;
 
@@ -22,6 +20,7 @@ const PlaceMap = ({ data }) => {
       image={
         <img
           className="z-10 w-full m-4 rounded md:w-100 lg:w-110"
+          alt={name + " mapa"}
           src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=15&size=2800x400&maptype=roadmap
 &markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
         ></img>

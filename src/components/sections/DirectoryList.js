@@ -1,11 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import ListSection from "../ListSection";
 import slugify from "react-slugify";
-import Layout from "../components/Layout";
-import PaxHero from "../components/sections/PaxHero";
-import ListSection from "../components/ListSection";
 
-const Directory = () => {
+const DirectoryList = () => {
   const data = useStaticQuery(graphql`
     {
       allContentfulPlace {
@@ -23,9 +21,10 @@ const Directory = () => {
 
   let items = [];
   places.forEach((place) => {
+    const name = place.name > 30 ? place.name.slice(0, 30) + "..." : place.name;
     items.push({
-      text: place.name,
-      address: place.address,
+      text: name,
+      secondText: place.address,
       link:
         "/cl/direcciones/como-llegar-a-" +
         slugify(place.name) +
@@ -33,22 +32,16 @@ const Directory = () => {
         slugify(place.address),
     });
   });
-  console.log(items);
+
   const props = {
     title: "Direcciones a Atracciones en Chile",
     desc: "Encontraras detalle de lineas y como irte en distintos medios",
     bgColor: "bg-white",
     textColor: "gray-primary",
-    maxCols: "2",
     items: items,
   };
 
-  return (
-    <Layout>
-      <PaxHero></PaxHero>
-      <ListSection {...props}></ListSection>
-    </Layout>
-  );
+  return <ListSection {...props}></ListSection>;
 };
 
-export default Directory;
+export default DirectoryList;

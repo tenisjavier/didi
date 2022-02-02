@@ -7,7 +7,7 @@ const ListSection = (props) => {
     <section className={`text-${textColor} ${bgColor} text-center py-12`}>
       <h2 className="text-3xl ">{title}</h2>
       <p>{desc}</p>
-      <ul className="list-none columns-2 md:columns-3 lg:columns-4">
+      <ul className={`list-none flex justify-center items-center flex-wrap`}>
         {items.map((item, index) => {
           return <ListItem {...item} key={index}></ListItem>;
         })}

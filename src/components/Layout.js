@@ -9,7 +9,7 @@ import "../styles/global.css";
 const Layout = ({ children }) => {
   return (
     <>
-      <Seo title="Jeivi" desc="jojoj"></Seo>
+      <Seo></Seo>
       <Header></Header>
       {children}
       <SmartBanner type="drv"></SmartBanner>

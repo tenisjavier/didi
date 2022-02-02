@@ -48,12 +48,12 @@ const CTASection = (props) => {
       <div
         className={`flex flex-wrap justify-center relative items-center   w-full container mx-auto py-8 
         ${reverse && "flex-row-reverse"} ${
-          image ? "lg:justify-between" : "lg:justify-start"
+          image ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
         {image}
         <div
-          className={`w-11/12 lg:w-1/2  px-4 text-center text-${textColor} z-10 lg:text-left`}
+          className={`w-11/12 lg:w-1/2  px-4 text-center text-${textColor} z-10 xl:text-left`}
         >
           <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
           {bullets && (
