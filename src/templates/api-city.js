@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 import CTASection from "../components/CTASection";
 
 const WpTemplate = ({ pageContext }) => {
-  const { city } = pageContext;
-
+  console.log(pageContext);
   return (
     <Layout>
       <CTASection

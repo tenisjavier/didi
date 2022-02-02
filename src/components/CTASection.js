@@ -1,7 +1,7 @@
 import React from "react";
-import Btn from "./Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCarSide } from "@fortawesome/free-solid-svg-icons";
+import Btn from "./Btn";
 
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -16,6 +16,7 @@ const CTASection = (props) => {
     bgColor,
     image,
     bullets,
+    customBulletIcon,
     btnType,
     btnText,
     btnLink,
@@ -47,26 +48,29 @@ const CTASection = (props) => {
       <div
         className={`flex flex-wrap justify-center relative items-center   w-full container mx-auto py-8 
         ${reverse && "flex-row-reverse"} ${
-          image ? "lg:justify-between" : "lg:justify-start"
+          image ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
         {image}
         <div
-          className={`w-11/12 lg:w-1/2  px-4 text-center text-${textColor} z-10 lg:text-left`}
+          className={`w-11/12 lg:w-1/2  px-4 text-center text-${textColor} z-10 xl:text-left`}
         >
           <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
           {bullets && (
             <>
               <ul className="text-left list-none text-xl">
-                {bullets.map((item) => {
+                {bullets.map((item, index) => {
                   return (
                     <>
-                      <li>
-                        <FontAwesomeIcon
-                          icon={faCarSide}
-                          className=" mr-4 text-orange-primary "
-                          size="sm"
-                        />
+                      <li key={index}>
+                        {!customBulletIcon ? (
+                          <FontAwesomeIcon
+                            key={index}
+                            icon={faCarSide}
+                            className=" mr-4 text-orange-primary "
+                            size="sm"
+                          />
+                        ) : null}
                         {item}
                       </li>
                       <br></br>

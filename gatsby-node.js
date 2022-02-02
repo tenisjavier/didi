@@ -1,5 +1,4 @@
 const wpRoutes = require("./routes/wp-routes");
-const apiRoutes = require("./routes/api-routes");
 const wpIndexRoutes = require("./routes/wp-index-routes");
 
 // @desc: Creates all country dynamic routes from WP and other sources
@@ -10,9 +9,8 @@ exports.createPages = async ({
   reporter,
 }) => {
   //create wp Routes for all Countries
-  await wpRoutes.init(graphql, createPage);
-  await apiRoutes.init(graphql, createPage);
-  await wpIndexRoutes.init(graphql, createPage);
+  // await wpRoutes.init(graphql, createPage);
+  // await wpIndexRoutes.init(graphql, createPage);
 };
 
 // @desc: Creates ChildImageSharp for WP Image Urls
@@ -52,31 +50,3 @@ exports.onCreateNode = async ({
     }
   }
 };
-
-// ======= Ejemplo para crear tus propios nodos padres =========
-
-// exports.sourceNodes = async ({
-//   actions: { createNode },
-//   createNodeId,
-//   createContentDigest,
-// }) => {
-//   const countries = [
-//     { countryName: "Chile", countryCode: "CL", id: "1" },
-//     { countryName: "Argentina", countryCode: "AR", id: "2" },
-//     { countryName: "Colombia", countryCode: "CO", id: "3" },
-//   ];
-
-//   countries.forEach((node) => {
-//     createNode({
-//       ...node,
-//       id: createNodeId("COUNTRY-" + node.id),
-//       parent: null,
-//       children: [],
-//       internal: {
-//         type: "COUNTRY",
-//         content: JSON.stringify(node),
-//         contentDigest: createContentDigest(node),
-//       },
-//     });
-//   });
-// };

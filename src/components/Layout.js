@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "./SEO";
 import Header from "./Header";
 import Footer from "./Footer";
 import SmartBanner from "./SmartBanner";
@@ -8,6 +9,7 @@ import "../styles/global.css";
 const Layout = ({ children }) => {
   return (
     <>
+      <Seo></Seo>
       <Header></Header>
       {children}
       <SmartBanner type="drv"></SmartBanner>
