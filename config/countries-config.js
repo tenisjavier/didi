@@ -1,5 +1,4 @@
 // @desc: utility library for countries
-
 const countries = [
   "Panama",
   "CostaRica",
@@ -46,7 +45,7 @@ const getCountryFromUrl = () => {
 // @desc: from the current url path it will extract the country code
 // @return: countrycode
 const getCountryCodeFromUrl = () => {
-  return window.location.pathname.split("/")[1];
+  return "cl";
 };
 
 module.exports = {
