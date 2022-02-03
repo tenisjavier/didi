@@ -9,7 +9,7 @@ module.exports = {
     title: "didi",
   },
   plugins: [
-    ...gatsbySourceGraphqlConfig.get(),
+    //...gatsbySourceGraphqlConfig.get(),
     `gatsby-plugin-image`,
     "gatsby-plugin-postcss",
     `gatsby-plugin-sharp`,
