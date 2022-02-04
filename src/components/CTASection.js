@@ -46,7 +46,7 @@ const CTASection = (props) => {
         ${bgColor && bgColor}`}
     >
       <div
-        className={`flex flex-wrap justify-center relative items-center   w-full container mx-auto py-8 
+        className={`flex flex-wrap justify-center items-center   w-full container mx-auto py-8 
         ${reverse && "flex-row-reverse"} ${
           image ? "xl:justify-between" : "xl:justify-start"
         }`}
