@@ -11,7 +11,7 @@ const PaxHero = () => {
       <StaticImage
         src="../../images/cl/cl-pax-hero.png"
         alt="pasajera didi con celular"
-        className="md:block object-fill z-0 absolute h-full w-full"
+        className="md:block !absolute z-0 h-full w-full"
       ></StaticImage>
     ),
     btnType: "pax",

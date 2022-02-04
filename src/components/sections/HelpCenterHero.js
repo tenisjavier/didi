@@ -10,7 +10,7 @@ const HelpCenterHero = () => {
       <StaticImage
         src="../../images/cl/cl-help-center-hero.jpg"
         alt="centro de ayuda"
-        className="md:block object-fill z-0 absolute h-full w-full brightness-75"
+        className="md:block !absolute z-0 h-full w-full brightness-75"
       ></StaticImage>
     ),
     btnType: "both",

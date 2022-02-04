@@ -11,7 +11,7 @@ const DrvHero = () => {
       <StaticImage
         src="../../images/cl/cl-bg-taxi-hero.jpg"
         alt="didi taxi"
-        className="md:block object-fill z-0 absolute h-full w-full"
+        className="md:block !absolute z-0 h-full w-full"
       ></StaticImage>
     ),
     btnType: "drv",
