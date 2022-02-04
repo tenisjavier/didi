@@ -17,7 +17,7 @@ const SafetyGridDuringTrip = () => {
           alt="conductor didi"
           width={700}
           height={700}
-          className="z-10 w-100 m-4"
+          className="z-10  m-4"
         ></StaticImage>
       ),
     },
@@ -31,7 +31,7 @@ const SafetyGridDuringTrip = () => {
           alt="conductor didi"
           width={700}
           height={700}
-          className="z-10 w-100 m-4"
+          className="z-10  m-4"
         ></StaticImage>
       ),
     },
@@ -45,7 +45,7 @@ const SafetyGridDuringTrip = () => {
           alt="conductor didi"
           width={700}
           height={700}
-          className="z-10 w-100 m-4"
+          className="z-10  m-4"
         ></StaticImage>
       ),
     },
@@ -59,7 +59,7 @@ const SafetyGridDuringTrip = () => {
           alt="conductor didi"
           width={700}
           height={700}
-          className="z-10 w-100 m-4"
+          className="z-10  m-4"
         ></StaticImage>
       ),
     },
@@ -73,7 +73,7 @@ const SafetyGridDuringTrip = () => {
           alt="conductor didi"
           width={700}
           height={700}
-          className="z-10 w-100 m-4"
+          className="z-10  m-4"
         ></StaticImage>
       ),
     },

@@ -20,12 +20,12 @@ const Acordian = ({ title, content, bgColor, textColor }) => {
     <>
       <div
         aria-hidden="true"
-        className={`flex h-20 items-center justify-between w-full px-10 lg:px-20 cursor-pointer mt-6 rounded ${
+        className={`flex items-center justify-between w-full px-10 lg:px-20 cursor-pointer mt-6 rounded ${
           isOpen ? "bg-white" : bgColor
         }`}
         onClick={() => toggtle()}
       >
-        <h3 className={`text-${textColor} text-2xl`}>{title}</h3>
+        <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
         <FontAwesomeIcon
           icon={isOpen ? faMinusSquare : faPlusSquare}
           className={`text-${textColor} text-xl`}
