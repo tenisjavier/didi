@@ -10,8 +10,7 @@ const HomeHero = () => {
       <StaticImage
         src="../../images/cl/bg-orange-pax-red.jpg"
         alt="Pasajera Subiendo a DiDi"
-        className="md:block absolute z-0 h-full w-full"
-        objectPosition="0% 0%"
+        className="md:block !absolute z-0 h-full w-full"
         imgStyle={{ position: "absolute" }}
       ></StaticImage>
     ),
