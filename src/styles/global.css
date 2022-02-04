@@ -28,8 +28,11 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Aspira", sans-serif;
   line-height: 1.5em;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 *,

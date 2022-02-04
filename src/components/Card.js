@@ -20,7 +20,7 @@ const Card = (props) => {
     <div
       className={`max-w-sm rounded ${bgColor} text-${textColor} text-center`}
     >
-      <div className="mb-5">{image}</div>
+      <div className="mb-5 ">{image}</div>
 
       <div className="px-6 py-4 flex flex-col text-center items-center justify-between">
         <h4 className={`font-bold text-xl mb-k `}>{title}</h4>
