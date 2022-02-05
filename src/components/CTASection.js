@@ -42,23 +42,23 @@ const CTASection = (props) => {
   }
   return (
     <section
-      className={`flex relative justify-center items-center  w-full min-h-[40rem] 
+      className={`relative flex min-h-[40rem] w-full  items-center justify-center 
         ${bgColor && bgColor}`}
     >
       <div
-        className={`flex flex-wrap justify-center items-center   w-full container mx-auto py-8 
+        className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
         ${reverse && "flex-row-reverse"} ${
           image ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
         {image}
         <div
-          className={`w-11/12 lg:w-1/2  px-4 text-center text-${textColor} z-10 xl:text-left`}
+          className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
         >
-          <h2 className="text-3xl md:text-4xl pb-6 font-bold">{title}</h2>
+          <h2 className="pb-6 text-3xl font-bold md:text-4xl">{title}</h2>
           {bullets && (
             <>
-              <ul className="text-left list-none text-xl">
+              <ul className="list-none text-left text-xl">
                 {bullets.map((item, index) => {
                   return (
                     <>
@@ -67,7 +67,7 @@ const CTASection = (props) => {
                           <FontAwesomeIcon
                             key={index}
                             icon={faCarSide}
-                            className=" mr-4 text-orange-primary "
+                            className=" text-orange-primary mr-4 "
                             size="sm"
                           />
                         ) : null}

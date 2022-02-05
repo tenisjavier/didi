@@ -5,9 +5,9 @@ const ColumnsSection = (props) => {
   const { columns, bgColor, title, textColor } = props;
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
-      <div className="flex flex-col justify-center flex-wrap container mx-auto">
-        {title && <h2 className="text-3xl text-center">{title}</h2>}
-        <div className={`flex justify-around flex-wrap mt-10 `}>
+      <div className="container mx-auto flex flex-col flex-wrap justify-center">
+        {title && <h2 className="text-center text-3xl">{title}</h2>}
+        <div className={`mt-10 flex flex-wrap justify-around `}>
           {columns.map((col) => {
             return <Card {...col}></Card>;
           })}

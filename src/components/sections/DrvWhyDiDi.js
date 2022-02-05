@@ -16,7 +16,7 @@ const DrvWhyDiDi = () => {
       <StaticImage
         src="../../images/cl/cl-drv-why-didi.jpg"
         alt="conductor didi"
-        className="z-10 w-100 m-4 rounded-full"
+        className="w-100 z-10 m-4 rounded-full"
       ></StaticImage>
     ),
     btnType: "drv",

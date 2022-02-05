@@ -11,7 +11,7 @@ const DrvVideoGrid = () => {
       bgColor: "bg-blue-primary",
       image: (
         <iframe
-          className="w-full h-56"
+          className="h-56 w-full"
           src="https://www.youtube.com/embed/1853mnRqTW4"
           title="YouTube video player"
           frameborder="0"
@@ -25,7 +25,7 @@ const DrvVideoGrid = () => {
       bgColor: "bg-blue-primary",
       image: (
         <iframe
-          className="w-full h-56"
+          className="h-56 w-full"
           src="https://www.youtube.com/embed/6TyVl3r1wUM"
           title="YouTube video player"
           frameborder="0"
@@ -39,7 +39,7 @@ const DrvVideoGrid = () => {
       bgColor: "bg-blue-primary",
       image: (
         <iframe
-          className="w-full h-56"
+          className="h-56 w-full"
           src="https://www.youtube.com/embed/cDXmKDkOlL4"
           title="YouTube video player"
           frameborder="0"
@@ -53,7 +53,7 @@ const DrvVideoGrid = () => {
       bgColor: "bg-blue-primary",
       image: (
         <iframe
-          className="w-full h-56"
+          className="h-56 w-full"
           src="https://www.youtube.com/embed/LH6BgttFSTc"
           title="YouTube video player"
           frameborder="0"
@@ -67,7 +67,7 @@ const DrvVideoGrid = () => {
       bgColor: "bg-blue-primary",
       image: (
         <iframe
-          className="w-full h-56"
+          className="h-56 w-full"
           src="https://www.youtube.com/embed/6lq6C1AbdPw"
           title="YouTube video player"
           frameborder="0"

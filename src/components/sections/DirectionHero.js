@@ -14,7 +14,7 @@ const DirectionHero = ({ data }) => {
       bgColor="bg-blue-primary"
       image={
         <img
-          className="z-10 w-full m-4 rounded md:w-100 lg:w-110"
+          className="md:w-100 lg:w-110 z-10 m-4 w-full rounded"
           alt={origin + " mapa"}
           src={`https://maps.googleapis.com/maps/api/staticmap?center=${destinationAddress}&zoom=12&size=2800x400&maptype=roadmap
 &markers=color:red%7C${destinationAddress}&markers=color:red%7C${originAddress}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}

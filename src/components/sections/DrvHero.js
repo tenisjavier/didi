@@ -11,7 +11,7 @@ const DrvHero = () => {
       <StaticImage
         src="../../images/cl/bg-orange-drv-green.jpg"
         alt="conductor didi"
-        className="md:block !absolute z-0 h-full w-full"
+        className="!absolute z-0 h-full w-full md:block"
       ></StaticImage>
     ),
     btnType: "drv",

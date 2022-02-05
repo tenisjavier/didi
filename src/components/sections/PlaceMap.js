@@ -19,7 +19,7 @@ const PlaceMap = ({ data }) => {
       bgColor="bg-white"
       image={
         <img
-          className="z-10 w-full m-4 rounded md:w-100 lg:w-110"
+          className="md:w-100 lg:w-110 z-10 m-4 w-full rounded"
           alt={name + " mapa"}
           src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=15&size=2800x400&maptype=roadmap
 &markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
@@ -29,7 +29,7 @@ const PlaceMap = ({ data }) => {
         <span>
           <FontAwesomeIcon
             icon={faBus}
-            className=" mr-4 text-orange-primary "
+            className=" text-orange-primary mr-4 "
             size="sm"
           />
           <b>Micro: </b>
@@ -40,7 +40,7 @@ const PlaceMap = ({ data }) => {
         <span>
           <FontAwesomeIcon
             icon={faSubway}
-            className=" mr-4 text-orange-primary "
+            className=" text-orange-primary mr-4 "
             size="sm"
           />
           <b>Metro: </b>

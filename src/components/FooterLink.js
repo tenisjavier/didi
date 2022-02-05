@@ -1,27 +1,30 @@
-import React from 'react';
+import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-const FooterLink = ( {links} ) => {
-    return ( 
-        <div className="bg-gray-primary flex flex-wrap h-full">
-            <div className="hidden lg:flex-initial lg:flex Lg:flex-row lg:w-2/3 bg-grey-primary">
-                {
-                    links.map( (link, index) => (
-                        <div key={index} className="flex-auto flex justify-center items-center text-lg">
-                            <a href={link.link} className="hover:text-white hover:opacity-70">{link.title}</a>
-                        </div>
-                    ))
-                }
-            </div>
+const FooterLink = ({ links }) => {
+  return (
+    <div className="bg-gray-primary flex h-full flex-wrap">
+      <div className="Lg:flex-row bg-grey-primary hidden lg:flex lg:w-2/3 lg:flex-initial">
+        {links.map((link, index) => (
+          <div
+            key={index}
+            className="flex flex-auto items-center justify-center text-lg"
+          >
+            <a href={link.link} className="hover:text-white hover:opacity-70">
+              {link.title}
+            </a>
+          </div>
+        ))}
+      </div>
 
-            <div className="flex-initial w-full lg:w-1/3 bg-grey-primary h-full flex justify-center items-center">
-                <StaticImage
-                    src="../images/Download-Icons.png"
-                    alt="didi logo"
-                    className="w-10/12 h-auto"
-                />
-            </div>
-        </div>
-     );
-}
- 
+      <div className="bg-grey-primary flex h-full w-full flex-initial items-center justify-center lg:w-1/3">
+        <StaticImage
+          src="../images/Download-Icons.png"
+          alt="didi logo"
+          className="h-auto w-10/12"
+        />
+      </div>
+    </div>
+  );
+};
+
 export default FooterLink;

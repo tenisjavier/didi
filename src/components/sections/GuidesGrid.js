@@ -4,9 +4,9 @@ import { Link } from "gatsby";
 
 const GuidesGrid = ({ guias }) => {
   return (
-    <main className="min-h-screen bg-orange-primary pt-48 px-10 2xl:px-80 ">
-      <div className="flex w-full justify-center lg:justify-between flex-wrap mb-4 ">
-        <h1 className="text-white text-c lg:text-left  text-4xl font-bold">
+    <main className="bg-orange-primary min-h-screen px-10 pt-48 2xl:px-80 ">
+      <div className="mb-4 flex w-full flex-wrap justify-center lg:justify-between ">
+        <h1 className="text-c text-4xl font-bold  text-white lg:text-left">
           Guias para Socios Conductores
         </h1>
         <StaticImage
@@ -16,20 +16,20 @@ const GuidesGrid = ({ guias }) => {
           width={200}
         />
       </div>
-      <div className="flex justify-center lg:justify-between w-full flex-wrap">
+      <div className="flex w-full flex-wrap justify-center lg:justify-between">
         {guias.map((guia, index) => {
           return (
             <Link to={guia.slug}>
               <div
-                className="h-80 flex-shrink-0 hover:-translate-y-2 cursor-pointer transition duration-150 "
+                className="h-80 flex-shrink-0 cursor-pointer transition duration-150 hover:-translate-y-2 "
                 key={index}
               >
                 <img
                   src={guia.featuredImage.node.mediaItemUrl}
                   alt=""
-                  className="w-96 h-52 object-cover rounded-lg shadow-lg "
+                  className="h-52 w-96 rounded-lg object-cover shadow-lg "
                 />
-                <h1 className="text-white text-2xl font-bold mt-4 group-hover:text-blue-500 w-96">
+                <h1 className="mt-4 w-96 text-2xl font-bold text-white group-hover:text-blue-500">
                   {guia.title}
                 </h1>
               </div>
