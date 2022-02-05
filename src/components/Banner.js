@@ -18,14 +18,14 @@ const Banner = (props) => {
 
   return (
     <div
-      className={`w-full flex justify-center items-center py-4 rounded ${
+      className={`flex w-full items-center justify-center rounded py-4 ${
         bgColor && bgColor
       } text-${textColor}`}
     >
-      <div className="text-center mb-5 max-w-6xl">{image}</div>
+      <div className="mb-5 max-w-6xl text-center">{image}</div>
 
-      <div className="container mx-auto py-4 flex flex-col text-center  max-w-6xl">
-        <h3 className={`font-bold text-4xl mb-2 `}>{title}</h3>
+      <div className="container mx-auto flex max-w-6xl flex-col py-4  text-center">
+        <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
         <p className="h-16 text-base">{desc}</p>
         <span className="flex justify-center">
           <Btn type={btnType} link={btnLink} mode={btnMode}>

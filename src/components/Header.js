@@ -5,8 +5,8 @@ import Menu from "./Menu";
 
 const Header = (props) => {
   return (
-    <nav className="w-full h-20 z-20 bg-gray-primary bg-opacity-80 fixed">
-      <div className="flex justify-between items-center h-full">
+    <nav className="bg-gray-primary fixed z-20 h-20 w-full bg-opacity-80">
+      <div className="flex h-full items-center justify-between">
         <Navlogo />
         <Menu></Menu>
       </div>

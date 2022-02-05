@@ -12,7 +12,7 @@ const SafetyCTA = () => {
       <StaticImage
         src="../../images/cl/logo-funciones-seguridad.png"
         alt="seguridad logo"
-        className="z-10 w-100 m-4"
+        className="w-100 z-10 m-4"
       ></StaticImage>
     ),
 

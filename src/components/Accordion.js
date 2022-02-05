@@ -20,7 +20,7 @@ const Acordian = ({ title, content, bgColor, textColor }) => {
     <>
       <div
         aria-hidden="true"
-        className={`flex items-center justify-between w-full px-10 lg:px-20 cursor-pointer mt-6 rounded ${
+        className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded px-10 lg:px-20 ${
           isOpen ? "bg-white" : bgColor
         }`}
         onClick={() => toggtle()}

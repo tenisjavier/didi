@@ -10,7 +10,7 @@ const HomeHero = () => {
       <StaticImage
         src="../../images/cl/bg-orange-pax-red.jpg"
         alt="Pasajera Subiendo a DiDi"
-        className="md:block !absolute z-0 h-full w-full"
+        className="!absolute z-0 h-full w-full md:block"
       ></StaticImage>
     ),
     btnType: "both",

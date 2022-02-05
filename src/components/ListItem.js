@@ -7,7 +7,7 @@ const ListItem = ({ text, secondText, link }) => {
   const subText = secondText && secondText.slice(0, 40).concat("...");
 
   const item = link ? (
-    <div className="text-blue-primary flex justify-between items-center px-4">
+    <div className="text-blue-primary flex items-center justify-between px-4">
       <span>
         <p>
           <Link to={link}>{text}</Link>
@@ -25,7 +25,7 @@ const ListItem = ({ text, secondText, link }) => {
     <p>{text}</p>
   );
   return (
-    <li className="w-96 border-solid border border-gray-primary rounded">
+    <li className="border-gray-primary w-96 rounded border border-solid">
       {item}
     </li>
   );

@@ -16,7 +16,7 @@ const TaxiWhyDidi = () => {
       <StaticImage
         src="../../images/cl/cl-taxi-why-didi.png"
         alt="conductor didi taxi"
-        className="z-10 w-100 m-4 rounded-full"
+        className="w-100 z-10 m-4 rounded-full"
       ></StaticImage>
     ),
     btnType: "drv",

@@ -17,7 +17,7 @@ const DrvFeatures = () => {
       <StaticImage
         src="../../images/cl/cl-drv-features.png"
         alt="conductor didi"
-        className="z-10 w-100 m-4"
+        className="w-100 z-10 m-4"
       ></StaticImage>
     ),
     btnType: "drv",

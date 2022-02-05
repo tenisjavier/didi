@@ -15,7 +15,7 @@ const PlaceHero = ({ data }) => {
       bgColor="bg-blue-primary"
       image={
         <GatsbyImage
-          className="z-10 w-100 m-4 rounded lg:w-110"
+          className="w-100 lg:w-110 z-10 m-4 rounded"
           image={image}
           alt={name}
         />

@@ -36,8 +36,8 @@ const SmartBanner = (props) => {
   }
 
   return (
-    <div className={"fixed w-full h-auto z-20 bottom-0 lg:hidden " + bgColor}>
-      <div className="flex justify-between items-center h-full p-2">
+    <div className={"fixed bottom-0 z-20 h-auto w-full lg:hidden " + bgColor}>
+      <div className="flex h-full items-center justify-between p-2">
         <span className="flex">{Logo}</span>
         <span className="ml-2">
           <p className="font-bold leading-3">{bannerTitle}</p>

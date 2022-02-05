@@ -13,12 +13,12 @@ const AccordionSection = (props) => {
   } = props;
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
-      <div className="flex flex-col justify-center container mx-auto">
+      <div className="container mx-auto flex flex-col justify-center">
         {title && (
-          <h2 className="text-3xl text-center md:text-left">{title}</h2>
+          <h2 className="text-center text-3xl md:text-left">{title}</h2>
         )}
         <p className="text-center md:text-left">{desc}</p>
-        <div className={`flex justify-around flex-wrap `}>
+        <div className={`flex flex-wrap justify-around `}>
           {items.map((item, index) => {
             return (
               <Accordion

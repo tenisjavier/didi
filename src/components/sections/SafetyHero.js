@@ -11,7 +11,7 @@ const SafetyHero = () => {
       <StaticImage
         src="../../images/cl/cl-safety-hero.jpg"
         alt="didi taxi"
-        className="md:block !absolute z-0 h-full w-full"
+        className="!absolute z-0 h-full w-full md:block"
       ></StaticImage>
     ),
     btnType: "pax",
