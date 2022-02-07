@@ -8,8 +8,8 @@ const ColumnsSection = (props) => {
       <div className="container mx-auto flex flex-col flex-wrap justify-center">
         {title && <h2 className="text-center text-3xl">{title}</h2>}
         <div className={`mt-10 flex flex-wrap justify-around `}>
-          {columns.map((col) => {
-            return <Card {...col}></Card>;
+          {columns.map((col, index) => {
+            return <Card {...col} key={index}></Card>;
           })}
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWalking, faBus } from "@fortawesome/free-solid-svg-icons";
+import { faWalking, faBus, faSubway } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection from "../ColumnSection";
 
 const DirectionStepGrid = ({ data }) => {
@@ -11,7 +11,10 @@ const DirectionStepGrid = ({ data }) => {
   let columns = [];
 
   steps.reverse().forEach((step, index) => {
-    let icon = step.mode === "WALKING" ? faWalking : faBus;
+    let icon = faWalking;
+    if (step.transit) {
+      icon = step.transit.vehicle_type === "BUS" ? faBus : faSubway;
+    }
     let line = step.transit ? " | Línea: " + step.transit.line_short_name : "";
     let lineName = step.transit ? " | Línea: " + step.transit.line_name : "";
     columns.push({
