@@ -5,12 +5,12 @@ import PlaceHero from "../../../components/sections/PlaceHero";
 import PlaceMap from "../../../components/sections/PlaceMap";
 import DirectoryOriginList from "../../../components/sections/DirectoryOriginList";
 
-const PlaceTemplate = (props) => {
+const PlaceTemplate = ({ data }) => {
   return (
     <Layout>
-      <PlaceHero data={props.data.contentfulPlace}></PlaceHero>
-      <PlaceMap data={props.data}></PlaceMap>
-      <DirectoryOriginList data={props.data}></DirectoryOriginList>
+      <PlaceHero data={data.contentfulPlace}></PlaceHero>
+      <PlaceMap data={data}></PlaceMap>
+      <DirectoryOriginList data={data}></DirectoryOriginList>
     </Layout>
   );
 };

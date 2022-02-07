@@ -4,14 +4,11 @@ import Layout from "../../../components/Layout";
 import DirectionHero from "../../../components/sections/DirectionHero";
 import DirectionStepGrid from "../../../components/sections/DirectionStepsGrid";
 
-const PlaceTemplate = (props) => {
-  console.log(props);
+const PlaceTemplate = ({ data }) => {
   return (
     <Layout>
-      <DirectionHero data={props.data.contentfulDirection}></DirectionHero>
-      <DirectionStepGrid
-        data={props.data.contentfulDirection}
-      ></DirectionStepGrid>
+      <DirectionHero data={data.contentfulDirection}></DirectionHero>
+      <DirectionStepGrid data={data.contentfulDirection}></DirectionStepGrid>
     </Layout>
   );
 };
