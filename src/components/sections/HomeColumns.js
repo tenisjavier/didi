@@ -18,6 +18,7 @@ const HomeColumns = () => {
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",
+      height: "h-80",
     },
     {
       title: "Legal",
@@ -27,6 +28,7 @@ const HomeColumns = () => {
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",
+      height: "h-80",
     },
     {
       title: "Centro de Ayuda",
@@ -36,6 +38,7 @@ const HomeColumns = () => {
       btnText: "Saber Más",
       btnLink: "Con DiDi puedes viajar pagando menos.",
       btnMode: "light",
+      height: "h-80",
     },
   ];
   return <ColumnsSection columns={columns} bgColor={bgColor}></ColumnsSection>;

@@ -4,7 +4,7 @@ import GuideHero from "../../../components/sections/GuideHero";
 import { graphql } from "gatsby";
 import RichContent from "../../../components/sections/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
-// import { getCountryCodeFromUrl } from "../../../../config/countries-config";
+import GuidesColumns from "../../../components/sections/GuidesColumns";
 
 export const query = graphql`
   query ($id: String) {
@@ -27,6 +27,15 @@ export const query = graphql`
         gatsbyImageData
       }
     }
+    allContentfulGuide {
+      nodes {
+        title
+        excerpt
+        featuredImage {
+          gatsbyImageData
+        }
+      }
+    }
   }
 `;
 
@@ -36,6 +45,7 @@ const GuideTemplate = ({ data }) => {
       <GuideHero data={data}></GuideHero>
       <RichContent data={data}></RichContent>
       <PaxBanner></PaxBanner>
+      <GuidesColumns data={data}></GuidesColumns>
     </Layout>
   );
 };
