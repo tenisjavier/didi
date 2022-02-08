@@ -2,7 +2,7 @@ const footerLinks = {
   cl: [
     { title: "Passajero", link: "/cl/pasajero" },
     { title: "Socio Conductor", link: "/cl/driver" },
-    { title: "Ciudades", link: "https://chile.didiglobal.com/" },
+    { title: "Direcciones", link: "/cl/direcciones" },
     { title: "DIDI Taxi", link: "/cl/taxi" },
     { title: "Seguridad", link: "/cl/seguridad" },
     { title: "Guías", link: "/cl/guias" },

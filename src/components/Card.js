@@ -19,7 +19,7 @@ const Card = (props) => {
 
   return (
     <div
-      className={` max-w-sm rounded ${bgColor} text-${textColor} text-center`}
+      className={` max-w-sm rounded ${bgColor} text-${textColor} my-3 text-center`}
     >
       <div className="mb-5 ">{image}</div>
 
