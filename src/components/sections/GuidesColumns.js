@@ -6,7 +6,7 @@ import slugify from "react-slugify";
 import { useLocation } from "@reach/router";
 
 const GuidesColumns = ({ data }) => {
-  const { protocol, host, pathname } = useLocation();
+  const { protocol, host } = useLocation();
   console.log(useLocation());
   const guides = data.allContentfulGuide.nodes;
   const bgColor = "bg-blue-primary";
@@ -15,7 +15,8 @@ const GuidesColumns = ({ data }) => {
 
   let columns = [];
   guides.forEach((guide) => {
-    const link = `${protocol}//${host}/cl/guias/${slugify(guide.title)}`;
+    const slug = slugify(guide.title);
+    const link = `${protocol}//${host}/cl/guias/${slug}`;
     columns.push({
       title: <Link to={link}>{guide.title}</Link>,
       desc: guide.excerpt,
