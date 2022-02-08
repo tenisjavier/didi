@@ -20,7 +20,9 @@ const Btn = (props) => {
 
   return (
     <div className={`my-2 btn-${mode}`}>
-      <a href={btnLink}>{btnText}</a>
+      <a className="block" href={btnLink}>
+        {btnText}
+      </a>
     </div>
   );
 };

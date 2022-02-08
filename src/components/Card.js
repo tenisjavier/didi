@@ -14,22 +14,27 @@ const Card = (props) => {
     btnLink,
     btnMode,
     btnType,
+    height,
   } = props;
 
   return (
     <div
-      className={`max-w-sm rounded ${bgColor} text-${textColor} text-center`}
+      className={` max-w-sm rounded ${bgColor} text-${textColor} text-center`}
     >
       <div className="mb-5 ">{image}</div>
 
-      <div className="flex flex-col items-center justify-between px-6 py-4 text-center">
-        <h4 className={`mb-k text-xl font-bold `}>{title}</h4>
-        <p className="text-base">{desc}</p>
-        <span className="flex justify-center">
+      <div
+        className={`flex ${height} flex-col items-center justify-between px-6 py-4 text-center`}
+      >
+        <div className="mb-4">
+          <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
+          <p className="text-base">{desc}</p>
+        </div>
+        <div className="flex justify-center">
           <Btn type={btnType} link={btnLink} mode={btnMode}>
             {btnText}
           </Btn>
-        </span>
+        </div>
       </div>
     </div>
   );
