@@ -1,3 +1,4 @@
+// @desc Guides Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
 import ColumnsSection from "../ColumnSection";
