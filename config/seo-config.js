@@ -31,6 +31,30 @@ const seoMeta = {
       title: "Cómo llegar a distintos puntos de Chile",
       desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
     },
+    "/guias/": {
+      title: "Guías para Conductores DiDi.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+    },
+    "/guias/hoja-de-vida-del-conductor/": {
+      title: "Hoja de Vida del Conductor",
+      desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
+    },
+    "/guias/libro-del-nuevo-conductor": {
+      title: "Libro del Nuevo Conductor",
+      desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
+    },
+    "/guias/hoja-de-vida-del-conductor/": {
+      title: "Hoja de Vida del Conductor",
+      desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
+    },
+    "/guias/hoja-de-vida-del-conductor/": {
+      title: "Hoja de Vida del Conductor",
+      desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
+    },
+    "/guias/hoja-de-vida-del-conductor/": {
+      title: "Hoja de Vida del Conductor",
+      desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
+    },
   },
 };
 
@@ -44,7 +68,7 @@ const getMetaByPath = (country, path) => {
   };
 
   //logic for dynamic pages places and directions
-  const subfolder = path.match(/([^\/]*)\/*$/)[1];
+  const subfolder = path.match(/([^/]*)\/*$/)[1];
   const placeTitle = subfolder
     .substring(0, subfolder.indexOf("_"))
     .replace(/-/g, " ")
