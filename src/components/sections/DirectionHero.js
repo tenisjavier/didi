@@ -9,7 +9,6 @@ const DirectionHero = ({ data }) => {
     <CTASection
       title={`Como llegar a ${destination} desde ${origin}`}
       desc={`Desde: ${originAddress} | Hacia: ${destinationAddress}`}
-      bgColor={"bg-blue-primary"}
       textColor="white"
       bgColor="bg-blue-primary"
       image={

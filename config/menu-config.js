@@ -31,6 +31,24 @@ const menuLinks = {
       dropMenu: null,
     },
     {
+      text: "DiDi Food",
+      url: "/cl/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/cl/driver/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/cl/driver/santiago",
+        },
+        {
+          text: "Acerca",
+          url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+      ],
+    },
+    {
       text: "Seguridad",
       url: "/cl/seguridad/",
       dropMenu: null,
