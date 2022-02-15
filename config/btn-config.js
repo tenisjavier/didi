@@ -6,6 +6,10 @@ const btnLinks = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga Didi Pasajero",
+    foodDeliveryLink: "https://www.didi-food.com/es-419/mobile-delivery/guide",
+    foodDeliveryText: "Regístrate como Repartidor",
+    foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
+    foodBusinessText: "Regístrate como Comercio",
   },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",

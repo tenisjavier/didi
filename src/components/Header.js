@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Breadcrumb from "./Breadcrumb";
+import { useLocation } from "@reach/router";
 
 import Menu from "./Menu";
 
@@ -20,15 +21,26 @@ const Header = (props) => {
 };
 
 const Navlogo = () => {
+  const { pathname } = useLocation();
+  const logo = pathname.includes("food") ? (
+    <StaticImage
+      src={`../images/didi-food-logo.png`}
+      alt="didi logo"
+      className=""
+      width={150}
+    />
+  ) : (
+    <StaticImage
+      src={`../images/didi-logo.png`}
+      alt="didi logo"
+      className=""
+      width={100}
+    />
+  );
   return (
     <div className="p-3">
       <Link className="" to="/cl">
-        <StaticImage
-          src="../images/didi-logo.png"
-          alt="didi logo"
-          className=""
-          width={100}
-        />
+        {logo}
       </Link>
     </div>
   );

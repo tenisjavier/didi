@@ -20,9 +20,9 @@ const Breadcrumb = () => {
               <li>
                 <Link to="/cl/" className="hover:text-blue-700">
                   <FontAwesomeIcon
+                    size="1x"
                     className="mr-2"
                     icon={faHome}
-                    size="1x"
                   ></FontAwesomeIcon>
                   home
                 </Link>

@@ -39,20 +39,20 @@ const seoMeta = {
       title: "Hoja de Vida del Conductor",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
     },
-    "/guias/libro-del-nuevo-conductor": {
-      title: "Libro del Nuevo Conductor",
+    "/guias/licencia-de-conducir-clase-b": {
+      title: "Licencia de Conducir Clase B",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
     },
-    "/guias/hoja-de-vida-del-conductor/": {
-      title: "Hoja de Vida del Conductor",
+    "/guias/licencia-de-conducir-a2": {
+      title: "Licencia de Conducir A2",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
     },
-    "/guias/hoja-de-vida-del-conductor/": {
-      title: "Hoja de Vida del Conductor",
+    "/guias/tipos-de-licencia-de-conducir": {
+      title: "Tipos de Licencia de Conducir",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
     },
-    "/guias/hoja-de-vida-del-conductor/": {
-      title: "Hoja de Vida del Conductor",
+    "/guias/licencias-de-conducir": {
+      title: "Licencias de Conducir",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
     },
   },

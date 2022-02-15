@@ -1,19 +1,10 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import Layout from "../components/Layout";
 import DrvCTA from "../components/sections/DrvCTA";
 import SliderSection2 from "../components/SliderSection2";
-
-const options = {
-  renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => (
-      <p className={"text-orange-primary"}>{children}</p>
-    ),
-  },
-};
 
 const HomeTemplate = () => {
   const data = useStaticQuery(graphql`
