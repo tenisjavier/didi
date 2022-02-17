@@ -20,7 +20,10 @@ const Driver = ({ data }) => {
       <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
       <DrvFeatures></DrvFeatures>
-      <SilderSection title="Hay un DiDi Para ti"></SilderSection>
+      <SilderSection
+        data={products}
+        title="Hay un DiDi Para ti"
+      ></SilderSection>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
@@ -38,9 +41,13 @@ export const query = graphql`
     ) {
       nodes {
         name
+        description
         phone
         requirement {
           raw
+        }
+        image {
+          gatsbyImageData
         }
       }
     }
