@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import DrvHero from "../../components/sections/DrvHero";
 import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
@@ -10,7 +11,8 @@ import SilderSection from "../../components/sections/SliderSection";
 import DrvRequirements from "../../components/sections/DrvRequirements";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
-const Pasajero = () => {
+const Driver = ({ data }) => {
+  const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
       <DrvHero></DrvHero>
@@ -19,11 +21,30 @@ const Pasajero = () => {
       <DrvBanner></DrvBanner>
       <DrvFeatures></DrvFeatures>
       <SilderSection title="Hay un DiDi Para ti"></SilderSection>
-      <DrvRequirements></DrvRequirements>
+      <DrvRequirements data={products}></DrvRequirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
     </Layout>
   );
 };
 
-export default Pasajero;
+export const query = graphql`
+  query {
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "cl" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
+        phone
+        requirement {
+          raw
+        }
+      }
+    }
+  }
+`;
+
+export default Driver;

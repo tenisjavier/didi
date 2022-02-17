@@ -37,13 +37,8 @@ const options = {
   },
 };
 
-const RichContent = ({ data }) => {
-  console.log(data);
-  return (
-    <section className="text-gray-primary container mb-32">
-      {renderRichText(data.contentfulGuide.content, options)}
-    </section>
-  );
+const RichContent = ({ richContent }) => {
+  return renderRichText(richContent, options);
 };
 
 export default RichContent;
