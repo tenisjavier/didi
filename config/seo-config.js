@@ -19,6 +19,14 @@ const seoMeta = {
       title: "Maneja como Socio Taxista DiDi Registrándote Acá",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
+    "/food/": {
+      title: "Pide comida a través de DiDi Food",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/store/": {
+      title: "Inscribe tu Comercio en DiDi Food",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
     "/seguridad/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",

@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import TaxiHero from "../../components/sections/TaxiHero";
 import TaxiWhyDidi from "../../components/sections/TaxiWhyDiDi";
-import DrvRequirements from "../../components/sections/DrvRequirements";
+import Requirements from "../../components/sections/Requirements";
 import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
@@ -15,7 +15,7 @@ const Taxi = ({ data }) => {
     <Layout>
       <TaxiHero></TaxiHero>
       <TaxiWhyDidi></TaxiWhyDidi>
-      <DrvRequirements data={products}></DrvRequirements>
+      <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
     </Layout>

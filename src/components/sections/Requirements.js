@@ -1,7 +1,7 @@
 import React from "react";
 import AccordionSection from "../AccordionSection";
 
-const DrvRequirements = ({ data }) => {
+const Requirements = ({ data }) => {
   console.log("data", data);
   let items = [];
   data.forEach((node) => {
@@ -23,4 +23,4 @@ const DrvRequirements = ({ data }) => {
   );
 };
 
-export default DrvRequirements;
+export default Requirements;
