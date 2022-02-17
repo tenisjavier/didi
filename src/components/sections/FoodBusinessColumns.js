@@ -2,7 +2,7 @@ import React from "react";
 import ColumnsSection from "../ColumnSection";
 import { StaticImage } from "gatsby-plugin-image";
 
-const FoodColumns = () => {
+const FoodBusinessColumns = () => {
   const bgColor = "bg-white";
   const columns = [
     {
@@ -54,4 +54,4 @@ const FoodColumns = () => {
   return <ColumnsSection columns={columns} bgColor={bgColor}></ColumnsSection>;
 };
 
-export default FoodColumns;
+export default FoodBusinessColumns;

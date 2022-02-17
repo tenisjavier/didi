@@ -8,7 +8,7 @@ import DrvBanner from "../../components/sections/DrvBanner";
 import DrvFeatures from "../../components/sections/DrvFeatures";
 import HomeColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
-import DrvRequirements from "../../components/sections/DrvRequirements";
+import Requirements from "../../components/sections/Requirements";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
 const Driver = ({ data }) => {
@@ -21,7 +21,7 @@ const Driver = ({ data }) => {
       <DrvBanner></DrvBanner>
       <DrvFeatures></DrvFeatures>
       <SilderSection title="Hay un DiDi Para ti"></SilderSection>
-      <DrvRequirements data={products}></DrvRequirements>
+      <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
     </Layout>
