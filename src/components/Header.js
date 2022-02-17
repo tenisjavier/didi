@@ -23,27 +23,25 @@ const Header = (props) => {
 const Navlogo = () => {
   const { pathname } = useLocation();
   const logo = pathname.includes("food") ? (
-    <StaticImage
-      src={`../images/didi-food-logo.png`}
-      alt="didi logo"
-      className=""
-      width={150}
-    />
+    <Link className="" to="/cl/food">
+      <StaticImage
+        src={`../images/didi-food-logo.png`}
+        alt="didi logo"
+        className=""
+        width={150}
+      />
+    </Link>
   ) : (
-    <StaticImage
-      src={`../images/didi-logo.png`}
-      alt="didi logo"
-      className=""
-      width={100}
-    />
+    <Link className="" to="/cl/">
+      <StaticImage
+        src={`../images/didi-logo.png`}
+        alt="didi logo"
+        className=""
+        width={100}
+      />
+    </Link>
   );
-  return (
-    <div className="p-3">
-      <Link className="" to="/cl">
-        {logo}
-      </Link>
-    </div>
-  );
+  return <div className="p-3">{logo}</div>;
 };
 
 export default Header;

@@ -1,31 +1,13 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import AccordionSection from "../AccordionSection";
 
-const Requerimientos = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allMdx(
-        filter: {
-          frontmatter: { section: { eq: "cl-drv-requirements" } }
-          fileAbsolutePath: {}
-        }
-      ) {
-        nodes {
-          body
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  `);
-
+const DrvRequirements = ({ data }) => {
+  console.log("data", data);
   let items = [];
-  data.allMdx.nodes.forEach((node) => {
+  data.forEach((node) => {
     items.push({
-      title: node.frontmatter.title,
-      content: node.body,
+      title: node.name,
+      content: node.requirement,
     });
   });
   const title = "Requerimientos";
@@ -41,4 +23,4 @@ const Requerimientos = () => {
   );
 };
 
-export default Requerimientos;
+export default DrvRequirements;

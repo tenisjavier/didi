@@ -2,7 +2,6 @@ import React from "react";
 import CTASection from "../CTASection";
 
 const DirectionHero = ({ data }) => {
-  console.log(data);
   const { origin, originAddress, destination, destinationAddress } = data;
 
   return (

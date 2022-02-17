@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../CTASection";
 
-const FoodComercioCTA = () => {
+const FoodBusinessCTA = () => {
   const props = {
     title: "Registra tu comercio en DiDi Food",
     desc: "Conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
@@ -23,4 +23,4 @@ const FoodComercioCTA = () => {
   return <CTASection {...props}></CTASection>;
 };
 
-export default FoodComercioCTA;
+export default FoodBusinessCTA;

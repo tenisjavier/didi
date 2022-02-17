@@ -1,4 +1,3 @@
-const gatsbySourceGraphqlConfig = require("./config/gatsby-source-graphql-config");
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
@@ -9,7 +8,6 @@ module.exports = {
     title: "didi",
   },
   plugins: [
-    //...gatsbySourceGraphqlConfig.get(),
     `gatsby-plugin-image`,
     "gatsby-plugin-postcss",
     `gatsby-plugin-sharp`,

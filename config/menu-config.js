@@ -36,11 +36,11 @@ const menuLinks = {
       dropMenu: [
         {
           text: "Tienda",
-          url: "/cl/driver/",
+          url: "/cl/food/store/",
         },
         {
           text: "Socio Repartidor",
-          url: "/cl/driver/santiago",
+          url: "/cl/food/delivery/",
         },
         {
           text: "Acerca",
