@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import taxicar from "../../images/taxi-car.jpg";
-import fleetcar from "../../images/didi-fleet.png";
-import expresscar from "../../images/car2.jpg";
+import taxicar from "../../images/didi-taxi.png";
+import deliverycar from "../../images/didi-delivery.png";
+import expresscar from "../../images/didi-express.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -10,29 +10,28 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 const dataslider = [
   {
-    picture: taxicar,
-    alt: "Taxi",
-    title: "Taxi",
-    des: "Recibe pedidos de servicios a través de la app o recoge a los pasajeros en la calle y conecta el viaje a través de DiDi Taxi",
-  },
-  {
     picture: expresscar,
     alt: "Express",
     title: "Express",
     des: "Vehículos particulares de 4 puertas y modelo 2009 en adelante con A/C y airbags. ¿Tienes uno? Express es para ti.",
   },
   {
-    picture: fleetcar,
-    alt: "Fleet",
-    title: "Fleet",
-    des: "DiDi Fleet Es la App de socio de flotilla que te permite generar ingresos a través de la integración de nuevos socios conductores en tu flota de carros. Con la app, podrás contactar nuevos conductores y hacer un seguimiento de ellos",
-    des2: "Para poder vincular tu cuenta de socio de flotilla, los socios conductores deberán descargar la aplicación DiDi conductor, además de asegurarte que tus datos de acceso sean los mismos que los de los socios conductores en su cuenta de socio conductor DiDi.",
+    picture: taxicar,
+    alt: "Taxi",
+    title: "Taxi",
+    des: "Recibe pedidos de servicios a través de la app o recoge a los pasajeros en la calle y conecta el viaje a través de DiDi Taxi",
+  },
+  {
+    picture: deliverycar,
+    alt: "DiDi Entrega",
+    title: "Entrega",
+    des: "Envía o recibe paquetes, productos y documentos, de manera personal o para tu negocio",
   },
 ];
 
-const SilderSection = ({ title }) => {
+const SilderSection = ({ title, data }) => {
   const [index, setIndex] = useState(0);
-
+  console.log(data);
   const nextSlide = () => {
     if (index === dataslider.length - 1) {
       setIndex(0);
@@ -63,11 +62,11 @@ const SilderSection = ({ title }) => {
 
   return (
     <section className="min-h-[768px]">
-      <div className="container mx-auto text-gray-primary">
-        <h1 className="mt-10 text-4xl font-bold text-center">{title}</h1>
-        <div className="my-10 mx-2 lg:mx-20  relative h-128 lg:h-110 group">
+      <div className="text-gray-primary container mx-auto">
+        <h1 className="mt-10 text-center text-4xl font-bold">{title}</h1>
+        <div className="h-128 lg:h-110 group  relative my-10 mx-2 lg:mx-20">
           <div
-            className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 lg:top-1/2 left-2 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
+            className="absolute top-48 left-2 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all lg:top-1/2
                     lg:left-8"
             onClick={prevSlide}
             aria-hidden="true"
@@ -75,8 +74,8 @@ const SilderSection = ({ title }) => {
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
           <div
-            className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 lg:top-1/2 right-8 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
-                    z-10"
+            className="absolute top-48 right-8 z-10 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all
+                    lg:top-1/2"
             onClick={nextSlide}
             aria-hidden="true"
           >
@@ -86,7 +85,7 @@ const SilderSection = ({ title }) => {
             return (
               <div
                 key={idx}
-                className="absolute w-4/5 h-full left-16 lg:left-24 top-20 flex flex-col lg:flex-row justify-start items-center"
+                className="absolute left-16 top-20 flex h-full w-4/5 flex-col items-center justify-start lg:left-24 lg:flex-row"
               >
                 <div className={idx === index ? showclass : hidclass}>
                   <img
@@ -96,14 +95,14 @@ const SilderSection = ({ title }) => {
                   />
                 </div>
                 <div className={idx === index ? textShow : textHide}>
-                  <h2 className="text-3xl font-bold  mt-0 text-center">
+                  <h2 className="mt-0 text-center  text-3xl font-bold">
                     {data.title}
                   </h2>
-                  <p className="text-base 2xl:text-lg my-2  text-justify">
+                  <p className="my-2 text-justify text-base  2xl:text-lg">
                     {data.des}
                   </p>
                   {data.des2 ? (
-                    <p className="text-base 2xl:text-lg my-2 text-justify">
+                    <p className="my-2 text-justify text-base 2xl:text-lg">
                       {" "}
                       {data.des2}{" "}
                     </p>
@@ -112,7 +111,7 @@ const SilderSection = ({ title }) => {
               </div>
             );
           })}
-          <div className="absolute bottom-1 2xl:top-105 flex justify-center w-full">
+          <div className="2xl:top-105 absolute bottom-1 flex w-full justify-center">
             {Array.from({ length: dataslider.length }).map((item, i) => {
               return (
                 <FontAwesomeIcon
