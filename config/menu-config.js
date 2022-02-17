@@ -44,7 +44,7 @@ const menuLinks = {
         },
         {
           text: "Acerca",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
+          url: "/cl/food/about/",
         },
       ],
     },
