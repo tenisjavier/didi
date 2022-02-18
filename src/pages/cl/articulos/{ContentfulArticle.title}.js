@@ -11,6 +11,7 @@ export const query = graphql`
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt
+      updatedAt
       content {
         raw
         references {
@@ -41,10 +42,14 @@ export const query = graphql`
 
 const ArticleTemplate = ({ data }) => {
   const richContent = data.contentfulArticle.content;
+  const date = data.contentfulArticle.updatedAt;
   return (
     <Layout>
       <ArticleHero data={data}></ArticleHero>
-      <section className="text-gray-primary container mb-32">
+      <section className="text-gray-primary container mx-auto mb-32 md:px-28">
+        <div className="mt-8 flex w-full justify-end font-bold">
+          {date.substring(0, 10)}
+        </div>
         <RichContent richContent={richContent}></RichContent>
       </section>
 

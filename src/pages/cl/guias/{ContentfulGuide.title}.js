@@ -44,7 +44,7 @@ const GuideTemplate = ({ data }) => {
   return (
     <Layout>
       <GuideHero data={data}></GuideHero>
-      <section className="text-gray-primary container mb-32">
+      <section className="text-gray-primary container mx-auto mb-32 md:px-28">
         <RichContent richContent={richContent}></RichContent>
       </section>
 
