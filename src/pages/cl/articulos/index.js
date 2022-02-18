@@ -2,8 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import ArticlesColumns from "../../../components/sections/ArticlesColumns";
-import DrvHero from "../../../components/sections/DrvHero";
-
+import ArticlesHero from "../../../components/sections/ArticlesHero";
 export const query = graphql`
   query {
     allContentfulArticle {
@@ -21,7 +20,7 @@ export const query = graphql`
 const Article = ({ data }) => {
   return (
     <Layout>
-      <DrvHero></DrvHero>
+      <ArticlesHero></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
     </Layout>
   );

@@ -7,43 +7,43 @@ const seoMeta = {
       title: "Regístrate como Socio Conductor DiDi",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
     },
-    "/pasajero/": {
+    "/pasajero": {
       title: "Pide un DiDi y Viaja Seguro",
       desc: "Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
     },
-    "/driver/": {
+    "/driver": {
       title: "Socios Conductores DiDi - Maneja y Genera Dinero",
       desc: "Driver Page. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
     },
-    "/taxi/": {
+    "/taxi": {
       title: "Maneja como Socio Taxista DiDi Registrándote Acá",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
-    "/food/": {
+    "/food": {
       title: "Pide comida a través de DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/store/": {
+    "/food/store": {
       title: "Inscribe tu Comercio en DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/seguridad/": {
+    "/seguridad": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
-    "/centro-de-ayuda/": {
+    "/centro-de-ayuda": {
       title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
-    "/direcciones/": {
+    "/direcciones": {
       title: "Cómo llegar a distintos puntos de Chile",
       desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
     },
-    "/guias/": {
+    "/guias": {
       title: "Guías para Conductores DiDi.",
       desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
     },
-    "/guias/hoja-de-vida-del-conductor/": {
+    "/guias/hoja-de-vida-del-conductor": {
       title: "Hoja de Vida del Conductor",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
     },
@@ -62,6 +62,11 @@ const seoMeta = {
     "/guias/licencias-de-conducir": {
       title: "Licencias de Conducir",
       desc: "Conducir en forma responsable implica, por lo menos, reducir al mínimo las infracciones. Aquí podrás leer acerca de lo que debes saber de la Hoja de Vida del Conductor.",
+    },
+    "/articulos": {
+      title:
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
   },
 };

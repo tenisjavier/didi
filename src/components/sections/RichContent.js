@@ -9,7 +9,7 @@ const options = {
   },
   renderNode: {
     [BLOCKS.HEADING_1]: (node, children) => (
-      <h1 className={"my-24 text-center text-3xl font-bold"}>{children}</h1>
+      <h1 className={"my-14 text-center text-3xl font-bold"}>{children}</h1>
     ),
     [BLOCKS.HEADING_2]: (node, children) => (
       <h1 className={"my-12 text-2xl font-bold"}>{children}</h1>
@@ -27,7 +27,7 @@ const options = {
       return (
         <div className="my-12 flex w-full justify-center">
           <GatsbyImage
-            className=" shadow-gray-primary/20 max-w-sm shadow-xl"
+            className=" shadow-gray-primary/20 max-w-xl shadow-xl"
             image={getImage(gatsbyImageData)}
             alt={title}
           ></GatsbyImage>
