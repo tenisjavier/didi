@@ -11,31 +11,6 @@ import {
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
-
-
-
-const dataslider1 = [
-  {
-    picture: taxicar,
-    alt: "Taxi",
-    title: "Taxi",
-    des: "Recibe pedidos de servicios a través de la app o recoge a los pasajeros en la calle y conecta el viaje a través de DiDi Taxi",
-  },
-  {
-    picture: expresscar,
-    alt: "Express",
-    title: "Express",
-    des: "Vehículos particulares de 4 puertas y modelo 2009 en adelante con A/C y airbags. ¿Tienes uno? Express es para ti.",
-  },
-  {
-    picture: fleetcar,
-    alt: "Fleet",
-    title: "Fleet",
-    des: "DiDi Fleet Es la App de socio de flotilla que te permite generar ingresos a través de la integración de nuevos socios conductores en tu flota de carros. Con la app, podrás contactar nuevos conductores y hacer un seguimiento de ellos",
-    des2: "Para poder vincular tu cuenta de socio de flotilla, los socios conductores deberán descargar la aplicación DiDi conductor, además de asegurarte que tus datos de acceso sean los mismos que los de los socios conductores en su cuenta de socio conductor DiDi.",
-  },
-];
-
 const SilderSection = ({ title }) => {
   const countryCode = window.location.pathname.split("/")[1];
   const data = useStaticQuery(graphql`
