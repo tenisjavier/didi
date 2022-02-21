@@ -20,7 +20,7 @@ const Breadcrumb = () => {
                 <Link to="/cl/" className="hover:text-blue-700">
                   <FontAwesomeIcon
                     size="1x"
-                    className="mr-2"
+                    className="mr-2 w-4"
                     icon={faHome}
                   ></FontAwesomeIcon>
                   home
@@ -36,6 +36,7 @@ const Breadcrumb = () => {
                   <FontAwesomeIcon
                     icon={faGreaterThan}
                     size="1x"
+                    className="w-2"
                   ></FontAwesomeIcon>
                 </span>
 
@@ -49,6 +50,7 @@ const Breadcrumb = () => {
                 <FontAwesomeIcon
                   icon={faGreaterThan}
                   size="1x"
+                  className="w-2"
                 ></FontAwesomeIcon>
               </span>
 
