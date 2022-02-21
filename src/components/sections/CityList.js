@@ -2,9 +2,11 @@ import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 import ListSection from "../ListSection";
 import slugify from "react-slugify";
+import { useLocation } from "@reach/router";
 
 const CityList = () => {
-    const countryCode = window.location.pathname.split("/")[1];
+    const { pathname} = useLocation();
+    const countryCode = pathname.split("/")[1];
     const data = useStaticQuery(graphql`
     {
       allContentfulCountry {

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import taxicar from "../../images/didi-taxi.png";
-import deliverycar from "../../images/didi-delivery.png";
-import expresscar from "../../images/didi-express.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useStaticQuery, graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   faChevronLeft,
@@ -12,7 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const SilderSection = ({ title }) => {
-  const countryCode = window.location.pathname.split("/")[1];
+  const {pathname} = useLocation();
+  const countryCode = pathname.split("/")[1];
   const data = useStaticQuery(graphql`
   {
     allContentfulProduct(filter: {category: {eq: "driver"}}) {

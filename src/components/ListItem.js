@@ -25,7 +25,7 @@ const ListItem = ({ text, secondText, link }) => {
     <p>{text}</p>
   );
   return (
-    <li className="border-gray-primary w-96 rounded border border-solid">
+    <li className="border-gray-primary w-96 rounded border border-solid h-32 m-1">
       {item}
     </li>
   );
