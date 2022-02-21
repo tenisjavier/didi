@@ -3,35 +3,38 @@ import taxicar from "../../images/didi-taxi.png";
 import deliverycar from "../../images/didi-delivery.png";
 import expresscar from "../../images/didi-express.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   faChevronLeft,
   faChevronRight,
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
-const dataslider = [
-  {
-    picture: expresscar,
-    alt: "Express",
-    title: "Express",
-    des: "Vehículos particulares de 4 puertas y modelo 2009 en adelante con A/C y airbags. ¿Tienes uno? Express es para ti.",
-  },
-  {
-    picture: taxicar,
-    alt: "Taxi",
-    title: "Taxi",
-    des: "Recibe pedidos de servicios a través de la app o recoge a los pasajeros en la calle y conecta el viaje a través de DiDi Taxi",
-  },
-  {
-    picture: deliverycar,
-    alt: "DiDi Entrega",
-    title: "Entrega",
-    des: "Envía o recibe paquetes, productos y documentos, de manera personal o para tu negocio",
-  },
-];
 
-const SilderSection = ({ title, data }) => {
+const SilderSection = ({ title }) => {
+  const countryCode = window.location.pathname.split("/")[1];
+  const data = useStaticQuery(graphql`
+  {
+    allContentfulProduct(filter: {category: {eq: "driver"}}) {
+      nodes {
+        country {
+          code
+        }
+        image {
+          gatsbyImageData(width: 700)
+        }
+        name
+        description
+      }
+    }
+  }
+  `);
+
+  const dataslider = data.allContentfulProduct.nodes.filter(
+    (country) => country.country && country.country[0].code === countryCode
+  );
+
   const [index, setIndex] = useState(0);
-  console.log(data);
   const nextSlide = () => {
     if (index === dataslider.length - 1) {
       setIndex(0);
@@ -66,7 +69,7 @@ const SilderSection = ({ title, data }) => {
         <h1 className="mt-10 text-center text-4xl font-bold">{title}</h1>
         <div className="h-128 lg:h-110 group  relative my-10 mx-2 lg:mx-20">
           <div
-            className="absolute top-48 left-2 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all lg:top-1/2
+            className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 md:top-2/3 xl:top-1/2 left-2 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
                     lg:left-8"
             onClick={prevSlide}
             aria-hidden="true"
@@ -74,8 +77,8 @@ const SilderSection = ({ title, data }) => {
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
           <div
-            className="absolute top-48 right-8 z-10 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all
-                    lg:top-1/2"
+            className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 md:top-2/3 xl:top-1/2 right-1 md:right-2 xl:right-8 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
+                    z-10"
             onClick={nextSlide}
             aria-hidden="true"
           >
@@ -85,21 +88,21 @@ const SilderSection = ({ title, data }) => {
             return (
               <div
                 key={idx}
-                className="absolute left-16 top-20 flex h-full w-4/5 flex-col items-center justify-start lg:left-24 lg:flex-row"
+                className="absolute w-4/5 h-full left-10 lg:left-24 top-20 flex flex-col lg:flex-row justify-start lg:justify-center items-center"
               >
                 <div className={idx === index ? showclass : hidclass}>
-                  <img
-                    src={data.picture}
-                    alt={data.alt}
-                    className="h-52 lg:h-64 2xl:h-80"
-                  />
+                  <GatsbyImage
+                    image={getImage(data.image.gatsbyImageData)}
+                    className="h-52 lg:h-64 2xl:h-80 w-52 lg:w-64 2xl:w-80"
+                    alt={data.name}
+                  /> 
                 </div>
                 <div className={idx === index ? textShow : textHide}>
-                  <h2 className="mt-0 text-center  text-3xl font-bold">
-                    {data.title}
+                  <h2 className="text-3xl font-bold  mt-0 text-center">
+                    {data.name}
                   </h2>
-                  <p className="my-2 text-justify text-base  2xl:text-lg">
-                    {data.des}
+                  <p className="text-base 2xl:text-lg my-2  text-justify">
+                    {data.description}
                   </p>
                   {data.des2 ? (
                     <p className="my-2 text-justify text-base 2xl:text-lg">
@@ -111,7 +114,7 @@ const SilderSection = ({ title, data }) => {
               </div>
             );
           })}
-          <div className="2xl:top-105 absolute bottom-1 flex w-full justify-center">
+          <div className="absolute bottom-32 lg:top-110 flex justify-center w-full">
             {Array.from({ length: dataslider.length }).map((item, i) => {
               return (
                 <FontAwesomeIcon
