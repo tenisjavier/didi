@@ -14,15 +14,14 @@ const Breadcrumb = () => {
     <nav className="bg-grey-light absolute top-24 z-10 hidden w-full justify-center rounded-md md:flex  md:justify-start">
       <ol className="flex list-none text-white">
         {directories.map((dir, index) => {
-          console.log(index);
           if (index === 0) {
             return (
-              <li>
+              <li key={index}>
                 <Link to="/cl/" className="hover:text-blue-700">
                   <FontAwesomeIcon
+                    size="1x"
                     className="mr-2"
                     icon={faHome}
-                    size="1x"
                   ></FontAwesomeIcon>
                   home
                 </Link>
@@ -32,38 +31,34 @@ const Breadcrumb = () => {
 
           if (index === directories.length - 1) {
             return (
-              <>
-                <li>
-                  <span className="mx-2">
-                    <FontAwesomeIcon
-                      icon={faGreaterThan}
-                      size="1x"
-                    ></FontAwesomeIcon>
-                  </span>
-                </li>
-                <li className="">{dir.replace(/(-)|(_.*)/g, " ")}</li>
-              </>
-            );
-          }
-          return (
-            <>
-              <li>
-                <span className="mx-2 ">
+              <li key={index}>
+                <span className="mx-2">
                   <FontAwesomeIcon
                     icon={faGreaterThan}
                     size="1x"
                   ></FontAwesomeIcon>
                 </span>
+
+                {dir.replace(/(-)|(_.*)/g, " ")}
               </li>
-              <li>
-                <Link
-                  to={"../".repeat(directories.length - 1 - index)}
-                  className=" hover:text-blue-700"
-                >
-                  {dir.replace(/(-)|(_.*)/g, " ")}
-                </Link>
-              </li>
-            </>
+            );
+          }
+          return (
+            <li key={index}>
+              <span className="mx-2 ">
+                <FontAwesomeIcon
+                  icon={faGreaterThan}
+                  size="1x"
+                ></FontAwesomeIcon>
+              </span>
+
+              <Link
+                to={"../".repeat(directories.length - 1 - index)}
+                className=" hover:text-blue-700"
+              >
+                {dir.replace(/(-)|(_.*)/g, " ")}
+              </Link>
+            </li>
           );
         })}
       </ol>

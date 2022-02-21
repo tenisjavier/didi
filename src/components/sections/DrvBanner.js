@@ -8,8 +8,7 @@ const DrvBanner = () => {
     desc: "Conoce todo sobre DiDi.",
     bgColor: "bg-orange-primary",
     textColor: "white",
-    btnText: "Escíbenos por Whatsapp",
-    btnLink: "http://localhost:8000/cl/centro-de-ayuda.",
+    btnType: "drv",
     btnMode: "light",
   };
 

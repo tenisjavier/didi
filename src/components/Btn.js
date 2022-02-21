@@ -16,6 +16,12 @@ const Btn = (props) => {
   } else if (props.type === "pax") {
     btnLink = btnData.paxLink;
     btnText = props.children ? props.children : btnData.paxText;
+  } else if (props.type === "foodBusiness") {
+    btnLink = btnData.foodBusinessLink;
+    btnText = props.children ? props.children : btnData.foodBusinessText;
+  } else if (props.type === "foodDelivery") {
+    btnLink = btnData.foodDeliveryLink;
+    btnText = props.children ? props.children : btnData.foodDeliveryText;
   }
 
   return (

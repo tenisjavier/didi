@@ -2,14 +2,12 @@ import React from "react";
 import CTASection from "../CTASection";
 
 const DirectionHero = ({ data }) => {
-  console.log(data);
   const { origin, originAddress, destination, destinationAddress } = data;
 
   return (
     <CTASection
       title={`Como llegar a ${destination} desde ${origin}`}
       desc={`Desde: ${originAddress} | Hacia: ${destinationAddress}`}
-      bgColor={"bg-blue-primary"}
       textColor="white"
       bgColor="bg-blue-primary"
       image={

@@ -15,7 +15,6 @@ const GuidesColumns = ({ data }) => {
   guides.forEach((guide) => {
     const slug = slugify(guide.title);
     const link = `/cl/guias/${slug}`;
-    console.log(link);
     columns.push({
       title: <Link to={link}>{guide.title}</Link>,
       desc: guide.excerpt,

@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import DrvHero from "../../components/sections/DrvHero";
 import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
@@ -7,10 +8,11 @@ import DrvBanner from "../../components/sections/DrvBanner";
 import DrvFeatures from "../../components/sections/DrvFeatures";
 import HomeColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
-import DrvRequirements from "../../components/sections/DrvRequirements";
+import Requirements from "../../components/sections/Requirements";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
-const Pasajero = () => {
+const Driver = ({ data }) => {
+  const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
       <DrvHero></DrvHero>
@@ -18,12 +20,38 @@ const Pasajero = () => {
       <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
       <DrvFeatures></DrvFeatures>
-      <SilderSection title="Hay un DiDi Para ti"></SilderSection>
-      <DrvRequirements></DrvRequirements>
+      <SilderSection
+        data={products}
+        title="Hay un DiDi Para ti"
+      ></SilderSection>
+      <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
     </Layout>
   );
 };
 
-export default Pasajero;
+export const query = graphql`
+  query {
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "cl" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
+        description
+        phone
+        requirement {
+          raw
+        }
+        image {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+`;
+
+export default Driver;

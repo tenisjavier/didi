@@ -1,32 +1,12 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import AccordionSection from "../AccordionSection";
 
-const HelpCenterFAQDrv = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allMdx(
-        filter: {
-          frontmatter: { section: { eq: "cl-faq-drv" } }
-          fileAbsolutePath: {}
-        }
-        sort: { fields: fileAbsolutePath }
-      ) {
-        nodes {
-          body
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  `);
-
+const HelpCenterFAQDrv = ({ data }) => {
   let items = [];
-  data.allMdx.nodes.forEach((node) => {
+  data.faq.forEach((node) => {
     items.push({
-      title: node.frontmatter.title,
-      content: node.body,
+      title: node.title,
+      content: node.content,
     });
   });
   const title = "Socio Conductor";

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import RichContent from "./sections/RichContent";
 
 const Acordian = ({ title, content, bgColor, textColor }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +37,7 @@ const Acordian = ({ title, content, bgColor, textColor }) => {
         style={{ maxHeight: height }}
         ref={content1}
       >
-        <MDXRenderer>{content}</MDXRenderer>
+        <RichContent richContent={content}></RichContent>
       </div>
     </>
   );

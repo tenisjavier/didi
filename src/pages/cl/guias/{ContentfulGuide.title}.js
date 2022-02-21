@@ -40,10 +40,14 @@ export const query = graphql`
 `;
 
 const GuideTemplate = ({ data }) => {
+  const richContent = data.contentfulGuide.content;
   return (
     <Layout>
       <GuideHero data={data}></GuideHero>
-      <RichContent data={data}></RichContent>
+      <section className="text-gray-primary container mx-auto mb-32 md:px-28">
+        <RichContent richContent={richContent}></RichContent>
+      </section>
+
       <PaxBanner></PaxBanner>
       <GuidesColumns data={data}></GuidesColumns>
     </Layout>

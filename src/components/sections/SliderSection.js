@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import taxicar from "../../images/taxi-car.jpg";
-import fleetcar from "../../images/didi-fleet.png";
-import expresscar from "../../images/car2.jpg";
+import taxicar from "../../images/didi-taxi.png";
+import deliverycar from "../../images/didi-delivery.png";
+import expresscar from "../../images/didi-express.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -33,9 +33,8 @@ const SilderSection = ({ title }) => {
   const dataslider = data.allContentfulProduct.nodes.filter(
     (country) => country.country && country.country[0].code === countryCode
   );
-  console.log(dataslider);
-  const [index, setIndex] = useState(0);
 
+  const [index, setIndex] = useState(0);
   const nextSlide = () => {
     if (index === dataslider.length - 1) {
       setIndex(0);
@@ -66,9 +65,9 @@ const SilderSection = ({ title }) => {
 
   return (
     <section className="min-h-[768px]">
-      <div className="container mx-auto text-gray-primary">
-        <h1 className="mt-10 text-4xl font-bold text-center">{title}</h1>
-        <div className="my-10 mx-2 lg:mx-20  relative h-128 lg:h-110 group">
+      <div className="text-gray-primary container mx-auto">
+        <h1 className="mt-10 text-center text-4xl font-bold">{title}</h1>
+        <div className="h-128 lg:h-110 group  relative my-10 mx-2 lg:mx-20">
           <div
             className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 md:top-2/3 xl:top-1/2 left-2 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
                     lg:left-8"
@@ -106,7 +105,7 @@ const SilderSection = ({ title }) => {
                     {data.description}
                   </p>
                   {data.des2 ? (
-                    <p className="text-base 2xl:text-lg my-2 text-justify">
+                    <p className="my-2 text-justify text-base 2xl:text-lg">
                       {" "}
                       {data.des2}{" "}
                     </p>

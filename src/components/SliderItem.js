@@ -1,20 +1,9 @@
 import React from "react";
-import Btn from "./Btn";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
 const SliderItem = (props) => {
-  const {
-    title,
-    desc,
-    bgColor,
-    textColor,
-    image,
-    btnText,
-    btnLink,
-    btnMode,
-    btnType,
-  } = props;
+  const { title, desc, bgColor, textColor, image } = props;
 
   return (
     <li

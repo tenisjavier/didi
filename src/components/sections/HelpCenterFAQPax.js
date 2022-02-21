@@ -1,32 +1,12 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import AccordionSection from "../AccordionSection";
 
-const HelpCenterFAQPax = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allMdx(
-        filter: {
-          frontmatter: { section: { eq: "cl-faq-pax" } }
-          fileAbsolutePath: {}
-        }
-        sort: { fields: fileAbsolutePath }
-      ) {
-        nodes {
-          body
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  `);
-
+const HelpCenterFAQPax = ({ data }) => {
   let items = [];
-  data.allMdx.nodes.forEach((node) => {
+  data.faq.forEach((node) => {
     items.push({
-      title: node.frontmatter.title,
-      content: node.body,
+      title: node.title,
+      content: node.content,
     });
   });
   const title = "Pasajeros";
