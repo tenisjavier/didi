@@ -9,6 +9,7 @@ import {
 
 const HomeColumns = () => {
   const bgColor = "bg-gray-light";
+  const textColor = "gray-primary";
   const columns = [
     {
       title: "Acerca de Nosotros",
@@ -41,7 +42,13 @@ const HomeColumns = () => {
       height: "h-80",
     },
   ];
-  return <ColumnsSection columns={columns} bgColor={bgColor}></ColumnsSection>;
+  return (
+    <ColumnsSection
+      columns={columns}
+      bgColor={bgColor}
+      textColor={textColor}
+    ></ColumnsSection>
+  );
 };
 
 export default HomeColumns;

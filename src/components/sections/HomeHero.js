@@ -4,7 +4,7 @@ import CTASection from "../CTASection";
 
 const HomeHero = () => {
   const props = {
-    title: "MUÉVETE POR TU CIUDAD",
+    title: "Muévete por tu ciudad",
     textColor: "white",
     bgImage: (
       <StaticImage

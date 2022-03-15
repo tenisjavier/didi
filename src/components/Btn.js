@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 import { getBtnLinks } from "../../config/btn-config";
 import { getCountryCodeFromUrl } from "../../config/countries-config";
 
@@ -28,6 +30,7 @@ const Btn = (props) => {
     <div className={`my-2 btn-${mode}`}>
       <a className="block" href={btnLink}>
         {btnText}
+        {/* <FontAwesomeIcon icon={faGreaterThan} size="xs" className="ml-2" /> */}
       </a>
     </div>
   );

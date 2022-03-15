@@ -4,7 +4,7 @@ import CTASection from "../CTASection";
 
 const DrvHero = () => {
   const props = {
-    title: "MANEJA CON DiDi",
+    title: "Maneja con DiDi",
     desc: "Para DiDi, los socios conductores y socios taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los socios conductores.",
     textColor: "white",
     bgImage: (

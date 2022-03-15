@@ -24,6 +24,7 @@ const SEO = () => {
     >
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={host + pathname} />
+      <link rel="alternate" href={host + pathname} hreflang="es-CL" />
     </Helmet>
   );
 };

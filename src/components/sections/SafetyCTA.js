@@ -4,7 +4,7 @@ import CTASection from "../CTASection";
 
 const SafetyCTA = () => {
   const props = {
-    title: "EN DIDI, TU SEGURIDAD ES NUESTRA PRIORIDAD",
+    title: "En DiDi, tu seguridad es nuestra prioridad",
     desc: "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
     textColor: "white",
     bgColor: "bg-blue-primary",

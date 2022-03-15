@@ -55,7 +55,7 @@ const CTASection = (props) => {
         <div
           className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
         >
-          <h2 className="pb-6 text-3xl font-bold md:text-4xl">{title}</h2>
+          <h2 className="pb-6 text-4xl font-bold md:text-4xl">{title}</h2>
           {bullets && (
             <>
               <ul className="list-none text-left text-xl">
@@ -81,7 +81,7 @@ const CTASection = (props) => {
               <br></br>
             </>
           )}
-          <p className="mb-5">{desc}</p>
+          <p className="mb-5 text-lg">{desc}</p>
           {sectionBtn}
         </div>
       </div>
