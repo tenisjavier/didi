@@ -5,13 +5,13 @@ import CTASection from "../CTASection";
 const PaxHero = () => {
   const props = {
     title:
-      "CONECTA TU PRÓXIMO VIAJE CON DIDI, LA APP EN LA QUE PAGAS MENOS Y RECIBES MÁS",
+      "Conecta tu próximo viaje con DiDi, la App que en la que pagas menos y recibes más",
     textColor: "white",
     bgImage: (
       <StaticImage
         src="../../images/cl/cl-pax-hero.png"
         alt="pasajera didi con celular"
-        className="md:block !absolute z-0 h-full w-full"
+        className="!absolute z-0 h-full w-full md:block"
       ></StaticImage>
     ),
     btnType: "pax",

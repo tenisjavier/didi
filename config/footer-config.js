@@ -1,9 +1,9 @@
 const footerLinks = {
   cl: [
-    { title: "Passajero", link: "/cl/pasajero" },
+    { title: "Pasajero", link: "/cl/pasajero" },
     { title: "Socio Conductor", link: "/cl/driver" },
-    { title: "Lugares", link: "/cl/direcciones" },
-    { title: "DIDI Taxi", link: "/cl/taxi" },
+    { title: "Lugares", link: "/cl/ciudades" },
+    { title: "DiDi Taxi", link: "/cl/taxi" },
     { title: "Seguridad", link: "/cl/seguridad" },
     { title: "Guías", link: "/cl/guias" },
     { title: "Artículos", link: "/cl/articulos" },
@@ -11,17 +11,19 @@ const footerLinks = {
 };
 
 const countries = [
-  { name: "Argentina", link: "https://chile.didiglobal.com/" },
-  { name: "Australia", link: "https://chile.didiglobal.com/" },
-  { name: "Brasil", link: "https://chile.didiglobal.com/" },
-  { name: "Chile", link: "https://chile.didiglobal.com/" },
-  { name: "Columbia", link: "https://chile.didiglobal.com/" },
-  { name: "Ecuador", link: "https://chile.didiglobal.com/" },
-  { name: "Japon", link: "https://chile.didiglobal.com/" },
-  { name: "Ecuador", link: "https://chile.didiglobal.com/" },
-  { name: "Ecuador", link: "https://chile.didiglobal.com/" },
-  { name: "Ecuador", link: "https://chile.didiglobal.com/" },
-  { name: "Ecuador", link: "https://chile.didiglobal.com/" },
+  { name: "Argentina", link: "https://argentina.didiglobal.com/" },
+  { name: "Australia", link: "https://australia.didiglobal.com/" },
+  { name: "Brazil", link: "https://99app.com/" },
+  { name: "Chile", link: "https://web.didiglobal.com/cl" },
+  { name: "Colombia", link: "https://colombia.didiglobal.com/" },
+  { name: "Ecuador", link: "https://ecuador.didiglobal.com/" },
+  { name: "Panama", link: "https://panama.didiglobal.com/" },
+  { name: "Costa Rica", link: "https://costarica.didiglobal.com/" },
+  { name: "Japan", link: "https://chile.didiglobal.com/" },
+  { name: "Egypt", link: "https://egypt.didiglobal.com/" },
+  { name: "South Africa", link: "https://za.didiglobal.com/" },
+  { name: "China", link: "https://www.didiglobal.com/" },
+  { name: "New Zealand", link: "https://newzealand.didiglobal.com/" },
 ];
 
 const getFooterLinks = (country) => {

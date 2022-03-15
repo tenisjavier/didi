@@ -5,7 +5,7 @@ import CTASection from "../CTASection";
 const DrvWhyDiDi = () => {
   const props = {
     title:
-      "Tu seguridad es nuestra prioridad! Por eso tenemos herramientas pensadas para ti:",
+      "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
     bullets: [
       "Comparte tu viaje.",
       "Privacidad de números telefónicos.",
