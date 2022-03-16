@@ -4,11 +4,25 @@ import Layout from "../../../components/Layout";
 import PlaceHero from "../../../components/sections/PlaceHero";
 import PlaceMap from "../../../components/sections/PlaceMap";
 import DirectoryOriginList from "../../../components/sections/DirectoryOriginList";
-
+import CTASection from "../../../components/CTASection";
+import { StaticImage } from "gatsby-plugin-image";
 const PlaceTemplate = ({ data }) => {
+  const wikiImage = <StaticImage 
+        src={`../../../images/wiki-logo.png`}
+        alt="Wiki logo"
+        className=""
+        width={300}/>
   return (
     <Layout>
       <PlaceHero data={data.contentfulPlace}></PlaceHero>
+      <CTASection 
+      bgColor={"bg-gray-100"}
+      textColor={'text-gray-800'}
+      title={"Sobre el Lugar:"}
+      desc={data.contentfulPlace.description.description}
+      image={wikiImage}
+      desImage={'Fuente: Wikipedia'}
+      reverse={true}/>
       <PlaceMap data={data}></PlaceMap>
       <DirectoryOriginList data={data}></DirectoryOriginList>
     </Layout>
@@ -22,8 +36,11 @@ export const query = graphql`
       placeId
       country
       address
+      description {
+        description
+      }
       image {
-        gatsbyImageData(width: 600)
+        gatsbyImageData(width: 900)
       }
       geometry {
         lat

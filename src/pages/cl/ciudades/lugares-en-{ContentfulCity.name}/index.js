@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import PaxHero from "../../../components/sections/PaxHero";
-import DirectoryList from "../../../components/sections/DirectoryList";
+import Layout from "../../../../components/Layout";
+import PaxHero from "../../../../components/sections/PaxHero";
+import DirectoryList from "../../../../components/sections/DirectoryList";
 const PlacesInCity = ({ data }) => {
     return (
         <Layout>
