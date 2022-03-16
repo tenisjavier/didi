@@ -6,7 +6,6 @@ const PlaceHero = ({ data }) => {
   const { name, address } = data;
 
   const image = getImage(data.image);
-
   return (
     <CTASection
       title={`Como llegar a ${name}`}

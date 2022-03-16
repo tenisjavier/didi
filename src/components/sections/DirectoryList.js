@@ -12,7 +12,7 @@ const DirectoryList = ({places, city}) => {
       text: name,
       secondText: place.address,
       link:
-        "/cl/direcciones/como-llegar-a-" +
+        "/cl/ciudades/como-llegar-a-" +
         slugify(place.name) +
         "_" +
         slugify(place.address),
