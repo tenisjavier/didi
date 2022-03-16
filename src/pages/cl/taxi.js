@@ -8,7 +8,6 @@ import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
 const Taxi = ({ data }) => {
-  console.log(data);
   const products = data.allContentfulProduct.nodes;
 
   return (

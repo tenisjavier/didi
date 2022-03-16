@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 import { getBtnLinks } from "../../config/btn-config";
 import { getCountryCodeFromUrl } from "../../config/countries-config";
 
