@@ -9,6 +9,17 @@ import "../styles/global.css";
 const Layout = ({ children }) => {
   return (
     <>
+      {
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PKNGZ5P"
+            height="0"
+            width="0"
+            className="hidden"
+            title="GTM"
+          ></iframe>
+        </noscript>
+      }
       <Seo></Seo>
       <Header></Header>
       {children}
