@@ -1,3 +1,4 @@
+// codigo de tracking didi SEO y WEB
 const insertBtnParams = () => {
   var referrer = document.referrer;
   var gaReferral = {
