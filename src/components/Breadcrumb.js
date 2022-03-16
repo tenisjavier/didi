@@ -28,6 +28,23 @@ const Breadcrumb = () => {
               </li>
             );
           }
+          if (dir === "direcciones") {
+            return (
+              <li key={index}>
+                <span className="mx-2 ">
+                  <FontAwesomeIcon
+                    icon={faGreaterThan}
+                    size="1x"
+                    className="w-2"
+                  ></FontAwesomeIcon>
+                </span>
+
+                <Link to={"../../ciudades"} className=" hover:text-blue-700">
+                  {"Lugares"}
+                </Link>
+              </li>
+            );
+          }
 
           if (index === directories.length - 1) {
             return (

@@ -10,7 +10,7 @@ const PlaceMap = ({ data }) => {
   } = data.contentfulPlace;
 
   const directions = data.allContentfulDirection.nodes;
-
+  const uniqueLines = [];
   return (
     <CTASection
       title={`Líneas cercanas a  ${name}`}
@@ -33,9 +33,16 @@ const PlaceMap = ({ data }) => {
             size="sm"
           />
           <b>Micro: </b>
-          {directions.map((node) =>
-            node.lastLine[0] !== "L" ? `${node.lastLine}, ` : null
-          )}
+          {directions.map((node) => {
+            if (
+              uniqueLines.indexOf(node.lastLine) === -1 &&
+              node.lastLine[0] !== "L"
+            ) {
+              uniqueLines.push(node.lastLine);
+              return node.lastLine + ",";
+            }
+            return null;
+          })}
         </span>,
         <span>
           <FontAwesomeIcon
@@ -44,9 +51,16 @@ const PlaceMap = ({ data }) => {
             size="sm"
           />
           <b>Metro: </b>
-          {directions.map((node) =>
-            node.lastLine[0] === "L" ? `${node.lastLine}, ` : null
-          )}
+          {directions.map((node) => {
+            if (
+              uniqueLines.indexOf(node.lastLine) === -1 &&
+              node.lastLine[0] === "L"
+            ) {
+              uniqueLines.push(node.lastLine);
+              return node.lastLine + ",";
+            }
+            return null;
+          })}
         </span>,
       ]}
       customBulletIcon="true"

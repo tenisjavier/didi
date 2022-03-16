@@ -3,7 +3,6 @@ import ListSection from "../ListSection";
 import slugify from "react-slugify";
 
 const DirectoryOriginList = ({ data }) => {
-  console.log(data);
   const directions = data.allContentfulDirection.nodes;
   const place = data.contentfulPlace;
 

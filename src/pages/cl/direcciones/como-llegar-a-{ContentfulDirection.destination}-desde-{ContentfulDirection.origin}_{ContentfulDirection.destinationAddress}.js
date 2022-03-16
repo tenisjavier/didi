@@ -38,6 +38,7 @@ export const query = graphql`
           line_color
           line_name
           line_short_name
+          vehicle_type
         }
       }
     }

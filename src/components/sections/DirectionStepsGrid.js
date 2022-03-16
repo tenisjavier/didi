@@ -14,6 +14,7 @@ const DirectionStepGrid = ({ data }) => {
     let icon = faWalking;
     if (step.transit) {
       icon = step.transit.vehicle_type === "BUS" ? faBus : faSubway;
+      console.log(step.transit);
     }
     let line = step.transit ? " | Línea: " + step.transit.line_short_name : "";
     let lineName = step.transit ? " | Línea: " + step.transit.line_name : "";
