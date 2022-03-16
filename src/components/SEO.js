@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import {
@@ -6,6 +6,7 @@ import {
   getCountryCodeFromUrl,
 } from "../../config/countries-config";
 import { getMetaByPath } from "../../config/seo-config";
+import { insertBtnParams } from "../../config/analytics-config";
 
 const SEO = () => {
   const country = getCountryFromUrl();
@@ -25,6 +26,9 @@ const SEO = () => {
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={host + pathname} />
       <link rel="alternate" href={host + pathname} hreflang="es-CL" />
+      {useEffect(() => {
+        insertBtnParams();
+      }, [])}
     </Helmet>
   );
 };
