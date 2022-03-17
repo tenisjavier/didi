@@ -39,7 +39,7 @@ const PlaceMap = ({ data }) => {
               node.lastLine[0] !== "L"
             ) {
               uniqueLines.push(node.lastLine);
-              return node.lastLine + ",";
+              return node.lastLine + ", ";
             }
             return null;
           })}
@@ -57,7 +57,7 @@ const PlaceMap = ({ data }) => {
               node.lastLine[0] === "L"
             ) {
               uniqueLines.push(node.lastLine);
-              return node.lastLine + ",";
+              return node.lastLine + ", ";
             }
             return null;
           })}
