@@ -15,7 +15,7 @@ const DirectoryOriginList = ({ data }) => {
       text: origin + " | " + dir.duration,
       secondText: dir.originAddress,
       link:
-        "/cl/direcciones/como-llegar-a-" +
+        "/cl/lugares/como-llegar-a-" +
         slugify(dir.destination) +
         "-desde-" +
         slugify(dir.origin) +

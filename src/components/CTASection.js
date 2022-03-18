@@ -15,7 +15,6 @@ const CTASection = (props) => {
     bgMobileImage,
     bgColor,
     image,
-    desImage,
     bullets,
     customBulletIcon,
     btnType,
@@ -52,11 +51,8 @@ const CTASection = (props) => {
           image ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
-        <div className="flex-col">
-          {image}
-          <p className="text-center text-3xl font-bold">{desImage}</p>
-        </div>
-        
+        <div className="flex-col">{image}</div>
+
         <div
           className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
         >

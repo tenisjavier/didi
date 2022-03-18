@@ -2,7 +2,7 @@ const footerLinks = {
   cl: [
     { title: "Pasajero", link: "/cl/pasajero" },
     { title: "Socio Conductor", link: "/cl/driver" },
-    { title: "Lugares", link: "/cl/ciudades" },
+    { title: "Lugares", link: "/cl/lugares" },
     { title: "DiDi Taxi", link: "/cl/taxi" },
     { title: "Seguridad", link: "/cl/seguridad" },
     { title: "Guías", link: "/cl/guias" },
