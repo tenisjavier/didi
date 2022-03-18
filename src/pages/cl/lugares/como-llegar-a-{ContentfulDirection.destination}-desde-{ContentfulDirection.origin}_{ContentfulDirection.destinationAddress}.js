@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import DirectionHero from "../../../components/sections/DirectionHero";
 import DirectionStepGrid from "../../../components/sections/DirectionStepsGrid";
 
-const PlaceTemplate = ({ data }) => {
+const DestinationTemplate = ({ data }) => {
   return (
     <Layout>
       <DirectionHero data={data.contentfulDirection}></DirectionHero>
@@ -45,4 +45,4 @@ export const query = graphql`
   }
 `;
 
-export default PlaceTemplate;
+export default DestinationTemplate;
