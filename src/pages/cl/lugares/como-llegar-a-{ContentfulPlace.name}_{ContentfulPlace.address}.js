@@ -2,24 +2,14 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import PlaceHero from "../../../components/sections/PlaceHero";
-import PlaceMap from "../../../components/sections/PlaceMap";
 import DirectoryOriginList from "../../../components/sections/DirectoryOriginList";
-import CTASection from "../../../components/CTASection";
+import WikiDescription from "../../../components/sections/WikiDescription";
+
 const PlaceTemplate = ({ data }) => {
   return (
     <Layout>
       <PlaceHero data={data.contentfulPlace}></PlaceHero>
-      <CTASection
-        bgColor={"bg-gray-light"}
-        textColor={"gray-primary"}
-        title={"Descripción de " + data.contentfulPlace.name}
-        desc={
-          data.contentfulPlace.description.description +
-          " -- Fuente Wikipedia --"
-        }
-        reverse={true}
-      />
-      <PlaceMap data={data}></PlaceMap>
+      <WikiDescription data={data.contentfulPlace}></WikiDescription>
       <DirectoryOriginList data={data}></DirectoryOriginList>
     </Layout>
   );
