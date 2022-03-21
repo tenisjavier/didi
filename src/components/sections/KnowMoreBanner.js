@@ -8,7 +8,7 @@ const KnowMoreBanner = () => {
     bgColor: "bg-orange-primary",
     textColor: "white",
     btnText: "Saber Más",
-    btnLink: "http://localhost:8000/cl/centro-de-ayuda.",
+    btnLink: "/cl/centro-de-ayuda",
     btnMode: "light",
   };
 

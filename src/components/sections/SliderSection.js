@@ -1,35 +1,18 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import {
   faChevronLeft,
   faChevronRight,
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
-const SilderSection = ({ title }) => {
-  const {pathname} = useLocation();
+const SilderSection = ({ title, data }) => {
+  const { pathname } = useLocation();
   const countryCode = pathname.split("/")[1];
-  const data = useStaticQuery(graphql`
-  {
-    allContentfulProduct(filter: {category: {eq: "driver"}}) {
-      nodes {
-        country {
-          code
-        }
-        image {
-          gatsbyImageData(width: 700)
-        }
-        name
-        description
-      }
-    }
-  }
-  `);
 
-  const dataslider = data.allContentfulProduct.nodes.filter(
+  const dataslider = data.filter(
     (country) => country.country && country.country[0].code === countryCode
   );
 
@@ -68,16 +51,16 @@ const SilderSection = ({ title }) => {
         <h1 className="mt-10 text-center text-4xl font-bold">{title}</h1>
         <div className="h-128 lg:h-110 group  relative my-10 mx-2 lg:mx-20">
           <div
-            className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 md:top-2/3 xl:top-1/2 left-2 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
-                    lg:left-8"
+            className="absolute top-48 left-2 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all md:top-2/3 lg:left-8
+                    xl:top-1/2"
             onClick={prevSlide}
             aria-hidden="true"
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
           <div
-            className="text-4xl cursor-pointer p-2 hover:bg-gray-300 w-fit absolute top-48 md:top-2/3 xl:top-1/2 right-1 md:right-2 xl:right-8 opacity-0 group-hover:opacity-100 group-hover:transition-all duration-300 ease-in
-                    z-10"
+            className="absolute top-48 right-1 z-10 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all md:top-2/3 md:right-2 xl:top-1/2
+                    xl:right-8"
             onClick={nextSlide}
             aria-hidden="true"
           >
@@ -87,20 +70,20 @@ const SilderSection = ({ title }) => {
             return (
               <div
                 key={idx}
-                className="absolute w-4/5 h-full left-10 lg:left-24 top-20 flex flex-col lg:flex-row justify-start lg:justify-center items-center"
+                className="absolute left-10 top-20 flex h-full w-4/5 flex-col items-center justify-start lg:left-24 lg:flex-row lg:justify-center"
               >
                 <div className={idx === index ? showclass : hidclass}>
                   <GatsbyImage
                     image={getImage(data.image.gatsbyImageData)}
-                    className="h-52 lg:h-64 2xl:h-80 w-52 lg:w-64 2xl:w-80"
+                    className="h-52 w-52 lg:h-64 lg:w-64 2xl:h-80 2xl:w-80"
                     alt={data.name}
-                  /> 
+                  />
                 </div>
                 <div className={idx === index ? textShow : textHide}>
-                  <h2 className="text-3xl font-bold  mt-0 text-center">
+                  <h2 className="mt-0 text-center  text-3xl font-bold">
                     {data.name}
                   </h2>
-                  <p className="text-base 2xl:text-lg my-2  text-justify">
+                  <p className="my-2 text-justify text-base  2xl:text-lg">
                     {data.description}
                   </p>
                   {data.des2 ? (
@@ -113,7 +96,7 @@ const SilderSection = ({ title }) => {
               </div>
             );
           })}
-          <div className="absolute bottom-32 lg:top-110 flex justify-center w-full">
+          <div className="lg:top-110 absolute bottom-32 flex w-full justify-center">
             {Array.from({ length: dataslider.length }).map((item, i) => {
               return (
                 <FontAwesomeIcon
