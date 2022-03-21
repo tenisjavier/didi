@@ -16,12 +16,12 @@ const menuLinks = {
           url: "/cl/driver",
         },
         {
-          text: "Santiago",
-          url: "/cl/driver/santiago",
-        },
-        {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/cl/ciudades",
         },
       ],
     },
