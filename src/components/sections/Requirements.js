@@ -2,7 +2,6 @@ import React from "react";
 import AccordionSection from "../AccordionSection";
 
 const Requirements = ({ data }) => {
-  console.log("data", data);
   let items = [];
   data.forEach((node) => {
     items.push({

@@ -1,40 +1,24 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import CTASection from "../../../components/CTASection";
+import DrvCityHero from "../../../components/sections/DrvCityHero";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
+import DrvCityOffice from "../../../components/sections/DrvCityOffice";
 
 const DrvCity = ({ data }) => {
-  const {
-    name,
-    product,
-    geometry: { lat, lon },
-  } = data.contentfulCity;
+  const { name, product } = data.contentfulCity;
 
   return (
     <Layout>
-      <CTASection
-        title={`Socios Conductores en  ${name}`}
-        desc={`¿Quieres convertirte en Socio Conductor DiDi en ${name}?. Regístrate online y comienza a generar ingresos de manera segura y flexible. `}
-        textColor="white"
-        bgColor="bg-blue-primary"
-        image={
-          <img
-            className="md:w-100 lg:w-110 z-10 m-4 w-full rounded"
-            alt={name + " mapa"}
-            src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=12&size=1200x500&maptype=roadmap
-&markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
-          ></img>
-        }
-        btnType="drv"
-        btnMode="primary"
-        reverse="true"
-      ></CTASection>
+      <DrvCityHero data={data.contentfulCity}></DrvCityHero>
       <SilderSection
         data={product}
         title={`Nuestros Servicios en ${name}`}
       ></SilderSection>
+      {data.contentfulOffice ? (
+        <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
+      ) : null}
       <DrvCityList></DrvCityList>
     </Layout>
   );
@@ -57,6 +41,15 @@ export const query = graphql`
       geometry {
         lat
         lon
+      }
+    }
+    contentfulOffice(city: { id: { eq: $id } }) {
+      name
+      address
+      phone
+      openHours
+      photos {
+        gatsbyImageData
       }
     }
   }
