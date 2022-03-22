@@ -43,15 +43,15 @@ const CTASection = (props) => {
   return (
     <section
       className={`relative flex min-h-[40rem] w-full  items-center justify-center 
-        ${bgColor && bgColor}`}
+    ${bgColor && bgColor}`}
     >
       <div
         className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
-        ${reverse && "flex-row-reverse"} ${
+ ${reverse && "flex-row-reverse"} ${
           image ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
-        <div className="flex-col">{image}</div>
+        {image}
 
         <div
           className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}

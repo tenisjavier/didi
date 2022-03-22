@@ -14,7 +14,6 @@ import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
 const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
-  console.log("drvjeivi", products);
   return (
     <Layout>
       <DrvHero></DrvHero>
