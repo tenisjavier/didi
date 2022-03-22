@@ -4,16 +4,16 @@ const menuLinks = {
   cl: [
     {
       text: "DiDi Pasajero",
-      url: "/cl/pasajero",
+      url: "/cl/pasajero/",
       dropMenu: null,
     },
     {
       text: "DiDi Conductor",
-      url: "/cl/driver",
+      url: "/cl/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/cl/driver",
+          url: "/cl/driver/",
         },
         {
           text: "Regístrate Online",
@@ -21,41 +21,41 @@ const menuLinks = {
         },
         {
           text: "Ciudades Operativas",
-          url: "/cl/ciudades",
+          url: "/cl/ciudades/",
         },
       ],
     },
     {
       text: "DiDi Taxi",
-      url: "/cl/taxi",
+      url: "/cl/taxi/",
       dropMenu: null,
     },
     {
       text: "DiDi Food",
-      url: "/cl/food",
+      url: "/cl/food/",
       dropMenu: [
         {
           text: "Tienda",
-          url: "/cl/food/store",
+          url: "/cl/food/store/",
         },
         {
           text: "Socio Repartidor",
-          url: "/cl/food/delivery",
+          url: "/cl/food/delivery/",
         },
         {
           text: "Acerca",
-          url: "/cl/food/about",
+          url: "/cl/food/about/",
         },
       ],
     },
     {
       text: "Seguridad",
-      url: "/cl/seguridad",
+      url: "/cl/seguridad/",
       dropMenu: null,
     },
     {
       text: "Centro de Ayuda",
-      url: "/cl/centro-de-ayuda",
+      url: "/cl/centro-de-ayuda/",
       dropMenu: null,
     },
   ],
