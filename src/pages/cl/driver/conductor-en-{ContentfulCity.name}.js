@@ -6,10 +6,12 @@ import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import DrvCityOffice from "../../../components/sections/DrvCityOffice";
 import Requirements from "../../../components/sections/Requirements";
+import PlacesPrimaryColumn from "../../../components/sections/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const requirements = data.allContentfulRequirement.nodes;
+  const places = data.allContentfulPlace.nodes.slice(0, 3);
   console.log("drvcity", data);
   return (
     <Layout>
@@ -22,6 +24,7 @@ const DrvCity = ({ data }) => {
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
       <Requirements data={requirements}></Requirements>
+      <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
       <DrvCityList></DrvCityList>
     </Layout>
   );
@@ -63,6 +66,20 @@ export const query = graphql`
         name
         requirement {
           raw
+        }
+      }
+    }
+    allContentfulPlace(
+      filter: { city: { id: { eq: $id } }, primary: { eq: true } }
+    ) {
+      nodes {
+        name
+        address
+        image {
+          gatsbyImageData
+        }
+        city {
+          name
         }
       }
     }
