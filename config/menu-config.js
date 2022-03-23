@@ -17,7 +17,7 @@ const menuLinks = {
         },
         {
           text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
         },
         {
           text: "Ciudades Operativas",
