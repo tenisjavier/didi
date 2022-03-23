@@ -5,10 +5,12 @@ import DrvCityHero from "../../../components/sections/DrvCityHero";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import DrvCityOffice from "../../../components/sections/DrvCityOffice";
+import Requirements from "../../../components/sections/Requirements";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
-
+  const requirements = data.allContentfulRequirement.nodes;
+  console.log("drvcity", data);
   return (
     <Layout>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>
@@ -19,6 +21,7 @@ const DrvCity = ({ data }) => {
       {data.contentfulOffice ? (
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
+      <Requirements data={requirements}></Requirements>
       <DrvCityList></DrvCityList>
     </Layout>
   );
@@ -50,6 +53,17 @@ export const query = graphql`
       openHours
       photos {
         gatsbyImageData
+      }
+    }
+
+    allContentfulRequirement(
+      filter: { city: { elemMatch: { id: { eq: $id } } } }
+    ) {
+      nodes {
+        name
+        requirement {
+          raw
+        }
       }
     }
   }

@@ -59,7 +59,7 @@ const seoMeta = {
 // @params country is the country code and path
 const getMetaByPath = (country, path) => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))/;
   const defaultMetas = {
     title: "DiDi: APP de Movilidad",
     desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
