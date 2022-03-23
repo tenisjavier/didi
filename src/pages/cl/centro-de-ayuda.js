@@ -10,16 +10,16 @@ import HomeColumns from "../../components/sections/HomeColumns";
 
 const CentroDeAyuda = ({ data }) => {
   const faqDelivery = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "Delivery"
+    (node) => node.name === "DiDi Delivery Chile"
   );
   const faqExpress = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "Express"
+    (node) => node.name === "DiDi Express Chile"
   );
   const faqPax = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "Pasajero"
+    (node) => node.name === "DiDi Pasajero Chile"
   );
   const faqTaxi = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "Taxi"
+    (node) => node.name === "DiDi Taxi Chile"
   );
   return (
     <Layout>
