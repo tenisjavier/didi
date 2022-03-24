@@ -4,9 +4,9 @@ import { faWalking, faBus, faSubway } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection from "../ColumnSection";
 
 const DirectionStepGrid = ({ data }) => {
-  const { steps, destination, origin } = data;
+  const { steps, destination, origin, duration } = data;
   const bgColor = "bg-white";
-  const title = `Pasos para llegar a ${destination} desde ${origin}`;
+  const title = `Pasos en público a ${destination} desde ${origin} (${duration})`;
   const textColor = "gray-primary";
   let columns = [];
 
