@@ -3,7 +3,7 @@ import Btn from "./Btn";
 
 // @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
-const Banner = (props) => {
+const Banner = ({ data }) => {
   const {
     title,
     desc,
@@ -14,7 +14,7 @@ const Banner = (props) => {
     btnLink,
     btnMode,
     btnType,
-  } = props.data;
+  } = data;
 
   return (
     <div
