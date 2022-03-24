@@ -24,7 +24,9 @@ const DrvCity = ({ data }) => {
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
       <Requirements data={requirements}></Requirements>
-      <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
+      {places.length ? (
+        <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
+      ) : null}
       <DrvCityList></DrvCityList>
     </Layout>
   );
