@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
+import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const Breadcrumb = () => {
   const { pathname } = useLocation();
+  const countryCode = getCountryCodeFromUrl(pathname);
   const directories = pathname.split("/").filter((item) => {
     return item !== "";
   });
@@ -17,7 +19,7 @@ const Breadcrumb = () => {
           if (index === 0) {
             return (
               <li key={index}>
-                <Link to="/cl/" className="hover:text-blue-700">
+                <Link to={`/${countryCode}/`} className="hover:text-blue-700">
                   <FontAwesomeIcon
                     size="1x"
                     className="mr-2 w-4"

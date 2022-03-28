@@ -1,10 +1,12 @@
 import React from "react";
+import { useLocation } from "@reach/router";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../../config/btn-config";
 import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const SmartBanner = (props) => {
-  const btnData = getBtnLinks(getCountryCodeFromUrl());
+  const { pathname } = useLocation();
+  const btnData = getBtnLinks(getCountryCodeFromUrl(pathname));
   const { type } = props;
   let btnLink,
     btnText,

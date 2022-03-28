@@ -9,9 +9,9 @@ import { getMetaByPath } from "../../config/seo-config";
 import { insertBtnParams } from "../../config/analytics-config";
 
 const SEO = () => {
-  const country = getCountryFromUrl();
-  const countryCode = getCountryCodeFromUrl();
   const { pathname, host } = useLocation();
+  const country = getCountryFromUrl(pathname);
+  const countryCode = getCountryCodeFromUrl(pathname);
 
   const meta = getMetaByPath(
     countryCode,

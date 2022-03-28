@@ -3,8 +3,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import CTASection from "../CTASection";
 
 const ArticleHero = ({ data }) => {
-  console.log("article", data);
-
   const { title, excerpt, featuredImage } = data.contentfulArticle;
 
   const image = getImage(featuredImage);

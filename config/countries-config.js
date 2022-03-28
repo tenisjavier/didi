@@ -33,8 +33,8 @@ const getCountryCodes = () => {
 
 // @desc: from the current url path it will extract the country
 // @return: country name
-const getCountryFromUrl = () => {
-  const countryCode = getCountryCodeFromUrl();
+const getCountryFromUrl = (path) => {
+  const countryCode = path.split("/")[1];
   return (
     Object.keys(countryCodes).find(
       (key) => countryCodes[key] === countryCode
@@ -44,8 +44,9 @@ const getCountryFromUrl = () => {
 
 // @desc: from the current url path it will extract the country code
 // @return: countrycode
-const getCountryCodeFromUrl = () => {
-  return "cl";
+const getCountryCodeFromUrl = (path) => {
+  const countryCode = path.split("/")[1];
+  return countryCode;
 };
 
 module.exports = {

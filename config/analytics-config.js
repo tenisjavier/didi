@@ -132,7 +132,6 @@ const insertBtnParams = () => {
     var values = {};
     // if referrer is "" is direct
     if (!referrer) {
-      console.log("4");
       values.source = "(direct)";
       values.medium = "(none)";
 
@@ -211,7 +210,7 @@ const insertBtnParams = () => {
       cl: ["CL", "es-CL"],
       "99app": ["BR", "pt-BR"],
       brasil: ["BR", "pt-BR"],
-      argentina: ["AR", "es-AR"],
+      ar: ["AR", "es-AR"],
       peru: ["PE", "es-PE"],
       mexico: ["MX", "es-MX"],
       ecuador: ["EC", "es-EC"],
@@ -293,7 +292,6 @@ const insertBtnParams = () => {
     // jovep 99 app
     if (device) {
       newSearch = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
-      console.log("CABRES:", oldUrl + newSearch);
 
       return oldUrl + newSearch;
     }

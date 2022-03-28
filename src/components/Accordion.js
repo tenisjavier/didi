@@ -14,7 +14,6 @@ const Acordian = ({ title, content, bgColor, textColor }) => {
   const toggtle = () => {
     setIsOpen(!isOpen);
     setHeight(isOpen ? `0px` : `${content1.current.scrollHeight + 50}px`);
-    console.log(content1.current.scrollHeight);
   };
   return (
     <>

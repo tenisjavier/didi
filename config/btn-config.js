@@ -20,8 +20,8 @@ const btnLinks = {
   ar: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate Online",
-    paxText: "Descarga Didi Pasajero",
+    drvText: "Registrate Online",
+    paxText: "Descargá Didi Pasajero",
   },
   co: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/codriverhero",
