@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "@reach/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { getMenuLinks } from "../../config/menu-config";
@@ -7,8 +8,8 @@ import { getCountryCodeFromUrl } from "../../config/countries-config";
 // @desc: Top Menu. Links from menu-config.
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const menuLinks = getMenuLinks(getCountryCodeFromUrl());
-
+  const { pathname } = useLocation();
+  const menuLinks = getMenuLinks(getCountryCodeFromUrl(pathname));
   return (
     <div className="flex h-full items-center">
       <FontAwesomeIcon

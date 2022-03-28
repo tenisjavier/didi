@@ -8,13 +8,22 @@ const footerLinks = {
     { title: "Guías", link: "/cl/guias/" },
     { title: "Artículos", link: "/cl/articulos/" },
   ],
+  ar: [
+    { title: "Pasajero", link: "/ar/pasajero/" },
+    { title: "Socio Conductor", link: "/ar/driver/" },
+    { title: "Lugares", link: "/ar/lugares/" },
+    { title: "DiDi Taxi", link: "/ar/taxi/" },
+    { title: "Seguridad", link: "/ar/seguridad/" },
+    { title: "Guías", link: "/ar/guias/" },
+    { title: "Artículos", link: "/ar/articulos/" },
+  ],
 };
 
 const countries = [
-  { name: "Argentina", link: "https://argentina.didiglobal.com/" },
+  { name: "Argentina", link: "/ar/" },
   { name: "Australia", link: "https://australia.didiglobal.com/" },
   { name: "Brazil", link: "https://99app.com/" },
-  { name: "Chile", link: "https://web.didiglobal.com/cl" },
+  { name: "Chile", link: "/cl/" },
   { name: "Colombia", link: "https://colombia.didiglobal.com/" },
   { name: "Ecuador", link: "https://ecuador.didiglobal.com/" },
   { name: "Panama", link: "https://panama.didiglobal.com/" },

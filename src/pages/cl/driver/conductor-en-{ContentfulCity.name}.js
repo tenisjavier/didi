@@ -12,7 +12,7 @@ const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
-  console.log("drvcity", data);
+
   return (
     <Layout>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>

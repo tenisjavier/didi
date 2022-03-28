@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "@reach/router";
 import FooterLink from "./FooterLink.js";
 
 import { Link } from "gatsby";
@@ -11,7 +12,8 @@ import { getFooterLinks, getCountriesLinks } from "../../config/footer-config";
 import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const Footer = () => {
-  const links = getFooterLinks(getCountryCodeFromUrl());
+  const { pathname } = useLocation();
+  const links = getFooterLinks(getCountryCodeFromUrl(pathname));
   const countries = getCountriesLinks();
   return (
     <footer>

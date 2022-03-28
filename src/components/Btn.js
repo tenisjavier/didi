@@ -1,12 +1,14 @@
 import React from "react";
+import { useLocation } from "@reach/router";
 import { getBtnLinks } from "../../config/btn-config";
 import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 // @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
 const Btn = (props) => {
+  const { pathname } = useLocation();
+  const btnData = getBtnLinks(getCountryCodeFromUrl(pathname));
   const mode = props.mode;
-  const btnData = getBtnLinks(getCountryCodeFromUrl());
   let btnLink = props.link;
   let btnText = props.children;
 
