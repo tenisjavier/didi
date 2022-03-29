@@ -1,16 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import DrvHero from "../../components/sections/DrvHero";
-import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
-import DrvVideoGrid from "../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../components/sections/DrvBanner";
-import DrvFeatures from "../../components/sections/DrvFeatures";
-import HomeColumns from "../../components/sections/PaxColumns";
-import DrvCityList from "../../components/sections/DrvCityList";
-import SilderSection from "../../components/sections/SliderSection";
-import Requirements from "../../components/sections/Requirements";
-import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
+import DrvHero from "../../components/ar/DrvHero";
+import DrvWhyDiDi from "../../components/ar/DrvWhyDiDi";
+import DrvVideoGrid from "../../components/ar/DrvVideoGrid";
+import DrvBanner from "../../components/ar/DrvBanner";
+import DrvFeatures from "../../components/ar/DrvFeatures";
+import SilderSection from "../../components/ar/SliderSection";
+import Requirements from "../../components/ar/Requirements";
+import KnowMoreBanner from "../../components/ar/KnowMoreBanner";
+import DrvCityList from "../../components/ar/DrvCityList";
+import HomeColumns from "../../components/ar/HomeColumns";
 
 const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
@@ -23,10 +23,11 @@ const Driver = ({ data }) => {
       <DrvWhyDiDi></DrvWhyDiDi>
       <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
+
       <DrvFeatures></DrvFeatures>
       <SilderSection
         data={products}
-        title="Hay un DiDi para ti"
+        title="Hay un DiDi para vos"
       ></SilderSection>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
@@ -46,7 +47,7 @@ export const query = graphql`
   query {
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
+        country: { elemMatch: { code: { eq: "ar" } } }
         category: { eq: "driver" }
       }
     ) {
@@ -65,7 +66,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
+    contentfulCountry(code: { eq: "ar" }) {
       name
       city {
         name

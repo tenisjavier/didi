@@ -1,12 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import DrvCityHero from "../../../components/sections/DrvCityHero";
-import SilderSection from "../../../components/sections/SliderSection";
-import DrvCityList from "../../../components/sections/DrvCityList";
-import DrvCityOffice from "../../../components/sections/DrvCityOffice";
-import Requirements from "../../../components/sections/Requirements";
-import PlacesPrimaryColumn from "../../../components/sections/PlacesPrimaryColumn";
+import DrvCityHero from "../../../components/ar/DrvCityHero";
+import SilderSection from "../../../components/ar/SliderSection";
+import DrvCityList from "../../../components/ar/DrvCityList";
+import DrvCityOffice from "../../../components/ar/DrvCityOffice";
+import Requirements from "../../../components/ar/Requirements";
+import PlacesPrimaryColumn from "../../../components/ar/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
@@ -93,7 +93,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
+    contentfulCountry(code: { eq: "ar" }) {
       name
       city {
         name
