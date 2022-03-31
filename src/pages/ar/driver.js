@@ -32,13 +32,13 @@ const Driver = ({ data }) => {
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
-      {/* <DrvCityList
+      <DrvCityList
         data={cities}
         title={"Operamos en las siguientes ciudades en " + country}
         desc={
           "Descubre las ciudades de " + country + " donde esta operando Didi"
         }
-      ></DrvCityList> */}
+      ></DrvCityList>
     </Layout>
   );
 };
