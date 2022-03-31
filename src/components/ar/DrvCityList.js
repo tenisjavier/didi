@@ -18,6 +18,7 @@ const DrvCityList = ({ data, title, desc }) => {
     textColor: "gray-primary",
     items: items,
   };
+  console.log(props);
   return <ListSection {...props}></ListSection>;
 };
 
