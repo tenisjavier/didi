@@ -1,21 +1,23 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import CTASection from "../CTASection";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
-const HomeHero = () => {
+const HomeHero = ({ bgImage }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "Muévete por tu ciudad",
-    textColor: "white",
+    title: t("HomeHero.title"),
+    textColor: t("HomeHero.textColor"),
     bgImage: (
-      <StaticImage
-        src="../../images/cl/bg-orange-pax-red.jpg"
-        alt="Pasajera Subiendo a DiDi"
+      <GatsbyImage
+        image={getImage(bgImage)}
+        alt={bgImage.description}
         className="!absolute z-0 h-full w-full md:block"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "both",
-    btnMode: "light",
-    alignItems: "items-start",
+    btnType: t("HomeHero.btnType"),
+    btnMode: t("HomeHero.btnMode"),
+    alignItems: t("HomeHero.alignItems"),
   };
   return <CTASection {...props}></CTASection>;
 };

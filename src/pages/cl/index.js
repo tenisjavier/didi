@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import HomeHero from "../../components/sections/HomeHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
@@ -6,11 +7,19 @@ import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HomeColumns from "../../components/sections/HomeColumns";
 
-const Index = () => {
+const Index = ({ data }) => {
+  const images = data.allContentfulAsset.nodes;
+  const homeHeroBgImage = images.filter((image) => {
+    return image.title === "cl.HomeHero.bgImage";
+  })[0];
+  const safetyCTAImage = images.filter((image) => {
+    return image.title === "cl.SafetyCTA.image";
+  })[0];
+
   return (
     <Layout>
-      <HomeHero></HomeHero>
-      <SafetyCTA></SafetyCTA>
+      <HomeHero bgImage={homeHeroBgImage}></HomeHero>
+      <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA></DrvCTA>
       <PaxCTA></PaxCTA>
       <HomeColumns></HomeColumns>
@@ -19,3 +28,27 @@ const Index = () => {
 };
 
 export default Index;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    allContentfulAsset(
+      filter: { title: { in: ["cl.HomeHero.bgImage", "cl.SafetyCTA.image"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
+  }
+`;

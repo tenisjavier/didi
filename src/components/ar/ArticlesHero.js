@@ -2,22 +2,22 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../CTASection";
 
-const HomeHero = () => {
+const PaxHero = () => {
   const props = {
-    title: "Movete por tu ciudad",
+    title: "DiDi Artículos",
+    desc: "Averiguá sobre lugares interesantes y divertidos de ir a visitar. Tomá un DiDi para viajar barato y seguro.",
     textColor: "white",
     bgImage: (
       <StaticImage
-        src="../../images/cl/bg-orange-pax-red.jpg"
-        alt="Pasajera Subiendo a DiDi"
+        src="../../images/cl/cl-pax-hero.png"
+        alt="pasajera didi con celular"
         className="!absolute z-0 h-full w-full md:block"
       ></StaticImage>
     ),
-    btnType: "both",
+    btnType: "pax",
     btnMode: "light",
-    alignItems: "items-start",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default HomeHero;
+export default PaxHero;

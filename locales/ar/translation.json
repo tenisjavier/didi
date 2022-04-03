@@ -1,0 +1,15 @@
+{
+  "HomeHero.title": "Movete por tu ciudad",
+  "HomeHero.textColor": "white",
+  "HomeHero.btnType": "both",
+  "HomeHero.btnMode": "light",
+  "HomeHero.alignItems": "items-start",
+  "HomeHero.bgImageAlt": "pasajera entrando a un DiDi",
+  "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
+  "SafetyCTA.desc": "Revisá todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
+  "SafetyCTA.textColor": "white",
+  "SafetyCTA.bgColor": "bg-blue-primary",
+  "SafetyCTA.btnText": "Saber Más",
+  "SafetyCTA.btnMode": "light",
+  "SafetyCTA.btnLink": "/seguridad/"
+}

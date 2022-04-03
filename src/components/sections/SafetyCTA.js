@@ -1,24 +1,26 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const SafetyCTA = () => {
+const SafetyCTA = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "En DiDi, tu seguridad es nuestra prioridad",
-    desc: "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
-    textColor: "white",
-    bgColor: "bg-blue-primary",
+    title: t("SafetyCTA.title"),
+    desc: t("SafetyCTA.desc"),
+    textColor: t("SafetyCTA.textColor"),
+    bgColor: t("SafetyCTA.bgColor"),
     image: (
-      <StaticImage
-        src="../../images/cl/logo-funciones-seguridad.png"
-        alt="seguridad logo"
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         className="w-100 z-10 m-4"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
 
-    btnText: "Saber Más",
-    btnLink: "/seguridad/",
-    btnMode: "light",
+    btnText: t("SafetyCTA.btnText"),
+    btnLink: t("SafetyCTA.btnLink"),
+    btnMode: t("SafetyCTA.btnMode"),
     reverse: "true",
   };
   return <CTASection {...props}></CTASection>;
