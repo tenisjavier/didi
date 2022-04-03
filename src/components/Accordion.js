@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
-import RichContent from "./sections/RichContent";
+import RichContent from "./RichContent";
 
 const Acordian = ({ title, content, bgColor, textColor }) => {
   const [isOpen, setIsOpen] = useState(false);

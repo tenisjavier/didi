@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../../components/Layout";
 import GuideHero from "../../../components/sections/GuideHero";
 import { graphql } from "gatsby";
-import RichContent from "../../../components/sections/RichContent";
+import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import GuidesColumns from "../../../components/sections/GuidesColumns";
 
