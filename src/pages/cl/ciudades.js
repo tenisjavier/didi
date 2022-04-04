@@ -22,7 +22,16 @@ const Directions = ({ data }) => {
 };
 
 export const query = graphql`
-  query {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     contentfulCountry(code: { eq: "cl" }) {
       name
       city {

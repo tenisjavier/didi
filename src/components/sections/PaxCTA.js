@@ -1,24 +1,26 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const PaxCTA = () => {
+const PaxCTA = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "¡Elige DiDi!",
-    desc: "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos en nuestros servicios de Express y DiDi Pasajero y conéctate tu próximo viaje con la app de movilidad en la que recibes más por lo que pagas.",
-    textColor: "gray-primary",
+    title: t("PaxCTA.title"),
+    desc: t("PaxCTA.desc"),
+    textColor: t("PaxCTA.textColor"),
     image: (
-      <StaticImage
-        src="../../images/cl/cl-home-pax-cta.png"
-        alt="pasajera didi con celular"
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         width={700}
         height={700}
         className="w-100 z-10 m-4 rounded-full"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "pax",
-    btnMode: "dark",
-    reverse: "true",
+    btnType: t("PaxCTA.btnType"),
+    btnMode: t("PaxCTA.btnMode"),
+    reverse: t("PaxCTA.reverse"),
   };
   return <CTASection {...props}></CTASection>;
 };

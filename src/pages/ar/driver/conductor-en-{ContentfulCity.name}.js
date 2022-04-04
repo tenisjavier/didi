@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import DrvCityHero from "../../../components/ar/DrvCityHero";
-import SilderSection from "../../../components/ar/SliderSection";
+import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/ar/DrvCityList";
 import DrvCityOffice from "../../../components/ar/DrvCityOffice";
 import Requirements from "../../../components/ar/Requirements";

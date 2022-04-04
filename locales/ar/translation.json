@@ -11,5 +11,88 @@
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
-  "SafetyCTA.btnLink": "/seguridad/"
+  "SafetyCTA.btnLink": "seguridad/",
+  "DrvCTA.title": "Manejá con DiDi",
+  "DrvCTA.desc": "Conectate con nuestros servicios de autos particulares o taxi de manera más segura y empezá a generar ingresos extra con DiDi. Ahorrá para tus vacaciones soñadas, pagá la educación de tus hijos o complementá tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre. Registrate en DiDi con tus datos y los de tu vehículo y comenzá a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empecés a manejar.",
+  "DrvCTA.bgColor": "bg-gray-light",
+  "DrvCTA.textColor": "gray-primary",
+  "DrvCTA.btnType": "drv",
+  "DrvCTA.btnMode": "primary",
+  "PaxCTA.title": "¡Elegí DiDi!",
+  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengás un viaje increíble. Disfrutá de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos en nuestros servicios de Express y DiDi Pasajero y conectate tu próximo viaje con la app de movilidad en la que recibís más por lo que pagás.",
+  "PaxCTA.textColor": "gray-primary",
+  "PaxCTA.btnType": "pax",
+  "PaxCTA.btnMode": "dark",
+  "PaxCTA.reverse": "true",
+  "HomeColumns.bgColor": "bg-gray-light",
+  "HomeColumns.textColor": "gray-primary",
+  "HomeColumns.columns": [
+    {
+      "title": "Acerca de Nosotros",
+      "desc": "Somos la app de movilidad más grande del mundo.",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "Legal",
+      "desc": "Conocé nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Argentina.",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "Centro de Ayuda",
+      "desc": "Contás con DiDi 24/7 para escucharte, para ayudarte. \n Contactanos: Si sos Socio Conductor +54 (11) 5353-4474",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    }
+  ],
+  "PaxHero.title": "Conectá tu próximo viaje con DiDi, la App que en la que pagás menos y recibís más",
+  "PaxHero.textColor": "white",
+  "PaxHero.btnType": "pax",
+  "PaxHero.btnMode": "light",
+  "PaxColumns.bgColor": "bg-white",
+  "PaxColumns.columns": [
+    {
+      "title": "Ampliá disponibilidad y cobertura",
+      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡Encontranos ahora en toda Argentina!",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Precios bajos",
+      "desc": "Disfrutá de viajes tranquilos y de todos nuestros beneficios sin pagar más.",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    }
+  ],
+  "PaxWhyDiDi.title": "Por qué viajar hoy con DiDi:",
+  "PaxWhyDiDi.bullets": [
+    "Viajes a pedido. Obtené un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
+    "Opciones económicas: Cotizá los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
+    "Una forma fácil de viajar. Pedí un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
+  ],
+  "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
+  "PaxWhyDiDi.textColor": "gray-primary",
+  "PaxWhyDiDi.btnType": "pax",
+  "PaxWhyDiDi.btnMode": "primary",
+  "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
+  "PaxBanner.desc": "Generá Dinero y maneja tus tiempos.",
+  "PaxBanner.bgColor": "bg-orange-primary",
+  "PaxBanner.textColor": "white",
+  "PaxBanner.btnMode": "light"
 }

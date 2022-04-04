@@ -68,6 +68,10 @@ module.exports = {
         },
         pages: [
           {
+            matchPath: "/:lang?/:path?/",
+            getLanguageFromPath: true,
+          },
+          {
             matchPath: "/:lang?/",
             getLanguageFromPath: true,
           },

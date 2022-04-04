@@ -1,26 +1,25 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 import CTASection from "../CTASection";
 
-const PaxWhyDiDi = () => {
+const PaxWhyDiDi = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "Por qué viajar hoy con DiDi:",
-    bullets: [
-      "Viajes a pedido. Obtén un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
-      "Opciones económicas: Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
-      "Una forma fácil de viajar. Pide un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón.",
-    ],
-    desc: "Paga tus servicios con tarjeta de crédito o efectivo. ",
+    title: t("PaxWhyDiDi.title"),
+    bullets: t("PaxWhyDiDi.bullets", { returnObjects: true }),
+    desc: t("PaxWhyDiDi.desc"),
     textColor: "gray-primary",
     image: (
-      <StaticImage
-        src="../../images/cl/cl-pax-why-didi.jpg"
-        alt="conductor didi"
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         className="w-100 z-10 m-4 rounded-full"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "pax",
-    btnMode: "primary",
+    btnType: t("PaxWhyDiDi.btnType"),
+    btnMode: t("PaxWhyDiDi.btnMode"),
     reverse: "true",
   };
   return <CTASection {...props}></CTASection>;
