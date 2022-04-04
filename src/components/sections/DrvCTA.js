@@ -1,24 +1,26 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const DrvCTA = () => {
+const DrvCTA = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "Maneja con DiDi",
-    desc: "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi.Ahorra para tus vacaciones soñadas, paga la educación de tus hijos o complementa tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre.Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
-    bgColor: "bg-gray-light",
-    textColor: "gray-primary",
+    title: t("DrvCTA.title"),
+    desc: t("DrvCTA.desc"),
+    bgColor: t("DrvCTA.bgColor"),
+    textColor: t("DrvCTA.textColor"),
     image: (
-      <StaticImage
-        src="../../images/cl/driver-window.jpg"
-        alt="conductor didi"
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         width={700}
         height={700}
         className="w-100 z-10 m-4 rounded-full"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "drv",
-    btnMode: "primary",
+    btnType: t("DrvCTA.btnType"),
+    btnMode: t("DrvCTA.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };

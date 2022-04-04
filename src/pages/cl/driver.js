@@ -42,8 +42,19 @@ const Driver = ({ data }) => {
   );
 };
 
+export default Driver;
+
 export const query = graphql`
-  query {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "cl" } } }
@@ -73,5 +84,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Driver;

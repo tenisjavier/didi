@@ -1,17 +1,21 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import Banner from "../Banner";
 
 const PaxBanner = () => {
-  const banner = {
-    title: "¿Quieres ser socio conductor en DiDi?",
-    desc: "Genera Dinero y maneja tus tiempos.",
-    bgColor: "bg-orange-primary",
-    textColor: "white",
-    btnMode: "light",
-    btnType: "drv",
+  const { t } = useTranslation();
+  const props = {
+    data: {
+      title: t("PaxBanner.title"),
+      desc: t("PaxBanner.desc"),
+      bgColor: t("PaxBanner.bgColor"),
+      textColor: t("PaxBanner.textColor"),
+      btnMode: t("PaxBanner.btnMode"),
+      btnType: "drv",
+    },
   };
 
-  return <Banner data={banner}></Banner>;
+  return <Banner {...props}></Banner>;
 };
 
 export default PaxBanner;

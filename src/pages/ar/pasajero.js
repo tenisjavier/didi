@@ -1,24 +1,31 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import PaxHero from "../../components/ar/PaxHero";
-import PaxColumns from "../../components/ar/PaxColumns";
-import SilderSection from "../../components/ar/SliderSection";
-import PaxWhyDiDi from "../../components/ar/PaxWhyDiDi";
-import PaxBanner from "../../components/ar/PaxBanner";
-import HomeColumns from "../../components/ar/HomeColumns";
+import PaxHero from "../../components/sections/PaxHero";
+import PaxColumns from "../../components/sections/PaxColumns";
+import SilderSection from "../../components/sections/SliderSection";
+import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
+import PaxBanner from "../../components/sections/PaxBanner";
+import HomeColumns from "../../components/sections/HomeColumns";
 
 const Pasajero = ({ data }) => {
+  const images = data.allContentfulAsset.nodes;
+  const paxHeroBgImage = images.filter((image) => {
+    return image.title === "ar.PaxHero.bgImage";
+  })[0];
+  const paxWhyDiDiImage = images.filter((image) => {
+    return image.title === "ar.PaxWhyDiDi.image";
+  })[0];
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
-      <PaxHero></PaxHero>
+      <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxColumns></PaxColumns>
       <SilderSection
         data={products}
         title="Hay un DiDi Para ti"
       ></SilderSection>
-      <PaxWhyDiDi></PaxWhyDiDi>
+      <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <PaxBanner></PaxBanner>
       <HomeColumns></HomeColumns>
     </Layout>
@@ -26,7 +33,26 @@ const Pasajero = ({ data }) => {
 };
 
 export const query = graphql`
-  query {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    allContentfulAsset(
+      filter: { title: { in: ["ar.PaxHero.bgImage", "ar.PaxWhyDiDi.image"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "ar" } } }

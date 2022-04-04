@@ -15,13 +15,19 @@ const Index = ({ data }) => {
   const safetyCTAImage = images.filter((image) => {
     return image.title === "cl.SafetyCTA.image";
   })[0];
+  const drvCTAImage = images.filter((image) => {
+    return image.title === "cl.DrvCTA.image";
+  })[0];
+  const paxCTAImage = images.filter((image) => {
+    return image.title === "cl.PaxCTA.image";
+  })[0];
 
   return (
     <Layout>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
-      <DrvCTA></DrvCTA>
-      <PaxCTA></PaxCTA>
+      <DrvCTA image={drvCTAImage}></DrvCTA>
+      <PaxCTA image={paxCTAImage}></PaxCTA>
       <HomeColumns></HomeColumns>
     </Layout>
   );
@@ -41,7 +47,16 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cl.HomeHero.bgImage", "cl.SafetyCTA.image"] } }
+      filter: {
+        title: {
+          in: [
+            "cl.HomeHero.bgImage"
+            "cl.SafetyCTA.image"
+            "cl.DrvCTA.image"
+            "cl.PaxCTA.image"
+          ]
+        }
+      }
     ) {
       nodes {
         id

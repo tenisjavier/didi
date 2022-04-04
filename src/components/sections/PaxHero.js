@@ -1,21 +1,22 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const PaxHero = () => {
+const PaxHero = ({ bgImage }) => {
+  const { t } = useTranslation();
   const props = {
-    title:
-      "Conecta tu próximo viaje con DiDi, la App que en la que pagas menos y recibes más",
-    textColor: "white",
+    title: t("PaxHero.title"),
+    textColor: t("PaxHero.textColor"),
     bgImage: (
-      <StaticImage
-        src="../../images/cl/cl-pax-hero.png"
-        alt="pasajera didi con celular"
+      <GatsbyImage
+        image={getImage(bgImage)}
+        alt={bgImage.description}
         className="!absolute z-0 h-full w-full md:block"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "pax",
-    btnMode: "light",
+    btnType: t("PaxHero.btnType"),
+    btnMode: t("PaxHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };

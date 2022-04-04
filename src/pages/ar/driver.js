@@ -6,11 +6,11 @@ import DrvWhyDiDi from "../../components/ar/DrvWhyDiDi";
 import DrvVideoGrid from "../../components/ar/DrvVideoGrid";
 import DrvBanner from "../../components/ar/DrvBanner";
 import DrvFeatures from "../../components/ar/DrvFeatures";
-import SilderSection from "../../components/ar/SliderSection";
+import SilderSection from "../../components/sections/SliderSection";
 import Requirements from "../../components/ar/Requirements";
 import KnowMoreBanner from "../../components/ar/KnowMoreBanner";
 import DrvCityList from "../../components/ar/DrvCityList";
-import HomeColumns from "../../components/ar/HomeColumns";
+import HomeColumns from "../../components/sections/HomeColumns";
 
 const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
@@ -43,8 +43,19 @@ const Driver = ({ data }) => {
   );
 };
 
+export default Driver;
+
 export const query = graphql`
-  query {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "ar" } } }
@@ -74,5 +85,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Driver;

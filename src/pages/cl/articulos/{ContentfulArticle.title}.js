@@ -6,8 +6,28 @@ import ArticleContent from "../../../components/sections/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import ArticlesColumns from "../../../components/sections/ArticlesColumns";
 
+const ArticleTemplate = ({ data }) => {
+  return (
+    <Layout>
+      <ArticleHero data={data}></ArticleHero>
+      <ArticleContent data={data}></ArticleContent>
+      <PaxBanner></PaxBanner>
+      <ArticlesColumns data={data}></ArticlesColumns>
+    </Layout>
+  );
+};
+
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt
@@ -39,16 +59,5 @@ export const query = graphql`
     }
   }
 `;
-
-const ArticleTemplate = ({ data }) => {
-  return (
-    <Layout>
-      <ArticleHero data={data}></ArticleHero>
-      <ArticleContent data={data}></ArticleContent>
-      <PaxBanner></PaxBanner>
-      <ArticlesColumns data={data}></ArticlesColumns>
-    </Layout>
-  );
-};
 
 export default ArticleTemplate;

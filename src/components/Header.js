@@ -1,8 +1,9 @@
 import React from "react";
+import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Breadcrumb from "./Breadcrumb";
-import { useLocation } from "@reach/router";
+import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 import Menu from "./Menu";
 
@@ -22,8 +23,9 @@ const Header = (props) => {
 
 const Navlogo = () => {
   const { pathname } = useLocation();
+  const countryCode = getCountryCodeFromUrl(pathname);
   const logo = pathname.includes("food") ? (
-    <Link className="" to="/cl/food">
+    <Link className="" to={`/${countryCode}/food/`}>
       <StaticImage
         src={`../images/didi-food-logo.png`}
         alt="didi logo"
@@ -32,7 +34,7 @@ const Navlogo = () => {
       />
     </Link>
   ) : (
-    <Link className="" to="/cl/">
+    <Link className="" to={`/${countryCode}/`}>
       <StaticImage
         src={`../images/didi-logo.png`}
         alt="didi logo"
