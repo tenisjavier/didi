@@ -15,8 +15,8 @@ const PaxHero = ({ bgImage }) => {
         className="!absolute z-0 h-full w-full md:block"
       ></GatsbyImage>
     ),
-    btnType: t("PaxHero.btnType"),
     btnMode: t("PaxHero.btnMode"),
+    btnType: "pax",
   };
   return <CTASection {...props}></CTASection>;
 };

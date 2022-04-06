@@ -19,8 +19,8 @@ const DrvCTA = ({ image }) => {
         className="w-100 z-10 m-4 rounded-full"
       ></GatsbyImage>
     ),
-    btnType: t("DrvCTA.btnType"),
     btnMode: t("DrvCTA.btnMode"),
+    btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };

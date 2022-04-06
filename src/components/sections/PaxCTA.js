@@ -18,9 +18,9 @@ const PaxCTA = ({ image }) => {
         className="w-100 z-10 m-4 rounded-full"
       ></GatsbyImage>
     ),
-    btnType: t("PaxCTA.btnType"),
     btnMode: t("PaxCTA.btnMode"),
-    reverse: t("PaxCTA.reverse"),
+    btnType: "pax",
+    reverse: "true",
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -18,8 +18,8 @@ const PaxWhyDiDi = ({ image }) => {
         className="w-100 z-10 m-4 rounded-full"
       ></GatsbyImage>
     ),
-    btnType: t("PaxWhyDiDi.btnType"),
     btnMode: t("PaxWhyDiDi.btnMode"),
+    btnType: "pax",
     reverse: "true",
   };
   return <CTASection {...props}></CTASection>;

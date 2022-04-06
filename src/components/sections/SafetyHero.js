@@ -1,21 +1,23 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const SafetyHero = () => {
+const SafetyHero = ({ bgImage }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "En DiDi tu seguridad no es un mito",
-    desc: "Tu seguridad es nuestra prioridad y por eso queremos demostrar con acciones reales y específicas cómo DiDi te ofrece un viaje más tranquilo y seguro. Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje.",
-    textColor: "white",
+    title: t("SafetyHero.title"),
+    desc: t("SafetyHero.desc"),
+    textColor: t("SafetyHero.textColor"),
     bgImage: (
-      <StaticImage
-        src="../../images/cl/cl-safety-hero.jpg"
-        alt="didi taxi"
+      <GatsbyImage
+        image={getImage(bgImage)}
+        alt={bgImage.description}
         className="!absolute z-0 h-full w-full md:block"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
+    btnMode: t("SafetyHero.btnMode"),
     btnType: "pax",
-    btnMode: "light",
   };
   return <CTASection {...props}></CTASection>;
 };

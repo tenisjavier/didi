@@ -6,8 +6,8 @@ import CTASection from "../CTASection";
 const DrvHero = ({ bgImage }) => {
   const { t } = useTranslation();
   const props = {
-    title: t("DrvHero.title"),
-    desc: t("DrvHero.desc"),
+    title: t("GuidesHero.title"),
+    desc: t("GuidesHero.desc"),
     textColor: t("DrvHero.textColor"),
     bgImage: (
       <GatsbyImage
@@ -16,8 +16,8 @@ const DrvHero = ({ bgImage }) => {
         className="!absolute z-0 h-full w-full md:block"
       ></GatsbyImage>
     ),
-    btnMode: t("DrvHero.btnMode"),
-    btnType: "drv",
+    btnType: t("GuidesHero.btnType"),
+    btnMode: t("GuidesHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };
