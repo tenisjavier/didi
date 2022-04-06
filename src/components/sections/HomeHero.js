@@ -15,9 +15,9 @@ const HomeHero = ({ bgImage }) => {
         className="!absolute z-0 h-full w-full md:block"
       ></GatsbyImage>
     ),
-    btnType: t("HomeHero.btnType"),
     btnMode: t("HomeHero.btnMode"),
-    alignItems: t("HomeHero.alignItems"),
+    btnType: "both",
+    alignItems: "items-start",
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -3,16 +3,15 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import DrvCityHero from "../../../components/ar/DrvCityHero";
 import SilderSection from "../../../components/sections/SliderSection";
-import DrvCityList from "../../../components/ar/DrvCityList";
+import DrvCityList from "../../../components/sections/DrvCityList";
 import DrvCityOffice from "../../../components/ar/DrvCityOffice";
-import Requirements from "../../../components/ar/Requirements";
+import Requirements from "../../../components/sections/Requirements";
 import PlacesPrimaryColumn from "../../../components/ar/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
-  const country = data.contentfulCountry.name;
   const cities = data.contentfulCountry.city;
 
   return (
@@ -29,19 +28,24 @@ const DrvCity = ({ data }) => {
       {places.length ? (
         <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
       ) : null}
-      <DrvCityList
-        data={cities}
-        title={"Operamos en las siguientes ciudades en " + country}
-        desc={
-          "Descubre las ciudades de " + country + " donde esta operando Didi"
-        }
-      ></DrvCityList>
+      <DrvCityList data={cities}></DrvCityList>
     </Layout>
   );
 };
 
+export default DrvCity;
+
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     contentfulCity(id: { eq: $id }) {
       name
       product {
@@ -101,5 +105,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default DrvCity;

@@ -1,90 +1,34 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection from "../ColumnSection";
 
 const DrvVideoGrid = () => {
-  const bgColor = "bg-blue-primary";
-  const title = "Sigue estos pasos para empezar a manejar y generar ingresos";
-  const textColor = "white";
-  const columns = [
-    {
-      title: "Sube tu Cédula de Identidad Chilena",
-      bgColor: "bg-blue-primary",
+  const { t } = useTranslation();
+  const columns = t("DrvVideoGrid.columns", { returnObjects: true });
+  const videosColumns = columns.map((col) => {
+    return {
+      title: col.title,
+      bgColor: col.bgColor,
       image: (
         <iframe
           className="h-56 w-full"
-          src="https://www.youtube.com/embed/1853mnRqTW4"
+          src={col.videoSrc}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       ),
-    },
-    {
-      title: "Sube una fotografía de ti sosteniendo tu cédula de identidad",
-      bgColor: "bg-blue-primary",
-      image: (
-        <iframe
-          className="h-56 w-full"
-          src="https://www.youtube.com/embed/6TyVl3r1wUM"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      ),
-    },
-    {
-      title: "Sube tu licencia de conducir Chilena",
-      bgColor: "bg-blue-primary",
-      image: (
-        <iframe
-          className="h-56 w-full"
-          src="https://www.youtube.com/embed/cDXmKDkOlL4"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      ),
-    },
-    {
-      title: "Sube tu Permiso de Circulación al día",
-      bgColor: "bg-blue-primary",
-      image: (
-        <iframe
-          className="h-56 w-full"
-          src="https://www.youtube.com/embed/LH6BgttFSTc"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      ),
-    },
-    {
-      title: "Sube tu Permiso de Circulación al día",
-      bgColor: "bg-blue-primary",
-      image: (
-        <iframe
-          className="h-56 w-full"
-          src="https://www.youtube.com/embed/6lq6C1AbdPw"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      ),
-    },
-  ];
-  return (
-    <ColumnsSection
-      columns={columns}
-      bgColor={bgColor}
-      title={title}
-      textColor={textColor}
-    ></ColumnsSection>
-  );
+    };
+  });
+  const props = {
+    bgColor: t("DrvVideoGrid.bgColor"),
+    title: t("DrvVideoGrid.title"),
+    textColor: t("DrvVideoGrid.textColor"),
+    columns: videosColumns,
+  };
+
+  return <ColumnsSection {...props}></ColumnsSection>;
 };
 
 export default DrvVideoGrid;
