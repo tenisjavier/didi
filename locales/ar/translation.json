@@ -13,12 +13,10 @@
   "DrvCTA.desc": "Conectate con nuestros servicios de autos particulares o taxi de manera más segura y empezá a generar ingresos extra con DiDi. Ahorrá para tus vacaciones soñadas, pagá la educación de tus hijos o complementá tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre. Registrate en DiDi con tus datos y los de tu vehículo y comenzá a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empecés a manejar.",
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "gray-primary",
-  "DrvCTA.btnType": "drv",
   "DrvCTA.btnMode": "primary",
   "PaxCTA.title": "¡Elegí DiDi!",
   "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengás un viaje increíble. Disfrutá de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos en nuestros servicios de Express y DiDi Pasajero y conectate tu próximo viaje con la app de movilidad en la que recibís más por lo que pagás.",
   "PaxCTA.textColor": "gray-primary",
-  "PaxCTA.btnType": "pax",
   "PaxCTA.btnMode": "dark",
   "PaxCTA.reverse": "true",
   "HomeColumns.bgColor": "bg-gray-light",
@@ -54,7 +52,6 @@
   ],
   "PaxHero.title": "Conectá tu próximo viaje con DiDi, la App que en la que pagás menos y recibís más",
   "PaxHero.textColor": "white",
-  "PaxHero.btnType": "pax",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
   "PaxColumns.columns": [
@@ -85,7 +82,6 @@
   ],
   "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
-  "PaxWhyDiDi.btnType": "pax",
   "PaxWhyDiDi.btnMode": "primary",
   "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
   "PaxBanner.desc": "Generá Dinero y maneja tus tiempos.",
@@ -95,7 +91,6 @@
   "DrvHero.title": "Manejá con DiDi",
   "DrvHero.desc": "Para DiDi, los conductores y taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los conductores.",
   "DrvHero.textColor": "white",
-  "DrvHero.btnType": "drv",
   "DrvHero.btnMode": "light",
   "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para vos:",
   "DrvWhyDiDi.bullets": [
@@ -154,8 +149,96 @@
   "KnowMoreBanner.btnText": "Saber Más",
   "KnowMoreBanner.btnLink": "/ar/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
+  "SafetyHero.title": "En DiDi tu seguridad no es un mito",
+  "SafetyHero.desc": "Conocé aquí las funcionalidades y medidas de seguridad que hemos tomado para que tu próximo viaje lo disfrutes al máximo.",
+  "SafetyHero.textColor": "white",
+  "SafetyHero.btnMode": "light",
+  "SafetyGridBeforeTrip.bgColor": "bg-white",
+  "SafetyGridBeforeTrip.title": "Antes del Viaje",
+  "SafetyGridBeforeTrip.textColor": "gray-primary",
+  "SafetyGridBeforeTrip.columns": [
+    {
+      "title": "Verificación de Socios Conductores",
+      "desc": "Para que una persona pueda registrarse como socio conductor o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Reconocimiento Facial de Socios Conductores",
+      "desc": "Esta función verifica de manera aleatoria que el socio conductor que se conecta a la app sea el mismo registrado en el sistema a través de una selfie.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Selfie para usuarios",
+      "desc": "Nuestra app solicita una selfie de seguridad al usuario de manera aleatoria antes de solicitar un viaje. Esta no se comparte con ningún socio conductor.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Información del viaje",
+      "desc": "Antes de que te subás al auto, la app te mostrará el nombre, la foto del socio conductor, número de viajes, calificación y los datos del vehículo.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Privacidad de números telefónicos",
+      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre usuarios y socios conductores usando la aplicación NO mostrarán tu número real.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Contactos de confianza",
+      "desc": "Podés elegir hasta cinco personas de tus contactos para compartirles tus viajes en tiempo real.",
+      "bgColor": "bg-white"
+    }
+  ],
+  "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
+  "SafetyGridDuringTrip.title": "Durante del Viaje",
+  "SafetyGridDuringTrip.textColor": "white",
+  "SafetyGridDuringTrip.columns": [
+    {
+      "title": "Botón de Emergencia",
+      "desc": "Durante cualquier situación inesperada en tu viaje, podés presionar el botón de servicios de emergencia en la app, el cual te conecta con nuestro Centro de Emergencias DiDi 24/7.",
+      "bgColor": "bg-orange-primary"
+    },
+    {
+      "title": "Compartir Viaje",
+      "desc": "En DiDi podés compartir tu ubicación en tiempo real con cualquier persona que vos elijás.",
+      "bgColor": "bg-orange-primary"
+    },
+    {
+      "title": "Monitoreo de viaje en tiempo real",
+      "desc": "Rastreamos por GPS todos los viajes hacés, en caso de un incidente, podamos reaccionar de forma inmediata.",
+      "bgColor": "bg-orange-primary"
+    }
+  ],
+  "SafetyGridAfterTrip.bgColor": "bg-gray-light",
+  "SafetyGridAfterTrip.title": "Al Finalizar el Viaje",
+  "SafetyGridAfterTrip.textColor": "gray-primary",
+  "SafetyGridAfterTrip.columns": [
+    {
+      "title": "Objetos perdidos",
+      "desc": "¿Olvidaste algo en el vehículo? Con DiDi podés contactar directamente al socio conductor para acordar la devolución.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Calificá a tu Socio Conductor",
+      "desc": "Calificá a tu conductor después de cada viaje y, si deseas, puedes darle un pago extra. Esto ayuda a retroalimentar el sistema y mantener la seguridad en la comunidad de usuarios y socios conductores.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Bloqueá un Socio Conductor",
+      "desc": "Si sentís que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "bgColor": "bg-gray-light"
+    }
+  ],
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Enterate de lugares interesantes y divertidos de ir a visitar. Tomá un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
-  "ArticlesHero.btnMode": "light"
+  "ArticlesHero.btnMode": "light",
+  "GuidesHero.title": "Guías para Conductores Argentina",
+  "GuidesHero.desc": "Te invitamos a leer nuestras guías para conductores. Abarcan diferentes temas de interés desde tipos de licencias, trámites entre otros.",
+  "GuidesHero.textColor": "white",
+  "GuidesHero.btnMode": "light"
 }
