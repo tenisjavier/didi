@@ -1,23 +1,25 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const DrvHero = () => {
+const TaxiHero = ({ bgImage }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "DiDi Taxi",
-    desc: "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi.Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
-    textColor: "white",
+    title: t("TaxiHero.title"),
+    desc: t("TaxiHero.desc"),
+    textColor: t("TaxiHero.textColor"),
     bgImage: (
-      <StaticImage
-        src="../../images/cl/cl-bg-taxi-hero.jpg"
-        alt="didi taxi"
-        className="!absolute z-0 h-full w-full md:block"
-      ></StaticImage>
+      <GatsbyImage
+        image={getImage(bgImage)}
+        alt={bgImage.description}
+        className="!absolute z-0 h-full w-full brightness-50 md:block"
+      ></GatsbyImage>
     ),
+    btnMode: t("TaxiHero.btnMode"),
     btnType: "drv",
-    btnMode: "primary",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default DrvHero;
+export default TaxiHero;

@@ -62,11 +62,10 @@ const CTASection = (props) => {
               <ul className="list-none text-left text-xl">
                 {bullets.map((item, index) => {
                   return (
-                    <>
-                      <li key={index}>
+                    <div key={index}>
+                      <li>
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
-                            key={index}
                             icon={faCarSide}
                             className=" text-orange-primary mr-4 "
                             size="sm"
@@ -75,7 +74,7 @@ const CTASection = (props) => {
                         {item}
                       </li>
                       <br></br>
-                    </>
+                    </div>
                   );
                 })}
               </ul>

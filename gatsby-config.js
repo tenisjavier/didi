@@ -68,11 +68,7 @@ module.exports = {
         },
         pages: [
           {
-            matchPath: "/:lang?/:path?/",
-            getLanguageFromPath: true,
-          },
-          {
-            matchPath: "/:lang?/",
+            matchPath: "/:lang?/:path?/:variable?/",
             getLanguageFromPath: true,
           },
         ],

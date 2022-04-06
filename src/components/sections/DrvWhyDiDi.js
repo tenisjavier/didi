@@ -1,26 +1,23 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const DrvWhyDiDi = () => {
+const DrvWhyDiDi = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title:
-      "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
-    bullets: [
-      "Comparte tu viaje.",
-      "Privacidad de números telefónicos.",
-      "Desvincular usuario.",
-    ],
-    textColor: "gray-primary",
+    title: t("DrvWhyDiDi.title"),
+    bullets: t("DrvWhyDiDi.bullets", { returnObjects: true }),
+    textColor: t("DrvWhyDiDi.textColor"),
     image: (
-      <StaticImage
-        src="../../images/cl/cl-drv-why-didi.jpg"
-        alt="conductor didi"
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         className="w-100 z-10 m-4 rounded-full"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
+    btnMode: t("DrvWhyDiDi.btnMode"),
     btnType: "drv",
-    btnMode: "primary",
     reverse: false,
   };
   return <CTASection {...props}></CTASection>;

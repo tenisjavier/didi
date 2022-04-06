@@ -1,21 +1,23 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const DrvHero = () => {
+const DrvHero = ({ bgImage }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "Maneja con DiDi",
-    desc: "Para DiDi, los socios conductores y socios taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los socios conductores.",
-    textColor: "white",
+    title: t("DrvHero.title"),
+    desc: t("DrvHero.desc"),
+    textColor: t("DrvHero.textColor"),
     bgImage: (
-      <StaticImage
-        src="../../images/cl/bg-orange-drv-green.jpg"
-        alt="conductor didi"
+      <GatsbyImage
+        image={getImage(bgImage)}
+        alt={bgImage.description}
         className="!absolute z-0 h-full w-full md:block"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "drv",
-    btnMode: "light",
+    btnType: t("DrvHero.btnType"),
+    btnMode: t("DrvHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };

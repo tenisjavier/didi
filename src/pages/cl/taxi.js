@@ -8,12 +8,19 @@ import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
 const Taxi = ({ data }) => {
+  const images = data.allContentfulAsset.nodes;
+  const taxiHeroBgImage = images.filter((image) => {
+    return image.title === "cl.TaxiHero.bgImage";
+  })[0];
+  const taxiWhyDiDiImage = images.filter((image) => {
+    return image.title === "cl.TaxiWhyDiDi.image";
+  })[0];
   const products = data.allContentfulProduct.nodes;
 
   return (
     <Layout>
-      <TaxiHero></TaxiHero>
-      <TaxiWhyDidi></TaxiWhyDidi>
+      <TaxiHero bgImage={taxiHeroBgImage}></TaxiHero>
+      <TaxiWhyDidi image={taxiWhyDiDiImage}></TaxiWhyDidi>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
@@ -32,10 +39,20 @@ export const query = graphql`
         }
       }
     }
+    allContentfulAsset(
+      filter: { title: { in: ["cl.TaxiHero.bgImage", "cl.TaxiWhyDiDi.image"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "cl" } } }
-        name: { eq: "Taxi" }
+        name: { eq: "DiDi Taxi Chile" }
       }
     ) {
       nodes {
