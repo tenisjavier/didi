@@ -21,6 +21,9 @@ const Seguridad = ({ data }) => {
   const safetyGridAfterTripImages = images.filter((image) => {
     return image.title.indexOf("cl.SafetyGridAfterTrip.image") !== -1;
   });
+  const safetyGridDrvImages = images.filter((image) => {
+    return image.title.indexOf("cl.SafetyGridDrv.image") !== -1;
+  });
   return (
     <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
@@ -33,7 +36,7 @@ const Seguridad = ({ data }) => {
       <SafetyGridAfterTrip
         images={safetyGridAfterTripImages}
       ></SafetyGridAfterTrip>
-      <SafetyGridDrv></SafetyGridDrv>
+      <SafetyGridDrv images={safetyGridDrvImages}></SafetyGridDrv>
     </Layout>
   );
 };

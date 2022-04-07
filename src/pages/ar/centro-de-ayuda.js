@@ -7,6 +7,10 @@ import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
 import HomeColumns from "../../components/sections/HomeColumns";
 
 const CentroDeAyuda = ({ data }) => {
+  const images = data.allContentfulAsset.nodes;
+  const helpCenterBgImage = images.filter((image) => {
+    return image.title === "ar.HelpCenterHero.bgImage";
+  })[0];
   const faqExpress = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Express Argentina"
   );
@@ -16,7 +20,7 @@ const CentroDeAyuda = ({ data }) => {
 
   return (
     <Layout>
-      <HelpCenterHero></HelpCenterHero>
+      <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
 
@@ -34,6 +38,16 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    allContentfulAsset(
+      filter: { title: { in: ["ar.HelpCenterHero.bgImage"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
     allContentfulProduct(
