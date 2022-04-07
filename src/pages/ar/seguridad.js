@@ -5,7 +5,7 @@ import SafetyHero from "../../components/sections/SafetyHero";
 import SafetyGridBeforeTrip from "../../components/sections/SafetyGridBeforeTrip";
 import SafetyGridDuringTrip from "../../components/sections/SafetyGridDuringTrip";
 import SafetyGridAfterTrip from "../../components/sections/SafetyGridAfterTrip";
-import SafetyGridDrv from "../../components/ar/SafetyGridDrv";
+import SafetyGridDrv from "../../components/sections/SafetyGridDrv";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -21,6 +21,9 @@ const Seguridad = ({ data }) => {
   const safetyGridAfterTripImages = images.filter((image) => {
     return image.title.indexOf("ar.SafetyGridAfterTrip.image") !== -1;
   });
+  const safetyGridDrvImages = images.filter((image) => {
+    return image.title.indexOf("ar.SafetyGridDrv.image") !== -1;
+  });
   return (
     <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
@@ -33,7 +36,7 @@ const Seguridad = ({ data }) => {
       <SafetyGridAfterTrip
         images={safetyGridAfterTripImages}
       ></SafetyGridAfterTrip>
-      <SafetyGridDrv></SafetyGridDrv>
+      <SafetyGridDrv images={safetyGridDrvImages}></SafetyGridDrv>
     </Layout>
   );
 };

@@ -1,11 +1,15 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
+import { getCountryCodeFromUrl } from "../../../config/countries-config";
 import ColumnsSection from "../ColumnSection";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import slugify from "react-slugify";
 
 const ArticlesColumns = ({ data }) => {
+  const { pathname } = useLocation();
+  const countryCode = getCountryCodeFromUrl(pathname);
   const articles = data.allContentfulArticle.nodes;
   const bgColor = "bg-blue-primary";
   const title = "DiDi Artículos de Lugares para Visitar";
@@ -14,7 +18,7 @@ const ArticlesColumns = ({ data }) => {
   let columns = [];
   articles.forEach((article) => {
     const slug = slugify(article.title);
-    const link = `/cl/articulos/${slug}`;
+    const link = `/${countryCode}/articulos/${slug}`;
     columns.push({
       title: <Link to={link}>{article.title}</Link>,
       desc: article.excerpt,

@@ -15,14 +15,6 @@ const FooterLink = ({ links }) => {
           </div>
         ))}
       </div>
-
-      <div className="bg-grey-primary flex h-full w-full flex-initial items-center justify-center lg:w-1/3">
-        <StaticImage
-          src="../images/Download-Icons.png"
-          alt="didi logo"
-          className="h-auto w-10/12"
-        />
-      </div>
     </div>
   );
 };

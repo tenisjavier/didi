@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import ListSection from "../ListSection";
-import slugify from "react-slugify";
 import { useLocation } from "@reach/router";
+import slugify from "react-slugify";
+import ListSection from "../ListSection";
 
 const CityList = () => {
   const { pathname } = useLocation();
