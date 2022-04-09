@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import ArticleHero from "../../../components/ar/ArticleHero";
+import ArticleHero from "../../../components/sections/ArticleHero";
 import ArticleContent from "../../../components/ar/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import ArticlesColumns from "../../../components/ar/ArticlesColumns";
@@ -50,7 +50,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulArticle {
+    allContentfulArticle(filter: { country: { code: { eq: "ar" } } }) {
       nodes {
         title
         excerpt
