@@ -303,5 +303,64 @@
   "GuidesHero.title": "Guías para Conductores Chile",
   "GuidesHero.desc": "Te invitamos a leer nuestras guías para conductores. Abarcan diferentes temas de interés desde tipos de licencias, trámites entre otros.",
   "GuidesHero.textColor": "white",
-  "GuidesHero.btnMode": "light"
+  "GuidesHero.btnMode": "light",
+  "DiDiMasHero.title": "Club de Beneficios DiDiMás+",
+  "DiDiMasHero.desc": "Conoce nuestro club de beneficios siendo Socio Conductor de DiDi. ",
+  "DiDiMasHero.textColor": "white",
+  "DiDiMasHero.btnMode": "light",
+  "DiDiMasGrid.bgColor": "bg-white",
+  "DiDiMasGrid.title": "Beneficios que siempre suman",
+  "DiDiMasGrid.textColor": "gray-primary",
+  "DiDiMasGrid.columns": [
+    {
+      "title": "Autofin",
+      "desc": "Autofin es una empresa que se especializa en crédito automotriz y además te asesora en la compra de tu próximo vehículo.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "#",
+      "btnMode": "dark"
+    },
+    {
+      "title": "Copec",
+      "desc": "Todos los socios conductores y taxistas DiDi, que hayan realizado al menos 1 viaje en los últimos 6 meses, podrán acceder al descuento COPEC.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "#",
+      "btnMode": "dark"
+    },
+    {
+      "title": "Carglass",
+      "desc": "Carglass es una empresa que se dedica a la reparación y sustitución de vidrios automotrices.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "#",
+      "btnMode": "dark"
+    },
+    {
+      "title": "Gympass",
+      "desc": "Una plataforma que te ayuda a mantenerte activo y saludable, en cualquier momento y lugar.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "#",
+      "btnMode": "dark"
+    },
+    {
+      "title": "Movistar",
+      "desc": "Movistar se suma a los descuentos DiDi",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "#",
+      "btnMode": "dark"
+    }
+  ],
+  "DiDiMasCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
+  "DiDiMasCTA.desc": "¡Y eso no es todo! Prontamente tendremos más beneficios para ti. Te mantendremos informado de todas las novedades de DiDiMás+.",
+  "DiDiMasCTA.textColor": "white",
+  "DiDiMasCTA.bgColor": "bg-blue-primary",
+  "DiDiMasCTA.btnMode": "light"
 }

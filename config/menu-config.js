@@ -49,14 +49,36 @@ const menuLinks = {
       ],
     },
     {
-      text: "Seguridad",
-      url: "/cl/seguridad/",
-      dropMenu: null,
+      text: "Sobre DiDi",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/cl/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/cl/centro-de-ayuda/",
+        },
+        {
+          text: "DiDiMás+",
+          url: "/cl/didimas/",
+        },
+      ],
     },
     {
-      text: "Centro de Ayuda",
-      url: "/cl/centro-de-ayuda/",
-      dropMenu: null,
+      text: "Aprende",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/cl/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/cl/articulos/",
+        },
+      ],
     },
   ],
   pe: [
