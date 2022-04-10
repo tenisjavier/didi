@@ -10,7 +10,7 @@ import Menu from "./Menu";
 const Header = (props) => {
   return (
     <>
-      <nav className="bg-gray-primary fixed z-20 h-20 w-full bg-opacity-80">
+      <nav className="bg-gray-primary fixed z-30 h-20 w-full bg-opacity-80">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
           <Menu></Menu>
