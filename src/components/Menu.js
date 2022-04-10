@@ -11,7 +11,7 @@ const Menu = () => {
   const { pathname } = useLocation();
   const menuLinks = getMenuLinks(getCountryCodeFromUrl(pathname));
   return (
-    <div className="flex h-full items-center">
+    <div className="flex h-full items-center ">
       <FontAwesomeIcon
         icon={faBars}
         className=" m-4 cursor-pointer text-white lg:hidden "
@@ -23,11 +23,13 @@ const Menu = () => {
       <div
         className={
           "w-full " +
-          (open ? "absolute left-0 top-20 " : "hidden ") +
+          (open
+            ? "fixed left-0 top-20 right-0 bottom-0 overflow-y-scroll lg:absolute "
+            : "hidden ") +
           "lg:block"
         }
       >
-        <ul className="bg-gray-primary m-0 flex flex-col items-center bg-opacity-80 py-6 lg:h-full lg:flex-row lg:bg-transparent lg:p-0">
+        <ul className="bg-gray-primary border-orange-primary m-0 flex flex-col items-center  border-x-0 border-b-0 border-t border-solid bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
           {menuLinks.map((menuLink, index) => (
             <NavItem key={index} link={menuLink.url} text={menuLink.text}>
               {menuLink.dropMenu ? (
@@ -44,8 +46,8 @@ const Menu = () => {
 const NavItem = (props) => {
   return (
     <li
-      className="group ml-8 flex w-full flex-col p-2 
-    text-white lg:ml-0 lg:w-44 lg:items-center lg:justify-center lg:p-0 "
+      className="group flex w-full flex-col p-2 
+    text-white lg:w-44 lg:items-center lg:justify-center lg:p-0 "
     >
       <a href={props.link} className="hover:text-white">
         {props.text}
@@ -69,7 +71,7 @@ const DropdownMenu = (props) => {
 
   return (
     <div
-      className="lg:border-orange-primary top-20 w-full overflow-hidden transition group-hover:opacity-100 lg:absolute  lg:w-56 lg:border-x-0 
+      className="lg:border-orange-primary top-20  w-full transition group-hover:opacity-100 lg:absolute lg:block  lg:w-56 lg:border-x-0 
     lg:border-t-2 lg:border-b-0 lg:border-solid lg:opacity-0"
     >
       {props.dropLinks.map((item, index) => (
