@@ -7,7 +7,6 @@ import PartnerContent from "../../../components/sections/PartnerContent";
 import DiDiMasCTA from "../../../components/sections/DiDiMasCTA";
 
 const Partner = ({ data }) => {
-  console.log(data.contentfulPartner);
   const { heroTitle, heroDesc, heroImage } = data.contentfulPartner;
   const { featureTitle, featureDesc, featureImage } = data.contentfulPartner;
   const { content } = data.contentfulPartner;
