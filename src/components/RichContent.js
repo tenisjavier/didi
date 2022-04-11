@@ -27,7 +27,7 @@ const options = {
       return (
         <div className="my-12 flex w-full justify-center">
           <GatsbyImage
-            className=" shadow-gray-primary/20 max-w-xl shadow-xl"
+            className=" max-w-xl"
             image={getImage(gatsbyImageData)}
             alt={title}
           ></GatsbyImage>

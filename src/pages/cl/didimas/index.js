@@ -1,22 +1,20 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import DiDiMasHero from "../../components/sections/DiDiMasHero";
-import DiDiMasGrid from "../../components/sections/DiDiMasGrid";
-import DiDiMasCTA from "../../components/sections/DiDiMasCTA";
-import HomeColumns from "../../components/sections/HomeColumns";
+import Layout from "../../../components/Layout";
+import DiDiMasHero from "../../../components/sections/DiDiMasHero";
+import DiDiMasGrid from "../../../components/sections/DiDiMasGrid";
+import DiDiMasCTA from "../../../components/sections/DiDiMasCTA";
+import HomeColumns from "../../../components/sections/HomeColumns";
 
 const DiDiMas = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const partners = data.allContentfulPartner.nodes;
   const didiMasHeroBgImage = images.filter((image) => {
     return image.title === "cl.DiDiMasHero.bgImage";
   })[0];
   const didiMasHeroImage = images.filter((image) => {
     return image.title === "cl.DiDiMasHero.image";
   })[0];
-  const didiMasGridImages = images.filter((image) => {
-    return image.title.indexOf("cl.DiDiMasGrid.image") !== -1;
-  });
   const didiMasCTAImage = images.filter((image) => {
     return image.title === "cl.DiDiMasCTA.image";
   })[0];
@@ -26,7 +24,7 @@ const DiDiMas = ({ data }) => {
         bgImage={didiMasHeroBgImage}
         image={didiMasHeroImage}
       ></DiDiMasHero>
-      <DiDiMasGrid images={didiMasGridImages}></DiDiMasGrid>
+      <DiDiMasGrid data={partners}></DiDiMasGrid>
       <DiDiMasCTA image={didiMasCTAImage}></DiDiMasCTA>
       <HomeColumns></HomeColumns>
     </Layout>
@@ -45,9 +43,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: { regex: "/(cl.DiDiMasGrid)|(cl.DiDiMasHero)|(cl.DiDiMasCTA)/" }
-      }
+      filter: { title: { regex: "/(cl.DiDiMasHero)|(cl.DiDiMasCTA)/" } }
       sort: { fields: title }
     ) {
       nodes {
@@ -55,6 +51,16 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    allContentfulPartner(filter: { country: { code: { eq: "cl" } } }) {
+      nodes {
+        name
+        desc
+        logo {
+          gatsbyImageData
+          description
+        }
       }
     }
   }
