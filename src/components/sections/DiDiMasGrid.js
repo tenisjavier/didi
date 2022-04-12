@@ -31,7 +31,7 @@ const DiDiMasGrid = ({ data }) => {
         <Link to={`/${countryCode}/didimas/${slugify(partner.name)}/`}>
           <GatsbyImage
             image={image}
-            alt={image.description}
+            alt={partner.logo.description}
             width={700}
             height={700}
             className="z-10 m-4"
