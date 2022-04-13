@@ -4,6 +4,7 @@ import Layout from "../../../components/Layout";
 import PartnerHero from "../../../components/sections/PartnerHero";
 import PartnerFeature from "../../../components/sections/PartnerFeature";
 import PartnerContent from "../../../components/sections/PartnerContent";
+import DiDiMasGrid from "../../../components/sections/DiDiMasGrid";
 import DiDiMasCTA from "../../../components/sections/DiDiMasCTA";
 
 const Partner = ({ data }) => {
@@ -11,6 +12,7 @@ const Partner = ({ data }) => {
   const { featureTitle, featureDesc, featureImage } = data.contentfulPartner;
   const { content } = data.contentfulPartner;
   const images = data.allContentfulAsset.nodes;
+  const partners = data.allContentfulPartner.nodes;
   const didiMasCTAImage = images.filter((image) => {
     return image.title === "cl.DiDiMasCTA.image";
   })[0];
@@ -27,6 +29,7 @@ const Partner = ({ data }) => {
         image={featureImage}
       ></PartnerFeature>
       <PartnerContent content={content}></PartnerContent>
+      <DiDiMasGrid data={partners}></DiDiMasGrid>
       <DiDiMasCTA image={didiMasCTAImage}></DiDiMasCTA>
     </Layout>
   );
@@ -71,9 +74,16 @@ export const query = graphql`
         }
       }
     }
-    allContentfulPartner(filter: { country: { code: { eq: "cl" } } }) {
+    allContentfulPartner(
+      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+    ) {
       nodes {
         name
+        desc
+        logo {
+          gatsbyImageData
+          description
+        }
       }
     }
     allContentfulAsset(
