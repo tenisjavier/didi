@@ -2,9 +2,9 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import ArticleHero from "../../../components/sections/ArticleHero";
-import ArticleContent from "../../../components/ar/ArticleContent";
+import ArticleContent from "../../../components/sections/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
-import ArticlesColumns from "../../../components/ar/ArticlesColumns";
+import ArticlesColumns from "../../../components/sections/ArticlesColumns";
 
 const ArticleTemplate = ({ data }) => {
   return (

@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
 const DrvCityHero = ({ data }) => {
+  const { t } = useTranslation();
   const {
     name,
     geometry: { lat, lon },
@@ -9,9 +11,9 @@ const DrvCityHero = ({ data }) => {
 
   const props = {
     title: `Socios Conductores en  ${name}`,
-    desc: `¿Quieres convertirte en Socio Conductor DiDi en ${name}?. Regístrate online y comienza a generar ingresos de manera segura y flexible. `,
-    textColor: "white",
-    bgColor: "bg-blue-primary",
+    desc: t("DrvCityHero.desc"),
+    textColor: t("DrvCityHero.textColor"),
+    bgColor: t("DrvCityHero.bgColor"),
     image: (
       <img
         className="md:w-100 lg:w-110 z-10 m-4 w-full rounded"
@@ -20,8 +22,8 @@ const DrvCityHero = ({ data }) => {
 &markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
       ></img>
     ),
+    btnMode: t("DrvCityHero.btnMode"),
     btnType: "drv",
-    btnMode: "primary",
     reverse: "true",
   };
   return <CTASection {...props}></CTASection>;

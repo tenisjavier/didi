@@ -2,18 +2,20 @@
 import React from "react";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { getCountryCodeFromUrl } from "../../../config/countries-config";
 import ColumnsSection from "../ColumnSection";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import slugify from "react-slugify";
 
 const ArticlesColumns = ({ data }) => {
+  const { t } = useTranslation();
+  const title = t("ArticlesColumns.title");
+  const bgColor = t("ArticlesColumns.bgColor");
+  const textColor = t("ArticlesColumns.textColor");
   const { pathname } = useLocation();
   const countryCode = getCountryCodeFromUrl(pathname);
   const articles = data.allContentfulArticle.nodes;
-  const bgColor = "bg-blue-primary";
-  const title = "DiDi Artículos de Lugares para Visitar";
-  const textColor = "white";
 
   let columns = [];
   articles.forEach((article) => {

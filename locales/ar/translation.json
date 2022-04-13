@@ -266,8 +266,15 @@
   "ArticlesHero.desc": "Enterate de lugares interesantes y divertidos de ir a visitar. Tomá un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
   "ArticlesHero.btnMode": "light",
+  "ArticlesColumns.title": "DiDi Artículos de Lugares para Visitar en Argentina",
+  "ArticlesColumns.bgColor": "bg-blue-primary",
+  "ArticlesColumns.textColor": "white",
   "GuidesHero.title": "Guías para Conductores Argentina",
   "GuidesHero.desc": "Te invitamos a leer nuestras guías para conductores. Abarcan diferentes temas de interés desde tipos de licencias, trámites entre otros.",
   "GuidesHero.textColor": "white",
-  "GuidesHero.btnMode": "light"
+  "GuidesHero.btnMode": "light",
+  "DrvCityHero.desc": "¿Querés convertirte en Socio Conductor DiDi?. Registrate online y comenzá a generar ingresos de manera segura y flexible. ",
+  "DrvCityHero.textColor": "white",
+  "DrvCityHero.bgColor": "bg-blue-primary",
+  "DrvCityHero.btnMode": "primary"
 }
