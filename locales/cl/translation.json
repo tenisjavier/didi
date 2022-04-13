@@ -300,6 +300,9 @@
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
   "ArticlesHero.btnMode": "light",
+  "ArticlesColumns.title": "DiDi Artículos de Lugares para Visitar en Chile",
+  "ArticlesColumns.bgColor": "bg-blue-primary",
+  "ArticlesColumns.textColor": "white",
   "GuidesHero.title": "Guías para Conductores Chile",
   "GuidesHero.desc": "Te invitamos a leer nuestras guías para conductores. Abarcan diferentes temas de interés desde tipos de licencias, trámites entre otros.",
   "GuidesHero.textColor": "white",
@@ -315,5 +318,9 @@
   "DiDiMasCTA.desc": "¡Y eso no es todo! Prontamente tendremos más beneficios para ti. Te mantendremos informado de todas las novedades de DiDiMás+.",
   "DiDiMasCTA.textColor": "white",
   "DiDiMasCTA.bgColor": "bg-blue-primary",
-  "DiDiMasCTA.btnMode": "light"
+  "DiDiMasCTA.btnMode": "light",
+  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi?. Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
+  "DrvCityHero.textColor": "white",
+  "DrvCityHero.bgColor": "bg-blue-primary",
+  "DrvCityHero.btnMode": "primary"
 }

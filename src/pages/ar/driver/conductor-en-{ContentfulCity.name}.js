@@ -1,12 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import DrvCityHero from "../../../components/ar/DrvCityHero";
+import DrvCityHero from "../../../components/sections/DrvCityHero";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
-import DrvCityOffice from "../../../components/ar/DrvCityOffice";
+import DrvCityOffice from "../../../components/sections/DrvCityOffice";
 import Requirements from "../../../components/sections/Requirements";
-import PlacesPrimaryColumn from "../../../components/ar/PlacesPrimaryColumn";
+import PlacesPrimaryColumn from "../../../components/sections/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;

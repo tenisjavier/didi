@@ -1,20 +1,24 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import ColumnsSection from "../ColumnSection";
+import { useLocation } from "@reach/router";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import slugify from "react-slugify";
+import { getCountryCodeFromUrl } from "../../../config/countries-config";
+import ColumnsSection from "../ColumnSection";
 
 const PlacesPrimaryColumn = ({ data }) => {
+  const { pathname } = useLocation();
+  const countryCode = getCountryCodeFromUrl(pathname);
   const bgColor = "bg-blue-primary";
   const title = `Principales viajes realizados en ${data[0].city.name}`;
   const textColor = "white";
 
   let columns = [];
   data.forEach((item) => {
-    const link = `/cl/lugares/como-llegar-a-${slugify(item.name)}_${slugify(
-      item.address
-    )}`;
+    const link = `/${countryCode}/lugares/como-llegar-a-${slugify(
+      item.name
+    )}_${slugify(item.address)}`;
     columns.push({
       title: <Link to={link}>{item.name}</Link>,
       desc: item.address,
