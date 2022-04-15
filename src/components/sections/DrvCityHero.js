@@ -10,8 +10,9 @@ const DrvCityHero = ({ data }) => {
   } = data;
 
   const props = {
-    title: `Socios Conductores en  ${name}`,
-    desc: t("DrvCityHero.desc"),
+    hero: true,
+    title: t("DrvCityHero.title", { city: `${name}` }),
+    desc: t("DrvCityHero.desc", { city: `${name}` }),
     textColor: t("DrvCityHero.textColor"),
     bgColor: t("DrvCityHero.bgColor"),
     image: (

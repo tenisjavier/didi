@@ -4,6 +4,7 @@ import CTASection from "../CTASection";
 
 const PartnerHero = ({ title, desc, image }) => {
   const props = {
+    hero: true,
     title: title,
     desc: desc,
     textColor: "white",

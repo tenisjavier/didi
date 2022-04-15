@@ -6,6 +6,7 @@ import CTASection from "../CTASection";
 const PaxHero = ({ bgImage }) => {
   const { t } = useTranslation();
   const props = {
+    hero: true,
     title: t("PaxHero.title"),
     textColor: t("PaxHero.textColor"),
     bgImage: (

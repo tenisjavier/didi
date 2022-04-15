@@ -4,6 +4,7 @@ import CTASection from "../CTASection";
 
 const FoodBusinessHero = () => {
   const props = {
+    hero: true,
     title: "Conviértete en un socio restaurante de DiDi Food",
     desc: "Aprovecha los beneficios que DiDi Food tiene para tu negocio. Call Center: (+56) 227120527",
     textColor: "white",
