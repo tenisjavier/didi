@@ -4,6 +4,7 @@ import CTASection from "../CTASection";
 
 const FoodHero = () => {
   const props = {
+    hero: true,
     title: "DiDi Food: Tu comida cuando quieras, donde quieras",
     desc: "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
     textColor: "white",

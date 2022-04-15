@@ -16,7 +16,16 @@ const PlaceTemplate = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($id: String, $address: String) {
+  query ($id: String, $address: String, $language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     contentfulPlace(id: { eq: $id }) {
       name
       placeId

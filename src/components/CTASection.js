@@ -8,6 +8,7 @@ import Btn from "./Btn";
 // @props for images: bgImage (optional) | bgMobileImage (optional)| image - if you want an image next to the text
 const CTASection = (props) => {
   const {
+    hero,
     title,
     desc,
     textColor,
@@ -56,7 +57,11 @@ const CTASection = (props) => {
         <div
           className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
         >
-          <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
+          {hero ? (
+            <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
+          ) : (
+            <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
+          )}
           {bullets && (
             <>
               <ul className="list-none text-left text-xl">

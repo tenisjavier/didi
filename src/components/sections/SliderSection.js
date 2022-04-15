@@ -48,7 +48,7 @@ const SilderSection = ({ title, data }) => {
   return (
     <section className="min-h-[768px]">
       <div className="text-gray-primary container mx-auto">
-        <h1 className="mt-10 text-center text-4xl font-bold">{title}</h1>
+        <h2 className="mt-10 text-center text-4xl font-bold">{title}</h2>
         <div className="h-128 lg:h-110 group  relative my-10 mx-2 lg:mx-20">
           <div
             className="absolute top-48 left-2 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all md:top-2/3 lg:left-8

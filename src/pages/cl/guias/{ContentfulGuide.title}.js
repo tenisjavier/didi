@@ -1,13 +1,22 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import GuideHero from "../../../components/sections/GuideHero";
-import { graphql } from "gatsby";
 import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import GuidesColumns from "../../../components/sections/GuidesColumns";
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     contentfulGuide(id: { eq: $id }) {
       title
       excerpt
