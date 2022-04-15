@@ -332,5 +332,9 @@
   "DirectionHero.desc": "Desde: {{originAddress}} | Hacia: {{destinationAddress }}",
   "DirectionHero.textColor": "white",
   "DirectionHero.bgColor": "bg-blue-primary",
-  "DirectionHero.btnMode": "light"
+  "DirectionHero.btnMode": "light",
+  "CityList.title": "Ciudades en Chile",
+  "CityList.desc": "Descubre lugares para ir a visitar en Chile",
+  "CityList.bgColor": "bg-white",
+  "CityList.textColor": "gray-primary"
 }
