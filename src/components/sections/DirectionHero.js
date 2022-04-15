@@ -6,6 +6,7 @@ const DirectionHero = ({ data }) => {
   const { t } = useTranslation();
   const { origin, originAddress, destination, destinationAddress } = data;
   const props = {
+    hero: true,
     title: t("DirectionHero.title", { destination, origin }),
     desc: t("DirectionHero.desc", { destinationAddress, originAddress }),
     textColor: t("DirectionHero.textColor"),

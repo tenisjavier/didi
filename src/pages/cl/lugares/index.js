@@ -5,6 +5,8 @@ import PaxHero from "../../../components/sections/PaxHero";
 import CityList from "../../../components/sections/CityList";
 
 const Lugares = ({ data }) => {
+  const cities = data.contentfulCountry.city;
+  const country = data.contentfulCountry.name;
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "cl.PaxHero.bgImage";
@@ -12,7 +14,7 @@ const Lugares = ({ data }) => {
   return (
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
-      <CityList />
+      <CityList country={country} cities={cities} />
     </Layout>
   );
 };
@@ -28,6 +30,13 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    contentfulCountry(code: { eq: "cl" }) {
+      name
+      code
+      city {
+        name
       }
     }
     allContentfulAsset(filter: { title: { in: ["cl.PaxHero.bgImage"] } }) {

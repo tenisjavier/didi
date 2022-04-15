@@ -1,32 +1,10 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { useLocation } from "@reach/router";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import slugify from "react-slugify";
 import ListSection from "../ListSection";
 
-const CityList = () => {
-  const { pathname } = useLocation();
-  const countryCode = pathname.split("/")[1];
-  const data = useStaticQuery(graphql`
-    {
-      allContentfulCountry {
-        nodes {
-          name
-          city {
-            name
-          }
-          code
-        }
-      }
-    }
-  `);
-
-  const filterCountry = data.allContentfulCountry.nodes.filter(
-    (country) => country.code === countryCode
-  );
-  const country = filterCountry[0];
-  const cities = filterCountry[0].city;
-
+const CityList = ({ cities }) => {
+  const { t } = useTranslation();
   const items = cities.map((city) => {
     return {
       text: city.name,
@@ -36,11 +14,10 @@ const CityList = () => {
   });
 
   const props = {
-    title: "Ciudades en " + country.name,
-    desc:
-      "Descubre las ciudades de " + country.name + " donde esta operando Didi",
-    bgColor: "bg-white",
-    textColor: "gray-primary",
+    title: t("CityList.title"),
+    desc: t("CityList.desc"),
+    bgColor: t("CityList.bgColor"),
+    textColor: t("CityList.textColor"),
     items: items,
   };
   return <ListSection {...props}></ListSection>;
