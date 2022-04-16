@@ -336,5 +336,10 @@
   "CityList.title": "Ciudades en Chile",
   "CityList.desc": "Descubre lugares para ir a visitar en Chile",
   "CityList.bgColor": "bg-white",
-  "CityList.textColor": "gray-primary"
+  "CityList.textColor": "gray-primary",
+  "DirectoryList.title": "Direcciones a Atracciones en {{city}}",
+  "DirectoryList.desc": "Encontraras detalle de lineas y como irte en distintos medios",
+  "DirectoryList.bgColor": "bg-white",
+  "DirectoryList.textColor": "gray-primary",
+  "DirectoryList.linkItem": "/cl/lugares/como-llegar-a-{{placeName}}_{{placeAddress}}"
 }

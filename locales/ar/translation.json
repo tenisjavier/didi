@@ -290,5 +290,10 @@
   "CityList.title": "Ciudades en Argentina",
   "CityList.desc": "Descubre lugares para ir a visitar en Argentina",
   "CityList.bgColor": "bg-white",
-  "CityList.textColor": "gray-primary"
+  "CityList.textColor": "gray-primary",
+  "DirectoryList.title": "Direcciones a Atracciones en {{city}}",
+  "DirectoryList.desc": "Encontraras detalle de lineas y como moverte en distintos medios",
+  "DirectoryList.bgColor": "bg-white",
+  "DirectoryList.textColor": "gray-primary",
+  "DirectoryList.linkItem": "/ar/lugares/como-llegar-a-{{placeName}}_{{placeAddress}}"
 }

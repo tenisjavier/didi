@@ -1,8 +1,10 @@
 import React from "react";
-import ListSection from "../ListSection";
 import slugify from "react-slugify";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+import ListSection from "../ListSection";
 
 const DirectoryList = ({ places, city }) => {
+  const { t } = useTranslation();
   let items = [];
   if (places !== null) {
     places.forEach((place) => {
@@ -11,20 +13,19 @@ const DirectoryList = ({ places, city }) => {
       items.push({
         text: name,
         secondText: place.address,
-        link:
-          "/cl/lugares/como-llegar-a-" +
-          slugify(place.name) +
-          "_" +
-          slugify(place.address),
+        link: t("DirectoryList.linkItem", {
+          placeName: slugify(place.name),
+          placeAddress: slugify(place.address),
+        }),
       });
     });
   }
 
   const props = {
-    title: "Direcciones a Atracciones en " + city,
-    desc: "Encontraras detalle de lineas y como irte en distintos medios",
-    bgColor: "bg-white",
-    textColor: "gray-primary",
+    title: t("DirectoryList.title", { city }),
+    desc: t("DirectoryList.desc"),
+    bgColor: t("DirectoryList.bgColor"),
+    textColor: t("DirectoryList.textColor"),
     items: items,
   };
 
