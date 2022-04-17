@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
 import PaxHero from "../../../components/sections/PaxHero";
 import CityList from "../../../components/sections/CityList";
 
@@ -12,10 +11,10 @@ const Lugares = ({ data }) => {
     return image.title === "cl.PaxHero.bgImage";
   })[0];
   return (
-    <Layout>
+    <>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <CityList country={country} cities={cities} />
-    </Layout>
+    </>
   );
 };
 

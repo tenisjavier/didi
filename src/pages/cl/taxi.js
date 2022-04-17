@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
 import TaxiHero from "../../components/sections/TaxiHero";
 import TaxiWhyDidi from "../../components/sections/TaxiWhyDiDi";
 import Requirements from "../../components/sections/Requirements";
@@ -18,13 +17,13 @@ const Taxi = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
 
   return (
-    <Layout>
+    <>
       <TaxiHero bgImage={taxiHeroBgImage}></TaxiHero>
       <TaxiWhyDidi image={taxiWhyDiDiImage}></TaxiWhyDidi>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
-    </Layout>
+    </>
   );
 };
 

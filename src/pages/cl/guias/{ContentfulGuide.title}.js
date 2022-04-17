@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
 import GuideHero from "../../../components/sections/GuideHero";
 import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
@@ -51,7 +50,7 @@ export const query = graphql`
 const GuideTemplate = ({ data }) => {
   const richContent = data.contentfulGuide.content;
   return (
-    <Layout>
+    <>
       <GuideHero data={data}></GuideHero>
       <section className="text-gray-primary container mx-auto mb-32 md:px-28">
         <RichContent richContent={richContent}></RichContent>
@@ -59,7 +58,7 @@ const GuideTemplate = ({ data }) => {
 
       <PaxBanner></PaxBanner>
       <GuidesColumns data={data}></GuidesColumns>
-    </Layout>
+    </>
   );
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
 import DrvCityHero from "../../../components/sections/DrvCityHero";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
@@ -15,7 +14,7 @@ const DrvCity = ({ data }) => {
   const cities = data.contentfulCountry.city;
 
   return (
-    <Layout>
+    <>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>
       <SilderSection
         data={product}
@@ -29,7 +28,7 @@ const DrvCity = ({ data }) => {
         <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
       ) : null}
       <DrvCityList data={cities}></DrvCityList>
-    </Layout>
+    </>
   );
 };
 

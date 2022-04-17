@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
 import HomeHero from "../../components/sections/HomeHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
@@ -23,13 +22,13 @@ const Index = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <HomeColumns></HomeColumns>
-    </Layout>
+    </>
   );
 };
 
