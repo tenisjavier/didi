@@ -1,17 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
 import PlaceHero from "../../../components/sections/PlaceHero";
 import DirectoryOriginList from "../../../components/sections/DirectoryOriginList";
 import WikiDescription from "../../../components/sections/WikiDescription";
 
 const PlaceTemplate = ({ data }) => {
   return (
-    <Layout>
+    <>
       <PlaceHero data={data.contentfulPlace}></PlaceHero>
       <WikiDescription data={data.contentfulPlace}></WikiDescription>
       <DirectoryOriginList data={data}></DirectoryOriginList>
-    </Layout>
+    </>
   );
 };
 

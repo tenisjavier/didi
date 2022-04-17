@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
 import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
@@ -18,7 +17,7 @@ const Pasajero = ({ data }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   return (
-    <Layout>
+    <>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxColumns></PaxColumns>
       <SilderSection
@@ -28,7 +27,7 @@ const Pasajero = ({ data }) => {
       <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <PaxBanner></PaxBanner>
       <HomeColumns></HomeColumns>
-    </Layout>
+    </>
   );
 };
 
