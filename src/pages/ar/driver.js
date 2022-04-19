@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../components/Layout";
 import DrvHero from "../../components/sections/DrvHero";
 import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
 import DrvVideoGrid from "../../components/sections/DrvVideoGrid";
@@ -27,7 +28,7 @@ const Driver = ({ data }) => {
   const cities = data.contentfulCountry.city;
 
   return (
-    <>
+    <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
       <DrvVideoGrid></DrvVideoGrid>
@@ -47,7 +48,7 @@ const Driver = ({ data }) => {
           "Descubre las ciudades de " + country + " donde esta operando Didi"
         }
       ></DrvCityList>
-    </>
+    </Layout>
   );
 };
 

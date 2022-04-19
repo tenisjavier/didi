@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../../components/Layout";
 import GuidesHero from "../../../components/sections/DrvHero";
 import GuidesColumns from "../../../components/sections/GuidesColumns";
 
@@ -9,10 +10,10 @@ const Guias = ({ data }) => {
     return image.title === "cl.GuidesHero.bgImage";
   })[0];
   return (
-    <>
+    <Layout>
       <GuidesHero bgImage={guidesHeroBgImage}></GuidesHero>
       <GuidesColumns data={data}></GuidesColumns>
-    </>
+    </Layout>
   );
 };
 

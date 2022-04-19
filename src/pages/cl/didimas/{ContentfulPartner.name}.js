@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../../components/Layout";
 import PartnerHero from "../../../components/sections/PartnerHero";
 import PartnerFeature from "../../../components/sections/PartnerFeature";
 import PartnerContent from "../../../components/sections/PartnerContent";
@@ -16,7 +17,7 @@ const Partner = ({ data }) => {
     return image.title === "cl.DiDiMasCTA.image";
   })[0];
   return (
-    <>
+    <Layout>
       <PartnerHero
         title={heroTitle}
         desc={heroDesc}
@@ -30,7 +31,7 @@ const Partner = ({ data }) => {
       <PartnerContent content={content}></PartnerContent>
       <DiDiMasGrid data={partners}></DiDiMasGrid>
       <DiDiMasCTA image={didiMasCTAImage}></DiDiMasCTA>
-    </>
+    </Layout>
   );
 };
 

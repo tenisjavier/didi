@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
 import SafetyGridBeforeTrip from "../../components/sections/SafetyGridBeforeTrip";
 import SafetyGridDuringTrip from "../../components/sections/SafetyGridDuringTrip";
@@ -24,7 +25,7 @@ const Seguridad = ({ data }) => {
     return image.title.indexOf("ar.SafetyGridDrv.image") !== -1;
   });
   return (
-    <>
+    <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
       <SafetyGridBeforeTrip
         images={safetyGridBeforeTripImages}
@@ -36,7 +37,7 @@ const Seguridad = ({ data }) => {
         images={safetyGridAfterTripImages}
       ></SafetyGridAfterTrip>
       <SafetyGridDrv images={safetyGridDrvImages}></SafetyGridDrv>
-    </>
+    </Layout>
   );
 };
 
