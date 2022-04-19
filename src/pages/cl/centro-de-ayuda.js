@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../components/Layout";
 import HelpCenterHero from "../../components/sections/HelpCenterHero";
 import HelpCenterFAQDelivery from "../../components/sections/HelpCenterFAQDelivery";
 import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
@@ -25,7 +26,7 @@ const CentroDeAyuda = ({ data }) => {
     (node) => node.name === "DiDi Taxi Chile"
   );
   return (
-    <>
+    <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDelivery data={faqDelivery[0]}></HelpCenterFAQDelivery>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
@@ -33,7 +34,7 @@ const CentroDeAyuda = ({ data }) => {
       <HelpCenterFAQTaxi data={faqTaxi[0]}></HelpCenterFAQTaxi>
 
       <HomeColumns></HomeColumns>
-    </>
+    </Layout>
   );
 };
 

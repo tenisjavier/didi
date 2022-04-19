@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../../components/Layout";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
 import FoodBusinessColumns from "../../../components/sections/FoodBusinessColumns";
 import FoodDownloadsColumns from "../../../components/sections/FoodDownloadsColumns";
@@ -9,12 +10,12 @@ const FoodBusiness = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
 
   return (
-    <>
+    <Layout>
       <FoodBusinessHero></FoodBusinessHero>
       <FoodBusinessColumns></FoodBusinessColumns>
       <FoodDownloadsColumns></FoodDownloadsColumns>
       <Requirements data={products}></Requirements>
-    </>
+    </Layout>
   );
 };
 

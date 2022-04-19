@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../../components/Layout";
 import ArticleHero from "../../../components/sections/ArticleHero";
 import ArticleContent from "../../../components/sections/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
@@ -7,12 +8,12 @@ import ArticlesColumns from "../../../components/sections/ArticlesColumns";
 
 const ArticleTemplate = ({ data }) => {
   return (
-    <>
+    <Layout>
       <ArticleHero data={data}></ArticleHero>
       <ArticleContent data={data}></ArticleContent>
       <PaxBanner></PaxBanner>
       <ArticlesColumns data={data}></ArticlesColumns>
-    </>
+    </Layout>
   );
 };
 

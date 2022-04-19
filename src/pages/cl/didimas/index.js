@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../../../components/Layout";
 import DiDiMasHero from "../../../components/sections/DiDiMasHero";
 import DiDiMasGrid from "../../../components/sections/DiDiMasGrid";
 import DiDiMasCTA from "../../../components/sections/DiDiMasCTA";
@@ -18,7 +19,7 @@ const DiDiMas = ({ data }) => {
     return image.title === "cl.DiDiMasCTA.image";
   })[0];
   return (
-    <>
+    <Layout>
       <DiDiMasHero
         bgImage={didiMasHeroBgImage}
         image={didiMasHeroImage}
@@ -26,7 +27,7 @@ const DiDiMas = ({ data }) => {
       <DiDiMasGrid data={partners}></DiDiMasGrid>
       <DiDiMasCTA image={didiMasCTAImage}></DiDiMasCTA>
       <HomeColumns></HomeColumns>
-    </>
+    </Layout>
   );
 };
 
