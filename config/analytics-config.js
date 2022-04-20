@@ -1,5 +1,10 @@
+import { getCountryCodeFromUrl } from "./countries-config";
+
 // codigo de tracking didi SEO y WEB
 const insertBtnParams = () => {
+  const countryCode = getCountryCodeFromUrl(
+    window.location.pathname
+  ).toLowerCase();
   var referrer = document.referrer;
   var gaReferral = {
     source: "(direct)",
@@ -7,7 +12,6 @@ const insertBtnParams = () => {
     campaign: "none",
   };
   var thisHostname = document.location.hostname;
-  var thisPathname = document.location.pathname;
   var thisDomain = getDomain_(thisHostname);
   var referringDomain = getDomain_(document.referrer);
 
@@ -230,7 +234,6 @@ const insertBtnParams = () => {
     let finish = url.lastIndexOf("/");
     let search = url.substring(start);
     let oldUrl = url.substring(0, finish);
-    let subdomain = thisPathname.substring(1, 3);
 
     // set correct parameters for onelink
     const urlParams = new URLSearchParams(search);
@@ -285,7 +288,15 @@ const insertBtnParams = () => {
         ? channelsText[utmMedium]
         : "website_direct";
     }
-    let countryLang = countriesLanguage[subdomain];
+
+    // if is SEO, Direct or Web Referral -> Attricampaign will be the pathname
+
+    if (channelId === 14 || channelId === 18 || channelId === 20) {
+      campaign = "refpage_" + window.location.pathname;
+      c = "refpage_" + window.location.pathname;
+    }
+
+    let countryLang = countriesLanguage[countryCode];
 
     let newSearch = `?pid=${pid}&c=${c}&af_r=https%3A%2F%2Fpage.didiglobal.com%2Fdriver-page%2Fregister%2Findex.html%3Flocation_country%3D${countryLang[0]}%26country%3D${country}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
 
@@ -313,4 +324,4 @@ const insertBtnParams = () => {
   }
 };
 
-module.exports = { insertBtnParams };
+export default insertBtnParams;

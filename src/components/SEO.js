@@ -6,7 +6,7 @@ import {
   getCountryCodeFromUrl,
 } from "../../config/countries-config";
 import { getMetaByPath } from "../../config/seo-config";
-import { insertBtnParams } from "../../config/analytics-config";
+import insertBtnParams from "../../config/analytics-config";
 
 const SEO = () => {
   const { pathname, host } = useLocation();
