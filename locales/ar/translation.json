@@ -291,6 +291,7 @@
   "CityList.desc": "Descubre lugares para ir a visitar en Argentina",
   "CityList.bgColor": "bg-white",
   "CityList.textColor": "gray-primary",
+  "CityList.linkItem": "/ar/lugares/lugares-en-{{city}}",
   "DirectoryList.title": "Direcciones a Atracciones en {{city}}",
   "DirectoryList.desc": "Encontraras detalle de lineas y como moverte en distintos medios",
   "DirectoryList.bgColor": "bg-white",

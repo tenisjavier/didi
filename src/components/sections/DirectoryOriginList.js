@@ -1,34 +1,32 @@
 import React from "react";
-import ListSection from "../ListSection";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import slugify from "react-slugify";
+import ListSection from "../ListSection";
 
 const DirectoryOriginList = ({ data }) => {
+  const { t } = useTranslation();
   const directions = data.allContentfulDirection.nodes;
   const place = data.contentfulPlace;
 
-  let items = [];
-  directions.forEach((dir) => {
+  const items = directions.map((dir) => {
     const origin =
       dir.origin.length > 30 ? dir.origin.slice(0, 30) + "..." : dir.origin;
-
-    items.push({
+    return {
       text: origin + " | " + dir.duration,
       secondText: dir.originAddress,
-      link:
-        "/cl/lugares/como-llegar-a-" +
-        slugify(dir.destination) +
-        "-desde-" +
-        slugify(dir.origin) +
-        "_" +
-        slugify(dir.destinationAddress),
-    });
+      link: t("DirectoryOriginList.linkItem", {
+        origin: slugify(dir.origin),
+        destination: slugify(dir.destination),
+        destinationAddress: slugify(dir.destinationAddress),
+      }),
+    };
   });
 
   const props = {
-    title: `Como llegar a ${place.name} desde distintos puntos de la ciudad`,
-    desc: "Encontraras detalle de lineas y como irte en distintos medios",
-    bgColor: "bg-white",
-    textColor: "gray-primary",
+    title: t("DirectoryOriginList.title", { placeName: place.name }),
+    desc: t("DirectoryOriginList.desc"),
+    bgColor: t("DirectoryOriginList.bgColor"),
+    textColor: t("DirectoryOriginList.textColor"),
     items: items,
   };
 

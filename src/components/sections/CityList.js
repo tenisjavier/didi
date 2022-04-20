@@ -9,7 +9,7 @@ const CityList = ({ cities }) => {
     return {
       text: city.name,
       secondText: "",
-      link: "/cl/lugares/lugares-en-" + slugify(city.name),
+      link: t("CityList.linkItem", { city: slugify(city.name) }),
     };
   });
 
