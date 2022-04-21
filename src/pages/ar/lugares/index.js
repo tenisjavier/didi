@@ -6,7 +6,6 @@ import CityList from "../../../components/sections/CityList";
 
 const Lugares = ({ data }) => {
   const cities = data.contentfulCountry.city;
-  const country = data.contentfulCountry.name;
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "ar.PaxHero.bgImage";
@@ -14,7 +13,7 @@ const Lugares = ({ data }) => {
   return (
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
-      <CityList country={country} cities={cities} />
+      <CityList cities={cities} />
     </Layout>
   );
 };

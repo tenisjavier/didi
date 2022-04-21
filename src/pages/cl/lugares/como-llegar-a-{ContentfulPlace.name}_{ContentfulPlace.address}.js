@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import PlaceHero from "../../../components/sections/PlaceHero";
+import PlaceMap from "../../../components/sections/PlaceMap";
 import DirectoryOriginList from "../../../components/sections/DirectoryOriginList";
 import WikiDescription from "../../../components/sections/WikiDescription";
 
@@ -9,6 +10,7 @@ const PlaceTemplate = ({ data }) => {
   return (
     <Layout>
       <PlaceHero data={data.contentfulPlace}></PlaceHero>
+      <PlaceMap data={data}></PlaceMap>
       <WikiDescription data={data.contentfulPlace}></WikiDescription>
       <DirectoryOriginList data={data}></DirectoryOriginList>
     </Layout>
