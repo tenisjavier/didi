@@ -20,7 +20,7 @@ const footerLinks = {
 };
 
 const countries = [
-  { name: "Argentina", link: "/ar/" },
+  { name: "Argentina", link: "https://argentina.didiglobal.com/" },
   { name: "Australia", link: "https://australia.didiglobal.com/" },
   { name: "Brazil", link: "https://99app.com/" },
   { name: "Chile", link: "/cl/" },

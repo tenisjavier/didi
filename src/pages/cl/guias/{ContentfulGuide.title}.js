@@ -6,6 +6,23 @@ import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import GuidesColumns from "../../../components/sections/GuidesColumns";
 
+const GuideTemplate = ({ data }) => {
+  const richContent = data.contentfulGuide.content;
+  return (
+    <Layout>
+      <GuideHero data={data}></GuideHero>
+      <section className="text-gray-primary container mx-auto mb-32 md:px-28">
+        <RichContent richContent={richContent}></RichContent>
+      </section>
+
+      <PaxBanner></PaxBanner>
+      <GuidesColumns data={data}></GuidesColumns>
+    </Layout>
+  );
+};
+
+export default GuideTemplate;
+
 export const query = graphql`
   query ($id: String, $language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
@@ -36,7 +53,9 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulGuide {
+    allContentfulGuide(
+      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+    ) {
       nodes {
         title
         excerpt
@@ -47,20 +66,3 @@ export const query = graphql`
     }
   }
 `;
-
-const GuideTemplate = ({ data }) => {
-  const richContent = data.contentfulGuide.content;
-  return (
-    <Layout>
-      <GuideHero data={data}></GuideHero>
-      <section className="text-gray-primary container mx-auto mb-32 md:px-28">
-        <RichContent richContent={richContent}></RichContent>
-      </section>
-
-      <PaxBanner></PaxBanner>
-      <GuidesColumns data={data}></GuidesColumns>
-    </Layout>
-  );
-};
-
-export default GuideTemplate;
