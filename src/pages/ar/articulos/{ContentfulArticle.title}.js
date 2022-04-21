@@ -50,7 +50,9 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulArticle(filter: { country: { code: { eq: "ar" } } }) {
+    allContentfulArticle(
+      filter: { country: { code: { eq: "ar" } }, id: { ne: $id } }
+    ) {
       nodes {
         title
         excerpt

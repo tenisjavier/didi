@@ -1,27 +1,26 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { useLocation } from "@reach/router";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import { getCountryCodeFromUrl } from "../../../config/countries-config";
-import ColumnsSection from "../ColumnSection";
 import slugify from "react-slugify";
+import ColumnsSection from "../ColumnSection";
 
 const ArticlesColumns = ({ data }) => {
   const { t } = useTranslation();
-  const title = t("ArticlesColumns.title");
-  const bgColor = t("ArticlesColumns.bgColor");
-  const textColor = t("ArticlesColumns.textColor");
-  const { pathname } = useLocation();
-  const countryCode = getCountryCodeFromUrl(pathname);
+  const props = {
+    title: t("ArticlesColumns.title"),
+    bgColor: t("ArticlesColumns.bgColor"),
+    textColor: t("ArticlesColumns.textColor"),
+  };
+
   const articles = data.allContentfulArticle.nodes;
 
-  let columns = [];
-  articles.forEach((article) => {
-    const slug = slugify(article.title);
-    const link = `/${countryCode}/articulos/${slug}`;
-    columns.push({
+  props.columns = articles.map((article) => {
+    const link = t("ArticlesColumns.linkItem", {
+      article: slugify(article.title),
+    });
+    return {
       title: <Link to={link}>{article.title}</Link>,
       desc: article.excerpt,
       textColor: "gray-primary",
@@ -37,20 +36,13 @@ const ArticlesColumns = ({ data }) => {
           ></GatsbyImage>
         </Link>
       ),
-      btnText: "Leer Artículo",
+      btnText: t("ArticlesColumns.btnText"),
       btnLink: link,
-      btnMode: "dark",
+      btnMode: t("ArticlesColumns.btnMode"),
       height: "h-96",
-    });
+    };
   });
-  return (
-    <ColumnsSection
-      columns={columns}
-      bgColor={bgColor}
-      title={title}
-      textColor={textColor}
-    ></ColumnsSection>
-  );
+  return <ColumnsSection {...props}></ColumnsSection>;
 };
 
 export default ArticlesColumns;
