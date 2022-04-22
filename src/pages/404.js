@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 
 export default function NotFoundPage() {
   useEffect(() => {
-    navigate("/cl/"); // redirecting to home page
+    navigate(`/cl/?redirect=${window.document.referrer}`); // redirecting to home page
   }, []);
 
   return (

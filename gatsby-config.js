@@ -74,5 +74,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-PKNGZ5P",
+        includeInDevelopment: true,
+        routeChangeEventName: "pageview",
+      },
+    },
   ],
 };

@@ -23,7 +23,6 @@ const SEO = () => {
       htmlAttributes={{ lang: "es" }}
       title={`${meta.title} | DiDi ${country}`}
     >
-      <script src="/gtm.js" type="text/javascript" />
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={host + pathname} />
       <link rel="alternate" href={host + pathname} hreflang="es-CL" />
