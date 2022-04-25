@@ -5,15 +5,35 @@ const seoMeta = {
   cl: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
     },
     "/pasajero/": {
       title: "Pide un DiDi y Viaja Seguro",
-      desc: "Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      desc: "Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
     },
     "/driver/": {
       title: "Socios Conductores DiDi - Maneja y Genera Dinero",
-      desc: "Driver Page. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      desc: "Driver Page. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+    },
+    "/didimas/": {
+      title: "Club de Beneficios DiDiMás+ para Conductores",
+      desc: "Beneficios para Conductores DiDiMás+. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
+    },
+    "/didimas/copec/": {
+      title: "Copec y DiDi - Beneficios para Conductores",
+      desc: "Todos los socios conductores y taxistas inscritos en DiDi, que hayan realizado al menos 1 viaje en los últimos 6 meses, podrán acceder al siguiente descuento.",
+    },
+    "/didimas/carglass/": {
+      title: "Carglass y DiDi - Beneficios para Conductores",
+      desc: "Carglass es una empresa que se dedica a la reparación y sustitución de vidrios automotrices. Cuenta además con técnicos especializados y una flota para atender tus necesidades a domicilio.",
+    },
+    "/didimas/autofin/": {
+      title: "Autofin y DiDi - Beneficios para Conductores",
+      desc: "Autofin es una empresa que se especializa en crédito automotriz y además te asesora en la compra de tu próximo vehículo.",
+    },
+    "/didimas/movistar/": {
+      title: "Movistar y DiDi - Beneficios para Conductores",
+      desc: "Contrata por solo $7.990, un plan de telefonía móvil exclusivo que incluye el uso libre de la app DiDi Conductor, sin consumir tus gigas!",
     },
     "/taxi/": {
       title: "Maneja como Socio Taxista DiDi Registrándote Acá",
@@ -26,6 +46,10 @@ const seoMeta = {
     "/food/store/": {
       title: "Inscribe tu Comercio en DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/sobre-didi/": {
+      title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
     },
     "/seguridad/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",

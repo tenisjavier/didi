@@ -32,6 +32,8 @@ const Pasajero = ({ data }) => {
   );
 };
 
+export default Pasajero;
+
 export const query = graphql`
   query ($language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
@@ -76,5 +78,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Pasajero;
