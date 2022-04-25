@@ -20,6 +20,10 @@ const menuLinks = {
           url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
         },
         {
+          text: "Club DiDiMás+",
+          url: "/cl/didimas/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/cl/ciudades/",
         },
@@ -50,7 +54,7 @@ const menuLinks = {
     },
     {
       text: "Sobre DiDi",
-      url: "#",
+      url: "/cl/sobre-didi/",
       dropMenu: [
         {
           text: "Seguridad",
@@ -60,14 +64,10 @@ const menuLinks = {
           text: "Centro de Ayuda",
           url: "/cl/centro-de-ayuda/",
         },
-        {
-          text: "DiDiMás+",
-          url: "/cl/didimas/",
-        },
       ],
     },
     {
-      text: "Aprende",
+      text: "Contenido",
       url: "#",
       dropMenu: [
         {

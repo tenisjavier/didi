@@ -168,6 +168,35 @@
   "KnowMoreBanner.btnText": "Saber Más",
   "KnowMoreBanner.btnLink": "/cl/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
+  "AboutHero.title": "¿Dudas sobre DiDi?",
+  "AboutHero.desc": "Revisa nuestra sección de seguridad y preguntas frecuentes para un mejor entendimiento de la plataforma. Tanto si eres pasajero o conductor podrás encontrar respuestas.",
+  "AboutHero.textColor": "white",
+  "AboutHero.btnMode": "light",
+  "AboutColumns.bgColor": "bg-blue-primary",
+  "AboutColumns.title": "Información útil para usuarios y conductores",
+  "AboutColumns.textColor": "white",
+  "AboutColumns.columns": [
+    {
+      "title": "Seguridad de Usuarios y Conductores",
+      "desc": "En DiDi nos preocupa mucho tu seguridad. Aprende sobre todas las opciones de seguridad que tienes.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "/cl/seguridad/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "/cl/seguridad/"
+    },
+    {
+      "title": "Preguntas Frecuentes",
+      "desc": "Juntamos las principales preguntas de usuarios y conductores para que puedas informarte.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "/cl/centro-de-ayuda/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "/cl/centro-de-ayuda/"
+    }
+  ],
   "SafetyHero.title": "En DiDi tu seguridad no es un mito",
   "SafetyHero.desc": "Tu seguridad es nuestra prioridad y por eso queremos demostrar con acciones reales y específicas cómo DiDi te ofrece un viaje más tranquilo y seguro. Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje.",
   "SafetyHero.textColor": "white",

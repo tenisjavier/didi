@@ -6,6 +6,7 @@ import CTASection from "../CTASection";
 const TaxiHero = ({ bgImage, image }) => {
   const { t } = useTranslation();
   const props = {
+    hero: true,
     title: t("DiDiMasHero.title"),
     desc: t("DiDiMasHero.desc"),
     textColor: t("DiDiMasHero.textColor"),
