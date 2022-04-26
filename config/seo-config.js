@@ -76,6 +76,10 @@ const seoMeta = {
       title: "Servicios de DiDi por Ciudad.",
       desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
     },
+    "/legal/": {
+      title: "Terminos y Condiciones y Políticas de Privacidad.",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
   },
   ar: {
     "/": {
