@@ -5,8 +5,7 @@ const footerLinks = {
     { title: "Lugares", link: "/cl/lugares/" },
     { title: "DiDi Taxi", link: "/cl/taxi/" },
     { title: "Seguridad", link: "/cl/seguridad/" },
-    { title: "Guías", link: "/cl/guias/" },
-    { title: "Artículos", link: "/cl/articulos/" },
+    { title: "Legal", link: "/cl/legal/" },
   ],
   ar: [
     { title: "Pasajero", link: "/ar/pasajero/" },
@@ -14,7 +13,7 @@ const footerLinks = {
     { title: "Lugares", link: "/ar/lugares/" },
     { title: "DiDi Taxi", link: "/ar/taxi/" },
     { title: "Seguridad", link: "/ar/seguridad/" },
-    { title: "Guías", link: "/ar/guias/" },
+    { title: "Guias", link: "/ar/guias/" },
     { title: "Artículos", link: "/ar/articulos/" },
   ],
 };

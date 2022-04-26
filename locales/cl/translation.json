@@ -390,5 +390,12 @@
   "DirectionBanner.desc": "Si te vas en transporte público te tomará {{duration}} en llegar. Viaja rápido, seguro y barato.",
   "DirectionBanner.bgColor": "bg-orange-primary",
   "DirectionBanner.textColor": "white",
-  "DirectionBanner.btnMode": "light"
+  "DirectionBanner.btnMode": "light",
+  "LegalHero.title": "Revisa nuestros Términos y Condiciones",
+  "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
+  "LegalHero.textColor": "white",
+  "LegalHero.btnMode": "light",
+  "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
+  "LegalCTA.textColor": "gray-primary",
+  "LegalCTA.btnMode": "dark"
 }
