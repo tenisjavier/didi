@@ -2,6 +2,12 @@
 
 // @desc seoMeta is for static pages
 const seoMeta = {
+  int: {
+    "/": {
+      title: "DiDi Global",
+      desc: "Select your country",
+    },
+  },
   cl: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",

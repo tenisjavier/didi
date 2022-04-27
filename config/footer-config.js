@@ -1,4 +1,5 @@
 const footerLinks = {
+  int: [],
   cl: [
     { title: "Pasajero", link: "/cl/pasajero/" },
     { title: "Socio Conductor", link: "/cl/driver/" },
@@ -23,15 +24,17 @@ const countries = [
   { name: "Australia", link: "https://australia.didiglobal.com/" },
   { name: "Brazil", link: "https://99app.com/" },
   { name: "Chile", link: "/cl/" },
-  { name: "Colombia", link: "https://colombia.didiglobal.com/" },
-  { name: "Ecuador", link: "https://ecuador.didiglobal.com/" },
-  { name: "Panama", link: "https://panama.didiglobal.com/" },
-  { name: "Costa Rica", link: "https://costarica.didiglobal.com/" },
-  { name: "Japan", link: "https://chile.didiglobal.com/" },
-  { name: "Egypt", link: "https://egypt.didiglobal.com/" },
-  { name: "South Africa", link: "https://za.didiglobal.com/" },
   { name: "China", link: "https://www.didiglobal.com/" },
+  { name: "Colombia", link: "https://colombia.didiglobal.com/" },
+  { name: "Costa Rica", link: "https://costarica.didiglobal.com/" },
+  { name: "Ecuador", link: "https://ecuador.didiglobal.com/" },
+  { name: "Egypt", link: "https://egypt.didiglobal.com/" },
+  { name: "Japan", link: "https://chile.didiglobal.com/" },
+  { name: "Panama", link: "https://panama.didiglobal.com/" },
+  { name: "Peru", link: "https://peru.didiglobal.com/" },
+  { name: "Mexico", link: "https://mexico.didiglobal.com/" },
   { name: "New Zealand", link: "https://newzealand.didiglobal.com/" },
+  { name: "South Africa", link: "https://za.didiglobal.com/" },
 ];
 
 const getFooterLinks = (country) => {
