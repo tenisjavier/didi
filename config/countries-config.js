@@ -46,7 +46,7 @@ const getCountryFromUrl = (path) => {
 // @return: countrycode
 const getCountryCodeFromUrl = (path) => {
   const countryCode = path.split("/")[1];
-  return countryCode;
+  return countryCode ? countryCode : "int";
 };
 
 module.exports = {

@@ -1,6 +1,7 @@
 // @desc: utility library for menu Links
 
 const menuLinks = {
+  int: [],
   cl: [
     {
       text: "DiDi Pasajero",
