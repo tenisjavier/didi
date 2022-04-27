@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../components/CTASection";
 import HeroVideo from "../images/didi-home.mp4";
@@ -55,3 +55,17 @@ const Index = () => {
 };
 
 export default Index;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
