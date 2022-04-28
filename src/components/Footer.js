@@ -1,19 +1,18 @@
 import React from "react";
-import { useLocation } from "@reach/router";
-import FooterLink from "./FooterLink.js";
-
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import FooterLink from "./FooterLink.js";
 import { getFooterLinks, getCountriesLinks } from "../../config/footer-config";
-import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const Footer = () => {
-  const { pathname } = useLocation();
-  const links = getFooterLinks(getCountryCodeFromUrl(pathname));
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
+  const links = getFooterLinks(countryCode);
   const countries = getCountriesLinks();
   return (
     <footer>

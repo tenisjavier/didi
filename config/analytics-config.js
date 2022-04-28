@@ -1,10 +1,6 @@
-import { getCountryCodeFromUrl } from "./countries-config";
-
 // codigo de tracking didi SEO y WEB
 const insertBtnParams = () => {
-  const countryCode = getCountryCodeFromUrl(
-    window.location.pathname
-  ).toLowerCase();
+  const countryCode = window.location.pathname.split("/")[1];
   var referrer = document.referrer;
   var gaReferral = {
     source: "(direct)",

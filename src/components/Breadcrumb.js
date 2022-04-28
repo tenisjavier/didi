@@ -1,13 +1,15 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
-import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const Breadcrumb = () => {
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
   const { pathname } = useLocation();
-  const countryCode = getCountryCodeFromUrl(pathname);
+
   const directories = pathname.split("/").filter((item) => {
     return item !== "";
   });
