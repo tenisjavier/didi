@@ -1,12 +1,12 @@
 import React from "react";
-import { useLocation } from "@reach/router";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../../config/btn-config";
-import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 const SmartBanner = (props) => {
-  const { pathname } = useLocation();
-  const btnData = getBtnLinks(getCountryCodeFromUrl(pathname));
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
+  const btnData = getBtnLinks(countryCode);
   const { type } = props;
   let btnLink,
     btnText,

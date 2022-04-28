@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { useLocation } from "@reach/router";
-import {
-  getCountryFromUrl,
-  getCountryCodeFromUrl,
-} from "../../config/countries-config";
+import { getCountryFromUrl } from "../../config/countries-config";
 import { getMetaByPath } from "../../config/seo-config";
 import insertBtnParams from "../../config/analytics-config";
 
 const SEO = () => {
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
   const { pathname, host } = useLocation();
   const country = getCountryFromUrl(pathname);
-  const countryCode = getCountryCodeFromUrl(pathname);
 
   const meta = getMetaByPath(
     countryCode,

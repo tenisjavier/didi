@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { useLocation } from "@reach/router";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { getMenuLinks } from "../../config/menu-config";
-import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 // @desc: Top Menu. Links from menu-config.
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const { pathname } = useLocation();
-  const menuLinks = getMenuLinks(getCountryCodeFromUrl(pathname));
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
+  const menuLinks = getMenuLinks(countryCode);
   return (
     <div className="flex h-full items-center ">
       <FontAwesomeIcon

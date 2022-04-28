@@ -1,15 +1,14 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { useLocation } from "@reach/router";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import slugify from "react-slugify";
-import { getCountryCodeFromUrl } from "../../../config/countries-config";
 import ColumnsSection from "../ColumnSection";
 
 const PlacesPrimaryColumn = ({ data }) => {
-  const { pathname } = useLocation();
-  const countryCode = getCountryCodeFromUrl(pathname);
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
   const bgColor = "bg-blue-primary";
   const title = `Principales viajes realizados en ${data[0].city.name}`;
   const textColor = "white";

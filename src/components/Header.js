@@ -1,13 +1,13 @@
 import React from "react";
 import { useLocation } from "@reach/router";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Breadcrumb from "./Breadcrumb";
-import { getCountryCodeFromUrl } from "../../config/countries-config";
 
 import Menu from "./Menu";
 
-const Header = (props) => {
+const Header = () => {
   return (
     <>
       <nav className="bg-gray-primary fixed z-30 h-20 w-full bg-opacity-80">
@@ -22,8 +22,10 @@ const Header = (props) => {
 };
 
 const Navlogo = () => {
+  const { i18n } = useTranslation();
+  const countryCode = i18n.language;
   const { pathname } = useLocation();
-  const countryCode = getCountryCodeFromUrl(pathname);
+
   const logo = pathname.includes("food") ? (
     <Link className="" to={`/${countryCode}/food/`}>
       <StaticImage
