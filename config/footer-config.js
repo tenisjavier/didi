@@ -32,9 +32,9 @@ const countries = [
   { name: "Japan", link: "https://chile.didiglobal.com/" },
   { name: "Panama", link: "https://panama.didiglobal.com/" },
   { name: "Peru", link: "https://peru.didiglobal.com/" },
+  { name: "Russia", link: "https://russia.didiglobal.com/" },
   { name: "Mexico", link: "https://mexico.didiglobal.com/" },
   { name: "New Zealand", link: "https://newzealand.didiglobal.com/" },
-  { name: "South Africa", link: "https://za.didiglobal.com/" },
 ];
 
 const getFooterLinks = (country) => {
