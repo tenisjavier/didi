@@ -43,7 +43,7 @@ const CTASection = (props) => {
   }
   return (
     <section
-      className={`relative flex min-h-[40rem] w-full  items-center justify-center 
+      className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
     ${bgColor && bgColor}`}
     >
       <div
@@ -72,7 +72,7 @@ const CTASection = (props) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" text-orange-primary mr-4 "
+                            className=" mr-4 text-orange-primary "
                             size="sm"
                           />
                         ) : null}
