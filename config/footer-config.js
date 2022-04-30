@@ -19,30 +19,8 @@ const footerLinks = {
   ],
 };
 
-const countries = [
-  { name: "Argentina", link: "https://argentina.didiglobal.com/" },
-  { name: "Australia", link: "https://australia.didiglobal.com/" },
-  { name: "Brazil", link: "https://99app.com/" },
-  { name: "Chile", link: "/cl/" },
-  { name: "China", link: "https://www.didiglobal.com/" },
-  { name: "Colombia", link: "https://colombia.didiglobal.com/" },
-  { name: "Costa Rica", link: "https://costarica.didiglobal.com/" },
-  { name: "Ecuador", link: "https://ecuador.didiglobal.com/" },
-  { name: "Egypt", link: "https://egypt.didiglobal.com/" },
-  { name: "Japan", link: "https://chile.didiglobal.com/" },
-  { name: "Panama", link: "https://panama.didiglobal.com/" },
-  { name: "Peru", link: "https://peru.didiglobal.com/" },
-  { name: "Russia", link: "https://russia.didiglobal.com/" },
-  { name: "Mexico", link: "https://mexico.didiglobal.com/" },
-  { name: "New Zealand", link: "https://newzealand.didiglobal.com/" },
-];
-
 const getFooterLinks = (country) => {
   return footerLinks[country];
 };
 
-const getCountriesLinks = () => {
-  return countries;
-};
-
-export { getFooterLinks, getCountriesLinks };
+export { getFooterLinks };
