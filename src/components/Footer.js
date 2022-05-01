@@ -76,9 +76,6 @@ const Footer = () => {
           </div>
 
           <div className="flex h-1/2 w-full flex-initial flex-wrap items-center justify-center px-24 lg:h-full lg:w-1/2 xl:px-32 ">
-            <p className="text-c w-full flex-auto text-3xl text-white lg:w-auto lg:text-left">
-              Siguenos
-            </p>
             <div className="flex w-full justify-center lg:w-auto">
               <div className="mr-5 text-5xl text-white">
                 <FontAwesomeIcon icon={faFacebookSquare} />
