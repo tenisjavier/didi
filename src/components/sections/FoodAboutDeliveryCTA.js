@@ -1,25 +1,24 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const FoodAboutDeliveryCTA = () => {
+const FoodAboutDeliveryCTA = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title:
-      "La plataforma rápida y confiable de intermediación de pedidos y entrega de comida.",
-    desc: "Sobre nosotros – DiDi Food conecta usuarios con socios restaurantes y socios repartidores para llevar los mejores pedidos de comida a la puerta del usuario. A través de DiDi Food, puedes tener tu plato favorito en donde lo necesites, con un par de clics.",
-    bgColor: "bg-gray-light",
-    textColor: "gray-primary",
+    title: t("FoodAboutDeliveryCTA.title"),
+    desc: t("FoodAboutDeliveryCTA.desc"),
+    bgColor: t("FoodAboutDeliveryCTA.bgColor"),
+    textColor: t("FoodAboutDeliveryCTA.textColor"),
     image: (
-      <StaticImage
-        src="../../images/cl/cl-food-delivery-cta.jpg"
-        alt="conductor didi"
-        width={700}
-        height={700}
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         className="w-100 z-10 m-4 rounded"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
-    btnType: "foodDelivery",
     btnMode: "primary",
+    btnType: "foodDelivery",
   };
   return <CTASection {...props}></CTASection>;
 };

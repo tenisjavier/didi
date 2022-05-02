@@ -1,21 +1,23 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const FoodDeliveryHero = () => {
+const FoodDeliveryHero = ({ bgImage }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "¡Conéctate con DiDi Food! Genera ganancias adicionales",
-    desc: "Comenzar es sencillo y tú mismo estableces tu horario",
-    textColor: "white",
+    title: t("FoodDeliveryHero.title"),
+    desc: t("FoodDeliveryHero.desc"),
+    textColor: t("FoodDeliveryHero.textColor"),
     bgImage: (
-      <StaticImage
-        src="../../images/cl/cl-food-delivery-hero.jpg"
-        alt="pasajera didi con celular"
+      <GatsbyImage
+        image={getImage(bgImage)}
+        alt={bgImage.description}
         className="!absolute z-0 h-full w-full brightness-50  md:block"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
+    btnMode: t("FoodDeliveryHero.btnMode"),
     btnType: "foodDelivery",
-    btnMode: "primary",
   };
   return <CTASection {...props}></CTASection>;
 };
