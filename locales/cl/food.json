@@ -1,0 +1,37 @@
+{
+  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
+  "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.textColor": "white",
+  "FoodHero.btnMode": "primary",
+  "FoodColumns.bgColor": "bg-white",
+  "FoodColumns.columns": [
+    {
+      "title": "Amplia disponibilidad y cobertura",
+      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encuéntranos ahora en todo Chile!",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "Ordena sin complicaciones",
+      "desc": "¿Tienes ganas de una hamburguesa, pizza o sushi? Con DiDi Food ordenar es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas tu comida en tu puerta.",
+      "bgColor": "bg-green-600",
+      "textColor": "white"
+    },
+    {
+      "title": "Entrega express",
+      "desc": "En DiDi Food procuramos que las órdenes sean entregadas en el menor tiempo posible y en perfectas condiciones.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    }
+  ],
+  "FoodBusinessCTA.title": "Registra tu comercio en DiDi Food",
+  "FoodBusinessCTA.desc": "Conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodBusinessCTA.bgColor": "bg-gray-light",
+  "FoodBusinessCTA.textColor": "gray-primary",
+  "FoodBusinessCTA.btnMode": "primary",
+  "FoodDeliveryCTA.title": "Regístrate para repartir a través de DiDi Food",
+  "FoodDeliveryCTA.desc": "Inscribirse es fácil. Puedes elegir repartir en moto, bicicleta o auto. Tú eliges cuando y dónde conectarte.",
+  "FoodDeliveryCTA.bgColor": "bg-white",
+  "FoodDeliveryCTA.textColor": "gray-primary",
+  "FoodDeliveryCTA.btnMode": "primary"
+}
