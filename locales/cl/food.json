@@ -33,5 +33,118 @@
   "FoodDeliveryCTA.desc": "Inscribirse es fácil. Puedes elegir repartir en moto, bicicleta o auto. Tú eliges cuando y dónde conectarte.",
   "FoodDeliveryCTA.bgColor": "bg-white",
   "FoodDeliveryCTA.textColor": "gray-primary",
-  "FoodDeliveryCTA.btnMode": "primary"
+  "FoodDeliveryCTA.btnMode": "primary",
+  "FoodBusinessHero.title": "Conviértete en un socio restaurante de DiDi Food",
+  "FoodBusinessHero.desc": "Aprovecha los beneficios que DiDi Food tiene para tu negocio. Call Center: (+56) 227120527",
+  "FoodBusinessHero.textColor": "white",
+  "FoodBusinessHero.btnMode": "primary",
+  "FoodBusinessColumns.bgColor": "bg-white",
+  "FoodBusinessColumns.columns": [
+    {
+      "title": "Obtén más pedidos",
+      "desc": "La gran base de usuarios de DiDi Food permite que promociones tu restaurante a través de la app y que puedas llegar a nuevos clientes. Además, nuestra aplicación facilita que los usuarios realicen pedidos a tu restaurante. Puedes llevar tus platos a más personas y hacer que les resulte más fácil volver a pedir.",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "Entregas confiables",
+      "desc": "A través de nuestras diversas acciones y activaciones, buscamos la disponibilidad constante de Socios Repartidores, aún en horas peak. La tecnología de la plataforma procura que los usuarios reciban sus pedidos según sus preferencias y en el menor tiempo posible.",
+      "bgColor": "bg-green-600",
+      "textColor": "white"
+    },
+    {
+      "title": "Servicio integral",
+      "desc": "Nuestra línea de servicio integral puede llevar tu marca al siguiente nivel. Desde nuestros representantes experimentados y nuestro práctico servicio de Soporte DiDi, hasta el marketing personalizado y orientado a resultados. Puedes contar con DiDi Food para ayudarte en cada paso del proceso.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    }
+  ],
+  "FoodBusinessDownloads.title": "Descargar DiDi Food para Tienda",
+  "FoodBusinessDownloads.desc": "¡Optimiza tu negocio y empieza a recibir más pedidos!",
+  "FoodBusinessDownloads.textColor": "gray-primary",
+  "FoodBusinessDownloads.bgColor": "bg-white",
+  "FoodBusinessDownloads.columns": [
+    {
+      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe"
+    },
+    {
+      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/app/global-merchant-application-mexicoPad-release_1.2.34_2021030503.apk"
+    },
+    {
+      "linkItem": "https://d.didiglobal.com/3cikL"
+    }
+  ],
+  "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
+  "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
+  "FoodDeliveryHero.textColor": "white",
+  "FoodDeliveryHero.btnMode": "primary",
+  "FoodDeliveryColumns.bgColor": "white",
+  "FoodDeliveryColumns.columns": [
+    {
+      "title": "Comienza a generar ingresos",
+      "desc": "Contamos con distintas promociones para los Socios Repartidores y cada día más usuarios nos prefieren. A través de DiDi Food, podrás generar ganancias.",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "Disfruta de mayor flexibilidad",
+      "desc": "Con DiDi Food, puedes conectarte cuando más te convenga. Además, recoger pedidos y entregarlos es muy sencillo gracias a nuestro sistema de navegación fácil de usar. Sea con moto, auto o bicicleta, puedes generar ganancias.",
+      "bgColor": "bg-green-600",
+      "textColor": "white"
+    },
+    {
+      "title": "Seguridad al repartir",
+      "desc": "En DiDi Food, buscamos que realices entregas sintiéndote más seguro. Contamos con distintas herramientas de seguridad para que tus entregas comiencen y terminen de la mejor forma.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    }
+  ],
+  "FoodDeliveryStepsColumns.title": "¿Cómo repartir a través de DiDi Food?",
+  "FoodDeliveryStepsColumns.bgColor": "bg-gray-light",
+  "FoodDeliveryStepsColumns.columns": [
+    {
+      "title": "1. Descarga la aplicación",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "2. Sube los documentos requeridos",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "3. Espera la verificación de tu información",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "4. Comienza a generar ganancias a través de DiDi Food",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    }
+  ],
+  "FoodDeliveryDownloads.title": "Obtén la aplicación DiDi Repartidor",
+  "FoodDeliveryDownloads.desc": "Acepta pedidos y comienza a generar ganancias",
+  "FoodDeliveryDownloads.textColor": "gray-primary",
+  "FoodDeliveryDownloads.bgColor": "bg-white",
+  "FoodDeliveryDownloads.columns": [
+    {
+      "linkItem": "https://www.didi-food.com/es-419/mobile-delivery/download"
+    },
+    {
+      "linkItem": "https://www.didi-food.com/es-419/mobile-delivery/download"
+    }
+  ],
+  "FoodAboutHero.title": "Acerca de DiDi Food",
+  "FoodAboutHero.desc": "Pide comida a través de nuestra plataforma o conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodAboutHero.textColor": "white",
+  "FoodAboutDeliveryCTA.title": "La plataforma rápida y confiable de intermediación de pedidos y entrega de comida.",
+  "FoodAboutDeliveryCTA.desc": "Sobre nosotros – DiDi Food conecta usuarios con socios restaurantes y socios repartidores para llevar los mejores pedidos de comida a la puerta del usuario. A través de DiDi Food, puedes tener tu plato favorito en donde lo necesites, con un par de clics.",
+  "FoodAboutDeliveryCTA.bgColor": "bg-gray-light",
+  "FoodAboutDeliveryCTA.textColor": "gray-primary",
+  "FoodAboutDeliveryCTA.btnMode": "primary",
+  "FoodAboutCTA.title": "¡Tu comida está muy cerca!",
+  "FoodAboutCTA.desc": "Con DiDi food puedes tener tu comida favorita en dónde lo necesites con sólo un par de clics.",
+  "FoodAboutCTA.bgColor": "bg-white",
+  "FoodAboutCTA.textColor": "gray-primary"
 }
