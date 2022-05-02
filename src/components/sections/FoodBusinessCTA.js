@@ -1,24 +1,24 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const FoodBusinessCTA = () => {
+const FoodBusinessCTA = ({ image }) => {
+  const { t } = useTranslation();
   const props = {
-    title: "Registra tu comercio en DiDi Food",
-    desc: "Conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
-    bgColor: "bg-gray-light",
-    textColor: "gray-primary",
+    title: t("FoodBusinessCTA.title"),
+    desc: t("FoodBusinessCTA.desc"),
+    bgColor: t("FoodBusinessCTA.bgColor"),
+    textColor: t("FoodBusinessCTA.textColor"),
     image: (
-      <StaticImage
-        src="../../images/cl/cl-food-comercio-cta.jpg"
-        alt="conductor didi"
-        width={700}
-        height={700}
+      <GatsbyImage
+        image={getImage(image)}
+        alt={image.description}
         className="w-100 z-10 m-4 rounded"
-      ></StaticImage>
+      ></GatsbyImage>
     ),
+    btnMode: t("FoodBusinessCTA.btnMode"),
     btnType: "foodBusiness",
-    btnMode: "primary",
   };
   return <CTASection {...props}></CTASection>;
 };
