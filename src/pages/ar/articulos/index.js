@@ -38,7 +38,9 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulArticle(filter: { country: { code: { eq: "ar" } } }) {
+    allContentfulArticle(
+      filter: { category: { eq: "rides" }, country: { code: { eq: "ar" } } }
+    ) {
       nodes {
         title
         excerpt

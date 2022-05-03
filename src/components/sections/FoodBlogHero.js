@@ -3,13 +3,13 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const FoodHero = ({ bgImage }) => {
+const FoodBlogHero = ({ bgImage }) => {
   const { t } = useTranslation();
   const props = {
     hero: true,
-    title: t("FoodHero.title"),
-    desc: t("FoodHero.desc"),
-    textColor: t("FoodHero.textColor"),
+    title: t("FoodBlogHero.title"),
+    desc: t("FoodBlogHero.desc"),
+    textColor: t("FoodBlogHero.textColor"),
     bgImage: (
       <GatsbyImage
         image={getImage(bgImage)}
@@ -17,10 +17,10 @@ const FoodHero = ({ bgImage }) => {
         className="!absolute z-0 h-full w-full brightness-50  md:block"
       ></GatsbyImage>
     ),
-    btnMode: t("FoodHero.btnMode"),
+    btnMode: t("FoodBlogHero.btnMode"),
     btnType: "foodBusiness",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default FoodHero;
+export default FoodBlogHero;
