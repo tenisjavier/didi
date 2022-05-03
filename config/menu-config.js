@@ -326,7 +326,7 @@ const menuLinks = {
 };
 
 const getMenuLinks = (country) => {
-  return menuLinks[country];
+  return menuLinks[country] || [];
 };
 
 module.exports = { getMenuLinks };

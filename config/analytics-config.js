@@ -292,7 +292,7 @@ const insertBtnParams = () => {
       c = "refpage_" + window.location.pathname;
     }
 
-    let countryLang = countriesLanguage[countryCode];
+    let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
 
     let newSearch = `?pid=${pid}&c=${c}&af_r=https%3A%2F%2Fpage.didiglobal.com%2Fdriver-page%2Fregister%2Findex.html%3Flocation_country%3D${countryLang[0]}%26country%3D${country}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
 
