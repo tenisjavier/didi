@@ -22,13 +22,17 @@ const SEO = () => {
   const countryCode = i18n.language;
   const { pathname, origin } = useLocation();
   const country = countries.filter((c) => c.code === countryCode).pop();
-  const countryName =
+  let countryName =
     country.name.charAt(0).toUpperCase() + country.name.slice(1);
 
   const meta = getMetaByPath(
     countryCode,
     pathname.substring(3, pathname.length)
   );
+
+  //if is int
+  console.log(pathname);
+  if (pathname === "/") countryName = "";
 
   return (
     <Helmet
