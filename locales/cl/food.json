@@ -146,5 +146,13 @@
   "FoodAboutCTA.title": "¡Tu comida está muy cerca!",
   "FoodAboutCTA.desc": "Con DiDi food puedes tener tu comida favorita en dónde lo necesites con sólo un par de clics.",
   "FoodAboutCTA.bgColor": "bg-white",
-  "FoodAboutCTA.textColor": "gray-primary"
+  "FoodAboutCTA.textColor": "gray-primary",
+  "FoodBlogHero.title": "Bienvenido al Blog de DiDi Food",
+  "FoodBlogHero.desc": "Lee nuestros post de comidas, restaurantes y buenas prácticas en la cocina.",
+  "FoodBlogHero.textColor": "white",
+  "FoodBlogHero.btnMode": "light",
+  "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
+  "FoodBlogColumns.bgColor": "bg-blue-primary",
+  "FoodBlogColumns.textColor": "white",
+  "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}"
 }
