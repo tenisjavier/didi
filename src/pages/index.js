@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/SEO";
 import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../components/CTASection";
@@ -18,7 +19,7 @@ const Index = () => {
         muted
         loop
         id="myVideo"
-        className="!absolute z-0  h-140 overflow-hidden md:block"
+        className="h-140 !absolute  z-0 overflow-hidden md:block"
       >
         <source src={HeroVideo} type="video/mp4"></source>
       </video>
@@ -36,7 +37,8 @@ const Index = () => {
 
   return (
     <>
-      <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
+      <SEO></SEO>
+      <nav className="bg-gray-primary fixed z-30 h-20 w-full bg-opacity-80">
         <div className="flex h-full items-center justify-between">
           <Link className="" to={`/`}>
             <StaticImage

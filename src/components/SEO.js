@@ -20,7 +20,7 @@ const SEO = () => {
   const countries = data.allContentfulCountry.nodes;
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
-  const { pathname, host } = useLocation();
+  const { pathname, origin } = useLocation();
   const country = countries.filter((c) => c.code === countryCode).pop();
   const countryName =
     country.name.charAt(0).toUpperCase() + country.name.slice(1);
@@ -36,8 +36,9 @@ const SEO = () => {
       title={`${meta.title} | DiDi ${countryName}`}
     >
       <meta name="description" content={meta.desc} />
-      <link rel="canonical" href={host + pathname} />
-      <link rel="alternate" href={host + pathname} hreflang="es-CL" />
+      <link rel="canonical" href={origin + pathname} />
+      <link rel="alternate" href={origin + pathname} hreflang="es-CL" />
+
       {
         // activate tracking pixel when DOM is mounted
         useEffect(() => {

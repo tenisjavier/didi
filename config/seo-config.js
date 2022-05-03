@@ -2,12 +2,6 @@
 
 // @desc seoMeta is for static pages
 const seoMeta = {
-  int: {
-    "/": {
-      title: "DiDi Global",
-      desc: "Select your country",
-    },
-  },
   cl: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",
@@ -150,8 +144,8 @@ const getMetaByPath = (country, path) => {
   const placeRegex =
     /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))/;
   const defaultMetas = {
-    title: "DiDi: APP de Movilidad",
-    desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+    title: "DiDi Global: More than a Journey",
+    desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
   };
 
   //logic for dynamic pages places and directions
