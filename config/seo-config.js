@@ -45,7 +45,19 @@ const seoMeta = {
     },
     "/food/store/": {
       title: "Inscribe tu Comercio en DiDi Food",
+      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/delivery/": {
+      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/about/": {
+      title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/blog/": {
+      title: "Artículos de Comida y Restaurantes",
+      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -142,7 +154,7 @@ const seoMeta = {
 // @params country is the country code and path
 const getMetaByPath = (country, path) => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
