@@ -1,5 +1,5 @@
 import React from "react";
-import SEO from "../components/SEO";
+import Seo from "../components/SEO";
 import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../components/CTASection";
@@ -37,7 +37,7 @@ const Index = () => {
 
   return (
     <>
-      <SEO></SEO>
+      <Seo></Seo>
       <nav className="bg-gray-primary fixed z-30 h-20 w-full bg-opacity-80">
         <div className="flex h-full items-center justify-between">
           <Link className="" to={`/`}>
