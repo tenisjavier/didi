@@ -93,7 +93,7 @@ const seoMeta = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
     "/legal/": {
-      title: "Terminos y Condiciones y Políticas de Privacidad.",
+      title: "Términos y Condiciones y Políticas de Privacidad.",
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
@@ -122,6 +122,10 @@ const seoMeta = {
       title: "Inscribe tu Comercio en DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
+    "/sobre-didi/": {
+      title: "Tenés Preguntas sobre DiDi? Revisá las Respuestas",
+      desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+    },
     "/seguridad/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
@@ -136,16 +140,20 @@ const seoMeta = {
     },
     "/guias/": {
       title: "Guías para Conductores DiDi.",
-      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+      desc: "Guías educativas para conductores. Enterate de distintos asociados a conducción de un vehículo.",
     },
     "/articulos/": {
       title:
-        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
-      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+        "Artículos de interés sobre lugares que podés ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Leé sobre distintos destinos.",
     },
     "/ciudades/": {
       title: "Servicios de DiDi por Ciudad.",
-      desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
+      desc: "Conocé que servicios DiDi se encuentran en tu ciudad. Si querés ser socio conductor revisá los requisitos.",
+    },
+    "/legal/": {
+      title: "Términos y Condiciones y Políticas de Privacidad.",
+      desc: "Conocé nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
 };

@@ -82,6 +82,60 @@ const menuLinks = {
       ],
     },
   ],
+  ar: [
+    {
+      text: "DiDi Pasajero",
+      url: "/ar/pasajero/",
+      dropMenu: null,
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/ar/driver/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/ar/driver/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/ar/ciudades/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Taxi",
+      url: "/ar/taxi/",
+      dropMenu: null,
+    },
+    {
+      text: "Sobre DiDi",
+      url: "/ar/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/ar/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/ar/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Artículos",
+          url: "/ar/articulos/",
+        },
+      ],
+    },
+  ],
   pe: [
     {
       text: "DiDi Pasajero",
@@ -105,47 +159,6 @@ const menuLinks = {
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
       ],
-    },
-  ],
-  ar: [
-    {
-      text: "DiDi Pasajero",
-      url: "/ar/pasajero/",
-      dropMenu: null,
-    },
-    {
-      text: "DiDi Conductor",
-      url: "/ar/driver/",
-      dropMenu: [
-        {
-          text: "Socio Conductor",
-          url: "/ar/driver/",
-        },
-        {
-          text: "Registrate Online",
-          url: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
-        },
-        {
-          text: "Ciudades Operativas",
-          url: "/ar/ciudades/",
-        },
-      ],
-    },
-    {
-      text: "DiDi Taxi",
-      url: "/ar/taxi/",
-      dropMenu: null,
-    },
-
-    {
-      text: "Seguridad",
-      url: "/ar/seguridad/",
-      dropMenu: null,
-    },
-    {
-      text: "Centro de Ayuda",
-      url: "/ar/centro-de-ayuda/",
-      dropMenu: null,
     },
   ],
   co: [

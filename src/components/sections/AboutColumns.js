@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection from "../ColumnSection";
 
-const ArticlesColumns = ({ images }) => {
+const AboutColumns = ({ images }) => {
   const { t } = useTranslation();
   const props = {
     title: t("AboutColumns.title"),
@@ -32,4 +32,4 @@ const ArticlesColumns = ({ images }) => {
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default ArticlesColumns;
+export default AboutColumns;
