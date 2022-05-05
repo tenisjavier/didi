@@ -1,11 +1,7 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./locales/**/*.{js,jsx,json}"],
   theme: {
     extend: {
-      borderWidth: {
-        1: "1px",
-        "05": "0.5px",
-      },
       spacing: {
         100: "26rem",
         105: "28rem",
@@ -23,6 +19,9 @@ module.exports = {
         },
         blue: {
           primary: "#007DFF",
+        },
+        green: {
+          primary: "#16A34A",
         },
       },
       container: {

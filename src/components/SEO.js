@@ -31,7 +31,6 @@ const SEO = () => {
   );
 
   //if is int
-  console.log(pathname);
   if (pathname === "/") countryName = "";
 
   return (

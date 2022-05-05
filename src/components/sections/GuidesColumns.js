@@ -1,21 +1,24 @@
 // @desc Guides Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import ColumnsSection from "../ColumnSection";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+import ColumnsSection from "../ColumnSection";
 import slugify from "react-slugify";
 
 const GuidesColumns = ({ data }) => {
+  const { t } = useTranslation();
+  const props = {
+    title: t("GuidesColumns.title"),
+    bgColor: t("GuidesColumns.bgColor"),
+    textColor: t("GuidesColumns.textColor"),
+  };
   const guides = data.allContentfulGuide.nodes;
-  const bgColor = "bg-blue-primary";
-  const title = "Guías para Socios Conductores";
-  const textColor = "white";
-
-  let columns = [];
-  guides.forEach((guide) => {
-    const slug = slugify(guide.title);
-    const link = `/cl/guias/${slug}`;
-    columns.push({
+  props.columns = guides.map((guide) => {
+    const link = t("GuidesColumns.linkItem", {
+      guide: slugify(guide.title),
+    });
+    return {
       title: <Link to={link}>{guide.title}</Link>,
       desc: guide.excerpt,
       textColor: "gray-primary",
@@ -31,20 +34,13 @@ const GuidesColumns = ({ data }) => {
           ></GatsbyImage>
         </Link>
       ),
-      btnText: "Leer Guía",
+      btnText: t("GuidesColumns.btnText"),
       btnLink: link,
-      btnMode: "dark",
+      btnMode: t("GuidesColumns.btnMode"),
       height: "h-96",
-    });
+    };
   });
-  return (
-    <ColumnsSection
-      columns={columns}
-      bgColor={bgColor}
-      title={title}
-      textColor={textColor}
-    ></ColumnsSection>
-  );
+  return <ColumnsSection {...props}></ColumnsSection>;
 };
 
 export default GuidesColumns;
