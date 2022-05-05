@@ -262,7 +262,7 @@
     },
     {
       "title": "Patrullas de asistencia",
-      "desc": "Se ha habilitado a las patrullas de asistencia a cargo de Prosegur, las mismas que serán activadas por el Centro de Ayuda DiDi en caso de alguna emergencia.",
+      "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Ayuda DiDi en caso de alguna emergencia.",
       "bgColor": "bg-orange-primary"
     },
     {
