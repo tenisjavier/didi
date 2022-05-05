@@ -9,7 +9,7 @@ const DrvCityList = ({ data }) => {
     return {
       text: city.name,
       secondText: "",
-      link: t("DrvCityList.itemLink") + slugify(city.name) + "/",
+      link: t("DrvCityList.linkItem", { city: slugify(city.name) }),
     };
   });
 

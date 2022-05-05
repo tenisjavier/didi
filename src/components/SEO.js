@@ -9,10 +9,11 @@ import insertBtnParams from "../../config/analytics-config";
 const SEO = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulCountry {
+      allContentfulCountry(filter: { code: { in: ["cl", "ar"] } }) {
         nodes {
           name
           code
+          hostname
         }
       }
     }
@@ -25,10 +26,8 @@ const SEO = () => {
   let countryName =
     country.name.charAt(0).toUpperCase() + country.name.slice(1);
 
-  const meta = getMetaByPath(
-    countryCode,
-    pathname.substring(3, pathname.length)
-  );
+  const cleanPath = pathname.substring(3, pathname.length);
+  const meta = getMetaByPath(countryCode, cleanPath);
 
   //if is int
   if (pathname === "/") countryName = "";
@@ -40,7 +39,19 @@ const SEO = () => {
     >
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={origin + pathname} />
-      <link rel="alternate" href={origin + pathname} hreflang="es-CL" />
+      {countries.map((c, index) => {
+        const placeRegex =
+          /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+
+        return placeRegex.test(cleanPath) ? null : (
+          <link
+            key={index}
+            rel="alternate"
+            href={origin + "/" + c.code + cleanPath}
+            hreflang={`es-${c.code}`}
+          />
+        );
+      })}
 
       {
         // activate tracking pixel when DOM is mounted
