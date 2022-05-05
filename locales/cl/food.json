@@ -14,7 +14,7 @@
     {
       "title": "Ordena sin complicaciones",
       "desc": "¿Tienes ganas de una hamburguesa, pizza o sushi? Con DiDi Food ordenar es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas tu comida en tu puerta.",
-      "bgColor": "bg-green-600",
+      "bgColor": "bg-green-primary",
       "textColor": "white"
     },
     {
@@ -49,7 +49,7 @@
     {
       "title": "Entregas confiables",
       "desc": "A través de nuestras diversas acciones y activaciones, buscamos la disponibilidad constante de Socios Repartidores, aún en horas peak. La tecnología de la plataforma procura que los usuarios reciban sus pedidos según sus preferencias y en el menor tiempo posible.",
-      "bgColor": "bg-green-600",
+      "bgColor": "bg-green-primary",
       "textColor": "white"
     },
     {
@@ -89,7 +89,7 @@
     {
       "title": "Disfruta de mayor flexibilidad",
       "desc": "Con DiDi Food, puedes conectarte cuando más te convenga. Además, recoger pedidos y entregarlos es muy sencillo gracias a nuestro sistema de navegación fácil de usar. Sea con moto, auto o bicicleta, puedes generar ganancias.",
-      "bgColor": "bg-green-600",
+      "bgColor": "bg-green-primary",
       "textColor": "white"
     },
     {
@@ -154,5 +154,7 @@
   "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
   "FoodBlogColumns.bgColor": "bg-blue-primary",
   "FoodBlogColumns.textColor": "white",
-  "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}"
+  "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
+  "FoodBlogPostHero.textColor": "white",
+  "FoodBlogPostHero.btnMode": "light"
 }

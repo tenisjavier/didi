@@ -59,7 +59,7 @@ const Breadcrumb = () => {
               </span>
 
               <Link
-                to={"../".repeat(directories.length - 1 - index)}
+                to={"/" + directories.slice(0, index + 1).join("/") + "/"}
                 className=" hover:text-blue-700"
               >
                 {dir.replace(/(-)|(_.*)/g, " ")}

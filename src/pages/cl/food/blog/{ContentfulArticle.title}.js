@@ -1,18 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
-import ArticleHero from "../../../../components/sections/ArticleHero";
+import FoodBlogPostHero from "../../../../components/sections/FoodBlogPostHero";
 import ArticleContent from "../../../../components/sections/ArticleContent";
-import PaxBanner from "../../../../components/sections/PaxBanner";
-import ArticlesColumns from "../../../../components/sections/ArticlesColumns";
+import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
 
 const ArticleTemplate = ({ data }) => {
   return (
     <Layout>
-      <ArticleHero data={data}></ArticleHero>
+      <FoodBlogPostHero data={data}></FoodBlogPostHero>
       <ArticleContent data={data}></ArticleContent>
-      <PaxBanner></PaxBanner>
-      <ArticlesColumns data={data}></ArticlesColumns>
+      <FoodBlogColumns data={data}></FoodBlogColumns>
     </Layout>
   );
 };
@@ -49,7 +47,11 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+      filter: {
+        category: { eq: "food" }
+        country: { code: { eq: "cl" } }
+        id: { ne: $id }
+      }
     ) {
       nodes {
         title
