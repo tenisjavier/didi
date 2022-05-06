@@ -52,6 +52,8 @@ export const query = graphql`
         country: { code: { eq: "cl" } }
         id: { ne: $id }
       }
+      sort: { fields: content___references___createdAt, order: DESC }
+      limit: 10
     ) {
       nodes {
         title

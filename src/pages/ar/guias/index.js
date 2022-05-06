@@ -38,7 +38,11 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulGuide(filter: { country: { code: { eq: "ar" } } }) {
+    allContentfulGuide(
+      filter: { country: { code: { eq: "ar" } } }
+      sort: { fields: content___references___createdAt, order: DESC }
+      limit: 10
+    ) {
       nodes {
         title
         excerpt

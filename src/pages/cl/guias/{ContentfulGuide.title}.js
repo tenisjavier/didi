@@ -11,7 +11,7 @@ const GuideTemplate = ({ data }) => {
   return (
     <Layout>
       <GuideHero data={data}></GuideHero>
-      <section className="text-gray-primary container mx-auto mb-32 md:px-28">
+      <section className="container mx-auto mb-32 text-gray-primary md:px-28">
         <RichContent richContent={richContent}></RichContent>
       </section>
 
@@ -55,6 +55,8 @@ export const query = graphql`
     }
     allContentfulGuide(
       filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+      sort: { fields: content___references___createdAt, order: DESC }
+      limit: 10
     ) {
       nodes {
         title
