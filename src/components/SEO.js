@@ -37,6 +37,11 @@ const SEO = () => {
       htmlAttributes={{ lang: "es" }}
       title={`${meta.title} | DiDi ${countryName}`}
     >
+      <meta
+        name="title"
+        content={`${meta.title} | DiDi ${countryName}`}
+        data-react-helmet="true"
+      ></meta>
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={origin + pathname} />
       {countries.map((c, index) => {

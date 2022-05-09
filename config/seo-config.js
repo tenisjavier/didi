@@ -13,7 +13,7 @@ const seoMeta = {
     },
     "/driver/": {
       title: "Socios Conductores DiDi - Maneja y Genera Dinero",
-      desc: "Driver Page. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      desc: "DiDi Conductor. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
     },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
