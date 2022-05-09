@@ -19,7 +19,7 @@ const Index = () => {
         muted
         loop
         id="myVideo"
-        className="h-140 !absolute  z-0 overflow-hidden md:block"
+        className="!absolute z-0  h-140 overflow-hidden md:block"
       >
         <source src={HeroVideo} type="video/mp4"></source>
       </video>
@@ -27,7 +27,7 @@ const Index = () => {
     image: (
       <StaticImage
         src="../images/didi-logo.png"
-        alt="didi logo"
+        alt="DiDi"
         className="z-20 m-4 "
         width={250}
       ></StaticImage>
@@ -38,12 +38,12 @@ const Index = () => {
   return (
     <>
       <Seo></Seo>
-      <nav className="bg-gray-primary fixed z-30 h-20 w-full bg-opacity-80">
+      <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
         <div className="flex h-full items-center justify-between">
           <Link className="" to={`/`}>
             <StaticImage
               src={`../images/didi-logo.png`}
-              alt="didi logo"
+              alt="DiDi"
               className=""
               width={100}
             />

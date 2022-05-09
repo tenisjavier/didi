@@ -10,7 +10,7 @@ import Menu from "./Menu";
 const Header = () => {
   return (
     <>
-      <nav className="bg-gray-primary fixed z-30 h-20 w-full bg-opacity-80">
+      <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
           <Menu></Menu>
@@ -30,7 +30,7 @@ const Navlogo = () => {
     <Link className="" to={`/${countryCode}/food/`}>
       <StaticImage
         src={`../images/didi-food-logo.png`}
-        alt="didi logo"
+        alt="DiDi"
         className=""
         width={150}
       />
@@ -39,7 +39,7 @@ const Navlogo = () => {
     <Link className="" to={`/${countryCode}/`}>
       <StaticImage
         src={`../images/didi-logo.png`}
-        alt="didi logo"
+        alt="DiDi"
         className=""
         width={100}
       />
