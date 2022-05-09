@@ -40,7 +40,7 @@ const Footer = () => {
             <Link to="/cl">
               <StaticImage
                 src="../images/didi-logo.png"
-                alt="didi logo"
+                alt="DiDi"
                 width={180}
               />
             </Link>
