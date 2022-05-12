@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,7 +54,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`cl`, `ar`],
+        languages: [`cl`, `ar`, `pe`],
         defaultLanguage: `cl`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `https://web.didiglobal.com/`,

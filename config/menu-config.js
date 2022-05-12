@@ -139,24 +139,53 @@ const menuLinks = {
   pe: [
     {
       text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
+      url: "/pe/pasajero/",
       dropMenu: null,
     },
     {
       text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
+      url: "/pe/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "https://chile.didiglobal.com/driver/",
-        },
-        {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
+          url: "/pe/driver/",
         },
         {
           text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/pe/ciudades/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Taxi",
+      url: "/pe/taxi/",
+      dropMenu: null,
+    },
+    {
+      text: "Sobre DiDi",
+      url: "/pe/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/pe/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/pe/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Artículos",
+          url: "/pe/articulos/",
         },
       ],
     },
