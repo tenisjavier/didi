@@ -14,8 +14,15 @@ const footerLinks = {
     { title: "Lugares", link: "/ar/lugares/" },
     { title: "DiDi Taxi", link: "/ar/taxi/" },
     { title: "Seguridad", link: "/ar/seguridad/" },
-    { title: "Guias", link: "/ar/guias/" },
     { title: "Artículos", link: "/ar/articulos/" },
+  ],
+  pe: [
+    { title: "Pasajero", link: "/pe/pasajero/" },
+    { title: "Socio Conductor", link: "/pe/driver/" },
+    { title: "Lugares", link: "/pe/lugares/" },
+    { title: "DiDi Taxi", link: "/pe/taxi/" },
+    { title: "Seguridad", link: "/pe/seguridad/" },
+    { title: "Artículos", link: "/pe/articulos/" },
   ],
 };
 
