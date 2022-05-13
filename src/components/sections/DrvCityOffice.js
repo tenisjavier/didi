@@ -2,7 +2,7 @@ import React from "react";
 import CTASection from "../CTASection";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const DrvCityHero = ({ data }) => {
+const DrvCityOffice = ({ data }) => {
   const { name, address, openHours, phone, photos } = data;
   let hours = [];
   openHours.forEach((hour) => {
@@ -11,12 +11,12 @@ const DrvCityHero = ({ data }) => {
   const image = getImage(photos[0]);
   const props = {
     title: `Driver Center  ${name}`,
-    desc: `Dirección: ${address} | Teléfono: ${phone}`,
+    desc: `Dirección: ${address} ${phone ? "| Teléfono:" + phone : ""}`,
     textColor: "gray-primary",
     bgColor: "bg-gray-light",
     image: (
       <GatsbyImage
-        className="w-200 z-10 m-4 rounded"
+        className="z-10 m-4 w-110 rounded"
         image={image}
         alt={name}
       />
@@ -29,4 +29,4 @@ const DrvCityHero = ({ data }) => {
   return <CTASection {...props}></CTASection>;
 };
 
-export default DrvCityHero;
+export default DrvCityOffice;
