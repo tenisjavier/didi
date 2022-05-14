@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
-import { getBtnLinks } from "../../config/btn-config";
+import { getBtnLinks } from "../config/btn-config";
 
 const SmartBanner = (props) => {
   const { i18n } = useTranslation();

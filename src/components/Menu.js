@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { getMenuLinks } from "../../config/menu-config";
+import { getMenuLinks } from "../config/menu-config";
 
 // @desc: Top Menu. Links from menu-config.
 const Menu = () => {
@@ -29,7 +29,7 @@ const Menu = () => {
           "lg:block"
         }
       >
-        <ul className="bg-gray-primary border-orange-primary m-0 flex flex-col items-center  border-x-0 border-b-0 border-t border-solid bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
+        <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
           {menuLinks.map((menuLink, index) => (
             <NavItem key={index} link={menuLink.url} text={menuLink.text}>
               {menuLink.dropMenu ? (
@@ -61,7 +61,7 @@ const DropdownMenu = (props) => {
   const DropdownItem = (props) => {
     return (
       <a
-        className="lg:bg-gray-primary flex h-11 items-center pl-12 hover:bg-opacity-100 hover:text-white lg:justify-center  lg:bg-opacity-80 lg:p-0"
+        className="flex h-11 items-center pl-12 hover:bg-opacity-100 hover:text-white lg:justify-center lg:bg-gray-primary  lg:bg-opacity-80 lg:p-0"
         href={props.url}
       >
         {props.text}
@@ -71,8 +71,8 @@ const DropdownMenu = (props) => {
 
   return (
     <div
-      className="lg:border-orange-primary top-20  w-full transition group-hover:opacity-100 lg:absolute lg:block  lg:w-56 lg:border-x-0 
-    lg:border-t-2 lg:border-b-0 lg:border-solid lg:opacity-0"
+      className="top-20 w-full  transition group-hover:opacity-100 lg:absolute lg:block lg:w-56  lg:border-x-0 lg:border-t-2 
+    lg:border-b-0 lg:border-solid lg:border-orange-primary lg:opacity-0"
     >
       {props.dropLinks.map((item, index) => (
         <DropdownItem key={index} url={item.url} text={item.text} />

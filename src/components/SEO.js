@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { useLocation } from "@reach/router";
-import { getMetaByPath } from "../../config/seo-config";
-import insertBtnParams from "../../config/analytics-config";
+import { getMetaByPath } from "../config/seo-config";
+import insertBtnParams from "../config/analytics-config";
 
 const SEO = () => {
   const data = useStaticQuery(graphql`

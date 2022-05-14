@@ -8,7 +8,7 @@ import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 import FooterLink from "./FooterLink.js";
-import { getFooterLinks } from "../../config/footer-config";
+import { getFooterLinks } from "../config/footer-config";
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
