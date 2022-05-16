@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import DrvCityHero from "../../../components/sections/DrvCityHero";
+import DrvHero from "../../../components/sections/DrvHero";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import DrvCityOffice from "../../../components/sections/DrvCityOffice";
@@ -10,6 +11,10 @@ import PlacesPrimaryColumn from "../../../components/sections/PlacesPrimaryColum
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
+  const images = data.allContentfulAsset.nodes;
+  const drvHeroBgImage = images.filter((image) => {
+    return image.title === "ar.DrvHero.bgImage";
+  })[0];
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
   const cities = data.contentfulCountry.city;
@@ -17,16 +22,17 @@ const DrvCity = ({ data }) => {
   return (
     <Layout>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>
+      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <SilderSection
         data={product}
         title={`Nuestros Servicios en ${name}`}
       ></SilderSection>
-      {data.contentfulOffice ? (
-        <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
-      ) : null}
       <Requirements data={requirements}></Requirements>
       {places.length ? (
         <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
+      ) : null}
+      {data.contentfulOffice ? (
+        <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
       <DrvCityList data={cities}></DrvCityList>
     </Layout>
@@ -44,6 +50,14 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    allContentfulAsset(filter: { title: { in: ["ar.DrvHero.bgImage"] } }) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
     contentfulCity(id: { eq: $id }) {
