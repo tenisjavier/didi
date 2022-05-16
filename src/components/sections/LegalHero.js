@@ -19,7 +19,7 @@ const LegalHero = ({ bgImage }) => {
     ),
     btnMode: t("LegalHero.btnMode"),
     btnText: "Términos y Condiciones",
-    btnLink: "/cl/legal/terminos-y-condiciones/",
+    btnLink: t("LegalHero.linkItem"),
   };
   return <CTASection {...props}></CTASection>;
 };
