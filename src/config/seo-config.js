@@ -8,12 +8,12 @@ const seoMeta = {
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
     },
     "/pasajero/": {
-      title: "Pide un DiDi y Viaja Seguro",
-      desc: "Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      title: "DiDi Pasajero - Pídelo y Viaja Seguro",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Chile. Elige la mejor opción.",
     },
     "/driver/": {
-      title: "Socios Conductores DiDi - Maneja y Genera Dinero",
-      desc: "DiDi Conductor. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
@@ -36,7 +36,7 @@ const seoMeta = {
       desc: "Contrata por solo $7.990, un plan de telefonía móvil exclusivo que incluye el uso libre de la app DiDi Conductor, sin consumir tus gigas!",
     },
     "/taxi/": {
-      title: "Maneja como Socio Taxista DiDi Registrándote Acá",
+      title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
     "/food/": {
@@ -104,15 +104,15 @@ const seoMeta = {
     },
     "/pasajero/": {
       title: "Pedí un DiDi y Viajá Seguro",
-      desc: "Pasajero. DiDi en Argentina, baja la app para comenzar a viajar de manera segura, barata y rápida.",
+      desc: "DiDi Pasajero. DiDi en Argentina, viajá seguro, barato y rápido. DiDi Express y DiDi Taxi están activos en Argentina. Elegí la mejor opción.",
     },
     "/driver/": {
-      title: "Socios Conductores DiDi - Maneja y Genera Dinero",
-      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
+      title: "DiDi Conductor - Manejá y Generá Dinero",
+      desc: "DiDi Conductor, registrate como socio conductor en la categoría de express o taxi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
     },
     "/taxi/": {
-      title: "Maneja como Socio Taxista DiDi Registrándote Acá",
-      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
+      title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
+      desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
     },
     "/food/": {
       title: "Pide comida a través de DiDi Food",
