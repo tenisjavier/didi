@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     siteUrl: "https://web.didiglobal.com",
-    title: "DiDi Global",
+    title: "DiDi",
   },
   plugins: [
     `gatsby-plugin-image`,
