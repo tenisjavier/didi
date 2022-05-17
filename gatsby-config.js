@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "didi",
+    siteUrl: "https://web.didiglobal.com",
+    title: "DiDi Global",
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -82,5 +82,6 @@ module.exports = {
         routeChangeEventName: "pageview",
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 };
