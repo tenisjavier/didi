@@ -100,19 +100,19 @@ const seoMeta = {
   ar: {
     "/": {
       title: "Registrate como Socio Conductor DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
     },
     "/pasajero/": {
-      title: "Pide un DiDi y Viaja Seguro",
-      desc: "Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      title: "Pedí un DiDi y Viajá Seguro",
+      desc: "Pasajero. DiDi en Argentina, baja la app para comenzar a viajar de manera segura, barata y rápida.",
     },
     "/driver/": {
       title: "Socios Conductores DiDi - Maneja y Genera Dinero",
-      desc: "Driver Page. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
     },
     "/taxi/": {
       title: "Maneja como Socio Taxista DiDi Registrándote Acá",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
     },
     "/food/": {
       title: "Pide comida a través de DiDi Food",
@@ -127,16 +127,16 @@ const seoMeta = {
       desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
     },
     "/seguridad/": {
-      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
-      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+      title: "En DiDi tu Seguridad es nuestra prioridad conocé más acá",
+      desc: "Conocé aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutés al máximo.",
     },
     "/centro-de-ayuda/": {
       title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
     "/direcciones/": {
-      title: "Cómo llegar a distintos puntos de Chile",
-      desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
+      title: "Cómo llegar a distintos puntos de Argentina",
+      desc: "Conocé aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
     },
     "/guias/": {
       title: "Guías para Conductores DiDi.",
@@ -158,8 +158,8 @@ const seoMeta = {
   },
   pe: {
     "/": {
-      title: "Registrate como Socio Conductor DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      title: "Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en Perú, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
     },
     "/pasajero/": {
       title: "Pide un DiDi y Viaja Seguro",
