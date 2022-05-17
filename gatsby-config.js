@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+const siteUrl = process.env.URL || `https://web.didiglobal.com`;
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://web.didiglobal.com",
@@ -82,6 +84,36 @@ module.exports = {
         routeChangeEventName: "pageview",
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+          const urlRegex =
+            /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+          const realPages = allPages.filter((page) => {
+            return !urlRegex.test(page.path);
+          });
+          return realPages.map((page) => {
+            return { ...page };
+          });
+        },
+        // serialize: ({ path, modifiedGmt }) => {
+        //   return {
+        //     url: path,
+        //     lastmod: modifiedGmt,
+        //   }
+        // },
+      },
+    },
   ],
 };
