@@ -24,13 +24,13 @@ const btnLinks = {
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate Online",
+    drvText: "Regístrate como Conductor",
     paxText: "Descarga Didi Pasajero",
   },
   ar: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Registrate Online",
+    drvText: "Registrate como Conductor",
     paxText: "Descargá Didi Pasajero",
   },
   co: {
