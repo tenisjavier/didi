@@ -1,6 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+const slugify = require("react-slugify").default;
 
 const siteUrl = process.env.URL || `https://web.didiglobal.com`;
 
@@ -94,18 +95,103 @@ module.exports = {
               path
             }
           }
+          allContentfulCity {
+            nodes {
+              name
+              country {
+                code
+              }
+            }
+          }
+          allContentfulGuide {
+            nodes {
+              title
+              country {
+                code
+              }
+            }
+          }
+          allContentfulArticle(filter: {category: {eq: "rides"}}) {
+            nodes {
+              title
+              country {
+                code
+              }
+            }
+          }
+          allContentfulPlace {
+            nodes {
+              name
+              address
+              city {
+                country {
+                  code
+                }
+              }
+            }
+          }
         }
       `,
         resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+          allContentfulCity: { nodes: allCities },
+          allContentfulArticle: { nodes: allArticles },
+          allContentfulGuide: { nodes: allGuides },
+          allContentfulPlace: { nodes: allPlaces },
+        }) => {
           const urlRegex =
             /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+
           const realPages = allPages.filter((page) => {
             return !urlRegex.test(page.path);
           });
-          return realPages.map((page) => {
-            return { ...page };
+
+          const cityPages = allCities.map((city) => {
+            const path = `/${city.country.code}/driver/conductores-en-${slugify(
+              city.name
+            )}/`;
+            return { path };
           });
+
+          const articlePages = allArticles.map((article) => {
+            const path = `/${article.country.code}/articulos/${slugify(
+              article.title
+            )}/`;
+            return { path };
+          });
+
+          const guidePages = allGuides.map((guide) => {
+            const path = `/${guide.country.code}/guias/${slugify(
+              guide.title
+            )}/`;
+            return { path };
+          });
+
+          const cityPlacePages = allCities.map((city) => {
+            const path = `/${city.country.code}/lugares/lugares-en-${slugify(
+              city.name
+            )}/`;
+            return { path };
+          });
+
+          const placePages = allPlaces.map((place) => {
+            const path = `/${
+              place.city.country.code
+            }/lugares/como-llegar-a-${slugify(place.name)}_${slugify(
+              place.address
+            )}/`;
+            return { path };
+          });
+
+          return [
+            ...realPages,
+            ...cityPages,
+            ...articlePages,
+            ...guidePages,
+            ...cityPlacePages,
+            ...placePages,
+          ];
         },
         // serialize: ({ path, modifiedGmt }) => {
         //   return {
