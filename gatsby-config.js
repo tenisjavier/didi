@@ -130,6 +130,18 @@ module.exports = {
               }
             }
           }
+          allContentfulDirection {
+            nodes {
+              origin
+              destination
+              destinationAddress
+              city {
+                country {
+                  code
+                }
+              }
+            }
+          }
         }
       `,
         resolveSiteUrl: () => siteUrl,
@@ -139,6 +151,7 @@ module.exports = {
           allContentfulArticle: { nodes: allArticles },
           allContentfulGuide: { nodes: allGuides },
           allContentfulPlace: { nodes: allPlaces },
+          allContentfulDirection: { nodes: allDirections },
         }) => {
           const urlRegex =
             /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
@@ -184,6 +197,18 @@ module.exports = {
             return { path };
           });
 
+          const directionPages = allDirections.map((dir) => {
+            console.log(dir.city.country.code);
+            const path = `/${slugify(
+              dir.city.country.code
+            )}/lugares/como-llegar-a/como-llegar-a-${slugify(
+              dir.destination
+            )}-desde-${slugify(dir.origin)}_${slugify(
+              dir.destinationAddress
+            )}/`;
+            return { path };
+          });
+
           return [
             ...realPages,
             ...cityPages,
@@ -191,6 +216,7 @@ module.exports = {
             ...guidePages,
             ...cityPlacePages,
             ...placePages,
+            ...directionPages,
           ];
         },
         // serialize: ({ path, modifiedGmt }) => {
