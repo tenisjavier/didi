@@ -21,7 +21,8 @@ const SEO = () => {
   const countries = data.allContentfulCountry.nodes;
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
-  const { pathname, origin } = useLocation();
+  const origin = "https://web.didiglobal.com";
+  const { pathname } = useLocation();
   const country = countries.filter((c) => c.code === countryCode).pop();
   let countryName =
     country.name.charAt(0).toUpperCase() + country.name.slice(1);
