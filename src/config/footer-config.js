@@ -20,7 +20,6 @@ const footerLinks = {
     { title: "Pasajero", link: "/pe/pasajero/" },
     { title: "Socio Conductor", link: "/pe/driver/" },
     { title: "Lugares", link: "/pe/lugares/" },
-    { title: "DiDi Taxi", link: "/pe/taxi/" },
     { title: "Seguridad", link: "/pe/seguridad/" },
     { title: "Legal", link: "/pe/legal/" },
   ],

@@ -241,7 +241,7 @@
   "SafetyGridDuringTrip.columns": [
     {
       "title": "Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de servicios de emergencia en la app, el cual te conecta con el 133 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 105 y nuestro Centro de Emergencias DiDi 24/7.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -251,7 +251,7 @@
     },
     {
       "title": "Localización GPS",
-      "desc": "Rastreamos por GPS todos los viajes para que, en caso de un incidente, podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 133 y rastrear tu ubicación exacta.",
+      "desc": "Rastreamos por GPS todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -261,7 +261,7 @@
     },
     {
       "title": "Viajes Asegurados",
-      "desc": "Todos los viajes realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "desc": "Gracias a una alianza con La Positiva, todos los viajes realizados a través de la aplicación contarán con un seguro de accidentes personales, adicional a la cobertura del SOAT. El seguro brinda una cobertura de muerte accidental, invalidez permanente total por accidente, gasto de sepelio y otras coberturas. Por otro lado, cuenta con un seguro de responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
   ],
@@ -286,7 +286,7 @@
     },
     {
       "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor en particular.",
       "bgColor": "bg-gray-light"
     }
   ],

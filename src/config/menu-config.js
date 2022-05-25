@@ -160,11 +160,7 @@ const menuLinks = {
         },
       ],
     },
-    {
-      text: "DiDi Taxi",
-      url: "/pe/taxi/",
-      dropMenu: null,
-    },
+
     {
       text: "Sobre DiDi",
       url: "/pe/sobre-didi/",
