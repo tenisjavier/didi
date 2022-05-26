@@ -13,9 +13,7 @@ const Index = ({ data }) => {
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "au.HomeHero.bgImage";
   })[0];
-  // const safetyCTAImage = images.filter((image) => {
-  //   return image.title === "au.SafetyCTA.image";
-  // })[0];
+
   const safetyCTABgImage = images.filter((image) => {
     return image.title === "au.SafetyCTA.bgImage";
   })[0];
