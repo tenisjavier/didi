@@ -11,11 +11,22 @@
   "SafetyCTA.btnLink": "seguridad/",
   "DrvCTA.title": "Manejá con DiDi",
   "DrvCTA.desc": "Conectate con nuestros servicios de autos particulares o taxi de manera más segura y empezá a generar ingresos extra con DiDi. Ahorrá para tus vacaciones soñadas, pagá la educación de tus hijos o complementá tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre. Registrate en DiDi con tus datos y los de tu vehículo y comenzá a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empecés a manejar.",
+  "DrvCTA.bullets": [
+    "Comisiones Bajas",
+    "Seguridad para tu Viaje",
+    "Pago Semanal"
+  ],
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
   "PaxCTA.title": "¡Elegí DiDi!",
-  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengás un viaje increíble. Disfrutá de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos en nuestros servicios de Express y DiDi Pasajero y conectate tu próximo viaje con la app de movilidad en la que recibís más por lo que pagás.",
+  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengás un viaje increíble. Disfrutá de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
+  "PaxCTA.bullets": [
+    "Precios Bajos",
+    "La Mejor Seguridad",
+    "Cómodo, Rápido y Seguro",
+    "Soporte 24/7"
+  ],
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
   "PaxCTA.reverse": "true",

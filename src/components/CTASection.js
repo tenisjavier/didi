@@ -64,7 +64,7 @@ const CTASection = (props) => {
           )}
           {bullets && (
             <>
-              <ul className="list-none text-left text-xl">
+              <ul className="mt-12 mb-2 list-none text-left text-xl">
                 {bullets.map((item, index) => {
                   return (
                     <div key={index}>

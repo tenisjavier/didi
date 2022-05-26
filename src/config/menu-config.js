@@ -189,7 +189,7 @@ const menuLinks = {
   co: [
     {
       text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
+      url: "/co/pasajero",
       dropMenu: null,
     },
     {
@@ -211,15 +211,15 @@ const menuLinks = {
       ],
     },
   ],
-  ec: [
+  au: [
     {
-      text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
+      text: "DiDi Rider",
+      url: "/au/rider/",
       dropMenu: null,
     },
     {
-      text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
+      text: "DiDi Driver",
+      url: "/au/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -230,7 +230,7 @@ const menuLinks = {
           url: "https://chile.didiglobal.com/driver/santiago",
         },
         {
-          text: "Regístrate Online",
+          text: "Sign Up",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
       ],

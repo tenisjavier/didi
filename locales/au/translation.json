@@ -1,64 +1,52 @@
 {
-  "HomeHero.title": "Muévete por tu ciudad",
+  "HomeHero.title": "Award Winning Rideshare at Low Fares Every Day",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
-  "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
-  "SafetyCTA.desc": "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
+  "SafetyCTA.title": "Your safety comes first",
+  "SafetyCTA.desc": "Your safety is our top priority, learn more about the safety features available in the DiDi app so you can use them any time you need to.",
   "SafetyCTA.textColor": "white",
   "SafetyCTA.bgColor": "bg-blue-primary",
-  "SafetyCTA.btnText": "Saber Más",
+  "SafetyCTA.btnText": "Know More",
   "SafetyCTA.btnMode": "light",
-  "SafetyCTA.btnLink": "seguridad/",
-  "DrvCTA.title": "Maneja con DiDi",
-  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
+  "SafetyCTA.btnLink": "safety/",
+  "DrvCTA.title": "Become a driver",
+  "DrvCTA.desc": "All Drivers have the opportunity to take home more of the fare with DiDi’s industry-leading low Services Fees",
   "DrvCTA.bullets": [
-    "Comisiones Bajas",
-    "Seguridad para tu Viaje",
-    "Si eres conductora mujer puedes llevar solo a mujeres",
-    "Pago Semanal"
+    "Increase Your Earning Potential: Low Services Fees ",
+    "Safety First: Access in-app safety features and our 24/7 dedicated support team ",
+    "Be in Control: Pick up nearby riders or choose the location you want to drive in ",
+    "Weekly Payouts: Get paid weekly and earn flexibly"
   ],
   "DrvCTA.bgColor": "bg-gray-light",
-  "DrvCTA.textColor": "gray-primary",
+  "DrvCTA.textColor": "bg-gray-primary",
   "DrvCTA.btnMode": "primary",
-  "PaxCTA.title": "¡Elige DiDi!",
-  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
-  "PaxCTA.bullets": [
-    "Precios Bajos",
-    "La Mejor Seguridad",
-    "Cómodo, Rápido y Seguro",
-    "Soporte 24/7"
-  ],
+  "PaxCTA.title": "Get a ride",
+  "PaxCTA.desc": "Safe, reliable and affordable rides are a tap away",
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
+  "PaxCTA.bullets": [
+    "Enjoy low fares everyday ",
+    "Get matched to a nearby driver in minutes",
+    "Added peace of mind with in-app safety features",
+    "Give drivers more of the fare with DiDi"
+  ],
   "HomeColumns.bgColor": "bg-gray-light",
   "HomeColumns.textColor": "gray-primary",
   "HomeColumns.columns": [
     {
-      "title": "Acerca de Nosotros",
-      "desc": "Somos la app de movilidad más grande del mundo.",
-      "textColor": "gray-primary",
-      "btnText": "Saber Más",
-      "btnLink": "/cl/centro-de-ayuda/",
-      "btnMode": "light",
-      "height": "h-80"
+      "title": "Available in 28 Cities",
+      "desc": "DiDi is now available in 28 cities across Australia. From north, south, east and west - we’ve got you covered. Check here to see a full list of the cities we are currently operating.",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Legal",
-      "desc": "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Chile.",
-      "textColor": "gray-primary",
-      "btnText": "Saber Más",
-      "btnLink": "/cl/centro-de-ayuda/",
-      "btnMode": "light",
-      "height": "h-80"
+      "title": "Low Fares Every Day",
+      "desc": "Choose a rideshare that delivers great quality service whilst keeping fares low êveryday. ",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Centro de Ayuda",
-      "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte.  ",
-      "textColor": "gray-primary",
-      "btnText": "Saber Más",
-      "btnLink": "/cl/centro-de-ayuda/",
-      "btnMode": "light",
-      "height": "h-80"
+      "title": "Award Winning Rideshare",
+      "desc": "Rated by consumers as the best ridesharing service in Australia - DiDi won Canstar Blue’s Most Satisfied Customer Ridesharing 2020 Award. DiDi was the only rideshare to receive 5 stars across all categories, including reliability, customers service, cleanliness and value for money.",
+      "textColor": "gray-primary"
     }
   ],
   "PaxHero.title": "Conecta tu próximo viaje con DiDi, la App que en la que pagas menos y recibes más",

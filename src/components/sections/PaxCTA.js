@@ -8,6 +8,7 @@ const PaxCTA = ({ image }) => {
   const props = {
     title: t("PaxCTA.title"),
     desc: t("PaxCTA.desc"),
+    bullets: t("PaxCTA.bullets", { returnObjects: true }),
     textColor: t("PaxCTA.textColor"),
     image: (
       <GatsbyImage
@@ -15,7 +16,7 @@ const PaxCTA = ({ image }) => {
         alt={image.description}
         width={700}
         height={700}
-        className="w-100 z-10 m-4 rounded-full"
+        className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),
     btnMode: t("PaxCTA.btnMode"),
