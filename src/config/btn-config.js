@@ -39,17 +39,17 @@ const btnLinks = {
     drvText: "Regístrate Online",
     paxText: "Descarga Didi Pasajero",
   },
-  ec: {
-    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ecdriverhero",
+  au: {
+    drvLink: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate Online",
-    paxText: "Descarga Didi Pasajero",
+    drvText: "Drive with DiDi",
+    paxText: "Ride with DiDi",
   },
   rd: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/rddriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate Online",
-    paxText: "Descarga Didi Pasajero",
+    drvText: "Drive with DiDi",
+    paxText: "Ride with DiDi",
   },
   cr: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",

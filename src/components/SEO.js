@@ -9,7 +9,9 @@ import insertBtnParams from "../config/analytics-config";
 const SEO = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulCountry(filter: { code: { in: ["cl", "ar", "pe"] } }) {
+      allContentfulCountry(
+        filter: { code: { in: ["cl", "ar", "pe", "co", "au"] } }
+      ) {
         nodes {
           name
           code

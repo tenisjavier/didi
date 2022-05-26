@@ -8,7 +8,7 @@ const seoMeta = {
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
     },
     "/pasajero/": {
-      title: "DiDi Pasajero - Pídelo y Viaja Seguro",
+      title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Chile. Elige la mejor opción.",
     },
     "/driver/": {
@@ -114,14 +114,7 @@ const seoMeta = {
       title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
       desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
     },
-    "/food/": {
-      title: "Pide comida a través de DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/store/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
+
     "/sobre-didi/": {
       title: "Tenés Preguntas sobre DiDi? Revisá las Respuestas",
       desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -162,28 +155,17 @@ const seoMeta = {
       desc: "DiDi en Perú, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
     },
     "/pasajero/": {
-      title: "Pide un DiDi y Viaja Seguro",
-      desc: "Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
+      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
     },
     "/driver/": {
-      title: "Socios Conductores DiDi - Maneja y Genera Dinero",
-      desc: "Driver Page. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
-    "/taxi/": {
-      title: "Maneja como Socio Taxista DiDi Registrándote Acá",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
-    },
-    "/food/": {
-      title: "Pide comida a través de DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/store/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
+
     "/sobre-didi/": {
-      title: "Tenés Preguntas sobre DiDi? Revisá las Respuestas",
-      desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+      title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
     },
     "/seguridad/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
@@ -194,25 +176,133 @@ const seoMeta = {
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
     "/direcciones/": {
-      title: "Cómo llegar a distintos puntos de Chile",
+      title: "Cómo llegar a distintos puntos de Perú",
       desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
     },
     "/guias/": {
       title: "Guías para Conductores DiDi.",
-      desc: "Guías educativas para conductores. Enterate de distintos asociados a conducción de un vehículo.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
     },
     "/articulos/": {
       title:
-        "Artículos de interés sobre lugares que podés ir a visitar con DiDi.",
-      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Leé sobre distintos destinos.",
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
     "/ciudades/": {
       title: "Servicios de DiDi por Ciudad.",
-      desc: "Conocé que servicios DiDi se encuentran en tu ciudad. Si querés ser socio conductor revisá los requisitos.",
+      desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
+    },
+    "/lugares/": {
+      title: "Viaja a Distintos Lugares de Interés",
+      desc: "Viaja a distintos puntos de la ciudad con DiDi. DiDi es la manera más rápida y segura de viajar. Baja la aplicación ya.",
     },
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",
-      desc: "Conocé nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
+  },
+  co: {
+    "/": {
+      title: "Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en Perú, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+    },
+    "/pasajero/": {
+      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
+      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
+    },
+    "/driver/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+
+    "/sobre-didi/": {
+      title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+    },
+    "/seguridad/": {
+      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/centro-de-ayuda/": {
+      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/direcciones/": {
+      title: "Cómo llegar a distintos puntos de Perú",
+      desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
+    },
+    "/guias/": {
+      title: "Guías para Conductores DiDi.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+    },
+    "/articulos/": {
+      title:
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+    },
+    "/ciudades/": {
+      title: "Servicios de DiDi por Ciudad.",
+      desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
+    },
+    "/lugares/": {
+      title: "Viaja a Distintos Lugares de Interés",
+      desc: "Viaja a distintos puntos de la ciudad con DiDi. DiDi es la manera más rápida y segura de viajar. Baja la aplicación ya.",
+    },
+    "/legal/": {
+      title: "Términos y Condiciones y Políticas de Privacidad.",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
+  },
+  au: {
+    "/": {
+      title: "Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en Perú, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+    },
+    "/pasajero/": {
+      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
+      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
+    },
+    "/driver/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+
+    "/sobre-didi/": {
+      title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+    },
+    "/seguridad/": {
+      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/centro-de-ayuda/": {
+      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/direcciones/": {
+      title: "Cómo llegar a distintos puntos de Perú",
+      desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
+    },
+    "/guias/": {
+      title: "Guías para Conductores DiDi.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+    },
+    "/articulos/": {
+      title:
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+    },
+    "/ciudades/": {
+      title: "Servicios de DiDi por Ciudad.",
+      desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
+    },
+    "/lugares/": {
+      title: "Viaja a Distintos Lugares de Interés",
+      desc: "Viaja a distintos puntos de la ciudad con DiDi. DiDi es la manera más rápida y segura de viajar. Baja la aplicación ya.",
+    },
+    "/legal/": {
+      title: "Términos y Condiciones y Políticas de Privacidad.",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
 };

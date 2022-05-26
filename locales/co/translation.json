@@ -10,11 +10,10 @@
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
   "DrvCTA.title": "Maneja con DiDi",
-  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
+  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi.Ahorra para tus vacaciones soñadas, paga la educación de tus hijos o complementa tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre.Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bullets": [
     "Comisiones Bajas",
     "Seguridad para tu Viaje",
-    "Si eres conductora mujer puedes llevar solo a mujeres",
     "Pago Semanal"
   ],
   "DrvCTA.bgColor": "bg-gray-light",

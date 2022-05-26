@@ -12,10 +12,21 @@
   "DrvCTA.title": "Ganancias Adicionales con DiDi",
   "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares de la manera más segura y empieza a generar ingresos extra con DiDi. Complementa tus ingresos conectándose a la app de movilidad más grande del mundo. Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bgColor": "bg-gray-light",
+  "DrvCTA.bullets": [
+    "Comisiones Bajas",
+    "Seguridad para tu Viaje",
+    "Pago Semanal"
+  ],
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
   "PaxCTA.title": "¡Elige DiDi!",
-  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos en nuestros servicios de Express y DiDi Pasajero y conéctate tu próximo viaje con la app de movilidad en la que recibes más por lo que pagas.",
+  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
+  "PaxCTA.bullets": [
+    "Precios Bajos",
+    "La Mejor Seguridad",
+    "Cómodo, Rápido y Seguro",
+    "Soporte 24/7"
+  ],
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
   "HomeColumns.bgColor": "bg-gray-light",
@@ -241,7 +252,7 @@
   "SafetyGridDuringTrip.columns": [
     {
       "title": "Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de servicios de emergencia en la app, el cual te conecta con el 133 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 105 y nuestro Centro de Emergencias DiDi 24/7.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -251,7 +262,7 @@
     },
     {
       "title": "Localización GPS",
-      "desc": "Rastreamos por GPS todos los viajes para que, en caso de un incidente, podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 133 y rastrear tu ubicación exacta.",
+      "desc": "Rastreamos por GPS todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -261,7 +272,7 @@
     },
     {
       "title": "Viajes Asegurados",
-      "desc": "Todos los viajes realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "desc": "Gracias a una alianza con La Positiva, todos los viajes realizados a través de la aplicación contarán con un seguro de accidentes personales, adicional a la cobertura del SOAT. El seguro brinda una cobertura de muerte accidental, invalidez permanente total por accidente, gasto de sepelio y otras coberturas. Por otro lado, cuenta con un seguro de responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
   ],
@@ -286,7 +297,7 @@
     },
     {
       "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor en particular.",
       "bgColor": "bg-gray-light"
     }
   ],
