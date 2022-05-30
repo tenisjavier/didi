@@ -19,7 +19,7 @@
   ],
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
-  "PaxCTA.title": "¡Elige DiDi!",
+  "PaxCTA.title": "Viaja con DiDi por tu Ciudad",
   "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
   "PaxCTA.bullets": [
     "Precios Bajos",
@@ -98,7 +98,7 @@
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "Maneja con DiDi",
+  "DrvHero.title": "Maneja con DiDi Conductor",
   "DrvHero.desc": "Para DiDi, los socios conductores y socios taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los socios conductores.",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
