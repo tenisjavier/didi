@@ -201,7 +201,7 @@ module.exports = {
             console.log(dir.city.country.code);
             const path = `/${slugify(
               dir.city.country.code
-            )}/lugares/como-llegar-a/como-llegar-a-${slugify(
+            )}/lugares/como-llegar-a-${slugify(
               dir.destination
             )}-desde-${slugify(dir.origin)}_${slugify(
               dir.destinationAddress
