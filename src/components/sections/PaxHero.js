@@ -8,6 +8,7 @@ const PaxHero = ({ bgImage }) => {
   const props = {
     hero: true,
     title: t("PaxHero.title"),
+    desc: t("PaxHero.desc"),
     textColor: t("PaxHero.textColor"),
     bgImage: (
       <GatsbyImage

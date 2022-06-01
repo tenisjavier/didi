@@ -15,11 +15,12 @@ const Card = (props) => {
     btnMode,
     btnType,
     height,
+    width,
   } = props;
 
   return (
     <div
-      className={` max-w-xs rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-12`}
+      className={` max-w-xs ${width}  rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-12`}
     >
       <div className="mb-5 ">{image}</div>
 
@@ -28,7 +29,7 @@ const Card = (props) => {
       >
         <div className="mb-4">
           <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
-          <p className="text-base text-lg">{desc}</p>
+          <p className={"text-base text-lg"}>{desc}</p>
         </div>
         <div className="flex justify-center">
           <Btn type={btnType} link={btnLink} mode={btnMode}>

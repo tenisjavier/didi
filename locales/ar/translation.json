@@ -61,8 +61,8 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "Conectá tu próximo viaje con DiDi, la App que en la que pagás menos y recibís más",
-  "PaxHero.textColor": "white",
+  "PaxHero.title": "Conectá tu próximo viaje con DiDi Pasajero ",
+  "PaxHero.desc": "La App de movilidad en que pagás menos y recibís más",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
   "PaxColumns.columns": [
@@ -94,6 +94,7 @@
   "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
+  "SliderSection.title": "Nuestros Servicios en Argentina",
   "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
   "PaxBanner.desc": "Generá Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
