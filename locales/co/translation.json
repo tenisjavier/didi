@@ -60,7 +60,8 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "Conecta tu próxima solicitud de movilidad a traves de DiDi Pasajero",
+  "PaxHero.title": "Conecta tu próximo viaje con DiDi Pasajero ",
+  "PaxHero.desc": "La App de movilidad en que pagas menos y recibes más",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
@@ -93,6 +94,7 @@
   "PaxWhyDiDi.desc": "Paga tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
+  "SliderSection.title": "Nuestros Servicios en Colombia",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
   "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",

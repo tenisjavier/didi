@@ -60,7 +60,8 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "Conecta tu próximo viaje con DiDi, la App que en la que pagas menos y recibes más",
+  "PaxHero.title": "Conecta tu próximo viaje con DiDi Pasajero ",
+  "PaxHero.desc": "La App de movilidad en que pagas menos y recibes más",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
@@ -93,6 +94,7 @@
   "PaxWhyDiDi.desc": "Tu seguridad es nuestra prioridad",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
+  "SliderSection.title": "Nuestros Servicios en Perú",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
   "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
