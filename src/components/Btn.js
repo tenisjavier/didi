@@ -24,6 +24,9 @@ const Btn = (props) => {
   } else if (props.type === "foodDelivery") {
     btnLink = btnData.foodDeliveryLink;
     btnText = props.children ? props.children : btnData.foodDeliveryText;
+  } else if (props.type === "foodEater") {
+    btnLink = btnData.foodEaterLink;
+    btnText = props.children ? props.children : btnData.foodEaterText;
   }
 
   return (
