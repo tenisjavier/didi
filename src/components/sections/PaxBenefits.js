@@ -8,6 +8,7 @@ const PaxBenefits = ({ image, icons }) => {
   const { t } = useTranslation();
   const props = {
     title: t("PaxBenefits.title"),
+    desc: t("PaxBenefits.desc"),
     bgColor: t("PaxBenefits.bgColor"),
     textColor: "gray-primary",
     image: (
