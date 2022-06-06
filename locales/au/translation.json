@@ -92,68 +92,59 @@
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "Maneja con DiDi",
-  "DrvHero.desc": "Para DiDi, los socios conductores y socios taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los socios conductores.",
+  "DrvHero.title": "Drive with DiDi",
+  "DrvHero.desc": "Start making great money with industry-leading Services Fees, added support and safety features.",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
-  "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
-  "DrvWhyDiDi.bullets": [
-    "Comparte tu viaje.",
-    "Privacidad de números telefónicos.",
-    "Desvincular usuario."
-  ],
-  "DrvWhyDiDi.textColor": "gray-primary",
-  "DrvWhyDiDi.btnMode": "primary",
-  "DrvVideoGrid.bgColor": "bg-blue-primary",
-  "DrvVideoGrid.title": "Sigue estos pasos para empezar a manejar y generar ingresos",
-  "DrvVideoGrid.textColor": "white",
-  "DrvVideoGrid.columns": [
+  "DrvBenefits.title": "Driver-partner Benefits",
+  "DrvBenefits.bgColor": "bg-white",
+  "DrvBenefits.columns": [
     {
-      "title": "Sube tu Cédula de Identidad Chilena",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/1853mnRqTW4"
+      "title": "Increase your earning potential",
+      "desc": "Take home more of the fare with DiDi’s industry-leading low Services Fees and additional bonuses.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
     },
     {
-      "title": "Sube una fotografía de ti sosteniendo tu cédula de identidad",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/6TyVl3r1wUM"
+      "title": "Safety first",
+      "desc": "Access in-app safety features and our 24/7 dedicated support team.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
     },
     {
-      "title": "Sube tu licencia de conducir Chilena",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/cDXmKDkOlL4"
+      "title": "Be in control",
+      "desc": "Pick up nearby riders or choose the location you want to drive in. ",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
     },
     {
-      "title": "Sube tu Permiso de Circulación al día",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/LH6BgttFSTc"
-    },
-    {
-      "title": "Sube tu Permiso de Circulación al día",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
+      "title": "Weekly payouts",
+      "desc": "Get paid weekly and earn flexibly. You decide when you want to earn.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+
+      "width": "w-64"
     }
   ],
-  "DrvBanner.title": "Tenemos expertos para ayudarte a completar tu registro y responder a cualquier duda que tengas",
-  "DrvBanner.desc": "Conoce todo sobre DiDi.",
+
+  "DrvBanner.title": "Start earning extra money today",
+  "DrvBanner.desc": "Sign-up Now",
   "DrvBanner.bgColor": "bg-orange-primary",
   "DrvBanner.textColor": "white",
   "DrvBanner.btnMode": "light",
-  "DrvFeatures.title": "Te damos la mejor experiencia. En nuestra App puedes:",
-  "DrvFeatures.bullets": [
-    "Ver el destino de todos tus viajes las 24 horas.",
-    "Tener más ingresos con nuestras promociones y referidos.",
-    "Tener flexibilidad para que manejes tu tiempo como quieras, además de herramientas que te ayudan a sacarle provecho a la aplicación cuando estás conectado.",
-    "Apoyarte en nuestro equipo que está siempre listo para ayudarte. 7 días de la semana, 24 horas al día."
-  ],
+  "DrvFeatures.title": "DiDi Advance",
+  "DrvFeatures.desc": "Free access to a program that rewards the most committed drivers with lower services fee and bonus perks. Available in participating cities only.",
   "DrvFeatures.textColor": "gray-primary",
   "DrvFeatures.bgColor": "bg-gray-light",
   "DrvFeatures.btnMode": "primary",
-  "DrvCityList.title": "Operamos en las siguientes ciudades en Chile",
-  "DrvCityList.desc": "Descubre las ciudades de Chile donde esta operando DiDi",
+  "DrvCityList.title": "Our services are available in these cities in Australia",
+  "DrvCityList.desc": "All cities have Express, Max, Share and Delivery",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/cl/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/au/driver/driver-{{city}}/",
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
@@ -367,8 +358,8 @@
   "DiDiMasCTA.textColor": "white",
   "DiDiMasCTA.bgColor": "bg-blue-primary",
   "DiDiMasCTA.btnMode": "light",
-  "DrvCityHero.title": "Socios Conductores en {{city}}",
-  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}?. Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
+  "DrvCityHero.title": "DiDi Drivers in {{city}}",
+  "DrvCityHero.desc": "¿Do you live in {{city}} and want some extra earnings?. Sign-up and become a DiDi Driver. ",
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",

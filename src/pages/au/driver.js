@@ -2,43 +2,50 @@ import React from "react";
 import { graphql } from "gatsby";
 import {
   faCircleDollarToSlot,
-  faClock,
-  faUserShield,
+  faShieldHeart,
   faThumbsUp,
+  faWallet,
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
-import PaxHero from "../../components/sections/PaxHero";
-import SilderSection from "../../components/sections/SliderSection";
-import PaxBenefits from "../../components/sections/PaxBenefits";
-import PaxBanner from "../../components/sections/PaxBanner";
+import DrvHero from "../../components/sections/DrvHero";
+import DrvBenefits from "../../components/sections/DrvBenefits";
+import DrvBanner from "../../components/sections/DrvBanner";
 import HomeColumns from "../../components/sections/HomeColumns";
+import DrvCityList from "../../components/sections/DrvCityList";
+import SilderSection from "../../components/sections/SliderSection";
+import Requirements from "../../components/sections/Requirements";
+import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
-const Pasajero = ({ data }) => {
+const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const icons = [faCircleDollarToSlot, faClock, faUserShield, faThumbsUp];
-  const paxHeroBgImage = images.filter((image) => {
-    return image.title === "au.PaxHero.bgImage";
+  const icons = [faCircleDollarToSlot, faShieldHeart, faThumbsUp, faWallet];
+  const drvHeroBgImage = images.filter((image) => {
+    return image.title === "au.DrvHero.bgImage";
   })[0];
-  const paxBenefitsImage = images.filter((image) => {
-    return image.title === "au.PaxBenefits.image";
+  const drvBenefitsImage = images.filter((image) => {
+    return image.title === "au.DrvBenefits.image";
   })[0];
-
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
   const products = data.allContentfulProduct.nodes;
+  const cities = data.contentfulCountry.city;
+
   return (
     <Layout>
-      <PaxHero bgImage={paxHeroBgImage}></PaxHero>
-      <PaxBenefits image={paxBenefitsImage} icons={icons}></PaxBenefits>
-      <PaxBanner></PaxBanner>
+      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
+      <DrvBenefits image={drvBenefitsImage} icons={icons}></DrvBenefits>
+      <DrvBanner></DrvBanner>
       <SilderSection data={products}></SilderSection>
+      <Requirements data={products}></Requirements>
+      <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
+      <DrvCityList data={cities}></DrvCityList>
     </Layout>
   );
 };
 
-export default Pasajero;
+export default Driver;
 
 export const query = graphql`
   query ($language: String!) {
@@ -54,7 +61,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.HomeColumns.image)/"
+          regex: "/(au.DrvHero.bgImage)|(au.DrvBenefits.image)|(au.HomeColumns.image)/"
         }
       }
       sort: { fields: title }
@@ -85,6 +92,11 @@ export const query = graphql`
         country {
           code
         }
+      }
+    }
+    contentfulCountry(code: { eq: "au" }) {
+      city {
+        name
       }
     }
   }

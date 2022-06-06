@@ -84,19 +84,6 @@ const insertBtnParams = () => {
         }
       }
 
-      if (c.id === "food_url_forward_encode") {
-        let jumpPage =
-          "https://www.didi-food.com/es-MX/store/self-onboarding/list" +
-          "?" +
-          search;
-        let redirectUrl =
-          "https://crm.didi-food.com/crm/selfEntry/passport/setCookie?jumpPage=" +
-          window.encodeURIComponent(jumpPage);
-        let passportUrl =
-          "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=" +
-          window.encodeURIComponent(redirectUrl);
-        url = passportUrl;
-      }
       // if it is a deeplink, get the long url version with correct parameters
       if (
         url.indexOf("ssa-rides-driver.onelink.me/mbwy/") > -1 ||
@@ -104,6 +91,8 @@ const insertBtnParams = () => {
         url.indexOf("https://99.onelink.me/Mayr/") > -1 ||
         url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
         url.indexOf("onelink.me/5xQ3/") > -1 ||
+        url.indexOf("onelink.me/4B2F/") > -1 ||
+        url.indexOf("onelink.me/zzaY/") > -1 ||
         url.indexOf("onelink.me/ixFb/") > -1
       ) {
         url = getDeepLink(url, thisHostname);
@@ -295,10 +284,12 @@ const insertBtnParams = () => {
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
 
     let newSearch = `?pid=${pid}&c=${c}&af_r=https%3A%2F%2Fpage.didiglobal.com%2Fdriver-page%2Fregister%2Findex.html%3Flocation_country%3D${countryLang[0]}%26country%3D${country}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
+    let newSearchFood = `?pid=${pid}&c=${c}&af_web_dp=https%3A%2F%2Fwww.didi-food.com%2F${countryLang[1]}%2Fmobile-delivery%2Fguide%3FclientType=102%26country%3D${countryLang[0]}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
 
     // jovep 99 app
     if (device) {
       newSearch = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
+      newSearchFood = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
 
       return oldUrl + newSearch;
     }
@@ -311,6 +302,8 @@ const insertBtnParams = () => {
       url.indexOf("page.didiglobal.com/driver-page/register") > -1
     ) {
       return oldUrl + newSearch;
+    } else if (url.indexOf("me/zzaY/") > -1) {
+      return oldUrl + newSearchFood;
     } else {
       return (
         oldUrl +

@@ -4,11 +4,11 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ColumnImage from "../ColumnImage";
 
-const PaxBenefits = ({ image, icons }) => {
+const DrvBenefits = ({ image, icons }) => {
   const { t } = useTranslation();
   const props = {
-    title: t("PaxBenefits.title"),
-    bgColor: t("PaxBenefits.bgColor"),
+    title: t("DrvBenefits.title"),
+    bgColor: t("DrvBenefits.bgColor"),
     textColor: "gray-primary",
     image: (
       <GatsbyImage
@@ -17,7 +17,7 @@ const PaxBenefits = ({ image, icons }) => {
         className="z-10 m-4 mt-8 w-80"
       ></GatsbyImage>
     ),
-    columns: t("PaxBenefits.columns", { returnObjects: true }),
+    columns: t("DrvBenefits.columns", { returnObjects: true }),
     reverse: false,
   };
 
@@ -30,4 +30,4 @@ const PaxBenefits = ({ image, icons }) => {
   return <ColumnImage {...props}></ColumnImage>;
 };
 
-export default PaxBenefits;
+export default DrvBenefits;
