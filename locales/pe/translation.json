@@ -142,6 +142,9 @@
       "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
     }
   ],
+  "Requirements.title": "Requerimientos para ser Conductor",
+  "Requirements.bgColor": "bg-gray-light",
+  "Requirements.textColor": "bg-white",
   "DrvBanner.title": "Tenemos expertos para ayudarte a completar tu registro y responder a cualquier duda que tengas",
   "DrvBanner.desc": "Conoce todo sobre DiDi.",
   "DrvBanner.bgColor": "bg-orange-primary",

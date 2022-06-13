@@ -218,18 +218,32 @@ const menuLinks = {
       url: "/au/driver/",
       dropMenu: [
         {
-          text: "Socio Conductor",
-          url: "https://chile.didiglobal.com/driver/",
-        },
-        {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
+          text: "Driver",
+          url: "/au/driver/",
         },
         {
           text: "Sign Up",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
+          url: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
         },
       ],
+    },
+    {
+      text: "DiDi Delivery",
+      url: "/au/delivery/",
+      dropMenu: [
+        {
+          text: "Personal",
+          url: "/au/delivery/personal",
+        },
+        {
+          text: "Business",
+          url: "/au/delivery/business",
+        },
+      ],
+    },
+    {
+      text: "DiDi Safety",
+      url: "/au/delivery/",
     },
   ],
   pa: [

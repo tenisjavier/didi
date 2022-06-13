@@ -14,7 +14,7 @@ const Partner = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const partners = data.allContentfulPartner.nodes;
   const partnerCTAImage = images.filter((image) => {
-    return image.title === "cl.PartnerCTA.image";
+    return image.title === "au.PartnerCTA.image";
   })[0];
   return (
     <Layout>
@@ -75,7 +75,7 @@ export const query = graphql`
       }
     }
     allContentfulPartner(
-      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+      filter: { country: { code: { eq: "au" } }, id: { ne: $id } }
     ) {
       nodes {
         name
@@ -87,7 +87,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cl.PartnerCTA.image"] } }
+      filter: { title: { in: ["au.PartnerCTA.image"] } }
       sort: { fields: title }
     ) {
       nodes {
