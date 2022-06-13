@@ -9,13 +9,13 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
-const PaxColumns = ({ images }) => {
+const DrvColumns = ({ images, icons }) => {
   const { t } = useTranslation();
   const props = {
-    bgColor: t("PaxColumns.bgColor"),
-    columns: t("PaxColumns.columns", { returnObjects: true }),
+    bgColor: t("DrvColumns.bgColor"),
+    textColor: t("DrvColumns.textColor"),
+    columns: t("DrvColumns.columns", { returnObjects: true }),
   };
-
   if (images) {
     props.columns.forEach((col, index) => {
       const image = getImage(images[index]);
@@ -29,6 +29,10 @@ const PaxColumns = ({ images }) => {
         ></GatsbyImage>
       );
     });
+  } else if (icons) {
+    props.columns.forEach((col, index) => {
+      col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
+    });
   } else {
     props.columns[0].image = <FontAwesomeIcon icon={faUserShield} size="3x" />;
 
@@ -39,4 +43,4 @@ const PaxColumns = ({ images }) => {
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default PaxColumns;
+export default DrvColumns;

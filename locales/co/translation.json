@@ -143,6 +143,9 @@
       "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
     }
   ],
+  "Requirements.title": "Requerimientos para ser Conductor",
+  "Requirements.bgColor": "bg-gray-light",
+  "Requirements.textColor": "bg-white",
   "DrvBanner.title": "Completa tu proceso de registro online",
   "DrvBanner.desc": "Sube los documentos y cuando todo esté aprobado estarás listo para conectarte a la app de movilidad más grande del mundo.",
   "DrvBanner.bgColor": "bg-orange-primary",

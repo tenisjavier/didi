@@ -3,13 +3,13 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection from "../CTASection";
 
-const TaxiHero = ({ bgImage, image }) => {
+const PartnerHero = ({ bgImage, image }) => {
   const { t } = useTranslation();
   const props = {
     hero: true,
-    title: t("DiDiMasHero.title"),
-    desc: t("DiDiMasHero.desc"),
-    textColor: t("DiDiMasHero.textColor"),
+    title: t("PartnersHero.title"),
+    desc: t("PartnersHero.desc"),
+    textColor: t("PartnersHero.textColor"),
     bgImage: (
       <GatsbyImage
         image={getImage(bgImage)}
@@ -17,17 +17,19 @@ const TaxiHero = ({ bgImage, image }) => {
         className="!absolute z-0 h-full w-full brightness-75 md:block"
       ></GatsbyImage>
     ),
-    image: (
-      <GatsbyImage
-        image={getImage(image)}
-        alt={image.description}
-        className="w-100 z-10 m-4 rounded"
-      ></GatsbyImage>
-    ),
-    btnMode: t("DiDiMasHero.btnMode"),
+    ...(image && {
+      image: (
+        <GatsbyImage
+          image={getImage(image)}
+          alt={image.description}
+          className="z-10 m-4 w-100 rounded"
+        ></GatsbyImage>
+      ),
+    }),
+    btnMode: t("PartnersHero.btnMode"),
     btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default TaxiHero;
+export default PartnerHero;

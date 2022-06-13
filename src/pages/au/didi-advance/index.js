@@ -9,24 +9,26 @@ import HomeColumns from "../../../components/sections/HomeColumns";
 const DiDiMas = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const partners = data.allContentfulPartner.nodes;
-  const didiMasHeroBgImage = images.filter((image) => {
-    return image.title === "cl.DiDiMasHero.bgImage";
+  const partnersHeroBgImage = images.filter((image) => {
+    return image.title === "au.PartnersHero.bgImage";
   })[0];
-  const didiMasHeroImage = images.filter((image) => {
-    return image.title === "cl.DiDiMasHero.image";
-  })[0];
+
   const partnerCTAImage = images.filter((image) => {
-    return image.title === "cl.PartnerCTA.image";
+    return image.title === "au.PartnerCTA.image";
   })[0];
+  const homeColumnsImages = images.filter((image) => {
+    return image.title.indexOf("au.HomeColumns.image") !== -1;
+  });
+
   return (
     <Layout>
       <PartnersHero
-        bgImage={didiMasHeroBgImage}
-        image={didiMasHeroImage}
+        bgImage={partnersHeroBgImage}
+        image={partnerCTAImage}
       ></PartnersHero>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
-      <HomeColumns></HomeColumns>
+      <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>
   );
 };
@@ -43,7 +45,11 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(cl.DiDiMasHero)|(cl.PartnerCTA)/" } }
+      filter: {
+        title: {
+          regex: "/(au.PartnersHero)|(au.PartnerCTA.image)|(au.HomeColumns.image)/"
+        }
+      }
       sort: { fields: title }
     ) {
       nodes {
@@ -53,7 +59,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulPartner(filter: { country: { code: { eq: "cl" } } }) {
+    allContentfulPartner(filter: { country: { code: { eq: "au" } } }) {
       nodes {
         name
         desc

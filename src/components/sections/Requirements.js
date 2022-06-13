@@ -1,7 +1,16 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import AccordionSection from "../AccordionSection";
 
 const Requirements = ({ data }) => {
+  const { t } = useTranslation();
+  const props = {
+    title: t("Requirements.title"),
+    bgColor: t("Requirements.bgColor"),
+    textColor: t("Requirements.textColor"),
+    bgAccordionColor: "bg-white",
+    textAccordionColor: "orange-primary",
+  };
   let items = [];
   data.forEach((node) => {
     items.push({
@@ -9,17 +18,9 @@ const Requirements = ({ data }) => {
       content: node.requirement,
     });
   });
-  const title = "Requerimientos";
-  return (
-    <AccordionSection
-      items={items}
-      title={title}
-      bgColor="bg-gray-light"
-      bgAccordionColor="bg-white"
-      textColor="gray-primary"
-      textAccordionColor="orange-primary"
-    ></AccordionSection>
-  );
+
+  props.items = items;
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default Requirements;
