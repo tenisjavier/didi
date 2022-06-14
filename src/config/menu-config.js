@@ -225,6 +225,10 @@ const menuLinks = {
           text: "Sign Up",
           url: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
         },
+        {
+          text: "DiDi Advance",
+          url: "/au/didi-advance/",
+        },
       ],
     },
     {
@@ -233,11 +237,11 @@ const menuLinks = {
       dropMenu: [
         {
           text: "Personal",
-          url: "/au/delivery/personal",
+          url: "/au/delivery/personal/",
         },
         {
           text: "Business",
-          url: "/au/delivery/business",
+          url: "/au/delivery/business/",
         },
       ],
     },
