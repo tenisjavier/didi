@@ -4,6 +4,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection from "../ColumnSection";
 
 const SafetyGridDuringTrip = ({ images }) => {
+  console.log(images);
   const { t } = useTranslation();
   const props = {
     title: t("SafetyGridDuringTrip.title"),
@@ -20,7 +21,7 @@ const SafetyGridDuringTrip = ({ images }) => {
         alt={images[index].description}
         width={700}
         height={700}
-        className="z-10 m-4"
+        className={`z-10 m-4`}
       ></GatsbyImage>
     );
   });

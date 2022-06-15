@@ -267,127 +267,167 @@
       "btnLink": "/au/centro-de-ayuda/"
     }
   ],
-  "SafetyHero.title": "En DiDi tu seguridad no es un mito",
-  "SafetyHero.desc": "Tu seguridad es nuestra prioridad y por eso queremos demostrar con acciones reales y específicas cómo DiDi te ofrece un viaje más tranquilo y seguro. Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje.",
+  "SafetyHero.title": "Your safety comes first. Driver and Rider Safety Features.",
+  "SafetyHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for both riders and drivers.",
   "SafetyHero.textColor": "white",
   "SafetyHero.btnMode": "light",
-  "SafetyGridBeforeTrip.bgColor": "bg-white",
-  "SafetyGridBeforeTrip.title": "Antes del Viaje",
-  "SafetyGridBeforeTrip.textColor": "gray-primary",
-  "SafetyGridBeforeTrip.columns": [
-    {
-      "title": "Verificación de Socios Conductores",
-      "desc": "Para que una persona pueda registrarse como socio conductor o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Reconocimiento Facial de Socios Conductores",
-      "desc": "Esta función verifica de manera aleatoria que el socio conductor que se conecta a la app sea el mismo registrado en el sistema a través de una selfie.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Selfie para usuarios",
-      "desc": "Nuestra app solicita una selfie de seguridad al usuario de manera aleatoria antes de solicitar un viaje. Esta no se comparte con ningún socio conductor.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "RUT para usuarios (ID)",
-      "desc": "La app solicita el número de RUT al usuario de manera aleatoria antes de solicitar un viaje. Este no se comparte con ningún socio conductor.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Información del viaje",
-      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del socio conductor, número de viajes, calificación y los datos del vehículo.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Privacidad de números telefónicos",
-      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre usuarios y socios conductores usando la aplicación NO mostrarán tu número real.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Contactos de confianza",
-      "desc": "Puedes elegir hasta cinco personas de tus contactos para compartirles tus viajes en tiempo real.",
-      "bgColor": "bg-white"
-    }
-  ],
-  "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
-  "SafetyGridDuringTrip.title": "Durante el Viaje",
-  "SafetyGridDuringTrip.textColor": "white",
+  "SafetyGridDuringTrip.bgColor": "bg-gray-light",
+  "SafetyGridDuringTrip.title": "Riders Safety Features",
+  "SafetyGridDuringTrip.textColor": "gray-primary",
   "SafetyGridDuringTrip.columns": [
     {
-      "title": "Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de servicios de emergencia en la app, el cual te conecta con el 133 y nuestro Centro de Emergencias DiDi 24/7.",
-      "bgColor": "bg-orange-primary"
+      "title": "SOS Button",
+      "desc": "With the tap of a button, you can contact law enforcement and emergency services. Your location details will also be shown in-app for easy reference.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Compartir Viaje",
-      "desc": "En DiDi puedes compartir tu ubicación en tiempo real con cualquier persona que tú elijas.",
-      "bgColor": "bg-orange-primary"
+      "title": "Unmatch drivers",
+      "desc": "If you think that any of your drivers were not up to standard you can now unmatch with them so your trip requests are never dispatched to them again. Please remember if there was a serious incident to report it to us.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Monitoreo de viaje en tiempo real",
-      "desc": "Rastreamos por GPS todos los viajes para que, en caso de un incidente, podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 133 y rastrear tu ubicación exacta.",
-      "bgColor": "bg-orange-primary"
+      "title": "Share trip",
+      "desc": "Our live GPS tracking allows you to share your trip with your Trusted Contacts. This can be found in the Safety Toolkit.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Patrullas de asistencia",
-      "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Ayuda DiDi en caso de alguna emergencia.",
-      "bgColor": "bg-orange-primary"
+      "title": "Private Numbers",
+      "desc": "When a rider and driver contact each other regarding a trip, whether that be before or after, both phone numbers will be anonymised.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Viajes Asegurados",
-      "desc": "Todos los viajes realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
-      "bgColor": "bg-orange-primary"
-    }
-  ],
-  "SafetyGridAfterTrip.bgColor": "bg-gray-light",
-  "SafetyGridAfterTrip.title": "Al Finalizar el Viaje",
-  "SafetyGridAfterTrip.textColor": "gray-primary",
-  "SafetyGridAfterTrip.columns": [
-    {
-      "title": "Objetos perdidos",
-      "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al socio conductor para acordar la devolución.",
-      "bgColor": "bg-gray-light"
+      "title": "Hidden Addresses",
+      "desc": "To protect your personal information, your specific pick up and drop off addresses are hidden after the trip finishes.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
-      "bgColor": "bg-gray-light"
+      "title": "Driver Screening",
+      "desc": "To ensure all DiDi driver-partners are of the highest quality, they’re required to pass a series of safety verifications and background checks prior to driving.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Califica a tu Socio Conductor",
-      "desc": "Califica a tu conductor después de cada viaje y, si deseas, puedes darle un pago extra. Esto ayuda a retroalimentar el sistema y mantener la seguridad en la comunidad de usuarios y socios conductores.",
-      "bgColor": "bg-gray-light"
+      "title": "Facial Verification",
+      "desc": "Facial verification matches a picture of your driver against the approved profile picture to make sure that it is not someone else driving.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
-      "bgColor": "bg-gray-light"
+      "title": "TripCheck",
+      "desc": "If anything unusual is detected during your trip you will receive a notification. If there is a problem our safety toolkit and SOS button will be made available to you.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "24/7 Incident Response Team",
+      "desc": "If you ever feel unsafe during a trip, you can get in touch with our Incident Response Team for immediate assistance.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Trusted Contacts",
+      "desc": "Add your family and friends as Trusted Contacts to track your live location in a single tap.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Driver Fatigue Prevention",
+      "desc": "All DiDi driver-partners undertake compulsory safety training before they take their first trip meaning you can ride with confidence.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "TripChoice",
+      "desc": "This feature allows female driver-partners the choice to be matched with only female riders. ",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Preview Driver",
+      "desc": "You can view your  driver’s info, including their name, profile picture, and Star Rating before your ride starts. ",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Driver Education",
+      "desc": "All DiDi driver-partners undertake compulsory safety training before they take their first trip meaning you can ride with confidence.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "DiDi Sal",
+      "desc": "DiDi Sal is a new in-trip safety assistant that works together with existing safety features to help keep you safe.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
     }
   ],
   "SafetyGridDrv.bgColor": "bg-white",
-  "SafetyGridDrv.title": "Además, si eres un Socio Conductor/Taxista",
+  "SafetyGridDrv.title": "Drivers Safety Features",
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
-      "title": "Zonas de seguridad para Socios Conductores",
-      "desc": "Pensando en tu seguridad, tenemos identificadas zonas de riesgo en las cuales la conectividad de la app no está habilitada.",
+      "title": "Facial Verification",
+      "desc": "Facial verification is used to secure your account against any unwanted activity. This matches a picture of you against your profile picture to make sure that it is you logging into your driver account and not someone else.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Cancelar viajes en zonas de alto riesgo",
-      "desc": "Si recibes una solicitud de viaje en una zona de alto riesgo, podrás cancelar el viaje sin penalidad.",
+      "title": "Preview Rider",
+      "desc": "Get to know your rider before accepting the trip by viewing their star rating.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Bloquear usuario",
-      "desc": "Si eres socio conductor y no deseas que la plataforma te vuelva a conectar con el pasajero de tu último viaje, podrás usar la opción desvinculación de usuario. Esto evitará que futuros viajes coincidan con esa persona.",
+      "title": "Preview Destination",
+      "desc": "Before accepting a trip you can preview the destination to make sure you know where you are going at all times.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Información del usuario",
-      "desc": "Si eres socio conductor/taxista, la aplicación te mostrará quién es el pasajero y podrás ver todos los detalles antes de iniciar el viaje, incluso el destino al que se dirige.",
+      "title": "TripCheck",
+      "desc": "If anything unusual is detected during your trip you will receive a notification. If there is a problem our safety toolkit and SOS button will be made available to you.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Share trip",
+      "desc": "Our live GPS tracking allows you to share your trip with your Trusted Contacts. This can be found in the Safety Toolkit.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Unmatch riders",
+      "desc": "If you think that any of your riders were not up to standard you can now unmatch with them so you will never receive a trip request from them again. Please remember if there was a serious incident to report it to us.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Private Numbers",
+      "desc": "When a rider and driver contact each other regarding a trip, whether that be before or after, both phone numbers will be anonymised.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "SOS button",
+      "desc": "With the tap of a button, you can contact law enforcement and emergency services. Your location details will also be shown in-app for easy reference.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "24/7 Incident Response Team",
+      "desc": "If you ever feel unsafe during a trip, you can get in touch with our Incident Response Team for immediate assistance.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Trusted Contacts",
+      "desc": "Add your family and friends as Trusted Contacts to track your live location in a single tap.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Driver Fatigue Prevention",
+      "desc": "To help keep everyone safe on the road, drivers are prompted to take a break after 8 consecutive hours of driving.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "TripChoice",
+      "desc": "This feature allows female driver-partners the choice to be matched with only female riders. ",
       "bgColor": "bg-white"
     }
   ],
