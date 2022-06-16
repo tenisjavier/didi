@@ -17,7 +17,7 @@ const DrvCityHero = ({ data }) => {
     bgColor: t("DrvCityHero.bgColor"),
     image: (
       <img
-        className="md:w-100 lg:w-110 z-10 m-4 w-full rounded"
+        className="z-10 m-4 w-full rounded md:w-100 lg:w-110"
         alt={name + " mapa"}
         src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=12&size=1200x500&maptype=roadmap
 &markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
@@ -25,7 +25,7 @@ const DrvCityHero = ({ data }) => {
     ),
     btnMode: t("DrvCityHero.btnMode"),
     btnType: "drv",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

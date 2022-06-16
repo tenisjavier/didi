@@ -14,12 +14,12 @@ const FoodDeliveryCTA = ({ image }) => {
       <GatsbyImage
         image={getImage(image)}
         alt={image.description}
-        className="w-100 z-10 m-4 rounded"
+        className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
     btnMode: t("FoodDeliveryCTA.btnMode"),
     btnType: "foodDelivery",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

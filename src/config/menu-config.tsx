@@ -1,12 +1,25 @@
 // @desc: utility library for menu Links
 
-const menuLinks = {
-  int: [],
+interface SingleDropMenuItem {
+  text: string;
+  url: string;
+}
+
+interface SingleMenuItem {
+  text: string;
+  url: string;
+  dropMenu?: SingleDropMenuItem[];
+}
+
+interface AllMenuInterface {
+  [countryCode: string]: SingleMenuItem[];
+}
+
+const menuLinks: AllMenuInterface = {
   cl: [
     {
       text: "DiDi Pasajero",
       url: "/cl/pasajero/",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -33,7 +46,6 @@ const menuLinks = {
     {
       text: "DiDi Taxi",
       url: "/cl/taxi/",
-      dropMenu: null,
     },
     {
       text: "DiDi Food",
@@ -86,7 +98,6 @@ const menuLinks = {
     {
       text: "DiDi Pasajero",
       url: "/ar/pasajero/",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -109,7 +120,6 @@ const menuLinks = {
     {
       text: "DiDi Taxi",
       url: "/ar/taxi/",
-      dropMenu: null,
     },
     {
       text: "Sobre DiDi",
@@ -140,7 +150,6 @@ const menuLinks = {
     {
       text: "DiDi Pasajero",
       url: "/pe/pasajero/",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -190,7 +199,6 @@ const menuLinks = {
     {
       text: "DiDi Pasajero",
       url: "/co/pasajero/",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -211,7 +219,6 @@ const menuLinks = {
     {
       text: "DiDi Rider",
       url: "/au/rider/",
-      dropMenu: null,
     },
     {
       text: "DiDi Driver",
@@ -247,14 +254,13 @@ const menuLinks = {
     },
     {
       text: "DiDi Safety",
-      url: "/au/delivery/",
+      url: "/au/safety/",
     },
   ],
   pa: [
     {
       text: "DiDi Pasajero",
       url: "http://chile.didiglobal.com/pasajero",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -279,7 +285,6 @@ const menuLinks = {
     {
       text: "DiDi Pasajero",
       url: "http://chile.didiglobal.com/pasajero",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -304,7 +309,6 @@ const menuLinks = {
     {
       text: "DiDi Pasajero",
       url: "http://chile.didiglobal.com/pasajero",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -329,7 +333,6 @@ const menuLinks = {
     {
       text: "Home",
       url: "http://mexico.didiglobal.com/",
-      dropMenu: null,
     },
     {
       text: "DiDi Conductor",
@@ -352,33 +355,28 @@ const menuLinks = {
     {
       text: "Pasajeros",
       url: "https://mexico.didiglobal.com/pasajeros/",
-      dropMenu: null,
     },
     {
       text: "DiDi Fleet",
       url: "https://mexico.didiglobal.com/didi-fleet/",
-      dropMenu: null,
     },
     {
       text: "Seguridad",
       url: "https://mexico.didiglobal.com/seguridad-didi/",
-      dropMenu: null,
     },
     {
       text: "Centro de Ayuda",
       url: "https://mexico.didiglobal.com/centro-de-ayuda/",
-      dropMenu: null,
     },
     {
       text: "Nosotros",
       url: "https://mexico.didiglobal.com/about-us/",
-      dropMenu: null,
     },
   ],
 };
 
-const getMenuLinks = (country) => {
-  return menuLinks[country] || [];
+const getMenuLinks = (countryCode: string) => {
+  return menuLinks[countryCode] || [];
 };
 
 module.exports = { getMenuLinks };
