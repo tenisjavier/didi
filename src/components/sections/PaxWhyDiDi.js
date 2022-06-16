@@ -19,7 +19,7 @@ const PaxWhyDiDi = ({ image }) => {
     ),
     btnMode: t("PaxWhyDiDi.btnMode"),
     btnType: "pax",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

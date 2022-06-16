@@ -13,12 +13,12 @@ const PartnerHero = ({ title, desc, image }) => {
       <GatsbyImage
         image={getImage(image)}
         alt={image.description}
-        className="w-100 z-10 m-4 rounded-full"
+        className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),
     btnMode: "light",
     btnType: "drv",
-    reverse: "true",
+    reverse: true,
   };
 
   return <CTASection {...props}></CTASection>;

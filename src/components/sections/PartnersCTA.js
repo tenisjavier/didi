@@ -21,7 +21,7 @@ const PartnersCTA = ({ image }) => {
     ),
     btnMode: t("PartnersCTA.btnMode"),
     btnType: "drv",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

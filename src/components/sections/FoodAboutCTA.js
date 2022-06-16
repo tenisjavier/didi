@@ -14,11 +14,11 @@ const FoodAboutCTA = ({ image }) => {
       <GatsbyImage
         image={getImage(image)}
         alt={image.description}
-        className="w-100 z-10 m-4 h-80 rounded"
+        className="z-10 m-4 h-80 w-100 rounded"
       ></GatsbyImage>
     ),
 
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

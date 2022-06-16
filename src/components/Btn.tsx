@@ -1,10 +1,17 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import { getBtnLinks } from "../config/btn-config";
+import getBtnLinks from "../config/btn-config";
 
 // @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
-const Btn = (props) => {
+
+interface BtnProps {
+  type?: "both" | "drv" | "pax" | "foodBusiness" | "foodDelivery" | "foodEater";
+  mode?: string;
+  link?: string;
+  children?: any;
+}
+const Btn = (props: BtnProps) => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);

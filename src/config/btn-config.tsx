@@ -1,6 +1,23 @@
 // @desc: utility library for ctaButtons and oneLinks
 
-const btnLinks = {
+interface SingleBtnInterface {
+  drvLink: string;
+  paxLink: string;
+  drvText: string;
+  paxText: string;
+  foodDeliveryLink?: string;
+  foodDeliveryText?: string;
+  foodBusinessLink?: string;
+  foodBusinessText?: string;
+  foodEaterLink?: string;
+  foodEaterText?: string;
+}
+
+interface AllBtnInterface {
+  [countryCode: string]: SingleBtnInterface;
+}
+
+const btnLinks: AllBtnInterface = {
   int: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
@@ -73,8 +90,9 @@ const btnLinks = {
   },
 };
 
-const getBtnLinks = (country) => {
-  return btnLinks[country];
+const getBtnLinks = (countryCode: string): SingleBtnInterface => {
+  let links = btnLinks[countryCode];
+  return links;
 };
 
-module.exports = { getBtnLinks };
+export default getBtnLinks;

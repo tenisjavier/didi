@@ -21,7 +21,7 @@ const PaxCTA = ({ image }) => {
     ),
     btnMode: t("PaxCTA.btnMode"),
     btnType: "pax",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

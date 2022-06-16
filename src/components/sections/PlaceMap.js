@@ -46,7 +46,7 @@ const PlaceMap = ({ data }) => {
     bgColor: t("PlaceMap.bgColor"),
     image: (
       <img
-        className="md:w-100 lg:w-110 z-10 m-4 w-full rounded"
+        className="z-10 m-4 w-full rounded md:w-100 lg:w-110"
         alt={name + " mapa"}
         src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=15&size=2800x400&maptype=roadmap
 &markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
@@ -56,7 +56,7 @@ const PlaceMap = ({ data }) => {
       <span>
         <FontAwesomeIcon
           icon={faBus}
-          className=" text-orange-primary mr-4 "
+          className=" mr-4 text-orange-primary "
           size="sm"
         />
         <b>Micro: </b>
@@ -65,7 +65,7 @@ const PlaceMap = ({ data }) => {
       <span>
         <FontAwesomeIcon
           icon={faSubway}
-          className=" text-orange-primary mr-4 "
+          className=" mr-4 text-orange-primary "
           size="sm"
         />
         <b>Metro: </b>
@@ -75,7 +75,7 @@ const PlaceMap = ({ data }) => {
     btnMode: t("PlaceMap.btnMode"),
     customBulletIcon: "true",
     btnType: "pax",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

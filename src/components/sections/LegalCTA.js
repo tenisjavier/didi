@@ -14,13 +14,13 @@ const LegalCTA = ({ image }) => {
         alt={image.description}
         width={700}
         height={700}
-        className="w-100 z-10 m-4 rounded-full"
+        className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),
     btnMode: t("LegalCTA.btnMode"),
     btnText: "Políticas de Privacidad",
     btnLink: "#",
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

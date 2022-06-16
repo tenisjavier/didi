@@ -33,7 +33,7 @@ const SafetyCTA = ({ bgImage, image }) => {
     btnText: t("SafetyCTA.btnText"),
     btnLink: t("SafetyCTA.btnLink"),
     btnMode: t("SafetyCTA.btnMode"),
-    reverse: "true",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

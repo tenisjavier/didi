@@ -6,7 +6,32 @@ import Btn from "./Btn";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
 // @props for images: bgImage (optional) | bgMobileImage (optional)| image - if you want an image next to the text
-const CTASection = (props) => {
+
+interface CTAProps {
+  hero: boolean;
+  title: string;
+  desc?: string;
+  textColor?: string;
+  bgImage?: string;
+  bgMobileImage?: string;
+  bgColor?: string;
+  image?: any;
+  bullets?: string[];
+  customBulletIcon?: string;
+  btnType?:
+    | "both"
+    | "drv"
+    | "pax"
+    | "foodBusiness"
+    | "foodDelivery"
+    | "foodEater";
+  btnText?: string;
+  btnLink?: string;
+  btnMode?: "light" | "dark" | "primary";
+  reverse?: boolean;
+}
+
+const CTASection = (props: CTAProps) => {
   const {
     hero,
     title,
