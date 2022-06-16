@@ -1,11 +1,11 @@
 // @desc: utility library for menu Links
 
-interface SingleDropMenuItem {
-  text: string;
-  url: string;
+export interface SingleDropMenuItem {
+  text?: string;
+  url?: string;
 }
 
-interface SingleMenuItem {
+export interface SingleMenuItem {
   text: string;
   url: string;
   dropMenu?: SingleDropMenuItem[];
@@ -379,4 +379,4 @@ const getMenuLinks = (countryCode: string) => {
   return menuLinks[countryCode] || [];
 };
 
-module.exports = { getMenuLinks };
+export { getMenuLinks };

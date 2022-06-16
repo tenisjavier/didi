@@ -1,16 +1,21 @@
 import React from "react";
+import { FooterLinks } from "../config/footer-config";
 
-const FooterLink = ({ links }) => {
+interface FooterMenuProps {
+  links: FooterLinks[];
+}
+
+const FooterMenu = ({ links }: FooterMenuProps) => {
   return (
-    <div className="bg-gray-primary flex h-full flex-wrap">
+    <div className="flex h-full flex-wrap bg-gray-primary">
       <div className="Lg:flex-row bg-grey-primary hidden lg:flex lg:w-2/3 lg:flex-initial">
-        {links.map((link, index) => (
+        {links.map((link: FooterLinks, index: number) => (
           <div
             key={index}
             className="flex flex-auto items-center justify-center text-lg"
           >
             <a href={link.link} className="hover:text-white hover:opacity-70">
-              {link.title}
+              {link.text}
             </a>
           </div>
         ))}
@@ -19,4 +24,4 @@ const FooterLink = ({ links }) => {
   );
 };
 
-export default FooterLink;
+export default FooterMenu;

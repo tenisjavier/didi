@@ -1,7 +1,19 @@
 // @desc SEO meta definition per path
 
-// @desc seoMeta is for static pages
-const seoMeta = {
+interface SEOMetaItemInterface {
+  title: string;
+  desc: string;
+}
+
+interface SingleSEOMetaInterface {
+  [path: string]: SEOMetaItemInterface;
+}
+
+interface AllSEOMetaInterface {
+  [countryCode: string]: SingleSEOMetaInterface;
+}
+
+const seoMeta: AllSEOMetaInterface = {
   cl: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",
@@ -309,7 +321,10 @@ const seoMeta = {
 
 //@desc func that is used in SEO component for getting the title and desc of a page
 // @params country is the country code and path
-const getMetaByPath = (country, path) => {
+const getMetaByPath = (
+  countryCode: string,
+  path: string
+): SEOMetaItemInterface => {
   const placeRegex =
     /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
   const defaultMetas = {
@@ -318,7 +333,7 @@ const getMetaByPath = (country, path) => {
   };
 
   //logic for dynamic pages places and directions
-  const subfolder = path.match(/([^/]*)\/*$/)[1];
+  const subfolder = path.match(/([^/]*)\/*$/)![1];
   const placeTitle = subfolder
     .substring(0, subfolder.indexOf("_") && undefined)
     .replace(/-/g, " ")
@@ -331,7 +346,7 @@ const getMetaByPath = (country, path) => {
       }
     : defaultMetas;
 
-  return seoMeta[country][path] || metas;
+  return seoMeta[countryCode][path] || metas;
 };
 
-module.exports = { getMetaByPath };
+export { getMetaByPath };
