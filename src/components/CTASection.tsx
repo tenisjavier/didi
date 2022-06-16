@@ -1,33 +1,23 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCarSide } from "@fortawesome/free-solid-svg-icons";
-import Btn from "./Btn";
+import Btn, { BtnProps } from "./Btn";
 
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
 // @props for images: bgImage (optional) | bgMobileImage (optional)| image - if you want an image next to the text
 
-interface CTAProps {
+export interface CTAProps extends BtnProps {
   hero: boolean;
   title: string;
   desc?: string;
-  textColor?: string;
-  bgImage?: string;
-  bgMobileImage?: string;
+  textColor: string;
+  bgImage?: React.ReactNode;
+  bgMobileImage?: React.ReactNode;
   bgColor?: string;
-  image?: any;
+  image?: React.ReactNode;
   bullets?: string[];
   customBulletIcon?: string;
-  btnType?:
-    | "both"
-    | "drv"
-    | "pax"
-    | "foodBusiness"
-    | "foodDelivery"
-    | "foodEater";
-  btnText?: string;
-  btnLink?: string;
-  btnMode?: "light" | "dark" | "primary";
   reverse?: boolean;
 }
 
@@ -51,18 +41,21 @@ const CTASection = (props: CTAProps) => {
   } = props;
 
   let sectionBtn = (
-    <Btn type={btnType} link={btnLink} mode={btnMode}>
-      {btnText}
-    </Btn>
+    <Btn
+      btnType={btnType}
+      btnLink={btnLink}
+      btnMode={btnMode}
+      btnText={btnText}
+    ></Btn>
   );
 
   // if btnType is both will print pax first and drv second
   if (btnType === "both") {
     sectionBtn = (
       <>
-        <Btn type="pax" mode={btnMode}></Btn>
+        <Btn btnType="pax" btnMode={btnMode}></Btn>
         <br></br>
-        <Btn type="drv" mode={btnMode}></Btn>
+        <Btn btnType="drv" btnMode={btnMode}></Btn>
       </>
     );
   }

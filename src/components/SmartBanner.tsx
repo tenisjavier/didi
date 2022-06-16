@@ -1,13 +1,17 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
-import getBtnLinks from "../config/btn-config";
+import { getBtnLinks } from "../config/btn-config";
 
-const SmartBanner = (props) => {
+interface SmartBannerProps {
+  type: "both" | "drv" | "pax" | "foodBusiness" | "foodDelivery" | "foodEater";
+}
+
+const SmartBanner = (props: SmartBannerProps) => {
   const { i18n } = useTranslation();
+  const { type } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
-  const { type } = props;
   let btnLink,
     btnText,
     Logo,

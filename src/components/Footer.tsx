@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
-import FooterLink from "./FooterLink.js";
+import FooterLink from "./FooterLink";
 import { getFooterLinks } from "../config/footer-config";
 
 const Footer = () => {
@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
 
             <div className="text-c h-auto w-3/4 lg:w-full lg:pr-52 lg:text-left">
-              {countries.map((c, index) => {
+              {countries.map((c: any, index: number) => {
                 if (index === 0) {
                   return (
                     <a

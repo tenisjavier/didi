@@ -1,46 +1,48 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import getBtnLinks from "../config/btn-config";
+import { getBtnLinks } from "../config/btn-config";
 
-// @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
-// @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
+// @desc: Pax and Driver CTA buttons.  If not btnType is passed it will be a normal btn.
+// @props: btnType drv/pax/none | btnLink (normal btn) "url" | btnMode light/none | children: normal btn text
 
-interface BtnProps {
-  type?: "both" | "drv" | "pax" | "foodBusiness" | "foodDelivery" | "foodEater";
-  mode?: string;
-  link?: string;
-  children?: any;
+export interface BtnProps {
+  btnType?:
+    | "both"
+    | "drv"
+    | "pax"
+    | "foodBusiness"
+    | "foodDelivery"
+    | "foodEater";
+  btnMode?: "primary" | "dark" | "light";
+  btnLink?: string;
+  btnText?: string;
 }
-const Btn = (props: BtnProps) => {
+const Btn = ({ btnType, btnMode, btnLink, btnText }: BtnProps) => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
-  const mode = props.mode;
-  let btnLink = props.link;
-  let btnText = props.children;
 
-  if (props.type === "drv") {
+  if (btnType === "drv") {
     btnLink = btnData.drvLink;
-    btnText = props.children ? props.children : btnData.drvText;
-  } else if (props.type === "pax") {
+    btnText = btnText || btnData.drvText;
+  } else if (btnType === "pax") {
     btnLink = btnData.paxLink;
-    btnText = props.children ? props.children : btnData.paxText;
-  } else if (props.type === "foodBusiness") {
+    btnText = btnText || btnData.paxText;
+  } else if (btnType === "foodBusiness") {
     btnLink = btnData.foodBusinessLink;
-    btnText = props.children ? props.children : btnData.foodBusinessText;
-  } else if (props.type === "foodDelivery") {
+    btnText = btnText || btnData.foodBusinessText;
+  } else if (btnType === "foodDelivery") {
     btnLink = btnData.foodDeliveryLink;
-    btnText = props.children ? props.children : btnData.foodDeliveryText;
-  } else if (props.type === "foodEater") {
+    btnText = btnText || btnData.foodDeliveryText;
+  } else if (btnType === "foodEater") {
     btnLink = btnData.foodEaterLink;
-    btnText = props.children ? props.children : btnData.foodEaterText;
+    btnText = btnText || btnData.foodEaterText;
   }
 
   return (
-    <div className={`my-2 btn-${mode}`}>
+    <div className={`my-2 btn-${btnMode}`}>
       <a className="block" href={btnLink}>
         {btnText}
-        {/* <FontAwesomeIcon icon={faGreaterThan} size="xs" className="ml-2" /> */}
       </a>
     </div>
   );

@@ -1,21 +1,28 @@
 import React from "react";
-import Btn from "./Btn";
+import Btn, { BtnProps } from "./Btn";
 
 // @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
-const Banner = ({ data }) => {
-  const {
-    title,
-    desc,
-    bgColor,
-    textColor,
-    image,
-    btnText,
-    btnLink,
-    btnMode,
-    btnType,
-  } = data;
 
+export interface BannerProps extends BtnProps {
+  title: string;
+  desc: string;
+  bgColor: string;
+  textColor: string;
+  image?: React.ReactNode;
+}
+
+const Banner = ({
+  title,
+  desc,
+  bgColor,
+  textColor,
+  image,
+  btnLink,
+  btnMode,
+  btnType,
+  btnText,
+}: BannerProps) => {
   return (
     <div
       className={`flex w-full items-center justify-center rounded py-4 ${
@@ -28,9 +35,12 @@ const Banner = ({ data }) => {
         <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
         <p className="h-16 text-base">{desc}</p>
         <span className="flex justify-center">
-          <Btn type={btnType} link={btnLink} mode={btnMode}>
-            {btnText}
-          </Btn>
+          <Btn
+            btnType={btnType}
+            btnLink={btnLink}
+            btnMode={btnMode}
+            btnText={btnText}
+          ></Btn>
         </span>
       </div>
     </div>

@@ -95,4 +95,4 @@ const getBtnLinks = (countryCode: string): SingleBtnInterface => {
   return links;
 };
 
-export default getBtnLinks;
+export { getBtnLinks };
