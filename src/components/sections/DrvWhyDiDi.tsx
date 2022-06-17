@@ -1,19 +1,24 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const DrvWhyDiDi = ({ image }) => {
+interface DrvWhyDiDiProps {
+  image: any;
+}
+
+const DrvWhyDiDi = ({ image }: DrvWhyDiDiProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: CTAProps = {
+    hero: false,
     title: t("DrvWhyDiDi.title"),
     bullets: t("DrvWhyDiDi.bullets", { returnObjects: true }),
     textColor: t("DrvWhyDiDi.textColor"),
     image: (
       <GatsbyImage
-        image={getImage(image)}
+        image={getImage(image)!}
         alt={image.description}
-        className="w-100 z-10 m-4 rounded-full"
+        className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),
     btnMode: t("DrvWhyDiDi.btnMode"),

@@ -1,15 +1,25 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const DrvCityHero = ({ data }) => {
+interface DrvCityHeroProps {
+  data: {
+    name: string;
+    geometry: {
+      lat: string;
+      lon: string;
+    };
+  };
+}
+
+const DrvCityHero = ({ data }: DrvCityHeroProps) => {
   const { t } = useTranslation();
   const {
     name,
     geometry: { lat, lon },
   } = data;
 
-  const props = {
+  const props: CTAProps = {
     hero: true,
     title: t("DrvCityHero.title", { city: `${name}` }),
     desc: t("DrvCityHero.desc", { city: `${name}` }),
