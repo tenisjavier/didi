@@ -1,19 +1,22 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const LegalCTA = ({ image }) => {
+interface LegalCTAProps {
+  image: any;
+}
+
+const LegalCTA = ({ image }: LegalCTAProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: CTAProps = {
+    hero: false,
     title: t("LegalCTA.title"),
     textColor: t("LegalCTA.textColor"),
     image: (
       <GatsbyImage
-        image={getImage(image)}
+        image={getImage(image)!}
         alt={image.description}
-        width={700}
-        height={700}
         className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),

@@ -1,9 +1,15 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const PartnerHero = ({ title, desc, image }) => {
-  const props = {
+interface PartnerHeroProps {
+  title: string;
+  desc: string;
+  image: any;
+}
+
+const PartnerHero = ({ title, desc, image }: PartnerHeroProps) => {
+  const props: CTAProps = {
     hero: true,
     title: title,
     desc: desc,
@@ -11,7 +17,7 @@ const PartnerHero = ({ title, desc, image }) => {
     bgColor: "bg-orange-primary",
     image: (
       <GatsbyImage
-        image={getImage(image)}
+        image={getImage(image)!}
         alt={image.description}
         className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>

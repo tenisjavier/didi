@@ -1,18 +1,25 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const PartnerFeature = ({ title, desc, image }) => {
-  const props = {
+interface PartnerFeatureProps {
+  title: string;
+  desc: string;
+  image: any;
+}
+
+const PartnerFeature = ({ title, desc, image }: PartnerFeatureProps) => {
+  const props: CTAProps = {
+    hero: false,
     title: title,
     desc: desc,
     textColor: "gray-primary",
     bgColor: "bg-gray-light",
     image: (
       <GatsbyImage
-        image={getImage(image)}
+        image={getImage(image)!}
         alt={image.description}
-        className="w-100 z-10 m-4 rounded-full"
+        className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),
     btnMode: "primary",

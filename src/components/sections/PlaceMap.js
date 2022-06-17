@@ -73,7 +73,7 @@ const PlaceMap = ({ data }) => {
       </span>,
     ],
     btnMode: t("PlaceMap.btnMode"),
-    customBulletIcon: "true",
+    customBulletIcon: true,
     btnType: "pax",
     reverse: true,
   };
