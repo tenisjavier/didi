@@ -1,11 +1,20 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const DirectionHero = ({ data }) => {
+interface DirectionHeroProps {
+  data: {
+    origin: string;
+    originAddress: string;
+    destination: string;
+    destinationAddress: string;
+  };
+}
+
+const DirectionHero = ({ data }: DirectionHeroProps) => {
   const { t } = useTranslation();
   const { origin, originAddress, destination, destinationAddress } = data;
-  const props = {
+  const props: CTAProps = {
     hero: true,
     title: t("DirectionHero.title", { destination, origin }),
     desc: t("DirectionHero.desc", { destinationAddress, originAddress }),
