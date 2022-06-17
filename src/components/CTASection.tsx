@@ -17,7 +17,7 @@ export interface CTAProps extends BtnProps {
   bgColor?: string;
   image?: React.ReactNode;
   bullets?: string[];
-  customBulletIcon?: string;
+  customBulletIcon?: boolean;
   reverse?: boolean;
 }
 

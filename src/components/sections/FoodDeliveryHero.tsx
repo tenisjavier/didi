@@ -1,17 +1,22 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const FoodDeliveryHero = ({ bgImage }) => {
+interface FoodDeliveryHeroProps {
+  bgImage: any;
+}
+
+const FoodDeliveryHero = ({ bgImage }: FoodDeliveryHeroProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: CTAProps = {
+    hero: true,
     title: t("FoodDeliveryHero.title"),
     desc: t("FoodDeliveryHero.desc"),
     textColor: t("FoodDeliveryHero.textColor"),
     bgImage: (
       <GatsbyImage
-        image={getImage(bgImage)}
+        image={getImage(bgImage)!}
         alt={bgImage.description}
         className="!absolute z-0 h-full w-full brightness-50  md:block"
       ></GatsbyImage>
