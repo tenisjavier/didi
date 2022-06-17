@@ -1,18 +1,22 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
-const PaxHero = ({ bgImage }) => {
+interface PaxHeroProps {
+  bgImage: any;
+}
+
+const PaxHero = ({ bgImage }: PaxHeroProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: CTAProps = {
     hero: true,
     title: t("PaxHero.title"),
     desc: t("PaxHero.desc"),
     textColor: t("PaxHero.textColor"),
     bgImage: (
       <GatsbyImage
-        image={getImage(bgImage)}
+        image={getImage(bgImage)!}
         alt={bgImage.description}
         className="!absolute z-0 h-full w-full md:block"
       ></GatsbyImage>
