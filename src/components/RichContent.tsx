@@ -1,9 +1,22 @@
-import React from "react";
+import React, { ReactElement, ReactNode } from "react";
 import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
-import { renderRichText } from "gatsby-source-contentful/rich-text";
+import {
+  ContentfulRichTextGatsbyReference,
+  renderRichText,
+  RenderRichTextData,
+} from "gatsby-source-contentful/rich-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const options = {
+interface optionsInterface {
+  renderMark: {
+    [key: string]: (key: ReactNode) => ReactElement;
+  };
+  renderNode: {
+    [key: string]: (node: any, children: any) => ReactElement;
+  };
+}
+
+const options: optionsInterface = {
   renderMark: {
     [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
   },
@@ -28,7 +41,7 @@ const options = {
         <div className="my-12 flex w-full justify-center">
           <GatsbyImage
             className=" max-w-xl"
-            image={getImage(gatsbyImageData)}
+            image={getImage(gatsbyImageData)!}
             alt={title}
           ></GatsbyImage>
         </div>
@@ -37,7 +50,11 @@ const options = {
   },
 };
 
-const RichContent = ({ richContent }) => {
+interface RichContentProps {
+  richContent: RenderRichTextData<ContentfulRichTextGatsbyReference>;
+}
+
+const RichContent = ({ richContent }: RichContentProps): any => {
   return renderRichText(richContent, options);
 };
 
