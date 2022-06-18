@@ -1,11 +1,15 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface PartnerFeatureProps {
   title: string;
   desc: string;
-  image: any;
+  image: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 const PartnerFeature = ({ title, desc, image }: PartnerFeatureProps) => {
@@ -17,7 +21,7 @@ const PartnerFeature = ({ title, desc, image }: PartnerFeatureProps) => {
     bgColor: "bg-gray-light",
     image: (
       <GatsbyImage
-        image={getImage(image)!}
+        image={image.gatsbyImageData}
         alt={image.description}
         className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>

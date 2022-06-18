@@ -1,10 +1,14 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface DeliveryHeroProps {
-  bgImage: any;
+  bgImage: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 const DeliveryHero = ({ bgImage }: DeliveryHeroProps) => {
@@ -16,7 +20,7 @@ const DeliveryHero = ({ bgImage }: DeliveryHeroProps) => {
     textColor: t("DeliveryHero.textColor"),
     bgImage: (
       <GatsbyImage
-        image={getImage(bgImage)!}
+        image={bgImage.gatsbyImageData}
         alt={bgImage.description}
         className="!absolute z-0 h-full w-full md:block"
       ></GatsbyImage>

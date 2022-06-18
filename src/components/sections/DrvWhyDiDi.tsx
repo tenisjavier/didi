@@ -1,10 +1,14 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface DrvWhyDiDiProps {
-  image: any;
+  image: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 const DrvWhyDiDi = ({ image }: DrvWhyDiDiProps) => {
@@ -16,7 +20,7 @@ const DrvWhyDiDi = ({ image }: DrvWhyDiDiProps) => {
     textColor: t("DrvWhyDiDi.textColor"),
     image: (
       <GatsbyImage
-        image={getImage(image)!}
+        image={image.gatsbyImageData}
         alt={image.description}
         className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
