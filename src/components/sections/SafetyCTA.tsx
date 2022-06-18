@@ -1,11 +1,19 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface SafetyCTAProps {
-  bgImage?: any;
-  image?: any;
+  bgImage?: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
+  image?: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 const SafetyCTA = ({ bgImage, image }: SafetyCTAProps) => {
@@ -19,7 +27,7 @@ const SafetyCTA = ({ bgImage, image }: SafetyCTAProps) => {
     ...(bgImage && {
       bgImage: (
         <GatsbyImage
-          image={getImage(bgImage)!}
+          image={bgImage.gatsbyImageData}
           alt={bgImage.description}
           className="!absolute z-0 h-full w-full md:block"
         ></GatsbyImage>
@@ -28,7 +36,7 @@ const SafetyCTA = ({ bgImage, image }: SafetyCTAProps) => {
     ...(image && {
       image: (
         <GatsbyImage
-          image={getImage(image)!}
+          image={image.gatsbyImageData}
           alt={image.description}
           className="z-10 m-4 w-100"
         ></GatsbyImage>

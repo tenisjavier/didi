@@ -1,23 +1,31 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection from "../CTASection";
+import CTASection, { CTAProps } from "../CTASection";
 
 interface PartnersHeroProps {
-  bgImage: any;
-  image?: any;
+  bgImage: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
+  image?: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 const PartnersHero = ({ bgImage, image }: PartnersHeroProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: CTAProps = {
     hero: true,
     title: t("PartnersHero.title"),
     desc: t("PartnersHero.desc"),
     textColor: t("PartnersHero.textColor"),
     bgImage: (
       <GatsbyImage
-        image={getImage(bgImage)!}
+        image={bgImage.gatsbyImageData!}
         alt={bgImage.description}
         className="!absolute z-0 h-full w-full brightness-75 md:block"
       ></GatsbyImage>
@@ -25,7 +33,7 @@ const PartnersHero = ({ bgImage, image }: PartnersHeroProps) => {
     ...(image && {
       image: (
         <GatsbyImage
-          image={getImage(image)!}
+          image={image.gatsbyImageData!}
           alt={image.description}
           className="z-10 m-4 w-100 rounded"
         ></GatsbyImage>

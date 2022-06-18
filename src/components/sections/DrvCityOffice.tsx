@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface DrvCityOfficeProps {
@@ -9,7 +9,7 @@ interface DrvCityOfficeProps {
     address: string;
     openHours: string[];
     phone: string;
-    photos: any;
+    photos: ImageDataLike[];
   };
 }
 
