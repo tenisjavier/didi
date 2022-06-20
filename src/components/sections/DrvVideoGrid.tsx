@@ -1,14 +1,16 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import ColumnsSection from "../ColumnSection";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
+import { CardProps } from "../Card";
 
 const DrvVideoGrid = () => {
   const { t } = useTranslation();
-  const columns = t("DrvVideoGrid.columns", { returnObjects: true });
-  const videosColumns = columns.map((col) => {
+  const columns: object[] = t("DrvVideoGrid.columns", { returnObjects: true });
+  const videosColumns = columns.map((col: any): CardProps => {
     return {
       title: col.title,
       bgColor: col.bgColor,
+      textColor: "white",
       image: (
         <iframe
           className="h-56 w-full"
@@ -21,7 +23,7 @@ const DrvVideoGrid = () => {
       ),
     };
   });
-  const props = {
+  const props: ColumnsSectionProps = {
     bgColor: t("DrvVideoGrid.bgColor"),
     title: t("DrvVideoGrid.title"),
     textColor: t("DrvVideoGrid.textColor"),

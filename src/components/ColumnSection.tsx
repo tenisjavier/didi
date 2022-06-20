@@ -1,8 +1,21 @@
 import React from "react";
-import Card from "./Card";
+import Card, { CardProps } from "./Card";
 
-const ColumnsSection = (props) => {
-  const { columns, bgColor, title, desc, textColor } = props;
+export interface ColumnsSectionProps {
+  columns: CardProps[];
+  title?: string;
+  desc?: string;
+  bgColor: string;
+  textColor: string;
+}
+
+const ColumnsSection = ({
+  columns,
+  title,
+  desc,
+  bgColor,
+  textColor,
+}: ColumnsSectionProps) => {
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
       <div className="container mx-auto flex  flex-col flex-wrap justify-center">

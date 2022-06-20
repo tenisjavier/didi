@@ -1,17 +1,18 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import reactMarkdown from "react-markdown";
 import Btn, { BtnProps } from "./Btn";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
 
-interface CardProps extends BtnProps {
-  title: string;
-  desc: string;
+export interface CardProps extends BtnProps {
+  title: ReactNode | string;
+  desc?: string;
   bgColor: string;
   textColor: string;
   image: React.ReactNode;
-  height: string;
-  width: string;
+  height?: string;
+  width?: string;
 }
 
 const Card = (props: CardProps) => {
