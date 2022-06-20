@@ -1,17 +1,30 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import slugify from "react-slugify";
-import ColumnsSection from "../ColumnSection";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-const FoodBlogColumns = ({ data }) => {
+interface FoodBlogColumns {
+  data: {
+    allContentfulArticle: {
+      nodes: {
+        title: string;
+        excerpt: string;
+        featuredImage: ImageDataLike;
+      }[];
+    };
+  };
+}
+
+const FoodBlogColumns = ({ data }: FoodBlogColumns) => {
   const { t } = useTranslation();
-  const props = {
+  const props: ColumnsSectionProps = {
     title: t("FoodBlogColumns.title"),
     bgColor: t("FoodBlogColumns.bgColor"),
     textColor: t("FoodBlogColumns.textColor"),
+    columns: [],
   };
 
   const articles = data.allContentfulArticle.nodes;
@@ -28,10 +41,8 @@ const FoodBlogColumns = ({ data }) => {
       image: (
         <Link to={link}>
           <GatsbyImage
-            image={getImage(article.featuredImage)}
+            image={getImage(article.featuredImage)!}
             alt={article.title}
-            width={700}
-            height={700}
             className="z-10  m-4"
           ></GatsbyImage>
         </Link>

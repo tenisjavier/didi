@@ -1,11 +1,24 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ColumnsSection from "../ColumnSection";
-const DeliveryColumns = ({ images, icons }) => {
+import { faZap } from "@fortawesome/free-solid-svg-icons";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
+
+console.log(typeof faZap);
+
+interface DeliveryColumnsProps {
+  images: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  }[];
+  icons: any[];
+}
+
+const DeliveryColumns = ({ images, icons }: DeliveryColumnsProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: ColumnsSectionProps = {
     bgColor: t("DeliveryColumns.bgColor"),
     textColor: t("DeliveryColumns.textColor"),
     columns: t("DeliveryColumns.columns", { returnObjects: true }),
@@ -13,13 +26,11 @@ const DeliveryColumns = ({ images, icons }) => {
 
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = getImage(images[index]);
+      const image = images[index].gatsbyImageData;
       col.image = (
         <GatsbyImage
           image={image}
           alt={images[index].description}
-          width={300}
-          height={300}
           className="z-10 m-2 w-72"
         ></GatsbyImage>
       );
