@@ -238,33 +238,33 @@
   "DeliveryBusinessFeatures.textColor": "gray-primary",
   "DeliveryBusinessFeatures.bgColor": "bg-white",
   "DeliveryBusinessFeatures.btnMode": "primary",
-  "AboutHero.title": "¿Dudas sobre DiDi?",
-  "AboutHero.desc": "Revisa nuestra sección de seguridad y preguntas frecuentes para un mejor entendimiento de la plataforma. Tanto si eres pasajero o conductor podrás encontrar respuestas.",
+  "AboutHero.title": "¿Questions about DiDi?",
+  "AboutHero.desc": "Learn about our Safety Features and other frecuently asked questions",
   "AboutHero.textColor": "white",
   "AboutHero.btnMode": "light",
   "AboutColumns.bgColor": "bg-blue-primary",
-  "AboutColumns.title": "Información útil para usuarios y conductores",
+  "AboutColumns.title": "Information for Users and Drivers",
   "AboutColumns.textColor": "white",
   "AboutColumns.columns": [
     {
-      "title": "Seguridad de Usuarios y Conductores",
-      "desc": "En DiDi nos preocupa mucho tu seguridad. Aprende sobre todas las opciones de seguridad que tienes.",
+      "title": "Safety for Riders and Drivers",
+      "desc": "Safety is our N°1 priority",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "/au/seguridad/",
-      "btnText": "Saber Más",
+      "linkItem": "/au/safety/",
+      "btnText": "Know More",
       "btnMode": "dark",
-      "btnLink": "/au/seguridad/"
+      "btnLink": "/au/safety/"
     },
     {
-      "title": "Preguntas Frecuentes",
-      "desc": "Juntamos las principales preguntas de usuarios y conductores para que puedas informarte.",
+      "title": "FAQ for drivers",
+      "desc": "Read about the more commons questions for drivers.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "/au/centro-de-ayuda/",
-      "btnText": "Saber Más",
+      "linkItem": "/au/help-center/",
+      "btnText": "Know More",
       "btnMode": "dark",
-      "btnLink": "/au/centro-de-ayuda/"
+      "btnLink": "/au/help-center/"
     }
   ],
   "SafetyHero.title": "Your safety comes first. Driver and Rider Safety Features.",
@@ -431,8 +431,8 @@
       "bgColor": "bg-white"
     }
   ],
-  "HelpCenterHero.title": "Centro de Ayuda",
-  "HelpCenterHero.desc": "Conoce las principales preguntas que nos hacen pasajeros y socios conductores",
+  "HelpCenterHero.title": "Help Center",
+  "HelpCenterHero.desc": "FAQ for riders and drivers.",
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
   "ArticlesHero.title": "DiDi Artículos",
