@@ -1,17 +1,25 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import ColumnsSection from "../ColumnSection";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
   faExclamationCircle,
   faHeadphonesAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-const HomeColumns = ({ images }) => {
+interface HomeColumnsProps {
+  images: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  }[];
+}
+
+const HomeColumns = ({ images }: HomeColumnsProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: ColumnsSectionProps = {
     bgColor: t("HomeColumns.bgColor"),
     textColor: t("HomeColumns.textColor"),
     columns: t("HomeColumns.columns", { returnObjects: true }),
@@ -19,13 +27,11 @@ const HomeColumns = ({ images }) => {
 
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = getImage(images[index]);
+      const image = images[index].gatsbyImageData;
       col.image = (
         <GatsbyImage
           image={image}
           alt={images[index].description}
-          width={300}
-          height={300}
           className="z-10 m-4 w-48"
         ></GatsbyImage>
       );

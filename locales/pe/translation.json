@@ -65,6 +65,7 @@
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
+  "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [
     {
       "title": "Mejor Seguridad",

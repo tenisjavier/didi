@@ -1,27 +1,33 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import ColumnsSection from "../ColumnSection";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-const FoodBusinessDownloads = ({ images }) => {
+interface FoodBusinessDownloadsProps {
+  images: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  }[];
+}
+
+const FoodBusinessDownloads = ({ images }: FoodBusinessDownloadsProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: ColumnsSectionProps = {
     title: t("FoodBusinessDownloads.title"),
     desc: t("FoodBusinessDownloads.desc"),
     bgColor: t("FoodBusinessDownloads.bgColor"),
     textColor: t("FoodBusinessDownloads.textColor"),
-    columns: t("FoodBusinessDownloads.columns", { returnObjects: true }),
+    columns: t("FoodDeliveryDownloads.columns", { returnObjects: true }),
   };
 
-  props.columns.forEach((col, index) => {
-    const image = getImage(images[index]);
+  props.columns.forEach((col: any, index: number) => {
+    const image = images[index].gatsbyImageData;
     col.image = (
       <a href={col.linkItem}>
         <GatsbyImage
           image={image}
           alt={images[index].description}
-          width={700}
-          height={700}
           className="z-10"
         ></GatsbyImage>
       </a>
