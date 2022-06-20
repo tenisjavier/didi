@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import ColumnsSection from "../ColumnSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileAlt,
@@ -8,12 +7,14 @@ import {
   faIdBadge,
   faDollarSign,
 } from "@fortawesome/free-solid-svg-icons";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 const FoodDeliveryStepsColumns = () => {
   const { t } = useTranslation();
-  const props = {
+  const props: ColumnsSectionProps = {
     title: t("FoodDeliveryStepsColumns.title"),
     bgColor: t("FoodDeliveryStepsColumns.bgColor"),
+    textColor: t("FoodDeliveryStepsColumns.textColor"),
     columns: t("FoodDeliveryStepsColumns.columns", { returnObjects: true }),
   };
 

@@ -39,6 +39,7 @@
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "primary",
   "FoodBusinessColumns.bgColor": "bg-white",
+  "FoodBusinessColumns.textColor": "gray-primary",
   "FoodBusinessColumns.columns": [
     {
       "title": "Obtén más pedidos",
@@ -79,6 +80,7 @@
   "FoodDeliveryHero.textColor": "white",
   "FoodDeliveryHero.btnMode": "primary",
   "FoodDeliveryColumns.bgColor": "white",
+  "FoodDeliveryColumns.textColor": "gray-primary",
   "FoodDeliveryColumns.columns": [
     {
       "title": "Comienza a generar ingresos",
@@ -101,6 +103,7 @@
   ],
   "FoodDeliveryStepsColumns.title": "¿Cómo repartir a través de DiDi Food?",
   "FoodDeliveryStepsColumns.bgColor": "bg-gray-light",
+  "FoodDeliveryStepsColumns.textColor": "gray-primary",
   "FoodDeliveryStepsColumns.columns": [
     {
       "title": "1. Descarga la aplicación",

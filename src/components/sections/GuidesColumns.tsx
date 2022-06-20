@@ -1,17 +1,30 @@
 // @desc Guides Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import ColumnsSection from "../ColumnSection";
 import slugify from "react-slugify";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-const GuidesColumns = ({ data }) => {
+interface GuidesColumnsProps {
+  data: {
+    allContentfulGuide: {
+      nodes: {
+        title: string;
+        excerpt: string;
+        featuredImage: ImageDataLike;
+      }[];
+    };
+  };
+}
+
+const GuidesColumns = ({ data }: GuidesColumnsProps) => {
   const { t } = useTranslation();
-  const props = {
+  const props: ColumnsSectionProps = {
     title: t("GuidesColumns.title"),
     bgColor: t("GuidesColumns.bgColor"),
     textColor: t("GuidesColumns.textColor"),
+    columns: [],
   };
   const guides = data.allContentfulGuide.nodes;
   props.columns = guides.map((guide) => {
@@ -26,10 +39,8 @@ const GuidesColumns = ({ data }) => {
       image: (
         <Link to={link}>
           <GatsbyImage
-            image={getImage(guide.featuredImage)}
+            image={getImage(guide.featuredImage)!}
             alt={guide.title}
-            width={700}
-            height={700}
             className="z-10  m-4"
           ></GatsbyImage>
         </Link>
@@ -37,7 +48,7 @@ const GuidesColumns = ({ data }) => {
       btnText: t("GuidesColumns.btnText"),
       btnLink: link,
       btnMode: t("GuidesColumns.btnMode"),
-      height: "h-96",
+      height: "h-110",
     };
   });
   return <ColumnsSection {...props}></ColumnsSection>;
