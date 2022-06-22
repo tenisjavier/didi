@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import AccordionSection from "../AccordionSection";
 
 const HelpCenterFAQPax = ({ data }) => {
+  const { t } = useTranslation();
   let items = [];
   data.faq.forEach((node) => {
     items.push({
@@ -9,18 +11,16 @@ const HelpCenterFAQPax = ({ data }) => {
       content: node.content,
     });
   });
-  const title = "Pasajeros";
+  const props = {
+    title: t("HelpCenterFAQPax.title"),
+    bgColor: t("HelpCenterFAQPax.bgColor"),
+    textColor: t("HelpCenterFAQPax.textColor"),
+    textAccordionColor: "orange-primary",
+    bgAccordionColor: "bg-white",
+    items: items,
+  };
 
-  return (
-    <AccordionSection
-      bgColor="bg-gray-light"
-      textColor="gray-primary"
-      textAccordionColor="orange-primary"
-      bgAccordionColor="bg-white"
-      title={title}
-      items={items}
-    ></AccordionSection>
-  );
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default HelpCenterFAQPax;
