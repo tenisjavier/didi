@@ -219,6 +219,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Rider",
       url: "/au/rider/",
+      dropMenu: [
+        {
+          text: "Rider Help",
+          url: "/au/rider/help/",
+        },
+      ],
     },
     {
       text: "DiDi Driver",
@@ -235,6 +241,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "DiDi Advance",
           url: "/au/didi-advance/",
+        },
+        {
+          text: "Driver Help",
+          url: "/au/driver/help/",
         },
       ],
     },
@@ -253,8 +263,18 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "DiDi Safety",
-      url: "/au/safety/",
+      text: "About DiDi",
+      url: "/au/about-us/",
+      dropMenu: [
+        {
+          text: "Safety",
+          url: "/au/safety/",
+        },
+        {
+          text: "Help Center",
+          url: "/au/help-center/",
+        },
+      ],
     },
   ],
   pa: [

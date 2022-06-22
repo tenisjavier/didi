@@ -257,14 +257,24 @@
       "btnLink": "/au/safety/"
     },
     {
-      "title": "FAQ for drivers",
+      "title": "FAQ for Drivers",
       "desc": "Read about the more commons questions for drivers.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "/au/help-center/",
+      "linkItem": "/au/driver/help/",
       "btnText": "Know More",
       "btnMode": "dark",
-      "btnLink": "/au/help-center/"
+      "btnLink": "/au/driver/help/"
+    },
+    {
+      "title": "FAQ for Riders",
+      "desc": "Read about the more commons questions for riders.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "/au/rider/help/",
+      "btnText": "Know More",
+      "btnMode": "dark",
+      "btnLink": "/au/rider/help/"
     }
   ],
   "SafetyHero.title": "Your safety comes first. Driver and Rider Safety Features.",
@@ -435,6 +445,12 @@
   "HelpCenterHero.desc": "FAQ for riders and drivers.",
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
+  "HelpCenterFAQDrv.title": "FAQ Drivers",
+  "HelpCenterFAQDrv.textColor": "gray-primary",
+  "HelpCenterFAQDrv.bgColor": "bg-white",
+  "HelpCenterFAQPax.title": "FAQ Riders",
+  "HelpCenterFAQPax.textColor": "gray-primary",
+  "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",

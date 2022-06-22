@@ -1,10 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import HelpCenterHero from "../../components/sections/HelpCenterHero";
-import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
-import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
-import HomeColumns from "../../components/sections/HomeColumns";
+import Layout from "../../../components/Layout";
+import HelpCenterHero from "../../../components/sections/HelpCenterHero";
+import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
+import HomeColumns from "../../../components/sections/HomeColumns";
 
 const HelpCenter = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -14,16 +13,12 @@ const HelpCenter = ({ data }) => {
   const faqPax = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Riders Australia"
   );
-  const faqExpress = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Express Australia"
-  );
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
   return (
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
-      <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>

@@ -16,7 +16,7 @@ const SobreDiDi = ({ data }) => {
     return image.title === "au.HelpCenterHero.bgImage";
   })[0];
 
-  const columnsImages = [safetyHeroBgImage, helpCenterBgImage];
+  const columnsImages = [safetyHeroBgImage, helpCenterBgImage, homeHeroBgImage];
   return (
     <Layout>
       <AboutHero bgImage={homeHeroBgImage}></AboutHero>
