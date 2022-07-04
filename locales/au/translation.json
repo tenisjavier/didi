@@ -535,5 +535,9 @@
   "StoreHero.desc": "Download DiDi Rides scanning the qr code",
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
-  "StoreHero.btnMode": "light"
+  "StoreHero.btnMode": "light",
+  "SmartBannerDrv.title": "DiDi Driver",
+  "SmartBannerDrv.desc": "Make Extra Money",
+  "SmartBannerPax.title": "DiDi Rider",
+  "SmartBannerPax.desc": "Affordable Rides"
 }
