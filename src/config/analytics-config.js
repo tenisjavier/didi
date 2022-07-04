@@ -99,6 +99,7 @@ const insertBtnParams = () => {
       }
 
       c.setAttribute("href", url);
+      return url;
     });
   }
 
@@ -307,7 +308,7 @@ const insertBtnParams = () => {
     } else {
       return (
         oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}`
+        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store/`
       );
     }
   }
