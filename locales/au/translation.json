@@ -530,5 +530,10 @@
   "LegalHero.linkItem": "/au/legal/terminos-y-condiciones/",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.textColor": "gray-primary",
-  "LegalCTA.btnMode": "dark"
+  "LegalCTA.btnMode": "dark",
+  "StoreHero.title": "Scan the QR Code with your phone ",
+  "StoreHero.desc": "Download DiDi Rides scanning the qr code",
+  "StoreHero.textColor": "white",
+  "StoreHero.bgColor": "bg-orange-primary",
+  "StoreHero.btnMode": "light"
 }

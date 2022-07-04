@@ -433,5 +433,10 @@
   "LegalHero.linkItem": "/cl/legal/terminos-y-condiciones/",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.textColor": "gray-primary",
-  "LegalCTA.btnMode": "dark"
+  "LegalCTA.btnMode": "dark",
+  "StoreHero.title": "Escanéa el QR con tu celular ",
+  "StoreHero.desc": "Descarga DiDi Pasajero escaneando el código con tu celular",
+  "StoreHero.textColor": "white",
+  "StoreHero.bgColor": "bg-orange-primary",
+  "StoreHero.btnMode": "light"
 }
