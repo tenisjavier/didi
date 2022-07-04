@@ -8,7 +8,7 @@ interface SmartBannerProps {
 }
 
 const SmartBanner = (props: SmartBannerProps) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const { type } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
@@ -28,8 +28,8 @@ const SmartBanner = (props: SmartBannerProps) => {
     bgColor = "bg-white";
     btnBgColor = "bg-orange-primary";
     btnTextColor = "text-white";
-    bannerTitle = "DiDi Conductor";
-    bannerDesc = "Genera Dinero";
+    bannerTitle = t("SmartBannerDrv.title");
+    bannerDesc = t("SmartBannerDrv.desc");
   } else if (props.type === "pax") {
     btnLink = btnData.paxLink;
     btnText = btnData.paxText.replace(/ .*/, "");
@@ -37,8 +37,8 @@ const SmartBanner = (props: SmartBannerProps) => {
     bgColor = "bg-orange-primary";
     btnBgColor = "bg-white";
     btnTextColor = "text-black";
-    bannerTitle = "DiDi Pasajero";
-    bannerDesc = "Viaja Seguro y Barato";
+    bannerTitle = t("SmartBannerPax.title");
+    bannerDesc = t("SmartBannerPax.desc");
   }
 
   return (

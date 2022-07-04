@@ -438,5 +438,9 @@
   "StoreHero.desc": "Descarga DiDi Pasajero escaneando el código con tu celular",
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
-  "StoreHero.btnMode": "light"
+  "StoreHero.btnMode": "light",
+  "SmartBannerDrv.title": "DiDi Conductor",
+  "SmartBannerDrv.desc": "Ganancias Extras",
+  "SmartBannerPax.title": "DiDi Pasajero",
+  "SmartBannerPax.desc": "Pide un Viaje"
 }
