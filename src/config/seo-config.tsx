@@ -317,6 +317,9 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
+  pa: {
+
+  },
 };
 
 //@desc func that is used in SEO component for getting the title and desc of a page

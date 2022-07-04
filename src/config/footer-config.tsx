@@ -48,6 +48,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Safety", link: "/au/safety/" },
     { text: "Legal", link: "/au/legal/" },
   ],
+  pa: [],
 };
 
 const getFooterLinks = (countryCode: string): FooterLinks[] => {
