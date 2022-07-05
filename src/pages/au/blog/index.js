@@ -39,7 +39,10 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "rides" }, country: { code: { eq: "au" } } }
+      filter: {
+        category: { in: ["rides", "news"] }
+        country: { code: { eq: "au" } }
+      }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {
