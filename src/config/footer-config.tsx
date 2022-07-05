@@ -43,7 +43,7 @@ const footerLinks: AllFooterInterface = {
   au: [
     { text: "DiDi Rider", link: "/au/rider/" },
     { text: "DiDi Driver", link: "/au/driver/" },
-    { text: "DiDi Delivery", link: "/au/delivery/" },
+    { text: "Blog", link: "/au/blog/" },
     { text: "Places", link: "/au/places/" },
     { text: "Safety", link: "/au/safety/" },
     { text: "Legal", link: "/au/legal/" },
