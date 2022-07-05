@@ -50,8 +50,8 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: {
-        category: { eq: "rides" }
-        country: { code: { eq: "cl" } }
+        category: { in: ["rides", "news"] }
+        country: { code: { eq: "au" } }
         id: { ne: $id }
       }
       sort: { fields: content___references___createdAt, order: DESC }

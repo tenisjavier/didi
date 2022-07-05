@@ -460,7 +460,7 @@
   "ArticlesColumns.textColor": "white",
   "ArticlesColumns.btnText": "Read More",
   "ArticlesColumns.btnMode": "dark",
-  "ArticlesColumns.linkItem": "/au/articulos/{{article}}/",
+  "ArticlesColumns.linkItem": "/au/blog/{{article}}/",
   "ArticleHero.textColor": "white",
   "ArticleHero.btnMode": "light",
   "GuidesHero.title": "Guías para Conductores Chile",
