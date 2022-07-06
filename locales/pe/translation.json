@@ -421,6 +421,7 @@
   "DirectionBanner.btnMode": "light",
   "LegalHero.title": "Revisa nuestros Términos y Condiciones",
   "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
+  "LegalHero.btnText": "Términos y Condiciones",
   "LegalHero.textColor": "white",
   "LegalHero.btnMode": "light",
   "LegalHero.linkItem": "/pe/legal/terminos-y-condiciones/",

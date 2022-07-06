@@ -429,6 +429,7 @@
   "LegalHero.title": "Revisa nuestros Términos y Condiciones",
   "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
   "LegalHero.textColor": "white",
+  "LegalHero.btnText": "Términos y Condiciones",
   "LegalHero.btnMode": "light",
   "LegalHero.linkItem": "/cl/legal/terminos-y-condiciones/",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
