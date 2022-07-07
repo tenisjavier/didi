@@ -27,10 +27,10 @@ const Legal = ({ data }) => {
   const drvProgramPolicies = policies.filter(
     (p) =>
       [
-        "DiDi Advance Terms",
-        "DiDi Advance Driver Program",
-        "DiDi Delivery Rules",
-        "Standard Terms for Delivery Services",
+        "Didi Advance Terms",
+        "Didi Advance Driver Program",
+        "Driver Didi Delivery Rules",
+        "Driver Standard Terms for Delivery Services",
       ].indexOf(p.name) > -1
   );
   const paxPolicies = policies.filter(
@@ -46,11 +46,8 @@ const Legal = ({ data }) => {
   const paxProgramPolicies = policies.filter(
     (p) =>
       [
-        "Passenger Agreement",
-        "Anti-Fraud Policy",
-        "Complaint Handling Policy ",
-        "General Terms and Conditions for Rider Offers",
-        "Passenger Software Use and Licence Agreement",
+        "Rider Didi Delivery Rules",
+        "Rider Standard Terms for Delivery Services",
       ].indexOf(p.name) > -1
   );
   const drvPoliciesItems = drvPolicies.map((p) => {
