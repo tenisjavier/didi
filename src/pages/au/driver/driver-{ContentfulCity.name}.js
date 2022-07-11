@@ -25,7 +25,7 @@ const DrvCity = ({ data }) => {
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <SilderSection
         data={product}
-        title={`Nuestros Servicios en ${name}`}
+        title={`Our services in ${name}`}
       ></SilderSection>
       <Requirements data={requirements}></Requirements>
       {places.length ? (
@@ -62,6 +62,7 @@ export const query = graphql`
           gatsbyImageData
         }
         country {
+          name
           code
         }
       }

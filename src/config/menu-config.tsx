@@ -246,6 +246,10 @@ const menuLinks: AllMenuInterface = {
           text: "Driver Help",
           url: "/au/driver/help/",
         },
+        {
+          text: "Cities",
+          url: "/au/cities/",
+        },
       ],
     },
     {
