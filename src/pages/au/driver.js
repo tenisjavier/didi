@@ -40,6 +40,8 @@ const Driver = ({ data }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.contentfulCountry.city;
+  const requirements = data.allContentfulRequirement.nodes;
+  console.log(requirements);
 
   return (
     <Layout>
@@ -120,6 +122,12 @@ export const query = graphql`
           gatsbyImageData
           description
         }
+      }
+    }
+    allContentfulRequirement(filter: { country: { code: { eq: "au" } } }) {
+      nodes {
+        name
+        slug
       }
     }
   }

@@ -493,6 +493,8 @@
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",
+  "RequirementHero.textColor": "white",
+  "RequirementHero.btnMode": "light",
   "DirectionHero.title": "Como llegar a {{destination}} desde {{origin}}",
   "DirectionHero.desc": "Desde: {{originAddress}} | Hacia: {{destinationAddress }}",
   "DirectionHero.textColor": "white",

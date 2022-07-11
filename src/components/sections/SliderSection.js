@@ -2,10 +2,12 @@ import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Slider from "../Slider";
 
-const SilderSection = ({ data }) => {
+const SilderSection = ({ data, title }) => {
   const { t } = useTranslation();
+  const geo = data[0].country[0].name;
+  console.log(geo);
   const props = {
-    title: t("SliderSection.title"),
+    title: title || t("SliderSection.title"),
     items: data,
   };
 
