@@ -1,27 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import GuideHero from "../../../components/sections/GuideHero";
-import RichContent from "../../../components/RichContent";
+import ArticleHero from "../../../components/sections/ArticleHero";
+import ArticleContent from "../../../components/sections/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
-import GuidesColumns from "../../../components/sections/GuidesColumns";
+import ArticlesColumns from "../../../components/sections/ArticlesColumns";
 
-const GuideTemplate = ({ data }) => {
-  const richContent = data.contentfulGuide.content;
+const ArticleTemplate = ({ data }) => {
   return (
     <Layout>
-      <GuideHero data={data}></GuideHero>
-      <section className="container mx-auto mb-32 text-gray-primary md:px-28">
-        <RichContent richContent={richContent}></RichContent>
-      </section>
-
+      <ArticleHero data={data}></ArticleHero>
+      <ArticleContent data={data}></ArticleContent>
       <PaxBanner></PaxBanner>
-      <GuidesColumns data={data}></GuidesColumns>
+      <ArticlesColumns data={data}></ArticlesColumns>
     </Layout>
   );
 };
 
-export default GuideTemplate;
+export default ArticleTemplate;
 
 export const query = graphql`
   query ($id: String, $language: String!) {
@@ -34,9 +30,10 @@ export const query = graphql`
         }
       }
     }
-    contentfulGuide(id: { eq: $id }) {
+    contentfulArticle(id: { eq: $id }) {
       title
       excerpt
+      updatedAt
       content {
         raw
         references {
@@ -53,13 +50,18 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulGuide(
-      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+    allContentfulArticle(
+      filter: {
+        category: { eq: "rides" }
+        country: { code: { eq: "ar" } }
+        id: { ne: $id }
+      }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {
       nodes {
         title
+        slug
         excerpt
         featuredImage {
           gatsbyImageData

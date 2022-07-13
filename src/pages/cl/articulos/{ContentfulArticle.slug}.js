@@ -51,7 +51,7 @@ export const query = graphql`
     allContentfulArticle(
       filter: {
         category: { eq: "rides" }
-        country: { code: { eq: "pe" } }
+        country: { code: { eq: "cl" } }
         id: { ne: $id }
       }
       sort: { fields: content___references___createdAt, order: DESC }
@@ -59,6 +59,7 @@ export const query = graphql`
     ) {
       nodes {
         title
+        slug
         excerpt
         featuredImage {
           gatsbyImageData

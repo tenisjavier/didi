@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import slugify from "react-slugify";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface ArticlesColumnsProps {
@@ -11,6 +10,7 @@ interface ArticlesColumnsProps {
     allContentfulArticle: {
       nodes: {
         title: string;
+        slug: string;
         excerpt: string;
         featuredImage: ImageDataLike;
       }[];
@@ -31,7 +31,7 @@ const ArticlesColumns = ({ data }: ArticlesColumnsProps) => {
 
   props.columns = articles.map((article) => {
     const link = t("ArticlesColumns.linkItem", {
-      article: slugify(article.title),
+      article: article.slug,
     });
     return {
       title: <Link to={link}>{article.title}</Link>,
