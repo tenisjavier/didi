@@ -55,8 +55,8 @@ const Driver = ({ data }) => {
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
       <DrvCityList data={cities}></DrvCityList>
-      <DrvColumns icons={iconsDrvColumns}></DrvColumns>
       <RequirementsLinks requirements={requirements}></RequirementsLinks>
+      <DrvColumns icons={iconsDrvColumns}></DrvColumns>
     </Layout>
   );
 };

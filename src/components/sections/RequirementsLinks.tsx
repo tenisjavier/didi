@@ -20,7 +20,7 @@ const RequirementsLinks = ({ requirements }: RequirementsLinksProps) => {
   const { t, i18n } = useTranslation();
   const countryCode = i18n.language;
   const { host, protocol } = useLocation();
-  console.log(protocol);
+
   const items = requirements.map((req) => ({
     title: req.name,
     link: `${protocol}//${host}/${countryCode}/driver/requirements-${req.slug}/`,
