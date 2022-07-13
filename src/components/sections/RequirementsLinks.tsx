@@ -1,6 +1,5 @@
 // @desc Guides Grid used for navigation
 import React from "react";
-import { useLocation } from "@reach/router";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CircleLinks, { CircleLinksProps } from "../CircleLinks";
@@ -17,21 +16,24 @@ interface RequirementsLinksProps {
 }
 
 const RequirementsLinks = ({ requirements }: RequirementsLinksProps) => {
-  const { t, i18n } = useTranslation();
-  const countryCode = i18n.language;
-  const { host, protocol } = useLocation();
+  const { t } = useTranslation();
 
-  const items = requirements.map((req) => ({
-    title: req.name,
-    link: `${protocol}//${host}/${countryCode}/driver/requirements-${req.slug}/`,
-    image: (
-      <GatsbyImage
-        image={req.image.gatsbyImageData}
-        alt={req.image.description}
-        className="h-32 w-32 rounded-full"
-      ></GatsbyImage>
-    ),
-  }));
+  const items = requirements.map((req) => {
+    const link = t("RequirementsLinks.linkItem", {
+      requirement: req.slug,
+    });
+    return {
+      title: req.name,
+      link: link,
+      image: (
+        <GatsbyImage
+          image={req.image.gatsbyImageData}
+          alt={req.image.description}
+          className="h-36 w-36 rounded-full"
+        ></GatsbyImage>
+      ),
+    };
+  });
 
   const props: CircleLinksProps = {
     title: t("RequirementsLinks.title"),
