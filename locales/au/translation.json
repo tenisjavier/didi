@@ -499,6 +499,7 @@
   "RequirementsLinks.desc": "Select the state you are planning to drive",
   "RequirementsLinks.textColor": "white",
   "RequirementsLinks.bgColor": "bg-blue-primary",
+  "RequirementsLinks.linkItem": "/au/driver/requirements-{{requirement}}/",
   "DirectionHero.title": "Como llegar a {{destination}} desde {{origin}}",
   "DirectionHero.desc": "Desde: {{originAddress}} | Hacia: {{destinationAddress }}",
   "DirectionHero.textColor": "white",
