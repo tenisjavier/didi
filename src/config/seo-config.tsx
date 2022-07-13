@@ -267,10 +267,14 @@ const seoMeta: AllSEOMetaInterface = {
   },
   au: {
     "/": {
-      title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en Perú, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      title: "DiDi Australia - Ride Hailing & Delivery",
+      desc: " Best App",
     },
-    "/pasajero/": {
+    "/rider/": {
+      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
+      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
+    },
+    "/rider/help/": {
       title: "DiDi Pasajero - Bája la App y Viaja Seguro",
       desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
     },
@@ -278,39 +282,47 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
+    "/driver/help/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+    "/didi-advance/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+    "/delivery/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+    "/delivery/personal/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+    "/delivery/business/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
 
-    "/sobre-didi/": {
+    "/about-us/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
     },
-    "/seguridad/": {
+    "/safety/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
-    "/centro-de-ayuda/": {
+    "/help-center/": {
       title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
-    "/direcciones/": {
-      title: "Cómo llegar a distintos puntos de Perú",
-      desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
-    },
-    "/guias/": {
-      title: "Guías para Conductores DiDi.",
-      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
-    },
-    "/articulos/": {
+    "/blog/": {
       title:
         "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
       desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
-    "/ciudades/": {
+    "/cities/": {
       title: "Servicios de DiDi por Ciudad.",
       desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
-    },
-    "/lugares/": {
-      title: "Viaja a Distintos Lugares de Interés",
-      desc: "Viaja a distintos puntos de la ciudad con DiDi. DiDi es la manera más rápida y segura de viajar. Baja la aplicación ya.",
     },
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",

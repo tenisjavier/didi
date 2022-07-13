@@ -20,6 +20,7 @@ import SilderSection from "../../components/sections/SliderSection";
 import Requirements from "../../components/sections/Requirements";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 import DrvColumns from "../../components/sections/DrvColumns";
+import RequirementsLinks from "../../components/sections/RequirementsLinks";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -41,7 +42,6 @@ const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
   const cities = data.contentfulCountry.city;
   const requirements = data.allContentfulRequirement.nodes;
-  console.log(requirements);
 
   return (
     <Layout>
@@ -56,6 +56,7 @@ const Driver = ({ data }) => {
       <HomeColumns images={homeColumnsImages}></HomeColumns>
       <DrvCityList data={cities}></DrvCityList>
       <DrvColumns icons={iconsDrvColumns}></DrvColumns>
+      <RequirementsLinks requirements={requirements}></RequirementsLinks>
     </Layout>
   );
 };
@@ -128,6 +129,10 @@ export const query = graphql`
       nodes {
         name
         slug
+        image {
+          gatsbyImageData
+          description
+        }
       }
     }
   }
