@@ -327,26 +327,38 @@ const menuLinks: AllMenuInterface = {
   ],
   rd: [
     {
-      text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
-    },
-    {
       text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
+      url: "/rd/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "https://chile.didiglobal.com/driver/",
+          url: "/rd/driver/",
         },
         {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
+          text: "Socio Conductor Moto",
+          url: "/rd/driver/moto/",
         },
         {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
       ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/rd/pasajero/",
+    },
+    {
+      text: "Seguridad",
+      url: "/rd/seguridad/",
+    },
+    {
+      text: "Acerda de DiDi",
+      url: "/rd/sobre-didi/",
+    },
+    {
+      text: "DiDi Moto",
+      url: "/rd/driver/moto/",
     },
   ],
   mx: [
