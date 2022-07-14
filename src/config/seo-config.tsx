@@ -268,65 +268,64 @@ const seoMeta: AllSEOMetaInterface = {
   au: {
     "/": {
       title: "DiDi Australia - Ride Hailing & Delivery",
-      desc: " Best App",
+      desc: "DiDi Australia offers a full range of app-based transportation services to users across Australia and New Zealand.",
     },
     "/rider/": {
-      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
-      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
+      title: "Ride with DiDi",
+      desc: "Get safe, fast and affordable rides with DiDi.",
     },
     "/rider/help/": {
-      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
-      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
+      title: "Ride Help & DiDi FAQs",
+      desc: "Need help? Have questions? We're here to assist you!",
     },
     "/driver/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "DiDi Driver - Drive and earn with DiDi",
+      desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
     },
     "/driver/help/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "Driver Help & FAQs",
+      desc: "Need help? Have questions? We're here to assist you!",
     },
     "/didi-advance/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "DiDi Advance Driver Program",
+      desc: "Learn more about our DiDi Advance earnings program for driver-partners.",
     },
     "/delivery/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "DiDi Delivery",
+      desc: "Power your business with instant and affordable delivery services.",
     },
     "/delivery/personal/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "DiDi Delivery - Personal",
+      desc: "DiDi Delivery is an on-demand delivery service allowing Australians to send and receive parcels – all delivered by DiDi drivers.",
     },
     "/delivery/business/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "DiDi Delivery - Business",
+      desc: "Power your business with instant and affordable delivery services powered by DiDi drivers.",
     },
 
     "/about-us/": {
-      title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
-      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+      title: "About Us",
+      desc: "Learn more about DiDi, the world's leading mobility platform.",
     },
     "/safety/": {
-      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
-      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+      title: "Safety",
+      desc: "Your safety comes first-- learn more about our industry-leading safety features.",
     },
     "/help-center/": {
-      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
-      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+      title: "Help Center",
+      desc: "FAQs for DiDi riders and drivers.",
     },
     "/blog/": {
-      title:
-        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
-      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+      title: "DiDi Australia Blog",
+      desc: "Latest updates and articles from DiDi Austrlia.",
     },
     "/cities/": {
-      title: "Servicios de DiDi por Ciudad.",
-      desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
+      title: "Cities",
+      desc: "Learn about which cities DiDi Australia services are available in.",
     },
     "/legal/": {
-      title: "Términos y Condiciones y Políticas de Privacidad.",
-      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+      title: "Legal",
+      desc: "Review our privacy policy and other terms and conditions.",
     },
   },
 };
