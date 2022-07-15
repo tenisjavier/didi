@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import DrvHero from "../../../components/sections/DrvHero";
 import DrvWhyDiDi from "../../../components/sections/DrvWhyDiDi";
 import DrvCityList from "../../../components/sections/DrvCityList";
-import HomeColumns from "../../../components/sections/HomeColumns";
+import HomeColumns from "../../../components/sections/PaxColumns";
 import Requirements from "../../../components/sections/Requirements";
 import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 
@@ -28,6 +28,7 @@ const Driver = ({ data }) => {
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
+      <HomeColumns></HomeColumns>
       <DrvCityList data={cities}></DrvCityList>
     </Layout>
   );

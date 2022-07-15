@@ -327,6 +327,10 @@ const menuLinks: AllMenuInterface = {
   ],
   rd: [
     {
+      text: "DiDi Pasajero",
+      url: "/rd/pasajero/",
+    },
+    {
       text: "DiDi Conductor",
       url: "/rd/driver/",
       dropMenu: [
@@ -345,20 +349,36 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "DiDi Pasajero",
-      url: "/rd/pasajero/",
-    },
-    {
-      text: "Seguridad",
-      url: "/rd/seguridad/",
+      text: "DiDi Moto",
+      url: "/rd/driver/moto/",
     },
     {
       text: "Acerda de DiDi",
       url: "/rd/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/rd/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/rd/centro-de-ayuda/",
+        }
+      ]
     },
     {
-      text: "DiDi Moto",
-      url: "/rd/driver/moto/",
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/rd/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/rd/articulos/",
+        },
+      ],
     },
   ],
   mx: [
