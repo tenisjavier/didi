@@ -23,7 +23,6 @@ const CentroDeAyuda = ({ data }) => {
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
-      <HelpCenterFAQTaxi data={faqTaxi[0]}></HelpCenterFAQTaxi>
 
       <HomeColumns></HomeColumns>
     </Layout>
