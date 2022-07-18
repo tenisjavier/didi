@@ -258,7 +258,12 @@ const insertBtnParams = () => {
 
     // if is SEO, Direct or Web Referral -> Attricampaign will be the pathname
 
-    if (channelId === 14 || channelId === 18 || channelId === 20) {
+    if (
+      channelId === 14 ||
+      channelId === 18 ||
+      channelId === 19 ||
+      channelId === 20
+    ) {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
     }
