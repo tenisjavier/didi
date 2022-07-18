@@ -10,26 +10,31 @@ const insertBtnParams = () => {
   var thisHostname = document.location.hostname;
   var thisDomain = getDomain_(thisHostname);
   var referringDomain = getDomain_(document.referrer);
-
   // search is the parameters complete string without ?
   var search = window.location.search.slice(1);
 
   // if does not have utms or gclid should be organic traffic
   if (search.indexOf("utm") === -1 && search.indexOf("gclid") === -1) {
-    //this function return if it is SEO, direct or referral
-    var referringInfo = parseGaReferrer(referrer);
+    if (thisDomain !== referringDomain) {
+      //this function return if it is SEO, direct or referral
+      var referringInfo = parseGaReferrer(referrer);
 
-    // organic source and medium
+      // organic source and medium
 
-    gaReferral.source = referringInfo.source;
-    gaReferral.medium = referringInfo.medium;
-    search =
-      "utm_source=" +
-      gaReferral.source +
-      "&utm_medium=" +
-      gaReferral.medium +
-      "&utm_campaign=" +
-      gaReferral.campaign;
+      gaReferral.source = referringInfo.source;
+      gaReferral.medium = referringInfo.medium;
+      search =
+        "utm_source=" +
+        gaReferral.source +
+        "&utm_medium=" +
+        gaReferral.medium +
+        "&utm_campaign=" +
+        gaReferral.campaign;
+
+      localStorage.setItem("urlSearch", search);
+    } else {
+      search = localStorage.getItem("urlSearch") || "";
+    }
   }
 
   var ga_id = getCookie("_gid");
@@ -57,51 +62,27 @@ const insertBtnParams = () => {
     }
   }
 
-  if (search.startsWith("&")) {
-    search = search.slice(1);
-  }
+  document.querySelectorAll("a").forEach(function (c) {
+    let url = c.getAttribute("href");
+    url = url + "?" + search;
 
-  if (search !== "") {
-    document.querySelectorAll("a").forEach(function (c) {
-      let url = c.getAttribute("href");
-      if (url !== null && url.indexOf("#") > 0) {
-        var arr = url.split("#");
-
-        let preUrl = arr[0];
-        let lastUrl = arr[1];
-
-        if (preUrl.indexOf("?")) {
-          preUrl = preUrl + "&" + search;
-        } else {
-          preUrl = preUrl + "?" + search;
-        }
-        url = preUrl + "#" + lastUrl;
-      } else {
-        if (url !== null && url.indexOf("?") > 0) {
-          url = url + "&" + search;
-        } else {
-          url = url + "?" + search;
-        }
-      }
-
-      // if it is a deeplink, get the long url version with correct parameters
-      if (
-        url.indexOf("ssa-rides-driver.onelink.me/mbwy/") > -1 ||
-        url.indexOf("https://global-rides-passenger.onelink.me/xNlo/") > -1 ||
-        url.indexOf("https://99.onelink.me/Mayr/") > -1 ||
-        url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
-        url.indexOf("onelink.me/5xQ3/") > -1 ||
-        url.indexOf("onelink.me/4B2F/") > -1 ||
-        url.indexOf("onelink.me/zzaY/") > -1 ||
-        url.indexOf("onelink.me/ixFb/") > -1
-      ) {
-        url = getDeepLink(url, thisHostname);
-      }
-
+    // if it is a deeplink, get the long url version with correct parameters
+    if (
+      url.indexOf("ssa-rides-driver.onelink.me/mbwy/") > -1 ||
+      url.indexOf("https://global-rides-passenger.onelink.me/xNlo/") > -1 ||
+      url.indexOf("https://99.onelink.me/Mayr/") > -1 ||
+      url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
+      url.indexOf("onelink.me/5xQ3/") > -1 ||
+      url.indexOf("onelink.me/4B2F/") > -1 ||
+      url.indexOf("onelink.me/zzaY/") > -1 ||
+      url.indexOf("onelink.me/ixFb/") > -1
+    ) {
+      url = getDeepLink(url, thisHostname);
       c.setAttribute("href", url);
-      return url;
-    });
-  }
+    }
+
+    return url;
+  });
 
   // function to get domain
 
