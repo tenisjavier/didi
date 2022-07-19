@@ -10,16 +10,16 @@ import HomeColumns from "../../components/sections/HomeColumns";
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "cl.HomeHero.bgImage";
+    return image.title === "pa.HomeHero.bgImage";
   })[0];
   const safetyCTAImage = images.filter((image) => {
-    return image.title === "cl.SafetyCTA.image";
+    return image.title === "pa.SafetyCTA.image";
   })[0];
   const drvCTAImage = images.filter((image) => {
-    return image.title === "cl.DrvCTA.image";
+    return image.title === "pa.DrvCTA.image";
   })[0];
   const paxCTAImage = images.filter((image) => {
-    return image.title === "cl.PaxCTA.image";
+    return image.title === "pa.PaxCTA.image";
   })[0];
 
   return (
@@ -50,10 +50,10 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "cl.HomeHero.bgImage"
-            "cl.SafetyCTA.image"
-            "cl.DrvCTA.image"
-            "cl.PaxCTA.image"
+            "pa.HomeHero.bgImage"
+            "pa.SafetyCTA.image"
+            "pa.DrvCTA.image"
+            "pa.PaxCTA.image"
           ]
         }
       }
