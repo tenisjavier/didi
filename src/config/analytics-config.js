@@ -35,6 +35,8 @@ const insertBtnParams = () => {
     } else {
       search = localStorage.getItem("urlSearch") || "";
     }
+  } else {
+    localStorage.setItem("urlSearch", search);
   }
 
   var ga_id = getCookie("_gid");
