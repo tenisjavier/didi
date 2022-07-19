@@ -265,6 +265,61 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
+  rd: {
+    "/": {
+      title: "Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+    },
+    "/pasajero/": {
+      title: "DiDi Pasajero - Baja la App y Viaja Seguro",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Chile. Elige la mejor opción.",
+    },
+    "/driver/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
+    "/taxi/": {
+      title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
+      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+    },
+    "/sobre-didi/": {
+      title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+    },
+    "/seguridad/": {
+      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/centro-de-ayuda/": {
+      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/direcciones/": {
+      title: "Cómo llegar a distintos puntos de Chile",
+      desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
+    },
+    "/guias/": {
+      title: "Guías para Conductores DiDi.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+    },
+    "/articulos/": {
+      title:
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+    },
+    "/ciudades/": {
+      title: "Servicios de DiDi por Ciudad.",
+      desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
+    },
+    "/lugares/": {
+      title: "Viaja a Distintos Lugares de Interés",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
+    "/legal/": {
+      title: "Términos y Condiciones y Políticas de Privacidad.",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
+  },
   au: {
     "/": {
       title: "DiDi Australia - Ride Hailing & Delivery",
