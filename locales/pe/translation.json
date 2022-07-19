@@ -421,10 +421,20 @@
   "DirectionBanner.btnMode": "light",
   "LegalHero.title": "Revisa nuestros Términos y Condiciones",
   "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
+  "LegalHero.btnText": "Términos y Condiciones",
   "LegalHero.textColor": "white",
   "LegalHero.btnMode": "light",
   "LegalHero.linkItem": "/pe/legal/terminos-y-condiciones/",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.textColor": "gray-primary",
-  "LegalCTA.btnMode": "dark"
+  "LegalCTA.btnMode": "dark",
+  "StoreHero.title": "Escanéa el QR con tu celular ",
+  "StoreHero.desc": "Descarga DiDi Pasajero escaneando el código con tu celular",
+  "StoreHero.textColor": "white",
+  "StoreHero.bgColor": "bg-orange-primary",
+  "StoreHero.btnMode": "light",
+  "SmartBannerDrv.title": "DiDi Conductor",
+  "SmartBannerDrv.desc": "Ganancias Extras",
+  "SmartBannerPax.title": "DiDi Pasajero",
+  "SmartBannerPax.desc": "Pide un Viaje"
 }

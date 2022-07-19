@@ -26,7 +26,7 @@ const LegalHero = ({ bgImage }: LegalHeroProp) => {
       ></GatsbyImage>
     ),
     btnMode: t("LegalHero.btnMode"),
-    btnText: "Términos y Condiciones",
+    btnText: t("LegalHero.btnText"),
     btnLink: t("LegalHero.linkItem"),
   };
   return <CTASection {...props}></CTASection>;

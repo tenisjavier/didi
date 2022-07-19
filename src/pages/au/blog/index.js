@@ -7,7 +7,7 @@ import ArticlesHero from "../../../components/sections/ArticlesHero";
 const Article = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "pe.ArticlesHero.bgImage";
+    return image.title === "au.PaxHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["pe.ArticlesHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["au.PaxHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -39,7 +39,10 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "rides" }, country: { code: { eq: "pe" } } }
+      filter: {
+        category: { in: ["rides", "news"] }
+        country: { code: { eq: "au" } }
+      }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {

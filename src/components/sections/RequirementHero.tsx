@@ -3,12 +3,8 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
-interface HomeHeroProps {
-  image?: {
-    title: string;
-    description: string;
-    gatsbyImageData: IGatsbyImageData;
-  };
+interface RequirementHeroProps {
+  title: string;
   bgImage: {
     title: string;
     description: string;
@@ -16,12 +12,14 @@ interface HomeHeroProps {
   };
 }
 
-const HomeHero = ({ bgImage, image }: HomeHeroProps) => {
+const RequirementHero = ({ title, bgImage }: RequirementHeroProps) => {
   const { t } = useTranslation();
+
   const props: CTAProps = {
     hero: true,
-    title: t("HomeHero.title"),
-    textColor: t("HomeHero.textColor"),
+    title: title,
+    textColor: t("RequirementHero.textColor"),
+    btnMode: t("RequirementHero.btnMode"),
     bgImage: (
       <GatsbyImage
         image={bgImage.gatsbyImageData}
@@ -29,20 +27,9 @@ const HomeHero = ({ bgImage, image }: HomeHeroProps) => {
         className="!absolute z-0 h-full w-full md:block "
       ></GatsbyImage>
     ),
-    ...(image && {
-      image: (
-        <GatsbyImage
-          image={image.gatsbyImageData}
-          alt={image.description}
-          className="z-10 m-4 w-80"
-        ></GatsbyImage>
-      ),
-      reverse: true,
-    }),
-    btnMode: t("HomeHero.btnMode"),
-    btnType: "both",
+    btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default HomeHero;
+export default RequirementHero;
