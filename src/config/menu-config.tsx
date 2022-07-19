@@ -215,6 +215,62 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
+  rd: [
+    {
+      text: "DiDi Pasajero",
+      url: "/rd/pasajero/",
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/rd/driver/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/rd/driver/",
+        },
+        {
+          text: "Socio Conductor Moto",
+          url: "/rd/driver/moto/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+      ],
+    },
+    {
+      text: "DiDi Moto",
+      url: "/rd/driver/moto/",
+    },
+    {
+      text: "Acerda de DiDi",
+      url: "/rd/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/rd/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/rd/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/rd/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/rd/articulos/",
+        },
+      ],
+    },
+  ],
   au: [
     {
       text: "DiDi Rider",
@@ -306,30 +362,6 @@ const menuLinks: AllMenuInterface = {
     },
   ],
   cr: [
-    {
-      text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
-    },
-    {
-      text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
-      dropMenu: [
-        {
-          text: "Socio Conductor",
-          url: "https://chile.didiglobal.com/driver/",
-        },
-        {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
-        },
-        {
-          text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
-        },
-      ],
-    },
-  ],
-  rd: [
     {
       text: "DiDi Pasajero",
       url: "http://chile.didiglobal.com/pasajero",
