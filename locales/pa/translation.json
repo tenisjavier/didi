@@ -27,7 +27,7 @@
         "title": "Acerca de Nosotros",
         "desc": "Somos la app de movilidad más grande del mundo.",
         "textColor": "gray-primary",
-        "btnText": "Clic aquí",
+        "btnText": "Saber Más",
         "btnLink": "/pa/centro-de-ayuda/",
         "btnMode": "light",
         "height": "h-80"
@@ -36,7 +36,7 @@
         "title": "Legal",
         "desc": "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor.",
         "textColor": "gray-primary",
-        "btnText": "Clic aquí",
+        "btnText": "Saber Más",
         "btnLink": "/pa/centro-de-ayuda/",
         "btnMode": "light",
         "height": "h-80"
@@ -45,7 +45,7 @@
         "title": "Centro de Ayuda",
         "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte.  ",
         "textColor": "gray-primary",
-        "btnText": "Clic aquí",
+        "btnText": "Saber Más",
         "btnLink": "/pa/centro-de-ayuda/",
         "btnMode": "light",
         "height": "h-80"
@@ -466,6 +466,7 @@
     "LegalHero.textColor": "white",
     "LegalHero.btnMode": "light",
     "LegalHero.linkItem": "/pa/legal/terminos-y-condiciones/",
+    "LegalHero.btnText": "Términos y Condiciones",
     "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
     "LegalCTA.textColor": "gray-primary",
     "LegalCTA.btnMode": "dark"
