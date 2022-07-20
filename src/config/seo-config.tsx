@@ -375,6 +375,9 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Select you next discount for your next ride",
     },
   },
+  pa: {
+
+  },
 };
 
 //@desc func that is used in SEO component for getting the title and desc of a page
