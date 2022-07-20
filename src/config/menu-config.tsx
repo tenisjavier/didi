@@ -357,6 +357,24 @@ const menuLinks: AllMenuInterface = {
       url: "/do/driver/moto/",
     },
     {
+      text: "DiDi Food",
+      url: "/do/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/do/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/do/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/do/food/about/",
+        },
+      ],
+    },
+    {
       text: "Acerda de DiDi",
       url: "/do/sobre-didi/",
       dropMenu: [
