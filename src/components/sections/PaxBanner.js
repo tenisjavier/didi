@@ -5,14 +5,12 @@ import Banner from "../Banner";
 const PaxBanner = () => {
   const { t } = useTranslation();
   const props = {
-    data: {
-      title: t("PaxBanner.title"),
-      desc: t("PaxBanner.desc"),
-      bgColor: t("PaxBanner.bgColor"),
-      textColor: t("PaxBanner.textColor"),
-      btnMode: t("PaxBanner.btnMode"),
-      btnType: "drv",
-    },
+    title: t("PaxBanner.title"),
+    desc: t("PaxBanner.desc"),
+    bgColor: t("PaxBanner.bgColor"),
+    textColor: t("PaxBanner.textColor"),
+    btnMode: t("PaxBanner.btnMode"),
+    btnType: "drv",
   };
 
   return <Banner {...props}></Banner>;
