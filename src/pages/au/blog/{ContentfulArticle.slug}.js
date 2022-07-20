@@ -17,8 +17,6 @@ const ArticleTemplate = ({ data }) => {
   );
 };
 
-export default ArticleTemplate;
-
 export const query = graphql`
   query ($id: String, $language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
@@ -52,8 +50,8 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: {
-        category: { eq: "rides" }
-        country: { code: { eq: "ar" } }
+        category: { in: ["rides", "news"] }
+        country: { code: { eq: "au" } }
         id: { ne: $id }
       }
       sort: { fields: content___references___createdAt, order: DESC }
@@ -61,6 +59,7 @@ export const query = graphql`
     ) {
       nodes {
         title
+        slug
         excerpt
         featuredImage {
           gatsbyImageData
@@ -69,3 +68,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ArticleTemplate;

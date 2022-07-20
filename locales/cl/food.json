@@ -75,6 +75,10 @@
       "linkItem": "https://d.didiglobal.com/3cikL"
     }
   ],
+
+  "Requirements.title": "Requerimientos para ser Socio Restaurante",
+  "Requirements.bgColor": "bg-gray-light",
+  "Requirements.textColor": "bg-white",
   "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
   "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
   "FoodDeliveryHero.textColor": "white",
