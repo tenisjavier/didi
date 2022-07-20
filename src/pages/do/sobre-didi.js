@@ -11,19 +11,19 @@ const SobreDiDi = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
 
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "rd.AboutHero.bgImage";
+    return image.title === "do.AboutHero.bgImage";
   })[0];
 
   const AboutCTAImage = images.filter((image) => {
-    return image.title === "rd.AboutCTA.image";
+    return image.title === "do.AboutCTA.image";
   })[0];
 
   const AboutGlobalCTAImage = images.filter((image) => {
-    return image.title === "rd.HelloCTA.image";
+    return image.title === "do.HelloCTA.image";
   })[0];
 
   const AboutCountryCTAImage = images.filter((image) => {
-    return image.title === "rd.CountryCTA.image";
+    return image.title === "do.CountryCTA.image";
   })[0];
 
   return (
@@ -54,12 +54,12 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "rd.AboutHero.bgImage"
-            "rd.HelloCTA.image"
-            "rd.AboutCTA.image"
-            "rd.CountryCTA.image"
-            "rd.SafetyHero.bgImage"
-            "rd.HelpCenterHero.bgImage"
+            "do.AboutHero.bgImage"
+            "do.HelloCTA.image"
+            "do.AboutCTA.image"
+            "do.CountryCTA.image"
+            "do.SafetyHero.bgImage"
+            "do.HelpCenterHero.bgImage"
           ]
         }
       }

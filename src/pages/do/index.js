@@ -6,24 +6,23 @@ import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HelloCTA from "../../components/sections/HelloCTA";
-import HelpCenterCTA from "../../components/sections/HelpCenterHero";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "rd.HomeHero.bgImage";
+    return image.title === "do.HomeHero.bgImage";
   })[0];
   const safetyCTAImage = images.filter((image) => {
-    return image.title === "rd.SafetyCTA.image";
+    return image.title === "do.SafetyCTA.image";
   })[0];
   const drvCTAImage = images.filter((image) => {
-    return image.title === "rd.DrvCTA.image";
+    return image.title === "do.DrvCTA.image";
   })[0];
   const paxCTAImage = images.filter((image) => {
-    return image.title === "rd.PaxCTA.image";
+    return image.title === "do.PaxCTA.image";
   })[0];
   const helloImage = images.filter((image) => {
-    return image.title === "rd.HelloCTA.image";
+    return image.title === "do.HelloCTA.image";
   })[0];
 
   return (
@@ -54,11 +53,11 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "rd.HomeHero.bgImage"
-            "rd.HelloCTA.image"
-            "rd.SafetyCTA.image"
-            "rd.DrvCTA.image"
-            "rd.PaxCTA.image"
+            "do.HomeHero.bgImage"
+            "do.HelloCTA.image"
+            "do.SafetyCTA.image"
+            "do.DrvCTA.image"
+            "do.PaxCTA.image"
           ]
         }
       }

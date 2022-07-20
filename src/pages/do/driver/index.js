@@ -11,16 +11,13 @@ import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "rd.DrvHero.bgImage";
+    return image.title === "do.DrvHero.bgImage";
   })[0];
   const drvWhyDiDiImage = images.filter((image) => {
-    return image.title === "rd.DrvWhyDiDi.image";
+    return image.title === "do.DrvWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
-
-  const cities = (data.contentfulCountry.city != null) ? data.contentfulCountry.city : "";
-
-  console.log(data.contentfulCountry.city, cities);
+  const cities = data.contentfulCountry.city;
 
   return (
     <Layout>
@@ -29,7 +26,7 @@ const Driver = ({ data }) => {
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
-      <DrvCityList data={cities}></DrvCityList>
+      {cities != null && <DrvCityList data={cities}></DrvCityList>}
     </Layout>
   );
 };
@@ -51,9 +48,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "rd.DrvHero.bgImage"
-            "rd.DrvWhyDiDi.image"
-            "rd.DrvFeatures.image"
+            "do.DrvHero.bgImage"
+            "do.DrvWhyDiDi.image"
+            "do.DrvFeatures.image"
           ]
         }
       }
@@ -67,7 +64,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "rd" } } }
+        country: { elemMatch: { code: { eq: "do" } } }
         category: { eq: "driver" }
       }
     ) {
@@ -86,7 +83,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "rd" }) {
+    contentfulCountry(code: { eq: "do" }) {
       city {
         name
       }

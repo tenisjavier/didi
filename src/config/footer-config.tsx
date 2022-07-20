@@ -17,13 +17,12 @@ const footerLinks: AllFooterInterface = {
     { text: "Seguridad", link: "/cl/seguridad/" },
     { text: "Legal", link: "/cl/legal/" },
   ],
-  rd: [
-    { text: "Pasajero", link: "/cl/pasajero/" },
-    { text: "Socio Conductor", link: "/cl/driver/" },
-    { text: "Lugares", link: "/cl/lugares/" },
-    { text: "DiDi Taxi", link: "/cl/taxi/" },
-    { text: "Seguridad", link: "/cl/seguridad/" },
-    { text: "Legal", link: "/cl/legal/" },
+  do: [
+    { text: "Pasajero", link: "/do/pasajero/" },
+    { text: "Socio Conductor", link: "/do/driver/" },
+    { text: "Lugares", link: "/do/lugares/" },
+    { text: "DiDi Moto", link: "/do/driver/moto/" },
+    { text: "Seguridad", link: "/do/seguridad/" },
   ],
   ar: [
     { text: "Pasajero", link: "/ar/pasajero/" },
@@ -47,14 +46,6 @@ const footerLinks: AllFooterInterface = {
     { text: "DiDi Taxi", link: "/co/taxi/" },
     { text: "Seguridad", link: "/co/seguridad/" },
     { text: "Legal", link: "/co/legal/" },
-  ],
-  rd: [
-    { text: "Pasajero", link: "/rd/pasajero/" },
-    { text: "Socio Conductor", link: "/rd/driver/" },
-    { text: "Lugares", link: "/rd/lugares/" },
-    { text: "DiDi Taxi", link: "/rd/taxi/" },
-    { text: "Seguridad", link: "/rd/seguridad/" },
-    { text: "Legal", link: "/rd/legal/" },
   ],
   au: [
     { text: "DiDi Rider", link: "/au/rider/" },

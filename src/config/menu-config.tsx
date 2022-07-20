@@ -215,62 +215,6 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-  rd: [
-    {
-      text: "DiDi Pasajero",
-      url: "/rd/pasajero/",
-    },
-    {
-      text: "DiDi Conductor",
-      url: "/rd/driver/",
-      dropMenu: [
-        {
-          text: "Socio Conductor",
-          url: "/rd/driver/",
-        },
-        {
-          text: "Socio Conductor Moto",
-          url: "/rd/driver/moto/",
-        },
-        {
-          text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
-        },
-      ],
-    },
-    {
-      text: "DiDi Moto",
-      url: "/rd/driver/moto/",
-    },
-    {
-      text: "Acerda de DiDi",
-      url: "/rd/sobre-didi/",
-      dropMenu: [
-        {
-          text: "Seguridad",
-          url: "/rd/seguridad/",
-        },
-        {
-          text: "Centro de Ayuda",
-          url: "/rd/centro-de-ayuda/",
-        },
-      ],
-    },
-    {
-      text: "Contenido",
-      url: "#",
-      dropMenu: [
-        {
-          text: "Guías",
-          url: "/rd/guias/",
-        },
-        {
-          text: "Artículos",
-          url: "/rd/articulos/",
-        },
-      ],
-    },
-  ],
   au: [
     {
       text: "DiDi Rider",
@@ -385,7 +329,62 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-
+  do: [
+    {
+      text: "DiDi Pasajero",
+      url: "/do/pasajero/",
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/do/driver/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/do/driver/",
+        },
+        {
+          text: "Socio Conductor Moto",
+          url: "/do/driver/moto/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+      ],
+    },
+    {
+      text: "DiDi Moto",
+      url: "/do/driver/moto/",
+    },
+    {
+      text: "Acerda de DiDi",
+      url: "/do/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/do/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/do/centro-de-ayuda/",
+        }
+      ]
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/do/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/do/articulos/",
+        },
+      ],
+    },
+  ],
   mx: [
     {
       text: "Home",

@@ -13,7 +13,7 @@ const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "rd.DrvHero.bgImage";
+    return image.title === "do.DrvHero.bgImage";
   })[0];
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
@@ -35,7 +35,7 @@ const DrvCity = ({ data }) => {
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
 
-      <DrvCityList data={cities}></DrvCityList>
+      {cities != null && <DrvCityList data={cities}></DrvCityList>}
     </Layout>
   );
 };
@@ -70,7 +70,7 @@ export const query = graphql`
         lon
       }
     }
-    allContentfulAsset(filter: { title: { in: ["rd.DrvHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["do.DrvHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -112,7 +112,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "rd" }) {
+    contentfulCountry(code: { eq: "do" }) {
       name
       city {
         name

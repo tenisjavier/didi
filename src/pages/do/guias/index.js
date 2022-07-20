@@ -1,23 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import ArticlesColumns from "../../../components/sections/ArticlesColumns";
-import ArticlesHero from "../../../components/sections/ArticlesHero";
+import GuidesHero from "../../../components/sections/DrvHero";
+import GuidesColumns from "../../../components/sections/GuidesColumns";
 
-const Article = ({ data }) => {
+const Guias = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "rd.ArticlesHero.bgImage";
+  const guidesHeroBgImage = images.filter((image) => {
+    return image.title === "do.GuidesHero.bgImage";
   })[0];
   return (
     <Layout>
-      <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
-      <ArticlesColumns data={data}></ArticlesColumns>
+      <GuidesHero bgImage={guidesHeroBgImage}></GuidesHero>
+      <GuidesColumns data={data}></GuidesColumns>
     </Layout>
   );
 };
 
-export default Article;
+export default Guias;
 
 export const query = graphql`
   query ($language: String!) {
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["rd.ArticlesHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["do.GuidesHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -38,8 +38,8 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulArticle(
-      filter: { category: { eq: "rides" }, country: { code: { eq: "rd" } } }
+    allContentfulGuide(
+      filter: { country: { code: { eq: "do" } } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {

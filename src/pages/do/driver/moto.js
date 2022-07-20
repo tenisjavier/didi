@@ -13,18 +13,18 @@ const Driver = ({ data }) => {
   const columnsImages = [];
 
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "rd.DrvMotoHero.bgImage";
+    return image.title === "do.DrvMotoHero.bgImage";
   })[0];
 
   const safetyCTAImage = images.filter((image) => {
-    return image.title === "rd.SafetyCTA.image";
+    return image.title === "do.SafetyCTA.image";
   })[0];
 
   const drvColumnsImage = images.filter((image) => {
-    if(image.title === "rd.DrvColumns.image") {
+    if(image.title === "do.DrvColumns.image") {
       columnsImages.push(image);
     }
-    return image.title === "rd.DrvColumns.image";
+    return image.title === "do.DrvColumns.image";
   })[0];
   
   const products = data.allContentfulProduct.nodes;
@@ -57,9 +57,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "rd.DrvMotoHero.bgImage"
-            "rd.DrvColumns.image"
-            "rd.SafetyCTA.image"
+            "do.DrvMotoHero.bgImage"
+            "do.DrvColumns.image"
+            "do.SafetyCTA.image"
           ]
         }
       }
@@ -73,7 +73,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "rd" } } }
+        country: { elemMatch: { code: { eq: "do" } } }
         category: { eq: "driver" }
       }
     ) {
@@ -92,7 +92,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "rd" }) {
+    contentfulCountry(code: { eq: "do" }) {
       city {
         name
       }
