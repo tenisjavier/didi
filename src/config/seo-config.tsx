@@ -342,6 +342,10 @@ const seoMeta: AllSEOMetaInterface = {
         "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
       desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
+    "/legal/": {
+      title: "Términos y Condiciones y Políticas de Privacidad.",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
   },
   au: {
     "/": {

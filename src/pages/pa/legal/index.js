@@ -35,7 +35,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cl.HomeHero.bgImage", "pa.PaxCTA.image"] } }
+      filter: { title: { in: ["pa.HomeHero.bgImage", "pa.PaxCTA.image"] } }
     ) {
       nodes {
         id
