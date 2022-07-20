@@ -13,10 +13,10 @@ const Seguridad = ({ data }) => {
   })[0];
 
   const safetyColumnsImage = images.filter((image) => {
-    if(image.title === "rd.SafetyColumns.image") {
+    if(image.title === "pa.SafetyColumns.image") {
       columnsImages.push(image);
     }
-    return image.title === "rd.SafetyColumns.image";
+    return image.title === "pa.SafetyColumns.image";
   })[0];
 
   return (
@@ -45,7 +45,7 @@ export const query = graphql`
         title: {
           in: [
             "pa.SafetyHero.bgImage"
-            "rd.SafetyColumns.image"
+            "pa.SafetyColumns.image"
           ]
         }
       }
