@@ -1,0 +1,51 @@
+import React from "react";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+import CTASection, { CTAProps } from "../CTASection";
+
+interface PartnersHeroProps {
+  bgImage?: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
+  image?: {
+    title: string;
+    description: string;
+    gatsbyImageData: IGatsbyImageData;
+  };
+}
+
+const OffersHero = ({ bgImage, image }: PartnersHeroProps) => {
+  const { t } = useTranslation();
+  const props: CTAProps = {
+    hero: true,
+    title: t("OffersHero.title"),
+    desc: t("OffersHero.desc"),
+    textColor: t("OffersHero.textColor"),
+    bgColor: t("OffersHero.bgColor"),
+    ...(bgImage && {
+      bgImage: (
+        <GatsbyImage
+          image={bgImage.gatsbyImageData!}
+          alt={bgImage.description}
+          className="!absolute z-0 h-full w-full brightness-75 md:block"
+        ></GatsbyImage>
+      ),
+    }),
+    ...(image && {
+      image: (
+        <GatsbyImage
+          image={image.gatsbyImageData!}
+          alt={image.description}
+          className="z-10 m-4 w-100 rounded"
+        ></GatsbyImage>
+      ),
+    }),
+    btnMode: t("OffersHero.btnMode"),
+    btnType: "pax",
+  };
+  return <CTASection {...props}></CTASection>;
+};
+
+export default OffersHero;
