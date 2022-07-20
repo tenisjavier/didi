@@ -246,6 +246,10 @@ const menuLinks: AllMenuInterface = {
           text: "Driver Help",
           url: "/au/driver/help/",
         },
+        {
+          text: "Cities",
+          url: "/au/cities/",
+        },
       ],
     },
     {
@@ -335,26 +339,58 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-  rd: [
+  do: [
     {
       text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
+      url: "/do/pasajero/",
     },
     {
       text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
+      url: "/do/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "https://chile.didiglobal.com/driver/",
+          url: "/do/driver/",
         },
         {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
+          text: "Socio Conductor Moto",
+          url: "/do/driver/moto/",
         },
         {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+      ],
+    },
+    {
+      text: "DiDi Moto",
+      url: "/do/driver/moto/",
+    },
+    {
+      text: "Acerda de DiDi",
+      url: "/do/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/do/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/do/centro-de-ayuda/",
+        }
+      ]
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/do/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/do/articulos/",
         },
       ],
     },

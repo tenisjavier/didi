@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -50,4 +51,6 @@ const SafetyColumns = ({ images, icons }: SafetyColumnsProps) => {
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
+
 export default SafetyColumns;
+

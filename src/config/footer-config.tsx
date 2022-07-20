@@ -17,6 +17,13 @@ const footerLinks: AllFooterInterface = {
     { text: "Seguridad", link: "/cl/seguridad/" },
     { text: "Legal", link: "/cl/legal/" },
   ],
+  do: [
+    { text: "Pasajero", link: "/do/pasajero/" },
+    { text: "Socio Conductor", link: "/do/driver/" },
+    { text: "Lugares", link: "/do/lugares/" },
+    { text: "DiDi Moto", link: "/do/driver/moto/" },
+    { text: "Seguridad", link: "/do/seguridad/" },
+  ],
   ar: [
     { text: "Pasajero", link: "/ar/pasajero/" },
     { text: "Socio Conductor", link: "/ar/driver/" },
@@ -43,9 +50,9 @@ const footerLinks: AllFooterInterface = {
   au: [
     { text: "DiDi Rider", link: "/au/rider/" },
     { text: "DiDi Driver", link: "/au/driver/" },
-    { text: "DiDi Delivery", link: "/au/delivery/" },
-    { text: "Places", link: "/au/places/" },
-    { text: "Safety", link: "/au/safety/" },
+    { text: "Blog", link: "/au/blog/" },
+    { text: "Career", link: "/au/career/" },
+    { text: "Offers", link: "/au/offers/" },
     { text: "Legal", link: "/au/legal/" },
   ],
   pa: [

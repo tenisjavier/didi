@@ -54,7 +54,7 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+      filter: { country: { code: { eq: "do" } }, id: { ne: $id } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {
