@@ -387,6 +387,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Work at DiDi",
       desc: "¿Why work at DiDi Australia? Courageous Goals. Engaging Challenges.Tremendous Impact.",
     },
+    "/offers/": {
+      title: "Best Offers in DiDi",
+      desc: "Select you next discount for your next ride",
+    },
   },
 };
 
