@@ -112,19 +112,19 @@ const seoMeta: AllSEOMetaInterface = {
   do: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
     },
     "/pasajero/": {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
-      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Chile. Elige la mejor opción.",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en República Dominicana. Elige la mejor opción.",
     },
     "/driver/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
     },
     "/moto/": {
-      title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+      title: "DiDi Moto - Maneja y Genera Dinero",
+      desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -146,7 +146,7 @@ const seoMeta: AllSEOMetaInterface = {
       title:
         "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
       desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
-    }
+    },
   },
   ar: {
     "/": {
