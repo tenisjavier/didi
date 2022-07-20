@@ -9,14 +9,14 @@ const Seguridad = ({ data }) => {
   const columnsImages = [];
 
   const safetyHeroBgImage = images.filter((image) => {
-    return image.title === "rd.SafetyHero.bgImage";
+    return image.title === "do.SafetyHero.bgImage";
   })[0];
 
   const safetyColumnsImage = images.filter((image) => {
-    if(image.title === "rd.SafetyColumns.image") {
+    if(image.title === "do.SafetyColumns.image") {
       columnsImages.push(image);
     }
-    return image.title === "rd.SafetyColumns.image";
+    return image.title === "do.SafetyColumns.image";
   })[0];
   return (
     <Layout>
@@ -43,8 +43,8 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "rd.SafetyHero.bgImage"
-            "rd.SafetyColumns.image"
+            "do.SafetyHero.bgImage"
+            "do.SafetyColumns.image"
           ]
         }
       }

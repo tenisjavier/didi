@@ -1,21 +1,27 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import ArticleHero from "../../../components/sections/ArticleHero";
-import ArticleContent from "../../../components/sections/ArticleContent";
+import GuideHero from "../../../components/sections/GuideHero";
+import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
-import ArticlesColumns from "../../../components/sections/ArticlesColumns";
+import GuidesColumns from "../../../components/sections/GuidesColumns";
 
-const ArticleTemplate = ({ data }) => {
+const GuideTemplate = ({ data }) => {
+  const richContent = data.contentfulGuide.content;
   return (
     <Layout>
-      <ArticleHero data={data}></ArticleHero>
-      <ArticleContent data={data}></ArticleContent>
+      <GuideHero data={data}></GuideHero>
+      <section className="container mx-auto mb-32 text-gray-primary md:px-28">
+        <RichContent richContent={richContent}></RichContent>
+      </section>
+
       <PaxBanner></PaxBanner>
-      <ArticlesColumns data={data}></ArticlesColumns>
+      <GuidesColumns data={data}></GuidesColumns>
     </Layout>
   );
 };
+
+export default GuideTemplate;
 
 export const query = graphql`
   query ($id: String, $language: String!) {
@@ -28,10 +34,9 @@ export const query = graphql`
         }
       }
     }
-    contentfulArticle(id: { eq: $id }) {
+    contentfulGuide(id: { eq: $id }) {
       title
       excerpt
-      updatedAt
       content {
         raw
         references {
@@ -48,12 +53,8 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulArticle(
-      filter: {
-        category: { eq: "rides" }
-        country: { code: { eq: "rd" } }
-        id: { ne: $id }
-      }
+    allContentfulGuide(
+      filter: { country: { code: { eq: "do" } }, id: { ne: $id } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {
@@ -67,5 +68,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default ArticleTemplate;

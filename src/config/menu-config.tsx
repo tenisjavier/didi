@@ -325,22 +325,22 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-  rd: [
+  do: [
     {
       text: "DiDi Pasajero",
-      url: "/rd/pasajero/",
+      url: "/do/pasajero/",
     },
     {
       text: "DiDi Conductor",
-      url: "/rd/driver/",
+      url: "/do/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/rd/driver/",
+          url: "/do/driver/",
         },
         {
           text: "Socio Conductor Moto",
-          url: "/rd/driver/moto/",
+          url: "/do/driver/moto/",
         },
         {
           text: "Regístrate Online",
@@ -350,19 +350,19 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Moto",
-      url: "/rd/driver/moto/",
+      url: "/do/driver/moto/",
     },
     {
       text: "Acerda de DiDi",
-      url: "/rd/sobre-didi/",
+      url: "/do/sobre-didi/",
       dropMenu: [
         {
           text: "Seguridad",
-          url: "/rd/seguridad/",
+          url: "/do/seguridad/",
         },
         {
           text: "Centro de Ayuda",
-          url: "/rd/centro-de-ayuda/",
+          url: "/do/centro-de-ayuda/",
         }
       ]
     },
@@ -372,11 +372,11 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "Guías",
-          url: "/rd/guias/",
+          url: "/do/guias/",
         },
         {
           text: "Artículos",
-          url: "/rd/articulos/",
+          url: "/do/articulos/",
         },
       ],
     },

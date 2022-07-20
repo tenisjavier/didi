@@ -9,7 +9,7 @@ import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
-    return image.title === "cl.PaxHero.bgImage";
+    return image.title === "do.PaxHero.bgImage";
   })[0];
   const products = data.allContentfulProduct.nodes;
   return (
@@ -39,7 +39,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cl.PaxHero.bgImage", "cl.PaxWhyDiDi.image"] } }
+      filter: { title: { in: ["do.PaxHero.bgImage", "do.PaxWhyDiDi.image"] } }
     ) {
       nodes {
         id
@@ -50,7 +50,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "rd" } } }
+        country: { elemMatch: { code: { eq: "do" } } }
         category: { eq: "driver" }
       }
     ) {
