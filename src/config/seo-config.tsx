@@ -311,7 +311,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/pasajero/": {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
-      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Panamá. Elige la mejor opción.",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express y DiDi Moto están activos en Panamá. Elige la mejor opción.",
     },
     "/driver/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
@@ -414,7 +414,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Select you next discount for your next ride",
     },
   },
-  pa: {},
+
+
 };
 
 //@desc func that is used in SEO component for getting the title and desc of a page
