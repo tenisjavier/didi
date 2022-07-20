@@ -23,6 +23,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Lugares", link: "/do/lugares/" },
     { text: "DiDi Moto", link: "/do/driver/moto/" },
     { text: "Seguridad", link: "/do/seguridad/" },
+    { text: "Legal", link: "/do/legal/" },
   ],
   ar: [
     { text: "Pasajero", link: "/ar/pasajero/" },
