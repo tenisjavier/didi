@@ -27,7 +27,7 @@ const OffersGrid = ({ data }) => {
             alt={offer.image.description}
             width={700}
             height={700}
-            className="z-10 m-4"
+            className="z-10 m-4 max-h-44"
           ></GatsbyImage>
         </Link>
       ),

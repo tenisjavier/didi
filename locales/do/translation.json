@@ -470,7 +470,7 @@
   "HelpCenterHero.title": "Centro de Ayuda",
   "HelpCenterHero.desc": "Conoce las principales preguntas que nos hacen pasajeros y socios conductores",
   "HelpCenterHero.textColor": "white",
-  "HelpCenterHero.btnMode": "primary",
+  "HelpCenterHero.btnMode": "light",
   "HelpCenterFAQDrv.title": "Preguntas Socios Conductores",
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
