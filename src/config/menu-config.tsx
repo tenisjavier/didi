@@ -314,6 +314,20 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/pa/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/pa/articulos/",
+        },
+      ],
+    },
   ],
   cr: [
     {
