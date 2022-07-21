@@ -417,6 +417,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Help Center",
       desc: "FAQs for DiDi riders and drivers.",
     },
+    "/contact/": {
+      title: "Contact Our Costumer Support Center",
+      desc: "DiDi Customer Support can assist you with any enquiries, issues, or questions you have with DiDi.",
+    },
     "/blog/": {
       title: "DiDi Australia Blog",
       desc: "Latest updates and articles from DiDi Austrlia.",

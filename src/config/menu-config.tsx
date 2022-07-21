@@ -278,6 +278,10 @@ const menuLinks: AllMenuInterface = {
           text: "Help Center",
           url: "/au/help-center/",
         },
+        {
+          text: "Costumer Support",
+          url: "/au/contact/",
+        },
       ],
     },
   ],

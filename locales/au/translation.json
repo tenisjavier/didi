@@ -451,6 +451,46 @@
   "HelpCenterFAQPax.title": "FAQ Riders",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
+  "ContactHero.title": "Contact Us",
+  "ContactHero.desc": "If you have a problem please contact with our support team",
+  "ContactHero.textColor": "white",
+  "ContactHero.btnMode": "primary",
+  "ContactHero.btnText": "Call Costumer Support",
+  "ContactHero.btnLink": "tel:1800413678",
+  "ContactBenefits.title": "We are here to listen to you.",
+  "ContactBenefits.bgColor": "bg-white",
+  "ContactBenefits.textColor": "gray-primary",
+  "ContactBenefits.columns": [
+    {
+      "title": "What do you need?",
+      "desc": "DiDi Customer Support can assist you with any enquiries, issues, or questions you have with DiDi.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Call us",
+      "desc": "You can speak to our Customer Support Team by calling 1800 413 678.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Email us",
+      "desc": "Need further information, you can contact DiDi Customer Support directly via email at help.driver@au.didiglobal.com or help.rider@au.didiglobal.com ",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Urgent Contact",
+      "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team on +61 2 8488 0901 or via email at help.safety@didiglobal.com",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+
+      "width": "w-64"
+    }
+  ],
   "ArticlesHero.title": "DiDi Blog",
   "ArticlesHero.desc": "Covid-19 Updates and latest news of DiDi",
   "ArticlesHero.textColor": "white",
