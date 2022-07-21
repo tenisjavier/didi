@@ -294,6 +294,10 @@ const menuLinks: AllMenuInterface = {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/padriverhero",
         },
+        {
+          text: "Ciudades Operativas",
+          url: "/pa/ciudades/",
+        },
       ],
     },
     {
@@ -373,6 +377,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/do/ciudades/",
         },
       ],
     },
