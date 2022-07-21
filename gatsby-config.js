@@ -18,6 +18,18 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `DiDi Global`,
+        short_name: `DiDi Global`,
+        start_url: `/`,
+        background_color: `#FF7D41`,
+        theme_color: `#FF7D41`,
+        display: `standalone`,
+        icon: `src/images/DDlogo.ico`
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
