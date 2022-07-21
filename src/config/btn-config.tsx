@@ -55,7 +55,7 @@ const btnLinks: AllBtnInterface = {
   co: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/codriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate Online",
+    drvText: "Regístrate como Conductor",
     paxText: "Descarga Didi Pasajero",
   },
   au: {
@@ -65,7 +65,7 @@ const btnLinks: AllBtnInterface = {
     paxText: "Ride with DiDi",
   },
   do: {
-    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/rddriverhero",
+    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
@@ -85,7 +85,7 @@ const btnLinks: AllBtnInterface = {
   pa: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/padriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Descarga DiDi Conductor",
+    drvText: "Regístrate como Conductor",
     paxText: "Descarga Didi Pasajero",
   },
   mx: {

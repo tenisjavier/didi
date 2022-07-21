@@ -6,22 +6,18 @@ import SafetyColumns from "../../components/sections/SafetyColumns";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const columnsImages = [];
 
   const safetyHeroBgImage = images.filter((image) => {
     return image.title === "do.SafetyHero.bgImage";
   })[0];
 
   const safetyColumnsImage = images.filter((image) => {
-    if(image.title === "do.SafetyColumns.image") {
-      columnsImages.push(image);
-    }
     return image.title === "do.SafetyColumns.image";
-  })[0];
+  });
   return (
     <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
-      <SafetyColumns images={columnsImages.reverse()}></SafetyColumns>
+      <SafetyColumns images={safetyColumnsImage.reverse()}></SafetyColumns>
     </Layout>
   );
 };
@@ -41,12 +37,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: {
-          in: [
-            "do.SafetyHero.bgImage"
-            "do.SafetyColumns.image"
-          ]
-        }
+        title: { in: ["do.SafetyHero.bgImage", "do.SafetyColumns.image"] }
       }
     ) {
       nodes {
