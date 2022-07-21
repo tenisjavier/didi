@@ -10,11 +10,14 @@ import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const columnsImages = [];
 
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "do.DrvMotoHero.bgImage";
   })[0];
+
+  const drvColumnsImage = images.filter((image) => {
+    return image.title === "do.DrvColumns.image";
+  });
 
   const safetyCTAImage = images.filter((image) => {
     return image.title === "do.SafetyCTA.image";
@@ -24,7 +27,7 @@ const Driver = ({ data }) => {
   return (
     <Layout>
       <DrvMotoHero bgImage={drvHeroBgImage}></DrvMotoHero>
-      <DrvColumns images={columnsImages.reverse()}></DrvColumns>
+      <DrvColumns images={drvColumnsImage.reverse()}></DrvColumns>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
