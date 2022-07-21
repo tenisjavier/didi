@@ -314,6 +314,46 @@
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
+  "ContactHero.title": "Contactanos",
+  "ContactHero.desc": "If you have a problem please contact with our support team",
+  "ContactHero.textColor": "white",
+  "ContactHero.btnMode": "primary",
+  "ContactHero.btnText": "Call Costumer Support",
+  "ContactHero.btnLink": "tel:+541153534474",
+  "ContactBenefits.title": "Si sos usuario, conductor o prensa contactanos",
+  "ContactBenefits.bgColor": "bg-white",
+  "ContactBenefits.textColor": "gray-primary",
+  "ContactBenefits.columns": [
+    {
+      "title": "¿Con qué necesitás ayuda?",
+      "desc": "Servicio al Cliente te ayuda con problemas o posibles preguntas que podés tener con DiDi",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Contactate con Nosotros",
+      "desc": "Contás con DiDi 24/7 para escucharte, para ayudarte. Contactanos: Si sos Socio Conductor +54 (11) 5353-4474",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Email us",
+      "desc": "Need further information, you can contact DiDi Customer Support directly via email at help.driver@au.didiglobal.com or help.rider@au.didiglobal.com ",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "¿Sos de la Prensa Argentina?",
+      "desc": "Si formás parte de la prensa Argentina, ¡no dudes en ponerte en contacto con nosotros! argentinaprensa@didiglobal.com",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+
+      "width": "w-64"
+    }
+  ],
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Enterate de lugares interesantes y divertidos de ir a visitar. Tomá un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
