@@ -5,7 +5,6 @@ import AboutHero from "../../components/sections/AboutHero";
 import AboutCTA from "../../components/sections/AboutCTA";
 import AboutGlobalCTA from "../../components/sections/AboutGlobalCTA";
 import AboutCountryCTA from "../../components/sections/AboutCountryCTA";
-import AboutColumns from "../../components/sections/AboutColumns";
 
 const SobreDiDi = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -30,8 +29,14 @@ const SobreDiDi = ({ data }) => {
     <Layout>
       <AboutHero bgImage={homeHeroBgImage}></AboutHero>
       <AboutCTA image={AboutCTAImage} bullets={false}></AboutCTA>
-      <AboutGlobalCTA image={AboutGlobalCTAImage} bullets={false}></AboutGlobalCTA>
-      <AboutCountryCTA image={AboutCountryCTAImage} bullets={false}></AboutCountryCTA>
+      <AboutGlobalCTA
+        image={AboutGlobalCTAImage}
+        bullets={false}
+      ></AboutGlobalCTA>
+      <AboutCountryCTA
+        image={AboutCountryCTAImage}
+        bullets={false}
+      ></AboutCountryCTA>
       {/* <AboutColumns images={columnsImages}></AboutColumns> */}
     </Layout>
   );

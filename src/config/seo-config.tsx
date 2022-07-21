@@ -126,6 +126,26 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Moto - Maneja y Genera Dinero",
       desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
+    "/food/": {
+      title: "Pide comida a través de DiDi Food",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/store/": {
+      title: "Inscribe tu Comercio en DiDi Food",
+      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/delivery/": {
+      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/about/": {
+      title: "La App de Comida Más Confiable",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/blog/": {
+      title: "Artículos de Comida y Restaurantes",
+      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -418,8 +438,6 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Select you next discount for your next ride",
     },
   },
-
-
 };
 
 //@desc func that is used in SEO component for getting the title and desc of a page

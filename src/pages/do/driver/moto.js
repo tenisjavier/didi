@@ -20,13 +20,6 @@ const Driver = ({ data }) => {
     return image.title === "do.SafetyCTA.image";
   })[0];
 
-  const drvColumnsImage = images.filter((image) => {
-    if(image.title === "do.DrvColumns.image") {
-      columnsImages.push(image);
-    }
-    return image.title === "do.DrvColumns.image";
-  })[0];
-  
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>

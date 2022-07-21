@@ -562,5 +562,9 @@
   "LegalHero.btnText": "Términos y Condiciones",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.textColor": "gray-primary",
-  "LegalCTA.btnMode": "dark"
+  "LegalCTA.btnMode": "dark",
+  "SmartBannerDrv.title": "DiDi Conductor",
+  "SmartBannerDrv.desc": "Ganancias Extras",
+  "SmartBannerPax.title": "DiDi Pasajero",
+  "SmartBannerPax.desc": "Pide un Viaje"
 }

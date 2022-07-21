@@ -292,7 +292,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/padriverhero",
         },
       ],
     },
@@ -358,7 +358,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
         },
       ],
     },
@@ -395,8 +395,8 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Centro de Ayuda",
           url: "/do/centro-de-ayuda/",
-        }
-      ]
+        },
+      ],
     },
     {
       text: "Contenido",
