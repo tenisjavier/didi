@@ -168,4 +168,76 @@
   "SmartBannerDrv.desc": "Ganancias Extras",
   "SmartBannerPax.title": "DiDi Pasajero",
   "SmartBannerPax.desc": "Pide un Viaje"
+  "FoodContactHero.title": "Contáctanos",
+  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamar o escribirnos.",
+  "FoodContactHero.textColor": "white",
+  "FoodContactHero.btnText": "Llamar a Soporte",
+  "FoodContactHero.btnLink": "+56227120527",
+  "FoodContactHero.btnMode": "light",
+  "FoodContact.contactSections": [
+    {
+      "title": "Soporte para Usuarios",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Teléfono",
+          "info": "(+56) 227120527",
+          "infoColor": { "color": "#ff7d41" }
+        }
+      ]
+    },
+    {
+      "title": "Soporte para Socios Repartidores",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Correo electrónico: ",
+          "info": "soporte.repartidor@cl.didiglobal.com",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Teléfono:",
+          "info": "(+56) 227120527",
+          "infoColor": { "color": "#ff7d41" }
+        }
+      ]
+    },
+    {
+      "title": "Soporte para Restaurantes",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Teléfono",
+          "info": "(+56) 227120527",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Gran Valparaíso. Dirección",
+          "info": "6 Norte 745, Viña del Mar. Novotel, salón Mistral 3er piso",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Horario de atención",
+          "info": "Lunes a Viernes de 09:00 a 19:00 hrs.",
+          "infoColor": { "color": "#ff7d41" }
+        }
+      ]
+    },
+    {
+      "title": "Atención Presencial Restaurantes",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Gran Valparaíso. Dirección",
+          "info": "6 Norte 745, Viña del Mar. Novotel, salón Mistral 3er piso",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Horario de atención",
+          "info": "Lunes a Viernes de 09:00 a 19:00 hrs.",
+          "infoColor": { "color": "#ff7d41" }
+        }
+      ]
+    }
+  ]
 }

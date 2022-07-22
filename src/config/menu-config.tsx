@@ -63,6 +63,10 @@ const menuLinks: AllMenuInterface = {
           text: "Acerca",
           url: "/cl/food/about/",
         },
+        {
+          text: "Contacto",
+          url: "/cl/food/contact/",
+        },
       ],
     },
     {
@@ -279,7 +283,7 @@ const menuLinks: AllMenuInterface = {
           url: "/au/help-center/",
         },
         {
-          text: "Costumer Support",
+          text: "Customer Support",
           url: "/au/contact/",
         },
       ],
@@ -407,6 +411,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Acerca",
           url: "/do/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/do/food/contact/",
         },
       ],
     },
