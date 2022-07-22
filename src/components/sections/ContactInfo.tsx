@@ -5,7 +5,7 @@ import Contact, { ContactProps } from "../Contact";
 const ContactInfo = () => {
   const { t } = useTranslation();
   const props: ContactProps = {
-    contact: t("Contact.contactSections", { returnObjects: true }),
+    contact: t("FoodContact.contactSections", { returnObjects: true }),
   };
   return <Contact {...props}></Contact>;
 };

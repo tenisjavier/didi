@@ -67,6 +67,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
+    "/food/contact/": {
+      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
+      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
+    },
     "/food/blog/": {
       title: "Artículos de Comida y Restaurantes",
       desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
@@ -141,6 +145,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/food/about/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/contact/": {
+      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
+      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
     "/food/blog/": {
       title: "Artículos de Comida y Restaurantes",

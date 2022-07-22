@@ -164,18 +164,13 @@
   "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
   "FoodBlogPostHero.btnMode": "light",
+  "FoodContactHero.title": "Contáctanos",
+  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
+  "FoodContactHero.textColor": "white",
+  "FoodContactHero.btnText": "Llamar a Soporte",
+  "FoodContactHero.btnLink": "+18299568643",
+  "FoodContactHero.btnMode": "light",
   "Contact.contactSections": [
-    {
-      "title": "Soporte para Usuarios",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "Teléfono",
-          "info": "(+56) 227120527",
-          "infoColor": {"color": "#ff7d41"}
-        }
-      ]
-    },
     {
       "title": "Soporte para Socios Repartidores",
       "desc": "",
@@ -183,12 +178,37 @@
         {
           "label": "Correo electrónico: ",
           "info": "soporte.repartidor@do.didiglobal.com",
-          "infoColor": {"color": "#ff7d41"}
+          "infoColor": { "color": "#ff7d41" }
         },
         {
-          "label": "Teléfono:",
+          "label": "Teléfono",
           "info": "(+1) 829 956 8643",
-          "infoColor": {"color": "#ff7d41"}
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Santo Domingo. Dirección",
+          "info": "Plaza Central, Av 27 de Febrero, Santo Domingo | Local 400-16B",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Horario de Atención",
+          "info": "Lunes a Viernes de 8:30 a.m. a 5:30 p.m. | Sábado de 8:30 a.m. a 12:30 p.m.",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Reserva tu Visita Aquí",
+          "info": "https://calendly.com/didird/dcpresencial",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Santiago los Caballeros. Dirección",
+          "info": "Optimus Plaza, 2do nivel, Módulos A-2-35 y A-2-36, en la Av. 27 de Febrero, en el sector de los Jardines Metropolitanos",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Horario de Atención:",
+          "info": "Lunes a viernes de 8:30 a.m. a 5:30 p.m. Sábado de 8:30 a.m. a 12:30 p.m.",
+          "infoColor": { "color": "#ff7d41" }
         }
       ]
     },
@@ -197,14 +217,16 @@
       "desc": "",
       "contacts": [
         {
-          "label": "Teléfono:",
+          "label": "Teléfono",
           "info": "(+1) 829 956 8643",
-          "infoColor": {"color": "#ff7d41"}
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Correo electrónico",
+          "info": "soporte.tienda@rd.didiglobal.com",
+          "infoColor": { "color": "#ff7d41" }
         }
       ]
     }
-  ],
-  "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "",
-  "FoodContactHero.textColor": "white"
+  ]
 }

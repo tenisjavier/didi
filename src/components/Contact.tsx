@@ -1,14 +1,11 @@
 import React, { ReactNode } from "react";
-import ContactCard, {ContactBlockProps, ContactsInfo} from "./ContactBlock";
+import ContactCard, { ContactBlockProps, ContactsInfo } from "./ContactBlock";
 
 export interface ContactProps {
   contact: ContactBlockProps[];
 }
 
-const ContactSection = ({
-  contact,
-}: ContactProps) => {
-  console.log(contact);
+const ContactSection = ({ contact }: ContactProps) => {
   return (
     <section className={"py-12"}>
       <div className="container mx-auto flex  flex-col flex-wrap justify-center">
