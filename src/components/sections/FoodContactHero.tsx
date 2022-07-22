@@ -25,6 +25,9 @@ const FoodContactHero = ({ bgImage }: FoodContactHeroProps) => {
         className="!absolute z-0 h-full w-full brightness-50  md:block"
       ></GatsbyImage>
     ),
+    btnText: t("FoodContactHero.btnText"),
+    btnLink: t("FoodContactHero.btnLink"),
+    btnMode: t("FoodContactHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };
