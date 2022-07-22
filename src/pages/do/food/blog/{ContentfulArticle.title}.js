@@ -49,7 +49,7 @@ export const query = graphql`
     allContentfulArticle(
       filter: {
         category: { eq: "food" }
-        country: { code: { eq: "cl" } }
+        country: { code: { eq: "do" } }
         id: { ne: $id }
       }
       sort: { fields: content___references___createdAt, order: DESC }

@@ -163,5 +163,48 @@
   "FoodBlogColumns.textColor": "white",
   "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
-  "FoodBlogPostHero.btnMode": "light"
+  "FoodBlogPostHero.btnMode": "light",
+  "Contact.contactSections": [
+    {
+      "title": "Soporte para Usuarios",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Teléfono",
+          "info": "(+56) 227120527",
+          "infoColor": {"color": "#ff7d41"}
+        }
+      ]
+    },
+    {
+      "title": "Soporte para Socios Repartidores",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Correo electrónico: ",
+          "info": "soporte.repartidor@do.didiglobal.com",
+          "infoColor": {"color": "#ff7d41"}
+        },
+        {
+          "label": "Teléfono:",
+          "info": "(+1) 829 956 8643",
+          "infoColor": {"color": "#ff7d41"}
+        }
+      ]
+    },
+    {
+      "title": "Soporte para Restaurantes",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Teléfono:",
+          "info": "(+1) 829 956 8643",
+          "infoColor": {"color": "#ff7d41"}
+        }
+      ]
+    }
+  ],
+  "FoodContactHero.title": "Contáctanos",
+  "FoodContactHero.desc": "",
+  "FoodContactHero.textColor": "white"
 }

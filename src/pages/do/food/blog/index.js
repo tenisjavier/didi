@@ -7,7 +7,7 @@ import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "cl.FoodHero.bgImage";
+    return image.title === "do.FoodHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["cl.FoodHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["do.FoodHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -39,7 +39,7 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "food" }, country: { code: { eq: "cl" } } }
+      filter: { category: { eq: "food" }, country: { code: { eq: "do" } } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {
