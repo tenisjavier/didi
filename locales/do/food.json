@@ -163,5 +163,9 @@
   "FoodBlogColumns.textColor": "white",
   "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
-  "FoodBlogPostHero.btnMode": "light"
+  "FoodBlogPostHero.btnMode": "light",
+  "SmartBannerDrv.title": "DiDi Conductor",
+  "SmartBannerDrv.desc": "Ganancias Extras",
+  "SmartBannerPax.title": "DiDi Pasajero",
+  "SmartBannerPax.desc": "Pide un Viaje"
 }
