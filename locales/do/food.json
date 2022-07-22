@@ -170,7 +170,7 @@
   "FoodContactHero.btnText": "Llamar a Soporte",
   "FoodContactHero.btnLink": "+18299568643",
   "FoodContactHero.btnMode": "light",
-  "Contact.contactSections": [
+  "FoodContact.contactSections": [
     {
       "title": "Soporte para Socios Repartidores",
       "desc": "",
