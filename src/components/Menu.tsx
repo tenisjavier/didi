@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "@reach/router";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -7,13 +8,20 @@ import {
   SingleMenuItem,
   SingleDropMenuItem,
 } from "../config/menu-config";
+import {
+  getMenuLinksFood,
+} from "../config/menu-configFood";
 
-// @desc: Top Menu. Links from menu-config.
+
+// @desc: Top Menu. Links from menu-config and menu-configFood.
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
+  const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
+  const { pathname } = useLocation();
+
   return (
     <div className="flex h-full items-center ">
       <FontAwesomeIcon
@@ -34,13 +42,24 @@ const Menu = () => {
         }
       >
         <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
-          {menuLinks.map((menuLink, index) => (
-            <NavItem key={index} link={menuLink}>
-              {menuLink.dropMenu ? (
-                <DropdownMenu key={index} links={menuLink.dropMenu} />
-              ) : null}
-            </NavItem>
-          ))}
+          {pathname.includes("food") ? 
+            (<>
+                {menuLinksFood.map((menuLink, index) => (
+                  <NavItem key={index} link={menuLink}>
+                  </NavItem>
+                ))}
+            </>)   
+          : 
+            (<>
+              {menuLinks.map((menuLink, index) => (
+                <NavItem key={index} link={menuLink}>
+                  {menuLink.dropMenu ? (
+                  <DropdownMenu key={index} links={menuLink.dropMenu} />
+                  ) : null}
+                </NavItem>
+              ))}
+            </>)
+          }
         </ul>
       </div>
     </div>
