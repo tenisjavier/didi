@@ -1,8 +1,14 @@
-// @desc: utility library for menu Links
+// @desc: utility library for food menu links
+
+export interface SingleDropMenuItem {
+  text?: string;
+  url?: string;
+}
 
 export interface SingleMenuItemFood {
   text: string;
   url: string;
+  dropMenu?: SingleDropMenuItem[];
 }
 
 interface AllMenuInterface {
@@ -12,46 +18,46 @@ interface AllMenuInterface {
 const menuLinksFood: AllMenuInterface = {
   cl: [
     {
-      text: "Home",
-      url: "/cl/food/",
-    },
-    {
       text: "Tienda",
-      url: "/cl/food/store",
+      url: "/cl/food/store/",
     },
     {
       text: "Socio repartidor",
-      url: "/cl/food/delivery",
+      url: "/cl/food/delivery/",
     },
     {
       text: "Acerca",
-      url: "/cl/food/about",
+      url: "/cl/food/about/",
+    },
+    {
+      text: "Contacto",
+      url: "/cl/food/contact/",
     },
     {
       text: "Blog",
-      url: "cl/food/blog",
+      url: "/cl/food/blog/",
     },
   ],
   do: [
     {
-      text: "Home",
-      url: "/do/food/",
-    },
-    {
       text: "Tienda",
-      url: "/do/food/store",
+      url: "/do/food/store/",
     },
     {
       text: "Socio repartidor",
-      url: "/do/food/delivery",
+      url: "/do/food/delivery/",
     },
     {
       text: "Acerca",
-      url: "/do/food/about",
+      url: "/do/food/about/",
+    },
+    {
+      text: "Contacto",
+      url: "/do/food/contact/",
     },
     {
       text: "Blog",
-      url: "/do/food/blog",
+      url: "/do/food/blog/",
     },
   ],
 };
