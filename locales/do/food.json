@@ -167,11 +167,11 @@
   "SmartBannerDrv.title": "DiDi Conductor",
   "SmartBannerDrv.desc": "Ganancias Extras",
   "SmartBannerPax.title": "DiDi Pasajero",
-  "SmartBannerPax.desc": "Pide un Viaje"
+  "SmartBannerPax.desc": "Pide un Viaje",
   "FoodContactHero.title": "Contáctanos",
   "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Llamar a Soporte",
+  "FoodContactHero.btnText": "Llama a Soporte",
   "FoodContactHero.btnLink": "+18299568643",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
