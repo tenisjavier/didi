@@ -12,7 +12,6 @@ import DrvBanner from "../../components/sections/DrvBanner";
 import DrvCityList from "../../components/sections/DrvCityList";
 
 const Driver = ({ data }) => {
-  console.log(data);
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "pa.DrvHero.bgImage";

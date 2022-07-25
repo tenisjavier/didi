@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#FF7D41`,
         theme_color: `#FF7D41`,
         display: `standalone`,
-        icon: `src/images/DDlogo.ico`
+        icon: `src/images/DDlogo.ico`,
       },
     },
     {
@@ -211,7 +211,6 @@ module.exports = {
           });
 
           const directionPages = allDirections.map((dir) => {
-            console.log(dir.city.country.code);
             const path = `/${slugify(
               dir.city.country.code
             )}/lugares/como-llegar-a-${slugify(

@@ -41,19 +41,21 @@ const Menu = () => {
         <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
           {pathname.includes("food") ? (
             <>
-              {menuLinksFood.map((menuLink, index) => (
-                <NavItem key={index} link={menuLink}></NavItem>
-              ))}
+              {menuLinksFood &&
+                menuLinksFood.map((menuLink, index) => (
+                  <NavItem key={index} link={menuLink}></NavItem>
+                ))}
             </>
           ) : (
             <>
-              {menuLinks.map((menuLink, index) => (
-                <NavItem key={index} link={menuLink}>
-                  {menuLink.dropMenu ? (
-                    <DropdownMenu key={index} links={menuLink.dropMenu} />
-                  ) : null}
-                </NavItem>
-              ))}
+              {menuLinks &&
+                menuLinks.map((menuLink, index) => (
+                  <NavItem key={index} link={menuLink}>
+                    {menuLink.dropMenu ? (
+                      <DropdownMenu key={index} links={menuLink.dropMenu} />
+                    ) : null}
+                  </NavItem>
+                ))}
             </>
           )}
         </ul>

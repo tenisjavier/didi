@@ -22,35 +22,37 @@ const FooterMenu = ({ links }: FooterMenuProps) => {
       <div className="Lg:flex-row bg-grey-primary hidden lg:flex lg:w-2/3 lg:flex-initial">
         {pathname.includes("food") ? (
           <>
-            {footerLinksFood.map((linkFood, index) => (
-              <div
-                key={index}
-                className="flex flex-auto items-center justify-center text-lg"
-              >
-                <a
-                  href={linkFood.link}
-                  className="hover:text-white hover:opacity-70"
+            {footerLinksFood &&
+              footerLinksFood.map((linkFood, index) => (
+                <div
+                  key={index}
+                  className="flex flex-auto items-center justify-center text-lg"
                 >
-                  {linkFood.text}
-                </a>
-              </div>
-            ))}
+                  <a
+                    href={linkFood.link}
+                    className="hover:text-white hover:opacity-70"
+                  >
+                    {linkFood.text}
+                  </a>
+                </div>
+              ))}
           </>
         ) : (
           <>
-            {links.map((link: FooterLinks, index: number) => (
-              <div
-                key={index}
-                className="flex flex-auto items-center justify-center text-lg"
-              >
-                <a
-                  href={link.link}
-                  className="hover:text-white hover:opacity-70"
+            {links &&
+              links.map((link: FooterLinks, index: number) => (
+                <div
+                  key={index}
+                  className="flex flex-auto items-center justify-center text-lg"
                 >
-                  {link.text}
-                </a>
-              </div>
-            ))}
+                  <a
+                    href={link.link}
+                    className="hover:text-white hover:opacity-70"
+                  >
+                    {link.text}
+                  </a>
+                </div>
+              ))}
           </>
         )}
       </div>

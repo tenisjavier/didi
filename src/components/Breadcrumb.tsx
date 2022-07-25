@@ -27,7 +27,7 @@ const Breadcrumb = () => {
                     className="mr-2 w-4"
                     icon={faHome}
                   ></FontAwesomeIcon>
-                  {"home"}
+                  {"DiDi"}
                 </Link>
               </li>
             );

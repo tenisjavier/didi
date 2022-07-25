@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faZap } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-console.log(typeof faZap);
-
 interface DeliveryColumnsProps {
   images: {
     title: string;
