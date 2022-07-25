@@ -6,7 +6,6 @@ export interface ContactProps {
 }
 
 const ContactSection = ({ contact }: ContactProps) => {
-  console.log(contact);
   return (
     <section className={"py-12"}>
       <div className="container mx-auto flex  flex-col flex-wrap justify-center">

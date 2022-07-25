@@ -9,7 +9,7 @@ import HomeColumns from "../../../components/sections/HomeColumns";
 const Offers = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const offers = data.allContentfulOffer.nodes;
-  console.log(offers);
+
   const partnersHeroBgImage = images.filter((image) => {
     return image.title === "au.PartnersHero.bgImage";
   })[0];

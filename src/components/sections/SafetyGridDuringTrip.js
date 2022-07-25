@@ -4,7 +4,6 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection from "../ColumnSection";
 
 const SafetyGridDuringTrip = ({ images }) => {
-  console.log(images);
   const { t } = useTranslation();
   const props = {
     title: t("SafetyGridDuringTrip.title"),

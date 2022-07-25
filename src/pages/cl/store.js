@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import StoreHero from "../../components/sections/StoreHero";
 import { QRCodeSVG } from "qrcode.react";
 
-const Store = ({ data }) => {
+const Store = () => {
   const [QRUrl, setQRUrl] = useState(
     "https://global-rides-passenger.onelink.me/xNlo"
   );
