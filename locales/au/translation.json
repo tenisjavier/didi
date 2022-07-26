@@ -664,6 +664,18 @@
   "OfferFeatures.bgColor": "bg-blue-primary",
   "OfferFeatures.textColor": "white",
   "OfferFeatures.btnMode": "light",
+  "DrvTaxInfoHero.title": "DiDi Tax Information",
+  "DrvTaxInfoHero.desc": "Where to find your tax information",
+  "DrvTaxInfoHero.textColor": "white",
+  "DrvTaxInfoHero.btnMode": "light",
+  "DrvTaxInfoFeatures.title": "You can find your Tax Summary in two ways.",
+  "DrvTaxInfoFeatures.bullets": [
+    "Via email – Between the 2nd and 5th of every month, we’ll email you a Tax Summary from noreply@didiglobal.com.",
+    "In the app – You can access your monthly Tax Summary after the 5th of every month. Tap Earnings > Tax Summary and Invoice. Select the month and Submit."
+  ],
+  "DrvTaxInfoFeatures.textColor": "gray-primary",
+  "DrvTaxInfoFeatures.bgColor": "bg-gray-light",
+  "DrvTaxInfoFeatures.btnMode": "primary",
   "SmartBannerDrv.title": "DiDi Driver",
   "SmartBannerDrv.desc": "Make Extra Money",
   "SmartBannerPax.title": "DiDi Rider",
