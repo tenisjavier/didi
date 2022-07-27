@@ -11,7 +11,6 @@ const Product = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const { name, description, components, componentImages } =
     data.contentfulProduct;
-  console.log(data);
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "au.PaxHero.bgImage";
   })[0];
@@ -111,6 +110,7 @@ export const query = graphql`
       }
       componentImages {
         gatsbyImageData
+        description
       }
     }
   }
