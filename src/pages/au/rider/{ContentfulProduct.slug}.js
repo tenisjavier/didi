@@ -26,16 +26,17 @@ const Product = ({ data }) => {
         desc={description}
         bgImage={paxHeroBgImage}
       ></ProductHero>
-      {components.meta.map((comp, index) => {
-        return (
-          <ProductCTAComponent
-            title={comp.title}
-            desc={comp.desc}
-            image={componentImages[index]}
-            key={index}
-          ></ProductCTAComponent>
-        );
-      })}
+      {components.meta &&
+        components.meta.map((comp, index) => {
+          return (
+            <ProductCTAComponent
+              title={comp.title}
+              desc={comp.desc}
+              image={componentImages[index]}
+              key={index}
+            ></ProductCTAComponent>
+          );
+        })}
       <SilderSection data={products}></SilderSection>
       <HelpCenterFAQPax data={data.contentfulProduct}></HelpCenterFAQPax>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
