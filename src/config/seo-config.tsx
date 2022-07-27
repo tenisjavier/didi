@@ -459,7 +459,7 @@ const getMetaByPath = (
   path: string
 ): SEOMetaItemInterface => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))||(\/rider\/(.+))(\/food\/blog\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
@@ -475,7 +475,7 @@ const getMetaByPath = (
   const metas = placeRegex.test(path)
     ? {
         title: placeTitle,
-        desc: `${placeTitle}. Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931`,
+        desc: `${placeTitle}`,
       }
     : defaultMetas;
 
