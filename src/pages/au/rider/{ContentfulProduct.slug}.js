@@ -26,7 +26,7 @@ const Product = ({ data }) => {
         desc={description}
         bgImage={paxHeroBgImage}
       ></ProductHero>
-      {components.meta &&
+      {components &&
         components.meta.map((comp, index) => {
           return (
             <ProductCTAComponent
@@ -38,7 +38,9 @@ const Product = ({ data }) => {
           );
         })}
       <SilderSection data={products}></SilderSection>
-      <HelpCenterFAQPax data={data.contentfulProduct}></HelpCenterFAQPax>
+      {data.contentfulProduct.faq && (
+        <HelpCenterFAQPax data={data.contentfulProduct}></HelpCenterFAQPax>
+      )}
       <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>
   );
