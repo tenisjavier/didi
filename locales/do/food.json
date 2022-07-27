@@ -172,7 +172,7 @@
   "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
   "FoodContactHero.textColor": "white",
   "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "+18299568643",
+  "FoodContactHero.btnLink": "tel:+18299568643",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
@@ -210,7 +210,7 @@
           "infoColor": { "color": "#ff7d41" }
         },
         {
-          "label": "Horario de Atención:",
+          "label": "Horario de Atención",
           "info": "Lunes a viernes de 8:30 a.m. a 5:30 p.m. Sábado de 8:30 a.m. a 12:30 p.m.",
           "infoColor": { "color": "#ff7d41" }
         }
