@@ -16,6 +16,7 @@ const HelpCenter = ({ data }) => {
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
+
   return (
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>

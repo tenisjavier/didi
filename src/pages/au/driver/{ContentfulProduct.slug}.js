@@ -112,6 +112,7 @@ export const query = graphql`
       componentImages {
         gatsbyImageData
         description
+        title
       }
     }
   }

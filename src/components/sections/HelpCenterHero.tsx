@@ -12,6 +12,7 @@ interface HelpCenterHeroProps {
 }
 
 const HelpCenterHero = ({ bgImage }: HelpCenterHeroProps) => {
+  console.log(bgImage);
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
@@ -20,7 +21,7 @@ const HelpCenterHero = ({ bgImage }: HelpCenterHeroProps) => {
     textColor: t("HelpCenterHero.textColor"),
     bgImage: (
       <GatsbyImage
-        image={bgImage.gatsbyImageData}
+        image={bgImage.gatsbyImageData!}
         alt={bgImage.description}
         className="!absolute z-0 h-full w-full brightness-75 md:block"
       ></GatsbyImage>
