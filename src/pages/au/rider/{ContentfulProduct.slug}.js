@@ -32,6 +32,7 @@ const Product = ({ data }) => {
             title={comp.title}
             desc={comp.desc}
             image={componentImages[index]}
+            key={index}
           ></ProductCTAComponent>
         );
       })}
@@ -111,6 +112,7 @@ export const query = graphql`
       componentImages {
         gatsbyImageData
         description
+        title
       }
     }
   }
