@@ -280,6 +280,10 @@ const menuLinks: AllMenuInterface = {
           text: "Delivery for Drivers",
           url: "/au/driver/didi-delivery-australia/",
         },
+        {
+          text: "Delivery Help",
+          url: "/au/delivery/help/",
+        },
       ],
     },
     {
