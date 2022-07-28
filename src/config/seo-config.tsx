@@ -388,6 +388,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Ride Help & DiDi FAQs",
       desc: "Need help? Have questions? We're here to assist you!",
     },
+    "/rider/didi-share-for-driver/": {
+      title: "DiDi Share for Riders",
+      desc: "DiDi Share for Riders. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
+    },
     "/driver/": {
       title: "DiDi Driver - Drive and earn with DiDi",
       desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
@@ -411,6 +415,14 @@ const seoMeta: AllSEOMetaInterface = {
     "/delivery/business/": {
       title: "DiDi Delivery - Business",
       desc: "Power your business with instant and affordable delivery services powered by DiDi drivers.",
+    },
+    "/driver/didi-delivery-australia/": {
+      title: "DiDi Delivery for Drivers - Next Steps",
+      desc: "Earn money delivering goods for stores and people around your city.",
+    },
+    "/driver/didi-share-for-driver/": {
+      title: "DiDi Share for Drivers",
+      desc: "DiDi Share for Drivers. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
     },
 
     "/about-us/": {
