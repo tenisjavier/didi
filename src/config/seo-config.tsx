@@ -428,6 +428,14 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Share for Drivers",
       desc: "DiDi Share for Drivers. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
     },
+    "/features/didisal/": {
+      title: "Stay safe with DiDi Sal, your in-trip pal",
+      desc: "DiDi Sal sends helpful safety messages and alerts during your trip to check if everything’s A-OK.",
+    },
+    "/features/fatigue-prevention-feature/": {
+      title: "DiDi Fatigue Feature for Drivers",
+      desc: "It is recommended that you have frequent breaks throughout the day. Just remember to tap “Go Offline” when you do. ",
+    },
 
     "/about-us/": {
       title: "About Us",

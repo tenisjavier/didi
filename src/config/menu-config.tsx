@@ -287,6 +287,20 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "Features",
+      url: "#",
+      dropMenu: [
+        {
+          text: "DiDi Sal Rider",
+          url: "/au/features/didisal/",
+        },
+        {
+          text: "Fatigue Prevention Driver",
+          url: "/au/features/fatigue-prevention-feature/",
+        },
+      ],
+    },
+    {
       text: "About DiDi",
       url: "/au/about-us/",
       dropMenu: [
