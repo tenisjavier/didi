@@ -26,7 +26,7 @@ const ProductCTAComponent = ({
       <GatsbyImage
         image={image.gatsbyImageData!}
         alt={image.description}
-        className="z-10 m-4 max-w-sm  rounded"
+        className="z-10 m-4 w-80  rounded"
       ></GatsbyImage>
     ),
     btnMode: "primary",
