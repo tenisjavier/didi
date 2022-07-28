@@ -400,6 +400,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Driver Help & FAQs",
       desc: "Need help? Have questions? We're here to assist you!",
     },
+    "/delivery/help/": {
+      title: "DiDi Delivery Help & FAQs",
+      desc: "DiDi Delivery Help. Need help? Have questions? We're here to assist you!",
+    },
     "/didi-advance/": {
       title: "DiDi Advance Driver Program",
       desc: "Learn more about our DiDi Advance earnings program for driver-partners.",
