@@ -343,24 +343,56 @@ const menuLinks: AllMenuInterface = {
   ],
   cr: [
     {
-      text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
-    },
-    {
       text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
+      url: "/cr/driver",
       dropMenu: [
         {
           text: "Socio Conductor",
           url: "https://chile.didiglobal.com/driver/",
         },
         {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
-        },
-        {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+      ],   
+    },
+    { 
+      text: "Usuario",
+      url: "/cr/pasajero",
+    },
+    {
+      text: "Acerca de DiDi",
+      url: "/cr/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/cr/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/cr/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Food",
+      url: "/do/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/do/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/do/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/do/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/do/food/contact/",
         },
       ],
     },
