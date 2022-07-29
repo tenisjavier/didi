@@ -9,6 +9,8 @@ export interface BannerProps extends BtnProps {
   desc: string;
   bgColor: string;
   textColor: string;
+  height?: string;
+  alignItems?: string;
   image?: React.ReactNode;
 }
 
@@ -18,6 +20,8 @@ const Banner = ({
   bgColor,
   textColor,
   image,
+  height,
+  alignItems,
   btnLink,
   btnMode,
   btnType,
@@ -25,9 +29,11 @@ const Banner = ({
 }: BannerProps) => {
   return (
     <div
-      className={`flex w-full items-center justify-center rounded py-4 ${
-        bgColor && bgColor
-      } text-${textColor}`}
+      className={`flex w-full ${
+        alignItems ? alignItems : "items-center"
+      } justify-center rounded py-4 ${bgColor && bgColor} text-${textColor} ${
+        height && height
+      }`}
     >
       <div className="mb-5 max-w-6xl text-center">{image}</div>
 
