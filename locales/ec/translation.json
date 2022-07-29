@@ -18,7 +18,7 @@
   "HelloCTA.btnLink": "/ec/sobre-didi/",
   "AboutGlobalCTA.title": "DiDi en el Mundo",
   "AboutGlobalCTA.bullets": false,
-  "AboutGlobalCTA.desc": "Nos  asociamos con Grab, Lyft, Ola, 99 y Bolt (Taxify), creando una red global de viajes compartidos, llegando a más del 80% de la población mundial en más de 1,000 ciudades. ",
+  "AboutGlobalCTA.desc": "Nos  asociamos con Grab, Lyft, Ola, 99 y Bolt (Taxify), creando una red global de viajes compartidos, llegando a más del 80% de la población mundial en más de 1,000 ciudades.",
   "AboutGlobalCTA.btnText": "Conoce más de DiDi Global",
   "AboutGlobalCTA.btnMode": "primary",
   "AboutGlobalCTA.btnLink": "http://www.didiglobal.com/",
@@ -186,7 +186,7 @@
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxHero.btnText": "Descarga DiDi Pasajero",
-  "PaxColumns.bgColor": "bg-white",
+  "PaxColumns.bgColor": "bg-gray-light",
   "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [
     {
@@ -208,18 +208,21 @@
       "textColor": "gray-primary"
     }
   ],
-  "PaxWhyDiDi.title": "Por qué viajar hoy con DiDi:",
+  "PaxWhyDiDi.title": "¡Tu seguridad es nuestra prioridad! por eso tenemos funcionalidades pensadas para ti:",
   "PaxWhyDiDi.bullets": [
-    "Viajes a pedido. Obtén un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
-    "Opciones económicas: Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
-    "Una forma fácil de viajar. Pide un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
+    "Verificación de antecedentes de socios conductores",
+    "Botón de emergencia",
+    "Comparte tu ubicación en tiempo real con tus contactos de confianza",
+    "Patrullas de emergencia",
+    "Privacidad de números telefónicos",
+    "Desvincular socio conductor"
   ],
-  "PaxWhyDiDi.desc": "Paga tus servicios con tarjeta de crédito o efectivo. ",
+  "PaxWhyDiDi.desc": "",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Ecuador",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
-  "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
+  "PaxBanner.desc": "",
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
@@ -313,7 +316,7 @@
   "KnowMoreBanner.btnText": "Centro de ayuda",
   "KnowMoreBanner.btnLink": "/ec/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
-  "AboutHero.title": "Somos la plataforma tecnológica de movilidad inteligente #1 en el mundo",
+  "AboutHero.title": "Somos la plataforma de movilidad más grande del mundo",
   "AboutHero.desc": false,
   "AboutHero.textColor": "white",
   "AboutHero.btnMode": "light",

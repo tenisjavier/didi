@@ -7,7 +7,7 @@ import GuidesColumns from "../../../components/sections/GuidesColumns";
 const Guias = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const guidesHeroBgImage = images.filter((image) => {
-    return image.title === "do.GuidesHero.bgImage";
+    return image.title === "ec.GuidesHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["do.GuidesHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["ec.GuidesHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -39,7 +39,7 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { country: { code: { eq: "do" } } }
+      filter: { country: { code: { eq: "ec" } } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {

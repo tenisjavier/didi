@@ -2,14 +2,19 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
+import PaxBanner from "../../components/sections/PaxBanner";
 import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
+import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
 const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "ec.PaxHero.bgImage";
+  })[0];
+  const paxWhyDiDiImage = images.filter((image) => {
+    return image.title === "ec.PaxWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
   return (
@@ -20,6 +25,8 @@ const Pasajero = ({ data }) => {
         data={products}
         title="Hay un DiDi Para ti "
       ></SilderSection>
+      <PaxBanner></PaxBanner>
+      <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <KnowMoreBanner></KnowMoreBanner>
     </Layout>
   );
