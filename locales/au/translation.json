@@ -88,6 +88,17 @@
       "width": "w-64"
     }
   ],
+  "PaxWhyDiDi.title": "Get FREE* rides",
+  "PaxWhyDiDi.bullets": [
+    "For a limited time only you’ll get a $20 ride voucher every time you invite a friend to sign up and ride with DiDi.",
+    "They’ll also get a $20 ride voucher too!",
+    "After they’ve finished taking their first ride, you’ll get a ride voucher in your account.",
+    "Please note that your referral code only applies to new users."
+  ],
+  "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
+  "PaxWhyDiDi.bgColor": "bg-blue-primary",
+  "PaxWhyDiDi.textColor": "white",
+  "PaxWhyDiDi.btnMode": "primary",
   "PaxBanner.title": "¿Would you like to drive with DiDi?",
   "PaxBanner.desc": "Take home more of the fare with DiDi’s industry-leading low Services Fees and additional bonuses. ",
   "PaxBanner.bgColor": "bg-orange-primary",
