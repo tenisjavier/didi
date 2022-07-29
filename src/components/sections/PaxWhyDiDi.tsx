@@ -18,7 +18,8 @@ const PaxWhyDiDi = ({ image }: PaxWhyDiDiProps) => {
     title: t("PaxWhyDiDi.title"),
     bullets: t("PaxWhyDiDi.bullets", { returnObjects: true }),
     desc: t("PaxWhyDiDi.desc"),
-    textColor: "gray-primary",
+    bgColor: t("PaxWhyDiDi.bgColor"),
+    textColor: t("PaxWhyDiDi.textColor"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData!}

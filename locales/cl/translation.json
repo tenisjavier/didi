@@ -94,6 +94,7 @@
     "Una forma fácil de viajar. Pide un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
   ],
   "PaxWhyDiDi.desc": "Paga tus servicios con tarjeta de crédito o efectivo. ",
+  "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Chile",

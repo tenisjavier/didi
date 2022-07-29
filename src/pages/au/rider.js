@@ -10,6 +10,7 @@ import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxBenefits from "../../components/sections/PaxBenefits";
+import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
 import PaxBanner from "../../components/sections/PaxBanner";
 import HomeColumns from "../../components/sections/HomeColumns";
 
@@ -22,6 +23,9 @@ const Pasajero = ({ data }) => {
   const paxBenefitsImage = images.filter((image) => {
     return image.title === "au.PaxBenefits.image";
   })[0];
+  const paxWhyDiDiImage = images.filter((image) => {
+    return image.title === "au.PaxWhyDiDi.image";
+  })[0];
 
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
@@ -33,6 +37,7 @@ const Pasajero = ({ data }) => {
       <PaxBenefits image={paxBenefitsImage} icons={icons}></PaxBenefits>
       <PaxBanner></PaxBanner>
       <SilderSection data={products}></SilderSection>
+      <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>
   );
@@ -54,7 +59,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.HomeColumns.image)/"
+          regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.PaxWhyDiDi.image)|(au.HomeColumns.image)/"
         }
       }
       sort: { fields: title }
