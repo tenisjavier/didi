@@ -29,11 +29,11 @@ const Banner = ({
         bgColor && bgColor
       } text-${textColor}`}
     >
-      <div className="mb-5 max-w-6xl text-center">{image}</div>
 
       <div className="container mx-auto flex max-w-6xl flex-col py-4  text-center">
         <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
         <p className="h-16 text-base">{desc}</p>
+        <div className="mb-5 max-w-6xl text-center">{image}</div>
         <span className="flex justify-center">
           <Btn
             btnType={btnType}

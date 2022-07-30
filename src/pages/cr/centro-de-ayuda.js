@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import HelpCenterHero from "../../components/sections/HelpCenterHero";
 import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
+import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
 import HomeColumns from "../../components/sections/HomeColumns";
 
 const CentroDeAyuda = ({ data }) => {
@@ -11,7 +12,10 @@ const CentroDeAyuda = ({ data }) => {
     return image.title === "cr.HelpCenterHero.bgImage";
   })[0];
   const faqExpress = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Express Panama"
+    (node) => node.name === "DiDi Express Costa Rica"
+  );
+  const faqPax = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Pasajero Costa Rica"
   );
 
 
@@ -19,7 +23,7 @@ const CentroDeAyuda = ({ data }) => {
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
-
+      <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
       <HomeColumns></HomeColumns>
     </Layout>
   );
@@ -47,7 +51,7 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "pa" } } } }
+      filter: { country: { elemMatch: { code: { eq: "cr" } } } }
     ) {
       nodes {
         name

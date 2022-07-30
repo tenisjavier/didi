@@ -1,33 +1,32 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import PaxHero from "../../components/sections/PaxHero";
-import PaxColumns from "../../components/sections/PaxColumns";
-import SilderSection from "../../components/sections/SliderSection";
+import FleetHero from "../../components/sections/FleetHero";
+import FleetWhyDidi from "../../components/sections/FleetWhyDiDi";
+import Requirements from "../../components/sections/Requirements";
 import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
-const Pasajero = ({ data }) => {
+const Fleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const paxHeroBgImage = images.filter((image) => {
-    return image.title === "cr.PaxHero.bgImage";
+  const fleetHeroBgImage = images.filter((image) => {
+    return image.title === "cr.FleetHero.bgImage";
+  })[0];
+  const fleetWhyDiDiImage = images.filter((image) => {
+    return image.title === "cr.FleetWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
+
   return (
     <Layout>
-      <PaxHero bgImage={paxHeroBgImage}></PaxHero>
-      <PaxColumns></PaxColumns>
-      <SilderSection
-        data={products}
-        title="Hay un DiDi Para ti"
-      ></SilderSection>
+      <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
+      <FleetWhyDidi image={fleetWhyDiDiImage}></FleetWhyDidi>
+      <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
     </Layout>
   );
 };
-
-export default Pasajero;
 
 export const query = graphql`
   query ($language: String!) {
@@ -41,7 +40,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cr.PaxHero.bgImage"] } }
+      filter: { title: { in: ["cr.FleetHero.bgImage", "cr.FleetWhyDiDi.image"] } }
     ) {
       nodes {
         id
@@ -53,23 +52,18 @@ export const query = graphql`
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "cr" } } }
-        category: { eq: "driver" }
+        name: { eq: "DiDi Fleet Costa Rica" }
       }
     ) {
       nodes {
         name
-        description
         phone
         requirement {
           raw
-        }
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
         }
       }
     }
   }
 `;
+
+export default Fleet;

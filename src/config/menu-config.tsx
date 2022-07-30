@@ -376,25 +376,33 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Food",
-      url: "/do/food/",
+      url: "/cr/food/",
       dropMenu: [
         {
           text: "Tienda",
-          url: "/do/food/store/",
+          url: "/cr/food/store/",
         },
         {
           text: "Socio Repartidor",
-          url: "/do/food/delivery/",
+          url: "/cr/food/delivery/",
         },
         {
           text: "Acerca",
-          url: "/do/food/about/",
+          url: "/cr/food/about/",
         },
         {
           text: "Contacto",
-          url: "/do/food/contact/",
+          url: "/cr/food/contact/",
         },
       ],
+    },
+    {
+      text: "DiDi Fleet",
+      url: "/cr/didifleet/"
+    },
+    {
+      text: "Leones al Volante",
+      url: "/cr/leones/"
     },
   ],
   do: [

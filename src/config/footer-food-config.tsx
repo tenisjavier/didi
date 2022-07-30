@@ -25,6 +25,14 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Contacto", link: "/do/food/contact/" },
     { text: "Blog", link: "/do/food/blog/" },
   ],
+  cr: [
+    { text: "Home", link: "/cr/food/" },
+    { text: "Tienda", link: "/cr/food/store/" },
+    { text: "Socio repartidor", link: "/cr/food/delivery/" },
+    { text: "Acerca", link: "/cr/food/about/" },
+    { text: "Contacto", link: "/cr/food/contact/" },
+    { text: "Blog", link: "/cr/food/blog/" },
+  ],
 };
 
 const getFooterLinksFood = (countryCode: string): FooterLinksFood[] => {

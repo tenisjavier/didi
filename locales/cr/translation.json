@@ -111,34 +111,78 @@
   ],
   "DrvWhyDiDi.textColor": "gray-primary",
   "DrvWhyDiDi.btnMode": "primary",
-  "DrvVideoGrid.bgColor": "bg-blue-primary",
-  "DrvVideoGrid.title": "Sigue estos pasos para empezar a manejar y generar ingresos",
-  "DrvVideoGrid.textColor": "white",
+  "DrvVideoGrid.bgColor": "bg-white",
+  "DrvVideoGrid.title": "Episodios",
+  "DrvVideoGrid.textColor": "gray",
   "DrvVideoGrid.columns": [
     {
-      "title": "Sube tu Cédula de Identidad Chilena",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/1853mnRqTW4"
+      "title": "Episodio 01 | Wilmer López",
+      "desc": "Una leyenda liguista que asume el reto como lo que es: un grande. “El Pato” hizo todas sus jugadas para destacar como el primer participante en esta competencia.",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/v4lI2LViVPI"
     },
     {
-      "title": "Sube una fotografía de ti sosteniendo tu cédula de identidad",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/6TyVl3r1wUM"
+      "title": "Episodio 02 | Gabriela Guillén",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "desc": "Gaby es todo terreno y en su participación no se quedó atrás. Contra todo pronóstico sacó la tarea y se metió en la pelea.",
+      "videoSrc": "https://www.youtube.com/embed/IrY9vNlnGz8"
     },
     {
-      "title": "Sube tu licencia de conducir Chilena",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/cDXmKDkOlL4"
+      "DrvVideoGrid.textColor": "gray",
+      "title": "Episodio 03 | Junior Díaz",
+      "bgColor": "bg-white",
+      "desc": "Un capítulo lleno de personajes únicos, incluidos usuarios “de la otra acera”. Junior no se arruga en ninguna circunstancia y así lo demostró.",
+      "videoSrc": "https://www.youtube.com/embed/jmeubp-Abz4"
     },
     {
-      "title": "Sube tu Permiso de Circulación al día",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/LH6BgttFSTc"
+      "desc": "Desde sumar selfies con desconocidos hasta convocar a uno de sus usuarios a su equipo en surgimiento. ¡Cubero no desaprovecha ni una! ¿Y nos explican cómo es que conoce a Van Der Putten de nuevo?",
+      "title": "Episodio 04 | José Miguel Cubero",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/p_b-KZoUs4U"
     },
     {
-      "title": "Sube tu Permiso de Circulación al día",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
+      "title": "Episodio 05 | Noelia Bermúdez",
+      "desc": "¡A Noe no se le va una! Con el clima en contra hizo todo lo necesario para salir adelante, tal y como hacen las buenas porteras en el campo de fútbol.",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/1k1GmgSWljU"
+    },
+    {
+      "title": "Episodio 06 | Alex López",
+      "desc": "Carisma y empuje es lo que Alex siempre demuestra. Para él una competencia es un tema serio, dentro y fuera de la cancha.",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/YLsl85-S0CY"
+    },
+    {
+      "title": "Episodio 07 | Agustín Lleida",
+      "desc": "Sólo pasan cosas buenas cuando “Agus” hace sus movidas. Si no es así ¿por qué todos terminaron con helado? ¡Descúbrelo en este episodio de Leones Al Volante!",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/01xmmvjVqbU"
+    },
+    {
+      "title": "Episodio 08 | Lixy Rodríguez",
+      "desc": "Única, carismática y lista para cualquier pelea. Lixy sacó su garra para hacerse notar en la competencia y llevarse sus puntos.",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/-9b0bepl8dE"
+    },
+    {
+      "title": "Episodio 09 | Bernald Alfaro",
+      "desc": "Nada que no pueda sortear nuestro querido Bernald sin importar que tan hablantín sea su usuario. Y cuando el reto se le sale de las manos siempre hay un plan B.",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/dTIqdMlDtjY"
+    },
+    {
+      "title": "Episodio 10 | Mauricio Montero",
+      "desc": "Nada más y nada menos que el reconocido Mauricio Montero haciendo sus movidas. Siempre demostrando que no hay ningún obstáculo que le impida ganar la competencia.",
+      "DrvVideoGrid.textColor": "gray",
+      "bgColor": "bg-white",
+      "videoSrc": "https://www.youtube.com/embed/NRMk8lUuf_g"
     }
   ],
   "Requirements.title": "Requerimientos para ser Conductor",
@@ -166,18 +210,19 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/cr/driver/conductor-en-{{city}}/",
-  "TaxiHero.title": "DiDi Taxi",
-  "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
-  "TaxiHero.textColor": "white",
-  "TaxiHero.btnMode": "primary",
-  "TaxiWhyDiDi.title": "Recibe pedidos a través de la app o recoge a los pasajeros conectando el viaje con DiDi Taxi",
-  "TaxiWhyDiDi.bullets": [
-    "¿Ya estas registrado como DiDi Taxista? Regístrate online y te explicamos cómo se usa la App.",
-    "¿Ya hiciste viajes como DiDi Taxista? No olvides registrar tu cuenta bancaria para recibir tu pago. Acá te mostramos cómo.",
-    "¿Más dudas? Tenemos expertos listos para ayudarle a completar su registro y responder cualquier duda que tenga. Teléfono: +56 2 29 38 93 02"
+  "FleetHero.title": "¡Hacé dinero hasta durmiendo!",
+  "FleetHero.desc": "Coordiná el alquiler de tu carro a través de DiDi Fleet y generá ganancias sin salir de casa con una de las tasas más bajas del mercado. Ellos ganan, vos ganás.",
+  "FleetHero.textColor": "white",
+  "FleetHero.btnMode": "primary",
+  "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
+  "FleetWhyDiDi.bullets": [
+    "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+    "¡Generá ganancias sin salir de casa! Además, aprovechá una de las tasas de servicio más bajas del mercado.",
+    "¡Contás con soporte 24/7! y todas las funciones de seguridad DiDi.",
+    "Monitorea los ingresos de las solicitudes generadas con tu vehículo y recibí los pagos con tarjeta de crédito directamente en tu app."
   ],
-  "TaxiWhyDiDi.textColor": "gray-primary",
-  "TaxiWhyDiDi.btnMode": "primary",
+  "FleetWhyDiDi.textColor": "gray-primary",
+  "FleetWhyDiDi.btnMode": "primary",
   "KnowMoreBanner.title": "¿Aún tienes dudas?",
   "KnowMoreBanner.desc": "Conoce todo sobre DiDi.",
   "KnowMoreBanner.bgColor": "bg-orange-primary",
@@ -185,6 +230,14 @@
   "KnowMoreBanner.btnText": "Saber Más",
   "KnowMoreBanner.btnLink": "/cr/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
+  "KnowMoreBannerLeones.title": "Presentamos junto a la Liga Deportiva Alajuelense la serie Leones al Volante",
+  "KnowMoreBannerLeones.desc": "10 episodios donde jugadores, jugadoras y leyendas de la liga se conectarán como socios conductores a través de DiDi y sorprenderán a sus seguidores con retos inesperados. Y como nuestros Leones nunca dejarán de ser competitivos, miralos disputarse un jugoso premio. Cada semana se estrenará un nuevo episodio. ¡No te los perdás!",
+  "KnowMoreBannerLeones.bgColor": "bg-white",
+  "KnowMoreBannerLeones.textColor": "gray",
+  "LeonesTableBannerLeones.title": "¿Cómo van los retos?",
+  "LeonesTableBannerLeones.desc": "",
+  "LeonesTableBannerLeones.bgColor": "bg-orange-primary",
+  "LeonesTableBannerLeones.textColor": "white",
   "AboutHero.title": "SOMOS LA PLATAFORMA TECNOLÓGICA DE MOVILIDAD INTELIGENTE #1 EN EL MUNDO",
   "AboutHero.desc": "",
   "AboutHero.textColor": "white",
