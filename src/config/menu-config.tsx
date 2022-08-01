@@ -477,6 +477,58 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
+  ec: [
+    {
+      text: "DiDi Pasajero",
+      url: "/ec/pasajero/",
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/ec/driver/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/ec/driver/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/ec/ciudades/",
+        },
+      ],
+    },
+    {
+      text: "Acerda de DiDi",
+      url: "/ec/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/ec/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/ec/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/ec/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/ec/articulos/",
+        },
+      ],
+    },
+  ],
   mx: [
     {
       text: "Home",

@@ -176,6 +176,41 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
   },
+  ec: {
+    "/": {
+      title: "Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en Ecuador, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+    },
+    "/pasajero/": {
+      title: "DiDi Pasajero - Baja la App y Viaja Seguro",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Ecuador. Elige la mejor opción.",
+    },
+    "/driver/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
+    },
+    "/sobre-didi/": {
+      title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+    },
+    "/seguridad/": {
+      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/centro-de-ayuda/": {
+      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/guias/": {
+      title: "Guías para Conductores DiDi.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+    },
+    "/articulos/": {
+      title:
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+    },
+  },
   ar: {
     "/": {
       title: "Registrate como Socio Conductor DiDi",
