@@ -49,15 +49,6 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    {
-      nodes {
-        name
-        phone
-        requirement {
-          raw
-        }
-      }
-    }
   }
 `;
 

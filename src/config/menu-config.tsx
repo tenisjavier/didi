@@ -374,7 +374,7 @@ const menuLinks: AllMenuInterface = {
   cr: [
     {
       text: "DiDi Conductor",
-      url: "/cr/driver",
+      url: "/cr/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -388,7 +388,7 @@ const menuLinks: AllMenuInterface = {
     },
     { 
       text: "Usuario",
-      url: "/cr/pasajero",
+      url: "/cr/pasajero/",
     },
     {
       text: "Acerca de DiDi",

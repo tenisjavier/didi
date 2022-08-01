@@ -36,7 +36,9 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          in: ["cr.FoodContactHero.bgImage", "au.ContactBenefits.image"]
+          in: [
+            "cr.FoodContactHero.bgImage"
+          ]
         }
       }
     ) {
