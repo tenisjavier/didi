@@ -433,8 +433,8 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
-  "SmartBannerDrv.title": "DiDi Conductor",
-  "SmartBannerDrv.desc": "Ganancias Extras",
-  "SmartBannerPax.title": "DiDi Pasajero",
-  "SmartBannerPax.desc": "Pedí un Viaje"
+  "SBDrv.title": "DiDi Conductor",
+  "SBDrv.desc": "Ganancias Extras",
+  "SBPax.title": "DiDi Pasajero",
+  "SBPax.desc": "Pedí un Viaje"
 }

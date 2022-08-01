@@ -7,6 +7,7 @@ import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
+import HomeColumns from "../../components/sections/HomeColumns";
 
 const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -28,6 +29,7 @@ const Pasajero = ({ data }) => {
       <PaxBanner></PaxBanner>
       <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <KnowMoreBanner></KnowMoreBanner>
+      <HomeColumns></HomeColumns>
     </Layout>
   );
 };

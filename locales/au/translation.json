@@ -710,8 +710,8 @@
   "DrvTaxInfoFeatures.textColor": "gray-primary",
   "DrvTaxInfoFeatures.bgColor": "bg-gray-light",
   "DrvTaxInfoFeatures.btnMode": "primary",
-  "SmartBannerDrv.title": "DiDi Driver",
-  "SmartBannerDrv.desc": "Make Extra Money",
-  "SmartBannerPax.title": "DiDi Rider",
-  "SmartBannerPax.desc": "Affordable Rides"
+  "SBDrv.title": "DiDi Driver",
+  "SBDrv.desc": "Make Extra Money",
+  "SBPax.title": "DiDi Rider",
+  "SBPax.desc": "Affordable Rides"
 }
