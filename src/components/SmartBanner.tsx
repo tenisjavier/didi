@@ -9,7 +9,6 @@ interface SmartBannerProps {
 
 const SmartBanner = (props: SmartBannerProps) => {
   const { i18n, t } = useTranslation();
-  console.log(t("SmartBannerDrv.title"));
   const { type } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
