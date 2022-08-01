@@ -1,32 +1,31 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import HelpCenterHero from "../../../components/sections/HelpCenterHero";
-import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
-import HomeColumns from "../../../components/sections/HomeColumns";
+import Layout from "../../components/Layout";
+import HelpCenterHero from "../../components/sections/HelpCenterHero";
+import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
+import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
+import HomeColumns from "../../components/sections/HomeColumns";
 
-const HelpCenter = ({ data }) => {
+const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
-    return image.title === "au.HelpCenterHero.bgImage";
+    return image.title === "ec.HelpCenterHero.bgImage";
   })[0];
-  const faqPax = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Riders Australia"
+  const faqExpress = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Express Ecuador"
   );
-  const homeColumnsImages = images.filter((image) => {
-    return image.title.indexOf("au.HomeColumns.image") !== -1;
-  });
-
+  const faqPax = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Pasajero Ecuador"
+  );
   return (
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
+      <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
-      <HomeColumns images={homeColumnsImages}></HomeColumns>
+      <HomeColumns></HomeColumns>
     </Layout>
   );
 };
-
-export default HelpCenter;
 
 export const query = graphql`
   query ($language: String!) {
@@ -40,10 +39,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: { regex: "/(au.HelpCenterHero.bgImage)|(au.HomeColumns.image)/" }
-      }
-      sort: { fields: title }
+      filter: { title: { in: ["ec.HelpCenterHero.bgImage"] } }
     ) {
       nodes {
         id
@@ -53,7 +49,7 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "au" } } } }
+      filter: { country: { elemMatch: { code: { eq: "ec" } } } }
     ) {
       nodes {
         name
@@ -67,3 +63,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default CentroDeAyuda;

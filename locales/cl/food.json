@@ -172,7 +172,7 @@
   "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamar o escribirnos.",
   "FoodContactHero.textColor": "white",
   "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "+56227120527",
+  "FoodContactHero.btnLink": "tel:+56227120527",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
@@ -191,12 +191,12 @@
       "desc": "",
       "contacts": [
         {
-          "label": "Correo electrónico: ",
+          "label": "Correo electrónico ",
           "info": "soporte.repartidor@cl.didiglobal.com",
           "infoColor": { "color": "#ff7d41" }
         },
         {
-          "label": "Teléfono:",
+          "label": "Teléfono",
           "info": "(+56) 227120527",
           "infoColor": { "color": "#ff7d41" }
         }

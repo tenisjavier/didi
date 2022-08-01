@@ -76,6 +76,12 @@ const btnLinks: AllBtnInterface = {
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida Ya → Descarga la App",
   },
+  ec: {
+    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ecdriverhero",
+    paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
+    drvText: "Regístrate como Conductor",
+    paxText: "Descarga DiDi Pasajero"
+  },
   cr: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",

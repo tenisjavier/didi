@@ -5,13 +5,13 @@ import HelpCenterHero from "../../../components/sections/HelpCenterHero";
 import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
 import HomeColumns from "../../../components/sections/HomeColumns";
 
-const HelpCenter = ({ data }) => {
+const DeliveryHelp = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
     return image.title === "au.HelpCenterHero.bgImage";
   })[0];
   const faqPax = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Riders Australia"
+    (node) => node.name === "DiDi Delivery Australia Rider"
   );
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
@@ -26,7 +26,7 @@ const HelpCenter = ({ data }) => {
   );
 };
 
-export default HelpCenter;
+export default DeliveryHelp;
 
 export const query = graphql`
   query ($language: String!) {

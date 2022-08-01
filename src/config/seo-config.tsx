@@ -176,6 +176,41 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
   },
+  ec: {
+    "/": {
+      title: "Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en Ecuador, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+    },
+    "/pasajero/": {
+      title: "DiDi Pasajero - Baja la App y Viaja Seguro",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Ecuador. Elige la mejor opción.",
+    },
+    "/driver/": {
+      title: "DiDi Conductor - Maneja y Genera Dinero",
+      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
+    },
+    "/sobre-didi/": {
+      title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
+      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+    },
+    "/seguridad/": {
+      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/centro-de-ayuda/": {
+      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/guias/": {
+      title: "Guías para Conductores DiDi.",
+      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+    },
+    "/articulos/": {
+      title:
+        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+      desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
+    },
+  },
   ar: {
     "/": {
       title: "Registrate como Socio Conductor DiDi",
@@ -388,6 +423,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Ride Help & DiDi FAQs",
       desc: "Need help? Have questions? We're here to assist you!",
     },
+    "/rider/didi-share-for-driver/": {
+      title: "DiDi Share for Riders",
+      desc: "DiDi Share for Riders. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
+    },
     "/driver/": {
       title: "DiDi Driver - Drive and earn with DiDi",
       desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
@@ -395,6 +434,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/driver/help/": {
       title: "Driver Help & FAQs",
       desc: "Need help? Have questions? We're here to assist you!",
+    },
+    "/delivery/help/": {
+      title: "DiDi Delivery Help & FAQs",
+      desc: "DiDi Delivery Help. Need help? Have questions? We're here to assist you!",
     },
     "/didi-advance/": {
       title: "DiDi Advance Driver Program",
@@ -411,6 +454,22 @@ const seoMeta: AllSEOMetaInterface = {
     "/delivery/business/": {
       title: "DiDi Delivery - Business",
       desc: "Power your business with instant and affordable delivery services powered by DiDi drivers.",
+    },
+    "/driver/didi-delivery-australia/": {
+      title: "DiDi Delivery for Drivers - Next Steps",
+      desc: "Earn money delivering goods for stores and people around your city.",
+    },
+    "/driver/didi-share-for-driver/": {
+      title: "DiDi Share for Drivers",
+      desc: "DiDi Share for Drivers. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
+    },
+    "/features/didisal/": {
+      title: "Stay safe with DiDi Sal, your in-trip pal",
+      desc: "DiDi Sal sends helpful safety messages and alerts during your trip to check if everything’s A-OK.",
+    },
+    "/features/fatigue-prevention-feature/": {
+      title: "DiDi Fatigue Feature for Drivers",
+      desc: "It is recommended that you have frequent breaks throughout the day. Just remember to tap “Go Offline” when you do. ",
     },
 
     "/about-us/": {
@@ -558,7 +617,7 @@ const getMetaByPath = (
   path: string
 ): SEOMetaItemInterface => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))||(\/rider\/(.+))(\/food\/blog\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
@@ -574,7 +633,7 @@ const getMetaByPath = (
   const metas = placeRegex.test(path)
     ? {
         title: placeTitle,
-        desc: `${placeTitle}. Pasajero. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931`,
+        desc: `${placeTitle}`,
       }
     : defaultMetas;
 

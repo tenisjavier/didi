@@ -9,6 +9,7 @@ interface SmartBannerProps {
 
 const SmartBanner = (props: SmartBannerProps) => {
   const { i18n, t } = useTranslation();
+  console.log(t("SmartBannerDrv.title"));
   const { type } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
@@ -28,8 +29,8 @@ const SmartBanner = (props: SmartBannerProps) => {
     bgColor = "bg-white";
     btnBgColor = "bg-orange-primary";
     btnTextColor = "text-white";
-    bannerTitle = t("SmartBannerDrv.title");
-    bannerDesc = t("SmartBannerDrv.desc");
+    bannerTitle = t("SBDrv.title");
+    bannerDesc = t("SBDrv.desc");
   } else if (props.type === "pax") {
     btnLink = btnData.paxLink;
     btnText = btnData.paxText.replace(/ .*/, "");
@@ -37,8 +38,8 @@ const SmartBanner = (props: SmartBannerProps) => {
     bgColor = "bg-orange-primary";
     btnBgColor = "bg-white";
     btnTextColor = "text-black";
-    bannerTitle = t("SmartBannerPax.title");
-    bannerDesc = t("SmartBannerPax.desc");
+    bannerTitle = t("SBPax.title");
+    bannerDesc = t("SBPax.desc");
   }
 
   return (

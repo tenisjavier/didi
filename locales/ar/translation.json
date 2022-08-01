@@ -95,6 +95,7 @@
   ],
   "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
+  "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Argentina",
   "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
@@ -432,8 +433,8 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
-  "SmartBannerDrv.title": "DiDi Conductor",
-  "SmartBannerDrv.desc": "Ganancias Extras",
-  "SmartBannerPax.title": "DiDi Pasajero",
-  "SmartBannerPax.desc": "Pedí un Viaje"
+  "SBDrv.title": "DiDi Conductor",
+  "SBDrv.desc": "Ganancias Extras",
+  "SBPax.title": "DiDi Pasajero",
+  "SBPax.desc": "Pedí un Viaje"
 }
