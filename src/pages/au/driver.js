@@ -42,7 +42,6 @@ const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
   const cities = data.contentfulCountry.city;
   const requirements = data.allContentfulRequirement.nodes;
-  console.log(data);
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>

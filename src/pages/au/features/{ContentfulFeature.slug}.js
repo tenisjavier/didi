@@ -7,7 +7,6 @@ import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
 import HomeColumns from "../../../components/sections/HomeColumns";
 
 const Feature = ({ data }) => {
-  console.log(data);
   const images = data.allContentfulAsset.nodes;
   const { name, description, components, componentImages, category } =
     data.contentfulFeature;
