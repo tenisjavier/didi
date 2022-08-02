@@ -4,6 +4,8 @@ import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
 import PaxBanner from "../../components/sections/PaxBanner";
 import PaxColumns from "../../components/sections/PaxColumns";
+import SimplifyHero from "../../components/sections/SimplifyHero";
+import SimplifyColumns from "../../components/sections/SimplifyColumns";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
@@ -17,6 +19,13 @@ const Pasajero = ({ data }) => {
   const paxWhyDiDiImage = images.filter((image) => {
     return image.title === "ec.PaxWhyDiDi.image";
   })[0];
+  const simplifyHeroBgImage = images.filter((image) => {
+    return image.title === "ec.SimplifyHero.bgImage";
+  })[0];
+  const simplifyColumnsImage = images.filter((image) => {
+    return image.title === "ec.SimplifyColumns.image";
+  });
+  console.log(simplifyColumnsImage);
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
@@ -26,6 +35,8 @@ const Pasajero = ({ data }) => {
         data={products}
         title="Hay un DiDi Para ti "
       ></SilderSection>
+      <SimplifyHero bgImage={simplifyHeroBgImage} reverse={true}></SimplifyHero>
+      <SimplifyColumns images={simplifyColumnsImage.reverse()}></SimplifyColumns>
       <PaxBanner></PaxBanner>
       <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <KnowMoreBanner></KnowMoreBanner>
@@ -48,7 +59,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["ec.PaxHero.bgImage", "ec.PaxWhyDiDi.image"] } }
+      filter: { title: { in: ["ec.PaxHero.bgImage", "ec.PaxWhyDiDi.image", "ec.SimplifyHero.bgImage","ec.SimplifyColumns.image"] } }
     ) {
       nodes {
         id

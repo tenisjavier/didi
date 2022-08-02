@@ -208,6 +208,118 @@
       "textColor": "gray-primary"
     }
   ],
+  "SimplifyHero.title": "Simplifica tu día",
+  "SimplifyHero.desc": "",
+  "SimplifyHero.btnText": "",
+  "SimplifyHero.textColor": "white",
+  "SimplifyColumns.bgColor": "bg-gray-light",
+  "SimplifyColumns.textColor": "gray-primary",
+  "SimplifyColumns.columns": [
+    {
+      "title": "Simplifica tus preocupaciones",
+      "desc": "Con DiDi puedes ver la info del carro, la foto del socio y todos los filtros de seguridad que aprobó. Además, si tienes un contratiempo con tu viaje, contamos con botón de emergencia en la app.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Simplifica los problemas",
+      "desc": "Si requieres soporte con un viaje, en DiDi cuentas con una línea telefónica 24/7 atendida por personas que te ayudarán en lo que necesites.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Simplifica las largas esperas",
+      "desc": "Comprueba los cortos tiempos de espera cuando solicitas un viaje.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Simplifica tu presupuesto",
+      "desc": "Pide un viaje sin sacrificar tu seguridad y comodidad desde tan solo $1,50.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "TecnologiaEspaciosHero.title": "Diseñamos tecnología que busca generar espacios más seguros para las mujeres",
+  "TecnologiaEspaciosHero.desc": "",
+  "TecnologiaEspaciosHero.btnText": "",
+  "TecnologiaEspaciosHero.textColor": "white",
+  "FuncionesColumns.bgColor": "bg-gray-light",
+  "FuncionesColumns.textColor": "gray-primary",
+  "FuncionesColumns.columns": [
+    {
+      "title": "Botón de emergencia",
+      "desc": "Durante cualquier incidente o caso de violencia de género puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 911 y nuestro Centro de Emergencias DiDi 24/7.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Evaluación de socios durante el registro en la plataforma tecnológica",
+      "desc": "Quien desee registrarse como socio o usuario en DiDi, debe pasar por una revisión de antecedentes y validación de documentos personales desarrollada a través de un tercero experto en seguridad.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Centro de emergencias DiDi 24/7",
+      "desc": "Sin buscar suplir o reemplazar a las autoridades, contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Desvincular socio o usuario",
+      "desc": "Si la experiencia en tu solicitud te hizo sentir incómoda frente al trato del socio o usuario, al llegar a tu destino, en el menú de calificación encontrarás el botón de desvinculación de socio o usuario. Esto evitará que en futuras oportunidades te conectes con esta persona.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "Compartir ubicación en tiempo real",
+      "desc": "Contactos de confianza como amigos y familiares, pueden hacer seguimiento a la solicitud sin tener la aplicación DiDi descargada en su teléfono. Mediante una solicitud activa, puedes compartir tu ubicación por medio de un mensaje de texto, Whatsapp, entre otras opciones.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "ProtocolCTA.title": "¿Cómo lo hacemos?",
+  "ProtocolCTA.desc": "A través de la educación, la tecnología y el soporte humano. Por un lado, concientizando y educando a las personas para visibilizar el problema y contribuyendo a generar cambios en las conductas de las personas y en la forma como interactúan basadas en el respeto y la empatía. Por otro lado, creando mecanismos que aporten a la reducción de estos casos, brindando acompañamiento cercano a la víctima, y tomando medidas inmediatas y contundentes para contribuir a una comunidad libre de violencia de género. Contamos con un centro de emergencias manejado por personal especializado en seguridad para atender este tipo de casos. No buscamos reemplazar las líneas nacionales de emergencia, pero sí estamos comprometidos con brindar apoyo y acompañamiento adicional a las usuarias que pasen por estas inadmisibles situaciones.",
+  "ProtocolCTA.title2": "Protocolo de seguridad para casos de violencia de género",
+  "ProtocolCTA.desc2": "Combatir los casos de violencia de género, en sus múltiples expresiones, es responsabilidad de todos. Por eso, de la mano de expertas, hemos desarrollado un protocolo de seguridad que busca aportar a una cultura de prevención centrada en la mujer.",
+  "ProtocolCTA.bullets": false,
+  "ProtocolCTA.btnText": "",
+  "ProtocolBullets.title": "Paso a Paso",
+  "ProtocolBullets.bullets": [
+    "Asistencia en seguridad, en caso de que la usuaria o socia lo requiera o se encuentre en peligro. Por medio de la Central de Emergencias mantenemos comunicación permanente con las autoridades para brindar colaboración a las personas involucradas en la situación.",
+    "Orientación para presentar una denuncia ante las autoridades. Nuestros agentes de la central de emergencia mantienen un seguimiento telefónico con la víctima para darle acompañamiento en el manejo de situaciones complicadas.",
+    "Direccionamos a la víctima con canales oficiales como la Línea Púrpura de la Secretaría de la mujer o CAIVAS, y así propiciar el acompañamiento necesario desde todos los frentes.",
+    "En caso de que sea necesario, ofrecemos asistencia médica y apoyo psicológico, por medio de SBS Seguros con base en los términos de la póliza respectiva.",
+    "Facilitamos el contacto con la autoridad competente para brindar orientación presencial de ser necesario.",
+    "Por razones preventivas, y mientras el equipo especializado realiza las diligencias pertinentes en el caso, podría realizarse una suspensión temporal de las cuentas involucradas.",
+    "Si la cuenta denunciada incumplió con los términos y condiciones de la app, será bloqueada permanentemente.",
+    "Nuestro equipo hace un seguimiento periódicamente con las partes involucradas, para conocer el estado de la situación."
+  ],
+  "ProtocolBullets.desc": "",
+  "NeutralFAQ.items": [
+    {
+      "title": "¿Qué debo hacer si soy víctima de una situación de violencia basada en género al usar la aplicación?",
+      "content": "En caso de ser víctima durante una solicitud intermediada por DiDi, y dependiendo de la situación, puedes utilizar los siguientes canales: – Botón de emergencias de DiDi: Para recibir soporte inmediato de una agente de la central de emergencias. – Línea de soporte: Comunícate a la línea de usuario +593 23422607 o línea de socio +593 23422606"
+    },
+    {
+      "title": "¿DiDi colabora con las autoridades para solucionar los incidentes de seguridad?",
+      "content": "Estamos en permanente contacto con las autoridades para colaborar inmediatamente ante cualquier incidente de seguridad. De igual forma, direccionamos a la víctima en el proceso de denuncia y necesidades psicológicas, con el apoyo de grupos de expertas."
+    },
+    {
+      "title": "¿DiDi me puede compartir la información de los socios y/o usuarios que están involucrados en un caso de seguridad?",
+      "content": "En apoyo a la ley de Habeas Data y como medida de protección a nuestra comunidad dentro de nuestros esfuerzos de responsabilidad social, no podemos proporcionar información confidencial de los usuarios o socios. Sin embargo, como parte de nuestro compromiso de colaborar con las autoridades competentes y colaborar en la resolución de este tipo de casos, ponemos esta información a disposición de las autoridades inmediatamente recibimos un requerimiento formal."
+    },
+    {
+      "title": "¿DiDi realiza validación de antecedentes de forma periódica?",
+      "content": "Para DiDi, la seguridad es una prioridad. Por esta razón, además de la validación inicial que se realiza con todos los socios que deseen registrarse en la aplicación, adelantamos acciones permanentes relacionadas con seguridad y antifraude como verificación facial para confirmar la identidad de la persona que utiliza la aplicación; monitoreo en tiempo real, en el que recibimos alertas automáticas en caso de que un servicio esté tomando más tiempo del estimado; y dentro de nuestras gestiones de responsabilidad social contamos con una póliza de responsabilidad civil contractual y extracontractual que cubre accidentes personales, gastos médicos, entre otros."
+    },
+    {
+      "title": "¿Qué pasa con los agresores?",
+      "content": "Cualquier persona que utilice nuestra plataforma tecnológica indebidamente, y en contra de los términos y condiciones, podrá ser bloqueada."
+    }
+  ],
+  "NeutralFAQ.title": "",
+  "NeutralFAQ.content": "",
   "PaxWhyDiDi.title": "¡Tu seguridad es nuestra prioridad! por eso tenemos funcionalidades pensadas para ti:",
   "PaxWhyDiDi.bullets": [
     "Verificación de antecedentes de socios conductores",
