@@ -449,7 +449,7 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "Acerda de DiDi",
+      text: "Acerca de DiDi",
       url: "/do/sobre-didi/",
       dropMenu: [
         {
@@ -501,7 +501,7 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "Acerda de DiDi",
+      text: "Acerca de DiDi",
       url: "/ec/sobre-didi/",
       dropMenu: [
         {

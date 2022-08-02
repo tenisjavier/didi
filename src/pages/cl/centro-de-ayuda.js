@@ -11,7 +11,7 @@ import HomeColumns from "../../components/sections/HomeColumns";
 const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
-    return image.title === "cl.HelpCenterHero.bgImage";
+    return image.title === "ec.HelpCenterHero.bgImage";
   })[0];
   const faqDelivery = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Entrega Chile"
@@ -50,7 +50,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cl.HelpCenterHero.bgImage"] } }
+      filter: { title: { in: ["ec.HelpCenterHero.bgImage"] } }
     ) {
       nodes {
         id
