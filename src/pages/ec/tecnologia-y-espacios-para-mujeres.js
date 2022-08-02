@@ -21,7 +21,10 @@ const Seguridad = ({ data }) => {
   const protocolCTAImage = images.filter((image) => {
     return image.title === "ec.ProtocolSafety.image";
   })[0];
-  console.log(protocolCTAImage);
+  
+  const pasosCTAImage = images.filter((image) => {
+    return image.title === "ec.SeguridadPasos.image";
+  })[0];
   return (
     <Layout>
       <TecnologiaEspaciosHero bgImage={tecnologiaEspaciosHeroBgImage}></TecnologiaEspaciosHero>
@@ -30,7 +33,7 @@ const Seguridad = ({ data }) => {
         image={protocolCTAImage}
         bullets={false}
       ></ProtocolCTA>
-      <ProtocolBullets image={protocolCTAImage}></ProtocolBullets>
+      <ProtocolBullets image={pasosCTAImage}></ProtocolBullets>
       <NeutralFAQ></NeutralFAQ>
     </Layout>
   );
@@ -51,7 +54,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: { in: ["ec.TecnologiaEspacios.bgImage", "ec.FuncionesColumns.image", "ec.ProtocolSafety.image", "ec.HelloCTA.image"] }
+        title: { in: ["ec.TecnologiaEspacios.bgImage", "ec.FuncionesColumns.image", "ec.ProtocolSafety.image", "ec.SeguridadPasos.image"] }
       }
     ) {
       nodes {
