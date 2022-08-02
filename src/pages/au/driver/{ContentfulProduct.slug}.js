@@ -85,6 +85,7 @@ export const query = graphql`
         description
         image {
           gatsbyImageData
+          description
         }
         country {
           code
@@ -98,6 +99,15 @@ export const query = graphql`
         title
         content {
           raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
+            }
+          }
         }
       }
       image {

@@ -29,10 +29,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      <HomeHero
-        bgImage={homeHeroBgImage}
-        image={homeColumnsImages[2]}
-      ></HomeHero>
+      <HomeHero bgImage={homeHeroBgImage}></HomeHero>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
