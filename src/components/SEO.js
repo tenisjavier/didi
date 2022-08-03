@@ -10,9 +10,7 @@ const SEO = () => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
-
-        filter: { code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec"] } }
-
+        filter: { code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec", "cr"] } }
       ) {
         nodes {
           name

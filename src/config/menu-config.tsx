@@ -373,26 +373,66 @@ const menuLinks: AllMenuInterface = {
   ],
   cr: [
     {
-      text: "DiDi Pasajero",
-      url: "http://chile.didiglobal.com/pasajero",
-    },
-    {
       text: "DiDi Conductor",
-      url: "http://chile.didiglobal.com/driver",
+      url: "/cr/driver/",
       dropMenu: [
         {
           text: "Socio Conductor",
           url: "https://chile.didiglobal.com/driver/",
         },
         {
-          text: "Santiago",
-          url: "https://chile.didiglobal.com/driver/santiago",
-        },
-        {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
+      ],   
+    },
+    { 
+      text: "Usuario",
+      url: "/cr/pasajero/",
+    },
+    {
+      text: "Acerca de DiDi",
+      url: "/cr/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/cr/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/cr/centro-de-ayuda/",
+        },
       ],
+    },
+    {
+      text: "DiDi Food",
+      url: "/cr/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/cr/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/cr/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/cr/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/cr/food/contact/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Fleet",
+      url: "/cr/didifleet/"
+    },
+    {
+      text: "Leones al Volante",
+      url: "/cr/leones/"
     },
   ],
   do: [

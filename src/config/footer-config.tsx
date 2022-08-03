@@ -68,6 +68,13 @@ const footerLinks: AllFooterInterface = {
     { text: "Acerca de nosotros", link: "/pa/sobre-didi/" },
     { text: "Legal", link: "/pa/legal/" },
   ],
+  cr: [
+    { text: "Conductor", link: "/cr/driver/" },
+    { text: "Usuario", link: "/cr/pasajero/" },
+    { text: "Seguridad", link: "/cr/seguridad/" },
+    { text: "Centro de ayuda", link: "/pa/centro-de-ayuda/" },
+    { text: "Legal", link: "/cr/legal/" },
+  ],
 };
 
 const getFooterLinks = (countryCode: string): FooterLinks[] => {
