@@ -2,7 +2,6 @@ import React from "react";
 import AccordionNeutralSection from "../AccordionNeutralSection";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-
 const NeutralFAQ = () => {
   const { t } = useTranslation();
   const data = t("NeutralFAQ.items", { returnObjects: true });
@@ -14,10 +13,8 @@ const NeutralFAQ = () => {
     });
   });
 
-  console.log(items);
-
   const title = "Preguntas frecuentes";
-  
+
   return (
     <AccordionNeutralSection
       bgColor="bg-white"

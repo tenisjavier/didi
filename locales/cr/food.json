@@ -74,6 +74,9 @@
       "linkItem": "https://d.didiglobal.com/3cikL"
     }
   ],
+  "Requirements.title": "Requerimientos para ser Socio Restaurante",
+  "Requirements.bgColor": "bg-gray-light",
+  "Requirements.textColor": "bg-white",
   "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
   "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
   "FoodDeliveryHero.textColor": "white",
@@ -165,7 +168,7 @@
   "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
   "FoodContactHero.textColor": "white",
   "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "tel:+18299568643",
+  "FoodContactHero.btnLink": "tel:+50641063372",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
@@ -174,27 +177,27 @@
       "contacts": [
         {
           "label": "Correo electrónico: ",
-          "info": "soporte.repartidor@do.didiglobal.com",
+          "info": "soporte.repartidor@cr.didiglobal.com",
           "infoColor": { "color": "#ff7d41" }
         },
         {
           "label": "Teléfono",
-          "info": "(+1) 829 956 8643",
+          "info": "(+506) 4106 3372",
           "infoColor": { "color": "#ff7d41" }
         },
         {
-          "label": "Santo Domingo. Dirección",
-          "info": "Plaza Central, Av 27 de Febrero, Santo Domingo | Local 400-16B",
+          "label": "Centro de Experiencia",
+          "info": "Mezzanine (entrando por el lobby a la izquierda) Hotel Parque del Lago, 50 metros este de la Entrada de Paseo Colón, San José Costa Rica.",
           "infoColor": { "color": "#ff7d41" }
         },
         {
           "label": "Horario de Atención",
-          "info": "Lunes a Viernes de 8:30 a.m. a 5:30 p.m. | Sábado de 8:30 a.m. a 12:30 p.m.",
+          "info": "Lunes a Viernes de 8:00 a.m. a 5:00 p.m. | Sábado de 8:00 a.m. a 12:00 p.m.",
           "infoColor": { "color": "#ff7d41" }
         },
         {
           "label": "Reserva tu Visita Aquí",
-          "info": "https://calendly.com/didird/dcpresencial",
+          "info": "https://citasdidifood.as.me/socio-repartidor",
           "infoColor": { "color": "#ff7d41" }
         },
         {

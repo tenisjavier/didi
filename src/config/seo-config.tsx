@@ -123,11 +123,11 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en República Dominicana. Elige la mejor opción.",
     },
     "/driver/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
+      title: "DiDi Conductor - Conduce y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
     },
-    "/moto/": {
-      title: "DiDi Moto - Maneja y Genera Dinero",
+    "/driver/moto/": {
+      title: "DiDi Moto - Conduce y Genera Dinero",
       desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
     "/food/": {
@@ -186,7 +186,7 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Ecuador. Elige la mejor opción.",
     },
     "/driver/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
+      title: "DiDi Conductor - Conduce y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
     },
     "/sobre-didi/": {
