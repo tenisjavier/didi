@@ -9,6 +9,7 @@ const Article = ({ data }) => {
   const articlesHeroBgImage = images.filter((image) => {
     return image.title === "au.PaxHero.bgImage";
   })[0];
+  console.log(data);
   return (
     <Layout>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
@@ -20,7 +21,7 @@ const Article = ({ data }) => {
 export default Article;
 
 export const query = graphql`
-  query ($language: String!) {
+  query ($language: String!, $skip: Int!, $limit: Int!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
@@ -44,7 +45,8 @@ export const query = graphql`
         country: { code: { eq: "au" } }
       }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: 10
+      limit: $limit
+      skip: $skip
     ) {
       nodes {
         title
