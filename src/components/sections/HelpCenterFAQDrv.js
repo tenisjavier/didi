@@ -12,7 +12,6 @@ const HelpCenterFAQDrv = ({ data }) => {
     });
   });
 
-  console.log(items);
   const props = {
     title: t("HelpCenterFAQDrv.title"),
     bgColor: t("HelpCenterFAQDrv.bgColor"),

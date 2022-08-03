@@ -25,7 +25,6 @@ const Pasajero = ({ data }) => {
   const simplifyColumnsImage = images.filter((image) => {
     return image.title === "ec.SimplifyColumns.image";
   });
-  console.log(simplifyColumnsImage);
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
@@ -36,7 +35,9 @@ const Pasajero = ({ data }) => {
         title="Hay un DiDi Para ti "
       ></SilderSection>
       <SimplifyHero bgImage={simplifyHeroBgImage} reverse={true}></SimplifyHero>
-      <SimplifyColumns images={simplifyColumnsImage.reverse()}></SimplifyColumns>
+      <SimplifyColumns
+        images={simplifyColumnsImage.reverse()}
+      ></SimplifyColumns>
       <PaxBanner></PaxBanner>
       <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <KnowMoreBanner></KnowMoreBanner>
@@ -59,7 +60,16 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["ec.PaxHero.bgImage", "ec.PaxWhyDiDi.image", "ec.SimplifyHero.bgImage","ec.SimplifyColumns.image"] } }
+      filter: {
+        title: {
+          in: [
+            "ec.PaxHero.bgImage"
+            "ec.PaxWhyDiDi.image"
+            "ec.SimplifyHero.bgImage"
+            "ec.SimplifyColumns.image"
+          ]
+        }
+      }
     ) {
       nodes {
         id
