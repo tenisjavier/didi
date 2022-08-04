@@ -392,7 +392,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Fleet",
-      url: "/cr/didifleet/",
+      url: "/cr/didi-fleet/",
     },
     {
       text: "DiDi Food",

@@ -569,5 +569,55 @@
       "textColor": "gray-primary",
       "width": "w-100"
     }
-  ]
+  ],
+  "AboutDidiFleetVideo.title": "Mirá el video y conocé cómo funciona DiDi Fleet",
+  "AboutDidiFleetVideo.textColor": "gray-primary",
+  "AboutDidiFleetVideo.bgColor": "bg-gray-light",
+  "FleetColumns.bgColor": "bg-green-primary",
+  "FleetColumns.title": "Beneficios de DiDi Fleet",
+  "FleetColumns.textColor": "white",
+  "FleetColumns.columns": [
+    {
+      "title": "Te conectamos con un socio conductor potencial",
+      "desc": "Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+      "textColor": "white"
+    },
+    {
+      "title": "¡Generá ganancias sin salir de casa!",
+      "desc": "Además, aprovechá una de las tasas de servicio más bajas del mercado.",
+      "textColor": "white"
+    },
+    {
+      "title": "¡Contás con soporte 24/7!",
+      "desc": "y todas las funciones de seguridad DiDi.",
+      "textColor": "white"
+    },
+        {
+      "title": "Monitorea los ingresos de las solicitudes generadas con tu vehículo",
+      "desc": "y recibí los pagos con tarjeta de crédito directamente en tu app.",
+      "textColor": "white"
+    }
+  ],
+  "FleetStepsColumns.bgColor": "white",
+  "FleetStepsColumns.columns": [
+    {
+      "desc": "Registrate como socio aliado y completá tus documentos",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "Invitá a otros socios a registrarse como parte de tu grupo",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "¡Estás listo para empezar a administrar tus vehículos!",
+      "textColor": "gray-primary"
+    }
+  ],
+  "DownloadFleetCTA.title": "¿Cómo registrarme en DiDi Fleet?",
+  "DownloadFleetCTA.desc": "Descargá DiDi Fleet",
+  "DownloadFleetCTA.textColor": "gray-primary",
+  "DownloadFleetCTA.bgColor": "bg-gray-light",
+  "DownloadFleetCTA.btnText": "Descargá ahora",
+  "DownloadFleetCTA.btnMode": "primary",
+  "DownloadFleetCTA.btnLink": "https://page.didiglobal.com/driver-page/register/index.html?location_country=MX&lang=es-MX&channel=104&utm_source=(direct)&utm_medium=(none)&utm_campaign=none&shortlink=fleetmacregion&c=fleet_mac_region&pid=fleet_mac_region&deep_link_value=fleet#/loginMxComp"
 }

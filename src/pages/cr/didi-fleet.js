@@ -2,28 +2,35 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
-import FleetWhyDidi from "../../components/sections/FleetWhyDiDi";
-import Requirements from "../../components/sections/Requirements";
-import HomeColumns from "../../components/sections/HomeColumns";
-import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
+import FleetColumns from "../../components/sections/FleetColumns";
+import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
+import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
+import DownloadFleetCTA from "../../components/sections/DownloadFleetCTA";
 
 const Fleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const fleetHeroBgImage = images.filter((image) => {
     return image.title === "cr.FleetHero.bgImage";
   })[0];
-  const fleetWhyDiDiImage = images.filter((image) => {
-    return image.title === "cr.FleetWhyDiDi.image";
+  const FleetColumnsImages = images.filter((image) => {
+    return image.title.indexOf("cr.FleetColumns.image") !== -1;
+  });
+  const FleetStepsColumnsImages = images.filter((image) => {
+    return image.title.indexOf("cr.FleetStepsColumns.image") !== -1;
+  });
+  const fleetDownloadImage = images.filter((image) => {
+    return image.title === "cr.FleetDownload.image";
   })[0];
-  const products = data.allContentfulProduct.nodes;
+
+  
 
   return (
     <Layout>
       <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
-      <FleetWhyDidi image={fleetWhyDiDiImage}></FleetWhyDidi>
-      <Requirements data={products}></Requirements>
-      <KnowMoreBanner></KnowMoreBanner>
-      <HomeColumns></HomeColumns>
+      <DownloadFleetCTA image={fleetDownloadImage}></DownloadFleetCTA>
+      <FleetStepsColumns images={FleetStepsColumnsImages}></FleetStepsColumns>
+      <AboutDidiFleetVideo></AboutDidiFleetVideo>
+      <FleetColumns images={FleetColumnsImages.reverse()}></FleetColumns>
     </Layout>
   );
 };
@@ -40,7 +47,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["cr.FleetHero.bgImage", "cr.FleetWhyDiDi.image"] } }
+      filter: { title: { in: ["cr.FleetHero.bgImage", "cr.FleetWhyDiDi.image", "cr.FleetColumns.image", "cr.FleetStepsColumns.image", "cr.FleetDownload.image"] } }
     ) {
       nodes {
         id
