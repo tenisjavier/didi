@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import {
-  faHandshakeAngle,
+  faCar,
   faPhoneVolume,
-  faEnvelope,
+  faUser,
   faNewspaper,
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
@@ -12,12 +12,12 @@ import ContactBenefits from "../../components/sections/ContactBenefits";
 
 const Contact = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const icons = [faHandshakeAngle, faPhoneVolume, faEnvelope, faNewspaper];
+  const icons = [faCar, faPhoneVolume, faUser, faNewspaper];
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "au.ContactHero.bgImage";
+    return image.title === "ar.ContactHero.bgImage";
   })[0];
   const ContactBenefitsImage = images.filter((image) => {
-    return image.title === "au.ContactBenefits.image";
+    return image.title === "ar.ContactBenefits.image";
   })[0];
 
   return (
@@ -46,7 +46,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: { in: ["au.ContactHero.bgImage", "au.ContactBenefits.image"] }
+        title: { in: ["ar.ContactHero.bgImage", "ar.ContactBenefits.image"] }
       }
     ) {
       nodes {
