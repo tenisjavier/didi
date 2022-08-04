@@ -5,9 +5,7 @@ import HomeHero from "../../components/sections/HomeHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
-import HelloCTA from "../../components/sections/HelloCTA";
 import HomeColumns from "../../components/sections/HomeColumns";
-
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -23,17 +21,13 @@ const Index = ({ data }) => {
   const paxCTAImage = images.filter((image) => {
     return image.title === "cr.PaxCTA.image";
   })[0];
-  const helloImage = images.filter((image) => {
-    return image.title === "cr.HelloCTA.image";
-  })[0];
 
   return (
     <Layout>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
-      <HelloCTA image={helloImage}></HelloCTA>
+      <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage} bullets={false}></DrvCTA>
       <PaxCTA image={paxCTAImage} bullets={false}></PaxCTA>
-      <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <HomeColumns></HomeColumns>
     </Layout>
   );
@@ -57,7 +51,6 @@ export const query = graphql`
         title: {
           in: [
             "cr.HomeHero.bgImage"
-            "cr.HelloCTA.image"
             "cr.SafetyCTA.image"
             "cr.DrvCTA.image"
             "cr.PaxCTA.image"

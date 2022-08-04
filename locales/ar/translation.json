@@ -316,39 +316,39 @@
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "ContactHero.title": "Contactanos",
-  "ContactHero.desc": "If you have a problem please contact with our support team",
+  "ContactHero.desc": "Si tuviste algún problema, por favor comunicate con nuestro equipo de atención. Abajo te dejamos los canales de comunicación.",
   "ContactHero.textColor": "white",
   "ContactHero.btnMode": "primary",
   "ContactHero.btnText": "Call Costumer Support",
   "ContactHero.btnLink": "tel:+541153534474",
-  "ContactBenefits.title": "Si sos usuario, conductor o prensa contactanos",
+  "ContactBenefits.title": "Contacto",
   "ContactBenefits.bgColor": "bg-white",
   "ContactBenefits.textColor": "gray-primary",
   "ContactBenefits.columns": [
     {
-      "title": "¿Con qué necesitás ayuda?",
-      "desc": "Servicio al Cliente te ayuda con problemas o posibles preguntas que podés tener con DiDi",
+      "title": "Conductor",
+      "desc": "Si sos conductor, llamá al +54 (11) 3987-6342 para que podamos resolver tus consultas de manera personalizada.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "Contactate con Nosotros",
-      "desc": "Contás con DiDi 24/7 para escucharte, para ayudarte. Contactanos: Si sos Socio Conductor +54 (11) 5353-4474",
+      "title": "Driver Center",
+      "desc": "Si sos conductor, te podés acercar al Driver Center para tener una atención especializada y exclusiva para conductores. Dirección: Loyola 501, Villa Crespo, CABA.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "Email us",
-      "desc": "Need further information, you can contact DiDi Customer Support directly via email at help.driver@au.didiglobal.com or help.rider@au.didiglobal.com ",
+      "title": "Pasajero",
+      "desc": "Si sos usuario, llamá al +54 (11) 5353-4474  para que podamos resolver tus consultas de manera personalizada.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "¿Sos de la Prensa Argentina?",
-      "desc": "Si formás parte de la prensa Argentina, ¡no dudes en ponerte en contacto con nosotros! argentinaprensa@didiglobal.com",
+      "title": "Prensa",
+      "desc": "Si formás parte de la prensa argentina, podés contactarnos a través del siguiente mail: argentinaprensa@didiglobal.com",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
 

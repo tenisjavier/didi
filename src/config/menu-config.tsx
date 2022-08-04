@@ -137,6 +137,10 @@ const menuLinks: AllMenuInterface = {
           text: "Centro de Ayuda",
           url: "/ar/centro-de-ayuda/",
         },
+        {
+          text: "Contacto",
+          url: "/ar/contacto/",
+        },
       ],
     },
     {
