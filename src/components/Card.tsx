@@ -13,6 +13,7 @@ export interface CardProps extends BtnProps {
   image: React.ReactNode;
   height?: string;
   width?: string;
+  index?: number
 }
 
 const Card = (props: CardProps) => {
@@ -28,11 +29,12 @@ const Card = (props: CardProps) => {
     btnMode,
     btnText,
     btnType,
+    index
   } = props;
 
   return (
     <div
-      className={` max-w-xs ${width}  rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-12`}
+      className={` max-w-xs ${width}  rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-12 card-${index}`}
     >
       <div className="mb-5 ">{image}</div>
 

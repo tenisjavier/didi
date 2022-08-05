@@ -3,17 +3,19 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import ArticlesColumns from "../../../components/sections/ArticlesColumns";
 import ArticlesHero from "../../../components/sections/ArticlesHero";
+import Pagination from "../../../components/Pagination";
 
 const Article = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
     return image.title === "au.PaxHero.bgImage";
   })[0];
-  console.log(data);
+
   return (
     <Layout>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
+      <Pagination data={data} postsPerPage={6}></Pagination>
     </Layout>
   );
 };
@@ -21,7 +23,7 @@ const Article = ({ data }) => {
 export default Article;
 
 export const query = graphql`
-  query ($language: String!, $skip: Int!, $limit: Int!) {
+  query ($language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
@@ -45,8 +47,7 @@ export const query = graphql`
         country: { code: { eq: "au" } }
       }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: $limit
-      skip: $skip
+      limit: 10
     ) {
       nodes {
         title

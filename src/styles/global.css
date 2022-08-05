@@ -124,3 +124,25 @@ section.main-text ol li {
 .accordion a {
   @apply text-orange-primary;
 }
+
+
+.pagination {
+  display: block;
+  text-align: center;
+}
+
+.pagination .page-item {
+  display: inline-block;
+  text-align: center;
+  padding: .2rem .4rem;
+  margin: 0 .2rem;
+  cursor: pointer;
+  border: 1px solid #6b7280;
+  color: #6B7280;
+}
+
+
+.pagination .page-item:hover, .pagination .page-item.active {
+  background-color: #6B7280;
+  color: white;
+}
