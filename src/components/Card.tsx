@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import reactMarkdown from "react-markdown";
 import Btn, { BtnProps } from "./Btn";
+import Truncate from "react-truncate";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
@@ -36,14 +37,17 @@ const Card = (props: CardProps) => {
     <div
       className={` max-w-xs ${width}  rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-12 card-${index}`}
     >
-      <div className="mb-5 ">{image}</div>
+      <div className="mb-5 h-64">{image}</div>
 
       <div
         className={`flex ${height} flex-col items-center justify-between px-6 py-4 text-center`}
       >
-        <div className="mb-4">
+        <div className="mb-4 h-64 overflow-hidden">
           <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
-          <p className={"text-lg"}>{desc}</p>
+          <p className={"text-lg"}></p>
+          <Truncate lines={6} ellipsis={<span>...</span>}>
+                {desc}
+            </Truncate>
         </div>
         <div className="flex justify-center">
           <Btn
