@@ -629,5 +629,9 @@
   "DownloadFleetCTA.bgColor": "bg-gray-light",
   "DownloadFleetCTA.btnText": "Descargá ahora",
   "DownloadFleetCTA.btnMode": "primary",
-  "DownloadFleetCTA.btnLink": "https://page.didiglobal.com/driver-page/register/index.html?location_country=MX&lang=es-MX&channel=104&utm_source=(direct)&utm_medium=(none)&utm_campaign=none&shortlink=fleetmacregion&c=fleet_mac_region&pid=fleet_mac_region&deep_link_value=fleet#/loginMxComp"
+  "DownloadFleetCTA.btnLink": "https://page.didiglobal.com/driver-page/register/index.html?location_country=MX&lang=es-MX&channel=104&utm_source=(direct)&utm_medium=(none)&utm_campaign=none&shortlink=fleetmacregion&c=fleet_mac_region&pid=fleet_mac_region&deep_link_value=fleet#/loginMxComp",
+  "SBDrv.title": "DiDi Conductor",
+  "SBDrv.desc": "Ganancias Extras",
+  "SBPax.title": "DiDi Pasajero",
+  "SBPax.desc": "Pedí un Viaje"
 }
