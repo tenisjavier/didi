@@ -26,7 +26,7 @@ const FleetHero = ({ bgImage }: FleetHeroProps) => {
       ></GatsbyImage>
     ),
     btnMode: t("FleetHero.btnMode"),
-    btnType: "drv",
+    btnType: "fleet",
   };
   return <CTASection {...props}></CTASection>;
 };

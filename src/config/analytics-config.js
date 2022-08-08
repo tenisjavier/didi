@@ -72,6 +72,7 @@ const insertBtnParams = () => {
     if (
       url.indexOf("ssa-rides-driver.onelink.me/mbwy/") > -1 ||
       url.indexOf("https://global-rides-passenger.onelink.me/xNlo/") > -1 ||
+      url.indexOf("http://fleet.onelink.me/tLtr/") > -1 ||
       url.indexOf("https://99.onelink.me/Mayr/") > -1 ||
       url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
       url.indexOf("onelink.me/5xQ3/") > -1 ||
@@ -293,6 +294,11 @@ const insertBtnParams = () => {
       return oldUrl + newSearch;
     } else if (url.indexOf("me/zzaY/") > -1) {
       return oldUrl + newSearchFood;
+    } else if (url.indexOf("fleet.onelink.me/tLtr/") > -1) {
+      return (
+        oldUrl +
+        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-fleet/`
+      );
     } else {
       return (
         oldUrl +

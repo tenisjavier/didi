@@ -10,6 +10,7 @@ export interface BtnProps {
     | "both"
     | "drv"
     | "pax"
+    | "fleet"
     | "foodBusiness"
     | "foodDelivery"
     | "foodEater";
@@ -28,6 +29,9 @@ const Btn = ({ btnType, btnMode, btnLink, btnText }: BtnProps) => {
   } else if (btnType === "pax") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
+  } else if (btnType === "fleet") {
+    btnLink = btnData.fleetLink;
+    btnText = btnText || btnData.fleetText;
   } else if (btnType === "foodBusiness") {
     btnLink = btnData.foodBusinessLink;
     btnText = btnText || btnData.foodBusinessText;
@@ -38,7 +42,6 @@ const Btn = ({ btnType, btnMode, btnLink, btnText }: BtnProps) => {
     btnLink = btnData.foodEaterLink;
     btnText = btnText || btnData.foodEaterText;
   }
-
   return (
     <div className={`my-2 btn-${btnMode}`}>
       <a className="block" href={btnLink}>

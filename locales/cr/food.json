@@ -1,19 +1,19 @@
 {
-  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
-  "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.title": "DiDi Food: Tu comida cuando querás, donde querás",
+  "FoodHero.desc": "Pedí comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "primary",
   "FoodColumns.bgColor": "bg-white",
   "FoodColumns.columns": [
     {
       "title": "Amplia disponibilidad y cobertura",
-      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encuéntranos ahora en todo Chile!",
+      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encontranos ahora en todo Costa Rica!",
       "bgColor": "bg-orange-primary",
       "textColor": "white"
     },
     {
-      "title": "Ordena sin complicaciones",
-      "desc": "¿Tienes ganas de una hamburguesa, pizza o sushi? Con DiDi Food ordenar es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas tu comida en tu puerta.",
+      "title": "Ordená sin complicaciones",
+      "desc": "¿Tenés ganas de una hamburguesa, pizza o sushi? Con DiDi Food ordenar es fácil y rápido. ¿No tenés efectivo? No te preocupés, también podés pagar con tarjeta de crédito. Nuestra prioridad es que recibás tu comida en tu puerta.",
       "bgColor": "bg-green-primary",
       "textColor": "white"
     },
@@ -24,18 +24,18 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessCTA.title": "Registra tu comercio en DiDi Food",
-  "FoodBusinessCTA.desc": "Conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodBusinessCTA.title": "Registrá tu comercio en DiDi Food",
+  "FoodBusinessCTA.desc": "Convertite en un socio restaurante de DiDi Food y aprovechá los beneficios que tenemos para tu negocio.",
   "FoodBusinessCTA.bgColor": "bg-gray-light",
   "FoodBusinessCTA.textColor": "gray-primary",
   "FoodBusinessCTA.btnMode": "primary",
-  "FoodDeliveryCTA.title": "Regístrate para repartir a través de DiDi Food",
-  "FoodDeliveryCTA.desc": "Inscribirse es fácil. Puedes elegir repartir en moto, bicicleta o auto. Tú eliges cuando y dónde conectarte.",
+  "FoodDeliveryCTA.title": "Registrate para repartir a través de DiDi Food",
+  "FoodDeliveryCTA.desc": "Inscribirse es fácil. Podés elegir repartir en moto, bicicleta o auto. Vos elegís cuando y dónde conectarte.",
   "FoodDeliveryCTA.bgColor": "bg-white",
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
-  "FoodBusinessHero.title": "Conviértete en un socio restaurante de DiDi Food",
-  "FoodBusinessHero.desc": "Aprovecha los beneficios que DiDi Food tiene para tu negocio. Call Center: (+56) 227120527",
+  "FoodBusinessHero.title": "Convertite en un socio restaurante de DiDi Food",
+  "FoodBusinessHero.desc": "Aprovechá los beneficios que DiDi Food tiene para tu negocio. Call Center: (+56) 227120527",
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "primary",
   "FoodBusinessColumns.bgColor": "bg-white",
@@ -48,7 +48,7 @@
     },
     {
       "title": "Entregas confiables",
-      "desc": "A través de nuestras diversas acciones y activaciones, buscamos la disponibilidad constante de Socios Repartidores, aún en horas peak. La tecnología de la plataforma procura que los usuarios reciban sus pedidos según sus preferencias y en el menor tiempo posible.",
+      "desc": "A través de nuestras diversas acciones y activaciones, buscamos la disponibilidad constante de Socios Repartidores, aún en horas pico. La tecnología de la plataforma procura que los usuarios reciban sus pedidos según sus preferencias y en el menor tiempo posible.",
       "bgColor": "bg-green-primary",
       "textColor": "white"
     },
@@ -59,8 +59,8 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessDownloads.title": "Descargar DiDi Food para Tienda",
-  "FoodBusinessDownloads.desc": "¡Optimiza tu negocio y empieza a recibir más pedidos!",
+  "FoodBusinessDownloads.title": "Descargá DiDi Food para Tienda",
+  "FoodBusinessDownloads.desc": "¡Optimizá tu negocio y empezá a recibir más pedidos!",
   "FoodBusinessDownloads.textColor": "gray-primary",
   "FoodBusinessDownloads.bgColor": "bg-white",
   "FoodBusinessDownloads.columns": [
@@ -77,27 +77,27 @@
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
-  "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
+  "FoodDeliveryHero.title": "¡Conectate con DiDi Food! Generá ganancias adicionales",
+  "FoodDeliveryHero.desc": "Comenzar es sencillo y vos mismo establecés tu horario",
   "FoodDeliveryHero.textColor": "white",
   "FoodDeliveryHero.btnMode": "primary",
   "FoodDeliveryColumns.bgColor": "white",
   "FoodDeliveryColumns.columns": [
     {
-      "title": "Comienza a generar ingresos",
-      "desc": "Contamos con distintas promociones para los Socios Repartidores y cada día más usuarios nos prefieren. A través de DiDi Food, podrás generar ganancias.",
+      "title": "Comenzá a generar ingresos",
+      "desc": "Contamos con distintas promociones para los Socios Repartidores y cada día más usuarios nos prefieren. A través de DiDi Food, podés generar ganancias.",
       "bgColor": "bg-orange-primary",
       "textColor": "white"
     },
     {
-      "title": "Disfruta de mayor flexibilidad",
-      "desc": "Con DiDi Food, puedes conectarte cuando más te convenga. Además, recoger pedidos y entregarlos es muy sencillo gracias a nuestro sistema de navegación fácil de usar. Sea con moto, auto o bicicleta, puedes generar ganancias.",
+      "title": "Disfrutá de mayor flexibilidad",
+      "desc": "Con DiDi Food, podés conectarte cuando más te convenga. Además, recoger pedidos y entregarlos es muy sencillo gracias a nuestro sistema de navegación fácil de usar. Sea con moto, auto o bicicleta, podés generar ganancias.",
       "bgColor": "bg-green-primary",
       "textColor": "white"
     },
     {
       "title": "Seguridad al repartir",
-      "desc": "En DiDi Food, buscamos que realices entregas sintiéndote más seguro. Contamos con distintas herramientas de seguridad para que tus entregas comiencen y terminen de la mejor forma.",
+      "desc": "En DiDi Food, buscamos que realicés entregas sintiéndote más seguro. Contamos con distintas herramientas de seguridad para que tus entregas comiencen y terminen de la mejor forma.",
       "bgColor": "bg-gray-primary",
       "textColor": "white"
     }
@@ -106,28 +106,28 @@
   "FoodDeliveryStepsColumns.bgColor": "bg-gray-light",
   "FoodDeliveryStepsColumns.columns": [
     {
-      "title": "1. Descarga la aplicación",
+      "title": "1. Descargá la aplicación",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
-      "title": "2. Sube los documentos requeridos",
+      "title": "2. Subí los documentos requeridos",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
-      "title": "3. Espera la verificación de tu información",
+      "title": "3. Esperá la verificación de tu información",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
-      "title": "4. Comienza a generar ganancias a través de DiDi Food",
+      "title": "4. Comenzá a generar ganancias a través de DiDi Food",
       "textColor": "gray-primary",
       "height": "h-40"
     }
   ],
-  "FoodDeliveryDownloads.title": "Obtén la aplicación DiDi Repartidor",
-  "FoodDeliveryDownloads.desc": "Acepta pedidos y comienza a generar ganancias",
+  "FoodDeliveryDownloads.title": "Obtené la aplicación DiDi Repartidor",
+  "FoodDeliveryDownloads.desc": "Aceptá pedidos y comenzá a generar ganancias",
   "FoodDeliveryDownloads.textColor": "gray-primary",
   "FoodDeliveryDownloads.bgColor": "bg-white",
   "FoodDeliveryDownloads.columns": [
@@ -139,22 +139,22 @@
     }
   ],
   "FoodAboutHero.title": "Acerca de DiDi Food",
-  "FoodAboutHero.desc": "Pide comida a través de nuestra plataforma o conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodAboutHero.desc": "Pedí comida a través de nuestra plataforma o convertite en un socio restaurante de DiDi Food y aprovechá los beneficios que tenemos para tu negocio.",
   "FoodAboutHero.textColor": "white",
   "FoodAboutDeliveryCTA.title": "La plataforma rápida y confiable de intermediación de pedidos y entrega de comida.",
-  "FoodAboutDeliveryCTA.desc": "Sobre nosotros – DiDi Food conecta usuarios con socios restaurantes y socios repartidores para llevar los mejores pedidos de comida a la puerta del usuario. A través de DiDi Food, puedes tener tu plato favorito en donde lo necesites, con un par de clics.",
+  "FoodAboutDeliveryCTA.desc": "Sobre nosotros – DiDi Food conecta usuarios con socios restaurantes y socios repartidores para llevar los mejores pedidos de comida a la puerta del usuario. A través de DiDi Food, podés tener tu plato favorito en donde lo necesites, con un par de clics.",
   "FoodAboutDeliveryCTA.bgColor": "bg-gray-light",
   "FoodAboutDeliveryCTA.textColor": "gray-primary",
   "FoodAboutDeliveryCTA.btnMode": "primary",
   "FoodAboutCTA.title": "¡Tu comida está muy cerca!",
-  "FoodAboutCTA.desc": "Con DiDi food puedes tener tu comida favorita en dónde lo necesites con sólo un par de clics.",
+  "FoodAboutCTA.desc": "Con DiDi food podés tener tu comida favorita en dónde lo necesites con sólo un par de clics.",
   "FoodAboutCTA.bgColor": "bg-white",
   "FoodAboutCTA.textColor": "gray-primary",
   "FoodBlogHero.title": "Bienvenido al Blog de DiDi Food",
-  "FoodBlogHero.desc": "Lee nuestros post de comidas, restaurantes y buenas prácticas en la cocina.",
+  "FoodBlogHero.desc": "Leé nuestros post de comidas, restaurantes y buenas prácticas en la cocina.",
   "FoodBlogHero.textColor": "white",
   "FoodBlogHero.btnMode": "light",
-  "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
+  "FoodBlogColumns.title": "Leé nuestros artículos de comida y restaurantes.",
   "FoodBlogColumns.bgColor": "bg-blue-primary",
   "FoodBlogColumns.textColor": "white",
   "FoodBlogColumns.linkItem": "/cr/food/blog/{{article}}/",
@@ -163,9 +163,9 @@
   "SmartBannerDrv.title": "DiDi Conductor",
   "SmartBannerDrv.desc": "Ganancias Extras",
   "SmartBannerPax.title": "DiDi Pasajero",
-  "SmartBannerPax.desc": "Pide un Viaje",
-  "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
+  "SmartBannerPax.desc": "Pedí un Viaje",
+  "FoodContactHero.title": "Contactanos",
+  "FoodContactHero.desc": "Si sos repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
   "FoodContactHero.textColor": "white",
   "FoodContactHero.btnText": "Llama a Soporte",
   "FoodContactHero.btnLink": "tel:+50641063372",

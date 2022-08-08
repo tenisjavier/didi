@@ -29,8 +29,7 @@ const DownloadFleetCTA = ({ image }: DownloadCTAProps) => {
       ),
     }),
 
-    btnText: t("DownloadFleetCTA.btnText"),
-    btnLink: t("DownloadFleetCTA.btnLink"),
+    btnType: "fleet",
     btnMode: t("DownloadFleetCTA.btnMode"),
     reverse: true,
   };
