@@ -511,65 +511,65 @@ const seoMeta: AllSEOMetaInterface = {
   },
   cr: {
     "/": {
-      title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      title: "Registrate como Socio Conductor DiDi",
+      desc: "DiDi en Costa Rica, registrate como socio conductor en las categorías express y fleet ganando más y conduciendo menos.",
     },
     "/pasajero/": {
-      title: "DiDi Pasajero - Baja la App y Viaja Seguro",
-      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Chile. Elige la mejor opción.",
+      title: "DiDi Pasajero - Descargá la App y Viajá",
+      desc: "DiDi Pasajero. Viajá seguro, barato y rápido. DiDi Express está disponible en Costa Rica. Elegí la mejor opción.",
     },
     "/driver/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+      title: "DiDi Conductor - Manejá y Generá Dinero",
+      desc: "DiDi Conductor. Revisá los requisitos. Registrate como socio conductor en la categoría express ganando más y conduciendo menos.",
     },
     "/food/": {
-      title: "Pide comida a través de DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Pedí comida a través de DiDi Food",
+      desc: "Pedí comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
     "/food/store/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Inscribí tu Comercio en DiDi Food",
+      desc: "Inscribí tu Comercio en DiDi Food y empezá a generar ventas fuera de tu local físico. Expandí tu negocio. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
     "/food/delivery/": {
-      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
-      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Inscribite como Repartidor y Ganá Dinero en DiDi Food",
+      desc: "Como repartidor controlás tus tiempos. Generá ingresos de una manera confiable. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
     "/food/about/": {
       title: "La App de Comida Más Confiable",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      desc: "Pedí comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
     "/food/contact/": {
-      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
-      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
+      title: "DiDi Food: Contactá nuestro Servicio al Cliente",
+      desc: "Si sos repartidor, restaurante o usuario podés escribirnos por cualquier problema que tengas con DiDi Food.",
     },
     "/food/blog/": {
       title: "Artículos de Comida y Restaurantes",
-      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+      desc: "Leé y conocé lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/sobre-didi/": {
-      title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
-      desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
+      title: "¿Tenés Preguntas sobre DiDi? Revisá las Respuestas",
+      desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
     },
     "/seguridad/": {
-      title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
-      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+      title: "En DiDi tu Seguridad es nuestra prioridad conocé más acá",
+      desc: "Conocé aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutés al máximo.",
     },
     "/centro-de-ayuda/": {
       title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
-      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+      desc: "Conocé aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutés al máximo.",
     },
     "/guias/": {
       title: "Guías para Conductores DiDi.",
-      desc: "Guías educativas para conductores. Entérate de distintos asociados a conducción de un vehículo.",
+      desc: "Guías educativas para conductores. Enterate de distintos asociados a conducción de un vehículo.",
     },
     "/articulos/": {
       title:
-        "Artículos de interés sobre lugares que puedes ir a visitar con DiDi.",
+        "Artículos de interés sobre lugares que podés ir a visitar con DiDi.",
       desc: "Artículos sobre parques, restaurantes, lugares turísticos, etc. Lee sobre distintos destinos.",
     },
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",
-      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+      desc: "Conocé nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
 };
