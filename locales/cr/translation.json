@@ -1,12 +1,12 @@
 {
-  "HomeHero.title": "Simplificá tu día",
+  "HomeHero.title": "Simplificá tu día, viaja con DiDi",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
-  "SafetyCTA.desc": "La seguridad de los Socios Conductores y usuarios es lo más importante para nosotros. Conoce las herramientas de seguridad que DiDi tiene a tu disposición para que viajes con tranquilidad.",
+  "SafetyCTA.desc": "La seguridad de los Socios Conductores y usuarios es lo más importante para nosotros. Conocé las herramientas de seguridad que DiDi tiene a tu disposición para que viajés con tranquilidad.",
   "SafetyCTA.textColor": "white",
   "SafetyCTA.bgColor": "bg-blue-primary",
-  "SafetyCTA.btnText": "Conoce Más",
+  "SafetyCTA.btnText": "Conocé Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/cr/seguridad/",
   "HelloCTA.title": "¡Hola!",
@@ -15,19 +15,19 @@
   "HelloCTA.btnText": "Conoce más sobre nosotros",
   "HelloCTA.btnMode": "primary",
   "HelloCTA.btnLink": "/cr/sobre-didi/",
-  "DrvCTA.title": "Conduce con DiDi",
-  "DrvCTA.desc": "Maneja en tu propio tiempo y conéctate con DiDi cuando más te convenga. ¿Estás listo para comenzar a generar más ganancias?",
+  "DrvCTA.title": "Conducí con DiDi",
+  "DrvCTA.desc": "Manejá en tu propio tiempo y conectate con DiDi cuando más te convenga. ¿Estás listo para comenzar a generar más ganancias?",
   "DrvCTA.bullets": [
     "Comisiones Bajas",
     "Seguridad para tu Viaje",
-    "Si eres conductora mujer puedes llevar solo a mujeres",
+    "Si sos conductora mujer podés llevar solo a mujeres",
     "Pago Semanal"
   ],
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
   "PaxCTA.title": "Viajá con DiDi por tu Ciudad",
-  "PaxCTA.desc": "Al conectarte a través de DiDi tienes tarifas accesibles para que viajes donde necesites. Con DiDi tienes soporte telefónico 24/7 en todos tus viajes y podés contar con nuestros protocolos y funciones de seguridad para que viajés con la tranquilidad que merecés. ¡Es momento de redescubrir tu ciudad con DiDi!",
+  "PaxCTA.desc": "Al conectarte a través de DiDi tenés tarifas accesibles para que viajes donde necesites. Con DiDi tenés soporte telefónico 24/7 en todos tus viajes y podés contar con nuestros protocolos y funciones de seguridad para que viajés con la tranquilidad que merecés. ¡Es momento de redescubrir tu ciudad con DiDi!",
   "PaxCTA.bullets": [
     "Precios Bajos",
     "La Mejor Seguridad",
@@ -50,16 +50,16 @@
     },
     {
       "title": "Legal",
-      "desc": "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Costa Rica.",
+      "desc": "Conocé nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Costa Rica.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
-      "btnLink": "/cr/centro-de-ayuda/",
+      "btnLink": "/cr/legal/",
       "btnMode": "light",
       "height": "h-80"
     },
     {
       "title": "Centro de Ayuda",
-      "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte.  ",
+      "desc": "Contás con DiDi 24/7 para escucharte, para ayudarte.  ",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/cr/centro-de-ayuda/",
@@ -67,7 +67,7 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "SOLICITÁ VIAJES A TRAVÉS DE DIDI",
+  "PaxHero.title": "Solicitá Viajes a través de DiDi",
   "PaxHero.desc": "Es momento de redescubrir tu ciudad y recorrer cada rincón de ella a través de DiDi.",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
@@ -76,13 +76,13 @@
   "PaxColumns.columns": [
     {
       "title": "Amplia disponibilidad y cobertura",
-      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad,  ¡encuéntranos en las principales ciudades de Costa Rica!",
+      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad,  ¡Nos encontramos en las principales ciudades de Costa Rica!",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
     {
       "title": "Precios bajos",
-      "desc": "Disfruta de viajes tranquilos y de todos nuestros beneficios sin pagar más.",
+      "desc": "Disfrutá de viajes tranquilos y de todos nuestros beneficios sin pagar más.",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
@@ -95,20 +95,20 @@
   ],
   "PaxWhyDiDi.title": "Por qué viajar hoy con DiDi:",
   "PaxWhyDiDi.bullets": [
-    "Viajes a pedido. Obtén un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
-    "Opciones económicas: Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
-    "Una forma fácil de viajar. Pide un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
+    "Viajes a pedido. Obtené un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
+    "Opciones económicas: Cotizá los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
+    "Una forma fácil de viajar. Pedí un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
   ],
-  "PaxWhyDiDi.desc": "Paga tus servicios con tarjeta de crédito o efectivo. ",
+  "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Costa Rica",
-  "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
-  "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
+  "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
+  "PaxBanner.desc": "Generá Dinero y manejá tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "CONDUCÍ A TRAVÉS DE DIDI",
+  "DrvHero.title": "Conducí a través de DiDi",
   "DrvHero.desc": "Registrate en DiDi Conductor y comenzá ya a generar ganancias extra",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
@@ -198,15 +198,15 @@
   "Requirements.title": "Requerimientos para ser Conductor",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "DrvBanner.title": "Completa tu proceso de registro online",
-  "DrvBanner.desc": "Sube los documentos y cuando todo esté aprobado estarás listo para conectarte a la app de movilidad más grande del mundo.",
+  "DrvBanner.title": "Completá tu proceso de registro online",
+  "DrvBanner.desc": "Subí los documentos y cuando todo esté aprobado estarás listo para conectarte a la app de movilidad más grande del mundo.",
   "DrvBanner.bgColor": "bg-orange-primary",
   "DrvBanner.textColor": "white",
   "DrvBanner.btnMode": "light",
   "DrvFeatures.title": "Sobre nuestra seguridad:",
   "DrvFeatures.bullets": [
     "Patrullas de emergencia",
-    "Comparte tu viaje en tiempo real",
+    "Compartí tu viaje en tiempo real",
     "Privacidad de números telefónicos",
     "Desvincular usuario",
     "Privacidad de números telefónicos",
@@ -233,8 +233,8 @@
   ],
   "FleetWhyDiDi.textColor": "gray-primary",
   "FleetWhyDiDi.btnMode": "primary",
-  "KnowMoreBanner.title": "¿Aún tienes dudas?",
-  "KnowMoreBanner.desc": "Conoce todo sobre DiDi.",
+  "KnowMoreBanner.title": "¿Aún tenés dudas?",
+  "KnowMoreBanner.desc": "Conocé todo sobre DiDi.",
   "KnowMoreBanner.bgColor": "bg-orange-primary",
   "KnowMoreBanner.textColor": "white",
   "KnowMoreBanner.btnText": "Saber Más",
@@ -248,7 +248,7 @@
   "LeonesTableBannerLeones.desc": "",
   "LeonesTableBannerLeones.bgColor": "bg-orange-primary",
   "LeonesTableBannerLeones.textColor": "white",
-  "AboutHero.title": "SOMOS LA PLATAFORMA TECNOLÓGICA DE MOVILIDAD INTELIGENTE #1 EN EL MUNDO",
+  "AboutHero.title": "Somos la plataforma tecnológica de movilidad inteligente #1 en el mundo",
   "AboutHero.desc": "",
   "AboutHero.textColor": "white",
   "AboutHero.btnMode": "light",
@@ -258,7 +258,7 @@
   "AboutColumns.columns": [
     {
       "title": "Seguridad de Usuarios y Conductores",
-      "desc": "En DiDi nos preocupa mucho tu seguridad. Aprende sobre todas las opciones de seguridad que tienes.",
+      "desc": "En DiDi nos preocupa mucho tu seguridad. Aprendé sobre todas las opciones de seguridad que tenés.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "linkItem": "/cr/seguridad/",
@@ -268,7 +268,7 @@
     },
     {
       "title": "Preguntas Frecuentes",
-      "desc": "Juntamos las principales preguntas de usuarios y conductores para que puedas informarte.",
+      "desc": "Juntamos las principales preguntas de usuarios y conductores para que podás informarte.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "linkItem": "/cr/centro-de-ayuda/",
@@ -277,7 +277,7 @@
       "btnLink": "/cr/centro-de-ayuda/"
     }
   ],
-  "SafetyHero.title": "VIAJES CON MAYOR SEGURIDAD",
+  "SafetyHero.title": "Viajes con mayor seguridad",
   "SafetyHero.desc": "Cada día se completan millones de viajes en la plataforma de DiDi. Te invitamos a conocer las herramientas de seguridad disponibles en la app de Socios Conductores y Usuarios para que tus viajes comiencen y terminen placenteramente.",
   "SafetyHero.textColor": "white",
   "SafetyHero.btnMode": "light",
@@ -317,7 +317,7 @@
     },
     {
       "title": "Contactos de confianza",
-      "desc": "Puedes elegir hasta cinco personas de tus contactos para compartirles tus viajes en tiempo real.",
+      "desc": "Podés elegir hasta cinco personas de tus contactos para compartirles tus viajes en tiempo real.",
       "bgColor": "bg-white"
     }
   ],
@@ -327,17 +327,17 @@
   "SafetyGridDuringTrip.columns": [
     {
       "title": "Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de servicios de emergencia en la app, el cual te conecta con el 133 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Podés apretar el botón de seguridad en cualquier momento y te enlazamos con el 911 de forma inmediata. Además, DiDi podría compartir tu ubicación en tiempo real y datos de tu vehículo con las autoridades para lograr ubicarte lo más pronto posible en caso de ser necesario.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "Compartir Viaje",
-      "desc": "En DiDi puedes compartir tu ubicación en tiempo real con cualquier persona que tú elijas.",
+      "title": "Compartí tu trayecto",
+      "desc": "Agregá hasta 5 contactos de confianza, pueden ser familiares o amigos. En cada viaje podés compartirles tu ubicación en tiempo real. Así viajarás más tranquilo sabiendo que tus conocidos conocen tu ubicación en tiempo real.",
       "bgColor": "bg-orange-primary"
     },
     {
       "title": "Monitoreo de viaje en tiempo real",
-      "desc": "Rastreamos por GPS todos los viajes para que, en caso de un incidente, podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 133 y rastrear tu ubicación exacta.",
+      "desc": "Si reportás algún incidente estamos listos para ayudarte. Conocemos tu ubicación por medio de GPS.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -357,7 +357,7 @@
   "SafetyGridAfterTrip.columns": [
     {
       "title": "Objetos perdidos",
-      "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al socio conductor para acordar la devolución.",
+      "desc": "¿Olvidaste algo en el vehículo? Con DiDi podés contactar directamente al socio conductor para acordar la devolución.",
       "bgColor": "bg-gray-light"
     },
     {
@@ -366,18 +366,18 @@
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Califica a tu Socio Conductor",
-      "desc": "Califica a tu conductor después de cada viaje y, si deseas, puedes darle un pago extra. Esto ayuda a retroalimentar el sistema y mantener la seguridad en la comunidad de usuarios y socios conductores.",
+      "title": "Calificá a tu Socio Conductor",
+      "desc": "Calificá a tu conductor después de cada viaje y, si deseás, podés darle un pago extra. Esto ayuda a retroalimentar el sistema y mantener la seguridad en la comunidad de usuarios y socios conductores.",
       "bgColor": "bg-gray-light"
     },
     {
       "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "desc": "Si sentís que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
       "bgColor": "bg-gray-light"
     }
   ],
   "SafetyGridDrv.bgColor": "bg-white",
-  "SafetyGridDrv.title": "Además, si eres un Socio Conductor/Taxista",
+  "SafetyGridDrv.title": "Además, si sos un Socio Conductor/Taxista",
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
@@ -387,21 +387,21 @@
     },
     {
       "title": "Cancelar viajes en zonas de alto riesgo",
-      "desc": "Si recibes una solicitud de viaje en una zona de alto riesgo, podrás cancelar el viaje sin penalidad.",
+      "desc": "Si recibís una solicitud de viaje en una zona de alto riesgo, podés cancelar el viaje sin penalidad.",
       "bgColor": "bg-white"
     },
     {
       "title": "Bloquear usuario",
-      "desc": "Si eres socio conductor y no deseas que la plataforma te vuelva a conectar con el pasajero de tu último viaje, podrás usar la opción desvinculación de usuario. Esto evitará que futuros viajes coincidan con esa persona.",
+      "desc": "Si sos socio conductor y no deseás que la plataforma te vuelva a conectar con el pasajero de tu último viaje, podés usar la opción desvinculación de usuario. Esto evitará que futuros viajes coincidan con esa persona.",
       "bgColor": "bg-white"
     },
     {
       "title": "Información del usuario",
-      "desc": "Si eres socio conductor/taxista, la aplicación te mostrará quién es el pasajero y podrás ver todos los detalles antes de iniciar el viaje, incluso el destino al que se dirige.",
+      "desc": "Si sos socio conductor/taxista, la aplicación te mostrará quién es el pasajero y podés ver todos los detalles antes de iniciar el viaje, incluso el destino al que se dirige.",
       "bgColor": "bg-white"
     }
   ],
-  "HelpCenterHero.title": "CENTRO DE AYUDA",
+  "HelpCenterHero.title": "Centro de Ayuda",
   "HelpCenterHero.desc": "¿Tenés consultas? Te compartimos una lista de las preguntas frecuentes de nuestra comunidad.",
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
@@ -412,7 +412,7 @@
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "ArticlesHero.title": "DiDi Artículos",
-  "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
+  "ArticlesHero.desc": "Enterate de lugares interesantes y divertidos de ir a visitar. Tomá un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
   "ArticlesHero.btnMode": "light",
   "ArticlesColumns.title": "DiDi Artículos de Lugares para Visitar en Costa Rica",
@@ -436,20 +436,20 @@
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/cr/guias/{{guide}}/",
   "DiDiMasHero.title": "Club de Beneficios DiDiMás+",
-  "DiDiMasHero.desc": "Conoce nuestro club de beneficios siendo Socio Conductor de DiDi. ",
+  "DiDiMasHero.desc": "Conocé nuestro club de beneficios siendo Socio Conductor de DiDi. ",
   "DiDiMasHero.textColor": "white",
   "DiDiMasHero.btnMode": "light",
   "DiDiMasGrid.bgColor": "bg-white",
   "DiDiMasGrid.title": "Beneficios que siempre suman",
   "DiDiMasGrid.textColor": "gray-primary",
   "DiDiMasGrid.linkItem": "/cr/didimas/{{partnerName}}/",
-  "DiDiMasCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
+  "DiDiMasCTA.title": "Con DiDiMás+ mientras más manejés, más beneficios obtendrás",
   "DiDiMasCTA.desc": "¡Y eso no es todo! Prontamente tendremos más beneficios para ti. Te mantendremos informado de todas las novedades de DiDiMás+.",
   "DiDiMasCTA.textColor": "white",
   "DiDiMasCTA.bgColor": "bg-blue-primary",
   "DiDiMasCTA.btnMode": "light",
   "DrvCityHero.title": "Socios Conductores en {{city}}",
-  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}?. Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
+  "DrvCityHero.desc": "¿Querés convertirte en Socio Conductor DiDi en {{city}}?. Registrate online y comenzá a generar ingresos de manera segura y flexible. ",
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",
@@ -469,39 +469,44 @@
   "CityList.textColor": "gray-primary",
   "CityList.linkItem": "/cr/lugares/lugares-en-{{city}}/",
   "PlaceMap.title": "Líneas cercanas a {{placeName}}",
-  "PlaceMap.desc": "Mejor pide un DiDi y viajarás mas seguro y  más rápido",
+  "PlaceMap.desc": "Mejor pedí un DiDi y viajá mas seguro y  más rápido",
   "PlaceMap.textColor": "gray-primary",
   "PlaceMap.bgColor": "bg-white",
   "PlaceMap.btnMode": "primary",
   "DirectoryList.title": "Direcciones a Atracciones en {{city}}",
-  "DirectoryList.desc": "Encontraras detalle de lineas y como irte en distintos medios",
+  "DirectoryList.desc": "Encontrarás detalles de lineas y como irte en distintos medios",
   "DirectoryList.bgColor": "bg-white",
   "DirectoryList.textColor": "gray-primary",
   "DirectoryList.linkItem": "/cr/lugares/como-llegar-a-{{placeName}}_{{placeAddress}}/",
   "DirectoryOriginList.title": "Como llegar a {{placeName}} desde distintos puntos de la ciudad",
-  "DirectoryOriginList.desc": "Encontraras detalle de lineas y como irte en distintos medios",
+  "DirectoryOriginList.desc": "Encontrarás detalles de lineas y como irte en distintos medios",
   "DirectoryOriginList.bgColor": "bg-white",
   "DirectoryOriginList.textColor": "gray-primary",
   "DirectoryOriginList.linkItem": "/cr/lugares/como-llegar-a-{{destination}}-desde-{{origin}}_{{destinationAddress}}/",
-  "DirectionBanner.title": "Pide un DiDi a {{destination}} y llega en {{ carDuration }} ",
+  "DirectionBanner.title": "Pedí un DiDi a {{destination}} y llegá en {{ carDuration }} ",
   "DirectionBanner.desc": "Si te vas en transporte público te tomará {{duration}} en llegar. Viaja rápido, seguro y barato.",
   "DirectionBanner.bgColor": "bg-orange-primary",
   "DirectionBanner.textColor": "white",
   "DirectionBanner.btnMode": "light",
-  "LegalHero.title": "Revisa nuestros Términos y Condiciones",
-  "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
+  "LegalHero.title": "Revisá nuestros Términos y Condiciones",
+  "LegalHero.desc": "Revisá nuestra sección de términos y condiciones además de nuestras política de privacidad.",
   "LegalHero.textColor": "white",
   "LegalHero.btnMode": "light",
   "LegalHero.linkItem": "/cr/legal/terminos-y-condiciones/",
-  "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
+  "LegalCTA.title": "Revisá nuestra Políticas de Privacidad",
   "LegalHero.btnText": "Términos y Condiciones",
   "LegalCTA.textColor": "gray-primary",
   "LegalCTA.btnMode": "dark",
-  "StoreHero.title": "Escanea el QR con tu celular ",
+  "StoreHero.title": "Escaneá el QR con tu celular ",
   "StoreHero.desc": "Descargá DiDi Pasajero escaneando el código con tu celular",
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
+  "StoreFleetHero.title": "Escaneá el QR con tu celular ",
+  "StoreFleetHero.desc": "Descargá DiDi Pasajero escaneando el código con tu celular",
+  "StoreFleetHero.textColor": "white",
+  "StoreFleetHero.bgColor": "bg-orange-primary",
+  "StoreFleetHero.btnMode": "light",
   "SmartBannerDrv.title": "DiDi Conductor",
   "SmartBannerDrv.desc": "Ganancias Extras",
   "SmartBannerPax.title": "DiDi Pasajero",
@@ -527,7 +532,7 @@
     },
     {
       "title": "Botón de emergencia",
-      "desc": "Durante cualquier situación de emergencia en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 123 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier situación de emergencia en tu viaje, podés apretar el botón de seguridad en cualquier momento y te enlazamos con el 911 de forma inmediata.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -551,13 +556,13 @@
     },
     {
       "title": "Desvincular usuario",
-      "desc": "Si no deseas que la plataforma te vuelva a conectar con el usuario de tu último viaje, podrás usar la opción desvinculación de usuario. Esto evitará que futuros viajes coincidan con este usuario.",
+      "desc": "Si no deseas que la plataforma te vuelva a conectar con el usuario de tu último viaje, podés usar la opción desvinculación de usuario. Esto evitará que futuros viajes coincidan con este usuario.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
     {
       "title": "Comparte tu viaje en tiempo real",
-      "desc": "En DiDi puedes compartir tu ubicación con familiares y amigos en tiempo real.",
+      "desc": "En DiDi podés compartir tu ubicación con familiares y amigos en tiempo real.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -623,13 +628,11 @@
       "textColor": "gray-primary"
     }
   ],
-  "DownloadFleetCTA.title": "¿Cómo registrarme en DiDi Fleet?",
+  "DownloadFleetCTA.title": "¿Cómo te registrás en DiDi Fleet?",
   "DownloadFleetCTA.desc": "Descargá DiDi Fleet",
   "DownloadFleetCTA.textColor": "gray-primary",
   "DownloadFleetCTA.bgColor": "bg-gray-light",
-  "DownloadFleetCTA.btnText": "Descargá ahora",
   "DownloadFleetCTA.btnMode": "primary",
-  "DownloadFleetCTA.btnLink": "https://page.didiglobal.com/driver-page/register/index.html?location_country=MX&lang=es-MX&channel=104&utm_source=(direct)&utm_medium=(none)&utm_campaign=none&shortlink=fleetmacregion&c=fleet_mac_region&pid=fleet_mac_region&deep_link_value=fleet#/loginMxComp",
   "SBDrv.title": "DiDi Conductor",
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",

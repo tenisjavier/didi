@@ -33,7 +33,7 @@ const Driver = ({ data }) => {
       <DrvFeatures image={drvFeaturesImage}></DrvFeatures>
       <SilderSection
         data={products}
-        title="Hay un DiDi para ti"
+        title="Hay un DiDi para vos"
       ></SilderSection>
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
