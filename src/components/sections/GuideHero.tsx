@@ -31,8 +31,8 @@ const GuideHero = ({ data }: GuideHero) => {
       />
     ),
 
-    btnMode: t("GuideHero.btnMode"),
     btnType: "drv",
+    btnMode: t("GuideHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };

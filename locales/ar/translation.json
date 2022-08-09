@@ -370,6 +370,7 @@
   "GuidesHero.title": "Guías para Conductores Argentina",
   "GuidesHero.desc": "Te invitamos a leer nuestras guías para conductores. Abarcan diferentes temas de interés desde tipos de licencias, trámites entre otros.",
   "GuidesHero.textColor": "white",
+  "GuidesHero.btnType": "drv",
   "GuidesHero.btnMode": "light",
   "GuideHero.textColor": "white",
   "GuideHero.btnMode": "light",
