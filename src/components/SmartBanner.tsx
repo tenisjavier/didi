@@ -30,15 +30,42 @@ const SmartBanner = (props: SmartBannerProps) => {
     btnTextColor = "text-white";
     bannerTitle = t("SBDrv.title");
     bannerDesc = t("SBDrv.desc");
-  } else if (props.type === "pax") {
+  } else if (type === "pax") {
     btnLink = btnData.paxLink;
     btnText = btnData.paxText.replace(/ .*/, "");
     Logo = <PaxLogo></PaxLogo>;
-    bgColor = "bg-orange-primary";
-    btnBgColor = "bg-white";
-    btnTextColor = "text-black";
+    bgColor = "bg-white";
+    btnBgColor = "bg-orange-primary";
+    btnTextColor = "text-white";
     bannerTitle = t("SBPax.title");
     bannerDesc = t("SBPax.desc");
+  } else if (type === "foodEater") {
+    btnLink = btnData.foodEaterLink;
+    btnText = "Descargar";
+    Logo = <FoodEaterLogo></FoodEaterLogo>;
+    bgColor = "bg-white";
+    btnBgColor = "bg-orange-primary";
+    btnTextColor = "text-white";
+    bannerTitle = t("SBFoodEater.title");
+    bannerDesc = t("SBFoodEater.desc");
+  } else if (type === "foodBusiness") {
+    btnLink = btnData.foodEaterLink;
+    btnText = "Descargar";
+    Logo = <FoodEaterLogo></FoodEaterLogo>;
+    bgColor = "bg-white";
+    btnBgColor = "bg-orange-primary";
+    btnTextColor = "text-white";
+    bannerTitle = t("SBFoodBusiness.title");
+    bannerDesc = t("SBFoodBusiness.desc");
+  } else if (type === "foodDelivery") {
+    btnLink = btnData.foodEaterLink;
+    btnText = "Descargar";
+    Logo = <FoodEaterLogo></FoodEaterLogo>;
+    bgColor = "bg-white";
+    btnBgColor = "bg-orange-primary";
+    btnTextColor = "text-white";
+    bannerTitle = t("SBFoodDelivery.title");
+    bannerDesc = t("SBFoodDelivery.desc");
   }
 
   return (
@@ -77,6 +104,19 @@ const DrvLogo = () => {
       <StaticImage
         src="../images/drv-logo.png"
         alt="didi conductor logo"
+        className=""
+        width={50}
+      />
+    </div>
+  );
+};
+
+const FoodEaterLogo = () => {
+  return (
+    <div className="p-3">
+      <StaticImage
+        src="../images/didi-food-eater-logo.png"
+        alt="didi eater logo"
         className=""
         width={50}
       />

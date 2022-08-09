@@ -232,5 +232,15 @@
         }
       ]
     }
-  ]
+  ],
+  "SBDrv.title": "DiDi Conductor",
+  "SBDrv.desc": "Ganancias Extras",
+  "SBPax.title": "DiDi Pasajero",
+  "SBPax.desc": "Pide un Viaje",
+  "SBFoodEater.title": "DiDi Food",
+  "SBFoodEater.desc": "Comida a Domicilio",
+  "SBFoodBusiness.title": "DiDi Food",
+  "SBFoodBusiness.desc": "Crecé tu Negocio",
+  "SBFoodDelivery.title": "DiDi Repartidor",
+  "SBFoodDelivery.desc": "Ganancias Extras"
 }
