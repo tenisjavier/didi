@@ -45,13 +45,15 @@
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.16.7",
     "react-markdown": "^8.0.3",
-    "react-slugify": "^2.1.0"
+    "react-slugify": "^2.1.0",
+    "react-truncate": "^2.4.0"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
+    "@types/react-truncate": "^2.3.4",
     "autoprefixer": "^10.4.5",
     "gatsby-plugin-graphql-image": "^1.0.1",
     "gatsby-plugin-postcss": "^5.13.0",
