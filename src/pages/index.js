@@ -55,7 +55,7 @@ const Index = ({ data }) => {
         <div className="h-96 bg-gray-primary lg:h-80">
           <div className="container mx-auto flex h-full flex-wrap">
             <div className="flex h-1/2 w-full flex-initial flex-col items-center justify-center lg:h-full lg:w-1/2 lg:items-start">
-              <Link to="/cl">
+              <Link to="/">
                 <StaticImage
                   src="../images/didi-logo.png"
                   alt="DiDi"
