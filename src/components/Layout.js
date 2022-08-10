@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   if (pathname.includes("pasajero")) smartBannerType = "pax";
   return (
     <>
-      <Seo></Seo>
+      <Seo title="jeivi"></Seo>
       <Header></Header>
       {children}
       <SmartBanner type={smartBannerType}></SmartBanner>

@@ -10,7 +10,9 @@ const SEO = () => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
-        filter: { code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec", "cr"] } }
+        filter: {
+          code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec", "cr"] }
+        }
       ) {
         nodes {
           name
@@ -33,7 +35,10 @@ const SEO = () => {
   const meta = getMetaByPath(countryCode, cleanPath);
 
   //if is int
-  if (pathname === "/") countryName = "";
+  if (pathname === "/") {
+    meta.title = "DiDi Global - The World's Leader in Mobility Technology";
+    countryName = "";
+  }
 
   return (
     <Helmet

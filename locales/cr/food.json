@@ -9,19 +9,22 @@
       "title": "Amplia disponibilidad y cobertura",
       "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encontranos ahora en todo Costa Rica!",
       "bgColor": "bg-orange-primary",
-      "textColor": "white"
+      "textColor": "white",
+      "height": "h-80"
     },
     {
       "title": "Ordená sin complicaciones",
       "desc": "¿Tenés ganas de una hamburguesa, pizza o sushi? Con DiDi Food ordenar es fácil y rápido. ¿No tenés efectivo? No te preocupés, también podés pagar con tarjeta de crédito. Nuestra prioridad es que recibás tu comida en tu puerta.",
       "bgColor": "bg-green-primary",
-      "textColor": "white"
+      "textColor": "white",
+      "height": "h-80"
     },
     {
       "title": "Entrega express",
       "desc": "En DiDi Food procuramos que las órdenes sean entregadas en el menor tiempo posible y en perfectas condiciones.",
       "bgColor": "bg-gray-primary",
-      "textColor": "white"
+      "textColor": "white",
+      "height": "h-80"
     }
   ],
   "FoodBusinessCTA.title": "Registrá tu comercio en DiDi Food",
