@@ -299,6 +299,11 @@ const insertBtnParams = () => {
         oldUrl +
         `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-fleet/`
       );
+    } else if (url.indexOf("global-food-eater.onelink.me/4B2F/") > -1) {
+      return (
+        oldUrl +
+        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/food/store-food-app/`
+      );
     } else {
       return (
         oldUrl +
