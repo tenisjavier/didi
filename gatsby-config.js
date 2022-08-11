@@ -190,7 +190,7 @@ module.exports = {
           const cityPages = allCities.map((city) => {
             const [countryCode, cityName] = [city.country.code, city.name];
             const path = sslCountries.includes(countryCode)
-              ? `/${countryCode}/driver/conductores-en-${slugify(cityName)}/`
+              ? `/${countryCode}/driver/conductor-en-${slugify(cityName)}/`
               : `/${countryCode}/driver/driver-${slugify(cityName)}/`;
 
             return { path };
@@ -217,9 +217,9 @@ module.exports = {
 
           const cityPlacePages = allCities.map((city) => {
             const [countryCode, cityName] = [city.country.code, city.name];
-            const path = `/${city.country.code}/lugares/lugares-en-${slugify(
-              city.name
-            )}/`;
+            const path = sslCountries.includes(countryCode)
+              ? `/${countryCode}/lugares/lugares-en-${slugify(cityName)}/`
+              : `/${countryCode}/places/places-in-${slugify(cityName)}/`;
             return { path };
           });
 
