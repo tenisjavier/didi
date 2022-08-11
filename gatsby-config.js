@@ -183,43 +183,55 @@ module.exports = {
             "mx",
           ];
 
+          const engCountries = ["au", "nz", "eg", "ru"];
+
           const realPages = allPages.filter((page) => {
             return !urlRegex.test(page.path);
           });
 
           const cityPages = allCities.map((city) => {
+            let path;
             const [countryCode, cityName] = [city.country.code, city.name];
-            const path = sslCountries.includes(countryCode)
-              ? `/${countryCode}/driver/conductor-en-${slugify(cityName)}/`
-              : `/${countryCode}/driver/driver-${slugify(cityName)}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/driver/conductor-en-${slugify(
+                cityName
+              )}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/driver/driver-${slugify(cityName)}/`;
 
             return { path };
           });
 
           const articlePages = allArticles.map((article) => {
+            let path;
             const [countryCode, articleSlug] = [
               article.country.code,
               article.slug,
             ];
-            const path = sslCountries.includes(countryCode)
-              ? `/${countryCode}/articulos/${articleSlug}/`
-              : `/${countryCode}/blog/${articleSlug}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/articulos/${articleSlug}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/blog/${articleSlug}/`;
             return { path };
           });
 
           const guidePages = allGuides.map((guide) => {
+            let path;
             const [countryCode, guideSlug] = [guide.country.code, guide.slug];
-            const path = sslCountries.includes(countryCode)
-              ? `/${countryCode}/guias/${guideSlug}/`
-              : `/${countryCode}/guides/${guideSlug}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/guias/${guideSlug}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/guides/${guideSlug}/`;
             return { path };
           });
 
           const cityPlacePages = allCities.map((city) => {
+            let path;
             const [countryCode, cityName] = [city.country.code, city.name];
-            const path = sslCountries.includes(countryCode)
-              ? `/${countryCode}/lugares/lugares-en-${slugify(cityName)}/`
-              : `/${countryCode}/places/places-in-${slugify(cityName)}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/lugares/lugares-en-${slugify(cityName)}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/places/places-in-${slugify(cityName)}/`;
             return { path };
           });
 
@@ -248,7 +260,7 @@ module.exports = {
             ...cityPages,
             ...articlePages,
             ...guidePages,
-            // ...cityPlacePages,
+            ...cityPlacePages,
             // ...placePages,
             // ...directionPages,
           ];
