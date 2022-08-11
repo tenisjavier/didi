@@ -119,6 +119,7 @@ module.exports = {
           allContentfulGuide {
             nodes {
               title
+              slug
               country {
                 code
               }
@@ -127,6 +128,7 @@ module.exports = {
           allContentfulArticle(filter: {category: {eq: "rides"}}) {
             nodes {
               title
+              slug
               country {
                 code
               }
@@ -169,32 +171,52 @@ module.exports = {
           const urlRegex =
             /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
 
+          const sslCountries = [
+            "cl",
+            "pe",
+            "ar",
+            "co",
+            "ec",
+            "do",
+            "cr",
+            "pa",
+            "mx",
+          ];
+
           const realPages = allPages.filter((page) => {
             return !urlRegex.test(page.path);
           });
 
           const cityPages = allCities.map((city) => {
-            const path = `/${city.country.code}/driver/conductores-en-${slugify(
-              city.name
-            )}/`;
+            const [countryCode, cityName] = [city.country.code, city.name];
+            const path = sslCountries.includes(countryCode)
+              ? `/${countryCode}/driver/conductores-en-${slugify(cityName)}/`
+              : `/${countryCode}/driver/driver-${slugify(cityName)}/`;
+
             return { path };
           });
 
           const articlePages = allArticles.map((article) => {
-            const path = `/${article.country.code}/articulos/${slugify(
-              article.title
-            )}/`;
+            const [countryCode, articleSlug] = [
+              article.country.code,
+              article.slug,
+            ];
+            const path = sslCountries.includes(countryCode)
+              ? `/${countryCode}/articulos/${articleSlug}/`
+              : `/${countryCode}/blog/${articleSlug}/`;
             return { path };
           });
 
           const guidePages = allGuides.map((guide) => {
-            const path = `/${guide.country.code}/guias/${slugify(
-              guide.title
-            )}/`;
+            const [countryCode, guideSlug] = [guide.country.code, guide.slug];
+            const path = sslCountries.includes(countryCode)
+              ? `/${countryCode}/guias/${guideSlug}/`
+              : `/${countryCode}/guides/${guideSlug}/`;
             return { path };
           });
 
           const cityPlacePages = allCities.map((city) => {
+            const [countryCode, cityName] = [city.country.code, city.name];
             const path = `/${city.country.code}/lugares/lugares-en-${slugify(
               city.name
             )}/`;
@@ -226,9 +248,9 @@ module.exports = {
             ...cityPages,
             ...articlePages,
             ...guidePages,
-            ...cityPlacePages,
-            ...placePages,
-            ...directionPages,
+            // ...cityPlacePages,
+            // ...placePages,
+            // ...directionPages,
           ];
         },
         // serialize: ({ path, modifiedGmt }) => {
