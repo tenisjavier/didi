@@ -34,20 +34,22 @@ const SEO = () => {
   const cleanPath = pathname.substring(3, pathname.length);
   const meta = getMetaByPath(countryCode, cleanPath);
 
+  let title = meta.title + " | DiDi " + countryName;
+
   //if is int
   if (pathname === "/") {
-    meta.title = "DiDi Global - The World's Leader in Mobility Technology";
-    countryName = "";
+    title = "DiDi Global - The World's Leader in Mobility Technology";
+    meta.desc = "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world."
   }
 
   return (
     <Helmet
       htmlAttributes={{ lang: "es" }}
-      title={`${meta.title} | DiDi ${countryName}`}
+      title={`${title}`}
     >
       <meta
         name="title"
-        content={`${meta.title} | DiDi ${countryName}`}
+        content={`${title}`}
         data-react-helmet="true"
       ></meta>
       <meta name="description" content={meta.desc} />
