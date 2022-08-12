@@ -169,7 +169,7 @@ module.exports = {
           allContentfulDirection: { nodes: allDirections },
         }) => {
           const urlRegex =
-            /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+            /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))|(\/blog\/(.+))|/;
 
           const sslCountries = [
             "cl",
@@ -260,7 +260,7 @@ module.exports = {
             ...cityPages,
             ...articlePages,
             ...guidePages,
-            ...cityPlacePages,
+            //...cityPlacePages,
             // ...placePages,
             // ...directionPages,
           ];
