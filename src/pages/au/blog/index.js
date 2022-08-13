@@ -47,7 +47,7 @@ export const query = graphql`
         country: { code: { eq: "au" } }
       }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: 10
+      limit: 20
     ) {
       nodes {
         title
