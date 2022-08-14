@@ -269,6 +269,7 @@ const insertBtnParams = () => {
     ) {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
+      campaignId = "refpage_" + window.location.pathname;
     }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
