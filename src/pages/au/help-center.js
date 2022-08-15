@@ -24,12 +24,7 @@ const HelpCenter = ({ data }) => {
   const faqDeliveryDrv = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Delivery Australia"
   );
-  const faqShare = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Share Australia"
-  );
-  const faqShareRider = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Share Australia Rider"
-  );
+
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
@@ -51,14 +46,6 @@ const HelpCenter = ({ data }) => {
       <FaqList
         title={"More FAQ DiDi Delivery"}
         faqs={faqDeliveryDrv[0].faq}
-      ></FaqList>
-      <FaqList
-        title={"More FAQ DiDi Share Australia"}
-        faqs={faqShare[0].faq}
-      ></FaqList>
-      <FaqList
-        title={"More FAQ DiDi Share Australia for Riders"}
-        faqs={faqShareRider[0].faq}
       ></FaqList>
     </Layout>
   );

@@ -236,10 +236,6 @@ const menuLinks: AllMenuInterface = {
           text: "Rider Help",
           url: "/au/rider/help/",
         },
-        {
-          text: "DiDi Share",
-          url: "/au/rider/didi-share-for-rider/",
-        },
       ],
     },
     {
@@ -253,10 +249,6 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Sign Up",
           url: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
-        },
-        {
-          text: "DiDi Share",
-          url: "/au/driver/didi-share-for-driver/",
         },
         {
           text: "DiDi Advance",
