@@ -317,7 +317,7 @@ const menuLinks: AllMenuInterface = {
           url: "/au/help-center/",
         },
         {
-          text: "Customer Support",
+          text: "Contact",
           url: "/au/contact/",
         },
       ],

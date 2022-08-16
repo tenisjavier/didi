@@ -12,7 +12,7 @@ const Index = ({ data }) => {
   const HomeAboutUsImage = images.filter((image) => {
     return image.title === "int.HomeAboutUs.image";
   })[0];
-  const HomeOurMissionImage = images.filter((image) => {
+  const HomeOurMissionBgImage = images.filter((image) => {
     return image.title === "int.HomeOurMission.image";
   })[0];
   const CTAProps = {
@@ -46,7 +46,7 @@ const Index = ({ data }) => {
   const AboutUsProps = {
     hero: true,
     title: "About Us",
-    desc: "DiDi Global Inc. is the world’s leading mobility technology platform. We offer a wide range of app-based services across markets including Asia-Pacific, Latin America, Europe and Africa, including ride hailing, taxi hailing, chauffeur, hitch and other forms of shared mobility as well as auto solutions, food delivery, intra-city freight and financial services. DiDi provides car owners, drivers and delivery partners with flexible work and income opportunities. We are committed to collaborating with policymakers, the taxi industry, the automobile industry and local communities to solve the world’s transportation, environmental and employment challenges through the use of AI technology and localized smart transportation innovations. DiDi strives to create better life experiences and greater social value by building a safe, inclusive and sustainable transportation and local services ecosystem for cities of the future.",
+    desc: "DiDi Global Inc. is the world’s leading mobility technology platform. We offer a wide range of app-based services across markets including Asia-Pacific, Latin America, Europe and Africa, including ride hailing, taxi hailing, chauffeur, hitch and other forms of shared mobility as well as auto solutions, food delivery, intra-city freight and financial services.\nDiDi provides car owners, drivers and delivery partners with flexible work and income opportunities. We are committed to collaborating with policymakers, the taxi industry, the automobile industry and local communities to solve the world’s transportation, environmental and employment challenges through the use of AI technology and localized smart transportation innovations. DiDi strives to create better life experiences and greater social value by building a safe, inclusive and sustainable transportation and local services ecosystem for cities of the future.",
     textColor: "gray-primary",
     bgColor: "bg-white",
     image: (
@@ -67,16 +67,15 @@ const Index = ({ data }) => {
       "A global leader in smart transportation technologies",
       "A global leader in the revolution in transportation and automotive technology",
     ],
-    textColor: "gray-primary",
+    textColor: "white",
     bgColor: "bg-gray-light",
-    image: (
+    bgImage: (
       <GatsbyImage
-        image={HomeOurMissionImage.gatsbyImageData}
-        alt={HomeOurMissionImage.description}
-        className="z-10 m-4 w-100 rounded"
+        image={HomeOurMissionBgImage.gatsbyImageData}
+        alt={HomeOurMissionBgImage.description}
+        className="!absolute z-0 h-full w-full md:block brightness-50"
       ></GatsbyImage>
     ),
-    reverse: true,
   };
 
   return (
