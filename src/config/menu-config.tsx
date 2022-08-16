@@ -201,6 +201,10 @@ const menuLinks: AllMenuInterface = {
       url: "#",
       dropMenu: [
         {
+          text: "Guías",
+          url: "/pe/guias/",
+        },
+        {
           text: "Artículos",
           url: "/pe/articulos/",
         },
