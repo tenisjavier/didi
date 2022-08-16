@@ -104,7 +104,10 @@ const CTASection = (props: CTAProps) => {
               <br></br>
             </>
           )}
-          <p className="mb-5 text-lg">{desc}</p>
+          {desc &&
+            desc
+              .split("\n")
+              .map((str) => <p className="mb-5 text-lg">{str}</p>)}
           {sectionBtn}
         </div>
       </div>
