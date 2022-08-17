@@ -3,9 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
 import SafetyGridBeforeTrip from "../../components/sections/SafetyGridBeforeTrip";
-import SafetyGridDuringTrip from "../../components/sections/SafetyGridDuringTrip";
-import SafetyGridAfterTrip from "../../components/sections/SafetyGridAfterTrip";
-import SafetyGridDrv from "../../components/sections/SafetyGridDrv";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

@@ -82,6 +82,28 @@ const menuLinksFood: AllMenuInterface = {
       url: "/cr/food/blog/",
     },
   ],
+  co: [
+    {
+      text: "Tienda",
+      url: "/co/food/store/",
+    },
+    {
+      text: "Socio repartidor",
+      url: "/co/food/delivery/",
+    },
+    {
+      text: "Acerca",
+      url: "/co/food/about/",
+    },
+    {
+      text: "Contacto",
+      url: "/co/food/contact/",
+    },
+    {
+      text: "Blog",
+      url: "/co/food/blog/",
+    },
+  ],
 };
 
 const getMenuLinksFood = (countryCode: string) => {
