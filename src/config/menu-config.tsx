@@ -230,6 +230,56 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
+    {
+      text: "DiDi Food",
+      url: "/co/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/co/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/co/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/co/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/co/food/contact/",
+        },
+      ],
+    },
+    {
+      text: "Sobre DiDi",
+      url: "/co/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/co/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/co/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/co/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/co/articulos/",
+        },
+      ],
+    },
   ],
   au: [
     {
