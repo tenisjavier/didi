@@ -509,6 +509,32 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Select you next discount for your next ride",
     },
   },
+  eg: {
+    "/": {
+      title: "Homepage - DiDi Egypt",
+      desc: "Homepage - DiDi Egypt",
+    },
+    "/rider/": {
+      title: "Ride with DiDi",
+      desc: "Get safe, fast and affordable rides with DiDi.",
+    },
+    "/driver/": {
+      title: "DiDi Driver - Drive and earn with DiDi",
+      desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
+    },
+    "/about-us/": {
+      title: "About Us",
+      desc: "Learn more about DiDi, the world's leading mobility platform.",
+    },
+    "/help-center/": {
+      title: "Help Center",
+      desc: "FAQs for DiDi riders and drivers.",
+    },
+    "/cities/": {
+      title: "Cities",
+      desc: "Learn about which cities DiDi Egypt services are available in.",
+    },
+  },
   cr: {
     "/": {
       title: "Registrate como Socio Conductor DiDi",
