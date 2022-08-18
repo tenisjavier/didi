@@ -162,7 +162,7 @@
   "DrvCityList.desc": "جميع المدن لديها DiDi Express",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/eg/driver/driver-{{city}}/",
+  "DrvCityList.linkItem": "/eg/driver/driver-{{slug}}/",
   "DrvColumns.bgColor": "bg-gray-primary",
   "DrvColumns.textColor": "white",
   "DrvColumns.columns": [

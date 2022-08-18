@@ -81,6 +81,7 @@ export const query = graphql`
     contentfulCountry(code: { eq: "eg" }) {
       city {
         name
+        slug
       }
     }
   }

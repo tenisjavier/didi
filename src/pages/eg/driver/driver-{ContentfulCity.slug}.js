@@ -117,6 +117,7 @@ export const query = graphql`
       name
       city {
         name
+        slug
       }
     }
   }

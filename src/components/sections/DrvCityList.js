@@ -6,10 +6,11 @@ import slugify from "react-slugify";
 const DrvCityList = ({ data }) => {
   const { t } = useTranslation();
   const items = data.map((city) => {
+    console.log(city);
     return {
       text: city.name,
       secondText: "",
-      link: t("DrvCityList.linkItem", { city: slugify(city.name) }),
+      link: t("DrvCityList.linkItem", { slug: slugify(city.slug) }),
     };
   });
 
