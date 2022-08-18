@@ -6,7 +6,7 @@ import DirectoryList from "../../../components/sections/DirectoryList";
 const PlacesInCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
-    return image.title === "ar.PaxHero.bgImage";
+    return image.title === "pe.PaxHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["ar.PaxHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["pe.PaxHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -40,6 +40,7 @@ export const query = graphql`
     }
     contentfulCity(id: { eq: $id }) {
       name
+      slug
       place {
         name
         address

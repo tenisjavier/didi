@@ -1,15 +1,15 @@
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import ListSection from "../ListSection";
-import slugify from "react-slugify";
 
 const DrvCityList = ({ data }) => {
+  console.log(data);
   const { t } = useTranslation();
   const items = data.map((city) => {
     return {
       text: city.name,
       secondText: "",
-      link: t("DrvCityList.linkItem", { city: slugify(city.name) }),
+      link: t("DrvCityList.linkItem", { city: city.slug }),
     };
   });
 
