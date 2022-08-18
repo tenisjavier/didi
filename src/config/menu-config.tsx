@@ -341,6 +341,20 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "Safety",
+      url: "/au/safety/",
+      dropMenu: [
+        {
+          text: "Driver Safety",
+          url: "/au/safety/driver-safety/",
+        },
+        {
+          text: "Rider Safety",
+          url: "/au/safety/rider-safety/",
+        },
+      ],
+    },
+    {
       text: "Features",
       url: "#",
       dropMenu: [
