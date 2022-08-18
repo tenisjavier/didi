@@ -352,12 +352,6 @@ const menuLinks: AllMenuInterface = {
           text: "Rider Safety",
           url: "/au/safety/rider-safety/",
         },
-      ],
-    },
-    {
-      text: "Features",
-      url: "#",
-      dropMenu: [
         {
           text: "DiDi Sal Rider",
           url: "/au/features/didisal/",
