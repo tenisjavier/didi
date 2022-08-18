@@ -55,6 +55,7 @@ export const query = graphql`
     }
     contentfulCity(id: { eq: $id }) {
       name
+      slug
       product {
         name
         description
@@ -109,13 +110,15 @@ export const query = graphql`
         }
         city {
           name
+          slug
         }
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
+    contentfulCountry(code: { eq: "pa" }) {
       name
       city {
         name
+        slug
       }
     }
   }
