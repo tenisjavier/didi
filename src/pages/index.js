@@ -117,8 +117,8 @@ const Index = ({ data }) => {
       </nav>
       <CTASection {...CTAProps}></CTASection>
       <CTASection {...AboutUsProps}></CTASection>
-      <CTASection {...AboutDiDiProps}></CTASection>
       <CTASection {...MissionProps}></CTASection>
+      <CTASection {...AboutDiDiProps}></CTASection>
       <footer>
         <div className="h-96 bg-gray-primary lg:h-80">
           <div className="container mx-auto flex h-full flex-wrap">
