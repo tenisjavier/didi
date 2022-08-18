@@ -1,26 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import ArticlesColumns from "../../../components/sections/ArticlesColumns";
-import ArticlesHero from "../../../components/sections/ArticlesHero";
-import Pagination from "../../../components/Pagination";
+import Layout from "../../../../components/Layout";
+import FoodBlogHero from "../../../../components/sections/FoodBlogHero";
+import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
 
-const Article = ({ data }) => {
+const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "au.PaxHero.bgImage";
+    return image.title === "cl.FoodHero.bgImage";
   })[0];
-
   return (
     <Layout>
-      <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
-      <ArticlesColumns data={data}></ArticlesColumns>
-      <Pagination data={data} postsPerPage={6}></Pagination>
+      <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
+      <FoodBlogColumns data={data}></FoodBlogColumns>
     </Layout>
   );
 };
 
-export default Article;
+export default FoodBlog;
 
 export const query = graphql`
   query ($language: String!) {
@@ -33,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["au.PaxHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["cl.FoodHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -42,16 +39,12 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: {
-        category: { in: ["rides", "news"] }
-        country: { code: { eq: "au" } }
-      }
+      filter: { category: { eq: "food" }, country: { code: { eq: "cl" } } }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: 20
+      limit: 10
     ) {
       nodes {
         title
-        slug
         excerpt
         featuredImage {
           gatsbyImageData

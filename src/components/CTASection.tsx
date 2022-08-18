@@ -17,6 +17,10 @@ export interface CTAProps extends BtnProps {
   bgColor?: string;
   image?: React.ReactNode;
   bullets?: string[];
+  list?: {
+    text: string;
+    link: string;
+  }[];
   customBulletIcon?: boolean;
   reverse?: boolean;
 }
@@ -32,6 +36,7 @@ const CTASection = (props: CTAProps) => {
     bgColor,
     image,
     bullets,
+    list,
     customBulletIcon,
     btnType,
     btnText,
@@ -59,6 +64,7 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
+
   return (
     <section
       className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
@@ -104,7 +110,17 @@ const CTASection = (props: CTAProps) => {
               <br></br>
             </>
           )}
-          <p className="mb-5 text-lg">{desc}</p>
+          {desc &&
+            desc
+              .split("\n")
+              .map((str) => <p className="mb-5 text-lg">{str}</p>)}
+          {list && (
+            <div className="grid grid-cols-2 lg:grid-cols-3 text-orange-primary mb-8">
+              {list.map((item) => (
+                <a href={item.link}>{item.text}</a>
+              ))}
+            </div>
+          )}
           {sectionBtn}
         </div>
       </div>

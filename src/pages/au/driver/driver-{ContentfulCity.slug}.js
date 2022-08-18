@@ -13,7 +13,7 @@ const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "cl.DrvHero.bgImage";
+    return image.title === "au.DrvHero.bgImage";
   })[0];
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
@@ -25,7 +25,7 @@ const DrvCity = ({ data }) => {
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <SilderSection
         data={product}
-        title={`Nuestros Servicios en ${name}`}
+        title={`Our services in ${name}`}
       ></SilderSection>
       <Requirements data={requirements}></Requirements>
       {places.length ? (
@@ -55,6 +55,7 @@ export const query = graphql`
     }
     contentfulCity(id: { eq: $id }) {
       name
+      slug
       product {
         name
         description
@@ -62,6 +63,7 @@ export const query = graphql`
           gatsbyImageData
         }
         country {
+          name
           code
         }
       }
@@ -70,7 +72,7 @@ export const query = graphql`
         lon
       }
     }
-    allContentfulAsset(filter: { title: { in: ["cl.DrvHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["au.DrvHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -109,13 +111,15 @@ export const query = graphql`
         }
         city {
           name
+          slug
         }
       }
     }
-    contentfulCountry(code: { eq: "pa" }) {
+    contentfulCountry(code: { eq: "au" }) {
       name
       city {
         name
+        slug
       }
     }
   }

@@ -13,7 +13,7 @@ const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "co.DrvHero.bgImage";
+    return image.title === "ar.DrvHero.bgImage";
   })[0];
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
@@ -34,7 +34,6 @@ const DrvCity = ({ data }) => {
       {data.contentfulOffice ? (
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
-
       <DrvCityList data={cities}></DrvCityList>
     </Layout>
   );
@@ -53,8 +52,17 @@ export const query = graphql`
         }
       }
     }
+    allContentfulAsset(filter: { title: { in: ["ar.DrvHero.bgImage"] } }) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
     contentfulCity(id: { eq: $id }) {
       name
+      slug
       product {
         name
         description
@@ -68,14 +76,6 @@ export const query = graphql`
       geometry {
         lat
         lon
-      }
-    }
-    allContentfulAsset(filter: { title: { in: ["co.DrvHero.bgImage"] } }) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
       }
     }
     contentfulOffice(city: { id: { eq: $id } }) {
@@ -109,13 +109,15 @@ export const query = graphql`
         }
         city {
           name
+          slug
         }
       }
     }
-    contentfulCountry(code: { eq: "co" }) {
+    contentfulCountry(code: { eq: "ar" }) {
       name
       city {
         name
+        slug
       }
     }
   }

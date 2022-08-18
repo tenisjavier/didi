@@ -37,6 +37,7 @@ export const query = graphql`
       code
       city {
         name
+        slug
       }
     }
     allContentfulAsset(filter: { title: { in: ["pe.PaxHero.bgImage"] } }) {

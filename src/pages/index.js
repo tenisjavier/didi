@@ -12,7 +12,10 @@ const Index = ({ data }) => {
   const HomeAboutUsImage = images.filter((image) => {
     return image.title === "int.HomeAboutUs.image";
   })[0];
-  const HomeOurMissionImage = images.filter((image) => {
+  const AboutDiDiImage = images.filter((image) => {
+    return image.title === "int.AboutDiDi.image";
+  })[0];
+  const HomeOurMissionBgImage = images.filter((image) => {
     return image.title === "int.HomeOurMission.image";
   })[0];
   const CTAProps = {
@@ -43,12 +46,30 @@ const Index = ({ data }) => {
     alignItems: "center",
   };
 
+  const AboutDiDiProps = {
+    hero: true,
+    title: "DiDi Around the World",
+    desc: "We connect more than 550 million users around the world with our mobility platform, serving their needs in food delivery, mobility, financial services and more.",
+    textColor: "gray-primary",
+    bgColor: "bg-white",
+    image: (
+      <GatsbyImage
+        image={AboutDiDiImage.gatsbyImageData}
+        alt={AboutDiDiImage.description}
+        className="z-10 m-4 w-100 rounded"
+      ></GatsbyImage>
+    ),
+    list: countries.map((c) => {
+      return { text: c.name, link: c.hostname };
+    }),
+  };
+
   const AboutUsProps = {
     hero: true,
     title: "About Us",
-    desc: "DiDi Global Inc. is the world’s leading mobility technology platform. We offer a wide range of app-based services across markets including Asia-Pacific, Latin America, Europe and Africa, including ride hailing, taxi hailing, chauffeur, hitch and other forms of shared mobility as well as auto solutions, food delivery, intra-city freight and financial services. DiDi provides car owners, drivers and delivery partners with flexible work and income opportunities. We are committed to collaborating with policymakers, the taxi industry, the automobile industry and local communities to solve the world’s transportation, environmental and employment challenges through the use of AI technology and localized smart transportation innovations. DiDi strives to create better life experiences and greater social value by building a safe, inclusive and sustainable transportation and local services ecosystem for cities of the future.",
+    desc: "DiDi Global Inc. is the world’s leading mobility technology platform. We offer a wide range of app-based services across markets including Asia-Pacific, Latin America, Europe and Africa, including ride hailing, taxi hailing, chauffeur, hitch and other forms of shared mobility as well as auto solutions, food delivery, intra-city freight and financial services.\nDiDi provides car owners, drivers and delivery partners with flexible work and income opportunities. We are committed to collaborating with policymakers, the taxi industry, the automobile industry and local communities to solve the world’s transportation, environmental and employment challenges through the use of AI technology and localized smart transportation innovations. DiDi strives to create better life experiences and greater social value by building a safe, inclusive and sustainable transportation and local services ecosystem for cities of the future.",
     textColor: "gray-primary",
-    bgColor: "bg-white",
+    bgColor: "bg-gray-light",
     image: (
       <GatsbyImage
         image={HomeAboutUsImage.gatsbyImageData}
@@ -56,6 +77,7 @@ const Index = ({ data }) => {
         className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
+    reverse: true,
   };
 
   const MissionProps = {
@@ -67,16 +89,15 @@ const Index = ({ data }) => {
       "A global leader in smart transportation technologies",
       "A global leader in the revolution in transportation and automotive technology",
     ],
-    textColor: "gray-primary",
+    textColor: "white",
     bgColor: "bg-gray-light",
-    image: (
+    bgImage: (
       <GatsbyImage
-        image={HomeOurMissionImage.gatsbyImageData}
-        alt={HomeOurMissionImage.description}
-        className="z-10 m-4 w-100 rounded"
+        image={HomeOurMissionBgImage.gatsbyImageData}
+        alt={HomeOurMissionBgImage.description}
+        className="!absolute z-0 h-full w-full md:block brightness-50"
       ></GatsbyImage>
     ),
-    reverse: true,
   };
 
   return (
@@ -97,6 +118,7 @@ const Index = ({ data }) => {
       <CTASection {...CTAProps}></CTASection>
       <CTASection {...AboutUsProps}></CTASection>
       <CTASection {...MissionProps}></CTASection>
+      <CTASection {...AboutDiDiProps}></CTASection>
       <footer>
         <div className="h-96 bg-gray-primary lg:h-80">
           <div className="container mx-auto flex h-full flex-wrap">
@@ -166,7 +188,13 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: { in: ["int.HomeAboutUs.image", "int.HomeOurMission.image"] }
+        title: {
+          in: [
+            "int.HomeAboutUs.image"
+            "int.HomeOurMission.image"
+            "int.AboutDiDi.image"
+          ]
+        }
       }
     ) {
       nodes {

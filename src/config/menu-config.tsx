@@ -201,6 +201,10 @@ const menuLinks: AllMenuInterface = {
       url: "#",
       dropMenu: [
         {
+          text: "Guías",
+          url: "/pe/guias/",
+        },
+        {
           text: "Artículos",
           url: "/pe/articulos/",
         },
@@ -226,6 +230,56 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
+    {
+      text: "DiDi Food",
+      url: "/co/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/co/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/co/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/co/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/co/food/contact/",
+        },
+      ],
+    },
+    {
+      text: "Sobre DiDi",
+      url: "/co/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/co/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/co/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/co/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/co/articulos/",
+        },
+      ],
+    },
   ],
   au: [
     {
@@ -235,10 +289,6 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Rider Help",
           url: "/au/rider/help/",
-        },
-        {
-          text: "DiDi Share",
-          url: "/au/rider/didi-share-for-rider/",
         },
       ],
     },
@@ -253,10 +303,6 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Sign Up",
           url: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
-        },
-        {
-          text: "DiDi Share",
-          url: "/au/driver/didi-share-for-driver/",
         },
         {
           text: "DiDi Advance",
@@ -295,9 +341,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "Features",
-      url: "#",
+      text: "Safety",
+      url: "/au/safety/",
       dropMenu: [
+        {
+          text: "Driver Safety",
+          url: "/au/safety/driver-safety/",
+        },
+        {
+          text: "Rider Safety",
+          url: "/au/safety/rider-safety/",
+        },
         {
           text: "DiDi Sal Rider",
           url: "/au/features/didisal/",
@@ -321,7 +375,7 @@ const menuLinks: AllMenuInterface = {
           url: "/au/help-center/",
         },
         {
-          text: "Customer Support",
+          text: "Contact",
           url: "/au/contact/",
         },
       ],

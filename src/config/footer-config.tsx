@@ -60,6 +60,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Career", link: "/au/career/" },
     { text: "Offers", link: "/au/offers/" },
     { text: "Legal", link: "/au/legal/" },
+    { text: "Contact", link: "/au/contact/" },
   ],
   eg: [
     { text: "DiDi Rider", link: "/eg/rider/" },
@@ -67,7 +68,7 @@ const footerLinks: AllFooterInterface = {
   ],
   pa: [
     { text: "Conductor", link: "/pa/driver/" },
-    { text: "Pasajero", link: "/cl/pasajero/" },
+    { text: "Pasajero", link: "/pa/pasajero/" },
     { text: "Seguridad", link: "/pa/seguridad/" },
     { text: "Acerca de nosotros", link: "/pa/sobre-didi/" },
     { text: "Legal", link: "/pa/legal/" },
@@ -76,7 +77,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Conductor", link: "/cr/driver/" },
     { text: "Usuario", link: "/cr/pasajero/" },
     { text: "Seguridad", link: "/cr/seguridad/" },
-    { text: "Centro de ayuda", link: "/pa/centro-de-ayuda/" },
+    { text: "Centro de ayuda", link: "/cr/centro-de-ayuda/" },
     { text: "Legal", link: "/cr/legal/" },
   ],
 };
