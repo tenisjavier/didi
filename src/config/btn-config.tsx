@@ -72,6 +72,12 @@ const btnLinks: AllBtnInterface = {
     drvText: "Drive with DiDi",
     paxText: "Ride with DiDi",
   },
+  eg: {
+    drvLink: "https://anz-rides-driver.onelink.me/ixFb/egdriverhero",
+    paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
+    drvText: "انضم لكباتن دي دي",
+    paxText: "احجز مشوارك مع دي دي",
+  },
   do: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",

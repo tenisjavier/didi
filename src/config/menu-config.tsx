@@ -381,6 +381,26 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
+  eg: [
+    {
+      text: "نبذة عنا",
+      url: "/eg/about-us/",
+      dropMenu: [
+        {
+          text: "مركز المساعدة",
+          url: "/eg/help-center/",
+        }
+      ]
+    },
+    {
+      text: "الراكب",
+      url: "/eg/rider/",
+    },
+    {
+      text: "السائق",
+      url: "/eg/driver/",
+    }
+  ],
   pa: [
     {
       text: "DiDi Conductor",
