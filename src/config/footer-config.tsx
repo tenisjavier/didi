@@ -76,6 +76,14 @@ const footerLinks: AllFooterInterface = {
     { text: "Centro de ayuda", link: "/cr/centro-de-ayuda/" },
     { text: "Legal", link: "/cr/legal/" },
   ],
+  nz: [
+    { text: "DiDi Rider", link: "/nz/rider/" },
+    { text: "DiDi Driver", link: "/nz/driver/" },
+    { text: "Blog", link: "/nz/blog/" },
+    { text: "Career", link: "/nz/career/" },
+    { text: "Offers", link: "/nz/offers/" },
+    { text: "Legal", link: "/nz/legal/" },
+  ],
 };
 
 const getFooterLinks = (countryCode: string): FooterLinks[] => {

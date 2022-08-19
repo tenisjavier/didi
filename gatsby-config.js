@@ -70,7 +70,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`cl`, `ar`, `pe`, `co`, `au`, `do`, `pa`, `ec`, `cr`],
+        languages: [`cl`, `ar`, `pe`, `co`, `au`, `do`, `pa`, `ec`, `cr`, `nz`],
         defaultLanguage: `cl`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `https://web.didiglobal.com/`,
@@ -181,6 +181,7 @@ module.exports = {
             "cr",
             "pa",
             "mx",
+            "nz"
           ];
 
           const engCountries = ["au", "nz", "eg", "ru"];
