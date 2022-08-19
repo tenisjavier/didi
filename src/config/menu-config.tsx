@@ -385,12 +385,6 @@ const menuLinks: AllMenuInterface = {
     {
       text: "نبذة عنا",
       url: "/eg/about-us/",
-      dropMenu: [
-        {
-          text: "مركز المساعدة",
-          url: "/eg/help-center/",
-        }
-      ]
     },
     {
       text: "الراكب",
@@ -399,7 +393,13 @@ const menuLinks: AllMenuInterface = {
     {
       text: "السائق",
       url: "/eg/driver/",
-    }
+      dropMenu: [
+        {
+          text: "مركز المساعدة",
+          url: "/eg/help-center/",
+        },
+      ],
+    },
   ],
   pa: [
     {

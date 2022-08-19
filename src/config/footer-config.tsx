@@ -63,8 +63,8 @@ const footerLinks: AllFooterInterface = {
     { text: "Contact", link: "/au/contact/" },
   ],
   eg: [
-    { text: "DiDi Rider", link: "/eg/rider/" },
-    { text: "DiDi Driver", link: "/eg/driver/" },
+    { text: "الراكب", link: "/eg/rider/" },
+    { text: "السائق", link: "/eg/driver/" },
   ],
   pa: [
     { text: "Conductor", link: "/pa/driver/" },
