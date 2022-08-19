@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import HelpCenterHeroRTL from "../../components/sections/HelpCenterHeroRTL";
-import HelpCenterFAQDrvRTL from "../../components/sections/HelpCenterFAQDrvRTL";
+import Layout from "../../../components/Layout";
+import HelpCenterHeroRTL from "../../../components/sections/HelpCenterHeroRTL";
+import HelpCenterFAQDrvRTL from "../../../components/sections/HelpCenterFAQDrvRTL";
 
 const HelpCenter = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -34,9 +34,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: { regex: "/(eg.HomeHero.bgImage)/" }
-      }
+      filter: { title: { regex: "/(eg.HomeHero.bgImage)/" } }
       sort: { fields: title }
     ) {
       nodes {
