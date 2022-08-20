@@ -42,7 +42,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(au.SafetyGridPax)|(au.SafetyHero)|(au.SafetyGridDrv)/"
+          regex: "/(nz.SafetyGridPax)|(nz.SafetyHero)|(nz.SafetyGridDrv)/"
         }
       }
       sort: { fields: title }
