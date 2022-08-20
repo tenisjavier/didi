@@ -13,7 +13,7 @@ const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "au.DrvHero.bgImage";
+    return image.title === "nz.DrvHero.bgImage";
   })[0];
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
@@ -72,7 +72,7 @@ export const query = graphql`
         lon
       }
     }
-    allContentfulAsset(filter: { title: { in: ["au.DrvHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["nz.DrvHero.bgImage"] } }) {
       nodes {
         id
         title
