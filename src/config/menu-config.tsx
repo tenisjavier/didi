@@ -287,6 +287,10 @@ const menuLinks: AllMenuInterface = {
       url: "/au/rider/",
       dropMenu: [
         {
+          text: "Rider",
+          url: "/au/rider/",
+        },
+        {
           text: "Rider Help",
           url: "/au/rider/help/",
         },
@@ -366,10 +370,6 @@ const menuLinks: AllMenuInterface = {
       text: "About DiDi",
       url: "/au/about-us/",
       dropMenu: [
-        {
-          text: "Safety",
-          url: "/au/safety/",
-        },
         {
           text: "Help Center",
           url: "/au/help-center/",
@@ -701,6 +701,10 @@ const menuLinks: AllMenuInterface = {
       url: "/nz/rider/",
       dropMenu: [
         {
+          text: "Rider",
+          url: "/nz/rider/",
+        },
+        {
           text: "Rider Safety",
           url: "/nz/rider/safety/",
         },
@@ -711,16 +715,34 @@ const menuLinks: AllMenuInterface = {
       url: "/nz/driver/",
       dropMenu: [
         {
-          text: "Sign Up",
-          url: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
+          text: "Driver",
+          url: "/nz/driver/",
         },
+        {
+          text: "Sign Up",
+          url: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
+        },
+        {
+          text: "Driver Help",
+          url: "/nz/driver/help/",
+        },
+        {
+          text: "Cities",
+          url: "/nz/cities/",
+        },
+      ],
+    },
+    {
+      text: "Safety",
+      url: "/nz/safety/",
+      dropMenu: [
         {
           text: "Driver Safety",
           url: "/nz/driver/safety",
         },
         {
-          text: "Driver Help",
-          url: "/nz/driver/help/",
+          text: "Rider Safety",
+          url: "/nz/rider/help/",
         },
       ],
     },
@@ -729,16 +751,12 @@ const menuLinks: AllMenuInterface = {
       url: "/nz/about-us/",
       dropMenu: [
         {
-          text: "Driver Safety",
-          url: "/nz/driver/safety/",
-        },
-        {
           text: "Driver Help",
           url: "/nz/driver/help/",
         },
         {
-          text: "Rider Safety",
-          url: "/nz/driver/safety/",
+          text: "Contact",
+          url: "/nz/contact/",
         },
       ],
     },

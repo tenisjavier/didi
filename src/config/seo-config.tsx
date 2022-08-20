@@ -624,8 +624,8 @@ const seoMeta: AllSEOMetaInterface = {
   },
   nz: {
     "/": {
-      title: "DiDi Australia - Ride Hailing & Delivery",
-      desc: "DiDi Australia offers a full range of app-based transportation services to users across Australia and New Zealand.",
+      title: "DiDi New Zealand - Ride Hailing & Delivery",
+      desc: "DiDi New Zealand offers a full range of app-based transportation services for riders and drivers .",
     },
     "/rider/": {
       title: "Ride with DiDi",
