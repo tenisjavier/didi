@@ -6,7 +6,6 @@ import CareerFeatures from "../../components/sections/CareerFeatures";
 import CareerColumns from "../../components/sections/CareerColumns";
 import CareerBanner from "../../components/sections/CareerBanner";
 import CareerWhyDiDi from "../../components/sections/CareerWhyDiDi";
-import CareerFAQ from "../../components/sections/CareerFAQ";
 
 const Career = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -20,11 +19,7 @@ const Career = ({ data }) => {
   const careerColumnsImages = images.filter((image) => {
     return image.title.indexOf("nz.CareerColumns.image") !== -1;
   });
-  const faqCareer = data.allContentfulFaq.nodes.filter((node) => {
-    let exp =
-      /How would you describe the DiDi work culture|Can I apply for more than one position at DiDi|Does DiDi offer internships|How many countries does DiDi operate in|How long does DiDi's recruitment process usually take/;
-    return exp.test(node.title);
-  });
+
   return (
     <Layout>
       <CareerHero bgImage={paxHeroBgImage}></CareerHero>
@@ -32,7 +27,6 @@ const Career = ({ data }) => {
       <CareerColumns images={careerColumnsImages}></CareerColumns>
       <CareerBanner></CareerBanner>
       <CareerWhyDiDi image={careerWhyDiDiImage}></CareerWhyDiDi>
-      <CareerFAQ data={faqCareer}></CareerFAQ>
     </Layout>
   );
 };
