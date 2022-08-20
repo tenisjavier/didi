@@ -15,7 +15,6 @@ import DrvCityList from "../../components/sections/DrvCityList";
 import SilderSection from "../../components/sections/SliderSection";
 import Requirements from "../../components/sections/Requirements";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
-import RequirementsLinks from "../../components/sections/RequirementsLinks";
 import DrvColumns from "../../components/sections/DrvColumns";
 
 const Driver = ({ data }) => {
@@ -30,7 +29,6 @@ const Driver = ({ data }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.contentfulCountry.city;
-  const requirements = data.allContentfulRequirement.nodes;
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
@@ -40,7 +38,6 @@ const Driver = ({ data }) => {
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <DrvCityList data={cities}></DrvCityList>
-      <RequirementsLinks requirements={requirements}></RequirementsLinks>
       <DrvColumns icons={iconsDrvColumns}></DrvColumns>
     </Layout>
   );
@@ -104,16 +101,6 @@ export const query = graphql`
         name
         desc
         logo {
-          gatsbyImageData
-          description
-        }
-      }
-    }
-    allContentfulRequirement(filter: { country: { code: { eq: "nz" } } }) {
-      nodes {
-        name
-        slug
-        image {
           gatsbyImageData
           description
         }
