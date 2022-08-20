@@ -17,10 +17,6 @@ export interface CTAProps extends BtnProps {
   bgColor?: string;
   image?: React.ReactNode;
   bullets?: string[];
-  list?: {
-    text: string;
-    link: string;
-  }[];
   customBulletIcon?: boolean;
   reverse?: boolean;
 }
@@ -36,7 +32,6 @@ const CTASection = (props: CTAProps) => {
     bgColor,
     image,
     bullets,
-    list,
     customBulletIcon,
     btnType,
     btnText,
@@ -64,22 +59,21 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
-
   return (
-    <section
+    <section style={{direction: "rtl"}}
       className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
     ${bgColor && bgColor}`}
     >
       <div
         className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
- ${reverse && "flex-row-reverse"} ${
+ ${reverse && reverse ? "flex-row" : "flex-row-reverse"} ${
           image ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
         {image}
 
         <div
-          className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
+          className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-right`}
         >
           {hero ? (
             <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
@@ -88,7 +82,7 @@ const CTASection = (props: CTAProps) => {
           )}
           {bullets && (
             <>
-              <ul className="mt-12 mb-2 list-none text-left text-xl">
+              <ul className="mt-12 mb-2 list-none text-right text-xl pr-0 pl-3">
                 {bullets.map((item, index) => {
                   return (
                     <div key={index}>
@@ -96,11 +90,11 @@ const CTASection = (props: CTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" mr-4 text-orange-primary "
+                            className=" ml-4 text-orange-primary "
                             size="sm"
                           />
                         ) : null}
-                        {item}
+                        <p className="m-0" style={{display: 'inline-block', width: '80%'}}>{item}</p>
                       </li>
                       <br></br>
                     </div>
@@ -110,17 +104,7 @@ const CTASection = (props: CTAProps) => {
               <br></br>
             </>
           )}
-          {desc &&
-            desc
-              .split("\n")
-              .map((str) => <p className="mb-5 text-lg">{str}</p>)}
-          {list && (
-            <div className="grid grid-cols-2 lg:grid-cols-3 text-orange-primary mb-8">
-              {list.map((item) => (
-                <a href={item.link}>{item.text}</a>
-              ))}
-            </div>
-          )}
+          <p className="mb-5 text-lg">{desc}</p>
           {sectionBtn}
         </div>
       </div>

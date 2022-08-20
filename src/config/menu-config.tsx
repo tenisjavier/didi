@@ -341,9 +341,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "Features",
-      url: "#",
+      text: "Safety",
+      url: "/au/safety/",
       dropMenu: [
+        {
+          text: "Driver Safety",
+          url: "/au/safety/driver-safety/",
+        },
+        {
+          text: "Rider Safety",
+          url: "/au/safety/rider-safety/",
+        },
         {
           text: "DiDi Sal Rider",
           url: "/au/features/didisal/",
@@ -369,6 +377,26 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Contact",
           url: "/au/contact/",
+        },
+      ],
+    },
+  ],
+  eg: [
+    {
+      text: "نبذة عنا",
+      url: "/eg/about-us/",
+    },
+    {
+      text: "الراكب",
+      url: "/eg/rider/",
+    },
+    {
+      text: "السائق",
+      url: "/eg/driver/",
+      dropMenu: [
+        {
+          text: "مركز المساعدة",
+          url: "/eg/help-center/",
         },
       ],
     },

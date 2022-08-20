@@ -6,6 +6,7 @@ const DrvCityList = ({ data }) => {
   console.log(data);
   const { t } = useTranslation();
   const items = data.map((city) => {
+    console.log(city);
     return {
       text: city.name,
       secondText: "",

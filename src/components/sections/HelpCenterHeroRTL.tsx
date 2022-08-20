@@ -1,9 +1,9 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-import CTASection, { CTAProps } from "../CTASection";
+import CTASection, { CTAProps } from "../CTASectionRTL";
 
-interface SafetyPaxHeroProps {
+interface HelpCenterHeroProps {
   bgImage: {
     title: string;
     description: string;
@@ -11,26 +11,25 @@ interface SafetyPaxHeroProps {
   };
 }
 
-const SafetyPaxHero = ({ bgImage }: SafetyPaxHeroProps) => {
+const HelpCenterHeroRTL = ({ bgImage }: HelpCenterHeroProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
-    title: t("SafetyPaxHero.title"),
-    desc: t("SafetyPaxHero.desc"),
-    textColor: t("SafetyPaxHero.textColor"),
+    title: t("HelpCenterHeroRTL.title"),
+    desc: t("HelpCenterHeroRTL.desc"),
+    textColor: t("HelpCenterHeroRTL.textColor"),
     bgImage: (
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
+        className="!absolute z-0 h-full w-full brightness-75 md:block"
       ></GatsbyImage>
     ),
-    btnMode: t("SafetyPaxHero.btnMode"),
-    btnType: "pax",
+    btnMode: t("HelpCenterHeroRTL.btnMode"),
+    btnType: "both",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };
 
-
-export default SafetyPaxHero;
-
+export default HelpCenterHeroRTL;
