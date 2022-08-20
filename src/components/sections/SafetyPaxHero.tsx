@@ -31,4 +31,6 @@ const SafetyPaxHero = ({ bgImage }: SafetyPaxHeroProps) => {
   return <CTASection {...props}></CTASection>;
 };
 
+
 export default SafetyPaxHero;
+

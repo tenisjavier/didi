@@ -122,6 +122,12 @@ const btnLinks: AllBtnInterface = {
     drvText: "Regístrate Online",
     paxText: "Descarga Didi Pasajero",
   },
+  nz: {
+    drvLink: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
+    paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
+    drvText: "Drive with DiDi",
+    paxText: "Ride with DiDi",
+  },
 };
 
 const getBtnLinks = (countryCode: string): SingleBtnInterface => {

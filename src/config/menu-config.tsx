@@ -695,6 +695,54 @@ const menuLinks: AllMenuInterface = {
       url: "https://mexico.didiglobal.com/about-us/",
     },
   ],
+  nz: [
+    {
+      text: "DiDi Rider",
+      url: "/nz/rider/",
+      dropMenu: [
+        {
+          text: "Rider Safety",
+          url: "/nz/rider/safety/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Driver",
+      url: "/nz/driver/",
+      dropMenu: [
+        {
+          text: "Sign Up",
+          url: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
+        },
+        {
+          text: "Driver Safety",
+          url: "/nz/driver/safety",
+        },
+        {
+          text: "Driver Help",
+          url: "/nz/driver/help/",
+        },
+      ],
+    },
+    {
+      text: "About DiDi",
+      url: "/nz/about-us/",
+      dropMenu: [
+        {
+          text: "Driver Safety",
+          url: "/nz/driver/safety/",
+        },
+        {
+          text: "Driver Help",
+          url: "/nz/driver/help/",
+        },
+        {
+          text: "Rider Safety",
+          url: "/nz/driver/safety/",
+        },
+      ],
+    },
+  ],
 };
 
 const getMenuLinks = (countryCode: string) => {
