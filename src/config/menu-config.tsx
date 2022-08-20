@@ -738,11 +738,11 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "Driver Safety",
-          url: "/nz/driver/safety",
+          url: "/nz/safety/driver-safety",
         },
         {
           text: "Rider Safety",
-          url: "/nz/rider/help/",
+          url: "/nz/safety/rider-safety/",
         },
       ],
     },

@@ -9,7 +9,7 @@ const Requirement = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const cities = data.contentfulCountry.city;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "au.DrvHero.bgImage";
+    return image.title === "nz.DrvHero.bgImage";
   })[0];
 
   const title = "Driver Requirements for " + data.contentfulRequirement.name;
@@ -36,7 +36,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(au.DrvHero.bgImage)/" } }
+      filter: { title: { regex: "/(nz.DrvHero.bgImage)/" } }
       sort: { fields: title }
     ) {
       nodes {
@@ -52,7 +52,7 @@ export const query = graphql`
         raw
       }
     }
-    contentfulCountry(code: { eq: "au" }) {
+    contentfulCountry(code: { eq: "nz" }) {
       city {
         name
         slug
