@@ -59,6 +59,8 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga Didi Pasajero",
+    fleetText: "Regístrate en DiDi Fleet",
+    fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food App",
     foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
