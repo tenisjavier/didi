@@ -22,7 +22,7 @@ const FleetHero = ({ bgImage }: FleetHeroProps) => {
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-50 md:block"
+        className="!absolute z-0 h-full w-full brightness-90 md:block"
       ></GatsbyImage>
     ),
     btnMode: t("FleetHero.btnMode"),

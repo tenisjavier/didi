@@ -231,6 +231,14 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Taxi",
+      url: "/co/taxi/",
+    },
+    {
+      text: "DiDi Fleet",
+      url: "/co/didi-fleet/",
+    },
+    {
       text: "DiDi Food",
       url: "/co/food/",
       dropMenu: [
