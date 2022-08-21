@@ -712,10 +712,6 @@ const menuLinks: AllMenuInterface = {
           text: "Rider",
           url: "/nz/rider/",
         },
-        {
-          text: "Rider Safety",
-          url: "/nz/rider/safety/",
-        },
       ],
     },
     {
