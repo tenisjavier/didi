@@ -208,6 +208,7 @@
   "DownloadFleetCTA.bgColor": "bg-gray-light",
   "DownloadFleetCTA.btnMode": "primary",
   "AboutDidiFleetVideo.title": "Mira el video y conoce cómo funciona DiDi Fleet",
+  "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/o-NuCk2a6eI",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
   "FleetColumns.bgColor": "bg-green-primary",

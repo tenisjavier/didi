@@ -155,7 +155,7 @@
   "DrvFeatures.bgColor": "bg-gray-light",
   "DrvFeatures.btnMode": "primary",
   "DrvCityList.title": "Our services are available in these cities in New Zealand",
-  "DrvCityList.desc": "All cities have Express, Max, Share and Delivery",
+  "DrvCityList.desc": "All cities have Express and Delivery",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/nz/driver/driver-{{city}}/",
