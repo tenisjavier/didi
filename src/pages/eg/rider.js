@@ -8,8 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
 import PaxHeroRTL from "../../components/sections/PaxHeroRTL";
-import SilderSection from "../../components/sections/SliderSection";
 import PaxBenefits from "../../components/sections/PaxBenefits";
+import InfoColumnsRTL from "../../components/sections/InfoColumnsRTL";
 
 const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -25,7 +25,7 @@ const Pasajero = ({ data }) => {
     <Layout>
       <PaxHeroRTL bgImage={paxHeroBgImage}></PaxHeroRTL>
       <PaxBenefits image={paxBenefitsImage} icons={icons}></PaxBenefits>
-      <SilderSection data={products}></SilderSection>
+      <InfoColumnsRTL></InfoColumnsRTL>
     </Layout>
   );
 };

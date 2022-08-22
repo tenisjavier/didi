@@ -399,6 +399,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "السائق",
       url: "/eg/driver/",
+      dropMenu: [
+        {
+          text: "دليل بدء شريك",
+          url: "/eg/driver/driver-starter-manual"
+        }
+      ]
     }
   ],
   pa: [

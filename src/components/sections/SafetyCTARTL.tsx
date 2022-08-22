@@ -38,7 +38,7 @@ const SafetyCTARTL = ({ bgImage, image }: SafetyCTAProps) => {
         <GatsbyImage
           image={image.gatsbyImageData}
           alt={image.description}
-          className="z-10 m-4 w-100"
+          className="z-10 m-4"
         ></GatsbyImage>
       ),
     }),
@@ -46,7 +46,7 @@ const SafetyCTARTL = ({ bgImage, image }: SafetyCTAProps) => {
     btnText: t("SafetyCTARTL.btnText"),
     btnLink: t("SafetyCTARTL.btnLink"),
     btnMode: t("SafetyCTARTL.btnMode"),
-    reverse: true,
+    reverse: false,
   };
   return <CTASection {...props}></CTASection>;
 };
