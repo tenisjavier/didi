@@ -586,6 +586,7 @@
     }
   ],
   "AboutDidiFleetVideo.title": "Mirá el video y conocé cómo funciona DiDi Fleet",
+  "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/XbfHvQlFKlY",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
   "FleetColumns.bgColor": "bg-green-primary",
