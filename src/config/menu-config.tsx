@@ -403,11 +403,11 @@ const menuLinks: AllMenuInterface = {
       url: "/eg/driver/",
       dropMenu: [
         {
-          text: "مركز المساعدة",
-          url: "/eg/help-center/",
-        },
-      ],
-    },
+          text: "دليل بدء شريك",
+          url: "/eg/driver/driver-starter-manual"
+        }
+      ]
+    }
   ],
   pa: [
     {
