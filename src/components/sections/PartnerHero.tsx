@@ -1,5 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface PartnerHeroProps {
@@ -13,20 +14,21 @@ interface PartnerHeroProps {
 }
 
 const PartnerHero = ({ title, desc, image }: PartnerHeroProps) => {
+  const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
     title: title,
     desc: desc,
-    textColor: "white",
-    bgColor: "bg-orange-primary",
+    textColor: t("PartnerHero.textColor"),
+    bgColor: t("PartnerHero.bgColor"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData!}
         alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
+        className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
-    btnMode: "light",
+    btnMode: t("PartnerHero.btnMode"),
     btnType: "drv",
     reverse: true,
   };

@@ -3,10 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
-import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
-import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+// Colo
 import FooterLink from "./FooterLink";
 import { getFooterLinks } from "../config/footer-config";
 
@@ -75,7 +72,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex h-1/2 w-full flex-initial flex-wrap items-center justify-center px-24 lg:h-full lg:w-1/2 xl:px-32 ">
+          {/* <div className="flex h-1/2 w-full flex-initial flex-wrap items-center justify-center px-24 lg:h-full lg:w-1/2 xl:px-32 ">
             <div className="flex w-full justify-center lg:w-auto">
               <div className="mr-5 text-5xl text-white">
                 <FontAwesomeIcon icon={faFacebookSquare} />
@@ -87,7 +84,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faTwitterSquare} />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

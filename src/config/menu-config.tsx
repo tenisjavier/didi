@@ -228,6 +228,14 @@ const menuLinks: AllMenuInterface = {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
+        {
+          text: "Club DiDiMás+",
+          url: "/co/didimas/",
+        },
+        {
+          text: "Ciudades Activas",
+          url: "/co/ciudades/",
+        },
       ],
     },
     {
