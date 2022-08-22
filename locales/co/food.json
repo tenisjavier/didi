@@ -127,7 +127,7 @@
     {
       "title": "4. Comienza a generar ganancias a través de DiDi Food",
       "textColor": "gray-primary",
-      "height": "h-40"
+      "height": "h-50"
     }
   ],
   "FoodDeliveryDownloads.title": "Obtén la aplicación DiDi Repartidor",
@@ -151,7 +151,7 @@
   "FoodAboutDeliveryCTA.textColor": "gray-primary",
   "FoodAboutDeliveryCTA.btnMode": "primary",
   "FoodAboutCTA.title": "¡Tu comida está muy cerca!",
-  "FoodAboutCTA.desc": "Con DiDi food puedes tener tu comida favorita en dónde lo necesites con sólo un par de clics.",
+  "FoodAboutCTA.desc": "Con DiDi food puedes tener tu platillo favorito en dónde lo neesites con sólo un par de clics.",
   "FoodAboutCTA.bgColor": "bg-white",
   "FoodAboutCTA.textColor": "gray-primary",
   "FoodBlogHero.title": "Bienvenido al Blog de DiDi Food",

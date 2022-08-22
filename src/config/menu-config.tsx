@@ -231,6 +231,14 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Taxi",
+      url: "/co/taxi/",
+    },
+    {
+      text: "DiDi Fleet",
+      url: "/co/didi-fleet/",
+    },
+    {
       text: "DiDi Food",
       url: "/co/food/",
       dropMenu: [
@@ -286,6 +294,10 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Rider",
       url: "/au/rider/",
       dropMenu: [
+        {
+          text: "Rider",
+          url: "/au/rider/",
+        },
         {
           text: "Rider Help",
           url: "/au/rider/help/",
@@ -367,10 +379,6 @@ const menuLinks: AllMenuInterface = {
       url: "/au/about-us/",
       dropMenu: [
         {
-          text: "Safety",
-          url: "/au/safety/",
-        },
-        {
           text: "Help Center",
           url: "/au/help-center/",
         },
@@ -385,12 +393,6 @@ const menuLinks: AllMenuInterface = {
     {
       text: "نبذة عنا",
       url: "/eg/about-us/",
-      dropMenu: [
-        {
-          text: "مركز المساعدة",
-          url: "/eg/help-center/",
-        }
-      ]
     },
     {
       text: "الراكب",
@@ -699,6 +701,68 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Nosotros",
       url: "https://mexico.didiglobal.com/about-us/",
+    },
+  ],
+  nz: [
+    {
+      text: "DiDi Rider",
+      url: "/nz/rider/",
+      dropMenu: [
+        {
+          text: "Rider",
+          url: "/nz/rider/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Driver",
+      url: "/nz/driver/",
+      dropMenu: [
+        {
+          text: "Driver",
+          url: "/nz/driver/",
+        },
+        {
+          text: "Sign Up",
+          url: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
+        },
+        {
+          text: "Driver Help",
+          url: "/nz/driver/help/",
+        },
+        {
+          text: "Cities",
+          url: "/nz/cities/",
+        },
+      ],
+    },
+    {
+      text: "Safety",
+      url: "/nz/safety/",
+      dropMenu: [
+        {
+          text: "Driver Safety",
+          url: "/nz/safety/driver-safety",
+        },
+        {
+          text: "Rider Safety",
+          url: "/nz/safety/rider-safety/",
+        },
+      ],
+    },
+    {
+      text: "About DiDi",
+      url: "/nz/about-us/",
+      dropMenu: [
+        {
+          text: "Driver Help",
+          url: "/nz/driver/help/",
+        },
+        {
+          text: "Contact",
+          url: "/nz/contact/",
+        },
+      ],
     },
   ],
 };

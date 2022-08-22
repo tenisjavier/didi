@@ -31,4 +31,6 @@ const SafetyDrvHero = ({ bgImage }: SafetyDrvHeroProps) => {
   return <CTASection {...props}></CTASection>;
 };
 
+
 export default SafetyDrvHero;
+

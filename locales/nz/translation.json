@@ -1,27 +1,21 @@
 {
-  "HomeHero.title": "محتاج توصيلة موفرة ؟",
+  "HomeHero.title": "Award Winning Rideshare at Low Fares Every Day",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
-  "HomeHero.reverse": true,
-  "HomeHero.textRight": true,
-  "VideoSection.title": "#أيوة_في_DiDi",
-  "VideoSection.src": "https://www.youtube.com/embed/6-QPyla78ds",
-  "SafetyCTARTL.title": "سلامتك أولاً",
-  "SafetyCTARTL.desc": "تأتي سلامتك على رأس أولوياتنا، لذا تعرف على المزيد حول ميزات السلامة المتوفرة في تطبيق دي دي حتى تتمكن من استخدامها متى احتجت إليها.",
-  "SafetyCTARTL.textColor": "white",
-  "SafetyCTARTL.bgColor": "bg-blue-primary",
-  "SafetyCTARTL.btnText": false,
-  "SafetyCTARTL.btnMode": false,
-  "SafetyCTARTL.btnLink": false,
-  "DrvCTA.title": "انضم لشركائنا السائقين",
-  "DrvCTA.desc": "",
-  "DrvCTA.reverse": true,
-  "DrvCTA.textRight": true,
+  "SafetyCTA.title": "Your safety comes first",
+  "SafetyCTA.desc": "Your safety is our top priority, learn more about the safety features available in the DiDi app so you can use them any time you need to.",
+  "SafetyCTA.textColor": "white",
+  "SafetyCTA.bgColor": "bg-blue-primary",
+  "SafetyCTA.btnText": "Know More",
+  "SafetyCTA.btnMode": "light",
+  "SafetyCTA.btnLink": "safety/",
+  "DrvCTA.title": "Become a driver",
+  "DrvCTA.desc": "All Drivers have the opportunity to take home more of the fare with DiDi’s industry-leading low Services Fees",
   "DrvCTA.bullets": [
-    "بادِر بالتسجيل مع دي دي الآن والاستفادة من عرض إطلاق الخدمة بدون رسوم (تسري الشروط والأحكام) لأول ",
-    "الوصول إلى ميزات السلامة داخل التطبيق وفريق الدعم التابع لنا على مدار الساعة",
-    "يمكنك معرفة الوجهة والدخل قبل قبول المشوار",
-    "مع المدفوعات الأسبوعية، يمكنك الانطلاق بسيارتك متى تشاء"
+    "Increase Your Earning Potential: Low Services Fees ",
+    "Safety First: Access in-app safety features and our 24/7 dedicated support team ",
+    "Be in Control: Pick up nearby riders or choose the location you want to drive in ",
+    "Weekly Payouts: Get paid weekly and earn flexibly"
   ],
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "bg-gray-primary",
@@ -50,66 +44,47 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "الدعم",
-      "desc": "فريق دعم العملاء متاح على مدار الساعة . مركز الخدمة داخل التطبيق.",
+      "title": "Award Winning Rideshare",
+      "desc": "Rated by consumers as the best ridesharing service in Australia - DiDi won Canstar Blue’s Most Satisfied Customer Ridesharing 2020 Award. DiDi was the only rideshare to receive 5 stars across all categories, including reliability, customers service, cleanliness and value for money.",
       "textColor": "gray-primary"
     }
   ],
-  "InfoColumnsRTL.title": "الميزات الرئيسية",
-  "InfoColumnsRTL.bgColor": "bg-gray-light",
-  "InfoColumnsRTL.textColor": "gray-primary",
-  "InfoColumnsRTL.columns": [
-    {
-      "title": "أوضاع الوجهة",
-      "desc": "معاينة الوجهة \n فلاتر وجهة النزول \n معاينة مسافة المشوار",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "السلامة والخصوصية",
-      "desc": "التدريب على السلامة \n الأرقام الخاصة \n مشاركة المشوار \n اختيار عدم الظهور للطرف الآخر \n ماسنجر فوري داخل التطبيق",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "الدعم",
-      "desc": "فريق دعم العملاء متاح على مدار الساعة \n مركز الخدمة داخل التطبيق",
-      "textColor": "gray-primary"
-    }
-  ],
-  "PaxHeroRTL.title": "احجز مشوارك مع  دي دي",
-  "PaxHeroRTL.desc": "قريبًا: مشاوير أكثر أمانًا ويعتمد عليها وبأجرة منخفضة.",
-  "PaxHeroRTL.textColor": "white",
-  "PaxHeroRTL.btnMode": "light",
-  "SliderSection.title": "خصص مشوارك حسب المناسبة التي لديك",
-  "PaxBenefits.title": "",
-  "PaxBenefits.desc": "",
+  "PaxHero.title": "Ride with DiDi",
+  "PaxHero.desc": "Get safe, fast and affordable rides",
+  "PaxHero.textColor": "white",
+  "PaxHero.btnMode": "light",
+  "SliderSection.title": "Our Services in New Zealand",
+  "PaxBenefits.title": "Learn about our Benefits",
+  "PaxBenefits.desc": "Download our App and enjoy the ride",
   "PaxBenefits.bgColor": "bg-white",
   "PaxBenefits.columns": [
     {
-      "title": "أجرة منخفضة بشكل يومي",
-      "desc": "مسافة أبعد بتكلفة أقل، وذلك بفضل أجرة دي دي اليومية المنخفضة، بالإضافة إلى العروض الترويجية.",
+      "title": "Affordable fares",
+      "desc": "Let your dollar travel further with DiDi’s everyday low fares and offers.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "السرعة والموثوقية",
-      "desc": "مشوارك جاهز في الموعد الذي يناسبك.",
+      "title": "Quick & Reliable",
+      "desc": "Your ride is ready in minutes. Break free from timetables and request a ride on your own watch.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "السلامة أولاً",
-      "desc": "استمتع بمزيد من راحة البال عند الركوب مع الشركاء السائقين الذين تم التحقق منهم مسبقًا، واحصل على ميزات السلامة داخل التطبيق، بالإضافة إلى طرق الدفع الآمنة.",
+      "title": "Safety first",
+      "desc": "Get added peace of mind when you ride with pre-screened drivers, built-in safety features, and pay as you go with secure cashless payments.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "مشاوير ترسم الابتسامة على وجهك",
-      "desc": "نتعامل مع شركائنا السائقين بشكل يتسم بالاحترام ويتيح لك الاستمتاع بمشوارك بكل هدوء.",
+      "title": "Happy drivers equals happy rides",
+      "desc": "With an average industry-leading Services Fee, every ride taken with DiDi allows Australian rideshare drivers to earn more of the fare.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
+
       "width": "w-64"
     }
   ],
@@ -129,39 +104,40 @@
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHeroRTL.title": "انضم لعائلة دي دي",
-  "DrvHeroRTL.desc": "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
-  "DrvHeroRTL.textColor": "white",
-  "DrvHeroRTL.btnMode": "light",
-  "DrvBenefits.title": "مزايا الشريك السائق",
+  "DrvHero.title": "Drive with DiDi",
+  "DrvHero.desc": "Start making great money with industry-leading Services Fees, added support and safety features.",
+  "DrvHero.textColor": "white",
+  "DrvHero.btnMode": "light",
+  "DrvBenefits.title": "Driver-partner Benefits",
   "DrvBenefits.bgColor": "bg-white",
   "DrvBenefits.columns": [
     {
-      "title": "زيادة دخلك مع دي دي",
-      "desc": "احصل على نسبة أكبر من الأجرة مع رسوم الخدمة التنافسية من دي دي والعروض الترويجية الرائعة.",
+      "title": "Increase your earning potential",
+      "desc": "Take home more of the fare with DiDi’s industry-leading low Services Fees and additional bonuses.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "السلامة أولاً",
-      "desc": "الوصول إلى ميزات السلامة الرائدة المتوفرة من دي دي داخل التطبيق ودعم السائق على مدار الساعة.",
+      "title": "Safety first",
+      "desc": "Access in-app safety features and our 24/7 dedicated support team.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "ساعات عمل مرنة",
-      "desc": "اختر مكان وزمان القيادة.",
+      "title": "Be in control",
+      "desc": "Pick up nearby riders or choose the location you want to drive in. ",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "مجتمع سائقين نشط",
-      "desc": "انضم إلى مجتمع الشركاء السائقين مع دي دي على مستوى العالم.",
+      "title": "Weekly payouts",
+      "desc": "Get paid weekly and earn flexibly. You decide when you want to earn.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
+
       "width": "w-64"
     }
   ],
@@ -178,20 +154,14 @@
   "DrvFeatures.textColor": "gray-primary",
   "DrvFeatures.bgColor": "bg-gray-light",
   "DrvFeatures.btnMode": "primary",
-  "DrvCityList.title": "خدماتنا متوفرة في هذه المدن في مصر",
-  "DrvCityList.desc": "جميع المدن لديها DiDi Express",
+  "DrvCityList.title": "Our services are available in these cities in New Zealand",
+  "DrvCityList.desc": "All cities have Express and Delivery",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/eg/driver/driver-{{city}}/",
+  "DrvCityList.linkItem": "/nz/driver/driver-{{city}}/",
   "DrvColumns.bgColor": "bg-gray-primary",
   "DrvColumns.textColor": "white",
   "DrvColumns.columns": [
-    {
-      "title": "DIDI ADVANCE",
-      "desc": "DiDi Advance is a program that rewards the most committed drivers with lower services fee and bonus perks. It is available in limited cities only.",
-      "bgColor": "bg-gray-primary",
-      "textColor": "white"
-    },
     {
       "title": "SAFETY",
       "desc": "Your safety is our priority, learn more about the safety features available in the DiDi app so you can use them any time you need to.",
@@ -210,7 +180,7 @@
   "KnowMoreBanner.bgColor": "bg-orange-primary",
   "KnowMoreBanner.textColor": "white",
   "KnowMoreBanner.btnText": "Help Center",
-  "KnowMoreBanner.btnLink": "/au/centro-de-ayuda/",
+  "KnowMoreBanner.btnLink": "/nz/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
   "DeliveryHero.title": "DiDi Delivery",
   "DeliveryHero.desc": "Power your business with instant and affordable delivery",
@@ -273,49 +243,43 @@
   "DeliveryBusinessFeatures.textColor": "gray-primary",
   "DeliveryBusinessFeatures.bgColor": "bg-white",
   "DeliveryBusinessFeatures.btnMode": "primary",
-  "AboutHeroRTL.title": "نبذة عنا",
-  "AboutHeroRTL.desc": "تعرف على ميزات الأمان والأسئلة الشائعة الأخرى",
-  "AboutHeroRTL.textColor": "white",
-  "AboutHeroRTL.btnMode": "light",
-  "AboutCountryCTARTL.title": " إننا شركة دي دي، منصة التنقل الرائدة عالميًا.",
-  "AboutCountryCTARTL.bullets": false,
-  "AboutCountryCTARTL.desc": "شركة دي دي إيجيبت هي جزء من منصة النقل الرائدة عالميًا Didi Chuxing، والتي تقدم مجموعة كاملة من خدمات النقل القائمة على التطبيقات لأكثر من 600 مليون مستخدم في أنحاء آسيا وأمريكا اللاتينية وروسيا .تتفهم شركة دي دي إيجيبت التحديات التي تواجهها المجتمعات وقطاع النقل بسبب اتساع حركة التنقل الحضري (خدمات مشاركة المشاوير) ونتيجة لذلك فهي ملتزمة بتوفير الحرية والراحة أثناء الذهاب إلى الأماكن، وفتح الآفاق وإتاحة الوصول إلى تجارب جديدة من خلال منصاتنا .يقود مهمتنا فريق متخصص، يفهم جيدًا الخرائط التشغيلية لقطاع مشاركة المشاوير. وتسعى دي دي لمساعدة الركاب في مصر على التنقُّل بحرية وإطلاق العنان لإمكاناتهم وإمكانات المدن التي يعيشون فيها",
-  "AboutCountryCTARTL.bgColor": "bg-gray-light",
-  "AboutCountryCTARTL.textColor": "gray-primary",
-  "AboutCountryCTARTL.btnMode": "primary",
+  "AboutHero.title": "Questions about DiDi?",
+  "AboutHero.desc": "Learn about our Safety Features and other frequently asked questions",
+  "AboutHero.textColor": "white",
+  "AboutHero.btnMode": "light",
   "AboutColumns.bgColor": "bg-blue-primary",
   "AboutColumns.title": "Information for Users and Drivers",
   "AboutColumns.textColor": "white",
   "AboutColumns.columns": [
     {
-      "title": "Safety for Riders and Drivers",
+      "title": "Safety for Riders",
       "desc": "Safety is our N°1 priority",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "/au/safety/",
+      "linkItem": "/nz/rider/safety",
       "btnText": "Know More",
       "btnMode": "dark",
-      "btnLink": "/au/safety/"
+      "btnLink": "/nz/rider/safety"
     },
     {
       "title": "FAQ for Drivers",
       "desc": "Read about the more commons questions for drivers.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "/au/driver/help/",
+      "linkItem": "/nz/driver/help/",
       "btnText": "Know More",
       "btnMode": "dark",
-      "btnLink": "/au/driver/help/"
+      "btnLink": "/nz/driver/help/"
     },
     {
-      "title": "FAQ for Riders",
-      "desc": "Read about the more commons questions for riders.",
+      "title": "Safety for Riders",
+      "desc": "Safety is our N°1 priority",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "/au/rider/help/",
+      "linkItem": "/nz/rider/help/",
       "btnText": "Know More",
       "btnMode": "dark",
-      "btnLink": "/au/rider/help/"
+      "btnLink": "/nz/driver/safety/"
     }
   ],
   "SafetyHero.title": "Your safety comes first. Driver and Rider Safety Features.",
@@ -371,48 +335,6 @@
     {
       "title": "TripCheck",
       "desc": "If anything unusual is detected during your trip you will receive a notification. If there is a problem our safety toolkit and SOS button will be made available to you.",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "24/7 Incident Response Team",
-      "desc": "If you ever feel unsafe during a trip, you can get in touch with our Incident Response Team for immediate assistance.",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Trusted Contacts",
-      "desc": "Add your family and friends as Trusted Contacts to track your live location in a single tap.",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Driver Fatigue Prevention",
-      "desc": "All DiDi driver-partners undertake compulsory safety training before they take their first trip meaning you can ride with confidence.",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "TripChoice",
-      "desc": "This feature allows female driver-partners the choice to be matched with only female riders. ",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Preview Driver",
-      "desc": "You can view your  driver’s info, including their name, profile picture, and Star Rating before your ride starts. ",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Driver Education",
-      "desc": "All DiDi driver-partners undertake compulsory safety training before they take their first trip meaning you can ride with confidence.",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "DiDi Sal",
-      "desc": "DiDi Sal is a new in-trip safety assistant that works together with existing safety features to help keep you safe.",
       "bgColor": "bg-gray-light",
       "textColor": "gray-primary"
     }
@@ -482,16 +404,24 @@
       "bgColor": "bg-white"
     }
   ],
-  "HelpCenterHeroRTL.title": "مركز المساعدة",
-  "HelpCenterHeroRTL.desc": "التعليمات للركاب والسائقين.",
-  "HelpCenterHeroRTL.textColor": "white",
-  "HelpCenterHeroRTL.btnMode": "primary",
-  "HelpCenterFAQDrvRTL.title": "أسئلة وأجوبة السائقين",
-  "HelpCenterFAQDrvRTL.textColor": "gray-primary",
-  "HelpCenterFAQDrvRTL.bgColor": "bg-white",
+  "HelpCenterHero.title": "Help Center",
+  "HelpCenterHero.desc": "FAQ for riders and drivers.",
+  "HelpCenterHero.textColor": "white",
+  "HelpCenterHero.btnMode": "primary",
+  "HelpCenterFAQDrv.title": "FAQ Drivers",
+  "HelpCenterFAQDrv.textColor": "gray-primary",
+  "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "FAQ Riders",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
+  "FaqList.title": "All FAQ in DiDi New Zealand",
+  "FaqList.desc": "Read for more information",
+  "FaqList.bgColor": "bg-white",
+  "FaqList.textColor": "gray-primary",
+  "FaqList.linkItem": "/nz/help-center/{{faqSlug}}/",
+  "FaqHero.bgColor": "bg-white",
+  "FaqHero.textColor": "white",
+  "FaqHero.btnMode": "primary",
   "ContactHero.title": "Contact Us",
   "ContactHero.desc": "If you have a problem please contact with our support team",
   "ContactHero.textColor": "white",
@@ -564,7 +494,7 @@
   "ArticlesColumns.textColor": "white",
   "ArticlesColumns.btnText": "Read More",
   "ArticlesColumns.btnMode": "dark",
-  "ArticlesColumns.linkItem": "/au/blog/{{article}}/",
+  "ArticlesColumns.linkItem": "/nz/blog/{{article}}/",
   "ArticleHero.textColor": "white",
   "ArticleHero.btnMode": "light",
   "GuidesHero.title": "Guías para Conductores Chile",
@@ -578,7 +508,7 @@
   "GuidesColumns.textColor": "white",
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
-  "GuidesColumns.linkItem": "/au/guias/{{guide}}/",
+  "GuidesColumns.linkItem": "/nz/guias/{{guide}}/",
   "PartnersHero.title": "DiDi Advance",
   "PartnersHero.desc": "Free access to a program that rewards the most committed drivers with lower services fee and bonus perks. Available in participating cities only.",
   "PartnersHero.textColor": "white",
@@ -586,7 +516,7 @@
   "PartnersGrid.bgColor": "bg-white",
   "PartnersGrid.title": "Exclusive Discounts & Benefits",
   "PartnersGrid.textColor": "gray-primary",
-  "PartnersGrid.linkItem": "/au/didi-advance/{{partnerName}}/",
+  "PartnersGrid.linkItem": "/nz/didi-advance/{{partnerName}}/",
   "PartnersCTA.title": "DiDi Advance",
   "PartnersCTA.desc": "Free access to a program that rewards the most committed drivers with lower services fee and bonus perks. Available in participating cities only.",
   "PartnersCTA.textColor": "white",
@@ -599,11 +529,11 @@
   "DrvCityHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "RequirementHero.btnMode": "light",
-  "RequirementsLinks.title": "Driver Requirements per State",
+  "RequirementsLinks.title": "Driver Requirements in New Zealand",
   "RequirementsLinks.desc": "Select the state you are planning to drive",
   "RequirementsLinks.textColor": "white",
   "RequirementsLinks.bgColor": "bg-blue-primary",
-  "RequirementsLinks.linkItem": "/au/driver/{{requirement}}/",
+  "RequirementsLinks.linkItem": "/nz/driver/{{requirement}}/",
   "DirectionHero.title": "Como llegar a {{destination}} desde {{origin}}",
   "DirectionHero.desc": "Desde: {{originAddress}} | Hacia: {{destinationAddress }}",
   "DirectionHero.textColor": "white",
@@ -613,7 +543,7 @@
   "CityList.desc": "Descubre lugares para ir a visitar en Chile",
   "CityList.bgColor": "bg-white",
   "CityList.textColor": "gray-primary",
-  "CityList.linkItem": "/au/lugares/lugares-en-{{city}}/",
+  "CityList.linkItem": "/nz/lugares/lugares-en-{{city}}/",
   "PlaceMap.title": "Líneas cercanas a {{placeName}}",
   "PlaceMap.desc": "Mejor pide un DiDi y viajarás mas seguro y  más rápido",
   "PlaceMap.textColor": "gray-primary",
@@ -623,12 +553,12 @@
   "DirectoryList.desc": "Encontraras detalle de lineas y como irte en distintos medios",
   "DirectoryList.bgColor": "bg-white",
   "DirectoryList.textColor": "gray-primary",
-  "DirectoryList.linkItem": "/au/lugares/como-llegar-a-{{placeName}}_{{placeAddress}}/",
+  "DirectoryList.linkItem": "/nz/lugares/como-llegar-a-{{placeName}}_{{placeAddress}}/",
   "DirectoryOriginList.title": "Como llegar a {{placeName}} desde distintos puntos de la ciudad",
   "DirectoryOriginList.desc": "Encontraras detalle de lineas y como irte en distintos medios",
   "DirectoryOriginList.bgColor": "bg-white",
   "DirectoryOriginList.textColor": "gray-primary",
-  "DirectoryOriginList.linkItem": "/au/lugares/como-llegar-a-{{destination}}-desde-{{origin}}_{{destinationAddress}}/",
+  "DirectoryOriginList.linkItem": "/nz/lugares/como-llegar-a-{{destination}}-desde-{{origin}}_{{destinationAddress}}/",
   "DirectionBanner.title": "Pide un DiDi a {{destination}} y llega en {{ carDuration }} ",
   "DirectionBanner.desc": "Si te vas en transporte público te tomará {{duration}} en llegar. Viaja rápido, seguro y barato.",
   "DirectionBanner.bgColor": "bg-orange-primary",
@@ -639,7 +569,7 @@
   "LegalHero.btnText": "Privacy Policy",
   "LegalHero.textColor": "white",
   "LegalHero.btnMode": "light",
-  "LegalHero.linkItem": "/au/legal/privacy-policy/",
+  "LegalHero.linkItem": "/nz/legal/privacy-policy/",
   "StoreHero.title": "Download DiDi Rides by scanning the QR code",
   "StoreHero.desc": "Get safe, fast and affordable rides",
   "StoreHero.textColor": "white",
@@ -721,7 +651,7 @@
   "OffersGrid.bgColor": "bg-gray-light",
   "OffersGrid.desc": "Select you next discount",
   "OffersGrid.textColor": "gray-primary",
-  "OffersGrid.linkItem": "/au/offers/{{offerSlug}}/",
+  "OffersGrid.linkItem": "/nz/offers/{{offerSlug}}/",
   "OfferColumns.title": "How it works",
   "OfferColumns.bgColor": "bg-white",
   "OfferColumns.textColor": "gray-primary",
@@ -744,192 +674,12 @@
   "SBDrv.desc": "Make Extra Money",
   "SBPax.title": "DiDi Rider",
   "SBPax.desc": "Affordable Rides",
-  "ContentHeroRTL.title": "دليل بدء شريك دي دي",
-  "ContentHeroRTL.desc": "",
-  "ContentHeroRTL.textColor": "white",
-  "InfoContent.contents": [
-    {
-      "title": "البدء",
-      "desc": "ابدأ القيادة باتّباع أربع خطوات بسيطة:",
-      "contacts": [
-        {
-          "label": "1. تنزيل “تطبيق شريك دي دي”",
-          "info": "ابحث عن تطبيق “شريك دي دي” في متجر App Store أو Google Play وقم بتنزيله على جهازك. سجّل الدخول باستخدام رقم هاتفك المحمول من خلال التطبيق.m",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "2. تحميل مستنداتك",
-          "info": "اتّبع التعليمات الموضحة لتحميل مستنداتك. هل هناك مستندات غير متوفرة لديك؟ يمكنك حفظ طلبك وإكماله لاحقًا.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "3. بدء الحصول على الدخل",
-          "info": "ستتلقّى رسالة SMS قصيرة ورسالة بريد إلكتروني بمجرد الموافقة على تسجيلك. أنت الآن جاهز للانطلاق!",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "طريقة استخدام التطبيق",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "بدء تحقيق الدخل مع دي دي",
-          "info": "اضغط على الزر “ابدأ” للانتقال إلى وضع الاتصال والبدء في استلام طلبات المشاوير. لقبول الطلب، اضغط على “قبول الطلب”. سيتم تزويدك بعد ذلك بإرشادات تفصيلية حتى تصل إلى وجهتك. \n إنّ التمرير لتحديد “وصلت” يُعلِم الراكب بأنك وصلت إلى مكان الالتقاء بالراكب. يمكنك الاطِّلاع على اسم الراكب لمساعدتك في تأكيد الالتقاء بالشخص المقصود. \n مرّر سريعًا على الزر “ابدأ” لبدء التنقل إلى وجهة الراكب.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "إمكانية التواصل مع الراكب",
-          "info": "هل حدث تأخير أو ظهرت مشكلات أثناء الوصول إلى الراكب؟ يمكنك التواصل مع الراكب مباشرةً عبر التطبيق بالضغط على أيقونة “الهاتف” أو “مراسلة فورية”. حفاظًا على أمان بياناتك، سيتم إخفاء رقم هاتفك.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "هل وصلت للوجهة المطلوبة؟",
-          "info": "انتقل سريعًا إلى “اكتمال المشوار” عند الانتهاء من المشوار، وسيعرض التطبيق بعدها تلقائيًا الأجرة المطلوبة من الراكب. \n اضغط على أيقونة القائمة الموجودة أسفل يمين الشاشة الرئيسية، ثم “الانتقال إلى وضع عدم الاتصال” عند الحاجة لأخذ قسط من الراحة بالتوقف عن تلقي الطلبات.",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "الوصول والتقييم وتحقيق الدخل",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "قيِّم مشوارك",
-          "info": "يمكن للراكب والسائق تقييم كل منهما الآخر؛ لذا بمقدورك تقييم الراكب عقب انتهاء المشوار بتقييم من خمس نجوم.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "استعراض حصاد دخلك",
-          "info": "اطلع على الدخل الذي تمكنت من جمعه بعد انقضاء كل مشوار على حدة بالضغط على “الدخل” أعلى يسار الشاشة والضغط على “الرصيد”.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "الحصول على الدخل كل أسبوع",
-          "info": "ستحصل على دخلك بالكامل أسبوعيًا، وسيرسَل لك على حسابك البنكي الذي سبق لك إضافته على ملفك التعريفي في تطبيق شريك دي دي.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "إدخال المعلومات البنكية",
-          "info": "1. اضغط على “الدخل”. \n 2. اضغط على “معلومات البنك”. \n 3. أدخل تفاصيل حسابك البنكي وتأكد من صحتها.",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "كيفية إلغاء مشوار",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "من حين لآخر، ربما تحتاج لإلغاء مشوار لظهور بعض الأسباب الطارئة، على سبيل المثال:",
-          "info": "عدم حضور الراكب في الموقع المحدد عند وصولك \n لا يمكنك الوصول إلى الموقع المحدد خلال الإطار الزمني \n حدوث شئ ما، واحتياجك للانتقال إلى وضع عدم الاتصال",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "طريقة الإلغاء:",
-          "info": "1. اضغط على “تفاصيل المشوار”. \n 2. اضغط على “إلغاء المشوار” لإنهاء المشوار للراكب.",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "كيفية تعيين وجهتك",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "ستحصل على 3 فرص لتحديد وجهة كل يوم. وستخضع طلبات المشاوير حينها للفلترة بحيث تتلقى فقط الطلبات الموجودة في الطريق إلى الوجهة التي أدخلتها.",
-          "info": "*ملاحظة: عند الانتهاء من العمل، حدد وجهة منزلك وسيعرض لك تطبيق دي دي طلبات المشاوير التي تسير في هذا الاتجاه.",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "عروض الدعوات",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "قسائم مشاوير مجانية",
-          "info": "هل ترغب في تحقيق المزيد من الدخل مع دي دي؟ يمكنك الحصول على هدية نقدية عن كل شخص يُجرِّب خدمة دي دي باستخدام رمز دعوتك المميز. \n لتسهيل ذلك عليك، أضفنا مجموعة من قسائم المشاوير المجانية إلى حزمة الترحيب لمشاركتها مع أصدقائك وعائلتك والمسافرين الذين يشاركونك المشاوير.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "طريقة العثور على رمز دعوتك ومشاركته:",
-          "info": "1. اضغط على “الدخل”. \n 2. اضغط على “عروض الدعوات”. \n 3. اضغط على “دعوة الركاب” للعثور على رمز دعوتك. \n 4. قم بالتمرير لأسفل لتتبع العروض أو عرض سجل دعواتك. يمكنك نسخ هذا الرابط أو مشاركته عبر الرسائل القصيرة ووسائل التواصل الاجتماعي",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "يرجى ملاحظة ما يلي: عروض الدعوات تنطبق فقط على الراكبين الذين قاموا بالتسجيل باستخدام رمز دعوتك والحصول على مشوار مع دي دي. تُطبق الشروط والأحكام.",
-          "info": "",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "السلامة في كل خطوة",
-      "desc": "في دي دي، نسعى جاهدين لضمان تتبع جميع المشاوير باستخدام نظام تحديد المواقع العالمي (GPS) ويمكن الاتصال بخدمات الطوارئ في أي وقت.",
-      "contacts": [
-        {
-          "label": " زر الطوارئ SOS",
-          "info": "في حالة الطوارئ، يمكنك الاتصال بخدمات إنفاذ القانون والطوارئ بضغطة زر واحدة.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " شارِك مشوارك",
-          "info": "تتيح لك ميزة تتبع المشوار عبر نظام تحديد المواقع العالمي (GPS) مشاركة مسار مشوارك في الوقت الفعلي مع عائلتك وأصدقائك أثناء القيادة.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " الاستجابة للحوادث على مدار الساعة",
-          "info": "إن واجهت حادثًا أو مشكلةً تتعلق بالسلامة، فلا تتردد في التواصل معنا، فلدينا فريق متخصص في الاستجابة للحوادث لمساعدتك في كافة الأوقات.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " الأرقام الخاصة",
-          "info": "عندما تتصل أنت أو أحد الركاب ببعضكما البعض باستخدام التطبيق، سيتم إخفاء رقمي الهاتف.",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " اتبع قواعد الطريق (القوانين المحلية في المنطقة التي تعمل بها)",
-          "info": "تقع على عاتقك مسؤولية ضمان نقل الركاب بأمان ووفقًا لأي قواعد وقوانين ولوائح خاصة بالطريق.",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    },
-    {
-      "title": "تقديم قيادة مثالية",
-      "desc": "أخبرنا الركاب أنهم يقدرون حقًا اهتمام الشركاء السائقين بما يلي:",
-      "contacts": [
-        {
-          "label": "النظافة:",
-          "info": "الحفاظ على نظافة السيارة",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " الموقع:",
-          "info": " التواصل مع الركاب لمعرفة نقطة الالتقاء المثلى",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " التنقل:",
-          "info": "سؤال الركاب عما إذا كانوا يرغبون في اتباع نظام تحديد المواقع العالمي (GPS) أو يرغبون في اتخاذ طريق مختلف يفضلونه",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " الأمان:",
-          "info": "اتباع أسلوب يتسم بالسلاسة والسلامة عند القيادة",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": " اللطف:",
-          "info": "تقديم شواحن الهواتف، مثلاً",
-          "infoColor": { "color": "#666" }
-        },
-        {
-          "label": "كيف يمكنني معرفة المزيد حول الجوانب التي يقدّرها ركاب دي دي؟",
-          "info": "اضغط على “التقييم بالنجوم” في قسم “الحساب” في تطبيق شريك دي دي، وستتمكن من رؤية متوسط تقييمك فضلاً عن أي تعليقات تلقيتها من الركاب.",
-          "infoColor": { "color": "#666" }
-        }
-      ]
-    }
-  ]
+  "SafetyDrvHero.title": "Your safety comes first. Driver Safety Features.",
+  "SafetyDrvHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for drivers.",
+  "SafetyDrvHero.textColor": "white",
+  "SafetyDrvHero.btnMode": "light",
+  "SafetyPaxHero.title": "Your safety comes first. Rider Safety Features.",
+  "SafetyPaxHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for riders.",
+  "SafetyPaxHero.textColor": "white",
+  "SafetyPaxHero.btnMode": "light"
 }

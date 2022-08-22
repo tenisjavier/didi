@@ -328,7 +328,14 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
-
+    "/taxi/": {
+      title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
+      desc: "DiDi Taxi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+    },
+    "/didi-fleet/": {
+      title: "DiDi Fleet - Haz Dinero Hasta Durmiendo",
+      desc: "DiDi Fleet en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+    },
     "/sobre-didi/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -620,6 +627,105 @@ const seoMeta: AllSEOMetaInterface = {
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",
       desc: "Conocé nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
+  },
+  nz: {
+    "/": {
+      title: "DiDi New Zealand - Ride Hailing & Delivery",
+      desc: "DiDi New Zealand offers a full range of app-based transportation services for riders and drivers .",
+    },
+    "/rider/": {
+      title: "Ride with DiDi",
+      desc: "Get safe, fast and affordable rides with DiDi.",
+    },
+    "/rider/help/": {
+      title: "Ride Help & DiDi FAQs",
+      desc: "Need help? Have questions? We're here to assist you!",
+    },
+    "/rider/didi-share-for-driver/": {
+      title: "DiDi Share for Riders",
+      desc: "DiDi Share for Riders. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
+    },
+    "/driver/": {
+      title: "DiDi Driver - Drive and earn with DiDi",
+      desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
+    },
+    "/driver/help/": {
+      title: "Driver Help & FAQs",
+      desc: "Need help? Have questions? We're here to assist you!",
+    },
+    "/delivery/help/": {
+      title: "DiDi Delivery Help & FAQs",
+      desc: "DiDi Delivery Help. Need help? Have questions? We're here to assist you!",
+    },
+    "/didi-advance/": {
+      title: "DiDi Advance Driver Program",
+      desc: "Learn more about our DiDi Advance earnings program for driver-partners.",
+    },
+    "/delivery/": {
+      title: "DiDi Delivery",
+      desc: "Power your business with instant and affordable delivery services.",
+    },
+    "/delivery/personal/": {
+      title: "DiDi Delivery - Personal",
+      desc: "DiDi Delivery is an on-demand delivery service allowing Australians to send and receive parcels – all delivered by DiDi drivers.",
+    },
+    "/delivery/business/": {
+      title: "DiDi Delivery - Business",
+      desc: "Power your business with instant and affordable delivery services powered by DiDi drivers.",
+    },
+    "/driver/didi-delivery-australia/": {
+      title: "DiDi Delivery for Drivers - Next Steps",
+      desc: "Earn money delivering goods for stores and people around your city.",
+    },
+    "/driver/didi-share-for-driver/": {
+      title: "DiDi Share for Drivers",
+      desc: "DiDi Share for Drivers. Quick and affordable rides for everyday. Up to 2 people. Easy & Affordable.",
+    },
+    "/features/didisal/": {
+      title: "Stay safe with DiDi Sal, your in-trip pal",
+      desc: "DiDi Sal sends helpful safety messages and alerts during your trip to check if everything’s A-OK.",
+    },
+    "/features/fatigue-prevention-feature/": {
+      title: "DiDi Fatigue Feature for Drivers",
+      desc: "It is recommended that you have frequent breaks throughout the day. Just remember to tap “Go Offline” when you do. ",
+    },
+
+    "/about-us/": {
+      title: "About Us",
+      desc: "Learn more about DiDi, the world's leading mobility platform.",
+    },
+    "/safety/": {
+      title: "Safety",
+      desc: "Your safety comes first-- learn more about our industry-leading safety features.",
+    },
+    "/help-center/": {
+      title: "Help Center",
+      desc: "FAQs for DiDi riders and drivers.",
+    },
+    "/contact/": {
+      title: "Contact Our Costumer Support Center",
+      desc: "DiDi Customer Support can assist you with any enquiries, issues, or questions you have with DiDi.",
+    },
+    "/blog/": {
+      title: "DiDi Australia Blog",
+      desc: "Latest updates and articles from DiDi Austrlia.",
+    },
+    "/cities/": {
+      title: "Cities",
+      desc: "Learn about which cities DiDi Australia services are available in.",
+    },
+    "/legal/": {
+      title: "Legal",
+      desc: "Review our privacy policy and other terms and conditions.",
+    },
+    "/career/": {
+      title: "Work at DiDi",
+      desc: "¿Why work at DiDi Australia? Courageous Goals. Engaging Challenges.Tremendous Impact.",
+    },
+    "/offers/": {
+      title: "Best Offers in DiDi",
+      desc: "Select you next discount for your next ride",
     },
   },
 };

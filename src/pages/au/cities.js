@@ -37,7 +37,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulCountry(code: { eq: "au" }) {
+    contentfulCountry(code: { eq: "nz" }) {
       city {
         name
         slug

@@ -63,8 +63,8 @@ const footerLinks: AllFooterInterface = {
     { text: "Contact", link: "/au/contact/" },
   ],
   eg: [
-    { text: "DiDi Rider", link: "/eg/rider/" },
-    { text: "DiDi Driver", link: "/eg/driver/" },
+    { text: "الراكب", link: "/eg/rider/" },
+    { text: "السائق", link: "/eg/driver/" },
   ],
   pa: [
     { text: "Conductor", link: "/pa/driver/" },
@@ -79,6 +79,14 @@ const footerLinks: AllFooterInterface = {
     { text: "Seguridad", link: "/cr/seguridad/" },
     { text: "Centro de ayuda", link: "/cr/centro-de-ayuda/" },
     { text: "Legal", link: "/cr/legal/" },
+  ],
+  nz: [
+    { text: "DiDi Rider", link: "/nz/rider/" },
+    { text: "DiDi Driver", link: "/nz/driver/" },
+    { text: "Blog", link: "/nz/blog/" },
+    { text: "Career", link: "/nz/career/" },
+    { text: "Offers", link: "/nz/offers/" },
+    { text: "Legal", link: "/nz/legal/" },
   ],
 };
 

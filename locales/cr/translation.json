@@ -220,10 +220,10 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/cr/driver/conductor-en-{{city}}/",
-  "FleetHero.title": "¡Hacé dinero hasta durmiendo!",
+  "FleetHero.title": "DiDi Fleet: Hacé dinero hasta durmiendo",
   "FleetHero.desc": "Coordiná el alquiler de tu carro a través de DiDi Fleet y generá ganancias sin salir de casa con una de las tasas más bajas del mercado. Ellos ganan, vos ganás.",
   "FleetHero.textColor": "white",
-  "FleetHero.btnMode": "primary",
+  "FleetHero.btnMode": "light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",
@@ -586,6 +586,7 @@
     }
   ],
   "AboutDidiFleetVideo.title": "Mirá el video y conocé cómo funciona DiDi Fleet",
+  "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/XbfHvQlFKlY",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
   "FleetColumns.bgColor": "bg-green-primary",

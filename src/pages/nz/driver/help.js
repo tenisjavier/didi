@@ -1,21 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import HelpCenterHeroRTL from "../../components/sections/HelpCenterHeroRTL";
-import HelpCenterFAQDrvRTL from "../../components/sections/HelpCenterFAQDrvRTL";
+import Layout from "../../../components/Layout";
+import HelpCenterHero from "../../../components/sections/HelpCenterHero";
+import HelpCenterFAQDrv from "../../../components/sections/HelpCenterFAQDrv";
 
 const HelpCenter = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
-    return image.title === "eg.HomeHero.bgImage";
+    return image.title === "nz.HelpCenterHero.bgImage";
   })[0];
+
   const faqExpress = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Express Egypt"
+    (node) => node.name === "DiDi Express New Zealand"
   );
+
   return (
     <Layout>
-      <HelpCenterHeroRTL bgImage={helpCenterBgImage}></HelpCenterHeroRTL>
-      <HelpCenterFAQDrvRTL data={faqExpress[0]}></HelpCenterFAQDrvRTL>
+      <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
+      <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
     </Layout>
   );
 };
@@ -35,7 +37,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: { regex: "/(eg.HomeHero.bgImage)/" }
+        title: { regex: "/(nz.HelpCenterHero.bgImage)/" }
       }
       sort: { fields: title }
     ) {
@@ -47,7 +49,7 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "eg" } } } }
+      filter: { country: { elemMatch: { code: { eq: "nz" } } } }
     ) {
       nodes {
         name

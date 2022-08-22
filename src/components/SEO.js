@@ -11,7 +11,7 @@ const SEO = () => {
     {
       allContentfulCountry(
         filter: {
-          code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec", "cr", "eg"] }
+          code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec", "cr", "eg", "nz"] }
         }
       ) {
         nodes {

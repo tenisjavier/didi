@@ -2,31 +2,32 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import DrvCityHero from "../../../components/sections/DrvCityHero";
-import DrvHeroRTL from "../../../components/sections/DrvHeroRTL";
+import DrvHero from "../../../components/sections/DrvHero";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import DrvCityOffice from "../../../components/sections/DrvCityOffice";
+import Requirements from "../../../components/sections/Requirements";
 import PlacesPrimaryColumn from "../../../components/sections/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "eg.DrvHero.bgImage";
+    return image.title === "nz.DrvHero.bgImage";
   })[0];
-
+  const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
   const cities = data.contentfulCountry.city;
 
   return (
     <Layout>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>
-      <DrvHeroRTL bgImage={drvHeroBgImage}></DrvHeroRTL>
+      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <SilderSection
         data={product}
         title={`Our services in ${name}`}
       ></SilderSection>
-
+      <Requirements data={requirements}></Requirements>
       {places.length ? (
         <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
       ) : null}
@@ -54,6 +55,7 @@ export const query = graphql`
     }
     contentfulCity(id: { eq: $id }) {
       name
+      slug
       product {
         name
         description
@@ -70,7 +72,7 @@ export const query = graphql`
         lon
       }
     }
-    allContentfulAsset(filter: { title: { in: ["eg.DrvHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["nz.DrvHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -109,10 +111,11 @@ export const query = graphql`
         }
         city {
           name
+          slug
         }
       }
     }
-    contentfulCountry(code: { eq: "eg" }) {
+    contentfulCountry(code: { eq: "nz" }) {
       name
       city {
         name
