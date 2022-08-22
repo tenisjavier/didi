@@ -404,10 +404,14 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "دليل بدء شريك",
-          url: "/eg/driver/driver-starter-manual"
-        }
-      ]
-    }
+          url: "/eg/driver/driver-starter-manual",
+        },
+        {
+          text: "مساعدة الشريك السائق",
+          url: "/eg/driver/driver-help/",
+        },
+      ],
+    },
   ],
   pa: [
     {
