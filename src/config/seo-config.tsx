@@ -328,6 +328,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
+    "/didimas/": {
+      title: "Club de Beneficios DiDiMás+ para Conductores",
+      desc: "Beneficios para Conductores DiDiMás+. DiDi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
+    },
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi Taxi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
