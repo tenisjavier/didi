@@ -546,28 +546,28 @@ const seoMeta: AllSEOMetaInterface = {
   },
   eg: {
     "/": {
-      title: "Homepage - DiDi Egypt",
-      desc: "Homepage - DiDi Egypt",
+      title: "DiDi Egypt",
+      desc: "تربط منصة دي دي بين ملايين من الركاب وعشرات الألوف من السائقين على مستوى العالم كل يوم.",
     },
     "/rider/": {
-      title: "Ride with DiDi",
-      desc: "Get safe, fast and affordable rides with DiDi.",
+      title: "احجز مشوارك مع  دي دي",
+      desc: " مشاوير أكثر أمانًا ويعتمد عليها وبأجرة منخفضة.",
     },
     "/driver/": {
-      title: "DiDi Driver - Drive and earn with DiDi",
-      desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
+      title: "انضم لشركائنا السائقين",
+      desc: "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
+    },
+    "/driver/driver-help/": {
+      title: "مساعدة الشريك السائق",
+      desc: "",
+    },
+    "/driver/driver-starter-manual/": {
+      title: "دليل بدء شريك دي دي",
+      desc: "",
     },
     "/about-us/": {
-      title: "About Us",
-      desc: "Learn more about DiDi, the world's leading mobility platform.",
-    },
-    "/help-center/": {
-      title: "Help Center",
-      desc: "FAQs for DiDi riders and drivers.",
-    },
-    "/cities/": {
-      title: "Cities",
-      desc: "Learn about which cities DiDi Egypt services are available in.",
+      title: "نبذة عنا",
+      desc: "إننا شركة دي دي، منصة التنقل الرائدة عالميًا.",
     },
   },
   cr: {
