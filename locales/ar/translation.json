@@ -22,10 +22,9 @@
   "PaxCTA.title": "Viajá con DiDi por tu Ciudad",
   "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengás un viaje increíble. Disfrutá de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
   "PaxCTA.bullets": [
-    "Precios Bajos",
-    "La Mejor Seguridad",
     "Cómodo, Rápido y Seguro",
-    "Soporte 24/7"
+    "Soporte 24/7",
+    "Más de 20 funciones de seguridad"
   ],
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
@@ -62,15 +61,15 @@
     }
   ],
   "PaxHero.title": "Conectá tu próximo viaje con DiDi Pasajero ",
-  "PaxHero.desc": "La App de movilidad en que pagás menos y recibís más",
+  "PaxHero.desc": "La App de movilidad más grande del mundo en la que recibís más y viajás mejor.",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
   "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [
     {
-      "title": "Ampliá disponibilidad y cobertura",
-      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡Encontranos ahora en toda Argentina!",
+      "title": "Amplia disponibilidad y cobertura",
+      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡Encontranos en Buenos Aires!",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
@@ -91,14 +90,14 @@
   "PaxWhyDiDi.bullets": [
     "Viajes a pedido. Obtené un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
     "Opciones económicas: Cotizá los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
-    "Una forma fácil de viajar. Pedí un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
+    "Una forma fácil de viajar. Pedí un viaje para que llegue por vos y te lleve a destino con solo tocar un botón."
   ],
   "PaxWhyDiDi.desc": "Pagá tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Argentina",
-  "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
+  "PaxBanner.title": "¿Querés ser conductor en DiDi?",
   "PaxBanner.desc": "Generá Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
@@ -116,7 +115,7 @@
   "DrvWhyDiDi.textColor": "gray-primary",
   "DrvWhyDiDi.btnMode": "primary",
   "DrvVideoGrid.bgColor": "bg-blue-primary",
-  "DrvVideoGrid.title": "¿Cómo Registrarse como Socio Conductor?",
+  "DrvVideoGrid.title": "¿Cómo Registrarse como Conductor?",
   "DrvVideoGrid.textColor": "white",
   "DrvVideoGrid.columns": [
     {
