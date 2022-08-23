@@ -4,14 +4,13 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import FooterLink from "./FooterLink";
 import { getFooterLinks } from "../config/footer-config";
-import { getfooterCountryFood } from '../config/foodCountry-config'
+import { getfooterCountryFood } from "../config/foodCountry-config";
 
 const FooterFood = () => {
-
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const links = getFooterLinks(countryCode);
-  const foodCountry= getfooterCountryFood(countryCode)
+  const foodCountry = getfooterCountryFood(countryCode);
 
   return (
     <footer>
@@ -33,7 +32,8 @@ const FooterFood = () => {
             </Link>
 
             <div className="text-c h-auto w-3/4 lg:w-full mt-5">
-            {foodCountry.map((c: any, index: number) => {
+              {foodCountry &&
+                foodCountry.map((c: any, index: number) => {
                   return (
                     <span key={index} className="text-white p-2">
                       {" "}

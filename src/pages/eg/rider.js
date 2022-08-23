@@ -20,7 +20,7 @@ const Pasajero = ({ data }) => {
   const paxBenefitsImage = images.filter((image) => {
     return image.title === "eg.PaxBenefits.image";
   })[0];
-  const products = data.allContentfulProduct.nodes;
+
   return (
     <Layout>
       <PaxHeroRTL bgImage={paxHeroBgImage}></PaxHeroRTL>
@@ -45,9 +45,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: {
-          regex: "/(eg.PaxHero.bgImage)|(eg.PaxBenefits.image)/"
-        }
+        title: { regex: "/(eg.PaxHero.bgImage)|(eg.PaxBenefits.image)/" }
       }
       sort: { fields: title }
     ) {

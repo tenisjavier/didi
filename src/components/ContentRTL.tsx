@@ -6,7 +6,6 @@ export interface ContentProps {
 }
 
 const ContentRTL = ({ content }: ContentProps) => {
-  console.log(content);
   return (
     <section className={"py-12"}>
       <div className="container mx-auto flex  flex-col flex-wrap justify-center text-right">

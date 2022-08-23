@@ -3,10 +3,8 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import ListSection from "../ListSection";
 
 const DrvCityList = ({ data }) => {
-  console.log(data);
   const { t } = useTranslation();
   const items = data.map((city) => {
-    console.log(city);
     return {
       text: city.name,
       secondText: "",
