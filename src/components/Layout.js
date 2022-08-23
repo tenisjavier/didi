@@ -3,6 +3,7 @@ import { useLocation } from "@reach/router";
 import Seo from "./SEO";
 import Header from "./Header";
 import Footer from "./Footer";
+import FooterFood from "./FooterFood";
 import SmartBanner from "./SmartBanner";
 import "../styles/global.css";
 
@@ -20,7 +21,10 @@ const Layout = ({ children }) => {
       <Header></Header>
       {children}
       <SmartBanner type={smartBannerType}></SmartBanner>
+      {pathname.includes('food') ? 
+      <FooterFood></FooterFood> : 
       <Footer></Footer>
+    }
     </>
   );
 };
