@@ -11,7 +11,7 @@ const Breadcrumb = () => {
   const { pathname } = useLocation();
 
   const directories = pathname.split("/").filter((item) => {
-    return item !== "";
+      return item !== "";
   });
 
   return (
@@ -32,11 +32,47 @@ const Breadcrumb = () => {
               </li>
             );
           }
+          if(countryCode == 'eg') {
+            var itemPath;
+            switch(dir) {
+              case 'about-us':
+                itemPath = 'نبذة عنا';
+                break;
+              case 'help-center':
+                itemPath = 'مركز المساعدة';
+                break;
+              case 'rider':
+                itemPath = 'الراكب';
+                break;
+              case 'driver':
+                itemPath = 'السائق';
+                break;
+              case 'driver-starter-manual':
+                console.log(dir);
+                itemPath = 'دليل بدء شريك';
+                break;
+              default:
+                itemPath = dir;
+            }
+            if (index === directories.length - 1) {
+              return (
+                <li key={index}>
+                  <span className="mx-2">
+                    <FontAwesomeIcon
+                      icon={faGreaterThan}
+                      size="1x"
+                      className="w-2"
+                    ></FontAwesomeIcon>
+                  </span>
 
-          if (index === directories.length - 1) {
+                  {itemPath}
+                </li>
+              );
+            }
+
             return (
               <li key={index}>
-                <span className="mx-2">
+                <span className="mx-2 ">
                   <FontAwesomeIcon
                     icon={faGreaterThan}
                     size="1x"
@@ -44,28 +80,49 @@ const Breadcrumb = () => {
                   ></FontAwesomeIcon>
                 </span>
 
-                {dir.replace(/(-)|(_.*)/g, " ")}
+                <Link
+                  to={"/" + directories.slice(0, index + 1).join("/") + "/"}
+                  className=" hover:text-blue-700"
+                >
+                  {itemPath}
+                </Link>
+              </li>
+            );
+          } else {
+            if (index === directories.length - 1) {
+              return (
+                <li key={index}>
+                  <span className="mx-2">
+                    <FontAwesomeIcon
+                      icon={faGreaterThan}
+                      size="1x"
+                      className="w-2"
+                    ></FontAwesomeIcon>
+                  </span>
+
+                  {dir.replace(/(-)|(_.*)/g, " ")}
+                </li>
+              );
+            }
+            return (
+              <li key={index}>
+                <span className="mx-2 ">
+                  <FontAwesomeIcon
+                    icon={faGreaterThan}
+                    size="1x"
+                    className="w-2"
+                  ></FontAwesomeIcon>
+                </span>
+
+                <Link
+                  to={"/" + directories.slice(0, index + 1).join("/") + "/"}
+                  className=" hover:text-blue-700"
+                >
+                  {dir.replace(/(-)|(_.*)/g, " ")}
+                </Link>
               </li>
             );
           }
-          return (
-            <li key={index}>
-              <span className="mx-2 ">
-                <FontAwesomeIcon
-                  icon={faGreaterThan}
-                  size="1x"
-                  className="w-2"
-                ></FontAwesomeIcon>
-              </span>
-
-              <Link
-                to={"/" + directories.slice(0, index + 1).join("/") + "/"}
-                className=" hover:text-blue-700"
-              >
-                {dir.replace(/(-)|(_.*)/g, " ")}
-              </Link>
-            </li>
-          );
         })}
       </ol>
     </nav>
