@@ -546,7 +546,7 @@ const seoMeta: AllSEOMetaInterface = {
   },
   eg: {
     "/": {
-      title: "DiDi Egypt",
+      title: "دي دي إيجيبت",
       desc: "تربط منصة دي دي بين ملايين من الركاب وعشرات الألوف من السائقين على مستوى العالم كل يوم.",
     },
     "/rider/": {
