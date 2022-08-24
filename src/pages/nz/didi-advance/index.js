@@ -5,6 +5,7 @@ import Layout from "../../../components/Layout";
 import PartnersHero from "../../../components/sections/PartnersHero";
 import PartnersGrid from "../../../components/sections/PartnersGrid";
 import PartnersCTA from "../../../components/sections/PartnersCTA";
+import AboutDidiPartnersVideo from "../../../components/sections/AboutDidiPartnersVideo";
 import DrvColumns from "../../../components/sections/DrvColumns";
 
 const DiDiMas = ({ data }) => {
@@ -19,14 +20,19 @@ const DiDiMas = ({ data }) => {
     return image.title === "nz.PartnerCTA.image";
   })[0];
 
+  const partnerHeroImage = images.filter((image) => {
+    return image.title === "au.PartnerCTA.image";
+  })[0];
+
   return (
     <Layout>
       <PartnersHero
         bgImage={partnersHeroBgImage}
-        image={partnerCTAImage}
+        image={partnerHeroImage}
       ></PartnersHero>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
+      <AboutDidiPartnersVideo></AboutDidiPartnersVideo>
       <DrvColumns icons={iconsDrvColumns}></DrvColumns>
     </Layout>
   );
@@ -44,7 +50,11 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(nz.PartnersHero)|(nz.PartnerCTA.image)/" } }
+      filter: {
+        title: {
+          regex: "/(nz.PartnersHero)|(nz.PartnerCTA.image)|(au.PartnerCTA.image)/"
+        }
+      }
       sort: { fields: title }
     ) {
       nodes {
