@@ -23,7 +23,7 @@ const PartnersCTA = ({ image }: PartnersCTAProps) => {
       <GatsbyImage
         image={image.gatsbyImageData!}
         alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
+        className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
     btnMode: t("PartnersCTA.btnMode"),

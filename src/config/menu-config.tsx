@@ -743,6 +743,10 @@ const menuLinks: AllMenuInterface = {
           url: "/nz/driver/help/",
         },
         {
+          text: "DiDi Advance",
+          url: "/nz/didi-advance/",
+        },
+        {
           text: "Cities",
           url: "/nz/cities/",
         },
