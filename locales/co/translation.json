@@ -289,58 +289,28 @@
   "SafetyGridBeforeTrip.textColor": "gray-primary",
   "SafetyGridBeforeTrip.columns": [
     {
-      "title": "Evaluación del socio durante el registro en la plataforma",
-      "desc": "Para que una persona pueda registrarse como socio en DiDi, debe pasar por una revisión de antecedentes y validación de documentos personales.",
+      "title": "1. Chequeo de Antecedentes de Socio",
+      "desc": "Para que una persona pueda registrarse como socio o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Reconocimiento facial de socios",
-      "desc": "Esta función solicita una fotografía con la cual se verifica de manera regular que el socio que se conecta a la app sea el mismo registrado en el sistema a través de reconocimiento facial.",
+      "title": "2. Reconocimiento Facial para Socios",
+      "desc": "Con esta función hacemos un reconocimiento facial de manera aleatoria para asegurar que el socio que se conecta a la app sea el mismo registrado en la app a través de una selfie.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Registro con selfie de usuarios",
-      "desc": "Nuestra app solicita una selfie de seguridad al usuario durante su registro. Esta no se comparte con ningún socio.",
+      "title": "3. Información del Socio",
+      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del socio, el número de arrendamientos, el tiempo en la app, la calificación, los datos del vehículo y los comentarios de los usuarios.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Botón de emergencia",
-      "desc": "Durante cualquier situación de emergencia , puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 123 y nuestro Centro de Emergencias DiDi 24/7.",
+      "title": "4. Contactos de Confianza",
+      "desc": "Puedes elegir hasta cinco personas de tus contactos de confianza para compartirles tus solicitudes en tiempo real.",
       "bgColor": "bg-white"
     },
     {
-      "title": "Centro de Emergencias DiDi 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Privacidad de tu número telefónico y datos personales",
+      "title": "5. Número privado",
       "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre usuarios y socios usando la aplicación NO mostrarán tu número real.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Desvincular Socio",
-      "desc": "Si sientes que la experiencia en tu solicitud no fue buena, al llegar a tu destino, en el menú de calificación, encontrarás el botón de desvinculación de socio. Esto evitará que, en futuras oportunidades, se sugiera este socio.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Desvincular Usuario",
-      "desc": "Si no deseas que la plataforma te vuelva a conectar con el usuario, podrás usar la opción desvinculación de usuario. Esto evitará que en el futuro coincidas de nuevo con este usuario.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Comparte tu ubicación en tiempo real",
-      "desc": "En DiDi puedes compartir tu ubicación con familiares y amigos en tiempo real.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Zonas de seguridad o geoceldas para socios.",
-      "desc": "Pensando en tu seguridad tenemos identificadas zonas de alto riesgo en donde nuestras opciones NO están habilitadas.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Tips de seguridad y calificación a socios",
-      "desc": "Al usar nuestros servicios de movilidad te damos ciertos tips de seguridad para que tengas en cuenta al momento de usar nuestra app.",
       "bgColor": "bg-white"
     }
   ],
@@ -349,28 +319,28 @@
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
-      "title": "Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de servicios de emergencia en la app, el cual te conecta con el 133 y nuestro Centro de Emergencias DiDi 24/7.",
+      "title": "6. Compartir tu Ubicación",
+      "desc": "En DiDi, puedes compartir tu ubicación en tiempo real con cualquer contacto que tú elijas con tan solo un click.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "Compartir Viaje",
-      "desc": "En DiDi puedes compartir tu ubicación en tiempo real con cualquier persona que tú elijas.",
+      "title": "7. Botón de Emergencia",
+      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123 y así mismo nuestro Centro de Soporte DiDi 24/ te contactará.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "Monitoreo de viaje en tiempo real",
-      "desc": "Rastreamos por GPS todos los viajes para que, en caso de un incidente, podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 133 y rastrear tu ubicación exacta.",
+      "title": "8. Patrullas de Reacción",
+      "desc": "Se ha habilitado a las patrullas de asistencia de G4S, las mismas que serán activadas por el Centro de Soporte DiDi 24/7 en caso de alguna emergencia.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "Patrullas de asistencia",
-      "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Ayuda DiDi en caso de alguna emergencia.",
+      "title": "8. Monitoreo de Viaje en Tiempo Real",
+      "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "Viajes Asegurados",
-      "desc": "Todos los viajes realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "title": "9. Seguro de Responsabilidad Civil y Accidentes Personales",
+      "desc": "Todas las solicitudes realizadas a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
   ],
@@ -379,23 +349,13 @@
   "SafetyGridAfterTrip.textColor": "gray-primary",
   "SafetyGridAfterTrip.columns": [
     {
-      "title": "Objetos perdidos",
-      "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al socio conductor para acordar la devolución.",
+      "title": "11. Centro de Soporte 24/7",
+      "desc": "Contamos con un equipo calificado para apoyarte 24/7 durante cualquier emergencia o inconveniente.",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Califica a tu Socio Conductor",
-      "desc": "Califica a tu conductor después de cada viaje y, si deseas, puedes darle un pago extra. Esto ayuda a retroalimentar el sistema y mantener la seguridad en la comunidad de usuarios y socios conductores.",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "title": "12. Desvincular Socio",
+      "desc": "Si te sentiste incómodo o inseguro, al terminar tu solicitud, en el menú de calificación, encontrarás el botón de desvinculación de socio/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener arrendamientos con este socio en particular.",
       "bgColor": "bg-gray-light"
     }
   ],
