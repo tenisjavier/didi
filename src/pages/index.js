@@ -113,6 +113,13 @@ const Index = ({ data }) => {
               width={100}
             />
           </Link>
+          <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
+            <li className="group flex w-full flex-col p-2 text-white lg:w-44 lg:items-center lg:justify-center lg:p-0 ">
+              <Link className="hover:text-white" to={`/contact`}>
+                Contact Us
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
       <CTASection {...CTAProps}></CTASection>
