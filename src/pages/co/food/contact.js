@@ -7,7 +7,7 @@ import ContactInfo from "../../../components/sections/ContactInfo";
 const FoodDelivery = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const foodContactHeroBgImage = images.filter((image) => {
-    return image.title === "do.FoodContactHero.bgImage";
+    return image.title === "co.FoodContactHero.bgImage";
   })[0];
 
   return (
@@ -34,11 +34,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: {
-          in: ["do.FoodContactHero.bgImage", "au.ContactBenefits.image"]
-        }
-      }
+      filter: { title: { in: ["co.FoodContactHero.bgImage"] } }
     ) {
       nodes {
         id

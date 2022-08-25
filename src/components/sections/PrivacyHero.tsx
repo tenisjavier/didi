@@ -22,7 +22,7 @@ const PrivacyHero = ({ bgImage }: LegalHeroProp) => {
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
+        className="!absolute z-0 h-full w-full brightness-75 md:block"
       ></GatsbyImage>
     ),
     btnMode: t("PrivacyHero.btnMode"),

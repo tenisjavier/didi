@@ -9,14 +9,14 @@ const Privacy = ({ data }) => {
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "do.FoodHero.bgImage";
   })[0];
-  const PrivacyCTAImage = images.filter((image) => {
-    return image.title === "do.FoodAboutCTA.image";
+  const foodAboutDeliveryCTA = images.filter((image) => {
+    return image.title === "do.FoodAboutDeliveryCTA.image";
   })[0];
 
   return (
     <Layout>
       <PrivacyHero bgImage={homeHeroBgImage}></PrivacyHero>
-      <PrivacyCTA image={PrivacyCTAImage}></PrivacyCTA>
+      <PrivacyCTA image={foodAboutDeliveryCTA}></PrivacyCTA>
     </Layout>
   );
 };
@@ -35,7 +35,9 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["do.FoodHero.bgImage", "do.FoodAboutCTA.image"] } }
+      filter: {
+        title: { in: ["do.FoodHero.bgImage", "do.FoodAboutDeliveryCTA.image"] }
+      }
     ) {
       nodes {
         id

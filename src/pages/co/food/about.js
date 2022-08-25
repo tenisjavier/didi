@@ -8,13 +8,13 @@ import FoodAboutCTA from "../../../components/sections/FoodAboutCTA";
 const FoodDelivery = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const foodAboutHeroBgImage = images.filter((image) => {
-    return image.title === "cl.FoodAboutHero.bgImage";
+    return image.title === "co.FoodAboutHero.bgImage";
   })[0];
   const foodAboutDeliveryCTAImage = images.filter((image) => {
-    return image.title === "cl.FoodAboutDeliveryCTA.image";
+    return image.title === "co.FoodAboutDeliveryCTA.image";
   })[0];
   const foodAboutCTAImage = images.filter((image) => {
-    return image.title === "cl.FoodAboutCTA.image";
+    return image.title === "co.FoodAboutCTA.image";
   })[0];
 
   return (
@@ -47,9 +47,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "cl.FoodAboutHero.bgImage"
-            "cl.FoodAboutDeliveryCTA.image"
-            "cl.FoodAboutCTA.image"
+            "co.FoodAboutHero.bgImage"
+            "co.FoodAboutDeliveryCTA.image"
+            "co.FoodAboutCTA.image"
           ]
         }
       }

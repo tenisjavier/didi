@@ -7,10 +7,10 @@ import PrivacyCTA from "../../../../components/sections/PrivacyCTA";
 const Privacy = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "cl.FoodHero.bgImage";
+    return image.title === "co.FoodHero.bgImage";
   })[0];
   const foodAboutDeliveryCTA = images.filter((image) => {
-    return image.title === "cl.FoodAboutDeliveryCTA.image";
+    return image.title === "co.FoodAboutDeliveryCTA.image";
   })[0];
 
   return (
@@ -36,7 +36,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: { in: ["cl.FoodHero.bgImage", "cl.FoodAboutDeliveryCTA.image"] }
+        title: { in: ["co.FoodHero.bgImage", "co.FoodAboutDeliveryCTA.image"] }
       }
     ) {
       nodes {
