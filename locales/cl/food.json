@@ -250,5 +250,14 @@
   "SBFoodBusiness.title": "DiDi Food",
   "SBFoodBusiness.desc": "Crece tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
-  "SBFoodDelivery.desc": "Ganancias Extras"
+  "SBFoodDelivery.desc": "Ganancias Extras",
+  "PrivacyHero.title": "Revisa nuestros Términos y Condiciones",
+  "PrivacyHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
+  "PrivacyHero.textColor": "white",
+  "PrivacyHero.btnText": "Privacy",
+  "PrivacyHero.btnMode": "light",
+  "PrivacyHero.linkItem": "/cl/food/privacy/privacy/",
+  "PrivacyCTA.title": "Revisa nuestra Políticas de Privacidad",
+  "PrivacyCTA.textColor": "gray-primary",
+  "PrivacyCTA.btnMode": "dark"
 }

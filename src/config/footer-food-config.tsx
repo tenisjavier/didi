@@ -16,6 +16,7 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/cl/food/about/" },
     { text: "Contacto", link: "/cl/food/contact/" },
     { text: "Blog", link: "/cl/food/blog/" },
+    { text: "Privacy", link: '/cl/food/privacy'}
   ],
   do: [
     { text: "Home", link: "/do/food/" },
@@ -24,6 +25,7 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/do/food/about/" },
     { text: "Contacto", link: "/do/food/contact/" },
     { text: "Blog", link: "/do/food/blog/" },
+    { text: "Privacy", link: '/do/food/privacy'}
   ],
   cr: [
     { text: "Home", link: "/cr/food/" },
