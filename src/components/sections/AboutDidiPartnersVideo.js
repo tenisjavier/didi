@@ -8,9 +8,7 @@ const AboutDidiPartnersVideo = () => {
     title: t("AboutDidiPartnersVideo.title"),
     desc: (
       <iframe
-        className="mt-8"
-        width="640"
-        height="400"
+        className="mt-8 w-full h-64 md:h-110"
         src={t("AboutDidiPartnersVideo.video")}
         title="YouTube video player"
         frameBorder="0"
