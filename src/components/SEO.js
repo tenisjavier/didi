@@ -11,7 +11,21 @@ const SEO = () => {
     {
       allContentfulCountry(
         filter: {
-          code: { in: ["cl", "ar", "pe", "co", "au", "do", "pa", "ec", "cr", "eg", "nz"] }
+          code: {
+            in: [
+              "cl"
+              "ar"
+              "pe"
+              "co"
+              "au"
+              "do"
+              "pa"
+              "ec"
+              "cr"
+              "eg"
+              "nz"
+            ]
+          }
         }
       ) {
         nodes {
@@ -39,19 +53,18 @@ const SEO = () => {
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";
-    meta.desc = "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world."
+    meta.desc =
+      "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
+  }
+  if (pathname === "/contact/") {
+    title = "Contact Us | DiDi Global";
+    meta.desc =
+      "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
 
   return (
-    <Helmet
-      htmlAttributes={{ lang: "es" }}
-      title={`${title}`}
-    >
-      <meta
-        name="title"
-        content={`${title}`}
-        data-react-helmet="true"
-      ></meta>
+    <Helmet htmlAttributes={{ lang: "es" }} title={`${title}`}>
+      <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={origin + pathname} />
       {countries.map((c, index) => {
