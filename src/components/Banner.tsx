@@ -39,7 +39,7 @@ const Banner = ({
 
       <div className="container mx-auto flex max-w-6xl flex-col py-4  text-center">
         <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
-        <p className="h-16 text-base">{desc}</p>
+        <p className="text-base">{desc}</p>
         <span className="flex justify-center">
           <Btn
             btnType={btnType}

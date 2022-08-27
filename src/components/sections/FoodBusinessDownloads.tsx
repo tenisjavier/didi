@@ -18,7 +18,7 @@ const FoodBusinessDownloads = ({ images }: FoodBusinessDownloadsProps) => {
     desc: t("FoodBusinessDownloads.desc"),
     bgColor: t("FoodBusinessDownloads.bgColor"),
     textColor: t("FoodBusinessDownloads.textColor"),
-    columns: t("FoodDeliveryDownloads.columns", { returnObjects: true }),
+    columns: t("FoodBusinessDownloads.columns", { returnObjects: true }),
   };
 
   props.columns.forEach((col: any, index: number) => {

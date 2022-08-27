@@ -384,6 +384,53 @@
       "bgColor": "bg-white"
     }
   ],
+  "SafetyWomanHero.title": "Diseñamos tecnología que busca generar espacios más seguros para las mujeres",
+  "SafetyWomanHero.desc": "La agresión sexual y violencia de género son conductas que atentan contra la dignidad de las personas y que no toleramos bajo ninguna circunstancia. Es por esto que buscamos contribuir a la creación de espacios más seguros en la comunidad que generen mayor conciencia de estas situaciones. Como empresa de tecnología, que intermedia millones de solicitudes, estamos comprometidos a desarrollar novedosas herramientas de seguridad, alianzas, entrenamientos y protocolos orientados a la prevención y atención rápida de estos incidentes, y así contribuir a la creación de entornos libres de violencia de género.",
+  "SafetyWomanHero.textColor": "white",
+  "SafetyWomanHero.btnMode": "light",
+  "SafetyWomanBanner.title": "Sobre el Acoso Sexual",
+  "SafetyWomanBanner.desc": "La agresión sexual y violencia de género son conductas que atentan contra la dignidad de las personas y que no toleramos bajo ninguna circunstancia. Es por esto que buscamos contribuir a la creación de espacios más seguros en la comunidad que generen mayor conciencia de estas situaciones. Como empresa de tecnología, que intermedia millones de solicitudes, estamos comprometidos a desarrollar novedosas herramientas de seguridad, alianzas, entrenamientos y protocolos orientados a la prevención y atención rápida de estos incidentes, y así contribuir a la creación de entornos libres de violencia de género.",
+  "SafetyWomanBanner.textColor": "gray-primary",
+  "SafetyWomanBanner.bgColor": "bg-gray-light",
+  "SafetyWomanBanner.btnMode": "primary",
+  "SafetyWomanBanner.btnText": "Trabajamos para Prevenir el Acoso",
+  "SafetyWomanBanner.btnLink": "https://www.youtube.com/watch?v=LHx9Y1afdCM",
+  "SafetyGridWoman.title": "Funciones de seguridad",
+  "SafetyGridWoman.desc": "En DiDi, la seguridad de las mujeres es nuestra prioridad. Tenemos más de 20 funciones de seguridad, conoce a continuación las medidas más importantes que hemos diseñado pensando en tu seguridad durante tu próxima solicitud.",
+  "SafetyGridWoman.columns": [
+    {
+      "title": "Botón de emergencia",
+      "desc": "Durante cualquier incidente o caso de violencia de género puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 123 y nuestro Centro de Emergencias DiDi 24/7.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Evaluación de socios durante el registro",
+      "desc": "Quien desee registrarse como socio o usuario en DiDi, debe pasar por una revisión de antecedentes y validación de documentos personales desarrollada a través de un tercero experto en seguridad.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Centro de emergencias DiDi 24/7",
+      "desc": "Sin buscar suplir o reemplazar a las autoridades, contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo, entre ellas la Línea Púrpura.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Desvincular socio o usuario",
+      "desc": "Si la experiencia en tu solicitud te hizo sentir incómoda frente al trato del socio o usuario, al llegar a tu destino, en el menú de calificación encontrarás el botón de desvinculación de socio o usuario. Esto evitará que en futuras oportunidades te conectes con esta persona.",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Compartir ubicación en tiempo real",
+      "desc": "Contactos de confianza como amigos y familiares, pueden hacer seguimiento a la solicitud sin tener la aplicación DiDi descargada en su teléfono. Mediante una solicitud activa, puedes compartir tu ubicación por medio de un mensaje de texto, Whatsapp, entre otras opciones.",
+      "bgColor": "bg-white"
+    }
+  ],
+  "AboutSafetyWomanVideo.title": "DiDi Mujer",
+  "AboutSafetyWomanVideo.video": "https://www.youtube.com/embed/W9yW2rApUrc",
+  "AboutSafetyWomanVideo.textColor": "white",
+  "AboutSafetyWomanVideo.bgColor": "bg-orange-primary",
+  "SafetyWomanFAQ.title": "Preguntas frecuentes",
+  "SafetyWomanFAQ.textColor": "gray-primary",
+  "SafetyWomanFAQ.bgColor": "bg-white",
   "HelpCenterHero.title": "Centro de Ayuda",
   "HelpCenterHero.desc": "Conoce las principales preguntas que nos hacen pasajeros y socios conductores",
   "HelpCenterHero.textColor": "white",
