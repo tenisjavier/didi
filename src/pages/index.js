@@ -60,7 +60,7 @@ const Index = ({ data }) => {
       ></GatsbyImage>
     ),
     list: countries.map((c) => {
-      return { text: c.name, link: c.hostname };
+      return { text: c.englishName, link: c.hostname };
     }),
   };
 
@@ -159,7 +159,7 @@ const Index = ({ data }) => {
                           href={c.hostname}
                           className="text-sm text-yellow-500 hover:text-yellow-300"
                         >
-                          {c.name}
+                          {c.englishName}
                         </a>
                       </span>
                     );
@@ -189,7 +189,7 @@ export const query = graphql`
     }
     allContentfulCountry {
       nodes {
-        name
+        englishName
         hostname
       }
     }

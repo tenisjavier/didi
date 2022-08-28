@@ -424,6 +424,52 @@
       "bgColor": "bg-white"
     }
   ],
+  "SafetyGridWomanSteps.title": "Paso a Paso",
+  "SafetyGridWomanSteps.desc": false,
+  "SafetyGridWomanSteps.bgColor": "bg-blue-primary",
+  "SafetyGridWomanSteps.textColor": "white",
+  "SafetyGridWomanSteps.columns": [
+    {
+      "title": "1. Asistencia en seguridad",
+      "desc": "En caso de que la usuaria o socia lo requiera o se encuentre en peligro. Por medio de la Central de Emergencias mantenemos comunicación permanente con las autoridades para brindar colaboración a las personas involucradas en la situación.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "2. Orientación para presentar una denuncia",
+      "desc": "Orientación para presentar una denuncia ante las autoridades. Nuestros agentes de la central de emergencia mantienen un seguimiento telefónico con la víctima para darle acompañamiento en el manejo de situaciones complicadas.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "3. Dirección a las víctimas",
+      "desc": "Direccionamos a la víctima con canales oficiales como la Línea Púrpura de la Secretaría de la mujer o CAIVAS, y así propiciar el acompañamiento necesario desde todos los frentes.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "4. Asistencia Médica",
+      "desc": "En caso de que sea necesario, ofrecemos asistencia médica y apoyo psicológico, por medio de SBS Seguros con base en los términos de la póliza respectiva.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "5. Contacto con la Autoridad",
+      "desc": "Facilitamos el contacto con la autoridad competente para brindar orientación presencial de ser necesario.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "6. Suspensión Temporal de Cuentas",
+      "desc": "Por razones preventivas, y mientras el equipo especializado realiza las diligencias pertinentes en el caso, podría realizarse una suspensión temporal de las cuentas involucradas.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "7. Bloqueo Permanente de Cuentas",
+      "desc": "Si la cuenta denunciada incumplió con los términos y condiciones de la app, será bloqueada permanentemente.",
+      "bgColor": "bg-blue-primary"
+    },
+    {
+      "title": "8. Seguimiento Periódico",
+      "desc": "Nuestro equipo hace un seguimiento periódicamente con las partes involucradas, para conocer el estado de la situación.",
+      "bgColor": "bg-blue-primary"
+    }
+  ],
   "AboutSafetyWomanVideo.title": "DiDi Mujer",
   "AboutSafetyWomanVideo.video": "https://www.youtube.com/embed/W9yW2rApUrc",
   "AboutSafetyWomanVideo.textColor": "white",

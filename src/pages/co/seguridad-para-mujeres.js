@@ -6,6 +6,7 @@ import SafetyWomanBanner from "../../components/sections/SafetyWomanBanner";
 import SafetyGridWoman from "../../components/sections/SafetyGridWoman";
 import AboutSafetyWomanVideo from "../../components/sections/AboutSafetyWomanVideo";
 import SafetyWomanFAQ from "../../components/sections/SafetyWomanFAQ";
+import SafetyGridWomanSteps from "../../components/sections/SafetyGridWomanSteps";
 
 const SeguridadParaMujeres = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -19,12 +20,6 @@ const SeguridadParaMujeres = ({ data }) => {
   const safetyWomanGridImages = images.filter((image) => {
     return image.title.indexOf("co.SafetyWoman.image") !== -1;
   });
-  const safetyWomanProtocolImage = images.filter((image) => {
-    return image.title === "co.SafetyWomanProtocol.image";
-  })[0];
-  const safetyWomanStepsImage = images.filter((image) => {
-    return image.title === "co.SafetyWomanSteps.image";
-  })[0];
 
   return (
     <Layout>
@@ -35,6 +30,7 @@ const SeguridadParaMujeres = ({ data }) => {
       <SafetyWomanBanner></SafetyWomanBanner>
       <SafetyGridWoman images={safetyWomanGridImages}></SafetyGridWoman>
       <AboutSafetyWomanVideo></AboutSafetyWomanVideo>
+      <SafetyGridWomanSteps></SafetyGridWomanSteps>
       <SafetyWomanFAQ faq={faq}></SafetyWomanFAQ>
     </Layout>
   );
