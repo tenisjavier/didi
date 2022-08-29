@@ -487,6 +487,35 @@
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
+  "ContactAuthorityHero.title": "Contacto para Autoridades",
+  "ContactAuthorityHero.desc": "Si cuenta con oficio judicial o investigación en curso, remitir la solicitud de información por medio de una cuenta oficial a la casilla de correo: lert@didiglobal.com y será atendido por nuestro personal especializado. Si es parte de un organismo de seguridad que pertenezca a un área de investigación o prevención del delito para cualquier región en SSL y busca alguna reunión o acercamiento con el equipo de Relacionamiento con las Autoridades, escribanos a: lert@didiglobal.com",
+  "ContactAuthorityHero.textColor": "white",
+  "ContactBenefits.title": "¿Cómo pedir información a DiDi en los paises de Latinoamérica?",
+  "ContactBenefits.bgColor": "bg-white",
+  "ContactBenefits.textColor": "gray-primary",
+  "ContactBenefits.columns": [
+    {
+      "title": "1. El área interesada deberá girar un oficio dirigido a DiDi",
+      "desc": "",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "2. Verificar que el equipo de LERT confirme la recepción",
+      "desc": "",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "3. Verificar que el equipo de LERT responda de recibido",
+      "desc": "",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    }
+  ],
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
