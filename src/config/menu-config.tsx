@@ -277,6 +277,10 @@ const menuLinks: AllMenuInterface = {
           url: "/co/seguridad/",
         },
         {
+          text: "Seguridad para Mujeres",
+          url: "/co/seguridad-para-mujeres/",
+        },
+        {
           text: "Centro de Ayuda",
           url: "/co/centro-de-ayuda/",
         },
