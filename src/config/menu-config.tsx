@@ -78,6 +78,10 @@ const menuLinks: AllMenuInterface = {
           url: "/cl/seguridad/",
         },
         {
+          text: "Control de Descanso",
+          url: "/cl/funcionalidades/control-de-descanso/",
+        },
+        {
           text: "Centro de Ayuda",
           url: "/cl/centro-de-ayuda/",
         },
