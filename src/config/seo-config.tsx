@@ -214,7 +214,7 @@ const seoMeta: AllSEOMetaInterface = {
   ar: {
     "/": {
       title: "Registrate como Socio Conductor DiDi",
-      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
+      desc: "DiDi en Argentina, registrate como socio conductor en las categorías express y taxi ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
     "/pasajero/": {
       title: "Pedí un DiDi y Viajá Seguro",
@@ -222,11 +222,11 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/driver/": {
       title: "DiDi Conductor - Manejá y Generá Dinero",
-      desc: "DiDi Conductor, registrate como socio conductor en la categoría de express o taxi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
+      desc: "DiDi Conductor, registrate como socio conductor en la categoría de express o taxi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
     "/taxi/": {
       title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
-      desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 5353-4474",
+      desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
 
     "/sobre-didi/": {

@@ -52,7 +52,7 @@
     },
     {
       "title": "Centro de Ayuda",
-      "desc": "Contás con DiDi 24/7 para escucharte, para ayudarte. \n Contactanos: Si sos Socio Conductor +54 (11) 5353-4474",
+      "desc": "Podés leer las principales dudas se pasajeros. Si sos conductor llamá a nuestro servicio para conductores al +54 (11) 3987-6342",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ar/centro-de-ayuda/",
@@ -317,9 +317,6 @@
   "ContactHero.title": "Contactanos",
   "ContactHero.desc": "Si tuviste algún problema, por favor comunicate con nuestro equipo de atención. Abajo te dejamos los canales de comunicación.",
   "ContactHero.textColor": "white",
-  "ContactHero.btnMode": "primary",
-  "ContactHero.btnText": "Call Costumer Support",
-  "ContactHero.btnLink": "tel:+541153534474",
   "ContactBenefits.title": "Contacto",
   "ContactBenefits.bgColor": "bg-white",
   "ContactBenefits.textColor": "gray-primary",
@@ -340,7 +337,7 @@
     },
     {
       "title": "Pasajero",
-      "desc": "Si sos usuario, llamá al +54 (11) 5353-4474  para que podamos resolver tus consultas de manera personalizada.",
+      "desc": "Si sos usuario, entrá a nuestra seccion de Centro de Ayuda para responder tus dudas",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
