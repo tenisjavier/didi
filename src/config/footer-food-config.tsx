@@ -18,6 +18,15 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Blog", link: "/cl/food/blog/" },
     { text: "Privacy", link: "/cl/food/privacy" },
   ],
+  mx: [
+    { text: "Home", link: "/mx/food/" },
+    { text: "Tienda", link: "/mx/food/store/" },
+    { text: "Socio repartidor", link: "/mx/food/delivery/" },
+    { text: "Acerca", link: "/mx/food/about/" },
+    { text: "Contacto", link: "/mx/food/contact/" },
+    { text: "Blog", link: "/mx/food/blog/" },
+    { text: "Privacy", link: "/mx/food/privacy" },
+  ],
   do: [
     { text: "Home", link: "/do/food/" },
     { text: "Tienda", link: "/do/food/store/" },

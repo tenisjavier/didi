@@ -17,6 +17,14 @@ const footerLinks: AllFooterInterface = {
     { text: "Seguridad", link: "/cl/seguridad/" },
     { text: "Legal", link: "/cl/legal/" },
   ],
+  mx: [
+    { text: "Pasajero", link: "/mx/pasajero/" },
+    { text: "Socio Conductor", link: "/mx/driver/" },
+    { text: "Lugares", link: "/mx/lugares/" },
+    { text: "DiDi Taxi", link: "/mx/taxi/" },
+    { text: "Seguridad", link: "/mx/seguridad/" },
+    { text: "Legal", link: "/mx/legal/" },
+  ],
   do: [
     { text: "Pasajero", link: "/do/pasajero/" },
     { text: "Socio Conductor", link: "/do/driver/" },

@@ -98,6 +98,88 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
+  mx: [
+    {
+      text: "DiDi Pasajero",
+      url: "/mx/pasajero/",
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/mx/driver/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/mx/driver/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
+        },
+        {
+          text: "Club DiDiMás+",
+          url: "/mx/didimas/",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/mx/ciudades/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Taxi",
+      url: "/mx/taxi/",
+    },
+    {
+      text: "DiDi Food",
+      url: "/mx/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/mx/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/mx/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/mx/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/mx/food/contact/",
+        },
+      ],
+    },
+    {
+      text: "Sobre DiDi",
+      url: "/mx/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/mx/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/mx/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/mx/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/mx/articulos/",
+        },
+      ],
+    },
+  ],
   ar: [
     {
       text: "DiDi Pasajero",
@@ -673,50 +755,6 @@ const menuLinks: AllMenuInterface = {
           url: "/ec/articulos/",
         },
       ],
-    },
-  ],
-  mx: [
-    {
-      text: "Home",
-      url: "http://mexico.didiglobal.com/",
-    },
-    {
-      text: "DiDi Conductor",
-      url: "https://mexico.didiglobal.com/conductor/",
-      dropMenu: [
-        {
-          text: "Requisitos para conducir o convertirse en socio",
-          url: "https://mexico.didiglobal.com/requisitos-para-conducir-o-convertirse-en-socio/",
-        },
-        {
-          text: "Ganancias DiDi",
-          url: "https://mexico.didiglobal.com/conductor/calcula-tus-ganancias",
-        },
-        {
-          text: "Regístrate Online",
-          url: "https://page.didiglobal.com/driver-page/register/index.html",
-        },
-      ],
-    },
-    {
-      text: "Pasajeros",
-      url: "https://mexico.didiglobal.com/pasajeros/",
-    },
-    {
-      text: "DiDi Fleet",
-      url: "https://mexico.didiglobal.com/didi-fleet/",
-    },
-    {
-      text: "Seguridad",
-      url: "https://mexico.didiglobal.com/seguridad-didi/",
-    },
-    {
-      text: "Centro de Ayuda",
-      url: "https://mexico.didiglobal.com/centro-de-ayuda/",
-    },
-    {
-      text: "Nosotros",
-      url: "https://mexico.didiglobal.com/about-us/",
     },
   ],
   nz: [
