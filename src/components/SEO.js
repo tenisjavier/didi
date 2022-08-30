@@ -57,7 +57,7 @@ const SEO = () => {
     meta.desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
-  if (pathname === "/contact/") {
+  if (pathname === "/contact/" || pathname === "/contact") {
     title = "Contact Us | DiDi Global";
     meta.desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";

@@ -514,8 +514,36 @@
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
+    },
+    {
+      "title": "4. Podrá Solicitar Datos de Usuarios",
+      "desc": "Datos Registro de Socios y Usuarios",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "5. Datos del Viaje",
+      "desc": "Rutas, Audio Grabados, Datos del Vehiculo.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "6. Información Complementaria",
+      "desc": "Otros viajes del socio y usuarios",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
     }
   ],
+  "ContactAuthorityBanner.title": "Tenga en Cuenta",
+  "ContactAuthorityBanner.desc": "1. Sea preciso en la cantidad de viajes que solicita (los tres últimos, el último viaje, etc). \n 2. Pida los viajes antes y después del que se está evaluando. \n 3.Considere pedir la información crítica en un primer correo y en consecuentes la información a detalle. \n 4. Entre más información sea solicitada, el procesamiento de datos puede aumentar con mayores tiempos posibles de respuesta. Toda la entrega de la información deberá realizarse en cumplimiento a una orden emitida dentro de una carpeta de investigación o proceso judicial penal. \n *GPS en tiempo real y grabaciones de audio de los usuarios tendrán que ser solicitados mediante la orden de un Juez.",
+  "ContactAuthorityBanner.textColor": "gray-primary",
+  "ContactAuthorityBanner.bgColor": "bg-gray-light",
+  "ContactAuthorityBanner.btnMode": "primary",
+  "ContactAuthorityBanner.btnText": "Descargar PDF: Guías Para Autoridades",
+  "ContactAuthorityBanner.btnLink": "https://colombia.didiglobal.com/wp-content/uploads/sites/15/2022/03/Guia-Colaboracion-Autoridad-DiDi.pdf",
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
