@@ -24,6 +24,7 @@ const SEO = () => {
               "cr"
               "eg"
               "nz"
+              "mx"
             ]
           }
         }

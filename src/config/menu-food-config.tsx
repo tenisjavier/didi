@@ -38,6 +38,28 @@ const menuLinksFood: AllMenuInterface = {
       url: "/cl/food/blog/",
     },
   ],
+  mx: [
+    {
+      text: "Tienda",
+      url: "/mx/food/store/",
+    },
+    {
+      text: "Socio repartidor",
+      url: "/mx/food/delivery/",
+    },
+    {
+      text: "Acerca",
+      url: "/mx/food/about/",
+    },
+    {
+      text: "Contacto",
+      url: "/mx/food/contact/",
+    },
+    {
+      text: "Blog",
+      url: "/mx/food/blog/",
+    },
+  ],
   do: [
     {
       text: "Tienda",
