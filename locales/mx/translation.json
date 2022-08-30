@@ -24,12 +24,7 @@
   "DrvCTA.btnMode": "primary",
   "PaxCTA.title": "¡Elige DiDi! ",
   "PaxCTA.desc": "Viajando con DiDi tienes tarifas más accesibles para que viajes al mismo lugar y llegues al mismo tiempo, pagando menos. \nCon DiDi tienes soporte 24/7 en todos tus viajes y puedes contar con nuestras herramientas de seguridad para que viajes con la tranquilidad que mereces. \n¡Es momento de redescubrir tu ciudad favorita de México en un DiDi! ",
-  "PaxCTA.bullets": [
-    "Precios Bajos",
-    "La Mejor Seguridad",
-    "Cómodo, Rápido y Seguro",
-    "Soporte 24/7"
-  ],
+  "PaxCTA.bullets": false,
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
   "FleetAboutCTA.title": "DiDi Flotilla",
