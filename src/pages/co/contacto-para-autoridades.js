@@ -4,14 +4,25 @@ import {
   faFilePen,
   faFileExport,
   faFileCircleCheck,
+  faTaxi,
+  faRoute,
+  faMapPin,
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
 import ContactAuthorityHero from "../../components/sections/ContactAuthorityHero";
 import ContactAuthorityBenefits from "../../components/sections/ContactAuthorityBenefits";
+import ContactAuthorityBanner from "../../components/sections/ContactAuthorityBanner";
 
 const Contact = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const icons = [faFilePen, faFileExport, faFileCircleCheck];
+  const icons = [
+    faFilePen,
+    faFileExport,
+    faFileCircleCheck,
+    faTaxi,
+    faRoute,
+    faMapPin,
+  ];
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "co.ContactAuthorityHero.bgImage";
   })[0];
@@ -26,6 +37,7 @@ const Contact = ({ data }) => {
         image={ContactBenefitsImage}
         icons={icons}
       ></ContactAuthorityBenefits>
+      <ContactAuthorityBanner></ContactAuthorityBanner>
     </Layout>
   );
 };
