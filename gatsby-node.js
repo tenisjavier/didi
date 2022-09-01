@@ -1,0 +1,20 @@
+const placeRoutes = require("./routes/places-routes");
+const placeInCityRoutes = require("./routes/places-in-city-routes");
+const directionsRoutes = require("./routes/directions-routes");
+const guidesRoutes = require("./routes/guides-routes");
+const articlesRoutes = require("./routes/articles-routes");
+
+// Implement the Gatsby API “createPages”. This is called once the
+// each route will import a ContentType List from Contentful
+
+exports.createPages = async ({
+  graphql,
+  actions: { createPage },
+  reporter,
+}) => {
+  await placeRoutes.init(graphql, createPage);
+  await placeInCityRoutes.init(graphql, createPage);
+  await directionsRoutes.init(graphql, createPage);
+  await guidesRoutes.init(graphql, createPage);
+  await articlesRoutes.init(graphql, createPage);
+};

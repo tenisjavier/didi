@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import DirectionHero from "../../../components/sections/DirectionHero";
-import DirectionBanner from "../../../components/sections/DirectionBanner";
-import DirectionStepGrid from "../../../components/sections/DirectionStepsGrid";
+import Layout from "../../components/Layout";
+import DirectionHero from "../../components/sections/DirectionHero";
+import DirectionBanner from "../../components/sections/DirectionBanner";
+import DirectionStepGrid from "../../components/sections/DirectionStepsGrid";
 
 const DestinationTemplate = ({ data }) => {
   return (

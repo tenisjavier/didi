@@ -1,15 +1,15 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import PaxHero from "../../../components/sections/PaxHero";
-import CityList from "../../../components/sections/CityList";
+import Layout from "../../components/Layout";
+import PaxHero from "../../components/sections/PaxHero";
+import CityList from "../../components/sections/CityList";
 
 const Lugares = ({ data }) => {
   const cities = data.contentfulCountry.city;
   const country = data.contentfulCountry.name;
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
-    return image.title === "cl.PaxHero.bgImage";
+    return image.title === "pe.PaxHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -32,7 +32,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
+    contentfulCountry(code: { eq: "pe" }) {
       name
       code
       city {
@@ -40,7 +40,7 @@ export const query = graphql`
         slug
       }
     }
-    allContentfulAsset(filter: { title: { in: ["cl.PaxHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["pe.PaxHero.bgImage"] } }) {
       nodes {
         id
         title

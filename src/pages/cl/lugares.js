@@ -1,19 +1,20 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import PaxHero from "../../../components/sections/PaxHero";
-import CityList from "../../../components/sections/CityList";
+import Layout from "../../components/Layout";
+import PaxHero from "../../components/sections/PaxHero";
+import CityList from "../../components/sections/CityList";
 
 const Lugares = ({ data }) => {
   const cities = data.contentfulCountry.city;
+  const country = data.contentfulCountry.name;
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
-    return image.title === "ar.PaxHero.bgImage";
+    return image.title === "cl.PaxHero.bgImage";
   })[0];
   return (
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
-      <CityList cities={cities} />
+      <CityList country={country} cities={cities} />
     </Layout>
   );
 };
@@ -31,7 +32,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "ar" }) {
+    contentfulCountry(code: { eq: "cl" }) {
       name
       code
       city {
@@ -39,7 +40,7 @@ export const query = graphql`
         slug
       }
     }
-    allContentfulAsset(filter: { title: { in: ["ar.PaxHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["cl.PaxHero.bgImage"] } }) {
       nodes {
         id
         title

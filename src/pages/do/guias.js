@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import GuidesHero from "../../../components/sections/DrvHero";
-import GuidesColumns from "../../../components/sections/GuidesColumns";
+import Layout from "../../components/Layout";
+import GuidesHero from "../../components/sections/DrvHero";
+import GuidesColumns from "../../components/sections/GuidesColumns";
 
 const Guias = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const guidesHeroBgImage = images.filter((image) => {
-    return image.title === "ec.GuidesHero.bgImage";
+    return image.title === "do.GuidesHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["ec.GuidesHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["do.GuidesHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -39,7 +39,7 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { country: { code: { eq: "ec" } } }
+      filter: { country: { code: { eq: "do" } } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {
