@@ -25,7 +25,7 @@ const GuideHero = ({ data }: GuideHero) => {
     textColor: t("GuideHero.textColor"),
     bgImage: (
       <GatsbyImage
-        className="!absolute z-0 h-full w-full md:block"
+        className="!absolute z-0 h-full w-full md:block brightness-75"
         image={image!}
         alt={title}
       />
