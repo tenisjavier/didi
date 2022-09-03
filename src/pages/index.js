@@ -59,9 +59,11 @@ const Index = ({ data }) => {
         className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
-    list: countries.map((c) => {
-      return { text: c.englishName, link: c.hostname };
-    }),
+    list: countries
+      .map((c) => {
+        return { text: c.englishName, link: c.hostname };
+      })
+      .sort((a, b) => (a.text > b.text ? 1 : -1)),
   };
 
   const AboutUsProps = {
