@@ -23,7 +23,11 @@ const ContactBenefits = ({ image, icons }) => {
 
   icons.forEach((icon, index) => {
     props.columns[index].image = (
-      <FontAwesomeIcon icon={icon} size="4x" className="text-orange-primary" />
+      <FontAwesomeIcon
+        icon={icon}
+        size="4x"
+        className="text-orange-primary w-16"
+      />
     );
   });
 
