@@ -37,14 +37,16 @@ const HomeColumns = ({ images }: HomeColumnsProps) => {
       );
     });
   } else {
-    props.columns[0].image = <FontAwesomeIcon icon={faQuoteRight} size="3x" />;
+    props.columns[0].image = (
+      <FontAwesomeIcon icon={faQuoteRight} size="3x" className="w-12" />
+    );
 
     props.columns[1].image = (
-      <FontAwesomeIcon icon={faExclamationCircle} size="3x" />
+      <FontAwesomeIcon icon={faExclamationCircle} size="3x" className="w-12" />
     );
 
     props.columns[2].image = (
-      <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" />
+      <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" className="w-12" />
     );
   }
   return <ColumnsSection {...props}></ColumnsSection>;

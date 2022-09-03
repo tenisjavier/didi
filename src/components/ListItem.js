@@ -18,7 +18,11 @@ const ListItem = ({ text, secondText, link }) => {
       </span>
 
       <Link to={link}>
-        <FontAwesomeIcon icon={faArrowCircleRight} size="1x"></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faArrowCircleRight}
+          size="1x"
+          className="w-4"
+        ></FontAwesomeIcon>
       </Link>
     </div>
   ) : (

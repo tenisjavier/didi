@@ -18,12 +18,20 @@ const FoodDeliveryStepsColumns = () => {
     columns: t("FoodDeliveryStepsColumns.columns", { returnObjects: true }),
   };
 
-  props.columns[0].image = <FontAwesomeIcon icon={faMobileAlt} size="3x" />;
+  props.columns[0].image = (
+    <FontAwesomeIcon icon={faMobileAlt} size="3x" className="w-12" />
+  );
 
-  props.columns[1].image = <FontAwesomeIcon icon={faFile} size="3x" />;
+  props.columns[1].image = (
+    <FontAwesomeIcon icon={faFile} size="3x" className="w-12" />
+  );
 
-  props.columns[2].image = <FontAwesomeIcon icon={faIdBadge} size="3x" />;
-  props.columns[3].image = <FontAwesomeIcon icon={faDollarSign} size="3x" />;
+  props.columns[2].image = (
+    <FontAwesomeIcon icon={faIdBadge} size="3x" className="w-12" />
+  );
+  props.columns[3].image = (
+    <FontAwesomeIcon icon={faDollarSign} size="3x" className="w-12" />
+  );
 
   return <ColumnsSection {...props}></ColumnsSection>;
 };

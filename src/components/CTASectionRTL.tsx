@@ -60,7 +60,8 @@ const CTASection = (props: CTAProps) => {
     );
   }
   return (
-    <section style={{direction: "rtl"}}
+    <section
+      style={{ direction: "rtl" }}
       className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
     ${bgColor && bgColor}`}
     >
@@ -90,11 +91,16 @@ const CTASection = (props: CTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" ml-4 text-orange-primary "
+                            className=" ml-4 text-orange-primary w-6"
                             size="sm"
                           />
                         ) : null}
-                        <p className="m-0" style={{display: 'inline-block', width: '80%'}}>{item}</p>
+                        <p
+                          className="m-0"
+                          style={{ display: "inline-block", width: "80%" }}
+                        >
+                          {item}
+                        </p>
                       </li>
                       <br></br>
                     </div>
