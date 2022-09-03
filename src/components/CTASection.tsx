@@ -96,7 +96,7 @@ const CTASection = (props: CTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" mr-4 text-orange-primary "
+                            className=" mr-4 text-orange-primary w-8 "
                             size="sm"
                           />
                         ) : null}
