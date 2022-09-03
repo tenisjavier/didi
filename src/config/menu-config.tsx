@@ -576,6 +576,10 @@ const menuLinks: AllMenuInterface = {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
         },
+        {
+          text: "Ciudades Operativas",
+          url: "/cr/ciudades/",
+        },
       ],
     },
     {
