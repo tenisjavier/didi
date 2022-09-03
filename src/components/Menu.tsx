@@ -23,7 +23,7 @@ const Menu = () => {
     <div className="flex h-full items-center ">
       <FontAwesomeIcon
         icon={faBars}
-        className=" m-4 cursor-pointer text-white lg:hidden "
+        className=" m-4 cursor-pointer text-white lg:hidden w-5 "
         size="lg"
         onClick={() => {
           setOpen(!open);

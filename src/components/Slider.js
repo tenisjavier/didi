@@ -49,7 +49,7 @@ const SilderSection = (props) => {
             onClick={prevSlide}
             aria-hidden="true"
           >
-            <FontAwesomeIcon icon={faChevronLeft} />
+            <FontAwesomeIcon icon={faChevronLeft} className="w-8" />
           </div>
           <div
             className="absolute top-48 right-1 z-10 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all md:top-2/3 md:right-2 xl:top-1/2
@@ -57,7 +57,7 @@ const SilderSection = (props) => {
             onClick={nextSlide}
             aria-hidden="true"
           >
-            <FontAwesomeIcon icon={faChevronRight} />
+            <FontAwesomeIcon icon={faChevronRight} className="w-8" />
           </div>
           {items.map((data, idx) => {
             return (
