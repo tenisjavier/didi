@@ -16,7 +16,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/cl/food/about/" },
     { text: "Contacto", link: "/cl/food/contact/" },
     { text: "Blog", link: "/cl/food/blog/" },
-    { text: "Privacy", link: "/cl/food/privacy" },
+    { text: "Terms and Conditions", link: "/cl/food/privacidad/" },
+    { text: "Privacidad", link: "/cl/food/privacidad/" },
+    { text: "Renta de equipo", link: "/cl/food/renta-de-equipo/" },
   ],
   mx: [
     { text: "Home", link: "/mx/food/" },
@@ -34,7 +36,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/do/food/about/" },
     { text: "Contacto", link: "/do/food/contact/" },
     { text: "Blog", link: "/do/food/blog/" },
-    { text: "Privacy", link: "/do/food/privacy" },
+    { text: "Terms and Conditions", link: "/do/food/privacidad/" },
+    { text: "Privacidad", link: "/do/food/privacidad/" },
+    { text: "Renta de equipo", link: "/do/food/renta-de-equipo/" },
   ],
   cr: [
     { text: "Home", link: "/cr/food/" },
@@ -43,6 +47,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/cr/food/about/" },
     { text: "Contacto", link: "/cr/food/contact/" },
     { text: "Blog", link: "/cr/food/blog/" },
+    { text: "Terms and Conditions", link: "/cr/food/privacidad/" },
+    { text: "Privacidad", link: "/cr/food/privacidad/" },
+    { text: "Renta de equipo", link: "/cr/food/renta-de-equipo/" },
   ],
   co: [
     { text: "Home", link: "/co/food/" },
@@ -51,7 +58,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/co/food/about/" },
     { text: "Contacto", link: "/co/food/contact/" },
     { text: "Blog", link: "/co/food/blog/" },
-    { text: "Privacy", link: "/co/food/privacy/" },
+    { text: "Terms and Conditions", link: "/co/food/privacidad/" },
+    { text: "Privacidad", link: "/co/food/privacidad/" },
+    { text: "Renta de equipo", link: "/co/food/renta-de-equipo/" },
   ],
 };
 

@@ -19,7 +19,7 @@ const FooterMenu = ({ links }: FooterMenuProps) => {
 
   return (
     <div className="flex h-full flex-wrap bg-gray-primary">
-      <div className="Lg:flex-row bg-grey-primary hidden lg:flex lg:w-2/3 lg:flex-initial">
+      <div className="Lg:flex-row bg-grey-primary hidden lg:flex w-full lg:flex-initial">
         {pathname.includes("food") ? (
           <>
             {footerLinksFood &&
