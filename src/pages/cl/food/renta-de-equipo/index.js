@@ -22,7 +22,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulLegal(name: { eq: "Renta de equipo - DiDi Chile" }) {
+    contentfulLegal(name: { eq: "Renta de equipo DiDi Chile" }) {
       content {
         raw
       }
