@@ -13,6 +13,8 @@ interface SingleBtnInterface {
   foodBusinessText?: string;
   foodEaterLink?: string;
   foodEaterText?: string;
+  foodEaterOnlineLink?: string;
+  foodEaterOnlineText?: string;
 }
 
 interface AllBtnInterface {
@@ -123,6 +125,10 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate Online",
     paxText: "Descarga Didi Pasajero",
+    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterLink: "https://www.didi-food.com/es-MX/food/feed/?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+    foodEaterOnlineText: "Pide Comida desde tu compu, sin instalar la App → ",
+    foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/?utm_source=%28direct%29&utm_medium=%28none%29&utm_campaign=none"
   },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",

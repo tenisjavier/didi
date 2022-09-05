@@ -66,6 +66,17 @@ const DoubleCTASection = (props: DoubleCTAProps) => {
     );
   }
 
+  // if btnType is bothFood will print OnlineFood first and FoodEater second
+    if (btnType === "bothFood") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnline" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
+
   const customIconStyle = {
     color: "white",
     backgroundColor: "DodgerBlue",
