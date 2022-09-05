@@ -7,7 +7,6 @@ import DirectoryOriginList from "../../components/sections/DirectoryOriginList";
 import WikiDescription from "../../components/sections/WikiDescription";
 
 const PlaceTemplate = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <PlaceHero data={data.contentfulPlace}></PlaceHero>

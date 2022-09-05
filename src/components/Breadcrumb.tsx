@@ -11,7 +11,7 @@ const Breadcrumb = () => {
   const { pathname } = useLocation();
 
   const directories = pathname.split("/").filter((item) => {
-      return item !== "";
+    return item !== "";
   });
 
   return (
@@ -32,24 +32,23 @@ const Breadcrumb = () => {
               </li>
             );
           }
-          if(countryCode == 'eg') {
+          if (countryCode == "eg") {
             var itemPath;
-            switch(dir) {
-              case 'about-us':
-                itemPath = 'نبذة عنا';
+            switch (dir) {
+              case "about-us":
+                itemPath = "نبذة عنا";
                 break;
-              case 'help-center':
-                itemPath = 'مركز المساعدة';
+              case "help-center":
+                itemPath = "مركز المساعدة";
                 break;
-              case 'rider':
-                itemPath = 'الراكب';
+              case "rider":
+                itemPath = "الراكب";
                 break;
-              case 'driver':
-                itemPath = 'السائق';
+              case "driver":
+                itemPath = "السائق";
                 break;
-              case 'driver-starter-manual':
-                console.log(dir);
-                itemPath = 'دليل بدء شريك';
+              case "driver-starter-manual":
+                itemPath = "دليل بدء شريك";
                 break;
               default:
                 itemPath = dir;
