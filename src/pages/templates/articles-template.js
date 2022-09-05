@@ -7,7 +7,6 @@ import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
 
 const ArticlesTemplate = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <ArticleHero data={data}></ArticleHero>
