@@ -2,11 +2,11 @@ import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Banner from "../Banner";
 
-const VideoSection = () => {
+const DiDiMujerVideoSection = () => {
   const { t } = useTranslation();
-  const videoSrc = t("VideoSection.src");
+  const videoSrc = t("DiDiMujerVideoSection.src");
   const props = {
-    title: t("VideoSection.title"),
+    title: t("DiDiMujerVideoSection.title"),
     desc: (
       <iframe
         className="mt-8"
@@ -19,9 +19,8 @@ const VideoSection = () => {
         allowFullScreen
       ></iframe>
     ),
-    descText: t("VideoSection.descText"),
-    bgColor: t("VideoSection.bgColor"),
-    textColor: t("VideoSection.textColor"),
+    bgColor: t("DiDiMujerVideoSection.bgColor"),
+    textColor: t("DiDiMujerVideoSection.textColor"),
     height: "h-128",
     alignItems: "items-start",
   };
@@ -29,4 +28,4 @@ const VideoSection = () => {
   return <Banner {...props}></Banner>;
 };
 
-export default VideoSection;
+export default DiDiMujerVideoSection;

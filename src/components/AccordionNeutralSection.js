@@ -17,7 +17,7 @@ const AccordionNeutralSection = (props) => {
         {title && (
           <h2 className="text-center text-3xl md:text-left">{title}</h2>
         )}
-        <p className="text-center md:text-left">{desc}</p>
+        {desc && desc.split("\n").map((str) => <p className="text-center md:text-left">{str}</p>)}
         <div className={`flex flex-wrap justify-around `}>
           {items.map((item, index) => {
             return (

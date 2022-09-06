@@ -1,34 +1,45 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import HomeHero from "../../components/sections/HomeHero";
-import SafetyCTA from "../../components/sections/SafetyCTA";
-import DrvCTA from "../../components/sections/DrvCTA";
-import PaxCTA from "../../components/sections/PaxCTA";
-import HomeColumns from "../../components/sections/HomeColumns";
+import FleetHero from "../../components/sections/FleetHero";
+import FleetVideoSection from "../../components/sections/FleetVideoSection";
+import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
+import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
+import FleetAgregaCTA from "../../components/sections/FleetAgregaCTA";
+import FleetColumns from "../../components/sections/FleetColumns";
 
 const DiDiFleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const homeHeroBgImage = images.filter((image) => {
-    return image.title === "cl.HomeHero.bgImage";
+  const FleetHeroBgImage = images.filter((image) => {
+    return image.title === "mx.DiDiFleetHero.bgImage";
   })[0];
-  const safetyCTAImage = images.filter((image) => {
-    return image.title === "cl.SafetyCTA.image";
+
+  const FleetSocioCTAImage = images.filter((image) => {
+    return image.title === "mx.FleetSocioCTA.image";
   })[0];
-  const drvCTAImage = images.filter((image) => {
-    return image.title === "cl.DrvCTA.image";
+
+  const FleetRegistraAutosCTAImage = images.filter((image) => {
+    return image.title === "mx.FleetRegistraAutos.image";
   })[0];
-  const paxCTAImage = images.filter((image) => {
-    return image.title === "cl.PaxCTA.image";
+
+  const FleetAgregaCTAImage = images.filter((image) => {
+    return image.title === "mx.FleetAgrega.image";
   })[0];
+
+  const FleetColumnsImage = images.filter((image) => {
+    return image.title === "mx.FleetColumns.image";
+  });
+
+  
 
   return (
     <Layout>
-      <HomeHero bgImage={homeHeroBgImage}></HomeHero>
-      <SafetyCTA image={safetyCTAImage}></SafetyCTA>
-      <DrvCTA image={drvCTAImage}></DrvCTA>
-      <PaxCTA image={paxCTAImage}></PaxCTA>
-      <HomeColumns></HomeColumns>
+      <FleetHero bgImage={FleetHeroBgImage}></FleetHero>
+      <FleetVideoSection></FleetVideoSection>
+      <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
+      <FleetRegistraAutosCTA image={FleetRegistraAutosCTAImage}></FleetRegistraAutosCTA>
+      <FleetAgregaCTA image={FleetAgregaCTAImage}></FleetAgregaCTA>
+      <FleetColumns images={FleetColumnsImage.reverse()}></FleetColumns>
     </Layout>
   );
 };
@@ -50,10 +61,11 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "cl.HomeHero.bgImage"
-            "cl.SafetyCTA.image"
-            "cl.DrvCTA.image"
-            "cl.PaxCTA.image"
+            "mx.DiDiFleetHero.bgImage"
+            "mx.FleetSocioCTA.image"
+            "mx.FleetRegistraAutos.image"
+            "mx.FleetAgrega.image"
+            "mx.FleetColumns.image"
           ]
         }
       }

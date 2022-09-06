@@ -1,30 +1,31 @@
+
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faQuoteRight,
-  faExclamationCircle,
-  faHeadphonesAlt,
+  faUserShield,
+  faDollarSign,
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface HomeColumnsProps {
+interface WhyDiDiColumnsProps {
   images: {
     title: string;
     description: string;
     gatsbyImageData: IGatsbyImageData;
   }[];
+  icons: any[];
 }
 
-const FleetColumns = ({ images }: HomeColumnsProps) => {
+const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    bgColor: t("FleetColumns.bgColor"),
-    textColor: t("FleetColumns.textColor"),
-    columns: t("FleetColumns.columns", { returnObjects: true }),
+    bgColor: t("WhyDiDiColumns.bgColor"),
+    textColor: t("WhyDiDiColumns.textColor"),
+    columns: t("WhyDiDiColumns.columns", { returnObjects: true }),
   };
-
   if (images) {
     props.columns.forEach((col, index) => {
       const image = images[index].gatsbyImageData;
@@ -36,18 +37,20 @@ const FleetColumns = ({ images }: HomeColumnsProps) => {
         ></GatsbyImage>
       );
     });
+  } else if (icons) {
+    props.columns.forEach((col, index) => {
+      col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
+    });
   } else {
-    props.columns[0].image = <FontAwesomeIcon icon={faQuoteRight} size="3x" />;
+    props.columns[0].image = <FontAwesomeIcon icon={faUserShield} size="3x" />;
 
-    props.columns[1].image = (
-      <FontAwesomeIcon icon={faExclamationCircle} size="3x" />
-    );
+    props.columns[1].image = <FontAwesomeIcon icon={faDollarSign} size="3x" />;
 
-    props.columns[2].image = (
-      <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" />
-    );
+    props.columns[2].image = <FontAwesomeIcon icon={faClock} size="3x" />;
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default FleetColumns;
+
+export default WhyDiDiColumns;
+

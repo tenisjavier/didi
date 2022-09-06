@@ -114,12 +114,5 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
-      name
-      city {
-        name
-        slug
-      }
-    }
   }
 `;
