@@ -300,8 +300,37 @@
   "SafetyPaxHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for riders.",
   "SafetyPaxHero.textColor": "white",
   "SafetyPaxHero.btnMode": "light",
+  "SafetyPaxColumns.bgColor": "bg-gray-primary",
+  "SafetyPaxColumns.textColor": "white",
+  "SafetyPaxColumns.columns": [
+    {
+      "title": "EXCEEDING LOCAL GOVERNMENT REGULATIONS",
+      "desc": "DiDi enforces all local government regulations. All drivers must pass numerous document verifications and the required background checks including being accredited to drive in the state they are driving in. There are limitations in the DiDi app to how many hours a driver can be driving for to combat driver fatigue. All vehicles must not exceed the set age of the state they are driving in and must pass an initial inspection and their yearly check-ups.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "PARTNERING UP WITH LAW ENFORCEMENT",
+      "desc": "DiDi will assist law enforcement agencies with all investigation requests. Helping the police helps to keep our community safer.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "COMMUNITY GUIDELINES",
+      "desc": "We want to look out for each and every member of our community. The following guidelines are meant to ensure that drivers and riders will feel safe, respected, and at ease while using the DiDi app.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "LISTENING TO OUR COMMUNITY",
+      "desc": "Our community is powered by self-reflection. We are always looking for opportunities to improve. We use such listening tools as regular safety surveys, our customer service channels, the Driver Advisory Council, focus groups and other research methods to ensure the features and procedures we create are fit for you. You can even click here to provide feedback!",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
+    }
+  ],
   "SafetyGridDuringTrip.bgColor": "bg-gray-light",
   "SafetyGridDuringTrip.title": "Riders Safety Features",
+  "SafetyGridDuringTrip.desc": "The safety of our users is our top priority. While you are on a DiDi trip, wherever you are going you should always know that we have your back.",
   "SafetyGridDuringTrip.textColor": "gray-primary",
   "SafetyGridDuringTrip.columns": [
     {
@@ -460,6 +489,10 @@
       "bgColor": "bg-white"
     }
   ],
+  "SafetyBanner.title": "How we handle safety incidents",
+  "SafetyBanner.desc": "We take all reports of safety incidents seriously. Our dedicated 24/7 Incident Response team was designed to assist whenever required and make decisions that keep our community safe. This team has been specifically trained to handle all types of cases with fairness, empathy and care. Our 24/7 Incident Response team performs full investigations to ensure fair and logical resolutions are met.",
+  "SafetyBanner.textColor": "white",
+  "SafetyBanner.bgColor": "bg-blue-primary",
   "HelpCenterHero.title": "Help Center",
   "HelpCenterHero.desc": "FAQ for riders and drivers.",
   "HelpCenterHero.textColor": "white",

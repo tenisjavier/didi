@@ -1,11 +1,20 @@
 import React from "react";
 import { graphql } from "gatsby";
+import {
+  faShield,
+  faMessage,
+  faUsers,
+  faEarListen,
+} from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../../components/Layout";
 import SafetyDrvHero from "../../../components/sections/SafetyDrvHero";
 import SafetyGridDrv from "../../../components/sections/SafetyGridDrv";
+import SafetyPaxColumns from "../../../components/sections/SafetyPaxColumns";
+import SafetyBanner from "../../../components/sections/SafetyBanner";
 
 const DrvSafety = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const iconsDrvColumns = [faShield, faMessage, faUsers, faEarListen];
   const safetyHeroBgImage = images.filter((image) => {
     return image.title === "au.SafetyHero.bgImage";
   })[0];
@@ -17,6 +26,8 @@ const DrvSafety = ({ data }) => {
     <Layout>
       <SafetyDrvHero bgImage={safetyHeroBgImage}></SafetyDrvHero>
       <SafetyGridDrv images={safetyGridDrvImages}></SafetyGridDrv>
+      <SafetyPaxColumns icons={iconsDrvColumns}></SafetyPaxColumns>
+      <SafetyBanner></SafetyBanner>
     </Layout>
   );
 };
