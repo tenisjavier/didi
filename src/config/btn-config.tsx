@@ -123,6 +123,8 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate Online",
     paxText: "Descarga Didi Pasajero",
+    fleetText: "Descarga DiDi Fleet",
+    fleetLink: "http://onelink.to/s88fxw",
   },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
