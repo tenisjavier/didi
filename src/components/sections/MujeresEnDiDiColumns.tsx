@@ -3,13 +3,13 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faQuoteRight,
-  faExclamationCircle,
-  faHeadphonesAlt,
+  faUserShield,
+  faDollarSign,
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface HomeColumnsProps {
+interface MujeresEnDiDiColumnsProps {
   images: {
     title: string;
     description: string;
@@ -17,12 +17,12 @@ interface HomeColumnsProps {
   }[];
 }
 
-const FleetColumns = ({ images }: HomeColumnsProps) => {
+const MujeresEnDiDiColumns = ({ images }: MujeresEnDiDiColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    bgColor: t("FleetColumns.bgColor"),
-    textColor: t("FleetColumns.textColor"),
-    columns: t("FleetColumns.columns", { returnObjects: true }),
+    bgColor: t("MujeresEnDiDiColumns.bgColor"),
+    textColor: t("MujeresEnDiDiColumns.textColor"),
+    columns: t("MujeresEnDiDiColumns.columns", { returnObjects: true }),
   };
 
   if (images) {
@@ -37,19 +37,13 @@ const FleetColumns = ({ images }: HomeColumnsProps) => {
       );
     });
   } else {
-    props.columns[0].image = (
-      <FontAwesomeIcon icon={faQuoteRight} size="3x" className="w-12" />
-    );
+    props.columns[0].image = <FontAwesomeIcon icon={faUserShield} size="3x" />;
 
-    props.columns[1].image = (
-      <FontAwesomeIcon icon={faExclamationCircle} size="3x" className="w-12" />
-    );
+    props.columns[1].image = <FontAwesomeIcon icon={faDollarSign} size="3x" />;
 
-    props.columns[2].image = (
-      <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" className="w-12" />
-    );
+    props.columns[2].image = <FontAwesomeIcon icon={faClock} size="3x" />;
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default FleetColumns;
+export default MujeresEnDiDiColumns;

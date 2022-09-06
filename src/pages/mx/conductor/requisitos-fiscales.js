@@ -8,25 +8,17 @@ import GananciasConceptosFAQ from "../../../components/sections/GananciasConcept
 import GananciasImpuestosFAQ from "../../../components/sections/GananciasImpuestosFAQ";
 import GananciasObligaciones from "../../../components/sections/GananciasObligaciones";
 
-const Ganancias = ({ data }) => {
+const RequisitosFiscales = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const GananciasHeroBgImage = images.filter((image) => {
-    return image.title === "mx.GananciasHero.bgImage";
+    return image.title === "cl.DrvHero.bgImage";
   })[0];
 
-  const GananciasBannerImage = images.filter((image) => {
-    return image.title === "mx.GananciasCTA.image";
-  })[0];
-
-  const WhyDiDiColumnsImage = images.filter((image) => {
-    return image.title === "mx.WhyDiDiColumns.image";
-  });
-  
   return (
     <Layout>
       <GananciasHero bgImage={GananciasHeroBgImage}></GananciasHero>
-      <WhyDiDiColumns images={WhyDiDiColumnsImage.reverse()}></WhyDiDiColumns>
-      <GananciasBanner image={GananciasBannerImage}></GananciasBanner>
+      <WhyDiDiColumns></WhyDiDiColumns>
+      <GananciasBanner image={GananciasHeroBgImage}></GananciasBanner>
       <GananciasConceptosFAQ></GananciasConceptosFAQ>
       <GananciasImpuestosFAQ></GananciasImpuestosFAQ>
       <GananciasObligaciones></GananciasObligaciones>
@@ -34,7 +26,7 @@ const Ganancias = ({ data }) => {
   );
 };
 
-export default Ganancias;
+export default RequisitosFiscales;
 
 export const query = graphql`
   query ($language: String!) {
@@ -51,9 +43,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "mx.GananciasHero.bgImage"
-            "mx.GananciasCTA.image"
-            "mx.WhyDiDiColumns.image"
+            "cl.DrvHero.bgImage"
+            "cl.DrvWhyDiDi.image"
+            "cl.DrvFeatures.image"
           ]
         }
       }

@@ -29,6 +29,47 @@
   "PaxCTA.btnMode": "dark",
   "FleetAboutCTA.title": "DiDi Flotilla",
   "FleetAboutCTA.desc": "¿Eres dueño de 1 o más autos? ¡Es momento de mejorar tus ganancias! Da de alta tu flotilla en la app DiDi Fleet. Monitorea y gestiona las ganancias de todos tus autos fácilmente desde tu celular.",
+  "FleetVideoSection.title": "Te invitamos a ver este corto video acerca de cómo ser un socio flotilla",
+  "FleetVideoSection.src": "https://www.youtube.com/embed/KVJnWPOtL1k",
+  "FleetSocioCTA.title": "Registrate como socio flotilla:",
+  "FleetSocioCTA.desc": "Para registrarte necesitarás los siguientes documentos: \n 1. Identificación oficial (INE/IFE) \n 2. CURP \n 3. Licencia para conducir",
+  "FleetRegistraAutos.title": "Registra tus autos en la aplicación de DiDi Fleet:",
+  "FleetRegistraAutos.desc": "Una vez registrado y con tus documentos aprobados, podrás comenzar a agregar autos a tu flotilla. \n Para subir autos a tu flotilla necesitarás los siguientes documentos para cada vehículo: \n 1. Tarjeta de circulación \n 2. Póliza de seguro del auto \n 3. TAG(para autos en la Ciudad de México)",
+  "FleetAgregaCTA.title": "Agrega conductores a tu flotilla DiDi:",
+  "FleetAgregaCTA.desc": "Una vez que tu auto o tus autos se encuentren aprobados, podrás agregar a tus conductores haciendo clic en la sección de “Conductores” dentro de tu app DiDi Fleet. \n ¿No conoces conductores para tu flota? \n No te preocupes, haz clic aquí y comienza a conectar con conductores previamente seleccionados listos para conducir.",
+  "FleetAgregaCTA.btnMode": "primary",
+  "FleetAgregaCTA.btnText": "Conectar con conductores",
+  "FleetAgregaCTA.btnLink": "https://page.linkeeglobal.com/global/quickbolt/page/online/f59e140d7477f4b7a7bf122ceda64151.html",
+  "FleetColumns.columns": [
+    {
+      "title": "¿Buscas conductores?",
+      "desc": "Si buscas conductores, haz clic aquí para registrarte y acceder a la base de conductores aprobados por DiDi.",
+      "btnMode": "primary",
+      "btnLink": "https://page.linkeeglobal.com/global/quickbolt/page/online/f59e140d7477f4b7a7bf122ceda64151.html",
+      "btnText": "Clic aquí"
+    },
+    {
+      "title": "DiDi Match",
+      "desc": "Conoce la nueva herramienta que te conecta con tus conductores, dentro de tu aplicación.",
+      "btnMode": "primary",
+      "btnLink": "https://d.didiglobal.com/MTweb%EF%BB%BF",
+      "btnText": "Clic aquí"
+    },
+    {
+      "title": "¿Buscas un auto?",
+      "desc": "Regístrate aquí y conoce a socios flotilleros, conecta con ellos y comienza a conducir con DiDi sin necesitar un auto.",
+      "btnMode": "primary",
+      "btnLink": "https://page.linkeeglobal.com/global/quickbolt/page/online/41386a2fb5fd426c980017b4785330a5.html",
+      "btnText": "Clic aquí"
+    },
+    {
+      "title": "Expande tu flota",
+      "desc": "Regístrate aquí y conoce a nuestros aliados, estamos seguros que alguno te ayudará a lograr tus objetivos.",
+      "btnMode": "primary",
+      "btnLink": "/mx/clubdidi",
+      "btnText": "Clic aquí"
+    }
+  ],
   "HomeColumns.bgColor": "bg-gray-light",
   "HomeColumns.textColor": "gray-primary",
   "HomeColumns.columns": [
@@ -60,32 +101,104 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "Conecta tu próximo viaje con DiDi Pasajero ",
-  "PaxHero.desc": "La App de movilidad en que pagas menos y recibes más",
+  "PaxHero.title": "¿Iniciamos tu viaje?",
+  "PaxHero.desc": "Muévete por tu ciudad con DiDi",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
   "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [
     {
-      "title": "Amplia disponibilidad y cobertura",
-      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encuéntranos ahora en todo Chile!",
+      "title": "",
+      "desc": "Viaja tranquilo con las herramientas de seguridad.",
       "bgColor": "white",
-      "textColor": "gray-primary"
+      "textColor": "gray-primary",
+      "insideHeight": "h-20"
     },
     {
-      "title": "Precios bajos",
-      "desc": "Disfruta de viajes tranquilos y de todos nuestros beneficios sin pagar más.",
+      "title": "",
+      "desc": "Con DiDi puedes viajar pagando menos.",
       "bgColor": "white",
-      "textColor": "gray-primary"
+      "textColor": "gray-primary",
+      "insideHeight": "h-20"
+    },
+    {
+      "title": "",
+      "desc": "Soporte a pasajeros 24/7 por chat en vivo o teléfono.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "insideHeight": "h-20"
+    }
+  ],
+  "WhyDiDiColumns.title": "¿Por qué DiDi?",
+  "WhyDiDiColumns.bgColor": "bg-white",
+  "WhyDiDiColumns.textColor": "gray-primary",
+  "WhyDiDiColumns.columns": [
+    {
+      "title": "Logra tus metas de ganancias",
+      "desc": "Descubre nuestro asistente de ganancias.Recibe tus ganancias diarias con DiDi Pay.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "insideHeight": "h-20"
+    },
+    {
+      "title": "Conduce con confianza",
+      "desc": "La seguridad de los conductores es nuestra prioridad.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "insideHeight": "h-20"
     },
     {
       "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "desc": "Estamos contigo en cada paso. Atención a conductores 800 988 8888",
       "bgColor": "white",
-      "textColor": "gray-primary"
+      "textColor": "gray-primary",
+      "insideHeight": "h-20"
     }
   ],
+  "GananciasBanner.title": "Calcula tus ganancias",
+  "GananciasBanner.desc": "Tu ganancia como conductor depende de cada viaje y se calcula con el número de kilómetros y tiempo recorridos restando la tarifa de servicio de DiDi y los impuestos retenidos. Vamos a ver un ejemplo: \n *Solo recuerda que estas tarifas son ejemplos porque varían por ciudad.",
+  "GananciasConceptosFAQ.items": [
+    {
+      "title": "Tarifa mínima",
+      "content": "La tarifa mínima es el ingreso mínimo que recibirás por cada viaje completado correctamente."
+    },
+    {
+      "title": "Tarifa base",
+      "content": "La tarifa base es la cuota inicial fija de ganancias que recibirás por viaje independientemente de los kilómetros y tiempo recorridos. Esta tarifa varía por ciudad."
+    },
+    {
+      "title": "Ganancias por Kilómetros recorridos",
+      "content": "La tarifa por kilómetro considera el número de kilómetros recorridos durante el viaje desde que recoges al pasajero."
+    },
+    {
+      "title": "Ganancia por tiempo recorrido",
+      "content": "La tarifa por tiempo considera el número de minutos durante el viaje desde que recoges al pasajero."
+    },
+    {
+      "title": "Tip",
+      "content": "El concepto de “Tip” lo elige pagar el pasajero al terminar su viaje. Éste decide cuánto pagar de propina y en qué ocasiones hacerlo. DiDi no cobrará ningún porcentaje de tarifa de servicio por propinas."
+    }
+  ],
+  "GananciasImpuestosFAQ.items": [
+    {
+      "title": "1. IVA por ingresos percibidos en línea",
+      "content": "Se calcula sobre los ingresos semanales y podrás percibirlo diario en tu billetera. \n Para conductores con RFC actualizado el IVA es del 8% y para conductores sin RFC es del 16%"
+    },
+    {
+      "title": "2. ISR por ingresos percibidos en línea",
+      "content": "Se calcula sobre los ingresos semanales y podrás percibirlo diario en tu billetera. \n Para conductores con RFC válido ante el SAT y registrado en la app el ISR es del 2.1% y para conductores sin RFC es del 20%, por eso es importante tener tu información al día. \n TIP: Actualiza tu RFC dentro de tus detalles de cuenta en tu aplicación."
+    },
+    {
+      "title": "3. IVA sobre la tarifa del servicio por el uso de la plataforma",
+      "content": "Representa el 16% y se calcula sobre lo que recibe DiDi por viaje. \n Este porcentaje de tarifa de servicio es el mismo porcentaje para todos los conductores en la misma ciudad y puede variar por ciudad."
+    }
+  ],
+  "GananciasObligaciones.title": "¿Qué obligaciones fiscales tengo como conductor?",
+  "GananciasObligaciones.desc": "Todos los conductores están obligados a facturar los servicios de transporte que realicen. DiDi solicita tus Sellos Digitales para poder realizar esta facturación para el pasajero en tu nombre. ",
+  "GananciasObligaciones.btnMode": "primary",
+  "GananciasObligaciones.btnText": "Conoce más de los requisitos fiscales",
+  "GananciasObligaciones.btnLink": "/mx/conductor/requisitos-fiscales/",
   "PaxWhyDiDi.title": "Por qué viajar hoy con DiDi:",
   "PaxWhyDiDi.bullets": [
     "Viajes a pedido. Obtén un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
@@ -97,13 +210,13 @@
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Chile",
-  "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
-  "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
+  "PaxBanner.title": "Regístrate",
+  "PaxBanner.desc": "Regístrate como Socio Repartidor y forma parte de nuestra comunidad",
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "Maneja con DiDi Conductor",
-  "DrvHero.desc": "Para DiDi, los socios conductores y socios taxistas son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas que beneficien los ingresos de los socios conductores.",
+  "DrvHero.title": "Maneja con DiDi",
+  "DrvHero.desc": "Elige tus horarios y obtén ganancias garantizadas",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
   "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
@@ -114,6 +227,22 @@
   ],
   "DrvWhyDiDi.textColor": "gray-primary",
   "DrvWhyDiDi.btnMode": "primary",
+  "VideoSection.src": "https://www.youtube.com/embed/j8sqSHla0Gc",
+  "VideoSection.title": "Requisitos para manejar con DiDi",
+  "VideoSection.descText": "Conoce los requisitos básicos para registrarte como conductor y para registrar tus autos.",
+  "ClubDiDiCTA.title": "Club DiDi",
+  "ClubDiDiCTA.desc": "Tu entrada a descuentos, recompensas y servicios exclusivos. Club DiDi: un programa que te da acceso a descuentos y a facilidades ofrecidas por terceros para ayudarte en tu día a día.",
+  "ClubDiDiCTA.btnMode": "light",
+  "ClubDiDiCTA.btnText": "Conoce más",
+  "ClubDiDiCTA.btnLink": "/conductor/clubdidi",
+  "ClubDiDiCTA.textColor": "white",
+  "WomenDiDiCTA.title": "Mujeres en DiDi",
+  "WomenDiDiCTA.desc": "Conoce los programas de apoyo a conductoras:",
+  "WomenDiDiCTA.btnText": "Conoce más",
+  "WomenDiDiCTA.btnLink": "/conductor/mujeres-en-didi",
+  "WomenDiDiCTA.btnMode": "primary",
+  "WomenDiDiCTA.bullets": false,
+  "WomenDiDiCTA.reverse": true,
   "DrvVideoGrid.bgColor": "bg-blue-primary",
   "DrvVideoGrid.title": "Sigue estos pasos para empezar a manejar y generar ingresos",
   "DrvVideoGrid.textColor": "white",
@@ -179,12 +308,57 @@
   ],
   "TaxiWhyDiDi.textColor": "gray-primary",
   "TaxiWhyDiDi.btnMode": "primary",
-  "KnowMoreBanner.title": "¿Aún tienes dudas?",
-  "KnowMoreBanner.desc": "Conoce todo sobre DiDi.",
+  "GananciasHero.title": "Calcula tus ganancias",
+  "GananciasHero.desc": "Con DiDi ganas por kilómetro y por minuto recorridos conoce más aquí.",
+  "GananciasHero.btnText": "Regístrate ahora",
+  "GananciasHero.btnMode": "primary",
+  "GananciasHero.textColor": "white",
+  "MujeresDiDiHero.title": "Mujeres en DiDi",
+  "MujeresDiDiHero.desc": "En DiDi buscamos incrementar la inclusión de las mujeres en la economía digital para contribuir a la equidad de género y apoyar su independencia económica. Hasta ahora, sabemos que:",
+  "MujeresDiDiHero.textColor": "white",
+  "MujeresEnDiDiColumns.columns": [
+    {
+      "desc": "De las conductoras creen que DiDi las ha apoyado para lograr independencia económica."
+    },
+    {
+      "desc": "De las conductoras mencionaron que las ganancias que obtienen a través de DiDi son el principal ingreso de sus familias."
+    },
+    {
+      "desc": "De las conductoras considera que las apps de movilidad contribuyen a la paridad de género"
+    },
+    {
+      "desc": "Reportaron ser felices como conductoras de DiDi."
+    }
+  ],
+  "DiDiMujerFuncionCTA.title": "DiDi Mujer, la función",
+  "DiDiMujerFuncionCTA.desc": "En 2020 lanzamos DiDi Mujer disponible a nivel nacional. Esta función permite que las conductoras realicen viajes exclusivamente con pasajeras, si así lo deciden. En 2021 se realizaron más de 300 mil viajes con DiDi Mujer y fue reconocida como una Buena Práctica por las Naciones Unidas por contribuir a los Objetivos de Desarrollo Sustentable 5 y 10 por la Equidad de Género y Reducción de las Desigualdades respectivamente. \n Gracias a DiDi Mujer: \n - El registro de nuevas conductoras se incrementó en un 28%. \n - Las ganancias de las conductoras incrementaron en un 17% en comparación a 2020.",
+  "DiDiMujerProgramaCTA.title": "DiDi Mujer, el programa",
+  "DiDiMujerProgramaCTA.desc": "Seguimos trabajando en incrementar el número de mujeres en la plataforma y, después de un análisis exhaustivo con perspectiva de género, DiDi Mujer evoluciona a un programa integral con tres pilares exclusivamente diseñados para atender las necesidades que se detectaron. A continuación puedes conocerlos más: \n Ganancias: \n • Promociones de ganancias garantizadas que permiten alcanzar más de $25,000 mensuales. \n • Programas de recompensas especiales solo para mujeres de hasta 20% adicional durante ciertas semanas del año. \n • Herramientas integradas en la app como el Asistente de Ganancias y los Mapas de Tarifa Dinámica y Demanda para que puedan fijar y alcanzar sus metas financieras. \n Seguridad: \n • Función de DiDi Mujer para recibir viajes exclusivamente de pasajeras que, de no ser así, puede cancelar sin penalizaciones. \n • Línea exclusiva para mujeres en Soporte DiDi, marcando la opción número 7. \n Comunicaciones constantes dentro de la aplicación de la mano con organizaciones expertas como el CONAPRED para educar sobre temas como el acoso sexual y cómo reaccionar ante incidentes. \n *Incluyendo nuestras más de 20 funciones de seguridad disponibles en la app. \n Comunidad: \n • Programa de referidos, que otorga un monto extra de $1000 si la persona referida es mujer. \n • Disponibilidad permanente de una mujer en el proceso de registro para apoyar a las nuevas conductoras a resolver dudas y dar tips adicionales. \n • Rediseñamos los procesos de lenguaje, campañas, publicidad y comunicación en la compañía con perspectiva de género buscando que todas se sientan bienvenidas y ser más incluyentes. ",
+  "DiDiMujerPercentageColumns.columns": [
+    {
+      "desc": "De incremento en ganancias."
+    },
+    {
+      "desc": "De incremento en registros."
+    },
+    {
+      "desc": "Más conductoras conectadas."
+    }
+  ],
+  "DiDiMujerVideoSection.title": "Rompiendo estereotipos:",
+  "DiDiMujerVideoSection.src": "https://www.youtube.com/embed/VII0HrEFAs0",
+  "AlianzaMujeresCTA.title": "Alianza con el CONAPRED",
+  "AlianzaMujeresCTA.desc": "En DiDi trabajamos por tener ciudades igualitarias y libres de discriminación. \n Con esto en mente, y de la mano del Consejo Nacional para Prevenir la Discriminación (CONAPRED), hemos desarrollado los siguientes puntos que deberán guiar a la plataforma y a sus personas usuarias hacia un uso libre de prácticas discriminatorias. \n Si alguna autoridad federal, empresa, negocio o persona te niega a ti o alguien que conozcas algún derecho por discriminación puedes contactar al Conapred: \n Línea telefónica: 55 5262 1490 en la Ciudad de México y la Zona Metropolitana, y 800 543 0033 en el resto del país. \n Correo electrónico: quejas@conapred.org.mx \n Sitio web: www.conapred.org.mx",
+  "ApoyoMujeresCTA.title": "Programas de apoyo para mujeres",
+  "ApoyoMujeresCTA.desc": "Contamos con programas de incentivos especiales que se adaptan a las tendencias de conducción de mujeres y continuamente hacemos esfuerzos para invitarlas a la plataforma. ",
+  "ApoyoMujeresCTA.btnMode": "primary",
+  "ApoyoMujeresCTA.btnText": "Convertirme en Conductora",
+  "KnowMoreBanner.title": "¿Tienes preguntas?",
+  "KnowMoreBanner.desc": "Seguro te ayuda revisar las preguntas más frecuentes de nuestra comunidad",
   "KnowMoreBanner.bgColor": "bg-orange-primary",
   "KnowMoreBanner.textColor": "white",
-  "KnowMoreBanner.btnText": "Saber Más",
-  "KnowMoreBanner.btnLink": "/cl/centro-de-ayuda/",
+  "KnowMoreBanner.btnText": "Clic aquí",
+  "KnowMoreBanner.btnLink": "/mx/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
   "AboutHero.title": "¿Dudas sobre DiDi?",
   "AboutHero.desc": "Revisa nuestra sección de seguridad y preguntas frecuentes para un mejor entendimiento de la plataforma. Tanto si eres pasajero o conductor podrás encontrar respuestas.",
