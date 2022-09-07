@@ -25,7 +25,7 @@ const Footer = () => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const links = getFooterLinks(countryCode);
-  
+
   return (
     <footer>
       <div className="border-buffer h-32 border-x-0 border-b-2 border-t-0 border-solid border-white bg-gray-primary text-white ">
@@ -47,7 +47,7 @@ const Footer = () => {
 
             <div className="text-c h-auto w-3/4 lg:w-full lg:pr-52 lg:text-left">
               {countries.map((c: any, index: number) => {
-                if(i18n.language == 'eg') {
+                if (i18n.language == "eg") {
                   if (index === 0) {
                     return (
                       <a

@@ -44,7 +44,9 @@ export default DrvCity;
 
 export const query = graphql`
   query ($id: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["translation"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns
