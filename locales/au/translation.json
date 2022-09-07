@@ -426,6 +426,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Drivers Safety Features",
+  "SafetyGridDrv.desc": "The safety of our users is our top priority. While you are on the road it is important that you feel at ease while driving.",
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {

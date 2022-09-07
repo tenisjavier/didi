@@ -288,6 +288,7 @@
   "SafetyHero.btnMode": "light",
   "SafetyGridDuringTrip.bgColor": "bg-gray-light",
   "SafetyGridDuringTrip.title": "Riders Safety Features",
+  "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "gray-primary",
   "SafetyGridDuringTrip.columns": [
     {
@@ -341,6 +342,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Drivers Safety Features",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
