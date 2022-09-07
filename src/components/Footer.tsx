@@ -10,7 +10,7 @@ import { getFooterLinks } from "../config/footer-config";
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulCountry {
+      allContentfulCountry(sort: { fields: name }) {
         nodes {
           name
           arabicName
