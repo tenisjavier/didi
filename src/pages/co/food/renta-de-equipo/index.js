@@ -22,7 +22,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulLegal(name: { eq: "Aviso de Privacidad de DiDi Food - Tienda" }) {
+    contentfulLegal(name: { eq: "Renta de equipo DiDi Colombia" }) {
       content {
         raw
       }

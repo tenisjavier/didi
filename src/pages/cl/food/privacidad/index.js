@@ -22,7 +22,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulLegal(name: { eq: "TÉRMINOS Y CONDICIONES DE USO DE DiDi ENTREGA" }) {
+    contentfulLegal(name: { eq: "Privacidad DiDi Food Chile" }) {
       content {
         raw
       }
