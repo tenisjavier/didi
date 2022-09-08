@@ -59,6 +59,15 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
+  if (btnType === "bothFood") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnline" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
   return (
     <section
       style={{ direction: "rtl" }}

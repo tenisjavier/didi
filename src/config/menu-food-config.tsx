@@ -46,6 +46,12 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/mx/food/delivery/",
+      dropMenu: [
+        { 
+          text: "Preguntas Frecuentes",
+          url: '/mx/food/preguntas-frecuentes',
+        },
+      ]
     },
     {
       text: "Acerca",
