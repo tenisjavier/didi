@@ -212,6 +212,6 @@
   "PrivacyCTA.title": "Revisa nuestra Políticas de Privacidad",
   "PrivacyCTA.textColor": "gray-primary",
   "PrivacyCTA.btnMode": "dark",
-  "HelpCenterHero.title": "PREGUNTAS FRECUENTES",
-  "HelpCenterHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:"
+  "FaqFoodHero.title": "PREGUNTAS FRECUENTES",
+  "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:"
 }
