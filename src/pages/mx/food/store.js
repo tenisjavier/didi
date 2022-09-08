@@ -4,19 +4,17 @@ import Layout from "../../../components/Layout";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
 import FoodBusinessColumns from "../../../components/sections/FoodBusinessColumns";
 import FoodBusinessDownloads from "../../../components/sections/FoodBusinessDownloads";
-import Requirements from "../../../components/sections/Requirements";
 
 const FoodBusiness = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const products = data.allContentfulProduct.nodes;
   const foodHeroBgImage = images.filter((image) => {
-    return image.title === "cl.FoodBusinessHero.bgImage";
+    return image.title === "mx.FoodBusinessHero.bgImage";
   })[0];
   const foodBusinessColumnsImages = images.filter((image) => {
-    return image.title.indexOf("cl.FoodBusinessColumns.image") !== -1;
+    return image.title.indexOf("mx.FoodBusinessColumns.image") !== -1;
   });
   const foodBusinessDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("cl.FoodBusinessDownloads.image") !== -1;
+    return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
   });
 
   return (
@@ -28,7 +26,6 @@ const FoodBusiness = ({ data }) => {
       <FoodBusinessDownloads
         images={foodBusinessDownloadsImages}
       ></FoodBusinessDownloads>
-      <Requirements data={products}></Requirements>
     </Layout>
   );
 };
@@ -51,7 +48,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(cl.FoodBusinessHero.bgImage)|(cl.FoodBusinessColumns.image)|(cl.FoodBusinessDownloads.image)/"
+          regex: "/(mx.FoodBusinessHero.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)/"
         }
       }
       sort: { fields: title }

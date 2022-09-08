@@ -7,7 +7,7 @@ import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "cl.FoodHero.bgImage";
+    return image.title === "mx.FoodHero.bgImage";
   })[0];
   return (
     <Layout>

@@ -9,16 +9,16 @@ import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
 const Food = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const foodHeroBgImage = images.filter((image) => {
-    return image.title === "cl.FoodHero.bgImage";
+    return image.title === "mx.FoodHero.bgImage";
   })[0];
   const foodColumnsImages = images.filter((image) => {
-    return image.title.indexOf("cl.FoodColumns.image") !== -1;
+    return image.title.indexOf("mx.FoodColumns.image") !== -1;
   });
   const foodBusinessCTAImage = images.filter((image) => {
-    return image.title === "cl.FoodBusinessCTA.image";
+    return image.title === "mx.FoodBusinessCTA.image";
   })[0];
   const foodDeliveryCTAImage = images.filter((image) => {
-    return image.title === "cl.FoodDeliveryCTA.image";
+    return image.title === "mx.FoodDeliveryCTA.image";
   })[0];
   return (
     <Layout>
@@ -48,7 +48,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(cl.FoodHero.bgImage)|(cl.FoodColumns.image)|(cl.FoodBusinessCTA.image)|(cl.FoodDeliveryCTA.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(cl.FoodColumns.image)|(cl.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)/"
         }
       }
       sort: { fields: title }
