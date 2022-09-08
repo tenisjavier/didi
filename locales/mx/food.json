@@ -211,5 +211,7 @@
   "PrivacyHero.linkItem": "/cl/food/privacy/privacy/",
   "PrivacyCTA.title": "Revisa nuestra Políticas de Privacidad",
   "PrivacyCTA.textColor": "gray-primary",
-  "PrivacyCTA.btnMode": "dark"
+  "PrivacyCTA.btnMode": "dark",
+  "HelpCenterHero.title": "PREGUNTAS FRECUENTES",
+  "HelpCenterHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:"
 }

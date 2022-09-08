@@ -48,7 +48,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(cl.FoodColumns.image)|(cl.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodColumns.image)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)/"
         }
       }
       sort: { fields: title }

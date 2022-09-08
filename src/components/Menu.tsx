@@ -43,7 +43,11 @@ const Menu = () => {
             <>
               {menuLinksFood &&
                 menuLinksFood.map((menuLink, index) => (
-                  <NavItem key={index} link={menuLink}></NavItem>
+                  <NavItem key={index} link={menuLink}>
+                    {menuLink.dropMenu ? (
+                      <DropdownMenu key={index} links={menuLink.dropMenu} />
+                    ) : null}
+                  </NavItem>
                 ))}
             </>
           ) : (

@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import HelpCenterHero from "../../../components/sections/HelpCenterHero";
+import FaqFoodHero from "../../../components/sections/FaqFoodHero";
 import HelpCenterFAQDelivery from "../../../components/sections/HelpCenterFAQDelivery";
 
 const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
-    return image.title === "ec.HelpCenterHero.bgImage";
+    return image.title === "mx.FaqFoodHero.bgImage";
   })[0];
   const faqDelivery = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "Food Business"
@@ -15,7 +15,7 @@ const CentroDeAyuda = ({ data }) => {
 
   return (
     <Layout>
-      <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
+      <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
       <HelpCenterFAQDelivery data={faqDelivery[0]}></HelpCenterFAQDelivery>
 
     </Layout>
@@ -34,7 +34,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: ["ec.HelpCenterHero.bgImage"] } }
+      filter: { title: { in: ["mx.FaqFoodHero.bgImage"] } }
     ) {
       nodes {
         id
