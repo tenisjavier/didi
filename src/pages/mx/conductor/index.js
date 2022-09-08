@@ -2,44 +2,43 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import DrvHero from "../../../components/sections/DrvHero";
-import DrvWhyDiDi from "../../../components/sections/DrvWhyDiDi";
-import DrvVideoGrid from "../../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../../components/sections/DrvBanner";
-import DrvFeatures from "../../../components/sections/DrvFeatures";
-import HomeColumns from "../../../components/sections/PaxColumns";
+import PaxColumns from "../../../components/sections/PaxColumns";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import SilderSection from "../../../components/sections/SliderSection";
 import Requirements from "../../../components/sections/Requirements";
 import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
+import VideoSection from "../../../components/sections/VideoSection";
+import ClubDiDiCTA from "../../../components/sections/ClubDiDiCTA";
+import WomenDiDiCTA from "../../../components/sections/WomenDiDiCTA";
 
 const Conductor = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "cl.DrvHero.bgImage";
+    return image.title === "mx.DrvHero.bgImage";
   })[0];
-  const drvWhyDiDiImage = images.filter((image) => {
-    return image.title === "cl.DrvWhyDiDi.image";
+  const clubDiDiBgImage = images.filter((image) => {
+    return image.title === "mx.ClubDiDiCTA.bgImage";
   })[0];
-  const drvFeaturesImage = images.filter((image) => {
-    return image.title === "cl.DrvFeatures.image";
+  const aboutWomenDrvImage = images.filter((image) => {
+    return image.title === "mx.WomenDiDiCTA.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.contentfulCountry.city;
+  console.log(cities);
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
-      <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
-      <DrvVideoGrid></DrvVideoGrid>
-      <DrvBanner></DrvBanner>
-      <DrvFeatures image={drvFeaturesImage}></DrvFeatures>
+      <PaxColumns></PaxColumns>
       <SilderSection
         data={products}
         title="Hay un DiDi para ti"
       ></SilderSection>
+      <VideoSection></VideoSection>
       <Requirements data={products}></Requirements>
-      <KnowMoreBanner></KnowMoreBanner>
-      <HomeColumns></HomeColumns>
+      <ClubDiDiCTA bgImage={clubDiDiBgImage}></ClubDiDiCTA>
+      <WomenDiDiCTA image={aboutWomenDrvImage}></WomenDiDiCTA>
       <DrvCityList data={cities}></DrvCityList>
+      <KnowMoreBanner></KnowMoreBanner>
     </Layout>
   );
 };
@@ -61,9 +60,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "cl.DrvHero.bgImage"
-            "cl.DrvWhyDiDi.image"
-            "cl.DrvFeatures.image"
+            "mx.DrvHero.bgImage"
+            "mx.ClubDiDiCTA.bgImage"
+            "mx.WomenDiDiCTA.image"
           ]
         }
       }
@@ -77,7 +76,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
+        country: { elemMatch: { code: { eq: "mx" } } }
         category: { eq: "driver" }
       }
     ) {
@@ -96,7 +95,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
+    contentfulCountry(code: { eq: "mx" }) {
       city {
         name
         slug

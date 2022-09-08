@@ -7,6 +7,7 @@ const SafetyGridDrv = ({ images }) => {
   const { t } = useTranslation();
   const props = {
     title: t("SafetyGridDrv.title"),
+    desc: t("SafetyGridDrv.desc"),
     bgColor: t("SafetyGridDrv.bgColor"),
     textColor: t("SafetyGridDrv.textColor"),
     columns: t("SafetyGridDrv.columns", { returnObjects: true }),

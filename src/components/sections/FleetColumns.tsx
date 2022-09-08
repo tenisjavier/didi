@@ -20,7 +20,6 @@ interface HomeColumnsProps {
 const FleetColumns = ({ images }: HomeColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    title: t("FleetColumns.title"),
     bgColor: t("FleetColumns.bgColor"),
     textColor: t("FleetColumns.textColor"),
     columns: t("FleetColumns.columns", { returnObjects: true }),

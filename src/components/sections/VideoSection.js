@@ -19,6 +19,7 @@ const VideoSection = () => {
         allowFullScreen
       ></iframe>
     ),
+    descText: t("VideoSection.descText"),
     bgColor: t("VideoSection.bgColor"),
     textColor: t("VideoSection.textColor"),
     height: "h-128",

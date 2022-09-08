@@ -1,45 +1,35 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import DrvHero from "../../../components/sections/DrvHero";
-import DrvWhyDiDi from "../../../components/sections/DrvWhyDiDi";
-import DrvVideoGrid from "../../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../../components/sections/DrvBanner";
-import DrvFeatures from "../../../components/sections/DrvFeatures";
-import HomeColumns from "../../../components/sections/PaxColumns";
-import DrvCityList from "../../../components/sections/DrvCityList";
-import SilderSection from "../../../components/sections/SliderSection";
-import Requirements from "../../../components/sections/Requirements";
-import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
+import GananciasHero from "../../../components/sections/GananciasHero";
+import WhyDiDiColumns from "../../../components/sections/WhyDiDiColumns";
+import GananciasBanner from "../../../components/sections/GananciasBanner";
+import GananciasConceptosFAQ from "../../../components/sections/GananciasConceptosFAQ";
+import GananciasImpuestosFAQ from "../../../components/sections/GananciasImpuestosFAQ";
+import GananciasObligaciones from "../../../components/sections/GananciasObligaciones";
 
 const Ganancias = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const drvHeroBgImage = images.filter((image) => {
-    return image.title === "cl.DrvHero.bgImage";
+  const GananciasHeroBgImage = images.filter((image) => {
+    return image.title === "mx.GananciasHero.bgImage";
   })[0];
-  const drvWhyDiDiImage = images.filter((image) => {
-    return image.title === "cl.DrvWhyDiDi.image";
+
+  const GananciasBannerImage = images.filter((image) => {
+    return image.title === "mx.GananciasCTA.image";
   })[0];
-  const drvFeaturesImage = images.filter((image) => {
-    return image.title === "cl.DrvFeatures.image";
-  })[0];
-  const products = data.allContentfulProduct.nodes;
-  const cities = data.contentfulCountry.city;
+
+  const WhyDiDiColumnsImage = images.filter((image) => {
+    return image.title === "mx.WhyDiDiColumns.image";
+  });
+  
   return (
     <Layout>
-      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
-      <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
-      <DrvVideoGrid></DrvVideoGrid>
-      <DrvBanner></DrvBanner>
-      <DrvFeatures image={drvFeaturesImage}></DrvFeatures>
-      <SilderSection
-        data={products}
-        title="Hay un DiDi para ti"
-      ></SilderSection>
-      <Requirements data={products}></Requirements>
-      <KnowMoreBanner></KnowMoreBanner>
-      <HomeColumns></HomeColumns>
-      <DrvCityList data={cities}></DrvCityList>
+      <GananciasHero bgImage={GananciasHeroBgImage}></GananciasHero>
+      <WhyDiDiColumns images={WhyDiDiColumnsImage.reverse()}></WhyDiDiColumns>
+      <GananciasBanner image={GananciasBannerImage}></GananciasBanner>
+      <GananciasConceptosFAQ></GananciasConceptosFAQ>
+      <GananciasImpuestosFAQ></GananciasImpuestosFAQ>
+      <GananciasObligaciones></GananciasObligaciones>
     </Layout>
   );
 };
@@ -61,9 +51,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "cl.DrvHero.bgImage"
-            "cl.DrvWhyDiDi.image"
-            "cl.DrvFeatures.image"
+            "mx.GananciasHero.bgImage"
+            "mx.GananciasCTA.image"
+            "mx.WhyDiDiColumns.image"
           ]
         }
       }
@@ -77,7 +67,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
+        country: { elemMatch: { code: { eq: "mx" } } }
         category: { eq: "driver" }
       }
     ) {
@@ -94,12 +84,6 @@ export const query = graphql`
         country {
           code
         }
-      }
-    }
-    contentfulCountry(code: { eq: "cl" }) {
-      city {
-        name
-        slug
       }
     }
   }

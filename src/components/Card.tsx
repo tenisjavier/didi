@@ -13,6 +13,7 @@ export interface CardProps extends BtnProps {
   textColor: string;
   image: React.ReactNode;
   height?: string;
+  insideHeight?: string;
   width?: string;
   index?: number;
 }
@@ -25,6 +26,7 @@ const Card = (props: CardProps) => {
     textColor,
     image,
     height,
+    insideHeight,
     width,
     btnLink,
     btnMode,
@@ -42,7 +44,7 @@ const Card = (props: CardProps) => {
       <div
         className={`flex ${height} flex-col items-center justify-between px-6 py-4 text-center`}
       >
-        <div className="mb-4 h-64 overflow-hidden">
+        <div className={`mb-4 ${insideHeight} overflow-hidden`}>
           <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
           <p className={"text-lg"}></p>
           <Truncate lines={6} ellipsis={<span>...</span>}>

@@ -28,6 +28,7 @@ const AboutWomenDrvCTA = ({ image }: AboutWomenDrvCTAProps) => {
     ),
     btnMode: t("AboutWomenDrvCTA.btnMode"),
     btnType: "drv",
+    reverse: t("AboutWomenDrvCTA.reverse")
   };
   return <CTASection {...props}></CTASection>;
 };

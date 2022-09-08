@@ -100,34 +100,34 @@ const menuLinks: AllMenuInterface = {
   ],
   mx: [
     {
-      text: "DiDi Pasajero",
-      url: "/mx/pasajero/",
-    },
-    {
       text: "DiDi Conductor",
-      url: "/mx/driver/",
+      url: "/mx/conductor/",
       dropMenu: [
         {
-          text: "Socio Conductor",
-          url: "/mx/driver/",
+          text: "Gananciar en DiDi",
+          url: "/mx/conductor/calcula-tus-ganancias",
+        },
+        {
+          text: "Club DiDi",
+          url: "/mx/conductor/clubdidi",
         },
         {
           text: "Regístrate Online",
-          url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
-        },
-        {
-          text: "Club DiDiMás+",
-          url: "/mx/didimas/",
-        },
-        {
-          text: "Ciudades Operativas",
-          url: "/mx/ciudades/",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
         },
       ],
     },
     {
-      text: "DiDi Taxi",
-      url: "/mx/taxi/",
+      text: "DiDi Pasajero",
+      url: "/mx/pasajero/",
+    },
+    {
+      text: "DiDi Fleet",
+      url: "/mx/didi-fleet/",
+    },
+    {
+      text: "DiDi Préstamos",
+      url: "/mx/didi-prestamos/",
     },
     {
       text: "DiDi Food",
@@ -311,7 +311,7 @@ const menuLinks: AllMenuInterface = {
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
         {
-          text: "Club DiDiMás+",
+          text: "DiDiMás+",
           url: "/co/didimas/",
         },
         {

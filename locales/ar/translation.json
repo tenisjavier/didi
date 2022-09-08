@@ -236,6 +236,7 @@
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
   "SafetyGridDuringTrip.title": "Durante del Viaje",
+  "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
@@ -281,6 +282,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Además, si sos un Socio Conductor/Taxista",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
