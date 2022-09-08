@@ -114,7 +114,7 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
-        }
+        },
       ],
     },
     {
@@ -311,7 +311,7 @@ const menuLinks: AllMenuInterface = {
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
         {
-          text: "Club DiDiMás+",
+          text: "DiDiMás+",
           url: "/co/didimas/",
         },
         {
