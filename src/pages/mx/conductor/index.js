@@ -24,7 +24,7 @@ const Conductor = ({ data }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.contentfulCountry.city;
-  console.log(cities);
+
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>

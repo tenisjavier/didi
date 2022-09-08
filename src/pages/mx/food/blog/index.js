@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["cl.FoodHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["mx.FoodHero.bgImage"] } }) {
       nodes {
         id
         title
