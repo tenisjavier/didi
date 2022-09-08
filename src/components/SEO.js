@@ -33,6 +33,7 @@ const SEO = () => {
           name
           code
           hostname
+          languageCode
         }
       }
     }
@@ -43,8 +44,7 @@ const SEO = () => {
   const origin = "https://web.didiglobal.com";
   const { pathname } = useLocation();
   const country = countries.filter((c) => c.code === countryCode).pop();
-  let countryName =
-    country.name.charAt(0).toUpperCase() + country.name.slice(1);
+  let { name: countryName, languageCode: lang } = country;
 
   const cleanPath = pathname.substring(3, pathname.length);
   const meta = getMetaByPath(countryCode, cleanPath);
@@ -64,7 +64,7 @@ const SEO = () => {
   }
 
   return (
-    <Helmet htmlAttributes={{ lang: "es" }} title={`${title}`}>
+    <Helmet htmlAttributes={{ lang: lang }} title={title}>
       <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={origin + pathname} />
@@ -77,7 +77,7 @@ const SEO = () => {
             key={index}
             rel="alternate"
             href={origin + "/" + c.code + cleanPath}
-            hreflang={`es-${c.code}`}
+            hreflang={`${c.languageCode}-${c.code}`}
           />
         );
       })}
