@@ -8,7 +8,7 @@ import SmartBanner from "./SmartBanner";
 import "../styles/global.css";
 
 // @desc: layout with global header, menu, smartbanner and footer
-const Layout = ({ children }) => {
+const Layout = ({ sb = true, children }) => {
   const { pathname } = useLocation();
   let smartBannerType = "drv";
   if (pathname.includes("food")) smartBannerType = "foodEater";
@@ -20,11 +20,12 @@ const Layout = ({ children }) => {
       <Seo title="jeivi"></Seo>
       <Header></Header>
       {children}
-      <SmartBanner type={smartBannerType}></SmartBanner>
-      {pathname.includes('food') ? 
-      <FooterFood></FooterFood> : 
-      <Footer></Footer>
-    }
+      {sb ? <SmartBanner type={smartBannerType}></SmartBanner> : null}
+      {pathname.includes("food") ? (
+        <FooterFood></FooterFood>
+      ) : (
+        <Footer></Footer>
+      )}
     </>
   );
 };

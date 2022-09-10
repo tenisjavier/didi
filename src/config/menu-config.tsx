@@ -16,6 +16,22 @@ interface AllMenuInterface {
 }
 
 const menuLinks: AllMenuInterface = {
+  en: [
+    {
+      text: "About DiDi",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Contact Us",
+          url: "/contact/",
+        },
+        {
+          text: "Suppliers",
+          url: "/suppliers/",
+        },
+      ],
+    },
+  ],
   cl: [
     {
       text: "DiDi Pasajero",

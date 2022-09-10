@@ -43,14 +43,21 @@ const SEO = () => {
   const countryCode = i18n.language;
   const origin = "https://web.didiglobal.com";
   const { pathname } = useLocation();
-  const country = countries.filter((c) => c.code === countryCode).pop();
-  let { name: countryName, languageCode: lang } = country;
+  let country = "";
+  let countryName = "";
+  let title = "";
+  let lang = "en";
+  let cleanPath = pathname;
+  if (countryCode !== "en") {
+    country = countries.filter((c) => c.code === countryCode).pop();
+    countryName = country.name;
+    lang = country.languageName;
 
-  const cleanPath = pathname.substring(3, pathname.length);
+    cleanPath = pathname.substring(3, pathname.length);
+  }
+
   const meta = getMetaByPath(countryCode, cleanPath);
-
-  let title = meta.title + " | DiDi " + countryName;
-
+  title = meta.title + " | DiDi " + countryName;
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";

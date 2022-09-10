@@ -36,7 +36,10 @@ const Navlogo = () => {
       />
     </Link>
   ) : (
-    <Link className="" to={`/${countryCode}/`}>
+    <Link
+      className=""
+      to={`${countryCode !== "en" ? `/${countryCode}/` : "/"}`}
+    >
       <StaticImage
         src={`../images/didi-logo.png`}
         alt="DiDi"
