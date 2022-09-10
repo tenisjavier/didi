@@ -14,7 +14,24 @@ import { getMenuLinksFood } from "../config/menu-food-config";
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const { i18n } = useTranslation();
+  const countries = [
+    "cl",
+    "ar",
+    "pe",
+    "ec",
+    "co",
+    "do",
+    "cr",
+    "pa",
+    "mx",
+    "nz",
+    "au",
+    "eg",
+    "ru",
+    "en",
+  ];
   const countryCode = i18n.language;
+  console.log("c", countryCode);
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const { pathname } = useLocation();
