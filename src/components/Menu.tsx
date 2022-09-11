@@ -31,7 +31,6 @@ const Menu = () => {
     "en",
   ];
   const countryCode = i18n.language;
-  console.log("c", countryCode);
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const { pathname } = useLocation();

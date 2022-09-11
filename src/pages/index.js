@@ -102,10 +102,10 @@ const Index = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      <CTASection {...CTAProps}></CTASection>
-      <CTASection {...AboutUsProps}></CTASection>
-      <CTASection {...MissionProps}></CTASection>
-      <CTASection {...AboutDiDiProps}></CTASection>
+      <CTASection {...CTAProps} key={1}></CTASection>
+      <CTASection {...AboutUsProps} key={2}></CTASection>
+      <CTASection {...MissionProps} key={3}></CTASection>
+      <CTASection {...AboutDiDiProps} key={4}></CTASection>
     </Layout>
   );
 };
@@ -113,7 +113,16 @@ const Index = ({ data }) => {
 export default Index;
 
 export const query = graphql`
-  query {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     allContentfulCountry(sort: { fields: englishName }) {
       nodes {
         englishName
