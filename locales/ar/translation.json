@@ -52,7 +52,7 @@
     },
     {
       "title": "Centro de Ayuda",
-      "desc": "Podés leer las principales dudas se pasajeros. Si sos conductor llamá a nuestro servicio para conductores al +54 (11) 3987-6342",
+      "desc": "Para tus consultas y solicitudes te invitamos a usar nuestro Chat en Vivo 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ar/centro-de-ayuda/",
@@ -80,8 +80,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "title": "Soporte 24/7 para Emergencias",
+      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atención de emergencias. Para otras consultas te invitamos a usar nuestro Chat 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "bgColor": "white",
       "textColor": "gray-primary"
     }
@@ -339,7 +339,7 @@
     },
     {
       "title": "Pasajero",
-      "desc": "Si sos usuario, entrá a nuestra seccion de Centro de Ayuda para responder tus dudas",
+      "desc": "Para tus consultas y solicitudes te invitamos a usar nuestro Chat en Vivo 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
