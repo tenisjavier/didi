@@ -319,7 +319,7 @@ const menuLinks: AllMenuInterface = {
       url: "/co/driver/",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "Arrendador",
           url: "/co/driver/",
         },
         {
@@ -331,7 +331,7 @@ const menuLinks: AllMenuInterface = {
           url: "/co/didimas/",
         },
         {
-          text: "Ciudades Activas",
+          text: "Ciudades Disponibles",
           url: "/co/ciudades/",
         },
       ],
