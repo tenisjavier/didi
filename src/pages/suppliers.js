@@ -14,7 +14,7 @@ const Index = ({ data }) => {
 
   const CTAProps = {
     hero: true,
-    title: "Supplier Partners.",
+    title: "Supplier Partners",
     textColor: "white",
     bgColor: "bg-gray-primary",
     bgImage: (
