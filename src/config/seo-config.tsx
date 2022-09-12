@@ -426,19 +426,19 @@ const seoMeta: AllSEOMetaInterface = {
   },
   co: {
     "/": {
-      title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en Perú, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. Si eres Socio Conductor 2 3304 0932 Si eres Pasajero 2 3304 0931",
+      title: "Regístrate en  Conductor DiDi",
+      desc: "DiDi Colombia: Regístrate como arrendador / socio taxista en las categorías express, taxi y fleet ganando más y manejando menos. Genera ingresos extra con DiDi Conductor",
     },
     "/pasajero/": {
-      title: "DiDi Pasajero - Bája la App y Viaja Seguro",
-      desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
+      title: "DiDi Pasajero - Muévete por tu Ciudad",
+      desc: "Pasajero. DiDi en Colombia, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
     },
     "/driver/": {
-      title: "DiDi Conductor - Maneja y Genera Dinero",
-      desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+      title: "DiDi Conductor - Maneja y Genera Ingresos Extra",
+      desc: "DiDi Conductor en Colombia. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
     "/didimas/": {
-      title: "Club de Beneficios DiDiMás+ para Conductores",
+      title: "Promociones DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
     "/taxi/": {
@@ -462,7 +462,7 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
     "/direcciones/": {
-      title: "Cómo llegar a distintos puntos de Perú",
+      title: "Cómo llegar a distintos puntos de Colombia",
       desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
     },
     "/guias/": {

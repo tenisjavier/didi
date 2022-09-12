@@ -85,7 +85,7 @@ const btnLinks: AllBtnInterface = {
   do: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate como Conductor",
+    drvText: "Regístrate como Socio Conductor",
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food App",

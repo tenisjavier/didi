@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
 import FleetColumns from "../../components/sections/FleetColumns";
-import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
+// import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
 import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
 import DownloadFleetCTA from "../../components/sections/DownloadFleetCTA";
 
@@ -26,7 +26,7 @@ const Fleet = ({ data }) => {
       <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
       <DownloadFleetCTA image={fleetDownloadImage}></DownloadFleetCTA>
       <FleetStepsColumns images={FleetStepsColumnsImages}></FleetStepsColumns>
-      <AboutDidiFleetVideo></AboutDidiFleetVideo>
+      {/* <AboutDidiFleetVideo></AboutDidiFleetVideo> */}
       <FleetColumns images={FleetColumnsImages.reverse()}></FleetColumns>
     </Layout>
   );
