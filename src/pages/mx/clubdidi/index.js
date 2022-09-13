@@ -10,19 +10,16 @@ const DiDiMas = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const partners = data.allContentfulPartner.nodes;
   const didiMasHeroBgImage = images.filter((image) => {
-    return image.title === "co.DiDiMasHero.bgImage";
-  })[0];
-  const didiMasHeroImage = images.filter((image) => {
-    return image.title === "co.DiDiMasHero.image";
+    return image.title === "mx.ClubDiDiHero.bgImage";
   })[0];
   const partnerCTAImage = images.filter((image) => {
-    return image.title === "co.PartnerCTA.image";
+    return image.title === "mx.PartnerCTA.image";
   })[0];
+  console.log(partnerCTAImage);
   return (
     <Layout>
       <PartnersHero
         bgImage={didiMasHeroBgImage}
-        image={didiMasHeroImage}
       ></PartnersHero>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
@@ -43,7 +40,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(co.DiDiMasHero)|(co.PartnerCTA)/" } }
+      filter: { title: { regex: "/(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)/" } }
       sort: { fields: title }
     ) {
       nodes {
@@ -53,7 +50,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulPartner(filter: { country: { code: { eq: "co" } } }) {
+    allContentfulPartner(filter: { country: { code: { eq: "mx" } } }) {
       nodes {
         name
         desc

@@ -13,6 +13,7 @@ const HelpCenterFAQPax = ({ data }) => {
   });
   const props = {
     title: t("HelpCenterFAQPax.title"),
+    desc: t("HelpCenterFAQPax.desc"),
     bgColor: t("HelpCenterFAQPax.bgColor"),
     textColor: t("HelpCenterFAQPax.textColor"),
     textAccordionColor: "orange-primary",

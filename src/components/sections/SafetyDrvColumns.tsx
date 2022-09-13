@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
@@ -9,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface SafetyPaxColumnsProps {
+interface SafetyDrvColumnsProps {
   images: {
     title: string;
     description: string;
@@ -21,13 +22,13 @@ interface SafetyPaxColumnsProps {
   columns?: any[];
 }
 
-const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColumnsProps) => {
+const SafetyDrvColumns = ({ images, icons, title, desc, columns }: SafetyDrvColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    bgColor: t("SafetyPaxColumns.bgColor"),
-    textColor: t("SafetyPaxColumns.textColor"),
-    columns: columns || t("SafetyPaxColumns.columns", { returnObjects: true }),
-    title: title || t("SafetyPaxColumns.title"),
+    bgColor: t("SafetyDrvColumns.bgColor"),
+    textColor: t("SafetyDrvColumns.textColor"),
+    columns: columns || t("SafetyDrvColumns.columns", { returnObjects: true }),
+    title: title || t("SafetyDrvColumns.title"),
     desc: desc,
   };
   if (images) {
@@ -56,5 +57,5 @@ const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColu
 };
 
 
-export default SafetyPaxColumns;
+export default SafetyDrvColumns;
 

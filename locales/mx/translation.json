@@ -11,6 +11,24 @@
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
+  "SafetyDrvCTA.title": "Seguridad para conductores",
+  "SafetyDrvCTA.desc": "Conoce más sobre las funciones de seguridad para conductores en DiDi",
+  "SafetyDrvCTA.btnLink": "/mx/seguridad/conductores",
+  "SafetyDrvCTA.btnMode": "primary",
+  "SafetyDrvCTA.btnText": "Conoce más",
+  "SafetyPaxCTA.title": "Seguridad para pasajeros",
+  "SafetyPaxCTA.desc": "Conoce más sobre las funciones de seguridad para pasajeros en DiDi",
+  "SafetyPaxCTA.btnLink": "/mx/seguridad/pasajeros",
+  "SafetyPaxCTA.btnMode": "primary",
+  "SafetyPaxCTA.btnText": "Conoce más",
+  "SafetyDrvImgHero.title": "Conduce con tranquilidad",
+  "SafetyDrvImgHero.desc": "En DiDi no queremos decirte que ”tu seguridad es nuestra prioridad”. En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
+  "SafetyDrvImgHero.textColor": "white",
+  "SafetyDrvImgHero.bgColor": "bg-blue-primary",
+  "SafetyPaxImgHero.title": "Viaja con tranquilidad",
+  "SafetyPaxImgHero.desc": "En DiDi no queremos decirte que ”tu seguridad es nuestra prioridad”. En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
+  "SafetyPaxImgHero.textColor": "white",
+  "SafetyPaxImgHero.bgColor": "bg-blue-primary",
   "DrvCTA.title": "Maneja con DiDi",
   "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bullets": [
@@ -519,9 +537,11 @@
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
   "HelpCenterFAQDrv.title": "Preguntas Socios Conductores",
+  "HelpCenterFAQDrv.desc": "Chat en vivo con soporte 24/7 disponible en la sección inferior del menú de ayuda de la app DiDi Conductor. \n Llámanos: \n 800 725 8888",
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
+  "HelpCenterFAQPax.desc": "Chat en vivo con soporte 24/7 disponible en la sección inferior del menú de ayuda de la app DiDi Pasajero. \n Llámanos: \n 800 988 8888",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "ArticlesHero.title": "DiDi Artículos",
@@ -556,7 +576,7 @@
   "PartnersGrid.bgColor": "bg-white",
   "PartnersGrid.title": "Beneficios que siempre suman",
   "PartnersGrid.textColor": "gray-primary",
-  "PartnersGrid.linkItem": "/cl/didimas/{{partnerName}}/",
+  "PartnersGrid.linkItem": "/mx/didimas/{{partnerName}}/",
   "PartnersCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
   "PartnersCTA.desc": "¡Y eso no es todo! Prontamente tendremos más beneficios para ti. Te mantendremos informado de todas las novedades de DiDiMás+.",
   "PartnersCTA.textColor": "white",
@@ -632,5 +652,104 @@
   "FleetHero.title": "Renta tus autos y genera ganancias",
   "FleetHero.desc": "",
   "FleetHero.btnMode": "light",
-  "FleetHero.textColor": "white"
+  "FleetHero.textColor": "white",
+  "PrestamosHero.title": "Obtener un préstamo personal es rápido, fácil y seguro.",
+  "PrestamosHero.desc": "Solicita un préstamo de DiDi Préstamos",
+  "PrestamosHero.btnMode": "primary",
+  "PrestamosHero.btnText": "Solicitar ahora",
+  "PrestamosHero.btnLink": "javascript:;",
+  "PrestamosColumns.title": "¿Por qué elegir DiDi Préstamos?",
+  "PrestamosColumns.desc": "DiDi, líder mundial en innovación, se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
+  "PrestamosColumns.columns": [
+    {
+      "title": "Tasas accesibles",
+      "desc": "desde 5% mensual"
+    },
+    {
+      "title": "Rápido y simple",
+      "desc": "El préstamo se refleja en minutos"
+    },
+    {
+      "title": "Fácil de usar",
+      "desc": "Requisitos sencillos"
+    },
+    {
+      "title": "Flexible",
+      "desc": "Límite: MXN$300–30,000 \n Periodos: 15-91 días"
+    },
+    {
+      "title": "Todo en un lugar",
+      "desc": "Completa tu solicitud en DiDi"
+    }
+  ],
+  "PrestamosTasaInteres.title": "Tasa de interés competitiva",
+  "PrestamosTasaInteres.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria es de solo 5%. (*Tasa ordinaria mensual estimada).",
+  "PrestamosTasaInteres.btnMode": "dark",
+  "PrestamosTasaInteres.btnText": "¿Cómo solicitar tu préstamo?",
+  "PrestamosTasaInteres.btnLink": "javascript:;",
+  "PrestamosAprobacion.title": "Aprobación instantánea*",
+  "PrestamosAprobacion.desc": "Te enviaremos una notificación por mensaje de texto en caso de que se apruebe tu solicitud y recibirás el dinero en tu cuenta en menos de 2 minutos. * Aplican términos y condiciones.",
+  "PrestamosAprobacion.btnMode": "dark",
+  "PrestamosAprobacion.btnText": "¿Cómo solicitar tu préstamo?",
+  "PrestamosAprobacion.btnLink": "javascript:;",
+  "PrestamosGuideSlider.title": "¿Cómo solicito un préstamo en DiDi?",
+  "PrestamosGuideSlider.dataTitles": [
+    {
+      "title": "01. DiDi Pasajero \n Abre la app de DiDi y haz clic en DiDi Préstamos."
+    },
+    {
+      "title": "01. DiDi Conductor \n Abre la app de DiDi y haz clic en DiDi Préstamos."
+    },
+    {
+      "title": "02. \n Cuéntanos sobre ti."
+    },
+    {
+      "title": "03. \n ¡Solicita un préstamo hoy!"
+    }
+  ],
+  "PrestamosReviewSlider.title": "¿Qué dicen los usuarios sobre nosotros?",
+  "PrestamosReviewSlider.desc": "Muchos usuarios ya pidieron un préstamo en DiDi.",
+  "PrestamosReviewSlider.dataTitles": [
+    {
+      "name": "Leire",
+      "job": "Enfermera",
+      "date": "13/8/2021",
+      "title": "Excelente servicio",
+      "comment": "¡Excelente servicio! Me ayudó mucho. Usaré DiDi Préstamos en el futuro. ",
+      "city": "Ciudad de México"
+    },
+    {
+      "name": "Lucio",
+      "job": "Mecánico de autos",
+      "date": "9/10/2021",
+      "title": "Fácil de usar",
+      "comment": "Excelente opción para una emergencia. Obtuve mi préstamo en cuanto se aprobó.",
+      "city": "Guadalajara"
+    },
+    {
+      "name": "Erika",
+      "job": "Maestra",
+      "date": "9/12/2021",
+      "title": "Rápido aumento de límite",
+      "comment": "¡Mi límite de préstamo aumentó después de que pagué mi primer préstamo! ¡Qué linda sorpresa!",
+      "city": "Monterrey"
+    },
+    {
+      "name": "Juan",
+      "job": "Camarero",
+      "date": "29/1/2022",
+      "title": "Tasa aceptable",
+      "comment": "Es mi primer crédito que solicito en la aplicacion y el interés es muy aceptable. Super...",
+      "city": "Puebla"
+    },
+    {
+      "name": "Laura",
+      "job": "Taxista",
+      "date": "28/2/2022",
+      "title": "Trámites fáciles",
+      "comment": "Rapida aplicación sin tantos trámites y rápido aumento de limite.¡Excelente servicio!",
+      "city": "Mérida"
+    }
+  ]
+  
 }
