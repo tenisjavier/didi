@@ -14,6 +14,7 @@ const HelpCenterFAQDrv = ({ data }) => {
 
   const props = {
     title: t("HelpCenterFAQDrv.title"),
+    desc: t("HelpCenterFAQDrv.desc"),
     bgColor: t("HelpCenterFAQDrv.bgColor"),
     textColor: t("HelpCenterFAQDrv.textColor"),
     textAccordionColor: "orange-primary",

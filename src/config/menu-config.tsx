@@ -127,7 +127,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Préstamos",
-      url: "/mx/didi-prestamos/",
+      url: "https://prestamos.didiglobal.com",
     },
     {
       text: "DiDi Food",
