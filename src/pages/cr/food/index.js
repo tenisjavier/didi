@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import FoodHero from "../../../components/sections/FoodHero";
+import FoodHeroDualLink from "../../../components/sections/FoodHeroDualLink";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
@@ -22,7 +22,7 @@ const Food = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <FoodHero bgImage={foodHeroBgImage}></FoodHero>
+      <FoodHeroDualLink bgImage={foodHeroBgImage}></FoodHeroDualLink>
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>

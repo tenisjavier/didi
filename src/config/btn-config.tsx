@@ -113,6 +113,9 @@ const btnLinks: AllBtnInterface = {
     foodBusinessText: "Registrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pedí Comida Ya → Descargá la App",
+    foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
+    foodEaterOnlineLink:
+      "https://www.didi-food.com/es-CR/food/address/",
   },
   pa: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/padriverhero",
@@ -128,7 +131,7 @@ const btnLinks: AllBtnInterface = {
     foodEaterText: "Pide Comida Ya → Descarga la App",
     foodEaterLink:
       "https://www.didi-food.com/es-MX/food/feed/?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
-    foodEaterOnlineText: "Pide Comida desde tu compu, sin instalar la App → ",
+    foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
     foodEaterOnlineLink:
       "https://www.didi-food.com/es-MX/food/feed/?utm_source=%28direct%29&utm_medium=%28none%29&utm_campaign=none",
     foodDeliveryLink:
