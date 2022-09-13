@@ -76,17 +76,16 @@ const SEO = () => {
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={origin + pathname} />
       {countries.map((c, index) => {
-        const placeRegex =
-          /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+        const placeRegex = /(\/[A-Za-z]{2}\/$)/;
 
-        return placeRegex.test(cleanPath) ? null : (
+        return placeRegex.test(pathname) ? (
           <link
             key={index}
             rel="alternate"
-            href={origin + "/" + c.code + cleanPath}
+            href={origin + "/" + c.code + "/"}
             hreflang={`${c.languageCode}-${c.code}`}
           />
-        );
+        ) : null;
       })}
 
       {

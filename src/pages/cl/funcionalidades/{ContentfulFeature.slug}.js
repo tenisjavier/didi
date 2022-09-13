@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import FeatureHero from "../../../components/sections/FeatureHero";
 import FeatureCTAComponent from "../../../components/sections/FeatureCTAComponent";
-import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
+import HelpCenterFAQ from "../../../components/sections/HelpCenterFAQ";
 import HomeColumns from "../../../components/sections/HomeColumns";
 
 const Feature = ({ data }) => {
@@ -31,7 +31,7 @@ const Feature = ({ data }) => {
           );
         })}
       {data.contentfulFeature.faq && (
-        <HelpCenterFAQPax data={data.contentfulFeature}></HelpCenterFAQPax>
+        <HelpCenterFAQ data={data.contentfulFeature}></HelpCenterFAQ>
       )}
       <HomeColumns></HomeColumns>
     </Layout>
