@@ -416,39 +416,24 @@
   "SafetyGridBeforeTrip.textColor": "gray-primary",
   "SafetyGridBeforeTrip.columns": [
     {
-      "title": "Verificación de Socios Conductores",
-      "desc": "Para que una persona pueda registrarse como socio conductor o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
-      "bgColor": "bg-white"
+      "title": "1. Verificación facial del pasajero",
+      "desc": "Si el primer viaje del pasajero es en un horario nocturno, además de la documentación oficial, se deberá realizar una validación facial para poder solicitar el viaje."
     },
     {
-      "title": "Reconocimiento Facial de Socios Conductores",
-      "desc": "Esta función verifica de manera aleatoria que el socio conductor que se conecta a la app sea el mismo registrado en el sistema a través de una selfie.",
-      "bgColor": "bg-white"
+      "title": "2. Anonimización del Teléfono",
+      "desc": "Encriptamos tu número de teléfono para que el pasajero no tenga tus datos reales. Solo podrán contactarse por temas de servicio a través de la app."
     },
     {
-      "title": "Selfie para usuarios",
-      "desc": "Nuestra app solicita una selfie de seguridad al usuario de manera aleatoria antes de solicitar un viaje. Esta no se comparte con ningún socio conductor.",
-      "bgColor": "bg-white"
+      "title": "3. Contactos de Confianza",
+      "desc": "Puedes elegir hasta 5 personas para compartirles tu viaje en tiempo real desde la app."
     },
     {
-      "title": "RUT para usuarios (ID)",
-      "desc": "La app solicita el número de RUT al usuario de manera aleatoria antes de solicitar un viaje. Este no se comparte con ningún socio conductor.",
-      "bgColor": "bg-white"
+      "title": "4. Visibilidad del destino",
+      "desc": "DiDi es la única app que te muestra el destino del pasajero antes de aceptar el viaje."
     },
     {
-      "title": "Información del viaje",
-      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del socio conductor, número de viajes, calificación y los datos del vehículo.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Privacidad de números telefónicos",
-      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre usuarios y socios conductores usando la aplicación NO mostrarán tu número real.",
-      "bgColor": "bg-white"
-    },
-    {
-      "title": "Contactos de confianza",
-      "desc": "Puedes elegir hasta cinco personas de tus contactos para compartirles tus viajes en tiempo real.",
-      "bgColor": "bg-white"
+      "title": "5. DiDi Invitado",
+      "desc": "Se trata de la nueva función para que los pasajeros puedan indicar en la app si están pidiendo el viaje para alguien más. Así, tú sabrás exactamente a quién recoges."
     }
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
@@ -456,29 +441,48 @@
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
-      "title": "Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de servicios de emergencia en la app, el cual te conecta con el 133 y nuestro Centro de Emergencias DiDi 24/7.",
-      "bgColor": "bg-orange-primary"
+      "title": "6. Zonas de Riesgo",
+      "desc": "Identificamos las zonas de riesgo para protegerte durante el viaje, por lo que no se podrán solicitar viajes desde o hacia estas zonas. Actualmente contamos con cerca de 300 zonas restringidas y se van actualizando de manera constante. "
     },
     {
-      "title": "Compartir Viaje",
-      "desc": "En DiDi puedes compartir tu ubicación en tiempo real con cualquier persona que tú elijas.",
-      "bgColor": "bg-orange-primary"
+      "title": "7. Monitoreo de Viaje",
+      "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911. Además, DiDi rastrea tu ubicación exacta."
     },
     {
-      "title": "Monitoreo de viaje en tiempo real",
-      "desc": "Rastreamos por GPS todos los viajes para que, en caso de un incidente, podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 133 y rastrear tu ubicación exacta.",
-      "bgColor": "bg-orange-primary"
+      "title": "8. Compartir Viaje",
+      "desc": "Comparte los datos y ubicación del viaje en tiempo real, desde la app."
     },
     {
-      "title": "Patrullas de asistencia",
-      "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Ayuda DiDi en caso de alguna emergencia.",
-      "bgColor": "bg-orange-primary"
+      "title": "9. Grabación de Audio Manual o Automática",
+      "desc": "En cada viaje tienes la opción de grabar el audio de tu viaje, o también puedes activar la grabación automática para que todos tus viajes se graben sin excepción. Tranquilo, escuchamos tu audio solo si reportas un incidente de seguridad. Puedes reportar usando el Botón de Emergencia."
     },
     {
-      "title": "Viajes Asegurados",
-      "desc": "Todos los viajes realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
-      "bgColor": "bg-orange-primary"
+      "title": "10. Botón de Emergencia",
+      "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911 y DiDi rastreará tu ubicación exacta."
+    },
+    {
+      "title": "11. Localización GPS",
+      "desc": "Monitoreamos todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata."
+    },
+    {
+      "title": "12. Alianza con C5",
+      "desc": "Nos unimos al C5 de Guadalajara y del Estado de México. En caso de que necesites ayuda, se les notificará cuando presiones el Botón de Emergencia para que puedan asistirte."
+    },
+    {
+      "title": "13. Cámaras de Seguridad DiDi",
+      "desc": "Instalamos cámaras en más de 900 vehículos en Guadalajara. Si detectas alguna situación de riesgo, puedes presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y, de ser necesario, enviar apoyo a tu ubicación. *Disponible solo en Guadalajara."
+    },
+    {
+      "title": "14. DiDi Mujer",
+      "desc": "¿Eres conductora? Con DiDi puedes decidir si quieres realizar viajes solo con pasajeras mujeres."
+    },
+    {
+      "title": "15. Viaje con Cobertura",
+      "desc": "Cuando viajas en DiDi tienes una cobertura de responsabilidad civil que incluye gastos médicos por siniestro."
+    },
+    {
+      "title": "16. Inteligencia Artificial",
+      "desc": "Usamos AI para cuidarte durante tus viajes. Nuestros modelos Hércules, Clío y Temis analizan características de los viajes, los pasajeros, zonas, horarios e historial para identificar cualquier riesgo y alertarte o rechazar esa solicitud."
     }
   ],
   "SafetyGridAfterTrip.bgColor": "bg-gray-light",
@@ -486,24 +490,28 @@
   "SafetyGridAfterTrip.textColor": "gray-primary",
   "SafetyGridAfterTrip.columns": [
     {
-      "title": "Objetos perdidos",
-      "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al socio conductor para acordar la devolución.",
-      "bgColor": "bg-gray-light"
+      "title": "17. Soporte DiDi 24/7",
+      "desc": "Llámanos al 800 725 8888, contamos con atención 24/7."
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
-      "bgColor": "bg-gray-light"
+      "title": "18. Califica a tu Pasajero",
+      "desc": "Califica a tu pasajero después de cada viaje. Si tuviste una mala experiencia puedes seleccionar “No volver a viajar con este pasajero” y reportar cualquier conducta inapropiada."
     },
     {
-      "title": "Califica a tu Socio Conductor",
-      "desc": "Califica a tu conductor después de cada viaje y, si deseas, puedes darle un pago extra. Esto ayuda a retroalimentar el sistema y mantener la seguridad en la comunidad de usuarios y socios conductores.",
-      "bgColor": "bg-gray-light"
+      "title": "19. Evita viajar con el mismo pasajero",
+      "desc": "Si así lo prefieres, puedes elegir la opción de no volver a viajar con alguna persona."
+    }
+  ],
+  "SafetyDrvColumns.title": "Seguridad ante COVID-19",
+  "SafetyDrvColumns.desc": "Para DiDi es muy importante seguir los lineamientos de protección ante el COVID-19. Por eso implementamos las siguientes medidas de prevención:",
+  "SafetyDrvColumns.columns": [
+    {
+      "title": "20. DiDi Prevent",
+      "desc": "Al conectarse, todos los conductores pasan por una verificación de uso de cubrebocas a través de inteligencia artificial. Para completarla, deben mandar una selfie, una foto demostrando que desinfectaron su vehículo y voluntariamente reportan su temperatura corporal dentro de los límites normales. Cuando aprueban la validación, comienzan a recibir viajes."
     },
     {
-      "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
-      "bgColor": "bg-gray-light"
+      "title": "21. Barrera Plástica y Material Desinfectante",
+      "desc": "Los conductores pueden instalar una división plástica para separar los asientos delanteros de los traseros. Deben usar cubrebocas y tener líquido desinfectante a tu disposición."
     }
   ],
   "SafetyGridDrv.bgColor": "bg-white",
@@ -575,7 +583,31 @@
   "PartnersGrid.bgColor": "bg-white",
   "PartnersGrid.title": "Beneficios que siempre suman",
   "PartnersGrid.textColor": "gray-primary",
-  "PartnersGrid.linkItem": "/mx/didimas/{{partnerName}}/",
+  "PartnersGrid.linkItem": "/mx/clubdidi/{{partnerName}}/",
+  "PartnerColumns.title": "¿Qué tipo de recompensas puedo obtener al ser parte de Club DiDi?",
+  "PartnerColumns.columns": [
+    {
+      "title": "Descontos en combustible"
+    },
+    {
+      "title": "Facilidades para comprar un auto"
+    },
+    {
+      "title": "Descuentos en rentar un auto"
+    },
+    {
+      "title": "Ayuda en tu contabilidad y en tus finanzas"
+    },
+    {
+      "title": "Préstamos"
+    },
+    {
+      "title": "Descuentos en seguros de autos"
+    },
+    {
+      "title": "Salud y bienestar"
+    }
+  ],
   "PartnersCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
   "PartnersCTA.desc": "¡Y eso no es todo! Prontamente tendremos más beneficios para ti. Te mantendremos informado de todas las novedades de DiDiMás+.",
   "PartnersCTA.textColor": "white",

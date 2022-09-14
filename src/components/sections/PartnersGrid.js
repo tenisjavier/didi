@@ -5,12 +5,13 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection from "../ColumnSection";
 
-const PartnersGrid = ({ data }) => {
+const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
   const { t } = useTranslation();
   const props = {
-    title: t("PartnersGrid.title"),
-    bgColor: t("PartnersGrid.bgColor"),
-    textColor: t("PartnersGrid.textColor"),
+    title: title || t("PartnersGrid.title"),
+    bgColor: bgColor || t("PartnersGrid.bgColor"),
+    textColor: textColor || t("PartnersGrid.textColor"),
+    sectionID: sectionID || t("PartnersGrid.sectionId")
   };
 
   props.columns = data.map((partner) => {

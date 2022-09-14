@@ -30,7 +30,7 @@ const Partner = ({ data }) => {
       ></PartnerFeature>
       <PartnerContent content={content}></PartnerContent>
       <PartnersGrid data={partners}></PartnersGrid>
-      <PartnersCTA image={partnerCTAImage}></PartnersCTA>
+      {/* <PartnersCTA image={partnerCTAImage}></PartnersCTA> */}
     </Layout>
   );
 };

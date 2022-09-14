@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Card, { CardProps } from "./Card";
 
 export interface ColumnsSectionProps {
@@ -8,6 +9,7 @@ export interface ColumnsSectionProps {
   bgColor: string;
   textColor: string;
   sectionID?: string;
+  categoriesID: any[];
 }
 
 const ColumnsSection = ({
@@ -17,6 +19,7 @@ const ColumnsSection = ({
   bgColor,
   textColor,
   sectionID,
+  categoriesID
 }: ColumnsSectionProps) => {
   return (
     <section id={sectionID} className={`${bgColor} text-${textColor} py-12`}>
@@ -25,7 +28,7 @@ const ColumnsSection = ({
         {desc && <p className="text-center">{desc}</p>}
         <div className={`mt-10 flex flex-wrap justify-around `}>
           {columns.map((col, index) => {
-            return <Card {...col} key={index} index={index}></Card>;
+            return <Link to={"#"+categoriesID[index]}><Card {...col} key={index} index={index}></Card></Link>;
           })}
         </div>
       </div>
