@@ -30,6 +30,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Socio Conductor", link: "/do/driver/" },
     { text: "DiDi Moto", link: "/do/driver/moto/" },
     { text: "Seguridad", link: "/do/seguridad/" },
+    { text: "Promociones", link: "/do/promociones/" },
     { text: "Legal", link: "/do/legal/" },
   ],
   ec: [

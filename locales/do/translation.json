@@ -579,9 +579,19 @@
   "OfferHero.bgColor": "bg-orange-primary",
   "OfferHero.btnText": "Revisa tus Puntos",
   "OfferHero.btnLink": "https://page.didiglobal.com/global/silver-bullet-online/K06rOv7M8E00M-CY6JiIZ",
-  "OfferHero.btnType": "",
+  "OfferHero.btnType": "custom",
   "OfferHero.btnMode": "light",
-  "OfferColumns.title": "How it works",
+  "OfferHero.btnArray": [
+    {
+      "text": "Soy Usuario",
+      "link": "https://page.didiglobal.com/global/silver-bullet-online/K06rOv7M8E00M-CY6JiIZ"
+    },
+    {
+      "text": "Soy Conductor",
+      "link": "https://page.didiglobal.com/global/silver-bullet-online/ZmVZDpaevbirr7b_6XV8w"
+    }
+  ],
+  "OfferColumns.title": "¿Cómo funciona?",
   "OfferColumns.bgColor": "bg-white",
   "OfferColumns.textColor": "gray-primary",
   "OfferFeatures.bgColor": "bg-blue-primary",

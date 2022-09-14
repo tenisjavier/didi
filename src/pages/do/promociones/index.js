@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import OffersHero from "../../../components/sections/OffersHero";
 import OffersGrid from "../../../components/sections/OffersGrid";
-import PartnersCTA from "../../../components/sections/PartnersCTA";
 import HomeColumns from "../../../components/sections/HomeColumns";
 
 const Offers = ({ data }) => {
@@ -14,9 +13,6 @@ const Offers = ({ data }) => {
     return image.title === "au.PartnersHero.bgImage";
   })[0];
 
-  const partnerCTAImage = images.filter((image) => {
-    return image.title === "au.PartnerCTA.image";
-  })[0];
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
@@ -25,7 +21,6 @@ const Offers = ({ data }) => {
     <Layout>
       <OffersHero bgImage={partnersHeroBgImage}></OffersHero>
       <OffersGrid data={offers}></OffersGrid>
-      <PartnersCTA image={partnerCTAImage}></PartnersCTA>
       <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>
   );
@@ -43,11 +38,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(au.PartnersHero)|(au.PartnerCTA.image)|(au.HomeColumns.image)/"
-        }
-      }
+      filter: { title: { regex: "/(au.PartnersHero)|(au.HomeColumns.image)/" } }
       sort: { fields: title }
     ) {
       nodes {

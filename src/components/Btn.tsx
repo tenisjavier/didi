@@ -15,7 +15,9 @@ export interface BtnProps {
     | "foodDelivery"
     | "foodEater"
     | "foodEaterOnline"
+    | "custom"
     | "bothFood";
+
   btnMode?: "primary" | "dark" | "light";
   btnLink?: string;
   btnText?: string;
