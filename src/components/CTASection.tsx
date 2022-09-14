@@ -22,6 +22,10 @@ export interface CTAProps extends BtnProps {
     link: string;
   }[];
   customBulletIcon?: boolean;
+  btnArray?: {
+    link: string;
+    text: string;
+  }[];
   reverse?: boolean;
 }
 
@@ -42,6 +46,7 @@ const CTASection = (props: CTAProps) => {
     btnText,
     btnLink,
     btnMode,
+    btnArray,
     reverse,
   } = props;
 
@@ -70,6 +75,25 @@ const CTASection = (props: CTAProps) => {
         <Btn btnType="foodEaterOnline" btnMode={btnMode}></Btn>
         <br></br>
         <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
+  if (btnArray && btnType == "custom") {
+    sectionBtn = (
+      <>
+        {btnArray.map((btn, index) => {
+          return (
+            <>
+              <Btn
+                btnText={btn.text}
+                btnLink={btn.link}
+                btnMode={btnMode}
+                key={index}
+              ></Btn>
+              <br></br>
+            </>
+          );
+        })}
       </>
     );
   }

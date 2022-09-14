@@ -32,6 +32,7 @@ const OfferHero = ({ title, desc, image }: PartnerHeroProps) => {
     btnType: t("OfferHero.btnType"),
     btnText: t("OfferHero.btnText"),
     btnLink: t("OfferHero.btnLink"),
+    btnArray: t("OfferHero.btnArray", { returnObjects: true }),
     reverse: true,
   };
 
