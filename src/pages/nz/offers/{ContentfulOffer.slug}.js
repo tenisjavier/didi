@@ -39,7 +39,7 @@ const Partner = ({ data }) => {
         desc={heroDesc}
         image={heroImage}
       ></OfferHero>
-      <OfferColumns columns={columns}></OfferColumns>
+      {offer.column1Title && <OfferColumns columns={columns}></OfferColumns>}
       <OfferFeatures
         title={featureTitle}
         desc={featureDesc}
