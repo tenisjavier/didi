@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import OffersHero from "../../../components/sections/OffersHero";
 import OffersGrid from "../../../components/sections/OffersGrid";
-import HomeColumns from "../../../components/sections/HomeColumns";
 
 const Offers = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,15 +12,10 @@ const Offers = ({ data }) => {
     return image.title === "au.PartnersHero.bgImage";
   })[0];
 
-  const homeColumnsImages = images.filter((image) => {
-    return image.title.indexOf("au.HomeColumns.image") !== -1;
-  });
-
   return (
     <Layout>
       <OffersHero bgImage={partnersHeroBgImage}></OffersHero>
       <OffersGrid data={offers}></OffersGrid>
-      <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>
   );
 };
@@ -38,7 +32,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(au.PartnersHero)|(au.HomeColumns.image)/" } }
+      filter: { title: { regex: "/(au.PartnersHero)/" } }
       sort: { fields: title }
     ) {
       nodes {
