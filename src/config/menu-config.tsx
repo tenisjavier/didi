@@ -125,7 +125,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Club DiDi",
-          url: "/mx/conductor/clubdidi",
+          url: "/mx/clubdidi",
         },
         {
           text: "Regístrate Online",
