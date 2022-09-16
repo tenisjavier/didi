@@ -169,7 +169,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "Sobre DiDi",
-      url: "/mx/sobre-didi/",
+      url: "/mx/nosotros/",
       dropMenu: [
         {
           text: "Seguridad",
