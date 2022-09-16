@@ -13,7 +13,11 @@ export interface BtnProps {
     | "fleet"
     | "foodBusiness"
     | "foodDelivery"
-    | "foodEater";
+    | "foodEater"
+    | "foodEaterOnline"
+    | "custom"
+    | "bothFood";
+
   btnMode?: "primary" | "dark" | "light";
   btnLink?: string;
   btnText?: string;
@@ -41,6 +45,9 @@ const Btn = ({ btnType, btnMode, btnLink, btnText }: BtnProps) => {
   } else if (btnType === "foodEater") {
     btnLink = btnData.foodEaterLink;
     btnText = btnText || btnData.foodEaterText;
+  } else if (btnType === "foodEaterOnline") {
+    btnLink = btnData.foodEaterOnlineLink;
+    btnText = btnText || btnData.foodEaterOnlineText;
   }
   return (
     <div className={`my-2 btn-${btnMode}`}>

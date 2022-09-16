@@ -1,6 +1,6 @@
 {
-  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
-  "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.title": "Tu comida a domicilio cuando quieras, donde quieras",
+  "FoodHero.desc": "DiDi Food es una plataforma de comida a domicilio que lleva los platillos de tu restaurante favorito hasta tu puerta.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "primary",
   "FoodColumns.bgColor": "bg-white",
@@ -24,18 +24,18 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessCTA.title": "Registra tu comercio en DiDi Food",
-  "FoodBusinessCTA.desc": "Conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodBusinessCTA.title": "Conviértete en una Tienda DiDi",
+  "FoodBusinessCTA.desc": "Asóciate con DiDi Food para atraer más clientes con facilidad y llevar tu negocio al siguiente nivel.",
   "FoodBusinessCTA.bgColor": "bg-gray-light",
   "FoodBusinessCTA.textColor": "gray-primary",
   "FoodBusinessCTA.btnMode": "primary",
-  "FoodDeliveryCTA.title": "Regístrate para repartir a través de DiDi Food",
-  "FoodDeliveryCTA.desc": "Inscribirse es fácil. Puedes elegir repartir en moto, bicicleta o auto. Tú eliges cuando y dónde conectarte.",
+  "FoodDeliveryCTA.title": "Únete al equipo de entregas de DiDi Food",
+  "FoodDeliveryCTA.desc": "Únete al equipo de entregas de DiDi Food y entrega órdenes con tu scooter, bici o moto. Puedes elegir libremente las horas y ganar dinero y recompensas.",
   "FoodDeliveryCTA.bgColor": "bg-white",
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
-  "FoodBusinessHero.title": "Conviértete en un socio restaurante de DiDi Food",
-  "FoodBusinessHero.desc": "Aprovecha los beneficios que DiDi Food tiene para tu negocio. Call Center: (+56) 227120527",
+  "FoodBusinessHero.title": "Únete a DiDi Food y ve crecer tu negocio",
+  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida. \n    Teléfono de servicio comercial: 800-801-6888. \n WhatsApp: +52 55 6270 5369",
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "primary",
   "FoodBusinessColumns.bgColor": "bg-white",
@@ -60,26 +60,26 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessDownloads.title": "Descargar DiDi Food para Tienda",
+  "FoodBusinessDownloads.title": "Descargar tienda de DiDi Food",
   "FoodBusinessDownloads.desc": "¡Optimiza tu negocio y empieza a recibir más pedidos!",
   "FoodBusinessDownloads.textColor": "gray-primary",
   "FoodBusinessDownloads.bgColor": "bg-white",
   "FoodBusinessDownloads.columns": [
     {
-      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe"
+      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
     },
     {
-      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/app/global-merchant-application-mexicoPad-release_1.2.34_2021030503.apk"
+      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/app/global-merchant-application-mexicoPad-release_1.2.34_2021030503.apk?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
     },
     {
-      "linkItem": "https://d.didiglobal.com/3cikL"
+      "linkItem": "https://d.didiglobal.com/3cikL?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
     }
   ],
 
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
+  "FoodDeliveryHero.title": "¡Únete a DiDi Food! Obtén excelentes ganancias y otras recompensas.",
   "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
   "FoodDeliveryHero.textColor": "white",
   "FoodDeliveryHero.btnMode": "primary",
@@ -87,20 +87,20 @@
   "FoodDeliveryColumns.textColor": "gray-primary",
   "FoodDeliveryColumns.columns": [
     {
-      "title": "Comienza a generar ingresos",
-      "desc": "Contamos con distintas promociones para los Socios Repartidores y cada día más usuarios nos prefieren. A través de DiDi Food, podrás generar ganancias.",
+      "title": "Obtén excelentes ganancias",
+      "desc": "Esto es posible gracias a la gran cantidad de pedidos y a las generosas recompensas. Con DiDi Food, cuanto más te esfuerces, mayor será tu ganancia.",
       "bgColor": "bg-orange-primary",
       "textColor": "white"
     },
     {
-      "title": "Disfruta de mayor flexibilidad",
-      "desc": "Con DiDi Food, puedes conectarte cuando más te convenga. Además, recoger pedidos y entregarlos es muy sencillo gracias a nuestro sistema de navegación fácil de usar. Sea con moto, auto o bicicleta, puedes generar ganancias.",
+      "title": "Disfruta de más libertad",
+      "desc": "DiDi Food te ofrece más libertad al permitirte establecer tus propios horarios y conectarte cuando quieras. Además, recoger pedidos y entregarlos es muy sencillo gracias a nuestro sistema de navegación fácil de usar. Si tienes una moto o una bicicleta, empieza a ganar dinero sobre la marcha. Con DiDi Food, tienes la libertad de establecer tu propio horario y aprovechar tu tiempo al máximo.",
       "bgColor": "bg-green-primary",
       "textColor": "white"
     },
     {
-      "title": "Seguridad al repartir",
-      "desc": "En DiDi Food, buscamos que realices entregas sintiéndote más seguro. Contamos con distintas herramientas de seguridad para que tus entregas comiencen y terminen de la mejor forma.",
+      "title": "DiDi te cuida",
+      "desc": "En DiDi Food, cuidamos a nuestros repartidores y priorizamos sus intereses. En nuestro equipo, los repartidores son mucho más que socios… forman parte de una gran familia. Con DiDi Food, podrás sentirte orgulloso de saber que agregas gran valor al servicio y obtienes recompensas por tu esfuerzo.",
       "bgColor": "bg-gray-primary",
       "textColor": "white"
     }
@@ -143,10 +143,10 @@
     }
   ],
   "FoodAboutHero.title": "Acerca de DiDi Food",
-  "FoodAboutHero.desc": "Pide comida a través de nuestra plataforma o conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodAboutHero.desc": "",
   "FoodAboutHero.textColor": "white",
-  "FoodAboutDeliveryCTA.title": "La plataforma rápida y confiable de intermediación de pedidos y entrega de comida.",
-  "FoodAboutDeliveryCTA.desc": "Sobre nosotros – DiDi Food conecta usuarios con socios restaurantes y socios repartidores para llevar los mejores pedidos de comida a la puerta del usuario. A través de DiDi Food, puedes tener tu plato favorito en donde lo necesites, con un par de clics.",
+  "FoodAboutDeliveryCTA.title": "Tu solución rápida y confiable de pedidos y entrega de comida",
+  "FoodAboutDeliveryCTA.desc": "Sobre nosotros – DiDi Food es la platforma rápida y confiable para pedidos de comida a domicilio. Unimos a clientes con tiendas y repartidores para llevar los mejores platillos a dónde los necesites. Con DiDi food puedes tener tu platillo favorito en dónde lo neesites con sólo un par de clics.",
   "FoodAboutDeliveryCTA.bgColor": "bg-gray-light",
   "FoodAboutDeliveryCTA.textColor": "gray-primary",
   "FoodAboutDeliveryCTA.btnMode": "primary",
@@ -170,73 +170,25 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamar o escribirnos.",
+  "FoodContactHero.desc": "",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "tel:+56227120527",
+  "FoodContactHero.btnText": "Teléfono",
+  "FoodContactHero.btnLink": "tel:+01 800 801 6888",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
-      "title": "Soporte para Usuarios",
+      "title": "",
       "desc": "",
       "contacts": [
         {
           "label": "Teléfono",
-          "info": "(+56) 227120527",
-          "infoColor": { "color": "#ff7d41" }
-        }
-      ]
-    },
-    {
-      "title": "Soporte para Socios Repartidores",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "Correo electrónico ",
-          "info": "soporte.repartidor@cl.didiglobal.com",
+          "info": "01 800 801 6888",
           "infoColor": { "color": "#ff7d41" }
         },
         {
-          "label": "Teléfono",
-          "info": "(+56) 227120527",
-          "infoColor": { "color": "#ff7d41" }
-        }
-      ]
-    },
-    {
-      "title": "Soporte para Restaurantes",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "Teléfono",
-          "info": "(+56) 227120527",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Gran Valparaíso. Dirección",
-          "info": "6 Norte 745, Viña del Mar. Novotel, salón Mistral 3er piso",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Horario de atención",
-          "info": "Lunes a Viernes de 09:00 a 19:00 hrs.",
-          "infoColor": { "color": "#ff7d41" }
-        }
-      ]
-    },
-    {
-      "title": "Atención Presencial Restaurantes",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "Gran Valparaíso. Dirección",
-          "info": "6 Norte 745, Viña del Mar. Novotel, salón Mistral 3er piso",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Horario de atención",
-          "info": "Lunes a Viernes de 09:00 a 19:00 hrs.",
-          "infoColor": { "color": "#ff7d41" }
+          "label": "Correo electrónico",
+          "info": "soporte.food@mx.didiglobal.com",
+          "infoColor": { "color": "#ff7d41"}
         }
       ]
     }
@@ -259,5 +211,7 @@
   "PrivacyHero.linkItem": "/cl/food/privacy/privacy/",
   "PrivacyCTA.title": "Revisa nuestra Políticas de Privacidad",
   "PrivacyCTA.textColor": "gray-primary",
-  "PrivacyCTA.btnMode": "dark"
+  "PrivacyCTA.btnMode": "dark",
+  "FaqFoodHero.title": "PREGUNTAS FRECUENTES",
+  "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:"
 }

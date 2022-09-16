@@ -13,6 +13,8 @@ interface SingleBtnInterface {
   foodBusinessText?: string;
   foodEaterLink?: string;
   foodEaterText?: string;
+  foodEaterOnlineLink?: string;
+  foodEaterOnlineText?: string;
 }
 
 interface AllBtnInterface {
@@ -20,7 +22,7 @@ interface AllBtnInterface {
 }
 
 const btnLinks: AllBtnInterface = {
-  int: {
+  en: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
@@ -46,19 +48,19 @@ const btnLinks: AllBtnInterface = {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
-    paxText: "Descarga Didi Pasajero",
+    paxText: "Descarga DiDi Pasajero",
   },
   ar: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Registrate como Conductor",
-    paxText: "Descargá Didi Pasajero",
+    paxText: "Descargá DiDi Pasajero",
   },
   co: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/codriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate como Conductor",
-    paxText: "Descarga Didi Pasajero",
+    drvText: "Regístrate en DiDi Conductor",
+    paxText: "Descarga DiDi Pasajero",
     fleetText: "Regístrate en DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
@@ -83,7 +85,7 @@ const btnLinks: AllBtnInterface = {
   do: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate como Conductor",
+    drvText: "Regístrate como Socio Conductor",
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food App",
@@ -111,18 +113,33 @@ const btnLinks: AllBtnInterface = {
     foodBusinessText: "Registrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pedí Comida Ya → Descargá la App",
+    foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
+    foodEaterOnlineLink:
+      "https://www.didi-food.com/es-CR/food/address/",
   },
   pa: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/padriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
-    paxText: "Descarga Didi Pasajero",
+    paxText: "Descarga DiDi Pasajero",
   },
   mx: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate Online",
-    paxText: "Descarga Didi Pasajero",
+    paxText: "Descarga DiDi Pasajero",
+    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterLink:
+      "https://www.didi-food.com/es-MX/food/feed/?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+    foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
+    foodEaterOnlineLink:
+      "https://www.didi-food.com/es-MX/food/feed/?utm_source=%28direct%29&utm_medium=%28none%29&utm_campaign=none",
+    foodDeliveryLink:
+      "https://www.didi-food.com/es-MX/mobile-delivery?clientType=102&country=MX&utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+    foodDeliveryText: "Empezá a Repartir con DiDi Food App",
+    foodBusinessLink:
+      "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist&utm_source=(direct)&utm_medium=(none)&utm_campaign=none#",
+    foodBusinessText: "Registrate como Comercio",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "http://onelink.to/s88fxw",
   },

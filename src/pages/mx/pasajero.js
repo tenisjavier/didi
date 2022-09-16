@@ -13,7 +13,7 @@ const Pasajero = ({ data }) => {
     return image.title === "mx.PaxHero.bgImage";
   })[0];
   const products = data.allContentfulProduct.nodes;
-  console.log(products);
+
   return (
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
@@ -41,9 +41,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(
-      filter: { title: { in: ["mx.PaxHero.bgImage"] } }
-    ) {
+    allContentfulAsset(filter: { title: { in: ["mx.PaxHero.bgImage"] } }) {
       nodes {
         id
         title

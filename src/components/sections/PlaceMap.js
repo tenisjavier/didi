@@ -56,7 +56,7 @@ const PlaceMap = ({ data }) => {
       <span>
         <FontAwesomeIcon
           icon={faBus}
-          className=" mr-4 text-orange-primary "
+          className=" mr-4 text-orange-primary w-5 "
           size="sm"
         />
         <b>Micro: </b>
@@ -65,7 +65,7 @@ const PlaceMap = ({ data }) => {
       <span>
         <FontAwesomeIcon
           icon={faSubway}
-          className=" mr-4 text-orange-primary "
+          className=" mr-4 text-orange-primary w-5"
           size="sm"
         />
         <b>Metro: </b>

@@ -33,6 +33,7 @@ const SEO = () => {
           name
           code
           hostname
+          languageCode
         }
       }
     }
@@ -42,44 +43,49 @@ const SEO = () => {
   const countryCode = i18n.language;
   const origin = "https://web.didiglobal.com";
   const { pathname } = useLocation();
-  const country = countries.filter((c) => c.code === countryCode).pop();
-  let countryName =
-    country.name.charAt(0).toUpperCase() + country.name.slice(1);
+  let country = "";
+  let countryName = "";
+  let title = "";
+  let lang = "en";
+  let cleanPath = pathname;
+  if (countryCode !== "en") {
+    country = countries.filter((c) => c.code === countryCode).pop();
+    countryName = country.name;
+    lang = country.languageName;
 
-  const cleanPath = pathname.substring(3, pathname.length);
+    cleanPath = pathname.substring(3, pathname.length);
+  }
+
   const meta = getMetaByPath(countryCode, cleanPath);
-
-  let title = meta.title + " | DiDi " + countryName;
-
+  title = meta.title + " | DiDi " + countryName;
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";
     meta.desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
-  if (pathname === "/contact/") {
+  if (pathname === "/contact/" || pathname === "/contact") {
     title = "Contact Us | DiDi Global";
     meta.desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
 
   return (
-    <Helmet htmlAttributes={{ lang: "es" }} title={`${title}`}>
+    <Helmet htmlAttributes={{ lang: lang }} title={title}>
       <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={origin + pathname} />
       {countries.map((c, index) => {
-        const placeRegex =
-          /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))/;
+        const placeRegex = /(\/[A-Za-z]{2}\/$)/;
 
-        return placeRegex.test(cleanPath) ? null : (
+        return placeRegex.test(pathname) ? (
           <link
             key={index}
             rel="alternate"
-            href={origin + "/" + c.code + cleanPath}
-            hreflang={`es-${c.code}`}
+            href={origin + "/" + c.code + "/"}
+            hreflang={`${c.languageCode}-${c.code}`}
           />
-        );
+        ) : null;
       })}
 
       {

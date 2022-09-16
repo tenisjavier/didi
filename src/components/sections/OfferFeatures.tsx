@@ -28,8 +28,7 @@ const OfferFeatures = ({ title, desc, image }: OfferFeaturesProps) => {
         className="z-10 m-4 w-64"
       ></GatsbyImage>
     ),
-    btnMode: t("OfferFeatures.btnMode"),
-    btnType: "pax",
+
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;

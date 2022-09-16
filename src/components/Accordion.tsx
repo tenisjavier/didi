@@ -38,7 +38,7 @@ const Accordion = ({ title, content, bgColor, textColor }: Accordion) => {
         <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
         <FontAwesomeIcon
           icon={isOpen ? faMinusSquare : faPlusSquare}
-          className={`text-${textColor} text-xl`}
+          className={`text-${textColor} text-xl w-6`}
         />
       </div>
       <div

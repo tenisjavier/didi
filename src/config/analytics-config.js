@@ -1,5 +1,7 @@
 // codigo de tracking didi SEO y WEB
 const insertBtnParams = () => {
+  window.localStorage.removeItem("gatsby-i18next-language");
+
   const countryCode = window.location.pathname.split("/")[1];
   var referrer = document.referrer;
   var gaReferral = {

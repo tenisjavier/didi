@@ -14,6 +14,22 @@ import { getMenuLinksFood } from "../config/menu-food-config";
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const { i18n } = useTranslation();
+  const countries = [
+    "cl",
+    "ar",
+    "pe",
+    "ec",
+    "co",
+    "do",
+    "cr",
+    "pa",
+    "mx",
+    "nz",
+    "au",
+    "eg",
+    "ru",
+    "en",
+  ];
   const countryCode = i18n.language;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
@@ -23,7 +39,7 @@ const Menu = () => {
     <div className="flex h-full items-center ">
       <FontAwesomeIcon
         icon={faBars}
-        className=" m-4 cursor-pointer text-white lg:hidden "
+        className=" m-4 cursor-pointer text-white lg:hidden w-5 "
         size="lg"
         onClick={() => {
           setOpen(!open);
@@ -43,7 +59,11 @@ const Menu = () => {
             <>
               {menuLinksFood &&
                 menuLinksFood.map((menuLink, index) => (
-                  <NavItem key={index} link={menuLink}></NavItem>
+                  <NavItem key={index} link={menuLink}>
+                    {menuLink.dropMenu ? (
+                      <DropdownMenu key={index} links={menuLink.dropMenu} />
+                    ) : null}
+                  </NavItem>
                 ))}
             </>
           ) : (

@@ -22,6 +22,10 @@ export interface CTAProps extends BtnProps {
     link: string;
   }[];
   customBulletIcon?: boolean;
+  btnArray?: {
+    link: string;
+    text: string;
+  }[];
   reverse?: boolean;
 }
 
@@ -42,6 +46,7 @@ const CTASection = (props: CTAProps) => {
     btnText,
     btnLink,
     btnMode,
+    btnArray,
     reverse,
   } = props;
 
@@ -61,6 +66,34 @@ const CTASection = (props: CTAProps) => {
         <Btn btnType="pax" btnMode={btnMode}></Btn>
         <br></br>
         <Btn btnType="drv" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
+  if (btnType === "bothFood") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnline" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
+  if (btnArray && btnType == "custom") {
+    sectionBtn = (
+      <>
+        {btnArray.map((btn, index) => {
+          return (
+            <>
+              <Btn
+                btnText={btn.text}
+                btnLink={btn.link}
+                btnMode={btnMode}
+                key={index}
+              ></Btn>
+              <br></br>
+            </>
+          );
+        })}
       </>
     );
   }
@@ -96,7 +129,7 @@ const CTASection = (props: CTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" mr-4 text-orange-primary "
+                            className=" mr-4 text-orange-primary w-6"
                             size="sm"
                           />
                         ) : null}
@@ -111,13 +144,17 @@ const CTASection = (props: CTAProps) => {
             </>
           )}
           {desc &&
-            desc
-              .split("\n")
-              .map((str) => <p className="mb-5 text-lg">{str}</p>)}
+            desc.split("\n").map((str, index) => (
+              <p className="mb-5 text-lg" key={index}>
+                {str}
+              </p>
+            ))}
           {list && (
             <div className="grid grid-cols-2 lg:grid-cols-3 text-orange-primary mb-8">
-              {list.map((item) => (
-                <a href={item.link}>{item.text}</a>
+              {list.map((item, index) => (
+                <a href={item.link} key={index}>
+                  {item.text}
+                </a>
               ))}
             </div>
           )}

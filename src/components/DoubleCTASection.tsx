@@ -43,7 +43,7 @@ const DoubleCTASection = (props: DoubleCTAProps) => {
     reverse,
     doubleTitle,
     title2,
-    desc2
+    desc2,
   } = props;
 
   let sectionBtn = (
@@ -66,6 +66,17 @@ const DoubleCTASection = (props: DoubleCTAProps) => {
     );
   }
 
+  // if btnType is bothFood will print OnlineFood first and FoodEater second
+    if (btnType === "bothFood") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnline" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
+
   const customIconStyle = {
     color: "white",
     backgroundColor: "DodgerBlue",
@@ -74,7 +85,7 @@ const DoubleCTASection = (props: DoubleCTAProps) => {
     width: "32px",
     height: "32px",
     marginRight: "16px",
-    verticalAlign: "top"
+    verticalAlign: "top",
   };
 
   return (
@@ -108,13 +119,23 @@ const DoubleCTASection = (props: DoubleCTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" mr-4 text-orange-primary "
+                            className=" mr-4 text-orange-primary w-6"
                             size="sm"
                           />
                         ) : (
-                          <span className="text-center" style={customIconStyle}>{index+1}</span>
+                          <span className="text-center" style={customIconStyle}>
+                            {index + 1}
+                          </span>
                         )}
-                        <p style={{display: "inline-block", width: "85%", margin: "0"}}>{item}</p>
+                        <p
+                          style={{
+                            display: "inline-block",
+                            width: "85%",
+                            margin: "0",
+                          }}
+                        >
+                          {item}
+                        </p>
                       </li>
                       <br></br>
                     </div>
@@ -126,11 +147,11 @@ const DoubleCTASection = (props: DoubleCTAProps) => {
           )}
           <p className="mb-5 text-lg">{desc}</p>
           {doubleTitle ? (
-          <h2 className="text-3xl font-bold md:text-4xl">{title2}</h2>
-          ): ""}
-          {doubleTitle ? (
-          <p className="mb-5 text-lg">{desc2}</p>
-          ): ""}
+            <h2 className="text-3xl font-bold md:text-4xl">{title2}</h2>
+          ) : (
+            ""
+          )}
+          {doubleTitle ? <p className="mb-5 text-lg">{desc2}</p> : ""}
           {sectionBtn}
         </div>
       </div>

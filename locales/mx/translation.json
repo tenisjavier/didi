@@ -2,7 +2,7 @@
   "HomeHero.title": "Muévete por tu ciudad",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
-  "FoodCTA.title": "Order food", 
+  "FoodCTA.title": "Order food",
   "FoodCTA.desc": "Are you hungry? \n You can order food right now through our new DiDi Food site! \n Fast, easy and affordable.",
   "SafetyCTA.title": "Viaja tranquilo",
   "SafetyCTA.desc": "En DiDi no queremos decirte que ”tu seguridad es nuestra prioridad”. En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
@@ -516,6 +516,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Además, si eres un Socio Conductor/Taxista",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {

@@ -7,6 +7,7 @@ const SafetyGridDuringTrip = ({ images }) => {
   const { t } = useTranslation();
   const props = {
     title: t("SafetyGridDuringTrip.title"),
+    desc: t("SafetyGridDuringTrip.desc"),
     bgColor: t("SafetyGridDuringTrip.bgColor"),
     textColor: t("SafetyGridDuringTrip.textColor"),
     columns: t("SafetyGridDuringTrip.columns", { returnObjects: true }),

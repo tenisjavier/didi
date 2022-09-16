@@ -10,9 +10,9 @@
   "SafetyCTA.btnText": "Conoce más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/do/seguridad/",
-  "HelloCTA.title": "¡Hola!",
+  "HelloCTA.title": "Conoce DiDi",
   "HelloCTA.bullets": false,
-  "HelloCTA.desc": "Somos DiDi, la plataforma tecnológica de. movilidad inteligente. #1 en el mundo.  Nacimos en 2012 y hoy conectamos a +550 millones de usuarios con +31 millones de Socios Conductores en 260 de las ciudades más importantes del mundo.",
+  "HelloCTA.desc": "Somos DiDi, la plataforma tecnológica de movilidad inteligente. #1 en el mundo.  Nacimos en 2012 y hoy conectamos a +550 millones de usuarios con +31 millones de Socios Conductores en 260 de las ciudades más importantes del mundo.",
   "HelloCTA.btnText": "Conoce más sobre nosotros",
   "HelloCTA.btnMode": "primary",
   "HelloCTA.btnLink": "/do/sobre-didi/",
@@ -390,6 +390,7 @@
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
   "SafetyGridDuringTrip.title": "Durante el Viaje",
+  "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
@@ -445,6 +446,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Además, si eres un Socio Conductor/Taxista",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
@@ -564,6 +566,37 @@
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.textColor": "gray-primary",
   "LegalCTA.btnMode": "dark",
+  "OffersHero.title": "Promociones DiDi",
+  "OffersHero.desc": "Encuentra promociones temporales para pasajeros como para socios conductores",
+  "OffersHero.textColor": "white",
+  "OffersHero.btnMode": "light",
+  "OffersGrid.title": "Listado de Promociones",
+  "OffersGrid.bgColor": "bg-gray-light",
+  "OffersGrid.desc": "",
+  "OffersGrid.textColor": "gray-primary",
+  "OffersGrid.linkItem": "/do/promociones/{{offerSlug}}/",
+  "OfferHero.textColor": "white",
+  "OfferHero.bgColor": "bg-orange-primary",
+  "OfferHero.btnText": "Revisa tus Puntos",
+  "OfferHero.btnLink": "https://page.didiglobal.com/global/silver-bullet-online/K06rOv7M8E00M-CY6JiIZ",
+  "OfferHero.btnType": "custom",
+  "OfferHero.btnMode": "light",
+  "OfferHero.btnArray": [
+    {
+      "text": "Conoce la dinámica para Usuarios",
+      "link": "https://page.didiglobal.com/global/silver-bullet-online/K06rOv7M8E00M-CY6JiIZ"
+    },
+    {
+      "text": "Conoce la dinámica para Socios Conductores",
+      "link": "https://page.didiglobal.com/global/silver-bullet-online/ZmVZDpaevbirr7b_6XV8w"
+    }
+  ],
+  "OfferColumns.title": "¿Cómo funciona?",
+  "OfferColumns.bgColor": "bg-white",
+  "OfferColumns.textColor": "gray-primary",
+  "OfferFeatures.bgColor": "bg-blue-primary",
+  "OfferFeatures.textColor": "white",
+  "OfferFeatures.btnMode": "light",
   "StoreHero.title": "Escanéa el QR con tu celular ",
   "StoreHero.desc": "Descarga DiDi Pasajero escaneando el código con tu celular",
   "StoreHero.textColor": "white",

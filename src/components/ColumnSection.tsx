@@ -23,7 +23,7 @@ const ColumnsSection = ({
       <div className="container mx-auto flex  flex-col flex-wrap justify-center">
         {title && <h2 className="text-center text-3xl">{title}</h2>}
         {desc && <p className="text-center">{desc}</p>}
-        <div className={`mt-10 flex flex-wrap justify-around `}>
+        <div className={`mt-10 flex flex-wrap justify-around md:flex-nowrap`}>
           {columns.map((col, index) => {
             return <Card {...col} key={index} index={index}></Card>;
           })}

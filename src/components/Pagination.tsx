@@ -72,14 +72,14 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
   return (
     <ul className="pagination">
       <li key={1500} className="page-item" onClick={(e) => goToPage(1)}>
-        <FontAwesomeIcon icon={faAnglesLeft} />
+        <FontAwesomeIcon icon={faAnglesLeft} className="w-3" />
       </li>
       <li
         key={1501}
         className="page-item"
         onClick={(e) => goToPage(currentPage - 1 == 0 ? 1 : currentPage - 1)}
       >
-        <FontAwesomeIcon icon={faAngleLeft} />
+        <FontAwesomeIcon icon={faAngleLeft} className="w-3" />
       </li>
       {pageLinks.map((links, index) => {
         return (
@@ -104,14 +104,14 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
           )
         }
       >
-        <FontAwesomeIcon icon={faAngleRight} />
+        <FontAwesomeIcon icon={faAngleRight} className="w-3" />
       </li>
       <li
         key={1503}
         className="page-item"
         onClick={(e) => goToPage(pageLinks.length)}
       >
-        <FontAwesomeIcon icon={faAnglesRight} />
+        <FontAwesomeIcon icon={faAnglesRight} className="w-3" />
       </li>
     </ul>
   );

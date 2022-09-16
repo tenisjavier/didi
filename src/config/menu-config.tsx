@@ -16,6 +16,22 @@ interface AllMenuInterface {
 }
 
 const menuLinks: AllMenuInterface = {
+  en: [
+    {
+      text: "About DiDi",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Contact Us",
+          url: "/contact/",
+        },
+        {
+          text: "Suppliers",
+          url: "/suppliers/",
+        },
+      ],
+    },
+  ],
   cl: [
     {
       text: "DiDi Pasajero",
@@ -114,7 +130,7 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
-        }
+        },
       ],
     },
     {
@@ -303,7 +319,7 @@ const menuLinks: AllMenuInterface = {
       url: "/co/driver/",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "Arrendador",
           url: "/co/driver/",
         },
         {
@@ -311,11 +327,11 @@ const menuLinks: AllMenuInterface = {
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
         {
-          text: "Club DiDiMás+",
+          text: "DiDiMás+",
           url: "/co/didimas/",
         },
         {
-          text: "Ciudades Activas",
+          text: "Ciudades Disponibles",
           url: "/co/ciudades/",
         },
       ],
@@ -357,6 +373,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Seguridad",
           url: "/co/seguridad/",
+        },
+        {
+          text: "Seguridad para Mujeres",
+          url: "/co/seguridad-para-mujeres/",
         },
         {
           text: "Centro de Ayuda",
@@ -571,6 +591,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/cr/ciudades/",
         },
       ],
     },

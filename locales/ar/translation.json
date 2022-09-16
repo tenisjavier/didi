@@ -52,7 +52,7 @@
     },
     {
       "title": "Centro de Ayuda",
-      "desc": "Contás con DiDi 24/7 para escucharte, para ayudarte. \n Contactanos: Si sos Socio Conductor +54 (11) 5353-4474",
+      "desc": "Para tus consultas y solicitudes te invitamos a usar nuestro Chat en Vivo 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ar/centro-de-ayuda/",
@@ -80,8 +80,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "title": "Soporte 24/7 para Emergencias",
+      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atención de emergencias. Para otras consultas te invitamos a usar nuestro Chat 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "bgColor": "white",
       "textColor": "gray-primary"
     }
@@ -236,6 +236,7 @@
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
   "SafetyGridDuringTrip.title": "Durante del Viaje",
+  "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
@@ -281,6 +282,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Además, si sos un Socio Conductor/Taxista",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
@@ -317,9 +319,6 @@
   "ContactHero.title": "Contactanos",
   "ContactHero.desc": "Si tuviste algún problema, por favor comunicate con nuestro equipo de atención. Abajo te dejamos los canales de comunicación.",
   "ContactHero.textColor": "white",
-  "ContactHero.btnMode": "primary",
-  "ContactHero.btnText": "Call Costumer Support",
-  "ContactHero.btnLink": "tel:+541153534474",
   "ContactBenefits.title": "Contacto",
   "ContactBenefits.bgColor": "bg-white",
   "ContactBenefits.textColor": "gray-primary",
@@ -340,7 +339,7 @@
     },
     {
       "title": "Pasajero",
-      "desc": "Si sos usuario, llamá al +54 (11) 5353-4474  para que podamos resolver tus consultas de manera personalizada.",
+      "desc": "Para tus consultas y solicitudes te invitamos a usar nuestro Chat en Vivo 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"

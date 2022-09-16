@@ -3,28 +3,28 @@
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
-  "SafetyCTA.desc": "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
+  "SafetyCTA.desc": "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada arrendamiento",
   "SafetyCTA.textColor": "white",
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
-  "DrvCTA.title": "Maneja con DiDi Conductor",
-  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi.Ahorra para tus vacaciones soñadas, paga la educación de tus hijos o complementa tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre.Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
+  "DrvCTA.title": "Regístrate en DiDi Conductor",
+  "DrvCTA.desc": "Regístrate en DiDi y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a completar arrendamientos",
   "DrvCTA.bullets": [
-    "Comisiones Bajas",
-    "Seguridad para tu Viaje",
-    "Pago Semanal"
+    "Comisiones bajas",
+    "Seguridad para tu arrendamiento",
+    "Pago semanal"
   ],
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
-  "PaxCTA.title": "Viaja con DiDi por tu Ciudad",
-  "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
+  "PaxCTA.title": "Muévete con DiDi por tu Ciudad",
+  "PaxCTA.desc": "DiDi es una app que conecta arrendatarios con arrendadores",
   "PaxCTA.bullets": [
-    "Precios Bajos",
-    "La Mejor Seguridad",
-    "Cómodo, Rápido y Seguro",
+    "Tarifas Justas",
+    "Más de 20 funciones de seguridad",
+    "Cómodo, rápido y seguro",
     "Soporte 24/7"
   ],
   "PaxCTA.textColor": "gray-primary",
@@ -60,8 +60,8 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "Conecta tu próximo viaje con DiDi Pasajero ",
-  "PaxHero.desc": "La App de movilidad en que pagas menos y recibes más",
+  "PaxHero.title": "Muévete por tu Ciudad con DiDi Pasajero ",
+  "PaxHero.desc": "La app con impacto en la movilidad más grande del mundo",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",
@@ -74,8 +74,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Precios bajos",
-      "desc": "Disfruta de viajes tranquilos y de todos nuestros beneficios sin pagar más.",
+      "title": "Tarifas justas",
+      "desc": "Disfruta de arrendamientos sin pagar de más.",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
@@ -86,32 +86,32 @@
       "textColor": "gray-primary"
     }
   ],
-  "PaxWhyDiDi.title": "Por qué viajar hoy con DiDi:",
+  "PaxWhyDiDi.title": "Utiliza DiDi",
   "PaxWhyDiDi.bullets": [
-    "Viajes a pedido. Obtén un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
-    "Opciones económicas: Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
-    "Una forma fácil de viajar. Pide un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
+    "Solicita tus arrendamientos, obtén un arrendamiento de vehículo en minutos, a cualquier hora y en cualquier día del año.",
+    "Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
+    "DiDi es una app que conecta arrendatarios con arrendadores."
   ],
-  "PaxWhyDiDi.desc": "Paga tus servicios con tarjeta de crédito o efectivo. ",
+  "PaxWhyDiDi.desc": false,
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Colombia",
-  "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
-  "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
+  "PaxBanner.title": "¿Quieres registrarte en DiDi Conductor?",
+  "PaxBanner.desc": "Genera ingresos extra y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "Maneja con DiDi Conductor",
-  "DrvHero.desc": "Para DiDi, los socios son muy importantes. Por eso, nos preocupamos por tener tasas de servicio competitivas por el uso de la App, que beneficien los ingresos de los socios.",
+  "DrvHero.title": "Genera ingresos extra con DiDi Conductor",
+  "DrvHero.desc": "Nos preocupamos por tener tasas de servicio competitivas por el uso de la App, que beneficien los ingresos de los arrendadores.",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
   "DrvWhyDiDi.title": "En nuestra app DiDi Conductor podrás:",
   "DrvWhyDiDi.bullets": [
     "Tener flexibilidad para que manejes tu tiempo como quieras.",
-    "Tener ​más​ ​ingresos* con nuestras promociones y referidos.",
-    "Conocer el destino de la solicitud antes de comenzarla.",
-    "Acceder a beneficios exclusivos con nuestros aliados como descuento en el SOAT y lavado de tu vehículo."
+    "Tener ​más​​ingresos* con nuestras promociones y referidos.",
+    "Conocer el destino del arrendamiento antes de comenzarlo.",
+    "Acceder a beneficios exclusivos de DiDiMás+ nuestro programa de promociones exclusivas"
   ],
   "DrvWhyDiDi.textColor": "gray-primary",
   "DrvWhyDiDi.btnMode": "primary",
@@ -145,7 +145,7 @@
       "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
     }
   ],
-  "Requirements.title": "Requerimientos para ser Conductor",
+  "Requirements.title": "Requerimientos para registrarse en DiDi Conductor",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
   "DrvBanner.title": "Completa tu proceso de registro online",
@@ -153,13 +153,12 @@
   "DrvBanner.bgColor": "bg-orange-primary",
   "DrvBanner.textColor": "white",
   "DrvBanner.btnMode": "light",
-  "DrvFeatures.title": "Sobre nuestra seguridad:",
+  "DrvFeatures.title": "Cuenta con más de 20 funciones de seguridad",
   "DrvFeatures.bullets": [
     "Patrullas de emergencia",
-    "Comparte tu viaje en tiempo real",
+    "Comparte tu ubicación en tiempo real",
     "Privacidad de números telefónicos",
-    "Desvincular usuario",
-    "Privacidad de números telefónicos",
+    "Desvincular al arrendatario",
     "Oficinas privadas en cada ciudad para brindarte soporte y acompañamiento"
   ],
   "DrvFeatures.textColor": "gray-primary",
@@ -170,15 +169,15 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/co/driver/conductor-en-{{city}}/",
-  "TaxiHero.title": "DiDi Taxi",
+  "TaxiHero.title": "Regístrate como Socio Taxista",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
   "TaxiHero.btnMode": "primary",
-  "TaxiWhyDiDi.title": "Recibe pedidos a través de la app o recoge a los pasajeros conectando el viaje con DiDi Taxi",
+  "TaxiWhyDiDi.title": "Completa viajes usando DiDi Taxi",
   "TaxiWhyDiDi.bullets": [
-    "¿Ya estas registrado como DiDi Taxista? Regístrate online y te explicamos cómo se usa la App.",
-    "¿Ya hiciste viajes como DiDi Taxista? No olvides registrar tu cuenta bancaria para recibir tu pago.",
-    "¿Más dudas? Tenemos expertos listos para ayudarle a completar su registro y responder cualquier duda que tenga."
+    "¿Ya estas registrado como Socio Taxista? Regístrate y te explicamos cómo se usa la app.",
+    "¿Ya hiciste tu primer viaje como Socio Taxista? No olvides registrar tu cuenta bancaria.",
+    "¿Tienes dudas? Tenemos soporte 24/7"
   ],
   "TaxiWhyDiDi.textColor": "gray-primary",
   "TaxiWhyDiDi.btnMode": "primary",
@@ -195,7 +194,7 @@
   "FleetHero.btnMode": "light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
-    "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+    "Te conectamos con un arrendador potencial. Verificamos todos los antecedentes de los arrendadores durante su proceso de registro.",
     "¡Genera ganancias sin salir de casa! Además, aprovecha una de las tasas de servicio más bajas del mercado.",
     "¡Cuentas con soporte 24/7! y todas las funciones de seguridad DiDi.",
     "Monitorea los ingresos de las solicitudes generadas con tu vehículo y recibe los pagos con tarjeta de crédito directamente en tu app."
@@ -239,11 +238,11 @@
   "FleetStepsColumns.bgColor": "white",
   "FleetStepsColumns.columns": [
     {
-      "desc": "Regístrate como socio aliado y completa tus documentos",
+      "desc": "Regístrate en DiDi Fleet",
       "textColor": "gray-primary"
     },
     {
-      "desc": "Invita a otros socios a registrarse como parte de tu grupo",
+      "desc": "Invita a arrendadores a registrarse como parte de tu grupo",
       "textColor": "gray-primary"
     },
     {
@@ -281,26 +280,26 @@
     }
   ],
   "SafetyHero.title": "En DiDi tu seguridad no es un mito",
-  "SafetyHero.desc": "Tu seguridad es nuestra prioridad y por eso queremos demostrar con acciones reales y específicas cómo DiDi te ofrece un viaje más tranquilo y seguro. Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje.",
+  "SafetyHero.desc": "Tu seguridad es nuestra prioridad y por eso queremos demostrar con acciones reales y específicas cómo DiDi te ofrece un arrendamiento de vehículo más tranquilo y seguro. Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada arrendamiento.",
   "SafetyHero.textColor": "white",
   "SafetyHero.btnMode": "light",
   "SafetyGridBeforeTrip.bgColor": "bg-white",
-  "SafetyGridBeforeTrip.title": "Antes del Viaje",
+  "SafetyGridBeforeTrip.title": "Antes del Arrendamiento",
   "SafetyGridBeforeTrip.textColor": "gray-primary",
   "SafetyGridBeforeTrip.columns": [
     {
-      "title": "1. Chequeo de Antecedentes de Socio",
-      "desc": "Para que una persona pueda registrarse como socio o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
+      "title": "1. Chequeo de Antecedentes del Arrendador",
+      "desc": "Para que una persona pueda registrarse como arrendador o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
       "bgColor": "bg-white"
     },
     {
-      "title": "2. Reconocimiento Facial para Socios",
+      "title": "2. Reconocimiento Facial para Arrendadores",
       "desc": "Con esta función hacemos un reconocimiento facial de manera aleatoria para asegurar que el socio que se conecta a la app sea el mismo registrado en la app a través de una selfie.",
       "bgColor": "bg-white"
     },
     {
-      "title": "3. Información del Socio",
-      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del socio, el número de arrendamientos, el tiempo en la app, la calificación, los datos del vehículo y los comentarios de los usuarios.",
+      "title": "3. Información del Arrendador",
+      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del arrendador, el número de arrendamientos, el tiempo en la app, la calificación, los datos del vehículo y los comentarios de los usuarios.",
       "bgColor": "bg-white"
     },
     {
@@ -310,12 +309,13 @@
     },
     {
       "title": "5. Número privado",
-      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre usuarios y socios usando la aplicación NO mostrarán tu número real.",
+      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre arrendatarios y arrendadores usando la aplicación NO mostrarán tu número real.",
       "bgColor": "bg-white"
     }
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
-  "SafetyGridDuringTrip.title": "Durante el Viaje",
+  "SafetyGridDuringTrip.title": "Durante el Arrendamiento",
+  "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
@@ -325,12 +325,12 @@
     },
     {
       "title": "7. Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu viaje, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123 y así mismo nuestro Centro de Soporte DiDi 24/ te contactará.",
+      "desc": "Durante cualquier situación inesperada en tu arrendamiento, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123 y así mismo nuestro Centro de Soporte DiDi 24/ te contactará.",
       "bgColor": "bg-orange-primary"
     },
     {
       "title": "8. Patrullas de Reacción",
-      "desc": "Se ha habilitado a las patrullas de asistencia de G4S, las mismas que serán activadas por el Centro de Soporte DiDi 24/7 en caso de alguna emergencia.",
+      "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Soporte DiDi 24/7 en caso de alguna emergencia.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -340,12 +340,12 @@
     },
     {
       "title": "9. Seguro de Responsabilidad Civil y Accidentes Personales",
-      "desc": "Todas las solicitudes realizadas a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
   ],
   "SafetyGridAfterTrip.bgColor": "bg-gray-light",
-  "SafetyGridAfterTrip.title": "Al Finalizar el Viaje",
+  "SafetyGridAfterTrip.title": "Al Finalizar el Arrendamiento",
   "SafetyGridAfterTrip.textColor": "gray-primary",
   "SafetyGridAfterTrip.columns": [
     {
@@ -354,13 +354,14 @@
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "12. Desvincular Socio",
-      "desc": "Si te sentiste incómodo o inseguro, al terminar tu solicitud, en el menú de calificación, encontrarás el botón de desvinculación de socio/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener arrendamientos con este socio en particular.",
+      "title": "12. Desvincular Arrendador",
+      "desc": "Si te sentiste incómodo o inseguro, al terminar tu solicitud, en el menú de calificación, encontrarás el botón de desvinculación de arrendador/socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener arrendamientos con esta persona.",
       "bgColor": "bg-gray-light"
     }
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Además, si eres un Socio Conductor/Taxista",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
@@ -487,6 +488,63 @@
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
+  "ContactAuthorityHero.title": "Contacto para Autoridades",
+  "ContactAuthorityHero.desc": "Si cuenta con oficio judicial o investigación en curso, remitir la solicitud de información por medio de una cuenta oficial a la casilla de correo: lert@didiglobal.com y será atendido por nuestro personal especializado. Si es parte de un organismo de seguridad que pertenezca a un área de investigación o prevención del delito para cualquier región en SSL y busca alguna reunión o acercamiento con el equipo de Relacionamiento con las Autoridades, escribanos a: lert@didiglobal.com",
+  "ContactAuthorityHero.textColor": "white",
+  "ContactBenefits.title": "¿Cómo pedir información a DiDi en los paises de Latinoamérica?",
+  "ContactBenefits.bgColor": "bg-white",
+  "ContactBenefits.textColor": "gray-primary",
+  "ContactBenefits.columns": [
+    {
+      "title": "1. El área interesada deberá girar un oficio dirigido a DiDi",
+      "desc": "",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "2. Verificar que el equipo de LERT confirme la recepción",
+      "desc": "",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "3. Verificar que el equipo de LERT responda de recibido",
+      "desc": "",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "4. Podrá Solicitar Datos de Usuarios",
+      "desc": "Datos Registro de Socios y Usuarios",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "5. Datos del Viaje",
+      "desc": "Rutas, Audio Grabados, Datos del Vehiculo.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "6. Información Complementaria",
+      "desc": "Otros viajes del socio y usuarios",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    }
+  ],
+  "ContactAuthorityBanner.title": "Tenga en Cuenta",
+  "ContactAuthorityBanner.desc": "1. Sea preciso en la cantidad de viajes que solicita (los tres últimos, el último viaje, etc). \n 2. Pida los viajes antes y después del que se está evaluando. \n 3.Considere pedir la información crítica en un primer correo y en consecuentes la información a detalle. \n 4. Entre más información sea solicitada, el procesamiento de datos puede aumentar con mayores tiempos posibles de respuesta. Toda la entrega de la información deberá realizarse en cumplimiento a una orden emitida dentro de una carpeta de investigación o proceso judicial penal. \n *GPS en tiempo real y grabaciones de audio de los usuarios tendrán que ser solicitados mediante la orden de un Juez.",
+  "ContactAuthorityBanner.textColor": "gray-primary",
+  "ContactAuthorityBanner.bgColor": "bg-gray-light",
+  "ContactAuthorityBanner.btnMode": "primary",
+  "ContactAuthorityBanner.btnText": "Descargar PDF: Guías Para Autoridades",
+  "ContactAuthorityBanner.btnLink": "https://colombia.didiglobal.com/wp-content/uploads/sites/15/2022/03/Guia-Colaboracion-Autoridad-DiDi.pdf",
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
@@ -511,13 +569,13 @@
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/co/guias/{{guide}}/",
-  "PartnersHero.title": "Club de Beneficios DiDiMás+",
-  "PartnersHero.desc": "Conoce nuestro club de beneficios siendo Socio Conductor de DiDi. ",
+  "PartnersHero.title": "Para que siempre logres MÁS, DiDiMás+",
+  "PartnersHero.desc": "Para DiDi es muy importante apoyarte, por eso, nace DiDiMás, un programa de aliados que ofrece promociones e información relevante para los arrendatarios y sus familias. ",
   "PartnersHero.textColor": "white",
   "PartnersHero.btnMode": "light",
   "PartnersGrid.bgColor": "bg-white",
-  "PartnersGrid.title": "Beneficios que siempre suman",
-  "PartnersGrid.desc": "Este programa te permite acceder a descuentos brindados por los aliados en telefonía, servicio técnico, autolavado y muchos otros. Pronto incorporaremos nuevos aliados para que puedas disfrutar mucho más.",
+  "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones.",
+  "PartnersGrid.desc": "Este programa te permite acceder a promociones brindadas por aliados en seguros, servicio técnico y muchos otros.",
   "PartnersGrid.textColor": "gray-primary",
   "PartnersGrid.linkItem": "/co/didimas/{{partnerName}}/",
   "PartnersCTA.title": "¿Cómo participar de DiDiMás+?",

@@ -70,8 +70,23 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`cl`, `ar`, `pe`, `co`, `au`, `do`, `pa`, `ec`, `cr`, `eg`, `nz`, `mx`],
-        defaultLanguage: `cl`,
+        languages: [
+          `cl`,
+          `ar`,
+          `pe`,
+          `co`,
+          `au`,
+          `do`,
+          `pa`,
+          `ec`,
+          `cr`,
+          `eg`,
+          `nz`,
+          `mx`,
+          `en`,
+        ],
+        defaultLanguage: `en`,
+        redirect: "false",
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `https://web.didiglobal.com/`,
         // you can pass any i18next options
@@ -85,6 +100,31 @@ module.exports = {
         pages: [
           {
             matchPath: "/:lang?/:path?/:variable?/",
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/lugares/:path?",
+            languages: ["cl", "ar", "pe"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/guias/:path?",
+            languages: ["cl", "ar", "pe", "co", "do", "cr", "ec", "mx", "pa"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/articulos/:path?",
+            languages: ["cl", "ar", "pe", "co", "do", "cr", "ec", "pa", "mx"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/blog/:path?",
+            languages: ["au", "nz"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/food/blog/:path?",
+            languages: ["cl", "cr", "do", "co"],
             getLanguageFromPath: true,
           },
         ],
@@ -181,7 +221,6 @@ module.exports = {
             "cr",
             "pa",
             "mx",
-            "nz"
           ];
 
           const engCountries = ["au", "nz", "eg", "ru"];

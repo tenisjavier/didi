@@ -288,6 +288,7 @@
   "SafetyHero.btnMode": "light",
   "SafetyGridDuringTrip.bgColor": "bg-gray-light",
   "SafetyGridDuringTrip.title": "Riders Safety Features",
+  "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "gray-primary",
   "SafetyGridDuringTrip.columns": [
     {
@@ -341,6 +342,7 @@
   ],
   "SafetyGridDrv.bgColor": "bg-white",
   "SafetyGridDrv.title": "Drivers Safety Features",
+  "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
     {
@@ -651,6 +653,12 @@
   "OffersHero.desc": "Select you next discount for your next ride",
   "OffersHero.textColor": "white",
   "OffersHero.btnMode": "light",
+  "OfferHero.textColor": "white",
+  "OfferHero.bgColor": "bg-orange-primary",
+  "OfferHero.btnType": "pax",
+  "OfferHero.btnText": false,
+  "OfferHero.btnLink": false,
+  "OfferHero.btnMode": "light",
   "OffersGrid.title": "Select your Offer",
   "OffersGrid.bgColor": "bg-gray-light",
   "OffersGrid.desc": "Select you next discount",
