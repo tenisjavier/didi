@@ -2,25 +2,26 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import AboutHero from "../../components/sections/AboutHero";
-import AboutColumns from "../../components/sections/AboutColumns";
+import AboutGlobalCTA from "../../components/sections/AboutGlobalCTA";
+import AboutCountryCTA from "../../components/sections/AboutCountryCTA";
 
 const SobreDiDi = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "cl.HomeHero.bgImage";
+    return image.title === "mx.AboutHero.bgImage";
   })[0];
-  const safetyHeroBgImage = images.filter((image) => {
-    return image.title === "cl.SafetyHero.bgImage";
+  const aboutGlobalImage = images.filter((image) => {
+    return image.title === "mx.AboutCTA.image";
   })[0];
-  const helpCenterBgImage = images.filter((image) => {
-    return image.title === "cl.HelpCenterHero.bgImage";
+  const aboutCountryImage = images.filter((image) => {
+    return image.title === "mx.AboutCountryCTA.image";
   })[0];
 
-  const columnsImages = [safetyHeroBgImage, helpCenterBgImage];
   return (
     <Layout>
       <AboutHero bgImage={homeHeroBgImage}></AboutHero>
-      <AboutColumns images={columnsImages}></AboutColumns>
+      <AboutGlobalCTA image={aboutGlobalImage}></AboutGlobalCTA>
+      <AboutCountryCTA image={aboutCountryImage}></AboutCountryCTA>
     </Layout>
   );
 };
@@ -42,9 +43,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "cl.HomeHero.bgImage"
-            "cl.SafetyHero.bgImage"
-            "cl.HelpCenterHero.bgImage"
+            "mx.AboutHero.bgImage"
+            "mx.AboutCTA.image"
+            "mx.AboutCountryCTA.image"
           ]
         }
       }

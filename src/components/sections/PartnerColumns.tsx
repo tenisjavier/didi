@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
@@ -7,9 +8,9 @@ import {
   faDollarSign,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
-import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
+import LinkColumnSection, { ColumnsSectionProps } from "../LinkColumnSection";
 
-interface SafetyPaxColumnsProps {
+interface PartnerColumnsProps {
   images: {
     title: string;
     description: string;
@@ -19,16 +20,18 @@ interface SafetyPaxColumnsProps {
   title?: string;
   desc?: string;
   columns?: any[];
+  categoriesID: any[];
 }
 
-const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColumnsProps) => {
+const PartnerColumns = ({ images, icons, title, desc, columns, categoriesID }: PartnerColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    bgColor: t("SafetyPaxColumns.bgColor"),
-    textColor: t("SafetyPaxColumns.textColor"),
-    columns: columns || t("SafetyPaxColumns.columns", { returnObjects: true }),
-    title: title || t("SafetyPaxColumns.title"),
+    bgColor: t("PartnerColumns.bgColor"),
+    textColor: t("PartnerColumns.textColor"),
+    columns: columns || t("PartnerColumns.columns", { returnObjects: true }),
+    title: title || t("PartnerColumns.title"),
     desc: desc,
+    categoriesID: categoriesID
   };
   if (images) {
     props.columns.forEach((col, index) => {
@@ -37,7 +40,7 @@ const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColu
         <GatsbyImage
           image={image}
           alt={images[index].description}
-          className="z-10 m-4 w-48"
+          className="z-10 m-4 w-36"
         ></GatsbyImage>
       );
     });
@@ -52,9 +55,9 @@ const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColu
 
     props.columns[2].image = <FontAwesomeIcon icon={faClock} size="3x" />;
   }
-  return <ColumnsSection {...props}></ColumnsSection>;
+  return <LinkColumnSection {...props}></LinkColumnSection>;
 };
 
 
-export default SafetyPaxColumns;
+export default PartnerColumns;
 

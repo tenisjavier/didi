@@ -125,7 +125,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Club DiDi",
-          url: "/mx/conductor/clubdidi",
+          url: "/mx/clubdidi",
         },
         {
           text: "Regístrate Online",
@@ -143,7 +143,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Préstamos",
-      url: "/mx/didi-prestamos/",
+      url: "https://prestamos.didiglobal.com",
     },
     {
       text: "DiDi Food",
@@ -169,7 +169,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "Sobre DiDi",
-      url: "/mx/sobre-didi/",
+      url: "/mx/nosotros/",
       dropMenu: [
         {
           text: "Seguridad",

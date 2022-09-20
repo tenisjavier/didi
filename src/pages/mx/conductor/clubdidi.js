@@ -1,50 +1,35 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import DrvHero from "../../../components/sections/DrvHero";
-import DrvWhyDiDi from "../../../components/sections/DrvWhyDiDi";
-import DrvVideoGrid from "../../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../../components/sections/DrvBanner";
-import DrvFeatures from "../../../components/sections/DrvFeatures";
-import HomeColumns from "../../../components/sections/PaxColumns";
-import DrvCityList from "../../../components/sections/DrvCityList";
-import SilderSection from "../../../components/sections/SliderSection";
-import Requirements from "../../../components/sections/Requirements";
-import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
+import PartnersHero from "../../../components/sections/PartnersHero";
+import PartnersGrid from "../../../components/sections/PartnersGrid";
+import PartnersCTA from "../../../components/sections/PartnersCTA";
+import HomeColumns from "../../../components/sections/HomeColumns";
 
-const ClubDiDi = ({ data }) => {
+const DiDiMas = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const drvHeroBgImage = images.filter((image) => {
-    return image.title === "cl.DrvHero.bgImage";
+  const partners = data.allContentfulPartner.nodes;
+  const didiMasHeroBgImage = images.filter((image) => {
+    return image.title === "co.DiDiMasHero.bgImage";
   })[0];
-  const drvWhyDiDiImage = images.filter((image) => {
-    return image.title === "cl.DrvWhyDiDi.image";
+  const didiMasHeroImage = images.filter((image) => {
+    return image.title === "co.DiDiMasHero.image";
   })[0];
-  const drvFeaturesImage = images.filter((image) => {
-    return image.title === "cl.DrvFeatures.image";
+  const partnerCTAImage = images.filter((image) => {
+    return image.title === "co.PartnerCTA.image";
   })[0];
-  const products = data.allContentfulProduct.nodes;
-  const cities = data.contentfulCountry.city;
   return (
     <Layout>
-      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
-      <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
-      <DrvVideoGrid></DrvVideoGrid>
-      <DrvBanner></DrvBanner>
-      <DrvFeatures image={drvFeaturesImage}></DrvFeatures>
-      <SilderSection
-        data={products}
-        title="Hay un DiDi para ti"
-      ></SilderSection>
-      <Requirements data={products}></Requirements>
-      <KnowMoreBanner></KnowMoreBanner>
+      <PartnersHero
+        bgImage={didiMasHeroBgImage}
+        image={didiMasHeroImage}
+      ></PartnersHero>
+      <PartnersGrid data={partners}></PartnersGrid>
+      <PartnersCTA image={partnerCTAImage}></PartnersCTA>
       <HomeColumns></HomeColumns>
-      <DrvCityList data={cities}></DrvCityList>
     </Layout>
   );
 };
-
-export default ClubDiDi;
 
 export const query = graphql`
   query ($language: String!) {
@@ -58,15 +43,8 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: {
-          in: [
-            "cl.DrvHero.bgImage"
-            "cl.DrvWhyDiDi.image"
-            "cl.DrvFeatures.image"
-          ]
-        }
-      }
+      filter: { title: { regex: "/(co.DiDiMasHero)|(co.PartnerCTA)/" } }
+      sort: { fields: title }
     ) {
       nodes {
         id
@@ -75,32 +53,17 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
-        category: { eq: "driver" }
-      }
-    ) {
+    allContentfulPartner(filter: { country: { code: { eq: "co" } } }) {
       nodes {
         name
-        description
-        phone
-        requirement {
-          raw
-        }
-        image {
+        desc
+        logo {
           gatsbyImageData
+          description
         }
-        country {
-          code
-        }
-      }
-    }
-    contentfulCountry(code: { eq: "cl" }) {
-      city {
-        name
-        slug
       }
     }
   }
 `;
+
+export default DiDiMas;
