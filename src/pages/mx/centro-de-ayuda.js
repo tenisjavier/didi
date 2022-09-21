@@ -15,7 +15,7 @@ const CentroDeAyuda = ({ data }) => {
     (node) => node.name === "DiDi Pasajero Mexico"
   );
   const faqDrv = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Conductor Mexico"
+    (node) => node.name === "DiDi Express Mexico"
   );
   return (
     <Layout>

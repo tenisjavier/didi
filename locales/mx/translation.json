@@ -787,6 +787,118 @@
       "comment": "Rapida aplicación sin tantos trámites y rápido aumento de limite.¡Excelente servicio!",
       "city": "Mérida"
     }
-  ]
-  
+  ],
+  "TaxRequired.title": "Requisitos Fiscales",
+  "TaxRequired.desc": "Como prestador de servicios de transporte deberás cumplir con las obligaciones fiscales y facturar los viajes que realices a través de DiDi.",
+  "TaxRequired.textColor": "white",
+  "TaxRequired.btnMode": "primary",
+  "TaxRequired.btnText": "Sube tus documentos",
+  "TaxRequired.btnLink": "https://page.didiglobal.com/driver-page/pax/index.html",
+  "TaxRequiredColumns.title": "¿Qué documentos necesito para cumplir con mis obligaciones fiscales?",
+  "TaxRequiredColumns.columns": [
+    {
+      "title": "Certificado de Sellos Digitales",
+      "desc": "Compuesto por 2 archivos y 1 contraseña",
+      "btnText": "Obtén tus Sellos Digitales aquí",
+      "btnMode": "primary",
+      "btnLink": "https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas"
+    },
+    {
+      "title": "RFC",
+      "desc": "El RFC es una clave única de registro que identifica a cada persona con actividad económica. \n *Recuerda que tu RFC debe de coincidir con el RFC del certificado de Sellos Digitales.",
+      "btnText": "Obtén tu RFC aquí",
+      "btnMode": "primary",
+      "btnLink": "https://www.sat.gob.mx/tramites/operacion/28753/obten-tu-rfc-con-la-clave-unica-de-registro-de-poblacion-curp"
+    }
+  ],
+  "DigitalStampsFAQ.title": "Los sellos digitales se componen de los siguientes documentos.",
+  "DigitalStampsFAQ.desc": "Podrás tramitar tu certificado de sellos digitales con el SAT. Estos documentos te los entregará el SAT en formato digital. ",
+  "DigitalStampsFAQ.btnText": "Obtén tus Sellos Digitales aquí",
+  "DigitalStampsFAQ.btnLink": "https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas",
+  "DigitalStampsFAQ.btnMode": "primary",
+  "DigitalStampsFAQ.bgColor": "bg-gray-light",
+  "DigitalStampsFAQ.textColor": "gray-primary",
+  "DigitalStampsFAQ.textAccordionColor": "orange-primary",
+  "DigitalStampsFAQ.bgAccordionColor": "bg-white",
+  "DigitalStampsFAQ.descText": "*Recuerda que para obtener tu Certificado de Sellos Digitales con el SAT necesitas tu e.firma. Tu e.firma, antes conocida como firma electrónica, es un grupo de documentos que necesitas para obtener tu certificado de sellos digitales y tiene la validez de una firma autógrafa.",
+  "DigitalStampsFAQ.linkURL": "https://www.sat.gob.mx/tramites/17074/obten-el-certificado-de-e.firma-para-tu-empresa-(antes-firma-electronica)",
+  "DigitalStampsFAQ.linkText": "Más información acerca de la e.firma aquí.",
+  "DigitalStampsFAQ.afterText": "TIP: Si obtuviste tu certificado de sellos digitales recientemente deberás esperar aproximadamente 72 horas a que éstas se validen ante el SAT. Así tus documentos serán validados en el portal de verificación fiscal de DiDi con más facilidad.",
+  "DigitalStampsFAQ.items": [
+    {
+      "title": "1. Llave de certificado",
+      "content": "Documento con formato csd.key"
+    },
+    {
+      "title": "2. Certificado CSD",
+      "content": "Documento en formato csd.cer"
+    },
+    {
+      "title": "3. Contraseña de certificado",
+      "content": "Clave de acceso para hacer uso de tus archivos. Ésta la ingresarás directamente en el portal."
+    }
+  ],
+  "TaxDocumentsFAQ.title": "",
+  "TaxDocumentsFAQ.desc": "1. Ingresa al portal de DiDi desde una computadora. https://page.didiglobal.com/driver-page/pax/index.html \n 2. Completa tus datos en los campos de registro. Asegúrate de tener los siguientes datos y documentos disponibles:",
+  "TaxDocumentsFAQ.descText": "3. Recibirás confirmación de la verificación de tus documentos a partir de 24 horas de que los hayas subido.",
+  "TaxDocumentsFAQ.linkURL": "",
+  "TaxDocumentsFAQ.linkText": "",
+  "TaxDocumentsFAQ.afterText": "",
+  "TaxDocumentsFAQ.btnText": "",
+  "TaxDocumentsFAQ.bgColor": "bg-white",
+  "TaxDocumentsFAQ.textColor": "gray-primary",
+  "TaxDocumentsFAQ.textAccordionColor": "orange-primary",
+  "TaxDocumentsFAQ.bgAccordionColor": "bg-gray-light",
+  "TaxDocumentsFAQ.items": [
+    {
+      "title": "1. Número de celular registrado",
+      "content": "Recibirás un SMS a este número con un código de verificación que deberás ingresar para continuar."
+    },
+    {
+      "title": "2. RFC",
+      "content": "Recuerda que al NO registrar tu RFC, DiDi deberá retener 36% de tus ingresos en línea. Al ingresar tu RFC DiDi retendrá el 16% solamente, de acuerdo a las normas aplicables."
+    },
+    {
+      "title": "3. Régimen fiscal tributario",
+      "content": "El régimen fiscal es un conjunto de derechos y obligaciones a los que se hace acreedor un ciudadano a partir de desempeñar una actividad económica específica. Este lo puedes encontrar en tu Constancia de Situación Fiscal."
+    },
+    {
+      "title": "4. Llave de certificado de Sellos Digitales",
+      "content": "Documento con formato csd.key"
+    },
+    {
+      "title": "5. Contraseña de certificado",
+      "content": ""
+    },
+    {
+      "title": "6. Certificado de Sellos Digitales",
+      "content": "Documento en formato csd.cer"
+    }
+  ],
+  "TaxDocumentationCTA.title": "Ya tengo mis documentos ¿Qué sigue?",
+  "TaxDocumentationCTA.desc": "1. Consulta su validez ante el SAT aquí. https://agsc.siat.sat.gob.mx/PTSC/ValidaRFC/index.jsf \n 2. Sube tus documentos válidos al Portal de Verificación Fiscal de DiDi o bien preséntalos en el club de conductores de tu ciudad.",
+  "TaxDocumentationCTA.btnText": "Sube tus Sellos Digitales aquí",
+  "TaxDocumentationCTA.btnMode": "primary",
+  "TaxDocumentationCTA.btnLink": "https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas",
+  "TaxAdviceColumns.title": "¿Necesitas asesoría fiscal?",
+  "TaxAdviceColumns.desc": "Obtén asistencia fiscal para presentar tu información contable en tiempo y forma. DiDi tiene alianzas comerciales con expertos que podrás contratar para que te asistan. Contáctalos para más información.",
+  "TaxAdviceColumns.columns": [
+    {
+      "title": "Simple TAX \n $199 M.N. + I.V.A mensuales",
+      "desc": "Asesoría contable: \n • Revisión de facturas \n • Presentación mensual de contabilidad electrónica. \n • Realización de conciliaciones bancarias. \n • Asesoría con sellos fiscales. \n Servicios Fiscales: \n • Cálculo de impuestos. \n • Solicitud de devoluciones \n • Asesoría para alta ante el SAT, IMSS, y programa de facturación. \n • Presentación bimestral de ISR e I.V.A. Revisión de impuestos locales. \n Teléfono: 3324721164 \n didi@strategaconsultores.com"
+    },
+    {
+      "title": "Contabilizate \n $179.00 + I.V.A mensuales",
+      "desc": "• Obligaciones mensuales \n • Declaraciones anuales de impuestos \n • Visualiza tus ingresos y gastos por periodo en nuestra plataforma.  \n • Soporte de lunes a viernes de 09:00 a.m. a 07:00 p.m. \n • Declaraciones anuales.  \n • Facturación electrónica  \n • 50 timbres fiscales al mes. \n Teléfono:  5513097212" 
+    },
+    {
+      "title": "Contact \n $189 M.N. + I.V.A. mensuales",
+      "desc": "Asesoría contable: \n • Contabilidad general \n • Emisión de estados financieros \n Declaraciones mensuales o bimestrales \n • Facturación de acuerdo al esquema actual \n • Declaración mensual o bimestral \n • Declaración anual \n • DIOT (Declaración informativa de operaciones con Terceros) \n Elaboración de factura de ingresos. \n Teléfono: 55 4949 4612 \n contacto@contactocontable.com.mx"
+    }
+  ],
+  "TaxRequiredVideoSection.title": "¿Cómo subir mis documentos fiscales al portal de validación fiscal de DiDi?",
+  "TaxRequiredVideoSection.src": "https://www.youtube.com/embed/6ttEjskVsWs",
+  "TaxRequiredVideoSection.bgColor": "bg-gray-light",
+  "TaxDeclarationCTA.title": "¿Qué recibirás de DiDi para hacer tus declaraciones fiscales?",
+  "TaxDeclarationCTA.desc": "Podrás tramitar tu certificado de sellos digitales con el SAT. Estos documentos te los entregará el SAT en formato digital. \n Los sellos digitales se componen de los siguientes documentos. \n Certificados de retención de impuestos \n DiDi retendrá tus impuestos de manera semanal y te emitirá un certificado. \n • Conductores con cuenta bancaria recibirán un certificado semanal \n • Conductores con DiDi Pay recibirán un certificado diario \n Factura por tarifa de servicio \n • Todos los conductores recibirán una factura mensual con el resumen del mes anterior entero."
 }
