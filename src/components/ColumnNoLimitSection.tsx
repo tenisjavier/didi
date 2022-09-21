@@ -1,5 +1,5 @@
 import React from "react";
-import Card, { CardProps } from "./Card";
+import CardNoLimit, { CardProps } from "./CardNoLimit";
 
 export interface ColumnsSectionProps {
   columns: CardProps[];
@@ -25,7 +25,7 @@ const ColumnsSection = ({
         {desc && desc.split("\n").map((str) => <p className="text-center">{str}</p>)}
         <div className={`mt-10 flex flex-wrap justify-around md:flex-nowrap`}>
           {columns.map((col, index) => {
-            return <Card {...col} key={index} index={index}></Card>;
+            return <CardNoLimit {...col} key={index} index={index}></CardNoLimit>;
           })}
         </div>
       </div>
