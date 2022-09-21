@@ -29,8 +29,8 @@ const Seguridad = ({ data }) => {
     <Layout>
       <SafetyDrvImgHero image={safetyHeroImage}></SafetyDrvImgHero>
       <SafetyGridBeforeTrip images={safetyBeforeDrvColumns.reverse()}></SafetyGridBeforeTrip>
-      <SafetyGridDuringTrip images={safetyBeforeDrvColumns.reverse()}></SafetyGridDuringTrip>
-      <SafetyGridAfterTrip images={safetyBeforeDrvColumns.reverse()}></SafetyGridAfterTrip>
+      <SafetyGridDuringTrip images={safetyDuringDrvColumns.reverse()}></SafetyGridDuringTrip>
+      <SafetyGridAfterTrip images={safetyFinishedDrvColumns.reverse()}></SafetyGridAfterTrip>
       <SafetyDrvColumns images={safetyCOVIDDrvColumns.reverse()}></SafetyDrvColumns>
     </Layout>
   );
