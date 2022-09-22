@@ -7,7 +7,7 @@ import NewsroomColumns from "../../../components/sections/NewsroomColumns";
 const Newsroom = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "pa.ArticlesHero.bgImage";
+    return image.title === "cl.ArticlesHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -30,7 +30,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["pa.ArticlesHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["cl.ArticlesHero.bgImage"] } }) {
       nodes {
         id
         title
