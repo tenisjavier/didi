@@ -25,7 +25,15 @@ const options: optionsInterface = {
       <h1 className={"my-14 text-center text-3xl font-bold"}>{children}</h1>
     ),
     [BLOCKS.HEADING_2]: (node, children) => (
-      <h1 className={"my-12 text-2xl font-bold"}>{children}</h1>
+      <h2 className={"my-12 text-2xl font-bold"}>{children}</h2>
+    ),
+    [BLOCKS.HEADING_5]: (node, children) => (
+      <h5 className={"my-12 text-center text-xl font-bold text-orange-primary"}>
+        {children}
+      </h5>
+    ),
+    [BLOCKS.HEADING_6]: (node, children) => (
+      <h6 className={"my-12 text-center text-lg"}>{children}</h6>
     ),
     [BLOCKS.PARAGRAPH]: (node, children) => <p className={""}>{children}</p>,
     [INLINES.HYPERLINK]: (node, children) => {

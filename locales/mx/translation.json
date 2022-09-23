@@ -665,12 +665,22 @@
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",
   "ArticlesHero.btnMode": "light",
+  "NewsroomHero.title": "DiDi Newsroom",
+  "NewsroomHero.desc": "En esta sección destacaremos las principales comunicaciones de DiDi",
+  "NewsroomHero.textColor": "white",
+  "NewsroomHero.btnMode": "light",
   "ArticlesColumns.title": "DiDi Artículos de Lugares para Visitar en Mexico",
   "ArticlesColumns.bgColor": "bg-blue-primary",
   "ArticlesColumns.textColor": "white",
   "ArticlesColumns.btnText": "Leer Artículo",
   "ArticlesColumns.btnMode": "dark",
   "ArticlesColumns.linkItem": "/mx/articulos/{{article}}/",
+  "NewsroomColumns.title": "Comunicados Oficiales DiDi",
+  "NewsroomColumns.bgColor": "bg-blue-primary",
+  "NewsroomColumns.textColor": "white",
+  "NewsroomColumns.btnText": "Leer Comunicado",
+  "NewsroomColumns.btnMode": "dark",
+  "NewsroomColumns.linkItem": "/mx/newsroom/{{article}}/",
   "ArticleHero.textColor": "white",
   "ArticleHero.btnMode": "light",
   "GuidesHero.title": "Guías para Conductores Mexico",
@@ -993,7 +1003,7 @@
     },
     {
       "title": "Contabilizate \n $179.00 + I.V.A mensuales",
-      "desc": "• Obligaciones mensuales \n • Declaraciones anuales de impuestos \n • Visualiza tus ingresos y gastos por periodo en nuestra plataforma.  \n • Soporte de lunes a viernes de 09:00 a.m. a 07:00 p.m. \n • Declaraciones anuales.  \n • Facturación electrónica  \n • 50 timbres fiscales al mes. \n Teléfono:  5513097212" 
+      "desc": "• Obligaciones mensuales \n • Declaraciones anuales de impuestos \n • Visualiza tus ingresos y gastos por periodo en nuestra plataforma.  \n • Soporte de lunes a viernes de 09:00 a.m. a 07:00 p.m. \n • Declaraciones anuales.  \n • Facturación electrónica  \n • 50 timbres fiscales al mes. \n Teléfono:  5513097212"
     },
     {
       "title": "Contact \n $189 M.N. + I.V.A. mensuales",

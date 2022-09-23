@@ -3,7 +3,7 @@ const slugify = require("slugify");
 
 // @desc: Create Routes from WP for all countries and pass pageContext to template
 // @return: null
-const guidesRoutesInit = async (graphql, createPage) => {
+const articlesRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
       allContentfulArticle {
@@ -36,6 +36,7 @@ const guidesRoutesInit = async (graphql, createPage) => {
     // create path depending on the language and category
     let path = `/${country.code}/articulos/${slug}`;
     if (cleanCategory === "food") path = `/${country.code}/food/blog/${slug}`;
+    if (cleanCategory === "news") path = `/${country.code}/newsroom/${slug}`;
     if (!sslCountries.includes(country.code) && cleanCategory !== "food")
       path = `/${country.code}/blog/${slug}`;
 
@@ -51,4 +52,4 @@ const guidesRoutesInit = async (graphql, createPage) => {
   });
 };
 
-module.exports.init = guidesRoutesInit;
+module.exports.init = articlesRoutesInit;

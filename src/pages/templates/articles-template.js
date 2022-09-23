@@ -7,12 +7,13 @@ import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
 
 const ArticlesTemplate = ({ data }) => {
+  const articles = data.allContentfulArticle.nodes;
   return (
     <Layout>
       <ArticleHero data={data}></ArticleHero>
       <ArticleContent data={data}></ArticleContent>
       <PaxBanner></PaxBanner>
-      <ArticlesColumns data={data}></ArticlesColumns>
+      {articles.length && <ArticlesColumns data={data}></ArticlesColumns>}
     </Layout>
   );
 };
