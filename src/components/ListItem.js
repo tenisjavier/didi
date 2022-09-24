@@ -8,7 +8,7 @@ const ListItem = ({ text, secondText, link, image }) => {
   const subText = secondText && secondText.slice(0, 40).concat("...");
 
   const item = link ? (
-    <div className="text-blue-primary flex items-center justify-between px-4">
+    <div className=" flex items-center justify-between px-4">
       <span className="z-10">
         <p>
           <Link to={link}>{text}</Link>
@@ -30,7 +30,11 @@ const ListItem = ({ text, secondText, link, image }) => {
     <p>{text}</p>
   );
   return (
-    <li className="border-gray-primary w-96 rounded border border-solid h-32 m-1 relative">
+    <li
+      className={`${
+        image ? "text-white" : "text-blue-primary"
+      } border-gray-primary w-96 rounded border border-solid h-32 m-1 relative`}
+    >
       {image && (
         <GatsbyImage
           image={image.gatsbyImageData}
