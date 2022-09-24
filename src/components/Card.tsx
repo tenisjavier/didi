@@ -47,7 +47,7 @@ const Card = (props: CardProps) => {
         <div className={`mb-4 ${insideHeight} overflow-hidden`}>
           <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
           <p className={"text-lg"}></p>
-          <Truncate lines={6} ellipsis={<span>...</span>}>
+          <Truncate lines={8} ellipsis={<span>...</span>}>
             {desc}
           </Truncate>
         </div>

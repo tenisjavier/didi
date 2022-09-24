@@ -40,9 +40,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(
-      filter: { title: { in: ["cr.PaxHero.bgImage"] } }
-    ) {
+    allContentfulAsset(filter: { title: { in: ["cr.PaxHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -58,7 +56,7 @@ export const query = graphql`
     ) {
       nodes {
         name
-        description
+        descriptionForPax
         phone
         requirement {
           raw

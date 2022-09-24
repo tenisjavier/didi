@@ -77,7 +77,8 @@ const SilderSection = (props) => {
                     {data.name}
                   </h2>
                   <p className="my-2 text-justify text-base  2xl:text-lg">
-                    {data.description}
+                    {data.description && data.description}
+                    {data.descriptionForPax && data.descriptionForPax}
                   </p>
                   {data.des2 ? (
                     <p className="my-2 text-justify text-base 2xl:text-lg">

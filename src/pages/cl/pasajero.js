@@ -63,7 +63,7 @@ export const query = graphql`
     ) {
       nodes {
         name
-        description
+        descriptionForPax
         phone
         requirement {
           raw
