@@ -9,6 +9,7 @@ const DrvCityList = ({ data }) => {
       text: city.name,
       secondText: "",
       link: t("DrvCityList.linkItem", { city: city.slug }),
+      image: city.image,
     };
   });
 

@@ -12,7 +12,7 @@
   "SafetyCTA.btnLink": "/do/seguridad/",
   "HelloCTA.title": "Conoce DiDi",
   "HelloCTA.bullets": false,
-  "HelloCTA.desc": "Somos DiDi, la plataforma tecnológica de movilidad inteligente. #1 en el mundo.  Nacimos en 2012 y hoy conectamos a +550 millones de usuarios con +31 millones de Socios Conductores en 260 de las ciudades más importantes del mundo.",
+  "HelloCTA.desc": "Somos DiDi, la plataforma tecnológica de movilidad inteligente #1 en el mundo.  Nacimos en 2012 y hoy conectamos a +550 millones de usuarios con +31 millones de Socios Conductores en 260 de las ciudades más importantes del mundo.",
   "HelloCTA.btnText": "Conoce más sobre nosotros",
   "HelloCTA.btnMode": "primary",
   "HelloCTA.btnLink": "/do/sobre-didi/",
@@ -22,9 +22,9 @@
   "AboutGlobalCTA.btnText": "Conoce más de DiDi Global",
   "AboutGlobalCTA.btnMode": "primary",
   "AboutGlobalCTA.btnLink": "http://www.didiglobal.com/",
-  "DrvCTA.title": "Maneja con DiDi",
+  "DrvCTA.title": "Regístrate en DiDi Conductor",
   "DrvCTA.bullets": false,
-  "DrvCTA.desc": "Conduciendo a través de DiDi hay una tasa de servicio menor, por lo que te quedas con más ganancias en tu bolsillo. Además, tienes soporte telefónico 24/7 para tus viajes y funciones de seguridad que te permitirán sentirte tranquilo en todos tus viajes. Maneja en tu propio tiempo y conéctate con DiDi cuando más te convenga. ¿Estás listo para comenzar a generar más ganancias?",
+  "DrvCTA.desc": "Conectándote con DiDi cuentas con una tasa de servicio menor, por lo que te quedas con más ganancias en tu bolsillo. Además, tienes soporte telefónico 24/7 para tus viajes y funciones de seguridad que te permitirán sentirte tranquilo en todos tus viajes. Maneja en tu propio tiempo y conéctate con DiDi cuando más te convenga. ¿Estás listo para comenzar a generar más ganancias?",
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
@@ -37,12 +37,12 @@
   "AboutCTA.btnMode": "primary",
   "AboutCountryCTA.title": "DiDi República Dominicana",
   "AboutCountryCTA.bullets": false,
-  "AboutCountryCTA.desc": "En noviembre de 2020 llegamos a República Dominicana, con un gran objetivo: Transformar la movilidad. Hoy tenemos operaciones en la ciudad de Panamá con nuestro producto DiDi Express. ¡Muy pronto conocerás más opciones en la plataforma de DiDi!",
+  "AboutCountryCTA.desc": "En noviembre de 2020 llegamos a República Dominicana, con un gran objetivo: transformar la movilidad. Hoy tenemos operaciones en Santo Domingo y Santiago de los Caballeros con nuestros productos de DiDi Express y DiDi Moto.",
   "AboutCountryCTA.bgColor": "bg-gray-light",
   "AboutCountryCTA.textColor": "gray-primary",
   "AboutCountryCTA.btnMode": "primary",
   "PaxCTA.title": "Elige DiDi",
-  "PaxCTA.desc": "Al conectarte a través de DiDi tienes tarifas accesibles para que viajes donde necesites. Con DiDi tienes soporte telefónico 24/7 en todos tus viajes y puedes contar con nuestros protocolos y funciones de seguridad para que viajes con la tranquilidad que mereces. ¡Es momento de redescubrir tu ciudad en un DiDi!",
+  "PaxCTA.desc": "Al conectarte a través de DiDi tienes tarifas accesibles para que viajes donde necesites. Con DiDi tienes soporte telefónico 24/7 en todos tus viajes y puedes contar con nuestros protocolos y funciones de seguridad para que viajes con la tranquilidad que mereces. ¡Es momento de redescubrir tu ciudad con la app!",
   "PaxCTA.bullets": false,
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "primary",
@@ -63,7 +63,7 @@
       "desc": "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en República Dominicana.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
-      "btnLink": "/do/centro-de-ayuda/",
+      "btnLink": "/do/legal/",
       "btnMode": "light",
       "height": "h-80"
     },
@@ -112,7 +112,7 @@
   "SafetyColumns.columns": [
     {
       "title": "Evaluación del socio durante el registro en la plataforma",
-      "desc": "Para que una persona pueda registrarse como socio conductor/socio taxista en DiDi, debe pasar por validación de documentos personales.",
+      "desc": "Para registrarse como Socio Conductor en DiDi, debe pasar por validación de documentos personales.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -130,7 +130,7 @@
     },
     {
       "title": "Botón de emergencia",
-      "desc": "Durante cualquier situación de emergencia en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 123 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier situación de emergencia en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 911 y nuestro Centro de Emergencias DiDi 24/7.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -147,8 +147,8 @@
       "width": "w-100"
     },
     {
-      "title": "Desvincular Socio Conductor/ taxista",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista.",
+      "title": "Desvincular Socio Conductor",
+      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de Socio Conductor. Esto evitará que en futuras ocasiones no vuelvan a coincidir.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -171,14 +171,8 @@
       "width": "w-100"
     },
     {
-      "title": "Tips de seguridad y calificación a socios conductores/socios taxistas",
+      "title": "Tips de seguridad y calificación a Socios Conductores",
       "desc": "Antes de iniciar un viaje te damos ciertos tips de seguridad para que tengas en cuenta al momento de usar nuestra app.",
-      "textColor": "gray-primary",
-      "width": "w-100"
-    },
-    {
-      "title": "Seguridad ante COVID-19",
-      "desc": "Para cuidarnos juntos, te pedimos seguir las siguientes recomendaciones cuando te conectes con viajes a través de la app de DiDi: 1. No salgas de casa si estás enfermo. / 2. Conforme a las normas locales, el uso de mascarillas es obligatorio en todo el territorio nacional. / 3. Por ello, es necesario que las utilices cuando te conectes con viajes a través de la app. / 4. Lávate las manos con agua y jabón o desinféctalas con alcohol en gel antes y después del viaje. Viaja con las ventanas abiertas para mantener el vehículo ventilado. / 5. Evita tocar partes internas del vehículo durante el viaje. / 6. Desinfecta tu celular diariamente. / 7. Si cuentas con una tarjeta de débito o crédito, te recomendamos utilizarla en todos tus viajes para evitar el contacto físico.",
       "textColor": "gray-primary",
       "width": "w-100"
     }
@@ -193,7 +187,7 @@
   "PaxColumns.columns": [
     {
       "title": "Amplia disponibilidad y cobertura",
-      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encuéntranos ahora en todo República Dominicana!",
+      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encuéntranos ahora en Santiago de los Caballeros!",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
@@ -273,7 +267,7 @@
       "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
     }
   ],
-  "Requirements.title": "Requerimientos para ser Conductor",
+  "Requirements.title": "Requerimientos para ser Socio Conductor",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
   "DrvBanner.title": "Tenemos expertos para ayudarte a completar tu registro y responder a cualquier duda que tengas",
@@ -440,7 +434,7 @@
     },
     {
       "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de Socio Conductor. Esto evitará que, en futuras oportunidades vuelvan a coincidir",
       "bgColor": "bg-gray-light"
     }
   ],
@@ -528,7 +522,7 @@
   "PartnersCTA.bgColor": "bg-blue-primary",
   "PartnersCTA.btnMode": "light",
   "DrvCityHero.title": "Socios Conductores en {{city}}",
-  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}?. Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
+  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}? Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",
