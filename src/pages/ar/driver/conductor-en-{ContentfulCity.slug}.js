@@ -118,6 +118,10 @@ export const query = graphql`
       city {
         name
         slug
+        image {
+          description
+          gatsbyImageData(width: 400)
+        }
       }
     }
   }
