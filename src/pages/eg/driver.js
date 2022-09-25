@@ -3,7 +3,8 @@ import { graphql } from "gatsby";
 import {
   faCircleDollarToSlot,
   faShieldHeart,
-  faComments,faChartColumn
+  faComments,
+  faChartColumn,
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
 import DrvHeroRTL from "../../components/sections/DrvHeroRTL";
@@ -12,7 +13,12 @@ import DrvCityList from "../../components/sections/DrvCityList";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const icons = [faCircleDollarToSlot, faShieldHeart, faChartColumn, faComments ];
+  const icons = [
+    faCircleDollarToSlot,
+    faShieldHeart,
+    faChartColumn,
+    faComments,
+  ];
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "eg.DrvHero.bgImage";
   })[0];
@@ -44,9 +50,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: {
-        title: {
-          regex: "/(eg.DrvHero.bgImage)|(eg.DrvBenefits.image)/"
-        }
+        title: { regex: "/(eg.DrvHero.bgImage)|(eg.DrvBenefits.image)/" }
       }
       sort: { fields: title }
     ) {
@@ -82,6 +86,10 @@ export const query = graphql`
       city {
         name
         slug
+        image {
+          description
+          gatsbyImageData(width: 400)
+        }
       }
     }
   }

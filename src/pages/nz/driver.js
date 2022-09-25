@@ -94,6 +94,10 @@ export const query = graphql`
       city {
         slug
         name
+        image {
+          description
+          gatsbyImageData(width: 400)
+        }
       }
     }
     allContentfulPartner(filter: { country: { code: { eq: "nz" } } }) {
