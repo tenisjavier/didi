@@ -39,7 +39,7 @@ const ListItem = ({ text, secondText, link, image }) => {
         <GatsbyImage
           image={image.gatsbyImageData}
           alt={image.description}
-          className="!absolute z-0 h-full w-full block bg-cover brightness-50"
+          className="!absolute z-0 h-full w-full !block bg-cover brightness-50"
         ></GatsbyImage>
       )}
       {item}
