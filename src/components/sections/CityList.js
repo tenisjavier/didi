@@ -10,6 +10,7 @@ const CityList = ({ cities }) => {
       text: city.name,
       secondText: "",
       link: t("CityList.linkItem", { city: slugify(city.name) }),
+      image: city.image,
     };
   });
 
