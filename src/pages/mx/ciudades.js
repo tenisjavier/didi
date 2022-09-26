@@ -7,7 +7,7 @@ import DrvCityList from "../../components/sections/DrvCityList";
 const Ciudades = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "cl.DrvHero.bgImage";
+    return image.title === "mx.DrvHero.bgImage";
   })[0];
   const cities = data.contentfulCountry.city;
   return (
@@ -29,7 +29,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["cl.DrvHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["mx.DrvHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -37,10 +37,14 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulCountry(code: { eq: "cl" }) {
+    contentfulCountry(code: { eq: "mx" }) {
       city {
         name
         slug
+        image {
+          description
+          gatsbyImageData(width: 400)
+        }
       }
     }
   }
