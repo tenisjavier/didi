@@ -506,6 +506,7 @@
   "LegalHero.btnMode": "light",
   "LegalHero.linkItem": "/cr/legal/terminos-y-condiciones/",
   "LegalCTA.title": "Revisá nuestra Políticas de Privacidad",
+  "LegalCTA.desc": "Revisa en qué consiste nuestras políticas de privacidad",
   "LegalHero.btnText": "Términos y Condiciones",
   "LegalCTA.textColor": "gray-primary",
   "LegalCTA.btnMode": "dark",
