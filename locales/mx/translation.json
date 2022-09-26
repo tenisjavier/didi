@@ -783,6 +783,7 @@
   "LegalHero.btnMode": "light",
   "LegalHero.linkItem": "/cl/legal/terminos-y-condiciones/",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
+  "LegalCTA.desc": "Revisa en qué consiste nuestras políticas de privacidad",
   "LegalCTA.textColor": "gray-primary",
   "LegalCTA.btnMode": "dark",
   "StoreHero.title": "Escanéa el QR con tu celular ",

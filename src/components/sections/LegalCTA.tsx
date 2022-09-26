@@ -17,6 +17,7 @@ const LegalCTA = ({ image }: LegalCTAProps) => {
     hero: false,
     title: t("LegalCTA.title"),
     textColor: t("LegalCTA.textColor"),
+    desc: t("LegalCTA.desc"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData}
@@ -25,8 +26,8 @@ const LegalCTA = ({ image }: LegalCTAProps) => {
       ></GatsbyImage>
     ),
     btnMode: t("LegalCTA.btnMode"),
-    btnText: "Políticas de Privacidad",
-    btnLink: "#",
+    btnText: "Saber sobre la Ley",
+    btnLink: "/cl/legal/ley-nueva-conductores-apps/",
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;
