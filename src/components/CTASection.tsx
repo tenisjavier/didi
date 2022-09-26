@@ -112,7 +112,7 @@ const CTASection = (props: CTAProps) => {
         {image}
 
         <div
-          className={`w-11/12 px-4  text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
+          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
         >
           {hero ? (
             <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
