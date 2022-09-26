@@ -20,8 +20,8 @@ const Accordion = ({ title, content, bgColor, textColor }: Accordion) => {
   const content1: any = useRef(null);
 
   const closeClass =
-    "text-lg bg-gray-200 text-gray-primary py-0 w-full px-20 transition-all duration-700 overflow-hidden";
-  const openClass = `bg-white text-gray-primary w-full py-5 px-20 transition-all duration-700 text-lg overflow-hidden`;
+    "text-lg bg-gray-200 text-gray-primary py-0 w-full px-4 md:px-20 transition-all duration-700 overflow-hidden";
+  const openClass = `bg-white text-gray-primary w-full py-5 px-4 md:px-20 transition-all duration-700 text-lg overflow-hidden`;
   const toggtle = () => {
     setIsOpen(!isOpen);
     setHeight(isOpen ? `0px` : `${content1.current.scrollHeight + 50}px`);
