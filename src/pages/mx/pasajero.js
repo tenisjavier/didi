@@ -5,7 +5,7 @@ import PaxHero from "../../components/sections/PaxHero";
 import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxBanner from "../../components/sections/PaxBanner";
-import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
+import HomeColumns from "../../components/sections/HomeColumns";
 
 const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -23,7 +23,7 @@ const Pasajero = ({ data }) => {
         title="Hay un DiDi Para ti"
       ></SilderSection>
       <PaxBanner></PaxBanner>
-      <KnowMoreBanner></KnowMoreBanner>
+      <HomeColumns></HomeColumns>
     </Layout>
   );
 };
@@ -51,13 +51,13 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
+        country: { elemMatch: { code: { eq: "mx" } } }
         category: { eq: "driver" }
       }
     ) {
       nodes {
         name
-        description
+        descriptionForPax
         phone
         requirement {
           raw
