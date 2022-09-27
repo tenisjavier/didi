@@ -41,7 +41,7 @@ export const query = graphql`
     allContentfulArticle(
       filter: { category: { eq: "rides" }, country: { code: { eq: "mx" } } }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: 10
+      limit: 15
     ) {
       nodes {
         title
