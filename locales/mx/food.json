@@ -161,7 +161,7 @@
   "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
   "FoodBlogColumns.bgColor": "bg-blue-primary",
   "FoodBlogColumns.textColor": "white",
-  "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
+  "FoodBlogColumns.linkItem": "/mx/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
   "FoodBlogPostHero.btnMode": "light",
   "StoreFoodAppHero.title": "Escanea el QR con tu celular",
@@ -188,7 +188,7 @@
         {
           "label": "Correo electrónico",
           "info": "soporte.food@mx.didiglobal.com",
-          "infoColor": { "color": "#ff7d41"}
+          "infoColor": { "color": "#ff7d41" }
         }
       ]
     }
@@ -208,7 +208,7 @@
   "PrivacyHero.textColor": "white",
   "PrivacyHero.btnText": "Privacy",
   "PrivacyHero.btnMode": "light",
-  "PrivacyHero.linkItem": "/cl/food/privacy/privacy/",
+  "PrivacyHero.linkItem": "/mx/food/privacy/privacy/",
   "PrivacyCTA.title": "Revisa nuestra Políticas de Privacidad",
   "PrivacyCTA.textColor": "gray-primary",
   "PrivacyCTA.btnMode": "dark",
