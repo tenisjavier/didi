@@ -2,8 +2,8 @@
   "HomeHero.title": "Muévete por tu ciudad",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
-  "FoodCTA.title": "Order food",
-  "FoodCTA.desc": "Are you hungry? \n You can order food right now through our new DiDi Food site! \n Fast, easy and affordable.",
+  "FoodCTA.title": "Ordena comida",
+  "FoodCTA.desc": "¿Tienes hambre? \n ¡Puedes pedir comida ahora mismo a través de nuestro nuevo sitio DiDi Food! \n Rápido, fácil y asequible.",
   "SafetyCTA.title": "Viaja tranquilo",
   "SafetyCTA.desc": "En DiDi no queremos decirte que ”tu seguridad es nuestra prioridad”. En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
   "SafetyCTA.textColor": "white",
@@ -248,6 +248,9 @@
   "VideoSection.src": "https://www.youtube.com/embed/j8sqSHla0Gc",
   "VideoSection.title": "Requisitos para manejar con DiDi",
   "VideoSection.descText": "Conoce los requisitos básicos para registrarte como conductor y para registrar tus autos.",
+  "VideoSection.btnMode": "primary",
+  "VideoSection.btnText": "Requisitos fiscales",
+  "VideoSection.btnLink": "/mx/conductor/requisitos-fiscales",
   "ClubDiDiCTA.title": "Club DiDi",
   "ClubDiDiCTA.desc": "Tu entrada a descuentos, recompensas y servicios exclusivos. Club DiDi: un programa que te da acceso a descuentos y a facilidades ofrecidas por terceros para ayudarte en tu día a día.",
   "ClubDiDiCTA.btnMode": "light",
@@ -1014,5 +1017,204 @@
   "TaxRequiredVideoSection.src": "https://www.youtube.com/embed/6ttEjskVsWs",
   "TaxRequiredVideoSection.bgColor": "bg-gray-light",
   "TaxDeclarationCTA.title": "¿Qué recibirás de DiDi para hacer tus declaraciones fiscales?",
-  "TaxDeclarationCTA.desc": "Podrás tramitar tu certificado de sellos digitales con el SAT. Estos documentos te los entregará el SAT en formato digital. \n Los sellos digitales se componen de los siguientes documentos. \n Certificados de retención de impuestos \n DiDi retendrá tus impuestos de manera semanal y te emitirá un certificado. \n • Conductores con cuenta bancaria recibirán un certificado semanal \n • Conductores con DiDi Pay recibirán un certificado diario \n Factura por tarifa de servicio \n • Todos los conductores recibirán una factura mensual con el resumen del mes anterior entero."
+  "TaxDeclarationCTA.desc": "Podrás tramitar tu certificado de sellos digitales con el SAT. Estos documentos te los entregará el SAT en formato digital. \n Los sellos digitales se componen de los siguientes documentos. \n Certificados de retención de impuestos \n DiDi retendrá tus impuestos de manera semanal y te emitirá un certificado. \n • Conductores con cuenta bancaria recibirán un certificado semanal \n • Conductores con DiDi Pay recibirán un certificado diario \n Factura por tarifa de servicio \n • Todos los conductores recibirán una factura mensual con el resumen del mes anterior entero.",
+  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
+  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.btnMode": "primary",
+  "RequirementHero.textColor": "white",
+  "DrvRequirementColumns.title": "",
+  "DrvRequirementColumns.columns": [
+    {
+      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
+      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+    },
+    {
+      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
+      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
+    },
+    {
+      "title": "Conductor: Quiero conducir y no tengo vehículo",
+      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+    }
+  ],
+  "VehicleRequirementCTA.title": "Requisitos del vehículo",
+  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n Para conocer la regulación aplicable en tu ciudad comunícate al 800 725 8888 o envía un correo a help.driver@mx.didiglobal.com. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
+  "FaqList.title": "Principales preguntas de conductores DiDi",
+  "FaqList.desc": "",
+  "FaqList.linkItem": "/mx/centro-de-ayuda/{{faqSlug}}/",
+  "FaqHero.textColor": "white",
+  "FaqHero.btnMode": "primary",
+  "BankInfoCTA.title": "Actualiza tu información bancaria",
+  "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
+  "BankInfoCTA.bgColor": "bg-gray-light",
+  "FindInfoCTA.title": "Encuentra tu centro DiDi más cercano",
+  "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com",
+  "FindInfoCTA.items": [
+    {
+      "title": "Centros DiDi",
+      "content": " ",
+      "table": [
+        {
+          "city": "City",
+          "address": "DC Location"
+        },
+        {
+          "city": "Aguascalientes",
+          "address": "Plaza Arcos Campestre, Luis Donaldo Colosio Murrieta 602. Local 29. Col. Villas de San Nicolás, Aguascalientes, AGS. CP 20115."
+        },
+        {
+          "city": "Cancún",
+          "address": "N/A"
+        },
+        {
+          "city": "Celaya",
+          "address": "Boulevard Adolfo López Mateos Oriente, No.1286, Plaza Pabellón Campestre, Planta Alta, Oficina P120, CP 38088"
+        },
+        {
+          "city": "Chihuahua",
+          "address": "Plaza San Agustin, Av. Tecnológico 4101, Local 16, colonia Las Granjas, CP 31100, Chihuahua, Chihuahua."
+        },
+        {
+          "city": "Ciudad Juárez",
+          "address": "Av. Lopez Mateos 924n, Alfa, 32317, Cd Juárez, Chih. Dentro de Thub es en el Edificio Giga oficina G-129"
+        },
+        {
+          "city": "Ciudad de México",
+          "address": "Blvd. de la Sta. Cruz 142, Boulevares, 53140 Naucalpan de Juárez, Méx. \n Tlalpan 2268 colonia el centinela 04450 Ciudad de México, CDMX \n Blvd. de la Sta. Cruz 142, Boulevares, 53140 Naucalpan de Juárez, Méx."
+        },
+        {
+          "city": "Ciudad Obregón",
+          "address": "C. Hidalgo 516, Centro, Fundo Legal, 85000 Cd Obregón, Son."
+        },
+        {
+          "city": "Ciudad Victoria",
+          "address": "Hotel Victoria Inn. Ignacio Allende 814, Obrera, Cd. Victoria, Tamps. México. C.P. 87000"
+        },
+        {
+          "city": "Colima",
+          "address": "FastOffice, Aldama #552, Piso 2 Int. 11, Colonia Centro, 28000 Colima, Col."
+        },
+        {
+          "city": "Cuernavaca",
+          "address": "Plaza Corporativo DD 1000 Av. Domingo diez 1003 Col del empleado Cuernavaca Morelos CP 62230."
+        },
+        {
+          "city": "Culiacán",
+          "address": "Blvd. Pedro Infante # 3113-3, Fracc. Country Tres Rios C.P. 80020, CULIACAN, SINALOA."
+        },
+        {
+          "city": "Durango",
+          "address": "Borrego 310, casi esquina con, Calle Gabino Barreda, Zona Centro, 34000 Durango, Dgo."
+        },
+        {
+          "city": "Ensenada",
+          "address": "Pedro Loyola y Delante 206 Plaza Tersa Local 15 Col Carlos Pacheco Cp 22880"
+        },
+        {
+          "city": "Guadalajara",
+          "address": "Av Circunvalación Jorge Álvarez Castillo #1111 y #1113, Col Country Club, CP 44610, Guadalajara, Jalisco."
+        },
+        {
+          "city": "Hermosillo",
+          "address": "Blvd. Juan Navarrete 172 Plaza Valle Local Z-2, Valle Verde, 83200 Hermosillo, Son."
+        },
+        {
+          "city": "La Paz",
+          "address": "Plaza Bajamar, L18, Calle 5 de mayo esquina 18 de marzo, Zona Comercial, La Paz, BCS. CP 23000"
+        },
+        {
+          "city": "León",
+          "address": "Plaza Forum Center, Boulevard Mariano Escobedo 2920, Col. El Tlacuache, 37500 Leon, Guanajuato."
+        },
+        {
+          "city": "Los Mochis – Guasave",
+          "address": "Blvd. Rosendo G. Castro Pte. 518, Local 5, Centro, 81200 Los Mochis, Sin."
+        },
+        {
+          "city": "Manzanillo",
+          "address": "Edificio Torre Puerto. Blvd. Miguel de la Madrid 426, Piso 1 Int. 17, 28239 Manzanillo, Col."
+        },
+        {
+          "city": "Mazatlán",
+          "address": "Av. Camaron Sabalo #7, Sábalo Country 82100, Plaza Sábalo local #8 Mazatlán Sin."
+        },
+        {
+          "city": "Mérida",
+          "address": "Plaza Centro del Paseo: Calle 56 A Por, Av Pérez Ponce 444A, Centro, 97000 Mérida, Yuc. Local D1"
+        },
+        {
+          "city": "Mexicali",
+          "address": "Calz. Anáhuac 899, Indeco Anáhuac, 21060, Mexicali, B.C."
+        },
+        {
+          "city": "Monterrey",
+          "address": "Pabellón M, Melchor Ocampo 116, Piso E1 Local 10 Col. Centro, 64000, Monterrey, N.L. México."
+        },
+        {
+          "city": "Morelia",
+          "address": "Av. Jesús Sansón Flores 71, Camelinas, 58290 Morelia, Mich."
+        },
+        {
+          "city": "Oaxaca",
+          "address": "Av Benito Juárez 514, Ruta Independencia, Centro, 68000 Oaxaca de Juárez, Oax."
+        },
+        {
+          "city": "Puebla",
+          "address": "Blvrd 14 Sur 4302, Zona Sin Asignación de Nombre de Col 50, Jardines de San Manuel, CP: 72570, Puebla, Puebla."
+        },
+        {
+          "city": "Puerto Escondido",
+          "address": "Calle Primera Sur, cuarta Oriente, 71980, Puerto Escondido Santa María Colotepec Oaxaca."
+        },
+        {
+          "city": "Querétaro",
+          "address": "Avenida Universidad 370 locales 106, 107 y 108, La Piedad, 76150 Santiago de Querétaro, Qro."
+        },
+        {
+          "city": "San Luis Potosí",
+          "address": "Av. Sierra Leona 360 Alttus Corporate Center & Plaza Piso 9 Suite 911 CP. 78214 San Luis Potosí."
+        },
+        {
+          "city": "Saltillo",
+          "address": "25240, Blvd. Venustiano Carranza SN-S SERFIN, Jardín, Saltillo, Coah."
+        },
+        {
+          "city": "Tampico",
+          "address": "Hampton Inn by Hilton Tampico. Av. Hidalgo No. 2700 Col. Águila, Tampico, Tamps. México C.P. 89230"
+        },
+        {
+          "city": "Tepic",
+          "address": "City Express. Colima 93 Sur Col, San Antonio, 63159 Tepic, Nay."
+        },
+        {
+          "city": "Tijuana",
+          "address": "Dr. Atl 17, Local 8, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C."
+        },
+        {
+          "city": "Toluca",
+          "address": "Horacio Zúñiga 139, Plaza Maneca Residencial Colón y Col Ciprés, 50120 Toluca de Lerdo, Méx."
+        },
+        {
+          "city": "Torreón",
+          "address": "Av. Escobedo Oriente primer piso Escobedo 46 oriente, Primero de Cobián Centro, 27000 Torreón, Coah."
+        },
+        {
+          "city": "Vallarta",
+          "address": "Blvd. Francisco Medina Ascencio #3987, piso 4, Cowork 401, Interior 102 Marina Vallarta.- Puerto Vallarta, Jalisco, C.P. 48335"
+        },
+        {
+          "city": "Veracruz",
+          "address": "N/A"
+        },
+        {
+          "city": "Villahermosa",
+          "address": "Av Samarkanda 306, Heriberto Kehoe Vicent, 86030 Villahermosa, Tab."
+        },
+        {
+          "city": "Zacatecas",
+          "address": "Centro de Negocios Avanti Zacatecas Edificio La Curva, De La Unión 108, Zona A, 98000 Zacatecas, Zac."
+        }
+      ]
+    }
+  ]
 }

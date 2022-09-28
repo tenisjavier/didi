@@ -24,6 +24,9 @@ const VideoSection = () => {
     textColor: t("VideoSection.textColor"),
     height: "h-128",
     alignItems: "items-start",
+    btnLink: t("VideoSection.btnLink"),
+    btnMode: t("VideoSection.btnMode"),
+    btnText: t("VideoSection.btnText"),
   };
 
   return <Banner {...props}></Banner>;

@@ -12,10 +12,10 @@ const CentroDeAyuda = ({ data }) => {
     return image.title === "mx.HelpCenterHero.bgImage";
   })[0];
   const faqPax = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Pasajero Mexico"
+    (node) => node.name === "DiDi Pasajero México"
   );
   const faqDrv = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Express Mexico"
+    (node) => node.name === "DiDi Express México"
   );
   return (
     <Layout>
