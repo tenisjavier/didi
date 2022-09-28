@@ -44,6 +44,7 @@ const options: optionsInterface = {
       );
     },
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      console.log(node);
       const { gatsbyImageData, title } = node.data.target;
       return (
         <div className="my-12 flex w-full justify-center">

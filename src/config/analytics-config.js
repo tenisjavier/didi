@@ -80,7 +80,8 @@ const insertBtnParams = () => {
       url.indexOf("onelink.me/5xQ3/") > -1 ||
       url.indexOf("onelink.me/4B2F/") > -1 ||
       url.indexOf("onelink.me/zzaY/") > -1 ||
-      url.indexOf("onelink.me/ixFb/") > -1
+      url.indexOf("onelink.me/ixFb/") > -1 ||
+      url.indexOf("onelink.to/s88fxw") > -1
     ) {
       url = getDeepLink(url, thisHostname);
       c.setAttribute("href", url);
@@ -298,6 +299,11 @@ const insertBtnParams = () => {
     } else if (url.indexOf("me/zzaY/") > -1) {
       return oldUrl + newSearchFood;
     } else if (url.indexOf("fleet.onelink.me/tLtr/") > -1) {
+      return (
+        oldUrl +
+        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-fleet/`
+      );
+    } else if (url.indexOf("onelink.to/s88fxw") > -1) {
       return (
         oldUrl +
         `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-fleet/`
