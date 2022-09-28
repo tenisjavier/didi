@@ -131,6 +131,10 @@ const menuLinks: AllMenuInterface = {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
         },
+        {
+          text: "Ciudades Disponibles",
+          url: "/mx/ciudades/",
+        },
       ],
     },
     {
