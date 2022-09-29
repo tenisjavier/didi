@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import GuideHero from "../../../components/sections/GuideHero";
 import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
-import { getDataPreviewContefulGuide } from "../utils";
+import { getDataPreviewContefulGuide } from "../../../util/utils";
 
 const CONTENTFUL_SPACE_ID = "n7hs0hadu6ro"
 const CONTENTFUL_PREVIEW_ACCESS_TOKEN = "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E"
