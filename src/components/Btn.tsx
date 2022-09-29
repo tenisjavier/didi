@@ -19,11 +19,12 @@ export interface BtnProps {
     | "custom"
     | "bothFood";
 
-  btnMode?: "primary" | "dark" | "light";
+  btnMode?: "primary" | "dark" | "light" | 'green';
+  btnModeSecondary?: "primary" | "dark" | "light" | 'green';
   btnLink?: string;
   btnText?: string;
 }
-const Btn = ({ btnType, btnMode, btnLink, btnText }: BtnProps) => {
+const Btn = ({ btnType, btnMode, btnLink, btnText, btnModeSecondary }: BtnProps) => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
@@ -54,7 +55,7 @@ const Btn = ({ btnType, btnMode, btnLink, btnText }: BtnProps) => {
     btnText = btnText || btnData.foodEaterOnlineText;
   }
   return (
-    <div className={`my-2 btn-${btnMode}`}>
+    <div className={`my-2 btn-${btnMode} btn-${btnModeSecondary}`}>
       <a className="block" href={btnLink}>
         {btnText}
       </a>
