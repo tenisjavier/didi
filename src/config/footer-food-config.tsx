@@ -27,7 +27,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Acerca", link: "/mx/food/about/" },
     { text: "Contacto", link: "/mx/food/contact/" },
     { text: "Blog", link: "/mx/food/blog/" },
-    { text: "Privacy", link: "/mx/food/privacy" },
+    { text: "Terms and Conditions", link: "/mx/food/terminos-y-condiciones/" },
+    { text: "Privacidad", link: "/mx/food/privacidad/" },
+    { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
   ],
   do: [
     { text: "Home", link: "/do/food/" },

@@ -26,6 +26,7 @@ const FoodHero = ({ bgImage }: FoodHeroProps) => {
       ></GatsbyImage>
     ),
     btnMode: t("FoodHero.btnMode"),
+    btnModeSecondary: t("FoodHeroSecondary.btnMode"),
     btnType: "bothFood",
   };
   return <CTASection {...props}></CTASection>;

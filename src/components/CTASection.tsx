@@ -48,6 +48,7 @@ const CTASection = (props: CTAProps) => {
     btnMode,
     btnArray,
     reverse,
+    btnModeSecondary
   } = props;
 
   let sectionBtn = (
@@ -56,6 +57,7 @@ const CTASection = (props: CTAProps) => {
       btnLink={btnLink}
       btnMode={btnMode}
       btnText={btnText}
+      btnModeSecondary={btnModeSecondary}
     ></Btn>
   );
 
@@ -72,7 +74,7 @@ const CTASection = (props: CTAProps) => {
   if (btnType === "bothFood") {
     sectionBtn = (
       <>
-        <Btn btnType="foodEaterOnline" btnMode={btnMode}></Btn>
+        <Btn btnType="foodEaterOnline" btnModeSecondary={btnModeSecondary}></Btn>
         <br></br>
         <Btn btnType="foodEater" btnMode={btnMode}></Btn>
       </>

@@ -99,6 +99,14 @@ section.main-text ol li {
   @apply hover:text-white;
 }
 
+.btn-green {
+  @apply bg-green-primary shadow-green-primary/30 inline-block min-w-max cursor-pointer rounded-full py-3 px-8 font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white;
+}
+
+.btn-primary a {
+  @apply hover:text-white;
+}
+
 .btn-light {
   @apply hover:bg-gray-primary text-gray-primary shadow-gray-primary/10 inline-block min-w-max cursor-pointer rounded-full bg-white py-3 px-8  font-semibold shadow-xl hover:text-white;
 }

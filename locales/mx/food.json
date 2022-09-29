@@ -213,5 +213,6 @@
   "PrivacyCTA.textColor": "gray-primary",
   "PrivacyCTA.btnMode": "dark",
   "FaqFoodHero.title": "PREGUNTAS FRECUENTES",
-  "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:"
+  "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:",
+  "FoodHeroSecondary.btnMode": "green"
 }

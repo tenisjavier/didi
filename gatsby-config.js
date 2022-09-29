@@ -145,6 +145,11 @@ module.exports = {
             languages: ["cl", "cr", "do", "co"],
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/food/ciudades/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
         ],
       },
     },
@@ -260,6 +265,19 @@ module.exports = {
             return { path };
           });
 
+          const foodCityPages = allCities.map((city) => {
+            let path;
+            const [countryCode, cityName] = [city.country.code, city.name];
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/food/ciudades/food-en-${slugify(
+                cityName
+              )}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/food/ciudades/food-${slugify(cityName)}/`;
+
+            return { path };
+          });
+
           const articlePages = allArticles.map((article) => {
             let path;
             const [countryCode, articleSlug] = [
@@ -318,6 +336,7 @@ module.exports = {
             ...cityPages,
             ...articlePages,
             ...guidePages,
+            ...foodCityPages
             //...cityPlacePages,
             // ...placePages,
             // ...directionPages,
