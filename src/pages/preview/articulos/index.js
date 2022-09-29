@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import ArticleHero from "../../../components/sections/ArticleHero";
 import ArticleContent from "../../../components/sections/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
-import { getDataPreviewContefulArticle } from "../utils";
+import { getDataPreviewContefulArticle } from "../../../util/utils";
 
 const CONTENTFUL_SPACE_ID = "n7hs0hadu6ro"
 const CONTENTFUL_PREVIEW_ACCESS_TOKEN = "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E"
