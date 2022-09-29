@@ -18,8 +18,8 @@ const Index = ({ data }) => {
   const safetyCTABGImage = images.filter((image) => {
     return image.title === "mx.SafetyCTA.bgImage";
   })[0];
-  const FoodAboutCTAImage = images.filter((image) => {
-    return image.title === "mx.FoodAboutCTA.image";
+  const FoodCTAImage = images.filter((image) => {
+    return image.title === "mx.FoodCTA.image";
   })[0];
   const paxCTAImage = images.filter((image) => {
     return image.title === "mx.PaxCTA.image";
@@ -31,7 +31,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
-      <FoodCTA image={FoodAboutCTAImage}></FoodCTA>
+      <FoodCTA image={FoodCTAImage}></FoodCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <SafetyCTA image={safetyCTAImage} bgImage={safetyCTABGImage}></SafetyCTA>
       <FleetAboutCTA image={FleetAboutCTAImage}></FleetAboutCTA>
@@ -59,7 +59,7 @@ export const query = graphql`
             "mx.HomeHero.bgImage"
             "mx.SafetyCTA.image"
             "mx.SafetyCTA.bgImage"
-            "mx.FoodAboutCTA.image"
+            "mx.FoodCTA.image"
             "mx.PaxCTA.image"
             "mx.FleetAboutCTA.image"
           ]
