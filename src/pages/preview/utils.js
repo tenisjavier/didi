@@ -56,3 +56,25 @@ export const getDataPreviewContefulArticle = (dataContentful)=>{
     updatedAt: dataContentful.article.sys.publishedAt
   })
 }
+
+export const getDataPreviewContefulGuide = (dataContentful)=>{
+  return({
+    content:{
+      raw: JSON.stringify(dataContentful.guide.content.json),
+      references: dataContentful.guide.content.links.assets.block.map((asset)=>{
+        return({
+          contentful_id: asset.sys.id,
+          description: asset.description,
+          title: asset.title,
+          gatsbyImageData: getGatsbyImage(asset),
+          __typename:"ContentfulAsset"
+        })
+      })
+    },
+    excerpt: dataContentful.guide.excerpt,
+    featuredImage:{
+      gatsbyImageData: getGatsbyImage(dataContentful.guide.featuredImage)
+    },
+    title: dataContentful.guide.title,
+  })
+}
