@@ -791,10 +791,24 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
+  "StoreFleetHero.title": "Escanea el QR con tu celular ",
+  "StoreFleetHero.desc": "Descarga DiDi Fleet escaneando el código con tu celular",
+  "StoreFleetHero.textColor": "white",
+  "StoreFleetHero.bgColor": "bg-orange-primary",
+  "StoreFleetHero.btnMode": "light",
+  "StorePayHero.title": "Escanea el QR con tu celular ",
+  "StorePayHero.desc": "Descarga DiDi Pay escaneando el código con tu celular",
+  "StorePayHero.textColor": "white",
+  "StorePayHero.bgColor": "bg-orange-primary",
+  "StorePayHero.btnMode": "light",
   "SBDrv.title": "DiDi Conductor",
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",
   "SBPax.desc": "Pide un Viaje",
+  "SBFleet.title": "Renta tus Autos",
+  "SBFleet.desc": "Ganancias Extras",
+  "SBPay.title": "Paga con DiDi Pay",
+  "SBPay.desc": "Tu billetera digital",
   "SBFoodEater.title": "DiDi Food",
   "SBFoodEater.desc": "Pide Comida a Domicilio",
   "SBFoodBusiness.title": "DiDi Food",
@@ -819,7 +833,44 @@
   "DiDiPayFeatures.desc": "Activa DiDi Pay como método de pago para aceptar cualquier tarjeta bancaria en tu comercio. Fácil, rápido, eficiente y mucho más conveniente. \n Se parte de nuestra red de comercios, ofrece tus productos o servicios a nuestros millones de usuarios a nivel nacional y ve cómo se incrementan tus ventas de inmediato.",
   "DiDiPayFeatures.btnMode": "primary",
   "DiDiPayFeatures.textColor": "gray-primary",
-  "DiDiPayFeatures.bgColor": "bg-gray-primary",
+  "DiDiPayFeatures.bgColor": "bg-gray-light",
+  "DiDiPaySilderSection.title": "",
+  "DiDiPaySilderSection.items": [
+    {
+      "name": "Paso1",
+      "description": "Desde tu DiDi app, da clic en “Mi billetera” para ir a los servicios de DiDi Pay."
+    },
+    {
+      "name": "Paso2",
+      "description": "En la sección de “Mi billetera”, podrás añadir cualquier tarjeta de crédito o debito como método de pago dando clic en el botón “+”"
+    },
+    {
+      "name": "Paso3",
+      "description": "Ingresa los datos de la tarjeta que deseas añadir y da clic en “Agregar”"
+    },
+    {
+      "name": "Paso4",
+      "description": "¡Listo! Ahora tienes un método de pago para usar cualquier servicio de DiDi Pay y disfrutar de promociones y beneficios únicos."
+    }
+  ],
+  "DiDiPayGrid.title": "Activa DiDi Pay y empieza hoy a disfrutar de sus beneficios.",
+  "DiDiPayGrid.desc": "¿Todavía haces fila para ponerle tiempo aire a tu celular? ¿vas al banco o a la tienda a pagar tus recibos? ¿recordar fechas no es lo tuyo? Los nuevos servicios de DiDi, te resuelven el día, te ahorran tiempo, dinero y esfuerzo.",
+  "DiDiPayGrid.bgColor": "bg-gray-light",
+  "DiDiPayGrid.textColor": "gray-primary",
+  "DiDiPayGrid.columns": [
+    {
+      "title": "Tiempo Aire",
+      "desc": "Cárgale saldo a tu celular sin hacer filas. No te quedes sin datos, mejor, activa el modo chismecito cargando saldo en tu DiDi app con los servicios de DiDi Pay."
+    },
+    {
+      "title": "Pago de servicios",
+      "desc": "Que no te corten la luz porque se te paso la fecha de pago.  Paga todos tus recibos como luz, agua, teléfono, internet, TV, tag, y mucho más, en un solo lugar a la hora que quieras y sin complicaciones."
+    },
+    {
+      "title": "Tarjeta de regalo",
+      "desc": "Para el amigo, la novia, tu mamá, tu hermano; para quien quieras y cuando quieras; resuelve ese regalo comprando tarjetas electrónicas de todo tipo con DiDi Pay."
+    }
+  ],
   "PrestamosHero.title": "Obtener un préstamo personal es rápido, fácil y seguro.",
   "PrestamosHero.desc": "Solicita un préstamo de DiDi Préstamos",
   "PrestamosHero.btnMode": "primary",

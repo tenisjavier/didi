@@ -18,6 +18,7 @@ const DiDiPayFeatures = ({ image }: DiDiPayFeaturesProps) => {
     title: t("DiDiPayFeatures.title"),
     desc: t("DiDiPayFeatures.desc"),
     textColor: t("DiDiPayFeatures.textColor"),
+    bgColor: t("DiDiPayFeatures.bgColor"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData}

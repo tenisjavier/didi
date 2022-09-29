@@ -146,6 +146,10 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/didi-fleet/",
     },
     {
+      text: "DiDi Pay",
+      url: "/mx/didipay/",
+    },
+    {
       text: "DiDi Préstamos",
       url: "https://prestamos.didiglobal.com",
     },

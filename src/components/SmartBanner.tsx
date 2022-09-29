@@ -4,7 +4,15 @@ import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../config/btn-config";
 
 interface SmartBannerProps {
-  type: "both" | "drv" | "pax" | "foodBusiness" | "foodDelivery" | "foodEater";
+  type:
+    | "both"
+    | "drv"
+    | "pax"
+    | "fleet"
+    | "payment"
+    | "foodBusiness"
+    | "foodDelivery"
+    | "foodEater";
 }
 
 const SmartBanner = (props: SmartBannerProps) => {
@@ -39,6 +47,24 @@ const SmartBanner = (props: SmartBannerProps) => {
     btnTextColor = "text-white";
     bannerTitle = t("SBPax.title");
     bannerDesc = t("SBPax.desc");
+  } else if (type === "fleet" && btnData.fleetText) {
+    btnLink = btnData.fleetLink;
+    btnText = btnData.fleetText.replace(/ .*/, "");
+    Logo = <DiDiFleet></DiDiFleet>;
+    bgColor = "bg-white";
+    btnBgColor = "bg-orange-primary";
+    btnTextColor = "text-white";
+    bannerTitle = t("SBFleet.title");
+    bannerDesc = t("SBFleet.desc");
+  } else if (type === "payment" && btnData.paymentText) {
+    btnLink = btnData.paymentLink;
+    btnText = btnData.paymentText.replace(/ .*/, "");
+    Logo = <DiDiPay></DiDiPay>;
+    bgColor = "bg-white";
+    btnBgColor = "bg-orange-primary";
+    btnTextColor = "text-white";
+    bannerTitle = t("SBPay.title");
+    bannerDesc = t("SBPay.desc");
   } else if (type === "foodEater") {
     btnLink = btnData.foodEaterLink;
     btnText = "Descargar";
@@ -99,6 +125,31 @@ const PaxLogo = () => {
 };
 
 const DrvLogo = () => {
+  return (
+    <div className="p-3">
+      <StaticImage
+        src="../images/drv-logo.png"
+        alt="didi conductor logo"
+        className=""
+        width={50}
+      />
+    </div>
+  );
+};
+const DiDiFleet = () => {
+  return (
+    <div className="p-3">
+      <StaticImage
+        src="../images/didi-fleet-logo.png"
+        alt="didi fleet logo"
+        className=""
+        width={50}
+      />
+    </div>
+  );
+};
+
+const DiDiPay = () => {
   return (
     <div className="p-3">
       <StaticImage

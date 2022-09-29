@@ -142,9 +142,9 @@ const btnLinks: AllBtnInterface = {
       "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist&utm_source=(direct)&utm_medium=(none)&utm_campaign=none#",
     foodBusinessText: "Regístrate como Comercio",
     fleetText: "Descarga DiDi Fleet",
-    fleetLink: "http://onelink.to/s88fxw",
-    paymentText: "Descarga DiDi Fleet",
-    paymentLink: "http://onelink.to/s88fxw",
+    fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
+    paymentText: "Descarga DiDi Pay",
+    paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
   },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",

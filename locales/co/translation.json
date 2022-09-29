@@ -651,8 +651,15 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
+  "StoreFleetHero.title": "Escanea el QR con tu celular ",
+  "StoreFleetHero.desc": "Descarga DiDi Fleet escaneando el código con tu celular",
+  "StoreFleetHero.textColor": "white",
+  "StoreFleetHero.bgColor": "bg-orange-primary",
+  "StoreFleetHero.btnMode": "light",
   "SBDrv.title": "DiDi Conductor",
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",
-  "SBPax.desc": "Pide un Viaje"
+  "SBPax.desc": "Pide un Viaje",
+  "SBFleet.title": "Renta tus Autos",
+  "SBFleet.desc": "Ganancias Extras"
 }
