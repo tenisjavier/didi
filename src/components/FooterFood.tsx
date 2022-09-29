@@ -8,7 +8,6 @@ import { getfooterCountryFood } from "../config/foodCountry-config";
 
 const FooterFood = () => {
   const { i18n } = useTranslation();
-  const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
   const countryCode = i18n.language;
   const links = getFooterLinks(countryCode);
   const foodCountry = getfooterCountryFood(countryCode);
@@ -38,18 +37,11 @@ const FooterFood = () => {
                   if (index === 0) {
                     return (
                       <a
-                        href={c.hostname}
+                        href={c.link}
                         key={index}
                         className="text-sm text-yellow-500 hover:text-yellow-300"
                       >
-                        {i18n.language === "eg" ? c.arabicName : null}
-                        {sslCountries.includes(i18n.language)
-                          ? c.spanishName
-                          : null}
-                        {i18n.language !== "eg" &&
-                        !sslCountries.includes(i18n.language)
-                          ? c.englishName
-                          : null}
+                        {c.text}
                       </a>
                     );
                   } else {
@@ -58,17 +50,10 @@ const FooterFood = () => {
                         {" "}
                         •{" "}
                         <a
-                          href={c.hostname}
+                          href={c.link}
                           className="text-sm text-yellow-500 hover:text-yellow-300"
                         >
-                          {i18n.language === "eg" ? c.arabicName : null}
-                          {sslCountries.includes(i18n.language)
-                            ? c.spanishName
-                            : null}
-                          {i18n.language !== "eg" &&
-                          !sslCountries.includes(i18n.language)
-                            ? c.englishName
-                            : null}
+                          {c.text}
                         </a>
                       </span>
                     );
