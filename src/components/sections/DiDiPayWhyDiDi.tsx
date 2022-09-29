@@ -18,6 +18,7 @@ const DiDiPayWhyDiDi = ({ image }: DiDiPayWhyDiDiProps) => {
     title: t("DiDiPayWhyDiDi.title"),
     desc: t("DiDiPayWhyDiDi.desc"),
     textColor: t("DiDiPayWhyDiDi.textColor"),
+    bgColor: t("DiDiPayWhyDiDi.bgColor"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData}

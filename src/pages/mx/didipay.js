@@ -4,6 +4,8 @@ import Layout from "../../components/Layout";
 import DiDiPayHero from "../../components/sections/DiDiPayHero";
 import DiDiPayWhyDiDi from "../../components/sections/DiDiPayWhyDiDi";
 import DiDiPayFeatures from "../../components/sections/DiDiPayFeatures";
+import DiDiPayGrid from "../../components/sections/DiDiPayGrid";
+import DiDiPaySilderSection from "../../components/sections/DiDiPaySliderSection";
 
 const DiDiPay = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -19,6 +21,13 @@ const DiDiPay = ({ data }) => {
   const featuresImage = images.filter((image) => {
     return image.title === "mx.DiDiPayFeatures.image";
   })[0];
+  const sliderImages = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiPaySlider.image") !== -1;
+  });
+  const columnsImages = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiPayColumns.image") !== -1;
+  });
+
   return (
     <Layout>
       <DiDiPayHero
@@ -27,6 +36,8 @@ const DiDiPay = ({ data }) => {
       ></DiDiPayHero>
       <DiDiPayWhyDiDi image={whyDiDiImage}></DiDiPayWhyDiDi>
       <DiDiPayFeatures image={featuresImage}></DiDiPayFeatures>
+      <DiDiPaySilderSection images={sliderImages}></DiDiPaySilderSection>
+      <DiDiPayGrid images={columnsImages}></DiDiPayGrid>
     </Layout>
   );
 };

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import StoreFleetHero from "../../components/sections/StoreFleetHero";
+import StorePayHero from "../../components/sections/StorePayHero";
 import { QRCodeSVG } from "qrcode.react";
 
 const Store = () => {
-  const [QRUrl, setQRUrl] = useState("http://onelink.to/s88fxw");
+  const [QRUrl, setQRUrl] = useState("https://didi.onelink.me/Zkxc");
   const qr = (
     <QRCodeSVG
       value={QRUrl}
@@ -27,7 +27,7 @@ const Store = () => {
 
   return (
     <Layout>
-      <StoreFleetHero image={qr}></StoreFleetHero>
+      <StorePayHero image={qr}></StorePayHero>
     </Layout>
   );
 };

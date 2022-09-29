@@ -11,6 +11,8 @@ import "../styles/global.css";
 const Layout = ({ sb = true, children }) => {
   const { pathname } = useLocation();
   let smartBannerType = "drv";
+  if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
+  if (pathname.includes("didipay")) smartBannerType = "payment";
   if (pathname.includes("food")) smartBannerType = "foodEater";
   if (pathname.includes("food/store")) smartBannerType = "foodBusiness";
   if (pathname.includes("food/delivery")) smartBannerType = "foodDelivery";

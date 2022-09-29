@@ -8,6 +8,7 @@ import { getfooterCountryFood } from "../config/foodCountry-config";
 
 const FooterFood = () => {
   const { i18n } = useTranslation();
+  const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
   const countryCode = i18n.language;
   const links = getFooterLinks(countryCode);
   const foodCountry = getfooterCountryFood(countryCode);
@@ -34,18 +35,44 @@ const FooterFood = () => {
             <div className="text-c h-auto w-3/4 lg:w-full mt-5">
               {foodCountry &&
                 foodCountry.map((c: any, index: number) => {
-                  return (
-                    <span key={index} className="text-white p-2">
-                      {" "}
-                      •{" "}
+                  if (index === 0) {
+                    return (
                       <a
-                        href={c.link}
+                        href={c.hostname}
+                        key={index}
                         className="text-sm text-yellow-500 hover:text-yellow-300"
                       >
-                        {c.text}
+                        {i18n.language === "eg" ? c.arabicName : null}
+                        {sslCountries.includes(i18n.language)
+                          ? c.spanishName
+                          : null}
+                        {i18n.language !== "eg" &&
+                        !sslCountries.includes(i18n.language)
+                          ? c.englishName
+                          : null}
                       </a>
-                    </span>
-                  );
+                    );
+                  } else {
+                    return (
+                      <span key={index} className="text-white">
+                        {" "}
+                        •{" "}
+                        <a
+                          href={c.hostname}
+                          className="text-sm text-yellow-500 hover:text-yellow-300"
+                        >
+                          {i18n.language === "eg" ? c.arabicName : null}
+                          {sslCountries.includes(i18n.language)
+                            ? c.spanishName
+                            : null}
+                          {i18n.language !== "eg" &&
+                          !sslCountries.includes(i18n.language)
+                            ? c.englishName
+                            : null}
+                        </a>
+                      </span>
+                    );
+                  }
                 })}
             </div>
           </div>

@@ -39,7 +39,7 @@ const SilderSection = (props) => {
     "transition-opacity transition-colors duration-500 ease-in opacity-770 text-gray-300 text-base lg:text-lg mr-3 cursor-pointer";
 
   return (
-    <section className="min-h-[768px]">
+    <section className="min-h-[40rem]">
       <div className="container mx-auto text-gray-primary">
         <h2 className="mt-10 text-center text-4xl font-bold">{title}</h2>
         <div className="group relative my-4  mx-2 h-128 lg:mx-20 lg:h-110">
@@ -60,6 +60,7 @@ const SilderSection = (props) => {
             <FontAwesomeIcon icon={faChevronRight} className="w-8" />
           </div>
           {items.map((data, idx) => {
+            console.log(data);
             return (
               <div
                 key={idx}
@@ -68,7 +69,7 @@ const SilderSection = (props) => {
                 <div className={idx === index ? showclass : hidclass}>
                   <GatsbyImage
                     image={getImage(data.image.gatsbyImageData)}
-                    className="h-52 w-52 lg:h-64 lg:w-64 2xl:h-80 2xl:w-80"
+                    className=" w-52 lg:w-64  2xl:w-80"
                     alt={data.name}
                   />
                 </div>
