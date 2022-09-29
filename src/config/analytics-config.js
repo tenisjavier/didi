@@ -73,10 +73,10 @@ const insertBtnParams = () => {
     // if it is a deeplink, get the long url version with correct parameters
     if (
       url.indexOf("ssa-rides-driver.onelink.me/mbwy/") > -1 ||
-      url.indexOf("https://global-rides-passenger.onelink.me/xNlo/") > -1 ||
-      url.indexOf("http://fleet.onelink.me/tLtr/") > -1 ||
-      url.indexOf("http://fleet.onelink.me/jjQA/") > -1 ||
-      url.indexOf("https://99.onelink.me/Mayr/") > -1 ||
+      url.indexOf("global-rides-passenger.onelink.me/xNlo/") > -1 ||
+      url.indexOf("fleet.onelink.me/tLtr/") > -1 ||
+      url.indexOf("fleet.onelink.me/jjQA/") > -1 ||
+      url.indexOf("99.onelink.me/Mayr/") > -1 ||
       url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
       url.indexOf("onelink.me/5xQ3/") > -1 ||
       url.indexOf("onelink.me/4B2F/") > -1 ||
