@@ -6,68 +6,69 @@ import ArticleContent from "../../../components/sections/ArticleContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import { getDataPreviewContefulArticle } from "../../../util/utils";
 
-const CONTENTFUL_SPACE_ID = "n7hs0hadu6ro"
-const CONTENTFUL_PREVIEW_ACCESS_TOKEN = "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E"
+const CONTENTFUL_SPACE_ID = "n7hs0hadu6ro";
+const CONTENTFUL_PREVIEW_ACCESS_TOKEN =
+  "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E";
 
 const ArticlePreview = () => {
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });
-  const [paramQuery,setParamQuery] = useState(params.id)
-  const [dataP, setDataP] = useState(null)
-  const [dataContentful, setDataContentful] = useState(null)
+  const [paramQuery, setParamQuery] = useState(params.id);
+  const [dataP, setDataP] = useState(null);
+  const [dataContentful, setDataContentful] = useState(null);
 
   const contentfulDataPreview = (params) => {
-    window.fetch(
+    fetch(
       `https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE_ID}/environments/master`,
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${CONTENTFUL_PREVIEW_ACCESS_TOKEN}`
+          Authorization: `Bearer ${CONTENTFUL_PREVIEW_ACCESS_TOKEN}`,
         },
 
-        body: JSON.stringify({ query: queryPreview, variables: {...params, isPreview: true } }),
+        body: JSON.stringify({
+          query: queryPreview,
+          variables: { ...params, isPreview: true },
+        }),
       }
     )
       .then((res) => res.json())
       .then(({ data }) => {
         if (data) setDataContentful(data);
-      })
-      setParamQuery(null)
-  }
+      });
+    setParamQuery(null);
+  };
 
   useEffect(() => {
-    if(!paramQuery) return
-
-    contentfulDataPreview({id: paramQuery})
-
-  },[paramQuery])
+    if (!paramQuery) return;
+    contentfulDataPreview({ id: paramQuery });
+  }, [paramQuery]);
 
   useEffect(() => {
-    if (!dataContentful) return
+    if (!dataContentful) return;
     setDataP({
       contentfulArticle: getDataPreviewContefulArticle(dataContentful),
-    })
-  }, [dataContentful])
+    });
+  }, [dataContentful]);
 
   return (
     <Layout>
-      {dataP &&
+      {dataP && (
         <>
           <ArticleHero data={dataP}></ArticleHero>
           <ArticleContent data={dataP}></ArticleContent>
           <PaxBanner></PaxBanner>
         </>
-      }
+      )}
     </Layout>
   );
 };
 
 export default ArticlePreview;
 
-const queryPreview =
-  `
+const queryPreview = `
 query(
   $isPreview: Boolean=false
   $id: String = ""
@@ -104,9 +105,9 @@ query(
     }
   }
 }
-`
+`;
 export const query = graphql`
-  query($language: String!) {
+  query ($language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
