@@ -11,7 +11,6 @@ const DiDiPaySilderSection = ({ images }) => {
   };
 
   props.items.forEach((col, index) => {
-    console.log(images[index]);
     col.image = images[index];
   });
 

@@ -60,7 +60,6 @@ const SilderSection = (props) => {
             <FontAwesomeIcon icon={faChevronRight} className="w-8" />
           </div>
           {items.map((data, idx) => {
-            console.log(data);
             return (
               <div
                 key={idx}

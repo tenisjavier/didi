@@ -8,8 +8,8 @@ import {
 import RichContent from "./RichContent";
 
 export interface TableCities {
-    city: string;
-    address: string; 
+  city: string;
+  address: string;
 }
 
 export interface AccordionTable {
@@ -20,11 +20,16 @@ export interface AccordionTable {
   table: TableCities[];
 }
 
-const AccordionTable = ({ title, content, bgColor, textColor, table }: AccordionTable) => {
+const AccordionTable = ({
+  title,
+  content,
+  bgColor,
+  textColor,
+  table,
+}: AccordionTable) => {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState("0px");
   const content1: any = useRef(null);
-  console.log(content1);
 
   const closeClass =
     "text-lg bg-gray-200 text-gray-primary py-0 w-full px-20 transition-all duration-700 overflow-hidden";
@@ -55,17 +60,23 @@ const AccordionTable = ({ title, content, bgColor, textColor, table }: Accordion
         ref={content1}
       >
         {content && content.split("\n").map((str) => <p>{str}</p>)}
-        <table style={{borderCollapse: "collapse"}}>
-            {table?.map((tbl, index) => {
-                return(
-                    <tr style={{border: "1px solid #eee"}}>
-                        <td style={{borderRight: "1px solid #eee"}} className="p-3">{tbl.city}</td>
-                        <td className="p-3">
-                          {tbl.address.split("\n").map((str, index) => (<p className="mb-2" key={index}>{str}</p>))}
-                        </td>
-                    </tr>
-                );
-            })}
+        <table style={{ borderCollapse: "collapse" }}>
+          {table?.map((tbl, index) => {
+            return (
+              <tr style={{ border: "1px solid #eee" }}>
+                <td style={{ borderRight: "1px solid #eee" }} className="p-3">
+                  {tbl.city}
+                </td>
+                <td className="p-3">
+                  {tbl.address.split("\n").map((str, index) => (
+                    <p className="mb-2" key={index}>
+                      {str}
+                    </p>
+                  ))}
+                </td>
+              </tr>
+            );
+          })}
         </table>
       </div>
     </>

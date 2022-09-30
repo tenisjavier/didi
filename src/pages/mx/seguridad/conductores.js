@@ -24,14 +24,21 @@ const Seguridad = ({ data }) => {
   const safetyCOVIDDrvColumns = images.filter((image) => {
     return image.title === "mx.SafetyCOVIDDrvColumns.image";
   });
-  console.log(safetyBeforeDrvColumns);
   return (
     <Layout>
       <SafetyDrvImgHero image={safetyHeroImage}></SafetyDrvImgHero>
-      <SafetyGridBeforeTrip images={safetyBeforeDrvColumns.reverse()}></SafetyGridBeforeTrip>
-      <SafetyGridDuringTrip images={safetyDuringDrvColumns.reverse()}></SafetyGridDuringTrip>
-      <SafetyGridAfterTrip images={safetyFinishedDrvColumns.reverse()}></SafetyGridAfterTrip>
-      <SafetyDrvColumns images={safetyCOVIDDrvColumns.reverse()}></SafetyDrvColumns>
+      <SafetyGridBeforeTrip
+        images={safetyBeforeDrvColumns.reverse()}
+      ></SafetyGridBeforeTrip>
+      <SafetyGridDuringTrip
+        images={safetyDuringDrvColumns.reverse()}
+      ></SafetyGridDuringTrip>
+      <SafetyGridAfterTrip
+        images={safetyFinishedDrvColumns.reverse()}
+      ></SafetyGridAfterTrip>
+      <SafetyDrvColumns
+        images={safetyCOVIDDrvColumns.reverse()}
+      ></SafetyDrvColumns>
     </Layout>
   );
 };
@@ -50,7 +57,11 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.SafetyDrv.image)|(mx.SafetyBeforeDrvColumns.image)|(mx.SafetyCOVIDDrvColumns.image)|(mx.SafetyDuringDrvColumns.image)|(mx.SafetyFinishDrvColumns.image)/" } }
+      filter: {
+        title: {
+          regex: "/(mx.SafetyDrv.image)|(mx.SafetyBeforeDrvColumns.image)|(mx.SafetyCOVIDDrvColumns.image)|(mx.SafetyDuringDrvColumns.image)|(mx.SafetyFinishDrvColumns.image)/"
+        }
+      }
       sort: { fields: title }
     ) {
       nodes {
