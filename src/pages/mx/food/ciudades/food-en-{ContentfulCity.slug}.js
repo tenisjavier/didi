@@ -9,8 +9,7 @@ import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessD
 import FoodCityBannerCTA from "../../../../components/sections/FoodCityBannerCTA";
 import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
 import { QRCodeSVG } from "qrcode.react";
-import SilderSection from "../../../../components/sections/SliderSection"
-
+import SilderSection from "../../../../components/sections/SliderSection";
 
 const FoodCity = ({ data }) => {
   const cities = data.contentfulCountry.city;
@@ -19,9 +18,8 @@ const FoodCity = ({ data }) => {
   const restaurant = data.contentfulCity.restaurant;
 
   const filteredCities = cities.filter((city) => {
-    return city.restaurant != null
-  })
-
+    return city.restaurant != null;
+  });
 
   const foodBusinessCTAImage = images.filter((image) => {
     return image.title === "mx.FoodBusinessCTA.image";
@@ -57,12 +55,20 @@ const FoodCity = ({ data }) => {
   return (
     <Layout>
       <FoodCityHero image={qr} data={data.contentfulCity}></FoodCityHero>
-      <SilderSection
-        data={restaurant}
-        title={`Restaurantes a domicilio ${name} en cerca de tí`}
-      ></SilderSection>
-      <FoodCityBannerCTA data={data.contentfulCity} image={foodBusinessCTAImage}></FoodCityBannerCTA>
-      <FoodCityRestaurantCTA data={data.contentfulCity} image={foodDeliveryCTAImage}></FoodCityRestaurantCTA>
+      {restaurant && (
+        <SilderSection
+          data={restaurant}
+          title={`Restaurantes a domicilio ${name} en cerca de tí`}
+        ></SilderSection>
+      )}
+      <FoodCityBannerCTA
+        data={data.contentfulCity}
+        image={foodBusinessCTAImage}
+      ></FoodCityBannerCTA>
+      <FoodCityRestaurantCTA
+        data={data.contentfulCity}
+        image={foodDeliveryCTAImage}
+      ></FoodCityRestaurantCTA>
       <FoodCityList data={filteredCities}></FoodCityList>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
@@ -103,7 +109,7 @@ export const query = graphql`
         city {
           name
         }
-        name 
+        name
         image {
           gatsbyImageData
         }
@@ -120,45 +126,13 @@ export const query = graphql`
         }
       }
     }
-    allContentfulCity{
-      nodes {
-        country {
-          city {
-            name
-            restaurant {
-              name
-              image{
-                gatsbyImageData
-              }
-            }
-          }
-        }
-      }
-    }
-    allContentfulProduct(
+    allContentfulAsset(
       filter: {
-        country: { elemMatch: { code: { eq: "mx" } } }
-        category: { eq: "driver" }
+        title: {
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"
+        }
       }
     ) {
-      nodes {
-        name
-        description
-        phone
-        requirement {
-          raw
-        }
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
-        }
-      }
-    }
-    allContentfulAsset(filter: { title:
-      { regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"}
-     }) {
       nodes {
         id
         title
@@ -166,41 +140,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulOffice(city: { id: { eq: $id } }) {
-      name
-      address
-      phone
-      openHours
-      photos {
-        gatsbyImageData
-      }
-    }
 
-    allContentfulRequirement(
-      filter: { city: { elemMatch: { id: { eq: $id } } } }
-    ) {
-      nodes {
-        name
-        requirement {
-          raw
-        }
-      }
-    }
-    allContentfulPlace(
-      filter: { city: { id: { eq: $id } }, primary: { eq: true } }
-    ) {
-      nodes {
-        name
-        address
-        image {
-          gatsbyImageData
-        }
-        city {
-          name
-          slug
-        }
-      }
-    }
     contentfulCountry(code: { eq: "mx" }) {
       name
       city {
