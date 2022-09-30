@@ -6,69 +6,73 @@ import RichContent from "../../../components/RichContent";
 import PaxBanner from "../../../components/sections/PaxBanner";
 import { getDataPreviewContefulGuide } from "../../../util/utils";
 
-const CONTENTFUL_SPACE_ID = "n7hs0hadu6ro"
-const CONTENTFUL_PREVIEW_ACCESS_TOKEN = "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E"
+const CONTENTFUL_SPACE_ID = "n7hs0hadu6ro";
+const CONTENTFUL_PREVIEW_ACCESS_TOKEN =
+  "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E";
 
 const GuideTemplate = () => {
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-        get: (searchParams, prop) => searchParams.get(prop),
-      });
-      const [paramQuery,setParamQuery] = useState(params.id)
-      const [dataP, setDataP] = useState(null)
-      const [dataContentful, setDataContentful] = useState(null)
-    
-      const contentfulDataPreview = (params) => {
-        window.fetch(
-          `https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE_ID}/environments/master`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${CONTENTFUL_PREVIEW_ACCESS_TOKEN}`
-            },
-    
-            body: JSON.stringify({ query: queryPreview, variables: {...params, isPreview: true } }),
-          }
-        )
-          .then((res) => res.json())
-          .then(({ data }) => {
-            if (data) setDataContentful(data);
-          })
-          setParamQuery(null)
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+  const [paramQuery, setParamQuery] = useState(params.id);
+  const [dataP, setDataP] = useState(null);
+  const [dataContentful, setDataContentful] = useState(null);
+
+  const contentfulDataPreview = (params) => {
+    fetch(
+      `https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE_ID}/environments/master`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${CONTENTFUL_PREVIEW_ACCESS_TOKEN}`,
+        },
+
+        body: JSON.stringify({
+          query: queryPreview,
+          variables: { ...params, isPreview: true },
+        }),
       }
-    
-      useEffect(() => {
-        if(!paramQuery) return
-    
-        contentfulDataPreview({id: paramQuery})
-    
-      },[paramQuery])
-    
-      useEffect(() => {
-        if (!dataContentful) return
-        setDataP({
-          contentfulGuide: getDataPreviewContefulGuide(dataContentful),
-        })
-      }, [dataContentful])
+    )
+      .then((res) => res.json())
+      .then(({ data }) => {
+        if (data) setDataContentful(data);
+      });
+    setParamQuery(null);
+  };
+
+  useEffect(() => {
+    if (!paramQuery) return;
+
+    contentfulDataPreview({ id: paramQuery });
+  }, [paramQuery]);
+
+  useEffect(() => {
+    if (!dataContentful) return;
+    setDataP({
+      contentfulGuide: getDataPreviewContefulGuide(dataContentful),
+    });
+  }, [dataContentful]);
   return (
     <Layout>
-      {dataP&&
+      {dataP && (
         <>
-        <GuideHero data={dataP}></GuideHero>
-        <section className="container mx-auto mb-32 text-gray-primary md:px-28">
-          <RichContent richContent={dataP.contentfulGuide.content}></RichContent>
-        </section>
-        <PaxBanner></PaxBanner>
+          <GuideHero data={dataP}></GuideHero>
+          <section className="container mx-auto mb-32 text-gray-primary md:px-28">
+            <RichContent
+              richContent={dataP.contentfulGuide.content}
+            ></RichContent>
+          </section>
+          <PaxBanner></PaxBanner>
         </>
-      }
+      )}
     </Layout>
   );
 };
 
 export default GuideTemplate;
 
-const queryPreview = 
-`
+const queryPreview = `
 query(
     #$isPreview: Boolean=false
     $id: String = ""
@@ -105,7 +109,7 @@ query(
       }
     }
   }
-`
+`;
 
 export const query = graphql`
   query ($language: String!) {
