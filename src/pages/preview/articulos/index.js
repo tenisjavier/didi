@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useQueryParam } from "gatsby-query-params";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import ArticleHero from "../../../components/sections/ArticleHero";
@@ -11,10 +12,7 @@ const CONTENTFUL_PREVIEW_ACCESS_TOKEN =
   "X7xRmMkl8IFZB_JLBvXw6yGepm9nFbhr40e5na1Y_2E";
 
 const ArticlePreview = () => {
-  const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
-  });
-  const [paramQuery, setParamQuery] = useState(params.id);
+  const urlId = useQueryParam("id", null);
   const [dataP, setDataP] = useState(null);
   const [dataContentful, setDataContentful] = useState(null);
 
@@ -38,13 +36,9 @@ const ArticlePreview = () => {
       .then(({ data }) => {
         if (data) setDataContentful(data);
       });
-    setParamQuery(null);
   };
 
-  useEffect(() => {
-    if (!paramQuery) return;
-    contentfulDataPreview({ id: paramQuery });
-  }, [paramQuery]);
+  if (urlId) contentfulDataPreview({ id: urlId });
 
   useEffect(() => {
     if (!dataContentful) return;
