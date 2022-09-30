@@ -15,13 +15,21 @@ const DiDiMas = ({ data }) => {
     return image.title === "mx.RewardsColumns.image";
   });
   const partnerRent = partners.filter((partner) => {
-    return partner.name === "MiNave" || partner.name === "Kovi" || partner.name === "OneCarNow";
+    return (
+      partner.name === "MiNave" ||
+      partner.name === "Kovi" ||
+      partner.name === "OneCarNow"
+    );
   });
   const partnerCombustible = partners.filter((partner) => {
     return partner.name === "ARCO";
   });
   const partnerAuto = partners.filter((partner) => {
-    return partner.name === "KIA" || partner.name === "Mitsubishi" || partner.name === "Nissan";
+    return (
+      partner.name === "KIA" ||
+      partner.name === "Mitsubishi" ||
+      partner.name === "Nissan"
+    );
   });
   const partnerFinanzas = partners.filter((partner) => {
     return partner.name === "Consar" || partner.name === "SimpleTAX";
@@ -36,22 +44,62 @@ const DiDiMas = ({ data }) => {
     return partner.name === "Vinco";
   });
 
-  const categoriesID = ["PartnerCombustible", "PartnerComprarAuto", "PartnerRentarAuto", "PartnerFinanzas", "PartnerPrestamos", "PartnerEducacion", "PartnerSalud"];
-  
-  console.log(partnerColumns);
+  const categoriesID = [
+    "PartnerCombustible",
+    "PartnerComprarAuto",
+    "PartnerRentarAuto",
+    "PartnerFinanzas",
+    "PartnerPrestamos",
+    "PartnerEducacion",
+    "PartnerSalud",
+  ];
+
   return (
     <Layout>
-      <PartnersHero
-        bgImage={didiMasHeroBgImage}
-      ></PartnersHero>
-      <PartnerColumns categoriesID={categoriesID} images={partnerColumns.reverse()}></PartnerColumns>
-      <PartnersGrid title="Descuentos en rentar un auto" bgColor="bg-gray-light" sectionID="PartnerRentarAuto" data={partnerRent}></PartnersGrid>
-      <PartnersGrid title="Descuentos en combustible" sectionID="PartnerCombustible" data={partnerCombustible}></PartnersGrid>
-      <PartnersGrid title="Facilidades para comprar un auto" bgColor="bg-gray-light" sectionID="PartnerComprarAuto" data={partnerAuto}></PartnersGrid>
-      <PartnersGrid title="Ayuda en tu contabilidad y en tus finanzas" sectionID="PartnerFinanzas" data={partnerFinanzas}></PartnersGrid>
-      <PartnersGrid title="Préstamos" bgColor="bg-gray-light" sectionID="PartnerPrestamos" data={partnerPrestamos}></PartnersGrid>
-      <PartnersGrid title="Salud y bienestar" sectionID="PartnerSalud" data={partnerSalud}></PartnersGrid>
-      <PartnersGrid title="Educacion" bgColor="bg-gray-light" sectionID="PartnerEducacion" data={partnerEducacion}></PartnersGrid>
+      <PartnersHero bgImage={didiMasHeroBgImage}></PartnersHero>
+      <PartnerColumns
+        categoriesID={categoriesID}
+        images={partnerColumns.reverse()}
+      ></PartnerColumns>
+      <PartnersGrid
+        title="Descuentos en rentar un auto"
+        bgColor="bg-gray-light"
+        sectionID="PartnerRentarAuto"
+        data={partnerRent}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Descuentos en combustible"
+        sectionID="PartnerCombustible"
+        data={partnerCombustible}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Facilidades para comprar un auto"
+        bgColor="bg-gray-light"
+        sectionID="PartnerComprarAuto"
+        data={partnerAuto}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Ayuda en tu contabilidad y en tus finanzas"
+        sectionID="PartnerFinanzas"
+        data={partnerFinanzas}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Préstamos"
+        bgColor="bg-gray-light"
+        sectionID="PartnerPrestamos"
+        data={partnerPrestamos}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Salud y bienestar"
+        sectionID="PartnerSalud"
+        data={partnerSalud}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Educacion"
+        bgColor="bg-gray-light"
+        sectionID="PartnerEducacion"
+        data={partnerEducacion}
+      ></PartnersGrid>
     </Layout>
   );
 };
@@ -68,7 +116,11 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.RewardsColumns.image)/" } }
+      filter: {
+        title: {
+          regex: "/(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.RewardsColumns.image)/"
+        }
+      }
       sort: { fields: title }
     ) {
       nodes {
