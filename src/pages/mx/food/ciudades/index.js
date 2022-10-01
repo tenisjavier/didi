@@ -23,8 +23,8 @@ const Ciudades = ({ data }) => {
   });
   const cities = data.contentfulCountry.city;
   const filteredCities = cities.filter((city) => {
-    return city.restaurant != null
-  })
+    return city.restaurant != null;
+  });
   return (
     <Layout>
       <FoodHero bgImage={drvHeroBgImage}></FoodHero>
@@ -49,10 +49,13 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { 
-      title: 
-      { regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"} 
-      }) {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"
+        }
+      }
+    ) {
       nodes {
         id
         title
@@ -64,6 +67,10 @@ export const query = graphql`
       city {
         name
         slug
+        image {
+          description
+          gatsbyImageData(width: 400)
+        }
         restaurant {
           name
         }
