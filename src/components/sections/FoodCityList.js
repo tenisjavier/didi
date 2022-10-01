@@ -9,6 +9,7 @@ const FoodCityList = ({ data }) => {
       text: city.name,
       secondText: "",
       link: t("FoodCityList.linkItem", { city: city.slug }),
+      image: city.image,
     };
   });
 
