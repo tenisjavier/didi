@@ -120,16 +120,16 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/conductor/",
       dropMenu: [
         {
-          text: "Requisitos para conducir o convertirse en socio",
-          url: "/mx/conductor/requisitos-para-conducir"
+          text: "Requisitos para Conductores",
+          url: "/mx/conductor/requisitos-para-conducir/",
         },
         {
           text: "Gananciar en DiDi",
-          url: "/mx/conductor/calcula-tus-ganancias",
+          url: "/mx/conductor/calcula-tus-ganancias/",
         },
         {
           text: "Club DiDi",
-          url: "/mx/clubdidi",
+          url: "/mx/clubdidi/",
         },
         {
           text: "Regístrate Online",
