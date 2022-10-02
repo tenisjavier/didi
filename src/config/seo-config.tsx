@@ -288,15 +288,15 @@ const seoMeta: AllSEOMetaInterface = {
   ec: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en Ecuador, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      desc: "DiDi en Ecuador, regístrate como socio conductor y comienza a generar ganancias. Maneja tu propio horario.",
     },
     "/pasajero/": {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
-      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Ecuador. Elige la mejor opción.",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. Somos la App nº1 en movilidad del mundo. Ya nos encontramos en Ecuador.",
     },
     "/driver/": {
       title: "DiDi Conductor - Conduce y Genera Dinero",
-      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
+      desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en la categoría express y empieza a ganar más y manejando menos.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
