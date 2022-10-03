@@ -37,6 +37,23 @@ const options: optionsInterface = {
     ),
     [BLOCKS.PARAGRAPH]: (node, children) => <p className={""}>{children}</p>,
     [INLINES.HYPERLINK]: (node, children) => {
+      if (node.data.uri.includes("https://www.youtube.com/watch?v=")) {
+        const videoId = node.data.uri.substring(
+          node.data.uri.lastIndexOf("v=") + 2
+        );
+        return (
+          <div className="flex justify-center">
+            <iframe
+              className="mt-8 w-full lg:w-1/2 h-72 "
+              src={`https://www.youtube.com/embed/${videoId}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        );
+      }
       return (
         <a className="text-orange-primary" href={node.data.uri}>
           {children}

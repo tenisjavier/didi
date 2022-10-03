@@ -26,7 +26,9 @@ const FoodCTA = ({ image }: FoodCTAProps) => {
         className="z-10 m-4 w-100 rounded-full"
       ></GatsbyImage>
     ),
-
+    btnMode: t("FoodCTA.btnMode"),
+    btnText: t("FoodCTA.btnText"),
+    btnLink: t("FoodCTA.btnLink"),
     reverse: false,
   };
   return <CTASection {...props}></CTASection>;
