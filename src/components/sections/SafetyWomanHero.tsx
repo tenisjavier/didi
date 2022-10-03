@@ -40,7 +40,8 @@ const SafetyWomanHero = ({ bgImage, image }: SafetyWomanHeroProps) => {
       reverse: true,
     }),
     btnMode: t("SafetyWomanHero.btnMode"),
-    btnType: "both",
+    btnText: t("SafetyWomanHero.btnText"),
+    btnLink: t("SafetyWomanHero.btnLink"),
   };
   return <CTASection {...props}></CTASection>;
 };
