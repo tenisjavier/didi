@@ -385,10 +385,12 @@
       "bgColor": "bg-white"
     }
   ],
-  "SafetyWomanHero.title": "Diseñamos tecnología que busca generar espacios más seguros para las mujeres",
-  "SafetyWomanHero.desc": "La agresión sexual y violencia de género son conductas que atentan contra la dignidad de las personas y que no toleramos bajo ninguna circunstancia. Es por esto que buscamos contribuir a la creación de espacios más seguros en la comunidad que generen mayor conciencia de estas situaciones. Como empresa de tecnología, que intermedia millones de solicitudes, estamos comprometidos a desarrollar novedosas herramientas de seguridad, alianzas, entrenamientos y protocolos orientados a la prevención y atención rápida de estos incidentes, y así contribuir a la creación de entornos libres de violencia de género.",
+  "SafetyWomanHero.title": "Espacios seguros para mujeres",
+  "SafetyWomanHero.desc": "Échale un vistazo al podcast en colaboración con Juan José Tejada",
   "SafetyWomanHero.textColor": "white",
   "SafetyWomanHero.btnMode": "light",
+  "SafetyWomanHero.btnLink": "https://open.spotify.com/episode/3IzGfB0GxhuZ0KZe1bqpGT?si=8vBFJ3egRaKwB9VHHm3JqA",
+  "SafetyWomanHero.btnText": "Escuchar el podcast en Spotify",
   "SafetyWomanBanner.title": "Sobre el Acoso Sexual",
   "SafetyWomanBanner.desc": "La agresión sexual y violencia de género son conductas que atentan contra la dignidad de las personas y que no toleramos bajo ninguna circunstancia. Es por esto que buscamos contribuir a la creación de espacios más seguros en la comunidad que generen mayor conciencia de estas situaciones. Como empresa de tecnología, que intermedia millones de solicitudes, estamos comprometidos a desarrollar novedosas herramientas de seguridad, alianzas, entrenamientos y protocolos orientados a la prevención y atención rápida de estos incidentes, y así contribuir a la creación de entornos libres de violencia de género.",
   "SafetyWomanBanner.textColor": "gray-primary",
