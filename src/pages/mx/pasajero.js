@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
+import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
 import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxBanner from "../../components/sections/PaxBanner";
@@ -11,6 +12,9 @@ const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "mx.PaxHero.bgImage";
+  })[0];
+  const paxWhyDiDiImage = images.filter((image) => {
+    return image.title === "mx.PaxWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
 
@@ -22,6 +26,7 @@ const Pasajero = ({ data }) => {
         data={products}
         title="Hay un DiDi Para ti"
       ></SilderSection>
+      <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <PaxBanner></PaxBanner>
       <HomeColumns></HomeColumns>
     </Layout>
@@ -41,7 +46,9 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["mx.PaxHero.bgImage"] } }) {
+    allContentfulAsset(
+      filter: { title: { in: ["mx.PaxHero.bgImage", "mx.PaxWhyDiDi.image"] } }
+    ) {
       nodes {
         id
         title
