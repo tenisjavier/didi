@@ -1,0 +1,151 @@
+{
+  "AboutRestaurantColumns.columns": [
+      {
+        "title": "",
+        "desc": "",
+        "btnMode": "",
+        "btnLink": "",
+        "btnText": ""
+      },
+      {
+          "title": "",
+          "desc": "",
+          "btnMode": "",
+          "btnLink": "",
+          "btnText": ""
+        },
+        {
+          "title": "",
+          "desc": "",
+          "btnMode": "",
+          "btnLink": "",
+          "btnText": ""
+        },
+        {
+          "title": "",
+          "desc": "",
+          "btnMode": "",
+          "btnLink": "",
+          "btnText": ""
+        }
+  ],
+  "RestaurantSocialColumns.bgColor": "bg-gray-light",
+  "RestaurantSocialColumns.textColor": "gray-primary",
+  "RestaurantSocialColumns.columns": [
+    {
+      "title": "Apoyo a los Restaurantes",
+      "desc": "Más de 30 millones de pesos en descuentos y promociones, propina de apoyo y guías de salud para los establecimientos.",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "/mx/centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "Apoyo a los Socios Repartidores",
+      "desc": "Fondo económico para repartidores en cuarentena o con COVID-19. Entrega semanal de 10 mil kits de higiene y más de 1 millon en total.",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "/mx/legal/",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "Apoyo a los médicos",
+      "desc": "Campaña DiDi Hero de apoyo a los trabajadores de la salud, donación de comidas a hospitales, campañas de homenaje a las personas en primera línea de ayuda",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "/mx/centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    }
+  ],
+  "RestaurantTestimonialCTA.title": "Hot Pepper Pizza",
+  "RestaurantTestimonialCTA.desc": "El éxito del restaurante en la app ha sido tanto que su número de personal incrementó e instaló un sistema de varias computadoras para automatizar la solicitud de pedidos de comida",
+  "RestaurantBenefitsColumns.columns": [
+    {
+      "title": "01.  Identificación oficial",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "02. RFC y constancia de situación fiscal",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "03. Estado de cuenta",
+      "desc": "Estado de cuenta: logo del banco + nombre del titular + CLABE interbancaria Carátula del contrato de apertura de cuenta bancaria",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "04. Acta constitutiva",
+      "desc": "Personas morales",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "05. Fotografías",
+      "desc": "Fotografías del exterior de la Tienda",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "06. Menú",
+      "desc": "Fotografía del menú con precio",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "07. CURP",
+      "desc": "Fotografía del CURP",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "RestaurantBenefitsUnirColumns.columns": [
+    {
+      "title": "1. Sesión de fotos gratuita",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "2. Servicio de atención al cliente personalizada 24/7",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "3. Cofinanciamiento en programa de descuentos para hacer crecer tu negocio",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "4. Rango de 5 km de cobertura",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "5. Tiempo de entrega garantizado en 30 minutos",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "6. Pagos semanales y posibilidad de recibir una parte de tus pagos en efectivo ",
+      "desc": "",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "RestaurantBenefitsBanner.title": "En DiDi Food el contrato es sin plazos forzosos, sin esquema de exclusividad, ni penalización por salida de la aplicación.",
+  "RestaurantBenefitsBanner.desc": "",
+  "RestaurantBenefitsBanner.bgColor": "bg-orange-primary",
+  "RestaurantBenefitsBanner.textColor": "white"
+}
