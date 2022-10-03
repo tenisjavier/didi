@@ -214,5 +214,9 @@
   "PrivacyCTA.btnMode": "dark",
   "FaqFoodHero.title": "PREGUNTAS FRECUENTES",
   "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:",
-  "FoodHeroSecondary.btnMode": "green"
+  "FoodHeroSecondary.btnMode": "green",
+  "FoodFaqList.linkItem": "/mx/food/preguntas-frecuentes/{{faqSlug}}",
+  "FoodFaqList.desc": "",
+  "FoodFaqHero.textColor": "white",
+  "FoodFaqHero.btnMode": "primary"
 }
