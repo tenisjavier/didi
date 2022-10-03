@@ -132,6 +132,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi, DiDi Delivery y DiDi Economy están activos en México. Elige la mejor opción.",
     },
+    "/didi-fleet/": {
+      title: "DiDi Fleet - Genera Dinero Rentando tus Autos",
+      desc: "DiDi Fleet. Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva con DiDi Fleet.",
+    },
     "/driver/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
