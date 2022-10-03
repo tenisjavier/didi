@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import HomeHero from "../../components/sections/HomeHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
+import DrvCTA from "../../components/sections/DrvCTA";
 import FoodCTA from "../../components/sections/FoodCTA";
 import FleetAboutCTA from "../../components/sections/FleetAboutCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
@@ -15,8 +16,8 @@ const Index = ({ data }) => {
   const safetyCTAImage = images.filter((image) => {
     return image.title === "mx.SafetyCTA.image";
   })[0];
-  const safetyCTABGImage = images.filter((image) => {
-    return image.title === "mx.SafetyCTA.bgImage";
+  const drvCTAImage = images.filter((image) => {
+    return image.title === "mx.DrvCTA.image";
   })[0];
   const FoodCTAImage = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
@@ -31,10 +32,11 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
-      <FoodCTA image={FoodCTAImage}></FoodCTA>
+      <SafetyCTA image={safetyCTAImage}></SafetyCTA>
+      <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
-      <SafetyCTA image={safetyCTAImage} bgImage={safetyCTABGImage}></SafetyCTA>
       <FleetAboutCTA image={FleetAboutCTAImage}></FleetAboutCTA>
+      <FoodCTA image={FoodCTAImage}></FoodCTA>
     </Layout>
   );
 };
@@ -58,7 +60,7 @@ export const query = graphql`
           in: [
             "mx.HomeHero.bgImage"
             "mx.SafetyCTA.image"
-            "mx.SafetyCTA.bgImage"
+            "mx.DrvCTA.image"
             "mx.FoodCTA.image"
             "mx.PaxCTA.image"
             "mx.FleetAboutCTA.image"
