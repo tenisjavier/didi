@@ -23,7 +23,7 @@ const Driver = ({ data }) => {
     return image.title === "cr.DrvFeatures.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -97,13 +97,16 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "cr" }) {
-      city {
+    allContentfulCity(
+      filter: { country: { code: { eq: "cr" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }

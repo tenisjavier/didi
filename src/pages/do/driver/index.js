@@ -18,7 +18,7 @@ const Driver = ({ data }) => {
     return image.title === "do.DrvWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -90,13 +90,16 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "do" }) {
-      city {
+    allContentfulCity(
+      filter: { country: { code: { eq: "do" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }
