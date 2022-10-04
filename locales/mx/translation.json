@@ -18,12 +18,12 @@
   "SafetyCTA.btnLink": "seguridad/",
   "SafetyDrvCTA.title": "Seguridad para conductores",
   "SafetyDrvCTA.desc": "Conoce más sobre las funciones de seguridad para conductores en DiDi",
-  "SafetyDrvCTA.btnLink": "/mx/seguridad/conductores",
+  "SafetyDrvCTA.btnLink": "/mx/seguridad/conductores/",
   "SafetyDrvCTA.btnMode": "primary",
   "SafetyDrvCTA.btnText": "Conoce más",
   "SafetyPaxCTA.title": "Seguridad para pasajeros",
   "SafetyPaxCTA.desc": "Conoce más sobre las funciones de seguridad para pasajeros en DiDi",
-  "SafetyPaxCTA.btnLink": "/mx/seguridad/pasajeros",
+  "SafetyPaxCTA.btnLink": "/mx/seguridad/pasajeros/",
   "SafetyPaxCTA.btnMode": "primary",
   "SafetyPaxCTA.btnText": "Conoce más",
   "SafetyDrvImgHero.title": "Conduce con tranquilidad",
@@ -455,6 +455,7 @@
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
   "SafetyGridDuringTrip.title": "Durante el Viaje",
+  "SafetyGridDuringTrip.desc": "",
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
