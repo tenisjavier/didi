@@ -9,7 +9,7 @@ const Ciudades = ({ data }) => {
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "cr.DrvHero.bgImage";
   })[0];
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
@@ -37,13 +37,16 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulCountry(code: { eq: "cr" }) {
-      city {
+    allContentfulCity(
+      filter: { country: { code: { eq: "cr" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }

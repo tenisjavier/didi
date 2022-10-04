@@ -17,7 +17,7 @@ const DrvCity = ({ data }) => {
   })[0];
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -114,14 +114,16 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "ec" }) {
-      name
-      city {
+    allContentfulCity(
+      filter: { country: { code: { eq: "ec" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }
