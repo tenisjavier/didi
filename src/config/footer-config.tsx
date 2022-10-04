@@ -21,10 +21,10 @@ const footerLinks: AllFooterInterface = {
   mx: [
     { text: "Pasajero", link: "/mx/pasajero/" },
     { text: "Socio Conductor", link: "/mx/driver/" },
-    { text: "Lugares", link: "/mx/lugares/" },
     { text: "DiDi Taxi", link: "/mx/taxi/" },
     { text: "Seguridad", link: "/mx/seguridad/" },
     { text: "Legal", link: "/mx/legal/" },
+    { text: "Carreras", link: "https://jobs.lever.co/didi-global" },
     { text: "Newsroom", link: "/mx/newsroom/" },
   ],
   do: [
