@@ -300,6 +300,7 @@
   "SafetyPaxHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for riders.",
   "SafetyPaxHero.textColor": "white",
   "SafetyPaxHero.btnMode": "light",
+  "SafetyPaxColumns.title": "",
   "SafetyPaxColumns.bgColor": "bg-gray-primary",
   "SafetyPaxColumns.textColor": "white",
   "SafetyPaxColumns.columns": [
