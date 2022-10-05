@@ -670,6 +670,8 @@
   "OfferFeatures.bgColor": "bg-blue-primary",
   "OfferFeatures.textColor": "white",
   "OfferFeatures.btnMode": "light",
+  "OfferFeatures.btnLink": "https://web.didiglobal.com/nz/offers/",
+  "OfferFeatures.btnText": "See Other Offers",
   "DrvTaxInfoHero.title": "DiDi Tax Information",
   "DrvTaxInfoHero.desc": "Where to find your tax information",
   "DrvTaxInfoHero.textColor": "white",

@@ -21,6 +21,9 @@ const OfferFeatures = ({ title, desc, image }: OfferFeaturesProps) => {
     desc: desc,
     textColor: t("OfferFeatures.textColor"),
     bgColor: t("OfferFeatures.bgColor"),
+    btnMode: t("OfferFeatures.btnMode"),
+    btnText: t("OfferFeatures.btnText"),
+    btnLink: t("OfferFeatures.btnLink"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData}
