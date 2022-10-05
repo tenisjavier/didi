@@ -269,7 +269,7 @@ module.exports = {
             let path;
             const [countryCode, cityName] = [city.country.code, city.name];
 
-            path = `/${countryCode}/food/city/food-en-${slugify(cityName)}/`;
+            path = `/${countryCode}/food/city/${slugify(cityName)}/`;
 
             return { path };
           });
