@@ -146,7 +146,7 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/ciudades/:path?",
+            matchPath: "/:lang?/food/city/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
@@ -336,7 +336,7 @@ module.exports = {
             ...cityPages,
             ...articlePages,
             ...guidePages,
-            ...foodCityPages
+            ...foodCityPages,
             //...cityPlacePages,
             // ...placePages,
             // ...directionPages,
