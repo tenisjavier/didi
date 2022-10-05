@@ -21,7 +21,7 @@ const Ciudades = ({ data }) => {
   const foodBusinessDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
   });
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
   const filteredCities = cities.filter((city) => {
     return city.restaurant != null;
   });
@@ -65,13 +65,17 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulCountry(code: { eq: "mx" }) {
-      city {
+
+    allContentfulCity(
+      filter: { country: { code: { eq: "mx" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
         restaurant {
           name
