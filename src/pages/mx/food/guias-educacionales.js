@@ -9,15 +9,22 @@ const GuiasEducacionales = ({ data }) => {
   const helpCenterBgImage = images.filter((image) => {
     return image.title === "mx.FaqFoodHero.bgImage";
   })[0];
+  const modifyGuidesImage = images.filter((image) => {
+    return image.title === "mx.GuideListItem.image";
+  });
+  const operationsGuidesImage = images.filter((image) => {
+    return image.title === "mx.OperationsGuideListItem.image";
+  });
+
   const educationalGuides = data.allContentfulFaq.edges;
   const onlyModifyGuides = educationalGuides.filter((guide) => {
-    if(guide.node.title != "Cómo Administrar al Personal" && guide.node.title != "Cómo funcionan los reembolsos" && guide.node.title != "Cómo Calificar Tu Experiencia con un Socio Repartidor") {
+    if(guide.node.title !== "Cómo Administrar al Personal" && guide.node.title !== "Cómo funcionan los reembolsos" && guide.node.title !== "Cómo Calificar Tu Experiencia con un Socio Repartidor") {
       return guide;
     }
   });
 
   const onlyOperationsGuides = educationalGuides.filter((guide) => {
-    if(guide.node.title == "Cómo Administrar al Personal" || guide.node.title == "Cómo funcionan los reembolsos" || guide.node.title == "Cómo Calificar Tu Experiencia con un Socio Repartidor") {
+    if(guide.node.title === "Cómo Administrar al Personal" || guide.node.title === "Cómo funcionan los reembolsos" || guide.node.title === "Cómo Calificar Tu Experiencia con un Socio Repartidor") {
       return guide;
     }
   });
@@ -25,8 +32,8 @@ const GuiasEducacionales = ({ data }) => {
   return (
     <Layout>
       <EducationalGuideFoodHero bgImage={helpCenterBgImage}></EducationalGuideFoodHero>
-      <FoodEducationalGuidesList title="Modificaciones al menú" faqs={onlyModifyGuides.reverse()}></FoodEducationalGuidesList>
-      <FoodEducationalGuidesList title="Operación de la tienda" faqs={onlyOperationsGuides.reverse()}></FoodEducationalGuidesList>
+      <FoodEducationalGuidesList images={modifyGuidesImage.reverse()} title="Modificaciones al menú" faqs={onlyModifyGuides.reverse()}></FoodEducationalGuidesList>
+      <FoodEducationalGuidesList images={operationsGuidesImage.reverse()} title="Operación de la tienda" faqs={onlyOperationsGuides.reverse()}></FoodEducationalGuidesList>
     </Layout>
   );
 };
@@ -43,7 +50,11 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { in: "mx.FaqFoodHero.bgImage"} }
+      filter: { title: { in: [
+        "mx.FaqFoodHero.bgImage"
+        "mx.OperationsGuideListItem.image"
+        "mx.GuideListItem.image"
+      ]} }
     ) {
       nodes {
         id

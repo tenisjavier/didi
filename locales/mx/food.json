@@ -218,10 +218,23 @@
   "FoodFaqList.linkItem": "/mx/food/preguntas-frecuentes/{{faqSlug}}",
   "FoodFaqList.desc": "",
   "FoodFaqHero.textColor": "white",
+  "FaqFoodHero.textColor": "white",
   "FoodFaqHero.btnMode": "primary",
   "FoodEducationalGuidesList.linkItem": "/mx/food/guias-educacionales/{{faqSlug}}",
   "FoodEducationalGuidesList.desc": "",
   "EducationalGuideFoodHero.title": "Guías Educacionales",
   "EducationalGuideFoodHero.desc": "Conoce todo acerca de tu app",
-  "EducationalGuideFoodHero.textColor": "white"
+  "EducationalGuideFoodHero.textColor": "white",
+  "MoreQuestionsCTA.title": "En caso de tener más dudas con:",
+  "MoreQuestionsCTA.desc": "Envíanos un correo: soporte.tienda@mx.didiglobal.com \n Comunícate al: 800-801-6888 \n En donde nuestro equipo de Restaurant Support podrá ayudarte",
+  "MoreQuestionsCTA.bullets": [
+    "• Cambio de precios (siempre y cuando no excedan el precio de mercado)",
+    "• Cambio de dirección",
+    "• Cambio de nombre",
+    "• Actualización de super admin", 
+    "• Actualización de correo electrónico",
+    "• Corrección RFC",
+    "• Activar o desactivar Prepay o CashBlock",
+    "• Reenvíar facturas"
+  ]
 }

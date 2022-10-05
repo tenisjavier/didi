@@ -11,7 +11,7 @@ const ListSection = (props) => {
         className={`flex list-none flex-wrap items-center justify-center p-2`}
       >
         {items.map((item, index) => {
-          return <GuideListItem {...item} image={image} key={index}></GuideListItem>;
+          return <GuideListItem {...item} key={index}></GuideListItem>;
         })}
       </ul>
     </section>
