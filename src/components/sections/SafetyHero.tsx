@@ -26,7 +26,7 @@ const SafetyHero = ({ bgImage }: SafetyHeroProps) => {
       ></GatsbyImage>
     ),
     btnMode: t("SafetyHero.btnMode"),
-    btnType: "pax",
+    btnType: "both",
   };
   return <CTASection {...props}></CTASection>;
 };
