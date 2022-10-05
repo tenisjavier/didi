@@ -156,12 +156,17 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/preguntas-frecuentes/:path?",
+            matchPath: "/:lang?/food/store/restaurant/guias-educacionales/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/guias-educacionales/:path?",
+            matchPath: "/:lang?/food/store/restaurant/preguntas-frecuentes/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/food/store/restaurant/offers/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },

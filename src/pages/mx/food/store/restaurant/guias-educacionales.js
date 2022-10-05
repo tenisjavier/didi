@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import EducationalGuideFoodHero from "../../../components/sections/EducationalGuideFoodHero";
-import FoodEducationalGuidesList from "../../../components/sections/FoodEducationalGuidesList";
+import Layout from "../../../../../components/Layout";
+import EducationalGuideFoodHero from "../../../../../components/sections/EducationalGuideFoodHero";
+import FoodEducationalGuidesList from "../../../../../components/sections/FoodEducationalGuidesList";
 
 const GuiasEducacionales = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

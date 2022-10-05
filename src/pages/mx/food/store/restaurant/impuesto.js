@@ -1,20 +1,28 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../../components/Layout";
-import RestaurantHero from "../../../../../components/sections/RestaurantHero";
-
-
+import RestaurantHeroImpuesto from "../../../../../components/sections/RestaurantHeroImpuesto";
+import RestaurantImpuestosColumns from '../../../../../components/sections/RestaurantImpuestosColumns'
+import ImpuestosColumns from '../../../../../components/sections/ImpuestosColumns'
 
 const Restaurant = ({ data }) => {
 
   const images = data.allContentfulAsset.nodes;
   const RestaurantHeroBgImage = images.filter((image) => {
-    return image.title === "mx.RestaurantHero.bgImage";
+    return image.title === "mx.RestaurantHeroImpuesto.bgImage";
   })[0];
+  const impuestosImages = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiRestaurantImpuesto.image") !== -1;
+  })
+  const impuestoColumnImages = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiRestaurantImpuestosColumn.image") !== -1;
+  })
 
   return (
     <Layout>
-      <RestaurantHero bgImage={RestaurantHeroBgImage}></RestaurantHero>
+      <RestaurantHeroImpuesto bgImage={RestaurantHeroBgImage}></RestaurantHeroImpuesto>
+      <ImpuestosColumns images={impuestoColumnImages}></ImpuestosColumns>
+      <RestaurantImpuestosColumns images={impuestosImages.reverse()}></RestaurantImpuestosColumns>
     </Layout>
   );
 };
@@ -33,7 +41,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.RestaurantHero.bgImage)/"
+          regex: "/(mx.RestaurantHeroImpuesto.bgImage)|(mx.DiDiRestaurantImpuesto.image)|(mx.DiDiRestaurantImpuestosColumn.image)/"
         }
       }
     ) {

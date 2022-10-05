@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../components/Layout";
-import FoodFaqHero from "../../../../components/sections/FoodFaqHero";
-import FaqContent from "../../../../components/sections/FaqContent";
-import FoodFaqList from "../../../../components/sections/FoodFaqList";
+import Layout from "../../../../../../components/Layout";
+import FoodFaqHero from "../../../../../../components/sections/FoodFaqHero";
+import FaqContent from "../../../../../../components/sections/FaqContent";
+import FoodFaqList from "../../../../../../components/sections/FoodFaqList";
 
 const FaqTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

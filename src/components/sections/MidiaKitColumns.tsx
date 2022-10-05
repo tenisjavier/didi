@@ -3,13 +3,13 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUserShield,
-  faDollarSign,
-  faClock,
+  faQuoteRight,
+  faExclamationCircle,
+  faHeadphonesAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface RestaurantBenefitsColumnsProps {
+interface MidiaKitColumnsProps {
   images: {
     title: string;
     description: string;
@@ -17,13 +17,14 @@ interface RestaurantBenefitsColumnsProps {
   }[];
 }
 
-const RestaurantBenefitsColumns = ({images}: RestaurantBenefitsColumnsProps) => {
+const MidiaKitColumns = ({ images }: MidiaKitColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    bgColor: t("RestaurantBenefitsUnirColumns.bgColor"),
-    textColor: t("RestaurantBenefitsUnirColumns.textColor"),
-    columns: t("RestaurantBenefitsUnirColumns.columns", { returnObjects: true }),
+    bgColor: t("MidiaKitColumns.bgColor"),
+    textColor: t("MidiaKitColumns.textColor"),
+    columns: t("MidiaKitColumns.columns", { returnObjects: true }),
   };
+
   if (images) {
     props.columns.forEach((col, index) => {
       const image = images[index].gatsbyImageData;
@@ -31,13 +32,12 @@ const RestaurantBenefitsColumns = ({images}: RestaurantBenefitsColumnsProps) => 
         <GatsbyImage
           image={image}
           alt={images[index].description}
-          className="z-10 m-4 w-48"
+          className="z-10 m-4 w-full"
         ></GatsbyImage>
       );
     });
-  } 
-
+  }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default RestaurantBenefitsColumns;
+export default MidiaKitColumns;
