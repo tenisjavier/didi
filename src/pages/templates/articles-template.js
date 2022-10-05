@@ -1,19 +1,27 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import ArticleHero from "../../components/sections/ArticleHero";
 import ArticleContent from "../../components/sections/ArticleContent";
 import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
+import NewsroomColumns from "../../components/sections/NewsroomColumns";
 
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
+  const { pathname } = useLocation();
   return (
     <Layout>
       <ArticleHero data={data}></ArticleHero>
       <ArticleContent data={data}></ArticleContent>
       <PaxBanner></PaxBanner>
-      {articles.length && <ArticlesColumns data={data}></ArticlesColumns>}
+      {articles.length &&
+        (pathname.includes("newsroom") ? (
+          <NewsroomColumns data={data}></NewsroomColumns>
+        ) : (
+          <ArticlesColumns data={data}></ArticlesColumns>
+        ))}
     </Layout>
   );
 };
