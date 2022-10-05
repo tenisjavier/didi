@@ -160,6 +160,11 @@ module.exports = {
             languages: ["mx"],
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/food/guias-educacionales/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
         ],
       },
     },
