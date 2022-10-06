@@ -24,8 +24,7 @@ const Driver = ({ data }) => {
     return image.title === "ar.DrvFeatures.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
-  const country = data.contentfulCountry.name;
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -41,13 +40,7 @@ const Driver = ({ data }) => {
       <Requirements data={products}></Requirements>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
-      <DrvCityList
-        data={cities}
-        title={"Operamos en las siguientes ciudades en " + country}
-        desc={
-          "Descubre las ciudades de " + country + " donde esta operando Didi"
-        }
-      ></DrvCityList>
+      <DrvCityList data={cities}></DrvCityList>
     </Layout>
   );
 };
@@ -104,14 +97,16 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "ar" }) {
-      name
-      city {
-        slug
+    allContentfulCity(
+      filter: { country: { code: { eq: "ar" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
+        slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }

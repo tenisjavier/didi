@@ -151,7 +151,7 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/ciudades/:path?",
+            matchPath: "/:lang?/food/city/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
@@ -288,12 +288,8 @@ module.exports = {
           const foodCityPages = allCities.map((city) => {
             let path;
             const [countryCode, cityName] = [city.country.code, city.name];
-            if (sslCountries.includes(countryCode))
-              path = `/${countryCode}/food/ciudades/food-en-${slugify(
-                cityName
-              )}/`;
-            else if (engCountries.includes(countryCode))
-              path = `/${countryCode}/food/ciudades/food-${slugify(cityName)}/`;
+
+            path = `/${countryCode}/food/city/${slugify(cityName)}/`;
 
             return { path };
           });
@@ -356,7 +352,7 @@ module.exports = {
             ...cityPages,
             ...articlePages,
             ...guidePages,
-            ...foodCityPages
+            ...foodCityPages,
             //...cityPlacePages,
             // ...placePages,
             // ...directionPages,

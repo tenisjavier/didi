@@ -25,7 +25,7 @@ const Driver = ({ data }) => {
   const drvBenefitsImage = images.filter((image) => {
     return image.title === "eg.DrvBenefits.image";
   })[0];
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
   return (
     <Layout>
       <DrvHeroRTL bgImage={drvHeroBgImage}></DrvHeroRTL>
@@ -82,13 +82,16 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "eg" }) {
-      city {
+    allContentfulCity(
+      filter: { country: { code: { eq: "eg" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }

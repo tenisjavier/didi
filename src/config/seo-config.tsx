@@ -125,12 +125,16 @@ const seoMeta: AllSEOMetaInterface = {
   },
   mx: {
     "/": {
-      title: "Regístrate como Socio Conductor DiDi",
-      desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos.",
+      title: "DiDi México: Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y entrega y economy. Gana más y manejando menos.",
     },
     "/pasajero/": {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
-      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en México. Elige la mejor opción.",
+      desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi, DiDi Delivery y DiDi Economy están activos en México. Elige la mejor opción.",
+    },
+    "/didi-fleet/": {
+      title: "DiDi Fleet - Genera Dinero Rentando tus Autos",
+      desc: "DiDi Fleet. Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva con DiDi Fleet.",
     },
     "/driver/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
@@ -193,8 +197,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
     "/centro-de-ayuda/": {
-      title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
-      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+      title: "Centro de Ayuda para Socios Conductores y Pasajeros",
+      desc: "Conoce aquí las preguntas frecuentes de conductores y pasajeros, funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
     "/direcciones/": {
       title: "Cómo llegar a distintos puntos de México",

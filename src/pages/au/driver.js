@@ -40,7 +40,7 @@ const Driver = ({ data }) => {
     return image.title === "au.PartnerCTA.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
   const requirements = data.allContentfulRequirement.nodes;
   return (
     <Layout>
@@ -109,13 +109,16 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "au" }) {
-      city {
-        slug
+    allContentfulCity(
+      filter: { country: { code: { eq: "au" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
+        slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
       }
     }

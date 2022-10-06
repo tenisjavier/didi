@@ -12,7 +12,7 @@ import { QRCodeSVG } from "qrcode.react";
 import SilderSection from "../../../../components/sections/SliderSection";
 
 const FoodCity = ({ data }) => {
-  const cities = data.contentfulCountry.city;
+  const cities = data.allContentfulCity.nodes;
   const { name } = data.contentfulCity;
   const images = data.allContentfulAsset.nodes;
   const restaurant = data.contentfulCity.restaurant;
@@ -83,7 +83,9 @@ export default FoodCity;
 
 export const query = graphql`
   query ($id: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["food"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns
@@ -134,14 +136,16 @@ export const query = graphql`
       }
     }
 
-    contentfulCountry(code: { eq: "mx" }) {
-      name
-      city {
+    allContentfulCity(
+      filter: { country: { code: { eq: "mx" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
         name
         slug
         image {
-          description
           gatsbyImageData(width: 400)
+          description
         }
         restaurant {
           name

@@ -300,6 +300,7 @@
   "SafetyPaxHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for riders.",
   "SafetyPaxHero.textColor": "white",
   "SafetyPaxHero.btnMode": "light",
+  "SafetyPaxColumns.title": "",
   "SafetyPaxColumns.bgColor": "bg-gray-primary",
   "SafetyPaxColumns.textColor": "white",
   "SafetyPaxColumns.columns": [
@@ -757,6 +758,8 @@
   "OfferFeatures.bgColor": "bg-blue-primary",
   "OfferFeatures.textColor": "white",
   "OfferFeatures.btnMode": "light",
+  "OfferFeatures.btnLink": "https://web.didiglobal.com/au/offers/",
+  "OfferFeatures.btnText": "See Other Offers",
   "DrvTaxInfoHero.title": "DiDi Tax Information",
   "DrvTaxInfoHero.desc": "Where to find your tax information",
   "DrvTaxInfoHero.textColor": "white",

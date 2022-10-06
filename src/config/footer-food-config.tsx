@@ -23,7 +23,7 @@ const footerLinksFood: AllFooterInterface = {
   mx: [
     { text: "Tienda", link: "/mx/food/store/" },
     { text: "Socio repartidor", link: "/mx/food/delivery/" },
-    { text: "Ciudades Disponibles", link: "/mx/food/ciudades/" },
+    { text: "Ciudades Disponibles", link: "/mx/food/city/" },
     { text: "Terms and Conditions", link: "/mx/food/terminos-y-condiciones/" },
     { text: "Privacidad", link: "/mx/food/privacidad/" },
     { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },

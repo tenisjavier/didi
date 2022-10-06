@@ -602,6 +602,8 @@
   "OfferFeatures.bgColor": "bg-blue-primary",
   "OfferFeatures.textColor": "white",
   "OfferFeatures.btnMode": "light",
+  "OfferFeatures.btnLink": "https://refiereyganacondidi.com/auth",
+  "OfferFeatures.btnText": "Consulta tus Puntos",
   "StoreHero.title": "Escanéa el QR con tu celular ",
   "StoreHero.desc": "Descarga DiDi Pasajero escaneando el código con tu celular",
   "StoreHero.textColor": "white",
