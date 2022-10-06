@@ -75,7 +75,28 @@
       "linkItem": "https://d.didiglobal.com/3cikL?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
     }
   ],
-
+  "RestaurantSocialColumns.bgColor": "bg-gray-light",
+  "RestaurantSocialColumns.textColor": "gray-primary",
+  "RestaurantSocialColumns.columns": [
+    {
+      "title": "Apoyo a los Restaurantes",
+      "desc": "Más de 30 millones de pesos en descuentos y promociones, propina de apoyo y guías de salud para los establecimientos.",
+      "textColor": "gray-primary",
+      "height": "h-80"
+    },
+    {
+      "title": "Apoyo a los Socios Repartidores",
+      "desc": "Fondo económico para repartidores en cuarentena o con COVID-19. Entrega semanal de 10 mil kits de higiene y más de 1 millon en total.",
+      "textColor": "gray-primary",
+      "height": "h-80"
+    },
+    {
+      "title": "Apoyo a los médicos",
+      "desc": "Campaña DiDi Hero de apoyo a los trabajadores de la salud, donación de comidas a hospitales, campañas de homenaje a las personas en primera línea de ayuda",
+      "textColor": "gray-primary",
+      "height": "h-80"
+    }
+  ],
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
@@ -231,7 +252,7 @@
     "• Cambio de precios (siempre y cuando no excedan el precio de mercado)",
     "• Cambio de dirección",
     "• Cambio de nombre",
-    "• Actualización de super admin", 
+    "• Actualización de super admin",
     "• Actualización de correo electrónico",
     "• Corrección RFC",
     "• Activar o desactivar Prepay o CashBlock",
@@ -256,5 +277,4 @@
   "FoodCityHero.textColor": "white",
   "FoodCityHero.bgColor": "bg-orange-primary",
   "FoodCityHero.btnMode": "light"
-
 }
