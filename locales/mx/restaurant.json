@@ -1,0 +1,266 @@
+{
+  "RestaurantHero.title": "",
+  "RestaurantHero.desc": "",
+  "RestaurantHeroImpuesto.title": "Impuestos",
+  "RestaurantHeroImpuesto.desc": "Entérate cómo funcionan los impuestos, las declaraciones y retenciones de plataformas digitales a restaurantes",
+  "RestaurantHeroRegistro.title": "Afilia tu Restaurante",
+  "RestaurantHeroRegistro.desc": "Optimiza tu negocio \n Empieza a recibir más pedidos con DiDi Food",
+  "RestaurantHeroKitDigital.title": " Kit Digital",
+  "RestaurantHeroKitDigital.desc": "Impulsa la visibilidad de tu restaurante y con ello tus ventas en nuestra aplicación.",
+  "AboutRestaurantColumns.columns": [
+      {
+        "title": "",
+        "desc": "",
+        "btnMode": "",
+        "btnLink": "",
+        "btnText": ""
+      },
+      {
+          "title": "",
+          "desc": "",
+          "btnMode": "",
+          "btnLink": "",
+          "btnText": ""
+        },
+        {
+          "title": "",
+          "desc": "",
+          "btnMode": "",
+          "btnLink": "",
+          "btnText": ""
+        },
+        {
+          "title": "",
+          "desc": "",
+          "btnMode": "",
+          "btnLink": "",
+          "btnText": ""
+        }
+  ],
+  "RestaurantSocialColumns.bgColor": "bg-gray-light",
+  "RestaurantSocialColumns.textColor": "gray-primary",
+  "RestaurantSocialColumns.columns": [
+    {
+      "title": "Apoyo a los Restaurantes",
+      "desc": "Más de 30 millones de pesos en descuentos y promociones, propina de apoyo y guías de salud para los establecimientos.",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "/mx/centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "Apoyo a los Socios Repartidores",
+      "desc": "Fondo económico para repartidores en cuarentena o con COVID-19. Entrega semanal de 10 mil kits de higiene y más de 1 millon en total.",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "/mx/legal/",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "Apoyo a los médicos",
+      "desc": "Campaña DiDi Hero de apoyo a los trabajadores de la salud, donación de comidas a hospitales, campañas de homenaje a las personas en primera línea de ayuda",
+      "textColor": "gray-primary",
+      "btnText": "Saber Más",
+      "btnLink": "/mx/centro-de-ayuda/",
+      "btnMode": "light",
+      "height": "h-80"
+    }
+  ],
+  "RestaurantTestimonialCTA.title": "Hot Pepper Pizza",
+  "RestaurantTestimonialCTA.desc": "El éxito del restaurante en la app ha sido tanto que su número de personal incrementó e instaló un sistema de varias computadoras para automatizar la solicitud de pedidos de comida",
+  "RestaurantBenefitsColumns.columns": [
+    {
+      "title": "01.  Identificación oficial",
+      "desc": ".",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "02. RFC y constancia de situación fiscal",
+      "desc": ".",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "03. Estado de cuenta",
+      "desc": "Estado de cuenta: logo del banco + nombre del titular + CLABE interbancaria Carátula del contrato de apertura de cuenta bancaria",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "04. Acta constitutiva",
+      "desc": "Personas morales",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "05. Fotografías",
+      "desc": "Fotografías del exterior de la Tienda",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "06. Menú",
+      "desc": "Fotografía del menú con precio",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "07. CURP",
+      "desc": "Fotografía del CURP",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "RestaurantBenefitsUnirColumns.columns": [
+    {
+      "title": "1.",
+      "desc": "Sesión de fotos gratuita",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "2.",
+      "desc": "Servicio de atención al cliente personalizada 24/7",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "3.",
+      "desc": "Cofinanciamiento en programa de descuentos para hacer crecer tu negocio",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "4.",
+      "desc": "Rango de 5 km de cobertura",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "5.",
+      "desc": "Tiempo de entrega garantizado en 30 minutos",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "6.",
+      "desc": "Pagos semanales y posibilidad de recibir una parte de tus pagos en efectivo",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "RestaurantBenefitsBanner.title": "En DiDi Food el contrato es sin plazos forzosos, sin esquema de exclusividad, ni penalización por salida de la aplicación.",
+  "RestaurantBenefitsBanner.desc": "",
+  "RestaurantBenefitsBanner.bgColor": "bg-orange-primary",
+  "RestaurantBenefitsBanner.textColor": "white",
+  "RestaurantImpuestosColumns.bgColor": "bg-gray-light",
+  "RestaurantImpuestosColumns.textColor": "gray-primary",
+  "RestaurantImpuestosColumns.columns": [
+    {
+      "title": "Antes de cualquier escenario, los primeros cálculos se realizarán de la siguiente manera:",
+      "desc": "*Aplica para personas físicas y morales",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Escenario 1 \n *Aplica para personas físicas ",
+      "desc": "En caso de que las ventas que tuviste dentro de la plataforma hayan sido 100% electrónicas (pagos con tarjetas de crédito) y el RFC que ingresaste sea válido. Los cálculos se continúan de la siguiente manera:",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Escenario 2 \n *Aplica para personas físicas ",
+      "desc": "En caso de que las ventas que tuviste dentro de la plataforma hayan sido 20% electrónicas (pagos con tarjetas de crédito) y el RFC que ingresaste sea válido. Los cálculos se continúan de la siguiente manera:",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Escenario 3 \n *Aplica para personas físicas  ",
+      "desc": "En caso de que las ventas que tuviste dentro de la plataforma hayan sido 100% electrónicas (pagos con tarjetas de crédito) y el RFC que ingresaste sea inválido. Los cálculos se continúan de la siguiente manera:",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Escenario 4 \n *Aplica para personas físicas ",
+      "desc": "En caso de que las ventas que tuviste dentro de la plataforma hayan sido 20% electrónicas (pagos con tarjetas de crédito) y el RFC que ingresaste sea inválido. Los cálculos se continúan de la siguiente manera:",
+      "textColor": "gray-primary"
+    }
+  ],
+  "ImpuestosColumns.bgColor": "bg-white",
+  "ImpuestosColumns.textColor": "gray-primary",
+  "ImpuestosColumns.columns": [
+    {
+      "textColor": "gray-primary",
+      "btnText": "Glosario",
+      "btnLink": "/mx/food/store/restaurant/impuestos/glosario",
+      "btnMode": "light"
+    },
+    {
+      "textColor": "gray-primary",
+      "btnText": "Constancia de Situación Fiscal",
+      "btnLink": "/mx/food/store/restaurant/impuestos/constancia-de-situacion-fiscal",
+      "btnMode": "light"
+    },
+    {
+      "textColor": "gray-primary",
+      "btnText": "Reforma Fiscal 2023",
+      "btnLink": "/mx/food/store/restaurant/impuestos/reforma-fiscal-2022",
+      "btnMode": "light"  
+    }
+  ],
+  "MidiaKitColumns.bgColor": "bg-orange-primary",
+  "MidiaKitColumns.textColor": "gray-primary",
+  "MidiaKitColumns.columns": [
+    {
+      "title": "Logotipos",
+      "desc": "Accede a nuestros logotipos y las distintas variaciones del mismo para tus publicaciones en redes sociales",
+      "textColor": "gray-primary",
+      "btnText": "Clic Aqui",
+      "btnLink": "https://drive.google.com/uc?id=1K4MHqw51M3fteu5qv6kjG1bC_7J1sqln&export=download",
+      "btnMode": "light"
+    },
+    {
+      "title": "Plantillas para Redes Sociales",
+      "desc": "Comparte nuestras plantillas en tus redes, para dar a conocer en tus redes las promociones que tengas activas con nosotros,",
+      "textColor": "gray-primary",
+      "btnText": "Descarda material para redes sociales",
+      "btnLink": "https://drive.google.com/drive/folders/1MfmH64UEDlKfT3nXX9S8rl6y41o3XRE-?usp=sharing",
+      "btnText2" : "Manual para redes Sociales",
+      "btnLink2": "/mx/food/store/resturant/kit-digital/manual-para-redes-sociales",
+      "btnMode": "light"
+    },
+    {
+      "title": "Manual de Fotografías",
+      "desc": "De la vista nace el antojo... \n Te enseñamos a tomar las mejores fotografías de tus platillos, con el fin de que tu restaurante pueda aumentar sus ventas hasta un 30% más.",
+      "textColor": "gray-primary",
+      "btnText": "Descarda Manual de Fotografías",
+      "btnLink": "https://drive.google.com/file/d/18KzuC4CzZX6r_vfJyd4gx-ndBjKLcPCU/view",
+      "btnMode": "light"
+    },
+    {
+      "title": "Recomendaciones Generales",
+      "desc": "Tenemos los mejores consejos para que aumentes la visibilidad de tu restaurante e incrementes con ello tus ventas.",
+      "textColor": "gray-primary",
+      "btnText": "Descarda material para redes sociales",
+      "btnLink": "/mx/food/store/guias-educaionales",
+      "btnMode": "light"
+    }
+  ],
+  "OffersHeroSimple.title": "Promociones y Campañas",
+  "OffersHeroSimple.desc": "Descubre las mejores maneras de maximizar tus ganancias",
+  "OffersHeroSimple.textColor": "white",
+  "OffersGrid.title": "COLABORACIONES ACTIVAS",
+  "OffersGrid.bgColor": "bg-gray-light",
+  "OffersGrid.desc": "Select you next discount",
+  "OffersGrid.textColor": "gray-primary",
+  "OffersGrid.linkItem": "/mx/food/store/restaurant/offers/{{offerSlug}}/",
+  "OfferHero.textColor": "white",
+  "OfferHero.bgColor": "bg-orange-primary",
+  "OfferHero.btnMode": "light",
+  "OfferHero.btnText": "Realiza tu compra aquí",
+  "OfferHero.btnLink": "https://food-delivery-partners.myshopify.com/collections/all",
+  "OfferColumns.title": "¿POR QUÉ ESCOGER DESECHABLES COMPOSTABLES?",
+  "OfferColumns.bgColor": "gray-primary",
+  "OfferColumns.textColor": "bg-white",
+  "OfferFeatures.bgColor": "bg-blue-primary",
+  "OfferFeatures.textColor": "white"
+}

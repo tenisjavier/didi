@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import FaqFoodHero from "../../../components/sections/FaqFoodHero";
-import FoodFAQ from "../../../components/sections/FoodFAQ";
-import MoreQuestionsCTA from "../../../components/sections/MoreQuestionsCTA";
+import Layout from "../../../../../components/Layout";
+import FaqFoodHero from "../../../../../components/sections/FaqFoodHero";
+import FoodFaqList from "../../../../../components/sections/FoodFaqList";
 
 const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -19,14 +18,16 @@ const CentroDeAyuda = ({ data }) => {
   const faqStore = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Restaurant Tienda"
   );
+  console.log(faqDelivery);
+  console.log(faqOperations);
+  console.log(faqStore[0].faq);
 
   return (
     <Layout>
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
-      <FoodFAQ title="Repartidores" desc=" " data={faqDelivery[0]}></FoodFAQ>
-      <FoodFAQ title="Operaciones" desc=" " data={faqOperations[0]}></FoodFAQ>
-      <FoodFAQ title="Tu Tienda" desc=" " data={faqStore[0]}></FoodFAQ>
-      <MoreQuestionsCTA></MoreQuestionsCTA>
+      <FoodFaqList title="Repartidores" faqs={faqDelivery[0].faq}></FoodFaqList>
+      <FoodFaqList title="Operaciones" faqs={faqOperations[0].faq}></FoodFaqList>
+      <FoodFaqList title="Tu Tienda" faqs={faqStore[0].faq}></FoodFaqList>
     </Layout>
   );
 };
