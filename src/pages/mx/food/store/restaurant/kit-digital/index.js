@@ -10,9 +10,6 @@ const Restaurant = ({ data }) => {
   const RestaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.RestaurantHeroKitDigital.bgImage";
   })[0];
-  const impuestoColumnImages = images.filter((image) => {
-    return image.title.indexOf("mx.DiDiRestaurantImpuestosColumn.image") !== -1;
-  })
 
   return (
     <Layout>
