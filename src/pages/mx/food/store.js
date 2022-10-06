@@ -4,6 +4,8 @@ import Layout from "../../../components/Layout";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
 import FoodBusinessColumns from "../../../components/sections/FoodBusinessColumns";
 import FoodBusinessDownloads from "../../../components/sections/FoodBusinessDownloads";
+import FoodCityList from "../../../components/sections/FoodCityList";
+import RestaurantSocialColumns from "../../../components/sections/RestaurantSocialColumns";
 
 const FoodBusiness = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -16,7 +18,14 @@ const FoodBusiness = ({ data }) => {
   const foodBusinessDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
   });
-
+  const socialImages = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiRestaurantSocial.image") !== -1;
+  });
+  const cities = data.allContentfulCity.nodes;
+  const filteredCities = cities.filter((city) => {
+    return city.restaurant != null;
+  });
+  console.log(socialImages);
   return (
     <Layout>
       <FoodBusinessHero bgImage={foodHeroBgImage}></FoodBusinessHero>
@@ -26,6 +35,10 @@ const FoodBusiness = ({ data }) => {
       <FoodBusinessDownloads
         images={foodBusinessDownloadsImages}
       ></FoodBusinessDownloads>
+      <FoodCityList data={filteredCities}></FoodCityList>
+      <RestaurantSocialColumns
+        images={socialImages.reverse()}
+      ></RestaurantSocialColumns>
     </Layout>
   );
 };
@@ -48,7 +61,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodBusinessHero.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)/"
+          regex: "/(mx.FoodBusinessHero.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)|(mx.DiDiRestaurantSocial.image)/"
         }
       }
       sort: { fields: title }
@@ -72,6 +85,22 @@ export const query = graphql`
         phone
         requirement {
           raw
+        }
+      }
+    }
+    allContentfulCity(
+      filter: { country: { code: { eq: "mx" } } }
+      sort: { fields: name }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
+        restaurant {
+          name
         }
       }
     }
