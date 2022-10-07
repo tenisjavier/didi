@@ -267,25 +267,36 @@
   "FoodCityBannerCTA.bgColor": "bg-orange-primary",
   "FoodCityBannerCTA.textColor": "white",
   "FoodCityBannerCTA.btnMode": "light",
-  "FoodCityBannerCTATwo.title": "Pedir comida en línea en {{city}} a través de la app de DiDi Food es muy fácil, económico y rápido",
-  "FoodCityBannerCTATwo.desc": "¿Estás buscando los mejores platillos rápidos en {{city}}? Descubre los restaurantes más económicos en {{city}} con entrega a domicilio por parte de los socios repartidores que utilizan la app de DiDi Food. Así que si tienes antojo y ya sabes lo que quieres comer, pide ya y recibe tu pedido en tan solo unos minutos. \n La app de DiDi Food te permite encontrar los restaurantes más baratos de {{city}}, bien sea para desayunar, almorzar, cenar o simples refrigerios. Descubre cientos de restaurantes económicos con entrega a domicilio en {{city}}, pide tu comida ya y sigue la entrega del socio repartidor minuto a minuto.",
-  "FoodCityBannerCTATwo.bgColor": "bg-gray-light",
-  "FoodCityBannerCTATwo.textColor": "gray-primary",
-  "FoodCityBannerCTATwo.btnMode": "primary",
-  "FoodCityBannerCTAThree.title": "Entrega de Comida a través de la app de DiDi Food en {{city}}",
-  "FoodCityBannerCTAThree.desc": "La app de DiDi Food es la mayor aplicación que facilita el servicio de entrega de comida a domicilio en {{city}}. Ya sea sushi a media noche o chilaquiles a las siete de la mañana del Domingo, lo conseguimos y coordinamos el envío hasta tu casa. Descarga la app de DiDi Food para hacer tus pedidos, guardar tus pedidos favoritos y obtener ofertas exclusivas de los mejores restaurantes cercanos a ti en {{city}}.",
-  "FoodCityBannerCTAThree.bgColor": "bg-orange-primary",
-  "FoodCityBannerCTAThree.textColor": "white",
-  "FoodCityBannerCTAThree.btnMode": "light",
   "FoodCityRestaurantCTA.title": "Restaurantes a domicilio en {{city}} cerca de tí",
   "FoodCityRestaurantCTA.desc": "En la app de DiDi Food, contamos con los mejores restaurantes de {{city}} y con entrega a domicilio a través de los socios repartidores, para que disfrutes de tu comida donde sea que te encuentres, ya sea en casa, en el trabajo o hasta en el parque, sin tener que desplazarte. \n En Abril del 2020 , el primer socio restaurantero de {{city}} se registró con nosotros. Actualmente, facilitamos la compra y entrega de comida de más de 199 restaurantes de {{city}}, ofreciendo más de 43 tipos diferentes de comida y miles de platillos, incluyendo pizza, sushi, alitas de pollo , chilaquiles, tamales y todo tipo de tacos. \n No solo pizza a domicilio... \n - Mexicana \n - Vegetariana  \n - China \n - Latinoamericana  \n- Italiana  \n - Japonesa \n - Coreana \n … y mas \n También servimos los platillos más tradicionales de {{city}}, como los chilaquiles y las quesadillas. A través de la app de DiDi Food ¡Disfruta de la mejor comida, con una entrega coordinada directa a tu domicilio!. La mayoría de los restaurantes de {{city}}, están abiertos al público desde las ocho de la mañana hasta la medianoche, así que ¿qué estás esperando para hacer tu pedido?",
   "FoodCityRestaurantCTA.bgColor": "bg-white",
   "FoodCityRestaurantCTA.textColor": "gray-primary",
   "FoodCityRestaurantCTA.btnMode": "primary",
   "FoodCityHero.title": "Comida a domicilio en {{city}}",
-  "FoodCityHero.desc": "Baja la app o pide comida en nuestro sitio oficial.",
+  "FoodCityHero.desc": "Escanea con tu celular este código QR para descargar la app",
   "FoodCityHero.textColor": "white",
   "FoodCityHero.bgColor": "bg-orange-primary",
-  "FoodCityHero.btnMode": "primary",
-  "FoodCityHero.btnModeSecondary": "green"
+  "FoodCityHero.btnMode": "light",
+  "PartnerFoodColumns.title": "¿Qué tipo de recompensas puedo obtener al ser socio repartidor registrado en DiDi Food?",
+  "PartnerFoodColumns.desc": "Al ser Socio Repartidor registrado en DiDi Food tendrás acceso a descuentos y a facilidades ofrecidas por terceros para ayudarte en tu día a día.",
+  "PartnerFoodColumns.columns": [
+    {
+      "title": "Descontos en combustible"
+    },
+    {
+      "title": "Facilidades para comprar un auto"
+    },
+    {
+      "title": "Descuentos en rentar un auto"
+    },
+    {
+      "title": "Ayuda en tu contabilidad y en tus finanzas"
+    }
+  ],
+  "PartnersFoodHero.title": "Club de Beneficios DiDiMás+",
+  "PartnersFoodHero.desc": "Tu entrada a descuentos, recompensas y servicios exclusivos.",
+  "PartnersFoodHero.textColor": "white",
+  "PartnersFoodHero.btnMode": "light",
+  "PartnersFoodHero.btnType": "foodDelivery",
+  "PartnersFoodGrid.linkItem": "/mx/food/clubdidi/{{partnerName}}"
 }
