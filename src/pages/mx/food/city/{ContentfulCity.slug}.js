@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodCityHero from "../../../../components/sections/FoodCityHero";
@@ -8,7 +8,6 @@ import FoodDeliveryCTA from "../../../../components/sections/FoodDeliveryCTA";
 import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessDownloads";
 import FoodCityBannerCTA from "../../../../components/sections/FoodCityBannerCTA";
 import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
-import { QRCodeSVG } from "qrcode.react";
 import SilderSection from "../../../../components/sections/SliderSection";
 
 const FoodCity = ({ data }) => {
@@ -21,6 +20,9 @@ const FoodCity = ({ data }) => {
     return city.restaurant != null;
   });
 
+  const foodHeroBgImage = images.filter((image) => {
+    return image.title === "mx.FoodHero.bgImage";
+  })[0];
   const foodBusinessCTAImage = images.filter((image) => {
     return image.title === "mx.FoodBusinessCTA.image";
   })[0];
@@ -30,31 +32,13 @@ const FoodCity = ({ data }) => {
   const foodBusinessDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
   });
-  const [QRUrl, setQRUrl] = useState(
-    "https://global-food-eater.onelink.me/4B2F/1059cbff?af_qr=true"
-  );
-  const qr = (
-    <QRCodeSVG
-      value={QRUrl}
-      size={300}
-      height={300}
-      width={300}
-      bgColor="#ffffff"
-      className="z-10 m-4 w-100"
-    ></QRCodeSVG>
-  );
-
-  useEffect(() => {
-    setQRUrl(
-      document
-        .getElementsByClassName("btn-light")[0]
-        .getElementsByTagName("a")[0].href
-    );
-  }, []);
 
   return (
     <Layout>
-      <FoodCityHero image={qr} data={data.contentfulCity}></FoodCityHero>
+      <FoodCityHero
+        bgImage={foodHeroBgImage}
+        data={data.contentfulCity}
+      ></FoodCityHero>
       {restaurant && (
         <SilderSection
           data={restaurant}
