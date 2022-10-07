@@ -3,10 +3,9 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodCityHero from "../../../../components/sections/FoodCityHero";
 import FoodCityList from "../../../../components/sections/FoodCityList";
-import FoodBusinessCTA from "../../../../components/sections/FoodBusinessCTA";
-import FoodDeliveryCTA from "../../../../components/sections/FoodDeliveryCTA";
-import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessDownloads";
 import FoodCityBannerCTA from "../../../../components/sections/FoodCityBannerCTA";
+import FoodCityBannerCTA2 from "../../../../components/sections/FoodCityBannerCTA2";
+import FoodCityBannerCTA3 from "../../../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
 import SilderSection from "../../../../components/sections/SliderSection";
 
@@ -29,9 +28,9 @@ const FoodCity = ({ data }) => {
   const foodDeliveryCTAImage = images.filter((image) => {
     return image.title === "mx.FoodDeliveryCTA.image";
   })[0];
-  const foodBusinessDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
-  });
+  const foodCTA3Image = images.filter((image) => {
+    return image.title === "mx.FoodCTA.image";
+  })[0];
 
   return (
     <Layout>
@@ -54,11 +53,14 @@ const FoodCity = ({ data }) => {
         image={foodDeliveryCTAImage}
       ></FoodCityRestaurantCTA>
       <FoodCityList data={filteredCities}></FoodCityList>
-      <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
-      <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
-      <FoodBusinessDownloads
-        images={foodBusinessDownloadsImages}
-      ></FoodBusinessDownloads>
+      <FoodCityBannerCTA2
+        data={data.contentfulCity}
+        image={foodDeliveryCTAImage}
+      ></FoodCityBannerCTA2>
+      <FoodCityBannerCTA3
+        data={data.contentfulCity}
+        image={foodCTA3Image}
+      ></FoodCityBannerCTA3>
     </Layout>
   );
 };
@@ -108,7 +110,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)/"
         }
       }
     ) {
