@@ -6,14 +6,19 @@ import { StaticImage } from "gatsby-plugin-image";
 import Breadcrumb from "./Breadcrumb";
 
 import Menu from "./Menu";
+import MenuRestaurant from "./MenuRestaurant"
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
     <>
       <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
+          {pathname.includes("restaurant") ? (<MenuRestaurant></MenuRestaurant>):
           <Menu></Menu>
+        }
         </div>
       </nav>
       <Breadcrumb></Breadcrumb>

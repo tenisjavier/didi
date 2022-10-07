@@ -175,6 +175,11 @@ module.exports = {
             languages: ["mx"],
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/food/store/restaurant/kit-digital/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          }
         ],
       },
     },

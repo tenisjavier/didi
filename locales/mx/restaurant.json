@@ -225,8 +225,8 @@
       "textColor": "gray-primary",
       "btnText": "Descarda material para redes sociales",
       "btnLink": "https://drive.google.com/drive/folders/1MfmH64UEDlKfT3nXX9S8rl6y41o3XRE-?usp=sharing",
-      "btnText2": "Manual para redes Sociales",
-      "btnLink2": "/mx/food/store/resturant/kit-digital/manual-para-redes-sociales",
+      "btnText2" : "Manual para redes Sociales",
+      "btnLink2": "/mx/food/store/restaurant/kit-digital/manual-para-redes-sociales",
       "btnMode": "light"
     },
     {
@@ -263,5 +263,122 @@
   "OfferColumns.bgColor": "gray-primary",
   "OfferColumns.textColor": "bg-white",
   "OfferFeatures.bgColor": "bg-blue-primary",
-  "OfferFeatures.textColor": "white"
+  "OfferFeatures.textColor": "white",
+  "ManualSocialColumns.bgColor": "bg-white-primary",
+  "ManualSocialColumns.textColor": "gray-primary",
+  "ManualSocialColumns.columns": [
+    {
+      "title": "1.",
+      "desc": "Las imágenes in situ (dentro del restaurante) son mejores para abrir el apetito.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "2.",
+      "desc": "Las imágenes aisladas o sin fondo se sugiere utilizarlas solo para mostrar los platillos en el menú, no para contenido en redes sociales.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "3.",
+      "desc": "Procura que las fotos contengan: comida en buenas condiciones, exposición del producto completo y buena presentación e iluminación.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "4.",
+      "desc": "No olvides anunciar a través de tus redes que ya te pueden encontrar en la app.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "5.",
+      "desc": "Puedes realizar publicación tanto de historia como un post en la cuenta de tu restaurante en Instagram y Facebook",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    },
+    {
+      "title": "6.",
+      "desc": "Puedes realizar publicación de historia en estados de Whatsapp en caso de tener “Whatsapp Business” para tu restaurante.",
+      "textColor": "gray-primary",
+      "width": "w-100"
+    }
+  ],
+  "TemplatePostCTA.title": "PLANTILLA PARA POSTEOS EN REDES SOCIALES",
+  "TemplatePostCTA.desc": "Este tipo de  plantillas permiten que agregues una foto de tus platillos. De cualquier forma, tenemos para ti plantillas con fotos incluidas. \n Este formato se usa únicamente para posteos en redes sociales, más adelante podrás conocer cómo generar artes para stories en redes sociales.",
+  "TemplateStoriesCTA.title": "PLANTILLA PARA STORIES EN REDES SOCIALES",
+  "TemplateStoriesCTA.desc": "Este tipo de  plantillas permiten que agregues una foto de tus platillos. De cualquier forma, tenemos para ti plantillas con fotos incluidas. \n Este formato se usa únicamente para stories en redes sociales.",
+  "TemplatePostCTA.bullets": false,
+  "TemplateStoriesCTA.bullets": false,
+  "TemplatePostColumns.bgColor": "bg-orange-primary",
+  "TemplatePostColumns.textColor": "gray-primary",
+  "TemplatePostColumns.columns": [
+    {
+      "title": "Plantillas",
+      "desc": "Descarga las plantillas para que agregues tu propia imagen aquí:",
+      "textColor": "gray-primary",
+      "btnText": "Plantilla Ya puedes pedir de nuestro menú",
+      "btnLink": "https://drive.google.com/file/d/1guIiJUjxfF0QwJwOdq5Je4sVoHE-SiMm/view",
+      "btnText2" : "Plantilla De todo para todos",
+      "btnLink2": "https://drive.google.com/file/d/1NCuIQ3HtG07TNO2bezy2C-4Kkql0Y904/views",
+      "btnMode": "light"
+    },
+    {
+      "title": "Plantillas",
+      "desc": "Descarga las plantillas con una imagen de DiDi Food aquí:",
+      "textColor": "gray-primary",
+      "btnText": "Plantilla De todo para todos",
+      "btnLink": "https://drive.google.com/drive/folders/1XfA2vfJiarUOJJbvwFgGhOTXfVRbniVz?usp=sharing",
+      "btnText2" : "Plantilla Próximamente en DiDi Food",
+      "btnLink2": "https://drive.google.com/file/d/1V-4fp_3z5ofQX0yR0rI76a_EX1JiZhiU/view",
+      "btnMode": "light"
+    }
+  ],
+  "TemplateStorieColumns.bgColor": "bg-orange-primary",
+  "TemplateStorieColumns.textColor": "gray-primary",
+  "TemplateStorieColumns.columns": [
+    {
+      "title": "Plantillas",
+      "desc": "Descarga las plantillas para que agregues tu propia imagen aquí:",
+      "textColor": "gray-primary",
+      "btnText": "Plantilla Ya puedes pedir de nuestro menú",
+      "btnLink": "https://drive.google.com/file/d/1orfylizLdHVuvec4rbo2JIZsbbeZgvAf/view",
+      "btnText2" : "Plantilla De todo para todos",
+      "btnLink2": "https://drive.google.com/drive/folders/1rhVWH3N0ZzjmcVE2PX2MPdr-_jBYT5b_",
+      "btnMode": "light"
+    },
+    {
+      "title": "Plantillas",
+      "desc": "Descarga las plantillas con una imagen de DiDi Food aquí:",
+      "textColor": "gray-primary",
+      "btnText": "Plantilla De todo para todos",
+      "btnLink": "https://drive.google.com/drive/folders/1r4fo7s1TsRz_zbovv2r-EPMb_wc7a9Jt",
+      "btnText2" : "Plantilla Próximamente en DiDi Food",
+      "btnLink2": "https://drive.google.com/file/d/1qfhNueYfZ_IySHmp7t6vnRlMIr9AVoPO/view",
+      "btnMode": "light"
+    }
+  ],
+  "TemplateColumns.bgColor": "bg-gray-light",
+  "TemplateColumns.textColor": "gray-primary",
+  "TemplateColumns.columns": [
+    {
+      "title": "Programas de diseño",
+      "desc": "Si cuentas con algún software de diseño como Photoshop, para descargar los editables.",
+      "textColor": "gray-primary",
+      "btnText": "Haz clic Aquí",
+      "btnLink": "https://drive.google.com/drive/folders/1WL0uta_1OybeE_TobSjnW-nv1mMM3skN",
+      "btnMode": "light",
+      "height": "h-80"
+    },
+    {
+      "title": "PowerPoint",
+      "desc": "Si no cuentas con programas de diseño, te mostramos cómo agregar tus fotografías a través de PowerPoint.",
+      "textColor": "gray-primary",
+      "btnText": "Haz clic Aquí",
+      "btnLink": "/mx/food/store/restaurant/kit-digital/editar-plantillas-con-powerpoint",
+      "btnMode": "light",
+      "height": "h-80"
+    }
+  ]
 }
+
