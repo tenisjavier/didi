@@ -12,7 +12,7 @@ const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
 
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "do.DrvMotoHero.bgImage";
+    return image.title === "ar.DrvMotoHero.bgImage";
   })[0];
 
   const drvColumnsImage = images.filter((image) => {
@@ -20,7 +20,7 @@ const Driver = ({ data }) => {
   });
 
   const safetyCTAImage = images.filter((image) => {
-    return image.title === "do.SafetyCTA.image";
+    return image.title === "ar.SafetyCTA.image";
   })[0];
 
   const products = data.allContentfulProduct.nodes;
@@ -55,9 +55,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "do.DrvMotoHero.bgImage"
+            "ar.DrvMotoHero.bgImage"
             "do.DrvColumns.image"
-            "do.SafetyCTA.image"
+            "ar.SafetyCTA.image"
           ]
         }
       }
@@ -71,8 +71,8 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "do" } } }
-        name: { eq: "DiDi Moto R. Dominicana" }
+        country: { elemMatch: { code: { eq: "ar" } } }
+        category: { eq: "driver" }
       }
     ) {
       nodes {
@@ -90,7 +90,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulCountry(code: { eq: "do" }) {
+    contentfulCountry(code: { eq: "ar" }) {
       city {
         name
         slug

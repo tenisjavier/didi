@@ -77,36 +77,38 @@
       "height": "h-80"
     }
   ],
+  "DrvColumns.textColor": "gray-primary",
+  "DrvColumns.bgColor": "bg-white",
   "DrvColumns.columns": [
     {
+      "title": "Maneja tus Tiempos",
       "desc": "Tener flexibilidad para que manejes tu tiempo como quieras",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
+      "title": "Soporte 24/7",
       "desc": "Contar con un equipo que está siempre listo para ayudarte 24/7",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
+      "title": "Genera Más Ingresos",
       "desc": "Generar más ingresos con nuestras promociones diarias",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
-      "desc": "Conocer el destino de un viaje antes de aceptarlo",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "title": "Conoce el Destino",
+      "desc": "Conocer el destino de un viaje antes de aceptarlo es vital para tu seguridad.",
+      "textColor": "gray-primary"
     },
     {
+      "title": "Driver Center",
       "desc": "Visitar la oficina privada",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
+      "title": "Constante Mejora",
       "desc": "Acceder a soluciones automáticas dentro de la app",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     }
   ],
   "SafetyColumns.columns": [
