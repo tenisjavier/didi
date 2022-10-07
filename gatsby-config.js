@@ -170,6 +170,11 @@ module.exports = {
             languages: ["mx"],
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/food/clubdidi/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
         ],
       },
     },

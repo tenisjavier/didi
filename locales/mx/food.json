@@ -276,5 +276,27 @@
   "FoodCityHero.desc": "Escanea con tu celular este código QR para descargar la app",
   "FoodCityHero.textColor": "white",
   "FoodCityHero.bgColor": "bg-orange-primary",
-  "FoodCityHero.btnMode": "light"
+  "FoodCityHero.btnMode": "light",
+  "PartnerFoodColumns.title": "¿Qué tipo de recompensas puedo obtener al ser socio repartidor registrado en DiDi Food?",
+  "PartnerFoodColumns.desc": "Al ser Socio Repartidor registrado en DiDi Food tendrás acceso a descuentos y a facilidades ofrecidas por terceros para ayudarte en tu día a día.",
+  "PartnerFoodColumns.columns": [
+    {
+      "title": "Descontos en combustible"
+    },
+    {
+      "title": "Facilidades para comprar un auto"
+    },
+    {
+      "title": "Descuentos en rentar un auto"
+    },
+    {
+      "title": "Ayuda en tu contabilidad y en tus finanzas"
+    }
+  ],
+  "PartnersFoodHero.title": "Club de Beneficios DiDiMás+",
+  "PartnersFoodHero.desc": "Tu entrada a descuentos, recompensas y servicios exclusivos.",
+  "PartnersFoodHero.textColor": "white",
+  "PartnersFoodHero.btnMode": "light",
+  "PartnersFoodHero.btnType": "foodDelivery",
+  "PartnersFoodGrid.linkItem": "/mx/food/clubdidi/{{partnerName}}"
 }
