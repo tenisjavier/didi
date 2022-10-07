@@ -273,8 +273,9 @@
   "FoodCityRestaurantCTA.textColor": "gray-primary",
   "FoodCityRestaurantCTA.btnMode": "primary",
   "FoodCityHero.title": "Comida a domicilio en {{city}}",
-  "FoodCityHero.desc": "Escanea con tu celular este código QR para descargar la app",
+  "FoodCityHero.desc": "Baja la app o pide comida en nuestro sitio oficial.",
   "FoodCityHero.textColor": "white",
   "FoodCityHero.bgColor": "bg-orange-primary",
-  "FoodCityHero.btnMode": "light"
+  "FoodCityHero.btnMode": "primary",
+  "FoodCityHero.btnModeSecondary": "green"
 }
