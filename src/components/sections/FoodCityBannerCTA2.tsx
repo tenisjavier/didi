@@ -19,10 +19,10 @@ const FoodCityBannerCTA2 = ({ image, data }: FoodCityBannerCTA2Props) => {
   const { name } = data;
   const props: CTAProps = {
     hero: false,
-    title: t("FoodCityBannerCTA2.title", { city: `${name}` }),
-    desc: t("FoodCityBannerCTA2.desc", { city: `${name}` }),
-    bgColor: t("FoodCityBannerCTA2.bgColor"),
-    textColor: t("FoodCityBannerCTA2.textColor"),
+    title: t("FoodCityBannerCTATwo.title", { city: `${name}` }),
+    desc: t("FoodCityBannerCTATwo.desc", { city: `${name}` }),
+    bgColor: t("FoodCityBannerCTATwo.bgColor"),
+    textColor: t("FoodCityBannerCTATwo.textColor"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData}
@@ -30,7 +30,7 @@ const FoodCityBannerCTA2 = ({ image, data }: FoodCityBannerCTA2Props) => {
         className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
-    btnMode: t("FoodCityBannerCTA2.btnMode"),
+    btnMode: t("FoodCityBannerCTATwo.btnMode"),
     btnType: "foodEater",
   };
   return <CTASection {...props}></CTASection>;
