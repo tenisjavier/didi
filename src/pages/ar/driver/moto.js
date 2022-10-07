@@ -72,7 +72,7 @@ export const query = graphql`
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "ar" } } }
-        category: { eq: "driver" }
+        name: { eq: "DiDi Moto Argentina" }
       }
     ) {
       nodes {
