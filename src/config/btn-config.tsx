@@ -67,7 +67,7 @@ const btnLinks: AllBtnInterface = {
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
-    foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
+    foodBusinessLink: "https://www.didi-food.com/es-CO/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida Ya → Descarga la App",
@@ -130,16 +130,14 @@ const btnLinks: AllBtnInterface = {
     drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
     foodEaterText: "Pide Comida Ya → Descarga la App",
-    foodEaterLink:
-      "https://www.didi-food.com/es-MX/food/feed/?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+    foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
-    foodEaterOnlineLink:
-      "https://www.didi-food.com/es-MX/food/feed/?utm_source=%28direct%29&utm_medium=%28none%29&utm_campaign=none",
+    foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/",
     foodDeliveryLink:
       "https://www.didi-food.com/es-MX/mobile-delivery?clientType=102&country=MX&utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
     foodDeliveryText: "Empezá a Repartir con DiDi Food",
     foodBusinessLink:
-      "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist&utm_source=(direct)&utm_medium=(none)&utm_campaign=none#",
+      "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
     foodBusinessText: "Regístrate como Comercio",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",

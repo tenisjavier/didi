@@ -3,39 +3,40 @@
   "RestaurantHero.desc": "",
   "RestaurantHeroImpuesto.title": "Impuestos",
   "RestaurantHeroImpuesto.desc": "Entérate cómo funcionan los impuestos, las declaraciones y retenciones de plataformas digitales a restaurantes",
+  "RestaurantHeroImpuesto.textColor": "white",
   "RestaurantHeroRegistro.title": "Afilia tu Restaurante",
   "RestaurantHeroRegistro.desc": "Optimiza tu negocio \n Empieza a recibir más pedidos con DiDi Food",
   "RestaurantHeroKitDigital.title": " Kit Digital",
   "RestaurantHeroKitDigital.desc": "Impulsa la visibilidad de tu restaurante y con ello tus ventas en nuestra aplicación.",
   "AboutRestaurantColumns.columns": [
-      {
-        "title": "",
-        "desc": "",
-        "btnMode": "",
-        "btnLink": "",
-        "btnText": ""
-      },
-      {
-          "title": "",
-          "desc": "",
-          "btnMode": "",
-          "btnLink": "",
-          "btnText": ""
-        },
-        {
-          "title": "",
-          "desc": "",
-          "btnMode": "",
-          "btnLink": "",
-          "btnText": ""
-        },
-        {
-          "title": "",
-          "desc": "",
-          "btnMode": "",
-          "btnLink": "",
-          "btnText": ""
-        }
+    {
+      "title": "",
+      "desc": "",
+      "btnMode": "",
+      "btnLink": "",
+      "btnText": ""
+    },
+    {
+      "title": "",
+      "desc": "",
+      "btnMode": "",
+      "btnLink": "",
+      "btnText": ""
+    },
+    {
+      "title": "",
+      "desc": "",
+      "btnMode": "",
+      "btnLink": "",
+      "btnText": ""
+    },
+    {
+      "title": "",
+      "desc": "",
+      "btnMode": "",
+      "btnLink": "",
+      "btnText": ""
+    }
   ],
   "RestaurantSocialColumns.bgColor": "bg-gray-light",
   "RestaurantSocialColumns.textColor": "gray-primary",
@@ -192,19 +193,19 @@
       "textColor": "gray-primary",
       "btnText": "Glosario",
       "btnLink": "/mx/food/store/restaurant/impuestos/glosario",
-      "btnMode": "light"
+      "btnMode": "dark"
     },
     {
       "textColor": "gray-primary",
       "btnText": "Constancia de Situación Fiscal",
       "btnLink": "/mx/food/store/restaurant/impuestos/constancia-de-situacion-fiscal",
-      "btnMode": "light"
+      "btnMode": "dark"
     },
     {
       "textColor": "gray-primary",
       "btnText": "Reforma Fiscal 2023",
       "btnLink": "/mx/food/store/restaurant/impuestos/reforma-fiscal-2022",
-      "btnMode": "light"  
+      "btnMode": "dark"
     }
   ],
   "MidiaKitColumns.bgColor": "bg-orange-primary",
@@ -380,3 +381,4 @@
     }
   ]
 }
+

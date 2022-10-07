@@ -171,10 +171,15 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/restaurant/kit-digital/:path?",
+            matchPath: "/:lang?/food/clubdidi/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/food/store/restaurant/kit-digital/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          }
         ],
       },
     },

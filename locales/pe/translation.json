@@ -154,9 +154,10 @@
   "DrvBanner.btnMode": "light",
   "DrvFeatures.title": "Tenemos el mejor equipo de soporte:",
   "DrvFeatures.bullets": [
-    "Contacta al soporte 24/7 a través de nuestra línea oficial (01) 510 2783",
-    "Visita el DiDi Club (Av. Juan de Aliaga, Magdalena) donde expertos podrán ayudarte con cualquier consulta en persona.",
-    "Escríbenos a través de la opción “Ayuda” en la aplicación."
+    "Ver el destino de todos tus viajes las 24 horas.",
+    "Tener más ingresos con nuestras promociones y referidos.",
+    "Tener flexibilidad para que manejes tu tiempo como quieras, además de herramientas que te ayudan a sacarle provecho a la aplicación cuando estás conectado.",
+    "Apoyarte en nuestro equipo que está siempre listo para ayudarte. 7 días de la semana, 24 horas al día."
   ],
   "DrvFeatures.textColor": "gray-primary",
   "DrvFeatures.bgColor": "bg-gray-light",
