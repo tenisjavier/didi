@@ -118,38 +118,38 @@
   "DrvColumns.bgColor": "bg-white",
   "DrvColumns.columns": [
     {
-      "title": "Maneja tus Tiempos",
-      "desc": "Tener flexibilidad para que manejes tu tiempo como quieras",
+      "title": "Manejá tus Tiempos",
+      "desc": "Flexibilidad para que manejés tu tiempo como querás",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
       "title": "Soporte 24/7",
-      "desc": "Contar con un equipo que está siempre listo para ayudarte 24/7",
+      "desc": "Contar con un equipo de soporte 24/7",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
-      "title": "Genera Más Ingresos",
-      "desc": "Generar más ingresos con nuestras promociones diarias",
+      "title": "Generá Más Ganancias",
+      "desc": "Generá más ganancias con nuestras promociones",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
-      "title": "Conoce el Destino",
-      "desc": "Conocer el destino de un viaje antes de aceptarlo es vital para tu seguridad.",
+      "title": "Conocé el Destino",
+      "desc": "Conocé el destino de un viaje antes de aceptarlo.",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
       "title": "Driver Center",
-      "desc": "Visitar la oficina privada",
+      "desc": "Visitá nuestro centro de atención.",
       "textColor": "gray-primary",
       "height": "h-40"
     },
     {
       "title": "Constante Mejora",
-      "desc": "Acceder a soluciones automáticas dentro de la app",
+      "desc": "Accedé a soluciones automáticas dentro de la app",
       "textColor": "gray-primary",
       "height": "h-40"
     }
@@ -187,8 +187,8 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/ar/driver/conductor-en-{{city}}/",
-  "DrvMotoHero.title": "Aumenta tus Ganancias con DiDi Moto",
-  "DrvMotoHero.desc": "Regístrate en DiDi Moto y comienza ya a generar ganancias cuando más te convenga.",
+  "DrvMotoHero.title": "Aumentá tus Ganancias con DiDi Moto",
+  "DrvMotoHero.desc": "Registrate en DiDi Moto y comenzá ya a generar ganancias cuando más te convenga.",
   "DrvMotoHero.textColor": "white",
   "DrvMotoHero.btnMode": "light",
   "TaxiHero.title": "DiDi Taxi",
