@@ -114,6 +114,46 @@
   ],
   "DrvWhyDiDi.textColor": "gray-primary",
   "DrvWhyDiDi.btnMode": "primary",
+  "DrvColumns.textColor": "gray-primary",
+  "DrvColumns.bgColor": "bg-white",
+  "DrvColumns.columns": [
+    {
+      "title": "Maneja tus Tiempos",
+      "desc": "Tener flexibilidad para que manejes tu tiempo como quieras",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contar con un equipo que está siempre listo para ayudarte 24/7",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "Genera Más Ingresos",
+      "desc": "Generar más ingresos con nuestras promociones diarias",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "Conoce el Destino",
+      "desc": "Conocer el destino de un viaje antes de aceptarlo es vital para tu seguridad.",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "Driver Center",
+      "desc": "Visitar la oficina privada",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    },
+    {
+      "title": "Constante Mejora",
+      "desc": "Acceder a soluciones automáticas dentro de la app",
+      "textColor": "gray-primary",
+      "height": "h-40"
+    }
+  ],
   "DrvVideoGrid.bgColor": "bg-blue-primary",
   "DrvVideoGrid.title": "¿Cómo Registrarse como Conductor?",
   "DrvVideoGrid.textColor": "white",
@@ -147,6 +187,10 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/ar/driver/conductor-en-{{city}}/",
+  "DrvMotoHero.title": "Aumenta tus Ganancias con DiDi Moto",
+  "DrvMotoHero.desc": "Regístrate en DiDi Moto y comienza ya a generar ganancias cuando más te convenga.",
+  "DrvMotoHero.textColor": "white",
+  "DrvMotoHero.btnMode": "light",
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibí pedidos de viaje a través de la app o recogé a los usuarios en la calle y conectá el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
