@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import TermsAndConditionsContent from "../../../../../../components/sections/TermsAndConditionsContent";
+import Layout from "../../../../../components/Layout";
+import TermsAndConditionsContent from "../../../../../components/sections/TermsAndConditionsContent";
 
 const Privacy = ({ data }) => {
   return (
@@ -22,9 +22,18 @@ export const query = graphql`
         }
       }
     }
-    contentfulLegal(name: { eq: "Glosario Impuesto" }) {
+    contentfulLegal(name: { eq: "Constancia de Situación Fiscal" }) {
       content {
         raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 800)
+            __typename
+          }
+        }
       }
     }
   }

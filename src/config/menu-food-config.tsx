@@ -42,6 +42,20 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Tienda",
       url: "/mx/food/store/",
+      dropMenu: [
+        {
+          text: "Impuestos",
+          url: "/mx/food/store/taxes/",
+        },
+        {
+          text: "Guías",
+          url: "/mx/food/store/guides/",
+        },
+        {
+          text: "FAQs",
+          url: "/mx/food/store/faqs/",
+        },
+      ],
     },
     {
       text: "Socio repartidor",

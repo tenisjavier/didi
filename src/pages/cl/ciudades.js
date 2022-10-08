@@ -10,7 +10,7 @@ const Ciudades = ({ data }) => {
     return image.title === "cl.DrvHero.bgImage";
   })[0];
   const cities = data.allContentfulCity.nodes;
-  console.log(cities);
+
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>

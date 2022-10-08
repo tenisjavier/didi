@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import OffersHeroSimple from "../../../../../../components/sections/OffersHeroSimple";
-import OffersGrid from "../../../../../../components/sections/OffersGrid";
-
+import Layout from "../../../../../components/Layout";
+import OffersHeroSimple from "../../../../../components/sections/OffersHeroSimple";
+import OffersGrid from "../../../../../components/sections/OffersGrid";
 
 const Offers = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -12,7 +11,6 @@ const Offers = ({ data }) => {
   const partnersHeroBgImage = images.filter((image) => {
     return image.title === "mx.PartnersHero.bgImage";
   })[0];
-
 
   return (
     <Layout>
@@ -24,7 +22,9 @@ const Offers = ({ data }) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["food"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns
@@ -34,11 +34,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(mx.PartnersHero.bgImage)/"
-        }
-      }
+      filter: { title: { regex: "/(mx.PartnersHero.bgImage)/" } }
       sort: { fields: title }
     ) {
       nodes {

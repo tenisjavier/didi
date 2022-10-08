@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import OfferHero from "../../../../../../components/sections/OfferHero";
-import OfferColumns from "../../../../../../components/sections/OfferColumns";
-import OfferFeatures from "../../../../../../components/sections/OfferFeatures";
+import Layout from "../../../../../components/Layout";
+import OfferHero from "../../../../../components/sections/OfferHero";
+import OfferColumns from "../../../../../components/sections/OfferColumns";
+import OfferFeatures from "../../../../../components/sections/OfferFeatures";
 
 const Partner = ({ data }) => {
   const {
@@ -53,7 +53,9 @@ export default Partner;
 
 export const query = graphql`
   query ($id: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["food"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns

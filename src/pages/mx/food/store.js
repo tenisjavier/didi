@@ -25,7 +25,7 @@ const FoodBusiness = ({ data }) => {
   const filteredCities = cities.filter((city) => {
     return city.restaurant != null;
   });
-  console.log(socialImages);
+
   return (
     <Layout>
       <FoodBusinessHero bgImage={foodHeroBgImage}></FoodBusinessHero>

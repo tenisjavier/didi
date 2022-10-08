@@ -74,7 +74,7 @@ const SEO = () => {
     <Helmet htmlAttributes={{ lang: lang }} title={title}>
       <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
       <meta name="description" content={meta.desc} />
-      {countryCode == "mx" ? <meta name="robots" content="noindex" /> : null}
+      {countryCode === "mx" ? <meta name="robots" content="noindex" /> : null}
       <link rel="canonical" href={origin + pathname} />
       {countries.map((c, index) => {
         const placeRegex = /(\/[A-Za-z]{2}\/$)/;
