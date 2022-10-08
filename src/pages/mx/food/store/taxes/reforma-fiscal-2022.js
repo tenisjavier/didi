@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import TermsAndConditionsContent from "../../../../../../components/sections/TermsAndConditionsContent";
+import Layout from "../../../../../components/Layout";
+import TermsAndConditionsContent from "../../../../../components/sections/TermsAndConditionsContent";
 
 const Privacy = ({ data }) => {
   return (
@@ -22,7 +22,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulLegal(name: { eq: "Constancia de Situación Fiscal" }) {
+    contentfulLegal(name: { eq: "Reforma Fiscal 2023" }) {
       content {
         raw
         references {

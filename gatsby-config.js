@@ -146,6 +146,11 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
+            matchPath: "/:lang?/food/store/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
+          {
             matchPath: "/:lang?/food/store/restaurant/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
@@ -156,12 +161,14 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/restaurant/guias-educacionales/:path?",
+            matchPath:
+              "/:lang?/food/store/restaurant/guias-educacionales/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/restaurant/preguntas-frecuentes/:path?",
+            matchPath:
+              "/:lang?/food/store/restaurant/preguntas-frecuentes/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
@@ -179,7 +186,7 @@ module.exports = {
             matchPath: "/:lang?/food/store/restaurant/kit-digital/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
-          }
+          },
         ],
       },
     },

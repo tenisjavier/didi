@@ -1,28 +1,29 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../components/Layout";
-import RestaurantHeroRegistro from "../../../../../components/sections/RestaurantHeroRegistro";
-import RestaurantBenefitsColumns from '../../../../../components/sections/RestaurantBenefitsColumns'
-import RestaurantBenefitsUnirColumns from '../../../../../components/sections/RestaurantBenefitsUnirColumns'
-import RestaurantBenefitsBanner from "../../../../../components/sections/RestaurantBenefitsBanner";
-
-
+import Layout from "../../../../components/Layout";
+import RestaurantHeroRegistro from "../../../../components/sections/RestaurantHeroRegistro";
+import RestaurantBenefitsColumns from "../../../../components/sections/RestaurantBenefitsColumns";
+import RestaurantBenefitsUnirColumns from "../../../../components/sections/RestaurantBenefitsUnirColumns";
+import RestaurantBenefitsBanner from "../../../../components/sections/RestaurantBenefitsBanner";
 
 const Restaurant = ({ data }) => {
-
   const images = data.allContentfulAsset.nodes;
   const RestaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.RestaurantHeroRegistro.bgImage";
   })[0];
   const BenefitsColumnImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiRestaurantBenefitsColumn.image") !== -1;
-  })
+  });
 
   return (
     <Layout>
-      <RestaurantHeroRegistro bgImage={RestaurantHeroBgImage}></RestaurantHeroRegistro>
+      <RestaurantHeroRegistro
+        bgImage={RestaurantHeroBgImage}
+      ></RestaurantHeroRegistro>
       <RestaurantBenefitsColumns></RestaurantBenefitsColumns>
-      <RestaurantBenefitsUnirColumns images={BenefitsColumnImages}></RestaurantBenefitsUnirColumns>
+      <RestaurantBenefitsUnirColumns
+        images={BenefitsColumnImages}
+      ></RestaurantBenefitsUnirColumns>
       <RestaurantBenefitsBanner></RestaurantBenefitsBanner>
     </Layout>
   );
@@ -30,7 +31,9 @@ const Restaurant = ({ data }) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["food"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns

@@ -2,7 +2,7 @@ import React from "react";
 import GuideListItem from "./GuideListItem";
 
 const ListSection = (props) => {
-  const { title, desc, items, bgColor, textColor, image } = props;
+  const { title, desc, items, bgColor, textColor } = props;
   return (
     <section className={`text-${textColor} ${bgColor} py-12 text-center`}>
       <h2 className="text-3xl ">{title}</h2>

@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import FoodFaqHero from "../../../../../../components/sections/FoodFaqHero";
-import FaqContent from "../../../../../../components/sections/FaqContent";
-import FoodFaqList from "../../../../../../components/sections/FoodFaqList";
+import Layout from "../../../../../components/Layout";
+import FoodFaqHero from "../../../../../components/sections/FoodFaqHero";
+import FaqContent from "../../../../../components/sections/FaqContent";
 
 const FaqTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -11,11 +10,15 @@ const FaqTemplate = ({ data }) => {
     return image.title === "mx.FaqFoodHero.bgImage";
   })[0];
   const { title, content } = data.contentfulFaq;
-  const productName = data.contentfulFaq.product != null ? data.contentfulFaq.product.name : "";
+  const productName =
+    data.contentfulFaq.product != null ? data.contentfulFaq.product.name : "";
 
   return (
     <Layout>
-      <FoodFaqHero title={title} desc={productName} bgImage={helpCenterBgImage}
+      <FoodFaqHero
+        title={title}
+        desc={productName}
+        bgImage={helpCenterBgImage}
       ></FoodFaqHero>
       <FaqContent title={title} content={content}></FaqContent>
     </Layout>
