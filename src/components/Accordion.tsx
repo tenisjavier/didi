@@ -9,12 +9,19 @@ import RichContent from "./RichContent";
 
 interface Accordion {
   title: string;
-  content: RenderRichTextData<ContentfulRichTextGatsbyReference>;
+  content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
+  normalText?: string;
   bgColor: string;
   textColor: string;
 }
 
-const Accordion = ({ title, content, bgColor, textColor }: Accordion) => {
+const Accordion = ({
+  title,
+  content,
+  bgColor,
+  textColor,
+  normalText,
+}: Accordion) => {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState("0px");
   const content1: any = useRef(null);
@@ -43,11 +50,16 @@ const Accordion = ({ title, content, bgColor, textColor }: Accordion) => {
       </div>
       <div
         className={`accordion ${isOpen ? openClass : closeClass}`}
-        //dangerouslySetInnerHTML={{ __html: content }}
         style={{ maxHeight: height }}
         ref={content1}
       >
-        <RichContent richContent={content}></RichContent>
+        {content && <RichContent richContent={content}></RichContent>}
+        {normalText &&
+          normalText.split("\n").map((str, index) => (
+            <p className="mb-5 text-lg" key={index}>
+              {str}
+            </p>
+          ))}
       </div>
     </>
   );
