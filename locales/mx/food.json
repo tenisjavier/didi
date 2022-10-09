@@ -296,6 +296,7 @@
   "RestaurantHeroRegistro.title": "Afilia tu Restaurante",
   "RestaurantHeroRegistro.desc": "Optimiza tu negocio \n Empieza a recibir más pedidos con DiDi Food",
   "RestaurantHeroKitDigital.title": " Kit Digital",
+  "RestaurantHeroKitDigital.textColor": "white",
   "RestaurantHeroKitDigital.desc": "Impulsa la visibilidad de tu restaurante y con ello tus ventas en nuestra aplicación.",
   "AboutRestaurantColumns.columns": [
     {
@@ -512,17 +513,17 @@
       "title": "Plantillas para Redes Sociales",
       "desc": "Comparte nuestras plantillas en tus redes, para dar a conocer en tus redes las promociones que tengas activas con nosotros,",
       "textColor": "gray-primary",
-      "btnText": "Descarda material para redes sociales",
+      "btnText": "Descarga material para redes sociales",
       "btnLink": "https://drive.google.com/drive/folders/1MfmH64UEDlKfT3nXX9S8rl6y41o3XRE-?usp=sharing",
       "btnText2": "Manual para redes Sociales",
-      "btnLink2": "/mx/food/store/restaurant/kit-digital/manual-para-redes-sociales",
+      "btnLink2": "/mx/food/store/kit-digital/manual-para-redes-sociales",
       "btnMode": "light"
     },
     {
       "title": "Manual de Fotografías",
       "desc": "De la vista nace el antojo... \n Te enseñamos a tomar las mejores fotografías de tus platillos, con el fin de que tu restaurante pueda aumentar sus ventas hasta un 30% más.",
       "textColor": "gray-primary",
-      "btnText": "Descarda Manual de Fotografías",
+      "btnText": "Descarga Manual de Fotografías",
       "btnLink": "https://drive.google.com/file/d/18KzuC4CzZX6r_vfJyd4gx-ndBjKLcPCU/view",
       "btnMode": "light"
     },
@@ -530,7 +531,7 @@
       "title": "Recomendaciones Generales",
       "desc": "Tenemos los mejores consejos para que aumentes la visibilidad de tu restaurante e incrementes con ello tus ventas.",
       "textColor": "gray-primary",
-      "btnText": "Descarda material para redes sociales",
+      "btnText": "Descarga material para redes sociales",
       "btnLink": "/mx/food/store/guias-educaionales",
       "btnMode": "light"
     }
@@ -664,7 +665,7 @@
       "desc": "Si no cuentas con programas de diseño, te mostramos cómo agregar tus fotografías a través de PowerPoint.",
       "textColor": "gray-primary",
       "btnText": "Haz clic Aquí",
-      "btnLink": "/mx/food/store/restaurant/kit-digital/editar-plantillas-con-powerpoint",
+      "btnLink": "/mx/food/store/kit-digital/editar-plantillas-con-powerpoint",
       "btnMode": "light",
       "height": "h-80"
     }

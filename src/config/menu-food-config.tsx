@@ -55,6 +55,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "FAQs",
           url: "/mx/food/store/faqs/",
         },
+        {
+          text: "Kit Digital",
+          url: "/mx/food/store/kit-digital/",
+        },
       ],
     },
     {

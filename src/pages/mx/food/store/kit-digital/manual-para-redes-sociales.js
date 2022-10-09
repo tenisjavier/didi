@@ -1,16 +1,15 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import RestaurantHeroKitDigital from "../../../../../../components/sections/RestaurantHeroKitDigital";
-import ManualSocialColumns from '../../../../../../components/sections/ManualSocialColumns';
-import TemplatePostSocialCTA from '../../../../../../components/sections/TemplatePostSocialCTA';
-import TemplateStorieSocialCTA from '../../../../../../components/sections/TemplateStorieSocialCTA';
-import TemplatePostColumns from '../../../../../../components/sections/TemplatePostColumns';
-import TemplateStorieColumns from '../../../../../../components/sections/TemplateStorieColumns'
-import TemplateColumns from '../../../../../../components/sections/TemplateColumns'
+import Layout from "../../../../../components/Layout";
+import RestaurantHeroKitDigital from "../../../../../components/sections/RestaurantHeroKitDigital";
+import ManualSocialColumns from "../../../../../components/sections/ManualSocialColumns";
+import TemplatePostSocialCTA from "../../../../../components/sections/TemplatePostSocialCTA";
+import TemplateStorieSocialCTA from "../../../../../components/sections/TemplateStorieSocialCTA";
+import TemplatePostColumns from "../../../../../components/sections/TemplatePostColumns";
+import TemplateStorieColumns from "../../../../../components/sections/TemplateStorieColumns";
+import TemplateColumns from "../../../../../components/sections/TemplateColumns";
 
 const Restaurant = ({ data }) => {
-
   const images = data.allContentfulAsset.nodes;
   const RestaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.RestaurantHeroKitDigital.bgImage";
@@ -20,18 +19,26 @@ const Restaurant = ({ data }) => {
   })[0];
   const manualSocialColumnImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiRestaurantManualSocial.image") !== -1;
-  })
+  });
   const templateColumnImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiRestaurantTemplateColumns.image") !== -1;
-  })
+  });
 
   return (
     <Layout>
-      <RestaurantHeroKitDigital bgImage={RestaurantHeroBgImage}></RestaurantHeroKitDigital>
-      <ManualSocialColumns images={manualSocialColumnImages}></ManualSocialColumns>
-      <TemplatePostSocialCTA image={RestaurantTemplateImage}></TemplatePostSocialCTA>
+      <RestaurantHeroKitDigital
+        bgImage={RestaurantHeroBgImage}
+      ></RestaurantHeroKitDigital>
+      <ManualSocialColumns
+        images={manualSocialColumnImages}
+      ></ManualSocialColumns>
+      <TemplatePostSocialCTA
+        image={RestaurantTemplateImage}
+      ></TemplatePostSocialCTA>
       <TemplatePostColumns></TemplatePostColumns>
-      <TemplateStorieSocialCTA image={RestaurantTemplateImage}></TemplateStorieSocialCTA>
+      <TemplateStorieSocialCTA
+        image={RestaurantTemplateImage}
+      ></TemplateStorieSocialCTA>
       <TemplateStorieColumns></TemplateStorieColumns>
       <TemplateColumns images={templateColumnImages}></TemplateColumns>
     </Layout>
@@ -40,7 +47,9 @@ const Restaurant = ({ data }) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["food"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns
