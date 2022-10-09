@@ -8,6 +8,7 @@ import FoodCityBannerCTA2 from "../../../../components/sections/FoodCityBannerCT
 import FoodCityBannerCTA3 from "../../../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
 import SilderSection from "../../../../components/sections/SliderSection";
+import FoodFAQCities from "../../../../components/sections/FoodFAQCities";
 
 const FoodCity = ({ data }) => {
   const cities = data.allContentfulCity.nodes;
@@ -61,6 +62,7 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
+      <FoodFAQCities city={name}></FoodFAQCities>
     </Layout>
   );
 };
