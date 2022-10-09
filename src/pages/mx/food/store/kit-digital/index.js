@@ -1,11 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../../components/Layout";
-import RestaurantHeroKitDigital from "../../../../../../components/sections/RestaurantHeroKitDigital";
-import MidiaKitColumns from '../../../../../../components/sections/MidiaKitColumns'
+import Layout from "../../../../../components/Layout";
+import RestaurantHeroKitDigital from "../../../../../components/sections/RestaurantHeroKitDigital";
+import MidiaKitColumns from "../../../../../components/sections/MidiaKitColumns";
 
 const Restaurant = ({ data }) => {
-
   const images = data.allContentfulAsset.nodes;
   const RestaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.RestaurantHeroKitDigital.bgImage";
@@ -13,7 +12,9 @@ const Restaurant = ({ data }) => {
 
   return (
     <Layout>
-      <RestaurantHeroKitDigital bgImage={RestaurantHeroBgImage}></RestaurantHeroKitDigital>
+      <RestaurantHeroKitDigital
+        bgImage={RestaurantHeroBgImage}
+      ></RestaurantHeroKitDigital>
       <MidiaKitColumns></MidiaKitColumns>
     </Layout>
   );
@@ -21,7 +22,9 @@ const Restaurant = ({ data }) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: { ns: { in: ["food"] }, language: { eq: $language } }
+    ) {
       edges {
         node {
           ns
