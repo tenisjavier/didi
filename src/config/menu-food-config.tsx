@@ -150,6 +150,24 @@ const menuLinksFood: AllMenuInterface = {
       url: "/co/food/blog/",
     },
   ],
+  pe: [
+    {
+      text: "Tienda",
+      url: "/pe/food/store/",
+    },
+    {
+      text: "Socio repartidor",
+      url: "/pe/food/delivery/",
+    },
+    {
+      text: "Acerca",
+      url: "/pe/food/about/",
+    },
+    {
+      text: "Contacto",
+      url: "/pe/food/contact/",
+    },
+  ]
 };
 
 const getMenuLinksFood = (countryCode: string) => {

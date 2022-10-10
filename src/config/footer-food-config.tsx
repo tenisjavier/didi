@@ -61,6 +61,13 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Privacidad", link: "/co/food/privacidad/" },
     { text: "Renta de equipo", link: "/co/food/renta-de-equipo/" },
   ],
+  pe: [
+    { text: "Home", link: "/pe/food/" },
+    { text: "Tienda", link: "/pe/food/store/" },
+    { text: "Socio repartidor", link: "/pe/food/delivery/" },
+    { text: "Acerca", link: "/pe/food/about/" },
+    { text: "Contacto", link: "/pe/food/contact/" },
+  ]
 };
 
 const getFooterLinksFood = (countryCode: string): FooterLinksFood[] => {
