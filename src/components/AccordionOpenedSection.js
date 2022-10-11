@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "./Accordion";
+import AccordionOpened from "./AccordionOpened";
 
 const AccordionSection = (props) => {
   const {
@@ -10,7 +10,6 @@ const AccordionSection = (props) => {
     desc,
     textColor,
     textAccordionColor,
-    isClosed
   } = props;
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
@@ -24,13 +23,12 @@ const AccordionSection = (props) => {
         <div className={`flex flex-wrap justify-around `}>
           {items.map((item, index) => {
             return (
-              <Accordion
+              <AccordionOpened
                 {...item}
                 bgColor={bgAccordionColor}
                 textColor={textAccordionColor}
                 key={index}
-                isClosed={isClosed}
-              ></Accordion>
+              ></AccordionOpened>
             );
           })}
         </div>
