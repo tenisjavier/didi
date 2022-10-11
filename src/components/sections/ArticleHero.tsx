@@ -24,7 +24,7 @@ const ArticleHero = ({ data }: ArticleHeroProps) => {
     textColor: t("ArticleHero.textColor"),
     bgImage: (
       <GatsbyImage
-        className="!absolute z-0 h-full w-full brightness-50 md:block"
+        className="!absolute z-0 h-full w-full brightness-75 md:block"
         image={image}
         alt={title}
       />
