@@ -1,41 +1,41 @@
 {
-  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
-  "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.title": "Tu comida cuando quieras, donde quieras",
+  "FoodHero.desc": "Una plataforma de servicio a domicilio que lleva comida de tu restaurante favorito a tu puerta.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "primary",
   "FoodColumns.bgColor": "bg-white",
   "FoodColumns.columns": [
     {
-      "title": "Amplia disponibilidad y cobertura",
-      "desc": "Tenemos opciones que se adaptan a tus necesidades de movilidad, ¡encuéntranos ahora en todo Chile!",
+      "title": "Pide de tus restaurantes favoritos",
+      "desc": "En DiDi Food podrás encontrar una gran variedad de restaurantes y tipos de comidas. Tu restaurante favorito está a un clic de distancia.",
       "bgColor": "bg-orange-primary",
       "textColor": "white"
     },
     {
-      "title": "Ordena sin complicaciones",
-      "desc": "¿Tienes ganas de una hamburguesa, pizza o sushi? Con DiDi Food ordenar es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas tu comida en tu puerta.",
+      "title": "Pide sin complicaciones",
+      "desc": "¿Quieres sushi, una hamburguesa o una pizza? Con DiDi Food pedir es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas la comida directamente en tu puerta.",
       "bgColor": "bg-green-primary",
       "textColor": "white"
     },
     {
-      "title": "Entrega express",
-      "desc": "En DiDi Food procuramos que las órdenes sean entregadas en el menor tiempo posible y en perfectas condiciones.",
+      "title": "Entrega rápida",
+      "desc": "Los socios repartidores expertos de DiDi Food garantizan que los pedidos se entreguen rápidamente y en perfectas condiciones.",
       "bgColor": "bg-gray-primary",
       "textColor": "white"
     }
   ],
-  "FoodBusinessCTA.title": "Registra tu comercio en DiDi Food",
-  "FoodBusinessCTA.desc": "Conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodBusinessCTA.title": "Conviértete en una tienda DiDi.",
+  "FoodBusinessCTA.desc": "Asóciate con DiDi Food para atraer más clientes con facilidad y llevar tu negocio al siguiente nivel.",
   "FoodBusinessCTA.bgColor": "bg-gray-light",
   "FoodBusinessCTA.textColor": "gray-primary",
   "FoodBusinessCTA.btnMode": "primary",
-  "FoodDeliveryCTA.title": "Regístrate para repartir a través de DiDi Food",
-  "FoodDeliveryCTA.desc": "Inscribirse es fácil. Puedes elegir repartir en moto, bicicleta o auto. Tú eliges cuando y dónde conectarte.",
+  "FoodDeliveryCTA.title": "Únete al equipo de entregas de DiDi Food.",
+  "FoodDeliveryCTA.desc": "Únete al equipo de entregas de DiDi Food y entrega pedidos con tu scooter, bici o motocicleta. Puedes elegir libremente las horas, ganar dinero y premios.",
   "FoodDeliveryCTA.bgColor": "bg-white",
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
-  "FoodBusinessHero.title": "Conviértete en un socio restaurante de DiDi Food",
-  "FoodBusinessHero.desc": "Aprovecha los beneficios que DiDi Food tiene para tu negocio. Call Center: (+56) 227120527",
+  "FoodBusinessHero.title": "¡Únete con DiDi Food y ve crecer a tu restaurante!",
+  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida.",
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "primary",
   "FoodBusinessColumns.bgColor": "bg-white",
@@ -47,8 +47,8 @@
       "textColor": "white"
     },
     {
-      "title": "Entregas confiables",
-      "desc": "A través de nuestras diversas acciones y activaciones, buscamos la disponibilidad constante de Socios Repartidores, aún en horas peak. La tecnología de la plataforma procura que los usuarios reciban sus pedidos según sus preferencias y en el menor tiempo posible.",
+      "title": "Entrega profesional",
+      "desc": "Nuestro equipo experimentado está ansioso por ayudarte a obtener más pedidos, incluso durante las horas pico, donde hay mayor actividad. Nuestro proceso avanzado de preparación y entrega garantiza que los usuarios reciban sus pedidos tal como lo desean, sin excepción. Lo único que debes hacer es preparar el pedido, ¡nosotros nos encargamos del resto!",
       "bgColor": "bg-green-primary",
       "textColor": "white"
     },
@@ -59,8 +59,8 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessDownloads.title": "Descargar DiDi Food para Tienda",
-  "FoodBusinessDownloads.desc": "¡Optimiza tu negocio y empieza a recibir más pedidos!",
+  "FoodBusinessDownloads.title": "Descargar DiDi Food para tiendas",
+  "FoodBusinessDownloads.desc": "¡Optimiza tu tienda y empieza a recibir más pedidos!",
   "FoodBusinessDownloads.textColor": "gray-primary",
   "FoodBusinessDownloads.bgColor": "bg-white",
   "FoodBusinessDownloads.columns": [
@@ -74,8 +74,8 @@
       "linkItem": "https://d.didiglobal.com/3cikL"
     }
   ],
-  "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
-  "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
+  "FoodDeliveryHero.title": "Join DiDi Food. Earn Big. Get Rewarded.",
+  "FoodDeliveryHero.desc": "Easily get started. Set your own schedule",
   "FoodDeliveryHero.textColor": "white",
   "FoodDeliveryHero.btnMode": "primary",
   "FoodDeliveryColumns.bgColor": "white",
@@ -129,10 +129,10 @@
   "FoodDeliveryDownloads.bgColor": "bg-white",
   "FoodDeliveryDownloads.columns": [
     {
-      "linkItem": "https://www.didi-food.com/es-419/mobile-delivery/download"
+      "linkItem": "https://apps.apple.com/us/app/didi-repartidor/id1434361480?l=zh&ls=1"
     },
     {
-      "linkItem": "https://www.didi-food.com/es-419/mobile-delivery/download"
+      "linkItem": "https://play.google.com/store/apps/details?id=com.didi.global.rider"
     }
   ],
   "FoodAboutHero.title": "Acerca de DiDi Food",
@@ -160,5 +160,29 @@
   "SmartBannerDrv.title": "DiDi Conductor",
   "SmartBannerDrv.desc": "Ganancias Extras",
   "SmartBannerPax.title": "DiDi Pasajero",
-  "SmartBannerPax.desc": "Pide un Viaje"
+  "SmartBannerPax.desc": "Pide un Viaje",
+  "FoodContactHero.title": "Contáctanos",
+  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamar o escribirnos.",
+  "FoodContactHero.textColor": "white",
+  "FoodContactHero.btnText": "Llama a Soporte",
+  "FoodContactHero.btnLink": "tel: +5115101937",
+  "FoodContactHero.btnMode": "light",
+  "FoodContact.contactSections": [
+    {
+      "title": "Soporte para Socios Repartidores",
+      "desc": "",
+      "contacts": [
+        {
+          "label": "Correo electrónico ",
+          "info": "soporte.repartidor@pe.didiglobal.com",
+          "infoColor": { "color": "#ff7d41" }
+        },
+        {
+          "label": "Teléfono",
+          "info": "(+51) 15101937",
+          "infoColor": { "color": "#ff7d41" }
+        }
+      ]
+    }
+  ]
 }
