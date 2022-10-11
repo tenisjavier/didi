@@ -402,6 +402,26 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
     },
+    "/food/": {
+      title: "DiDi Food Perú: Pide comida a Domicilio",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/store/": {
+      title: "Inscribe tu Restaurante en DiDi Food",
+      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/delivery/": {
+      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/about/": {
+      title: "La App de Comida Más Confiable",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/contact/": {
+      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
+      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
+    },
     "/direcciones/": {
       title: "Cómo llegar a distintos puntos de Perú",
       desc: "Conoce aquí cuánto tiempo te tomaría llegar hacia un lugar en transporte público vs DiDi",
