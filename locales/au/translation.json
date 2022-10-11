@@ -9,6 +9,17 @@
   "SafetyCTA.btnText": "Know More",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "safety/",
+  "DrivePreventionHero.title": "Driving Safe and Preventing Fatigue",
+  "DrivePreventionHero.desc": " ",
+  "DrivePreventionHero.textColor": "white",
+  "DrvPreventionFeatureBanner.title": "DiDi Fatigue Prevention Feature",
+  "DrvPreventionFeatureBanner.desc": " ",
+  "DrvPreventionFeatureBanner.textColor": "white",
+  "DrvPreventionFeatureBanner.bgColor": "bg-orange-primary",
+  "DrvPreventionFeatureBanner.btnText": "Read more",
+  "DrvPreventionFeatureBanner.btnLink": "/au/features/fatigue-prevention-feature/",
+  "DrvPreventionFeatureBanner.btnMode": "light",
+  "FatiguePreventionFAQ.title": "FAQ",
   "DrvCTA.title": "Become a driver",
   "DrvCTA.desc": "All Drivers have the opportunity to take home more of the fare with DiDi’s industry-leading low Services Fees",
   "DrvCTA.bullets": [
@@ -320,7 +331,10 @@
       "title": "COMMUNITY GUIDELINES",
       "desc": "We want to look out for each and every member of our community. The following guidelines are meant to ensure that drivers and riders will feel safe, respected, and at ease while using the DiDi app.",
       "bgColor": "bg-gray-primary",
-      "textColor": "white"
+      "textColor": "white",
+      "btnLink": "/au/blog/community-guidelines",
+      "btnText": "View Full Guidelines",
+      "btnMode": "light"
     },
     {
       "title": "LISTENING TO OUR COMMUNITY",
@@ -503,6 +517,7 @@
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "FAQ Riders",
+  "HelpCenterFAQPax.desc": " ",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "FaqList.title": "All FAQ in DiDi Australia",
