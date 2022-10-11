@@ -145,10 +145,6 @@ const menuLinksFood: AllMenuInterface = {
       text: "Contacto",
       url: "/co/food/contact/",
     },
-    {
-      text: "Blog",
-      url: "/co/food/blog/",
-    },
   ],
   pe: [
     {
@@ -167,7 +163,7 @@ const menuLinksFood: AllMenuInterface = {
       text: "Contacto",
       url: "/pe/food/contact/",
     },
-  ]
+  ],
 };
 
 const getMenuLinksFood = (countryCode: string) => {

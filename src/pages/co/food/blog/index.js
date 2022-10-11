@@ -39,7 +39,7 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "food" }, country: { code: { eq: "cl" } } }
+      filter: { category: { eq: "food" }, country: { code: { eq: "co" } } }
       sort: { fields: content___references___createdAt, order: DESC }
       limit: 10
     ) {

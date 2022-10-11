@@ -291,7 +291,28 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
-
+    {
+      text: "DiDi Food",
+      url: "/pe/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/pe/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/pe/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/pe/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/pe/food/contact/",
+        },
+      ],
+    },
     {
       text: "Sobre DiDi",
       url: "/pe/sobre-didi/",
