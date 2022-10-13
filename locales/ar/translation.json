@@ -120,38 +120,32 @@
     {
       "title": "Manejá tus Tiempos",
       "desc": "Flexibilidad para que manejés tu tiempo como querás",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
       "title": "Soporte 24/7",
       "desc": "Contar con un equipo de soporte 24/7",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
       "title": "Generá Más Ganancias",
       "desc": "Generá más ganancias con nuestras promociones",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
       "title": "Conocé el Destino",
       "desc": "Conocé el destino de un viaje antes de aceptarlo.",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
       "title": "Driver Center",
       "desc": "Visitá nuestro centro de atención.",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     },
     {
       "title": "Constante Mejora",
       "desc": "Accedé a soluciones automáticas dentro de la app",
-      "textColor": "gray-primary",
-      "height": "h-40"
+      "textColor": "gray-primary"
     }
   ],
   "DrvVideoGrid.bgColor": "bg-blue-primary",
