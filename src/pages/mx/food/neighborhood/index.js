@@ -66,6 +66,7 @@ export const query = graphql`
     allContentfulNeighbourhood {
     nodes {
       name
+      slug
     }
   }
   }

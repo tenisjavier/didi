@@ -6,10 +6,11 @@ import FoodCityBannerCTA from "../../../../components/sections/FoodCityBannerCTA
 import FoodCityBannerCTA2 from "../../../../components/sections/FoodCityBannerCTA2";
 import FoodCityBannerCTA3 from "../../../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
+import FoodNeighborhoodList from "../../../../components/sections/FoodNeighborhoodList";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-
+  const cities = data.allContentfulNeighbourhood.nodes;
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -42,6 +43,7 @@ const FoodCity = ({ data }) => {
         data={data.contentfulNeighbourhood}
         image={foodDeliveryCTAImage}
       ></FoodCityBannerCTA2>
+      <FoodNeighborhoodList data={cities}></FoodNeighborhoodList>
       <FoodCityBannerCTA3
         data={data.contentfulNeighbourhood}
         image={foodCTA3Image}
@@ -65,29 +67,11 @@ export const query = graphql`
         }
       }
     }
-    contentfulCity(id: { eq: $id }) {
-      name
-      slug
-      product {
-        name
-        description
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
-        }
-      }
-      geometry {
-        lat
-        lon
-      }
-    }
     contentfulNeighbourhood(id: { eq: $id }){
       name
       slug
     }
-    allContentfulNeighbourhood {
+    allContentfulNeighbourhood{
       nodes {
         name
         slug

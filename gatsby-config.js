@@ -185,6 +185,11 @@ module.exports = {
             languages: ["mx"],
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/food/neighborhood/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
         ],
       },
     },
