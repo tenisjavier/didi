@@ -341,7 +341,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
       desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
-
+    "/driver/moto/": {
+      title: "DiDi Moto - Generá Ingresos Extra con DiDi",
+      desc: "DiDi Moto en Argentina. Registrate en DiDi Moto en nuestra web y comenzá ya a generar ganancias cuando más te convenga.",
+    },
     "/sobre-didi/": {
       title: "Tenés Preguntas sobre DiDi? Revisá las Respuestas",
       desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",

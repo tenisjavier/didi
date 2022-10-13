@@ -236,6 +236,10 @@ const menuLinks: AllMenuInterface = {
       url: "/ar/taxi/",
     },
     {
+      text: "DiDi Moto",
+      url: "/ar/driver/moto/",
+    },
+    {
       text: "Sobre DiDi",
       url: "/ar/sobre-didi/",
       dropMenu: [
