@@ -15,10 +15,10 @@ const Feature = ({ data }) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
   const btnType = category[0] === "driver" ? "drv" : "pax";
-  const features = data.contentfulFeature
-  const isClosed = (features.name === "Fatigue Prevention Feature") ? false : true;
+  const features = data.contentfulFeature;
+  const isClosed =
+    features.name === "Fatigue Prevention Feature" ? false : true;
 
-  console.log(isClosed);
   return (
     <Layout>
       <FeatureHero
@@ -39,7 +39,10 @@ const Feature = ({ data }) => {
           );
         })}
       {data.contentfulFeature.faq && (
-        <HelpCenterFAQPax isClosed={isClosed} data={data.contentfulFeature}></HelpCenterFAQPax>
+        <HelpCenterFAQPax
+          isClosed={isClosed}
+          data={data.contentfulFeature}
+        ></HelpCenterFAQPax>
       )}
       <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>
