@@ -44,20 +44,32 @@ const menuLinksFood: AllMenuInterface = {
       url: "/mx/food/store/",
       dropMenu: [
         {
+          text: "Registro",
+          url: "/mx/food/restaurantes/registro/",
+        },
+        {
           text: "Impuestos",
-          url: "/mx/food/store/taxes/",
+          url: "/mx/food/restaurantes/impuestos/",
         },
         {
           text: "Guías",
-          url: "/mx/food/store/guides/",
+          url: "/mx/food/restaurantes/guias-educacionales/",
         },
         {
           text: "FAQs",
-          url: "/mx/food/store/faqs/",
+          url: "/mx/food/restaurantes/preguntas-frecuentes/",
         },
         {
           text: "Kit Digital",
-          url: "/mx/food/store/kit-digital/",
+          url: "/mx/food/restaurantes/kit-digital/",
+        },
+        {
+          text: "Promociones y Campañas",
+          url: "/mx/food/restaurantes/promociones-y-campanas/",
+        },
+        {
+          text: "Descarga",
+          url: "/mx/food/restaurantes/descarga/",
         },
       ],
     },
