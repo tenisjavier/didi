@@ -34,7 +34,10 @@ const FoodCity = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout
+      title={`Comida a Domicilio  en ${name} cerca de mí`}
+      desc={`Descubre ✌ mejores ofertas de comida a domicilio en restaurantes de ${name} cerca de tí con entrega rápida y económica ⭐⭐⭐ Pidelo ya con DiDiFood app`}
+    >
       <FoodCityHero
         bgImage={foodHeroBgImage}
         data={data.contentfulCity}

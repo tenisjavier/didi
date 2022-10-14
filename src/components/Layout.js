@@ -8,7 +8,7 @@ import SmartBanner from "./SmartBanner";
 import "../styles/global.css";
 
 // @desc: layout with global header, menu, smartbanner and footer
-const Layout = ({ sb = true, children }) => {
+const Layout = ({ sb = true, title, desc, children }) => {
   const { pathname } = useLocation();
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
@@ -19,7 +19,7 @@ const Layout = ({ sb = true, children }) => {
   if (pathname.includes("pasajero")) smartBannerType = "pax";
   return (
     <>
-      <Seo></Seo>
+      <Seo title={title} desc={desc}></Seo>
       <Header></Header>
       {children}
       {sb ? <SmartBanner type={smartBannerType}></SmartBanner> : null}

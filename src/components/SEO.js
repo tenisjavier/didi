@@ -6,7 +6,7 @@ import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
 
-const SEO = () => {
+const SEO = ({ title, desc }) => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
@@ -45,7 +45,7 @@ const SEO = () => {
   const { pathname } = useLocation();
   let country = "";
   let countryName = "";
-  let title = "";
+
   let lang = "en";
   let cleanPath = pathname;
   if (countryCode !== "en") {
@@ -57,23 +57,29 @@ const SEO = () => {
   }
 
   const meta = getMetaByPath(countryCode, cleanPath);
-  title = meta.title + " | DiDi " + countryName;
+  if (!title) {
+    title = meta.title;
+  }
+  if (!desc) {
+    desc = meta.desc;
+  }
+  title = title + " | DiDi " + countryName;
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";
-    meta.desc =
+    desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
   if (pathname === "/contact/" || pathname === "/contact") {
     title = "Contact Us | DiDi Global";
-    meta.desc =
+    desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
 
   return (
     <Helmet htmlAttributes={{ lang: lang }} title={title}>
       <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
-      <meta name="description" content={meta.desc} />
+      <meta name="description" content={desc} />
       {countryCode === "mx" ? <meta name="robots" content="noindex" /> : null}
       <link rel="canonical" href={origin + pathname} />
       {countries.map((c, index) => {
