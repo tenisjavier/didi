@@ -214,12 +214,12 @@
   "FaqFoodHero.title": "Preguntas Frecuentes & Recomendaciones",
   "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:",
   "FoodHeroSecondary.btnMode": "green",
-  "FoodFaqList.linkItem": "/mx/food/store/faqs/{{faqSlug}}",
+  "FoodFaqList.linkItem": "/mx/food/restaurantes/preguntas-frecuentes/{{faqSlug}}",
   "FoodFaqList.desc": "",
   "FoodFaqHero.textColor": "white",
   "FaqFoodHero.textColor": "white",
   "FoodFaqHero.btnMode": "primary",
-  "FoodEducationalGuidesList.linkItem": "/mx/food/store/guides/{{faqSlug}}",
+  "FoodEducationalGuidesList.linkItem": "/mx/food/restaurantes/guias-educacionales/{{faqSlug}}",
   "FoodEducationalGuidesList.desc": "",
   "EducationalGuideFoodHero.title": "Guías Educacionales",
   "EducationalGuideFoodHero.desc": "Conoce todo acerca de tu app",
@@ -486,19 +486,19 @@
     {
       "textColor": "gray-primary",
       "btnText": "Glosario",
-      "btnLink": "/mx/food/store/taxes/glosario",
+      "btnLink": "/mx/food/restaurantes/impuestos/glosario",
       "btnMode": "dark"
     },
     {
       "textColor": "gray-primary",
       "btnText": "Constancia de Situación Fiscal",
-      "btnLink": "/mx/food/store/taxes/constancia-de-situacion-fiscal",
+      "btnLink": "/mx/food/restaurantes/impuestos/constancia-de-situacion-fiscal",
       "btnMode": "dark"
     },
     {
       "textColor": "gray-primary",
       "btnText": "Reforma Fiscal 2023",
-      "btnLink": "/mx/food/store/taxes/reforma-fiscal-2022",
+      "btnLink": "/mx/food/restaurantes/impuestos/reforma-fiscal-2022",
       "btnMode": "dark"
     }
   ],
@@ -520,7 +520,7 @@
       "btnText": "Descarga material para redes sociales",
       "btnLink": "https://drive.google.com/drive/folders/1MfmH64UEDlKfT3nXX9S8rl6y41o3XRE-?usp=sharing",
       "btnText2": "Manual para redes Sociales",
-      "btnLink2": "/mx/food/store/kit-digital/manual-para-redes-sociales",
+      "btnLink2": "/mx/food/restaurantes/kit-digital/manual-para-redes-sociales",
       "btnMode": "light"
     },
     {
@@ -536,7 +536,7 @@
       "desc": "Tenemos los mejores consejos para que aumentes la visibilidad de tu restaurante e incrementes con ello tus ventas.",
       "textColor": "gray-primary",
       "btnText": "Descarga material para redes sociales",
-      "btnLink": "/mx/food/store/guias-educaionales",
+      "btnLink": "/mx/food/restaurantes/guias-educaionales",
       "btnMode": "light"
     }
   ],
@@ -547,7 +547,7 @@
   "OffersGrid.bgColor": "bg-gray-light",
   "OffersGrid.desc": "Select you next discount",
   "OffersGrid.textColor": "gray-primary",
-  "OffersGrid.linkItem": "/mx/food/store/offers/{{offerSlug}}/",
+  "OffersGrid.linkItem": "/mx/food/restaurantes/promociones-y-campanas/{{offerSlug}}/",
   "OfferHero.textColor": "white",
   "OfferHero.bgColor": "bg-orange-primary",
   "OfferHero.btnMode": "light",
@@ -669,7 +669,7 @@
       "desc": "Si no cuentas con programas de diseño, te mostramos cómo agregar tus fotografías a través de PowerPoint.",
       "textColor": "gray-primary",
       "btnText": "Haz clic Aquí",
-      "btnLink": "/mx/food/store/kit-digital/editar-plantillas-con-powerpoint",
+      "btnLink": "/mx/food/restaurantes/kit-digital/editar-plantillas-con-powerpoint",
       "btnMode": "light",
       "height": "h-80"
     }
