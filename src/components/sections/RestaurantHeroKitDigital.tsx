@@ -11,7 +11,9 @@ interface RestaurantHeroKitDigitalProps {
   };
 }
 
-const RestaurantHeroKitDigital = ({ bgImage }: RestaurantHeroKitDigitalProps) => {
+const RestaurantHeroKitDigital = ({
+  bgImage,
+}: RestaurantHeroKitDigitalProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
@@ -22,7 +24,7 @@ const RestaurantHeroKitDigital = ({ bgImage }: RestaurantHeroKitDigitalProps) =>
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-50  md:block"
+        className="!absolute z-0 h-full w-full brightness-75  md:block"
       ></GatsbyImage>
     ),
   };

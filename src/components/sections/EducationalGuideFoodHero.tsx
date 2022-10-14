@@ -11,7 +11,9 @@ interface EducationalGuideFoodHeroProps {
   };
 }
 
-const EducationalGuideFoodHero = ({ bgImage }: EducationalGuideFoodHeroProps) => {
+const EducationalGuideFoodHero = ({
+  bgImage,
+}: EducationalGuideFoodHeroProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
@@ -22,7 +24,7 @@ const EducationalGuideFoodHero = ({ bgImage }: EducationalGuideFoodHeroProps) =>
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-75 md:block"
+        className="!absolute z-0 h-full w-full brightness-90 md:block"
       ></GatsbyImage>
     ),
   };
