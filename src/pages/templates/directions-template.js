@@ -6,8 +6,10 @@ import DirectionBanner from "../../components/sections/DirectionBanner";
 import DirectionStepGrid from "../../components/sections/DirectionStepsGrid";
 
 const DestinationTemplate = ({ data }) => {
+  const origin = data.contentfulDirection.origin;
+  const destination = data.contentfulDirection.destination;
   return (
-    <Layout>
+    <Layout title={`¿Cómo llegar a ${destination} desde ${origin}?`}>
       <DirectionHero data={data.contentfulDirection}></DirectionHero>
       <DirectionBanner data={data.contentfulDirection}></DirectionBanner>
       <DirectionStepGrid data={data.contentfulDirection}></DirectionStepGrid>

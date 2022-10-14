@@ -7,8 +7,14 @@ import DirectoryOriginList from "../../components/sections/DirectoryOriginList";
 import WikiDescription from "../../components/sections/WikiDescription";
 
 const PlaceTemplate = ({ data }) => {
+  const name = data.contentfulPlace.name;
+  const city = data.contentfulPlace.city.name;
+  const address = data.contentfulPlace.address;
   return (
-    <Layout>
+    <Layout
+      title={`¿Cómo llegar a ${name} en ${city}?`}
+      desc={`Aprende como llegar a ${name} en ${city} desde distintos puntos de la ciudad. Viaja a ${address} `}
+    >
       <PlaceHero data={data.contentfulPlace}></PlaceHero>
       <PlaceMap data={data}></PlaceMap>
       <WikiDescription data={data.contentfulPlace}></WikiDescription>
@@ -32,6 +38,9 @@ export const query = graphql`
       name
       placeId
       country
+      city {
+        name
+      }
       address
       description {
         description
