@@ -6,7 +6,6 @@ import RestaurantImpuestosColumns from "../../../../components/sections/Restaura
 import ImpuestosColumns from "../../../../components/sections/ImpuestosColumns";
 
 const Restaurant = ({ data }) => {
-  console.log(data);
   const images = data.allContentfulAsset.nodes;
   const RestaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.RestaurantHeroImpuesto.bgImage";

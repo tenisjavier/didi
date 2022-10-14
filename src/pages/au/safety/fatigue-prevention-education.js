@@ -19,26 +19,32 @@ const RiderSafety = ({ data }) => {
     return image.title === "au.DrivePreventionHero.bgImage";
   })[0];
   const faqFatiguePrevention = faqs.filter((faq) => {
-    console.log(faq.title);
     return (
-      faq.title === "What counts towards the 13-hour online time limit?" || 
-      faq.title === "When will the 13 hours of online time reset?" || 
-      faq.title === "How do I know how many hours I have been online?" || 
-      faq.title === "How do I know when I can go back online?" || 
-      faq.title === "How is the refresh time calculated if I go online and offline at irregular times?" || 
+      faq.title === "What counts towards the 13-hour online time limit?" ||
+      faq.title === "When will the 13 hours of online time reset?" ||
+      faq.title === "How do I know how many hours I have been online?" ||
+      faq.title === "How do I know when I can go back online?" ||
+      faq.title ===
+        "How is the refresh time calculated if I go online and offline at irregular times?" ||
       faq.title === "Will my app reset after a 24-hour period?"
     );
   });
 
-  console.log(faqFatiguePrevention);
-
   return (
     <Layout>
-      <DrivePreventionHero bgImage={drivePreventionHeroBgImage}></DrivePreventionHero>
-      <TextContent title={drvPreventionCTA.title} data={drvPreventionCTA.content}></TextContent>
+      <DrivePreventionHero
+        bgImage={drivePreventionHeroBgImage}
+      ></DrivePreventionHero>
+      <TextContent
+        title={drvPreventionCTA.title}
+        data={drvPreventionCTA.content}
+      ></TextContent>
       <DrvPreventionFeatureBanner></DrvPreventionFeatureBanner>
       <FatiguePreventionFAQ data={faqFatiguePrevention}></FatiguePreventionFAQ>
-      <TextContent title={drvPreventionCTA.title} data={drvSafetyOnboardingCTA.content}></TextContent>
+      <TextContent
+        title={drvPreventionCTA.title}
+        data={drvSafetyOnboardingCTA.content}
+      ></TextContent>
     </Layout>
   );
 };
@@ -67,9 +73,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulFaq(
-      filter: {country: {code: {eq: "au"}}}
-    ) {
+    allContentfulFaq(filter: { country: { code: { eq: "au" } } }) {
       nodes {
         title
         slug

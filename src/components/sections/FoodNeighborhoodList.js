@@ -5,7 +5,6 @@ import ListSection from "../ListSection";
 const FoodNeighborhoodList = ({ data }) => {
   const { t } = useTranslation();
   const items = data.map((city) => {
-    console.log(data)
     return {
       text: city.name,
       secondText: "",
@@ -13,7 +12,6 @@ const FoodNeighborhoodList = ({ data }) => {
       image: city.image,
     };
   });
-
 
   const props = {
     title: t("neighborhood.title"),
