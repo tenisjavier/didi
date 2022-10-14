@@ -4,6 +4,7 @@ import Layout from "../../../components/Layout";
 import PartnersHero from "../../../components/sections/PartnersHero";
 import PartnersGrid from "../../../components/sections/PartnersGrid";
 import PartnersCTA from "../../../components/sections/PartnersCTA";
+import AboutClubDiDi from "../../../components/sections/AboutClubDiDiVideo";
 import HomeColumns from "../../../components/sections/HomeColumns";
 
 const DiDiMas = ({ data }) => {
@@ -24,6 +25,7 @@ const DiDiMas = ({ data }) => {
         bgImage={didiMasHeroBgImage}
         image={didiMasHeroImage}
       ></PartnersHero>
+      <AboutClubDiDi></AboutClubDiDi>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
       <HomeColumns></HomeColumns>
