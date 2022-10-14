@@ -184,9 +184,33 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Food: Contacta nuestro Servicio al Cliente",
       desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
+    "/food/city/": {
+      title: "Pide Comida a Domicilio con DiDi Food Mexico",
+      desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas ciudades... y en minutos",
+    },
     "/food/blog/": {
       title: "Artículos de Comida y Restaurantes",
       desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/registro/": {
+      title: "Restaurantes - Registro",
+      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/impuestos/": {
+      title: "Restaurantes - Impuestos",
+      desc: "Restaurantes - Impuestos. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/guias-educacionales/": {
+      title: "Restaurantes - Guías Educacionales",
+      desc: "Restaurantes - Guías Educacionales. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/promociones-y-campanas/": {
+      title: "Restaurantes - Promociones y Campañas",
+      desc: "Restaurantes - Promociones y Campañas. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/preguntas-frecuentes/": {
+      title: "Restaurantes - Preguntas Frecuentes",
+      desc: "Restaurantes - Preguntas Frecuentes. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",

@@ -146,27 +146,27 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/:path?",
+            matchPath: "/:lang?/food/restaurantes/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/taxes/:path?",
+            matchPath: "/:lang?/food/restaurantes/taxes/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/guides/:path?",
+            matchPath: "/:lang?/food/restaurantes/guides/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/faqs/:path?",
+            matchPath: "/:lang?/food/restaurantes/faqs/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/offers/:path?",
+            matchPath: "/:lang?/food/restaurantes/offers/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
@@ -181,7 +181,7 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/store/kit-digital/:path?",
+            matchPath: "/:lang?/food/restaurantes/kit-digital/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
