@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import ArticlesHero from "../../../components/sections/ArticlesHero";
 import ArticlesColumns from "../../../components/sections/ArticlesColumns";
+import Pagination from "../../../components/Pagination";
 
 const Article = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,6 +14,7 @@ const Article = ({ data }) => {
     <Layout>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
+      <Pagination data={data} postsPerPage={12}></Pagination>
     </Layout>
   );
 };
@@ -41,7 +43,6 @@ export const query = graphql`
     allContentfulArticle(
       filter: { category: { eq: "rides" }, country: { code: { eq: "mx" } } }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: 15
     ) {
       nodes {
         title
