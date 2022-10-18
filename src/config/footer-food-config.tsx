@@ -21,9 +21,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Renta de equipo", link: "/cl/food/renta-de-equipo/" },
   ],
   mx: [
-    { text: "Tienda", link: "/mx/food/store/" },
-    { text: "Socio repartidor", link: "/mx/food/delivery/" },
-    { text: "Ciudades Disponibles", link: "/mx/food/city/" },
+    { text: "Restaurantes", link: "/mx/food/restaurantes/" },
+    { text: "Socio repartidor", link: "/mx/food/repartidores/" },
+    { text: "Ciudades Disponibles", link: "/mx/food/ciudad/" },
     { text: "Terms and Conditions", link: "/mx/food/terminos-y-condiciones/" },
     { text: "Privacidad", link: "/mx/food/privacidad/" },
     { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
@@ -67,7 +67,7 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Socio repartidor", link: "/pe/food/delivery/" },
     { text: "Acerca", link: "/pe/food/about/" },
     { text: "Contacto", link: "/pe/food/contact/" },
-  ]
+  ],
 };
 
 const getFooterLinksFood = (countryCode: string): FooterLinksFood[] => {

@@ -162,20 +162,20 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/mx/food/store/",
+          text: "Restaurantes",
+          url: "/mx/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/mx/food/delivery/",
+          url: "/mx/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/mx/food/about/",
+          url: "/mx/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/mx/food/contact/",
+          url: "/mx/food/contacto/",
         },
       ],
     },
