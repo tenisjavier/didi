@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
-import Card, { CardProps } from "./Card";
+import { ImageDataLike } from "gatsby-plugin-image";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
