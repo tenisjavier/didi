@@ -169,8 +169,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/restaurantes/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Inscribe tu Restaurante en DiDi Food",
+      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
@@ -187,6 +187,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/food/ciudad/": {
       title: "Pide Comida a Domicilio con DiDi Food Mexico",
       desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas ciudades... y en minutos",
+    },
+    "/food/neighborhood/": {
+      title: "Encuentra Comida a Domicilio en tu Colonia con DiDi Food Mexico",
+      desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas colonias... y en minutos",
     },
     "/food/blog/": {
       title: "Artículos de Comida y Restaurantes",
