@@ -186,12 +186,12 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/neighborhood/:path?",
+            matchPath: "/:lang?/food/colonias/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/municipality/:path?",
+            matchPath: "/:lang?/food/delegaciones/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },

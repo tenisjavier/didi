@@ -679,9 +679,9 @@
   "neighborhood.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
   "neighborhood.bgColor": "bg-white",
   "neighborhood.textColor": "gray-primary",
-  "neighborhood.linkItem": "/mx/food/neighborhood/{{city}}/",
+  "neighborhood.linkItem": "/mx/food/colonias/{{city}}/",
   "municipality.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
   "municipality.bgColor": "bg-white",
   "municipality.textColor": "gray-primary",
-  "municipality.linkItem": "/mx/food/municipality/{{city}}/"
+  "municipality.linkItem": "/mx/food/delegaciones/{{city}}/"
 }
