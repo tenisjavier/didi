@@ -171,7 +171,7 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/city/:path?",
+            matchPath: "/:lang?/food/ciudad/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },

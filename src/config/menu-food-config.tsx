@@ -40,8 +40,8 @@ const menuLinksFood: AllMenuInterface = {
   ],
   mx: [
     {
-      text: "Tienda",
-      url: "/mx/food/store/",
+      text: "Restaurantes",
+      url: "/mx/food/restaurantes/",
       dropMenu: [
         {
           text: "Registro",
@@ -75,11 +75,11 @@ const menuLinksFood: AllMenuInterface = {
     },
     {
       text: "Socio repartidor",
-      url: "/mx/food/delivery/",
+      url: "/mx/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/mx/food/about/",
+      url: "/mx/food/acerca-didi-food/",
       dropMenu: [
         {
           text: "Preguntas Frecuentes",
@@ -89,7 +89,7 @@ const menuLinksFood: AllMenuInterface = {
     },
     {
       text: "Contacto",
-      url: "/mx/food/contact/",
+      url: "/mx/food/contacto/",
     },
     {
       text: "Blog",
