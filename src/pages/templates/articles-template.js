@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import ArticleHero from "../../components/sections/ArticleHero";
+import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
 import ArticleContent from "../../components/sections/ArticleContent";
 import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
@@ -20,9 +21,13 @@ const ArticlesTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <ArticleHero data={data}></ArticleHero>
+      {pathname.includes("food/blog") ? (
+        <FoodBlogPostHero data={data}></FoodBlogPostHero>
+      ) : (
+        <ArticleHero data={data}></ArticleHero>
+      )}
       <ArticleContent data={data}></ArticleContent>
-      <PaxBanner></PaxBanner>
+      {!pathname.includes("food/blog") && <PaxBanner></PaxBanner>}
       {articles.length && columns}
     </Layout>
   );
