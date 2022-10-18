@@ -29,7 +29,8 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
   const perPage = postsPerPage;
   const numberPages = Math.ceil(articles.length / perPage);
   const pageLinks = [];
-  const { origin, pathname, search } = useLocation();
+  const origin = "https://web.didiglobal.com";
+  const { pathname, search } = useLocation();
   const currentURL = origin + pathname;
   const queryString = search;
   const urlParams = new URLSearchParams(queryString);
