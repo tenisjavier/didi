@@ -30,7 +30,8 @@ const FoodBlogPostHero = ({ data }: FoodBlogPostHeroProps) => {
       />
     ),
     btnMode: t("FoodBlogPostHero.btnMode"),
-    btnType: "foodBusiness",
+    btnModeSecondary: t("FoodBlogPostHeroSecondary.btnMode"),
+    btnType: "bothFood",
   };
 
   return <CTASection {...props}></CTASection>;
