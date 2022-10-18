@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import Card, { CardProps } from "./Card";
+import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
@@ -28,8 +29,16 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
   const perPage = postsPerPage;
   const numberPages = Math.ceil(articles.length / perPage);
   const pageLinks = [];
+  const currentURL = window.location.origin + window.location.pathname;
 
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const urlPage = Number(urlParams.get("page"));
+  
   var currentPage = 1;
+  if(urlParams.get("page") != null && Number(urlParams.get("page")) <= numberPages) {
+    currentPage = urlPage;
+  }
 
   function goToPage(toPage: number) {
     articles.map((card, index) => {
@@ -39,13 +48,9 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
       });
     });
 
-    document
-      .getElementById("page-item-" + currentPage + "")
-      ?.classList.remove("active");
+    Array.from(document.querySelectorAll('.page-item.active')).forEach((el) => el.classList.remove('active'));
     currentPage = toPage;
-    document
-      .getElementById("page-item-" + currentPage + "")
-      ?.classList.add("active");
+    document.getElementById("page-item-" + currentPage + "")?.classList.add("active");
 
     const end = toPage * postsPerPage;
     const start = end - postsPerPage;
@@ -63,7 +68,7 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
   }
 
   useEffect(() => {
-    goToPage(1);
+    goToPage(currentPage);
   });
 
   for (let i = 0; i < numberPages; i++) {
@@ -71,48 +76,48 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
   }
   return (
     <ul className="pagination">
-      <li key={1500} className="page-item" onClick={(e) => goToPage(1)}>
-        <FontAwesomeIcon icon={faAnglesLeft} className="w-3" />
-      </li>
-      <li
-        key={1501}
-        className="page-item"
-        onClick={(e) => goToPage(currentPage - 1 == 0 ? 1 : currentPage - 1)}
-      >
-        <FontAwesomeIcon icon={faAngleLeft} className="w-3" />
-      </li>
+      <Link to={currentURL+"?page="+1}>
+        <li key={1500} className="page-item">
+          <FontAwesomeIcon icon={faAnglesLeft} className="w-3" />
+        </li>
+      </Link>
+      <Link to={currentURL+"?page="+(currentPage - 1 == 0 ? 1 : currentPage - 1)}>
+        <li
+          key={1501}
+          className="page-item"
+        >
+          <FontAwesomeIcon icon={faAngleLeft} className="w-3" />
+        </li>
+      </Link>
       {pageLinks.map((links, index) => {
         return (
-          <li
-            key={index}
-            className="page-item"
-            id={`page-item-${index + 1}`}
-            onClick={(e) => goToPage(index + 1)}
-          >
-            {index + 1}
+          <Link to={currentURL+"?page="+(Number(index) + 1)}>
+            <li
+              key={index}
+              className="page-item"
+              id={`page-item-${index + 1}`}
+            >
+              {index + 1}
           </li>
+          </Link>
         );
       })}
-      <li
-        key={1502}
-        className="page-item"
-        onClick={(e) =>
-          goToPage(
-            currentPage + 1 > pageLinks.length
-              ? pageLinks.length
-              : currentPage + 1
-          )
-        }
-      >
-        <FontAwesomeIcon icon={faAngleRight} className="w-3" />
-      </li>
-      <li
-        key={1503}
-        className="page-item"
-        onClick={(e) => goToPage(pageLinks.length)}
-      >
-        <FontAwesomeIcon icon={faAnglesRight} className="w-3" />
-      </li>
+      <Link to={currentURL+"?page="+(currentPage + 1 > pageLinks.length ? pageLinks.length : currentPage + 1)}>
+        <li
+          key={1502}
+          className="page-item"
+        >
+          <FontAwesomeIcon icon={faAngleRight} className="w-3" />
+        </li>
+      </Link>
+      <Link to={currentURL+"?page="+pageLinks.length}>
+        <li
+          key={1503}
+          className="page-item"
+        >
+          <FontAwesomeIcon icon={faAnglesRight} className="w-3" />
+        </li>
+      </Link>
     </ul>
   );
 };
