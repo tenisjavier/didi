@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodBlogHero from "../../../../components/sections/FoodBlogHero";
 import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
+import Pagination from "../../../../components/Pagination";
 
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,6 +14,7 @@ const FoodBlog = ({ data }) => {
     <Layout>
       <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
       <FoodBlogColumns data={data}></FoodBlogColumns>
+      <Pagination data={data} postsPerPage={12}></Pagination>
     </Layout>
   );
 };
@@ -41,10 +43,10 @@ export const query = graphql`
     allContentfulArticle(
       filter: { category: { eq: "food" }, country: { code: { eq: "mx" } } }
       sort: { fields: content___references___updatedAt, order: DESC }
-      limit: 10
     ) {
       nodes {
         title
+        slug
         excerpt
         featuredImage {
           gatsbyImageData

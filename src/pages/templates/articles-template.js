@@ -7,21 +7,23 @@ import ArticleContent from "../../components/sections/ArticleContent";
 import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
 import NewsroomColumns from "../../components/sections/NewsroomColumns";
+import FoodBlogColumns from "../../components/sections/FoodBlogColumns";
 
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
   const { pathname } = useLocation();
+  let columns = <ArticlesColumns data={data}></ArticlesColumns>;
+  if (pathname.includes("newsroom"))
+    columns = <NewsroomColumns data={data}></NewsroomColumns>;
+  if (pathname.includes("food/blog"))
+    columns = <FoodBlogColumns data={data}></FoodBlogColumns>;
+
   return (
     <Layout>
       <ArticleHero data={data}></ArticleHero>
       <ArticleContent data={data}></ArticleContent>
       <PaxBanner></PaxBanner>
-      {articles.length &&
-        (pathname.includes("newsroom") ? (
-          <NewsroomColumns data={data}></NewsroomColumns>
-        ) : (
-          <ArticlesColumns data={data}></ArticlesColumns>
-        ))}
+      {articles.length && columns}
     </Layout>
   );
 };
