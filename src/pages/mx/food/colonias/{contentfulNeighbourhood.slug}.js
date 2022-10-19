@@ -11,6 +11,7 @@ import FoodNeighborhoodList from "../../../../components/sections/FoodNeighborho
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const cities = data.allContentfulNeighbourhood.nodes;
+  const name = data.contentfulNeighbourhood.name;
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -24,9 +25,12 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
-
+  console.log(data.contentfulNeighbourhood);
   return (
-    <Layout>
+    <Layout
+      title={`Pide Comida a Domicilio  en ${name} CDMX`}
+      desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
+    >
       <FoodCityHero
         bgImage={foodHeroBgImage}
         data={data.contentfulNeighbourhood}
@@ -67,11 +71,14 @@ export const query = graphql`
         }
       }
     }
-    contentfulNeighbourhood(id: { eq: $id }){
+    contentfulNeighbourhood(id: { eq: $id }) {
       name
       slug
+      city {
+        name
+      }
     }
-    allContentfulNeighbourhood{
+    allContentfulNeighbourhood {
       nodes {
         name
         slug

@@ -11,6 +11,7 @@ import FoodMunicipalityList from "../../../../components/sections/FoodMunicipali
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const cities = data.allContentfulMunicipality.nodes;
+  const name = data.contentfulMunicipality.name;
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -26,7 +27,10 @@ const FoodCity = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout
+      title={`Pide Comida a Domicilio  en ${name} CDMX `}
+      desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
+    >
       <FoodCityHero
         bgImage={foodHeroBgImage}
         data={data.contentfulMunicipality}
@@ -67,11 +71,14 @@ export const query = graphql`
         }
       }
     }
-    contentfulMunicipality(id: { eq: $id }){
+    contentfulMunicipality(id: { eq: $id }) {
       name
       slug
+      city {
+        name
+      }
     }
-    allContentfulMunicipality{
+    allContentfulMunicipality {
       nodes {
         name
         slug
