@@ -22,7 +22,7 @@ const Legal = ({ data }) => {
         "Driver Fatigue Management Policy",
         "General Terms and Conditions for Driver Offers",
         "Fee Schedule",
-        "Community Guidelines"
+        "Community Guidelines",
       ].indexOf(p.name) > -1
   );
   const drvProgramPolicies = policies.filter(
@@ -42,6 +42,7 @@ const Legal = ({ data }) => {
         "Rider Complaint Handling Policy ",
         "General Terms and Conditions for Rider Offers",
         "Passenger Software Use and Licence Agreement",
+        "NZ Promo Terms and Conditions",
       ].indexOf(p.name) > -1
   );
   const paxProgramPolicies = policies.filter(
