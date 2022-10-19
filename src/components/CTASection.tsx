@@ -48,18 +48,10 @@ const CTASection = (props: CTAProps) => {
     btnMode,
     btnArray,
     reverse,
-    btnModeSecondary
+    btnModeSecondary,
   } = props;
 
-  let sectionBtn = (
-    <Btn
-      btnType={btnType}
-      btnLink={btnLink}
-      btnMode={btnMode}
-      btnText={btnText}
-      btnModeSecondary={btnModeSecondary}
-    ></Btn>
-  );
+  let sectionBtn = <Btn btnType={btnType} btnLink={btnLink} btnMode={btnMode} btnText={btnText} btnModeSecondary={btnModeSecondary}></Btn>;
 
   // if btnType is both will print pax first and drv second
   if (btnType === "both") {
@@ -86,12 +78,7 @@ const CTASection = (props: CTAProps) => {
         {btnArray.map((btn, index) => {
           return (
             <>
-              <Btn
-                btnText={btn.text}
-                btnLink={btn.link}
-                btnMode={btnMode}
-                key={index}
-              ></Btn>
+              <Btn btnText={btn.text} btnLink={btn.link} btnMode={btnMode} key={index}></Btn>
               <br></br>
             </>
           );
@@ -107,20 +94,12 @@ const CTASection = (props: CTAProps) => {
     >
       <div
         className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
- ${reverse && "flex-row-reverse"} ${
-          image ? "xl:justify-between" : "xl:justify-start"
-        }`}
+ ${reverse && "flex-row-reverse"} ${image ? "xl:justify-between" : "xl:justify-start"}`}
       >
         {image}
 
-        <div
-          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
-        >
-          {hero ? (
-            <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
-          ) : (
-            <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
-          )}
+        <div className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}>
+          {hero ? <h1 className="text-3xl font-bold md:text-4xl">{title}</h1> : <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>}
           {bullets && (
             <>
               <ul className="mt-12 mb-2 list-none text-left text-xl">
@@ -128,13 +107,7 @@ const CTASection = (props: CTAProps) => {
                   return (
                     <div key={index}>
                       <li>
-                        {!customBulletIcon ? (
-                          <FontAwesomeIcon
-                            icon={faCarSide}
-                            className=" mr-4 text-orange-primary w-6"
-                            size="sm"
-                          />
-                        ) : null}
+                        {!customBulletIcon ? <FontAwesomeIcon icon={faCarSide} className=" mr-4 text-orange-primary w-6" size="sm" /> : null}
                         {item}
                       </li>
                       <br></br>
