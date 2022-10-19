@@ -683,5 +683,17 @@
   "municipality.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
   "municipality.bgColor": "bg-white",
   "municipality.textColor": "gray-primary",
-  "municipality.linkItem": "/mx/food/delegaciones/{{city}}/"
+  "municipality.linkItem": "/mx/food/delegaciones/{{city}}/",
+  "FoodAppDownloads.title": "Descárgate la App en tu Iphone o Android.",
+  "FoodAppDownloads.desc": "La comida que deseas está a unos minutos y 3 clics de distancia.",
+  "FoodAppDownloads.textColor": "gray-primary",
+  "FoodAppDownloads.bgColor": "bg-white",
+  "FoodAppDownloads.columns": [
+    {
+      "linkItem": "https://play.google.com/store/apps/details?id=com.xiaojukeji.didi.global.customer"
+    },
+    {
+      "linkItem": "https://apps.apple.com/MX/app/id1434256853?mt=8"
+    }
+  ]
 }
