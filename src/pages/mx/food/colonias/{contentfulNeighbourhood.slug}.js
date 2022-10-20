@@ -25,7 +25,6 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
-  console.log(data.contentfulNeighbourhood);
   return (
     <Layout
       title={`Pide Comida a Domicilio  en ${name} CDMX`}
