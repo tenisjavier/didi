@@ -684,6 +684,18 @@
   "municipality.bgColor": "bg-white",
   "municipality.textColor": "gray-primary",
   "municipality.linkItem": "/mx/food/delegaciones/{{city}}/",
+  "FoodAppDownloads.title": "Descárgate la App en tu Iphone o Android.",
+  "FoodAppDownloads.desc": "La comida que deseas está a unos minutos y 3 clics de distancia.",
+  "FoodAppDownloads.textColor": "gray-primary",
+  "FoodAppDownloads.bgColor": "bg-white",
+  "FoodAppDownloads.columns": [
+    {
+      "linkItem": "https://play.google.com/store/apps/details?id=com.xiaojukeji.didi.global.customer"
+    },
+    {
+      "linkItem": "https://apps.apple.com/MX/app/id1434256853?mt=8"
+    }
+  ],
   "FoodSafetyHero.title": "Comprometidos con la seguridad en cada entrega",
   "FoodSafetyHero.desc": "En DiDi Food, nos importa la seguridad e integridad de cada Socio Repartidor. Nuestra intención, es que cada entrega supere sus expectativas y se sientan respaldados en todos los trayectos. Día a día, buscamos ofrecerles los mejores medios para que esto sea posible. \n Conoce las iniciativas creadas para ellos.",
   "FoodSafetyHero.textColor": "white",

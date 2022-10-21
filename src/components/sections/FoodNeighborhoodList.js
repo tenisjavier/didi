@@ -8,7 +8,7 @@ const FoodNeighborhoodList = ({ data }) => {
     return {
       text: city.name,
       secondText: "",
-      link: t("neighborhood.linkItem", { city: city.slug }),
+      link: t("neighborhood.linkItem", { city: city.slug.replace(/--|---/g,'-') }),
       image: city.image,
     };
   });
