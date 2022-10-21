@@ -884,6 +884,29 @@
       "desc": "Para el amigo, la novia, tu mamá, tu hermano; para quien quieras y cuando quieras; resuelve ese regalo comprando tarjetas electrónicas de todo tipo con DiDi Pay."
     }
   ],
+  "DiDiPayColumns.title": "",
+  "DiDiPayColumns.desc": "",
+  "DiDiPayColumns.bgColor": "bg-orange-primary",
+  "DiDiPayColumns.columns": [
+    {
+      "title": "Desarga la App",
+      "textColor": "gray-primary",
+      "btnType": "payment",
+      "btnMode": "light",
+      "height": "h-40"
+    },
+    {
+      "title": "¿Tienes dudas?",
+      "textColor": "gray-primary",
+      "btnText": "Preguntas Frecuentes",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light",
+      "height": "h-40"
+    }
+  ],
+  "DiDiPayFAQs.title": "Preguntas Frecuentes",
+  "DiDiPayFAQs.desc": "",
+  "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
   "PrestamosHero.title": "Obtener un préstamo personal es rápido, fácil y seguro.",
   "PrestamosHero.desc": "Solicita un préstamo de DiDi Préstamos",
   "PrestamosHero.btnMode": "primary",
