@@ -51,24 +51,44 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
   } = props;
 
-  let sectionBtn = <Btn btnType={btnType} btnLink={btnLink} btnMode={btnMode} btnText={btnText} btnModeSecondary={btnModeSecondary}></Btn>;
+  let sectionBtn = (
+    <Btn
+      btnType={btnType}
+      btnLink={btnLink}
+      btnMode={btnMode}
+      btnText={btnText}
+      btnModeSecondary={btnModeSecondary}
+    ></Btn>
+  );
 
   // if btnType is both will print pax first and drv second
   if (btnType === "both") {
     sectionBtn = (
       <>
-        <Btn btnType="pax" btnMode={btnMode}></Btn>
+        <Btn
+          btnType="pax"
+          btnMode={btnMode}
+        ></Btn>
         <br></br>
-        <Btn btnType="drv" btnMode={btnMode}></Btn>
+        <Btn
+          btnType="drv"
+          btnMode={btnMode}
+        ></Btn>
       </>
     );
   }
   if (btnType === "bothFood") {
     sectionBtn = (
       <>
-        <Btn btnType="foodEaterOnline" btnModeSecondary={btnModeSecondary}></Btn>
+        <Btn
+          btnType="foodEaterOnline"
+          btnModeSecondary={btnModeSecondary}
+        ></Btn>
         <br></br>
-        <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+        <Btn
+          btnType="foodEater"
+          btnMode={btnMode}
+        ></Btn>
       </>
     );
   }
@@ -78,7 +98,12 @@ const CTASection = (props: CTAProps) => {
         {btnArray.map((btn, index) => {
           return (
             <>
-              <Btn btnText={btn.text} btnLink={btn.link} btnMode={btnMode} key={index}></Btn>
+              <Btn
+                btnText={btn.text}
+                btnLink={btn.link}
+                btnMode={btnMode}
+                key={index}
+              ></Btn>
               <br></br>
             </>
           );
@@ -107,7 +132,13 @@ const CTASection = (props: CTAProps) => {
                   return (
                     <div key={index}>
                       <li>
-                        {!customBulletIcon ? <FontAwesomeIcon icon={faCarSide} className=" mr-4 text-orange-primary w-6" size="sm" /> : null}
+                        {!customBulletIcon ? (
+                          <FontAwesomeIcon
+                            icon={faCarSide}
+                            className=" mr-4 text-orange-primary w-6"
+                            size="sm"
+                          />
+                        ) : null}
                         {item}
                       </li>
                       <br></br>
@@ -120,14 +151,20 @@ const CTASection = (props: CTAProps) => {
           )}
           {desc &&
             desc.split("\n").map((str, index) => (
-              <p className="mb-5 text-lg" key={index}>
+              <p
+                className="mb-5 text-lg"
+                key={index}
+              >
                 {str}
               </p>
             ))}
           {list && (
             <div className="grid grid-cols-2 lg:grid-cols-3 text-orange-primary mb-8">
               {list.map((item, index) => (
-                <a href={item.link} key={index}>
+                <a
+                  href={item.link}
+                  key={index}
+                >
                   {item.text}
                 </a>
               ))}
