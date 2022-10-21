@@ -496,7 +496,7 @@
     },
     {
       "title": "Driver Fatigue Prevention",
-      "desc": "To help keep everyone safe on the road, drivers are prompted to take a break after 8 consecutive hours of driving.",
+      "desc": "To help keep everyone safe on the road, drivers are prompted to take a break after 13 consecutive hours of driving.",
       "bgColor": "bg-white"
     },
     {
@@ -516,6 +516,9 @@
   "HelpCenterFAQDrv.title": "FAQ Drivers",
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
+  "HelpCenterFAQ.title": "FAQ",
+  "HelpCenterFAQ.textColor": "gray-primary",
+  "HelpCenterFAQ.bgColor": "bg-gray-light",
   "HelpCenterFAQPax.title": "FAQ Riders",
   "HelpCenterFAQPax.desc": " ",
   "HelpCenterFAQPax.textColor": "gray-primary",
@@ -547,7 +550,7 @@
     },
     {
       "title": "Call us",
-      "desc": "You can speak to our Customer Support Team by calling 1800 413 678.",
+      "desc": "You can speak to our Customer Support Team on the live chat",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
@@ -561,7 +564,7 @@
     },
     {
       "title": "Urgent Contact",
-      "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team on +61 2 8488 0901 or via email at help.safety@didiglobal.com",
+      "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team via email at help.safety@didiglobal.com",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
 
