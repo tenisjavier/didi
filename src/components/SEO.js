@@ -63,7 +63,7 @@ const SEO = ({ title, desc }) => {
   if (!desc) {
     desc = meta.desc;
   }
-  title = title + " | DiDi " + countryName;
+  title = title + " | DiDi " + (countryName || "Global");
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";
