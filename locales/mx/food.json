@@ -683,5 +683,67 @@
   "municipality.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
   "municipality.bgColor": "bg-white",
   "municipality.textColor": "gray-primary",
-  "municipality.linkItem": "/mx/food/delegaciones/{{city}}/"
+  "municipality.linkItem": "/mx/food/delegaciones/{{city}}/",
+  "FoodSafetyHero.title": "Comprometidos con la seguridad en cada entrega",
+  "FoodSafetyHero.desc": "En DiDi Food, nos importa la seguridad e integridad de cada Socio Repartidor. Nuestra intención, es que cada entrega supere sus expectativas y se sientan respaldados en todos los trayectos. Día a día, buscamos ofrecerles los mejores medios para que esto sea posible. \n Conoce las iniciativas creadas para ellos.",
+  "FoodSafetyHero.textColor": "white",
+  "SafetyRoadCTA.title": "Guías de Seguridad Vial para Socios Repartidores",
+  "SafetyRoadCTA.desc": "Estas guías fueron creadas con la ayuda del ITDP México, con la intención de fomentar la Seguridad Vial de cada Socio Repartidor de DiDi Food y que su trayecto sea lo más seguro posible.",
+  "SafetyToolsCTA.title": "Herramientas de seguridad en DiDi Food para Socios Repartidores",
+  "SafetyToolsCTA.desc": "En DiDi Food, ponemos al alcance varias funcionalidades dentro de la app DiDi Repartidor para que los Socios Repartidores sepan cómo actuar ante una situación que ponga en riesgo su integridad.",
+  "SafetyToolsCTA.btnArray": [
+    {
+      "btnMode": "primary",
+      "btnText": "Guia bicicletas",
+      "btnLink": ""
+    },
+    {
+      "btnMode": "primary",
+      "btnText": "Guia motocicletas",
+      "btnLink": ""
+    }
+  ],
+  "FoodSafetyColumns.columns": [
+    {
+      "title": "1. Botón de emergencia",
+      "desc": "Asistencia inmediata desde la pantalla principal de la app. \n Al solicitar este tipo de asistencia, se envía una alerta al equipo de Seguridad de DiDi Food y se enlaza directamente al 911 en caso de que el Socio Repartidor se encuentre en una emergencia."
+    },
+    {
+      "title": "2. Teléfono anónimo",
+      "desc": "Protegemos la información personal de los Socios Repartidores al no compartir con usuarios ni establecimientos su número telefónico. Aún así, el Socio Repartidor tiene la opción de contactarlos durante la entrega en caso de cualquier duda o situación, sin que aparezca el número de donde está llamando."
+    },
+    {
+      "title": "3. Línea de soporte 24/7",
+      "desc": "Ante cualquier situación, el Socio Repartidor puede recibir atención personalizada. El número de Soporte es 800 801 6888 y será atendido por operadores de DiDi Food."
+    },
+    {
+      "title": "4. Desactivación de usuarios",
+      "desc": "En DiDi Food desactivamos la cuenta de los usuarios que hayan incumplido con los términos y condiciones del uso de la app."
+    },
+    {
+      "title": "5. Geocercas de seguridad (zonas delimitadas por rastreo)",
+      "desc": "Actualmente, en DiDi Food se cuenta con 3 tipos de geocercas que limitan ciertos espacios, con el objetivo de disminuir el riesgo de incidencias:",
+      "image": false
+    },
+    {
+      "title": "Zona de precaución",
+      "desc": "La app alertará al inicio del pedido si este se entregará en una zona de precaución*, en cuyo caso, el Socio Repartidor podrá cancelar el pedido.",
+      "image": false
+    },
+    {
+      "title": "Geocercas de seguridad dinámicas",
+      "desc": "Si se detecta alguna incidencia que pueda poner en riesgo el bienestar del Socio Repartidor, el equipo de Seguridad de DiDi Food podría habilitar las geocercas de seguridad dinámicas. Éstas bloquean pedidos durante horarios, días o tipos de pago específicos.",
+      "image": false
+    },
+    {
+      "title": "Geocerca de bloqueo 24/7",
+      "desc": "Se deshabilita por completo el servicio de entrega en destinos que se encuentren dentro de áreas conflictivas**.",
+      "image": false
+    }
+  ],
+  "FoodSafetyColumns.small": "* Una zona de precaución es aquella que se determina como posiblemente peligrosa con base en información de medios externos a DiDi Food. Sin embargo, no se han reportado incidentes al utilizar la app de DiDi Food en esas zonas.  Función no disponible en todas las ciudades. \n ** Las áreas se determinan como conflictivas con base en información de medios internos y externos a DiDi Food.",
+  "SupportFundCTA.title": "Fondo de apoyo para COVID-19",
+  "SupportFundCTA.desc": "Conoce el fondo de apoyo que creó Fundación DiDi en caso de dar positivo a COVID-19. \n Fundación DiDi ha establecido un fondo de ayuda especial de más de $10 millones de dólares que apoyará a Socios Repartidores activos en la plataforma de DiDi Food por hasta 28 días de ganancias. \n El fondo brindará apoyo a Socios Repartidores activos en la plataforma de DiDi Food que sean diagnosticados con COVID-19, que cuenten con un familiar directo que padezca un diagnóstico positivo o que hayan sido puestos en cuarentena por las autoridades o por el médico de cabecera. Por precaución, y con el único fin de proteger a la comunidad, la cuenta del Socio Repartidor se bloqueará temporalmente por 14 o 28 días, dependiendo del caso. \n La cantidad que el fondo aportará dependerá de las ganancias que recibió a través de la plataforma de DiDi Food durante los últimos 14 o 28 días antes de la situación, según sea el caso.",
+  "InsuranceCoverageCTA.title": "Coberturas de Seguro",
+  "InsuranceCoverageCTA.desc": "Los Socios Repartidores realizan sus viajes protegidos y con mayor tranquilidad \n Para DiDi Food, la seguridad de todas las personas que utilizan nuestra app es prioridad. Es por esto que los viajes que los Socios Repartidores realizan para entregar pedidos a través de la app cuentan con coberturas de seguro diseñadas especialmente para las entregas de pedidos. \n Todas las entregas cuentan con coberturas que están activas desde que el Socio Repartidor acepta un pedido a través de la app DiDi Food y hasta 45 minutos después de la entrega del mismo. \n Detalles de las coberturas que te protegen \n Las coberturas aplican únicamente si el Socio Repartidor estaba realizando una entrega de pedido a través de la app DiDi Food y hasta 45 minutos después de la entrega: \n Responsabilidad Civil por Daños a Terceros \n Accidentes Personales \n Asistencia Legal"
 }
