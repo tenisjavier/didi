@@ -10,7 +10,7 @@ import FoodNeighborhoodList from "../../../../components/sections/FoodNeighborho
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const cities = data.allContentfulNeighbourhood.nodes;
+  const cities = data.contentfulNeighbourhood.municipality.neighbourhood;
   const name = data.contentfulNeighbourhood.name;
 
   const foodHeroBgImage = images.filter((image) => {
@@ -76,11 +76,11 @@ export const query = graphql`
       city {
         name
       }
-    }
-    allContentfulNeighbourhood {
-      nodes {
-        name
-        slug
+      municipality {
+        neighbourhood {
+          name
+          slug
+        }
       }
     }
     allContentfulAsset(
