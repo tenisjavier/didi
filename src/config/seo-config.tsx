@@ -140,6 +140,14 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
+    "/didipay/": {
+      title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
+      desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
+    "/didipay-preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes sobre DiDi Pay.",
+      desc: "Revisa nuestras preguntas frecuentes sobre DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",

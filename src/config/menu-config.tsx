@@ -152,6 +152,20 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pay",
       url: "/mx/didipay/",
+      dropMenu: [
+        {
+          text: "DiDi Pay Usuarios",
+          url: "/mx/didipay/",
+        },
+        {
+          text: "DiDi Pay Empresas",
+          url: "/mx/didipay/",
+        },
+        {
+          text: "Preguntas Frecuentes",
+          url: "/mx/didipay-preguntas-frecuentes/",
+        },
+      ],
     },
     {
       text: "DiDi Préstamos",
