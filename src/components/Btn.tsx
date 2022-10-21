@@ -12,6 +12,7 @@ export interface BtnProps {
     | "pax"
     | "fleet"
     | "payment"
+    | "paymentBusiness"
     | "foodBusiness"
     | "foodDelivery"
     | "foodEater"
@@ -42,6 +43,9 @@ const Btn = ({ btnType, btnMode, btnLink, btnText, btnModeSecondary, btnText2, b
   } else if (btnType === "payment") {
     btnLink = btnData.paymentLink;
     btnText = btnText || btnData.paymentText;
+  } else if (btnType === "paymentBusiness") {
+    btnLink = btnData.paymentBusinessLink;
+    btnText = btnText || btnData.paymentBusinessText;
   } else if (btnType === "foodBusiness") {
     btnLink = btnData.foodBusinessLink;
     btnText = btnText || btnData.foodBusinessText;

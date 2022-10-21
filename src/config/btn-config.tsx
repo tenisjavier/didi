@@ -9,6 +9,8 @@ interface SingleBtnInterface {
   fleetText?: string;
   paymentLink?: string;
   paymentText?: string;
+  paymentBusinessLink?: string;
+  paymentBusinessText?: string;
   foodDeliveryLink?: string;
   foodDeliveryText?: string;
   foodBusinessLink?: string;
@@ -149,6 +151,8 @@ const btnLinks: AllBtnInterface = {
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
     paymentText: "Descarga DiDi Pay",
     paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
+    paymentBusinessLink: "#",
+    paymentBusinessText: "Descarga DiDi Pay Negocios"
   },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
