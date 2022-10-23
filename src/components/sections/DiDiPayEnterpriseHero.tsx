@@ -16,7 +16,10 @@ interface DiDiPayEnterpriseHeroProps {
   };
 }
 
-const DiDiPayEnterpriseHero = ({ bgImage, image }: DiDiPayEnterpriseHeroProps) => {
+const DiDiPayEnterpriseHero = ({
+  bgImage,
+  image,
+}: DiDiPayEnterpriseHeroProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
@@ -28,7 +31,7 @@ const DiDiPayEnterpriseHero = ({ bgImage, image }: DiDiPayEnterpriseHeroProps) =
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
+        className="!absolute z-0 h-full w-full md:block brightness-90"
       ></GatsbyImage>
     ),
     ...(image && {
