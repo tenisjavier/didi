@@ -159,7 +159,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Pay Negocios",
-          url: "/mx/didipay/",
+          url: "/mx/didipay-negocios/",
         },
         {
           text: "Preguntas Frecuentes",

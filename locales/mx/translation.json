@@ -1322,31 +1322,13 @@
   "DiDiPayEnterpriseHero.textColor": "white",
   "DiDiPayEnterpriseHero.btnMode": "primary",
   "DiDiPayEnterpriseFeatures.title": "Lleva tu negocio al siguiente nivel",
+  "DiDiPayEnterpriseFeatures.bgColor": "bg-white",
   "DiDiPayEnterpriseFeatures.btnMode": "primary",
   "DiDiPayEnterpriseFeatures.desc": "Comienza a recibir pagos en línea con DiDi Pay: \n - Con el reconocimiento de millones de usuarios DiDi \n - Tus ganancias seguras y disponibles \n - Controls tus pagos en tiempo real",
   "DiDiPayEnterpriseWhy.title": "Fácil, sin trámites complicados",
   "DiDiPayEnterpriseWhy.desc": "Reúne la documentación necesaria, integra DiDi Pay en tu flujo de pago y ¡listo! tendrás acceso a tus transacciones en un click",
   "DiDiPayEnterpriseWhy.btnMode": "primary",
-  "DiDiPayColumns.title": "",
-  "DiDiPayColumns.desc": "",
-  "DiDiPayColumns.bgColor": "bg-orange-primary",
-  "DiDiPayColumns.columns": [
-    {
-      "title": "Desarga la App",
-      "textColor": "gray-primary",
-      "btnType": "payment",
-      "btnMode": "light",
-      "height": "h-40"
-    },
-    {
-      "title": "¿Tienes dudas?",
-      "textColor": "gray-primary",
-      "btnText": "Preguntas Frecuentes",
-      "btnLink": "/mx/didipay-preguntas-frecuentes/",
-      "btnMode": "light",
-      "height": "h-40"
-    }
-  ],
+  "DiDiPayEnterpriseWhy.bgColor": "bg-gray-light",
   "DiDiPayEnterpriseColumns.columns": [
     {
       "title": "Comisiones",

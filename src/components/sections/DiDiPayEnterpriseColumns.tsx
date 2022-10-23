@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faZap } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface DiDiPayEnterpriseColumnsProps {
@@ -14,7 +13,10 @@ interface DiDiPayEnterpriseColumnsProps {
   icons: any[];
 }
 
-const DiDiPayEnterpriseColumns = ({ images, icons }: DiDiPayEnterpriseColumnsProps) => {
+const DiDiPayEnterpriseColumns = ({
+  images,
+  icons,
+}: DiDiPayEnterpriseColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("DiDiPayEnterpriseColumns.bgColor"),
@@ -35,7 +37,13 @@ const DiDiPayEnterpriseColumns = ({ images, icons }: DiDiPayEnterpriseColumnsPro
     });
   } else {
     props.columns.forEach((col, index) => {
-      col.image = "";
+      col.image = (
+        <FontAwesomeIcon
+          icon={icons[index]}
+          size="4x"
+          className="text-orange-primary w-16"
+        />
+      );
     });
   }
   return <ColumnsSection {...props}></ColumnsSection>;

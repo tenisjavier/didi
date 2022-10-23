@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { faMoneyBillTransfer, faCode } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
 import DiDiPayEnterpriseHero from "../../components/sections/DiDiPayEnterpriseHero";
 import DiDiPayEnterpriseWhy from "../../components/sections/DiDiPayEnterpriseWhy";
@@ -9,6 +10,7 @@ import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
 
 const DiDiPayEnterprise = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const icons = [faMoneyBillTransfer, faCode];
   const homeHeroImage = images.filter((image) => {
     return image.title === "mx.DiDiPayEnterpriseHero.image";
   })[0];
@@ -31,9 +33,11 @@ const DiDiPayEnterprise = ({ data }) => {
         bgImage={homeHeroBgImage}
         image={homeHeroImage}
       ></DiDiPayEnterpriseHero>
-      <DiDiPayEnterpriseFeatures image={featuresImage}></DiDiPayEnterpriseFeatures>
+      <DiDiPayEnterpriseFeatures
+        image={featuresImage}
+      ></DiDiPayEnterpriseFeatures>
       <DiDiPayEnterpriseWhy image={whyDiDiImage}></DiDiPayEnterpriseWhy>
-      <DiDiPayEnterpriseColumns></DiDiPayEnterpriseColumns>
+      <DiDiPayEnterpriseColumns icons={icons}></DiDiPayEnterpriseColumns>
       <DiDiPayColumns></DiDiPayColumns>
     </Layout>
   );
