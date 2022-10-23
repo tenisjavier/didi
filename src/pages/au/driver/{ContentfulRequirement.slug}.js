@@ -14,7 +14,7 @@ const Requirement = ({ data }) => {
 
   const title = "Driver Requirements for " + data.contentfulRequirement.name;
   return (
-    <Layout>
+    <Layout title={title}>
       <RequirementHero title={title} bgImage={drvHeroBgImage}></RequirementHero>
       <RequirementRichContent data={data}></RequirementRichContent>
       <DrvCityList data={cities}></DrvCityList>

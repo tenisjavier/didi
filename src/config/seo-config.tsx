@@ -136,9 +136,13 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Fleet - Genera Dinero Rentando tus Autos",
       desc: "DiDi Fleet. Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva con DiDi Fleet.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir o Convertirse en Socio",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
     "/didipay/": {
       title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
