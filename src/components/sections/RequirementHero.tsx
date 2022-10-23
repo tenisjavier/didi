@@ -17,7 +17,7 @@ const RequirementHero = ({ title, bgImage }: RequirementHeroProps) => {
 
   const props: CTAProps = {
     hero: true,
-    title: t("RequirementHero.title"),
+    title: title || t("RequirementHero.title"),
     desc: t("RequirementHero.desc"),
     textColor: t("RequirementHero.textColor"),
     btnMode: t("RequirementHero.btnMode"),

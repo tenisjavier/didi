@@ -639,6 +639,7 @@
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",
+  "RequirementHero.desc": "",
   "RequirementHero.textColor": "white",
   "RequirementHero.btnMode": "light",
   "RequirementsLinks.title": "Driver Requirements per State",
