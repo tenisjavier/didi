@@ -152,7 +152,7 @@ const btnLinks: AllBtnInterface = {
     paymentText: "Descarga DiDi Pay",
     paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
     paymentBusinessLink: "#",
-    paymentBusinessText: "Descarga DiDi Pay Negocios"
+    paymentBusinessText: "Iniciar Sesión",
   },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",

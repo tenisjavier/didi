@@ -39,7 +39,7 @@ const DiDiPayEnterpriseHero = ({
         <GatsbyImage
           image={image.gatsbyImageData}
           alt={image.description}
-          className="!z-10 m-4 w-100"
+          className="!z-10 m-4 w-100 bg-orange-primary"
         ></GatsbyImage>
       ),
       reverse: true,

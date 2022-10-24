@@ -23,9 +23,6 @@ const DiDiPayEnterprise = ({ data }) => {
   const featuresImage = images.filter((image) => {
     return image.title === "mx.FeaturesPayEnterprise.image";
   })[0];
-  const columnsImages = images.filter((image) => {
-    return image.title.indexOf("mx.DiDiPayColumns.image") !== -1;
-  });
 
   return (
     <Layout>
