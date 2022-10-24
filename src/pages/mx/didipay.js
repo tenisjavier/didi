@@ -38,7 +38,7 @@ const DiDiPay = ({ data }) => {
       <DiDiPayWhyDiDi image={whyDiDiImage}></DiDiPayWhyDiDi>
       <DiDiPayFeatures image={featuresImage}></DiDiPayFeatures>
       <DiDiPaySilderSection images={sliderImages}></DiDiPaySilderSection>
-      <DiDiPayGrid images={columnsImages}></DiDiPayGrid>
+      <DiDiPayGrid images={columnsImages.reverse()}></DiDiPayGrid>
       <DiDiPayColumns></DiDiPayColumns>
     </Layout>
   );
