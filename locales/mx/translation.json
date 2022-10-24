@@ -1404,7 +1404,7 @@
       "title": "Desarrolladores",
       "desc": "Consulta nuestras herramientas e información para implementar DiDi Pay en tu negócio. Integración API y SDK disponibles.",
       "btnText": "Ver documentación",
-      "btnLink": "#",
+      "btnLink": "https://didipay.didiglobal.com/developer/docs/payment-solution/index.html?lang=en-us",
       "btnMode": "primary"
     }
   ]
