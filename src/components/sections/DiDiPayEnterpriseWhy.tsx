@@ -27,7 +27,8 @@ const DiDiPayEnterpriseWhy = ({ image }: DiDiPayEnterpriseWhyProps) => {
       ></GatsbyImage>
     ),
     btnMode: t("DiDiPayEnterpriseWhy.btnMode"),
-    btnType: "paymentBusiness",
+    btnLink: t("DiDiPayEnterpriseWhy.btnLink"),
+    btnText: t("DiDiPayEnterpriseWhy.btnText"),
     reverse: false,
   };
   return <CTASection {...props}></CTASection>;

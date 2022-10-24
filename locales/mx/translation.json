@@ -939,6 +939,28 @@
       "height": "h-40"
     }
   ],
+  "DiDiPayBusinessColumns.title": "",
+  "DiDiPayBusinessColumns.desc": "",
+  "DiDiPayBusinessColumns.bgColor": "bg-orange-primary",
+  "DiDiPayBusinessColumns.columns": [
+    {
+      "title": " ",
+      "textColor": "gray-primary",
+      "btnText": "Solicita Informacion",
+      "btnLink": "#",
+      "btnType": "custom",
+      "btnMode": "light",
+      "height": "h-40"
+    },
+    {
+      "title": " ",
+      "textColor": "gray-primary",
+      "btnText": "Preguntas Frecuentes",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light",
+      "height": "h-40"
+    }
+  ],
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
@@ -1352,22 +1374,31 @@
       ]
     }
   ],
-  "DiDiPayEnterpriseHero.title": "DiDi Pay: Haz crecer tu Negocio",
+  "DiDiPayEnterpriseHero.title": "Crece tu negocio",
   "DiDiPayEnterpriseHero.desc": "",
   "DiDiPayEnterpriseHero.textColor": "white",
   "DiDiPayEnterpriseHero.btnMode": "primary",
   "DiDiPayEnterpriseFeatures.title": "Lleva tu negocio al siguiente nivel",
   "DiDiPayEnterpriseFeatures.bgColor": "bg-white",
   "DiDiPayEnterpriseFeatures.btnMode": "primary",
-  "DiDiPayEnterpriseFeatures.desc": "Comienza a recibir pagos en línea con DiDi Pay: \n - Con el reconocimiento de millones de usuarios DiDi \n - Tus ganancias seguras y disponibles \n - Controls tus pagos en tiempo real",
+  "DiDiPayEnterpriseFeatures.btnLink": "#",
+  "DiDiPayEnterpriseFeatures.btnText": "Solicita Información",
+  "DiDiPayEnterpriseFeatures.desc": "Comienza a recibir pagos en línea con DiDi Pay:",
+  "DiDiPayEnterpriseFeatures.bullets": [
+    "Con el reconocimiento de millones de usuarios DiDi",
+    "Tus ganancias seguras y disponibles",
+    "Controls tus pagos en tiempo real"
+  ],
   "DiDiPayEnterpriseWhy.title": "Fácil, sin trámites complicados",
   "DiDiPayEnterpriseWhy.desc": "Reúne la documentación necesaria, integra DiDi Pay en tu flujo de pago y ¡listo! tendrás acceso a tus transacciones en un click",
   "DiDiPayEnterpriseWhy.btnMode": "primary",
+  "DiDiPayEnterpriseWhy.btnLink": "#",
+  "DiDiPayEnterpriseWhy.btnText": "Solicita Información",
   "DiDiPayEnterpriseWhy.bgColor": "bg-gray-light",
   "DiDiPayEnterpriseColumns.columns": [
     {
       "title": "Comisiones",
-      "desc": "Sin comisiones mensuales. Paga solo por cada transacción, sin minimo de vonta. \n 3.7% + MXN$2 (+IVA) \n Por cobro exitoso a una tarjeta"
+      "desc": "Sin comisiones mensuales. Paga solo por cada transacción, sin minimo de venta. \n 3.7% + MXN$2 (+IVA) \n Por cobro exitoso a una tarjeta"
     },
     {
       "title": "Desarrolladores",

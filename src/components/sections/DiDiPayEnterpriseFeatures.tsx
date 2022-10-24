@@ -2,6 +2,7 @@ import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface DiDiPayEnterpriseFeaturesProps {
   image: {
@@ -9,15 +10,19 @@ interface DiDiPayEnterpriseFeaturesProps {
     description: string;
     gatsbyImageData: IGatsbyImageData;
   };
+  icon: IconProp;
 }
 
-const DiDiPayEnterpriseFeatures = ({ image }: DiDiPayEnterpriseFeaturesProps) => {
+const DiDiPayEnterpriseFeatures = ({ image, icon }: DiDiPayEnterpriseFeaturesProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: false,
     title: t("DiDiPayEnterpriseFeatures.title"),
     desc: t("DiDiPayEnterpriseFeatures.desc"),
     textColor: t("DiDiPayEnterpriseFeatures.textColor"),
+    bullets: t("DiDiPayEnterpriseFeatures.bullets", { returnObjects: true }),
+    customBulletIcon: true,
+    icon: icon,
     bgColor: t("DiDiPayEnterpriseFeatures.bgColor"),
     image: (
       <GatsbyImage
@@ -27,7 +32,8 @@ const DiDiPayEnterpriseFeatures = ({ image }: DiDiPayEnterpriseFeaturesProps) =>
       ></GatsbyImage>
     ),
     btnMode: t("DiDiPayEnterpriseFeatures.btnMode"),
-    btnType: "paymentBusiness",
+    btnLink: t("DiDiPayEnterpriseFeatures.btnLink"),
+    btnText: t("DiDiPayEnterpriseFeatures.btnText"),
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;
