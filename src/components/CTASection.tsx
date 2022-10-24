@@ -48,7 +48,7 @@ const CTASection = (props: CTAProps) => {
     btnMode,
     btnArray,
     reverse,
-    btnModeSecondary
+    btnModeSecondary,
   } = props;
 
   let sectionBtn = (
@@ -65,18 +65,30 @@ const CTASection = (props: CTAProps) => {
   if (btnType === "both") {
     sectionBtn = (
       <>
-        <Btn btnType="pax" btnMode={btnMode}></Btn>
+        <Btn
+          btnType="pax"
+          btnMode={btnMode}
+        ></Btn>
         <br></br>
-        <Btn btnType="drv" btnMode={btnMode}></Btn>
+        <Btn
+          btnType="drv"
+          btnMode={btnMode}
+        ></Btn>
       </>
     );
   }
   if (btnType === "bothFood") {
     sectionBtn = (
       <>
-        <Btn btnType="foodEaterOnline" btnModeSecondary={btnModeSecondary}></Btn>
+        <Btn
+          btnType="foodEaterOnline"
+          btnModeSecondary={btnModeSecondary}
+        ></Btn>
         <br></br>
-        <Btn btnType="foodEater" btnMode={btnMode}></Btn>
+        <Btn
+          btnType="foodEater"
+          btnMode={btnMode}
+        ></Btn>
       </>
     );
   }
@@ -107,20 +119,12 @@ const CTASection = (props: CTAProps) => {
     >
       <div
         className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
- ${reverse && "flex-row-reverse"} ${
-          image ? "xl:justify-between" : "xl:justify-start"
-        }`}
+ ${reverse && "flex-row-reverse"} ${image ? "xl:justify-between" : "xl:justify-start"}`}
       >
         {image}
 
-        <div
-          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
-        >
-          {hero ? (
-            <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
-          ) : (
-            <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
-          )}
+        <div className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}>
+          {hero ? <h1 className="text-3xl font-bold md:text-4xl">{title}</h1> : <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>}
           {bullets && (
             <>
               <ul className="mt-12 mb-2 list-none text-left text-xl">
@@ -147,14 +151,20 @@ const CTASection = (props: CTAProps) => {
           )}
           {desc &&
             desc.split("\n").map((str, index) => (
-              <p className="mb-5 text-lg" key={index}>
+              <p
+                className="mb-5 text-lg"
+                key={index}
+              >
                 {str}
               </p>
             ))}
           {list && (
             <div className="grid grid-cols-2 lg:grid-cols-3 text-orange-primary mb-8">
               {list.map((item, index) => (
-                <a href={item.link} key={index}>
+                <a
+                  href={item.link}
+                  key={index}
+                >
                   {item.text}
                 </a>
               ))}

@@ -4,15 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../config/btn-config";
 
 interface SmartBannerProps {
-  type:
-    | "both"
-    | "drv"
-    | "pax"
-    | "fleet"
-    | "payment"
-    | "foodBusiness"
-    | "foodDelivery"
-    | "foodEater";
+  type: "both" | "drv" | "pax" | "fleet" | "payment" | "foodBusiness" | "foodDelivery" | "foodEater";
 }
 
 const SmartBanner = (props: SmartBannerProps) => {
@@ -20,14 +12,7 @@ const SmartBanner = (props: SmartBannerProps) => {
   const { type } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
-  let btnLink,
-    btnText,
-    Logo,
-    bgColor,
-    btnBgColor,
-    btnTextColor,
-    bannerTitle,
-    bannerDesc;
+  let btnLink, btnText, Logo, bgColor, btnBgColor, btnTextColor, bannerTitle, bannerDesc;
 
   if (type === "drv") {
     btnLink = btnData.drvLink;
@@ -75,7 +60,7 @@ const SmartBanner = (props: SmartBannerProps) => {
     bannerTitle = t("SBFoodEater.title");
     bannerDesc = t("SBFoodEater.desc");
   } else if (type === "foodBusiness") {
-    btnLink = btnData.foodEaterLink;
+    btnLink = btnData.foodBusinessLink;
     btnText = "Descargar";
     Logo = <FoodEaterLogo></FoodEaterLogo>;
     bgColor = "bg-white";
@@ -84,7 +69,7 @@ const SmartBanner = (props: SmartBannerProps) => {
     bannerTitle = t("SBFoodBusiness.title");
     bannerDesc = t("SBFoodBusiness.desc");
   } else if (type === "foodDelivery") {
-    btnLink = btnData.foodEaterLink;
+    btnLink = btnData.foodDeliveryLink;
     btnText = "Descargar";
     Logo = <FoodEaterLogo></FoodEaterLogo>;
     bgColor = "bg-white";
@@ -94,22 +79,22 @@ const SmartBanner = (props: SmartBannerProps) => {
     bannerDesc = t("SBFoodDelivery.desc");
   }
 
-  return (
-    <div className={"fixed bottom-0 z-20 h-auto w-full lg:hidden " + bgColor}>
-      <div className="flex h-full items-center justify-between p-2">
-        <span className="flex">{Logo}</span>
-        <span className="ml-2">
-          <p className="font-bold leading-3">{bannerTitle}</p>
-          <p className="leading-3">{bannerDesc}</p>
-        </span>
-        <div className={"btn-primary ml-3 px-3 pt-2 " + btnBgColor}>
-          <a href={btnLink} className={btnTextColor}>
-            {btnText}
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+  // return (
+  //   <div className={"fixed bottom-0 z-20 h-auto w-full lg:hidden " + bgColor}>
+  //     <div className="flex h-full items-center justify-between p-2">
+  //       <span className="flex">{Logo}</span>
+  //       <span className="ml-2">
+  //         <p className="font-bold leading-3">{bannerTitle}</p>
+  //         <p className="leading-3">{bannerDesc}</p>
+  //       </span>
+  //       <div className={"btn-primary ml-3 px-3 pt-2 " + btnBgColor}>
+  //         <a href={btnLink} className={btnTextColor}>
+  //           {btnText}
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 };
 const PaxLogo = () => {
   return (
@@ -174,5 +159,21 @@ const FoodEaterLogo = () => {
     </div>
   );
 };
+
+/*const FoodBusinessLogo = () => {
+  return (
+    <div className="p-3">
+      <StaticImage src="../images/didi-food-business-logo.png" alt="didi business logo" className="" width={50} />
+    </div>
+  );
+};*/
+
+/*const FoodDeliveryLogo = () => {
+  return (
+    <div className="p-3">
+      <StaticImage src="../images/didi-food-delivery-logo.png" alt="didi delivery logo" className="" width={50} />
+    </div>
+  );
+};*/
 
 export default SmartBanner;
