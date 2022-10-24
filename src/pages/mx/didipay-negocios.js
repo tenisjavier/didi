@@ -23,7 +23,7 @@ const DiDiPayEnterprise = ({ data }) => {
   const featuresImage = images.filter((image) => {
     return image.title === "mx.FeaturesPayEnterprise.image";
   })[0];
-
+  //
   return (
     <Layout>
       <DiDiPayEnterpriseHero
