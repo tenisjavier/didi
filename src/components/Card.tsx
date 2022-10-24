@@ -48,15 +48,12 @@ const Card = (props: CardProps) => {
       <div
         className={`flex ${height} flex-col items-center justify-between px-6 py-4 text-center`}
       >
-        {title && desc && (
+
         <div className={`mb-4 ${insideHeight} overflow-hidden`}>
-          <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
+          {title && (<h4 className={`mb-4 text-xl font-bold `}>{title}</h4>)}
           <p className={"text-lg"}></p>
-          <Truncate lines={8} ellipsis={<span>...</span>}>
-            {desc}
-          </Truncate>
+          {desc && (<Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>)}
         </div>
-        )}
         <div className="flex justify-center flex-col">
           <Btn
             btnType={btnType}

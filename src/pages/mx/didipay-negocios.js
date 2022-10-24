@@ -1,12 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { faMoneyBillTransfer, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faMoneyBillTransfer, faCode, faWallet } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
 import DiDiPayEnterpriseHero from "../../components/sections/DiDiPayEnterpriseHero";
 import DiDiPayEnterpriseWhy from "../../components/sections/DiDiPayEnterpriseWhy";
 import DiDiPayEnterpriseFeatures from "../../components/sections/DiDiPayEnterpriseFeatures";
 import DiDiPayEnterpriseColumns from "../../components/sections/DiDiPayEnterpriseColumns";
-import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
+import DiDiPayBusinessColumns from "../../components/sections/DiDiPayBusinessColumns";
 
 const DiDiPayEnterprise = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -32,10 +32,11 @@ const DiDiPayEnterprise = ({ data }) => {
       ></DiDiPayEnterpriseHero>
       <DiDiPayEnterpriseFeatures
         image={featuresImage}
+        icon={faWallet}
       ></DiDiPayEnterpriseFeatures>
       <DiDiPayEnterpriseWhy image={whyDiDiImage}></DiDiPayEnterpriseWhy>
       <DiDiPayEnterpriseColumns icons={icons}></DiDiPayEnterpriseColumns>
-      <DiDiPayColumns></DiDiPayColumns>
+      <DiDiPayBusinessColumns></DiDiPayBusinessColumns>
     </Layout>
   );
 };

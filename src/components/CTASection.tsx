@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import Btn, { BtnProps } from "./Btn";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -22,6 +23,7 @@ export interface CTAProps extends BtnProps {
     link: string;
   }[];
   customBulletIcon?: boolean;
+  icon?: IconProp;
   btnArray?: {
     link: string;
     text: string;
@@ -42,6 +44,7 @@ const CTASection = (props: CTAProps) => {
     bullets,
     list,
     customBulletIcon,
+    icon,
     btnType,
     btnText,
     btnLink,
@@ -138,7 +141,13 @@ const CTASection = (props: CTAProps) => {
                             className=" mr-4 text-orange-primary w-6"
                             size="sm"
                           />
-                        ) : null}
+                        ) : icon && (
+                          <FontAwesomeIcon
+                            icon={icon}
+                            className=" mr-4 text-orange-primary w-6"
+                            size="sm"
+                          />)
+                        }
                         {item}
                       </li>
                       <br></br>
