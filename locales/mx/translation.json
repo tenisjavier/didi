@@ -34,7 +34,7 @@
   "SafetyPaxImgHero.desc": "En DiDi no queremos decirte que ”tu seguridad es nuestra prioridad”. En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
   "SafetyPaxImgHero.textColor": "white",
   "SafetyPaxImgHero.bgColor": "bg-blue-primary",
-  "DrvCTA.title": "Maneja con DiDi",
+  "DrvCTA.title": "Maneja con DiDi Conductor",
   "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bullets": [
     "Comisiones Bajas",
@@ -242,10 +242,43 @@
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "Maneja con DiDi",
+  "DrvHero.title": "Maneja con DiDi Conductor",
   "DrvHero.desc": "Elige tus horarios y obtén ganancias garantizadas",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
+  "DrvBenefits.title": "Razones para manejar con DiDi Conductor",
+  "DrvBenefits.bgColor": "bg-white",
+  "DrvBenefits.columns": [
+    {
+      "title": "Ganancias por distancia y tiempo",
+      "desc": "Con DiDi ganas por kilómetro y por minuto recorridos",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contamos con soporte por Chat en vivo y por teléfono",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Kit de seguridad.",
+      "desc": "Conduce tranquilo con las herramientas de seguridad. ",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Logra tus metas de ganancias",
+      "desc": "Descubre nuestro asistente de ganancias. Recibe tus ganancias diarias con DiDi Pay.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+
+      "width": "w-64"
+    }
+  ],
   "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
   "DrvWhyDiDi.bullets": [
     "Comparte tu viaje.",
@@ -267,10 +300,12 @@
   "ClubDiDiCTA.btnLink": "/conductor/clubdidi",
   "ClubDiDiCTA.textColor": "white",
   "WomenDiDiCTA.title": "Mujeres en DiDi",
+  "WomenDiDiCTA.bgColor": "bg-blue-primary",
+  "WomenDiDiCTA.textColor": "white",
   "WomenDiDiCTA.desc": "Conoce los programas de apoyo a conductoras:",
   "WomenDiDiCTA.btnText": "Conoce más",
-  "WomenDiDiCTA.btnLink": "/conductor/mujeres-en-didi",
-  "WomenDiDiCTA.btnMode": "primary",
+  "WomenDiDiCTA.btnLink": "/conductor/mujeres-en-didi/",
+  "WomenDiDiCTA.btnMode": "light",
   "WomenDiDiCTA.bullets": false,
   "WomenDiDiCTA.reverse": true,
   "DrvVideoGrid.bgColor": "bg-blue-primary",
@@ -306,8 +341,8 @@
   "Requirements.title": "Requerimientos para ser Conductor",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "DrvBanner.title": "Tenemos expertos para ayudarte a completar tu registro y responder a cualquier duda que tengas",
-  "DrvBanner.desc": "Conoce todo sobre DiDi.",
+  "DrvBanner.title": "Completa tu proceso de registro online",
+  "DrvBanner.desc": "Sube los documentos y cuando todo esté aprobado estarás listo para conectarte a la app de movilidad más grande del mundo.",
   "DrvBanner.bgColor": "bg-orange-primary",
   "DrvBanner.textColor": "white",
   "DrvBanner.btnMode": "light",
@@ -387,7 +422,7 @@
   "KnowMoreBanner.desc": "Seguro te ayuda revisar las preguntas más frecuentes de nuestra comunidad",
   "KnowMoreBanner.bgColor": "bg-orange-primary",
   "KnowMoreBanner.textColor": "white",
-  "KnowMoreBanner.btnText": "Clic aquí",
+  "KnowMoreBanner.btnText": "Ir a Centro de Ayuda",
   "KnowMoreBanner.btnLink": "/mx/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
   "AboutHero.title": "Somos la app de movilidad #1 en el mundo.",
