@@ -31,7 +31,7 @@ const DiDiPayEnterpriseHero = ({
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block brightness-90"
+        className="!absolute z-0 h-full w-full md:block brightness-75"
       ></GatsbyImage>
     ),
     ...(image && {
