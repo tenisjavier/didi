@@ -949,7 +949,7 @@ const getMetaByPath = (
   path: string
 ): SEOMetaItemInterface => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/newsroom\/(.+))|(\/centro-de-ayuda\/(.+))|(\/help-center\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/newsroom\/(.+))|(\/centro-de-ayuda\/(.+))|(\/help-center\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/conductor\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
