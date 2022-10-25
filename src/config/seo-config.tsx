@@ -148,6 +148,18 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Requisitos Fiscales para Conductores de DiDi en México",
       desc: "Requisitos Fiscales para Conductores de DiDi México. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
+    "/conductor/calcula-tus-ganancias/": {
+      title: "¿Cuánto dinero pueden ganar los conductores a través de DiDi?",
+      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi México. Considerando retenciones de impuestos como ISR e IVA",
+    },
+    "/clubdidi/": {
+      title: "Club DiDi: La comunidad que te da beneficios exclusivos",
+      desc: "Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",
+    },
+    "/conductor/mujeres-en-didi/": {
+      title: "Mujeres en DiDi",
+      desc: "Mujeres en DiDi. Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",
+    },
     "/didipay/": {
       title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
       desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
@@ -247,6 +259,14 @@ const seoMeta: AllSEOMetaInterface = {
     "/seguridad/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/seguridad/conductores/": {
+      title: "Seguridad para Conductores en DiDi",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que puedas manejar con DiDi de manera segura y confiable.",
+    },
+    "/seguridad/pasajeros/": {
+      title: "Seguridad para Pasajeros en DiDi",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que puedas vivir la experiencia de viajar en DiDi de manera segura y confiable.",
     },
     "/centro-de-ayuda/": {
       title: "Centro de Ayuda para Socios Conductores y Pasajeros",
