@@ -1,15 +1,14 @@
 // 404 page will redirect to the home page
-import React, { useEffect } from "react";
-import { navigate } from "gatsby";
+import React from "react";
+import { Link } from "gatsby";
 
 export default function NotFoundPage() {
-  useEffect(() => {
-    navigate(`/?redirect=${window.document.referrer}`); // redirecting to home page
-  }, []);
-
   return (
     <div>
-      <h1>(404) NotFound Page</h1>
+      <h1>
+        Page Not Found. Visit our Home Page{" "}
+        <Link to="https://web.didiglobal.com"></Link>
+      </h1>
     </div>
   );
 }
