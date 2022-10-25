@@ -204,7 +204,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Pide Comida a Domicilio con DiDi Food Mexico",
       desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas ciudades... y en minutos",
     },
-    "/food/neighborhood/": {
+    "/food/colonia/": {
       title: "Encuentra Comida a Domicilio en tu Colonia con DiDi Food Mexico",
       desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas colonias... y en minutos",
     },
