@@ -144,6 +144,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Requisitos para Conducir o Convertirse en Socio",
       desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
+    "/conductor/requisitos-fiscales/": {
+      title: "Requisitos Fiscales para Conductores de DiDi en México",
+      desc: "Requisitos Fiscales para Conductores de DiDi México. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
     "/didipay/": {
       title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
       desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
@@ -179,6 +183,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+    },
+    "/newsroom/": {
+      title: "DiDi Noticias - Aquí te contamos de novedades sobre DiDi",
+      desc: "DiDi Noticias en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
     "/food/": {
       title: "Pide comida a través de DiDi Food",
@@ -921,7 +929,7 @@ const getMetaByPath = (
   path: string
 ): SEOMetaItemInterface => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/newsroom\/(.+))|(\/centro-de-ayuda\/(.+))|(\/help-center\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
