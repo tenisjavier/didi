@@ -11,7 +11,7 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
     title: title || t("PartnersGrid.title"),
     bgColor: bgColor || t("PartnersGrid.bgColor"),
     textColor: textColor || t("PartnersGrid.textColor"),
-    sectionID: sectionID || t("PartnersGrid.sectionId")
+    sectionID: sectionID || t("PartnersGrid.sectionId"),
   };
 
   props.columns = data.map((partner) => {
@@ -27,8 +27,6 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
           <GatsbyImage
             image={image}
             alt={partner.logo.description}
-            width={700}
-            height={700}
             className="z-10 m-4"
           ></GatsbyImage>
         </Link>
