@@ -18,7 +18,10 @@ const DiDiMas = ({ data }) => {
     return (
       partner.name === "MiNave" ||
       partner.name === "Kovi" ||
-      partner.name === "OneCarNow"
+      partner.name === "OneCarNow" ||
+      partner.name === "Privauto" ||
+      partner.name === "Autos a Tiempo" ||
+      partner.name === "Procapa Arrendamientos"
     );
   });
   const partnerCombustible = partners.filter((partner) => {
