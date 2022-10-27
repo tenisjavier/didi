@@ -78,23 +78,23 @@ const SEO = ({ title, desc }) => {
   }
 
   // POPUP LOGIC
-  const windowGlobal = typeof window !== "undefined" && window;
-  const storageType = localStorage;
-  const consentName = "didi_consent";
+  // const windowGlobal = typeof window !== "undefined" && window;
+  // const storageType = localStorage;
+  // const consentName = "didi_consent";
 
-  const shouldShowPopup = () => !storageType.getItem(consentName);
-  const [isVisible, setIsVisible] = useState(shouldShowPopup);
-  const saveConsent = (value) => storageType.setItem(consentName, value);
+  // const shouldShowPopup = () => !storageType.getItem(consentName);
+  // const [isVisible, setIsVisible] = useState(shouldShowPopup);
+  // const saveConsent = (value) => storageType.setItem(consentName, value);
 
-  const handleAcceptConsent = () => {
-    saveConsent("true");
-    setIsVisible(false);
-  };
+  // const handleAcceptConsent = () => {
+  //   saveConsent("true");
+  //   setIsVisible(false);
+  // };
 
-  const handleDenyConsent = () => {
-    saveConsent("false");
-    setIsVisible(false);
-  };
+  // const handleDenyConsent = () => {
+  //   saveConsent("false");
+  //   setIsVisible(false);
+  // };
 
   return (
     <>
@@ -118,16 +118,15 @@ const SEO = ({ title, desc }) => {
         {
           // activate tracking pixel when DOM is mounted
           useEffect(() => {
-            if (storageType.getItem(consentName) === "false") return;
             insertBtnParams();
-          }, [isVisible])
+          }, [])
         }
       </Helmet>
-      <ConsentPopup
+      {/* <ConsentPopup
         isVisible={false}
         handleAccept={handleAcceptConsent}
         handleDeny={handleDenyConsent}
-      ></ConsentPopup>
+      ></ConsentPopup> */}
     </>
   );
 };
