@@ -11,7 +11,6 @@ import PlacesPrimaryColumn from "../../components/sections/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
-  console.log(data);
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images[0];
   const requirements = data.allContentfulRequirement.nodes;
@@ -21,7 +20,7 @@ const DrvCity = ({ data }) => {
   return (
     <Layout>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>
-      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
+      {drvHeroBgImage && <DrvHero bgImage={drvHeroBgImage}></DrvHero>}
       <SilderSection
         data={product}
         title={`Nuestros Servicios en ${name}`}
@@ -42,7 +41,12 @@ const DrvCity = ({ data }) => {
 export default DrvCity;
 
 export const query = graphql`
-  query ($id: String, $language: String!, $countryCode: String, $componentImage: String) {
+  query (
+    $id: String
+    $language: String!
+    $countryCode: String
+    $componentImage: String
+  ) {
     locales: allLocale(
       filter: { ns: { in: ["translation"] }, language: { eq: $language } }
     ) {
