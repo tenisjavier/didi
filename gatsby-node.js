@@ -1,3 +1,4 @@
+const driverInCityRoutes = require("./routes/driver-in-city-routes");
 const placeRoutes = require("./routes/places-routes");
 const placeInCityRoutes = require("./routes/places-in-city-routes");
 const directionsRoutes = require("./routes/directions-routes");
@@ -12,6 +13,7 @@ exports.createPages = async ({
   actions: { createPage },
   reporter,
 }) => {
+  await driverInCityRoutes.init(graphql, createPage);
   await placeRoutes.init(graphql, createPage);
   await placeInCityRoutes.init(graphql, createPage);
   await directionsRoutes.init(graphql, createPage);
