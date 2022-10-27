@@ -78,7 +78,7 @@ export const query = graphql`
         id: { ne: $id }
       }
       sort: { fields: content___references___createdAt, order: DESC }
-      limit: 10
+      limit: 20
     ) {
       nodes {
         title

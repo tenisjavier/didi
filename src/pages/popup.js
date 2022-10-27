@@ -1,19 +1,42 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-const popup = () => {
-  //   const storageType = localStorage;
-  //   const consentName = "didi_consent";
+const Popup = () => {
+  const windowGlobal = typeof window !== "undefined" && window;
+  const storageType = windowGlobal.localStorage;
+  const consentName = "didi_consent";
 
-  //   const shouldShowPopup = () => !storageType.getItem(consentName);
-  //   const saveConsent = () => storageType.setItem(consentName, true);
+  const shouldShowPopup = () => !storageType.getItem(consentName);
+  const [isVisible, setIsVisible] = useState(shouldShowPopup);
+  const saveConsent = () => storageType.setItem(consentName, true);
 
-  //   useEffect(() => {
-  // if(!shouldShowPopup) return;
-  // const consent = confirm('Cookies?')
-  // if(consent) saveConsent()
-  //   }, [])
-
-  return <div>popup</div>;
+  useEffect(() => {}, []);
+  return (
+    <div>
+      <div
+        className={`w-full h-40 bg-white flex justify-between flex-wrap ${
+          !isVisible && "hidden"
+        }`}
+      >
+        <div>
+          <h5 className="text-2xl">Desea Tener Cookies</h5>
+        </div>
+        <div>
+          <button
+            className="btn-primary"
+            onClick={() => {
+              saveConsent();
+              setIsVisible(false);
+            }}
+          >
+            Accept
+          </button>
+          <button className="btn-light" onClick={() => setIsVisible(false)}>
+            Deny
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default popup;
+export default Popup;
