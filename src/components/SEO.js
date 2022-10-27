@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import ConsentPopup from "../components/ConsentPopup";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "gatsby-plugin-react-i18next";
@@ -76,31 +77,58 @@ const SEO = ({ title, desc }) => {
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
 
+  // POPUP LOGIC
+  const windowGlobal = typeof window !== "undefined" && window;
+  const storageType = localStorage;
+  const consentName = "didi_consent";
+
+  const shouldShowPopup = () => !storageType.getItem(consentName);
+  const [isVisible, setIsVisible] = useState(shouldShowPopup);
+  const saveConsent = (value) => storageType.setItem(consentName, value);
+
+  const handleAcceptConsent = () => {
+    saveConsent("true");
+    setIsVisible(false);
+  };
+
+  const handleDenyConsent = () => {
+    saveConsent("false");
+    setIsVisible(false);
+  };
+
   return (
-    <Helmet htmlAttributes={{ lang: lang }} title={title}>
-      <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
-      <meta name="description" content={desc} />
-      <link rel="canonical" href={origin + pathname} />
-      {countries.map((c, index) => {
-        const placeRegex = /(\/[A-Za-z]{2}\/$)/;
+    <>
+      <Helmet htmlAttributes={{ lang: lang }} title={title}>
+        <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
+        <meta name="description" content={desc} />
+        <link rel="canonical" href={origin + pathname} />
+        {countries.map((c, index) => {
+          const placeRegex = /(\/[A-Za-z]{2}\/$)/;
 
-        return placeRegex.test(pathname) ? (
-          <link
-            key={index}
-            rel="alternate"
-            href={origin + "/" + c.code + "/"}
-            hreflang={`${c.languageCode}-${c.code}`}
-          />
-        ) : null;
-      })}
+          return placeRegex.test(pathname) ? (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          ) : null;
+        })}
 
-      {
-        // activate tracking pixel when DOM is mounted
-        useEffect(() => {
-          insertBtnParams();
-        }, [])
-      }
-    </Helmet>
+        {
+          // activate tracking pixel when DOM is mounted
+          useEffect(() => {
+            if (storageType.getItem(consentName) === "false") return;
+            insertBtnParams();
+          }, [isVisible])
+        }
+      </Helmet>
+      <ConsentPopup
+        isVisible={false}
+        handleAccept={handleAcceptConsent}
+        handleDeny={handleDenyConsent}
+      ></ConsentPopup>
+    </>
   );
 };
 
