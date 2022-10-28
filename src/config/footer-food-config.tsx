@@ -63,10 +63,10 @@ const footerLinksFood: AllFooterInterface = {
   ],
   pe: [
     { text: "Home", link: "/pe/food/" },
-    { text: "Tienda", link: "/pe/food/store/" },
-    { text: "Socio repartidor", link: "/pe/food/delivery/" },
-    { text: "Acerca", link: "/pe/food/about/" },
-    { text: "Contacto", link: "/pe/food/contact/" },
+    { text: "Tienda", link: "/pe/food/restaurantes/" },
+    { text: "Socio repartidor", link: "/pe/food/repartidores/" },
+    { text: "Acerca", link: "/pe/food/acerca-didi-food/" },
+    { text: "Contacto", link: "/pe/food/contacto/" },
   ]
 };
 

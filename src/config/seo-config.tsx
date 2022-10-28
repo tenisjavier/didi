@@ -427,6 +427,26 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Términos y Condiciones y Políticas de Privacidad.",
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
+    "/food/": {
+      title: "Pide comida a domicilio",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/restaurantes/": {
+      title:"Inscribe tu restaurante en DiDi Food",
+      desc:"Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/repartidores/": {
+      title:"Inscribete como Repartidor y gana dinero",
+      desc:"Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/acerca-didi-food/": {
+      title:"La app de comida más confiable",
+      desc:"Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/contacto/": {
+      title:"Contacta nuestro servicio al cliente",
+      desc:"Si eres repartidor, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
+    }
   },
   co: {
     "/": {

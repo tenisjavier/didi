@@ -153,19 +153,19 @@ const menuLinksFood: AllMenuInterface = {
   pe: [
     {
       text: "Tienda",
-      url: "/pe/food/store/",
+      url: "/pe/food/restaurantes/",
     },
     {
       text: "Socio repartidor",
-      url: "/pe/food/delivery/",
+      url: "/pe/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/pe/food/about/",
+      url: "/pe/food/acerca-didi-food/",
     },
     {
       text: "Contacto",
-      url: "/pe/food/contact/",
+      url: "/pe/food/contacto/",
     },
   ]
 };
