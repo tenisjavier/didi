@@ -411,6 +411,7 @@
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
   "HelpCenterFAQDrv.title": "FAQ Drivers",
+  "HelpCenterFAQDrv.desc": "",
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "FAQ Riders",
