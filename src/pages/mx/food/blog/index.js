@@ -42,7 +42,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: { category: { eq: "food" }, country: { code: { eq: "mx" } } }
-      sort: { fields: content___references___updatedAt, order: DESC }
+      sort: { fields: updatedAt, order: DESC }
     ) {
       nodes {
         title

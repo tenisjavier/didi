@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ConsentPopup from "../components/ConsentPopup";
+import gtmEvent from "../config/gtm";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "gatsby-plugin-react-i18next";
@@ -79,20 +80,24 @@ const SEO = ({ title, desc }) => {
 
   // POPUP LOGIC
   // const windowGlobal = typeof window !== "undefined" && window;
-  // const storageType = localStorage;
   // const consentName = "didi_consent";
-
-  // const shouldShowPopup = () => !storageType.getItem(consentName);
+  // let shouldShowPopup = () =>
+  //   !localStorage.getItem(consentName) && country.code === "nz";
+  // if (shouldShowPopup)
+  //   shouldShowPopup = () => !sessionStorage.getItem(consentName);
   // const [isVisible, setIsVisible] = useState(shouldShowPopup);
-  // const saveConsent = (value) => storageType.setItem(consentName, value);
+  // const saveConsent = (value, storageType) => {
+  //   storageType.setItem(consentName, value);
+  // };
 
   // const handleAcceptConsent = () => {
-  //   saveConsent("true");
+  //   saveConsent(country.code + "_true", localStorage);
+  //   gtmEvent("Accept Consent");
   //   setIsVisible(false);
   // };
 
   // const handleDenyConsent = () => {
-  //   saveConsent("false");
+  //   saveConsent(country.code + "_false", sessionStorage);
   //   setIsVisible(false);
   // };
 
@@ -123,7 +128,7 @@ const SEO = ({ title, desc }) => {
         }
       </Helmet>
       {/* <ConsentPopup
-        isVisible={false}
+        isVisible={isVisible}
         handleAccept={handleAcceptConsent}
         handleDeny={handleDenyConsent}
       ></ConsentPopup> */}

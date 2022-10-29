@@ -16,15 +16,16 @@ const DrvCity = ({ data }) => {
   const requirements = data.allContentfulRequirement.nodes;
   const places = data.allContentfulPlace.nodes.slice(0, 3);
   const cities = data.allContentfulCity.nodes;
-
   return (
     <Layout>
       <DrvCityHero data={data.contentfulCity}></DrvCityHero>
       {drvHeroBgImage && <DrvHero bgImage={drvHeroBgImage}></DrvHero>}
-      <SilderSection
-        data={product}
-        title={`Nuestros Servicios en ${name}`}
-      ></SilderSection>
+      {product && (
+        <SilderSection
+          data={product}
+          title={`Nuestros Servicios en ${name}`}
+        ></SilderSection>
+      )}
       <Requirements data={requirements}></Requirements>
       {places.length ? (
         <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
