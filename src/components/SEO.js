@@ -44,7 +44,7 @@ const SEO = ({ title, desc }) => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const origin = "https://web.didiglobal.com";
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   let country = "";
   let countryName = "";
 
@@ -79,27 +79,33 @@ const SEO = ({ title, desc }) => {
   }
 
   // POPUP LOGIC
-  // const windowGlobal = typeof window !== "undefined" && window;
-  // const consentName = "didi_consent";
-  // let shouldShowPopup = () =>
-  //   !localStorage.getItem(consentName) && country.code === "nz";
-  // if (shouldShowPopup)
-  //   shouldShowPopup = () => !sessionStorage.getItem(consentName);
-  // const [isVisible, setIsVisible] = useState(shouldShowPopup);
-  // const saveConsent = (value, storageType) => {
-  //   storageType.setItem(consentName, value);
-  // };
+  const isBrowser = typeof window !== "undefined";
+  const consentName = country.code + "_didi_consent";
 
-  // const handleAcceptConsent = () => {
-  //   saveConsent(country.code + "_true", localStorage);
-  //   gtmEvent("Accept Consent");
-  //   setIsVisible(false);
-  // };
+  let shouldShowPopup = () => {
+    if (!isBrowser) return false;
+    return (
+      !window.localStorage.getItem(consentName) &&
+      ["nz", "au"].includes(country.code) &&
+      !window.sessionStorage.getItem(consentName)
+    );
+  };
+  const [isVisible, setIsVisible] = useState(shouldShowPopup());
 
-  // const handleDenyConsent = () => {
-  //   saveConsent(country.code + "_false", sessionStorage);
-  //   setIsVisible(false);
-  // };
+  const saveConsent = (value, storageType) => {
+    storageType.setItem(consentName, value);
+  };
+
+  const handleAcceptConsent = () => {
+    saveConsent("true", window.localStorage);
+    gtmEvent(countryCode + "_accept_consent");
+    setIsVisible(false);
+  };
+
+  const handleDenyConsent = () => {
+    saveConsent("false", window.sessionStorage);
+    setIsVisible(false);
+  };
 
   return (
     <>
@@ -127,11 +133,13 @@ const SEO = ({ title, desc }) => {
           }, [])
         }
       </Helmet>
-      {/* <ConsentPopup
-        isVisible={isVisible}
-        handleAccept={handleAcceptConsent}
-        handleDeny={handleDenyConsent}
-      ></ConsentPopup> */}
+      {search.includes("consent=true") && isBrowser && (
+        <ConsentPopup
+          isVisible={isVisible}
+          handleAccept={handleAcceptConsent}
+          handleDeny={handleDenyConsent}
+        ></ConsentPopup>
+      )}
     </>
   );
 };

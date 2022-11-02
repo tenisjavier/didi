@@ -13,30 +13,33 @@ const ConsentPopup = ({
 }: ConsentPopupProps) => {
   return (
     <section
-      className={`w-full h-40 fixed z-30 items-center bottom-0 bg-white flex justify-between flex-wrap ${
+      className={`w-full px-8 py-4 fixed z-30 bg-gray-primary opacity-90 text-white items-center bottom-0 flex justify-between flex-wrap ${
         !isVisible && "hidden"
       }`}
     >
       <div>
-        <p className="text-xl text-center">
+        <p className="text-xl text-left">
           For best online experience please click "Accept All" to allow us and
           our vendors to set cookies and similar technologies on your device.
           Our optional “Analytics” and “Advertising” cookies help us develop our
           services and deliver tailored content. For more choices, please click
           “Cookie settings”. To find out more, please see our{" "}
-          <a href="https://privacycenter.didiglobal.com/GLOBAL/privacy-notice/ddfcd0c7df5156972c555177501ef5fd/GLOBAL">
+          <a
+            href="https://privacycenter.didiglobal.com/GLOBAL/privacy-notice/ddfcd0c7df5156972c555177501ef5fd/GLOBAL"
+            className="text-orange-primary underline"
+          >
             Cookie Notice
           </a>{" "}
         </p>
       </div>
-      <div className="justify-center items-center">
+      <div className="text-right w-full">
         <button
           className="btn-primary mx-2"
           onClick={() => {
             handleAccept();
           }}
         >
-          Accept
+          Accept All
         </button>
         <button className="btn-light mx-2" onClick={() => handleDeny(false)}>
           Deny
