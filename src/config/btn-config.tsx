@@ -113,7 +113,7 @@ const btnLinks: AllBtnInterface = {
   cr: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Registrate como Conductor",
+    drvText: "Registrate como Socio Conductor",
     paxText: "Descargá DiDi Pasajero",
     fleetText: "Registrate en DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
