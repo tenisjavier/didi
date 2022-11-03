@@ -19,7 +19,7 @@ const Pasajero = ({ data }) => {
       <PaxColumns></PaxColumns>
       <SilderSection
         data={products}
-        title="Hay un DiDi Para ti"
+        title="Hay un DiDi para vos"
       ></SilderSection>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
