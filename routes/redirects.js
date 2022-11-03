@@ -4,6 +4,7 @@ const redirectsInit = async (graphql, createRedirect) => {
   createRedirect({
     fromPath: `/test1`,
     toPath: `/tes2`,
+    isPermanent: true,
   });
 };
 
