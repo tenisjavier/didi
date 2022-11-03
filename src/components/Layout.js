@@ -14,8 +14,8 @@ const Layout = ({ sb = true, title, desc, children }) => {
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
   if (pathname.includes("didipay")) smartBannerType = "payment";
   if (pathname.includes("food")) smartBannerType = "foodEater";
-  if (pathname.includes("food/store")) smartBannerType = "foodBusiness";
-  if (pathname.includes("food/delivery")) smartBannerType = "foodDelivery";
+  if (pathname.includes("food/restaurantes")) smartBannerType = "foodBusiness";
+  if (pathname.includes("food/repartidores")) smartBannerType = "foodDelivery";
   if (pathname.includes("pasajero")) smartBannerType = "pax";
   return (
     <>
