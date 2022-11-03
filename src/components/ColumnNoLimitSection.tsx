@@ -20,10 +20,10 @@ const ColumnsSection = ({
 }: ColumnsSectionProps) => {
   return (
     <section id={sectionID} className={`${bgColor} text-${textColor} py-12`}>
-      <div className="container mx-auto flex  flex-col flex-wrap justify-center">
+      <div className="container mx-auto flex flex-col flex-wrap justify-center">
         {title && title.split("\n").map((str) => <h2 className="text-center text-3xl">{str}</h2>)}
         {desc && desc.split("\n").map((str) => <p className="text-center">{str}</p>)}
-        <div className={`mt-10 flex flex-wrap justify-around md:flex-nowrap`}>
+        <div className={`mt-10 w-full grid grid-cols-3 justify-around md:flex-nowrap`}>
           {columns.map((col, index) => {
             return <CardNoLimit {...col} key={index} index={index}></CardNoLimit>;
           })}

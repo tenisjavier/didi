@@ -47,7 +47,7 @@ const Accordion = ({ title, content, bgColor, textColor }: Accordion) => {
         style={{ maxHeight: height }}
         ref={content1}
       >
-        {content && content.split("\n").map((str) => <p>{str}</p>)}
+        {content && content.toString().split("\n").map((str) => <p>{str}</p>)}
       </div>
     </>
   );

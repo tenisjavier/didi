@@ -25,6 +25,7 @@ const SEO = ({ title, desc }) => {
               "eg"
               "nz"
               "mx"
+              "ru"
             ]
           }
         }

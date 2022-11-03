@@ -4,13 +4,13 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUserShield,
-  faDollarSign,
+  faFastForward,
+  faLock,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface WhyDiDiColumnsProps {
+interface WhyTaxiDiDiColumnsProps {
   images: {
     title: string;
     description: string;
@@ -19,13 +19,12 @@ interface WhyDiDiColumnsProps {
   icons: any[];
 }
 
-const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
+const WhyTaxiDiDiColumns = ({ images, icons }: WhyTaxiDiDiColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    title: t("WhyDiDiColumns.title"),
-    bgColor: t("WhyDiDiColumns.bgColor"),
-    textColor: t("WhyDiDiColumns.textColor"),
-    columns: t("WhyDiDiColumns.columns", { returnObjects: true }),
+    bgColor: t("WhyTaxiDiDiColumns.bgColor"),
+    textColor: t("WhyTaxiDiDiColumns.textColor"),
+    columns: t("WhyTaxiDiDiColumns.columns", { returnObjects: true }),
   };
   if (images) {
     props.columns.forEach((col, index) => {
@@ -43,15 +42,15 @@ const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
       col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
     });
   } else {
-    props.columns[0].image = <FontAwesomeIcon icon={faUserShield} size="3x" />;
+    props.columns[0].image = <FontAwesomeIcon className="text-orange-primary" icon={faFastForward} size="3x" />;
 
-    props.columns[1].image = <FontAwesomeIcon icon={faDollarSign} size="3x" />;
+    props.columns[1].image = <FontAwesomeIcon className="text-orange-primary" icon={faLock} size="3x" />;
 
-    props.columns[2].image = <FontAwesomeIcon icon={faClock} size="3x" />;
+    props.columns[2].image = <FontAwesomeIcon className="text-orange-primary" icon={faClock} size="3x" />;
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
 
-export default WhyDiDiColumns;
+export default WhyTaxiDiDiColumns;
 

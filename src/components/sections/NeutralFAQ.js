@@ -2,9 +2,9 @@ import React from "react";
 import AccordionNeutralSection from "../AccordionNeutralSection";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-const NeutralFAQ = () => {
+const NeutralFAQ = ({faqs, faqTitle}) => {
   const { t } = useTranslation();
-  const data = t("NeutralFAQ.items", { returnObjects: true });
+  const data = faqs || t("NeutralFAQ.items", { returnObjects: true });
   let items = [];
   data.forEach((con, index) => {
     items.push({
@@ -13,7 +13,7 @@ const NeutralFAQ = () => {
     });
   });
 
-  const title = "Preguntas frecuentes";
+  const title = faqTitle || "Preguntas frecuentes";
 
   return (
     <AccordionNeutralSection

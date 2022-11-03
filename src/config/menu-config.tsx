@@ -890,6 +890,38 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
+  ru: [
+    {
+      text: "Водителям",
+      url: "/ru/driver/",
+      dropMenu: [
+        {
+          text: "Водителям таксопарков",
+          url: "/ru/taxi",
+        },
+        {
+          text: "Водитель-партнер в статусе ИП",
+          url: "/ru/driver-partner",
+        },
+      ],
+    },
+    {
+      text: "Пассажирам",
+      url: "/ru/rider/"
+    },
+    {
+      text: "Владельцам таксопарков",
+      url: "/ru/fleet/",
+    },
+    {
+      text: "Безопасность",
+      url: "/ru/safety/",
+    },
+    {
+      text: "О нас",
+      url: "/ru/about-didi/",
+    },
+  ],
 };
 
 const getMenuLinks = (countryCode: string) => {

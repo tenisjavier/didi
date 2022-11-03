@@ -1,32 +1,30 @@
-
 import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUserShield,
-  faDollarSign,
-  faClock,
+  faWallet,
+  faCreditCard,
+  faMapMarker,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface WhyDiDiColumnsProps {
+interface PaxAltColumnsProps {
   images: {
     title: string;
     description: string;
     gatsbyImageData: IGatsbyImageData;
   }[];
-  icons: any[];
 }
 
-const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
+const PaxAltColumns = ({ images }: PaxAltColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    title: t("WhyDiDiColumns.title"),
-    bgColor: t("WhyDiDiColumns.bgColor"),
-    textColor: t("WhyDiDiColumns.textColor"),
-    columns: t("WhyDiDiColumns.columns", { returnObjects: true }),
+    bgColor: t("PaxAltColumns.bgColor"),
+    textColor: t("PaxAltColumns.textColor"),
+    columns: t("PaxAltColumns.columns", { returnObjects: true }),
   };
+
   if (images) {
     props.columns.forEach((col, index) => {
       const image = images[index].gatsbyImageData;
@@ -38,20 +36,20 @@ const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
         ></GatsbyImage>
       );
     });
-  } else if (icons) {
-    props.columns.forEach((col, index) => {
-      col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
-    });
   } else {
-    props.columns[0].image = <FontAwesomeIcon icon={faUserShield} size="3x" />;
+    props.columns[0].image = (
+      <FontAwesomeIcon icon={faWallet} size="3x" className="text-orange-primary w-12" />
+    );
 
-    props.columns[1].image = <FontAwesomeIcon icon={faDollarSign} size="3x" />;
+    props.columns[1].image = (
+      <FontAwesomeIcon icon={faCreditCard} size="3x" className="text-orange-primary w-12" />
+    );
 
-    props.columns[2].image = <FontAwesomeIcon icon={faClock} size="3x" />;
+    props.columns[2].image = (
+      <FontAwesomeIcon icon={faMapMarker} size="3x" className="text-orange-primary w-12" />
+    );
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-
-export default WhyDiDiColumns;
-
+export default PaxAltColumns;

@@ -134,11 +134,11 @@ const CTASection = (props: CTAProps) => {
                 {bullets.map((item, index) => {
                   return (
                     <div key={index}>
-                      <li>
+                      <li className="flex">
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className=" mr-4 text-orange-primary w-6"
+                            className="mt-1 mr-4 text-orange-primary w-6"
                             size="sm"
                           />
                         ) : icon && (
@@ -148,7 +148,18 @@ const CTASection = (props: CTAProps) => {
                             size="sm"
                           />)
                         }
-                        {item}
+                        <div className="inline-block">
+                          {item &&
+                            item.split("\n").map((str, index) => (
+                              <p
+                                className="mt-0 mb-5 text-lg"
+                                key={index}
+                              >
+                                {str}
+                              </p>
+                            ))
+                          }
+                        </div>
                       </li>
                       <br></br>
                     </div>
