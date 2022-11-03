@@ -5,6 +5,7 @@ export interface ColumnsSectionProps {
   columns: CardProps[];
   title?: string;
   desc?: string;
+  small?: string;
   bgColor: string;
   textColor: string;
   sectionID?: string;
@@ -15,6 +16,7 @@ const ColumnsSection = ({
   columns,
   title,
   desc,
+  small,
   bgColor,
   textColor,
   sectionID
@@ -31,6 +33,7 @@ const ColumnsSection = ({
             return <Card {...col} key={index} index={index}></Card>;
           })}
         </div>
+        {small && small.split("\n").map((str) => <small className="text-center">{str}</small>)}
       </div>
     </section>
   );

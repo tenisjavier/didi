@@ -152,6 +152,16 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pay",
       url: "/mx/didipay/",
+      dropMenu: [
+        {
+          text: "DiDi Pay Usuarios",
+          url: "/mx/didipay/",
+        },
+        {
+          text: "Preguntas Frecuentes",
+          url: "/mx/didipay-preguntas-frecuentes/",
+        },
+      ],
     },
     {
       text: "DiDi Préstamos",
@@ -162,20 +172,20 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/mx/food/store/",
+          text: "Restaurantes",
+          url: "/mx/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/mx/food/delivery/",
+          url: "/mx/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/mx/food/about/",
+          url: "/mx/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/mx/food/contact/",
+          url: "/mx/food/contacto/",
         },
       ],
     },
@@ -236,6 +246,10 @@ const menuLinks: AllMenuInterface = {
       url: "/ar/taxi/",
     },
     {
+      text: "DiDi Moto",
+      url: "/ar/driver/moto/",
+    },
+    {
       text: "Sobre DiDi",
       url: "/ar/sobre-didi/",
       dropMenu: [
@@ -291,7 +305,28 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
-
+    {
+      text: "DiDi Food",
+      url: "/pe/food/",
+      dropMenu: [
+        {
+          text: "Tienda",
+          url: "/pe/food/store/",
+        },
+        {
+          text: "Socio Repartidor",
+          url: "/pe/food/delivery/",
+        },
+        {
+          text: "Acerca",
+          url: "/pe/food/about/",
+        },
+        {
+          text: "Contacto",
+          url: "/pe/food/contact/",
+        },
+      ],
+    },
     {
       text: "Sobre DiDi",
       url: "/pe/sobre-didi/",

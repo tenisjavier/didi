@@ -9,6 +9,8 @@ interface SingleBtnInterface {
   fleetText?: string;
   paymentLink?: string;
   paymentText?: string;
+  paymentBusinessLink?: string;
+  paymentBusinessText?: string;
   foodDeliveryLink?: string;
   foodDeliveryText?: string;
   foodBusinessLink?: string;
@@ -41,7 +43,7 @@ const btnLinks: AllBtnInterface = {
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
-    foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
+    foodBusinessLink: "https://www.didi-food.com/es-CL/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida Ya → Descarga la App",
@@ -53,7 +55,7 @@ const btnLinks: AllBtnInterface = {
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
-    foodBusinessLink: "https://www.didi-food.com/es-CO/store",
+    foodBusinessLink: "https://www.didi-food.com/es-PE/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida Ya → Descarga la App",
@@ -149,6 +151,9 @@ const btnLinks: AllBtnInterface = {
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
     paymentText: "Descarga DiDi Pay",
     paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
+    paymentBusinessLink:
+      "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
+    paymentBusinessText: "Iniciar Sesión",
   },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",

@@ -70,7 +70,21 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`cl`, `ar`, `pe`, `co`, `au`, `do`, `pa`, `ec`, `cr`, `eg`, `nz`, `mx`, `en`],
+        languages: [
+          `cl`,
+          `ar`,
+          `pe`,
+          `co`,
+          `au`,
+          `do`,
+          `pa`,
+          `ec`,
+          `cr`,
+          `eg`,
+          `nz`,
+          `mx`,
+          `en`,
+        ],
         defaultLanguage: `en`,
         redirect: "false",
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
@@ -105,7 +119,20 @@ module.exports = {
           },
           {
             matchPath: "/:lang?/newsroom/:path?",
-            languages: ["cl", "ar", "pe", "co", "do", "cr", "ec", "pa", "mx", "au", "eg", "nz"],
+            languages: [
+              "cl",
+              "ar",
+              "pe",
+              "co",
+              "do",
+              "cr",
+              "ec",
+              "pa",
+              "mx",
+              "au",
+              "eg",
+              "nz",
+            ],
             getLanguageFromPath: true,
           },
           {
@@ -120,22 +147,22 @@ module.exports = {
           },
           {
             matchPath: "/:lang?/food/restaurantes/:path?",
-            languages: ["mx", "pe"],
+            languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
             matchPath: "/:lang?/food/restaurantes/taxes/:path?",
-            languages: ["mx", "pe"],
+            languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
             matchPath: "/:lang?/food/restaurantes/guides/:path?",
-            languages: ["mx", "pe"],
+            languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
             matchPath: "/:lang?/food/restaurantes/faqs/:path?",
-            languages: ["mx", "pe"],
+            languages: ["mx"],
             getLanguageFromPath: true,
           },
           {
@@ -144,7 +171,7 @@ module.exports = {
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/food/city/:path?",
+            matchPath: "/:lang?/food/ciudad/:path?",
             languages: ["mx"],
             getLanguageFromPath: true,
           },
@@ -155,7 +182,17 @@ module.exports = {
           },
           {
             matchPath: "/:lang?/food/restaurantes/kit-digital/:path?",
-            languages: ["mx", "pe"],
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/food/colonia/:path?",
+            languages: ["mx"],
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/didipay/blog/:path?",
+            languages: ["mx"],
             getLanguageFromPath: true,
           },
         ],
@@ -242,7 +279,17 @@ module.exports = {
           const urlRegex =
             /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/food\/blog\/(.+))|(\/blog\/(.+))|/;
 
-          const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
+          const sslCountries = [
+            "cl",
+            "pe",
+            "ar",
+            "co",
+            "ec",
+            "do",
+            "cr",
+            "pa",
+            "mx",
+          ];
 
           const engCountries = ["au", "nz", "eg", "ru"];
 
@@ -253,8 +300,12 @@ module.exports = {
           const cityPages = allCities.map((city) => {
             let path;
             const [countryCode, cityName] = [city.country.code, city.name];
-            if (sslCountries.includes(countryCode)) path = `/${countryCode}/driver/conductor-en-${slugify(cityName)}/`;
-            else if (engCountries.includes(countryCode)) path = `/${countryCode}/driver/driver-${slugify(cityName)}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/driver/conductor-en-${slugify(
+                cityName
+              )}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/driver/driver-${slugify(cityName)}/`;
 
             return { path };
           });
@@ -270,36 +321,53 @@ module.exports = {
 
           const articlePages = allArticles.map((article) => {
             let path;
-            const [countryCode, articleSlug] = [article.country.code, article.slug];
-            if (sslCountries.includes(countryCode)) path = `/${countryCode}/articulos/${articleSlug}/`;
-            else if (engCountries.includes(countryCode)) path = `/${countryCode}/blog/${articleSlug}/`;
+            const [countryCode, articleSlug] = [
+              article.country.code,
+              article.slug,
+            ];
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/articulos/${articleSlug}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/blog/${articleSlug}/`;
             return { path };
           });
 
           const guidePages = allGuides.map((guide) => {
             let path;
             const [countryCode, guideSlug] = [guide.country.code, guide.slug];
-            if (sslCountries.includes(countryCode)) path = `/${countryCode}/guias/${guideSlug}/`;
-            else if (engCountries.includes(countryCode)) path = `/${countryCode}/guides/${guideSlug}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/guias/${guideSlug}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/guides/${guideSlug}/`;
             return { path };
           });
 
           const cityPlacePages = allCities.map((city) => {
             let path;
             const [countryCode, cityName] = [city.country.code, city.name];
-            if (sslCountries.includes(countryCode)) path = `/${countryCode}/lugares/lugares-en-${slugify(cityName)}/`;
-            else if (engCountries.includes(countryCode)) path = `/${countryCode}/places/places-in-${slugify(cityName)}/`;
+            if (sslCountries.includes(countryCode))
+              path = `/${countryCode}/lugares/lugares-en-${slugify(cityName)}/`;
+            else if (engCountries.includes(countryCode))
+              path = `/${countryCode}/places/places-in-${slugify(cityName)}/`;
             return { path };
           });
 
           const placePages = allPlaces.map((place) => {
-            const path = `/${place.city.country.code}/lugares/como-llegar-a-${slugify(place.name)}_${slugify(place.address)}/`;
+            const path = `/${
+              place.city.country.code
+            }/lugares/como-llegar-a-${slugify(place.name)}_${slugify(
+              place.address
+            )}/`;
             return { path };
           });
 
           const directionPages = allDirections.map((dir) => {
-            const path = `/${slugify(dir.city.country.code)}/lugares/como-llegar-a-${slugify(dir.destination)}-desde-${slugify(dir.origin)}_${slugify(
-              dir.destinationAddress,
+            const path = `/${slugify(
+              dir.city.country.code
+            )}/lugares/como-llegar-a-${slugify(
+              dir.destination
+            )}-desde-${slugify(dir.origin)}_${slugify(
+              dir.destinationAddress
             )}/`;
             return { path };
           });

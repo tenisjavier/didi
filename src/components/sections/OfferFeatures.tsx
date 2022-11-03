@@ -6,6 +6,8 @@ import CTASection, { CTAProps } from "../CTASection";
 interface OfferFeaturesProps {
   title: string;
   desc: string;
+  btnLink?: string;
+  btnText?: string;
   image: {
     title: string;
     description: string;
@@ -13,7 +15,13 @@ interface OfferFeaturesProps {
   };
 }
 
-const OfferFeatures = ({ title, desc, image }: OfferFeaturesProps) => {
+const OfferFeatures = ({
+  title,
+  desc,
+  image,
+  btnLink,
+  btnText,
+}: OfferFeaturesProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: false,
@@ -22,8 +30,8 @@ const OfferFeatures = ({ title, desc, image }: OfferFeaturesProps) => {
     textColor: t("OfferFeatures.textColor"),
     bgColor: t("OfferFeatures.bgColor"),
     btnMode: t("OfferFeatures.btnMode"),
-    btnText: t("OfferFeatures.btnText"),
-    btnLink: t("OfferFeatures.btnLink"),
+    btnText: btnText || t("OfferFeatures.btnText"),
+    btnLink: btnLink || t("OfferFeatures.btnLink"),
     image: (
       <GatsbyImage
         image={image.gatsbyImageData}

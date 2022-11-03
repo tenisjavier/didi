@@ -13,6 +13,7 @@ interface Accordion {
   normalText?: string;
   bgColor: string;
   textColor: string;
+  isClosed?: boolean;
 }
 
 const Accordion = ({
@@ -21,10 +22,16 @@ const Accordion = ({
   bgColor,
   textColor,
   normalText,
+  isClosed
 }: Accordion) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [height, setHeight] = useState("0px");
+  var [isOpen, setIsOpen] = useState(false);
+  var [height, setHeight] = useState("0px");
   const content1: any = useRef(null);
+  
+  if(isClosed === false) {
+    [isOpen, setIsOpen] = useState(true);
+    [height, setHeight] = useState("50");
+  } 
 
   const closeClass =
     "text-lg bg-gray-200 text-gray-primary py-0 w-full px-4 md:px-20 transition-all duration-700 overflow-hidden";

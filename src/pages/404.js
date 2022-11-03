@@ -1,15 +1,6 @@
 // 404 page will redirect to the home page
-import React, { useEffect } from "react";
-import { navigate } from "gatsby";
+import React from "react";
 
 export default function NotFoundPage() {
-  useEffect(() => {
-    navigate(`/?redirect=${window.document.referrer}`); // redirecting to home page
-  }, []);
-
-  return (
-    <div>
-      <h1>(404) NotFound Page</h1>
-    </div>
-  );
+  return <h1>Page Not Found. Visit our Home Page</h1>;
 }

@@ -55,7 +55,7 @@ export const query = graphql`
     }
     allContentfulGuide(
       filter: { country: { code: { eq: $countryCode } }, id: { ne: $id } }
-      sort: { fields: content___references___createdAt, order: DESC }
+      sort: { fields: updatedAt, order: DESC }
       limit: 10
     ) {
       nodes {

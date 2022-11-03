@@ -46,7 +46,7 @@ export const query = graphql`
         category: { in: ["rides", "news"] }
         country: { code: { eq: "au" } }
       }
-      sort: { fields: content___references___createdAt, order: DESC }
+      sort: { fields: updatedAt, order: DESC }
       limit: 20
     ) {
       nodes {

@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import ConsentPopup from "../components/ConsentPopup";
+import gtmEvent from "../config/gtm";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "gatsby-plugin-react-i18next";
@@ -6,7 +8,7 @@ import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
 
-const SEO = () => {
+const SEO = ({ title, desc }) => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
@@ -42,10 +44,10 @@ const SEO = () => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const origin = "https://web.didiglobal.com";
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   let country = "";
   let countryName = "";
-  let title = "";
+
   let lang = "en";
   let cleanPath = pathname;
   if (countryCode !== "en") {
@@ -57,45 +59,88 @@ const SEO = () => {
   }
 
   const meta = getMetaByPath(countryCode, cleanPath);
-  title = meta.title + " | DiDi " + countryName;
+  if (!title) {
+    title = meta.title;
+  }
+  if (!desc) {
+    desc = meta.desc;
+  }
+  title = title + " | DiDi " + (countryName || "Global");
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";
-    meta.desc =
+    desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
   if (pathname === "/contact/" || pathname === "/contact") {
     title = "Contact Us | DiDi Global";
-    meta.desc =
+    desc =
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
 
+  // POPUP LOGIC
+  const isBrowser = typeof window !== "undefined";
+  const consentName = country.code + "_didi_consent";
+
+  let shouldShowPopup = () => {
+    if (!isBrowser) return false;
+    return (
+      !window.localStorage.getItem(consentName) &&
+      ["nz", "au"].includes(country.code) &&
+      !window.sessionStorage.getItem(consentName)
+    );
+  };
+  const [isVisible, setIsVisible] = useState(shouldShowPopup());
+
+  const saveConsent = (value, storageType) => {
+    storageType.setItem(consentName, value);
+  };
+
+  const handleAcceptConsent = () => {
+    saveConsent("true", window.localStorage);
+    gtmEvent(countryCode + "_accept_consent");
+    setIsVisible(false);
+  };
+
+  const handleDenyConsent = () => {
+    saveConsent("false", window.sessionStorage);
+    setIsVisible(false);
+  };
+
   return (
-    <Helmet htmlAttributes={{ lang: lang }} title={title}>
-      <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
-      <meta name="description" content={meta.desc} />
-      {countryCode === "mx" ? <meta name="robots" content="noindex" /> : null}
-      <link rel="canonical" href={origin + pathname} />
-      {countries.map((c, index) => {
-        const placeRegex = /(\/[A-Za-z]{2}\/$)/;
+    <>
+      <Helmet htmlAttributes={{ lang: lang }} title={title}>
+        <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
+        <meta name="description" content={desc} />
+        <link rel="canonical" href={origin + pathname} />
+        {countries.map((c, index) => {
+          const placeRegex = /(\/[A-Za-z]{2}\/$)/;
 
-        return placeRegex.test(pathname) ? (
-          <link
-            key={index}
-            rel="alternate"
-            href={origin + "/" + c.code + "/"}
-            hreflang={`${c.languageCode}-${c.code}`}
-          />
-        ) : null;
-      })}
+          return placeRegex.test(pathname) ? (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          ) : null;
+        })}
 
-      {
-        // activate tracking pixel when DOM is mounted
-        useEffect(() => {
-          insertBtnParams();
-        }, [])
-      }
-    </Helmet>
+        {
+          // activate tracking pixel when DOM is mounted
+          useEffect(() => {
+            insertBtnParams();
+          }, [])
+        }
+      </Helmet>
+      {search.includes("consent=true") && isBrowser && (
+        <ConsentPopup
+          isVisible={isVisible}
+          handleAccept={handleAcceptConsent}
+          handleDeny={handleDenyConsent}
+        ></ConsentPopup>
+      )}
+    </>
   );
 };
 

@@ -18,25 +18,33 @@ const DiDiMas = ({ data }) => {
     return (
       partner.name === "MiNave" ||
       partner.name === "Kovi" ||
-      partner.name === "OneCarNow"
+      partner.name === "OneCarNow" ||
+      partner.name === "Privauto" ||
+      partner.name === "Autos a Tiempo" ||
+      partner.name === "Procapa Arrendamientos"
     );
+  });
+  const partnerRefacciones = partners.filter((partner) => {
+    return partner.name === "Nissan";
   });
   const partnerCombustible = partners.filter((partner) => {
     return partner.name === "ARCO";
   });
   const partnerAuto = partners.filter((partner) => {
     return (
-      partner.name === "KIA" ||
-      partner.name === "Mitsubishi" ||
-      partner.name === "Nissan"
+      partner.name === "Nissan" ||
+      partner.name === "Dalton Seminuevos" ||
+      partner.name === "Datamovil Arrendadora"
     );
   });
   const partnerFinanzas = partners.filter((partner) => {
     return partner.name === "Consar" || partner.name === "SimpleTAX";
   });
-  const partnerPrestamos = partners.filter((partner) => {
-    return partner.name === "Credilikeme";
+
+  const partnerSeguros = partners.filter((partner) => {
+    return partner.name === "Qualitas";
   });
+
   const partnerSalud = partners.filter((partner) => {
     return partner.name === "IMSS";
   });
@@ -68,35 +76,44 @@ const DiDiMas = ({ data }) => {
         data={partnerRent}
       ></PartnersGrid>
       <PartnersGrid
+        title="Descuentos para refacciones y autopartes"
+        bgColor="bg-white"
+        sectionID="PartnerRefacciones"
+        data={partnerRefacciones}
+      ></PartnersGrid>
+      <PartnersGrid
         title="Descuentos en combustible"
+        bgColor="bg-gray-light"
         sectionID="PartnerCombustible"
         data={partnerCombustible}
       ></PartnersGrid>
       <PartnersGrid
         title="Facilidades para comprar un auto"
-        bgColor="bg-gray-light"
+        bgColor="bg-white"
         sectionID="PartnerComprarAuto"
         data={partnerAuto}
       ></PartnersGrid>
       <PartnersGrid
         title="Ayuda en tu contabilidad y en tus finanzas"
+        bgColor="bg-gray-light"
         sectionID="PartnerFinanzas"
         data={partnerFinanzas}
       ></PartnersGrid>
       <PartnersGrid
-        title="Préstamos"
-        bgColor="bg-gray-light"
-        sectionID="PartnerPrestamos"
-        data={partnerPrestamos}
+        title="Descuentos en Seguro de Auto"
+        bgColor="bg-white"
+        sectionID="PartnerSalud"
+        data={partnerSeguros}
       ></PartnersGrid>
       <PartnersGrid
         title="Salud y bienestar"
+        bgColor="bg-gray-light"
         sectionID="PartnerSalud"
         data={partnerSalud}
       ></PartnersGrid>
       <PartnersGrid
         title="Educacion"
-        bgColor="bg-gray-light"
+        bgColor="bg-white"
         sectionID="PartnerEducacion"
         data={partnerEducacion}
       ></PartnersGrid>

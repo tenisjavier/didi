@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import FeatureHero from "../../../components/sections/FeatureHero";
 import FeatureCTAComponent from "../../../components/sections/FeatureCTAComponent";
-import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
+import HelpCenterFAQ from "../../../components/sections/HelpCenterFAQ";
 import HomeColumns from "../../../components/sections/HomeColumns";
 
 const Feature = ({ data }) => {
@@ -15,6 +15,10 @@ const Feature = ({ data }) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
   const btnType = category[0] === "driver" ? "drv" : "pax";
+  const features = data.contentfulFeature;
+  const isClosed =
+    features.name === "Fatigue Prevention Feature" ? false : true;
+
   return (
     <Layout>
       <FeatureHero
@@ -35,7 +39,10 @@ const Feature = ({ data }) => {
           );
         })}
       {data.contentfulFeature.faq && (
-        <HelpCenterFAQPax data={data.contentfulFeature}></HelpCenterFAQPax>
+        <HelpCenterFAQ
+          isClosed={isClosed}
+          data={data.contentfulFeature}
+        ></HelpCenterFAQ>
       )}
       <HomeColumns images={homeColumnsImages}></HomeColumns>
     </Layout>

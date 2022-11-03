@@ -13,6 +13,8 @@ const Partner = ({ data }) => {
     featureTitle,
     featureDesc,
     featureImage,
+    featureBtnText,
+    featureBtnLink,
   } = data.contentfulOffer;
   const offer = data.contentfulOffer;
   const columns = [
@@ -44,6 +46,8 @@ const Partner = ({ data }) => {
         title={featureTitle}
         desc={featureDesc}
         image={featureImage}
+        btnLink={featureBtnLink}
+        btnText={featureBtnText}
       ></OfferFeatures>
     </Layout>
   );
@@ -93,6 +97,8 @@ export const query = graphql`
         gatsbyImageData
         description
       }
+      featureBtnText
+      featureBtnLink
     }
     allContentfulAsset(
       filter: { title: { in: ["au.PartnerCTA.image"] } }

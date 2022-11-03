@@ -26,7 +26,7 @@ const FoodBlogHero = ({ bgImage }: FoodBlogHero) => {
       ></GatsbyImage>
     ),
     btnMode: t("FoodBlogHero.btnMode"),
-    btnType: "foodBusiness",
+    btnType: "foodEater",
   };
   return <CTASection {...props}></CTASection>;
 };

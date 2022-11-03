@@ -10,6 +10,7 @@ const AccordionSection = (props) => {
     desc,
     textColor,
     textAccordionColor,
+    isClosed
   } = props;
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
@@ -28,6 +29,7 @@ const AccordionSection = (props) => {
                 bgColor={bgAccordionColor}
                 textColor={textAccordionColor}
                 key={index}
+                isClosed={isClosed}
               ></Accordion>
             );
           })}

@@ -22,7 +22,7 @@ const FaqFoodHero = ({ bgImage }: FaqFoodHeroProps) => {
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-75 md:block"
+        className="!absolute z-0 h-full w-full brightness-90 md:block"
       ></GatsbyImage>
     ),
   };

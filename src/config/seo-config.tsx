@@ -136,9 +136,41 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Fleet - Genera Dinero Rentando tus Autos",
       desc: "DiDi Fleet. Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva con DiDi Fleet.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir o Convertirse en Socio",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-fiscales/": {
+      title: "Requisitos Fiscales para Conductores de DiDi en México",
+      desc: "Requisitos Fiscales para Conductores de DiDi México. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
+    "/conductor/calcula-tus-ganancias/": {
+      title: "¿Cuánto dinero pueden ganar los conductores a través de DiDi?",
+      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi México. Considerando retenciones de impuestos como ISR e IVA",
+    },
+    "/clubdidi/": {
+      title: "Club DiDi: La comunidad que te da beneficios exclusivos",
+      desc: "Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",
+    },
+    "/conductor/mujeres-en-didi/": {
+      title: "Mujeres en DiDi",
+      desc: "Mujeres en DiDi. Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",
+    },
+    "/didipay/": {
+      title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
+      desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
+    "/didipay-negocios/": {
+      title: "DiDi Pay Negocios - Aumenta tus ventas",
+      desc: "DiDi Pay para Negocios en México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
+    "/didipay-preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes sobre DiDi Pay.",
+      desc: "Revisa nuestras preguntas frecuentes sobre DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
@@ -164,29 +196,61 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
+    "/newsroom/": {
+      title: "DiDi Noticias - Aquí te contamos de novedades sobre DiDi",
+      desc: "DiDi Noticias en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+    },
     "/food/": {
       title: "Pide comida a través de DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/store/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    "/food/restaurantes/": {
+      title: "Inscribe tu Restaurante en DiDi Food",
+      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/delivery/": {
+    "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/about/": {
+    "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/contact/": {
+    "/food/contacto/": {
       title: "DiDi Food: Contacta nuestro Servicio al Cliente",
       desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
+    },
+    "/food/ciudad/": {
+      title: "Pide Comida a Domicilio con DiDi Food Mexico",
+      desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas ciudades... y en minutos",
+    },
+    "/food/colonia/": {
+      title: "Encuentra Comida a Domicilio en tu Colonia con DiDi Food Mexico",
+      desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas colonias... y en minutos",
     },
     "/food/blog/": {
       title: "Artículos de Comida y Restaurantes",
       desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/registro/": {
+      title: "Restaurantes - Registro",
+      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/impuestos/": {
+      title: "Restaurantes - Impuestos",
+      desc: "Restaurantes - Impuestos. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/guias-educacionales/": {
+      title: "Restaurantes - Guías Educacionales",
+      desc: "Restaurantes - Guías Educacionales. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/promociones-y-campanas/": {
+      title: "Restaurantes - Promociones y Campañas",
+      desc: "Restaurantes - Promociones y Campañas. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+    },
+    "/food/restaurantes/preguntas-frecuentes/": {
+      title: "Restaurantes - Preguntas Frecuentes",
+      desc: "Restaurantes - Preguntas Frecuentes. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -195,6 +259,14 @@ const seoMeta: AllSEOMetaInterface = {
     "/seguridad/": {
       title: "En DiDi tu Seguridad es nuestra prioridad conoce más acá",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/seguridad/conductores/": {
+      title: "Seguridad para Conductores en DiDi",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que puedas manejar con DiDi de manera segura y confiable.",
+    },
+    "/seguridad/pasajeros/": {
+      title: "Seguridad para Pasajeros en DiDi",
+      desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que puedas vivir la experiencia de viajar en DiDi de manera segura y confiable.",
     },
     "/centro-de-ayuda/": {
       title: "Centro de Ayuda para Socios Conductores y Pasajeros",
@@ -341,7 +413,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
       desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
-
+    "/driver/moto/": {
+      title: "DiDi Moto - Generá Ingresos Extra con DiDi",
+      desc: "DiDi Moto en Argentina. Registrate en DiDi Moto en nuestra web y comenzá ya a generar ganancias cuando más te convenga.",
+    },
     "/sobre-didi/": {
       title: "Tenés Preguntas sobre DiDi? Revisá las Respuestas",
       desc: "Tanto si sos conductor o usuario de DiDi revisá las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -401,6 +476,26 @@ const seoMeta: AllSEOMetaInterface = {
     "/centro-de-ayuda/": {
       title: "Centro de Ayuda DiDi - App nº1 en movilidad del mundo",
       desc: "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que en tu próximo viajes lo disfrutes al máximo.",
+    },
+    "/food/": {
+      title: "DiDi Food Perú: Pide comida a Domicilio",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/store/": {
+      title: "Inscribe tu Restaurante en DiDi Food",
+      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/delivery/": {
+      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/about/": {
+      title: "La App de Comida Más Confiable",
+      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
+    "/food/contact/": {
+      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
+      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
     "/direcciones/": {
       title: "Cómo llegar a distintos puntos de Perú",
@@ -874,7 +969,7 @@ const getMetaByPath = (
   path: string
 ): SEOMetaItemInterface => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))||(\/rider\/(.+))(\/food\/blog\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/newsroom\/(.+))|(\/centro-de-ayuda\/(.+))|(\/help-center\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/conductor\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",

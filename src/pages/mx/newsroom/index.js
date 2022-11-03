@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import NewsroomHero from "../../../components/sections/NewsroomHero";
 import NewsroomColumns from "../../../components/sections/NewsroomColumns";
+import Pagination from "../../../components/Pagination";
 
 const Newsroom = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,6 +14,7 @@ const Newsroom = ({ data }) => {
     <Layout>
       <NewsroomHero bgImage={articlesHeroBgImage}></NewsroomHero>
       <NewsroomColumns data={data}></NewsroomColumns>
+      <Pagination data={data} postsPerPage={12}></Pagination>
     </Layout>
   );
 };
@@ -40,8 +42,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: { category: { eq: "news" }, country: { code: { eq: "mx" } } }
-      sort: { fields: content___references___createdAt, order: DESC }
-      limit: 10
+      sort: { fields: updatedAt, order: DESC }
     ) {
       nodes {
         title

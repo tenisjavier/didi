@@ -40,34 +40,46 @@ const menuLinksFood: AllMenuInterface = {
   ],
   mx: [
     {
-      text: "Tienda",
-      url: "/mx/food/store/",
+      text: "Restaurantes",
+      url: "/mx/food/restaurantes/",
       dropMenu: [
         {
+          text: "Registro",
+          url: "/mx/food/restaurantes/registro/",
+        },
+        {
           text: "Impuestos",
-          url: "/mx/food/store/taxes/",
+          url: "/mx/food/restaurantes/impuestos/",
         },
         {
           text: "Guías",
-          url: "/mx/food/store/guides/",
+          url: "/mx/food/restaurantes/guias-educacionales/",
         },
         {
           text: "FAQs",
-          url: "/mx/food/store/faqs/",
+          url: "/mx/food/restaurantes/preguntas-frecuentes/",
         },
         {
           text: "Kit Digital",
-          url: "/mx/food/store/kit-digital/",
+          url: "/mx/food/restaurantes/kit-digital/",
+        },
+        {
+          text: "Promociones y Campañas",
+          url: "/mx/food/restaurantes/promociones-y-campanas/",
+        },
+        {
+          text: "Descarga",
+          url: "/mx/food/restaurantes/descarga/",
         },
       ],
     },
     {
       text: "Socio repartidor",
-      url: "/mx/food/delivery/",
+      url: "/mx/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/mx/food/about/",
+      url: "/mx/food/acerca-didi-food/",
       dropMenu: [
         {
           text: "Preguntas Frecuentes",
@@ -77,7 +89,7 @@ const menuLinksFood: AllMenuInterface = {
     },
     {
       text: "Contacto",
-      url: "/mx/food/contact/",
+      url: "/mx/food/contacto/",
     },
     {
       text: "Blog",
@@ -145,10 +157,6 @@ const menuLinksFood: AllMenuInterface = {
       text: "Contacto",
       url: "/co/food/contacto/",
     },
-    {
-      text: "Blog",
-      url: "/co/food/blog/",
-    },
   ],
   pe: [
     {
@@ -167,7 +175,7 @@ const menuLinksFood: AllMenuInterface = {
       text: "Contacto",
       url: "/pe/food/contacto/",
     },
-  ]
+  ],
 };
 
 const getMenuLinksFood = (countryCode: string) => {

@@ -22,7 +22,7 @@ const RestaurantHeroImpuesto = ({ bgImage }: RestaurantHeroImpuestoProps) => {
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-50  md:block"
+        className="!absolute z-0 h-full w-full brightness-75  md:block"
       ></GatsbyImage>
     ),
   };
