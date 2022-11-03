@@ -19,19 +19,19 @@ const menuLinksFood: AllMenuInterface = {
   cl: [
     {
       text: "Tienda",
-      url: "/cl/food/store/",
+      url: "/cl/food/restaurantes/",
     },
     {
       text: "Socio repartidor",
-      url: "/cl/food/delivery/",
+      url: "/cl/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/cl/food/about/",
+      url: "/cl/food/acerca-didi-food/",
     },
     {
       text: "Contacto",
-      url: "/cl/food/contact/",
+      url: "/cl/food/contacto/",
     },
     {
       text: "Blog",
@@ -99,19 +99,19 @@ const menuLinksFood: AllMenuInterface = {
   do: [
     {
       text: "Tienda",
-      url: "/do/food/store/",
+      url: "/do/food/restaurantes/",
     },
     {
       text: "Socio repartidor",
-      url: "/do/food/delivery/",
+      url: "/do/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/do/food/about/",
+      url: "/do/food/acerca-didi-food/",
     },
     {
       text: "Contacto",
-      url: "/do/food/contact/",
+      url: "/do/food/contacto/",
     },
     {
       text: "Blog",
@@ -121,19 +121,19 @@ const menuLinksFood: AllMenuInterface = {
   cr: [
     {
       text: "Tienda",
-      url: "/cr/food/store/",
+      url: "/cr/food/restaurantes/",
     },
     {
       text: "Socio repartidor",
-      url: "/cr/food/delivery/",
+      url: "/cr/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/cr/food/about/",
+      url: "/cr/food/acerca-didi-food/",
     },
     {
       text: "Contacto",
-      url: "/cr/food/contact/",
+      url: "/cr/food/contacto/",
     },
     {
       text: "Blog",
@@ -143,37 +143,37 @@ const menuLinksFood: AllMenuInterface = {
   co: [
     {
       text: "Tienda",
-      url: "/co/food/store/",
+      url: "/co/food/restaurantes/",
     },
     {
       text: "Socio repartidor",
-      url: "/co/food/delivery/",
+      url: "/co/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/co/food/about/",
+      url: "/co/food/acerca-didi-food/",
     },
     {
       text: "Contacto",
-      url: "/co/food/contact/",
+      url: "/co/food/contacto/",
     },
   ],
   pe: [
     {
       text: "Tienda",
-      url: "/pe/food/store/",
+      url: "/pe/food/restaurantes/",
     },
     {
       text: "Socio repartidor",
-      url: "/pe/food/delivery/",
+      url: "/pe/food/repartidores/",
     },
     {
       text: "Acerca",
-      url: "/pe/food/about/",
+      url: "/pe/food/acerca-didi-food/",
     },
     {
       text: "Contacto",
-      url: "/pe/food/contact/",
+      url: "/pe/food/contacto/",
     },
   ],
 };
