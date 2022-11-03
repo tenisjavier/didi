@@ -98,14 +98,14 @@ const SEO = ({ title, desc }) => {
 
   const handleAcceptConsent = () => {
     saveConsent("true", window.localStorage);
-    gtmEvent(countryCode + "_accept_consent");
+    // gtmEvent(countryCode + "_accept_consent");
     setIsVisible(false);
   };
 
-  const handleDenyConsent = () => {
-    saveConsent("false", window.sessionStorage);
-    setIsVisible(false);
-  };
+  // const handleDenyConsent = () => {
+  //   saveConsent("false", window.sessionStorage);
+  //   setIsVisible(false);
+  // };
 
   return (
     <>
@@ -133,11 +133,10 @@ const SEO = ({ title, desc }) => {
           }, [])
         }
       </Helmet>
-      {search.includes("consent=true") && isBrowser && (
+      {isBrowser && (
         <ConsentPopup
           isVisible={isVisible}
           handleAccept={handleAcceptConsent}
-          handleDeny={handleDenyConsent}
         ></ConsentPopup>
       )}
     </>
