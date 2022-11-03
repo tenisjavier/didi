@@ -311,19 +311,19 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "Tienda",
-          url: "/pe/food/store/",
+          url: "/pe/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/pe/food/delivery/",
+          url: "/pe/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/pe/food/about/",
+          url: "/pe/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/pe/food/contact/",
+          url: "/pe/food/contacto/",
         },
       ],
     },
