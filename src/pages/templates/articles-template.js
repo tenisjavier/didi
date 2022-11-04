@@ -88,6 +88,9 @@ export const query = graphql`
       nodes {
         title
         slug
+        tags {
+          name
+        }
         excerpt
         featuredImage {
           gatsbyImageData
