@@ -16,6 +16,7 @@ const Footer = () => {
           arabicName
           englishName
           spanishName
+          russianName
           hostname
         }
       }
@@ -48,6 +49,7 @@ const Footer = () => {
 
             <div className="text-c h-auto w-3/4 lg:w-full lg:pr-52 lg:text-left">
               {countries.map((c: any, index: number) => {
+                console.log(i18n.language, c);
                 if (index === 0) {
                   return (
                     <a
@@ -55,14 +57,10 @@ const Footer = () => {
                       key={index}
                       className="text-sm text-yellow-500 hover:text-yellow-300"
                     >
+                      {i18n.language === "ru" ? c.russianName : null}
                       {i18n.language === "eg" ? c.arabicName : null}
-                      {sslCountries.includes(i18n.language)
-                        ? c.spanishName
-                        : null}
-                      {i18n.language !== "eg" &&
-                      !sslCountries.includes(i18n.language)
-                        ? c.englishName
-                        : null}
+                      {sslCountries.includes(i18n.language) ? c.spanishName : null}
+                      {i18n.language !== "eg" && i18n.language !== "ru" && !sslCountries.includes(i18n.language) ? c.englishName : null}
                     </a>
                   );
                 } else {
@@ -74,14 +72,10 @@ const Footer = () => {
                         href={c.hostname}
                         className="text-sm text-yellow-500 hover:text-yellow-300"
                       >
+                        {i18n.language === "ru" ? c.russianName : null}
                         {i18n.language === "eg" ? c.arabicName : null}
-                        {sslCountries.includes(i18n.language)
-                          ? c.spanishName
-                          : null}
-                        {i18n.language !== "eg" &&
-                        !sslCountries.includes(i18n.language)
-                          ? c.englishName
-                          : null}
+                        {sslCountries.includes(i18n.language) ? c.spanishName : null}
+                        {i18n.language !== "eg" && i18n.language !== "ru" && !sslCountries.includes(i18n.language) ? c.englishName : null}
                       </a>
                     </span>
                   );
