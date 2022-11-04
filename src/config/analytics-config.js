@@ -247,6 +247,8 @@ const insertBtnParams = () => {
     let android_id = urlParams.get("android_id");
     let joveoID = urlParams.get("joveoID");
     let DIDI_CAMPAIGN_ID = urlParams.get("DIDI_CAMPAIGN_ID");
+    let form_url =
+      "https%3A%2F%2Fpage.didiglobal.com%2Fdriver-page%2Fregister%2Findex.html";
 
     let channelId, pid;
     if (channel) {
@@ -274,11 +276,30 @@ const insertBtnParams = () => {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
       campaignId = "refpage_" + window.location.pathname;
+      if (countryCode === "mx") {
+        adgroupId = "h5";
+        const test_version = window.localStorage.getItem("test_version");
+        if (!test_version) {
+          let group = Math.random();
+          window.localStorage.setItem("test_version", "h5");
+          if (group < 0.5) {
+            window.localStorage.setItem("test_version", "quickbolt");
+            adgroupId = "quickbolt";
+            form_url =
+              "https://page.didiglobal.com/global/quickbolt/Landing-Page-Funnel/driver-signup-A-es-MX.html";
+          }
+        }
+        if (test_version === "quickbolt") {
+          adgroupId = "quickbolt";
+          form_url =
+            "https://page.didiglobal.com/global/quickbolt/Landing-Page-Funnel/driver-signup-A-es-MX.html";
+        }
+      }
     }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
 
-    let newSearch = `?pid=${pid}&c=${c}&af_r=https%3A%2F%2Fpage.didiglobal.com%2Fdriver-page%2Fregister%2Findex.html%3Flocation_country%3D${countryLang[0]}%26country%3D${country}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
+    let newSearch = `?pid=${pid}&c=${c}&af_r=${form_url}%3Flocation_country%3D${countryLang[0]}%26country%3D${country}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
     let newSearchFood = `?pid=${pid}&c=${c}&af_web_dp=https%3A%2F%2Fwww.didi-food.com%2F${countryLang[1]}%2Fmobile-delivery%2Fguide%3FclientType=102%26country%3D${countryLang[0]}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
 
     // jovep 99 app

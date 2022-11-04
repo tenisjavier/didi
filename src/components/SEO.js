@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ConsentPopup from "../components/ConsentPopup";
-import gtmEvent from "../config/gtm";
+// import gtmEvent from "../config/gtm";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "gatsby-plugin-react-i18next";
@@ -44,7 +44,7 @@ const SEO = ({ title, desc }) => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const origin = "https://web.didiglobal.com";
-  const { pathname, search } = useLocation();
+  const { pathname } = useLocation();
   let country = "";
   let countryName = "";
 
