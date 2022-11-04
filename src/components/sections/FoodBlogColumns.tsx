@@ -11,6 +11,7 @@ interface FoodBlogColumns {
       nodes: {
         title: string;
         slug: string;
+        tags?: string[];
         excerpt: string;
         featuredImage: ImageDataLike;
       }[];
@@ -19,6 +20,7 @@ interface FoodBlogColumns {
 }
 
 const FoodBlogColumns = ({ data }: FoodBlogColumns) => {
+  console.log(data.allContentfulArticle.nodes);
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("FoodBlogColumns.title"),
