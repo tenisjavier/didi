@@ -11,7 +11,7 @@ const footerLinksFood: AllFooterInterface = {
   int: [],
   cl: [
     { text: "Home", link: "/cl/food/" },
-    { text: "Tienda", link: "/cl/food/restaurantes/" },
+    { text: "Restaurantes", link: "/cl/food/restaurantes/" },
     { text: "Socio repartidor", link: "/cl/food/repartidores/" },
     { text: "Acerca", link: "/cl/food/acerca-didi-food/" },
     { text: "Contacto", link: "/cl/food/contacto/" },
@@ -34,7 +34,7 @@ const footerLinksFood: AllFooterInterface = {
   ],
   do: [
     { text: "Home", link: "/do/food/" },
-    { text: "Tienda", link: "/do/food/restaurantes/" },
+    { text: "Restaurantes", link: "/do/food/restaurantes/" },
     { text: "Socio repartidor", link: "/do/food/repartidores/" },
     { text: "Acerca", link: "/do/food/acerca-didi-food/" },
     { text: "Contacto", link: "/do/food/contacto/" },
@@ -45,7 +45,7 @@ const footerLinksFood: AllFooterInterface = {
   ],
   cr: [
     { text: "Home", link: "/cr/food/" },
-    { text: "Tienda", link: "/cr/food/restaurantes/" },
+    { text: "Restaurantes", link: "/cr/food/restaurantes/" },
     { text: "Socio repartidor", link: "/cr/food/repartidores/" },
     { text: "Acerca", link: "/cr/food/acerca-didi-food/" },
     { text: "Contacto", link: "/cr/food/contacto/" },
@@ -56,7 +56,7 @@ const footerLinksFood: AllFooterInterface = {
   ],
   co: [
     { text: "Home", link: "/co/food/" },
-    { text: "Tienda", link: "/co/food/restaurantes/" },
+    { text: "Restaurantes", link: "/co/food/restaurantes/" },
     { text: "Socio repartidor", link: "/co/food/repartidores/" },
     { text: "Acerca", link: "/co/food/acerca-didi-food/" },
     { text: "Contacto", link: "/co/food/contacto/" },
@@ -67,11 +67,11 @@ const footerLinksFood: AllFooterInterface = {
   ],
   pe: [
     { text: "Home", link: "/pe/food/" },
-    { text: "Tienda", link: "/pe/food/restaurantes/" },
+    { text: "Restaurantes", link: "/pe/food/restaurantes/" },
     { text: "Socio repartidor", link: "/pe/food/repartidores/" },
     { text: "Acerca", link: "/pe/food/acerca-didi-food/" },
     { text: "Contacto", link: "/pe/food/contacto/" },
-  ]
+  ],
 };
 
 const getFooterLinksFood = (countryCode: string): FooterLinksFood[] => {

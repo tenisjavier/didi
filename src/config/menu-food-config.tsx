@@ -18,7 +18,7 @@ interface AllMenuInterface {
 const menuLinksFood: AllMenuInterface = {
   cl: [
     {
-      text: "Tienda",
+      text: "Restaurantes",
       url: "/cl/food/restaurantes/",
     },
     {
@@ -98,7 +98,7 @@ const menuLinksFood: AllMenuInterface = {
   ],
   do: [
     {
-      text: "Tienda",
+      text: "Restaurantes",
       url: "/do/food/restaurantes/",
     },
     {
@@ -120,7 +120,7 @@ const menuLinksFood: AllMenuInterface = {
   ],
   cr: [
     {
-      text: "Tienda",
+      text: "Restaurantes",
       url: "/cr/food/restaurantes/",
     },
     {
@@ -142,7 +142,7 @@ const menuLinksFood: AllMenuInterface = {
   ],
   co: [
     {
-      text: "Tienda",
+      text: "Restaurantes",
       url: "/co/food/restaurantes/",
     },
     {
