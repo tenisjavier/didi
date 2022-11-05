@@ -43,7 +43,7 @@ const ArticlesColumns = ({ data }: ArticlesColumnsProps) => {
           <GatsbyImage
             image={getImage(article.featuredImage)!}
             alt={article.title}
-            className="z-10  m-4"
+            className="z-10  m-4 h-56"
           ></GatsbyImage>
         </Link>
       ),

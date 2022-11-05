@@ -68,7 +68,7 @@ const menuLinks: AllMenuInterface = {
       url: "/cl/food/",
       dropMenu: [
         {
-          text: "Tienda",
+          text: "Restaurantes",
           url: "/cl/food/restaurantes/",
         },
         {
@@ -310,7 +310,7 @@ const menuLinks: AllMenuInterface = {
       url: "/pe/food/",
       dropMenu: [
         {
-          text: "Tienda",
+          text: "Restaurantes",
           url: "/pe/food/restaurantes/",
         },
         {
@@ -396,7 +396,7 @@ const menuLinks: AllMenuInterface = {
       url: "/co/food/",
       dropMenu: [
         {
-          text: "Tienda",
+          text: "Restaurantes",
           url: "/co/food/restaurantes/",
         },
         {
@@ -654,7 +654,7 @@ const menuLinks: AllMenuInterface = {
       url: "/cr/food/",
       dropMenu: [
         {
-          text: "Tienda",
+          text: "Restaurantes",
           url: "/cr/food/restaurantes/",
         },
         {
@@ -726,7 +726,7 @@ const menuLinks: AllMenuInterface = {
       url: "/do/food/",
       dropMenu: [
         {
-          text: "Tienda",
+          text: "Restaurantes",
           url: "/do/food/restaurantes/",
         },
         {

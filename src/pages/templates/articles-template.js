@@ -11,7 +11,7 @@ import ArticlesColumns from "../../components/sections/ArticlesColumns";
 import NewsroomColumns from "../../components/sections/NewsroomColumns";
 import FoodBlogColumns from "../../components/sections/FoodBlogColumns";
 import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
-
+//dsss
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
   const { pathname } = useLocation();
@@ -19,12 +19,19 @@ const ArticlesTemplate = ({ data }) => {
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
   if (pathname.includes("newsroom"))
     columns = <NewsroomColumns data={data}></NewsroomColumns>;
-  if (pathname.includes("food/blog"))
+  if (pathname.includes("food/blog")) {
     hero = <FoodBlogPostHero data={data}></FoodBlogPostHero>;
-  columns = <FoodBlogColumns data={data}></FoodBlogColumns>;
-  if (pathname.includes("didipay/blog"))
+    columns = (
+      <FoodBlogColumns
+        data={data}
+        tags={data.contentfulArticle.tags}
+      ></FoodBlogColumns>
+    );
+  }
+  if (pathname.includes("didipay/blog")) {
     hero = <DiDiPayArticleHero data={data}></DiDiPayArticleHero>;
-  columns = <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>;
+    columns = <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>;
+  }
 
   return (
     <Layout>
@@ -46,6 +53,7 @@ export const query = graphql`
     $category: String
     $countryCode: String
     $language: String!
+    $tag: String
   ) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
@@ -60,6 +68,9 @@ export const query = graphql`
       title
       excerpt
       updatedAt
+      tags {
+        name
+      }
       content {
         raw
         references {
@@ -81,6 +92,7 @@ export const query = graphql`
         category: { eq: $category }
         country: { code: { eq: $countryCode } }
         id: { ne: $id }
+        tags: { elemMatch: { name: { eq: $tag } } }
       }
       sort: { fields: updatedAt, order: DESC }
       limit: 20
