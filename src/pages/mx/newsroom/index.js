@@ -14,7 +14,7 @@ const Newsroom = ({ data }) => {
     <Layout>
       <NewsroomHero bgImage={articlesHeroBgImage}></NewsroomHero>
       <NewsroomColumns data={data}></NewsroomColumns>
-      <Pagination data={data} postsPerPage={12}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };

@@ -14,7 +14,7 @@ const Article = ({ data }) => {
     <Layout>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
-      <Pagination data={data} postsPerPage={12}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };

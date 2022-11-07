@@ -14,7 +14,7 @@ const DiDiPayBlog = ({ data }) => {
     <Layout>
       <DiDiPayBlogHero bgImage={articlesHeroBgImage}></DiDiPayBlogHero>
       <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>
-      <Pagination data={data} postsPerPage={12}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
