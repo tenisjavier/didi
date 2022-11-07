@@ -17,7 +17,7 @@ export interface CTAProps extends BtnProps {
   bgMobileImage?: React.ReactNode;
   bgColor?: string;
   image?: React.ReactNode;
-  bullets?: string[];
+  bullets?: string[]; // bullets can be jsx in place map
   list?: {
     text: string;
     link: string;
