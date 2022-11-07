@@ -3,9 +3,11 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import GuidesHero from "../../components/sections/DrvHero";
 import GuidesColumns from "../../components/sections/GuidesColumns";
+import PaginationSEO from "../../components/PaginationSEO";
 
 const Guias = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const guias = data.allContentfulGuide.nodes;
   const guidesHeroBgImage = images.filter((image) => {
     return image.title === "cl.GuidesHero.bgImage";
   })[0];
@@ -13,6 +15,7 @@ const Guias = ({ data }) => {
     <Layout>
       <GuidesHero bgImage={guidesHeroBgImage}></GuidesHero>
       <GuidesColumns data={data}></GuidesColumns>
+      <PaginationSEO articles={guias} postsPerPage={20}></PaginationSEO>
     </Layout>
   );
 };
@@ -39,9 +42,8 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { country: { code: { eq: "cl" } } }
+      filter: { category: { eq: "driver" }, country: { code: { eq: "cl" } } }
       sort: { fields: updatedAt, order: DESC }
-      limit: 10
     ) {
       nodes {
         title
