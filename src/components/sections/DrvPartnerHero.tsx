@@ -3,33 +3,32 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
-interface DrvCTAProps {
-  image: {
+interface DrvPartnerHeroProps {
+  bgImage: {
     title: string;
     description: string;
     gatsbyImageData: IGatsbyImageData;
   };
 }
 
-const DrvCTA = ({ image }: DrvCTAProps) => {
+const DrvPartnerHero = ({ bgImage }: DrvPartnerHeroProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
-    hero: false,
-    title: t("DrvCTA.title"),
-    bullets: t("DrvCTA.bullets", { returnObjects: true }),
-    bgColor: t("DrvCTA.bgColor"),
-    textColor: t("DrvCTA.textColor"),
-    image: (
+    hero: true,
+    title: t("DrvPartnerHero.title"),
+    desc: t("DrvPartnerHero.desc"),
+    textColor: t("DrvPartnerHero.textColor"),
+    bgImage: (
       <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
+        image={bgImage.gatsbyImageData}
+        alt={bgImage.description}
+        className="!absolute z-0 h-full w-full md:block"
       ></GatsbyImage>
     ),
-    btnMode: t("DrvCTA.btnMode"),
+    btnMode: t("DrvPartnerHero.btnMode"),
     btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default DrvCTA;
+export default DrvPartnerHero;

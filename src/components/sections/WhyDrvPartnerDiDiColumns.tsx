@@ -4,13 +4,13 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUserShield,
-  faDollarSign,
-  faClock,
+  faUsers,
+  faSquarePollVertical,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface WhyDiDiColumnsProps {
+interface WhyDrvPartnerDiDiColumnsProps {
   images: {
     title: string;
     description: string;
@@ -19,13 +19,13 @@ interface WhyDiDiColumnsProps {
   icons: any[];
 }
 
-const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
+const WhyDrvPartnerDiDiColumns = ({ images, icons }: WhyDrvPartnerDiDiColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    title: t("WhyDiDiColumns.title"),
-    bgColor: t("WhyDiDiColumns.bgColor"),
-    textColor: t("WhyDiDiColumns.textColor"),
-    columns: t("WhyDiDiColumns.columns", { returnObjects: true }),
+    title: t("WhyDrvPartnerDiDiColumns.title"),
+    bgColor: t("WhyDrvPartnerDiDiColumns.bgColor"),
+    textColor: t("WhyDrvPartnerDiDiColumns.textColor"),
+    columns: t("WhyDrvPartnerDiDiColumns.columns", { returnObjects: true }),
   };
   if (images) {
     props.columns.forEach((col, index) => {
@@ -43,15 +43,15 @@ const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
       col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
     });
   } else {
-    props.columns[0].image = <FontAwesomeIcon icon={faUserShield} size="3x" />;
+    props.columns[0].image = <FontAwesomeIcon className="text-orange-primary" icon={faUsers} size="3x" />;
 
-    props.columns[1].image = <FontAwesomeIcon icon={faDollarSign} size="3x" />;
+    props.columns[1].image = <FontAwesomeIcon className="text-orange-primary" icon={faSquarePollVertical} size="3x" />;
 
-    props.columns[2].image = <FontAwesomeIcon icon={faClock} size="3x" />;
+    props.columns[2].image = <FontAwesomeIcon className="text-orange-primary" icon={faPhone} size="3x" />;
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
 
-export default WhyDiDiColumns;
+export default WhyDrvPartnerDiDiColumns;
 

@@ -24,6 +24,12 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.",
     },
   },
+  ru: {
+    "/": {
+      title: "DiDi Global - The World's Leader in Mobility Technology",
+      desc: "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.",
+    }
+  },
   cl: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",

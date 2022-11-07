@@ -161,6 +161,12 @@ const btnLinks: AllBtnInterface = {
     drvText: "Drive with DiDi",
     paxText: "Ride with DiDi",
   },
+  ru: {
+    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/rudriverhero",
+    paxLink: "https://russia-rides-driver.onelink.me/o97G/ruhomepage",
+    drvText: "Зарегистрироваться как водитель",
+    paxText: "Зарегистрироваться как пассажир",
+  },
 };
 
 const getBtnLinks = (countryCode: string): SingleBtnInterface => {

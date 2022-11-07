@@ -87,6 +87,70 @@ const Breadcrumb = () => {
                 </Link>
               </li>
             );
+          } else if (countryCode == "ru") {
+            var itemPath;
+            switch (dir) {
+              case "about-didi":
+                itemPath = "О нас";
+                break;
+              case "rider":
+                itemPath = "Пассажир";
+                break;
+              case "driver":
+                itemPath = "Водитель";
+                break;
+              case "driver-partner":
+                itemPath = "Водитель-партнер";
+                break;
+              case "safety":
+                itemPath = "Безопасность";
+                break;
+              case "taxi":
+                itemPath = "Водитель таксопарка";
+                break;
+              case "fleet":
+                itemPath = "Владельцам таксопарков";
+                break;
+              case "legal":
+                itemPath = "Круто";
+                break;
+              default:
+                itemPath = dir;
+            }
+            if (index === directories.length - 1) {
+              return (
+                <li key={index}>
+                  <span className="mx-2">
+                    <FontAwesomeIcon
+                      icon={faGreaterThan}
+                      size="1x"
+                      className="w-2"
+                    ></FontAwesomeIcon>
+                  </span>
+
+                  {itemPath}
+                </li>
+              );
+            }
+
+            return (
+              <li key={index}>
+                <span className="mx-2 ">
+                  <FontAwesomeIcon
+                    icon={faGreaterThan}
+                    size="1x"
+                    className="w-2"
+                  ></FontAwesomeIcon>
+                </span>
+
+                <Link
+                  to={"/" + directories.slice(0, index + 1).join("/") + "/"}
+                  className=" hover:text-blue-700"
+                >
+                  {itemPath}
+                </Link>
+              </li>
+            );
           } else {
             if (index === directories.length - 1) {
               return (

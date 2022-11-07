@@ -84,6 +84,7 @@ module.exports = {
           `nz`,
           `mx`,
           `en`,
+          `ru`,
         ],
         defaultLanguage: `en`,
         redirect: "false",
