@@ -25,16 +25,13 @@ const Driver = ({ data }) => {
     (node) => node.name === "DiDi Express Russia"
   );
   const cities = data.allContentfulCity.nodes;
-  console.log(products);
+
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <WhyDiDiColumns></WhyDiDiColumns>
       <DrvTypeCTA image={drvFeaturesImage}></DrvTypeCTA>
-      <SilderSection
-        data={products}
-        title="Для вас есть DiDi"
-      ></SilderSection>
+      <SilderSection data={products} title="Для вас есть DiDi"></SilderSection>
       <Requirements data={productsReq}></Requirements>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <KnowMoreBanner></KnowMoreBanner>
@@ -58,14 +55,7 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: {
-        title: {
-          in: [
-            "ru.DrvHero.bgImage"
-            "ru.DrvTypeCTA.image"
-          ]
-        }
-      }
+      filter: { title: { in: ["ru.DrvHero.bgImage", "ru.DrvTypeCTA.image"] } }
     ) {
       nodes {
         id
@@ -78,7 +68,7 @@ export const query = graphql`
       filter: {
         country: { elemMatch: { code: { eq: "ru" } } }
         category: { eq: "driver" }
-        name: {ne: "DiDi Fleet Russia"}
+        name: { ne: "DiDi Fleet Russia" }
       }
     ) {
       nodes {

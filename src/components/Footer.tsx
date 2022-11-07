@@ -49,7 +49,6 @@ const Footer = () => {
 
             <div className="text-c h-auto w-3/4 lg:w-full lg:pr-52 lg:text-left">
               {countries.map((c: any, index: number) => {
-                console.log(i18n.language, c);
                 if (index === 0) {
                   return (
                     <a
@@ -59,8 +58,14 @@ const Footer = () => {
                     >
                       {i18n.language === "ru" ? c.russianName : null}
                       {i18n.language === "eg" ? c.arabicName : null}
-                      {sslCountries.includes(i18n.language) ? c.spanishName : null}
-                      {i18n.language !== "eg" && i18n.language !== "ru" && !sslCountries.includes(i18n.language) ? c.englishName : null}
+                      {sslCountries.includes(i18n.language)
+                        ? c.spanishName
+                        : null}
+                      {i18n.language !== "eg" &&
+                      i18n.language !== "ru" &&
+                      !sslCountries.includes(i18n.language)
+                        ? c.englishName
+                        : null}
                     </a>
                   );
                 } else {
@@ -74,8 +79,14 @@ const Footer = () => {
                       >
                         {i18n.language === "ru" ? c.russianName : null}
                         {i18n.language === "eg" ? c.arabicName : null}
-                        {sslCountries.includes(i18n.language) ? c.spanishName : null}
-                        {i18n.language !== "eg" && i18n.language !== "ru" && !sslCountries.includes(i18n.language) ? c.englishName : null}
+                        {sslCountries.includes(i18n.language)
+                          ? c.spanishName
+                          : null}
+                        {i18n.language !== "eg" &&
+                        i18n.language !== "ru" &&
+                        !sslCountries.includes(i18n.language)
+                          ? c.englishName
+                          : null}
                       </a>
                     </span>
                   );
