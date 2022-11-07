@@ -16,6 +16,7 @@ const DrvCTA = ({ image }: DrvCTAProps) => {
   const props: CTAProps = {
     hero: false,
     title: t("DrvCTA.title"),
+    desc: t("DrvCTA.desc"),
     bullets: t("DrvCTA.bullets", { returnObjects: true }),
     bgColor: t("DrvCTA.bgColor"),
     textColor: t("DrvCTA.textColor"),
