@@ -131,7 +131,7 @@ const CTASection = (props: CTAProps) => {
           {bullets && (
             <>
               <ul className="mt-12 mb-2 list-none text-left text-xl">
-                {bullets.map((item, index) => {
+                {bullets?.map((item, index) => {
                   return (
                     <div key={index}>
                       <li className="flex">
