@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { getBtnLinks } from "../config/btn-config";
 import gtmEvent from "../config/gtm";
@@ -68,19 +69,30 @@ const Btn = ({
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
   }
+
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    const link = e.target.href;
+    let form;
+    if (btnType === "drv")
+      form = link.includes("quickbolt") ? "quickbolt" : "h5";
+    gtmEvent(`click-btn`, {
+      btnType: btnType,
+      btnLink: link,
+      form: form,
+      btnText: btnText,
+      countryCode: countryCode,
+    });
+    navigate(link);
+  };
+
   return (
-    <div
-      onClick={() =>
-        gtmEvent(`click-btn`, {
-          btnType: btnType,
-          btnLink: btnLink,
-          btnText: btnText,
-          countryCode: countryCode,
-        })
-      }
-      className={`my-2 btn-${btnMode} btn-${btnModeSecondary}`}
-    >
-      <a className="block" href={btnLink || btnLink2}>
+    <div className={`my-2 btn-${btnMode} btn-${btnModeSecondary}`}>
+      <a
+        onClick={(e) => handleClick(e)}
+        className="block"
+        href={btnLink || btnLink2}
+      >
         {btnText || btnText2}
       </a>
     </div>

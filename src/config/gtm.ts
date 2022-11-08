@@ -1,13 +1,13 @@
 // codigo de tracking didi SEO y WEB
 
-let dataLayer = [{}];
 const gtmEvent = (
   eventName: string,
   params?: { [key: string]: string | undefined }
 ) => {
   const isBrowser = typeof window !== "undefined";
   if (isBrowser) {
-    dataLayer.push({
+    // @ts-ignore
+    window.dataLayer.push({
       event: eventName,
       ...params,
     });
