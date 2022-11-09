@@ -108,6 +108,13 @@ const footerLinks: AllFooterInterface = {
     { text: "Legal", link: "/nz/legal/" },
     { text: "Newsroom", link: "/nz/newsroom/" },
   ],
+  ru: [
+    { text: "Водителям", link: "/ru/driver/" },
+    { text: "Пассажирам", link: "/ru/rider/" },
+    { text: "безопасность", link: "/ru/safety/" },
+    { text: "правовой", link: "/ru/legal/" },
+    { text: "отдел новостей", link: "/ru/newsroom/" },
+  ],
 };
 
 const getFooterLinks = (countryCode: string): FooterLinks[] => {

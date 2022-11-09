@@ -46,6 +46,8 @@ const articlesRoutesInit = async (graphql, createPage) => {
       path = `/${country.code}/didipay/blog/${slug}/`;
     if (!sslCountries.includes(country.code) && cleanCategory !== "food")
       path = `/${country.code}/blog/${slug}/`;
+    }
+
 
     createPage({
       path: path,

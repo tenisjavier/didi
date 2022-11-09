@@ -5,7 +5,7 @@ import HomeHero from "../../components/sections/HomeHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
-import HomeColumns from "../../components/sections/HomeColumns";
+import HomeAltColumns from "../../components/sections/HomeAltColumns";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -22,9 +22,9 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
-      <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
-      <HomeColumns></HomeColumns>
+      <DrvCTA image={drvCTAImage}></DrvCTA>
+      <HomeAltColumns></HomeAltColumns>
     </Layout>
   );
 };
