@@ -152,7 +152,7 @@ const CTASection = (props: CTAProps) => {
                         <div className="inline-block">
                           {typeof item === "string"
                             ? item.split("\n").map((str, index) => (
-                                <p className="mt-0 mb-5 text-lg" key={index}>
+                                <p className="mt-0 mb-5 text-xl" key={index}>
                                   {str}
                                 </p>
                               ))
