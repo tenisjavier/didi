@@ -15,7 +15,7 @@ const Article = ({ data }) => {
     <Layout>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
-      <Pagination data={data} postsPerPage={6}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
@@ -46,8 +46,7 @@ export const query = graphql`
         category: { in: ["rides", "news"] }
         country: { code: { eq: "nz" } }
       }
-      sort: { fields: content___references___createdAt, order: DESC }
-      limit: 20
+      sort: { fields: updatedAt, order: DESC }
     ) {
       nodes {
         title

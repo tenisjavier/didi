@@ -71,19 +71,19 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Pide comida a través de DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/store/": {
+    "/food/restaurantes/": {
       title: "Inscribe tu Comercio en DiDi Food",
       desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/delivery/": {
+    "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/about/": {
+    "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/contact/": {
+    "/food/contacto/": {
       title: "DiDi Food: Contacta nuestro Servicio al Cliente",
       desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
@@ -325,19 +325,19 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Pide comida a través de DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/store/": {
+    "/food/restaurantes/": {
       title: "Inscribe tu Comercio en DiDi Food",
       desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/delivery/": {
+    "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/about/": {
+    "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/contact/": {
+    "/food/contacto/": {
       title: "DiDi Food: Contacta nuestro Servicio al Cliente",
       desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
@@ -487,19 +487,19 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Food Perú: Pide comida a Domicilio",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/store/": {
+    "/food/restaurantes/": {
       title: "Inscribe tu Restaurante en DiDi Food",
       desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/delivery/": {
+    "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/about/": {
+    "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/contact/": {
+    "/food/contacto/": {
       title: "DiDi Food: Contacta nuestro Servicio al Cliente",
       desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
@@ -595,19 +595,19 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Pide comida a través de DiDi Food",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/store/": {
+    "/food/restaurantes/": {
       title: "Inscribe tu Restaurante en DiDi Food",
       desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/delivery/": {
+    "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/about/": {
+    "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
-    "/food/contact/": {
+    "/food/contacto/": {
       title: "DiDi Food: Contacta nuestro Servicio al Cliente",
       desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
     },
@@ -801,19 +801,19 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Pedí comida a través de DiDi Food",
       desc: "Pedí comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
-    "/food/store/": {
+    "/food/restaurantes/": {
       title: "Inscribí tu Comercio en DiDi Food",
       desc: "Inscribí tu Comercio en DiDi Food y empezá a generar ventas fuera de tu local físico. Expandí tu negocio. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
-    "/food/delivery/": {
+    "/food/repartidores/": {
       title: "Inscribite como Repartidor y Ganá Dinero en DiDi Food",
       desc: "Como repartidor controlás tus tiempos. Generá ingresos de una manera confiable. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
-    "/food/about/": {
+    "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pedí comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
-    "/food/contact/": {
+    "/food/contacto/": {
       title: "DiDi Food: Contactá nuestro Servicio al Cliente",
       desc: "Si sos repartidor, restaurante o usuario podés escribirnos por cualquier problema que tengas con DiDi Food.",
     },

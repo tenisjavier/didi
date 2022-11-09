@@ -39,8 +39,8 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "food" }, country: { code: { eq: "cl" } } }
-      sort: { fields: content___references___createdAt, order: DESC }
+      filter: { category: { eq: "food" }, country: { code: { eq: "cr" } } }
+      sort: { fields: updatedAt, order: DESC }
       limit: 10
     ) {
       nodes {

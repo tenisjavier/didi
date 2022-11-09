@@ -1,23 +1,25 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import NewsroomHero from "../../../components/sections/NewsroomHero";
-import NewsroomColumns from "../../../components/sections/NewsroomColumns";
+import Layout from "../../../../components/Layout";
+import DiDiPayBlogHero from "../../../../components/sections/DiDiPayBlogHero";
+import DiDiPayBlogColumns from "../../../../components/sections/DiDiPayBlogColumns";
+import Pagination from "../../../../components/Pagination";
 
-const Newsroom = ({ data }) => {
+const DiDiPayBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "cl.ArticlesHero.bgImage";
+    return image.title === "mx.FoodHero.bgImage";
   })[0];
   return (
     <Layout>
-      <NewsroomHero bgImage={articlesHeroBgImage}></NewsroomHero>
-      <NewsroomColumns data={data}></NewsroomColumns>
+      <DiDiPayBlogHero bgImage={articlesHeroBgImage}></DiDiPayBlogHero>
+      <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
 
-export default Newsroom;
+export default DiDiPayBlog;
 
 export const query = graphql`
   query ($language: String!) {
@@ -30,7 +32,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(filter: { title: { in: ["cl.ArticlesHero.bgImage"] } }) {
+    allContentfulAsset(filter: { title: { in: ["mx.FoodHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -39,9 +41,8 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "news" }, country: { code: { eq: "ar" } } }
+      filter: { category: { eq: "pay" }, country: { code: { eq: "mx" } } }
       sort: { fields: updatedAt, order: DESC }
-      limit: 10
     ) {
       nodes {
         title

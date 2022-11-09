@@ -41,7 +41,7 @@ const GuidesColumns = ({ data }: GuidesColumnsProps) => {
           <GatsbyImage
             image={getImage(guide.featuredImage)!}
             alt={guide.title}
-            className="z-10  m-4"
+            className="z-10  m-4 h-56"
           ></GatsbyImage>
         </Link>
       ),

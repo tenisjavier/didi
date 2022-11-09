@@ -24,13 +24,14 @@ const Seguridad = ({ data }) => {
     return image.title === "mx.InsuranceCoverageCTA.image";
   })[0];
 
-  console.log(foodSafetyToolsColumns);
   return (
     <Layout>
       <FoodSafetyHero bgImage={FoodSafetyHeroBgImage}></FoodSafetyHero>
       <SafetyRoadCTA></SafetyRoadCTA>
       <SafetyToolsCTA></SafetyToolsCTA>
-      <FoodSafetyColumns images={foodSafetyToolsColumns.reverse()}></FoodSafetyColumns>
+      <FoodSafetyColumns
+        images={foodSafetyToolsColumns.reverse()}
+      ></FoodSafetyColumns>
       <SupportFundCTA image={SupportFundCTAImage}></SupportFundCTA>
       <InsuranceCoverageCTA image={insuranceCoverageCTA}></InsuranceCoverageCTA>
       <KnowMoreBanner></KnowMoreBanner>
@@ -52,7 +53,11 @@ export const query = graphql`
       }
     }
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.FoodSafetyHero.bgImage)|(mx.FoodSafetyToolsColumns.image)|(mx.SupportFundCTA.image)|(mx.InsuranceCoverageCTA.image)/" } }
+      filter: {
+        title: {
+          regex: "/(mx.FoodSafetyHero.bgImage)|(mx.FoodSafetyToolsColumns.image)|(mx.SupportFundCTA.image)|(mx.InsuranceCoverageCTA.image)/"
+        }
+      }
       sort: { fields: title }
     ) {
       nodes {

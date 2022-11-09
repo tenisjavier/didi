@@ -14,7 +14,7 @@ const FoodBlog = ({ data }) => {
     <Layout>
       <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
       <FoodBlogColumns data={data}></FoodBlogColumns>
-      <Pagination data={data} postsPerPage={12}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
@@ -42,7 +42,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: { category: { eq: "food" }, country: { code: { eq: "mx" } } }
-      sort: { fields: content___references___updatedAt, order: DESC }
+      sort: { fields: updatedAt, order: DESC }
     ) {
       nodes {
         title

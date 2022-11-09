@@ -5,48 +5,32 @@ import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface FoodBlogColumns {
+interface DiDiPayBlogColumnsProps {
   data: {
     allContentfulArticle: {
       nodes: {
         title: string;
         slug: string;
-        tags?: { name: string }[];
         excerpt: string;
         featuredImage: ImageDataLike;
       }[];
     };
   };
-  tags?: { name: string }[];
 }
 
-const FoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
-  console.log(tags);
+const FoodBlogColumns = ({ data }: DiDiPayBlogColumnsProps) => {
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
-    title: t("FoodBlogColumns.title"),
-    bgColor: t("FoodBlogColumns.bgColor"),
-    textColor: t("FoodBlogColumns.textColor"),
+    title: t("DiDiPayBlogColumns.title"),
+    bgColor: t("DiDiPayBlogColumns.bgColor"),
+    textColor: t("DiDiPayBlogColumns.textColor"),
     columns: [],
   };
 
   const articles = data.allContentfulArticle.nodes;
 
-  // let filterArticles = articles;
-
-  // if (tags) {
-  //   filterArticles = articles.filter((article) => {
-  //     if (article.tags) {
-  //       return article.tags[0].name === tags[0].name;
-  //       console.log(article)
-  //     }
-  //     return false;
-  //   });
-  // }
-  //
-
   props.columns = articles.map((article) => {
-    const link = t("FoodBlogColumns.linkItem", {
+    const link = t("DiDiPayBlogColumns.linkItem", {
       article: article.slug,
     });
     return {
@@ -59,13 +43,13 @@ const FoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
           <GatsbyImage
             image={getImage(article.featuredImage)!}
             alt={article.title}
-            className="z-10  m-4 h-56"
+            className="z-10  m-4"
           ></GatsbyImage>
         </Link>
       ),
-      btnText: t("ArticlesColumns.btnText"),
+      btnText: t("DiDiPayBlogColumns.btnText"),
       btnLink: link,
-      btnMode: t("ArticlesColumns.btnMode"),
+      btnMode: t("DiDiPayBlogColumns.btnMode"),
       height: "h-96",
     };
   });

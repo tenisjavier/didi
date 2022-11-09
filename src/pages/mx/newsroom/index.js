@@ -14,7 +14,7 @@ const Newsroom = ({ data }) => {
     <Layout>
       <NewsroomHero bgImage={articlesHeroBgImage}></NewsroomHero>
       <NewsroomColumns data={data}></NewsroomColumns>
-      <Pagination data={data} postsPerPage={12}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
@@ -42,7 +42,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: { category: { eq: "news" }, country: { code: { eq: "mx" } } }
-      sort: { fields: content___references___createdAt, order: DESC }
+      sort: { fields: updatedAt, order: DESC }
     ) {
       nodes {
         title

@@ -14,7 +14,7 @@ const Article = ({ data }) => {
     <Layout>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
-      <Pagination data={data} postsPerPage={12}></Pagination>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
@@ -42,7 +42,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: { category: { eq: "rides" }, country: { code: { eq: "mx" } } }
-      sort: { fields: content___references___createdAt, order: DESC }
+      sort: { fields: updatedAt, order: DESC }
     ) {
       nodes {
         title

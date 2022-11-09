@@ -11,6 +11,9 @@ const articlesRoutesInit = async (graphql, createPage) => {
           id
           slug
           category
+          tags {
+            name
+          }
           country {
             code
           }
@@ -30,18 +33,21 @@ const articlesRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulArticle.nodes.forEach((node) => {
-    const { id, slug, category, country } = node;
+    const { id, slug, category, country, tags } = node;
+    let oneTag;
+    if (tags) oneTag = tags[0].name;
     const cleanCategory = category.pop();
     const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
     // create path depending on the language and category
     let path = `/${country.code}/articulos/${slug}/`;
     if (cleanCategory === "food") path = `/${country.code}/food/blog/${slug}/`;
     if (cleanCategory === "news") path = `/${country.code}/newsroom/${slug}/`;
-    if (!sslCountries.includes(country.code) && cleanCategory !== "food" && country.code !== "ru") {
+    if (cleanCategory === "pay")
+      path = `/${country.code}/didipay/blog/${slug}/`;
+    if (!sslCountries.includes(country.code) && cleanCategory !== "food")
       path = `/${country.code}/blog/${slug}/`;
     }
 
-    console.log(country.code, path, cleanCategory);
 
     createPage({
       path: path,
@@ -50,6 +56,7 @@ const articlesRoutesInit = async (graphql, createPage) => {
         id: id,
         category: cleanCategory,
         countryCode: country.code,
+        tag: oneTag,
       },
     });
   });

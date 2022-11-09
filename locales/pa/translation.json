@@ -9,14 +9,14 @@
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
-  "DrvCTA.title": "Maneja con DiDi",
-  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares o taxi de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
+  "DrvCTA.title": "Regístrate en DiDi Conductor",
+  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bullets": false,
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.textColor": "gray-primary",
   "DrvCTA.btnMode": "primary",
-  "PaxCTA.title": "¡ELIGE DiDi!",
-  "PaxCTA.desc": "Al conectarte a través de DiDi tienes tarifas accesibles para que viajes donde necesites. Con DiDi tienes soporte telefónico 24/7 en todos tus viajes y puedes contar con nuestros protocolos y funciones de seguridad para que viajes con la tranquilidad que mereces.¡Es momento de redescubrir tu ciudad en un DiDi!",
+  "PaxCTA.title": "¡Elige DiDi!",
+  "PaxCTA.desc": "Al conectarte a través de DiDi tienes tarifas accesibles para que viajes donde necesites. Con DiDi tienes soporte telefónico 24/7 en todos tus viajes y puedes contar con nuestros protocolos y funciones de seguridad para que viajes con la tranquilidad que mereces. ¡Es momento de redescubrir tu ciudad en un DiDi!",
   "PaxCTA.bullets": false,
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
@@ -28,7 +28,7 @@
       "desc": "Somos la app de movilidad más grande del mundo.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
-      "btnLink": "/pa/centro-de-ayuda/",
+      "btnLink": "/pa/sobre-didi/",
       "btnMode": "light",
       "height": "h-80"
     },
@@ -81,7 +81,7 @@
   "PaxWhyDiDi.bullets": [
     "Viajes a pedido. Obtén un viaje confiable en minutos, a cualquier hora y en cualquier día del año.",
     "Opciones económicas: Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
-    "Una forma fácil de viajar. Pide un Socio Conductor para que llegue por ti y te lleve a destino con solo tocar un botón."
+    "Una forma fácil de viajar. Conéctate con DiDi y llega a tiempo a tu destino con solo tocar un botón."
   ],
   "PaxWhyDiDi.desc": "Paga tus servicios con tarjeta de crédito o efectivo. ",
   "PaxWhyDiDi.textColor": "gray-primary",
@@ -93,7 +93,7 @@
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "CONDUCE A TRAVÉS DE DIDI",
+  "DrvHero.title": "Conviértete en Socio Conductor",
   "DrvHero.desc": "Regístrate en DiDi Conductor y comienza ya a generar ganancias cuando más te convenga.",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",
@@ -158,7 +158,7 @@
   "AboutColumns.columns": [
     {
       "title": "Seguridad de Usuarios y Conductores",
-      "desc": "En DiDi nos preocupa mucho tu seguridad. Aprende sobre todas las opciones de seguridad que tienes.",
+      "desc": "En DiDi tu seguridad es nuestra prioridad. Aprende sobre todas las opciones de seguridad que tienes.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "linkItem": "/pa/seguridad/",
@@ -177,7 +177,7 @@
       "btnLink": "/pa/centro-de-ayuda/"
     }
   ],
-  "SafetyHero.title": "VIAJES CON MAYOR TRANQUILIDAD",
+  "SafetyHero.title": "Viaja Tranquilo con DiDi",
   "SafetyHero.desc": "Cada día se completan millones de viajes en la plataforma de DiDi. Te invitamos a conocer las herramientas de seguridad disponibles en la app de Socios Conductores y Usuarios.",
   "SafetyHero.textColor": "white",
   "SafetyHero.btnMode": "light",
@@ -187,7 +187,7 @@
   "SafetyGridBeforeTrip.columns": [
     {
       "title": "Verificación de Socios Conductores",
-      "desc": "Para que una persona pueda registrarse como socio conductor o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
+      "desc": "Para que una persona pueda registrarse como socio conductor en DiDi, debe pasar por una serie de validaciones de documentos personales.",
       "bgColor": "bg-white"
     },
     {
@@ -273,12 +273,12 @@
     },
     {
       "title": "Bloquear Socio Conductor",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
+      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista en particular.",
       "bgColor": "bg-gray-light"
     }
   ],
   "SafetyGridDrv.bgColor": "bg-white",
-  "SafetyGridDrv.title": "Además, si eres un Socio Conductor/Taxista",
+  "SafetyGridDrv.title": "Además, si eres un Socio Conductor",
   "SafetyGridDrv.desc": false,
   "SafetyGridDrv.textColor": "gray-primary",
   "SafetyGridDrv.columns": [
@@ -324,7 +324,7 @@
     },
     {
       "title": "Botón de emergencia",
-      "desc": "Durante cualquier situación de emergencia en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 123 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier situación de emergencia en tu viaje, puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 911 y nuestro Centro de Emergencias.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -342,7 +342,7 @@
     },
     {
       "title": "Desvincular Socio Conductor/ taxista",
-      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación de socio conductor/ socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener viajes con este socio conductor / socio taxista.",
+      "desc": "Si sientes que la experiencia en tu recorrido no fue buena, al terminar el viaje, en el menú de calificación, encontrarás el botón de desvinculación. Esto evitará que vuelvas a tener viajes con este socio conductor.",
       "textColor": "gray-primary",
       "width": "w-100"
     },
@@ -365,14 +365,8 @@
       "width": "w-100"
     },
     {
-      "title": "Tips de seguridad y calificación a socios conductores/socios taxistas",
+      "title": "Tips de seguridad y calificación a socios conductores",
       "desc": "Antes de iniciar un viaje te damos ciertos tips de seguridad para que tengas en cuenta al momento de usar nuestra app.",
-      "textColor": "gray-primary",
-      "width": "w-100"
-    },
-    {
-      "title": "Seguridad ante COVID-19",
-      "desc": "Para cuidarnos juntos, te pedimos seguir las siguientes recomendaciones cuando te conectes con viajes a través de la app de DiDi: 1. No salgas de casa si estás enfermo. / 2. Conforme a las normas locales, el uso de mascarillas es obligatorio en todo el territorio nacional. / 3. Por ello, es necesario que las utilices cuando te conectes con viajes a través de la app. / 4. Lávate las manos con agua y jabón o desinféctalas con alcohol en gel antes y después del viaje. Viaja con las ventanas abiertas para mantener el vehículo ventilado. / 5. Evita tocar partes internas del vehículo durante el viaje. / 6. Desinfecta tu celular diariamente. / 7. Si cuentas con una tarjeta de débito o crédito, te recomendamos utilizarla en todos tus viajes para evitar el contacto físico.",
       "textColor": "gray-primary",
       "width": "w-100"
     }
@@ -382,9 +376,11 @@
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
   "HelpCenterFAQDrv.title": "Preguntas Socios Conductores",
+  "HelpCenterFAQDrv.desc": "",
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
+  "HelpCenterFAQPax.desc": "",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "ArticlesHero.title": "DiDi Artículos",
@@ -435,7 +431,7 @@
   "PartnersCTA.bgColor": "bg-blue-primary",
   "PartnersCTA.btnMode": "light",
   "DrvCityHero.title": "Socios Conductores en {{city}}",
-  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}?. Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
+  "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}? Regístrate online y comienza a generar ingresos de manera segura y flexible. ",
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",

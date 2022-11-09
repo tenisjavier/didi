@@ -38,7 +38,10 @@ export const query = graphql`
       }
     }
     allContentfulCity(
-      filter: { country: { code: { eq: "mx" } } }
+      filter: {
+        country: { code: { eq: "mx" } }
+        product: { elemMatch: { category: { in: "driver" } } }
+      }
       sort: { fields: name }
     ) {
       nodes {

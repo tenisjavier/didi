@@ -68,20 +68,20 @@ const menuLinks: AllMenuInterface = {
       url: "/cl/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/cl/food/store/",
+          text: "Restaurantes",
+          url: "/cl/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/cl/food/delivery/",
+          url: "/cl/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/cl/food/about/",
+          url: "/cl/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/cl/food/contact/",
+          url: "/cl/food/contacto/",
         },
       ],
     },
@@ -310,20 +310,20 @@ const menuLinks: AllMenuInterface = {
       url: "/pe/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/pe/food/store/",
+          text: "Restaurantes",
+          url: "/pe/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/pe/food/delivery/",
+          url: "/pe/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/pe/food/about/",
+          url: "/pe/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/pe/food/contact/",
+          url: "/pe/food/contacto/",
         },
       ],
     },
@@ -396,20 +396,20 @@ const menuLinks: AllMenuInterface = {
       url: "/co/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/co/food/store/",
+          text: "Restaurantes",
+          url: "/co/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/co/food/delivery/",
+          url: "/co/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/co/food/about/",
+          url: "/co/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/co/food/contact/",
+          url: "/co/food/contacto/",
         },
       ],
     },
@@ -654,20 +654,20 @@ const menuLinks: AllMenuInterface = {
       url: "/cr/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/cr/food/store/",
+          text: "Restaurantes",
+          url: "/cr/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/cr/food/delivery/",
+          url: "/cr/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/cr/food/about/",
+          url: "/cr/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/cr/food/contact/",
+          url: "/cr/food/contacto/",
         },
       ],
     },
@@ -726,20 +726,20 @@ const menuLinks: AllMenuInterface = {
       url: "/do/food/",
       dropMenu: [
         {
-          text: "Tienda",
-          url: "/do/food/store/",
+          text: "Restaurantes",
+          url: "/do/food/restaurantes/",
         },
         {
           text: "Socio Repartidor",
-          url: "/do/food/delivery/",
+          url: "/do/food/repartidores/",
         },
         {
           text: "Acerca",
-          url: "/do/food/about/",
+          url: "/do/food/acerca-didi-food/",
         },
         {
           text: "Contacto",
-          url: "/do/food/contact/",
+          url: "/do/food/contacto/",
         },
       ],
     },

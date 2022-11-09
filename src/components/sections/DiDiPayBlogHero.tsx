@@ -3,7 +3,7 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import CTASection, { CTAProps } from "../CTASection";
 
-interface FoodBlogHero {
+interface DiDiPayBlogHeroProps {
   bgImage: {
     title: string;
     description: string;
@@ -11,13 +11,13 @@ interface FoodBlogHero {
   };
 }
 
-const FoodBlogHero = ({ bgImage }: FoodBlogHero) => {
+const DiDiPayBlogHero = ({ bgImage }: DiDiPayBlogHeroProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
-    title: t("FoodBlogHero.title"),
-    desc: t("FoodBlogHero.desc"),
-    textColor: t("FoodBlogHero.textColor"),
+    title: t("DiDiPayBlogHero.title"),
+    desc: t("DiDiPayBlogHero.desc"),
+    textColor: t("DiDiPayBlogHero.textColor"),
     bgImage: (
       <GatsbyImage
         image={bgImage.gatsbyImageData}
@@ -25,10 +25,10 @@ const FoodBlogHero = ({ bgImage }: FoodBlogHero) => {
         className="!absolute z-0 h-full w-full brightness-50  md:block"
       ></GatsbyImage>
     ),
-    btnMode: t("FoodBlogHero.btnMode"),
-    btnType: "foodEater",
+    btnMode: t("DiDiPayBlogHero.btnMode"),
+    btnType: "payment",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default FoodBlogHero;
+export default DiDiPayBlogHero;

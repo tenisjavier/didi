@@ -1,6 +1,8 @@
 import React from "react";
+import { navigate } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { getBtnLinks } from "../config/btn-config";
+import gtmEvent from "../config/gtm";
 
 // @desc: Pax and Driver CTA buttons.  If not btnType is passed it will be a normal btn.
 // @props: btnType drv/pax/none | btnLink (normal btn) "url" | btnMode light/none | children: normal btn text
@@ -19,14 +21,22 @@ export interface BtnProps {
     | "foodEaterOnline"
     | "custom"
     | "bothFood";
-    btnText2?: string;
-    btnLink2?: string
-  btnMode?: "primary" | "dark" | "light" | 'green';
-  btnModeSecondary?: "primary" | "dark" | "light" | 'green';
+  btnText2?: string;
+  btnLink2?: string;
+  btnMode?: "primary" | "dark" | "light" | "green";
+  btnModeSecondary?: "primary" | "dark" | "light" | "green";
   btnLink?: string;
   btnText?: string;
 }
-const Btn = ({ btnType, btnMode, btnLink, btnText, btnModeSecondary, btnText2, btnLink2 }: BtnProps) => {
+const Btn = ({
+  btnType,
+  btnMode,
+  btnLink,
+  btnText,
+  btnModeSecondary,
+  btnText2,
+  btnLink2,
+}: BtnProps) => {
   const { i18n } = useTranslation();
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
@@ -59,9 +69,30 @@ const Btn = ({ btnType, btnMode, btnLink, btnText, btnModeSecondary, btnText2, b
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
   }
+
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    const link = e.target.href;
+    let form;
+    if (btnType === "drv")
+      form = link.includes("quickbolt") ? "quickbolt" : "h5";
+    gtmEvent(`click-btn`, {
+      btnType: btnType,
+      btnLink: link,
+      form: form,
+      btnText: btnText,
+      countryCode: countryCode,
+    });
+    navigate(link);
+  };
+
   return (
     <div className={`my-2 btn-${btnMode} btn-${btnModeSecondary}`}>
-      <a className="block" href={btnLink || btnLink2}>
+      <a
+        onClick={(e) => handleClick(e)}
+        className="block"
+        href={btnLink || btnLink2}
+      >
         {btnText || btnText2}
       </a>
     </div>
