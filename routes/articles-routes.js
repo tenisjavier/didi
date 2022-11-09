@@ -1,7 +1,7 @@
 const path = require(`path`);
 const slugify = require("slugify");
 
-// @desc: Create Routes from WP for all countries and pass pageContext to template
+// @desc: Create Routes for all countries and pass pageContext to template
 // @return: null
 const articlesRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
