@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const ColumnsSection = (props) => {
+const ColumnImage = (props) => {
   const { columns, bgColor, title, desc, textColor, image, reverse } = props;
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
@@ -13,7 +13,9 @@ const ColumnsSection = (props) => {
             reverse && "flex-row-reverse"
           } flex-wrap justify-center`}
         >
-          <div className={`mt-10 flex flex-wrap justify-around lg:w-3/5 `}>
+          <div
+            className={`mt-10 flex flex-wrap md:grid md:grid-cols-2 justify-around lg:w-3/5 min-w-sm`}
+          >
             {columns.map((col, index) => {
               return <Card {...col} key={index}></Card>;
             })}
@@ -25,4 +27,4 @@ const ColumnsSection = (props) => {
   );
 };
 
-export default ColumnsSection;
+export default ColumnImage;

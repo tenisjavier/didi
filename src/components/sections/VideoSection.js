@@ -9,9 +9,7 @@ const VideoSection = () => {
     title: t("VideoSection.title"),
     desc: (
       <iframe
-        className="mt-8"
-        width="640"
-        height="400"
+        className="mt-8 w-full h-64 md:h-105"
         src={videoSrc}
         title="YouTube video player"
         frameBorder="0"
@@ -22,7 +20,6 @@ const VideoSection = () => {
     descText: t("VideoSection.descText"),
     bgColor: t("VideoSection.bgColor"),
     textColor: t("VideoSection.textColor"),
-    height: "h-128",
     alignItems: "items-start",
     btnLink: t("VideoSection.btnLink"),
     btnMode: t("VideoSection.btnMode"),
