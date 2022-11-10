@@ -9,8 +9,8 @@ const VideoSection = () => {
     title: t("VideoSection.title"),
     desc: (
       <iframe
-        className="mt-8"
-        width="640"
+        className="mt-8 md:aspect-video"
+        width="auto"
         height="400"
         src={videoSrc}
         title="YouTube video player"
