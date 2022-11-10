@@ -80,7 +80,7 @@ const Btn = ({
       btnType: btnType,
       btnLink: link,
       form: form,
-      btnText: btnText,
+      btnText: e.target.innerText,
       countryCode: countryCode,
     });
     navigate(link);
