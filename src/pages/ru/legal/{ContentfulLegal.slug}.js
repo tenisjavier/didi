@@ -6,14 +6,14 @@ import PoliciesHero from "../../../components/sections/PoliciesHero";
 
 const Policies = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-
+  const name = (data.contentfulLegal.name != null) ? data.contentfulLegal.name : "";
   const policiesBgImage = images.filter((image) => {
     return image.title === "ru.AboutUsHero.bgImage";
   })[0];
 
   return (
     <Layout>
-      <PoliciesHero bgImage={policiesBgImage} title={data.contentfulLegal.name}></PoliciesHero>
+      <PoliciesHero bgImage={policiesBgImage} title={name}></PoliciesHero>
       <TermsAndConditionsContent data={data}></TermsAndConditionsContent>
     </Layout>
   );
