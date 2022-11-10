@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { navigate } from "gatsby";
 import { useLocation } from "@reach/router";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +10,7 @@ import {
   SingleDropMenuItem,
 } from "../config/menu-config";
 import { getMenuLinksFood } from "../config/menu-food-config";
+import gtmEvent from "../config/gtm";
 
 // @desc: Top Menu. Links from menu-config and menu-configFood.
 const Menu = () => {
@@ -45,7 +47,11 @@ const Menu = () => {
                 menuLinksFood.map((menuLink, index) => (
                   <NavItem key={index} link={menuLink}>
                     {menuLink.dropMenu ? (
-                      <DropdownMenu key={index} links={menuLink.dropMenu} />
+                      <DropdownMenu
+                        key={index}
+                        links={menuLink.dropMenu}
+                        countryCode={countryCode}
+                      />
                     ) : null}
                   </NavItem>
                 ))}
@@ -57,7 +63,11 @@ const Menu = () => {
                   return menuLinks.map((menuLink, index) => (
                     <NavItem key={index} link={menuLink}>
                       {menuLink.dropMenu ? (
-                        <DropdownMenu key={index} links={menuLink.dropMenu} />
+                        <DropdownMenu
+                          key={index}
+                          links={menuLink.dropMenu}
+                          countryCode={countryCode}
+                        />
                       ) : null}
                     </NavItem>
                   ));
@@ -91,14 +101,33 @@ const NavItem = ({ link, children }: NavItemProps) => {
 
 interface DropdownMenuProps {
   links: SingleDropMenuItem[];
+  countryCode?: string;
 }
 
-const DropdownMenu = ({ links }: DropdownMenuProps) => {
+const handleItemClick = (e: any, countryCode: any) => {
+  e.preventDefault();
+  const link = e.target.href;
+  const form = link.includes("quickbolt") ? "quickbolt" : "h5";
+  gtmEvent(`click-btn`, {
+    btnType: "menu-link",
+    btnLink: link,
+    form: form,
+    btnText: e.target.innerText,
+    countryCode: countryCode,
+  });
+  navigate(link);
+};
+
+const DropdownMenu = ({ links, countryCode }: DropdownMenuProps) => {
   const DropdownItem = ({ url, text }: SingleDropMenuItem) => {
+    const isCTA = url?.includes("onelink");
     return (
       <a
         className="flex h-11 items-center pl-12 hover:bg-opacity-100 hover:text-white lg:justify-center lg:bg-gray-primary  lg:bg-opacity-80 lg:p-0"
         href={url}
+        onClick={
+          isCTA ? (e: any): void => handleItemClick(e, countryCode) : undefined
+        }
       >
         {text}
       </a>
