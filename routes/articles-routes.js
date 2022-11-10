@@ -42,9 +42,10 @@ const articlesRoutesInit = async (graphql, createPage) => {
     let path = `/${country.code}/articulos/${slug}/`;
     if (cleanCategory === "food") path = `/${country.code}/food/blog/${slug}/`;
     if (cleanCategory === "news") path = `/${country.code}/newsroom/${slug}/`;
-    if (cleanCategory === "pay")
+    if (cleanCategory === "pay"){
       path = `/${country.code}/didipay/blog/${slug}/`;
-    if (!sslCountries.includes(country.code) && cleanCategory !== "food") {
+    }
+    if (!sslCountries.includes(country.code) && cleanCategory !== "food" && country.code != "ru") {
       path = `/${country.code}/blog/${slug}/`;
     }
 

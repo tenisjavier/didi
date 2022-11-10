@@ -537,12 +537,12 @@
   "DirectionBanner.bgColor": "bg-orange-primary",
   "DirectionBanner.textColor": "white",
   "DirectionBanner.btnMode": "light",
-  "LegalHero.title": "Revisa nuestros Términos y Condiciones",
-  "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
+  "LegalHero.title": "Юридическая информация",
+  "LegalHero.desc": " ",
   "LegalHero.textColor": "white",
-  "LegalHero.btnText": "Términos y Condiciones",
-  "LegalHero.btnMode": "light",
-  "LegalHero.linkItem": "/cl/legal/terminos-y-condiciones/",
+  "LegalHero.btnText": " ",
+  "LegalHero.btnMode": " ",
+  "LegalHero.linkItem": " ",
   "LegalCTA.title": "Revisa la nueva Ley para Conductores",
   "LegalCTA.desc": "Revisa en qué consiste la Ley  Nº 21.431",
   "LegalCTA.textColor": "gray-primary",
@@ -552,10 +552,10 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
-  "SBDrv.title": "DiDi Conductor",
-  "SBDrv.desc": "Ganancias Extras",
-  "SBPax.title": "DiDi Pasajero",
-  "SBPax.desc": "Pide un Viaje",
+  "SBDrv.title": "DiDi Водителям",
+  "SBDrv.desc": "Дополнительный заработок",
+  "SBPax.title": "DiDi Пассажирам",
+  "SBPax.desc": "Запросить поездку",
   "SBFoodEater.title": "DiDi Food",
   "SBFoodEater.desc": "Pide Comida a Domicilio",
   "SBFoodBusiness.title": "DiDi Food",
@@ -603,5 +603,8 @@
       "title": "СТРАХОВАНИЕ ПОЕЗДОК",
       "desc": "Страхование покрывает риск причинения вреда жизни и здоровью и предусматривает страховое возмещение до 2 000 000 ₽. Страховка автоматически включена во все заказы и является бесплатной для водителей и пассажиров."
     }
-  ]
+  ],
+  "PoliciesHero.desc": " ",
+  "PoliciesHero.textColor": "white"
+
 }
