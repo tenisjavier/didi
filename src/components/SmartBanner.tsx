@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../config/btn-config";
-
+import Btn from "../components/Btn";
 interface SmartBannerProps {
   type:
     | "both"
@@ -20,76 +20,50 @@ const SmartBanner = (props: SmartBannerProps) => {
   const { type } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
-  let btnLink,
-    btnText,
-    Logo,
-    bgColor,
-    btnBgColor,
-    btnTextColor,
-    bannerTitle,
-    bannerDesc;
+  let btnText, Logo, bgColor, bannerTitle, bannerDesc;
+
+  const btnMode = "primary";
 
   if (type === "drv") {
-    btnLink = btnData.drvLink;
     btnText = btnData.drvText.replace(/ .*/, "");
     Logo = <DrvLogo></DrvLogo>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBDrv.title");
     bannerDesc = t("SBDrv.desc");
   } else if (type === "pax") {
-    btnLink = btnData.paxLink;
     btnText = btnData.paxText.replace(/ .*/, "");
     Logo = <PaxLogo></PaxLogo>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBPax.title");
     bannerDesc = t("SBPax.desc");
   } else if (type === "fleet" && btnData.fleetText) {
-    btnLink = btnData.fleetLink;
     btnText = btnData.fleetText.replace(/ .*/, "");
     Logo = <DiDiFleet></DiDiFleet>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBFleet.title");
     bannerDesc = t("SBFleet.desc");
   } else if (type === "payment" && btnData.paymentText) {
-    btnLink = btnData.paymentLink;
     btnText = btnData.paymentText.replace(/ .*/, "");
     Logo = <DiDiPay></DiDiPay>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBPay.title");
     bannerDesc = t("SBPay.desc");
   } else if (type === "foodEater") {
-    btnLink = btnData.foodEaterLink;
     btnText = "Descargar";
     Logo = <FoodEaterLogo></FoodEaterLogo>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBFoodEater.title");
     bannerDesc = t("SBFoodEater.desc");
   } else if (type === "foodBusiness") {
-    btnLink = btnData.foodBusinessLink;
     btnText = "Descargar";
     Logo = <FoodEaterLogo></FoodEaterLogo>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBFoodBusiness.title");
     bannerDesc = t("SBFoodBusiness.desc");
   } else if (type === "foodDelivery") {
-    btnLink = btnData.foodDeliveryLink;
     btnText = "Descargar";
     Logo = <FoodEaterLogo></FoodEaterLogo>;
     bgColor = "bg-white";
-    btnBgColor = "bg-orange-primary";
-    btnTextColor = "text-white";
     bannerTitle = t("SBFoodDelivery.title");
     bannerDesc = t("SBFoodDelivery.desc");
   }
@@ -102,11 +76,7 @@ const SmartBanner = (props: SmartBannerProps) => {
           <p className="font-bold leading-3">{bannerTitle}</p>
           <p className="leading-3">{bannerDesc}</p>
         </span>
-        <div className={"btn-primary ml-3 px-3 pt-2 " + btnBgColor}>
-          <a href={btnLink} className={btnTextColor}>
-            {btnText}
-          </a>
-        </div>
+        <Btn btnText={btnText} btnMode={btnMode} btnType={type}></Btn>
       </div>
     </div>
   );
