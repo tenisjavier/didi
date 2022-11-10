@@ -3,7 +3,6 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-//
 interface FoodColumnsProps {
   images: {
     title: string;
