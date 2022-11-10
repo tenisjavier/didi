@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useLocation } from "@reach/router";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -53,13 +53,15 @@ const Menu = () => {
           ) : (
             <>
               {menuLinks &&
-                menuLinks.map((menuLink, index) => (
-                  <NavItem key={index} link={menuLink}>
-                    {menuLink.dropMenu ? (
-                      <DropdownMenu key={index} links={menuLink.dropMenu} />
-                    ) : null}
-                  </NavItem>
-                ))}
+                useMemo(() => {
+                  return menuLinks.map((menuLink, index) => (
+                    <NavItem key={index} link={menuLink}>
+                      {menuLink.dropMenu ? (
+                        <DropdownMenu key={index} links={menuLink.dropMenu} />
+                      ) : null}
+                    </NavItem>
+                  ));
+                }, [false])}
             </>
           )}
         </ul>
