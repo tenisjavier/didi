@@ -5,9 +5,9 @@ import TermsAndConditionsContent from "../../components/sections/TermsAndConditi
 import PoliciesHero from "../../components/sections/PoliciesHero";
 
 const Policies = ({ data }) => {
-  console.log(data);
   const images = data.allContentfulAsset.nodes;
-  const name = (data.contentfulLegal.name != null) ? data.contentfulLegal.name : "";
+  const name =
+    data.contentfulLegal.name != null ? data.contentfulLegal.name : "";
   const policiesBgImage = images.filter((image) => {
     return image.title === "ru.AboutUsHero.bgImage";
   })[0];
@@ -21,7 +21,7 @@ const Policies = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($id: String!, $language: String!) {
+  query ($id: String, $language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
@@ -31,9 +31,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulAsset(
-      filter: { title: { in: ["ru.AboutUsHero.bgImage"] } }
-    ) {
+    allContentfulAsset(filter: { title: { in: ["ru.AboutUsHero.bgImage"] } }) {
       nodes {
         id
         title
@@ -41,7 +39,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulLegal (id: {eq: $id}){
+    contentfulLegal(id: { eq: $id }) {
       name
       slug
       content {

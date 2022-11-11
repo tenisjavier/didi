@@ -21,7 +21,6 @@ interface FoodBlogColumns {
 }
 
 const FoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
-  console.log(tags);
   const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("FoodBlogColumns.title"),
