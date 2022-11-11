@@ -43,8 +43,7 @@ const legalRoutesInit = async (graphql, createPage) => {
       path: path,
       component: template,
       context: {
-        id: id,
-        countryCode: noQuoteCountry.toString()
+        id: id
       },
     });
   });
