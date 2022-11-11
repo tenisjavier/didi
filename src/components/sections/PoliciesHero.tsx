@@ -17,8 +17,7 @@ const PoliciesHero = ({ bgImage, title }: PoliciesHeroProp) => {
   const props: CTAProps = {
     hero: true,
     title: title || t("PoliciesHero.title"),
-    desc: t("PoliciesHero.desc"),
-    textColor: t("PoliciesHero.textColor"),
+    textColor: "white",
     bgImage: (
       <GatsbyImage
         image={bgImage.gatsbyImageData}

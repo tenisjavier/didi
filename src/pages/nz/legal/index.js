@@ -11,69 +11,56 @@ const Legal = ({ data }) => {
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "cl.HomeHero.bgImage";
   })[0];
-  const drvPolicies = policies.filter(
-    (p) =>
-      [
-        "Driver Agreement",
-        "Driver Software Use and Licence Agreement",
-        "Driver Suspension and Disqualification Policy",
-        "Driver Anti-Fraud Policy",
-        "Driver Complaint Handling Policy",
-        "Driver Fatigue Management Policy",
-        "General Terms and Conditions for Driver Offers",
-        "Fee Schedule",
-        "Community Guidelines",
-      ].indexOf(p.name) > -1
-  );
-  const drvProgramPolicies = policies.filter(
-    (p) =>
-      [
-        "Didi Advance Terms",
-        "Didi Advance Driver Program",
-        "Driver Didi Delivery Rules",
-        "Driver Standard Terms for Delivery Services",
-      ].indexOf(p.name) > -1
-  );
-  const paxPolicies = policies.filter(
-    (p) =>
-      [
-        "Passenger Agreement",
-        "Rider Anti-Fraud Policy",
-        "Rider Complaint Handling Policy ",
-        "General Terms and Conditions for Rider Offers",
-        "Passenger Software Use and Licence Agreement",
-        "NZ Promo Terms and Conditions",
-      ].indexOf(p.name) > -1
-  );
-  const paxProgramPolicies = policies.filter(
-    (p) =>
-      [
-        "Rider Didi Delivery Rules",
-        "Rider Standard Terms for Delivery Services",
-      ].indexOf(p.name) > -1
-  );
+  const drvPolicies = policies.filter((p) => {
+    return p.name === "Driver Agreement" 
+        || p.name === "Driver Software Use and Licence Agreement" 
+        || p.name === "Driver Suspension and Disqualification Policy" 
+        || p.name === "Driver Anti-Fraud Policy" 
+        || p.name === "Driver Complaint Handling Policy" 
+        || p.name === "Driver Fatigue Management Policy" 
+        || p.name === "General Terms and Conditions for Driver Offers" 
+        || p.name === "Fee Schedule" 
+        || p.name === "Community Guidelines";
+  });
+
+  const drvProgramPolicies = policies.filter((p) => {
+    return p.name === "Didi Advance Terms"
+        || p.name === "Didi Advance Driver Program"
+        || p.name === "Driver Didi Delivery Rules"
+        || p.name === "Driver Standard Terms for Delivery Services";
+  });
+  const paxPolicies = policies.filter((p) => {
+    return p.name === "Passenger Agreement"
+        || p.name === "Rider Anti-Fraud Policy"
+        || p.name === "Rider Complaint Handling Policy "
+        || p.name === "General Terms and Conditions for Rider Offers"
+        || p.name === "Passenger Software Use and Licence Agreement"
+        || p.name === "NZ Promo Terms and Conditions";
+  });
+  const paxProgramPolicies = policies.filter(p => p.name === "Rider Didi Delivery Rules" || p.name === "Rider Standard Terms for Delivery Services");
+
   const drvPoliciesItems = drvPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: p.slug,
     };
   });
   const drvProgramPoliciesItems = drvProgramPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: p.slug,
     };
   });
   const paxPoliciesItems = paxPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: p.slug,
     };
   });
   const paxProgramPoliciesItems = paxProgramPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: p.slug,
     };
   });
   return (
@@ -122,6 +109,7 @@ export const query = graphql`
       nodes {
         id
         name
+        slug
       }
     }
   }
