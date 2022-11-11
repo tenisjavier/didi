@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import FleetHero from "../../../components/sections/FleetHero";
 import FleetOwnerColumns from "../../../components/sections/FleetOwnerColumns";
-import NeutralFAQ from "../../../components/sections/NeutralFAQ";
+import HelpCenterFAQFleet from "../../../components/sections/HelpCenterFAQFleet";
 
 const DiDiFleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -11,12 +11,12 @@ const DiDiFleet = ({ data }) => {
   const FleetHeroBgImage = images.filter((image) => {
     return image.title === "ru.TaxiHero.bgImage";
   })[0];
-
+  
   return (
     <Layout>
       <FleetHero bgImage={FleetHeroBgImage}></FleetHero>
       <FleetOwnerColumns></FleetOwnerColumns>
-      <NeutralFAQ faqs={faqs} faqTitle={"Общие вопросы"}></NeutralFAQ>
+      <HelpCenterFAQFleet data={faqs} title={"Общие вопросы"}></HelpCenterFAQFleet>
     </Layout>
   );
 };

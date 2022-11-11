@@ -4,6 +4,7 @@ const placeInCityRoutes = require("./routes/places-in-city-routes");
 const directionsRoutes = require("./routes/directions-routes");
 const guidesRoutes = require("./routes/guides-routes");
 const articlesRoutes = require("./routes/articles-routes");
+const legalRoutes = require("./routes/legal-routes");
 const redirects = require("./routes/redirects");
 
 // Implement the Gatsby API “createPages”. This is called once the
@@ -21,4 +22,5 @@ exports.createPages = async ({
   await directionsRoutes.init(graphql, createPage);
   await guidesRoutes.init(graphql, createPage);
   await articlesRoutes.init(graphql, createPage);
+  await legalRoutes.init(graphql, createPage);
 };
