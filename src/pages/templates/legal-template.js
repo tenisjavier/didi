@@ -21,7 +21,7 @@ const Policies = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($id: String!, $countryCode: String!, $language: String!) {
+  query ($id: String!, $language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
@@ -41,7 +41,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    contentfulLegal (id: {eq: $id}, country: {elemMatch: {code: {eq: $countryCode}}}){
+    contentfulLegal (id: {eq: $id}){
       name
       slug
       content {
