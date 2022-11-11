@@ -2,20 +2,19 @@ import React from "react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import AccordionSection from "../AccordionSection";
 
-const HelpCenterFAQPax = ({ data, isClosed, title }) => {
+const HelpCenterFAQFleet = ({ data, isClosed, title }) => {
   const { t } = useTranslation();
   let items = [];
-  data.faq.forEach((node) => {
+  data.forEach((node) => {
     items.push({
       title: node.title,
       content: node.content,
     });
   });
   const props = {
-    title: title || t("HelpCenterFAQPax.title"),
-    desc: t("HelpCenterFAQPax.desc"),
-    bgColor: t("HelpCenterFAQPax.bgColor"),
-    textColor: t("HelpCenterFAQPax.textColor"),
+    title: title || t("HelpCenterFAQFleet.title"),
+    bgColor: t("HelpCenterFAQFleet.bgColor"),
+    textColor: t("HelpCenterFAQFleet.textColor"),
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-white",
     items: items,
@@ -25,4 +24,4 @@ const HelpCenterFAQPax = ({ data, isClosed, title }) => {
   return <AccordionSection {...props}></AccordionSection>;
 };
 
-export default HelpCenterFAQPax;
+export default HelpCenterFAQFleet;

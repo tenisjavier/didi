@@ -446,6 +446,7 @@
   "HelpCenterFAQ.desc": false,
   "HelpCenterFAQ.textColor": "gray-primary",
   "HelpCenterFAQ.bgColor": "bg-gray-light",
+  "HelpCenterFAQFleet.bgColor": "bg-gray-light",
   "ArticlesHero.title": "DiDi Artículos",
   "ArticlesHero.desc": "Entérate de lugares interesantes y divertidos de ir a visitar. Toma un DiDi para viajar barato y seguro.",
   "ArticlesHero.textColor": "white",

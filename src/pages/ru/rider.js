@@ -15,6 +15,10 @@ const Pasajero = ({ data }) => {
     return image.title === "ru.PaxTechCTA.image";
   })[0];
 
+  const faqRiderTax = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Tariffs Russia"
+  );
+
   const faqRider = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Rider Russia"
   );
@@ -24,7 +28,8 @@ const Pasajero = ({ data }) => {
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxTechCTA image={paxTechImage}></PaxTechCTA>
       <PaxAltColumns></PaxAltColumns>
-      <HelpCenterFAQPax data={faqRider[0]}></HelpCenterFAQPax>
+      <HelpCenterFAQPax title="DiDi Тарифы" data={faqRiderTax[0]}></HelpCenterFAQPax>
+      <HelpCenterFAQPax title="FAQ для Пассажиров" data={faqRider[0]}></HelpCenterFAQPax>
     </Layout>
   );
 };
