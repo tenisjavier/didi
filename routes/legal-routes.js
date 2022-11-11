@@ -7,7 +7,10 @@ const legalRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
       allContentfulLegal(
-        filter: {slug: {ne: null}, country: {elemMatch: {code: {ne: null}}}}
+        filter: {
+          slug: { ne: null }
+          country: { elemMatch: { code: { ne: null } } }
+        }
       ) {
         nodes {
           id
@@ -33,17 +36,16 @@ const legalRoutesInit = async (graphql, createPage) => {
   result.data.allContentfulLegal.nodes.forEach((node) => {
     const { id, slug } = node;
     const countryCode = JSON.stringify(node.country, null, 2);
-    const parsedCountry = JSON.parse(countryCode)
-    const noQuoteCountry = slugify(parsedCountry[0].code, {lower: true});
+    const parsedCountry = JSON.parse(countryCode);
+    const noQuoteCountry = slugify(parsedCountry[0].code, { lower: true });
     // create path depending on the language and category
     let path = `/${noQuoteCountry}/legal/${slug}/`;
-    console.log(path);
 
     createPage({
       path: path,
       component: template,
       context: {
-        id: id
+        id: id,
       },
     });
   });
