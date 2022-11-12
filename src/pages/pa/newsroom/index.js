@@ -19,38 +19,36 @@ const Newsroom = ({ data }) => {
 
 export default Newsroom;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(filter: { title: { in: ["cl.ArticlesHero.bgImage"] } }) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulArticle(
-      filter: { category: { eq: "news" }, country: { code: { eq: "pa" } } }
-      sort: { fields: updatedAt, order: DESC }
-      limit: 10
-    ) {
-      nodes {
-        title
-        slug
-        excerpt
-        featuredImage {
-          gatsbyImageData
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(filter: {title: {in: ["cl.ArticlesHero.bgImage"]}}) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulArticle(
+    filter: {category: {eq: "news"}, country: {code: {eq: "pa"}}}
+    sort: {updatedAt: DESC}
+    limit: 10
+  ) {
+    nodes {
+      title
+      slug
+      excerpt
+      featuredImage {
+        gatsbyImageData
+      }
+    }
+  }
+}`;

@@ -32,47 +32,38 @@ const Fleet = ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(co.FleetHero.bgImage)|(co.FleetColumns.image)|(co.FleetStepsColumns.image)|(co.FleetDownload.image)/"
-        }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "co" } } }
-        name: { eq: "DiDi Fleet Costa Rica" }
-      }
-    ) {
-      nodes {
-        name
-        phone
-        requirement {
-          raw
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(co.FleetHero.bgImage)|(co.FleetColumns.image)|(co.FleetStepsColumns.image)|(co.FleetDownload.image)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulProduct(
+    filter: {country: {elemMatch: {code: {eq: "co"}}}, name: {eq: "DiDi Fleet Costa Rica"}}
+  ) {
+    nodes {
+      name
+      phone
+      requirement {
+        raw
+      }
+    }
+  }
+}`;
 
 export default Fleet;

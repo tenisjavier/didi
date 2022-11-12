@@ -24,7 +24,6 @@ const Driver = ({ data }) => {
   const productsReq = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Express Russia"
   );
-  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -103,7 +102,7 @@ export const query = graphql`
     }
     allContentfulCity(
       filter: { country: { code: { eq: "ru" } } }
-      sort: { fields: name }
+      sort: { name: ASC }
     ) {
       nodes {
         name

@@ -112,40 +112,30 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulCountry(sort: { fields: englishName }) {
-      nodes {
-        englishName
-        hostname
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          in: [
-            "int.HomeAboutUs.image"
-            "int.HomeOurMission.image"
-            "int.AboutDiDi.image"
-          ]
-        }
-      }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulCountry(sort: {englishName: ASC}) {
+    nodes {
+      englishName
+      hostname
+    }
+  }
+  allContentfulAsset(
+    filter: {title: {in: ["int.HomeAboutUs.image", "int.HomeOurMission.image", "int.AboutDiDi.image"]}}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;

@@ -8,20 +8,18 @@ import FooterLink from "./FooterLink";
 import { getFooterLinks } from "../config/footer-config";
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allContentfulCountry(sort: { fields: englishName }) {
-        nodes {
-          name
-          arabicName
-          englishName
-          spanishName
-          russianName
-          hostname
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  allContentfulCountry(sort: {englishName: ASC}) {
+    nodes {
+      name
+      arabicName
+      englishName
+      spanishName
+      russianName
+      hostname
     }
-  `);
+  }
+}`);
   const countries = data.allContentfulCountry.nodes;
   const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
   const { i18n } = useTranslation();

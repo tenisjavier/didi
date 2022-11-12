@@ -5,17 +5,13 @@ import PartnerHero from "../../../components/sections/PartnerHero";
 import PartnerFeature from "../../../components/sections/PartnerFeature";
 import PartnerContent from "../../../components/sections/PartnerContent";
 import PartnersGrid from "../../../components/sections/PartnersGrid";
-import PartnersCTA from "../../../components/sections/PartnersCTA";
 
 const Partner = ({ data }) => {
   const { heroTitle, heroDesc, heroImage } = data.contentfulPartner;
   const { featureTitle, featureDesc, featureImage } = data.contentfulPartner;
   const { content } = data.contentfulPartner;
-  const images = data.allContentfulAsset.nodes;
   const partners = data.allContentfulPartner.nodes;
-  const partnerCTAImage = images.filter((image) => {
-    return image.title === "mx.PartnerCTA.image";
-  })[0];
+
   return (
     <Layout>
       <PartnerHero
@@ -88,7 +84,7 @@ export const query = graphql`
     }
     allContentfulAsset(
       filter: { title: { in: ["mx.PartnerCTA.image"] } }
-      sort: { fields: title }
+      sort: { title: ASC }
     ) {
       nodes {
         id

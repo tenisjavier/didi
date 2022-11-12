@@ -45,70 +45,54 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["translation"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          in: [
-            "co.DrvHero.bgImage"
-            "co.DrvWhyDiDi.image"
-            "co.DrvFeatures.image"
-          ]
-        }
-      }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "co" } } }
-        category: { eq: "driver" }
-      }
-    ) {
-      nodes {
-        name
-        description
-        phone
-        requirement {
-          raw
-        }
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
-        }
-      }
-    }
-    allContentfulCity(
-      filter: { country: { code: { eq: "co" } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(
+    filter: {ns: {in: ["translation"]}, language: {eq: $language}}
+  ) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {in: ["co.DrvHero.bgImage", "co.DrvWhyDiDi.image", "co.DrvFeatures.image"]}}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulProduct(
+    filter: {country: {elemMatch: {code: {eq: "co"}}}, category: {eq: "driver"}}
+  ) {
+    nodes {
+      name
+      description
+      phone
+      requirement {
+        raw
+      }
+      image {
+        gatsbyImageData
+      }
+      country {
+        code
+      }
+    }
+  }
+  allContentfulCity(filter: {country: {code: {eq: "co"}}}, sort: {name: ASC}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData(width: 400)
+        description
+      }
+    }
+  }
+}`;

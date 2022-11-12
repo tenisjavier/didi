@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import HomeHero from "../../components/sections/HomeHero";
-import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HomeAltColumns from "../../components/sections/HomeAltColumns";
@@ -45,11 +44,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          in: [
-            "ru.HomeHero.bgImage"
-            "ru.DrvCTA.image"
-            "ru.PaxCTA.image"
-          ]
+          in: ["ru.HomeHero.bgImage", "ru.DrvCTA.image", "ru.PaxCTA.image"]
         }
       }
     ) {

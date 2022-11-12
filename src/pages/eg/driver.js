@@ -37,63 +37,53 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: { regex: "/(eg.DrvHero.bgImage)|(eg.DrvBenefits.image)/" }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "eg" } } }
-        category: { eq: "driver" }
-      }
-    ) {
-      nodes {
-        name
-        description
-        phone
-        requirement {
-          raw
-        }
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
-        }
-      }
-    }
-    allContentfulCity(
-      filter: { country: { code: { eq: "eg" } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(eg.DrvHero.bgImage)|(eg.DrvBenefits.image)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulProduct(
+    filter: {country: {elemMatch: {code: {eq: "eg"}}}, category: {eq: "driver"}}
+  ) {
+    nodes {
+      name
+      description
+      phone
+      requirement {
+        raw
+      }
+      image {
+        gatsbyImageData
+      }
+      country {
+        code
+      }
+    }
+  }
+  allContentfulCity(filter: {country: {code: {eq: "eg"}}}, sort: {name: ASC}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData(width: 400)
+        description
+      }
+    }
+  }
+}`;

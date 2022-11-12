@@ -66,54 +66,46 @@ const FoodCity = ({ data }) => {
 
 export default FoodCity;
 
-export const query = graphql`
-  query ($id: String, $language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    contentfulMunicipality(id: { eq: $id }) {
-      name
-      slug
-      city {
-        name
-      }
-    }
-    allContentfulMunicipality {
-      nodes {
-        name
-        slug
-      }
-    }
-    allContentfulNeighbourhood(
-      filter: { municipality: { id: { eq: $id } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodCTA.image)/"
-        }
-      }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($id: String, $language: String!) {
+  locales: allLocale(filter: {ns: {in: ["food"]}, language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  contentfulMunicipality(id: {eq: $id}) {
+    name
+    slug
+    city {
+      name
+    }
+  }
+  allContentfulMunicipality {
+    nodes {
+      name
+      slug
+    }
+  }
+  allContentfulNeighbourhood(
+    filter: {municipality: {id: {eq: $id}}}
+    sort: {name: ASC}
+  ) {
+    nodes {
+      name
+      slug
+    }
+  }
+  allContentfulAsset(
+    filter: {title: {regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodCTA.image)/"}}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;

@@ -19,37 +19,35 @@ const Article = ({ data }) => {
 
 export default Article;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(filter: { title: { in: ["ec.ArticlesHero.bgImage"] } }) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulArticle(
-      filter: { category: { eq: "rides" }, country: { code: { eq: "ec" } } }
-      sort: { fields: updatedAt, order: DESC }
-      limit: 10
-    ) {
-      nodes {
-        title
-        excerpt
-        featuredImage {
-          gatsbyImageData
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(filter: {title: {in: ["ec.ArticlesHero.bgImage"]}}) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulArticle(
+    filter: {category: {eq: "rides"}, country: {code: {eq: "ec"}}}
+    sort: {updatedAt: DESC}
+    limit: 10
+  ) {
+    nodes {
+      title
+      excerpt
+      featuredImage {
+        gatsbyImageData
+      }
+    }
+  }
+}`;

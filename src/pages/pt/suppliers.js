@@ -26,7 +26,7 @@ const Index = ({ data }) => {
     ),
     image: (
       <StaticImage
-        src="../images/didi-logo.png"
+        src="../../images/didi-logo.png"
         alt="DiDi"
         className="z-20 m-4 "
         width={250}

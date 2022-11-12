@@ -47,67 +47,54 @@ const ArticlesTemplate = ({ data }) => {
 
 export default ArticlesTemplate;
 
-export const query = graphql`
-  query (
-    $id: String
-    $category: String
-    $countryCode: String
-    $language: String!
-    $tag: String
-  ) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
+export const query = graphql`query ($id: String, $category: String, $countryCode: String, $language: String!, $tag: String) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+  contentfulArticle(id: {eq: $id}) {
+    title
+    excerpt
+    updatedAt
+    tags {
+      name
+    }
+    content {
+      raw
+      references {
+        ... on ContentfulAsset {
+          contentful_id
+          title
+          description
+          gatsbyImageData(width: 1000)
+          __typename
         }
       }
     }
-    contentfulArticle(id: { eq: $id }) {
+    featuredImage {
+      gatsbyImageData
+    }
+  }
+  allContentfulArticle(
+    filter: {category: {eq: $category}, country: {code: {eq: $countryCode}}, id: {ne: $id}, tags: {elemMatch: {name: {eq: $tag}}}}
+    sort: {updatedAt: DESC}
+    limit: 20
+  ) {
+    nodes {
       title
-      excerpt
-      updatedAt
+      slug
       tags {
         name
       }
-      content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImageData(width: 1000)
-            __typename
-          }
-        }
-      }
+      excerpt
       featuredImage {
         gatsbyImageData
       }
     }
-    allContentfulArticle(
-      filter: {
-        category: { eq: $category }
-        country: { code: { eq: $countryCode } }
-        id: { ne: $id }
-        tags: { elemMatch: { name: { eq: $tag } } }
-      }
-      sort: { fields: updatedAt, order: DESC }
-      limit: 20
-    ) {
-      nodes {
-        title
-        slug
-        tags {
-          name
-        }
-        excerpt
-        featuredImage {
-          gatsbyImageData
-        }
-      }
-    }
   }
-`;
+}`;

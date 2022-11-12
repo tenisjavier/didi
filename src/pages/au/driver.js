@@ -62,85 +62,73 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(au.DrvHero.bgImage)|(au.DrvBenefits.image)|(au.HomeColumns.image)|(au.HomeColumns.image)|(au.PartnerCTA.image)/"
-        }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "au" } } }
-        category: { eq: "driver" }
-      }
-    ) {
-      nodes {
-        name
-        description
-        phone
-        requirement {
-          raw
-        }
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
-        }
-      }
-    }
-    allContentfulCity(
-      filter: { country: { code: { eq: "au" } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
-      }
-    }
-    allContentfulPartner(filter: { country: { code: { eq: "au" } } }) {
-      nodes {
-        name
-        desc
-        logo {
-          gatsbyImageData
-          description
-        }
-      }
-    }
-    allContentfulRequirement(filter: { country: { code: { eq: "au" } } }) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData
-          description
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(au.DrvHero.bgImage)|(au.DrvBenefits.image)|(au.HomeColumns.image)|(au.HomeColumns.image)|(au.PartnerCTA.image)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulProduct(
+    filter: {country: {elemMatch: {code: {eq: "au"}}}, category: {eq: "driver"}}
+  ) {
+    nodes {
+      name
+      description
+      phone
+      requirement {
+        raw
+      }
+      image {
+        gatsbyImageData
+      }
+      country {
+        code
+      }
+    }
+  }
+  allContentfulCity(filter: {country: {code: {eq: "au"}}}, sort: {name: ASC}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData(width: 400)
+        description
+      }
+    }
+  }
+  allContentfulPartner(filter: {country: {code: {eq: "au"}}}) {
+    nodes {
+      name
+      desc
+      logo {
+        gatsbyImageData
+        description
+      }
+    }
+  }
+  allContentfulRequirement(filter: {country: {code: {eq: "au"}}}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData
+        description
+      }
+    }
+  }
+}`;

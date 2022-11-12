@@ -51,45 +51,43 @@ const RiderSafety = ({ data }) => {
 
 export default RiderSafety;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
-    allContentfulAsset(
-      filter: { title: { regex: "/(au.DrivePreventionHero.bgImage)/" } }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
+  }
+  allContentfulAsset(
+    filter: {title: {regex: "/(au.DrivePreventionHero.bgImage)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
     }
-    allContentfulFaq(filter: { country: { code: { eq: "au" } } }) {
-      nodes {
-        title
-        slug
-        content {
-          raw
-          references {
-            ... on ContentfulAsset {
-              contentful_id
-              title
-              description
-              gatsbyImageData(width: 800)
-              __typename
-            }
+  }
+  allContentfulFaq(filter: {country: {code: {eq: "au"}}}) {
+    nodes {
+      title
+      slug
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 800)
+            __typename
           }
         }
       }
     }
   }
-`;
+}`;

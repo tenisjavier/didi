@@ -43,41 +43,35 @@ const DeliveryPersonal = ({ data }) => {
 
 export default DeliveryPersonal;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(au.DeliveryPersonalHero)|(au.DeliveryPersonalWhyDiDi.image)|(au.DeliveryPersonalFeatures.image)|(au.DeliveryColumns.image)|(au.HomeColumns.image)/"
-        }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulPartner(filter: { country: { code: { eq: "au" } } }) {
-      nodes {
-        name
-        desc
-        logo {
-          gatsbyImageData
-          description
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(au.DeliveryPersonalHero)|(au.DeliveryPersonalWhyDiDi.image)|(au.DeliveryPersonalFeatures.image)|(au.DeliveryColumns.image)|(au.HomeColumns.image)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulPartner(filter: {country: {code: {eq: "au"}}}) {
+    nodes {
+      name
+      desc
+      logo {
+        gatsbyImageData
+        description
+      }
+    }
+  }
+}`;

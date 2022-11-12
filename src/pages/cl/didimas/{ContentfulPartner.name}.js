@@ -37,65 +37,61 @@ const Partner = ({ data }) => {
 
 export default Partner;
 
-export const query = graphql`
-  query ($id: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    contentfulPartner(id: { eq: $id }) {
-      heroTitle
-      heroDesc
-      heroImage {
-        gatsbyImageData
-        description
-      }
-      featureTitle
-      featureDesc
-      featureImage {
-        gatsbyImageData
-        description
-      }
-      content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImageData(width: 450)
-            __typename
-          }
-        }
-      }
-    }
-    allContentfulPartner(
-      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
-    ) {
-      nodes {
-        name
-        desc
-        logo {
-          gatsbyImageData
-          description
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { in: ["cl.PartnerCTA.image"] } }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($id: String, $language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  contentfulPartner(id: {eq: $id}) {
+    heroTitle
+    heroDesc
+    heroImage {
+      gatsbyImageData
+      description
+    }
+    featureTitle
+    featureDesc
+    featureImage {
+      gatsbyImageData
+      description
+    }
+    content {
+      raw
+      references {
+        ... on ContentfulAsset {
+          contentful_id
+          title
+          description
+          gatsbyImageData(width: 450)
+          __typename
+        }
+      }
+    }
+  }
+  allContentfulPartner(filter: {country: {code: {eq: "cl"}}, id: {ne: $id}}) {
+    nodes {
+      name
+      desc
+      logo {
+        gatsbyImageData
+        description
+      }
+    }
+  }
+  allContentfulAsset(
+    filter: {title: {in: ["cl.PartnerCTA.image"]}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;

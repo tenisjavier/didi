@@ -19,37 +19,35 @@ const Guias = ({ data }) => {
 
 export default Guias;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(filter: { title: { in: ["do.GuidesHero.bgImage"] } }) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulGuide(
-      filter: { country: { code: { eq: "do" } } }
-      sort: { fields: updatedAt, order: DESC }
-      limit: 10
-    ) {
-      nodes {
-        title
-        excerpt
-        featuredImage {
-          gatsbyImageData
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(filter: {title: {in: ["do.GuidesHero.bgImage"]}}) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulGuide(
+    filter: {country: {code: {eq: "do"}}}
+    sort: {updatedAt: DESC}
+    limit: 10
+  ) {
+    nodes {
+      title
+      excerpt
+      featuredImage {
+        gatsbyImageData
+      }
+    }
+  }
+}`;
