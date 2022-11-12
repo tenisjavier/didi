@@ -45,64 +45,49 @@ const FoodBusiness = ({ data }) => {
 
 export default FoodBusiness;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(mx.FoodBusinessHero.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)|(mx.DiDiRestaurantSocial.image)/"
-        }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
-        category: { eq: "food" }
-        name: { eq: "Food Business" }
-      }
-    ) {
-      nodes {
-        name
-        phone
-        requirement {
-          raw
-        }
-      }
-    }
-    allContentfulCity(
-      filter: { country: { code: { eq: "mx" } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
-        restaurant {
-          name
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {ns: {in: ["food"]}, language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(mx.FoodBusinessHero.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)|(mx.DiDiRestaurantSocial.image)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulProduct(
+    filter: {country: {elemMatch: {code: {eq: "cl"}}}, category: {eq: "food"}, name: {eq: "Food Business"}}
+  ) {
+    nodes {
+      name
+      phone
+      requirement {
+        raw
+      }
+    }
+  }
+  allContentfulCity(filter: {country: {code: {eq: "mx"}}}, sort: {name: ASC}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData(width: 400)
+        description
+      }
+      restaurant {
+        name
+      }
+    }
+  }
+}`;

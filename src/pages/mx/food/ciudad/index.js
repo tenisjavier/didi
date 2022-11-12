@@ -38,51 +38,39 @@ const Ciudades = ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"
-        }
-      }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-
-    allContentfulCity(
-      filter: { country: { code: { eq: "mx" } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
-        restaurant {
-          name
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {ns: {in: ["food"]}, language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)/"}}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulCity(filter: {country: {code: {eq: "mx"}}}, sort: {name: ASC}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData(width: 400)
+        description
+      }
+      restaurant {
+        name
+      }
+    }
+  }
+}`;
 
 export default Ciudades;

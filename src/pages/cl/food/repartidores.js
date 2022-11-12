@@ -33,33 +33,25 @@ const FoodDelivery = ({ data }) => {
 
 export default FoodDelivery;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(cl.FoodDeliveryHero.bgImage)|(cl.FoodDeliveryColumns.image)|(cl.FoodDeliveryDownloads.image)/"
-        }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {ns: {in: ["food"]}, language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(cl.FoodDeliveryHero.bgImage)|(cl.FoodDeliveryColumns.image)|(cl.FoodDeliveryDownloads.image)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;

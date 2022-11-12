@@ -22,27 +22,25 @@ const RiderSafety = ({ data }) => {
 
 export default RiderSafety;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { regex: "/(nz.SafetyGridPax)|(nz.SafetyHero)/" } }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(nz.SafetyGridPax)|(nz.SafetyHero)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;

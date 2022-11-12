@@ -6,6 +6,7 @@ const slugify = require("react-slugify").default;
 const siteUrl = process.env.URL || `https://web.didiglobal.com`;
 
 module.exports = {
+  trailingSlash: `always`,
   siteMetadata: {
     siteUrl: "https://web.didiglobal.com",
     title: "DiDi",
@@ -56,7 +57,7 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        pageLimit: 666,
+        pageLimit: 444,
       },
     },
     {

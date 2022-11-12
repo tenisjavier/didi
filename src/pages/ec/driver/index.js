@@ -38,68 +38,52 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          in: [
-            "ec.DrvHero.bgImage"
-            "ec.DrvWhyDiDi.image"
-            "ec.DrvFeatures.image"
-          ]
-        }
-      }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "ec" } } }
-        category: { eq: "driver" }
-      }
-    ) {
-      nodes {
-        name
-        description
-        phone
-        requirement {
-          raw
-        }
-        image {
-          gatsbyImageData
-        }
-        country {
-          code
-        }
-      }
-    }
-    allContentfulCity(
-      filter: { country: { code: { eq: "ec" } } }
-      sort: { fields: name }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {in: ["ec.DrvHero.bgImage", "ec.DrvWhyDiDi.image", "ec.DrvFeatures.image"]}}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+  allContentfulProduct(
+    filter: {country: {elemMatch: {code: {eq: "ec"}}}, category: {eq: "driver"}}
+  ) {
+    nodes {
+      name
+      description
+      phone
+      requirement {
+        raw
+      }
+      image {
+        gatsbyImageData
+      }
+      country {
+        code
+      }
+    }
+  }
+  allContentfulCity(filter: {country: {code: {eq: "ec"}}}, sort: {name: ASC}) {
+    nodes {
+      name
+      slug
+      image {
+        gatsbyImageData(width: 400)
+        description
+      }
+    }
+  }
+}`;

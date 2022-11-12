@@ -25,70 +25,66 @@ const FaqTemplate = ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query ($id: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
+export const query = graphql`query ($id: String, $language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
-    allContentfulAsset(
-      filter: { title: { regex: "/(mx.FaqFoodHero.bgImage)/" } }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
-      }
-    }
-    contentfulFaq(id: { eq: $id }) {
+  }
+  allContentfulAsset(
+    filter: {title: {regex: "/(mx.FaqFoodHero.bgImage)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
       title
-      content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImageData(width: 800)
-            __typename
-          }
+      description
+      gatsbyImageData
+    }
+  }
+  contentfulFaq(id: {eq: $id}) {
+    title
+    content {
+      raw
+      references {
+        ... on ContentfulAsset {
+          contentful_id
+          title
+          description
+          gatsbyImageData(width: 800)
+          __typename
         }
       }
-      product {
-        name
-      }
     }
-    allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
-    ) {
-      nodes {
-        name
-        faq {
-          title
-          slug
-          content {
-            raw
-            references {
-              ... on ContentfulAsset {
-                contentful_id
-                title
-                description
-                gatsbyImageData(width: 800)
-                __typename
-              }
+    product {
+      name
+    }
+  }
+  allContentfulProduct(filter: {country: {elemMatch: {code: {eq: "mx"}}}}) {
+    nodes {
+      name
+      faq {
+        title
+        slug
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
             }
           }
         }
       }
     }
   }
-`;
+}`;
 
 export default FaqTemplate;

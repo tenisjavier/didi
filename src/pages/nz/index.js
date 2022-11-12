@@ -36,31 +36,25 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(nz.HomeHero.bgImage)|(nz.DrvCTA.image)|(nz.PaxCTA.imag)|(nz.SafetyCTA.bgImage)/"
-        }
-      }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  allContentfulAsset(
+    filter: {title: {regex: "/(nz.HomeHero.bgImage)|(nz.DrvCTA.image)|(nz.PaxCTA.imag)|(nz.SafetyCTA.bgImage)/"}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;

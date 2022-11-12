@@ -51,61 +51,57 @@ const Partner = ({ data }) => {
 
 export default Partner;
 
-export const query = graphql`
-  query ($id: String, $language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    contentfulOffer(id: { eq: $id }) {
-      heroTitle
-      heroDesc
-      heroImage {
-        gatsbyImageData
-        description
-      }
-      column1Title
-      column1Desc
-      column1Image {
-        gatsbyImageData
-        description
-      }
-      column2Title
-      column2Desc
-      column2Image {
-        gatsbyImageData
-        description
-      }
-      column3Title
-      column3Desc
-      column3Image {
-        gatsbyImageData
-        description
-      }
-      featureTitle
-      featureDesc
-      featureImage {
-        gatsbyImageData
-        description
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { in: ["au.PartnerCTA.image"] } }
-      sort: { fields: title }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
+export const query = graphql`query ($id: String, $language: String!) {
+  locales: allLocale(filter: {ns: {in: ["food"]}, language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
   }
-`;
+  contentfulOffer(id: {eq: $id}) {
+    heroTitle
+    heroDesc
+    heroImage {
+      gatsbyImageData
+      description
+    }
+    column1Title
+    column1Desc
+    column1Image {
+      gatsbyImageData
+      description
+    }
+    column2Title
+    column2Desc
+    column2Image {
+      gatsbyImageData
+      description
+    }
+    column3Title
+    column3Desc
+    column3Image {
+      gatsbyImageData
+      description
+    }
+    featureTitle
+    featureDesc
+    featureImage {
+      gatsbyImageData
+      description
+    }
+  }
+  allContentfulAsset(
+    filter: {title: {in: ["au.PartnerCTA.image"]}}
+    sort: {title: ASC}
+  ) {
+    nodes {
+      id
+      title
+      description
+      gatsbyImageData
+    }
+  }
+}`;
