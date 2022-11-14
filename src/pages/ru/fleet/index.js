@@ -16,7 +16,7 @@ const DiDiFleet = ({ data }) => {
     <Layout>
       <FleetHero bgImage={FleetHeroBgImage}></FleetHero>
       <FleetOwnerColumns></FleetOwnerColumns>
-      <HelpCenterFAQFleet data={faqs} title={"Общие вопросы"}></HelpCenterFAQFleet>
+      <HelpCenterFAQFleet data={faqs.reverse()} title={"Общие вопросы"}></HelpCenterFAQFleet>
     </Layout>
   );
 };

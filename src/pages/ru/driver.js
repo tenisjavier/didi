@@ -100,18 +100,5 @@ export const query = graphql`
         }
       }
     }
-    allContentfulCity(
-      filter: { country: { code: { eq: "ru" } } }
-      sort: { name: ASC }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
-      }
-    }
   }
 `;

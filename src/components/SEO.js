@@ -62,6 +62,9 @@ const SEO = ({ title, desc }) => {
   const meta = getMetaByPath(countryCode, cleanPath);
   if (!title) {
     title = meta.title;
+    if(countryCode === "ru") {
+      title = decodeURI(meta.title);
+    }
   }
   if (!desc) {
     desc = meta.desc;

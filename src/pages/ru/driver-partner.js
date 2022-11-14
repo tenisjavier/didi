@@ -45,32 +45,4 @@ export const query = graphql`query ($language: String!) {
       gatsbyImageData
     }
   }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "cl"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
-      }
-      image {
-        gatsbyImageData
-      }
-      country {
-        code
-      }
-    }
-  }
-  allContentfulCity(filter: {country: {code: {eq: "cl"}}}, sort: {name: ASC}) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData(width: 400)
-        description
-      }
-    }
-  }
 }`;
