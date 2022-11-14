@@ -8,8 +8,10 @@ import GuidesColumns from "../../components/sections/GuidesColumns";
 
 const GuideTemplate = ({ data }) => {
   const richContent = data.contentfulGuide.content;
+  const title = data.contentfulGuide.seoTitle;
+  const desc = data.contentfulGuide.seoDescription;
   return (
-    <Layout>
+    <Layout title={title} desc={desc}>
       <GuideHero data={data}></GuideHero>
       <section className="container mx-auto mb-32 text-gray-primary md:px-28 mt-16">
         <RichContent richContent={richContent}></RichContent>
@@ -23,47 +25,51 @@ const GuideTemplate = ({ data }) => {
 
 export default GuideTemplate;
 
-export const query = graphql`query ($id: String, $countryCode: String, $language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
-      }
-    }
-  }
-  contentfulGuide(id: {eq: $id}) {
-    title
-    excerpt
-    content {
-      raw
-      references {
-        ... on ContentfulAsset {
-          contentful_id
-          title
-          description
-          gatsbyImageData(width: 1000)
-          __typename
+export const query = graphql`
+  query ($id: String, $countryCode: String, $language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }
-    featuredImage {
-      gatsbyImageData
-    }
-  }
-  allContentfulGuide(
-    filter: {country: {code: {eq: $countryCode}}, id: {ne: $id}}
-    sort: {updatedAt: DESC}
-    limit: 10
-  ) {
-    nodes {
+    contentfulGuide(id: { eq: $id }) {
       title
-      slug
       excerpt
+      seoTitle
+      seoDescription
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
+      }
       featuredImage {
         gatsbyImageData
       }
     }
+    allContentfulGuide(
+      filter: { country: { code: { eq: $countryCode } }, id: { ne: $id } }
+      sort: { updatedAt: DESC }
+      limit: 10
+    ) {
+      nodes {
+        title
+        slug
+        excerpt
+        featuredImage {
+          gatsbyImageData
+        }
+      }
+    }
   }
-}`;
+`;
