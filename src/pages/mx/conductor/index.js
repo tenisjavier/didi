@@ -57,54 +57,74 @@ const Conductor = ({ data }) => {
 
 export default Conductor;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(
-    filter: {ns: {in: ["translation"]}, language: {eq: $language}}
-  ) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(
+      filter: { ns: { in: ["translation"] }, language: { eq: $language } }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
-  }
-  allContentfulAsset(
-    filter: {title: {in: ["mx.DrvHero.bgImage", "mx.ClubDiDiCTA.bgImage", "mx.WomenDiDiCTA.image", "mx.DrvBenefits.image"]}}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "mx"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
+    allContentfulAsset(
+      filter: {
+        title: {
+          in: [
+            "mx.DrvHero.bgImage"
+            "mx.ClubDiDiCTA.bgImage"
+            "mx.WomenDiDiCTA.image"
+            "mx.DrvBenefits.image"
+          ]
+        }
       }
-      image {
+    ) {
+      nodes {
+        id
+        title
+        description
         gatsbyImageData
       }
-      country {
-        code
-      }
     }
-  }
-  allContentfulCity(filter: {country: {code: {eq: "mx"}}}, sort: {name: ASC}) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData(width: 400)
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "mx" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
         description
+        phone
+        requirement {
+          raw
+        }
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
+      }
+    }
+    allContentfulCity(
+      filter: {
+        product: { elemMatch: { category: { eq: "driver" } } }
+        country: { code: { eq: "mx" } }
+      }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
       }
     }
   }
-}`;
+`;
