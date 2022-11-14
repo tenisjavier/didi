@@ -89,7 +89,7 @@ const Breadcrumb = () => {
             );
           } else if (countryCode == "ru") {
             var itemPath;
-            switch (dir) {
+            switch (decodeURI(dir)) {
               case "about-didi":
                 itemPath = "О нас";
                 break;
@@ -114,8 +114,11 @@ const Breadcrumb = () => {
               case "legal":
                 itemPath = "Круто";
                 break;
+              case "newsroom":
+                itemPath = "отдел новостей";
+                break;
               default:
-                itemPath = dir;
+                itemPath = decodeURI(dir);
             }
             if (index === directories.length - 1) {
               return (
