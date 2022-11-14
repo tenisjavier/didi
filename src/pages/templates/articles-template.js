@@ -14,6 +14,8 @@ import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
 //dsss
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
+  const title = data.contentfulArticle.seoTitle;
+  const desc = data.contentfulArticle.seoDescription;
   const { pathname } = useLocation();
   let hero = <ArticleHero data={data}></ArticleHero>;
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
@@ -34,7 +36,7 @@ const ArticlesTemplate = ({ data }) => {
   }
 
   return (
-    <Layout>
+    <Layout title={title} desc={desc}>
       {hero}
       <ArticleContent data={data}></ArticleContent>
       {!(
@@ -47,54 +49,69 @@ const ArticlesTemplate = ({ data }) => {
 
 export default ArticlesTemplate;
 
-export const query = graphql`query ($id: String, $category: String, $countryCode: String, $language: String!, $tag: String) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
-      }
-    }
-  }
-  contentfulArticle(id: {eq: $id}) {
-    title
-    excerpt
-    updatedAt
-    tags {
-      name
-    }
-    content {
-      raw
-      references {
-        ... on ContentfulAsset {
-          contentful_id
-          title
-          description
-          gatsbyImageData(width: 1000)
-          __typename
+export const query = graphql`
+  query (
+    $id: String
+    $category: String
+    $countryCode: String
+    $language: String!
+    $tag: String
+  ) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }
-    featuredImage {
-      gatsbyImageData
-    }
-  }
-  allContentfulArticle(
-    filter: {category: {eq: $category}, country: {code: {eq: $countryCode}}, id: {ne: $id}, tags: {elemMatch: {name: {eq: $tag}}}}
-    sort: {updatedAt: DESC}
-    limit: 20
-  ) {
-    nodes {
+    contentfulArticle(id: { eq: $id }) {
       title
-      slug
+      excerpt
+      updatedAt
       tags {
         name
       }
-      excerpt
+      seoTitle
+      seoDescription
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
+      }
       featuredImage {
         gatsbyImageData
       }
     }
+    allContentfulArticle(
+      filter: {
+        category: { eq: $category }
+        country: { code: { eq: $countryCode } }
+        id: { ne: $id }
+        tags: { elemMatch: { name: { eq: $tag } } }
+      }
+      sort: { updatedAt: DESC }
+      limit: 20
+    ) {
+      nodes {
+        title
+        slug
+        tags {
+          name
+        }
+        excerpt
+        featuredImage {
+          gatsbyImageData
+        }
+      }
+    }
   }
-}`;
+`;
