@@ -606,5 +606,8 @@
     }
   ],
   "PoliciesHero.desc": " ",
-  "PoliciesHero.textColor": "white"
+  "PoliciesHero.textColor": "white",
+  "ListPartnerHero.title": "Список партнеров",
+  "ListPartnerHero.desc": " ",
+  "ListPartnerHero.textColor": "white"
 }
