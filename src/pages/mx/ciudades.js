@@ -10,6 +10,7 @@ const Ciudades = ({ data }) => {
     return image.title === "mx.DrvHero.bgImage";
   })[0];
   const cities = data.allContentfulCity.nodes;
+
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
@@ -18,37 +19,42 @@ const Ciudades = ({ data }) => {
   );
 };
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
-  }
-  allContentfulAsset(filter: {title: {in: ["mx.DrvHero.bgImage"]}}) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulCity(
-    filter: {country: {code: {eq: "mx"}}, product: {elemMatch: {category: {in: "driver"}}}}
-    sort: {name: ASC}
-  ) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData(width: 400)
+    allContentfulAsset(filter: { title: { in: ["mx.DrvHero.bgImage"] } }) {
+      nodes {
+        id
+        title
         description
+        gatsbyImageData
+      }
+    }
+    allContentfulCity(
+      filter: {
+        product: { elemMatch: { category: { eq: "driver" } } }
+        country: { code: { eq: "mx" } }
+      }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
       }
     }
   }
-}`;
+`;
 
 export default Ciudades;
