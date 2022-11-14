@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodBlogHero from "../../../../components/sections/FoodBlogHero";
 import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
+import Pagination from "../../../../components/Pagination";
 
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,41 +14,44 @@ const FoodBlog = ({ data }) => {
     <Layout>
       <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
       <FoodBlogColumns data={data}></FoodBlogColumns>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
 
 export default FoodBlog;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
-  }
-  allContentfulAsset(filter: {title: {in: ["cl.FoodHero.bgImage"]}}) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulArticle(
-    filter: {category: {eq: "food"}, country: {code: {eq: "cl"}}}
-    sort: {updatedAt: DESC}
-    limit: 10
-  ) {
-    nodes {
-      title
-      excerpt
-      featuredImage {
+    allContentfulAsset(filter: { title: { in: ["cl.FoodHero.bgImage"] } }) {
+      nodes {
+        id
+        title
+        description
         gatsbyImageData
       }
     }
+    allContentfulArticle(
+      filter: { category: { eq: "food" }, country: { code: { eq: "cl" } } }
+      sort: { updatedAt: DESC }
+    ) {
+      nodes {
+        title
+        slug
+        excerpt
+        featuredImage {
+          gatsbyImageData
+        }
+      }
+    }
   }
-}`;
+`;
