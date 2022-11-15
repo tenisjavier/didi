@@ -26,9 +26,37 @@ const seoMeta: AllSEOMetaInterface = {
   },
   ru: {
     "/": {
-      title: "DiDi Global - The World's Leader in Mobility Technology",
-      desc: "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.",
-    }
+      title: "Ведущий мировой мобильный транспорт приходит в Россию",
+      desc: "DiDi Global — ведущая в мире мобильная транспортная платформа, предлагающая пользователям по всему миру полный спектр услуг на основе приложений.",
+    },
+    "/rider/": {
+      title: "Поездки с DiDi ",
+      desc: "Совершайте поездки с DiDi, международной технологической платформой, которая предоставляет сервис сотням миллионов пассажиров благодаря передовым технологиям и инновациям.",
+    },
+    "/driver/": {
+      title: "DiDi прибывает в Россию - езжайте прямо сейчас",
+      desc: "DiDi прибывает в Россию, становится водителем-партнером Didi и ездит с самой низкой комиссией с транспортным приложением номер 1 в мире",
+    },
+    "/driver-partner/": {
+      title: "DiDi прибывает в Россию - езжайте прямо сейчас",
+      desc: "DiDi прибывает в Россию, становится водителем-партнером Didi и ездит с самой низкой комиссией с транспортным приложением номер 1 в мире",
+    },
+    "/fleet/": {
+      title: "DiDi для таксопарков",
+      desc: "DiDi Global — ведущая в мире мобильная транспортная платформа, предлагающая пользователям по всему миру полный спектр услуг на основе приложений.",
+    },
+    "/about-us/": {
+      title: "О нас",
+      desc: "Мы — DiDi, глобальная технологическая платформа.",
+    },
+    "/newsroom/": {
+      title: "Новости",
+      desc: "Раздел новостей о DiDi в России. Узнайте обо всех новостях в этом разделе.",
+    },
+    "/legal/": {
+      title: "Юридический",
+      desc: "Это наш раздел наших условий и положений, созданных юридической сферой DiDi.",
+    },
   },
   cl: {
     "/": {
@@ -728,6 +756,14 @@ const seoMeta: AllSEOMetaInterface = {
     "/safety/": {
       title: "Safety",
       desc: "Your safety comes first-- learn more about our industry-leading safety features.",
+    },
+    "/safety/rider-safety/": {
+      title: "Rider Safety",
+      desc: "Your safety comes first. Learn more about our industry-leading safety features for riders.",
+    },
+    "/safety/driver-safety/": {
+      title: "Driver Safety",
+      desc: "Your safety comes first. Learn more about our industry-leading safety features for drivers.",
     },
     "/help-center/": {
       title: "Help Center",
