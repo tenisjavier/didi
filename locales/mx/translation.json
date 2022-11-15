@@ -15,7 +15,7 @@
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
-  "SafetyCTA.btnLink": "seguridad/",
+  "SafetyCTA.btnLink": "/mx/seguridad/",
   "SafetyDrvCTA.title": "Seguridad para conductores",
   "SafetyDrvCTA.desc": "Conoce más sobre las funciones de seguridad para conductores en DiDi",
   "SafetyDrvCTA.btnLink": "/mx/seguridad/conductores/",
