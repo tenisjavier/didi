@@ -204,6 +204,68 @@
   "KnowMoreBanner.btnText": "Saber Más",
   "KnowMoreBanner.btnLink": "/ar/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
+  "FleetHero.title": "DiDi Fleet: Hacé dinero hasta durmiendo",
+  "FleetHero.desc": "Coordiná el alquiler de tu carro a través de DiDi Fleet y generá ganancias sin salir de casa con una de las tasas más bajas del mercado. Ellos ganan, vos ganás.",
+  "FleetHero.textColor": "white",
+  "FleetHero.btnMode": "light",
+  "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
+  "FleetWhyDiDi.bullets": [
+    "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+    "¡Generá ganancias sin salir de casa! Además, aprovechá una de las tasas de servicio más bajas del mercado.",
+    "¡Contás con soporte 24/7! y todas las funciones de seguridad DiDi.",
+    "Monitorea los ingresos de las solicitudes generadas con tu vehículo y recibí los pagos con tarjeta de crédito directamente en tu app."
+  ],
+  "FleetWhyDiDi.textColor": "gray-primary",
+  "FleetWhyDiDi.btnMode": "primary",
+  "AboutDidiFleetVideo.title": "Mirá el video y conocé cómo funciona DiDi Fleet",
+  "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/XbfHvQlFKlY",
+  "AboutDidiFleetVideo.textColor": "gray-primary",
+  "AboutDidiFleetVideo.bgColor": "bg-gray-light",
+  "FleetColumns.bgColor": "bg-green-primary",
+  "FleetColumns.title": "Beneficios de DiDi Fleet",
+  "FleetColumns.textColor": "white",
+  "FleetColumns.columns": [
+    {
+      "title": "Te conectamos con un socio conductor potencial",
+      "desc": "Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+      "textColor": "white"
+    },
+    {
+      "title": "¡Generá ganancias sin salir de casa!",
+      "desc": "Además, aprovechá una de las tasas de servicio más bajas del mercado.",
+      "textColor": "white"
+    },
+    {
+      "title": "¡Contás con soporte 24/7!",
+      "desc": "y todas las funciones de seguridad DiDi.",
+      "textColor": "white"
+    },
+    {
+      "title": "Monitorea los ingresos de las solicitudes generadas con tu vehículo",
+      "desc": "y recibí los pagos con tarjeta de crédito directamente en tu app.",
+      "textColor": "white"
+    }
+  ],
+  "FleetStepsColumns.bgColor": "white",
+  "FleetStepsColumns.columns": [
+    {
+      "desc": "Registrate como socio aliado y completá tus documentos",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "Invitá a otros socios a registrarse como parte de tu grupo",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "¡Estás listo para empezar a administrar tus vehículos!",
+      "textColor": "gray-primary"
+    }
+  ],
+  "DownloadFleetCTA.title": "¿Cómo te registrás en DiDi Fleet?",
+  "DownloadFleetCTA.desc": "Descargá DiDi Fleet",
+  "DownloadFleetCTA.textColor": "gray-primary",
+  "DownloadFleetCTA.bgColor": "bg-gray-light",
+  "DownloadFleetCTA.btnMode": "primary",
   "AboutHero.title": "¿Tenés preguntas sobre DiDi?",
   "AboutHero.desc": "Revisá nuestra sección de seguridad y preguntas frecuentes para un mejor entendimiento de la plataforma. Tanto si sos pasajero o conductor podrás encontrar respuestas.",
   "AboutHero.textColor": "white",
@@ -483,6 +545,11 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
+  "StoreFleetHero.title": "Escaneá el QR con tu celular ",
+  "StoreFleetHero.desc": "Descargá DiDi Fleet escaneando el código con tu celular",
+  "StoreFleetHero.textColor": "white",
+  "StoreFleetHero.bgColor": "bg-orange-primary",
+  "StoreFleetHero.btnMode": "light",
   "SBDrv.title": "DiDi Conductor",
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",
