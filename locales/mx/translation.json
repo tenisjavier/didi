@@ -361,6 +361,44 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/mx/conductor/conductor-en-{{city}}/",
+  "DrvMotoHero.title": "Aumenta tus Ganancias con DiDi Moto",
+  "DrvMotoHero.desc": "Registrate en DiDi Moto y comienza ya a generar ganancias cuando más te convenga.",
+  "DrvMotoHero.textColor": "white",
+  "DrvMotoHero.btnMode": "light",
+  "DrvColumns.textColor": "gray-primary",
+  "DrvColumns.bgColor": "bg-white",
+  "DrvColumns.columns": [
+    {
+      "title": "Maneja tus Tiempos",
+      "desc": "Flexibilidad para que manejes tu tiempo como quieras",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contar con un equipo de soporte 24/7",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Genera más Ganancias",
+      "desc": "Genera más ganancias con nuestras promociones",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Conoce el Destino",
+      "desc": "Conoce el destino de un viaje antes de aceptarlo.",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Driver Center",
+      "desc": "Visita nuestro centro de atención.",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Constante Mejora",
+      "desc": "Accede a soluciones automáticas dentro de la app",
+      "textColor": "gray-primary"
+    }
+  ],
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
