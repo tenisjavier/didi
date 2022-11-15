@@ -37,7 +37,6 @@ const Index = ({ data }) => {
 
   return (
     <Layout
-      sb={false}
       title="Proveedores"
       desc="Con el fin de servir mejor a nuestro creciente negocio, buscamos constantemente proveedores aptos para ser nuestros socios."
     >

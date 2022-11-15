@@ -101,7 +101,7 @@ const Index = ({ data }) => {
   };
 
   return (
-    <Layout sb={false}>
+    <Layout>
       <CTASection {...CTAProps} key={1}></CTASection>
       <CTASection {...AboutUsProps} key={2}></CTASection>
       <CTASection {...MissionProps} key={3}></CTASection>
@@ -112,30 +112,40 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    allContentfulCountry(sort: { englishName: ASC }) {
+      nodes {
+        englishName
+        hostname
+      }
+    }
+    allContentfulAsset(
+      filter: {
+        title: {
+          in: [
+            "int.HomeAboutUs.image"
+            "int.HomeOurMission.image"
+            "int.AboutDiDi.image"
+          ]
+        }
+      }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulCountry(sort: {englishName: ASC}) {
-    nodes {
-      englishName
-      hostname
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {in: ["int.HomeAboutUs.image", "int.HomeOurMission.image", "int.AboutDiDi.image"]}}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

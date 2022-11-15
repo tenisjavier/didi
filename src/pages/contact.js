@@ -65,7 +65,7 @@ const Index = ({ data }) => {
   };
 
   return (
-    <Layout sb={false}>
+    <Layout>
       <CTASection {...CTAProps}></CTASection>
       <ContactColumnPart {...ContactColumnPartProps}></ContactColumnPart>
     </Layout>

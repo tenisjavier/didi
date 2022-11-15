@@ -13,11 +13,13 @@ interface SmartBannerProps {
     | "foodBusiness"
     | "foodDelivery"
     | "foodEater";
+  sbTitle?: string;
+  sbDesc?: string;
 }
 
 const SmartBanner = (props: SmartBannerProps) => {
   const { i18n, t } = useTranslation();
-  const { type } = props;
+  const { type, sbTitle, sbDesc } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
   let btnText, Logo, bgColor, bannerTitle, bannerDesc;
@@ -34,8 +36,8 @@ const SmartBanner = (props: SmartBannerProps) => {
     btnText = btnData.paxText.replace(/ .*/, "");
     Logo = <PaxLogo></PaxLogo>;
     bgColor = "bg-white";
-    bannerTitle = t("SBPax.title");
-    bannerDesc = t("SBPax.desc");
+    bannerTitle = sbTitle || t("SBPax.title");
+    bannerDesc = sbDesc || t("SBPax.desc");
   } else if (type === "fleet" && btnData.fleetText) {
     btnText = btnData.fleetText.replace(/ .*/, "");
     Logo = <DiDiFleet></DiDiFleet>;
