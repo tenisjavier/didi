@@ -121,7 +121,7 @@ const btnLinks: AllBtnInterface = {
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empezá a Repartir con DiDi Food",
-    foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
+    foodBusinessLink: "https://www.didi-food.com/es-CR/store",
     foodBusinessText: "Registrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pedí Comida Ya → Descargá la App",
