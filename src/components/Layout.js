@@ -9,7 +9,15 @@ import SmartBanner from "./SmartBanner";
 import "../styles/global.css";
 
 // @desc: layout with global header, menu, smartbanner and footer
-const Layout = ({ sb = true, title, desc, sbTitle, sbDesc, children }) => {
+const Layout = ({
+  sb = true,
+  title,
+  desc,
+  sbTitle,
+  sbDesc,
+  sbCTA,
+  children,
+}) => {
   const countries = [
     "cl",
     "pe",
@@ -39,6 +47,7 @@ const Layout = ({ sb = true, title, desc, sbTitle, sbDesc, children }) => {
     smartBannerType = "pax";
     sbTitle = "Download DiDi";
     sbDesc = "Rides, food and more";
+    sbCTA = "Download";
   }
 
   return (
@@ -51,6 +60,7 @@ const Layout = ({ sb = true, title, desc, sbTitle, sbDesc, children }) => {
           type={smartBannerType}
           sbTitle={sbTitle}
           sbDesc={sbDesc}
+          sbCTA={sbCTA}
         ></SmartBanner>
       ) : null}
       {pathname.includes("food") ? (
