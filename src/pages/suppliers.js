@@ -36,7 +36,7 @@ const Index = ({ data }) => {
   };
 
   return (
-    <Layout sb={false}>
+    <Layout>
       <CTASection {...CTAProps}></CTASection>
       <TermsAndConditionsContent data={data}></TermsAndConditionsContent>
     </Layout>

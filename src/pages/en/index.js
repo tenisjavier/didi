@@ -101,7 +101,7 @@ const Index = ({ data }) => {
   };
 
   return (
-    <Layout sb={false}>
+    <Layout>
       <CTASection {...CTAProps} key={1}></CTASection>
       <CTASection {...AboutUsProps} key={2}></CTASection>
       <CTASection {...MissionProps} key={3}></CTASection>
