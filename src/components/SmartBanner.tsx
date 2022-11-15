@@ -15,11 +15,12 @@ interface SmartBannerProps {
     | "foodEater";
   sbTitle?: string;
   sbDesc?: string;
+  sbCTA?: string;
 }
 
 const SmartBanner = (props: SmartBannerProps) => {
   const { i18n, t } = useTranslation();
-  const { type, sbTitle, sbDesc } = props;
+  const { type, sbTitle, sbDesc, sbCTA } = props;
   const countryCode = i18n.language;
   const btnData = getBtnLinks(countryCode);
   let btnText, Logo, bgColor, bannerTitle, bannerDesc;
@@ -33,7 +34,7 @@ const SmartBanner = (props: SmartBannerProps) => {
     bannerTitle = t("SBDrv.title");
     bannerDesc = t("SBDrv.desc");
   } else if (type === "pax") {
-    btnText = btnData.paxText.replace(/ .*/, "");
+    btnText = sbCTA || btnData.paxText.replace(/ .*/, "");
     Logo = <PaxLogo></PaxLogo>;
     bgColor = "bg-white";
     bannerTitle = sbTitle || t("SBPax.title");
