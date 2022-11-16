@@ -229,24 +229,24 @@ const insertBtnParams = () => {
     let channel = urlParams.get("channel");
     let country = urlParams.get("country");
     // joveo 99 app
-    let device = urlParams.get("device");
-    let af_c_id = urlParams.get("af_c_id");
-    let af_adset = urlParams.get("af_adset");
-    let af_adset_id = urlParams.get("af_adset_id");
-    let af_ad = urlParams.get("af_ad");
-    let af_ua = urlParams.get("af_ua");
-    let af_ad_id = urlParams.get("af_ad_id");
-    let af_ad_type = urlParams.get("af_ad_type");
-    let af_siteid = urlParams.get("af_siteid");
-    let af_click_lookback = urlParams.get("af_click_lookback");
-    let advertising_id = urlParams.get("advertising_id");
-    let track_id = urlParams.get("track_id");
-    let trackid = urlParams.get("trackid");
-    let af_ip = urlParams.get("af_ip");
-    let af_lang = urlParams.get("af_lang");
-    let android_id = urlParams.get("android_id");
-    let joveoID = urlParams.get("joveoID");
-    let DIDI_CAMPAIGN_ID = urlParams.get("DIDI_CAMPAIGN_ID");
+    // let device = urlParams.get("device");
+    // let af_c_id = urlParams.get("af_c_id");
+    // let af_adset = urlParams.get("af_adset");
+    // let af_adset_id = urlParams.get("af_adset_id");
+    // let af_ad = urlParams.get("af_ad");
+    // let af_ua = urlParams.get("af_ua");
+    // let af_ad_id = urlParams.get("af_ad_id");
+    // let af_ad_type = urlParams.get("af_ad_type");
+    // let af_siteid = urlParams.get("af_siteid");
+    // let af_click_lookback = urlParams.get("af_click_lookback");
+    // let advertising_id = urlParams.get("advertising_id");
+    // let track_id = urlParams.get("track_id");
+    // let trackid = urlParams.get("trackid");
+    // let af_ip = urlParams.get("af_ip");
+    // let af_lang = urlParams.get("af_lang");
+    // let android_id = urlParams.get("android_id");
+    // let joveoID = urlParams.get("joveoID");
+    // let DIDI_CAMPAIGN_ID = urlParams.get("DIDI_CAMPAIGN_ID");
     let form_url =
       "https://page.didiglobal.com/driver-page/register/index.html";
 
@@ -299,16 +299,16 @@ const insertBtnParams = () => {
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
 
-    let newSearch = `?pid=${pid}&c=${c}&af_r=${form_url}&location_country=${countryLang[0]}&country=${country}&lang=${countryLang[1]}&channel=${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
+    let newSearch = `?location_country=${countryLang[0]}&country=${countryCode}&lang=${countryLang[1]}&channel=${channelId}&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
     let newSearchFood = `?pid=${pid}&c=${c}&af_web_dp=https%3A%2F%2Fwww.didi-food.com%2F${countryLang[1]}%2Fmobile-delivery%2Fguide%3FclientType=102%26country%3D${countryLang[0]}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
 
     // jovep 99 app
-    if (device) {
-      newSearch = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
-      newSearchFood = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
+    // if (device) {
+    //   newSearch = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
+    //   newSearchFood = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
 
-      return oldUrl + newSearch;
-    }
+    //   return oldUrl + newSearch;
+    // }
     if (
       url.indexOf("me/mbwy/") > -1 ||
       url.indexOf("me/o97G/") > -1 ||
@@ -317,7 +317,7 @@ const insertBtnParams = () => {
       url.indexOf("me/5xQ3/") > -1 ||
       url.indexOf("page.didiglobal.com/driver-page/register") > -1
     ) {
-      return oldUrl + newSearch;
+      return form_url + newSearch;
     } else if (url.indexOf("me/zzaY/") > -1) {
       return oldUrl + newSearchFood;
     } else if (url.indexOf("fleet.onelink.me/tLtr/") > -1) {
