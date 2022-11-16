@@ -83,7 +83,8 @@ const Btn = ({
       btnText: e.target.innerText,
       countryCode: countryCode,
     });
-    navigate(link);
+
+    window.location.replace(link);
   };
 
   return (
