@@ -317,7 +317,7 @@ const insertBtnParams = () => {
       url.indexOf("me/5xQ3/") > -1 ||
       url.indexOf("page.didiglobal.com/driver-page/register") > -1
     ) {
-      return oldUrl + newSearch;
+      return form_url + newSearch;
     } else if (url.indexOf("me/zzaY/") > -1) {
       return oldUrl + newSearchFood;
     } else if (url.indexOf("fleet.onelink.me/tLtr/") > -1) {
