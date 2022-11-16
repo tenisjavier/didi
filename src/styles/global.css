@@ -120,6 +120,9 @@ section.main-text ol li {
 .btn-dark a {
   @apply hover:text-white;
 }
+.btn-hidden {
+  @apply hidden opacity-0;
+}
 
 .text-c {
   text-align: center;
@@ -133,7 +136,6 @@ section.main-text ol li {
   @apply text-orange-primary;
 }
 
-
 .pagination {
   display: block;
   text-align: center;
@@ -142,15 +144,15 @@ section.main-text ol li {
 .pagination .page-item {
   display: inline-block;
   text-align: center;
-  padding: .2rem .4rem;
-  margin: 0 .2rem;
+  padding: 0.2rem 0.4rem;
+  margin: 0 0.2rem;
   cursor: pointer;
   border: 1px solid #6b7280;
-  color: #6B7280;
+  color: #6b7280;
 }
 
-
-.pagination .page-item:hover, .pagination .page-item.active {
-  background-color: #6B7280;
+.pagination .page-item:hover,
+.pagination .page-item.active {
+  background-color: #6b7280;
   color: white;
 }

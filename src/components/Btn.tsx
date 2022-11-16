@@ -23,8 +23,8 @@ export interface BtnProps {
     | "bothFood";
   btnText2?: string;
   btnLink2?: string;
-  btnMode?: "primary" | "dark" | "light" | "green";
-  btnModeSecondary?: "primary" | "dark" | "light" | "green";
+  btnMode?: "primary" | "dark" | "light" | "green" | "hidden";
+  btnModeSecondary?: "primary" | "dark" | "light" | "green" | "hidden";
   btnLink?: string;
   btnText?: string;
 }

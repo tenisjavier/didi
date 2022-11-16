@@ -10,16 +10,27 @@ interface StoreHeroProps {
     gatsbyImageData: IGatsbyImageData;
   };
   image?: any;
+  title?: string;
+  desc?: string;
+  textColor?: string;
+  bgColor?: string;
 }
 
-const StoreHero = ({ bgImage, image }: StoreHeroProps) => {
+const StoreHero = ({
+  bgImage,
+  image,
+  title,
+  desc,
+  textColor,
+  bgColor,
+}: StoreHeroProps) => {
   const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
-    title: t("StoreHero.title"),
-    desc: t("StoreHero.desc"),
-    textColor: t("StoreHero.textColor"),
-    bgColor: t("StoreHero.bgColor"),
+    title: title || t("StoreHero.title"),
+    desc: desc || t("StoreHero.desc"),
+    textColor: textColor || t("StoreHero.textColor"),
+    bgColor: bgColor || t("StoreHero.bgColor"),
     ...(bgImage && {
       bgImage: (
         <GatsbyImage
@@ -32,7 +43,8 @@ const StoreHero = ({ bgImage, image }: StoreHeroProps) => {
     ...(image && {
       image: image,
       reverse: true,
-      btnMode: t("StoreHero.btnMode"),
+      btnMode: "light",
+      btnModeSecondary: "hidden",
       btnType: "pax",
     }),
   };
