@@ -3,23 +3,24 @@ import { useStaticQuery, graphql } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-// Colo
 import FooterLink from "./FooterLink";
 import { getFooterLinks } from "../config/footer-config";
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`{
-  allContentfulCountry(sort: {englishName: ASC}) {
-    nodes {
-      name
-      arabicName
-      englishName
-      spanishName
-      russianName
-      hostname
+  const data = useStaticQuery(graphql`
+    {
+      allContentfulCountry(sort: { englishName: ASC }) {
+        nodes {
+          name
+          arabicName
+          englishName
+          spanishName
+          russianName
+          hostname
+        }
+      }
     }
-  }
-}`);
+  `);
   const countries = data.allContentfulCountry.nodes;
   const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
   const { i18n } = useTranslation();
@@ -92,20 +93,17 @@ const Footer = () => {
               })}
             </div>
           </div>
-
-          {/* <div className="flex h-1/2 w-full flex-initial flex-wrap items-center justify-center px-24 lg:h-full lg:w-1/2 xl:px-32 ">
+          <div className="flex h-1/2 w-full flex-initial flex-wrap items-center justify-center px-24 lg:h-full lg:w-1/2 xl:px-32 ">
             <div className="flex w-full justify-center lg:w-auto">
-              <div className="mr-5 text-5xl text-white">
-                <FontAwesomeIcon icon={faFacebookSquare} />
-              </div>
-              <div className="mr-5 text-5xl text-white">
-                <FontAwesomeIcon icon={faInstagramSquare} />
-              </div>
-              <div className="mr-5 text-5xl text-white">
-                <FontAwesomeIcon icon={faTwitterSquare} />
-              </div>
+              <a href="https://global-rides-passenger.onelink.me/xNlo/globalhomepage">
+                <StaticImage
+                  alt="Logo Stores"
+                  src="../images/downloads-icons-en.png"
+                  width={200}
+                ></StaticImage>
+              </a>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
