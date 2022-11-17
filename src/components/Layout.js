@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "@reach/router";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import { CountryProvider } from "../context/countryContext";
 import Seo from "./SEO";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -51,7 +52,7 @@ const Layout = ({
   }
 
   return (
-    <>
+    <CountryProvider>
       <Seo title={title} desc={desc}></Seo>
       <Header></Header>
       {children}
@@ -68,7 +69,7 @@ const Layout = ({
       ) : (
         <Footer></Footer>
       )}
-    </>
+    </CountryProvider>
   );
 };
 
