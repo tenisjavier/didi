@@ -28,14 +28,14 @@ const Footer = () => {
   const links = getFooterLinks(countryCode);
 
   return (
-    <footer>
-      <div className="border-buffer h-32 border-x-0 border-b-2 border-t-0 border-solid border-white bg-gray-primary text-white ">
+    <footer className="pb-36 lg:pb-0 bg-gray-primary">
+      <div className="border-buffer h-32 border-x-0 border-b-2 border-t-0 border-solid border-white text-white ">
         <div className="container mx-auto h-full">
           <FooterLink links={links}></FooterLink>
         </div>
       </div>
 
-      <div className="h-96 bg-gray-primary lg:h-80">
+      <div className="h-96  lg:h-80">
         <div className="container mx-auto flex h-full flex-wrap">
           <div className="flex h-1/2 w-full flex-initial flex-col items-center justify-center lg:h-full lg:w-1/2 lg:items-start">
             <Link to="/">
