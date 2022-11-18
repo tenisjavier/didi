@@ -345,7 +345,7 @@ const insertBtnParams = () => {
     } else if (url.indexOf("global-food-eater.onelink.me/4B2F/") > -1) {
       return (
         oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${af_channel}&af_c_id=${af_c_id}&af_adset_id=${af_adset_id}&af_ad_id=${af_ad_id}&af_keywords=${af_keywords}&af_siteid=${af_siteid}&af_web_dp=${document.location.origin}/${countryCode}/food/store-food-app/`
+        `?pid=${pid}&c=${c}&rsc_source=${rscSource}&rsc_media=${rscMedia}&rsc_channel=${rscChannel}&rsc_product=${rscProduct}&af_channel=${af_channel}&af_c_id=${af_c_id}&af_adset_id=${af_adset_id}&af_ad_id=${af_ad_id}&af_keywords=${af_keywords}&af_siteid=${af_siteid}&af_web_dp=${document.location.origin}/${countryCode}/food/store-food-app/`
       );
     } else {
       if (countryCode)
