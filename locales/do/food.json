@@ -161,7 +161,7 @@
   "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
   "FoodBlogColumns.bgColor": "bg-blue-primary",
   "FoodBlogColumns.textColor": "white",
-  "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
+  "FoodBlogColumns.linkItem": "/do/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
   "FoodBlogPostHero.btnMode": "light",
   "StoreFoodAppHero.title": "Escanea el QR con tu celular",
