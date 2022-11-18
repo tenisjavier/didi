@@ -32,6 +32,7 @@ const StoreFleetHero = ({ bgImage, image }: StoreFleetHeroProps) => {
       image: image,
       reverse: true,
       btnMode: t("StoreFleetHero.btnMode"),
+      btnModeSecondary: "hidden",
       btnType: "fleet",
     }),
   };

@@ -32,6 +32,7 @@ const StoreFoodAppHero = ({ bgImage, image }: StoreFoodAppHeroProps) => {
       image: image,
       reverse: true,
       btnMode: t("StoreFoodAppHero.btnMode"),
+      btnModeSecondary: "hidden",
       btnType: "foodEater",
     }),
   };
