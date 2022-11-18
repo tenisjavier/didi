@@ -1,17 +1,16 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
 const SafetyGridPaxDuringTrip = ({ images }) => {
-  const { t } = useTranslation();
   const props = {
     title: t("SafetyGridPaxDuringTrip.title"),
     desc: t("SafetyGridPaxDuringTrip.desc"),
     bgColor: t("SafetyGridPaxDuringTrip.bgColor"),
     textColor: t("SafetyGridPaxDuringTrip.textColor"),
     columns: t("SafetyGridPaxDuringTrip.columns", { returnObjects: true }),
-    width: "w-72"
+    width: "w-72",
   };
 
   props.columns.forEach((col, index) => {

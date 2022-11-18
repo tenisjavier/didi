@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface TecnologiaEspaciosHeroProps {
@@ -11,8 +11,7 @@ interface TecnologiaEspaciosHeroProps {
   };
 }
 
-const TecnologiaEspaciosHero = ({ bgImage}: TecnologiaEspaciosHeroProps) => {
-  const { t } = useTranslation();
+const TecnologiaEspaciosHero = ({ bgImage }: TecnologiaEspaciosHeroProps) => {
   const props: CTAProps = {
     hero: true,
     title: t("TecnologiaEspaciosHero.title"),
@@ -27,7 +26,7 @@ const TecnologiaEspaciosHero = ({ bgImage}: TecnologiaEspaciosHeroProps) => {
     ),
     btnMode: t("TecnologiaEspaciosHero.btnMode"),
     btnLink: t("TecnologiaEspaciosHero.btnLink"),
-    btnText: t("TecnologiaEspaciosHero.btnText")
+    btnText: t("TecnologiaEspaciosHero.btnText"),
   };
   return <CTASection {...props}></CTASection>;
 };

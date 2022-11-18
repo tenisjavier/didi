@@ -1,14 +1,15 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
 
 const FoodNeighborhoodList = ({ data }) => {
-  const { t } = useTranslation();
   const items = data.map((city) => {
     return {
       text: city.name,
       secondText: "",
-      link: t("neighborhood.linkItem", { city: city.slug.replace(/--|---/g,'-') }),
+      link: t("neighborhood.linkItem", {
+        city: city.slug.replace(/--|---/g, "-"),
+      }),
       image: city.image,
     };
   });

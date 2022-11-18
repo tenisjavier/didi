@@ -28,35 +28,40 @@ const Seguridad = ({ data }) => {
   return (
     <Layout>
       <SafetyPaxImgHero image={safetyHeroImage}></SafetyPaxImgHero>
-      <SafetyGridPaxBeforeTrip images={safetyBeforePaxColumns.reverse()}></SafetyGridPaxBeforeTrip>
-      <SafetyGridPaxDuringTrip images={safetyDuringPaxColumns.reverse()}></SafetyGridPaxDuringTrip>
-      <SafetyGridPaxAfterTrip images={safetyFinishedPaxColumns.reverse()}></SafetyGridPaxAfterTrip>
-      <SafetyPaxColumns images={safetyCOVIDPaxColumns.reverse()}></SafetyPaxColumns>
+      <SafetyGridPaxBeforeTrip
+        images={safetyBeforePaxColumns.reverse()}
+      ></SafetyGridPaxBeforeTrip>
+      <SafetyGridPaxDuringTrip
+        images={safetyDuringPaxColumns.reverse()}
+      ></SafetyGridPaxDuringTrip>
+      <SafetyGridPaxAfterTrip
+        images={safetyFinishedPaxColumns.reverse()}
+      ></SafetyGridPaxAfterTrip>
+      <SafetyPaxColumns
+        images={safetyCOVIDPaxColumns.reverse()}
+      ></SafetyPaxColumns>
     </Layout>
   );
 };
 
 export default Seguridad;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(mx.SafetyPax.image)|(mx.SafetyBeforePaxColumns.image)|(mx.SafetyCOVIDPaxColumns.image)|(mx.SafetyDuringPaxColumns.image)|(mx.SafetyFinishPaxColumns.image)/"
+        }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(mx.SafetyPax.image)|(mx.SafetyBeforePaxColumns.image)|(mx.SafetyCOVIDPaxColumns.image)|(mx.SafetyDuringPaxColumns.image)|(mx.SafetyFinishPaxColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

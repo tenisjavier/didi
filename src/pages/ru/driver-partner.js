@@ -25,24 +25,17 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(
-    filter: {ns: {in: ["translation"]}, language: {eq: $language}}
-  ) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: { title: { in: ["ru.DriverPartnerHero.bgImage"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulAsset(filter: {title: {in: ["ru.DriverPartnerHero.bgImage"]}}) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

@@ -48,75 +48,75 @@ const Product = ({ data }) => {
 
 export default Product;
 
-export const query = graphql`query ($language: String!, $id: String) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($id: String) {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.HomeColumns.image)/"
+        }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.HomeColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "au" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
+        description
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
+      }
     }
-  }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "au"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
+    contentfulProduct(id: { eq: $id }) {
       name
       description
+      faq {
+        title
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
+            }
+          }
+        }
+      }
       image {
         gatsbyImageData
       }
       country {
         code
       }
-    }
-  }
-  contentfulProduct(id: {eq: $id}) {
-    name
-    description
-    faq {
-      title
-      content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImageData(width: 800)
-            __typename
-          }
+      components {
+        meta {
+          title
+          desc
         }
       }
-    }
-    image {
-      gatsbyImageData
-    }
-    country {
-      code
-    }
-    components {
-      meta {
+      componentImages {
+        gatsbyImageData
+        description
         title
-        desc
       }
     }
-    componentImages {
-      gatsbyImageData
-      description
-      title
-    }
   }
-}`;
+`;

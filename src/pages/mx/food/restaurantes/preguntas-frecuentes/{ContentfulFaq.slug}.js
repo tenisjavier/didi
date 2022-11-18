@@ -42,66 +42,61 @@ const FaqTemplate = ({ data }) => {
   );
 };
 
-export const query = graphql`query ($id: String, $language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($id: String) {
+    allContentfulAsset(
+      filter: { title: { regex: "/(mx.FaqFoodHero.bgImage)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(mx.FaqFoodHero.bgImage)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
+    contentfulFaq(id: { eq: $id }) {
       title
-      description
-      gatsbyImageData
-    }
-  }
-  contentfulFaq(id: {eq: $id}) {
-    title
-    content {
-      raw
-      references {
-        ... on ContentfulAsset {
-          contentful_id
-          title
-          description
-          gatsbyImageData(width: 800)
-          __typename
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 800)
+            __typename
+          }
         }
       }
+      product {
+        name
+      }
     }
-    product {
-      name
-    }
-  }
-  allContentfulProduct(filter: {country: {elemMatch: {code: {eq: "mx"}}}}) {
-    nodes {
-      name
-      faq {
-        title
-        slug
-        content {
-          raw
-          references {
-            ... on ContentfulAsset {
-              contentful_id
-              title
-              description
-              gatsbyImageData(width: 800)
-              __typename
+    allContentfulProduct(
+      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
+    ) {
+      nodes {
+        name
+        faq {
+          title
+          slug
+          content {
+            raw
+            references {
+              ... on ContentfulAsset {
+                contentful_id
+                title
+                description
+                gatsbyImageData(width: 800)
+                __typename
+              }
             }
           }
         }
       }
     }
   }
-}`;
+`;
 
 export default FaqTemplate;

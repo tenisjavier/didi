@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import DoubleCTASection, { DoubleCTAProps } from "../DoubleCTASection";
 
 interface ProtocolBulletsProps {
@@ -12,7 +12,6 @@ interface ProtocolBulletsProps {
 }
 
 const ProtocolBullets = ({ image }: ProtocolBulletsProps) => {
-  const { t } = useTranslation();
   const props: DoubleCTAProps = {
     hero: false,
     title: t("ProtocolBullets.title"),

@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,7 +18,6 @@ interface HomeAltColumnsProps {
 }
 
 const HomeAltColumns = ({ images }: HomeAltColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("HomeAltColumns.bgColor"),
     textColor: t("HomeAltColumns.textColor"),
@@ -38,15 +37,27 @@ const HomeAltColumns = ({ images }: HomeAltColumnsProps) => {
     });
   } else {
     props.columns[0].image = (
-      <FontAwesomeIcon icon={faShieldHalved} size="3x" className="w-12 text-white" />
+      <FontAwesomeIcon
+        icon={faShieldHalved}
+        size="3x"
+        className="w-12 text-white"
+      />
     );
 
     props.columns[1].image = (
-      <FontAwesomeIcon icon={faNewspaper} size="3x" className="w-12 text-white" />
+      <FontAwesomeIcon
+        icon={faNewspaper}
+        size="3x"
+        className="w-12 text-white"
+      />
     );
 
     props.columns[2].image = (
-      <FontAwesomeIcon icon={faQuestion} size="3x" className="w-12 text-white" />
+      <FontAwesomeIcon
+        icon={faQuestion}
+        size="3x"
+        className="w-12 text-white"
+      />
     );
   }
   return <ColumnsSection {...props}></ColumnsSection>;

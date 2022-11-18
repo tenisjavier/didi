@@ -27,8 +27,12 @@ const RequisitosSocio = ({ data }) => {
   return (
     <Layout>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
-      <DrvRequirementColumns images={DrvRequirementColumnsImage.reverse()}></DrvRequirementColumns>
-      <VehicleRequirementCTA image={VehicleRequirementImage}></VehicleRequirementCTA>
+      <DrvRequirementColumns
+        images={DrvRequirementColumnsImage.reverse()}
+      ></DrvRequirementColumns>
+      <VehicleRequirementCTA
+        image={VehicleRequirementImage}
+      ></VehicleRequirementCTA>
       <BankInfoCTA></BankInfoCTA>
       <FindInfoCTA></FindInfoCTA>
       <FaqList faqs={faqDrv[0].faq}></FaqList>
@@ -40,16 +44,7 @@ const RequisitosSocio = ({ data }) => {
 export default RequisitosSocio;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {

@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { navigate } from "gatsby";
 import { useLocation } from "@reach/router";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry } from "../context/countryContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -15,8 +15,7 @@ import gtmEvent from "../config/gtm";
 // @desc: Top Menu. Links from menu-config and menu-configFood.
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const { pathname } = useLocation();

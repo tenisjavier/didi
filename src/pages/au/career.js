@@ -39,34 +39,31 @@ const Career = ({ data }) => {
 
 export default Career;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(au.CareerHero.bgImage)|(au.CareerWhyDiDi.image)|(au.CareerColumns.image)/"
+        }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
+    allContentfulFaq(filter: { country: { code: { eq: "au" } } }) {
+      nodes {
+        id
+        title
+        content {
+          raw
+        }
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.CareerHero.bgImage)|(au.CareerWhyDiDi.image)|(au.CareerColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulFaq(filter: {country: {code: {eq: "au"}}}) {
-    nodes {
-      id
-      title
-      content {
-        raw
-      }
-    }
-  }
-}`;
+`;

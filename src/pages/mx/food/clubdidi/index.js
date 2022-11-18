@@ -15,10 +15,7 @@ const DiDiMas = ({ data }) => {
     return image.title === "mx.ClubDiDiCategoryColumns.image";
   });
   const partnerGanancias = partners.filter((partner) => {
-    return (
-      partner.name === "Figou" ||
-      partner.name === "Enconta"
-    );
+    return partner.name === "Figou" || partner.name === "Enconta";
   });
   const partnerReconocimento = partners.filter((partner) => {
     return partner.name === "DiDi Food Leyenda";
@@ -28,7 +25,7 @@ const DiDiMas = ({ data }) => {
   });
   const partnerFormacion = partners.filter((partner) => {
     return (
-      partner.name === "Guias DiDi Food" || 
+      partner.name === "Guias DiDi Food" ||
       partner.name === "Consar" ||
       partner.name === "Vinco"
     );
@@ -38,7 +35,7 @@ const DiDiMas = ({ data }) => {
     "PartnerGanancias",
     "PartnerReconocimento",
     "PartnerBienestar",
-    "PartnerFormacion"
+    "PartnerFormacion",
   ];
 
   return (
@@ -78,37 +75,34 @@ const DiDiMas = ({ data }) => {
   );
 };
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.ClubDiDiCategoryColumns.image)/"
+        }
       }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.ClubDiDiCategoryColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulPartner(filter: {country: {code: {eq: "mx"}}}) {
-    nodes {
-      name
-      desc
-      logo {
-        gatsbyImageData
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
         description
+        gatsbyImageData
+      }
+    }
+    allContentfulPartner(filter: { country: { code: { eq: "mx" } } }) {
+      nodes {
+        name
+        desc
+        logo {
+          gatsbyImageData
+          description
+        }
       }
     }
   }
-}`;
+`;
 
 export default DiDiMas;

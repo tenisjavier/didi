@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,12 +17,15 @@ interface RestaurantBenefitsColumnsProps {
   }[];
 }
 
-const RestaurantBenefitsColumns = ({images}: RestaurantBenefitsColumnsProps) => {
-  const { t } = useTranslation();
+const RestaurantBenefitsColumns = ({
+  images,
+}: RestaurantBenefitsColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("RestaurantBenefitsUnirColumns.bgColor"),
     textColor: t("RestaurantBenefitsUnirColumns.textColor"),
-    columns: t("RestaurantBenefitsUnirColumns.columns", { returnObjects: true }),
+    columns: t("RestaurantBenefitsUnirColumns.columns", {
+      returnObjects: true,
+    }),
   };
   if (images) {
     props.columns.forEach((col, index) => {
@@ -35,7 +38,7 @@ const RestaurantBenefitsColumns = ({images}: RestaurantBenefitsColumnsProps) => 
         ></GatsbyImage>
       );
     });
-  } 
+  }
 
   return <ColumnsSection {...props}></ColumnsSection>;
 };

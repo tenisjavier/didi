@@ -23,7 +23,6 @@ const Index = ({ data }) => {
     return image.title === "nz.PaxCTA.image";
   })[0];
 
-
   return (
     <Layout>
       <HomeHero bgImage={homeHeroBgImage}></HomeHero>
@@ -36,25 +35,22 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(nz.HomeHero.bgImage)|(nz.DrvCTA.image)|(nz.PaxCTA.imag)|(nz.SafetyCTA.bgImage)/"
+        }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(nz.HomeHero.bgImage)|(nz.DrvCTA.image)|(nz.PaxCTA.imag)|(nz.SafetyCTA.bgImage)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

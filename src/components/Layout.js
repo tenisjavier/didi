@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "@reach/router";
-import { useTranslation } from "gatsby-plugin-react-i18next";
 import { CountryProvider } from "../context/countryContext";
 import Seo from "./SEO";
 import Header from "./Header";
@@ -35,8 +34,8 @@ const Layout = ({
     "nz",
   ];
   const { pathname } = useLocation();
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  let countryCode = pathname ? pathname.substring(1, 3) : "";
+  countryCode = countries.includes(countryCode) ? countryCode : "en";
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
   if (pathname.includes("didipay")) smartBannerType = "payment";

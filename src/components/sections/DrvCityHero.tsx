@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface DrvCityHeroProps {
@@ -13,7 +13,6 @@ interface DrvCityHeroProps {
 }
 
 const DrvCityHero = ({ data }: DrvCityHeroProps) => {
-  const { t } = useTranslation();
   const {
     name,
     geometry: { lat, lon },

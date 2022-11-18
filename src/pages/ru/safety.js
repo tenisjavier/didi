@@ -3,9 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
 import SafetyOneIconColumns from "../../components/sections/SafetyOneIconColumns";
-import {
-  faShieldHalved
-} from "@fortawesome/free-solid-svg-icons";
+import { faShieldHalved } from "@fortawesome/free-solid-svg-icons";
 
 const Safety = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -24,19 +22,8 @@ const Safety = ({ data }) => {
 export default Safety;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { in: ["ru.SafetyHero.bgImage"] } }
-    ) {
+  query {
+    allContentfulAsset(filter: { title: { in: ["ru.SafetyHero.bgImage"] } }) {
       nodes {
         id
         title

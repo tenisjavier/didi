@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface SafetyPaxHeroProps {
@@ -12,7 +12,6 @@ interface SafetyPaxHeroProps {
 }
 
 const SafetyPaxHero = ({ bgImage }: SafetyPaxHeroProps) => {
-  const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
     title: t("SafetyPaxHero.title"),
@@ -31,6 +30,4 @@ const SafetyPaxHero = ({ bgImage }: SafetyPaxHeroProps) => {
   return <CTASection {...props}></CTASection>;
 };
 
-
 export default SafetyPaxHero;
-

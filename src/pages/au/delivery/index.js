@@ -37,35 +37,32 @@ const Delivery = ({ data }) => {
 
 export default Delivery;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(au.DeliveryHero)|(au.DeliveryWhyDiDi.image)|(au.DeliveryFeatures.image)|(au.DeliveryColumns.image)|(au.HomeColumns.image)/"
+        }
       }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.DeliveryHero)|(au.DeliveryWhyDiDi.image)|(au.DeliveryFeatures.image)|(au.DeliveryColumns.image)|(au.HomeColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulPartner(filter: {country: {code: {eq: "au"}}}) {
-    nodes {
-      name
-      desc
-      logo {
-        gatsbyImageData
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
         description
+        gatsbyImageData
+      }
+    }
+    allContentfulPartner(filter: { country: { code: { eq: "au" } } }) {
+      nodes {
+        name
+        desc
+        logo {
+          gatsbyImageData
+          description
+        }
       }
     }
   }
-}`;
+`;

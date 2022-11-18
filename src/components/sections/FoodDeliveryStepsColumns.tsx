@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileAlt,
@@ -10,7 +10,6 @@ import {
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 const FoodDeliveryStepsColumns = () => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("FoodDeliveryStepsColumns.title"),
     bgColor: t("FoodDeliveryStepsColumns.bgColor"),

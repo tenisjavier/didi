@@ -16,9 +16,9 @@ const Legal = ({ data }) => {
   legalContent.forEach((node) => {
     legalColumns.push({
       title: node.name,
-      btnLink: "/ru/legal/"+node.slug,
+      btnLink: "/ru/legal/" + node.slug,
       btnText: "Читать",
-      btnMode: "primary"
+      btnMode: "primary",
     });
   });
 
@@ -33,16 +33,7 @@ const Legal = ({ data }) => {
 export default Legal;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: { title: { in: ["mx.HomeHero.bgImage", "mx.PaxCTA.image"] } }
     ) {
@@ -53,7 +44,9 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulLegal(filter: {country: {elemMatch: {name: {eq: "Russia"}}}}) {
+    allContentfulLegal(
+      filter: { country: { elemMatch: { name: { eq: "Russia" } } } }
+    ) {
       nodes {
         name
         slug

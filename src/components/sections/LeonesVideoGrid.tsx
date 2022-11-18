@@ -1,10 +1,9 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 import { CardProps } from "../Card";
 
 const LeonesVideoGrid = () => {
-  const { t } = useTranslation();
   const columns: object[] = t("DrvVideoGrid.columns", { returnObjects: true });
   const videosColumns = columns.map((col: any): CardProps => {
     return {

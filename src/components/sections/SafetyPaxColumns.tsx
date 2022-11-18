@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,8 +21,13 @@ interface SafetyPaxColumnsProps {
   columns?: any[];
 }
 
-const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColumnsProps) => {
-  const { t } = useTranslation();
+const SafetyPaxColumns = ({
+  images,
+  icons,
+  title,
+  desc,
+  columns,
+}: SafetyPaxColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("SafetyPaxColumns.bgColor"),
     textColor: t("SafetyPaxColumns.textColor"),
@@ -55,6 +60,4 @@ const SafetyPaxColumns = ({ images, icons, title, desc, columns }: SafetyPaxColu
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-
 export default SafetyPaxColumns;
-

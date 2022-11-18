@@ -4,7 +4,6 @@ import Layout from "../../components/Layout";
 import ListPartnerHero from "../../components/sections/ListPartnerHero";
 import FAQPartners from "../../components/sections/FAQPartners";
 
-
 const ListOfPartners = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const faqs = data.allContentfulFaq.nodes;
@@ -12,9 +11,9 @@ const ListOfPartners = ({ data }) => {
     return image.title === "ru.ParnersListHero.bgImage";
   })[0];
   var cities = [];
-  faqs.map((f, index) => {
-    if(cities.indexOf(f.relatedCity) == -1) {
-        cities.push(f.relatedCity);
+  faqs.forEach((f, index) => {
+    if (cities.indexOf(f.relatedCity) === -1) {
+      cities.push(f.relatedCity);
     }
   });
 
@@ -25,7 +24,13 @@ const ListOfPartners = ({ data }) => {
         var citiesPartners = faqs.filter((faq) => {
           return faq.relatedCity === city;
         });
-        return (<FAQPartners data={citiesPartners.reverse()} title={city} key={index}></FAQPartners>);
+        return (
+          <FAQPartners
+            data={citiesPartners.reverse()}
+            title={city}
+            key={index}
+          ></FAQPartners>
+        );
       })}
     </Layout>
   );
@@ -33,33 +38,28 @@ const ListOfPartners = ({ data }) => {
 
 export default ListOfPartners;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(
-    filter: {ns: {in: ["translation"]}, language: {eq: $language}}
-  ) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: { title: { in: ["ru.ParnersListHero.bgImage"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
+    allContentfulFaq(
+      filter: { relatedCity: { ne: null }, country: { code: { eq: "ru" } } }
+    ) {
+      nodes {
+        title
+        relatedCity
+        content {
+          raw
+        }
       }
     }
   }
-  allContentfulAsset(filter: {title: {in: ["ru.ParnersListHero.bgImage"]}}) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulFaq(filter: {relatedCity: {ne: null}, country: {code: {eq: "ru"}}}) {
-    nodes {
-      title
-      relatedCity
-      content {
-        raw
-      }
-    }
-  }
-}`;
+`;

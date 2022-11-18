@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface TemplateStorieColumnsProps {
@@ -10,7 +10,6 @@ interface TemplateStorieColumnsProps {
 }
 
 const TemplateStorieColumns = ({ images }: TemplateStorieColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("TemplateStorieColumns.bgColor"),
     textColor: t("TemplateStorieColumns.textColor"),

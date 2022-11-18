@@ -1,10 +1,9 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
 const DiDiPayGrid = ({ images }) => {
-  const { t } = useTranslation();
   const props = {
     title: t("DiDiPayGrid.title"),
     desc: t("DiDiPayGrid.desc"),

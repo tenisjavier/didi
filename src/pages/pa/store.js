@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import StoreHero from "../../components/sections/StoreHero";
 import { QRCodeSVG } from "qrcode.react";
@@ -35,17 +34,3 @@ const Store = () => {
 };
 
 export default Store;
-
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;

@@ -1,6 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { faMoneyBillTransfer, faCode, faWallet } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMoneyBillTransfer,
+  faCode,
+  faWallet,
+} from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../components/Layout";
 import DiDiPayEnterpriseHero from "../../components/sections/DiDiPayEnterpriseHero";
 import DiDiPayEnterpriseWhy from "../../components/sections/DiDiPayEnterpriseWhy";
@@ -44,16 +48,7 @@ const DiDiPayEnterprise = ({ data }) => {
 export default DiDiPayEnterprise;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {

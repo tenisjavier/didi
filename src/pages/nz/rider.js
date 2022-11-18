@@ -35,43 +35,41 @@ const Pasajero = ({ data }) => {
 
 export default Pasajero;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: { regex: "/(nz.PaxHero.bgImage)|(nz.PaxBenefits.image)/" }
       }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(nz.PaxHero.bgImage)|(nz.PaxBenefits.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "nz"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
-      }
-      image {
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
         gatsbyImageData
       }
-      country {
-        code
+    }
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "nz" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
+        description
+        phone
+        requirement {
+          raw
+        }
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
       }
     }
   }
-}`;
+`;

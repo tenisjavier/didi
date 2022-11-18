@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface PaxTechCTA {
@@ -12,7 +12,6 @@ interface PaxTechCTA {
 }
 
 const PaxTechCTA = ({ image }: PaxTechCTA) => {
-  const { t } = useTranslation();
   const props: CTAProps = {
     hero: false,
     title: t("PaxTechCTA.title"),
@@ -28,7 +27,7 @@ const PaxTechCTA = ({ image }: PaxTechCTA) => {
     ),
     btnMode: t("PaxTechCTA.btnMode"),
     btnLink: t("PaxTechCTA.btnLink"),
-    btnText: t("PaxTechCTA.btnText")
+    btnText: t("PaxTechCTA.btnText"),
   };
   return <CTASection {...props}></CTASection>;
 };

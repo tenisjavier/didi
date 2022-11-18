@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -11,8 +11,7 @@ interface ManualSocialColumnsProps {
   }[];
 }
 
-const ManualSocialColumns = ({images}: ManualSocialColumnsProps) => {
-  const { t } = useTranslation();
+const ManualSocialColumns = ({ images }: ManualSocialColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("ManualSocialColumns.bgColor"),
     textColor: t("ManualSocialColumns.textColor"),

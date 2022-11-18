@@ -31,21 +31,8 @@ const Taxi = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["translation"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { in: ["ru.FleetHero.bgImage"] } }
-    ) {
+  query {
+    allContentfulAsset(filter: { title: { in: ["ru.FleetHero.bgImage"] } }) {
       nodes {
         id
         title

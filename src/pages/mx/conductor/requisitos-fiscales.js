@@ -29,12 +29,16 @@ const RequisitosFiscales = ({ data }) => {
   return (
     <Layout>
       <TaxRequiredHero bgImage={TaxRequiredHeroBgImage}></TaxRequiredHero>
-      <TaxRequiredColumns images={TaxRequiredColumnsImage.reverse()}></TaxRequiredColumns>
+      <TaxRequiredColumns
+        images={TaxRequiredColumnsImage.reverse()}
+      ></TaxRequiredColumns>
       <DigitalStampsFAQ image={DigitalStampImage}></DigitalStampsFAQ>
       <TaxDocumentationCTA></TaxDocumentationCTA>
       <TaxRequiredVideoSection></TaxRequiredVideoSection>
       <TaxDocumentsFAQ></TaxDocumentsFAQ>
-      <TaxAdviceColumns images={TaxAdviceColumnsImage.reverse()}></TaxAdviceColumns>
+      <TaxAdviceColumns
+        images={TaxAdviceColumnsImage.reverse()}
+      ></TaxAdviceColumns>
       <TaxDeclarationCTA></TaxDeclarationCTA>
       <KnowMoreBanner></KnowMoreBanner>
     </Layout>
@@ -44,16 +48,7 @@ const RequisitosFiscales = ({ data }) => {
 export default RequisitosFiscales;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {

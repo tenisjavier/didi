@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import Banner from "../Banner";
 
 const RestaurantBenefitsBanner = () => {
-  const { t } = useTranslation();
   const props = {
     title: t("RestaurantBenefitsBanner.title"),
     desc: t("RestaurantBenefitsBanner.desc"),

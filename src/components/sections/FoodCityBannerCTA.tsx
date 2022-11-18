@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface FoodCityBannerCTAProps {
@@ -11,16 +11,15 @@ interface FoodCityBannerCTAProps {
   };
   data: {
     name: string;
-  }
+  };
 }
 
 const FoodCityBannerCTA = ({ image, data }: FoodCityBannerCTAProps) => {
-  const { t } = useTranslation();
-  const { name } = data
+  const { name } = data;
   const props: CTAProps = {
     hero: false,
-    title: t("FoodCityBannerCTA.title", { city: `${name}`}),
-    desc: t("FoodCityBannerCTA.desc", { city: `${name}`}),
+    title: t("FoodCityBannerCTA.title", { city: `${name}` }),
+    desc: t("FoodCityBannerCTA.desc", { city: `${name}` }),
     bgColor: t("FoodCityBannerCTA.bgColor"),
     textColor: t("FoodCityBannerCTA.textColor"),
     image: (

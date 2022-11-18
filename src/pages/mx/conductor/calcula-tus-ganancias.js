@@ -21,7 +21,7 @@ const Ganancias = ({ data }) => {
   const WhyDiDiColumnsImage = images.filter((image) => {
     return image.title === "mx.WhyDiDiColumns.image";
   });
-  
+
   return (
     <Layout>
       <GananciasHero bgImage={GananciasHeroBgImage}></GananciasHero>
@@ -37,16 +37,7 @@ const Ganancias = ({ data }) => {
 export default Ganancias;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {

@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface FoodBusinessColumnsProps {
@@ -12,7 +12,6 @@ interface FoodBusinessColumnsProps {
 }
 
 const FoodBusinessColumns = ({ images }: FoodBusinessColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("FoodBusinessColumns.bgColor"),
     textColor: t("FoodBusinessColumns.textColor"),

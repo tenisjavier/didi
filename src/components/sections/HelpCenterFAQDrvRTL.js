@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSectionRTL";
 
 const HelpCenterFAQDrvRTL = ({ data }) => {
-  const { t } = useTranslation();
   let items = [];
   data.faq.forEach((node) => {
     items.push({
@@ -18,7 +17,7 @@ const HelpCenterFAQDrvRTL = ({ data }) => {
     textColor: t("HelpCenterFAQDrvRTL.textColor"),
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-gray-light",
-    items: items
+    items: items,
   };
 
   return <AccordionSection {...props}></AccordionSection>;

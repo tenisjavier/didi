@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
 const HelpCenterFAQPax = ({ data, isClosed, title }) => {
-  const { t } = useTranslation();
   let items = [];
   data.faq.forEach((node) => {
     items.push({
@@ -19,7 +18,7 @@ const HelpCenterFAQPax = ({ data, isClosed, title }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-white",
     items: items,
-    isClosed: isClosed
+    isClosed: isClosed,
   };
 
   return <AccordionSection {...props}></AccordionSection>;

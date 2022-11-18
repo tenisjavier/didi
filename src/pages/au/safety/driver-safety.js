@@ -36,46 +36,44 @@ const DrvSafety = ({ data }) => {
 
 export default DrvSafety;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: { title: { regex: "/(au.SafetyHero)|(au.SafetyGridDrv)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.SafetyHero)|(au.SafetyGridDrv)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulFaq(
-    filter: {title: {regex: "/(How to stay safe on the road?)|(Anti-Discrimination and Sexual Harassment|(Ensuring a better journey)|(Disability Awareness)|(COVID-19 Guidelines))/"}, country: {code: {eq: "au"}}}
-  ) {
-    nodes {
-      id
-      title
-      slug
-      content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImageData(width: 800)
-            __typename
+    allContentfulFaq(
+      filter: {
+        title: {
+          regex: "/(How to stay safe on the road?)|(Anti-Discrimination and Sexual Harassment|(Ensuring a better journey)|(Disability Awareness)|(COVID-19 Guidelines))/"
+        }
+        country: { code: { eq: "au" } }
+      }
+    ) {
+      nodes {
+        id
+        title
+        slug
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
+            }
           }
         }
       }
     }
   }
-}`;
+`;

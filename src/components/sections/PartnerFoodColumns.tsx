@@ -1,6 +1,5 @@
-
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -23,15 +22,22 @@ interface PartnerFoodColumnsProps {
   categoriesID: any[];
 }
 
-const PartnerFoodColumns = ({ images, icons, title, desc, columns, categoriesID }: PartnerFoodColumnsProps) => {
-  const { t } = useTranslation();
+const PartnerFoodColumns = ({
+  images,
+  icons,
+  title,
+  desc,
+  columns,
+  categoriesID,
+}: PartnerFoodColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("PartnerFoodColumns.bgColor"),
     textColor: t("PartnerFoodColumns.textColor"),
-    columns: columns || t("PartnerFoodColumns.columns", { returnObjects: true }),
+    columns:
+      columns || t("PartnerFoodColumns.columns", { returnObjects: true }),
     title: title || t("PartnerFoodColumns.title"),
     desc: desc || t("PartnerFoodColumns.desc"),
-    categoriesID: categoriesID
+    categoriesID: categoriesID,
   };
   if (images) {
     props.columns.forEach((col, index) => {
@@ -58,6 +64,4 @@ const PartnerFoodColumns = ({ images, icons, title, desc, columns, categoriesID 
   return <LinkColumnSection {...props}></LinkColumnSection>;
 };
 
-
 export default PartnerFoodColumns;
-

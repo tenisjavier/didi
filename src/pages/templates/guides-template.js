@@ -26,16 +26,7 @@ const GuideTemplate = ({ data }) => {
 export default GuideTemplate;
 
 export const query = graphql`
-  query ($id: String, $countryCode: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query ($id: String, $countryCode: String) {
     contentfulGuide(id: { eq: $id }) {
       title
       excerpt

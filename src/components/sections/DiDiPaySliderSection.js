@@ -1,10 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import Slider from "../Slider";
 
 const DiDiPaySilderSection = ({ images }) => {
-  const { t } = useTranslation();
-
   const props = {
     title: t("DiDiPaySilderSection.title"),
     items: t("DiDiPaySilderSection.items", { returnObjects: true }),

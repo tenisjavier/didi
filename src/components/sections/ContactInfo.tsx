@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import Contact, { ContactProps } from "../Contact";
 
 const ContactInfo = () => {
-  const { t } = useTranslation();
   const props: ContactProps = {
     contact: t("FoodContact.contactSections", { returnObjects: true }),
   };

@@ -19,34 +19,30 @@ const Ciudades = ({ data }) => {
   );
 };
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
-      }
-    }
-  }
-  allContentfulAsset(filter: {title: {in: ["cl.DrvHero.bgImage"]}}) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulCity(filter: {country: {code: {eq: "cl"}}}, sort: {name: ASC}) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData(width: 400)
+export const query = graphql`
+  query {
+    allContentfulAsset(filter: { title: { in: ["cl.DrvHero.bgImage"] } }) {
+      nodes {
+        id
+        title
         description
+        gatsbyImageData
+      }
+    }
+    allContentfulCity(
+      filter: { country: { code: { eq: "cl" } } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
       }
     }
   }
-}`;
+`;
 
 export default Ciudades;

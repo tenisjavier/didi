@@ -1,6 +1,5 @@
 import React from "react";
-import { navigate } from "gatsby";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry } from "../context/countryContext";
 import { getBtnLinks } from "../config/btn-config";
 import gtmEvent from "../config/gtm";
 
@@ -37,8 +36,7 @@ const Btn = ({
   btnText2,
   btnLink2,
 }: BtnProps) => {
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
 
   if (btnType === "drv") {

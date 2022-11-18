@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface FleetWhyDiDi {
@@ -8,7 +8,6 @@ interface FleetWhyDiDi {
 }
 
 const FleetWhyDidi = ({ image }: FleetWhyDiDi) => {
-  const { t } = useTranslation();
   const props: CTAProps = {
     hero: false,
     title: t("FleetWhyDiDi.title"),

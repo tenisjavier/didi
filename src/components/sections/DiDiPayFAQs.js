@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
 const DiDiPayFAQs = ({ data }) => {
-  const { t } = useTranslation();
   let items = [];
   data.forEach((node) => {
     items.push({

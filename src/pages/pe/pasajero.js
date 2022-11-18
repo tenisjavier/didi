@@ -35,16 +35,7 @@ const Pasajero = ({ data }) => {
 export default Pasajero;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: { title: { in: ["pe.PaxHero.bgImage", "pe.PaxWhyDiDi.image"] } }
     ) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASectionRTL";
 
 interface AboutHeroProps {
@@ -12,7 +12,6 @@ interface AboutHeroProps {
 }
 
 const AboutHeroRTL = ({ bgImage }: AboutHeroProps) => {
-  const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
     title: t("AboutHeroRTL.title"),
@@ -27,7 +26,7 @@ const AboutHeroRTL = ({ bgImage }: AboutHeroProps) => {
     ),
     btnMode: t("AboutHeroRTL.btnMode"),
     btnType: "both",
-    reverse: true
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

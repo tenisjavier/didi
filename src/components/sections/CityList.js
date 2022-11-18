@@ -1,10 +1,9 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import slugify from "react-slugify";
 import ListSection from "../ListSection";
 
 const CityList = ({ cities }) => {
-  const { t } = useTranslation();
   const items = cities.map((city) => {
     return {
       text: city.name,

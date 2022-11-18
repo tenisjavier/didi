@@ -32,19 +32,8 @@ const CentroDeAyuda = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { in: "mx.FaqFoodHero.bgImage"} }
-    ) {
+  query {
+    allContentfulAsset(filter: { title: { in: "mx.FaqFoodHero.bgImage" } }) {
       nodes {
         id
         title

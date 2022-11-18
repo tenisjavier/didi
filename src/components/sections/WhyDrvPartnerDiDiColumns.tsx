@@ -1,6 +1,5 @@
-
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,8 +18,10 @@ interface WhyDrvPartnerDiDiColumnsProps {
   icons: any[];
 }
 
-const WhyDrvPartnerDiDiColumns = ({ images, icons }: WhyDrvPartnerDiDiColumnsProps) => {
-  const { t } = useTranslation();
+const WhyDrvPartnerDiDiColumns = ({
+  images,
+  icons,
+}: WhyDrvPartnerDiDiColumnsProps) => {
   const props: ColumnsSectionProps = {
     title: t("WhyDrvPartnerDiDiColumns.title"),
     bgColor: t("WhyDrvPartnerDiDiColumns.bgColor"),
@@ -43,15 +44,31 @@ const WhyDrvPartnerDiDiColumns = ({ images, icons }: WhyDrvPartnerDiDiColumnsPro
       col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
     });
   } else {
-    props.columns[0].image = <FontAwesomeIcon className="text-orange-primary" icon={faUsers} size="3x" />;
+    props.columns[0].image = (
+      <FontAwesomeIcon
+        className="text-orange-primary"
+        icon={faUsers}
+        size="3x"
+      />
+    );
 
-    props.columns[1].image = <FontAwesomeIcon className="text-orange-primary" icon={faSquarePollVertical} size="3x" />;
+    props.columns[1].image = (
+      <FontAwesomeIcon
+        className="text-orange-primary"
+        icon={faSquarePollVertical}
+        size="3x"
+      />
+    );
 
-    props.columns[2].image = <FontAwesomeIcon className="text-orange-primary" icon={faPhone} size="3x" />;
+    props.columns[2].image = (
+      <FontAwesomeIcon
+        className="text-orange-primary"
+        icon={faPhone}
+        size="3x"
+      />
+    );
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-
 export default WhyDrvPartnerDiDiColumns;
-

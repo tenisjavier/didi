@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import slugify from "react-slugify";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
 const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
-  const { t } = useTranslation();
   const props = {
     title: title || t("PartnersGrid.title"),
     bgColor: bgColor || t("PartnersGrid.bgColor"),

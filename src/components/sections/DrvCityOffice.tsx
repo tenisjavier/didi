@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -14,7 +14,6 @@ interface DrvCityOfficeProps {
 }
 
 const DrvCityOffice = ({ data }: DrvCityOfficeProps) => {
-  const { t } = useTranslation();
   const { name, address, openHours, phone, photos } = data;
   // let hours: string[] = [];
   // openHours.forEach((hour: string) => {

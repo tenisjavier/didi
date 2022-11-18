@@ -21,18 +21,7 @@ const Privacy = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     contentfulFaq(title: { eq: "Editar Plantillas con PowerPoint" }) {
       title
       content {

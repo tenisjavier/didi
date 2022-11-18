@@ -1,9 +1,8 @@
 import React from "react";
 import AccordionNeutralSection from "../AccordionNeutralSection";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 
 const GananciasImpuestosFAQ = () => {
-  const { t } = useTranslation();
   const data = t("GananciasImpuestosFAQ.items", { returnObjects: true });
   let items = [];
   data.forEach((con, index) => {
@@ -14,7 +13,8 @@ const GananciasImpuestosFAQ = () => {
   });
 
   const title = "Impuestos";
-  const desc = "Los impuestos que retiene / traslada la aplicación de manera diaria por obligación fiscal son los siguientes:"
+  const desc =
+    "Los impuestos que retiene / traslada la aplicación de manera diaria por obligación fiscal son los siguientes:";
 
   return (
     <AccordionNeutralSection
