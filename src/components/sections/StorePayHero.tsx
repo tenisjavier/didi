@@ -32,6 +32,7 @@ const StorePayHero = ({ bgImage, image }: StorePayHeroProps) => {
       image: image,
       reverse: true,
       btnMode: t("StorePayHero.btnMode"),
+      btnModeSecondary: "hidden",
       btnType: "payment",
     }),
   };

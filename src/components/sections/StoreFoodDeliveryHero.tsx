@@ -35,6 +35,7 @@ const StoreFoodDeliveryHero = ({
       image: image,
       reverse: true,
       btnMode: t("StoreFoodDeliveryHero.btnMode"),
+      btnModeSecondary: "hidden",
       btnType: "foodEater",
     }),
   };
