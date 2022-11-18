@@ -211,8 +211,11 @@ const insertBtnParams = () => {
 
     // set correct parameters for onelink
     const urlParams = new URLSearchParams(search);
+    let pid = urlParams.get("pid");
     let utmSource = urlParams.get("utm_source");
     let source = urlParams.get("source");
+    let rscSource = urlParams.get("rsc_source");
+    let rscMedia = urlParams.get("rsc_media");
     let utmMedium = urlParams.get("utm_medium");
     let c = urlParams.get("utm_campaign");
     let campaign = urlParams.get("campaign");
@@ -227,10 +230,14 @@ const insertBtnParams = () => {
     let adPosition = urlParams.get("adposition");
     let placement = urlParams.get("placement");
     let channel = urlParams.get("channel");
+    let rscChannel = urlParams.get("rsc_channel");
+    let rscProduct = urlParams.get("rsc_product");
     let country = urlParams.get("country");
     // joveo 99 app
     let device = urlParams.get("device");
     let af_c_id = urlParams.get("af_c_id");
+    let af_channel = urlParams.get("af_channel");
+    let af_keywords = urlParams.get("af_keywords");
     let af_adset = urlParams.get("af_adset");
     let af_adset_id = urlParams.get("af_adset_id");
     let af_ad = urlParams.get("af_ad");
@@ -250,7 +257,7 @@ const insertBtnParams = () => {
     let form_url =
       "https://page.didiglobal.com/driver-page/register/index.html";
 
-    let channelId, pid;
+    let channelId;
     if (channel) {
       channelId = channel;
       if (utmSource) {
@@ -258,7 +265,9 @@ const insertBtnParams = () => {
       } else {
         pid = source ? source : "website_direct";
       }
-    } else {
+    }
+
+    if (!pid) {
       channelId = channels[utmMedium] ? channels[utmMedium] : 14;
       pid = channelsText[utmMedium]
         ? channelsText[utmMedium]
@@ -299,7 +308,7 @@ const insertBtnParams = () => {
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
     let newSearch = `?location_country=${countryLang[0]}&country=${country}&lang=${countryLang[1]}&channel=${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
-    let newSearchFood = `?pid=${pid}&c=${c}&af_web_dp=https%3A%2F%2Fwww.didi-food.com%2F${countryLang[1]}%2Fmobile-delivery%2Fguide%3FclientType=102%26country%3D${countryLang[0]}%26lang%3D${countryLang[1]}%26channel%3D${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
+    let newSearchFood = `?pid=${pid}&c=${c}&af_web_dp=https%3A%2F%2Fwww.didi-food.com%2F${countryLang[1]}%2Fmobile-delivery%2Fguide%3FclientType=102%26country%3D${countryLang[0]}%26lang%3D${countryLang[1]}%26rsc_channel%3D${rscChannel}%26rsc_product%3D${rscProduct}%26rsc_source%3D${rscSource}%26rsc_media%3D${rscMedia}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
     // jovep 99 app
     if (device) {
       newSearch = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
@@ -336,7 +345,7 @@ const insertBtnParams = () => {
     } else if (url.indexOf("global-food-eater.onelink.me/4B2F/") > -1) {
       return (
         oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/food/store-food-app/`
+        `?pid=${pid}&c=${c}&af_channel=${af_channel}&af_c_id=${af_c_id}&af_adset_id=${af_adset_id}&af_ad_id=${af_ad_id}&af_keywords=${af_keywords}&af_siteid=${af_siteid}&af_web_dp=${document.location.origin}/${countryCode}/food/store-food-app/`
       );
     } else {
       if (countryCode)
