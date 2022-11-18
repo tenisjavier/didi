@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry } from "../context/countryContext";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import FooterLink from "./FooterLink";
@@ -23,8 +23,7 @@ const Footer = () => {
   `);
   const countries = data.allContentfulCountry.nodes;
   const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const links = getFooterLinks(countryCode);
 
   return (
@@ -55,14 +54,14 @@ const Footer = () => {
                       key={index}
                       className="text-sm text-yellow-500 hover:text-yellow-300"
                     >
-                      {i18n.language === "ru" ? c.russianName : null}
-                      {i18n.language === "eg" ? c.arabicName : null}
-                      {sslCountries.includes(i18n.language)
+                      {countryCode === "ru" ? c.russianName : null}
+                      {countryCode === "eg" ? c.arabicName : null}
+                      {sslCountries.includes(countryCode)
                         ? c.spanishName
                         : null}
-                      {i18n.language !== "eg" &&
-                      i18n.language !== "ru" &&
-                      !sslCountries.includes(i18n.language)
+                      {countryCode !== "eg" &&
+                      countryCode !== "ru" &&
+                      !sslCountries.includes(countryCode)
                         ? c.englishName
                         : null}
                     </a>
@@ -76,14 +75,14 @@ const Footer = () => {
                         href={c.hostname}
                         className="text-sm text-yellow-500 hover:text-yellow-300"
                       >
-                        {i18n.language === "ru" ? c.russianName : null}
-                        {i18n.language === "eg" ? c.arabicName : null}
-                        {sslCountries.includes(i18n.language)
+                        {countryCode === "ru" ? c.russianName : null}
+                        {countryCode === "eg" ? c.arabicName : null}
+                        {sslCountries.includes(countryCode)
                           ? c.spanishName
                           : null}
-                        {i18n.language !== "eg" &&
-                        i18n.language !== "ru" &&
-                        !sslCountries.includes(i18n.language)
+                        {countryCode !== "eg" &&
+                        countryCode !== "ru" &&
+                        !sslCountries.includes(countryCode)
                           ? c.englishName
                           : null}
                       </a>

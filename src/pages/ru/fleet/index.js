@@ -11,12 +11,15 @@ const DiDiFleet = ({ data }) => {
   const FleetHeroBgImage = images.filter((image) => {
     return image.title === "ru.TaxiHero.bgImage";
   })[0];
-  
+
   return (
     <Layout>
       <FleetHero bgImage={FleetHeroBgImage}></FleetHero>
       <FleetOwnerColumns></FleetOwnerColumns>
-      <HelpCenterFAQFleet data={faqs.reverse()} title={"Общие вопросы"}></HelpCenterFAQFleet>
+      <HelpCenterFAQFleet
+        data={faqs.reverse()}
+        title={"Общие вопросы"}
+      ></HelpCenterFAQFleet>
     </Layout>
   );
 };
@@ -24,42 +27,32 @@ const DiDiFleet = ({ data }) => {
 export default DiDiFleet;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    allContentfulAsset(filter: {title: {in: ["ru.TaxiHero.bgImage"]}}) 
-        {
-        nodes {
-            id
-            title
-            description
-            gatsbyImageData
+  query {
+    allContentfulAsset(filter: { title: { in: ["ru.TaxiHero.bgImage"] } }) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
     allContentfulFaq(
-      filter: {product: {elemMatch: {name: {eq: "DiDi Fleet Russia"}}}}
+      filter: { product: { elemMatch: { name: { eq: "DiDi Fleet Russia" } } } }
     ) {
       nodes {
         title
-          content {
-            raw
-            references {
-              ... on ContentfulAsset {
-                contentful_id
-                title
-                description
-                gatsbyImageData(width: 800)
-                __typename
-              }
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
             }
           }
+        }
       }
     }
   }

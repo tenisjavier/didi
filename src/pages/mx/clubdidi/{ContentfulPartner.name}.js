@@ -34,16 +34,7 @@ const Partner = ({ data }) => {
 export default Partner;
 
 export const query = graphql`
-  query ($id: String, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query ($id: String) {
     contentfulPartner(id: { eq: $id }) {
       heroTitle
       heroDesc

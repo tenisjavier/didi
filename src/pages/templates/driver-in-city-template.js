@@ -41,85 +41,80 @@ const DrvCity = ({ data }) => {
 
 export default DrvCity;
 
-export const query = graphql`query ($id: String, $language: String!, $countryCode: String, $componentImage: String) {
-  locales: allLocale(
-    filter: {ns: {in: ["translation"]}, language: {eq: $language}}
-  ) {
-    edges {
-      node {
-        ns
-        data
-        language
-      }
-    }
-  }
-  contentfulCity(id: {eq: $id}) {
-    name
-    slug
-    product {
-      name
-      description
-      image {
-        gatsbyImageData
-      }
-      country {
-        code
-      }
-    }
-    geometry {
-      lat
-      lon
-    }
-  }
-  allContentfulAsset(filter: {title: {in: [$componentImage]}}) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  contentfulOffice(city: {id: {eq: $id}}) {
-    name
-    address
-    phone
-    openHours
-    photos {
-      gatsbyImageData
-    }
-  }
-  allContentfulRequirement(filter: {city: {elemMatch: {id: {eq: $id}}}}) {
-    nodes {
-      name
-      requirement {
-        raw
-      }
-    }
-  }
-  allContentfulPlace(filter: {city: {id: {eq: $id}}, primary: {eq: true}}) {
-    nodes {
-      name
-      address
-      image {
-        gatsbyImageData
-      }
-      city {
-        name
-        slug
-      }
-    }
-  }
-  allContentfulCity(
-    filter: {country: {code: {eq: $countryCode}}}
-    sort: {name: ASC}
-  ) {
-    nodes {
+export const query = graphql`
+  query ($id: String, $countryCode: String, $componentImage: String) {
+    contentfulCity(id: { eq: $id }) {
       name
       slug
-      image {
-        gatsbyImageData(width: 400)
+      product {
+        name
         description
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
+      }
+      geometry {
+        lat
+        lon
+      }
+    }
+    allContentfulAsset(filter: { title: { in: [$componentImage] } }) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
+    contentfulOffice(city: { id: { eq: $id } }) {
+      name
+      address
+      phone
+      openHours
+      photos {
+        gatsbyImageData
+      }
+    }
+    allContentfulRequirement(
+      filter: { city: { elemMatch: { id: { eq: $id } } } }
+    ) {
+      nodes {
+        name
+        requirement {
+          raw
+        }
+      }
+    }
+    allContentfulPlace(
+      filter: { city: { id: { eq: $id } }, primary: { eq: true } }
+    ) {
+      nodes {
+        name
+        address
+        image {
+          gatsbyImageData
+        }
+        city {
+          name
+          slug
+        }
+      }
+    }
+    allContentfulCity(
+      filter: { country: { code: { eq: $countryCode } } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
       }
     }
   }
-}`;
+`;

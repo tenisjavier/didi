@@ -21,33 +21,34 @@ const FoodBusiness = ({ data }) => {
   return (
     <Layout>
       <FoodBusinessHero bgImage={foodHeroBgImage}></FoodBusinessHero>
-      <FoodBusinessColumns images={foodBusinessColumnsImages}></FoodBusinessColumns>
-      <FoodBusinessDownloads images={foodBusinessDownloadsImages}></FoodBusinessDownloads>
+      <FoodBusinessColumns
+        images={foodBusinessColumnsImages}
+      ></FoodBusinessColumns>
+      <FoodBusinessDownloads
+        images={foodBusinessDownloadsImages}
+      ></FoodBusinessDownloads>
     </Layout>
   );
 };
 
 export default FoodBusiness;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {ns: {in: ["food"]}, language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(pe.FoodBusinessHero.bgImage)|(pe.FoodBusinessColumns.image)|(pe.FoodBusinessDownloads.image)/"
+        }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(pe.FoodBusinessHero.bgImage)|(pe.FoodBusinessColumns.image)|(pe.FoodBusinessDownloads.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

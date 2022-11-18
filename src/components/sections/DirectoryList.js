@@ -1,10 +1,9 @@
 import React from "react";
 import slugify from "react-slugify";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
 
 const DirectoryList = ({ places, city }) => {
-  const { t } = useTranslation();
   let items = [];
   if (places !== null) {
     places.forEach((place) => {

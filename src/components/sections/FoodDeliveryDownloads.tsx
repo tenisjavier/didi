@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface FoodDeliveryDownloads {
@@ -12,7 +12,6 @@ interface FoodDeliveryDownloads {
 }
 
 const FoodDeliveryDownloads = ({ images }: FoodDeliveryDownloads) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("FoodDeliveryDownloads.title"),
     desc: t("FoodDeliveryDownloads.desc"),

@@ -1,6 +1,5 @@
-
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,7 +19,6 @@ interface WhyTaxiDiDiColumnsProps {
 }
 
 const WhyTaxiDiDiColumns = ({ images, icons }: WhyTaxiDiDiColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("WhyTaxiDiDiColumns.bgColor"),
     textColor: t("WhyTaxiDiDiColumns.textColor"),
@@ -42,15 +40,31 @@ const WhyTaxiDiDiColumns = ({ images, icons }: WhyTaxiDiDiColumnsProps) => {
       col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;
     });
   } else {
-    props.columns[0].image = <FontAwesomeIcon className="text-orange-primary" icon={faFastForward} size="3x" />;
+    props.columns[0].image = (
+      <FontAwesomeIcon
+        className="text-orange-primary"
+        icon={faFastForward}
+        size="3x"
+      />
+    );
 
-    props.columns[1].image = <FontAwesomeIcon className="text-orange-primary" icon={faLock} size="3x" />;
+    props.columns[1].image = (
+      <FontAwesomeIcon
+        className="text-orange-primary"
+        icon={faLock}
+        size="3x"
+      />
+    );
 
-    props.columns[2].image = <FontAwesomeIcon className="text-orange-primary" icon={faClock} size="3x" />;
+    props.columns[2].image = (
+      <FontAwesomeIcon
+        className="text-orange-primary"
+        icon={faClock}
+        size="3x"
+      />
+    );
   }
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-
 export default WhyTaxiDiDiColumns;
-

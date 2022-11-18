@@ -1,6 +1,5 @@
-
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,8 +21,13 @@ interface SafetyDrvColumnsProps {
   columns?: any[];
 }
 
-const SafetyDrvColumns = ({ images, icons, title, desc, columns }: SafetyDrvColumnsProps) => {
-  const { t } = useTranslation();
+const SafetyDrvColumns = ({
+  images,
+  icons,
+  title,
+  desc,
+  columns,
+}: SafetyDrvColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("SafetyDrvColumns.bgColor"),
     textColor: t("SafetyDrvColumns.textColor"),
@@ -56,6 +60,4 @@ const SafetyDrvColumns = ({ images, icons, title, desc, columns }: SafetyDrvColu
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-
 export default SafetyDrvColumns;
-

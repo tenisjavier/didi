@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
 const OffersGrid = ({ data }) => {
-  const { t } = useTranslation();
   const props = {
     title: t("OffersGrid.title"),
     bgColor: t("OffersGrid.bgColor"),

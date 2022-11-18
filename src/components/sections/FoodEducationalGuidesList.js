@@ -1,28 +1,30 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import GuidesListSection from "../GuidesListSection";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const FoodEducationalGuidesList = ({ title, faqs, city, images }) => {
-  const { t } = useTranslation();
   let items = [];
   if (faqs !== null) {
     faqs.forEach((faq, index) => {
-      const name = faq.node.title > 50 ? faq.node.title.slice(0, 50) + "..." : faq.node.title;
+      const name =
+        faq.node.title > 50
+          ? faq.node.title.slice(0, 50) + "..."
+          : faq.node.title;
       items.push({
         text: name,
         link: t("FoodEducationalGuidesList.linkItem", {
           faqSlug: faq.node.slug,
         }),
         image: (
-            <GatsbyImage
+          <GatsbyImage
             image={images[index]}
             alt={images[index].description}
             width={700}
             height={700}
             className="z-10 m-4 max-h-44"
-            ></GatsbyImage>
-          ),
+          ></GatsbyImage>
+        ),
       });
     });
   }

@@ -1,11 +1,10 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ColumnImage from "../ColumnImage";
 
 const ContactBenefits = ({ image, icons }) => {
-  const { t } = useTranslation();
   const props = {
     title: t("ContactBenefits.title"),
     bgColor: t("ContactBenefits.bgColor"),

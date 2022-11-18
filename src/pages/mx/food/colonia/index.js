@@ -37,18 +37,7 @@ const Ciudades = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {
@@ -64,11 +53,11 @@ export const query = graphql`
       }
     }
     allContentfulMunicipality {
-    nodes {
-      name
-      slug
+      nodes {
+        name
+        slug
+      }
     }
-  }
   }
 `;
 

@@ -31,37 +31,30 @@ const DiDiMas = ({ data }) => {
   );
 };
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
-      }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(cl.DiDiMasHero)|(cl.PartnerCTA)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulPartner(filter: {country: {code: {eq: "cl"}}}) {
-    nodes {
-      name
-      desc
-      logo {
-        gatsbyImageData
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: { title: { regex: "/(cl.DiDiMasHero)|(cl.PartnerCTA)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
         description
+        gatsbyImageData
+      }
+    }
+    allContentfulPartner(filter: { country: { code: { eq: "cl" } } }) {
+      nodes {
+        name
+        desc
+        logo {
+          gatsbyImageData
+          description
+        }
       }
     }
   }
-}`;
+`;
 
 export default DiDiMas;

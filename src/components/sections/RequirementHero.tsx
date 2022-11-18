@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface RequirementHeroProps {
@@ -13,8 +13,6 @@ interface RequirementHeroProps {
 }
 
 const RequirementHero = ({ title, bgImage }: RequirementHeroProps) => {
-  const { t } = useTranslation();
-
   const props: CTAProps = {
     hero: true,
     title: title || t("RequirementHero.title"),

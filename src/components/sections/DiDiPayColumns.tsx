@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -12,7 +12,6 @@ interface DiDiPayColumnsProps {
 }
 
 const DiDiPayColumns = ({ images }: DiDiPayColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("DiDiPayColumns.bgColor"),
     textColor: t("DiDiPayColumns.textColor"),

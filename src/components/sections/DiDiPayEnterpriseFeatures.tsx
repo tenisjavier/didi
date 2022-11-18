@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
@@ -13,8 +13,10 @@ interface DiDiPayEnterpriseFeaturesProps {
   icon: IconProp;
 }
 
-const DiDiPayEnterpriseFeatures = ({ image, icon }: DiDiPayEnterpriseFeaturesProps) => {
-  const { t } = useTranslation();
+const DiDiPayEnterpriseFeatures = ({
+  image,
+  icon,
+}: DiDiPayEnterpriseFeaturesProps) => {
   const props: CTAProps = {
     hero: false,
     title: t("DiDiPayEnterpriseFeatures.title"),

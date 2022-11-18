@@ -24,37 +24,30 @@ const Requirement = ({ data }) => {
 
 export default Requirement;
 
-export const query = graphql`query ($id: String, $language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($id: String) {
+    allContentfulAsset(
+      filter: { title: { regex: "/(nz.DrvHero.bgImage)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
+    contentfulRequirement(id: { eq: $id }) {
+      name
+      requirement {
+        raw
+      }
+    }
+    contentfulCountry(code: { eq: "nz" }) {
+      city {
+        name
+        slug
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(nz.DrvHero.bgImage)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  contentfulRequirement(id: {eq: $id}) {
-    name
-    requirement {
-      raw
-    }
-  }
-  contentfulCountry(code: {eq: "nz"}) {
-    city {
-      name
-      slug
-    }
-  }
-}`;
+`;

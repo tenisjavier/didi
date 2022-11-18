@@ -1,16 +1,15 @@
 import React from "react";
 import AccordionTableSection from "../AccordionTableSection";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 
 const FindInfoCTA = () => {
-  const { t } = useTranslation();
   const data = t("FindInfoCTA.items", { returnObjects: true });
   let items = [];
   data.forEach((con, index) => {
     items.push({
       title: con.title,
       content: con.content,
-      table: con.table
+      table: con.table,
     });
   });
 

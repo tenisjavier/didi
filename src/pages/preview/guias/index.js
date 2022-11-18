@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useQueryParam } from "gatsby-query-params";
-import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import GuideHero from "../../../components/sections/GuideHero";
 import RichContent from "../../../components/RichContent";
@@ -94,20 +93,6 @@ query(
               __typename
             }
           }
-        }
-      }
-    }
-  }
-`;
-
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
         }
       }
     }

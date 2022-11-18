@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface StorePayHeroProps {
@@ -13,7 +13,6 @@ interface StorePayHeroProps {
 }
 
 const StorePayHero = ({ bgImage, image }: StorePayHeroProps) => {
-  const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
     title: t("StorePayHero.title"),

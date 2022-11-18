@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import Banner from "../Banner";
 
 const VideoSection = () => {
-  const { t } = useTranslation();
   const videoSrc = t("VideoSection.src");
   const props = {
     title: t("VideoSection.title"),

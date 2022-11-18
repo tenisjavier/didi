@@ -3,7 +3,7 @@ import ConsentPopup from "../components/ConsentPopup";
 // import gtmEvent from "../config/gtm";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry } from "../context/countryContext";
 import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
@@ -42,8 +42,7 @@ const SEO = ({ title, desc }) => {
     }
   `);
   const countries = data.allContentfulCountry.nodes;
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const origin = "https://web.didiglobal.com";
   const { pathname } = useLocation();
   let country = "";
@@ -62,7 +61,7 @@ const SEO = ({ title, desc }) => {
   const meta = getMetaByPath(countryCode, cleanPath);
   if (!title) {
     title = meta.title;
-    if(countryCode === "ru") {
+    if (countryCode === "ru") {
       title = decodeURI(meta.title);
     }
   }

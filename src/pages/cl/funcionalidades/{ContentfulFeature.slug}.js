@@ -41,16 +41,7 @@ const Feature = ({ data }) => {
 export default Feature;
 
 export const query = graphql`
-  query ($language: String!, $id: String) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query ($id: String) {
     contentfulFeature(id: { eq: $id }) {
       name
       description

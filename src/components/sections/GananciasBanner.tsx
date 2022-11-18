@@ -1,17 +1,16 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import Banner, { BannerProps } from "../Banner";
 
 interface GananciasBannerProps {
   image?: {
     description: string;
     gatsbyImageData: IGatsbyImageData;
-  }
+  };
 }
 
-const GananciasBanner = ({ image }: GananciasBannerProps ) => {
-  const { t } = useTranslation();
+const GananciasBanner = ({ image }: GananciasBannerProps) => {
   const props: BannerProps = {
     title: t("GananciasBanner.title"),
     desc: t("GananciasBanner.desc"),

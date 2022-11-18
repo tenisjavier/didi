@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
 import SafetyDrvCTA from "../../components/sections/SafetyDrvCTA";
-import SafetyPaxCTA from "../../components/sections/SafetyPaxCTA"
+import SafetyPaxCTA from "../../components/sections/SafetyPaxCTA";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -27,25 +27,22 @@ const Seguridad = ({ data }) => {
 
 export default Seguridad;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(mx.SafetyHero.bgImage)|(mx.PaxSafety.image)|(mx.DrvSafety.image)/"
+        }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(mx.SafetyHero.bgImage)|(mx.PaxSafety.image)|(mx.DrvSafety.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

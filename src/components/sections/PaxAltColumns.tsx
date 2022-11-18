@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,7 +18,6 @@ interface PaxAltColumnsProps {
 }
 
 const PaxAltColumns = ({ images }: PaxAltColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("PaxAltColumns.bgColor"),
     textColor: t("PaxAltColumns.textColor"),
@@ -38,15 +37,27 @@ const PaxAltColumns = ({ images }: PaxAltColumnsProps) => {
     });
   } else {
     props.columns[0].image = (
-      <FontAwesomeIcon icon={faWallet} size="3x" className="text-orange-primary w-12" />
+      <FontAwesomeIcon
+        icon={faWallet}
+        size="3x"
+        className="text-orange-primary w-12"
+      />
     );
 
     props.columns[1].image = (
-      <FontAwesomeIcon icon={faCreditCard} size="3x" className="text-orange-primary w-12" />
+      <FontAwesomeIcon
+        icon={faCreditCard}
+        size="3x"
+        className="text-orange-primary w-12"
+      />
     );
 
     props.columns[2].image = (
-      <FontAwesomeIcon icon={faMapMarker} size="3x" className="text-orange-primary w-12" />
+      <FontAwesomeIcon
+        icon={faMapMarker}
+        size="3x"
+        className="text-orange-primary w-12"
+      />
     );
   }
   return <ColumnsSection {...props}></ColumnsSection>;

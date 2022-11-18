@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,7 +18,6 @@ interface PaxColumnsProps {
 }
 
 const PaxColumns = ({ images }: PaxColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("PaxColumns.bgColor"),
     textColor: t("PaxColumns.textColor"),

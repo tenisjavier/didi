@@ -45,52 +45,59 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          in: [
+            "pa.DrvHero.bgImage"
+            "pa.DrvWhyDiDi.image"
+            "pa.DrvFeatures.image"
+          ]
+        }
       }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {in: ["pa.DrvHero.bgImage", "pa.DrvWhyDiDi.image", "pa.DrvFeatures.image"]}}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "pa"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
-      }
-      image {
+    ) {
+      nodes {
+        id
+        title
+        description
         gatsbyImageData
       }
-      country {
-        code
-      }
     }
-  }
-  allContentfulCity(filter: {country: {code: {eq: "pa"}}}, sort: {name: ASC}) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData(width: 400)
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "pa" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
         description
+        phone
+        requirement {
+          raw
+        }
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
+      }
+    }
+    allContentfulCity(
+      filter: { country: { code: { eq: "pa" } } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
       }
     }
   }
-}`;
+`;

@@ -1,11 +1,10 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSubway, faBus } from "@fortawesome/free-solid-svg-icons";
 import CTASection from "../CTASection";
 
 const PlaceMap = ({ data }) => {
-  const { t } = useTranslation();
   const {
     name,
     geometry: { lat, lon },

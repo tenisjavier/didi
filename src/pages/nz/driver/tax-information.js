@@ -22,25 +22,20 @@ const TaxInformation = ({ data }) => {
 
 export default TaxInformation;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: { regex: "/(au.DrvHero.bgImage)|(au.DrvBenefits.image)/" }
+      }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.DrvHero.bgImage)|(au.DrvBenefits.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-}`;
+`;

@@ -1,10 +1,9 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
 const SafetyGridAfterTrip = ({ images }) => {
-  const { t } = useTranslation();
   const props = {
     title: t("SafetyGridAfterTrip.title"),
     bgColor: t("SafetyGridAfterTrip.bgColor"),

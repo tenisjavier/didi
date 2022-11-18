@@ -1,9 +1,8 @@
 import React from "react";
 import AccordionNeutralSection from "../AccordionNeutralSection";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 
 const GananciasConceptosFAQ = () => {
-  const { t } = useTranslation();
   const data = t("GananciasConceptosFAQ.items", { returnObjects: true });
   let items = [];
   data.forEach((con, index) => {

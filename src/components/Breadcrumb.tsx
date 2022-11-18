@@ -1,13 +1,12 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry } from "../context/countryContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 
 const Breadcrumb = () => {
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const { pathname } = useLocation();
 
   const directories = pathname.split("/").filter((item) => {

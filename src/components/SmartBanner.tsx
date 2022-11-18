@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry, t } from "../context/countryContext";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../config/btn-config";
 import Btn from "../components/Btn";
@@ -19,9 +19,8 @@ interface SmartBannerProps {
 }
 
 const SmartBanner = (props: SmartBannerProps) => {
-  const { i18n, t } = useTranslation();
   const { type, sbTitle, sbDesc, sbCTA } = props;
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
   let btnText, Logo, bgColor, bannerTitle, bannerDesc;
 

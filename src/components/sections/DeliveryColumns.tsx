@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faZap } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +15,6 @@ interface DeliveryColumnsProps {
 }
 
 const DeliveryColumns = ({ images, icons }: DeliveryColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     bgColor: t("DeliveryColumns.bgColor"),
     textColor: t("DeliveryColumns.textColor"),

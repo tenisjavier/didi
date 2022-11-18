@@ -18,25 +18,21 @@ const GuiasEducacionales = ({ data }) => {
 
   const educationalGuides = data.allContentfulFaq.edges;
   const onlyModifyGuides = educationalGuides.filter((guide) => {
-    if (
+    return (
       guide.node.title !== "Cómo Administrar al Personal" &&
       guide.node.title !== "Cómo funcionan los reembolsos" &&
       guide.node.title !==
         "Cómo Calificar Tu Experiencia con un Socio Repartidor"
-    ) {
-      return guide;
-    }
+    );
   });
 
   const onlyOperationsGuides = educationalGuides.filter((guide) => {
-    if (
+    return (
       guide.node.title === "Cómo Administrar al Personal" ||
       guide.node.title === "Cómo funcionan los reembolsos" ||
       guide.node.title ===
         "Cómo Calificar Tu Experiencia con un Socio Repartidor"
-    ) {
-      return guide;
-    }
+    );
   });
 
   return (
@@ -59,18 +55,7 @@ const GuiasEducacionales = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["food"] }, language: { eq: $language } }
-    ) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {

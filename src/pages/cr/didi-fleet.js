@@ -22,8 +22,6 @@ const Fleet = ({ data }) => {
     return image.title === "cr.FleetDownload.image";
   })[0];
 
-  
-
   return (
     <Layout>
       <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
@@ -36,18 +34,19 @@ const Fleet = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          in: [
+            "cr.FleetHero.bgImage"
+            "cr.FleetWhyDiDi.image"
+            "cr.FleetColumns.image"
+            "cr.FleetStepsColumns.image"
+            "cr.FleetDownload.image"
+          ]
         }
       }
-    }
-    allContentfulAsset(
-      filter: { title: { in: ["cr.FleetHero.bgImage", "cr.FleetWhyDiDi.image", "cr.FleetColumns.image", "cr.FleetStepsColumns.image", "cr.FleetDownload.image"] } }
     ) {
       nodes {
         id

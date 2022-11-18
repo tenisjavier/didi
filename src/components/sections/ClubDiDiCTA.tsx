@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface ClubDiDiCTAProps {
@@ -12,7 +12,6 @@ interface ClubDiDiCTAProps {
 }
 
 const ClubDiDiCTA = ({ bgImage }: ClubDiDiCTAProps) => {
-  const { t } = useTranslation();
   const props: CTAProps = {
     hero: true,
     title: t("ClubDiDiCTA.title"),
@@ -27,7 +26,7 @@ const ClubDiDiCTA = ({ bgImage }: ClubDiDiCTAProps) => {
     ),
     btnMode: t("ClubDiDiCTA.btnMode"),
     btnText: t("ClubDiDiCTA.btnText"),
-    btnLink: t("ClubDiDiCTA.btnLink")
+    btnLink: t("ClubDiDiCTA.btnLink"),
   };
   return <CTASection {...props}></CTASection>;
 };

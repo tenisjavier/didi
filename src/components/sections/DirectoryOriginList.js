@@ -1,10 +1,9 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import slugify from "react-slugify";
 import ListSection from "../ListSection";
 
 const DirectoryOriginList = ({ data }) => {
-  const { t } = useTranslation();
   const directions = data.allContentfulDirection.nodes;
   const place = data.contentfulPlace;
 

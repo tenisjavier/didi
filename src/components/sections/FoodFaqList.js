@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
 
 const FoodFaqList = ({ title, faqs, city }) => {
-  const { t } = useTranslation();
   let items = [];
   if (faqs !== null) {
     faqs.forEach((faq) => {

@@ -51,59 +51,52 @@ const Feature = ({ data }) => {
 
 export default Feature;
 
-export const query = graphql`query ($language: String!, $id: String) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query ($id: String) {
+    allContentfulAsset(
+      filter: { title: { regex: "/(au.HomeColumns.image)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.HomeColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
+    contentfulFeature(id: { eq: $id }) {
+      name
       description
-      gatsbyImageData
-    }
-  }
-  contentfulFeature(id: {eq: $id}) {
-    name
-    description
-    category
-    faq {
-      title
-      content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImageData(width: 800)
-            __typename
+      category
+      faq {
+        title
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
+            }
           }
         }
       }
-    }
-    country {
-      code
-    }
-    components {
-      meta {
+      country {
+        code
+      }
+      components {
+        meta {
+          title
+          desc
+        }
+      }
+      componentImages {
+        gatsbyImageData
+        description
         title
-        desc
       }
     }
-    componentImages {
-      gatsbyImageData
-      description
-      title
-    }
   }
-}`;
+`;

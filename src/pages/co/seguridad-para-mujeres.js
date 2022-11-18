@@ -38,36 +38,34 @@ const SeguridadParaMujeres = ({ data }) => {
 
 export default SeguridadParaMujeres;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: { title: { regex: "/(co.SafetyWoman)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
+    allContentfulFaq(
+      filter: {
+        title: {
+          regex: "/(¿Qué pasa con los agresores?)|(¿DiDi realiza validación de antecedentes de forma periódica?)|(¿DiDi colabora con las autoridades para solucionar los incidentes de seguridad?)|(¿DiDi me puede compartir la información de los socios y/o usuarios que están involucrados en un caso de seguridad?)|(¿Qué debo hacer si soy víctima de una situación de violencia basada en género al usar la aplicación?)/"
+        }
+        country: { code: { eq: "co" } }
+      }
+    ) {
+      nodes {
+        id
+        title
+        content {
+          raw
+        }
       }
     }
   }
-  allContentfulAsset(
-    filter: {title: {regex: "/(co.SafetyWoman)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulFaq(
-    filter: {title: {regex: "/(¿Qué pasa con los agresores?)|(¿DiDi realiza validación de antecedentes de forma periódica?)|(¿DiDi colabora con las autoridades para solucionar los incidentes de seguridad?)|(¿DiDi me puede compartir la información de los socios y/o usuarios que están involucrados en un caso de seguridad?)|(¿Qué debo hacer si soy víctima de una situación de violencia basada en género al usar la aplicación?)/"}, country: {code: {eq: "co"}}}
-  ) {
-    nodes {
-      id
-      title
-      content {
-        raw
-      }
-    }
-  }
-}`;
+`;

@@ -45,43 +45,43 @@ const Pasajero = ({ data }) => {
 
 export default Pasajero;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: {
+          regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.PaxWhyDiDi.image)|(au.HomeColumns.image)/"
+        }
       }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(au.PaxHero.bgImage)|(au.PaxBenefits.image)|(au.PaxWhyDiDi.image)|(au.HomeColumns.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "au"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
-      }
-      image {
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
         gatsbyImageData
       }
-      country {
-        code
+    }
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "au" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
+        description
+        phone
+        requirement {
+          raw
+        }
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
       }
     }
   }
-}`;
+`;

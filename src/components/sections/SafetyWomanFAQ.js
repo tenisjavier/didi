@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
 const SafetyWomanFAQ = ({ faq }) => {
-  const { t } = useTranslation();
   let items = [];
   faq.forEach((node) => {
     items.push({

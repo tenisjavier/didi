@@ -23,7 +23,7 @@ const Ganancias = ({ data }) => {
   const MujeresEnDiDiColumnsImage = images.filter((image) => {
     return image.title === "mx.MujeresPercentage.image";
   });
-  
+
   const DiDiMujerPercentageColumnsImage = images.filter((image) => {
     return image.title === "mx.MujeresPercentageProgram.image";
   });
@@ -39,14 +39,20 @@ const Ganancias = ({ data }) => {
   const ApoyoMujeresCTAImage = images.filter((image) => {
     return image.title === "mx.WomenDiDiCTA.image";
   })[0];
-            
+
   return (
     <Layout>
       <MujeresDiDiHero bgImage={MujeresDiDiHeroBgImage}></MujeresDiDiHero>
-      <MujeresEnDiDiColumns images={MujeresEnDiDiColumnsImage.reverse()}></MujeresEnDiDiColumns>
+      <MujeresEnDiDiColumns
+        images={MujeresEnDiDiColumnsImage.reverse()}
+      ></MujeresEnDiDiColumns>
       <DiDiMujerFuncionCTA image={MujeresDiDiCTAImage}></DiDiMujerFuncionCTA>
-      <DiDiMujerProgramaCTA image={DiDiMujerProgramaCTAImage}></DiDiMujerProgramaCTA>
-      <DiDiMujerPercentageColumns images={DiDiMujerPercentageColumnsImage.reverse()}></DiDiMujerPercentageColumns>
+      <DiDiMujerProgramaCTA
+        image={DiDiMujerProgramaCTAImage}
+      ></DiDiMujerProgramaCTA>
+      <DiDiMujerPercentageColumns
+        images={DiDiMujerPercentageColumnsImage.reverse()}
+      ></DiDiMujerPercentageColumns>
       <DiDiMujerVideoSection></DiDiMujerVideoSection>
       <AlianzaMujeresCTA image={AlianzaMujeresCTAImage}></AlianzaMujeresCTA>
       <ApoyoMujeresCTA image={ApoyoMujeresCTAImage}></ApoyoMujeresCTA>
@@ -57,16 +63,7 @@ const Ganancias = ({ data }) => {
 export default Ganancias;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
         title: {

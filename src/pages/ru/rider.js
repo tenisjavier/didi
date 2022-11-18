@@ -28,8 +28,14 @@ const Pasajero = ({ data }) => {
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxTechCTA image={paxTechImage}></PaxTechCTA>
       <PaxAltColumns></PaxAltColumns>
-      <HelpCenterFAQPax title="DiDi Тарифы" data={faqRiderTax[0]}></HelpCenterFAQPax>
-      <HelpCenterFAQPax title="FAQ для Пассажиров" data={faqRider[0]}></HelpCenterFAQPax>
+      <HelpCenterFAQPax
+        title="DiDi Тарифы"
+        data={faqRiderTax[0]}
+      ></HelpCenterFAQPax>
+      <HelpCenterFAQPax
+        title="FAQ для Пассажиров"
+        data={faqRider[0]}
+      ></HelpCenterFAQPax>
     </Layout>
   );
 };
@@ -37,16 +43,7 @@ const Pasajero = ({ data }) => {
 export default Pasajero;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: { title: { in: ["ru.PaxHero.bgImage", "ru.PaxTechCTA.image"] } }
     ) {

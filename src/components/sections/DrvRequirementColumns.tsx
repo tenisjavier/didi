@@ -2,8 +2,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-import ColumnsNoLimitSection, { ColumnsSectionProps } from "../ColumnNoLimitSection";
+import { t } from "../../context/countryContext";
+import ColumnsNoLimitSection, {
+  ColumnsSectionProps,
+} from "../ColumnNoLimitSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
@@ -20,7 +22,6 @@ interface DrvRequirementColumnsProps {
 }
 
 const DrvRequirementColumns = ({ images }: DrvRequirementColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("DrvRequirementColumns.title"),
     bgColor: t("DrvRequirementColumns.bgColor"),

@@ -1,6 +1,5 @@
-
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,7 +19,6 @@ interface WhyDiDiColumnsProps {
 }
 
 const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("WhyDiDiColumns.title"),
     bgColor: t("WhyDiDiColumns.bgColor"),
@@ -52,6 +50,4 @@ const WhyDiDiColumns = ({ images, icons }: WhyDiDiColumnsProps) => {
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-
 export default WhyDiDiColumns;
-

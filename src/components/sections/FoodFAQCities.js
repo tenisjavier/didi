@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
 const FoodFAQCities = ({ city }) => {
-  const { t } = useTranslation();
   const items = [
     {
       title: `¿Cómo pedir comida a domicilio en ${city} con DiDi Food?`,

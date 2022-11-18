@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface DirectionHeroProps {
@@ -12,7 +12,6 @@ interface DirectionHeroProps {
 }
 
 const DirectionHero = ({ data }: DirectionHeroProps) => {
-  const { t } = useTranslation();
   const { origin, originAddress, destination, destinationAddress } = data;
   const props: CTAProps = {
     hero: true,

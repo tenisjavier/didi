@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface ArticleHeroProps {
@@ -14,7 +14,6 @@ interface ArticleHeroProps {
 }
 
 const ArticleHero = ({ data }: ArticleHeroProps) => {
-  const { t } = useTranslation();
   const { title, excerpt, featuredImage } = data.contentfulArticle;
   const image = getImage(featuredImage)!;
   const props: CTAProps = {

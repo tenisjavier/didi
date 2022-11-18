@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface NewsroomColumnsProps {
@@ -19,7 +19,6 @@ interface NewsroomColumnsProps {
 }
 
 const ArticlesColumns = ({ data }: NewsroomColumnsProps) => {
-  const { t } = useTranslation();
   const props: ColumnsSectionProps = {
     title: t("NewsroomColumns.title"),
     bgColor: t("NewsroomColumns.bgColor"),

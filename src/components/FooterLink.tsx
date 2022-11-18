@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "@reach/router";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useCountry } from "../context/countryContext";
 import { FooterLinks } from "../config/footer-config";
 import {
   FooterLinksFood,
@@ -13,8 +13,7 @@ interface FooterMenuProps {
 
 const FooterMenu = ({ links }: FooterMenuProps) => {
   const { pathname } = useLocation();
-  const { i18n } = useTranslation();
-  const countryCode = i18n.language;
+  const countryCode = useCountry().code;
   const footerLinksFood: FooterLinksFood[] = getFooterLinksFood(countryCode);
 
   return (

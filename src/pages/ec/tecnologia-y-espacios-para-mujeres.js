@@ -21,18 +21,19 @@ const Seguridad = ({ data }) => {
   const protocolCTAImage = images.filter((image) => {
     return image.title === "ec.ProtocolSafety.image";
   })[0];
-  
+
   const pasosCTAImage = images.filter((image) => {
     return image.title === "ec.SeguridadPasos.image";
   })[0];
   return (
     <Layout>
-      <TecnologiaEspaciosHero bgImage={tecnologiaEspaciosHeroBgImage}></TecnologiaEspaciosHero>
-      <FuncionesColumns images={funcionesColumnsImage.reverse()}></FuncionesColumns>
-      <ProtocolCTA
-        image={protocolCTAImage}
-        bullets={false}
-      ></ProtocolCTA>
+      <TecnologiaEspaciosHero
+        bgImage={tecnologiaEspaciosHeroBgImage}
+      ></TecnologiaEspaciosHero>
+      <FuncionesColumns
+        images={funcionesColumnsImage.reverse()}
+      ></FuncionesColumns>
+      <ProtocolCTA image={protocolCTAImage} bullets={false}></ProtocolCTA>
       <ProtocolBullets image={pasosCTAImage}></ProtocolBullets>
       <NeutralFAQ></NeutralFAQ>
     </Layout>
@@ -42,19 +43,17 @@ const Seguridad = ({ data }) => {
 export default Seguridad;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     allContentfulAsset(
       filter: {
-        title: { in: ["ec.TecnologiaEspacios.bgImage", "ec.FuncionesColumns.image", "ec.ProtocolSafety.image", "ec.SeguridadPasos.image"] }
+        title: {
+          in: [
+            "ec.TecnologiaEspacios.bgImage"
+            "ec.FuncionesColumns.image"
+            "ec.ProtocolSafety.image"
+            "ec.SeguridadPasos.image"
+          ]
+        }
       }
     ) {
       nodes {

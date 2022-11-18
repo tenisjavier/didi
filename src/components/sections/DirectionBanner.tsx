@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import Banner, { BannerProps } from "../Banner";
 
 interface DirectionBannerProps {
@@ -11,7 +11,6 @@ interface DirectionBannerProps {
 }
 
 const DirectionBanner = ({ data }: DirectionBannerProps) => {
-  const { t } = useTranslation();
   const destination = data.destination;
   const carDuration = data.carDuration;
   const duration = data.duration;

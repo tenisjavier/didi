@@ -24,45 +24,40 @@ const HelpCenter = ({ data }) => {
 
 export default HelpCenter;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: { title: { regex: "/(nz.HelpCenterHero.bgImage)/" } }
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
       }
     }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(nz.HelpCenterHero.bgImage)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulProduct(filter: {country: {elemMatch: {code: {eq: "nz"}}}}) {
-    nodes {
-      name
-      faq {
-        title
-        content {
-          raw
-          references {
-            ... on ContentfulAsset {
-              contentful_id
-              title
-              description
-              gatsbyImageData(width: 800)
-              __typename
+    allContentfulProduct(
+      filter: { country: { elemMatch: { code: { eq: "nz" } } } }
+    ) {
+      nodes {
+        name
+        faq {
+          title
+          content {
+            raw
+            references {
+              ... on ContentfulAsset {
+                contentful_id
+                title
+                description
+                gatsbyImageData(width: 800)
+                __typename
+              }
             }
           }
         }
       }
     }
   }
-}`;
+`;

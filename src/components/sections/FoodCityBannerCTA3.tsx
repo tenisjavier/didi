@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface FoodCityBannerCTA3Props {
@@ -15,7 +15,6 @@ interface FoodCityBannerCTA3Props {
 }
 
 const FoodCityBannerCTA3 = ({ image, data }: FoodCityBannerCTA3Props) => {
-  const { t } = useTranslation();
   const { name } = data;
   const props: CTAProps = {
     hero: false,

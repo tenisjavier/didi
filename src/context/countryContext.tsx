@@ -1,3 +1,4 @@
+//@desc context in charge of passing the country and the text translation function t()
 import React, { useContext, createContext, useState, useMemo } from "react";
 import { useLocation } from "@reach/router";
 
@@ -11,16 +12,44 @@ export const useCountry = () => {
   return useContext(CountryContext);
 };
 
-export const t = (key: string) => {
+//@desc function used on every component that needs data from the translation file
+// return string, object or null
+export const t = (key: string, vars?: { [varKey: string]: any }) => {
   const locale = useCountry().code;
   const ns = useCountry().ns;
   const data = require(`../../locales/${locale}/${ns}.json`);
-  return data[key];
+  let value = data[key];
+  if (vars) {
+    const keys = Object.keys(vars);
+    keys.forEach((k) => {
+      if (k === "returnObjects") return;
+      const regExp = new RegExp(`{{${k}}}`);
+      value = value ? value.replace(regExp, vars[k]) : null;
+    });
+  }
+  return value;
 };
 
 export const CountryProvider = ({ children }: CountryProviderProps) => {
+  const countries = [
+    "cl",
+    "ar",
+    "pe",
+    "ec",
+    "co",
+    "pa",
+    "do",
+    "cr",
+    "mx",
+    "eg",
+    "ru",
+    "nz",
+    "au",
+  ];
   const { pathname } = useLocation();
-  const countryCode = pathname ? pathname.substring(1, 3) : "";
+  const subfolder = /^\/..\//.exec(pathname);
+  let countryCode = subfolder ? subfolder[0].substring(1, 3) : "";
+  countryCode = countries.includes(countryCode) ? countryCode : "en";
   let ns = pathname.includes("/food/") ? "food" : "translation";
   let [country, updateCountry] = useState({
     code: countryCode,

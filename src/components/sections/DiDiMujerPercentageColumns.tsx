@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,8 +17,9 @@ interface DiDiMujerPercentageColumnsProps {
   }[];
 }
 
-const DiDiMujerPercentageColumns = ({ images }: DiDiMujerPercentageColumnsProps) => {
-  const { t } = useTranslation();
+const DiDiMujerPercentageColumns = ({
+  images,
+}: DiDiMujerPercentageColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("DiDiMujerPercentageColumns.bgColor"),
     textColor: t("DiDiMujerPercentageColumns.textColor"),

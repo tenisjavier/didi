@@ -45,73 +45,74 @@ const Driver = ({ data }) => {
 
 export default Driver;
 
-export const query = graphql`query ($language: String!) {
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+export const query = graphql`
+  query {
+    allContentfulAsset(
+      filter: {
+        title: { regex: "/(nz.DrvHero.bgImage)|(nz.DrvBenefits.image)/" }
       }
-    }
-  }
-  allContentfulAsset(
-    filter: {title: {regex: "/(nz.DrvHero.bgImage)|(nz.DrvBenefits.image)/"}}
-    sort: {title: ASC}
-  ) {
-    nodes {
-      id
-      title
-      description
-      gatsbyImageData
-    }
-  }
-  allContentfulProduct(
-    filter: {country: {elemMatch: {code: {eq: "nz"}}}, category: {eq: "driver"}}
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
-      }
-      image {
+      sort: { title: ASC }
+    ) {
+      nodes {
+        id
+        title
+        description
         gatsbyImageData
       }
-      country {
-        code
-      }
     }
-  }
-  allContentfulCity(filter: {country: {code: {eq: "nz"}}}, sort: {name: ASC}) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData(width: 400)
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "nz" } } }
+        category: { eq: "driver" }
+      }
+    ) {
+      nodes {
+        name
         description
+        phone
+        requirement {
+          raw
+        }
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
+      }
+    }
+    allContentfulCity(
+      filter: { country: { code: { eq: "nz" } } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
+      }
+    }
+    allContentfulPartner(filter: { country: { code: { eq: "nz" } } }) {
+      nodes {
+        name
+        desc
+        logo {
+          gatsbyImageData
+          description
+        }
+      }
+    }
+    allContentfulRequirement(filter: { country: { code: { eq: "nz" } } }) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData
+          description
+        }
       }
     }
   }
-  allContentfulPartner(filter: {country: {code: {eq: "nz"}}}) {
-    nodes {
-      name
-      desc
-      logo {
-        gatsbyImageData
-        description
-      }
-    }
-  }
-  allContentfulRequirement(filter: {country: {code: {eq: "nz"}}}) {
-    nodes {
-      name
-      slug
-      image {
-        gatsbyImageData
-        description
-      }
-    }
-  }
-}`;
+`;

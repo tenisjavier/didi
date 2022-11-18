@@ -1,9 +1,8 @@
 import React from "react";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
 const Requirements = ({ data }) => {
-  const { t } = useTranslation();
   const props = {
     title: t("Requirements.title"),
     bgColor: t("Requirements.bgColor"),

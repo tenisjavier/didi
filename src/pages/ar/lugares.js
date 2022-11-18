@@ -22,16 +22,7 @@ const Lugares = ({ data }) => {
 export default Lugares;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     contentfulCountry(code: { eq: "ar" }) {
       name
       code

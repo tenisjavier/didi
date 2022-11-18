@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { t } from "../../context/countryContext";
 import DoubleCTASection, { DoubleCTAProps } from "../DoubleCTASection";
 
 interface ProtocolCTA {
@@ -12,7 +12,6 @@ interface ProtocolCTA {
 }
 
 const ProtocolCTA = ({ image }: ProtocolCTA) => {
-  const { t } = useTranslation();
   const props: DoubleCTAProps = {
     hero: false,
     title: t("ProtocolCTA.title"),
@@ -31,7 +30,7 @@ const ProtocolCTA = ({ image }: ProtocolCTA) => {
     btnText: t("ProtocolCTA.btnText"),
     btnLink: t("ProtocolCTA.btnLink"),
     reverse: false,
-    doubleTitle: true
+    doubleTitle: true,
   };
   return <DoubleCTASection {...props}></DoubleCTASection>;
 };

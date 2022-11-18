@@ -1,8 +1,9 @@
 import React from "react";
-import AccordionNeutralWithImageSection, { AccordionNeutralWithImageProps } from "../AccordionNeutralWithImageSection";
+import AccordionNeutralWithImageSection, {
+  AccordionNeutralWithImageProps,
+} from "../AccordionNeutralWithImageSection";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-
+import { t } from "../../context/countryContext";
 
 interface DigitalStampsFAQProps {
   image?: {
@@ -13,7 +14,6 @@ interface DigitalStampsFAQProps {
 }
 
 const DigitalStampsFAQ = ({ image }: DigitalStampsFAQProps) => {
-  const { t } = useTranslation();
   const props: AccordionNeutralWithImageProps = {
     items: t("DigitalStampsFAQ.items", { returnObjects: true }),
     bgColor: t("DigitalStampsFAQ.bgColor"),
@@ -27,26 +27,28 @@ const DigitalStampsFAQ = ({ image }: DigitalStampsFAQProps) => {
     btnLink: t("DigitalStampsFAQ.btnLink"),
     btnMode: t("DigitalStampsFAQ.btnMode"),
     ...(image && {
-        image: (
-          <GatsbyImage
-            image={image.gatsbyImageData}
-            alt={image.description}
-            className="z-10 m-4 w-100 rounded-full"
-          ></GatsbyImage>
-        ),
-      }),
+      image: (
+        <GatsbyImage
+          image={image.gatsbyImageData}
+          alt={image.description}
+          className="z-10 m-4 w-100 rounded-full"
+        ></GatsbyImage>
+      ),
+    }),
     descText: t("DigitalStampsFAQ.descText"),
     linkURL: t("DigitalStampsFAQ.linkURL"),
     linkText: t("DigitalStampsFAQ.linkText"),
     afterText: t("DigitalStampsFAQ.afterText"),
-    };
-
+  };
 
   return (
-    <AccordionNeutralWithImageSection bgColor="bg-white"
-    textColor="gray-primary"
-    textAccordionColor="orange-primary"
-    bgAccordionColor="bg-gray-light" {...props}></AccordionNeutralWithImageSection>
+    <AccordionNeutralWithImageSection
+      bgColor="bg-white"
+      textColor="gray-primary"
+      textAccordionColor="orange-primary"
+      bgAccordionColor="bg-gray-light"
+      {...props}
+    ></AccordionNeutralWithImageSection>
   );
 };
 
