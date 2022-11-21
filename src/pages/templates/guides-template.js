@@ -10,13 +10,13 @@ const GuideTemplate = ({ data }) => {
   const richContent = data.contentfulGuide.content;
   const title = data.contentfulGuide.seoTitle;
   const desc = data.contentfulGuide.seoDescription;
-  const heroImage = data.contentfulGuide;
   return (
     <Layout title={title} desc={desc}>
-      <GuideHero data={heroImage}></GuideHero>
+      <GuideHero data={data}></GuideHero>
       <section className="container mx-auto mb-32 text-gray-primary md:px-28 mt-16">
         <RichContent richContent={richContent}></RichContent>
       </section>
+
       <PaxBanner></PaxBanner>
       <GuidesColumns data={data}></GuidesColumns>
     </Layout>
