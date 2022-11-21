@@ -5,9 +5,9 @@ import CTASection, { CTAProps } from "../CTASection";
 
 interface GuideHero {
   data: {
-    title: string;
-    excerpt: string;
-    featuredImage: ImageDataLike;
+      title: string;
+      excerpt: string;
+      featuredImage: ImageDataLike;
   };
 }
 
