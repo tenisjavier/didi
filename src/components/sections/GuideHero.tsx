@@ -5,16 +5,14 @@ import CTASection, { CTAProps } from "../CTASection";
 
 interface GuideHero {
   data: {
-    contentfulGuide: {
-      title: string;
-      excerpt: string;
-      featuredImage: ImageDataLike;
-    };
+    title: string;
+    excerpt: string;
+    featuredImage: ImageDataLike;
   };
 }
 
 const GuideHero = ({ data }: GuideHero) => {
-  const { title, excerpt, featuredImage } = data.contentfulGuide;
+  const { title, excerpt, featuredImage } = data;
   const image = getImage(featuredImage);
 
   const props: CTAProps = {
