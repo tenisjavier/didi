@@ -6,7 +6,7 @@ const slugify = require("slugify");
 const guidesRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulGuide(filter: {category: {ne: "delivery"}}){
+      allContentfulGuide(filter: { category: { ne: "delivery" } }) {
         nodes {
           id
           slug
