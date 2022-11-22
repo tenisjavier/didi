@@ -13,7 +13,7 @@ const ColumnSectionImageText = ({
 }: ColumnsSectionProps) => {
   return (
     <section id={sectionID} className={`py-12`}>
-      <div className={`flex flex-cols text-center justify-center items-start px-12 mx-12`}>
+      <div className={`md:flex md:flex-cols text-center md:justify-center md:items-start grid grid-col-1`}>
         {line.map((col) => {
           return (
               <div>
