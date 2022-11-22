@@ -175,6 +175,10 @@ const menuLinksFood: AllMenuInterface = {
       text: "Contacto",
       url: "/pe/food/contacto/",
     },
+    {
+      text: "Blog",
+      url: "/pe/food/blog"
+    }
   ],
 };
 
