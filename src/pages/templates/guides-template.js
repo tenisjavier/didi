@@ -27,7 +27,7 @@ export default GuideTemplate;
 
 export const query = graphql`
   query ($id: String, $countryCode: String) {
-    contentfulGuide(id: { eq: $id }) {
+    contentfulGuide(id: { eq: $id }, category: { ne: "delivery" }) {
       title
       excerpt
       seoTitle
@@ -49,7 +49,11 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { country: { code: { eq: $countryCode } }, id: { ne: $id } }
+      filter: {
+        category: { ne: "delivery" }
+        id: { ne: $id }
+        country: { code: { eq: $countryCode } }
+      }
       sort: { updatedAt: DESC }
       limit: 10
     ) {
