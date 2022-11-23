@@ -36,6 +36,44 @@ const options: optionsInterface = {
       <h6 className={"my-12 text-center text-lg"}>{children}</h6>
     ),
     [BLOCKS.PARAGRAPH]: (node, children) => <p className={""}>{children}</p>,
+    [BLOCKS.TABLE]: (node) => {
+      return (
+        <table className="table-auto text-lg text-gray-primary">
+          {node.content.map((row: any, index: any) =>
+            index === 0 ? (
+              <tr key={index} className="font-bold text-xl bg-gray-light">
+                {row.content.map((cell: any, index: any) => (
+                  <th
+                    key={index}
+                    className="border-2 border-gray-light border-solid  p-6 rounded-sm"
+                  >
+                    {cell.content[0].content[0].value}
+                  </th>
+                ))}
+              </tr>
+            ) : (
+              <tr className="border-2 border-gray-light border-solid">
+                {row.content.map((cell: any) => (
+                  <td className="border-2 border-gray-light border-solid p-4 rounded-sm">
+                    {cell.content[0].content.length > 1 &&
+                    cell.content[0].content[1].nodeType === "hyperlink" ? (
+                      <a
+                        href={cell.content[0].content[1].data.uri}
+                        className="text-orange-primary"
+                      >
+                        {cell.content[0].content[1].content[0].value}
+                      </a>
+                    ) : (
+                      cell.content[0].content[0].value
+                    )}{" "}
+                  </td>
+                ))}
+              </tr>
+            )
+          )}{" "}
+        </table>
+      );
+    },
     [INLINES.HYPERLINK]: (node, children) => {
       if (node.data.uri.includes("https://www.youtube.com/watch?v=")) {
         const videoId = node.data.uri.substring(
