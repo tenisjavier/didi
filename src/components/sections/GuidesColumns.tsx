@@ -47,7 +47,7 @@ const GuidesColumns = ({ data }: GuidesColumnsProps) => {
       btnText: t("GuidesColumns.btnText"),
       btnLink: link,
       btnMode: t("GuidesColumns.btnMode"),
-      height: "h-110",
+      height: "h-50",
     };
   });
   return <ColumnsSection {...props}></ColumnsSection>;
