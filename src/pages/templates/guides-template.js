@@ -55,7 +55,7 @@ export const query = graphql`
         country: { code: { eq: $countryCode } }
       }
       sort: { updatedAt: DESC }
-      limit: 10
+      limit: 15
     ) {
       nodes {
         title
