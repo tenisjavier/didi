@@ -867,7 +867,7 @@
   "LegalHero.textColor": "white",
   "LegalHero.btnText": "Términos y Condiciones",
   "LegalHero.btnMode": "light",
-  "LegalHero.linkItem": "/mx/legal/terminos-y-condiciones/",
+  "LegalHero.linkItem": "http://privacycenter.didiglobal.com/MX/privacy-notice/747f22cd40983ba85de5260aaf4d40b3/Mexico",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.desc": "Revisa en qué consiste nuestras políticas de privacidad",
   "LegalCTA.textColor": "gray-primary",
