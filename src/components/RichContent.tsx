@@ -38,40 +38,44 @@ const options: optionsInterface = {
     [BLOCKS.PARAGRAPH]: (node, children) => <p className={""}>{children}</p>,
     [BLOCKS.TABLE]: (node) => {
       return (
-        <table className="table-auto text-lg text-gray-primary">
-          {node.content.map((row: any, index: any) =>
-            index === 0 ? (
-              <tr key={index} className="font-bold text-xl bg-gray-light">
-                {row.content.map((cell: any, index: any) => (
-                  <th
-                    key={index}
-                    className="border-2 border-gray-light border-solid  p-6 rounded-sm"
-                  >
-                    {cell.content[0].content[0].value}
-                  </th>
-                ))}
-              </tr>
-            ) : (
-              <tr className="border-2 border-gray-light border-solid">
-                {row.content.map((cell: any) => (
-                  <td className="border-2 border-gray-light border-solid p-4 rounded-sm">
-                    {cell.content[0].content.length > 1 &&
-                    cell.content[0].content[1].nodeType === "hyperlink" ? (
-                      <a
-                        href={cell.content[0].content[1].data.uri}
-                        className="text-orange-primary"
+        <div className="relative rounded-xl overflow-auto">
+          <div className="shadow-sm overflow-hidden my-8">
+            <table className="table-fix text-base text-gray-primary border-collapse">
+              {node.content.map((row: any, index: any) =>
+                index === 0 ? (
+                  <tr key={index} className="font-bold text-lg bg-gray-light">
+                    {row.content.map((cell: any, index: any) => (
+                      <th
+                        key={index}
+                        className="border-2 border-gray-light border-solid  py-6"
                       >
-                        {cell.content[0].content[1].content[0].value}
-                      </a>
-                    ) : (
-                      cell.content[0].content[0].value
-                    )}{" "}
-                  </td>
-                ))}
-              </tr>
-            )
-          )}{" "}
-        </table>
+                        {cell.content[0].content[0].value}
+                      </th>
+                    ))}
+                  </tr>
+                ) : (
+                  <tr className="border-2 border-gray-light border-solid">
+                    {row.content.map((cell: any) => (
+                      <td className="border-2 border-gray-light border-solid p-4">
+                        {cell.content[0].content.length > 1 &&
+                        cell.content[0].content[1].nodeType === "hyperlink" ? (
+                          <a
+                            href={cell.content[0].content[1].data.uri}
+                            className="text-orange-primary"
+                          >
+                            {cell.content[0].content[1].content[0].value}
+                          </a>
+                        ) : (
+                          cell.content[0].content[0].value
+                        )}{" "}
+                      </td>
+                    ))}
+                  </tr>
+                )
+              )}{" "}
+            </table>
+          </div>
+        </div>
       );
     },
     [INLINES.HYPERLINK]: (node, children) => {
