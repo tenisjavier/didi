@@ -771,4 +771,5 @@
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
   "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/",
   "RepartidorHero.btnMode": "primary"
+
 }

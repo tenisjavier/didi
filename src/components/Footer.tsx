@@ -95,11 +95,36 @@ const Footer = () => {
           <div className="flex h-1/2 w-full flex-initial flex-wrap items-center justify-center px-24 lg:h-full lg:w-1/2 xl:px-32 ">
             <div className="flex w-full justify-center lg:w-auto">
               <a href="https://global-rides-passenger.onelink.me/xNlo/globalhomepage">
-                <StaticImage
-                  alt="Logo Stores"
-                  src="../images/downloads-icons-en.png"
-                  width={200}
-                ></StaticImage>
+                {sslCountries.includes(countryCode) && (
+                  <StaticImage
+                    alt="Logo Stores"
+                    src="../images/android-ios-spanish.png"
+                    width={200}
+                  ></StaticImage>
+                )}
+                {countryCode === "eg" && (
+                  <StaticImage
+                    alt="Logo Stores"
+                    src="../images/android-ios-arabic.png"
+                    width={200}
+                  ></StaticImage>
+                )}
+                {countryCode === "ru" && (
+                  <StaticImage
+                    alt="Logo Stores"
+                    src="../images/android-ios-russian.png"
+                    width={200}
+                  ></StaticImage>
+                )}
+                {countryCode !== "ru" &&
+                  countryCode !== "eg" &&
+                  !sslCountries.includes(countryCode) && (
+                    <StaticImage
+                      alt="Logo Stores"
+                      src="../images/downloads-icons-en.png"
+                      width={200}
+                    ></StaticImage>
+                  )}
               </a>
             </div>
           </div>
