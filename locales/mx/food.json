@@ -769,5 +769,6 @@
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
-  "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/"
+  "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/",
+  "RepartidorHero.btnMode": "primary"
 }
