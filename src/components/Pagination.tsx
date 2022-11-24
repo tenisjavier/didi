@@ -21,11 +21,25 @@ interface PaginationProps {
         featuredImage: ImageDataLike;
       }[];
     };
+    allContentfulGuide: {
+      nodes: {
+        title: string;
+        slug: string;
+        excerpt: string;
+        featuredImage: ImageDataLike;
+      }[];
+    };
   };
 }
 
 const Pagination = ({ data, postsPerPage }: PaginationProps) => {
-  const articles = data.allContentfulArticle.nodes;
+  let articles:any[] = [];
+  if(data.allContentfulArticle) {
+    articles = data.allContentfulArticle.nodes;
+  } else if(data.allContentfulGuide) {
+    articles = data.allContentfulGuide.nodes;
+  }
+
   const perPage = postsPerPage;
   const numberPages = Math.ceil(articles.length / perPage);
   const pageLinks = [];

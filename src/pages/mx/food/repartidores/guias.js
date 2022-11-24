@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
-import GuidesHero from "../../../../components/sections/GuidesHero";
-import GuidesColumns from "../../../../components/sections/GuidesColumns";
+import FoodDeliveryHero from "../../../../components/sections/FoodDeliveryHero";
+import GuidesDeliveryColumns from "../../../../components/sections/GuidesDeliveryColumns";
 import Pagination from "../../../../components/Pagination";
 
 const FoodBlog = ({ data }) => {
@@ -12,8 +12,9 @@ const FoodBlog = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <GuidesHero bgImage={repartidoresHeroBgImage}></GuidesHero>
-      <GuidesColumns data={data}></GuidesColumns>
+      <FoodDeliveryHero bgImage={repartidoresHeroBgImage}></FoodDeliveryHero>
+      <GuidesDeliveryColumns data={data}></GuidesDeliveryColumns>
+      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };
@@ -30,7 +31,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulGuide(filter: { category: { eq: "delivery" },  country: { code: { eq: "mx" } } }, limit: 10) {
+    allContentfulGuide(filter: { category: { eq: "delivery" },  country: { code: { eq: "mx" } } }) {
       nodes {
         title
         slug

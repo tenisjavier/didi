@@ -5,7 +5,7 @@ import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface GuidesColumnsProps {
+interface GuidesDeliveryColumnsProps {
   data: {
     allContentfulGuide: {
       nodes: {
@@ -18,16 +18,16 @@ interface GuidesColumnsProps {
   };
 }
 
-const GuidesColumns = ({ data }: GuidesColumnsProps) => {
+const GuidesDeliveryColumns = ({ data }: GuidesDeliveryColumnsProps) => {
   const props: ColumnsSectionProps = {
-    title: t("GuidesColumns.title"),
-    bgColor: t("GuidesColumns.bgColor"),
-    textColor: t("GuidesColumns.textColor"),
+    title: t("GuidesDeliveryColumns.title"),
+    bgColor: t("GuidesDeliveryColumns.bgColor"),
+    textColor: t("GuidesDeliveryColumns.textColor"),
     columns: [],
   };
   const guides = data.allContentfulGuide.nodes;
   props.columns = guides.map((guide) => {
-    const link = t("GuidesColumns.linkItem", {
+    const link = t("GuidesDeliveryColumns.linkItem", {
       guide: guide.slug,
     });
     return {
@@ -44,13 +44,13 @@ const GuidesColumns = ({ data }: GuidesColumnsProps) => {
           ></GatsbyImage>
         </Link>
       ),
-      btnText: t("GuidesColumns.btnText"),
+      btnText: t("GuidesDeliveryColumns.btnText"),
       btnLink: link,
-      btnMode: t("GuidesColumns.btnMode"),
-      height: "h-110",
+      btnMode: t("GuidesDeliveryColumns.btnMode"),
+      height: "h-50",
     };
   });
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default GuidesColumns;
+export default GuidesDeliveryColumns;
