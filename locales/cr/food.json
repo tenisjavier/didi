@@ -191,7 +191,7 @@
         },
         {
           "label": "Centro de Experiencia",
-          "info": "Mezzanine (entrando por el lobby a la izquierda) Hotel Parque del Lago, 50 metros este de la Entrada de Paseo Colón, San José Costa Rica.",
+          "info": "San Jose, San Jose, San Pedro de Montes de Oca, Plaza Carolina Local 1,2,3,4 (Local con Letrero de DiDi) Codigo Postal 11501",
           "infoColor": { "color": "#ff7d41" }
         },
         {
@@ -202,16 +202,6 @@
         {
           "label": "Reserva tu Visita Aquí",
           "info": "https://citasdidifood.as.me/socio-repartidor",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Santiago los Caballeros. Dirección",
-          "info": "Optimus Plaza, 2do nivel, Módulos A-2-35 y A-2-36, en la Av. 27 de Febrero, en el sector de los Jardines Metropolitanos",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Horario de Atención",
-          "info": "Lunes a viernes de 8:30 a.m. a 5:30 p.m. Sábado de 8:30 a.m. a 12:30 p.m.",
           "infoColor": { "color": "#ff7d41" }
         }
       ]
