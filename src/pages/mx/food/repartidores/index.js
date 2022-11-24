@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import FoodDeliveryHero from "../../../components/sections/FoodDeliveryHero";
-import FoodDeliveryColumns from "../../../components/sections/FoodDeliveryColumns";
-import FoodDeliveryDownloads from "../../../components/sections/FoodDeliveryDownloads";
-import FoodDeliveryStepsColumns from "../../../components/sections/FoodDeliveryStepsColumns";
+import Layout from "../../../../components/Layout";
+import FoodDeliveryHero from "../../../../components/sections/FoodDeliveryHero";
+import FoodDeliveryColumns from "../../../../components/sections/FoodDeliveryColumns";
+import FoodDeliveryDownloads from "../../../../components/sections/FoodDeliveryDownloads";
+import FoodDeliveryStepsColumns from "../../../../components/sections/FoodDeliveryStepsColumns";
 
 const FoodDelivery = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
