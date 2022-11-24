@@ -759,15 +759,6 @@
   "InsuranceCoverageCTA.title": "Coberturas de Seguro",
   "InsuranceCoverageCTA.desc": "Los Socios Repartidores realizan sus viajes protegidos y con mayor tranquilidad \n Para DiDi Food, la seguridad de todas las personas que utilizan nuestra app es prioridad. Es por esto que los viajes que los Socios Repartidores realizan para entregar pedidos a través de la app cuentan con coberturas de seguro diseñadas especialmente para las entregas de pedidos. \n Todas las entregas cuentan con coberturas que están activas desde que el Socio Repartidor acepta un pedido a través de la app DiDi Food y hasta 45 minutos después de la entrega del mismo. \n Detalles de las coberturas que te protegen \n Las coberturas aplican únicamente si el Socio Repartidor estaba realizando una entrega de pedido a través de la app DiDi Food y hasta 45 minutos después de la entrega: \n Responsabilidad Civil por Daños a Terceros \n Accidentes Personales \n Asistencia Legal",
   "GuidesHero.textColor": "white",
-  "GuidesHero.btnMode": "light",
-  "GuidesHero.btnType": "foodDelivery",
-  "GuidesHero.title": "¡Únete a DiDi Food! Obtén excelentes ganancias y otras recompensas.",
-  "GuidesHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
-  "GuideHero.textColor": "white",
-  "GuideHero.btnMode": "light",
-  "PaxBanner.bgColor": "bg-orange-primary",
-  "PaxBanner.textColor": "white",
-  "PaxBanner.btnMode": "light",
-  "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
-  "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/"
+  "RepartidorHero.btnMode": "primary",
+  "GuideHero.textColor": "white"
 }
