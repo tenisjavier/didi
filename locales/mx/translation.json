@@ -399,6 +399,23 @@
       "textColor": "gray-primary"
     }
   ],
+  "DrvFlexHero.title": "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Utiliza DiDi Flex y comienza ya a negociar tu precio. \n Disponible en: Villahermosa, Zacatecas, La Paz, Ensenada, Celaya, Los Mochis, Vallarta , Morelia, Irapuato, Tepic, Navojoa y Ciudad Obregón.",
+  "DrvFlexHero.textColor": "white",
+  "DrvFlexHero.btnMode": "light",
+  "DrvFlexFeatures.title": "Beneficios DiDi Flex",
+  "DrvFlexFeatures.desc": "",
+  "DrvFlexFeatures.textColor": "gray-primary",
+  "DrvFlexFeatures.btnMode": "primary",
+  "DrvFlexFeatures.bullets": [
+    "Contraoferta el precio de los viajes",
+    "Rechaza viajes sin penalización ni afectar tu tasa de aceptación",
+    "También cuenta para tus ganancias garantizadas",
+    "Elige el viaje que más te conviene del Centro de Viajes",
+    "Tienes la certeza de que no va a cambiar el destino del viaje",
+    "Sigues teniendo +20 funciones de seguridad",
+    "Te damos Soporte 24/7"
+  ],
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",

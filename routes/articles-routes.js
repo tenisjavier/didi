@@ -17,6 +17,7 @@ const articlesRoutesInit = async (graphql, createPage) => {
           country {
             code
           }
+          language
         }
       }
     }
@@ -33,7 +34,7 @@ const articlesRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulArticle.nodes.forEach((node) => {
-    const { id, slug, category, country, tags } = node;
+    const { id, slug, category, country, tags, language } = node;
     let oneTag;
     if (tags) oneTag = tags[0].name;
     const cleanCategory = category.pop();
@@ -42,6 +43,10 @@ const articlesRoutesInit = async (graphql, createPage) => {
     let path = `/${country.code}/articulos/${slug}/`;
     if (cleanCategory === "food") path = `/${country.code}/food/blog/${slug}/`;
     if (cleanCategory === "news") path = `/${country.code}/newsroom/${slug}/`;
+    if (cleanCategory === "pr" && language === "en")
+      path = `/thejourney/${slug}/`;
+    if (cleanCategory === "pr" && language === "es")
+      path = `/es/thejourney/${slug}/`;
     if (cleanCategory === "pay")
       path = `/${country.code}/didipay/blog/${slug}/`;
 
