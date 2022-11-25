@@ -406,6 +406,7 @@
   "DrvFlexFeatures.title": "Beneficios DiDi Flex",
   "DrvFlexFeatures.desc": "",
   "DrvFlexFeatures.textColor": "gray-primary",
+  "DrvFlexFeatures.bgColor": "bg-white",
   "DrvFlexFeatures.btnMode": "primary",
   "DrvFlexFeatures.bullets": [
     "Contraoferta el precio de los viajes",

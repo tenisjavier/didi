@@ -128,6 +128,10 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/conductor/calcula-tus-ganancias/",
         },
         {
+          text: "DiDi Flex",
+          url: "/mx/conductor/didi-flex/",
+        },
+        {
           text: "Club DiDi",
           url: "/mx/clubdidi/",
         },
@@ -907,7 +911,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "Пассажирам",
-      url: "/ru/rider/"
+      url: "/ru/rider/",
     },
     {
       text: "Владельцам таксопарков",
