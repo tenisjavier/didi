@@ -21,7 +21,7 @@ const Menu = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="flex h-full items-center ">
+    <div className="flex h-full items-center">
       <FontAwesomeIcon
         icon={faBars}
         className=" m-4 cursor-pointer text-white lg:hidden w-5 "
@@ -34,7 +34,7 @@ const Menu = () => {
         className={
           "w-full h-full " +
           (open
-            ? "fixed left-0 top-20 right-0 bottom-0 overflow-y-scroll lg:absolute "
+            ? "fixed left-0 top-20 right-0 bottom-0 overflow-y-scroll lg:absolute  bg-gray-primary opacity-95 "
             : "hidden ") +
           "lg:block"
         }
