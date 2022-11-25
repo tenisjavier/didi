@@ -186,6 +186,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "¿Cuánto dinero pueden ganar los conductores a través de DiDi?",
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi México. Considerando retenciones de impuestos como ISR e IVA",
     },
+    "/conductor/didi-flex/": {
+      title: "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
+      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
+    },
     "/clubdidi/": {
       title: "Club DiDi: La comunidad que te da beneficios exclusivos",
       desc: "Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",

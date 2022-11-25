@@ -40,7 +40,9 @@ const ArticlesTemplate = ({ data }) => {
       {hero}
       <ArticleContent data={data}></ArticleContent>
       {!(
-        pathname.includes("food/blog") || pathname.includes("didipay/blog")
+        pathname.includes("food/blog") ||
+        pathname.includes("didipay/blog") ||
+        pathname.includes("thejourney")
       ) && <PaxBanner></PaxBanner>}
       {articles.length && columns}
     </Layout>
