@@ -32,14 +32,14 @@ const Menu = () => {
       />
       <div
         className={
-          "w-full " +
+          "w-full h-full " +
           (open
             ? "fixed left-0 top-20 right-0 bottom-0 overflow-y-scroll lg:absolute "
             : "hidden ") +
           "lg:block"
         }
       >
-        <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-80 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
+        <ul className="h-full m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-95 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
           {pathname.includes("food") ? (
             <>
               {menuLinksFood &&
@@ -87,7 +87,7 @@ interface NavItemProps {
 const NavItem = ({ link, children }: NavItemProps) => {
   return (
     <li
-      className="group flex w-full flex-col p-2 
+      className="group h-full flex w-full flex-col p-2 
     text-white lg:w-44 lg:items-center lg:justify-center lg:p-0 "
     >
       <a href={link.url} className="hover:text-white">
@@ -122,7 +122,7 @@ const DropdownMenu = ({ links, countryCode }: DropdownMenuProps) => {
     const isCTA = url?.includes("onelink");
     return (
       <a
-        className="flex h-11 items-center pl-12 hover:bg-opacity-100 hover:text-white lg:justify-center lg:bg-gray-primary  lg:bg-opacity-80 lg:p-0"
+        className="flex h-11 items-center pl-12 hover:bg-opacity-100 hover:text-white lg:justify-center lg:bg-gray-primary  lg:bg-opacity-90 lg:p-0"
         href={url}
         onClick={
           isCTA ? (e: any): void => handleItemClick(e, countryCode) : undefined
@@ -135,8 +135,8 @@ const DropdownMenu = ({ links, countryCode }: DropdownMenuProps) => {
 
   return (
     <div
-      className="top-20 w-full  transition group-hover:opacity-100 lg:absolute lg:block lg:w-56  lg:border-x-0 lg:border-t-2 
-    lg:border-b-0 lg:border-solid lg:border-orange-primary lg:opacity-0"
+      className="top-20 w-full  transition group-hover:block lg:absolute  lg:w-56  lg:border-x-0 lg:border-t-2 
+    lg:border-b-0 lg:border-solid lg:border-orange-primary lg:hidden"
     >
       {links.map((item, index) => (
         <DropdownItem key={index} url={item.url} text={item.text} />
