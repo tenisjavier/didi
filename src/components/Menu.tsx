@@ -32,14 +32,14 @@ const Menu = () => {
       />
       <div
         className={
-          "w-full h-full " +
+          "w-full h-auto lg:h-full " +
           (open
             ? "fixed left-0 top-20 right-0 bottom-0 overflow-y-scroll lg:absolute  bg-gray-primary opacity-95 "
             : "hidden ") +
           "lg:block"
         }
       >
-        <ul className="h-full m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-95 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
+        <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-95 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
           {pathname.includes("food") ? (
             <>
               {menuLinksFood &&
