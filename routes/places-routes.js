@@ -45,7 +45,6 @@ const placesRoutesInit = async (graphql, createPage) => {
         id: id,
         address: address,
       },
-      defer: true,
     });
   });
 };
