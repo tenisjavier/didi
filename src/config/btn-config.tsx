@@ -101,7 +101,7 @@ const btnLinks: AllBtnInterface = {
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
-    foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
+    foodBusinessLink: "https://www.didi-food.com/es-DO/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida Ya → Descarga la App",
