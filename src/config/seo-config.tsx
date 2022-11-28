@@ -190,6 +190,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
     },
+    "/conductor/didi-amigo/": {
+      title: "DiDi Amigo: Regístrate, refiere posibles conductores y gana.",
+      desc: "Con nuestro programa de referidos DiDi Amigos puedes referir personas que les gustaría conducir con DiDi y ganas dinero si lo hacen.",
+    },
     "/clubdidi/": {
       title: "Club DiDi: La comunidad que te da beneficios exclusivos",
       desc: "Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",

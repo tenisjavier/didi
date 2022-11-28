@@ -1,0 +1,28 @@
+import React from "react";
+import AccordionSection from "../AccordionSection";
+
+const DiDiAmigoFAQ = ({ faqs }) => {
+  console.log(faqs);
+  let items = [];
+  faqs.forEach((con) => {
+    items.push({
+      title: con.title,
+      content: con.content,
+    });
+  });
+
+  const title = "Conoce más sobre DiDi Amigo";
+
+  return (
+    <AccordionSection
+      bgColor="bg-white"
+      textColor="gray-primary"
+      textAccordionColor="orange-primary"
+      bgAccordionColor="bg-gray-light"
+      title={title}
+      items={items}
+    ></AccordionSection>
+  );
+};
+
+export default DiDiAmigoFAQ;

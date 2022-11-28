@@ -6,7 +6,6 @@ import DrvFlexFeatures from "../../../components/sections/DrvFlexFeatures";
 import DrvColumns from "../../../components/sections/DrvColumns";
 import HomeColumns from "../../../components/sections/PaxColumns";
 import Requirements from "../../../components/sections/Requirements";
-import SafetyCTA from "../../../components/sections/SafetyCTA";
 import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 
 const DiDiFlex = ({ data }) => {
