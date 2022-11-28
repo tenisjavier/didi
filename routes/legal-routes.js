@@ -47,7 +47,6 @@ const legalRoutesInit = async (graphql, createPage) => {
       context: {
         id: id,
       },
-      defer: true,
     });
   });
 };
