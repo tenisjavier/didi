@@ -16,7 +16,7 @@ const DirectionHero = ({ data }: DirectionHeroProps) => {
   const props: CTAProps = {
     hero: true,
     title: t("DirectionHero.title", { destination, origin }),
-    desc: t("DirectionHero.desc", { destinationAddress, originAddress }),
+    desc: t("DirectionHero.desc", { originAddress, destinationAddress }),
     textColor: t("DirectionHero.textColor"),
     bgColor: t("DirectionHero.bgColor"),
     image: (
