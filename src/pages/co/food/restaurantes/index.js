@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
-import FoodBusinessColumns from "../../../components/sections/FoodBusinessColumns";
-import FoodBusinessDownloads from "../../../components/sections/FoodBusinessDownloads";
+import Layout from "../../../../components/Layout";
+import FoodBusinessHero from "../../../../components/sections/FoodBusinessHero";
+import FoodBusinessColumns from "../../../../components/sections/FoodBusinessColumns";
+import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessDownloads";
 
 const FoodBusiness = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

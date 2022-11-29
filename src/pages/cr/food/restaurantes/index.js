@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
-import FoodBusinessColumns from "../../../components/sections/FoodBusinessColumns";
-import FoodBusinessDownloads from "../../../components/sections/FoodBusinessDownloads";
-import Requirements from "../../../components/sections/Requirements";
+import Layout from "../../../../components/Layout";
+import FoodBusinessHero from "../../../../components/sections/FoodBusinessHero";
+import FoodBusinessColumns from "../../../../components/sections/FoodBusinessColumns";
+import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessDownloads";
+import Requirements from "../../../../components/sections/Requirements";
 
 const FoodBusiness = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
