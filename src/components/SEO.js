@@ -120,6 +120,9 @@ const SEO = ({ title, desc }) => {
       <Helmet htmlAttributes={{ lang: lang }} title={title}>
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
+        {pathname.includes("thejourney") ? (
+          <meta name="robots" content="noindex"></meta>
+        ) : null}
         <link rel="canonical" href={origin + pathname} />
         {countries.map((c, index) => {
           const placeRegex = /(\/[A-Za-z]{2}\/$)/;
