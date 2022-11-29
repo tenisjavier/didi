@@ -52,7 +52,13 @@ const ArticlesTemplate = ({ data }) => {
 export default ArticlesTemplate;
 
 export const query = graphql`
-  query ($id: String, $category: String, $countryCode: String, $tag: String) {
+  query (
+    $id: String
+    $category: String
+    $countryCode: String
+    $language: String
+    $tag: String
+  ) {
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt
@@ -80,6 +86,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: {
+        language: { eq: $language }
         category: { eq: $category }
         country: { code: { eq: $countryCode } }
         id: { ne: $id }

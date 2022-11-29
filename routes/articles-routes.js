@@ -1,5 +1,4 @@
 const path = require(`path`);
-const slugify = require("slugify");
 
 // @desc: Create Routes for all countries and pass pageContext to template
 // @return: null
@@ -53,10 +52,11 @@ const articlesRoutesInit = async (graphql, createPage) => {
     if (
       !sslCountries.includes(country.code) &&
       cleanCategory !== "food" &&
-      country.code !== "ru"
-    )
+      country.code !== "ru" &&
+      country.code !== "int"
+    ) {
       path = `/${country.code}/blog/${slug}/`;
-
+    }
     createPage({
       path: path,
       component: template,
@@ -65,6 +65,7 @@ const articlesRoutesInit = async (graphql, createPage) => {
         category: cleanCategory,
         countryCode: country.code,
         tag: oneTag,
+        language: language,
       },
     });
   });
