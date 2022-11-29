@@ -10,6 +10,7 @@ import {
   SingleDropMenuItem,
 } from "../config/menu-config";
 import { getMenuLinksFood } from "../config/menu-food-config";
+import { getMenuLinksPr } from "../config/menu-pr-config";
 import gtmEvent from "../config/gtm";
 
 // @desc: Top Menu. Links from menu-config and menu-configFood.
@@ -18,8 +19,12 @@ const Menu = () => {
   const countryCode = useCountry().code;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
+  const menuLinksPr: SingleMenuItem[] = getMenuLinksPr(countryCode);
   const { pathname } = useLocation();
 
+  let links = menuLinks;
+  if (pathname.includes("food")) links = menuLinksFood;
+  if (pathname.includes("thejourney")) links = menuLinksPr;
   return (
     <div className="flex h-full items-center">
       <FontAwesomeIcon
@@ -40,26 +45,11 @@ const Menu = () => {
         }
       >
         <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-gray-primary bg-opacity-95 lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
-          {pathname.includes("food") ? (
+          {
             <>
-              {menuLinksFood &&
-                menuLinksFood.map((menuLink, index) => (
-                  <NavItem key={index} link={menuLink}>
-                    {menuLink.dropMenu ? (
-                      <DropdownMenu
-                        key={index}
-                        links={menuLink.dropMenu}
-                        countryCode={countryCode}
-                      />
-                    ) : null}
-                  </NavItem>
-                ))}
-            </>
-          ) : (
-            <>
-              {menuLinks &&
+              {links &&
                 useMemo(() => {
-                  return menuLinks.map((menuLink, index) => (
+                  return links.map((menuLink, index) => (
                     <NavItem key={index} link={menuLink}>
                       {menuLink.dropMenu ? (
                         <DropdownMenu
@@ -72,7 +62,7 @@ const Menu = () => {
                   ));
                 }, [false])}
             </>
-          )}
+          }
         </ul>
       </div>
     </div>

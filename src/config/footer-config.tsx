@@ -8,7 +8,8 @@ interface AllFooterInterface {
 }
 
 const footerLinks: AllFooterInterface = {
-  int: [],
+  es: [],
+  en: [],
   cl: [
     { text: "Pasajero", link: "/cl/pasajero/" },
     { text: "Socio Conductor", link: "/cl/driver/" },

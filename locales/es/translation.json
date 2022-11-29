@@ -334,7 +334,7 @@
   "ArticlesColumns.textColor": "white",
   "ArticlesColumns.btnText": "Leer Artículo",
   "ArticlesColumns.btnMode": "dark",
-  "ArticlesColumns.linkItem": "/thejourney/{{article}}/",
+  "ArticlesColumns.linkItem": "/es/thejourney/{{article}}/",
   "ArticleHero.textColor": "white",
   "ArticleHero.btnMode": "light",
   "GuidesHero.title": "Guías para Conductores Chile",

@@ -16,6 +16,22 @@ interface AllMenuInterface {
 }
 
 const menuLinks: AllMenuInterface = {
+  es: [
+    {
+      text: "About DiDi",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Contact Us",
+          url: "/contact/",
+        },
+        {
+          text: "Suppliers",
+          url: "/suppliers/",
+        },
+      ],
+    },
+  ],
   en: [
     {
       text: "About DiDi",
@@ -124,6 +140,10 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/conductor/requisitos-para-conducir/",
         },
         {
+          text: "Regístrate Online",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+        },
+        {
           text: "Gananciar en DiDi",
           url: "/mx/conductor/calcula-tus-ganancias/",
         },
@@ -136,8 +156,8 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/clubdidi/",
         },
         {
-          text: "Regístrate Online",
-          url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+          text: "DiDi Amigo",
+          url: "/mx/conductor/didi-amigo/",
         },
         {
           text: "Ciudades Disponibles",
