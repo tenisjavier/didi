@@ -43,6 +43,8 @@ const Layout = ({
   if (pathname.includes("food/restaurantes")) smartBannerType = "foodBusiness";
   if (pathname.includes("food/repartidores")) smartBannerType = "foodDelivery";
   if (pathname.includes("pasajero")) smartBannerType = "pax";
+  if (pathname.includes("articulos")) smartBannerType = "pax";
+  if (pathname.includes("newsroom")) smartBannerType = "pax";
   if (!countries.includes(countryCode)) {
     smartBannerType = "pax";
     sbTitle = "Download DiDi";
