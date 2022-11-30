@@ -9,7 +9,7 @@ import ArticleContent from "../../components/sections/ArticleContent";
 import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
 import NewsroomColumns from "../../components/sections/NewsroomColumns";
-import FoodBlogColumns from "../../components/sections/FoodBlogColumns";
+import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
 import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
 //dsss
 const ArticlesTemplate = ({ data }) => {
@@ -24,10 +24,10 @@ const ArticlesTemplate = ({ data }) => {
   if (pathname.includes("food/blog")) {
     hero = <FoodBlogPostHero data={data}></FoodBlogPostHero>;
     columns = (
-      <FoodBlogColumns
+      <RelatedFoodBlogColumns
         data={data}
         tags={data.contentfulArticle.tags}
-      ></FoodBlogColumns>
+      ></RelatedFoodBlogColumns>
     );
   }
   if (pathname.includes("didipay/blog")) {

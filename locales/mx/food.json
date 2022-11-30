@@ -163,6 +163,7 @@
   "FoodBlogColumns.linkItem": "/mx/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
   "FoodBlogPostHero.btnMode": "light",
+  "RelatedFoodBlogColumns.bgColor": "bg-orange-primary",
   "FoodBlogPostHeroSecondary.btnMode": "green",
   "StoreFoodAppHero.title": "Escanea el QR con tu celular",
   "StoreFoodAppHero.desc": "Descarga DiDi Food escaneando el código con tu celular",
