@@ -27,9 +27,9 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Delegaciones", link: "/mx/food/colonia/" },
     {
       text: "Términos y Condiciones",
-      link: "/mx/food/terminos-y-condiciones/",
+      link: "/mx/legal/",
     },
-    { text: "Privacidad", link: "/mx/food/privacidad/" },
+    { text: "Privacidad", link: "/mx/legal/" },
     { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
   ],
   do: [
