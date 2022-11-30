@@ -75,7 +75,7 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Registrate como Conductor",
     paxText: "Descargá DiDi Pasajero",
-    fleetText: "Registrate en DiDi Fleet",
+    fleetText: "Descargá DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
   },
   co: {

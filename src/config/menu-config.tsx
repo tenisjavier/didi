@@ -266,6 +266,10 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Fleet",
+      url: "/ar/didi-fleet/",
+    },
+    {
       text: "DiDi Taxi",
       url: "/ar/taxi/",
     },
