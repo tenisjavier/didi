@@ -461,6 +461,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Manejá y Generá Dinero",
       desc: "DiDi Conductor, registrate como socio conductor en la categoría de express o taxi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
+    "/didi-fleet/": {
+      title: "DiDi Fleet - Alquilá tus autos y generá ganancias",
+      desc: "Si tenés uno o más autos que quieras poner en alquiler, subilos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Generá ganancias de manera pasiva alquilando tus autos con DiDi Fleet.",
+    },
     "/taxi/": {
       title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
       desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
