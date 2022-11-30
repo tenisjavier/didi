@@ -546,7 +546,7 @@
     },
     {
       "title": "Call us",
-      "desc": "You can speak to our Customer Support Team on the live chat",
+      "desc": "You can speak to our Customer Support Team",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
