@@ -209,7 +209,7 @@
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
   "FleetSocioCTA.title": "Registrate como socio flotilla:",
-  "FleetSocioCTA.desc": "Para registrarte necesitarás los siguientes documentos: \n 1. Documento Nacional de Identidad (DNI) \n 2. Licencia para conducir",
+  "FleetSocioCTA.desc": "Para registrarte necesitarás los siguientes documentos: \n 1. Documento Nacional de Identidad (DNI)",
   "FleetRegistraAutos.title": "Registrá tus autos en la aplicación de DiDi Fleet",
   "FleetRegistraAutos.desc": "Una vez registrado y con tus documentos aprobados, podrás comenzar a agregar autos a tu flota. \n Para subir autos a tu flota necesitarás los siguientes documentos para cada vehículo: \n 1. Cédula del auto \n 2. Póliza de seguro del auto",
   "FleetRegistraAutos.bgColor": "bg-orange-primary",

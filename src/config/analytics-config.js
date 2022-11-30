@@ -285,25 +285,25 @@ const insertBtnParams = () => {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
       campaignId = "refpage_" + window.location.pathname;
-      if (countryCode === "mx") {
-        adgroupId = "h5";
-        const test_version = window.localStorage.getItem("test_version");
-        if (!test_version) {
-          let group = Math.random();
-          window.localStorage.setItem("test_version", "h5");
-          if (group < 0.5) {
-            window.localStorage.setItem("test_version", "quickbolt");
-            adgroupId = "quickbolt";
-            form_url =
-              "https://page.didiglobal.com/global/quickbolt/Landing-Page-Funnel/driver-signup-A-es-MX.html";
-          }
-        }
-        if (test_version === "quickbolt") {
-          adgroupId = "quickbolt";
-          form_url =
-            "https://page.didiglobal.com/global/quickbolt/Landing-Page-Funnel/driver-signup-A-es-MX.html";
-        }
-      }
+      // if (countryCode === "mx") {
+      //   adgroupId = "h5";
+      //   const test_version = window.localStorage.getItem("test_version");
+      //   if (!test_version) {
+      //     let group = Math.random();
+      //     window.localStorage.setItem("test_version", "h5");
+      //     if (group < 0.5) {
+      //       window.localStorage.setItem("test_version", "quickbolt");
+      //       adgroupId = "quickbolt";
+      //       form_url =
+      //         "https://page.didiglobal.com/global/quickbolt/Landing-Page-Funnel/driver-signup-A-es-MX.html";
+      //     }
+      //   }
+      //   if (test_version === "quickbolt") {
+      //     adgroupId = "quickbolt";
+      //     form_url =
+      //       "https://page.didiglobal.com/global/quickbolt/Landing-Page-Funnel/driver-signup-A-es-MX.html";
+      //   }
+      // }
     }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];

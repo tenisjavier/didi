@@ -6,6 +6,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import FooterFood from "./FooterFood";
 import SmartBanner from "./SmartBanner";
+import PasswordPopup from "./PasswordPopup";
 import "../styles/global.css";
 
 // @desc: layout with global header, menu, smartbanner and footer
@@ -16,6 +17,7 @@ const Layout = ({
   sbTitle,
   sbDesc,
   sbCTA,
+  password,
   children,
 }) => {
   const countries = [
@@ -70,6 +72,7 @@ const Layout = ({
       ) : (
         <Footer></Footer>
       )}
+      {password ? <PasswordPopup></PasswordPopup> : null}
     </CountryProvider>
   );
 };
