@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../components/CTASection";
 import Layout from "../components/Layout";
 import TermsAndConditionsContent from "../components/sections/TermsAndConditionsContent";
+import "../styles/gray.css";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -36,10 +37,12 @@ const Index = ({ data }) => {
   };
 
   return (
-    <Layout>
-      <CTASection {...CTAProps}></CTASection>
-      <TermsAndConditionsContent data={data}></TermsAndConditionsContent>
-    </Layout>
+    <div id="gray">
+      <Layout>
+        <CTASection {...CTAProps}></CTASection>
+        <TermsAndConditionsContent data={data}></TermsAndConditionsContent>
+      </Layout>
+    </div>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import StoreHero from "../components/sections/StoreHero";
 import { QRCodeSVG } from "qrcode.react";
+import "../styles/gray.css";
 
 const Store = () => {
   const [QRUrl, setQRUrl] = useState(
@@ -33,9 +34,11 @@ const Store = () => {
     bgColor: "bg-orange-primary",
   };
   return (
-    <Layout>
-      <StoreHero image={qr} {...props}></StoreHero>
-    </Layout>
+    <div id="gray">
+      <Layout>
+        <StoreHero image={qr} {...props}></StoreHero>
+      </Layout>
+    </div>
   );
 };
 
