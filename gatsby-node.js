@@ -13,7 +13,7 @@ const redirects = require("./routes/redirects");
 
 exports.createPages = async ({
   graphql,
-  actions: { createPage, createRedirect, createSlice },
+  actions: { createPage, createRedirect },
   reporter,
 }) => {
   await redirects.init(graphql, createRedirect);
@@ -25,8 +25,4 @@ exports.createPages = async ({
   await articlesRoutes.init(graphql, createPage);
   await legalRoutes.init(graphql, createPage);
   await repartidoresRoutes.init(graphql, createPage);
-  createSlice({
-    id: `header`,
-    component: require.resolve(`./src/components/Header.tsx`),
-  });
 };

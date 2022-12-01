@@ -332,7 +332,7 @@
   "ArticlesColumns.title": "",
   "ArticlesColumns.bgColor": "bg-blue-primary",
   "ArticlesColumns.textColor": "white",
-  "ArticlesColumns.btnText": "Leer Artículo",
+  "ArticlesColumns.btnText": "Read More",
   "ArticlesColumns.btnMode": "dark",
   "ArticlesColumns.linkItem": "/thejourney/{{article}}/",
   "ArticleHero.textColor": "white",
