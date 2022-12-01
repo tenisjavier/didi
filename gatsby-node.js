@@ -5,7 +5,7 @@ const directionsRoutes = require("./routes/directions-routes");
 const guidesRoutes = require("./routes/guides-routes");
 const articlesRoutes = require("./routes/articles-routes");
 const legalRoutes = require("./routes/legal-routes");
-const repartidoresRoutes = require("./routes/repartidores-routes")
+const repartidoresRoutes = require("./routes/repartidores-routes");
 const redirects = require("./routes/redirects");
 
 // Implement the Gatsby API “createPages”. This is called once the
@@ -13,7 +13,7 @@ const redirects = require("./routes/redirects");
 
 exports.createPages = async ({
   graphql,
-  actions: { createPage, createRedirect },
+  actions: { createPage, createRedirect, createSlice },
   reporter,
 }) => {
   await redirects.init(graphql, createRedirect);
@@ -25,4 +25,8 @@ exports.createPages = async ({
   await articlesRoutes.init(graphql, createPage);
   await legalRoutes.init(graphql, createPage);
   await repartidoresRoutes.init(graphql, createPage);
+  createSlice({
+    id: `header`,
+    component: require.resolve(`./src/components/Header.tsx`),
+  });
 };
