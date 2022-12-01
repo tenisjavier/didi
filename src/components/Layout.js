@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Slice } from "gatsby";
 import { useLocation } from "@reach/router";
 import { CountryProvider } from "../context/countryContext";
 import Seo from "./SEO";
+import Header from "../components/Header";
 import Footer from "./Footer";
 import FooterFood from "./FooterFood";
 import SmartBanner from "./SmartBanner";
@@ -65,7 +65,7 @@ const Layout = ({
   const pageContent = (
     <>
       <Seo title={title} desc={desc}></Seo>
-      <Slice alias="header" />
+      <Header></Header>
       {children}
       {sb && (
         <SmartBanner
