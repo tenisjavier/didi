@@ -11,7 +11,10 @@ const Article = ({ data }) => {
     return image.title === "cl.ArticlesHero.bgImage";
   })[0];
   return (
-    <Layout title="The Journey Costa Rica: News About DiDi in Costa Rica">
+    <Layout
+      title="The Journey Costa Rica: News About DiDi in Costa Rica"
+      password={true}
+    >
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
       <Pagination data={data} postsPerPage={20}></Pagination>
