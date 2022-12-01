@@ -19,15 +19,15 @@ const menuLinks: AllMenuInterface = {
   es: [
     {
       text: "DiDi Internacional",
-      url: "/didi-internacional/",
+      url: "/es/thejourney/didi-internacional/",
       dropMenu: [
         {
           text: "Noticias de la Compañía",
-          url: "/noticias-compania/",
+          url: "/es/thejourney/noticias-compania/",
         },
         {
           text: "Diversidad",
-          url: "/diversidad/",
+          url: "/es/thejourney/diversidad/",
         },
         {
           text: "Sobre nosotros",
@@ -37,147 +37,147 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "Movilidad",
-      url: "/movilidad/",
+      url: "/es/thejourney/movilidad/",
       dropMenu: [
         {
           text: "Conductores",
-          url: "/conductores/",
+          url: "/es/thejourney/conductores/",
         },
         {
           text: "Pasajeros",
-          url: "/pasajeros/",
+          url: "/es/thejourney/pasajeros/",
         },
       ],
     },
     {
       text: "Food",
-      url: "/food/",
+      url: "/es/thejourney/food/",
       dropMenu: [
         {
           text: "Comensales",
-          url: "/comensales/",
+          url: "/es/thejourney/comensales/",
         },
         {
           text: "Restaurantes",
-          url: "/restaurantes/",
+          url: "/es/thejourney/restaurantes/",
         },
         {
           text: "Couriers",
-          url: "/couriers/",
+          url: "/es/thejourney/couriers/",
         },
       ],
     },
     {
       text: "Servicios Financieros",
-      url: "/servicios-financieros/",
+      url: "/es/thejourney/servicios-financieros/",
       dropMenu: [
         {
           text: "DiDi Pay",
-          url: "/didi-pay/",
+          url: "/es/thejourney/didi-pay/",
         },
         {
           text: "Prestamos",
-          url: "/prestamos/",
+          url: "/es/thejourney/prestamos/",
         },
       ],
     },
     {
       text: "Seguridad",
-      url: "/seguridad/",
+      url: "/es/thejourney/seguridad/",
       dropMenu: [
         {
           text: "Iniciativas de Seguridad",
-          url: "/iniciativas-de-seguridad/",
+          url: "/es/thejourney/iniciativas-de-seguridad/",
         },
       ],
     },
     {
       text: "Innovación",
-      url: "/innovacion/",
+      url: "/es/thejourney/innovacion/",
       dropMenu: [
         {
           text: "Manejo Autónomo",
-          url: "/manejo-autonomo/",
+          url: "/es/thejourney/manejo-autonomo/",
         },
         {
           text: "Tecnología",
-          url: "/tecnologia/",
+          url: "/es/thejourney/tecnologia/",
         },
       ],
     },
     {
       text: "Sustentabilidad",
-      url: "/sustentabilidad/",
+      url: "/es/thejourney/sustentabilidad/",
       dropMenu: [
         {
           text: "Vehículos Eléctricos",
-          url: "/vehiculos-electricos/",
+          url: "/es/thejourney/vehiculos-electricos/",
         },
       ],
     },
     {
       text: "Paises",
-      url: "/todos-los-paises/",
+      url: "/es/thejourney/todos-los-paises/",
       dropMenu: [
         {
           text: "Argentina",
-          url: "/argentina/",
+          url: "/es/thejourney/argentina/",
         },
         {
           text: "Australia",
-          url: "/australia/",
+          url: "/es/thejourney/australia/",
         },
         {
           text: "Brasil",
-          url: "/brasil/",
+          url: "/es/thejourney/brasil/",
         },
         {
           text: "Chile",
-          url: "/chile/",
+          url: "/es/thejourney/chile/",
         },
         {
           text: "Colombia",
-          url: "/colombia/",
+          url: "/es/thejourney/colombia/",
         },
         {
           text: "Costa Rica",
-          url: "/costa-rica/",
+          url: "/es/thejourney/costa-rica/",
         },
         {
           text: "República Dominicana",
-          url: "/republica-dominicana/",
+          url: "/es/thejourney/republica-dominicana/",
         },
         {
           text: "Ecuador",
-          url: "/ecuador/",
+          url: "/es/thejourney/ecuador/",
         },
         {
           text: "Egypt",
-          url: "/egypt/",
+          url: "/es/thejourney/egypt/",
         },
         {
           text: "Japan",
-          url: "/japan/",
+          url: "/es/thejourney/japan/",
         },
         {
           text: "México",
-          url: "/mexico/",
+          url: "/es/thejourney/mexico/",
         },
         {
           text: "Nueva Zelanda",
-          url: "/nueva-zelanda/",
+          url: "/es/thejourney/nueva-zelanda/",
         },
         {
           text: "Panamá",
-          url: "/panama/",
+          url: "/es/thejourney/panama/",
         },
         {
           text: "Perú",
-          url: "/peru/",
+          url: "/es/thejourney/peru/",
         },
         {
           text: "Rusia",
-          url: "/rusia/",
+          url: "/es/thejourney/rusia/",
         },
       ],
     },
@@ -185,161 +185,161 @@ const menuLinks: AllMenuInterface = {
   en: [
     {
       text: "DiDi International",
-      url: "/didi-international/",
+      url: "/thejourney/didi-international/",
       dropMenu: [
         {
           text: "Company News",
-          url: "/company-news/",
+          url: "/thejourney/company-news/",
         },
         {
           text: "Diversity",
-          url: "/diversity/",
+          url: "/thejourney/diversity/",
         },
       ],
     },
     {
       text: "Mobility",
-      url: "/mobility/",
+      url: "/thejourney/mobility/",
       dropMenu: [
         {
           text: "Drivers",
-          url: "/drivers/",
+          url: "/thejourney/drivers/",
         },
         {
           text: "Riders",
-          url: "/riders/",
+          url: "/thejourney/riders/",
         },
       ],
     },
     {
       text: "Food",
-      url: "/food/",
+      url: "/thejourney/food/",
       dropMenu: [
         {
           text: "Eaters",
-          url: "/eaters/",
+          url: "/thejourney/eaters/",
         },
         {
           text: "Restaurants",
-          url: "/restaurants/",
+          url: "/thejourney/restaurants/",
         },
         {
           text: "Couriers",
-          url: "/couriers/",
+          url: "/thejourney/couriers/",
         },
       ],
     },
     {
       text: "Financial Service",
-      url: "/financial-service/",
+      url: "/thejourney/financial-service/",
       dropMenu: [
         {
           text: "DiDi Pay",
-          url: "/didi-pay/",
+          url: "/thejourney/didi-pay/",
         },
         {
           text: "Prestamos",
-          url: "/prestamos/",
+          url: "/thejourney/prestamos/",
         },
       ],
     },
     {
       text: "Safety and Security",
-      url: "/safety/",
+      url: "/thejourney/safety/",
       dropMenu: [
         {
           text: "Safety Iniciatives",
-          url: "/safety-iniciatives/",
+          url: "/thejourney/safety-iniciatives/",
         },
       ],
     },
     {
       text: "Innovation",
-      url: "/innovation/",
+      url: "/thejourney/innovation/",
       dropMenu: [
         {
           text: "Autonomous Driving",
-          url: "/autonomous-driving/",
+          url: "/thejourney/autonomous-driving/",
         },
         {
           text: "Technology",
-          url: "/technology/",
+          url: "/thejourney/technology/",
         },
       ],
     },
     {
       text: "Sustainability",
-      url: "/sustainability/",
+      url: "/thejourney/sustainability/",
       dropMenu: [
         {
           text: "Electric Vehicles",
-          url: "/electric-vehicles/",
+          url: "/thejourney/electric-vehicles/",
         },
       ],
     },
     {
       text: "Countries",
-      url: "/all-countries/",
+      url: "/thejourney/all-countries/",
       dropMenu: [
         {
           text: "Argentina",
-          url: "/argentina/",
+          url: "/thejourney/argentina/",
         },
         {
           text: "Australia",
-          url: "/australia/",
+          url: "/thejourney/australia/",
         },
         {
           text: "Brazil",
-          url: "/brazil/",
+          url: "/thejourney/brazil/",
         },
         {
           text: "Chile",
-          url: "/chile/",
+          url: "/thejourney/chile/",
         },
         {
           text: "Colombia",
-          url: "/colombia/",
+          url: "/thejourney/colombia/",
         },
         {
           text: "Costa Rica",
-          url: "/costa-rica/",
+          url: "/thejourney/costa-rica/",
         },
         {
           text: "Dominican Republic",
-          url: "/dominican-republic/",
+          url: "/thejourney/dominican-republic/",
         },
         {
           text: "Ecuador",
-          url: "/ecuador/",
+          url: "/thejourney/ecuador/",
         },
         {
           text: "Egypt",
-          url: "/egypt/",
+          url: "/thejourney/egypt/",
         },
         {
           text: "Japan",
-          url: "/japan/",
+          url: "/thejourney/japan/",
         },
         {
           text: "Mexico",
-          url: "/mexico/",
+          url: "/thejourney/mexico/",
         },
         {
           text: "New Zealand",
-          url: "/new-zealand/",
+          url: "/thejourney/new-zealand/",
         },
         {
           text: "Panama",
-          url: "/panama/",
+          url: "/thejourney/panama/",
         },
         {
           text: "Peru",
-          url: "/peru/",
+          url: "/thejourney/peru/",
         },
         {
           text: "Russia",
-          url: "/russia/",
+          url: "/thejourneyd/russia/",
         },
       ],
     },
