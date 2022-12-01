@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { Slice } from "gatsby";
 import { useLocation } from "@reach/router";
 import { CountryProvider } from "../context/countryContext";
 import Seo from "./SEO";
-import Header from "./Header";
 import Footer from "./Footer";
 import FooterFood from "./FooterFood";
 import SmartBanner from "./SmartBanner";
@@ -35,6 +35,9 @@ const Layout = ({
     "au",
     "nz",
   ];
+
+  const [showPassword, setShowPassword] = useState(password);
+
   const { pathname } = useLocation();
   let countryCode = pathname ? pathname.substring(1, 3) : "";
   countryCode = countries.includes(countryCode) ? countryCode : "en";
@@ -54,25 +57,38 @@ const Layout = ({
     sbCTA = "Download";
   }
 
-  return (
-    <CountryProvider>
+  const handleShowPassword = (val) => {
+    setShowPassword(val);
+  };
+
+  //slice is a new feature of gatsby 5 that speed up builds
+  const pageContent = (
+    <>
       <Seo title={title} desc={desc}></Seo>
-      <Header></Header>
+      <Slice alias="header" />
       {children}
-      {sb ? (
+      {sb && (
         <SmartBanner
           type={smartBannerType}
           sbTitle={sbTitle}
           sbDesc={sbDesc}
           sbCTA={sbCTA}
         ></SmartBanner>
-      ) : null}
+      )}
       {pathname.includes("food") ? (
         <FooterFood></FooterFood>
       ) : (
         <Footer></Footer>
       )}
-      {password ? <PasswordPopup></PasswordPopup> : null}
+    </>
+  );
+  return (
+    <CountryProvider>
+      {showPassword ? (
+        <PasswordPopup handleShowPassword={handleShowPassword}></PasswordPopup>
+      ) : (
+        pageContent
+      )}
     </CountryProvider>
   );
 };
