@@ -25,29 +25,43 @@ const Navlogo = () => {
   const countryCode = useCountry().code;
   const { pathname } = useLocation();
 
-  const logo = pathname.includes("food") ? (
-    <Link className="" to={`/${countryCode}/food/`}>
+  let logoImg = (
+    <StaticImage
+      src="../images/didi-logo.png"
+      alt="DiDi"
+      className=""
+      width={100}
+    />
+  );
+  if (pathname.includes("food"))
+    logoImg = (
       <StaticImage
-        src={`../images/didi-food-logo.png`}
+        src="../images/didi-food-logo.png"
         alt="DiDi"
         className=""
         width={150}
       />
-    </Link>
-  ) : (
-    <Link
-      className=""
-      to={`${countryCode !== "en" ? `/${countryCode}/` : "/"}`}
-    >
+    );
+  if (pathname.includes("/co/food/"))
+    logoImg = (
       <StaticImage
-        src={`../images/didi-logo.png`}
+        src="../images/logo-didi-food-colombia.png"
         alt="DiDi"
         className=""
-        width={100}
+        width={150}
       />
-    </Link>
+    );
+
+  let logoLink = `/${countryCode}/`;
+  if (countryCode === "en") logoLink = "/";
+
+  return (
+    <div className="p-3">
+      <Link className="" to={logoLink}>
+        {logoImg}
+      </Link>
+    </div>
   );
-  return <div className="p-3">{logo}</div>;
 };
 
 export default Header;

@@ -36,7 +36,16 @@ const Layout = ({
     "nz",
   ];
 
-  const [showPassword, setShowPassword] = useState(password);
+  let showPass = password;
+  const isBrowser = typeof window !== "undefined";
+  if (password) {
+    if (!isBrowser) showPass = false;
+    const sessionItem = window.sessionStorage.getItem("protected");
+    showPass = sessionItem !== null && sessionItem === "false" ? false : true;
+  }
+
+  console.log(showPass);
+  const [showPassword, setShowPassword] = useState(showPass);
 
   const { pathname } = useLocation();
   let countryCode = pathname ? pathname.substring(1, 3) : "";
@@ -58,6 +67,7 @@ const Layout = ({
   }
 
   const handleShowPassword = (val) => {
+    window.sessionStorage.setItem("protected", false);
     setShowPassword(val);
   };
 
