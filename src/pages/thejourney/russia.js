@@ -11,7 +11,10 @@ const Article = ({ data }) => {
     return image.title === "cl.ArticlesHero.bgImage";
   })[0];
   return (
-    <Layout title="The Journey: News about Mobility" password={true}>
+    <Layout
+      title="The Journey Russia: News About DiDi in Russia"
+      password={true}
+    >
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
       <Pagination data={data} postsPerPage={20}></Pagination>
@@ -35,7 +38,7 @@ export const query = graphql`
       filter: {
         language: { eq: "en" }
         category: { eq: "pr" }
-        tags: { elemMatch: { name: { eq: "Mobility" } } }
+        country: { code: { eq: "ru" } }
       }
       sort: { updatedAt: DESC }
     ) {

@@ -33,7 +33,7 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: {
-        language: { eq: "es" }
+        language: { eq: "en" }
         category: { eq: "pr" }
         tags: { elemMatch: { name: { eq: "Riders" } } }
       }
