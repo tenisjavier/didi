@@ -53,7 +53,8 @@ const articlesRoutesInit = async (graphql, createPage) => {
       !sslCountries.includes(country.code) &&
       cleanCategory !== "food" &&
       country.code !== "ru" &&
-      country.code !== "int"
+      country.code !== "int" &&
+      cleanCategory !== "pr"
     ) {
       path = `/${country.code}/blog/${slug}/`;
     }

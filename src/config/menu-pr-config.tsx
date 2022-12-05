@@ -339,7 +339,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Russia",
-          url: "/thejourneyd/russia/",
+          url: "/thejourney/russia/",
         },
       ],
     },
