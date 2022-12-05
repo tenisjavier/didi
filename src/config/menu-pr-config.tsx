@@ -29,10 +29,6 @@ const menuLinks: AllMenuInterface = {
           text: "Diversidad",
           url: "/es/thejourney/diversidad/",
         },
-        {
-          text: "Sobre nosotros",
-          url: "/",
-        },
       ],
     },
     {
@@ -83,7 +79,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "Seguridad",
-      url: "/es/thejourney/seguridad/",
+      url: "/es/thejourney/iniciativas-de-seguridad/",
       dropMenu: [
         {
           text: "Iniciativas de Seguridad",
@@ -245,11 +241,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "Safety and Security",
-      url: "/thejourney/safety/",
+      url: "/thejourney/safety-initiatives/",
       dropMenu: [
         {
-          text: "Safety Iniciatives",
-          url: "/thejourney/safety-iniciatives/",
+          text: "Safety Initiatives",
+          url: "/thejourney/safety-initiatives/",
         },
       ],
     },

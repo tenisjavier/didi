@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import ArticlesHero from "../../components/sections/ArticlesHero";
-import ArticlesColumns from "../../components/sections/ArticlesColumns";
-import Pagination from "../../components/Pagination";
+import Layout from "../../../components/Layout";
+import ArticlesHero from "../../../components/sections/ArticlesHero";
+import ArticlesColumns from "../../../components/sections/ArticlesColumns";
+import Pagination from "../../../components/Pagination";
 
 const Article = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -11,7 +11,10 @@ const Article = ({ data }) => {
     return image.title === "cl.ArticlesHero.bgImage";
   })[0];
   return (
-    <Layout title="The Journey: News about Mobility" password={true}>
+    <Layout
+      title="The Journey Costa Rica: Noticias de Tecnología"
+      password={true}
+    >
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns data={data}></ArticlesColumns>
       <Pagination data={data} postsPerPage={20}></Pagination>
@@ -33,9 +36,9 @@ export const query = graphql`
     }
     allContentfulArticle(
       filter: {
-        language: { eq: "en" }
+        language: { eq: "es" }
         category: { eq: "pr" }
-        tags: { elemMatch: { name: { eq: "Mobility" } } }
+        tags: { elemMatch: { name: { eq: "Technology" } } }
       }
       sort: { updatedAt: DESC }
     ) {
