@@ -10,7 +10,7 @@ const Legal = ({ data }) => {
     return image.title === "mx.HomeHero.bgImage";
   })[0];
   const content = data.contentfulLegal.content;
-  console.log(content);
+
   return (
     <Layout>
       <LegalHero bgImage={homeHeroBgImage}></LegalHero>

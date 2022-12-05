@@ -39,12 +39,13 @@ const Layout = ({
   let showPass = password;
   const isBrowser = typeof window !== "undefined";
   if (password) {
+    if (isBrowser) {
+      const sessionItem = window.sessionStorage.getItem("protected");
+      showPass = sessionItem !== null && sessionItem === "false" ? false : true;
+    }
     if (!isBrowser) showPass = false;
-    const sessionItem = window.sessionStorage.getItem("protected");
-    showPass = sessionItem !== null && sessionItem === "false" ? false : true;
   }
 
-  console.log(showPass);
   const [showPassword, setShowPassword] = useState(showPass);
 
   const { pathname } = useLocation();

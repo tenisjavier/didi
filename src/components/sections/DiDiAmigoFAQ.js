@@ -2,7 +2,6 @@ import React from "react";
 import AccordionSection from "../AccordionSection";
 
 const DiDiAmigoFAQ = ({ faqs }) => {
-  console.log(faqs);
   let items = [];
   faqs.forEach((con) => {
     items.push({

@@ -37,7 +37,6 @@ const options: optionsInterface = {
     ),
     [BLOCKS.PARAGRAPH]: (node, children) => <p className={""}>{children}</p>,
     [BLOCKS.TABLE]: (node) => {
-      console.log(node);
       return (
         <div className="relative rounded-xl overflow-auto">
           <div className="shadow-sm overflow-hidden my-8">

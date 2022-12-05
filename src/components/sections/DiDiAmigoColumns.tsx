@@ -26,7 +26,6 @@ const DiDiAmigoColumns = ({ images, icons }: DiDiAmigoColumnsProps) => {
     columns: t("DiDiAmigoColumns.columns", { returnObjects: true }),
   };
   if (images) {
-    console.log(props);
     props.columns.forEach((col, index) => {
       const image = images[index].gatsbyImageData;
       col.image = (
