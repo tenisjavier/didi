@@ -12,7 +12,7 @@ const Article = ({ data }) => {
   })[0];
   return (
     <Layout
-      title="The Journey Costa Rica: Noticias de Sustentabilidad"
+      title="The Journey Costa Rica: Noticias de Préstamos"
       password={true}
     >
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
@@ -38,7 +38,7 @@ export const query = graphql`
       filter: {
         language: { eq: "es" }
         category: { eq: "pr" }
-        tags: { elemMatch: { name: { eq: "Sustainability" } } }
+        tags: { elemMatch: { name: { eq: "DiDi Prestamos" } } }
       }
       sort: { updatedAt: DESC }
     ) {

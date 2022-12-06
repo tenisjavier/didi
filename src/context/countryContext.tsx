@@ -51,7 +51,10 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
   const subfolder = /^\/..\//.exec(pathname);
   let countryCode = subfolder ? subfolder[0].substring(1, 3) : "";
   countryCode = countries.includes(countryCode) ? countryCode : "en";
-  let ns = pathname.includes("/food/") ? "food" : "translation";
+  let ns =
+    pathname.includes("/food/") && !pathname.includes("/thejourney/")
+      ? "food"
+      : "translation";
   let [country, updateCountry] = useState({
     code: countryCode,
     ns: ns,
