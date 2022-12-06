@@ -38,7 +38,6 @@ const DiDiFleet = ({ data }) => {
       <FleetRegistraAutosCTA
         image={FleetRegistraAutosCTAImage}
       ></FleetRegistraAutosCTA>
-      <FleetAgregaCTA image={FleetAgregaCTAImage}></FleetAgregaCTA>
       <FleetColumns images={FleetColumnsImage.reverse()}></FleetColumns>
     </Layout>
   );
