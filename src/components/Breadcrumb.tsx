@@ -14,8 +14,8 @@ const Breadcrumb = () => {
   });
 
   return (
-    <nav className="bg-grey-light absolute top-24 z-10 hidden w-full  text-white justify-center rounded-md md:flex  md:justify-start">
-      <ol className="flex list-none">
+    <nav className="bg-grey-light absolute top-24 z-10 hidden w-full  text-white justify-center rounded-md md:flex  md:justify-between px-6 py-4">
+      <ol className="flex list-none p-0 m-0">
         {directories.map((dir, index) => {
           if (index === 0) {
             return (
@@ -190,15 +190,17 @@ const Breadcrumb = () => {
           }
         })}
       </ol>
-      {/* <ol className="flex list-none">
-        <li>
-          <Link to="/thejourney/">EN</Link>
-        </li>
-        <li>|</li>
-        <li>
-          <Link to="/es/thejourney/">ES</Link>
-        </li>
-      </ol> */}
+      {pathname.includes("/thejourney/") && (
+        <ol className="flex list-none p-0 m-0">
+          <li>
+            <Link to="/thejourney/"> EN </Link>
+          </li>
+          <li> | </li>
+          <li>
+            <Link to="/es/thejourney/"> ES </Link>
+          </li>
+        </ol>
+      )}
     </nav>
   );
 };

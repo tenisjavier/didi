@@ -159,8 +159,8 @@ const menuLinksFood: AllMenuInterface = {
     },
     {
       text: "Blog",
-      url: "co/food/blog"
-    }
+      url: "/co/food/blog",
+    },
   ],
   pe: [
     {
@@ -181,8 +181,8 @@ const menuLinksFood: AllMenuInterface = {
     },
     {
       text: "Blog",
-      url: "/pe/food/blog"
-    }
+      url: "/pe/food/blog",
+    },
   ],
 };
 

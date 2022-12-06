@@ -539,7 +539,7 @@
       "desc": "Tenemos los mejores consejos para que aumentes la visibilidad de tu restaurante e incrementes con ello tus ventas.",
       "textColor": "gray-primary",
       "btnText": "Descarga material para redes sociales",
-      "btnLink": "/mx/food/restaurantes/guias-educaionales",
+      "btnLink": "/mx/food/restaurantes/guias-educacionales/",
       "btnMode": "light"
     }
   ],
@@ -772,5 +772,4 @@
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
   "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/",
   "RepartidorHero.btnMode": "primary"
-
 }
