@@ -14,7 +14,7 @@ const FoodBlog = ({ data }) => {
     <Layout>
       <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
       <FoodBlogColumns data={data}></FoodBlogColumns>
-      <Pagination data={data} postsPerPage={20}></Pagination>
+      <Pagination data={data} postsPerPage={50}></Pagination>
     </Layout>
   );
 };
@@ -42,6 +42,7 @@ export const query = graphql`
         featuredImage {
           gatsbyImageData
         }
+        feature
       }
     }
   }

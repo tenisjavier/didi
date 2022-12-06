@@ -281,8 +281,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas colonias... y en minutos",
     },
     "/food/blog/": {
-      title: "Artículos de Comida y Restaurantes",
-      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
+      title: "Blog DiDi Food: Temas de Comida, Restaurantes y Gastronomía Mexicana",
+      desc: "En el blog de DiDi Food encontrarás recomendaciones sobre restaurantes de moda, platillos, rutas gastronómicas y tendencias del sector. Descubrenos",
     },
     "/food/restaurantes/registro/": {
       title: "Restaurantes - Registro",
