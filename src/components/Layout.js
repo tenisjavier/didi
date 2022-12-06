@@ -54,7 +54,8 @@ const Layout = ({
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
   if (pathname.includes("didipay")) smartBannerType = "payment";
-  if (pathname.includes("food")) smartBannerType = "foodEater";
+  if (pathname.includes("/food") && !pathname.includes("thejourney"))
+    smartBannerType = "foodEater";
   if (pathname.includes("food/restaurantes")) smartBannerType = "foodBusiness";
   if (pathname.includes("food/repartidores")) smartBannerType = "foodDelivery";
   if (pathname.includes("pasajero")) smartBannerType = "pax";
@@ -86,7 +87,7 @@ const Layout = ({
           sbCTA={sbCTA}
         ></SmartBanner>
       )}
-      {pathname.includes("food") ? (
+      {pathname.includes("/food") && !pathname.includes("thejourney") ? (
         <FooterFood></FooterFood>
       ) : (
         <Footer></Footer>
