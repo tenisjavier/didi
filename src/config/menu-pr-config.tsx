@@ -226,8 +226,8 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "Financial Service",
-      url: "/thejourney/financial-service/",
+      text: "Financial Services",
+      url: "/thejourney/financial-services/",
       dropMenu: [
         {
           text: "DiDi Pay",
