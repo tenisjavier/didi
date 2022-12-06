@@ -21,7 +21,7 @@ const footerLinks: AllFooterInterface = {
   ],
   mx: [
     { text: "Pasajero", link: "/mx/pasajero/" },
-    { text: "Socio Conductor", link: "/mx/driver/" },
+    { text: "Socio Conductor", link: "/mx/conductor/" },
     { text: "DiDi Fleet", link: "/mx/didi-fleet/" },
     { text: "DiDi Pay", link: "/mx/didipay/" },
     { text: "Seguridad", link: "/mx/seguridad/" },
@@ -65,7 +65,6 @@ const footerLinks: AllFooterInterface = {
   co: [
     { text: "DiDi Pasajero", link: "/co/pasajero/" },
     { text: "DiDi Conductor", link: "/co/driver/" },
-    { text: "Lugares", link: "/co/lugares/" },
     { text: "DiDi Taxi", link: "/co/taxi/" },
     { text: "Seguridad", link: "/co/seguridad/" },
     { text: "Legal", link: "/co/legal/" },
@@ -107,7 +106,6 @@ const footerLinks: AllFooterInterface = {
     { text: "Career", link: "/nz/career/" },
     { text: "Offers", link: "/nz/offers/" },
     { text: "Legal", link: "/nz/legal/" },
-    { text: "Newsroom", link: "/nz/newsroom/" },
   ],
   ru: [
     { text: "Водителям", link: "/ru/driver/" },
