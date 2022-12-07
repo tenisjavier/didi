@@ -50,7 +50,6 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
       btnText: t("ArticlesColumns.btnText"),
       btnLink: link,
       btnMode: t("ArticlesColumns.btnMode"),
-      height: "h-96",
     };
   });
   return <ColumnsSection {...props}></ColumnsSection>;
