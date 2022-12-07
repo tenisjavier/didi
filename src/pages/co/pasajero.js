@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
+import LostItemsBanner from "../../components/sections/LostItemsBanner";
 import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
@@ -21,6 +22,7 @@ const Pasajero = ({ data }) => {
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxColumns></PaxColumns>
+      <LostItemsBanner></LostItemsBanner>
       <SilderSection
         data={products}
         title="Hay un DiDi Para ti"

@@ -63,8 +63,8 @@
       "height": "h-80"
     },
     {
-      "title": "Legal",
-      "desc": "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Ecuador.",
+      "title": "Preguntas Frecuentes",
+      "desc": "Conoce aquí las respuestas a las preguntas más frecuentes de nuestros Socios Conductores y Usuarios de DiDi Pasajero",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ec/legal/",
@@ -186,6 +186,13 @@
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxHero.btnText": "Descarga DiDi Pasajero",
+  "LostItemsBanner.title": "¿Olvidaste un objeto en el vehículo?",
+  "LostItemsBanner.desc": "Da clic en el botón de abajo, dirígete a Preguntas Pasajeros > Inconvenientes con un arrendamiento  y en la sección Olvidé un objeto en el vehículo llena el formulario para poder ayudarte",
+  "LostItemsBanner.bgColor": "bg-blue-primary",
+  "LostItemsBanner.textColor": "white",
+  "LostItemsBanner.btnMode": "light",
+  "LostItemsBanner.btnText": "Cómo Recuperarlo",
+  "LostItemsBanner.btnLink": "/ec/centro-de-ayuda/#inconvenientes-con-un-viaje",
   "PaxColumns.bgColor": "bg-gray-light",
   "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [

@@ -50,6 +50,7 @@ const directionsRoutesInit = async (graphql, createPage) => {
       context: {
         id: id,
       },
+      defer: true,
     });
   });
 };

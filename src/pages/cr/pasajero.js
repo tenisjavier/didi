@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
 import PaxColumns from "../../components/sections/PaxColumns";
+import LostItemsBanner from "../../components/sections/LostItemsBanner";
 import SilderSection from "../../components/sections/SliderSection";
 import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
@@ -17,6 +18,7 @@ const Pasajero = ({ data }) => {
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxColumns></PaxColumns>
+      <LostItemsBanner></LostItemsBanner>
       <SilderSection
         data={products}
         title="Hay un DiDi para vos"

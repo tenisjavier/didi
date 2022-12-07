@@ -4,6 +4,7 @@ import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
 import PaxBanner from "../../components/sections/PaxBanner";
 import PaxColumns from "../../components/sections/PaxColumns";
+import LostItemsBanner from "../../components/sections/LostItemsBanner";
 import SimplifyHero from "../../components/sections/SimplifyHero";
 import SimplifyColumns from "../../components/sections/SimplifyColumns";
 import SilderSection from "../../components/sections/SliderSection";
@@ -30,6 +31,7 @@ const Pasajero = ({ data }) => {
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxColumns></PaxColumns>
+      <LostItemsBanner></LostItemsBanner>
       <SilderSection
         data={products}
         title="Hay un DiDi Para ti "

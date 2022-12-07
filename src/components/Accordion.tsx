@@ -6,6 +6,7 @@ import {
   RenderRichTextData,
 } from "gatsby-source-contentful/rich-text";
 import RichContent from "./RichContent";
+import slugify from "react-slugify";
 
 interface Accordion {
   title: string;
@@ -22,16 +23,16 @@ const Accordion = ({
   bgColor,
   textColor,
   normalText,
-  isClosed
+  isClosed,
 }: Accordion) => {
   var [isOpen, setIsOpen] = useState(false);
   var [height, setHeight] = useState("0px");
   const content1: any = useRef(null);
-  
-  if(isClosed === false) {
+
+  if (isClosed === false) {
     [isOpen, setIsOpen] = useState(true);
     [height, setHeight] = useState("50");
-  } 
+  }
 
   const closeClass =
     "text-lg bg-gray-200 text-gray-primary py-0 w-full px-4 md:px-20 transition-all duration-700 overflow-hidden";
@@ -41,7 +42,7 @@ const Accordion = ({
     setHeight(isOpen ? `0px` : `${content1.current.scrollHeight + 50}px`);
   };
   return (
-    <>
+    <section id={slugify(title)} className="w-full">
       <div
         aria-hidden="true"
         className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded px-10 lg:px-20 ${
@@ -68,7 +69,7 @@ const Accordion = ({
             </p>
           ))}
       </div>
-    </>
+    </section>
   );
 };
 
