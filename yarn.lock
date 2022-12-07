@@ -1293,23 +1293,23 @@
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/batch-execute@8.5.12":
-  version "8.5.12"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-8.5.12.tgz#3059646b87e4ea3a196a6c8cbc3faf9b7c410d52"
-  integrity sha512-eNdN5CirW3ILoBaVyy4GI6JpLoJELeH0A7+uLRjwZuMFxpe4cljSrY8P+id28m43+uvBzB3rvNTv0+mnRjrMRw==
+"@graphql-tools/batch-execute@8.5.14":
+  version "8.5.14"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-8.5.14.tgz#d241adedc53df534263bfaed9c6fc15c3890bb90"
+  integrity sha512-m6yXqqmFAH2V5JuSIC/geiGLBQA1Y6RddOJfUtkc9Z7ttkULRCd1W39TpYS6IlrCwYyTj+klO1/kdWiny38f5g==
   dependencies:
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/utils" "9.1.3"
     dataloader "2.1.0"
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
 "@graphql-tools/code-file-loader@^7.2.14":
-  version "7.3.13"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/code-file-loader/-/code-file-loader-7.3.13.tgz#439c21c80aed1018f9457d3742b1d51ce60cd3f0"
-  integrity sha512-6anNQJ/VqseqBGcrZexGsiW40cBWF8Uko9AgvGSuZx2uJl1O8H9a3XMZnkmuI17yoGRCzXkwf52AS0+O5UYFUA==
+  version "7.3.15"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/code-file-loader/-/code-file-loader-7.3.15.tgz#3834033e1f58876d6c95248d8eb451d84d600eab"
+  integrity sha512-cF8VNc/NANTyVSIK8BkD/KSXRF64DvvomuJ0evia7tJu4uGTXgDjimTMWsTjKRGOOBSTEbL6TA8e4DdIYq6Udw==
   dependencies:
-    "@graphql-tools/graphql-tag-pluck" "7.4.0"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/graphql-tag-pluck" "7.4.2"
+    "@graphql-tools/utils" "9.1.3"
     globby "^11.0.3"
     tslib "^2.4.0"
     unixify "^1.0.0"
@@ -1326,61 +1326,61 @@
     tslib "~2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/delegate@9.0.17":
-  version "9.0.17"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-9.0.17.tgz#8f509a046cee7b37c0cae33a526e4aea903539ab"
-  integrity sha512-y7h5H+hOhQWEkG67A4wurlphHMYJuMlQIEY7wZPVpmViuV6TuSPB7qkLITsM99XiNQhX+v1VayN2cuaP/8nIhw==
+"@graphql-tools/delegate@9.0.19":
+  version "9.0.19"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-9.0.19.tgz#2e07d395eee34a8f8810be8cdc9841f0fce14071"
+  integrity sha512-9GvzZ04LtGlXWW89yf6nct5ehr6/irGfzOhuaPVJlnCkRsS3zKk5qkBlY2rEu3NS/OpJYYeHvzE3/T/lBNBiPQ==
   dependencies:
-    "@graphql-tools/batch-execute" "8.5.12"
-    "@graphql-tools/executor" "0.0.9"
-    "@graphql-tools/schema" "9.0.10"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/batch-execute" "8.5.14"
+    "@graphql-tools/executor" "0.0.11"
+    "@graphql-tools/schema" "9.0.12"
+    "@graphql-tools/utils" "9.1.3"
     dataloader "2.1.0"
     tslib "~2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/executor@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/executor/-/executor-0.0.9.tgz#f55f8cbe12d7989b0ff58cca9a041fbdde3dbd40"
-  integrity sha512-qLhQWXTxTS6gbL9INAQa4FJIqTd2tccnbs4HswOx35KnyLaLtREuQ8uTfU+5qMrRIBhuzpGdkP2ssqxLyOJ5rA==
+"@graphql-tools/executor@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/executor/-/executor-0.0.11.tgz#a95823478e8edba05e55fd8ed43aceff7bd04022"
+  integrity sha512-GjtXW0ZMGZGKad6A1HXFPArkfxE0AIpznusZuQdy4laQx+8Ut3Zx8SAFJNnDfZJ2V5kU29B5Xv3Fr0/DiMBHOQ==
   dependencies:
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/utils" "9.1.3"
     "@graphql-typed-document-node/core" "3.1.1"
     "@repeaterjs/repeater" "3.0.4"
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/graphql-tag-pluck@7.4.0":
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-7.4.0.tgz#b8082801164aad0b9b03bc61fb92388d076cc66a"
-  integrity sha512-f966Z8cMDiPxWuN3ksuHpNgGE8euZtrL/Gcwz9rRarAb13al4CGHKmw2Cb/ZNdt7GbyhdiLT4wbaddrF0xCpdw==
+"@graphql-tools/graphql-tag-pluck@7.4.2":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-7.4.2.tgz#0e72a142e2fb7e0cb6a86b910e44682772e5d7f1"
+  integrity sha512-SXM1wR5TExrxocQTxZK5r74jTbg8GxSYLY3mOPCREGz6Fu7PNxMxfguUzGUAB43Mf44Dn8oVztzd2eitv2Qgww==
   dependencies:
     "@babel/parser" "^7.16.8"
     "@babel/plugin-syntax-import-assertions" "7.20.0"
     "@babel/traverse" "^7.16.8"
     "@babel/types" "^7.16.8"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/utils" "9.1.3"
     tslib "^2.4.0"
 
 "@graphql-tools/links@^8.2.14":
-  version "8.3.21"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/links/-/links-8.3.21.tgz#b67ed7c13154bb0d8f3e4408791787b71de4bba2"
-  integrity sha512-Veobc2bSd4pS0fmSbALvBONLvVoLFpu5BYPBHU4A7pjxM19nO6Dc21zomFTdLfnrmz3H/+i8MGCI05WEziO37w==
+  version "8.3.23"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/links/-/links-8.3.23.tgz#f803ab066e0a37f8d1d6d506cf29823bebbc7419"
+  integrity sha512-gtHS+6wOMgVhso+qOFd8QolYgxpCfY8SSRm7LHymjol6kN9zeh4KfZuFGCAzUx9WNCAsKiiv0Ob9kt+0QuYoRg==
   dependencies:
-    "@graphql-tools/delegate" "9.0.17"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/delegate" "9.0.19"
+    "@graphql-tools/utils" "9.1.3"
     apollo-upload-client "17.0.0"
     form-data "^4.0.0"
     node-fetch "^2.6.5"
     tslib "^2.4.0"
 
 "@graphql-tools/load@^7.5.10":
-  version "7.8.6"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.8.6.tgz#f0c5d7852337f8c7e4b88a9a7d63255d29d98395"
-  integrity sha512-yFDM5hVhV0eOom3SGyc+mjL8FvEb+0PZTZ/OSc4zrs3m/ABiQFHm2ilhzNS+OsMCpOsfGl2kXguEdt86QPp60Q==
+  version "7.8.8"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.8.8.tgz#e55aaca84a9e6348a730d92ba4cb3ec17cee45df"
+  integrity sha512-gMuQdO2jXmI0BNUc1MafxRQTWVMUtuH500pZAQtOdDdNJppV7lJdY6mMhITQ2qnhYDuMrcZPHhIkcftyQfkgUg==
   dependencies:
-    "@graphql-tools/schema" "9.0.10"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/schema" "9.0.12"
+    "@graphql-tools/utils" "9.1.3"
     p-limit "3.1.0"
     tslib "^2.4.0"
 
@@ -1392,12 +1392,12 @@
     "@graphql-tools/utils" "8.9.0"
     tslib "^2.4.0"
 
-"@graphql-tools/merge@8.3.12":
-  version "8.3.12"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.3.12.tgz#e3f2e5d8a7b34fb689cda66799d845cbc919e464"
-  integrity sha512-BFL8r4+FrqecPnIW0H8UJCBRQ4Y8Ep60aujw9c/sQuFmQTiqgWgpphswMGfaosP2zUinDE3ojU5wwcS2IJnumA==
+"@graphql-tools/merge@8.3.14":
+  version "8.3.14"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.3.14.tgz#d4d0a645656691d35e90e0686a6fa3d4091a34da"
+  integrity sha512-zV0MU1DnxJLIB0wpL4N3u21agEiYFsjm6DI130jqHpwF0pR9HkF+Ni65BNfts4zQelP0GjkHltG+opaozAJ1NA==
   dependencies:
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/utils" "9.1.3"
     tslib "^2.4.0"
 
 "@graphql-tools/optimize@^1.3.0":
@@ -1408,12 +1408,12 @@
     tslib "^2.4.0"
 
 "@graphql-tools/relay-operation-optimizer@^6.5.0":
-  version "6.5.12"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.5.12.tgz#659af3aff0e70bfed0f45d02776c8c0dd7f5fb03"
-  integrity sha512-jwcgNK1S8fqDI612uhbZSZTmQ0aJrLjtOSEcelwZ6Ec7o29I3NlOMBGnjvnBr4Y2tUFWZhBKfx0aEn6EJlhiGA==
+  version "6.5.14"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.5.14.tgz#e3d61892910c982c13ea8c2d9780a0cf95e7dd12"
+  integrity sha512-RAy1fMfXig9X3gIkYnfEmv0mh20vZuAgWDq+zf1MrrsCAP364B+DKrBjLwn3D+4e0PMTlqwmqR0JB5t1VtZn2w==
   dependencies:
     "@ardatan/relay-compiler" "12.0.0"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/utils" "9.1.3"
     tslib "^2.4.0"
 
 "@graphql-tools/schema@8.5.1":
@@ -1426,13 +1426,13 @@
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/schema@9.0.10", "@graphql-tools/schema@^9.0.0":
-  version "9.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-9.0.10.tgz#77ba3dfab241f0232dc0d3ba03201663b63714e2"
-  integrity sha512-lV0o4df9SpPiaeeDAzgdCJ2o2N9Wvsp0SMHlF2qDbh9aFCFQRsXuksgiDm2yTgT3TG5OtUes/t0D6uPjPZFUbQ==
+"@graphql-tools/schema@9.0.12", "@graphql-tools/schema@^9.0.0":
+  version "9.0.12"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-9.0.12.tgz#73910fab315bd16098b989db22f967a1dc7f93dd"
+  integrity sha512-DmezcEltQai0V1y96nwm0Kg11FDS/INEFekD4nnVgzBqawvznWqK6D6bujn+cw6kivoIr3Uq//QmU/hBlBzUlQ==
   dependencies:
-    "@graphql-tools/merge" "8.3.12"
-    "@graphql-tools/utils" "9.1.1"
+    "@graphql-tools/merge" "8.3.14"
+    "@graphql-tools/utils" "9.1.3"
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
@@ -1443,10 +1443,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/utils@9.1.1", "@graphql-tools/utils@^9.1.1":
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-9.1.1.tgz#b47ea8f0d18c038c5c1c429e72caa5c25039fbab"
-  integrity sha512-DXKLIEDbihK24fktR2hwp/BNIVwULIHaSTNTNhXS+19vgT50eX9wndx1bPxGwHnVBOONcwjXy0roQac49vdt/w==
+"@graphql-tools/utils@9.1.3", "@graphql-tools/utils@^9.1.1":
+  version "9.1.3"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-9.1.3.tgz#861f87057b313726136fa6ddfbd2380eae906599"
+  integrity sha512-bbJyKhs6awp1/OmP+WKA1GOyu9UbgZGkhIj5srmiMGLHohEOKMjW784Sk0BZil1w2x95UPu0WHw6/d/HVCACCg==
   dependencies:
     tslib "^2.4.0"
 
@@ -5953,7 +5953,7 @@ gatsby-worker@^2.2.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^5.0.1:
+gatsby@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-5.2.0.tgz#a4bec0950bcd3f854f81b0ff505b5dc5afbdb53b"
   integrity sha512-/qSejemRi2eUDtL5BiJPV4rOTBo9aJUm3394BPz+ZeDVu8WmyvfvGrSkjesTh6SXumDk/DyFwxZH28hjSdC4qQ==
