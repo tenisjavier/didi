@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import HelpCenterHero from "../../components/sections/HelpCenterHero";
 import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
-import HomeColumns from "../../components/sections/HomeColumns";
+import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
 
 const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,12 +13,15 @@ const CentroDeAyuda = ({ data }) => {
   const faqExpress = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Express R. Dominicana"
   );
+  const faqPax = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Pasajero R. Dominicana"
+  );
+  console.log(data);
   return (
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
-
-      <HomeColumns></HomeColumns>
+      <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
     </Layout>
   );
 };

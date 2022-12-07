@@ -68,8 +68,8 @@
       "height": "h-80"
     },
     {
-      "title": "Centro de Ayuda",
-      "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte.  ",
+      "title": "Preguntas Frecuentes",
+      "desc": "Conoce aquí las respuestas a las preguntas más frecuentes de nuestros Socios Conductores y Usuarios de DiDi Pasajero",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/do/centro-de-ayuda/",
@@ -184,6 +184,13 @@
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxHero.btnText": "Descarga DiDi Pasajero",
+  "LostItemsBanner.title": "¿Olvidaste un objeto en el vehículo?",
+  "LostItemsBanner.desc": "Da clic en el botón de abajo, dirígete a Preguntas Pasajeros > Inconvenientes con un arrendamiento  y en la sección Olvidé un objeto en el vehículo llena el formulario para poder ayudarte",
+  "LostItemsBanner.bgColor": "bg-blue-primary",
+  "LostItemsBanner.textColor": "white",
+  "LostItemsBanner.btnMode": "light",
+  "LostItemsBanner.btnText": "Cómo Recuperarlo",
+  "LostItemsBanner.btnLink": "/do/centro-de-ayuda/#inconvenientes-con-un-viaje",
   "PaxColumns.bgColor": "bg-white",
   "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [

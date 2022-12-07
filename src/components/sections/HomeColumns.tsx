@@ -4,8 +4,8 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
-  faExclamationCircle,
-  faHeadphonesAlt,
+  faFileContract,
+  faCircleQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -41,11 +41,11 @@ const HomeColumns = ({ images }: HomeColumnsProps) => {
     );
 
     props.columns[1].image = (
-      <FontAwesomeIcon icon={faExclamationCircle} size="3x" className="w-12" />
+      <FontAwesomeIcon icon={faFileContract} size="3x" className="w-12" />
     );
 
     props.columns[2].image = (
-      <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" className="w-12" />
+      <FontAwesomeIcon icon={faCircleQuestion} size="3x" className="w-12" />
     );
   }
   return <ColumnsSection {...props}></ColumnsSection>;
