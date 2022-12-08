@@ -76,6 +76,28 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/mx/food/repartidores/",
+      dropMenu: [
+        {
+          text: "Club Repartidores",
+          url: "/mx/food/repartidores/club-repartidores/",
+        },
+        {
+          text: "Ganancias",
+          url: "/mx/food/repartidores/ganancias/",
+        },
+        {
+          text: "Registro",
+          url: "/mx/food/repartidores/registro/",
+        },
+        {
+          text: "Rendimiento",
+          url: "/mx/food/repartidores/rendimiento/",
+        },
+        {
+          text: "Seguridad",
+          url: "/mx/food/repartidores/seguridad/",
+        },
+      ],
     },
     {
       text: "Acerca",
