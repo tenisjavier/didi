@@ -202,6 +202,7 @@ const insertBtnParams = () => {
       nz: ["NZ", "en-NZ"],
       eg: ["EG", "ar-EG"],
       za: ["ZA", "en-ZA"],
+      hk: ["ZH", "zh-HK"],
     };
 
     let start = url.indexOf("?");

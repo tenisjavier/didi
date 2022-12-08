@@ -58,6 +58,12 @@ const btnLinks: AllBtnInterface = {
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida Ya → Descarga la App",
   },
+  hk: {
+    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/hkdriverhero",
+    paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
+    drvText: "註冊成為司機",
+    paxText: "下載滴滴客運",
+  },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",

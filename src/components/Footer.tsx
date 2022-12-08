@@ -16,6 +16,7 @@ const Footer = () => {
           englishName
           spanishName
           russianName
+          chineseName
           hostname
         }
       }
@@ -56,11 +57,13 @@ const Footer = () => {
                     >
                       {countryCode === "ru" ? c.russianName : null}
                       {countryCode === "eg" ? c.arabicName : null}
+                      {countryCode === "hk" ? c.chineseName : null}
                       {sslCountries.includes(countryCode)
                         ? c.spanishName
                         : null}
                       {countryCode !== "eg" &&
                       countryCode !== "ru" &&
+                      countryCode !== "hk" &&
                       !sslCountries.includes(countryCode)
                         ? c.englishName
                         : null}
@@ -77,11 +80,13 @@ const Footer = () => {
                       >
                         {countryCode === "ru" ? c.russianName : null}
                         {countryCode === "eg" ? c.arabicName : null}
+                        {countryCode === "hk" ? c.chineseName : null}
                         {sslCountries.includes(countryCode)
                           ? c.spanishName
                           : null}
                         {countryCode !== "eg" &&
                         countryCode !== "ru" &&
+                        countryCode !== "hk" &&
                         !sslCountries.includes(countryCode)
                           ? c.englishName
                           : null}

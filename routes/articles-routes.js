@@ -58,6 +58,11 @@ const articlesRoutesInit = async (graphql, createPage) => {
     ) {
       path = `/${country.code}/blog/${slug}/`;
     }
+
+    if(country.code === "hk") {
+      path = `/${country.code}/${slug}/`;
+    }
+    
     createPage({
       path: path,
       component: template,

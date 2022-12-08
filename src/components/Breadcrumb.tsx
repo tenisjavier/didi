@@ -153,6 +153,49 @@ const Breadcrumb = () => {
                 </Link>
               </li>
             );
+          } else if (countryCode == "hk") {
+            var itemPath;
+            switch (decodeURI(dir)) {
+              case "ride":
+                itemPath = "騎";
+                break;
+              default:
+                itemPath = decodeURI(dir);
+            }
+            if (index === directories.length - 1) {
+              return (
+                <li key={index}>
+                  <span className="mx-2">
+                    <FontAwesomeIcon
+                      icon={faGreaterThan}
+                      size="1x"
+                      className="w-2"
+                    ></FontAwesomeIcon>
+                  </span>
+
+                  {itemPath}
+                </li>
+              );
+            }
+
+            return (
+              <li key={index}>
+                <span className="mx-2 ">
+                  <FontAwesomeIcon
+                    icon={faGreaterThan}
+                    size="1x"
+                    className="w-2"
+                  ></FontAwesomeIcon>
+                </span>
+
+                <Link
+                  to={"/" + directories.slice(0, index + 1).join("/") + "/"}
+                  className=" hover:text-blue-700"
+                >
+                  {itemPath}
+                </Link>
+              </li>
+            );
           } else {
             if (index === directories.length - 1) {
               return (
