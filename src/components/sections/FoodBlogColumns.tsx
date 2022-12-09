@@ -14,6 +14,7 @@ interface FoodBlogColumns {
         tags?: { name: string }[];
         excerpt: string;
         featuredImage: ImageDataLike;
+        feature: boolean;
       }[];
     };
   };
@@ -29,21 +30,9 @@ const FoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
   };
 
   const articles = data.allContentfulArticle.nodes;
+  const trueFirst = articles.sort((a, b) => Number(b.feature) - Number(a.feature));
 
-  // let filterArticles = articles;
-
-  // if (tags) {
-  //   filterArticles = articles.filter((article) => {
-  //     if (article.tags) {
-  //       return article.tags[0].name === tags[0].name;
-  //       console.log(article)
-  //     }
-  //     return false;
-  //   });
-  // }
-  //
-
-  props.columns = articles.map((article) => {
+  props.columns = trueFirst.map((article) => {
     const link = t("FoodBlogColumns.linkItem", {
       article: article.slug,
     });

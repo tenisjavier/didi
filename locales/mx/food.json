@@ -158,7 +158,7 @@
   "FoodBlogHero.textColor": "white",
   "FoodBlogHero.btnMode": "light",
   "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
-  "FoodBlogColumns.bgColor": "bg-blue-primary",
+  "FoodBlogColumns.bgColor": "bg-orange-primary",
   "FoodBlogColumns.textColor": "white",
   "FoodBlogColumns.linkItem": "/mx/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",

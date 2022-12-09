@@ -115,13 +115,14 @@ const options: optionsInterface = {
       return (
         <div className="my-12 flex w-full">
           <GatsbyImage
-            className=" max-w-xl md:max-w-4xl"
+            className="w-full"
             image={getImage(gatsbyImageData)!}
             alt={title}
           ></GatsbyImage>
         </div>
       );
     },
+    [BLOCKS.UL_LIST]: (node, children) => <ul className="p-0">{children}</ul>,
   },
 };
 
