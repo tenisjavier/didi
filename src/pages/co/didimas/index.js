@@ -50,6 +50,7 @@ export const query = graphql`
       nodes {
         name
         desc
+        slug
         logo {
           gatsbyImageData
           description

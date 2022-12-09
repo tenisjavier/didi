@@ -58,6 +58,7 @@ export const query = graphql`
     allContentfulPartner(filter: { country: { code: { eq: "nz" } } }) {
       nodes {
         name
+        slug
         desc
         logo {
           gatsbyImageData
