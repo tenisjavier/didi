@@ -187,7 +187,7 @@
   "PaxHero.btnMode": "light",
   "PaxHero.btnText": "Descarga DiDi Pasajero",
   "LostItemsBanner.title": "¿Olvidaste un objeto en el vehículo?",
-  "LostItemsBanner.desc": "Da clic en el botón de abajo, dirígete a Preguntas Pasajeros > Inconvenientes con un arrendamiento  y en la sección Olvidé un objeto en el vehículo llena el formulario para poder ayudarte",
+  "LostItemsBanner.desc": "Da clic en el botón de abajo, dirígete a Preguntas Pasajeros y en la sección Olvidé un objeto en el vehículo llena el formulario para poder ayudarte.",
   "LostItemsBanner.bgColor": "bg-blue-primary",
   "LostItemsBanner.textColor": "white",
   "LostItemsBanner.btnMode": "light",
