@@ -25,7 +25,7 @@ const options: optionsInterface = {
       <h1 className={"my-14 text-center text-3xl font-bold"}>{children}</h1>
     ),
     [BLOCKS.HEADING_2]: (node, children) => (
-      <h2 id={children[1]?.props.children[0].replaceAll(" ", "_")} className={"my-12 text-2xl font-bold"}>{children}</h2>
+      <h2 className={"my-12 text-2xl font-bold"}>{children}</h2>
     ),
     [BLOCKS.HEADING_5]: (node, children) => (
       <h5 className={"my-12 text-center text-xl font-bold text-orange-primary"}>
