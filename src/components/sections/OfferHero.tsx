@@ -16,8 +16,8 @@ interface PartnerHeroProps {
 const OfferHero = ({ title, desc, image }: PartnerHeroProps) => {
   const props: CTAProps = {
     hero: true,
-    title: title,
-    desc: desc,
+    title: title || t("OfferHero.title"),
+    desc: desc || t("OfferHero.desc"),
     textColor: t("OfferHero.textColor"),
     bgColor: t("OfferHero.bgColor"),
     image: (

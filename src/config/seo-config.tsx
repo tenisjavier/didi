@@ -167,6 +167,24 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
+  hk: {
+    "/": {
+      title: "網上call的士及粵港車 - DiDi 香港",
+      desc: "網上call的士及粵港車 - DiDi 香港",
+    },
+    "/ride/": {
+      title: "的士服務 - DiDi 香港",
+      desc: "的士服務 - DiDi 香港",
+    },
+    "/driver/": {
+      title: "成為司機夥伴 - DiDi 香港",
+      desc: "成為司機夥伴 - DiDi 香港",
+    },
+    "/taxi/": {
+      title: "成為司機夥伴 - DiDi 香港",
+      desc: "成為司機夥伴 - DiDi 香港",
+    },
+  },
   mx: {
     "/": {
       title: "DiDi México: Regístrate como Socio Conductor DiDi",

@@ -46,6 +46,7 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     "nz",
     "au",
     "es",
+    "hk"
   ];
   const { pathname } = useLocation();
   const subfolder = /^\/..\//.exec(pathname);

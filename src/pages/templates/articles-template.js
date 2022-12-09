@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import ArticleHero from "../../components/sections/ArticleHero";
+import ArticleNoBtnHero from "../../components/sections/ArticleNoBtnHero";
 import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
 import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
 import ArticleContent from "../../components/sections/ArticleContent";
@@ -17,7 +18,13 @@ const ArticlesTemplate = ({ data }) => {
   const title = data.contentfulArticle.seoTitle;
   const desc = data.contentfulArticle.seoDescription;
   const { pathname } = useLocation();
+  
   let hero = <ArticleHero data={data}></ArticleHero>;
+
+  if(pathname.includes("/hk/coronavirus")) {
+    hero = <ArticleNoBtnHero data={data}></ArticleNoBtnHero>;
+  }
+  
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
   if (pathname.includes("newsroom"))
     columns = <NewsroomColumns data={data}></NewsroomColumns>;
@@ -42,7 +49,8 @@ const ArticlesTemplate = ({ data }) => {
       {!(
         pathname.includes("food/blog") ||
         pathname.includes("didipay/blog") ||
-        pathname.includes("thejourney")
+        pathname.includes("thejourney") ||
+        pathname.includes("coronavirus")
       ) && <PaxBanner></PaxBanner>}
       {articles.length && columns}
     </Layout>

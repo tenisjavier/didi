@@ -28,6 +28,7 @@ const SEO = ({ title, desc }) => {
               "nz"
               "mx"
               "ru"
+              "hk"
             ]
           }
         }
