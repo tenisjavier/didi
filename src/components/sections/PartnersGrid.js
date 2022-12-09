@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import slugify from "react-slugify";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
@@ -16,7 +15,7 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
   props.columns = data.map((partner) => {
     const image = getImage(partner.logo);
     const link = t("PartnersGrid.linkItem", {
-      partnerName: slugify(partner.name),
+      partnerName: partner.slug,
     });
     return {
       title: <Link to={link}>{partner.name}</Link>,
