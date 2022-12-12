@@ -443,6 +443,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Disponibles",
           url: "/co/ciudades/",
         },
+        {
+          text: "Testimoniales",
+          url: "/co/testimoniales/",
+        },
       ],
     },
     {
