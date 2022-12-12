@@ -8,9 +8,6 @@ const ContactBanner = () => {
     desc: t("ContactBanner.desc"),
     bgColor: t("ContactBanner.bgColor"),
     textColor: t("ContactBanner.textColor"),
-    btnText: t("ContactBanner.btnText"),
-    btnLink: t("ContactBanner.btnLink"),
-    btnMode: t("ContactBanner.btnMode"),
   };
 
   return <Banner {...props}></Banner>;
