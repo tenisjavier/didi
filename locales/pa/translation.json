@@ -78,8 +78,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "title": "Si necesitas asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00",
       "bgColor": "white",
       "textColor": "gray-primary"
     }
@@ -269,8 +269,8 @@
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
+      "title": "Si necesitas asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00.",
       "bgColor": "bg-gray-light"
     },
     {
