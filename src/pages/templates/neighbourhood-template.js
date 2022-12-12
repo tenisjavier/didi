@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../components/Layout";
-import FoodCityHero from "../../../../components/sections/FoodCityHero";
-import FoodCityBannerCTA from "../../../../components/sections/FoodCityBannerCTA";
-import FoodCityBannerCTA2 from "../../../../components/sections/FoodCityBannerCTA2";
-import FoodCityBannerCTA3 from "../../../../components/sections/FoodCityBannerCTA3";
-import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
-import FoodNeighborhoodList from "../../../../components/sections/FoodNeighborhoodList";
-import FoodAppDownloads from "../../../../components/sections/FoodAppDownloads";
+import Layout from "../../components/Layout";
+import FoodCityHero from "../../components/sections/FoodCityHero";
+import FoodCityBannerCTA from "../../components/sections/FoodCityBannerCTA";
+import FoodCityBannerCTA2 from "../../components/sections/FoodCityBannerCTA2";
+import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
+import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
+import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -31,6 +31,8 @@ const FoodCity = ({ data }) => {
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
+
+  console.log(foodDeliveryDownloadsImages);
 
   return (
     <Layout

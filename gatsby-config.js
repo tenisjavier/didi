@@ -161,7 +161,7 @@ module.exports = {
             "mx",
           ];
 
-          const engCountries = ["au", "nz", "eg", "ru"];
+          const engCountries = ["au", "nz", "eg", "ru", "hk"];
 
           const realPages = allPages.filter((page) => {
             return !urlRegex.test(page.path);

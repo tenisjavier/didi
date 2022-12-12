@@ -5,6 +5,7 @@ const directionsRoutes = require("./routes/directions-routes");
 const guidesRoutes = require("./routes/guides-routes");
 const articlesRoutes = require("./routes/articles-routes");
 const legalRoutes = require("./routes/legal-routes");
+const neighbourhoodRoutes = require("./routes/neighbourhood-routes");
 const repartidoresRoutes = require("./routes/repartidores-routes");
 const redirects = require("./routes/redirects");
 
@@ -24,5 +25,6 @@ exports.createPages = async ({
   await guidesRoutes.init(graphql, createPage);
   await articlesRoutes.init(graphql, createPage);
   await legalRoutes.init(graphql, createPage);
+  await neighbourhoodRoutes.init(graphql, createPage);
   await repartidoresRoutes.init(graphql, createPage);
 };
