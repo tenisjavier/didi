@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import TestimonialsHero from "../../components/sections/TestimonialsHero";
-import DrvVideoGrid from "../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../components/sections/DrvBanner";
-import HomeColumns from "../../components/sections/PaxColumns";
+import Layout from "../../../components/Layout";
+import TestimonialsHero from "../../../components/sections/TestimonialsHero";
+import DrvVideoGrid from "../../../components/sections/DrvVideoGrid";
+import DrvBanner from "../../../components/sections/DrvBanner";
+import HomeColumns from "../../../components/sections/PaxColumns";
 
 const Testimonials = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

@@ -444,8 +444,8 @@ const menuLinks: AllMenuInterface = {
           url: "/co/ciudades/",
         },
         {
-          text: "Testimoniales",
-          url: "/co/testimoniales/",
+          text: "Historias de Éxito",
+          url: "/co/driver/historias-de-exito/",
         },
       ],
     },
