@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import CTASection from "../components/CTASection";
 import ContactColumnPart from "../components/ContactColumnPart";
-import "../styles/gray.css";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -66,7 +65,7 @@ const Index = ({ data }) => {
   };
 
   return (
-    <div id="gray">
+    <div>
       <Layout>
         <CTASection {...CTAProps}></CTASection>
         <ContactColumnPart {...ContactColumnPartProps}></ContactColumnPart>

@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import NewsroomHero from "../../../components/sections/NewsroomHero";
+import ContactBanner from "../../../components/sections/ContactBanner";
 import NewsroomColumns from "../../../components/sections/NewsroomColumns";
 import Pagination from "../../../components/Pagination";
 
@@ -14,6 +15,7 @@ const Newsroom = ({ data }) => {
     <Layout>
       <NewsroomHero bgImage={articlesHeroBgImage}></NewsroomHero>
       <NewsroomColumns data={data}></NewsroomColumns>
+      <ContactBanner></ContactBanner>
       <Pagination data={data} postsPerPage={12}></Pagination>
     </Layout>
   );

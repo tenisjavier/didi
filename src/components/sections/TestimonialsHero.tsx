@@ -21,7 +21,7 @@ const TestimonialsHero = ({ bgImage }: TestimonialsHeroProps) => {
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
+        className="!absolute z-0 h-full w-full md:block !object-top"
       ></GatsbyImage>
     ),
     btnMode: t("TestimonialsHero.btnMode"),
