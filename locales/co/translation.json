@@ -128,21 +128,6 @@
   "DrvVideoGrid.textColor": "white",
   "DrvVideoGrid.columns": [
     {
-      "title": "Conoce la historia de Judy",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/leKVXZWQkSc"
-    },
-    {
-      "title": "Conoce la historia de Libia",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/ce_woUhKftQ"
-    },
-    {
-      "title": "Conoce la historia de Agustín",
-      "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/IJ85q67cfVo"
-    },
-    {
       "title": "Conoce la historia de Raúl",
       "bgColor": "bg-blue-primary",
       "videoSrc": "https://www.youtube.com/embed/ogoDoNq9V3U"
@@ -151,6 +136,21 @@
       "title": "Conoce la historia de Fanny",
       "bgColor": "bg-blue-primary",
       "videoSrc": "https://www.youtube.com/embed/bZUP2rmZbaE"
+    },
+    {
+      "title": "Conoce la historia de Libia",
+      "bgColor": "bg-blue-primary",
+      "videoSrc": "https://www.youtube.com/embed/ce_woUhKftQ"
+    },
+    {
+      "title": "Conoce la historia de Judy",
+      "bgColor": "bg-blue-primary",
+      "videoSrc": "https://www.youtube.com/embed/leKVXZWQkSc"
+    },
+    {
+      "title": "Conoce la historia de Agustín",
+      "bgColor": "bg-blue-primary",
+      "videoSrc": "https://www.youtube.com/embed/IJ85q67cfVo"
     }
   ],
   "Requirements.title": "Requerimientos para registrarse en DiDi Conductor",
