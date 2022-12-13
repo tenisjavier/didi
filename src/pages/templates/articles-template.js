@@ -12,17 +12,28 @@ import ArticlesColumns from "../../components/sections/ArticlesColumns";
 import NewsroomColumns from "../../components/sections/NewsroomColumns";
 import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
 import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
+import ArticleOfferColumns from "../../components/sections/ArticleOfferColumns";
 //dsss
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
   const title = data.contentfulArticle.seoTitle;
   const desc = data.contentfulArticle.seoDescription;
   const { pathname } = useLocation();
+  let offerColumns
   
   let hero = <ArticleHero data={data}></ArticleHero>;
 
   if(pathname.includes("/hk/coronavirus")) {
     hero = <ArticleNoBtnHero data={data}></ArticleNoBtnHero>;
+  }
+
+  if(pathname.includes("/hk") && !pathname.includes("/hk/coronavirus")) {
+    const images = data.allContentfulAsset.nodes;
+    const articleOfferColumnsImages = images.filter((image) => {
+      return image.title === "hk.ArticleOfferColumns.image";
+    });
+    console.log(articleOfferColumnsImages)
+    offerColumns = <ArticleOfferColumns images={articleOfferColumnsImages.reverse()}></ArticleOfferColumns>
   }
   
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
@@ -46,11 +57,13 @@ const ArticlesTemplate = ({ data }) => {
     <Layout title={title} desc={desc}>
       {hero}
       <ArticleContent data={data}></ArticleContent>
+      {(pathname.includes("/hk") && !pathname.includes("/hk/coronavirus") ) && offerColumns}
       {!(
         pathname.includes("food/blog") ||
         pathname.includes("didipay/blog") ||
         pathname.includes("thejourney") ||
-        pathname.includes("coronavirus")
+        pathname.includes("coronavirus") ||
+        pathname.includes("hk/blog")
       ) && <PaxBanner></PaxBanner>}
       {articles.length && columns}
     </Layout>
@@ -67,6 +80,16 @@ export const query = graphql`
     $language: String
     $tag: String
   ) {
+    allContentfulAsset(
+      filter: { title: { in: ["hk.ArticleOfferColumns.image"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt

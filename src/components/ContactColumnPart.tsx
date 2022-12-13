@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
 
-export interface ContactColumnPart {
+export interface ContactColumnPartProps {
     contacts: [];
 }
 
-const ContactColumnPart = (props: ContactColumnPart) => {
+const ContactColumnPart = (props: ContactColumnPartProps) => {
   const {contacts} = props;
   return (
     <section className={"py-12"}>
