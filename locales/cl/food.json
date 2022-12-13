@@ -160,6 +160,7 @@
   "FoodBlogHero.btnMode": "light",
   "FoodBlogColumns.title": "Lee nuestros artículos de comida y restaurantes.",
   "FoodBlogColumns.bgColor": "bg-blue-primary",
+  "RelatedFoodBlogColumns.bgColor": "bg-orange-primary",
   "FoodBlogColumns.textColor": "white",
   "FoodBlogColumns.linkItem": "/cl/food/blog/{{article}}/",
   "FoodBlogPostHero.textColor": "white",
