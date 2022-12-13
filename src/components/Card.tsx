@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import reactMarkdown from "react-markdown";
 import Btn, { BtnProps } from "./Btn";
 import Truncate from "react-truncate";
+import AnimatedNumber from "../components/AnimatedNumber";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
@@ -18,6 +19,14 @@ export interface CardProps extends BtnProps {
   index?: number;
   btnText2? : string;
   btnLink2? : string;
+  offer?: boolean;
+  offerTextBefore?: string;
+  offerText?: string;
+  offerTextAfter?: string;
+  small?: string;
+  animatedNumber?: boolean;
+  numberTitle?: number;
+  afterTitle?: string;
 }
 
 const Card = (props: CardProps) => {
@@ -37,6 +46,14 @@ const Card = (props: CardProps) => {
     btnText2,
     btnLink2,
     index,
+    offer,
+    offerTextBefore,
+    offerText,
+    offerTextAfter,
+    small,
+    animatedNumber,
+    numberTitle,
+    afterTitle,
   } = props;
 
   return (
@@ -50,9 +67,20 @@ const Card = (props: CardProps) => {
       >
 
         <div className={`mb-4 ${insideHeight} overflow-hidden`}>
-          {title && (<h4 className={`mb-4 text-xl font-bold `}>{title}</h4>)}
+          {animatedNumber && 
+            <AnimatedNumber number={0} maxNumber={numberTitle} titleAfter={afterTitle} identifier={"value-"+numberTitle}></AnimatedNumber>
+          }
+          {(title && !animatedNumber) && (<h4 className={`mb-4 text-xl font-bold `}>{title}</h4>)}
           <p className={"text-lg"}></p>
-          {desc && (<Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>)}
+          {desc && (<Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>)}          
+          {offer && 
+            <p className="block">
+              <span className="inline-block align-top">{offerTextBefore}</span>
+              <span className="inline-block text-7xl text-orange-primary">{offerText}</span>
+              <span className="inline-block align-baseline">{offerTextAfter}</span>
+            </p>
+          }
+          {small && small.split("\n").map((str) => <p className="text-start">{str}</p>)}
         </div>
         <div className="flex justify-center flex-col">
           <Btn

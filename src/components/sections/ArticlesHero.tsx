@@ -21,7 +21,7 @@ const ArticlesHero = ({ bgImage }: ArticlesHeroProps) => {
       <GatsbyImage
         image={bgImage.gatsbyImageData}
         alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
+        className="!absolute z-0 h-full w-full md:block brightness-75"
       ></GatsbyImage>
     ),
     btnMode: t("ArticlesHero.btnMode"),
