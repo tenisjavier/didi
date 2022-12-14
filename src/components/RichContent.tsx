@@ -26,7 +26,7 @@ const options: optionsInterface = {
       <h1 className={"my-14 text-center text-3xl font-bold"}>{children}</h1>
     ),
     [BLOCKS.HEADING_2]: (node, children) => (
-      <h2 id={slugify(children, { delimiter: '_', prefix: ''}).replace(/[0-9]/g, '').substring(1)} className={"my-12 text-2xl font-bold"}>
+      <h2 id={slugify(children)} className={"my-12 text-2xl font-bold"}>
         {children}
       </h2>
     ),
