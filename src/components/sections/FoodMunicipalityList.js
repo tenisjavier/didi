@@ -3,6 +3,7 @@ import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
 
 const FoodMunicipalityList = ({ data }) => {
+  console.log(data);
   const items = data.map((city) => {
     return {
       text: city.name,

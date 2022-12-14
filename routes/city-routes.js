@@ -11,13 +11,9 @@ const cityRoutesInit = async (graphql, createPage) => {
           id
           name
           slug
-          city {
+          country{
             name
-            slug
-            country {
-              code
-              name
-            }
+            code
           }
         }
       }
@@ -35,11 +31,11 @@ const cityRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulCity.nodes.forEach((node) => {
-    const { id, name, city } = node;
+    const { id, name, country } = node;
     const citySlug = slugify(name, { lower: true });
     
-    if(city.country?.code) {
-      let path = `/${city.country.code}/food/${citySlug}/`;
+    if(country?.code) {
+      let path = `/${country.code}/food/${citySlug}/`;
 
       createPage({
         path: path,

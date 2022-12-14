@@ -15,11 +15,15 @@ interface FoodCityRestaurantCTAProps {
 }
 
 const FoodCityRestaurantCTA = ({ image, data }: FoodCityRestaurantCTAProps) => {
+  console.log(data);
   const { name } = data;
+  const titleContent = t("FoodCityRestaurantCTA.title", { city: name });
+  const descContent = t("FoodCityRestaurantCTA.desc", { city: name });
+  console.log(name);
   const props: CTAProps = {
     hero: false,
-    title: t("FoodCityRestaurantCTA.title", { city: `${name}` }),
-    desc: t("FoodCityRestaurantCTA.desc", { city: `${name}` }),
+    title: titleContent,
+    desc: descContent,
     bgColor: t("FoodCityRestaurantCTA.bgColor"),
     textColor: t("FoodCityRestaurantCTA.textColor"),
     image: (

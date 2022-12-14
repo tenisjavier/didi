@@ -11,7 +11,7 @@ import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const itemsList = data.contentfulCity;
+  const itemsList = data.allContentfulCity.nodes;
   const name = data.contentfulCity.name;
 
   const foodHeroBgImage = images.filter((image) => {
@@ -65,6 +65,13 @@ export default FoodCity;
 
 export const query = graphql`
   query ($id: String) {
+    allContentfulCity (filter: {id: {ne: "$id"}}) {
+      nodes{
+        id
+        name
+        slug
+      }
+    }
     contentfulCity(id: { eq: $id }) {
       name
       slug
