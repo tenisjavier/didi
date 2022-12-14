@@ -1,12 +1,13 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
-import CTASection, { CTAProps } from "../CTASection";
+import CTASectionLink, { CTAProps } from "../CTASectionLink";
 
 interface FoodBusinessHeroProps {
   bgImage: {
     title: string;
     description: string;
+    link: string;
     gatsbyImageData: IGatsbyImageData;
   };
 }
@@ -26,8 +27,9 @@ const FoodBusinessHero = ({ bgImage }: FoodBusinessHeroProps) => {
     ),
     btnMode: t("FoodBusinessHero.btnMode"),
     btnType: "foodBusiness",
+    link: t("FoodBusinessHero.link")
   };
-  return <CTASection {...props}></CTASection>;
+  return <CTASectionLink {...props}></CTASectionLink>;
 };
 
 export default FoodBusinessHero;
