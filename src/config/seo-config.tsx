@@ -1008,6 +1008,44 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Select you next discount for your next ride",
     },
   },
+  hk: {
+    "/": {
+      title: "網上call的士及粵港車 - DiDi 香港",
+      desc: "去遠DD? • DiDi Taxi 程程85折! • 滿$80即享 • 選擇您的車款，開始行程! • 的士 • 粵港車 • 2018年服務香港至今",
+    },
+    "/coronavirus/": {
+      title: "同心抗疫 滴滴守護你的出行安全",
+      desc: "香港第五波疫情嚴峻，牽動著社會各界的心。滴滴香港積極推出線上及線下各項防疫措施，竭力爲司機夥伴和乘客的出行安全保駕護航",
+    },
+    "/ride/滴滴的士服務/": {
+      title: "的士服務 - DiDi 香港",
+      desc: "",
+    },
+    "/ride/粵港跨境專車服務/": {
+      title: "粵港跨境專車服務 - DiDi 香港",
+      desc: "",
+    },
+    "/點call-didi香港-didi-app-alipay-wechat-小程序/": {
+      title: "點call DiDi ? - DiDi 香港",
+      desc: "",
+    },
+    "/taxi-driver/": {
+      title: "成為司機夥伴 - DiDi 香港",
+      desc: "",
+    },
+    "/遠dd-call-didi-程程85折/": {
+      title: "遠DD, call DiDi! 程程85折! - DiDi 香港",
+      desc: "",
+    },
+    "/about-us/": {
+      title: "About us - DiDi 香港",
+      desc: "",
+    },
+    "/blog/": {
+      title: "Blog - DiDi 香港",
+      desc: "",
+    },
+  },
 };
 
 //@desc func that is used in SEO component for getting the title and desc of a page
