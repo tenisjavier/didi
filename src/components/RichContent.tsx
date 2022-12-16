@@ -107,7 +107,7 @@ const options: optionsInterface = {
           </div>
         );
       }
-      console.log(node);
+      (node);
       return (
         <a className="text-orange-primary break-all" href={node.data.uri}>
           {node.content[0].value}

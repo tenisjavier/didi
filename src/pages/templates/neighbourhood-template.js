@@ -11,8 +11,8 @@ import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const cities = data.contentfulNeighbourhood.municipality
-    ? data.contentfulNeighbourhood.municipality.neighbourhood
+  const itemsList = data.contentfulNeighbourhood.nodes.municipality
+    ? data.contentfulNeighbourhood.nodes.municipality.neighbourhood
     : [];
   const name = data.contentfulNeighbourhood.name;
 
@@ -55,7 +55,7 @@ const FoodCity = ({ data }) => {
         data={data.contentfulNeighbourhood}
         image={foodDeliveryCTAImage}
       ></FoodCityBannerCTA2>
-      <FoodNeighborhoodList data={cities}></FoodNeighborhoodList>
+      <FoodNeighborhoodList data={itemsList}></FoodNeighborhoodList>
       <FoodCityBannerCTA3
         data={data.contentfulNeighbourhood}
         image={foodCTA3Image}
@@ -69,16 +69,36 @@ export default FoodCity;
 
 export const query = graphql`
   query ($id: String) {
+    allContentfulNeighbourhood (filter: {id: {ne: "$id"}}) {
+    nodes {
+      name
+      municipality {
+        name
+        slug
+        city {
+          name
+          slug
+        }
+      }
+      city {
+        slug
+        name
+      }
+    }
+  }
     contentfulNeighbourhood(id: { eq: $id }) {
       name
       slug
       city {
+        slug
         name
       }
       municipality {
-        neighbourhood {
-          name
+        slug
+        name
+        city{
           slug
+          name
         }
       }
     }

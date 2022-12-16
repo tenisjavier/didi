@@ -41,7 +41,7 @@ const neighbourhoodRoutesInit = async (graphql, createPage) => {
 
   result.data.allContentfulNeighbourhood.nodes.forEach((node) => {
     const { id, name, slug, city, municipality } = node;
-    // console.log(city.country.code);
+    // (city.country.code);
     const neighbourhoodSlug = slugify(name, { lower: true });
     const citySlug = slugify(city.name, { lower: true });
     const municipalitySlug = slugify(municipality.name, { lower: true });

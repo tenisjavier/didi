@@ -1,15 +1,20 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
+const slugify = require("slugify");
 
 const FoodMunicipalityList = ({ data }) => {
-  console.log(data);
-  const items = data.map((city) => {
+  const itemsList = data.map((municipality, city) => {
+    const municipalitySlug = municipality.name;
+    const citySlug = municipality.city.name;
     return {
-      text: city.name,
+      text: municipality.name,
       secondText: "",
-      link: t("municipality.linkItem", { city: city.slug }),
-      image: city.image,
+      link: t("municipality.linkItem", { 
+        municipality: slugify(municipalitySlug ,{ lower: true }), 
+        city: slugify(citySlug, { lower: true } )
+      }),
+      image: municipality.image,
     };
   });
 
@@ -17,7 +22,7 @@ const FoodMunicipalityList = ({ data }) => {
     title: t("municipality.title"),
     bgColor: t("municipality.bgColor"),
     textColor: t("municipality.textColor"),
-    items: items,
+    items: itemsList,
   };
   return <ListSection {...props}></ListSection>;
 };

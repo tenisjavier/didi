@@ -208,7 +208,7 @@ const Breadcrumb = () => {
                     ></FontAwesomeIcon>
                   </span>
 
-                  {dir.replace(/(-)|(_.*)/g, " ")}
+                  {dir.replace(/(-)|(_.*)/g, " ")[0].toUpperCase() + dir.substring(1)}
                 </li>
               );
             }
@@ -226,7 +226,7 @@ const Breadcrumb = () => {
                   to={"/" + directories.slice(0, index + 1).join("/") + "/"}
                   className=" hover:text-blue-700"
                 >
-                  {dir.replace(/(-)|(_.*)/g, " ")}
+                  {dir.replace(/(-)|(_.*)/g, " ")[0].toUpperCase() + dir.substring(1)}
                 </Link>
               </li>
             );

@@ -1,16 +1,28 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
+const slugify = require("slugify");
 
 const FoodNeighborhoodList = ({ data }) => {
-  const items = data.map((city) => {
+  console.log(data);
+  const items = data.map((item) => {
+    // console.log(item);
+    const neighbourhoodSlug = item.name;
+    console.log(typeof(neighbourhoodSlug)+ " " + neighbourhoodSlug);
+    const municipalitySlug = item.municipality.name;
+    console.log(typeof(municipalitySlug) + " " + municipalitySlug);
+    const citySlug = item.municipality.city.name;
+    console.log(typeof(citySlug) + " " + citySlug);
+
     return {
-      text: city.name,
+      text: item.name,
       secondText: "",
       link: t("neighborhood.linkItem", {
-        city: city.slug.replace(/--|---/g, "-"),
+        neighborhood: slugify(neighbourhoodSlug, { lower: true }),
+        municipality: municipalitySlug,
+        city: citySlug,
       }),
-      image: city.image,
+      image: item.image,
     };
   });
 
