@@ -2,21 +2,19 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import LegalHero from "../../../components/sections/LegalHero";
-import LegalCTA from "../../../components/sections/LegalCTA";
+import LegalContent from "../../../components/sections/LegalContent";
 
 const Legal = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "co.HomeHero.bgImage";
   })[0];
-  const legalCTAImage = images.filter((image) => {
-    return image.title === "co.PaxCTA.image";
-  })[0];
+  const content = data.contentfulLegal.content;
 
   return (
     <Layout>
       <LegalHero bgImage={homeHeroBgImage}></LegalHero>
-      <LegalCTA image={legalCTAImage}></LegalCTA>
+      <LegalContent content={content}></LegalContent>
     </Layout>
   );
 };
@@ -33,6 +31,21 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    contentfulLegal(name: { eq: "Legal Colombia" }) {
+      name
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
       }
     }
   }
