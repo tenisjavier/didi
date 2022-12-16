@@ -8,10 +8,12 @@ import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodMunicipalityList from "../../components/sections/FoodMunicipalityList";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const itemsList = data.allContentfulMunicipality.nodes;
+  const cities = data.allContentfulMunicipality.nodes;
+  const neighbourhoods = data.allContentfulNeighbourhood.nodes;
   const name = data.contentfulMunicipality.name;
 
   const foodHeroBgImage = images.filter((image) => {
@@ -32,7 +34,7 @@ const FoodCity = ({ data }) => {
 
   return (
     <Layout
-      title={`Pide Comida a Domicilio  en ${name} CDMX`}
+      title={`Pide Comida a Domicilio  en ${name} CDMX `}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
     >
       <FoodCityHero
@@ -51,12 +53,13 @@ const FoodCity = ({ data }) => {
         data={data.contentfulMunicipality}
         image={foodDeliveryCTAImage}
       ></FoodCityBannerCTA2>
-      <FoodMunicipalityList data={itemsList}></FoodMunicipalityList>
+      <FoodMunicipalityList data={cities}></FoodMunicipalityList>
       <FoodCityBannerCTA3
         data={data.contentfulMunicipality}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
       <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      <FoodNeighborhoodList data={neighbourhoods}></FoodNeighborhoodList>
     </Layout>
   );
 };
@@ -65,28 +68,47 @@ export default FoodCity;
 
 export const query = graphql`
   query ($id: String) {
-    allContentfulMunicipality(filter: {id: {ne: "$id"}}) {
-    nodes {
-      id
-      name
-      slug
-      city {
-        name
-        slug
-      }
-    }
-  }
     contentfulMunicipality(id: { eq: $id }) {
       name
       slug
+      neighbourhood {
+        name
+      }
       city {
         name
+      }
+    }
+    allContentfulMunicipality {
+      nodes {
+        name
+        slug
+        neighbourhood {
+          name
+        }
+        city {
+          name
+        }
+      }
+    }
+    allContentfulNeighbourhood(
+      filter: { municipality: { id: { eq: $id } } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        municipality {
+          name
+        }
+        city {
+          name
+        }
       }
     }
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodCTA.image)/"
         }
       }
     ) {

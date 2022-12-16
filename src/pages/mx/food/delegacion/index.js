@@ -56,6 +56,9 @@ export const query = graphql`
       nodes {
         name
         slug
+        city {
+          name
+        }
       }
     }
   }

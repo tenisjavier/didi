@@ -241,7 +241,7 @@
   "FoodCityList.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
   "FoodCityList.bgColor": "bg-white",
   "FoodCityList.textColor": "gray-primary",
-  "FoodCityList.linkItem": "/mx/food/ciudad/{{city}}/",
+  "FoodCityList.linkItem": "/mx/food/{{city}}/",
   "FoodCityBannerCTA.title": "Comida rápida y económica a domicilio en {{city}}",
   "FoodCityBannerCTA.desc": "¿Estás buscando los mejores platillos rápidos en {{city}}? Descubre los restaurantes más económicos en {{city}} con entrega a domicilio por parte de los socios repartidores que utilizan la app de DiDi Food. Así que si tienes antojo y ya sabes lo que quieres comer, pide ya y recibe tu pedido en tan solo unos minutos. \n La app de DiDi Food te permite encontrar los restaurantes más baratos de {{city}}, bien sea para desayunar, almorzar, cenar o simples refrigerios. Descubre cientos de restaurantes económicos con entrega a domicilio en {{city}}, pide tu comida ya y sigue la entrega del socio repartidor minuto a minuto.",
   "FoodCityBannerCTA.bgColor": "bg-orange-primary",

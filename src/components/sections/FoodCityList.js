@@ -1,13 +1,14 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
+const slugify = require("slugify");
 
 const FoodCityList = ({ data }) => {
   const items = data.map((city) => {
     return {
       text: city.name,
       secondText: "",
-      link: t("FoodCityList.linkItem", { city: city.slug }),
+      link: t("FoodCityList.linkItem", { city: slugify(city.name, { lower: true }) }),
       image: city.image,
     };
   });

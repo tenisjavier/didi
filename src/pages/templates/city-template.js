@@ -65,7 +65,7 @@ export default FoodCity;
 
 export const query = graphql`
   query ($id: String) {
-    allContentfulCity (filter: {id: {ne: "$id"}}) {
+    allContentfulCity (filter: {id: {ne: $id}}) {
       nodes{
         id
         name

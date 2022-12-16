@@ -4,7 +4,7 @@ import ListSection from "../ListSection";
 const slugify = require("slugify");
 
 const FoodMunicipalityList = ({ data }) => {
-  const itemsList = data.map((municipality, city) => {
+  const itemsList = data.map((municipality) => {
     const municipalitySlug = municipality.name;
     const citySlug = municipality.city.name;
     return {

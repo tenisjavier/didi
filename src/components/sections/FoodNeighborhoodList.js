@@ -6,21 +6,17 @@ const slugify = require("slugify");
 const FoodNeighborhoodList = ({ data }) => {
   console.log(data);
   const items = data.map((item) => {
-    // console.log(item);
     const neighbourhoodSlug = item.name;
-    console.log(typeof(neighbourhoodSlug)+ " " + neighbourhoodSlug);
     const municipalitySlug = item.municipality.name;
-    console.log(typeof(municipalitySlug) + " " + municipalitySlug);
-    const citySlug = item.municipality.city.name;
-    console.log(typeof(citySlug) + " " + citySlug);
+    const citySlug = item.city.name;
 
     return {
       text: item.name,
       secondText: "",
       link: t("neighborhood.linkItem", {
         neighborhood: slugify(neighbourhoodSlug, { lower: true }),
-        municipality: municipalitySlug,
-        city: citySlug,
+        municipality: slugify(municipalitySlug, { lower: true }),
+        city: slugify(citySlug, { lower: true }),
       }),
       image: item.image,
     };
