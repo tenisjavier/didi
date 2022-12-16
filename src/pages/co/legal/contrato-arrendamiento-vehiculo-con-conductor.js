@@ -13,7 +13,9 @@ const TermsAndConditions = ({ data }) => {
 
 export const query = graphql`
   query {
-    contentfulLegal(name: { eq: "Terms And Conditions" }) {
+    contentfulLegal(
+      name: { eq: "Contrato de arrendamiento de vehículo con conductor" }
+    ) {
       content {
         raw
       }
