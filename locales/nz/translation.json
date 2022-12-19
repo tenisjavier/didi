@@ -8,7 +8,7 @@
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Know More",
   "SafetyCTA.btnMode": "light",
-  "SafetyCTA.btnLink": "safety/",
+  "SafetyCTA.btnLink": "/nz/safety/",
   "DrvCTA.title": "Become a driver",
   "DrvCTA.desc": "All Drivers have the opportunity to take home more of the fare with DiDi’s industry-leading low Services Fees",
   "DrvCTA.bullets": [
@@ -286,7 +286,7 @@
   "SafetyHero.desc": "We continually improve our service and safety standards to ensure an enjoyable rideshare experience for both riders and drivers.",
   "SafetyHero.textColor": "white",
   "SafetyHero.btnMode": "light",
-  "SafetyGridDuringTrip.bgColor": "bg-gray-light",
+  "SafetyGridDuringTrip.bgColor": "bg-white",
   "SafetyGridDuringTrip.title": "Riders Safety Features",
   "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "gray-primary",
@@ -294,49 +294,49 @@
     {
       "title": "SOS Button",
       "desc": "With the tap of a button, you can contact law enforcement and emergency services. Your location details will also be shown in-app for easy reference.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Unmatch drivers",
       "desc": "If you think that any of your drivers were not up to standard you can now unmatch with them so your trip requests are never dispatched to them again. Please remember if there was a serious incident to report it to us.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Share trip",
       "desc": "Our live GPS tracking allows you to share your trip with your Trusted Contacts. This can be found in the Safety Toolkit.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Private Numbers",
       "desc": "When a rider and driver contact each other regarding a trip, whether that be before or after, both phone numbers will be anonymised.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Hidden Addresses",
       "desc": "To protect your personal information, your specific pick up and drop off addresses are hidden after the trip finishes.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Driver Screening",
       "desc": "To ensure all DiDi driver-partners are of the highest quality, they’re required to pass a series of safety verifications and background checks prior to driving.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Facial Verification",
       "desc": "Facial verification matches a picture of your driver against the approved profile picture to make sure that it is not someone else driving.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "TripCheck",
       "desc": "If anything unusual is detected during your trip you will receive a notification. If there is a problem our safety toolkit and SOS button will be made available to you.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary"
     }
   ],
