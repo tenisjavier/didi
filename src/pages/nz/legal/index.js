@@ -39,7 +39,8 @@ const Legal = ({ data }) => {
       p.name === "Rider Complaint Handling Policy " ||
       p.name === "General Terms and Conditions for Rider Offers" ||
       p.name === "Passenger Software Use and Licence Agreement" ||
-      p.name === "NZ Promo Terms and Conditions"
+      p.name === "NZ Promo Terms and Conditions" ||
+      p.name === "DiDi Gift Cards"
     );
   });
   const paxProgramPolicies = policies.filter(
