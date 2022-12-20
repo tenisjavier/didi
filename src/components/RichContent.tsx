@@ -117,9 +117,9 @@ const options: optionsInterface = {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const { gatsbyImageData, title } = node.data.target;
       return (
-        <div className="my-12 flex w-full">
+        <div className="my-12 flex w-full justify-center">
           <GatsbyImage
-            className="max-w-xl md:max-w-4xl"
+            className="max-w-xl md:max-w-5xl"
             image={getImage(gatsbyImageData)!}
             alt={title}
           ></GatsbyImage>
