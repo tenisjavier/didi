@@ -119,7 +119,7 @@ const options: optionsInterface = {
       return (
         <div className="my-12 flex w-full">
           <GatsbyImage
-            className="w-full"
+            className="max-w-xl md:max-w-4xl"
             image={getImage(gatsbyImageData)!}
             alt={title}
           ></GatsbyImage>
