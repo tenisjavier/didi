@@ -38,11 +38,15 @@ const DiDiMas = ({ data }) => {
     );
   });
   const partnerFinanzas = partners.filter((partner) => {
-    return partner.name === "Consar" || partner.name === "SimpleTAX";
+    return (
+      partner.name === "Consar" ||
+      partner.name === "SimpleTAX" ||
+      partner.name === "Cura Deuda"
+    );
   });
 
   const partnerSeguros = partners.filter((partner) => {
-    return partner.name === "Qualitas";
+    return partner.name === "DiAseguro";
   });
 
   const partnerSalud = partners.filter((partner) => {
