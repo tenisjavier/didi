@@ -311,6 +311,41 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/cl/driver/conductor-en-{{city}}/",
+  "BecomeDriverHero.title": "",
+  "BecomeDriverHero.desc": "",
+  "BecomeDriverHero.textColor": "white",
+  "BecomeDriverCTA.title": "現在加入，好處多多！",
+  "BecomeDriverCTA.desc": "",
+  "BecomeDriverCTA.textColor": "gray-primary",
+  "BecomeDriverCTA.bullets": [
+    "靚單多，收入高",
+    "搶單或派單模式，任你選擇",
+    "提前知道行程起終點，方便規劃",
+    "支持現金或電子收款",
+    "即日提現，無需等候"
+  ],
+  "BecomeDriverColumns.title": "對加入DiDi Taxi 司機夥伴有疑問？",
+  "BecomeDriverColumns.bgColor": "bg-gray-light",
+  "BecomeDriverColumns.columns": [
+    {
+      "title": "App 內線上服務中心",
+      "desc": " ",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "App 內線上服務中心",
+      "desc": " ",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "WhatsApp 聯絡我們",
+      "desc": " ",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    }
+  ],
   "TaxiHero.title": "成為 DiDi Taxi 司機夥伴",
   "TaxiHero.desc": "免平台費，免接單費 \n 內地及本地乘客客源 \n 正價單",
   "TaxiHero.textColor": "white",
