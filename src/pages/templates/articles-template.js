@@ -6,7 +6,6 @@ import ArticleHero from "../../components/sections/ArticleHero";
 import ArticleNoBtnHero from "../../components/sections/ArticleNoBtnHero";
 import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
 import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
-import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
 import ArticleContent from "../../components/sections/ArticleContent";
 import PaxBanner from "../../components/sections/PaxBanner";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
@@ -21,12 +20,11 @@ const ArticlesTemplate = ({ data }) => {
   const desc = data.contentfulArticle.seoDescription;
   const { pathname } = useLocation();
   let offerColumns;
-  let banner = <PaxBanner></PaxBanner>;
+
   let hero = <ArticleHero data={data}></ArticleHero>;
 
   if (pathname.includes("/hk/coronavirus")) {
     hero = <ArticleNoBtnHero data={data}></ArticleNoBtnHero>;
-    banner = null;
   }
 
   if (pathname.includes("/hk") && !pathname.includes("/hk/coronavirus")) {
@@ -34,7 +32,6 @@ const ArticlesTemplate = ({ data }) => {
     const articleOfferColumnsImages = images.filter((image) => {
       return image.title === "hk.ArticleOfferColumns.image";
     });
-    banner = null;
     offerColumns = (
       <ArticleOfferColumns
         images={articleOfferColumnsImages.reverse()}
@@ -53,12 +50,10 @@ const ArticlesTemplate = ({ data }) => {
         tags={data.contentfulArticle.tags}
       ></RelatedFoodBlogColumns>
     );
-    banner = null;
   }
   if (pathname.includes("didipay/blog")) {
     hero = <DiDiPayArticleHero data={data}></DiDiPayArticleHero>;
     columns = <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>;
-    banner = <DiDiPayColumns></DiDiPayColumns>;
   }
 
   return (
@@ -68,7 +63,13 @@ const ArticlesTemplate = ({ data }) => {
       {pathname.includes("/hk") &&
         !pathname.includes("/hk/coronavirus") &&
         offerColumns}
-      {banner}
+      {!(
+        pathname.includes("food/blog") ||
+        pathname.includes("didipay/blog") ||
+        pathname.includes("thejourney") ||
+        pathname.includes("coronavirus") ||
+        pathname.includes("hk/blog")
+      ) && <PaxBanner></PaxBanner>}
       {articles.length && columns}
     </Layout>
   );
