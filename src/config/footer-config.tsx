@@ -20,8 +20,8 @@ const footerLinks: AllFooterInterface = {
     { text: "Newsroom", link: "/cl/newsroom/" },
   ],
   hk: [
-    { text: "的士服務", link: "/hk/的士服務/" },
-    { text: "粵港跨境專車服務", link: "/hk/粵港跨境專車服務/" },
+    { text: "的士服務", link: "/hk/ride/的士服務/" },
+    { text: "粵港跨境專車服務", link: "/hk/ride/粵港跨境專車服務/" },
     { text: "成為司機夥伴", link: "/hk/taxi-driver" },
     { text: "關於我們", link: "/hk/about-us/" },
     { text: "網誌", link: "/hk/blog/" },
