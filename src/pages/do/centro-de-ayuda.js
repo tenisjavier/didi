@@ -16,7 +16,6 @@ const CentroDeAyuda = ({ data }) => {
   const faqPax = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Pasajero R. Dominicana"
   );
-  console.log(data);
   return (
     <Layout>
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>

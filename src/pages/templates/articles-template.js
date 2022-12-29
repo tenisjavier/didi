@@ -1,18 +1,18 @@
-import React from "react";
-import { graphql } from "gatsby";
 import { useLocation } from "@reach/router";
+import { graphql } from "gatsby";
+import React from "react";
 import Layout from "../../components/Layout";
+import ArticleContent from "../../components/sections/ArticleContent";
 import ArticleHero from "../../components/sections/ArticleHero";
 import ArticleNoBtnHero from "../../components/sections/ArticleNoBtnHero";
-import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
-import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
-import ArticleContent from "../../components/sections/ArticleContent";
-import PaxBanner from "../../components/sections/PaxBanner";
-import ArticlesColumns from "../../components/sections/ArticlesColumns";
-import NewsroomColumns from "../../components/sections/NewsroomColumns";
-import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
-import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
 import ArticleOfferColumns from "../../components/sections/ArticleOfferColumns";
+import ArticlesColumns from "../../components/sections/ArticlesColumns";
+import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
+import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
+import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
+import NewsroomColumns from "../../components/sections/NewsroomColumns";
+import PaxBanner from "../../components/sections/PaxBanner";
+import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
 //dsss
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
