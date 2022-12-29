@@ -16,8 +16,6 @@ const Index = ({ data }) => {
     return image.title === "hk.CarModelColumns.image";
   });
 
-  console.log(carModelColumns);
-
   return (
     <Layout>
       <HomeHeroBtn bgImage={HomeHeroBtnBgImage}></HomeHeroBtn>
@@ -33,12 +31,7 @@ export const query = graphql`
   query {
     allContentfulAsset(
       filter: {
-        title: {
-          in: [
-            "hk.HomeHero.bgImage"
-            "hk.CarModelColumns.image"
-          ]
-        }
+        title: { in: ["hk.HomeHero.bgImage", "hk.CarModelColumns.image"] }
       }
     ) {
       nodes {

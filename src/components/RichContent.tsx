@@ -107,7 +107,6 @@ const options: optionsInterface = {
           </div>
         );
       }
-      console.log(node);
       return (
         <a className="text-orange-primary break-all" href={node.data.uri}>
           {node.content[0].value}
@@ -115,6 +114,7 @@ const options: optionsInterface = {
       );
     },
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      if (!node.data.target) return <div></div>;
       const { gatsbyImageData, title } = node.data.target;
       return (
         <div className="my-12 flex w-full justify-center">
