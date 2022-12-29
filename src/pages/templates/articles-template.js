@@ -13,6 +13,7 @@ import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
 import NewsroomColumns from "../../components/sections/NewsroomColumns";
 import PaxBanner from "../../components/sections/PaxBanner";
 import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
+import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
 //dsss
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
@@ -22,16 +23,18 @@ const ArticlesTemplate = ({ data }) => {
   let offerColumns;
 
   let hero = <ArticleHero data={data}></ArticleHero>;
-
+  let banner = <PaxBanner></PaxBanner>;
   if (pathname.includes("/hk/coronavirus")) {
     hero = <ArticleNoBtnHero data={data}></ArticleNoBtnHero>;
   }
+  let columns = <ArticlesColumns data={data}></ArticlesColumns>;
 
   if (pathname.includes("/hk") && !pathname.includes("/hk/coronavirus")) {
     const images = data.allContentfulAsset.nodes;
     const articleOfferColumnsImages = images.filter((image) => {
       return image.title === "hk.ArticleOfferColumns.image";
     });
+    banner = null;
     offerColumns = (
       <ArticleOfferColumns
         images={articleOfferColumnsImages.reverse()}
@@ -39,11 +42,11 @@ const ArticlesTemplate = ({ data }) => {
     );
   }
 
-  let columns = <ArticlesColumns data={data}></ArticlesColumns>;
   if (pathname.includes("newsroom"))
     columns = <NewsroomColumns data={data}></NewsroomColumns>;
   if (pathname.includes("food/blog")) {
     hero = <FoodBlogPostHero data={data}></FoodBlogPostHero>;
+    banner = null;
     columns = (
       <RelatedFoodBlogColumns
         data={data}
@@ -53,7 +56,11 @@ const ArticlesTemplate = ({ data }) => {
   }
   if (pathname.includes("didipay/blog")) {
     hero = <DiDiPayArticleHero data={data}></DiDiPayArticleHero>;
+    banner = <DiDiPayColumns></DiDiPayColumns>;
     columns = <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>;
+  }
+  if (pathname.includes("thejourney")) {
+    banner = null;
   }
 
   return (
@@ -63,13 +70,7 @@ const ArticlesTemplate = ({ data }) => {
       {pathname.includes("/hk") &&
         !pathname.includes("/hk/coronavirus") &&
         offerColumns}
-      {!(
-        pathname.includes("food/blog") ||
-        pathname.includes("didipay/blog") ||
-        pathname.includes("thejourney") ||
-        pathname.includes("coronavirus") ||
-        pathname.includes("hk/blog")
-      ) && <PaxBanner></PaxBanner>}
+      {banner && banner}
       {articles.length && columns}
     </Layout>
   );

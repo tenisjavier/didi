@@ -6,7 +6,9 @@ const slugify = require("slugify");
 const driverInCityRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulCity(filter: {product: {elemMatch: {category: {in: "driver"}}}}) {
+      allContentfulCity(
+        filter: { product: { elemMatch: { category: { in: "driver" } } } }
+      ) {
         nodes {
           country {
             code
@@ -14,9 +16,6 @@ const driverInCityRoutesInit = async (graphql, createPage) => {
           name
           slug
           id
-          product {
-            category
-          }
         }
       }
     }
@@ -33,13 +32,13 @@ const driverInCityRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulCity.nodes.forEach((node) => {
-    const { id, slug, country, product } = node;
+    const { id, slug, country } = node;
     const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
     // create image name depending on country
     let img = `${country.code}.DrvHero.bgImage`;
     // create path depending on the language and category
     let path = `/${country.code}/driver/conductor-en-${slug}/`;
-    if(country.code === "mx")
+    if (country.code === "mx")
       path = `/${country.code}/conductor/conductor-en-${slug}/`;
     if (!sslCountries.includes(country.code))
       path = `/${country.code}/driver/driver-${slug}/`;
@@ -50,7 +49,7 @@ const driverInCityRoutesInit = async (graphql, createPage) => {
       context: {
         id: id,
         countryCode: country.code,
-        componentImage: img
+        componentImage: img,
       },
     });
   });
