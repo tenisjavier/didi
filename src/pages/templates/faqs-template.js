@@ -12,6 +12,9 @@ const FaqsTemplate = ({ data }) => {
   const helpCenterBgImage = images.filter((image) => {
     return image.title === "mx.HelpCenterHero.bgImage";
   })[0];
+  const foodFaqBgImage = images.filter((image) => {
+    return image.title === "mx.FaqFoodHero.bgImage";
+  })[0];
   const { title, content } = data.contentfulFaq;
   const { pathname } = useLocation();
   const productName =
@@ -31,7 +34,7 @@ const FaqsTemplate = ({ data }) => {
       <FoodFaqHero
         title={title}
         desc={productName}
-        bgImage={helpCenterBgImage}
+        bgImage={foodFaqBgImage}
       ></FoodFaqHero>
     );
   return (
@@ -48,7 +51,11 @@ const FaqsTemplate = ({ data }) => {
 export const query = graphql`
   query ($id: String, $countryCode: String) {
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.HelpCenterHero.bgImage)/" } }
+      filter: {
+        title: {
+          regex: "/(mx.HelpCenterHero.bgImage)|(mx.FaqFoodHero.bgImage)/"
+        }
+      }
       sort: { title: ASC }
     ) {
       nodes {
