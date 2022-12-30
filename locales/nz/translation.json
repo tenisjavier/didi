@@ -180,7 +180,7 @@
   "KnowMoreBanner.bgColor": "bg-orange-primary",
   "KnowMoreBanner.textColor": "white",
   "KnowMoreBanner.btnText": "Help Center",
-  "KnowMoreBanner.btnLink": "/nz/centro-de-ayuda/",
+  "KnowMoreBanner.btnLink": "/nz/driver/help/",
   "KnowMoreBanner.btnMode": "light",
   "DeliveryHero.title": "DiDi Delivery",
   "DeliveryHero.desc": "Power your business with instant and affordable delivery",
