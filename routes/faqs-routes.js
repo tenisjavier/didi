@@ -42,7 +42,7 @@ const faqsRoutesInit = async (graphql, createPage) => {
       path = `/${country.code}/centro-de-ayuda/${slug}/`;
     if (product && product[0].category[0] === "food")
       path = `/${country.code}/food/restaurantes/preguntas-frecuentes/${slug}/`;
-    if (isEducationalGuide)
+    if (Boolean(isEducationalGuide))
       path = `/${country.code}/food/restaurantes/guias-educacionales/${slug}/`;
 
     createPage({
