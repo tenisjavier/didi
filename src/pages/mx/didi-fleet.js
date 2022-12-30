@@ -5,7 +5,6 @@ import FleetHero from "../../components/sections/FleetHero";
 import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
 import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
 import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
-import FleetAgregaCTA from "../../components/sections/FleetAgregaCTA";
 import FleetColumns from "../../components/sections/FleetColumns";
 
 const DiDiFleet = ({ data }) => {
@@ -20,10 +19,6 @@ const DiDiFleet = ({ data }) => {
 
   const FleetRegistraAutosCTAImage = images.filter((image) => {
     return image.title === "mx.FleetRegistraAutos.image";
-  })[0];
-
-  const FleetAgregaCTAImage = images.filter((image) => {
-    return image.title === "mx.FleetAgrega.image";
   })[0];
 
   const FleetColumnsImage = images.filter((image) => {
