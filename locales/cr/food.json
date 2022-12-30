@@ -609,7 +609,7 @@
   "FaqFoodHero.title": "Preguntas Frecuentes & Recomendaciones",
   "FaqFoodHero.desc": "¿Tienes dudas? Consulta nuestra sección de preguntas frecuentes a continuación:",
   "FoodHeroSecondary.btnMode": "green",
-  "FoodFaqList.linkItem": "/mx/food/restaurantes/preguntas-frecuentes/{{faqSlug}}",
+  "FoodFaqList.linkItem": "/cr/food/restaurantes/preguntas-frecuentes/{{faqSlug}}",
   "FoodFaqList.desc": "",
   "FoodFaqHero.textColor": "white",
   "FaqFoodHero.textColor": "white",
