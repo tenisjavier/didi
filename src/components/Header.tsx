@@ -54,6 +54,7 @@ const Navlogo = () => {
 
   let logoLink = `/${countryCode}/`;
   if (countryCode === "en") logoLink = "/";
+  if (pathname.includes("food")) logoLink = `/${countryCode}/food`
 
   return (
     <div className="p-3">
