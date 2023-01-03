@@ -104,7 +104,10 @@ export const query = graphql`
       }
     }
     allContentfulCity(
-      filter: { country: { code: { eq: $countryCode } } }
+      filter: {
+        product: { elemMatch: { category: { eq: "driver" } } }
+        country: { code: { eq: $countryCode } }
+      }
       sort: { name: ASC }
     ) {
       nodes {

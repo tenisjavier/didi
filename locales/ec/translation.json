@@ -46,7 +46,7 @@
   "HelpCenterCTA.btnText": "Aquí",
   "HelpCenterCTA.btnLink": "/ec/centro-de-ayuda",
   "PaxCTA.title": "Elige DiDi",
-  "PaxCTA.desc": "La plataforma que te ofrece seguridad y calidad. DiDi te conecta con vehículos particulares para que tengas un viaje increíble. Disfruta de amplia disponibilidad, soporte 24/7 y en nuestro servicio Express. Descarga ya la app DiDi Pasajero y disfruta tu próximo viaje con la app con impacto en movilidad más grande del mundo.",
+  "PaxCTA.desc": "La plataforma que te ofrece seguridad y calidad. DiDi te conecta con vehículos particulares para que tengas un viaje increíble. Disfruta de nuestra amplia disponibilidad. Descarga ya la app DiDi Pasajero y disfruta tu próximo viaje con la app con impacto en movilidad más grande del mundo.",
   "PaxCTA.bullets": false,
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "primary",
@@ -63,8 +63,8 @@
       "height": "h-80"
     },
     {
-      "title": "Preguntas Frecuentes",
-      "desc": "Conoce aquí las respuestas a las preguntas más frecuentes de nuestros Socios Conductores y Usuarios de DiDi Pasajero",
+      "title": "Legal",
+      "desc": "Conoce nuestras políticas y términos y condiciones de uso de la app DiDi Pasajero y la app DiDi Conductor en Ecuador.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ec/legal/",
@@ -72,8 +72,8 @@
       "height": "h-80"
     },
     {
-      "title": "Centro de Ayuda",
-      "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte.",
+      "title": "Preguntas Frecuentes",
+      "desc": "Conoce aquí las respuestas a las preguntas más frecuentes de nuestros Socios Conductores y Usuarios de DiDi Pasajero",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ec/centro-de-ayuda/",
@@ -209,8 +209,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "title": "Si necesitas asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00",
       "bgColor": "white",
       "textColor": "gray-primary"
     }
@@ -549,8 +549,8 @@
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
+      "title": "Si necesitas asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00",
       "bgColor": "bg-gray-light"
     },
     {

@@ -6,6 +6,7 @@ import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HelloCTA from "../../components/sections/HelloCTA";
+import HomeColumns from "../../components/sections/HomeColumns";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -32,6 +33,7 @@ const Index = ({ data }) => {
       <PaxCTA image={paxCTAImage} bullets={false}></PaxCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <HelloCTA image={helloImage}></HelloCTA>
+      <HomeColumns></HomeColumns>
     </Layout>
   );
 };

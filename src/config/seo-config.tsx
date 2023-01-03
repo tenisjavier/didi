@@ -184,6 +184,38 @@ const seoMeta: AllSEOMetaInterface = {
       title: "成為司機夥伴 - DiDi 香港",
       desc: "成為司機夥伴 - DiDi 香港",
     },
+    "/coronavirus/": {
+      title: "同心抗疫 滴滴守護你的出行安全",
+      desc: "香港第五波疫情嚴峻，牽動著社會各界的心。滴滴香港積極推出線上及線下各項防疫措施，竭力爲司機夥伴和乘客的出行安全保駕護航",
+    },
+    "/ride/滴滴的士服務/": {
+      title: "的士服務 - DiDi 香港",
+      desc: "",
+    },
+    "/ride/粵港跨境專車服務/": {
+      title: "粵港跨境專車服務 - DiDi 香港",
+      desc: "",
+    },
+    "/點call-didi香港-didi-app-alipay-wechat-小程序/": {
+      title: "點call DiDi ? - DiDi 香港",
+      desc: "",
+    },
+    "/taxi-driver/": {
+      title: "成為司機夥伴 - DiDi 香港",
+      desc: "",
+    },
+    "/遠dd-call-didi-程程85折/": {
+      title: "遠DD, call DiDi! 程程85折! - DiDi 香港",
+      desc: "",
+    },
+    "/about-us/": {
+      title: "About us - DiDi 香港",
+      desc: "",
+    },
+    "/blog/": {
+      title: "Blog - DiDi 香港",
+      desc: "",
+    },
   },
   mx: {
     "/": {
@@ -299,7 +331,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "¿Qué comida se te antoja en este momento? DiDi Food te entrega Comida a Domicilio de tus restaurantes favoritos en todas estas colonias... y en minutos",
     },
     "/food/blog/": {
-      title: "Blog DiDi Food: Temas de Comida, Restaurantes y Gastronomía Mexicana",
+      title:
+        "Blog DiDi Food: Temas de Comida, Restaurantes y Gastronomía Mexicana",
       desc: "En el blog de DiDi Food encontrarás recomendaciones sobre restaurantes de moda, platillos, rutas gastronómicas y tendencias del sector. Descubrenos",
     },
     "/food/restaurantes/registro/": {
@@ -613,6 +646,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/didimas/": {
       title: "Promociones DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
+    },
+    "/driver/historias-de-exito/": {
+      title: "Historias de Éxito de Socios Arrendadores",
+      desc: "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
     },
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",

@@ -26,7 +26,6 @@ const CarModelColumns = ({ images }: CarModelColumnsProps) => {
   };
 
   if (images) {
-    console.log(images, props);
     props.columns.forEach((col, index) => {
       const image = images[index].gatsbyImageData;
       col.image = (

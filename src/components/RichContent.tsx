@@ -107,7 +107,10 @@ const options: optionsInterface = {
           </div>
         );
       }
+<<<<<<< HEAD
       (node);
+=======
+>>>>>>> fd687ebc8f1da8290dc8b9e8a4511f5f946d7e2a
       return (
         <a className="text-orange-primary break-all" href={node.data.uri}>
           {node.content[0].value}
@@ -115,11 +118,12 @@ const options: optionsInterface = {
       );
     },
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      if (!node.data.target) return <div></div>;
       const { gatsbyImageData, title } = node.data.target;
       return (
-        <div className="my-12 flex w-full">
+        <div className="my-12 flex w-full justify-center">
           <GatsbyImage
-            className="w-full"
+            className="max-w-xl md:max-w-5xl"
             image={getImage(gatsbyImageData)!}
             alt={title}
           ></GatsbyImage>

@@ -41,6 +41,7 @@ const Legal = ({ data }) => {
         "Rider Complaint Handling Policy ",
         "General Terms and Conditions for Rider Offers",
         "Passenger Software Use and Licence Agreement",
+        "DiDi Gift Cards",
       ].indexOf(p.name) > -1
   );
   const paxProgramPolicies = policies.filter(

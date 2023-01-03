@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../components/CTASection";
 import HeroVideo from "../images/didi-home.mp4";
 import Layout from "../components/Layout";
-import "../styles/gray.css";
 
 const Index = ({ data }) => {
   const countries = data.allContentfulCountry.nodes;
@@ -102,7 +101,7 @@ const Index = ({ data }) => {
   };
 
   return (
-    <div id="gray">
+    <div>
       <Layout>
         <CTASection {...CTAProps} key={1}></CTASection>
         <CTASection {...AboutUsProps} key={2}></CTASection>

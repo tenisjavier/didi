@@ -76,19 +76,46 @@
   "StatsColumns.textColor": "gray-primary",
   "StatsColumns.columns": [
     {
+      "numberTitle": "180",
       "title": "180萬",
+      "afterTitle": "萬",
       "desc": "完成行程",
-      "textColor": "orange-primary"
+      "textColor": "orange-primary",
+      "animatedNumber": true
     },
     {
+      "numberTitle": "40000",
       "title": "40000",
+      "afterTitle": " ",
       "desc": "註冊司機",
-      "textColor": "orange-primary"
+      "textColor": "orange-primary",
+      "animatedNumber": true
     },
     {
+      "numberTitle": "5",
       "title": "5分鐘",
+      "afterTitle": "分鐘",
       "desc": "平均接駕時間",
-      "textColor": "orange-primary"
+      "textColor": "orange-primary",
+      "animatedNumber": true
+    }
+  ],
+  "ContactColumns.contacts": [
+    {
+      "title": "客戶服務部",
+      "desc": "可於DiDi App 內聯絡線上客服，或把閣下遇到的問題、相關截圖及手機號碼電郵至support@didiglobal.com "
+    },
+    {
+      "title": "品牌合作",
+      "desc": "hkmarketing@didiglobal.com"
+    },
+    {
+      "title": "媒體合作",
+      "desc": "globalpr@didiglobal.com"
+    },
+    {
+      "title": "商業合作",
+      "desc": "hkmarketing@didiglobal.com"
     }
   ],
   "SpecialCarPaxHero.title": "DiDi 粵港車",
@@ -284,6 +311,41 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/cl/driver/conductor-en-{{city}}/",
+  "BecomeDriverHero.title": "",
+  "BecomeDriverHero.desc": "",
+  "BecomeDriverHero.textColor": "white",
+  "BecomeDriverCTA.title": "現在加入，好處多多！",
+  "BecomeDriverCTA.desc": "",
+  "BecomeDriverCTA.textColor": "gray-primary",
+  "BecomeDriverCTA.bullets": [
+    "靚單多，收入高",
+    "搶單或派單模式，任你選擇",
+    "提前知道行程起終點，方便規劃",
+    "支持現金或電子收款",
+    "即日提現，無需等候"
+  ],
+  "BecomeDriverColumns.title": "對加入DiDi Taxi 司機夥伴有疑問？",
+  "BecomeDriverColumns.bgColor": "bg-gray-light",
+  "BecomeDriverColumns.columns": [
+    {
+      "title": "App 內線上服務中心",
+      "desc": " ",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "App 內線上服務中心",
+      "desc": " ",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "WhatsApp 聯絡我們",
+      "desc": " ",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    }
+  ],
   "TaxiHero.title": "成為 DiDi Taxi 司機夥伴",
   "TaxiHero.desc": "免平台費，免接單費 \n 內地及本地乘客客源 \n 正價單",
   "TaxiHero.textColor": "white",
@@ -422,6 +484,14 @@
       "bgColor": "bg-white"
     }
   ],
+  "ContactHero.title": "CONTACT US \n 聯絡我們",
+  "ContactHero.desc": "共創共享經濟 共贏移動出行",
+  "ContactHero.textColor": "white",
+  "AboutGlobalCTA.title": "您好, 香港 ! \n 我們是滴滴出行 \n 全球領先的移動出行科技平台",
+  "AboutGlobalCTA.desc": "滴滴出行是全球領先的移動出行科技平台，在亞太、拉美、非洲和俄羅斯提供出租車召車、網約車、順風車、公交、共享單車、共享電單車、代駕、汽車服務、配送、貨運及物流、金融等多元化服務。\n 滴滴為車主、司機及騎手提供了靈活的工作和收入機會。滴滴致力於與各地監管部門、出租車行業、汽車產業等夥伴及社群積極協作，用本地化的人工智能技術推動智慧交通創新，共同解決全球交通、環保和就業挑戰。滴滴將持續致力於提升用戶體驗，創造社會價值，建設安全、開放、可持續的未來移動出行和本地生活服務新生態。",
+  "AboutGlobalCTA.btnLink": "https://www.didiglobal.com/news",
+  "AboutGlobalCTA.btnText": "了解更多",
+  "AboutGlobalCTA.btnMode": "primary",
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
   "SafetyGridDuringTrip.title": "Durante el Viaje",
   "SafetyGridDuringTrip.desc": false,
@@ -528,12 +598,41 @@
   "NewsroomHero.desc": "En esta sección destacaremos las principales comunicaciones de DiDi",
   "NewsroomHero.textColor": "white",
   "NewsroomHero.btnMode": "light",
-  "ArticlesColumns.title": "DiDi Artículos de Lugares para Visitar en Chile",
+  "ArticlesColumns.title": " ",
   "ArticlesColumns.bgColor": "bg-blue-primary",
   "ArticlesColumns.textColor": "white",
-  "ArticlesColumns.btnText": "Leer Artículo",
+  "ArticlesColumns.btnText": "閱讀文章",
   "ArticlesColumns.btnMode": "dark",
-  "ArticlesColumns.linkItem": "/cl/articulos/{{article}}/",
+  "ArticlesColumns.linkItem": "/hk/blog/{{article}}/",
+  "ArticleOfferColumns.columns": [
+    {
+      "title": "1程減$100",
+      "desc": "新用戶適用",
+      "offer": true,
+      "offerTextBefore": "HK$",
+      "offerText": "1",
+      "offerTextAfter": "/1張",
+      "small": "• 每張最高即減HK$100 \n • 購買後7天內有效 \n • 只適用於電子支付"
+    },
+    {
+      "title": "1程7折券",
+      "desc": "長途客之選",
+      "offer": true,
+      "offerTextBefore": "HK$",
+      "offerText": "1",
+      "offerTextAfter": "/1張",
+      "small": "• 每張最高減HK$50 \n • 購買後7天內有效 \n • 只適用於電子支付"
+    },
+    {
+      "title": "5程85折券",
+      "desc": "的士常客",
+      "offer": true,
+      "offerTextBefore": "HK$",
+      "offerText": "8.5",
+      "offerTextAfter": "/5張",
+      "small": "• 每張最高減HK$50 \n • 購買後7天內有效 \n • 只適用於電子支付"
+    }
+  ],
   "NewsroomColumns.title": "Comunicados Oficiales DiDi",
   "NewsroomColumns.bgColor": "bg-blue-primary",
   "NewsroomColumns.textColor": "white",

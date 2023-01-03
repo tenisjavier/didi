@@ -1,51 +1,61 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../../components/Layout";
-import FoodFaqHero from "../../../../../components/sections/FoodFaqHero";
-import FaqContent from "../../../../../components/sections/FaqContent";
-import FoodFaqList from "../../../../../components/sections/FoodFaqList";
+import { useLocation } from "@reach/router";
+import Layout from "../../components/Layout";
+import FaqHero from "../../components/sections/FaqHero";
+import FoodFaqHero from "../../components/sections/FoodFaqHero";
+import FaqContent from "../../components/sections/FaqContent";
+import FaqList from "../../components/sections/FaqList";
 
-const FaqTemplate = ({ data }) => {
+const FaqsTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
+    return image.title === "mx.HelpCenterHero.bgImage";
+  })[0];
+  const foodFaqBgImage = images.filter((image) => {
     return image.title === "mx.FaqFoodHero.bgImage";
   })[0];
   const { title, content } = data.contentfulFaq;
+  const { pathname } = useLocation();
   const productName =
     data.contentfulFaq.product != null ? data.contentfulFaq.product.name : "";
 
-  const faqDelivery = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Restaurant Repartidores"
-  );
-  const faqOperations = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Restaurant Operaciones"
-  );
-  const faqStore = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Restaurant Tienda"
+  const productFaqs = data.allContentfulProduct.nodes.faq;
+  let hero = (
+    <FaqHero
+      title={title}
+      desc={productName}
+      bgImage={helpCenterBgImage}
+    ></FaqHero>
   );
 
-  return (
-    <Layout>
+  if (pathname.includes("/food"))
+    hero = (
       <FoodFaqHero
         title={title}
         desc={productName}
-        bgImage={helpCenterBgImage}
+        bgImage={foodFaqBgImage}
       ></FoodFaqHero>
+    );
+  return (
+    <Layout>
+      {hero}
       <FaqContent title={title} content={content}></FaqContent>
-      <FoodFaqList title="Repartidores" faqs={faqDelivery[0].faq}></FoodFaqList>
-      <FoodFaqList
-        title="Operaciones"
-        faqs={faqOperations[0].faq}
-      ></FoodFaqList>
-      <FoodFaqList title="Tu Tienda" faqs={faqStore[0].faq}></FoodFaqList>
+      {productFaqs && (
+        <FaqList faqs={data.allContentfulProduct.nodes.faq}></FaqList>
+      )}
     </Layout>
   );
 };
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $countryCode: String) {
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.FaqFoodHero.bgImage)/" } }
+      filter: {
+        title: {
+          regex: "/(mx.HelpCenterHero.bgImage)|(mx.FaqFoodHero.bgImage)/"
+        }
+      }
       sort: { title: ASC }
     ) {
       nodes {
@@ -74,7 +84,7 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
+      filter: { country: { elemMatch: { code: { eq: $countryCode } } } }
     ) {
       nodes {
         name
@@ -99,4 +109,4 @@ export const query = graphql`
   }
 `;
 
-export default FaqTemplate;
+export default FaqsTemplate;

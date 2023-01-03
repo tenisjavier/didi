@@ -32,7 +32,7 @@
     "Precios Bajos",
     "La Mejor Seguridad",
     "Cómodo, Rápido y Seguro",
-    "Soporte 24/7"
+    "Soporte y chat en vivo"
   ],
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "dark",
@@ -94,8 +94,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "title": "Si necesitás asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00.",
       "bgColor": "white",
       "textColor": "gray-primary"
     }
@@ -235,7 +235,7 @@
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",
     "¡Generá ganancias sin salir de casa! Además, aprovechá una de las tasas de servicio más bajas del mercado.",
-    "¡Contás con soporte 24/7! y todas las funciones de seguridad DiDi.",
+    "¡Contás con soporte y chat en vivo! y todas las funciones de seguridad DiDi.",
     "Monitorea los ingresos de las solicitudes generadas con tu vehículo y recibí los pagos con tarjeta de crédito directamente en tu app."
   ],
   "FleetWhyDiDi.textColor": "gray-primary",
@@ -369,8 +369,8 @@
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Soporte 24/7",
-      "desc": "Contamos con un equipo calificado para apoyarte durante una emergencia. Nuestro Centro tiene comunicación directa con las autoridades y sus diferentes redes de apoyo.",
+      "title": "Si necesitás asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00.",
       "bgColor": "bg-gray-light"
     },
     {
@@ -614,8 +614,8 @@
       "textColor": "white"
     },
     {
-      "title": "¡Contás con soporte 24/7!",
-      "desc": "y todas las funciones de seguridad DiDi.",
+      "title": "Si necesitás asistencia",
+      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00.",
       "textColor": "white"
     },
     {

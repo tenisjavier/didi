@@ -27,7 +27,11 @@ const CentroDeAyuda = ({ data }) => {
         title="Operaciones"
         faqs={faqOperations[0].faq}
       ></FoodFaqList>
-      <FoodFaqList title="Tu Tienda" faqs={faqStore[0].faq}></FoodFaqList>
+      <FoodFaqList
+        title="Tu Tienda"
+        faqs={faqStore[0].faq}
+        urlPrefix="/cr/food/restaurantes/guias-educacionales/"
+      ></FoodFaqList>
     </Layout>
   );
 };

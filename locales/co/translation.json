@@ -88,7 +88,7 @@
     },
     {
       "title": "Soporte 24/7",
-      "desc": "Tu seguridad es nuestra prioridad, por eso contamos con soporte telefónico 24/7 para atender todas tus dudas o solicitudes.",
+      "desc": "Tu seguridad es nuestra prioridad. Por eso contamos con soporte 24/7 en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes.",
       "bgColor": "white",
       "textColor": "gray-primary"
     }
@@ -123,33 +123,34 @@
   "DrvWhyDiDi.textColor": "gray-primary",
   "DrvWhyDiDi.btnMode": "primary",
   "DrvVideoGrid.bgColor": "bg-blue-primary",
-  "DrvVideoGrid.title": "Sigue estos pasos para empezar a manejar y generar ingresos",
+  "DrvVideoGrid.title": "Historias de Éxito de Socios Arrendadores",
+  "DrvVideoGrid.desc": "Sigue estos pasos para empezar a manejar y generar ingresos",
   "DrvVideoGrid.textColor": "white",
   "DrvVideoGrid.columns": [
     {
-      "title": "Sube tu Cédula de Identidad Chilena",
+      "title": "Conoce la historia de Raúl",
       "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/1853mnRqTW4"
+      "videoSrc": "https://www.youtube.com/embed/ogoDoNq9V3U"
     },
     {
-      "title": "Sube una fotografía de ti sosteniendo tu cédula de identidad",
+      "title": "Conoce la historia de Fanny",
       "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/6TyVl3r1wUM"
+      "videoSrc": "https://www.youtube.com/embed/bZUP2rmZbaE"
     },
     {
-      "title": "Sube tu licencia de conducir Chilena",
+      "title": "Conoce la historia de Libia",
       "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/cDXmKDkOlL4"
+      "videoSrc": "https://www.youtube.com/embed/ce_woUhKftQ"
     },
     {
-      "title": "Sube tu Permiso de Circulación al día",
+      "title": "Conoce la historia de Judy",
       "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/LH6BgttFSTc"
+      "videoSrc": "https://www.youtube.com/embed/leKVXZWQkSc"
     },
     {
-      "title": "Sube tu Permiso de Circulación al día",
+      "title": "Conoce la historia de Agustín",
       "bgColor": "bg-blue-primary",
-      "videoSrc": "https://www.youtube.com/embed/6lq6C1AbdPw"
+      "videoSrc": "https://www.youtube.com/embed/IJ85q67cfVo"
     }
   ],
   "Requirements.title": "Requerimientos para registrarse en DiDi Conductor",
@@ -176,6 +177,10 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/co/driver/conductor-en-{{city}}/",
+  "TestimonialsHero.title": "En DiDi celebramos cada logro",
+  "TestimonialsHero.desc": "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
+  "TestimonialsHero.textColor": "white",
+  "TestimonialsHero.btnMode": "light",
   "TaxiHero.title": "Regístrate como Socio Taxista",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
@@ -655,7 +660,7 @@
   "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
   "LegalHero.textColor": "white",
   "LegalHero.btnMode": "light",
-  "LegalHero.linkItem": "/co/legal/terminos-y-condiciones/",
+  "LegalHero.linkItem": "/co/legal/terminos-y-condiciones-arrendatario/",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.desc": "Revisa en qué consiste nuestras políticas de privacidad",
   "LegalHero.btnText": "Términos y Condiciones",

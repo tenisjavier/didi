@@ -23,7 +23,7 @@ const PartnerFeature = ({ title, desc, image }: PartnerFeatureProps) => {
       <GatsbyImage
         image={image.gatsbyImageData}
         alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
+        className="z-10 m-4 w-100 rounded"
       ></GatsbyImage>
     ),
     btnMode: "primary",

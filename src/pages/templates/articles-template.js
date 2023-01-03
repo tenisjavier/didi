@@ -1,35 +1,52 @@
-import React from "react";
-import { graphql } from "gatsby";
 import { useLocation } from "@reach/router";
+import { graphql } from "gatsby";
+import React from "react";
 import Layout from "../../components/Layout";
+import ArticleContent from "../../components/sections/ArticleContent";
 import ArticleHero from "../../components/sections/ArticleHero";
 import ArticleNoBtnHero from "../../components/sections/ArticleNoBtnHero";
-import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
-import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
-import ArticleContent from "../../components/sections/ArticleContent";
-import PaxBanner from "../../components/sections/PaxBanner";
+import ArticleOfferColumns from "../../components/sections/ArticleOfferColumns";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
-import NewsroomColumns from "../../components/sections/NewsroomColumns";
-import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
+import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
 import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
+import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
+import NewsroomColumns from "../../components/sections/NewsroomColumns";
+import PaxBanner from "../../components/sections/PaxBanner";
+import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
+import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
 //dsss
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
   const title = data.contentfulArticle.seoTitle;
   const desc = data.contentfulArticle.seoDescription;
   const { pathname } = useLocation();
-  
-  let hero = <ArticleHero data={data}></ArticleHero>;
+  let offerColumns;
 
-  if(pathname.includes("/hk/coronavirus")) {
+  let hero = <ArticleHero data={data}></ArticleHero>;
+  let banner = <PaxBanner></PaxBanner>;
+  if (pathname.includes("/hk/coronavirus")) {
     hero = <ArticleNoBtnHero data={data}></ArticleNoBtnHero>;
   }
-  
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
+
+  if (pathname.includes("/hk") && !pathname.includes("/hk/coronavirus")) {
+    const images = data.allContentfulAsset.nodes;
+    const articleOfferColumnsImages = images.filter((image) => {
+      return image.title === "hk.ArticleOfferColumns.image";
+    });
+    banner = null;
+    offerColumns = (
+      <ArticleOfferColumns
+        images={articleOfferColumnsImages.reverse()}
+      ></ArticleOfferColumns>
+    );
+  }
+
   if (pathname.includes("newsroom"))
     columns = <NewsroomColumns data={data}></NewsroomColumns>;
   if (pathname.includes("food/blog")) {
     hero = <FoodBlogPostHero data={data}></FoodBlogPostHero>;
+    banner = null;
     columns = (
       <RelatedFoodBlogColumns
         data={data}
@@ -39,19 +56,21 @@ const ArticlesTemplate = ({ data }) => {
   }
   if (pathname.includes("didipay/blog")) {
     hero = <DiDiPayArticleHero data={data}></DiDiPayArticleHero>;
+    banner = <DiDiPayColumns></DiDiPayColumns>;
     columns = <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>;
+  }
+  if (pathname.includes("thejourney")) {
+    banner = null;
   }
 
   return (
     <Layout title={title} desc={desc}>
       {hero}
       <ArticleContent data={data}></ArticleContent>
-      {!(
-        pathname.includes("food/blog") ||
-        pathname.includes("didipay/blog") ||
-        pathname.includes("thejourney") ||
-        pathname.includes("coronavirus")
-      ) && <PaxBanner></PaxBanner>}
+      {pathname.includes("/hk") &&
+        !pathname.includes("/hk/coronavirus") &&
+        offerColumns}
+      {banner && banner}
       {articles.length && columns}
     </Layout>
   );
@@ -67,6 +86,16 @@ export const query = graphql`
     $language: String
     $tag: String
   ) {
+    allContentfulAsset(
+      filter: { title: { in: ["hk.ArticleOfferColumns.image"] } }
+    ) {
+      nodes {
+        id
+        title
+        description
+        gatsbyImageData
+      }
+    }
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt

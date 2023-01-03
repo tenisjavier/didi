@@ -16,9 +16,10 @@ interface ArticlesColumnsProps {
       }[];
     };
   };
+  height: string;
 }
 
-const ArticlesColumns = ({ data }: ArticlesColumnsProps) => {
+const ArticlesColumns = ({ data, height }: ArticlesColumnsProps) => {
   const props: ColumnsSectionProps = {
     title: t("ArticlesColumns.title"),
     bgColor: t("ArticlesColumns.bgColor"),
@@ -49,7 +50,7 @@ const ArticlesColumns = ({ data }: ArticlesColumnsProps) => {
       btnText: t("ArticlesColumns.btnText"),
       btnLink: link,
       btnMode: t("ArticlesColumns.btnMode"),
-      height: "h-96",
+      height: height || "h-96",
     };
   });
   return <ColumnsSection {...props}></ColumnsSection>;

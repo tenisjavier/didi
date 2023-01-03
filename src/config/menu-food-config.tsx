@@ -144,6 +144,32 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Restaurantes",
       url: "/cr/food/restaurantes/",
+      dropMenu: [
+        {
+          text: "Registro",
+          url: "/cr/food/restaurantes/registro/",
+        },
+        {
+          text: "Guías",
+          url: "/cr/food/restaurantes/guias-educacionales/",
+        },
+        {
+          text: "FAQs",
+          url: "/cr/food/restaurantes/preguntas-frecuentes/",
+        },
+        {
+          text: "Kit Digital",
+          url: "/cr/food/restaurantes/kit-digital/",
+        },
+        {
+          text: "Promociones y Campañas",
+          url: "/cr/food/restaurantes/promociones-y-campanas/",
+        },
+        {
+          text: "Descarga",
+          url: "/cr/food/restaurantes/descarga/",
+        },
+      ],
     },
     {
       text: "Socio repartidor",
@@ -166,6 +192,32 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Restaurantes",
       url: "/co/food/restaurantes/",
+      dropMenu: [
+        {
+          text: "Registro",
+          url: "/co/food/restaurantes/registro/",
+        },
+        {
+          text: "Guías",
+          url: "/co/food/restaurantes/guias-educacionales/",
+        },
+        {
+          text: "FAQs",
+          url: "/co/food/restaurantes/preguntas-frecuentes/",
+        },
+        {
+          text: "Kit Digital",
+          url: "/co/food/restaurantes/kit-digital/",
+        },
+        {
+          text: "Promociones y Campañas",
+          url: "/co/food/restaurantes/promociones-y-campanas/",
+        },
+        {
+          text: "Descarga",
+          url: "/co/food/restaurantes/descarga/",
+        },
+      ],
     },
     {
       text: "Socio repartidor",
