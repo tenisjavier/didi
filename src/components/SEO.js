@@ -54,7 +54,7 @@ const SEO = ({ title, desc }) => {
   if (countryCode !== "en" && countryCode !== "es") {
     country = countries.filter((c) => c.code === countryCode).pop();
     countryName = country.name;
-    lang = country.languageCode;
+    lang = country.languageName;
 
     cleanPath = pathname.substring(3, pathname.length);
   }

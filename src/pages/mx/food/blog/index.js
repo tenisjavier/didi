@@ -10,16 +10,10 @@ const FoodBlog = ({ data }) => {
   const articlesHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
   })[0];
-  const smallScreen = window.matchMedia('(max-width: 600px)').matches;
-  
   return (
     <Layout>
-      {!smallScreen && 
-        <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
-      }
-      <div className="pt-20 bg-orange-primary">
-        <FoodBlogColumns className="pt-2" data={data}></FoodBlogColumns>
-      </div>
+      <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
+      <FoodBlogColumns data={data}></FoodBlogColumns>
       <Pagination data={data} postsPerPage={50}></Pagination>
     </Layout>
   );
