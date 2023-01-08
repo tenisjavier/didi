@@ -1,5 +1,5 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -8,18 +8,18 @@ interface TaxiWhyDiDi {
 }
 
 const TaxiWhyDidi = ({ image }: TaxiWhyDiDi) => {
+  const imageData = {
+    title: "DiDi Taxi",
+    description: "DiDi Taxi",
+    gatsbyImageData: getImage(image),
+  };
   const props: CTAProps = {
     hero: false,
     title: t("TaxiWhyDiDi.title"),
     bullets: t("TaxiWhyDiDi.bullets", { returnObjects: true }),
     textColor: t("TaxiWhyDiDi.textColor"),
-    image: (
-      <GatsbyImage
-        image={getImage(image)!}
-        alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
-      ></GatsbyImage>
-    ),
+    image: imageData,
+    imageStyle: "z-10 m-4 w-100 rounded-full",
     btnMode: t("TaxiWhyDiDi.btnMode"),
     btnType: "drv",
     reverse: false,

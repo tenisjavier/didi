@@ -1,5 +1,5 @@
 import React from "react";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import { getImage, ImageDataLike } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -16,18 +16,18 @@ interface ArticleHeroProps {
 const ArticleHero = ({ data }: ArticleHeroProps) => {
   const { title, excerpt, featuredImage } = data.contentfulArticle;
   const image = getImage(featuredImage)!;
+  const bgImage = {
+    title: title,
+    description: title,
+    gatsbyImageData: image,
+  };
   const props: CTAProps = {
     hero: true,
     title: title,
     desc: excerpt,
     textColor: t("ArticleHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        className="!absolute z-0 h-full w-full brightness-75 md:block"
-        image={image}
-        alt={title}
-      />
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full brightness-75 md:block",
     btnMode: t("ArticleHero.btnMode"),
     btnType: "pax",
   };

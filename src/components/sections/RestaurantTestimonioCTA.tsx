@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface RestaurantTestimonialCTAProps {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -18,14 +17,8 @@ const RestaurantTestimonialCTA = ({ image }: RestaurantTestimonialCTAProps) => {
     desc: t("RestaurantTestimonialCTA.desc"),
     bgColor: t("RestaurantTestimonialCTA.bgColor"),
     textColor: t("RestaurantTestimonialCTA.textColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100"
-      ></GatsbyImage>
-    ),
-
+    image: image,
+    imageStyle: "z-10 m-4 w-100",
     reverse: false,
   };
   return <CTASection {...props}></CTASection>;

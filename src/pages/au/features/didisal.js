@@ -24,13 +24,8 @@ const DiDiSal = ({ data }) => {
     textColor: "white",
     btnType: "pax",
     btnMode: "light",
-    image: (
-      <GatsbyImage
-        image={didisalHeroImage.gatsbyImageData}
-        alt={didisalHeroImage.description}
-        className="z-10 m-4 w-80"
-      ></GatsbyImage>
-    ),
+    image: didisalHeroImage,
+    imageStyle: "z-10 m-4 w-80",
     reverse: true,
   };
   const featuresProps = {
@@ -40,13 +35,8 @@ const DiDiSal = ({ data }) => {
     textColor: "gray-primary",
     btnType: "pax",
     btnMode: "light",
-    image: (
-      <GatsbyImage
-        image={didisalFeaturesImage.gatsbyImageData}
-        alt={didisalFeaturesImage.description}
-        className="z-10 m-4 w-80"
-      ></GatsbyImage>
-    ),
+    image: didisalFeaturesImage,
+    imageStyle: "z-10 m-4 w-80",
     reverse: true,
   };
 

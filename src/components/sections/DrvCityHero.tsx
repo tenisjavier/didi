@@ -24,7 +24,7 @@ const DrvCityHero = ({ data }: DrvCityHeroProps) => {
     desc: t("DrvCityHero.desc", { city: `${name}` }),
     textColor: t("DrvCityHero.textColor"),
     bgColor: t("DrvCityHero.bgColor"),
-    image: (
+    imageRawRender: (
       <img
         className="z-10 m-4 w-full rounded md:w-100 lg:w-110"
         alt={name + " mapa"}

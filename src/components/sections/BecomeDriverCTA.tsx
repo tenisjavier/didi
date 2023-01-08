@@ -1,17 +1,16 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface PaxWhyDiDiProps {
-  image: {
+  bgImage: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
-const BecomeDriverCTA = ({ image }: PaxWhyDiDiProps) => {
+const BecomeDriverCTA = ({ bgImage }: PaxWhyDiDiProps) => {
   const props: CTAProps = {
     hero: false,
     title: t("BecomeDriverCTA.title"),
@@ -19,13 +18,8 @@ const BecomeDriverCTA = ({ image }: PaxWhyDiDiProps) => {
     desc: t("BecomeDriverCTA.desc"),
     bgColor: t("BecomeDriverCTA.bgColor"),
     textColor: t("BecomeDriverCTA.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={image.gatsbyImageData!}
-        alt={image.description}
-        className="!absolute z-0 h-full w-full md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
     btnMode: t("PaxWhyDiDi.btnMode"),
     btnType: "pax",
   };
