@@ -43,7 +43,7 @@ const PlaceMap = ({ data }) => {
     desc: t("PlaceMap.desc"),
     textColor: t("PlaceMap.textColor"),
     bgColor: t("PlaceMap.bgColor"),
-    image: (
+    imageRawRender: (
       <img
         className="z-10 m-4 w-full rounded md:w-100 lg:w-110"
         alt={name + " mapa"}

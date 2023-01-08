@@ -7,7 +7,7 @@ interface SafetyPaxImgHeroProps {
   image?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -18,15 +18,8 @@ const SafetyPaxImgHero = ({ image }: SafetyPaxImgHeroProps) => {
     desc: t("SafetyPaxImgHero.desc"),
     textColor: t("SafetyPaxImgHero.textColor"),
     bgColor: t("SafetyPaxImgHero.bgColor"),
-    ...(image && {
-      image: (
-        <GatsbyImage
-          image={image.gatsbyImageData}
-          alt={image.description}
-          className="z-10 m-4 w-100 rounded-full"
-        ></GatsbyImage>
-      ),
-    }),
+    image: image,
+    imageStyle: "z-10 m-4 w-100 rounded-full",
     btnMode: t("SafetyPaxImgHero.btnMode"),
     reverse: true,
   };

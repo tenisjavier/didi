@@ -3,20 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
+import Image from "../components/Image";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
-// @props for images: bgImage (optional) | bgMobileImage (optional)| image - if you want an image next to the text
+// @props for images: bgImage (optional) | image - if you want an image next to the text
 
 export interface CTAProps extends BtnProps {
   hero: boolean;
   title: string;
   desc?: string;
+  link?: string;
   textColor: string;
-  bgImage?: React.ReactNode;
-  bgMobileImage?: React.ReactNode;
+  bgImage?: any;
+  bgImageStyle?: string;
+  bgVideo?: any;
+  imageRawRender?: any;
   bgColor?: string;
-  image?: React.ReactNode;
+  image?: any;
+  imageStyle?: string;
   bullets?: string[]; // bullets can be jsx in place map
   list?: {
     text: string;
@@ -36,11 +40,15 @@ const CTASection = (props: CTAProps) => {
     hero,
     title,
     desc,
+    link,
     textColor,
     bgImage,
-    bgMobileImage,
+    bgImageStyle,
+    bgVideo,
+    imageRawRender,
     bgColor,
     image,
+    imageStyle,
     bullets,
     list,
     customBulletIcon,
@@ -114,11 +122,11 @@ const CTASection = (props: CTAProps) => {
       <div
         className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
  ${reverse && "flex-row-reverse"} ${
-          image ? "xl:justify-between" : "xl:justify-start"
+          image || imageRawRender ? "xl:justify-between" : "xl:justify-start"
         }`}
       >
-        {image}
-
+        {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
+        {imageRawRender && imageRawRender}
         <div
           className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
         >
@@ -150,7 +158,6 @@ const CTASection = (props: CTAProps) => {
                           )
                         )}
                         <div className="inline-block">
-
                           {typeof item === "string"
                             ? item.split("\n").map((str, index) => (
                                 <p className="mt-0 mb-5 text-xl" key={index}>
@@ -174,6 +181,13 @@ const CTASection = (props: CTAProps) => {
                 {str}
               </p>
             ))}
+          {link && (
+            <p>
+              <a className="mb-5 text-lg" href={"tel:" + link}>
+                {link}
+              </a>
+            </p>
+          )}
           {list && (
             <div className="grid grid-cols-2 lg:grid-cols-3 text-orange-primary mb-8">
               {list.map((item, index) => (
@@ -186,8 +200,8 @@ const CTASection = (props: CTAProps) => {
           {sectionBtn}
         </div>
       </div>
-      {bgImage}
-      {bgMobileImage}
+      {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
+      {bgVideo && bgVideo}
     </section>
   );
 };

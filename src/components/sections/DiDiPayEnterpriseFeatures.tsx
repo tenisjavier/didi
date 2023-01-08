@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -8,7 +7,7 @@ interface DiDiPayEnterpriseFeaturesProps {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
   icon: IconProp;
 }
@@ -26,13 +25,8 @@ const DiDiPayEnterpriseFeatures = ({
     customBulletIcon: true,
     icon: icon,
     bgColor: t("DiDiPayEnterpriseFeatures.bgColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
-      ></GatsbyImage>
-    ),
+    image: image,
+    imageStyle: "z-10 m-4 w-100 rounded-full",
     btnMode: t("DiDiPayEnterpriseFeatures.btnMode"),
     btnLink: t("DiDiPayEnterpriseFeatures.btnLink"),
     btnText: t("DiDiPayEnterpriseFeatures.btnText"),

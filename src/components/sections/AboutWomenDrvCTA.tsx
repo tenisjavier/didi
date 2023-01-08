@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface AboutWomenDrvCTAProps {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -18,13 +17,8 @@ const AboutWomenDrvCTA = ({ image }: AboutWomenDrvCTAProps) => {
     bullets: t("AboutWomenDrvCTA.bullets", { returnObjects: true }),
     bgColor: t("AboutWomenDrvCTA.bgColor"),
     textColor: t("AboutWomenDrvCTA.textColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100 rounded"
-      ></GatsbyImage>
-    ),
+    image: image,
+    imageStyle: "z-10 m-4 w-100 rounded",
     btnMode: t("AboutWomenDrvCTA.btnMode"),
     btnType: "drv",
     reverse: t("AboutWomenDrvCTA.reverse"),

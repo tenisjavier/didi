@@ -12,7 +12,7 @@ interface HomeHeroProps {
   bgImage: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 

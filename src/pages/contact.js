@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import CTASection from "../components/CTASection";
@@ -18,13 +17,8 @@ const Index = ({ data }) => {
     desc: "",
     textColor: "white",
     bgColor: "bg-gray-primary",
-    bgImage: (
-      <GatsbyImage
-        image={ContactUsHeroBgImage.gatsbyImageData}
-        alt={ContactUsHeroBgImage.description}
-        className="!absolute z-0 h-full w-full md:block brightness-50"
-      ></GatsbyImage>
-    ),
+    bgImage: ContactUsHeroBgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block brightness-50",
   };
 
   const ContactColumnPartProps = {

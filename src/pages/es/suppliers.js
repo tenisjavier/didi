@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../../components/CTASection";
@@ -17,14 +16,9 @@ const Index = ({ data }) => {
     title: "Proveedores",
     textColor: "white",
     bgColor: "bg-gray-primary",
-    bgImage: (
-      <GatsbyImage
-        image={supplierHeroImage.gatsbyImageData}
-        alt={supplierHeroImage.description}
-        className="!absolute z-0 h-full w-full md:block"
-      ></GatsbyImage>
-    ),
-    image: (
+    bgImage: supplierHeroImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
+    imageRawRender: (
       <StaticImage
         src="../../images/didi-logo.png"
         alt="DiDi"

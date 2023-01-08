@@ -7,7 +7,6 @@ import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
 import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
 import FleetAgregaCTA from "../../components/sections/FleetAgregaCTA";
 // import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
-import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
 import DownloadFleetCTA from "../../components/sections/DownloadFleetCTA";
 
 const Fleet = ({ data }) => {
@@ -28,9 +27,6 @@ const Fleet = ({ data }) => {
   })[0];
   const FleetColumnsImages = images.filter((image) => {
     return image.title.indexOf("ar.FleetColumns.image") !== -1;
-  });
-  const FleetStepsColumnsImages = images.filter((image) => {
-    return image.title.indexOf("ar.FleetStepsColumns.image") !== -1;
   });
   const fleetDownloadImage = images.filter((image) => {
     return image.title === "ar.FleetDownload.image";

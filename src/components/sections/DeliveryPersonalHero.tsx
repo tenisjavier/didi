@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface DeliveryPersonalHeroProps {
   bgImage: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -17,13 +16,8 @@ const DeliveryPersonalHero = ({ bgImage }: DeliveryPersonalHeroProps) => {
     title: t("DeliveryPersonalHero.title"),
     desc: t("DeliveryPersonalHero.desc"),
     textColor: t("DeliveryPersonalHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
     btnMode: t("DeliveryPersonalHero.btnMode"),
     btnType: "pax",
   };

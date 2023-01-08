@@ -19,7 +19,7 @@ const DirectionHero = ({ data }: DirectionHeroProps) => {
     desc: t("DirectionHero.desc", { originAddress, destinationAddress }),
     textColor: t("DirectionHero.textColor"),
     bgColor: t("DirectionHero.bgColor"),
-    image: (
+    imageRawRender: (
       <img
         className="z-10 m-4 w-full rounded md:w-100 lg:w-110"
         alt={origin + " mapa"}
