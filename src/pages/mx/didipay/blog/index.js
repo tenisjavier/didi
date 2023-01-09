@@ -8,7 +8,7 @@ import Pagination from "../../../../components/Pagination";
 const DiDiPayBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "mx.FoodHero.bgImage";
+    return image.title === "mx.DiDiPayBlogHero.bgImage";
   })[0];
   return (
     <Layout>
