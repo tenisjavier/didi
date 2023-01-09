@@ -17,8 +17,8 @@ export interface CardProps extends BtnProps {
   insideHeight?: string;
   width?: string;
   index?: number;
-  btnText2? : string;
-  btnLink2? : string;
+  btnText2?: string;
+  btnLink2?: string;
   offer?: boolean;
   offerTextBefore?: string;
   offerText?: string;
@@ -65,22 +65,37 @@ const Card = (props: CardProps) => {
       <div
         className={`flex ${height} flex-col items-center justify-between px-6 py-4 text-center`}
       >
-
-        <div className={`mb-4 ${insideHeight} overflow-hidden`}>
-          {animatedNumber && 
-            <AnimatedNumber number={0} maxNumber={numberTitle} titleAfter={afterTitle} identifier={"value-"+numberTitle}></AnimatedNumber>
-          }
-          {(title && !animatedNumber) && (<h4 className={`mb-4 text-xl font-bold `}>{title}</h4>)}
+        <div className={`mb-4 ${insideHeight} `}>
+          {animatedNumber && (
+            <AnimatedNumber
+              number={0}
+              maxNumber={numberTitle}
+              titleAfter={afterTitle}
+              identifier={"value-" + numberTitle}
+            ></AnimatedNumber>
+          )}
+          {title && !animatedNumber && (
+            <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
+          )}
           <p className={"text-lg"}></p>
-          {desc && (<Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>)}          
-          {offer && 
+          {desc && (
+            <Truncate lines={8} ellipsis={<span>...</span>}>
+              {desc}
+            </Truncate>
+          )}
+          {offer && (
             <p className="block">
               <span className="inline-block align-top">{offerTextBefore}</span>
-              <span className="inline-block text-7xl text-orange-primary">{offerText}</span>
-              <span className="inline-block align-baseline">{offerTextAfter}</span>
+              <span className="inline-block text-7xl text-orange-primary">
+                {offerText}
+              </span>
+              <span className="inline-block align-baseline">
+                {offerTextAfter}
+              </span>
             </p>
-          }
-          {small && small.split("\n").map((str) => <p className="text-start">{str}</p>)}
+          )}
+          {small &&
+            small.split("\n").map((str) => <p className="text-start">{str}</p>)}
         </div>
         <div className="flex justify-center flex-col">
           <Btn
@@ -88,7 +103,7 @@ const Card = (props: CardProps) => {
             btnLink={btnLink}
             btnMode={btnMode}
             btnText={btnText}
-          ></Btn> 
+          ></Btn>
           {btnText2 && (
             <Btn
               btnType={btnType}

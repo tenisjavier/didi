@@ -143,7 +143,7 @@ const menuLinks: AllMenuInterface = {
           text: "粵港跨境專車服務",
           url: "/hk/ride/粵港跨境專車服務",
         },
-      ]
+      ],
     },
     {
       text: "成為司機夥伴",
@@ -159,10 +159,10 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "遠DD, call DiDi! 程程85折!",
-          url: "/hk/遠dd-call-didi-程程85折"
-        }
-      ]
-    }
+          url: "/hk/遠dd-call-didi-程程85折",
+        },
+      ],
+    },
   ],
   mx: [
     {
@@ -218,6 +218,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Preguntas Frecuentes",
           url: "/mx/didipay-preguntas-frecuentes/",
+        },
+        {
+          text: "Blog DiDiPay",
+          url: "/mx/didipay/blog/",
         },
       ],
     },
