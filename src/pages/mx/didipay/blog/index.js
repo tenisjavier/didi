@@ -23,7 +23,9 @@ export default DiDiPayBlog;
 
 export const query = graphql`
   query {
-    allContentfulAsset(filter: { title: { in: ["mx.FoodHero.bgImage"] } }) {
+    allContentfulAsset(
+      filter: { title: { in: ["mx.DiDiPayBlogHero.bgImage"] } }
+    ) {
       nodes {
         id
         title
