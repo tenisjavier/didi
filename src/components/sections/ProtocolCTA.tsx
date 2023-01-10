@@ -7,7 +7,7 @@ interface ProtocolCTA {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 

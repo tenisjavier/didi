@@ -8,7 +8,7 @@ import Pagination from "../../../../components/Pagination";
 const DiDiPayBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
-    return image.title === "mx.FoodHero.bgImage";
+    return image.title === "mx.DiDiPayBlogHero.bgImage";
   })[0];
   return (
     <Layout>
@@ -23,7 +23,9 @@ export default DiDiPayBlog;
 
 export const query = graphql`
   query {
-    allContentfulAsset(filter: { title: { in: ["mx.FoodHero.bgImage"] } }) {
+    allContentfulAsset(
+      filter: { title: { in: ["mx.DiDiPayBlogHero.bgImage"] } }
+    ) {
       nodes {
         id
         title

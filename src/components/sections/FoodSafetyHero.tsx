@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface FoodSafetyHeroProps {
   bgImage: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -17,13 +16,8 @@ const FoodSafetyHero = ({ bgImage }: FoodSafetyHeroProps) => {
     title: t("FoodSafetyHero.title"),
     desc: t("FoodSafetyHero.desc"),
     textColor: t("FoodSafetyHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
   };
   return <CTASection {...props}></CTASection>;
 };

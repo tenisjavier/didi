@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface SimplifyHeroProps {
   bgImage: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -17,13 +16,8 @@ const SimplifyHero = ({ bgImage }: SimplifyHeroProps) => {
     title: t("SimplifyHero.title"),
     desc: t("SimplifyHero.desc"),
     textColor: t("SimplifyHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData!}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
     btnMode: t("SimplifyHero.btnMode"),
     btnLink: t("SimplifyHero.btnLink"),
     btnText: t("SimplifyHero.btnText"),

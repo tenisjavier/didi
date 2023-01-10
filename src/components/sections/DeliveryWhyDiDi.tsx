@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface DeliveryWhyDiDiProps {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -18,13 +17,8 @@ const DeliveryWhyDiDi = ({ image }: DeliveryWhyDiDiProps) => {
     desc: t("DeliveryWhyDiDi.desc"),
     textColor: t("DeliveryWhyDiDi.textColor"),
     bgColor: t("DeliveryWhyDiDi.bgColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100 rounded-full"
-      ></GatsbyImage>
-    ),
+    image: image,
+    bgImage: "z-10 m-4 w-100 rounded-full",
     btnMode: t("DeliveryWhyDiDi.btnMode"),
     btnType: "pax",
     reverse: false,

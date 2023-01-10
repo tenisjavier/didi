@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,7 +6,7 @@ interface TemplateStoriesCTAProps {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -19,13 +18,8 @@ const TemplateStoriesCTA = ({ image }: TemplateStoriesCTAProps) => {
     bullets: t("TemplateStoriesCTA.bullets", { returnObjects: true }),
     bgColor: t("TemplateStoriesCTA.bgColor"),
     textColor: t("TemplateStoriesCTA.textColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100"
-      ></GatsbyImage>
-    ),
+    image: image,
+    imageStyle: "z-10 m-4 w-100",
   };
   return <CTASection {...props}></CTASection>;
 };

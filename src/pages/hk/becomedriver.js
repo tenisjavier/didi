@@ -29,7 +29,7 @@ const BecomeDriver = ({ data }) => {
       >
         Loading…
       </iframe>
-      <BecomeDriverCTA image={becomeDriverCTABgImage}></BecomeDriverCTA>
+      <BecomeDriverCTA bgImage={becomeDriverCTABgImage}></BecomeDriverCTA>
       <BecomeDriverColumns
         images={becomeDriverColumnsImages}
       ></BecomeDriverColumns>

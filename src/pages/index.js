@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import CTASection from "../components/CTASection";
@@ -24,7 +23,7 @@ const Index = ({ data }) => {
     desc: "More than a Journey. The World‘s Leading Transportation Platform.",
     textColor: "white",
     bgColor: "bg-gray-primary",
-    bgImage: (
+    bgVideo: (
       <video
         autoPlay
         muted
@@ -35,7 +34,7 @@ const Index = ({ data }) => {
         <source src={HeroVideo} type="video/mp4"></source>
       </video>
     ),
-    image: (
+    imageRawRender: (
       <StaticImage
         src="../images/didi-logo.png"
         alt="DiDi"
@@ -52,13 +51,8 @@ const Index = ({ data }) => {
     desc: "We connect more than 550 million users around the world with our mobility platform, serving their needs in food delivery, mobility, financial services and more.",
     textColor: "gray-primary",
     bgColor: "bg-white",
-    image: (
-      <GatsbyImage
-        image={AboutDiDiImage.gatsbyImageData}
-        alt={AboutDiDiImage.description}
-        className="z-10 m-4 w-100 rounded"
-      ></GatsbyImage>
-    ),
+    image: AboutDiDiImage,
+    imageStyle: "z-10 m-4 w-100 rounded",
     list: countries.map((c) => {
       return { text: c.englishName, link: c.hostname };
     }),
@@ -70,13 +64,8 @@ const Index = ({ data }) => {
     desc: "DiDi Global Inc. is the world’s leading mobility technology platform. We offer a wide range of app-based services across markets including Asia-Pacific, Latin America, Europe and Africa, including ride hailing, taxi hailing, chauffeur, hitch and other forms of shared mobility as well as auto solutions, food delivery, intra-city freight and financial services.\nDiDi provides car owners, drivers and delivery partners with flexible work and income opportunities. We are committed to collaborating with policymakers, the taxi industry, the automobile industry and local communities to solve the world’s transportation, environmental and employment challenges through the use of AI technology and localized smart transportation innovations. DiDi strives to create better life experiences and greater social value by building a safe, inclusive and sustainable transportation and local services ecosystem for cities of the future.",
     textColor: "gray-primary",
     bgColor: "bg-gray-light",
-    image: (
-      <GatsbyImage
-        image={HomeAboutUsImage.gatsbyImageData}
-        alt={HomeAboutUsImage.description}
-        className="z-10 m-4 w-100 rounded"
-      ></GatsbyImage>
-    ),
+    image: HomeAboutUsImage,
+    imageStyle: "z-10 m-4 w-100 rounded",
     reverse: true,
   };
 
@@ -91,13 +80,8 @@ const Index = ({ data }) => {
     ],
     textColor: "white",
     bgColor: "bg-gray-light",
-    bgImage: (
-      <GatsbyImage
-        image={HomeOurMissionBgImage.gatsbyImageData}
-        alt={HomeOurMissionBgImage.description}
-        className="!absolute z-0 h-full w-full md:block brightness-50"
-      ></GatsbyImage>
-    ),
+    bgImage: HomeOurMissionBgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block brightness-50",
   };
 
   return (

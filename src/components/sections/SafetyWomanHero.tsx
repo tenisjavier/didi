@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,12 +6,12 @@ interface SafetyWomanHeroProps {
   image?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
   bgImage: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -21,23 +20,11 @@ const SafetyWomanHero = ({ bgImage, image }: SafetyWomanHeroProps) => {
     hero: true,
     title: t("SafetyWomanHero.title"),
     textColor: t("SafetyWomanHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block "
-      ></GatsbyImage>
-    ),
-    ...(image && {
-      image: (
-        <GatsbyImage
-          image={image.gatsbyImageData}
-          alt={image.description}
-          className="z-10 m-4 w-80"
-        ></GatsbyImage>
-      ),
-      reverse: true,
-    }),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block ",
+    image: image,
+    reverse: true,
+    imageStyle: "z-10 m-4 w-80",
     btnMode: t("SafetyWomanHero.btnMode"),
     btnText: t("SafetyWomanHero.btnText"),
     btnLink: t("SafetyWomanHero.btnLink"),

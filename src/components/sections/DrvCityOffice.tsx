@@ -15,11 +15,13 @@ interface DrvCityOfficeProps {
 
 const DrvCityOffice = ({ data }: DrvCityOfficeProps) => {
   const { name, address, openHours, phone, photos } = data;
-  // let hours: string[] = [];
-  // openHours.forEach((hour: string) => {
-  //   hours.push(hour);
-  // });
+
   const image = getImage(photos[0]);
+  const imageData = {
+    title: name,
+    description: name,
+    gatsbyImageData: image,
+  };
   const props: CTAProps = {
     hero: false,
     title: t("DrvCityOffice.title", { city: name }),
@@ -29,13 +31,8 @@ const DrvCityOffice = ({ data }: DrvCityOfficeProps) => {
     }),
     textColor: t("DrvCityOffice.textColor"),
     bgColor: t("DrvCityOffice.bgColor"),
-    image: (
-      <GatsbyImage
-        className="z-10 m-4 w-110 rounded"
-        image={image!}
-        alt={name}
-      />
-    ),
+    image: imageData,
+    imageStyle: "z-10 m-4 w-110 rounded",
     btnMode: t("DrvCityOffice.btnMode"),
     btnType: "drv",
     bullets: openHours,

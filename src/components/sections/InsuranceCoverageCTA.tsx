@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -7,12 +6,12 @@ interface InsuranceCoverageCTAProps {
   bgImage?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
   image?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: any;
   };
 }
 
@@ -26,24 +25,10 @@ const InsuranceCoverageCTA = ({
     desc: t("InsuranceCoverageCTA.desc"),
     textColor: t("InsuranceCoverageCTA.textColor"),
     bgColor: t("InsuranceCoverageCTA.bgColor"),
-    ...(bgImage && {
-      bgImage: (
-        <GatsbyImage
-          image={bgImage.gatsbyImageData}
-          alt={bgImage.description}
-          className="!absolute z-0 h-full w-full md:block"
-        ></GatsbyImage>
-      ),
-    }),
-    ...(image && {
-      image: (
-        <GatsbyImage
-          image={image.gatsbyImageData}
-          alt={image.description}
-          className="z-10 m-4 w-100 rounded-full"
-        ></GatsbyImage>
-      ),
-    }),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
+    image: image,
+    imageStyle: "z-10 m-4 w-100 rounded-full",
   };
   return <CTASection {...props}></CTASection>;
 };
