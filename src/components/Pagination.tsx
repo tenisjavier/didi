@@ -114,8 +114,8 @@ const Pagination = ({ data, postsPerPage }: PaginationProps) => {
       </Link>
       {pageLinks.map((links, index) => {
         return (
-          <Link to={currentURL + "?page=" + (Number(index) + 1)}>
-            <li key={index} className="page-item" id={`page-item-${index + 1}`}>
+          <Link key={`page-link_${index}`} to={currentURL + "?page=" + (Number(index) + 1)}>
+            <li key={`page-item_${index}`} className="page-item" id={`page-item-${index + 1}`}>
               {index + 1}
             </li>
           </Link>
