@@ -18,13 +18,8 @@ const FoodBusinessCTAEn = ({ image }: FoodBusinessCTAProps) => {
     desc: t("FoodBusinessCTA.desc"),
     bgColor: t("FoodBusinessCTA.bgColor"),
     textColor: t("FoodBusinessCTA.textColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 w-100 rounded"
-      ></GatsbyImage>
-    ),
+    image: image,
+    imageStyle: "z-10 m-4 w-100 rounded",
     btnMode: t("FoodBusinessCTA.btnMode"),
     btnType: "foodBusinessEn",
   };

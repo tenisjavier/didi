@@ -18,13 +18,8 @@ const FoodAboutCTAEn = ({ image }: FoodAboutCTAProps) => {
     desc: t("FoodAboutCTA.desc"),
     bgColor: t("FoodAboutCTA.bgColor"),
     textColor: t("FoodAboutCTA.textColor"),
-    image: (
-      <GatsbyImage
-        image={image.gatsbyImageData}
-        alt={image.description}
-        className="z-10 m-4 h-80 w-100 rounded"
-      ></GatsbyImage>
-    ),
+    image: image,
+    imageStyle: "z-10 m-4 h-80 w-100 rounded",
     btnType: "foodDeliveryEn",
     btnMode: "primary",
     reverse: true,

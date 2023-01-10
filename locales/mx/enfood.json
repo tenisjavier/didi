@@ -340,7 +340,7 @@
   "RestaurantSocialColumns.columns": [
     {
       "title": "Support to Restaurants",
-      "desc": "Más de 30 millones de pesos en descuentos y promociones, propina de apoyo y guías de salud para los establecimientos.",
+      "desc": "More than 30 million pesos in discounts and promotions, support tips and health guides for establishments.",
       "textColor": "gray-primary",
       "btnText": "Learn More",
       "btnLink": "/mx/centro-de-ayuda/",
@@ -349,7 +349,7 @@
     },
     {
       "title": "Support to Delivery Partners",
-      "desc": "Fondo económico para repartidores en cuarentena o con COVID-19. Entrega semanal de 10 mil kits de higiene y más de 1 millon en total.",
+      "desc": "Economic fund for distributors quarantined or with COVID-19. Weekly delivery of 10 thousand kits of hygiene and more than 1 million in total.",
       "textColor": "gray-primary",
       "btnText": "Learn More",
       "btnLink": "/mx/legal/",
@@ -358,7 +358,7 @@
     },
     {
       "title": "Support to Doctors",
-      "desc": "Campaña DiDi Hero de apoyo a los trabajadores de la salud, donación de comidas a hospitales, campañas de homenaje a las personas en primera línea de ayuda",
+      "desc": "DiDi Hero campaign in support of health workers, donation of meals to hospitals, campaigns tribute to people first help line",
       "textColor": "gray-primary",
       "btnText": "Learn More",
       "btnLink": "/mx/centro-de-ayuda/",

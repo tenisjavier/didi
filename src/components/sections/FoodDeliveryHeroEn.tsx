@@ -17,13 +17,8 @@ const FoodDeliveryHeroEn = ({ bgImage }: FoodDeliveryHeroProps) => {
     title: t("FoodDeliveryHero.title"),
     desc: t("FoodDeliveryHero.desc"),
     textColor: t("FoodDeliveryHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-50  md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full brightness-50  md:block",
     btnMode: t("FoodDeliveryHero.btnMode"),
     btnType: "foodDeliveryEn",
   };

@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
-import CTASectionLink, { CTAProps } from "../CTASectionLink";
+import CTASection, { CTAProps } from "../CTASection";
 
 interface FoodBusinessHeroProps {
   bgImage: {
@@ -18,18 +18,13 @@ const FoodBusinessHeroEn = ({ bgImage }: FoodBusinessHeroProps) => {
     title: t("FoodBusinessHero.title"),
     desc: t("FoodBusinessHero.desc"),
     textColor: t("FoodBusinessHero.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full brightness-50  md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full brightness-50  md:block",
     btnMode: t("FoodBusinessHero.btnMode"),
     btnType: "foodBusinessEn",
     link: t("FoodBusinessHero.link")
   };
-  return <CTASectionLink {...props}></CTASectionLink>;
+  return <CTASection {...props}></CTASection>;
 };
 
 export default FoodBusinessHeroEn;
