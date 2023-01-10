@@ -107,10 +107,6 @@ const options: optionsInterface = {
           </div>
         );
       }
-<<<<<<< HEAD
-      (node);
-=======
->>>>>>> fd687ebc8f1da8290dc8b9e8a4511f5f946d7e2a
       return (
         <a className="text-orange-primary break-all" href={node.data.uri}>
           {node.content[0].value}

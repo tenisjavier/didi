@@ -15,8 +15,12 @@ export const useCountry = () => {
 //@desc function used on every component that needs data from the translation file
 // return string, object or null
 export const t = (key: string, vars?: { [varKey: string]: any }) => {
+  const { pathname } = useLocation();
   const locale = useCountry().code;
-  const ns = useCountry().ns;
+  let ns = useCountry().ns;
+  if (pathname.includes("/food/en/")){
+    ns = "enfood";
+  }
   const data = require(`../../locales/${locale}/${ns}.json`);
   let value = data[key];
   if (vars) {

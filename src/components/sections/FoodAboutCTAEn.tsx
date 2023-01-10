@@ -11,7 +11,7 @@ interface FoodAboutCTAProps {
   };
 }
 
-const FoodAboutCTA = ({ image }: FoodAboutCTAProps) => {
+const FoodAboutCTAEn = ({ image }: FoodAboutCTAProps) => {
   const props: CTAProps = {
     hero: false,
     title: t("FoodAboutCTA.title"),
@@ -25,11 +25,11 @@ const FoodAboutCTA = ({ image }: FoodAboutCTAProps) => {
         className="z-10 m-4 h-80 w-100 rounded"
       ></GatsbyImage>
     ),
-    btnType: "foodEater",
+    btnType: "foodDeliveryEn",
     btnMode: "primary",
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default FoodAboutCTA;
+export default FoodAboutCTAEn;
