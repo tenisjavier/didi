@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodBlogHero from "../../../../components/sections/FoodBlogHero";
 import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
+import Pagination from "../../../../components/Pagination";
+
 
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
