@@ -118,7 +118,7 @@ const SEO = ({ title, desc }) => {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: lang }} title={title}>
+      <Helmet htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase()}` }} title={title}>
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") ? (
