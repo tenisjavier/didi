@@ -70,6 +70,10 @@ const SEO = ({ title, desc }) => {
     desc = meta.desc;
   }
 
+  if (pathname.includes("/food/en/")) {
+    lang = "en";
+  }
+
   if (pathname.includes("/food/")) {
     title = title + " | DiDi Food " + (countryName || "Global");
   } else {
