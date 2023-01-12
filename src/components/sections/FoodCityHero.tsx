@@ -29,8 +29,7 @@ const FoodCityHero = ({ bgImage, image, data }: FoodCityHeroProps) => {
     }),
 
     btnMode: t("FoodCityHero.btnMode"),
-    btnModeSecondary: t("FoodCityHero.btnModeSecondary"),
-    btnType: "bothFood",
+    btnType: "foodEater",
   };
   return <CTASection {...props}></CTASection>;
 };

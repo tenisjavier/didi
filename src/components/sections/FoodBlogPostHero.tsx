@@ -30,7 +30,7 @@ const FoodBlogPostHero = ({ data }: FoodBlogPostHeroProps) => {
     bgImageStyle: "!absolute z-0 h-full w-full brightness-50 md:block",
     btnMode: t("FoodBlogPostHero.btnMode"),
     btnModeSecondary: t("FoodBlogPostHeroSecondary.btnMode"),
-    btnType: "bothFood",
+    btnType: "foodEater",
   };
 
   return <CTASection {...props}></CTASection>;
