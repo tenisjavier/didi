@@ -1,98 +1,81 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCarSide } from "@fortawesome/free-solid-svg-icons";
+import Card, { CardProps } from "./Card";
 import Btn, { BtnProps } from "./Btn";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
-// @desc: Template for static Sections with bg image, title and text
-// @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
-// @props for images: bgImage (optional) | bgMobileImage (optional)| image - if you want an image next to the text
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock
+} from "@fortawesome/free-solid-svg-icons";
 
 export interface TopStoryProps extends BtnProps {
-  hero: boolean;
-  title: string;
+  columns: CardProps[];
+  title?: string;
   desc?: string;
+  small?: string;
+  bgColor: string;
   textColor: string;
-  bgImage?: React.ReactNode;
-  bgMobileImage?: React.ReactNode;
-  bgColor?: string;
-  image?: React.ReactNode;
-  bullets?: string[]; // bullets can be jsx in place map
-  list?: {
-    text: string;
-    link: string;
-  }[];
-  customBulletIcon?: boolean;
-  icon?: IconProp;
-  btnArray?: {
-    link: string;
-    text: string;
-  }[];
-  reverse?: boolean;
+  sectionID?: string;
+  width?: string;
+  timeToRead?: string;
 }
 
-const TopStory = (props: TopStoryProps) => {
-  const {
-    hero,
-    title,
-    desc,
-    textColor,
-    bgImage,
-    bgMobileImage,
-    bgColor,
-    image,
-    bullets,
-    list,
-    customBulletIcon,
-    icon,
-    btnType,
-    btnText,
-    btnLink,
-    btnMode,
-    btnArray,
-    reverse,
-    btnModeSecondary,
-  } = props;
-
-  let sectionBtn = (
-    <Btn
-      btnType={btnType}
-      btnLink={btnLink}
-      btnMode={btnMode}
-      btnText={btnText}
-      btnModeSecondary={btnModeSecondary}
-    ></Btn>
-  );
-
+const TopStory = ({
+  columns,
+  title,
+  desc,
+  small,
+  bgColor,
+  textColor,
+  sectionID,
+  timeToRead
+}: TopStoryProps) => {
+  let min = "min";
+  if(Number(columns[0].timeToRead) > 1) {
+    min = "mins";
+  }
   return (
-    <section
-      className={`relative flex min-h-[20rem] w-full  items-center justify-center overflow-hidden
-    ${bgColor && bgColor}`}
-    >
-      <div
-        className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-5 xl:justify-start`}>
-        {image}
+    <>
+      <section
+        className={`relative flex min-h-[20rem] w-full pt-16 items-center justify-center overflow-hidden
+      ${bgColor && bgColor}`}
+      >
+        <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-5 xl:justify-start bg-gray-200`}>
+          {columns[0].image}
 
-        <div
-          className={`w-11/12   text-center lg:w-1/4 text-${textColor} z-10 xl:text-left`}
-        >
-          {hero ? (
-            <h1 className="text-3xl font-bold md:text-3xl">{title}</h1>
-          ) : (
-            <h2 className="text-3xl font-bold md:text-3xl">{title}</h2>
-          )}
-          {desc &&
-            desc.split("\n").map((str, index) => (
-              <p className="mb-5 text-base" key={index}>
-                {str}
-              </p>
-            ))}
-          {sectionBtn}
+          <div className={`w-11/12   text-center lg:w-1/4 text-${textColor} z-10 xl:text-left`}>
+              <p className="text-5xl font-bold md:text-4xl text-orange-400">Top Stories</p>
+              <h2 className="text-3xl font-bold md:text-3xl">{columns[0].title}</h2>
+            {columns[0].desc &&
+              columns[0].desc.split("\n").map((str, index) => (
+                <p className="mb-5 text-base" key={index}>
+                  {str}
+                </p>
+              ))}
+              <p><FontAwesomeIcon icon={faClock} className="w-3" /> <span>{columns[0].timeToRead} {min}</span></p>
+              <Btn
+                btnType={columns[0].btnType}
+                btnLink={columns[0].btnLink}
+                btnMode={columns[0].btnMode}
+                btnText={columns[0].btnText}
+              ></Btn> 
+          </div>
         </div>
-      </div>
-      {bgImage}
-      {bgMobileImage}
-    </section>
+      </section>
+      <section
+          className={`relative flex min-h-[20rem] w-full  items-center justify-center overflow-hidden
+        ${bgColor && bgColor}`}
+        >
+        <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-5 xl:justify-start`}>
+          <div className={`mt-10 flex flex-wrap justify-around`}>
+            {columns.map((col, index) => {
+              if(index > 0 && index <= 3) {
+                return <Card {...col} key={index} index={index}></Card>;
+              }
+            })}
+          </div>
+        </div>
+        {small && small.split("\n").map((str) => <small className="text-center">{str}</small>)}
+      </section>
+    </>
   );
 };
 

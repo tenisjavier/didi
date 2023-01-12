@@ -16,9 +16,9 @@ const Article = ({ data }) => {
 
   const isTopStory = articles.filter((article) => {
     return article.topStory === true;
-  })[0];
+  });
 
-  if(isTopStory !== null && isTopStory !== undefined) {
+  if(isTopStory !== null && isTopStory !== undefined && isTopStory.length != 0) {
     articleTS = <ArticlesTopStory data={isTopStory}></ArticlesTopStory>
   } else {
     articleTS = "";
@@ -58,8 +58,12 @@ export const query = graphql`
         slug
         excerpt
         topStory
+        readTime
         featuredImage {
           gatsbyImageData
+        }
+        content {
+          raw
         }
       }
     }
