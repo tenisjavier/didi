@@ -179,16 +179,16 @@
     }
   ],
   "HowToCalDiDiColumns.title": "如何 call DiDi?",
-  "HowToCalDiDiColumns.desc": " ",
+  "HowToCalDiDiColumns.desc": "如你的手機號碼+852/ +86 曾在內地或香港註冊過DiDi 帳號，可以用AlipayHK 或WeChat 入面的滴滴出行小程序登入及享用折扣。",
   "HowToCalDiDiColumns.columns": [
-    {
-      "title": "AlipayHK 小程序 ",
-      "desc": "打開 AlipayHK App > 應用中心> 交通服務> 滴滴出行",
-      "textColor": "gray-primary"
-    },
     {
       "title": "WeChat 小程序(簡體版)",
       "desc": "用WeChat 一掃QR code, 打開滴滴出行小程序",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "AlipayHK 小程序 ",
+      "desc": "打開 AlipayHK App > 應用中心> 交通服務> 滴滴出行",
       "textColor": "gray-primary"
     }
   ],
