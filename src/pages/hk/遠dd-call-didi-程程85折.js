@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import OfferHero from "../../components/sections/OfferHero";
 import HowToCallDiDiColumns from "../../components/sections/HowToCallDiDiColumns";
-
+//emergency page
 const Taxi = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const offerHeroImage = images.filter((image) => {
