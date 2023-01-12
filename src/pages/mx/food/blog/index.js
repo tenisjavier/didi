@@ -12,8 +12,12 @@ const FoodBlog = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
-      <FoodBlogColumns data={data}></FoodBlogColumns>
+      <div className="lg:block hidden">
+        <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
+      </div>
+      <div className="pt-8 lg:pt-0 bg-orange-primary">
+        <FoodBlogColumns  data={data}></FoodBlogColumns>
+      </div>
       <Pagination data={data} postsPerPage={50}></Pagination>
     </Layout>
   );
