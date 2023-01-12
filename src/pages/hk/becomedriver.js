@@ -20,15 +20,6 @@ const BecomeDriver = ({ data }) => {
   return (
     <Layout>
       <BecomeDriverHero bgImage={becomeDriverHeroBgImage}></BecomeDriverHero>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSe-QROQmagcMMRvYvhqpKKLof_7leNMzxMwJZzjptA-A8jlBw/viewform?embedded=true"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        className="w-full h-96"
-      >
-        Loading…
-      </iframe>
       <BecomeDriverCTA bgImage={becomeDriverCTABgImage}></BecomeDriverCTA>
       <BecomeDriverColumns
         images={becomeDriverColumnsImages}
