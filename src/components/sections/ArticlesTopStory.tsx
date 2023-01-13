@@ -33,8 +33,7 @@ const ArticlesTopStory = ({ data }: ArticlesTopStoryProps) => {
           const dataTxt = JSON.parse(ts.content.raw);
           const allText = documentToPlainTextString(dataTxt);
           
-          const readingSpeed = 250; // words per minute,
-          console.log(Math.ceil(Number(allText.length) / readingSpeed)+" "+allText);
+          const readingSpeed = 250;
           return Math.ceil(Number(allText.length) / readingSpeed);
         }
         const link = t("ArticlesTopStory.btnLink", {

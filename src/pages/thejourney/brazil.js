@@ -18,7 +18,7 @@ const Article = ({ data }) => {
     return article.topStory === true;
   });
 
-  if(isTopStory !== null && isTopStory !== undefined && isTopStory.length != 0) {
+  if(isTopStory !== null && isTopStory !== undefined && isTopStory.length !== 0) {
     articleTS = <ArticlesTopStory data={isTopStory}></ArticlesTopStory>
   } else {
     articleTS = "";
@@ -61,6 +61,7 @@ export const query = graphql`
         title
         slug
         excerpt
+        category
         topStory
         readTime
         featuredImage {
