@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
+import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer";
 
 interface ArticlesColumnsProps {
   data: {
@@ -11,8 +12,11 @@ interface ArticlesColumnsProps {
       nodes: {
         title: string;
         slug: string;
+        category: string;
         excerpt: string;
+        readTime: string;
         featuredImage: ImageDataLike;
+        content: {raw: string;};
       }[];
     };
   };
@@ -30,12 +34,24 @@ const ArticlesColumns = ({ data, height }: ArticlesColumnsProps) => {
   const articles = data.allContentfulArticle.nodes;
 
   props.columns = articles.map((article) => {
+    if(article.category == "pr" && article.readTime == null ) {
+      const timeToRead = () => {
+        const dataTxt = JSON.parse(article.content.raw);
+        const allText = documentToPlainTextString(dataTxt);
+        
+        const readingSpeed = 250;
+        return Math.ceil(Number(allText.length) / readingSpeed);
+      }
+
+      article.readTime = String(timeToRead());
+    }
     const link = t("ArticlesColumns.linkItem", {
       article: article.slug,
     });
     return {
       title: <Link to={link}>{article.title}</Link>,
       desc: article.excerpt,
+      timeToRead: article.readTime,
       textColor: "gray-primary",
       bgColor: "bg-white",
       image: (

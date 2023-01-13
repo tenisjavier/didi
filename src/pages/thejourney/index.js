@@ -15,14 +15,17 @@ const Article = ({ data }) => {
   })[0];
 
   const isTopStory = articles.filter((article) => {
+    console.log(article.readTime+" "+article.category);
     return article.topStory === true;
   });
 
-  if(isTopStory !== null && isTopStory !== undefined && isTopStory.length != 0) {
+  if(isTopStory !== null && isTopStory !== undefined && isTopStory.length !== 0) {
     articleTS = <ArticlesTopStory data={isTopStory}></ArticlesTopStory>
   } else {
     articleTS = "";
   }
+
+  
   
   return (
     <Layout title="The Journey: News About DiDi International" password={true}>
@@ -54,6 +57,7 @@ export const query = graphql`
         title
         slug
         excerpt
+        category
         topStory
         readTime
         featuredImage {

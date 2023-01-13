@@ -62,9 +62,12 @@ const Card = (props: CardProps) => {
     timeToRead
   } = props;
 
-  let min = "min";
-  if(Number(timeToRead) > 1) {
-    min = "mins";
+  let min = "";
+  if(timeToRead) {
+      min = "min";
+    if(Number(timeToRead) > 1) {
+      min = "mins";
+    }
   }
 
   return (
@@ -108,7 +111,10 @@ const Card = (props: CardProps) => {
           {small &&
             small.split("\n").map((str) => <p className="text-start">{str}</p>)}
         </div>
-        <p><FontAwesomeIcon icon={faClock} className="w-3" /> <span>{timeToRead} {min}</span> </p>
+        {timeToRead && (
+          <p><FontAwesomeIcon icon={faClock} className="w-3" /> <span>{timeToRead} {min}</span> </p>
+        )}
+        
         <div className="flex justify-center flex-col">
           <Btn
             btnType={btnType}
