@@ -4,7 +4,6 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDollarSign,
-  faHeadphonesSimple,
   faSquarePollVertical,
   faWallet,
 } from "@fortawesome/free-solid-svg-icons";
@@ -52,20 +51,12 @@ const DrvPartnerColumns = ({ images, icons }: DrvPartnerColumnsProps) => {
     props.columns[1].image = (
       <FontAwesomeIcon
         className="text-orange-primary"
-        icon={faHeadphonesSimple}
-        size="3x"
-      />
-    );
-
-    props.columns[2].image = (
-      <FontAwesomeIcon
-        className="text-orange-primary"
         icon={faSquarePollVertical}
         size="3x"
       />
     );
 
-    props.columns[3].image = (
+    props.columns[2].image = (
       <FontAwesomeIcon
         className="text-orange-primary"
         icon={faWallet}
