@@ -111,10 +111,10 @@ const Breadcrumb = () => {
                 itemPath = "Владельцам таксопарков";
                 break;
               case "legal":
-                itemPath = "Круто";
+                itemPath = "Юридическая информация";
                 break;
               case "newsroom":
-                itemPath = "отдел новостей";
+                itemPath = "Раздел новостей";
                 break;
               default:
                 itemPath = decodeURI(dir);
