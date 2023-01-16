@@ -100,6 +100,7 @@ export const query = graphql`
       title
       excerpt
       author
+      authorRole
       updatedAt
       tags {
         name
