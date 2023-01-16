@@ -970,7 +970,7 @@ const menuLinks: AllMenuInterface = {
           url: "/ru/taxi",
         },
         {
-          text: "Водитель-партнер в статусе ИП",
+          text: "Водителям-партнерам в статусе ИП",
           url: "/ru/driver-partner",
         },
       ],
