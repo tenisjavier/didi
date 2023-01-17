@@ -99,6 +99,8 @@ export const query = graphql`
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt
+      author
+      authorRole
       updatedAt
       tags {
         name
