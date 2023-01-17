@@ -118,9 +118,9 @@ const footerLinks: AllFooterInterface = {
   ru: [
     { text: "Водителям", link: "/ru/driver/" },
     { text: "Пассажирам", link: "/ru/rider/" },
-    { text: "безопасность", link: "/ru/safety/" },
-    { text: "правовой", link: "/ru/legal/" },
-    { text: "отдел новостей", link: "/ru/newsroom/" },
+    { text: "Безопасность", link: "/ru/safety/" },
+    { text: "Юридическая информация", link: "/ru/legal/" },
+    { text: "Раздел новостей", link: "/ru/newsroom/" },
   ],
 };
 

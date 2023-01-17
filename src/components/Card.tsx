@@ -3,6 +3,10 @@ import reactMarkdown from "react-markdown";
 import Btn, { BtnProps } from "./Btn";
 import Truncate from "react-truncate";
 import AnimatedNumber from "../components/AnimatedNumber";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock
+} from "@fortawesome/free-solid-svg-icons";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
@@ -27,6 +31,7 @@ export interface CardProps extends BtnProps {
   animatedNumber?: boolean;
   numberTitle?: number;
   afterTitle?: string;
+  timeToRead?: string;
 }
 
 const Card = (props: CardProps) => {
@@ -54,7 +59,16 @@ const Card = (props: CardProps) => {
     animatedNumber,
     numberTitle,
     afterTitle,
+    timeToRead
   } = props;
+
+  let min = "";
+  if(timeToRead) {
+      min = "min";
+    if(Number(timeToRead) > 1) {
+      min = "mins";
+    }
+  }
 
   return (
     <div
@@ -97,6 +111,10 @@ const Card = (props: CardProps) => {
           {small &&
             small.split("\n").map((str) => <p className="text-start">{str}</p>)}
         </div>
+        {timeToRead && (
+          <p><FontAwesomeIcon icon={faClock} className="w-3" /> <span>{timeToRead} {min}</span> </p>
+        )}
+        
         <div className="flex justify-center flex-col">
           <Btn
             btnType={btnType}

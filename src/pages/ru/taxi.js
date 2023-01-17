@@ -13,10 +13,10 @@ const Taxi = ({ data }) => {
     return image.title === "ru.FleetHero.bgImage";
   })[0];
   const faqExpress = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Taxi Russia"
+    (node) => node.name === "DiDi Russia"
   );
   const productsReq = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Taxi Russia"
+    (node) => node.name === "DiDi Russia"
   );
 
   return (
@@ -43,7 +43,7 @@ export const query = graphql`
     allContentfulProduct(
       filter: {
         country: { elemMatch: { code: { eq: "ru" } } }
-        name: { eq: "DiDi Taxi Russia" }
+        name: { eq: "DiDi Russia" }
       }
     ) {
       nodes {
