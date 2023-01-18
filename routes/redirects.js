@@ -32,6 +32,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     toPath: `/mx/food/restaurantes/`,
     isPermanent: true,
   });
+  createRedirect({
+    fromPath: `/mx/food/en/store/`,
+    toPath: `/mx/food/en/restaurantes/`,
+    isPermanent: true,
+  });
   // 301 repartidores
   createRedirect({
     fromPath: `/cl/food/delivery/`,
@@ -63,6 +68,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     toPath: `/mx/food/repartidores/`,
     isPermanent: true,
   });
+  createRedirect({
+    fromPath: `/mx/food/en/delivery/`,
+    toPath: `/mx/food/en/repartidores/`,
+    isPermanent: true,
+  });
   // 301 acerca
   createRedirect({
     fromPath: `/cl/food/about/`,
@@ -90,8 +100,8 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
-    fromPath: `/mx/food/about/`,
-    toPath: `/mx/food/acerca-didi-food/`,
+    fromPath: `/mx/food/en/about/`,
+    toPath: `/mx/food/en/acerca-didi-food/`,
     isPermanent: true,
   });
   // 301 contacto
@@ -121,8 +131,8 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
-    fromPath: `/mx/food/contact/`,
-    toPath: `/mx/food/contacto/`,
+    fromPath: `/mx/food/en/contact/`,
+    toPath: `/mx/food/en/contacto/`,
     isPermanent: true,
   });
 };
