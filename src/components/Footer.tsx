@@ -48,6 +48,7 @@ const Footer = () => {
 
             <div className="text-c h-auto w-3/4 lg:w-full lg:pr-52 lg:text-left">
               {countries.map((c: any, index: number) => {
+                if (c.name === "Hong Kong") return;
                 if (index === 0) {
                   return (
                     <a

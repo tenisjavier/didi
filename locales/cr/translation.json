@@ -41,7 +41,7 @@
   "HomeColumns.columns": [
     {
       "title": "Acerca de Nosotros",
-      "desc": "Somos la app de movilidad más grande del mundo.",
+      "desc": "Somos una de las app de movilidad más grande del mundo.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/cr/sobre-didi/",
