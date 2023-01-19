@@ -34,7 +34,7 @@
   "HomeColumns.columns": [
     {
       "title": "Acerca de Nosotros",
-      "desc": "Somos la app de movilidad más grande del mundo.",
+      "desc": "Somos una de las app de movilidad más grande del mundo.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/co/centro-de-ayuda/",
@@ -61,7 +61,7 @@
     }
   ],
   "PaxHero.title": "Muévete por tu Ciudad con DiDi Pasajero ",
-  "PaxHero.desc": "La app con impacto en la movilidad más grande del mundo",
+  "PaxHero.desc": "La app donde recibes más y viajas mejor.",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "LostItemsBanner.title": "¿Olvidaste un objeto en el vehículo?",
