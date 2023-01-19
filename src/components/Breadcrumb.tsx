@@ -5,13 +5,21 @@ import { faGreaterThan, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({customBreadcrumb} : any) => {
   const countryCode = useCountry().code;
   const { pathname } = useLocation();
-
-  const directories = pathname.split("/").filter((item) => {
+  
+  let directories = pathname.split("/").filter((item) => {
     return item !== "";
   });
+
+  console.log()
+
+  if(pathname.includes("colonia")) {
+    directories = String(customBreadcrumb).split("/").filter((item) => {
+      return item !== "";
+    });
+  }
 
   return (
     <nav className="bg-grey-light absolute top-24 z-10 hidden w-full  text-white justify-center rounded-md md:flex  md:justify-between px-6 py-4">

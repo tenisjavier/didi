@@ -16,6 +16,10 @@ const FoodCity = ({ data }) => {
     : [];
   console.log(itemsList);
   const name = data.contentfulNeighbourhood.name;
+  const municipalityName = data.contentfulNeighbourhood.municipality.name;
+  const cityName = data.contentfulNeighbourhood.municipality.city.name;
+  const countryName = data.contentfulNeighbourhood.municipality.city.country.code;
+  const customBreadcrumb = String(`/${countryName}/${cityName}/${municipalityName}/${name}/`);
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -33,12 +37,11 @@ const FoodCity = ({ data }) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
 
-  console.log(foodDeliveryDownloadsImages);
-
   return (
     <Layout
       title={`Pide Comida a Domicilio  en ${name} CDMX`}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
+      nbCBreadcrumb={customBreadcrumb}
     >
       <FoodCityHero
         bgImage={foodHeroBgImage}
@@ -106,6 +109,9 @@ export const query = graphql`
         city{
           slug
           name
+          country {
+            code
+          }
         }
       }
     }

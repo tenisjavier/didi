@@ -19,6 +19,7 @@ const Layout = ({
   sbCTA,
   password,
   children,
+  nbCBreadcrumb
 }) => {
   const countries = [
     "cl",
@@ -77,7 +78,7 @@ const Layout = ({
   const pageContent = (
     <>
       <Seo title={title} desc={desc}></Seo>
-      <Header></Header>
+      <Header customBreadcrumb={nbCBreadcrumb}></Header>
       {children}
       {sb && (
         <SmartBanner

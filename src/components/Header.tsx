@@ -7,7 +7,7 @@ import Breadcrumb from "./Breadcrumb";
 
 import Menu from "./Menu";
 
-const Header = () => {
+const Header = ({customBreadcrumb} : any) => {
   return (
     <>
       <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
@@ -16,7 +16,7 @@ const Header = () => {
           <Menu></Menu>
         </div>
       </nav>
-      <Breadcrumb></Breadcrumb>
+      <Breadcrumb customBreadcrumb={customBreadcrumb}></Breadcrumb>
     </>
   );
 };
