@@ -59,7 +59,7 @@ const ArticlesTemplate = ({ data }) => {
     banner = <DiDiPayColumns></DiDiPayColumns>;
     columns = <DiDiPayBlogColumns data={data}></DiDiPayBlogColumns>;
   }
-  if (pathname.includes("thejourney")) {
+  if (pathname.includes("thejourney") || pathname.includes("coronavirus")) {
     banner = null;
   }
 
