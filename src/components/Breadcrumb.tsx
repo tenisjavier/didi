@@ -5,15 +5,13 @@ import { faGreaterThan, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 
-const Breadcrumb = ({customBreadcrumb} : any) => {
+const Breadcrumb = ({customBreadcrumb, customBreadcrumbCityLink, customBreadcrumbMunicipalityLink} : any) => {
   const countryCode = useCountry().code;
   const { pathname } = useLocation();
   
   let directories = pathname.split("/").filter((item) => {
     return item !== "";
   });
-
-  console.log()
 
   if(pathname.includes("colonia")) {
     directories = String(customBreadcrumb).split("/").filter((item) => {
@@ -201,6 +199,48 @@ const Breadcrumb = ({customBreadcrumb} : any) => {
                   className=" hover:text-blue-700"
                 >
                   {itemPath}
+                </Link>
+              </li>
+            );
+
+          } else if(pathname.includes("colonia")) {
+            if (index === directories.length - 1) {
+              return (
+                <li key={index}>
+                  <span className="mx-2">
+                    <FontAwesomeIcon
+                      icon={faGreaterThan}
+                      size="1x"
+                      className="w-2"
+                    ></FontAwesomeIcon>
+                  </span>
+
+                  {dir.replace(/(-)|(_.*)/g, " ")[0].toUpperCase() + dir.substring(1)}
+                </li>
+              );
+            }
+
+            let customLink = customBreadcrumbCityLink;
+
+            if(index == 2) {
+              customLink = customBreadcrumbMunicipalityLink;
+            }
+
+            return (
+              <li key={index}>
+                <span className="mx-2 ">
+                  <FontAwesomeIcon
+                    icon={faGreaterThan}
+                    size="1x"
+                    className="w-2"
+                  ></FontAwesomeIcon>
+                </span>
+
+                <Link
+                  to={customLink}
+                  className=" hover:text-blue-700"
+                >
+                  {dir.replace(/(-)|(_.*)/g, " ")[0].toUpperCase() + dir.substring(1)}
                 </Link>
               </li>
             );

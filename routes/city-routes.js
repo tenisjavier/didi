@@ -35,7 +35,7 @@ const cityRoutesInit = async (graphql, createPage) => {
     const citySlug = slugify(name, { lower: true });
     
     if(country?.code) {
-      let path = `/${country.code}/food/${citySlug}/`;
+      let path = `/${country.code}/food/ciudad/${citySlug}/`;
 
       createPage({
         path: path,
