@@ -179,27 +179,22 @@
     }
   ],
   "HowToCalDiDiColumns.title": "如何 call DiDi?",
-  "HowToCalDiDiColumns.desc": "目前DiDi App 更新中，未能在App Store上架，新用戶註冊暫停。如你的手機號碼+852/ +86 曾在大陸或香港註冊過DiDi 帳號，但你已沒有DiDi App，可以用AlipayHK 或WeChat 入面的滴滴出行小程序登入及享用折扣。",
+  "HowToCalDiDiColumns.desc": "如你的手機號碼+852/ +86 曾在內地或香港註冊過DiDi 帳號，可以用AlipayHK 或WeChat 入面的滴滴出行小程序登入及享用折扣。",
   "HowToCalDiDiColumns.columns": [
     {
-      "title": "DiDi App",
-      "desc": "準備重新上架， 請耐心等侯",
+      "title": "WeChat 小程序(簡體版)",
+      "desc": "用WeChat 一掃QR code, 打開滴滴出行小程序",
       "textColor": "gray-primary"
     },
     {
       "title": "AlipayHK 小程序 ",
       "desc": "打開 AlipayHK App > 應用中心> 交通服務> 滴滴出行",
       "textColor": "gray-primary"
-    },
-    {
-      "title": "WeChat 小程序(簡體版)",
-      "desc": "用WeChat 一掃QR code, 打開滴滴出行小程序",
-      "textColor": "gray-primary"
     }
   ],
   "HowToCalDiDiColumns.small": "Terms and Conditions: \n 1. Only for the first 3 trips with a fare of $  80 or more per day , the maximum discount for each trip is $ 50 . \n 2. Only for electronic payment including credit card, AlipayHK and WeChat Pay \n 3. The promotion period is until February 28, 2022",
-  "OfferHero.title": "DiDi Taxi 全日85折! 滿$80即自動減",
-  "OfferHero.desc": "最多減 $50 / 只限電子支付(信用卡/AliPay/WeChat Pay)",
+  "OfferHero.title": "DiDi Taxi 可享優惠",
+  "OfferHero.desc": "優惠受相關細則條款約束/只限電子支付（信用卡/Alipay/WeChat Pay",
   "OfferHero.textColor": "gray-primary",
   "OfferHero.btnMode": "primary",
   "OfferHero.btnText": "如何call DiDi ? ",

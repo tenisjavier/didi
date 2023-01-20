@@ -5,13 +5,19 @@ import { faGreaterThan, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({customBreadcrumb, customBreadcrumbCityLink, customBreadcrumbMunicipalityLink} : any) => {
   const countryCode = useCountry().code;
   const { pathname } = useLocation();
-
-  const directories = pathname.split("/").filter((item) => {
+  
+  let directories = pathname.split("/").filter((item) => {
     return item !== "";
   });
+
+  if(pathname.includes("colonia")) {
+    directories = String(customBreadcrumb).split("/").filter((item) => {
+      return item !== "";
+    });
+  }
 
   return (
     <nav className="bg-grey-light absolute top-24 z-10 hidden w-full  text-white justify-center rounded-md md:flex  md:justify-between px-6 py-4">
@@ -111,10 +117,10 @@ const Breadcrumb = () => {
                 itemPath = "Владельцам таксопарков";
                 break;
               case "legal":
-                itemPath = "Круто";
+                itemPath = "Юридическая информация";
                 break;
               case "newsroom":
-                itemPath = "отдел новостей";
+                itemPath = "Раздел новостей";
                 break;
               default:
                 itemPath = decodeURI(dir);
@@ -193,6 +199,48 @@ const Breadcrumb = () => {
                   className=" hover:text-blue-700"
                 >
                   {itemPath}
+                </Link>
+              </li>
+            );
+
+          } else if(pathname.includes("colonia")) {
+            if (index === directories.length - 1) {
+              return (
+                <li key={index}>
+                  <span className="mx-2">
+                    <FontAwesomeIcon
+                      icon={faGreaterThan}
+                      size="1x"
+                      className="w-2"
+                    ></FontAwesomeIcon>
+                  </span>
+
+                  {dir.replace(/(-)|(_.*)/g, " ")[0].toUpperCase() + dir.substring(1)}
+                </li>
+              );
+            }
+
+            let customLink = customBreadcrumbCityLink;
+
+            if(index == 2) {
+              customLink = customBreadcrumbMunicipalityLink;
+            }
+
+            return (
+              <li key={index}>
+                <span className="mx-2 ">
+                  <FontAwesomeIcon
+                    icon={faGreaterThan}
+                    size="1x"
+                    className="w-2"
+                  ></FontAwesomeIcon>
+                </span>
+
+                <Link
+                  to={customLink}
+                  className=" hover:text-blue-700"
+                >
+                  {dir.replace(/(-)|(_.*)/g, " ")[0].toUpperCase() + dir.substring(1)}
                 </Link>
               </li>
             );

@@ -8,14 +8,20 @@ import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+const slugify = require("slugify");
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const itemsList = data.allContentfulNeighbourhood.nodes.name
     ? data.allContentfulNeighbourhood.nodes.municipality.neighbourhood.name
     : [];
-  console.log(itemsList);
   const name = data.contentfulNeighbourhood.name;
+  const municipalityName = data.contentfulNeighbourhood.municipality.name;
+  const cityName = data.contentfulNeighbourhood.municipality.city.name;
+  const countryName = data.contentfulNeighbourhood.municipality.city.country.code;
+  const customBreadcrumb = String(`/${countryName}/${cityName}/${municipalityName}/${name}/`);
+  const customCityLink = String(`/${countryName}/food/ciudad/${slugify(cityName, { lower: true })}/`);
+  const customMunicipalityLink = String(`/${countryName}/food/delegacion/${slugify(municipalityName, { lower: true })}/`);
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -33,12 +39,13 @@ const FoodCity = ({ data }) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
 
-  console.log(foodDeliveryDownloadsImages);
-
   return (
     <Layout
       title={`Pide Comida a Domicilio  en ${name} CDMX`}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
+      nbCBreadcrumb={customBreadcrumb}
+      breadcrumbCityLink={customCityLink}
+      breadcrumbMunicipalityLink={customMunicipalityLink}
     >
       <FoodCityHero
         bgImage={foodHeroBgImage}
@@ -106,6 +113,9 @@ export const query = graphql`
         city{
           slug
           name
+          country {
+            code
+          }
         }
       }
     }
