@@ -1,12 +1,6 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faQuoteRight,
-  faExclamationCircle,
-  faHeadphonesAlt,
-} from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface HowToCalDiDiColumnsProps {
@@ -24,7 +18,7 @@ const HowToCalDiDiColumns = ({ images }: HowToCalDiDiColumnsProps) => {
     bgColor: t("HowToCalDiDiColumns.bgColor"),
     textColor: t("HowToCalDiDiColumns.textColor"),
     columns: t("HowToCalDiDiColumns.columns", { returnObjects: true }),
-    small: t("HowToCalDiDiColumns.small")
+    small: t("HowToCalDiDiColumns.small"),
   };
 
   if (images) {
