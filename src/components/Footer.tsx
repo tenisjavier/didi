@@ -124,6 +124,7 @@ const Footer = () => {
                 )}
                 {countryCode !== "ru" &&
                   countryCode !== "eg" &&
+                  countryCode !== "hk" &&
                   !sslCountries.includes(countryCode) && (
                     <StaticImage
                       alt="Logo Stores"

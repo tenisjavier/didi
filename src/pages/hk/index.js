@@ -19,7 +19,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <HomeHeroBtn bgImage={HomeHeroBtnBgImage}></HomeHeroBtn>
-      <CarModelColumns images={carModelColumns}></CarModelColumns>
+      <CarModelColumns images={carModelColumns.reverse()}></CarModelColumns>
       <StatsColumns></StatsColumns>
     </Layout>
   );
