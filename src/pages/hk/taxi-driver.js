@@ -23,11 +23,13 @@ const Taxi = ({ data }) => {
   const whyDiDiImage = images.filter((image) => {
     return image.title === "hk.WhyDiDiColumns.image";
   });
-  
+
   return (
-    <Layout>
+    <Layout sb={false}>
       <TaxiHero bgImage={taxiHeroBgImage}></TaxiHero>
-      <RegistrationProccessColumns images={registrationProccessColumns}></RegistrationProccessColumns>
+      <RegistrationProccessColumns
+        images={registrationProccessColumns}
+      ></RegistrationProccessColumns>
       <TaxiWhyDidi image={taxiWhyDiDiImage}></TaxiWhyDidi>
       <WhyDiDiColumns images={whyDiDiImage}></WhyDiDiColumns>
     </Layout>
@@ -37,7 +39,16 @@ const Taxi = ({ data }) => {
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["hk.TaxiHero.bgImage", "hk.WhyDiDiColumns.image", "hk.RegistrationProccessColumns.image", "hk.WhyDiDiCTA.bgImage"] } }
+      filter: {
+        title: {
+          in: [
+            "hk.TaxiHero.bgImage"
+            "hk.WhyDiDiColumns.image"
+            "hk.RegistrationProccessColumns.image"
+            "hk.WhyDiDiCTA.bgImage"
+          ]
+        }
+      }
     ) {
       nodes {
         id

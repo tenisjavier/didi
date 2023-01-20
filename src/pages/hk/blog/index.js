@@ -12,7 +12,7 @@ const Article = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <ArticlesHero bgImage={articlesHeroBgImage}></ArticlesHero>
       <ArticlesColumns height="h-60" data={data}></ArticlesColumns>
       <Pagination data={data} postsPerPage={20}></Pagination>
@@ -36,7 +36,7 @@ export const query = graphql`
       filter: {
         category: { in: ["rides", "news"] }
         country: { code: { eq: "hk" } }
-        slug: {ne: "coronavirus"}
+        slug: { ne: "coronavirus" }
       }
       sort: { updatedAt: DESC }
     ) {

@@ -14,7 +14,7 @@ const Taxi = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <TaxiPaxHero bgImage={taxiHeroBgImage}></TaxiPaxHero>
       <BookRideColumns images={bookRideColumns}></BookRideColumns>
     </Layout>
@@ -24,7 +24,9 @@ const Taxi = ({ data }) => {
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["hk.TaxiHero.bgImage", "hk.BookRideColumns.image"] } }
+      filter: {
+        title: { in: ["hk.TaxiHero.bgImage", "hk.BookRideColumns.image"] }
+      }
     ) {
       nodes {
         id

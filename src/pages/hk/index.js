@@ -17,7 +17,7 @@ const Index = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <HomeHeroBtn bgImage={HomeHeroBtnBgImage}></HomeHeroBtn>
       <CarModelColumns images={carModelColumns.reverse()}></CarModelColumns>
       <StatsColumns></StatsColumns>
