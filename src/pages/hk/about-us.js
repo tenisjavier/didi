@@ -10,7 +10,7 @@ const Contact = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <AboutGlobalCTA image={aboutGlobalCTAimage}></AboutGlobalCTA>
     </Layout>
   );
@@ -20,11 +20,7 @@ export default Contact;
 
 export const query = graphql`
   query {
-    allContentfulAsset(
-      filter: {
-        title: { in: ["hk.AboutGlobalCTA.image"] }
-      }
-    ) {
+    allContentfulAsset(filter: { title: { in: ["hk.AboutGlobalCTA.image"] } }) {
       nodes {
         id
         title

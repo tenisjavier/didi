@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <ContactHero bgImage={homeHeroBgImage}></ContactHero>
       <ContactColumns></ContactColumns>
     </Layout>
@@ -22,11 +22,7 @@ export default Contact;
 
 export const query = graphql`
   query {
-    allContentfulAsset(
-      filter: {
-        title: { in: ["hk.HomeHero.bgImage"] }
-      }
-    ) {
+    allContentfulAsset(filter: { title: { in: ["hk.HomeHero.bgImage"] } }) {
       nodes {
         id
         title
