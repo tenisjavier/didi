@@ -6,7 +6,7 @@ const slugify = require("slugify");
 const cityRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulCity(filter: {country: {code: {ne: null}, product: {elemMatch: {category: {eq: "food"}}}}}) {
+      allContentfulCity(filter: {country: {code: {eq: "mx"}, product: {elemMatch: {category: {eq: "food"}}}}}) {
         nodes {
           id
           name
