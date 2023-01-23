@@ -18,10 +18,12 @@ const SpecialCar = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <SpecialCarPaxHero bgImage={taxiHeroBgImage}></SpecialCarPaxHero>
       <BookBusRideColumns images={bookBusRideColumns}></BookBusRideColumns>
-      <BusinessModelColumns images={businessModelColumns}></BusinessModelColumns>
+      <BusinessModelColumns
+        images={businessModelColumns}
+      ></BusinessModelColumns>
     </Layout>
   );
 };
@@ -29,7 +31,15 @@ const SpecialCar = ({ data }) => {
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["hk.GuandongCar.bgImage", "hk.SpecialBookingColumns.image", "hk.LuxuryModelColumns.image"] } }
+      filter: {
+        title: {
+          in: [
+            "hk.GuandongCar.bgImage"
+            "hk.SpecialBookingColumns.image"
+            "hk.LuxuryModelColumns.image"
+          ]
+        }
+      }
     ) {
       nodes {
         id

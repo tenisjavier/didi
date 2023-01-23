@@ -102,7 +102,7 @@
   "HomeColumns.columns": [
     {
       "title": "Acerca de Nosotros",
-      "desc": "Somos la app de movilidad más grande del mundo.",
+      "desc": "Somos una de las app de movilidad más grande del mundo.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/mx/centro-de-ayuda/",
@@ -827,7 +827,7 @@
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/mx/guias/{{guide}}/",
-  "PartnersHero.title": "Club de Beneficios DiDiMás+",
+  "PartnersHero.title": "Club DiDi",
   "PartnersHero.desc": "Conoce nuestro club de beneficios siendo Socio Conductor de DiDi. ",
   "PartnersHero.textColor": "white",
   "PartnersHero.bgColor": "bg-orange-primary",

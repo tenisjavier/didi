@@ -15,7 +15,7 @@ const Taxi = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <OfferHero image={offerHeroImage}></OfferHero>
       <HowToCallDiDiColumns
         id="how-to-call"

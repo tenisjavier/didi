@@ -10,7 +10,7 @@
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
   "DrvCTA.title": "Ganancias Adicionales con DiDi",
-  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares de la manera más segura y empieza a generar ingresos extra con DiDi. Complementa tus ingresos conectándose a la app de movilidad más grande del mundo. Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
+  "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares de la manera más segura y empieza a generar ingresos extra con DiDi. Complementa tus ingresos conectándose a una de las app de movilidad más grande del mundo. Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bgColor": "bg-gray-light",
   "DrvCTA.bullets": [
     "Comisiones Bajas",
@@ -23,7 +23,7 @@
   "PaxCTA.desc": "La app de movilidad que te conecta con autos particulares y taxis de forma segura para que tengas un viaje increíble. Disfruta de amplia disponibilidad, mayor cobertura, soporte 24/7 y precios bajos.",
   "PaxCTA.bullets": [
     "Precios Bajos",
-    "La Mejor Seguridad",
+    "Seguridad",
     "Cómodo, Rápido y Seguro",
     "Soporte 24/7"
   ],
@@ -34,7 +34,7 @@
   "HomeColumns.columns": [
     {
       "title": "Acerca de Nosotros",
-      "desc": "Somos la app de movilidad más grande del mundo.",
+      "desc": "Somos una de las app de movilidad más grande del mundo.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/pe/centro-de-ayuda/",
@@ -68,19 +68,19 @@
   "PaxColumns.textColor": "gray-primary",
   "PaxColumns.columns": [
     {
-      "title": "Mejor Seguridad",
+      "title": "Seguridad",
       "desc": "Tu seguridad es nuestra prioridad, por eso desarrollamos constantemente funciones en la app que te harán sentir más seguro en cada viaje.",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
     {
-      "title": "El Mejor Precio",
+      "title": "Precio Asequible",
       "desc": "Solicita viajes desde S/ 5 soles*.",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
     {
-      "title": "Mejor Soporte",
+      "title": "Soporte 24/7",
       "desc": "Contamos con una central telefónica 24/7 para ayudarte con cualquier duda o incidente: (01) 510 2788.",
       "bgColor": "white",
       "textColor": "gray-primary"
@@ -152,7 +152,7 @@
   "DrvBanner.bgColor": "bg-orange-primary",
   "DrvBanner.textColor": "white",
   "DrvBanner.btnMode": "light",
-  "DrvFeatures.title": "Tenemos el mejor equipo de soporte:",
+  "DrvFeatures.title": "Soporte 24/7",
   "DrvFeatures.bullets": [
     "Ver el destino de todos tus viajes las 24 horas.",
     "Tener más ingresos con nuestras promociones y referidos.",
