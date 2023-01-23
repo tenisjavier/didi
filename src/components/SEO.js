@@ -73,12 +73,18 @@ const SEO = ({ title, desc }) => {
   if (pathname.includes("/food/en/")) {
     lang = "en";
   }
+  
+  if (pathname.includes("/ru/")) {
+    countryName = "Россия";
+  }
+
 
   if (pathname.includes("/food/")) {
     title = title + " | DiDi Food " + (countryName || "Global");
   } else {
     title = title + " | DiDi " + (countryName || "Global");
   }
+
   //if is int
   if (pathname === "/") {
     title = "DiDi Global - The World's Leader in Mobility Technology";
@@ -122,7 +128,10 @@ const SEO = ({ title, desc }) => {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase()}` }} title={title}>
+      <Helmet
+        htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase()}` }}
+        title={title}
+      >
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") ? (

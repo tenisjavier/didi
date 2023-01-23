@@ -18,7 +18,7 @@ const BecomeDriver = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <BecomeDriverHero bgImage={becomeDriverHeroBgImage}></BecomeDriverHero>
       <BecomeDriverCTA bgImage={becomeDriverCTABgImage}></BecomeDriverCTA>
       <BecomeDriverColumns

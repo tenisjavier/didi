@@ -10,7 +10,7 @@
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/ar/seguridad/",
   "DrvCTA.title": "Manejá con DiDi",
-  "DrvCTA.desc": "Conectate con nuestros servicios de autos particulares o taxi de manera más segura y empezá a generar ingresos extra con DiDi. Ahorrá para tus vacaciones soñadas, pagá la educación de tus hijos o complementá tus ingresos conectándose a la app de movilidad más grande del mundo en tu tiempo libre. Registrate en DiDi con tus datos y los de tu vehículo y comenzá a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empecés a manejar.",
+  "DrvCTA.desc": "Conectate con nuestros servicios de autos particulares o taxi de manera más segura y empezá a generar ingresos extra con DiDi. Ahorrá para tus vacaciones soñadas, pagá la educación de tus hijos o complementá tus ingresos conectándose a una de las app de movilidad más grande del mundo en tu tiempo libre. Registrate en DiDi con tus datos y los de tu vehículo y comenzá a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empecés a manejar.",
   "DrvCTA.bullets": [
     "Comisiones Bajas",
     "Seguridad para tu Viaje",
@@ -34,7 +34,7 @@
   "HomeColumns.columns": [
     {
       "title": "Acerca de Nosotros",
-      "desc": "Somos la app de movilidad más grande del mundo.",
+      "desc": "Somos una de las app de movilidad más grande del mundo.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/ar/centro-de-ayuda/",
@@ -61,7 +61,7 @@
     }
   ],
   "PaxHero.title": "Conectá tu próximo viaje con DiDi Pasajero ",
-  "PaxHero.desc": "La App de movilidad más grande del mundo en la que recibís más y viajás mejor.",
+  "PaxHero.desc": "La App de movilidad en la que recibís más y viajás mejor.",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "PaxColumns.bgColor": "bg-white",

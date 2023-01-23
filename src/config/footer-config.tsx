@@ -24,7 +24,6 @@ const footerLinks: AllFooterInterface = {
     { text: "粵港跨境專車服務", link: "/hk/ride/粵港跨境專車服務/" },
     { text: "成為司機夥伴", link: "/hk/taxi-driver" },
     { text: "關於我們", link: "/hk/about-us/" },
-    { text: "網誌", link: "/hk/blog/" },
     { text: "聯絡我們", link: "/hk/contact-us" },
   ],
   mx: [

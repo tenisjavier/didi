@@ -126,7 +126,12 @@ const options: optionsInterface = {
         </div>
       );
     },
-    [BLOCKS.UL_LIST]: (node, children) => <ul className="p-0">{children}</ul>,
+    [BLOCKS.UL_LIST]: (node, children) => (
+      <ul className="mx-1 my-6">{children}</ul>
+    ),
+    [BLOCKS.OL_LIST]: (node, children) => (
+      <ul className="mx-1 my-6">{children}</ul>
+    ),
   },
 };
 
