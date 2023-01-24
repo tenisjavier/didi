@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
-import CTASection, { CTAProps } from "../CTASectionRTL";
+import CTASection, { CTAProps } from "../CTASection";
 
 const ContentHeroRTL = () => {
   const props: CTAProps = {
@@ -10,7 +10,8 @@ const ContentHeroRTL = () => {
     desc: t("ContentHeroRTL.desc"),
     textColor: t("ContentHeroRTL.textColor"),
     bgColor: "bg-orange-primary",
-    reverse: true,
+    reverse: false,
+    RTL: true
   };
   return <CTASection {...props}></CTASection>;
 };
