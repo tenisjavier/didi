@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
-import CTASection, { CTAProps } from "../CTASectionRTL";
+import CTASection, { CTAProps } from "../CTASection";
 
 interface AboutHeroProps {
   bgImage: {
@@ -17,16 +17,12 @@ const AboutHeroRTL = ({ bgImage }: AboutHeroProps) => {
     title: t("AboutHeroRTL.title"),
     desc: t("AboutHeroRTL.desc"),
     textColor: t("AboutHeroRTL.textColor"),
-    bgImage: (
-      <GatsbyImage
-        image={bgImage.gatsbyImageData}
-        alt={bgImage.description}
-        className="!absolute z-0 h-full w-full md:block"
-      ></GatsbyImage>
-    ),
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
     btnMode: t("AboutHeroRTL.btnMode"),
     btnType: "both",
-    reverse: true,
+    reverse: false,
+    RTL: true
   };
   return <CTASection {...props}></CTASection>;
 };

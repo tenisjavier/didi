@@ -33,6 +33,7 @@ export interface CTAProps extends BtnProps {
     text: string;
   }[];
   reverse?: boolean;
+  RTL?: boolean;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -60,6 +61,7 @@ const CTASection = (props: CTAProps) => {
     btnArray,
     reverse,
     btnModeSecondary,
+    RTL
   } = props;
 
   let sectionBtn = (
@@ -114,8 +116,17 @@ const CTASection = (props: CTAProps) => {
     );
   }
 
+  let dir : any = "ltr";
+  let textDir : any = "text-left";
+
+  if(RTL) {
+    dir = "rtl";
+    textDir = "text-right";
+  }
+
   return (
     <section
+    style={{ direction: dir }}
       className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
     ${bgColor && bgColor}`}
     >
@@ -128,7 +139,7 @@ const CTASection = (props: CTAProps) => {
         {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {imageRawRender && imageRawRender}
         <div
-          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
+          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
         >
           {hero ? (
             <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
@@ -137,7 +148,7 @@ const CTASection = (props: CTAProps) => {
           )}
           {bullets && (
             <>
-              <ul className="mt-12 mb-2 list-none text-left text-xl">
+              <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
                 {bullets.map((item, index) => {
                   return (
                     <div key={index}>
