@@ -35,7 +35,7 @@ const TopStory = ({
   return (
     <>
       <section
-        className={`relative flex min-h-[20rem] w-full pt-16 items-center justify-center overflow-hidden md:pt-0
+        className={`relative flex min-h-[20rem] w-full pt-16 items-center justify-center overflow-hidden md:pt-0 xl:pt-16
       ${bgColor && bgColor}`}
       >
         <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-5 xl:justify-start bg-gray-200`}>
@@ -64,7 +64,7 @@ const TopStory = ({
           className={`relative flex min-h-[20rem] w-full  items-center justify-center overflow-hidden
         ${bgColor && bgColor}`}
         >
-        <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-5 xl:justify-start`}>
+        <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-1 xl:justify-center`}>
           <div className={`mt-10 flex flex-wrap justify-around`}>
             {columns.map((col, index) => {
               if(index > 0 && index <= 3) {
