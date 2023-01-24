@@ -230,6 +230,14 @@ const menuLinks: AllMenuInterface = {
       url: "https://prestamos.didiglobal.com",
     },
     {
+      text: "DiDi Entregas",
+      url: "#",
+      dropMenu: [{
+        text: "DiDi Entregas Business",
+        url: "https://didi-food.com/es-MX/entrega-business/home"
+      }]
+    },
+    {
       text: "DiDi Food",
       url: "/mx/food/",
       dropMenu: [
