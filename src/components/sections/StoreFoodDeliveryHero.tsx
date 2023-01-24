@@ -23,13 +23,11 @@ const StoreFoodDeliveryHero = ({
     bgColor: t("StoreFoodDeliveryHero.bgColor"),
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
-    ...(image && {
-      image: image,
-      reverse: true,
-      btnMode: t("StoreFoodDeliveryHero.btnMode"),
-      btnModeSecondary: "hidden",
-      btnType: "foodEater",
-    }),
+    imageRawRender: image,
+    reverse: true,
+    btnMode: t("StoreFoodDeliveryHero.btnMode"),
+    btnModeSecondary: "hidden",
+    btnType: "foodEater",
   };
   return <CTASection {...props}></CTASection>;
 };
