@@ -258,6 +258,28 @@ const menuLinksFood: AllMenuInterface = {
       url: "/pe/food/blog",
     },
   ],
+  mxen: [
+    {
+      text: "Store",
+      url: "/mx/food/en/restaurantes/",
+    },
+    {
+      text: "Delivery",
+      url: "/mx/food/en/repartidores/",
+    },
+    {
+      text: "About",
+      url: "/mx/food/en/acerca-didi-food/",
+    },
+    {
+      text: "Contact",
+      url: "/mx/food/en/contacto/",
+    },
+    {
+      text: "Blog",
+      url: "/mx/food/en/blog/",
+    },
+  ],
 };
 
 const getMenuLinksFood = (countryCode: string) => {

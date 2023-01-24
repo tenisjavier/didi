@@ -115,6 +115,43 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
+  if (btnType === "foodDeliveryHeroEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodDeliveryHeroEn" btnMode={btnMode}></Btn>
+      </>
+    )
+  }
+  if (btnType === "foodBusinessHeroEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodBusinessHeroEn" btnMode={btnMode}></Btn>
+      </>
+    )
+  }
+  if (btnType === "foodDeliveryEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodDeliveryEn" btnMode={btnMode}></Btn>
+      </>
+    )
+  }
+  if (btnType === "foodBusinessEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodBusinessEn" btnMode={btnMode}></Btn>
+      </>
+    )
+  }
+  if (btnType === "bothFoodEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnlineEn" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEaterEn" btnModeSecondary={btnModeSecondary}></Btn>
+      </>
+    )
+  }
 
   let dir : any = "ltr";
   let textDir : any = "text-left";

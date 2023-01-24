@@ -56,6 +56,10 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     pathname.includes("/food/") && !pathname.includes("/thejourney/")
       ? "food"
       : "translation";
+      if (pathname.includes("/food/en/")){
+        ns = "enfood";
+      }
+  
   let [country, updateCountry] = useState({
     code: countryCode,
     ns: ns,
