@@ -3,11 +3,6 @@ import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface StoreHeroProps {
-  bgImage?: {
-    title: string;
-    description: string;
-    gatsbyImageData: any;
-  };
   image?: any;
   title?: string;
   desc?: string;
@@ -16,7 +11,6 @@ interface StoreHeroProps {
 }
 
 const StoreHero = ({
-  bgImage,
   image,
   title,
   desc,
@@ -29,15 +23,11 @@ const StoreHero = ({
     desc: desc || t("StoreHero.desc"),
     textColor: textColor || t("StoreHero.textColor"),
     bgColor: bgColor || t("StoreHero.bgColor"),
-    bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full md:block",
-    ...(image && {
-      image: image,
-      reverse: true,
-      btnMode: "light",
-      btnModeSecondary: "hidden",
-      btnType: "pax",
-    }),
+    imageRawRender: image,
+    reverse: true,
+    btnMode: "light",
+    btnType: "pax",
+    btnModeSecondary: "hidden",
   };
   return <CTASection {...props}></CTASection>;
 };
