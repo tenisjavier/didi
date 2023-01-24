@@ -35,13 +35,13 @@ const TopStory = ({
   return (
     <>
       <section
-        className={`relative flex min-h-[20rem] w-full pt-16 items-center justify-center overflow-hidden
+        className={`relative flex min-h-[20rem] w-full pt-16 items-center justify-center overflow-hidden md:pt-0 xl:pt-16
       ${bgColor && bgColor}`}
       >
         <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-5 xl:justify-start bg-gray-200`}>
           {columns[0].image}
 
-          <div className={`w-11/12   text-center lg:w-1/4 text-${textColor} z-10 xl:text-left`}>
+          <div className={`w-11/12 text-center lg:w-1/4 text-${textColor} z-10 xl:text-left`}>
               <p className="text-5xl font-bold md:text-4xl text-orange-400">Top Stories</p>
               <h2 className="text-3xl font-bold md:text-3xl">{columns[0].title}</h2>
             {columns[0].desc &&
@@ -64,7 +64,7 @@ const TopStory = ({
           className={`relative flex min-h-[20rem] w-full  items-center justify-center overflow-hidden
         ${bgColor && bgColor}`}
         >
-        <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-5 xl:justify-start`}>
+        <div className={`container mx-auto flex w-full flex-wrap items-center justify-center py-1 xl:justify-center`}>
           <div className={`mt-10 flex flex-wrap justify-around`}>
             {columns.map((col, index) => {
               if(index > 0 && index <= 3) {
