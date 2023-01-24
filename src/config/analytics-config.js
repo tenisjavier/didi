@@ -17,7 +17,10 @@ const insertBtnParams = () => {
 
   // if does not have utms or gclid should be organic traffic
   if (search.indexOf("utm") === -1 && search.indexOf("gclid") === -1) {
-    if (thisDomain !== referringDomain) {
+    if (
+      thisDomain !== referringDomain &&
+      !document.location.pathname.includes("store")
+    ) {
       //this function return if it is SEO, direct or referral
       var referringInfo = parseGaReferrer(referrer);
 
