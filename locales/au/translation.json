@@ -96,12 +96,12 @@
   ],
   "PaxWhyDiDi.title": "Get FREE* rides",
   "PaxWhyDiDi.bullets": [
-    "For a limited time only you’ll get a $20 ride voucher every time you invite a friend to sign up and ride with DiDi.",
-    "They’ll also get a $20 ride voucher too!",
+    "For a limited time only you’ll get a $5 ride voucher every time you invite a friend to sign up and ride with DiDi.",
+    "They’ll also get a $5 ride voucher too!",
     "After they’ve finished taking their first ride, you’ll get a ride voucher in your account.",
     "Please note that your referral code only applies to new users."
   ],
-  "PaxWhyDiDi.desc": "You can pay with cash or credit card",
+  "PaxWhyDiDi.desc": "You can pay with debit or credit card",
   "PaxWhyDiDi.bgColor": "bg-blue-primary",
   "PaxWhyDiDi.textColor": "white",
   "PaxWhyDiDi.btnMode": "primary",
