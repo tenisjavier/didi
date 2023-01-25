@@ -23,11 +23,13 @@ const Partner = ({ data }) => {
         desc={heroDesc}
         image={heroImage}
       ></PartnerHero>
-      <PartnerFeature
-        title={featureTitle}
-        desc={featureDesc}
-        image={featureImage}
-      ></PartnerFeature>
+      {featureTitle && (
+        <PartnerFeature
+          title={featureTitle}
+          desc={featureDesc}
+          image={featureImage}
+        ></PartnerFeature>
+      )}
       <PartnerContent content={content}></PartnerContent>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
