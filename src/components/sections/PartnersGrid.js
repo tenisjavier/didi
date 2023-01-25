@@ -20,6 +20,7 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
     return {
       title: <Link to={link}>{partner.name}</Link>,
       desc: partner.desc,
+      height: "48",
       image: (
         <Link to={link}>
           <GatsbyImage
