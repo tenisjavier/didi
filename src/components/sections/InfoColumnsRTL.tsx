@@ -7,7 +7,7 @@ import {
   faShield,
   faSliders,
 } from "@fortawesome/free-solid-svg-icons";
-import ColumnsSection, { ColumnsSectionProps } from "../ColumnSectionRTL";
+import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface InfoColumnsProps {
   images: {
@@ -22,6 +22,7 @@ const InfoColumnsRTL = ({ images }: InfoColumnsProps) => {
     bgColor: t("InfoColumnsRTL.bgColor"),
     textColor: t("InfoColumnsRTL.textColor"),
     columns: t("InfoColumnsRTL.columns", { returnObjects: true }),
+    RTL: true
   };
 
   if (images) {

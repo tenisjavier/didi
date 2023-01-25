@@ -118,10 +118,12 @@ const CTASection = (props: CTAProps) => {
 
   let dir : any = "ltr";
   let textDir : any = "text-left";
+  let margin : any = "mr-4";
 
   if(RTL) {
     dir = "rtl";
     textDir = "text-right";
+    margin = "ml-4";
   }
 
   return (
@@ -156,14 +158,14 @@ const CTASection = (props: CTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className="mt-1 mr-4 text-orange-primary w-6"
+                            className={`mt-1 ${margin} text-orange-primary w-6`}
                             size="sm"
                           />
                         ) : (
                           icon && (
                             <FontAwesomeIcon
                               icon={icon}
-                              className=" mr-4 text-orange-primary w-6"
+                              className={`${margin} text-orange-primary w-6`}
                               size="sm"
                             />
                           )

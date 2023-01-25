@@ -133,6 +133,15 @@
   "DrvHeroRTL.desc": "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
   "DrvHeroRTL.textColor": "white",
   "DrvHeroRTL.btnMode": "light",
+  "DrvHero.title": "انضم لعائلة دي دي",
+  "DrvHero.desc": "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
+  "DrvHero.textColor": "white",
+  "DrvHero.btnMode": "light",
+  "DrvCityHero.title": " انضم لعائلة دي دي {{city}}",
+  "DrvCityHero.desc": "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
+  "DrvCityHero.textColor": "white",
+  "DrvCityHero.bgColor": "bg-blue-primary",
+  "DrvCityHero.btnMode": "primary",
   "DrvBenefits.title": "مزايا الشريك السائق",
   "DrvBenefits.bgColor": "bg-white",
   "DrvBenefits.columns": [
@@ -165,7 +174,7 @@
       "width": "w-64"
     }
   ],
-  "Requirements.title": "Requirements to become a Driver",
+  "Requirements.title": "متطلبات أن تصبح سائقًا",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
   "DrvBanner.title": "Start earning extra money today",
