@@ -43,8 +43,8 @@ const Btn = ({
   btnText2,
   btnLink2,
 }: BtnProps) => {
-  let countryCode = useCountry().code;
-  let btnData = getBtnLinks(countryCode);
+  const countryCode = useCountry().code;
+  const btnData = getBtnLinks(countryCode);
 
   if (btnType === "drv") {
     btnLink = btnData.drvLink;
@@ -74,45 +74,31 @@ const Btn = ({
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
   } else if (btnType === "bothFoodEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnData.foodEaterOnlineText;
     btnLink2 = btnData.foodEaterLink;
     btnText2 = btnData.foodEaterText;
   }
   else if (btnType === "foodDeliveryHeroEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodDeliveryLink;
     btnText = btnText || btnData.foodDeliveryText;
   }
   else if (btnType === "foodBusinessHeroEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodBusinessLink;
     btnText = btnText || btnData.foodBusinessText;
   }
   else if (btnType === "foodDeliveryEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodDeliveryLink;
     btnText = btnText || btnData.foodDeliveryText;
   }
   else if (btnType === "foodBusinessEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodBusinessLink;
     btnText = btnText || btnData.foodBusinessText;
   }
   else if (btnType === "foodEaterEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodEaterLink;
     btnText = btnText || btnData.foodEaterText;
   } else if (btnType === "foodEaterOnlineEn") {
-    countryCode = "mxen";
-    btnData = getBtnLinks(countryCode);
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
   }
