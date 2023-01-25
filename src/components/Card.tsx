@@ -32,6 +32,7 @@ export interface CardProps extends BtnProps {
   numberTitle?: number;
   afterTitle?: string;
   timeToRead?: string;
+  RTL?: boolean;
 }
 
 const Card = (props: CardProps) => {
@@ -59,7 +60,8 @@ const Card = (props: CardProps) => {
     animatedNumber,
     numberTitle,
     afterTitle,
-    timeToRead
+    timeToRead,
+    RTL
   } = props;
 
   let min = "";
@@ -70,8 +72,14 @@ const Card = (props: CardProps) => {
     }
   }
 
+  let dir : any = "ltr";
+
+  if(RTL) {
+    dir = "rtl";
+  }
+
   return (
-    <div
+    <div style={{direction: dir}}
       className={` max-w-xs   rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
       <div className="mb-5">{image}</div>

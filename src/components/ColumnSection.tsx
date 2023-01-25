@@ -10,6 +10,7 @@ export interface ColumnsSectionProps {
   textColor: string;
   sectionID?: string;
   width?: string;
+  RTL?: boolean;
 }
 
 const ColumnsSection = ({
@@ -19,10 +20,16 @@ const ColumnsSection = ({
   small,
   bgColor,
   textColor,
-  sectionID
+  sectionID,
+  RTL
 }: ColumnsSectionProps) => {
+  let dir : any = "ltr";
+
+  if(RTL) {
+    dir = "rtl";
+  }
   return (
-    <section id={sectionID} className={`${bgColor} text-${textColor} py-12`}>
+    <section style={{direction: dir}} id={sectionID} className={`${bgColor} text-${textColor} py-12`}>
 
       <div className="container mx-auto flex flex-col flex-wrap justify-center md:justify-around">
         {title && title.split("\n").map((str) => <h2 className="text-center text-3xl">{str}</h2>)}

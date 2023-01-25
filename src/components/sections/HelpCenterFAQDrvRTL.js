@@ -1,6 +1,6 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import AccordionSection from "../AccordionSectionRTL";
+import AccordionSection from "../AccordionSection";
 
 const HelpCenterFAQDrvRTL = ({ data }) => {
   let items = [];
@@ -18,6 +18,7 @@ const HelpCenterFAQDrvRTL = ({ data }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-gray-light",
     items: items,
+    RTL: true
   };
 
   return <AccordionSection {...props}></AccordionSection>;

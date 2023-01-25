@@ -10,9 +10,10 @@ interface DrvCityHeroProps {
       lon: string;
     };
   };
+  isRTL?: boolean;
 }
 
-const DrvCityHero = ({ data }: DrvCityHeroProps) => {
+const DrvCityHero = ({ data, isRTL }: DrvCityHeroProps) => {
   const {
     name,
     geometry: { lat, lon },
@@ -35,6 +36,7 @@ const DrvCityHero = ({ data }: DrvCityHeroProps) => {
     btnMode: t("DrvCityHero.btnMode"),
     btnType: "drv",
     reverse: true,
+    RTL: isRTL || false
   };
   return <CTASection {...props}></CTASection>;
 };
