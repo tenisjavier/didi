@@ -18,8 +18,6 @@ const FinancialServicesHero = ({ bgImage }: FinancialServicesHeroProps) => {
     textColor: t("FinancialServicesHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
-    btnMode: t("FinancialServicesHero.btnMode"),
-    btnType: "both",
   };
   return <CTASection {...props}></CTASection>;
 };
