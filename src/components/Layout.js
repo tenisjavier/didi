@@ -12,6 +12,7 @@ import "../styles/global.css";
 // @desc: layout with global header, menu, smartbanner and footer
 const Layout = ({
   sb = true,
+  index = true,
   title,
   desc,
   sbTitle,
@@ -76,7 +77,7 @@ const Layout = ({
   //slice is a new feature of gatsby 5 that speed up builds
   const pageContent = (
     <>
-      <Seo title={title} desc={desc}></Seo>
+      <Seo title={title} desc={desc} index={index}></Seo>
       <Header></Header>
       {children}
       {sb && (
