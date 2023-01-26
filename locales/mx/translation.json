@@ -947,6 +947,35 @@
   "FleetHero.desc": "Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva rentando tus autos con DiDi Fleet.",
   "FleetHero.btnMode": "light",
   "FleetHero.textColor": "white",
+  "FinancialServicesHero.title": "DiDi Servicios Financieros",
+  "FinancialServicesHero.desc": "Conoce nuestra gama de productos financieros que te ayudarán al máximo.",
+  "FinancialServicesHero.textColor": "white",
+  "FinancialServicesHero.btnMode": "light",
+  "FinancialServicesColumns.bgColor": "bg-blue-primary",
+  "FinancialServicesColumns.title": "Información útil para usuarios y conductores",
+  "FinancialServicesColumns.textColor": "white",
+  "FinancialServicesColumns.columns": [
+    {
+      "title": "DiDiPay",
+      "desc": "Apaga tu cartera y activa DiDi Pay",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "/mx/didipay/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "DiDi Préstamos",
+      "desc": "Solicita un préstamo en DiDi Préstamos",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "https://prestamos.didiglobal.com/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "https://prestamos.didiglobal.com/"
+    }
+  ],
   "DiDiPayHero.title": "Apaga tu cartera, activa DiDi Pay",
   "DiDiPayHero.desc": "Baja la App y asocia tu tarjeta.",
   "DiDiPayHero.btnMode": "light",
