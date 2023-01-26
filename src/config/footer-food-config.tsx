@@ -33,16 +33,8 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
   ],
   mxen: [
-    { text: "Restaurantes", link: "/mx/food/en/restaurantes/" },
-    { text: "Socio repartidor", link: "/mx/food/en/repartidores/" },
-    { text: "Ciudades Disponibles", link: "/mx/food/ciudad/" },
-    { text: "Delegaciones", link: "/mx/food/colonia/" },
-    {
-      text: "Términos y Condiciones",
-      link: "/mx/legal/",
-    },
-    { text: "Privacidad", link: "/mx/legal/" },
-    { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
+    { text: "Store", link: "/mx/food/en/restaurantes/" },
+    { text: "Delivery", link: "/mx/food/en/repartidores/" },
   ],
   do: [
     { text: "Home", link: "/do/food/" },

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "@reach/router";
-import { CountryProvider, useCountry } from "../context/countryContext";
+import { CountryProvider } from "../context/countryContext";
 import Seo from "./SEO";
 import Header from "../components/Header";
 import Footer from "./Footer";
@@ -9,7 +9,7 @@ import SmartBanner from "./SmartBanner";
 import PasswordPopup from "./PasswordPopup";
 import "../styles/global.css";
 
-// @desc: layout with global header, menu, smartbanner and footer
+//? layout with global header, menu, smartbanner and footer
 const Layout = ({
   sb = true,
   title,
@@ -20,23 +20,9 @@ const Layout = ({
   password,
   children,
 }) => {
-  const countries = [
-    "cl",
-    "pe",
-    "ar",
-    "ec",
-    "co",
-    "pa",
-    "cr",
-    "do",
-    "mx",
-    "eg",
-    "ru",
-    "au",
-    "nz",
-    "mxen"
-  ];
+  const { pathname } = useLocation();
 
+  //* Password for the Journey
   let showPass = password;
   const isBrowser = typeof window !== "undefined";
   if (password) {
@@ -48,11 +34,12 @@ const Layout = ({
   }
 
   const [showPassword, setShowPassword] = useState(showPass);
-  const countryCodeEN = useCountry().code;
-  const { pathname } = useLocation();
-  let countryCode = pathname ? pathname.substring(1, 3) : "";
-  countryCode = countries.includes(countryCode) ? countryCode : "en";
-  if(pathname.includes("/en/")) countryCode = countryCodeEN;
+  const handleShowPassword = (val) => {
+    window.sessionStorage.setItem("protected", false);
+    setShowPassword(val);
+  };
+
+  //?SmartBanners Rules per URL
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
   if (pathname.includes("didipay")) smartBannerType = "payment";
@@ -60,24 +47,15 @@ const Layout = ({
     smartBannerType = "foodEater";
   if (pathname.includes("food/restaurantes")) smartBannerType = "foodBusiness";
   if (pathname.includes("food/repartidores")) smartBannerType = "foodDelivery";
-  if (pathname.includes("food/en/restaurantes")) smartBannerType = "foodBusiness";
-  if (pathname.includes("food/en/repartidores")) smartBannerType = "foodDelivery";
+  if (pathname.includes("food/en/restaurantes"))
+    smartBannerType = "foodBusiness";
+  if (pathname.includes("food/en/repartidores"))
+    smartBannerType = "foodDelivery";
   if (pathname.includes("pasajero")) smartBannerType = "pax";
   if (pathname.includes("articulos")) smartBannerType = "pax";
   if (pathname.includes("newsroom")) smartBannerType = "pax";
-  if (!countries.includes(countryCode)) {
-    smartBannerType = "pax";
-    sbTitle = "Download DiDi";
-    sbDesc = "Rides, food and more";
-    sbCTA = "Download";
-  }
+  if (pathname === "/") smartBannerType = "en"; //? en is pax in english for the root pages
 
-  const handleShowPassword = (val) => {
-    window.sessionStorage.setItem("protected", false);
-    setShowPassword(val);
-  };
-
-  //slice is a new feature of gatsby 5 that speed up builds
   const pageContent = (
     <>
       <Seo title={title} desc={desc}></Seo>

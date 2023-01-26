@@ -29,7 +29,6 @@ const SEO = ({ title, desc }) => {
               "mx"
               "ru"
               "hk"
-              "mxen"
             ]
           }
         }
@@ -51,13 +50,11 @@ const SEO = ({ title, desc }) => {
   let countryName = "";
 
   let lang = "en";
-  let cleanPath = pathname;
-  if (countryCode !== "en" && countryCode !== "es") {
+  let cleanPath = pathname.substring(3, pathname.length);
+  if (countryCode !== "en" && countryCode !== "es" && countryCode !== "mxen") {
     country = countries.filter((c) => c.code === countryCode).pop();
     countryName = country.name;
     lang = country.languageCode;
-
-    cleanPath = pathname.substring(3, pathname.length);
   }
 
   const meta = getMetaByPath(countryCode, cleanPath);
