@@ -608,6 +608,7 @@
   "PartnersGrid.desc": "Este programa te permite acceder a promociones brindadas por aliados en seguros, servicio técnico y muchos otros.",
   "PartnersGrid.textColor": "gray-primary",
   "PartnersGrid.linkItem": "/co/didimas/{{partnerName}}/",
+  "PartnersGrid.privateLinkItem": "/co/didimas/privado/{{partnerName}}/",
   "PartnersCTA.title": "¿Cómo participar de DiDiMás+?",
   "PartnersCTA.desc": "Todos los socios podrán conocer los descuentos a través de DiDiMás+. Recuerda que el descuento está sujeto a los Términos y Condiciones de cada Aliado.",
   "PartnersCTA.textColor": "white",
