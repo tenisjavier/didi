@@ -17,12 +17,12 @@ const FoodCity = ({ data }) => {
     : [];
   const name = data.contentfulNeighbourhood.name;
   const municipalityName = data.contentfulNeighbourhood.municipality.name;
+  const municipalitySlug = data.contentfulNeighbourhood.municipality.slug;
   const cityName = data.contentfulNeighbourhood.municipality.city.name;
   const countryName = data.contentfulNeighbourhood.municipality.city.country.code;
   const customBreadcrumb = String(`/${countryName}/${cityName}/${municipalityName}/${name}/`);
   const customCityLink = String(`/${countryName}/food/ciudad/${slugify(cityName, { lower: true })}/`);
-  const customMunicipalityLink = String(`/${countryName}/food/delegacion/${slugify(municipalityName, { lower: true })}/`);
-
+  const customMunicipalityLink = String(`/${countryName}/food/colonia/${municipalitySlug}/`);
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
