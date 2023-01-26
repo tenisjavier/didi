@@ -23,7 +23,7 @@ const Footer = () => {
     }
   `);
   const countries = data.allContentfulCountry.nodes;
-  const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
+  const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx", "mxen"];
   const countryCode = useCountry().code;
   const links = getFooterLinks(countryCode);
 

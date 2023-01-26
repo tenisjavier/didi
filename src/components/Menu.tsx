@@ -16,19 +16,14 @@ import gtmEvent from "../config/gtm";
 // @desc: Top Menu. Links from menu-config and menu-configFood.
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  let countryCode = useCountry().code;
+  const countryCode = useCountry().code;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
-  let menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
+  const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const menuLinksPr: SingleMenuItem[] = getMenuLinksPr(countryCode);
   const { pathname } = useLocation();
 
   let links = menuLinks;
   if (pathname.includes("food")) links = menuLinksFood;
-  if (pathname.includes("food/en")) {
-    countryCode = "mxen";
-    menuLinksFood = getMenuLinksFood(countryCode);
-    links = menuLinksFood;
-  }
   if (pathname.includes("thejourney")) links = menuLinksPr;
   return (
     <div className="flex h-full items-center">

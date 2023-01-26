@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "@reach/router";
-import { CountryProvider } from "../context/countryContext";
+import { CountryProvider, useCountry } from "../context/countryContext";
 import Seo from "./SEO";
 import Header from "../components/Header";
 import Footer from "./Footer";
@@ -34,6 +34,7 @@ const Layout = ({
     "ru",
     "au",
     "nz",
+    "mxen"
   ];
 
   let showPass = password;
@@ -47,10 +48,11 @@ const Layout = ({
   }
 
   const [showPassword, setShowPassword] = useState(showPass);
-
+  const countryCodeEN = useCountry().code;
   const { pathname } = useLocation();
   let countryCode = pathname ? pathname.substring(1, 3) : "";
   countryCode = countries.includes(countryCode) ? countryCode : "en";
+  if(pathname.includes("/en/")) countryCode = countryCodeEN;
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
   if (pathname.includes("didipay")) smartBannerType = "payment";
@@ -58,6 +60,8 @@ const Layout = ({
     smartBannerType = "foodEater";
   if (pathname.includes("food/restaurantes")) smartBannerType = "foodBusiness";
   if (pathname.includes("food/repartidores")) smartBannerType = "foodDelivery";
+  if (pathname.includes("food/en/restaurantes")) smartBannerType = "foodBusiness";
+  if (pathname.includes("food/en/repartidores")) smartBannerType = "foodDelivery";
   if (pathname.includes("pasajero")) smartBannerType = "pax";
   if (pathname.includes("articulos")) smartBannerType = "pax";
   if (pathname.includes("newsroom")) smartBannerType = "pax";

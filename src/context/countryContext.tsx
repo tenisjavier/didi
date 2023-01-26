@@ -46,13 +46,14 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     "nz",
     "au",
     "es",
-    "hk"
+    "hk",
+    "mxen"
   ];
   const { pathname } = useLocation();
   const subfolder = /^\/..\//.exec(pathname);
   let countryCode = subfolder ? subfolder[0].substring(1, 3) : "";
   countryCode = countries.includes(countryCode) ? countryCode : "en";
-  if(pathname.includes("/food/en/")) countryCode = countryCode + "en";
+  if(pathname.includes("/en/")) countryCode = countryCode + "en";
   let ns =
     pathname.includes("/food/") && !pathname.includes("/thejourney/")
       ? "food"
