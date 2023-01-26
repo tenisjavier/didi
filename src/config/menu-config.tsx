@@ -182,6 +182,10 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/conductor/calcula-tus-ganancias/",
         },
         {
+          text: "DiDi Fleet",
+          url: "/mx/didi-fleet/",
+        },
+        {
           text: "DiDi Flex",
           url: "/mx/conductor/didi-flex/",
         },
@@ -204,19 +208,19 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/pasajero/",
     },
     {
-      text: "DiDi Fleet",
-      url: "/mx/didi-fleet/",
-    },
-    {
-      text: "DiDi Pay",
-      url: "/mx/didipay/",
+      text: "Servicios Financieros",
+      url: "/mx/servicios-financieros/",
       dropMenu: [
         {
-          text: "DiDi Pay Usuarios",
+          text: "DiDi Pay",
           url: "/mx/didipay/",
         },
         {
-          text: "Preguntas Frecuentes",
+          text: "DiDi Préstamos",
+          url: "https://prestamos.didiglobal.com",
+        },
+        {
+          text: "DiDi Pay FAQ",
           url: "/mx/didipay-preguntas-frecuentes/",
         },
         {
@@ -224,10 +228,6 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/didipay/blog/",
         },
       ],
-    },
-    {
-      text: "DiDi Préstamos",
-      url: "https://prestamos.didiglobal.com",
     },
     {
       text: "DiDi Food",
@@ -248,6 +248,16 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Contacto",
           url: "/mx/food/contacto/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Entregas",
+      url: "#",
+      dropMenu: [
+        {
+          text: "DiDi Entregas Business",
+          url: "https://didi-food.com/es-MX/entrega-business/home",
         },
       ],
     },
