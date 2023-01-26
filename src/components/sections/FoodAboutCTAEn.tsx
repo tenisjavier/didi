@@ -1,4 +1,5 @@
 import React from "react";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
@@ -6,11 +7,11 @@ interface FoodAboutCTAProps {
   image: {
     title: string;
     description: string;
-    gatsbyImageData: any;
+    gatsbyImageData: IGatsbyImageData;
   };
 }
 
-const FoodAboutCTA = ({ image }: FoodAboutCTAProps) => {
+const FoodAboutCTAEn = ({ image }: FoodAboutCTAProps) => {
   const props: CTAProps = {
     hero: false,
     title: t("FoodAboutCTA.title"),
@@ -19,11 +20,11 @@ const FoodAboutCTA = ({ image }: FoodAboutCTAProps) => {
     textColor: t("FoodAboutCTA.textColor"),
     image: image,
     imageStyle: "z-10 m-4 h-80 w-100 rounded",
-    reverse: true,
-    btnType: "foodEater",
+    btnType: "foodDeliveryEn",
     btnMode: "primary",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default FoodAboutCTA;
+export default FoodAboutCTAEn;

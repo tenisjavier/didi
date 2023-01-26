@@ -115,6 +115,15 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
+  if (btnType === "bothFoodEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnlineEn" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEaterEn" btnModeSecondary={btnModeSecondary}></Btn>
+      </>
+    )
+  }
 
   let dir : any = "ltr";
   let textDir : any = "text-left";

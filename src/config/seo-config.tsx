@@ -409,6 +409,28 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
+  mxen: {
+    "/food/en/": {
+      title: "Order meals through DiDi Food",
+      desc: "Order food at home from your favorite restaurants. It's fast, comfortable and cheap. Download the DiDi Food app for free and receive your order in minutes!",
+    },
+    "/food/en/contacto/": {
+      title: "DiDi Food: Contact our Customer Service",
+      desc: "If you are a delivery person, restaurant or user you can write to us for any problem you have with DiDi Food.",
+    },
+    "/food/en/acerca-didi-food/": {
+      title: "The Most Trusted Food App",
+      desc: "Order food at home from your favorite restaurants. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
+    },
+    "/food/en/repartidores/": {
+      title: "Sign up as a Delivery Man and Earn Money at DiDi Food",
+      desc: "As a dealer you control your times. Generate income in a reliable way. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
+    },
+    "/food/en/restaurantes/": {
+      title: "Register your Restaurant in DiDi Food",
+      desc: "Register your Restaurant in DiDi Food and start generating sales outside your physical location. Expand your business. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
+    },
+  },
   do: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",

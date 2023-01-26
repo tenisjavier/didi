@@ -19,7 +19,15 @@ export interface BtnProps {
     | "foodEater"
     | "foodEaterOnline"
     | "custom"
-    | "bothFood";
+    | "bothFood"
+    | "bothFoodEn"
+    | "foodEaterOnlineEn"
+    | "foodEaterEn"
+    | "foodBusinessEn"
+    | "foodDeliveryEn"
+    | "foodBusinessHeroEn"
+    | "foodDeliveryHeroEn"
+    | "en";
   btnText2?: string;
   btnLink2?: string;
   btnMode?: "primary" | "dark" | "light" | "green" | "hidden";
@@ -66,6 +74,32 @@ const Btn = ({
   } else if (btnType === "foodEaterOnline") {
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
+  } else if (btnType === "bothFoodEn") {
+    btnLink = btnData.foodEaterOnlineLink;
+    btnText = btnData.foodEaterOnlineText;
+    btnLink2 = btnData.foodEaterLink;
+    btnText2 = btnData.foodEaterText;
+  } else if (btnType === "foodDeliveryHeroEn") {
+    btnLink = btnData.foodDeliveryLink;
+    btnText = btnText || btnData.foodDeliveryText;
+  } else if (btnType === "foodBusinessHeroEn") {
+    btnLink = btnData.foodBusinessLink;
+    btnText = btnText || btnData.foodBusinessText;
+  } else if (btnType === "foodDeliveryEn") {
+    btnLink = btnData.foodDeliveryLink;
+    btnText = btnText || btnData.foodDeliveryText;
+  } else if (btnType === "foodBusinessEn") {
+    btnLink = btnData.foodBusinessLink;
+    btnText = btnText || btnData.foodBusinessText;
+  } else if (btnType === "foodEaterEn") {
+    btnLink = btnData.foodEaterLink;
+    btnText = btnText || btnData.foodEaterText;
+  } else if (btnType === "foodEaterOnlineEn") {
+    btnLink = btnData.foodEaterOnlineLink;
+    btnText = btnText || btnData.foodEaterOnlineText;
+  } else if (btnType === "en") {
+    btnLink = btnData.paxLink;
+    btnText = btnText || btnData.paxText;
   }
 
   const handleClick = (e: any) => {

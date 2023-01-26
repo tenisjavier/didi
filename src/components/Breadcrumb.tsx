@@ -233,6 +233,17 @@ const Breadcrumb = () => {
           }
         })}
       </ol>
+      {pathname.includes("/mx/food/") && (
+        <ol className="flex list-none p-0 m-0">
+          <li>
+            <Link to="/mx/food/en/"> EN </Link>
+          </li>
+          <li> | </li>
+          <li>
+            <Link to="/mx/food/"> ES </Link>
+          </li>
+        </ol>
+      )}
       {pathname.includes("/thejourney/") && (
         <ol className="flex list-none p-0 m-0">
           <li>
