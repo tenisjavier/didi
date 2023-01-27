@@ -5,7 +5,6 @@ import FoodBlogHero from "../../../../components/sections/FoodBlogHero";
 import FoodBlogColumns from "../../../../components/sections/FoodBlogColumns";
 import Pagination from "../../../../components/Pagination";
 
-
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const articlesHeroBgImage = images.filter((image) => {
@@ -17,7 +16,7 @@ const FoodBlog = ({ data }) => {
         <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
       </div>
       <div className="pt-8 lg:pt-0 bg-orange-primary">
-        <FoodBlogColumns  data={data}></FoodBlogColumns>
+        <FoodBlogColumns data={data}></FoodBlogColumns>
       </div>
       <Pagination data={data} postsPerPage={50}></Pagination>
     </Layout>
@@ -39,7 +38,6 @@ export const query = graphql`
     allContentfulArticle(
       filter: { category: { eq: "food" }, country: { code: { eq: "co" } } }
       sort: { updatedAt: DESC }
-      limit: 10
     ) {
       nodes {
         title
