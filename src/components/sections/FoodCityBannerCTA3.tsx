@@ -18,7 +18,7 @@ const FoodCityBannerCTA3 = ({ image, data }: FoodCityBannerCTA3Props) => {
   const props: CTAProps = {
     hero: false,
     title: t("FoodCityBannerCTAThree.title", { city: `${name}` }),
-    desc: t("FoodCityBannerCTAThree.desc", { city: `${name}` }),
+    desc: t("FoodCityBannerCTAThree.desc", { city: `${name}`, city1: `${name}`, }),
     bgColor: t("FoodCityBannerCTAThree.bgColor"),
     textColor: t("FoodCityBannerCTAThree.textColor"),
     image: image,
