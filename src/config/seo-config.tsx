@@ -892,10 +892,6 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Legal",
       desc: "Review our privacy policy and other terms and conditions.",
     },
-    "/career/": {
-      title: "Work at DiDi",
-      desc: "¿Why work at DiDi Australia? Courageous Goals. Engaging Challenges.Tremendous Impact.",
-    },
     "/offers/": {
       title: "Best Offers in DiDi",
       desc: "Select you next discount for your next ride",
@@ -1079,10 +1075,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/legal/": {
       title: "Legal",
       desc: "Review our privacy policy and other terms and conditions.",
-    },
-    "/career/": {
-      title: "Work at DiDi",
-      desc: "¿Why work at DiDi Australia? Courageous Goals. Engaging Challenges.Tremendous Impact.",
     },
     "/offers/": {
       title: "Best Offers in DiDi",
