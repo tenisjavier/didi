@@ -80,6 +80,7 @@
   "PaxHeroRTL.textColor": "white",
   "PaxHeroRTL.btnMode": "light",
   "SliderSection.title": "خصص مشوارك حسب المناسبة التي لديك",
+  "SliderSectionCity.title": "خدماتنا في {{city}}",
   "PaxBenefits.title": "",
   "PaxBenefits.desc": "",
   "PaxBenefits.bgColor": "bg-white",

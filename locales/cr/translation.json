@@ -110,6 +110,7 @@
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Costa Rica",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Querés ser socio conductor en DiDi?",
   "PaxBanner.desc": "Generá Dinero y manejá tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",

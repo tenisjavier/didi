@@ -340,6 +340,7 @@
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Ecuador",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
   "PaxBanner.desc": "",
   "PaxBanner.bgColor": "bg-orange-primary",

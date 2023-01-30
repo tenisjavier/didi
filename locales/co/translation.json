@@ -104,6 +104,7 @@
   "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Colombia",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Quieres registrarte en DiDi Conductor?",
   "PaxBanner.desc": "Genera ingresos extra y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
