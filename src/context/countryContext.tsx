@@ -12,8 +12,8 @@ export const useCountry = () => {
   return useContext(CountryContext);
 };
 
-//@desc function used on every component that needs data from the translation file
-// return string, object or null
+//? function used on every component that needs data from the translation file
+//? return string, object or null
 export const t = (key: string, vars?: { [varKey: string]: any }) => {
   const locale = useCountry().code;
   const ns = useCountry().ns;
@@ -23,8 +23,8 @@ export const t = (key: string, vars?: { [varKey: string]: any }) => {
     const keys = Object.keys(vars);
     keys.forEach((k) => {
       if (k === "returnObjects") return;
-      const regExp = new RegExp(`{{${k}}}`);
-      value = value ? value.replace(regExp, vars[k]) : null;
+
+      value = value ? value.replaceAll("{{" + k + "}}", vars[k]) : null;
     });
   }
   return value;
