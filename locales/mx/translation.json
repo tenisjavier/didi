@@ -786,7 +786,7 @@
   "HelpCenterHero.textColor": "white",
   "HelpCenterHero.btnMode": "primary",
   "HelpCenterFAQDrv.title": "Preguntas Socios Conductores",
-  "HelpCenterFAQDrv.desc": "Chat en vivo con soporte 24/7 disponible en la sección inferior del menú de ayuda de la app DiDi Conductor.",
+  "HelpCenterFAQDrv.desc": "Chat en vivo con soporte 24/7 disponible en la sección inferior del menú de ayuda de la app DiDi Conductor. \n Llámanos: \n 800 725 8888",
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
