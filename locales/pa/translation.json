@@ -95,6 +95,7 @@
   "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Panama",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
   "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",

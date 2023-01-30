@@ -54,6 +54,7 @@
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "SliderSection.title": "Our Services in New Zealand",
+  "SliderSectionCity.title": "Our Services in {{city}}",
   "PaxBenefits.title": "Learn about our Benefits",
   "PaxBenefits.desc": "Download our App and enjoy the ride",
   "PaxBenefits.bgColor": "bg-white",

@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import DrvCityHero from "../../components/sections/DrvCityHero";
 import DrvHero from "../../components/sections/DrvHero";
-import SilderSection from "../../components/sections/SliderSection";
+import SilderSectionCity from "../../components/sections/SliderSectionCity";
 import DrvCityList from "../../components/sections/DrvCityList";
 import DrvCityOffice from "../../components/sections/DrvCityOffice";
 import Requirements from "../../components/sections/Requirements";
@@ -18,18 +18,17 @@ const DrvCity = ({ data }) => {
   const places = data.allContentfulPlace.nodes.slice(0, 3);
   const cities = data.allContentfulCity.nodes;
   let RTL = false;
-  if(country === "eg") {
+  if (country === "eg") {
     RTL = true;
   }
   return (
     <Layout>
       <DrvCityHero isRTL={RTL} data={data.contentfulCity}></DrvCityHero>
-      {drvHeroBgImage && <DrvHero isRTL={RTL} bgImage={drvHeroBgImage}></DrvHero>}
+      {drvHeroBgImage && (
+        <DrvHero isRTL={RTL} bgImage={drvHeroBgImage}></DrvHero>
+      )}
       {product && (
-        <SilderSection
-          data={product}
-          title={`خدماتنا في ${name}`}
-        ></SilderSection>
+        <SilderSectionCity data={product} city={name}></SilderSectionCity>
       )}
       <Requirements data={requirements}></Requirements>
       {places.length ? (

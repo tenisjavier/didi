@@ -97,6 +97,7 @@
   "PaxWhyDiDi.btnMode": "primary",
   "PaxWhyDiDi.bgColor": "bg-white",
   "SliderSection.title": "Nuestros Servicios en Perú",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
   "PaxBanner.desc": "Genera Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
