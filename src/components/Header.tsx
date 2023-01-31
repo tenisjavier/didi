@@ -3,11 +3,13 @@ import { useLocation } from "@reach/router";
 import { useCountry } from "../context/countryContext";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import Breadcrumb from "./Breadcrumb";
+import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
 
 import Menu from "./Menu";
 
-const Header = () => {
+interface HeaderProps extends BreadcrumbProps {}
+
+const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
     <>
       <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
@@ -16,7 +18,7 @@ const Header = () => {
           <Menu></Menu>
         </div>
       </nav>
-      <Breadcrumb></Breadcrumb>
+      <Breadcrumb customBreadcrumb={customBreadcrumb}></Breadcrumb>
     </>
   );
 };
@@ -54,7 +56,7 @@ const Navlogo = () => {
 
   let logoLink = `/${countryCode}/`;
   if (countryCode === "en") logoLink = "/";
-  if (pathname.includes("food")) logoLink = `/${countryCode}/food`
+  if (pathname.includes("food")) logoLink = `/${countryCode}/food`;
 
   return (
     <div className="p-3">
