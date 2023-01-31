@@ -40,11 +40,11 @@ const FoodCity = ({ data }) => {
   const customBreadcrumb = [
     { link: `https://web.didiglobal.com/mx/food/`, text: "Food" },
     {
-      link: `https://web.didiglobal.com/mx/food/ciudad/${citySlug}`,
+      link: `https://web.didiglobal.com/mx/food/ciudad/${citySlug}/`,
       text: cityName,
     },
     {
-      link: `https://web.didiglobal.com/mx/food/colonia/${municipalitySlug}`,
+      link: `https://web.didiglobal.com/mx/food/colonia/${municipalitySlug}/`,
       text: municipalityName,
     },
     { link: "#", text: name },
