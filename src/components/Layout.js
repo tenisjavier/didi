@@ -13,6 +13,7 @@ import "../styles/global.css";
 const Layout = ({
   sb = true,
   index = true,
+  customBreadcrumb,
   title,
   desc,
   sbTitle,
@@ -60,7 +61,7 @@ const Layout = ({
   const pageContent = (
     <>
       <Seo title={title} desc={desc} index={index}></Seo>
-      <Header></Header>
+      <Header customBreadcrumb={customBreadcrumb}></Header>
       {children}
       {sb && (
         <SmartBanner

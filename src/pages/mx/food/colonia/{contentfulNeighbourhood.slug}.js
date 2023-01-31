@@ -14,6 +14,10 @@ const FoodCity = ({ data }) => {
   const cities = data.contentfulNeighbourhood.municipality
     ? data.contentfulNeighbourhood.municipality.neighbourhood
     : [];
+  const cityName = data.contentfulNeighbourhood.city.name;
+  const citySlug = data.contentfulNeighbourhood.city.slug;
+  const municipalityName = data.contentfulNeighbourhood.municipality.name;
+  const municipalitySlug = data.contentfulNeighbourhood.municipality.slug;
   const name = data.contentfulNeighbourhood.name;
 
   const foodHeroBgImage = images.filter((image) => {
@@ -32,10 +36,24 @@ const FoodCity = ({ data }) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
 
+  //! Is not a good solution needs refactor to be more flexible in other countries
+  const customBreadcrumb = [
+    { link: `https://web.didiglobal.com/mx/food/`, text: "Food" },
+    {
+      link: `https://web.didiglobal.com/mx/food/ciudad/${citySlug}`,
+      text: cityName,
+    },
+    {
+      link: `https://web.didiglobal.com/mx/food/colonia/${municipalitySlug}`,
+      text: municipalityName,
+    },
+    { link: "#", text: name },
+  ];
   return (
     <Layout
       title={`Pide Comida a Domicilio  en ${name} CDMX`}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
+      customBreadcrumb={customBreadcrumb}
     >
       <FoodCityHero
         bgImage={foodHeroBgImage}
@@ -72,8 +90,11 @@ export const query = graphql`
       slug
       city {
         name
+        slug
       }
       municipality {
+        name
+        slug
         neighbourhood {
           name
           slug
