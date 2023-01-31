@@ -12,7 +12,8 @@ interface SmartBannerProps {
     | "payment"
     | "foodBusiness"
     | "foodDelivery"
-    | "foodEater";
+    | "foodEater"
+    | "en";
   sbTitle?: string;
   sbDesc?: string;
   sbCTA?: string;
@@ -68,6 +69,12 @@ const SmartBanner = (props: SmartBannerProps) => {
     bgColor = "bg-white";
     bannerTitle = t("SBFoodDelivery.title");
     bannerDesc = t("SBFoodDelivery.desc");
+  } else if (type === "en") {
+    btnText = "Download";
+    Logo = <PaxLogo></PaxLogo>;
+    bgColor = "bg-white";
+    bannerTitle = "Download DiDi";
+    bannerDesc = "Rides, food and more";
   }
 
   return (

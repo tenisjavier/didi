@@ -2,7 +2,7 @@ import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
-interface PaxHeroProps {
+interface FinancialServicesHeroProps {
   bgImage: {
     title: string;
     description: string;
@@ -10,19 +10,16 @@ interface PaxHeroProps {
   };
 }
 
-const CareerHero = ({ bgImage }: PaxHeroProps) => {
+const FinancialServicesHero = ({ bgImage }: FinancialServicesHeroProps) => {
   const props: CTAProps = {
     hero: true,
-    title: t("CareerHero.title"),
-    desc: t("CareerHero.desc"),
-    textColor: t("CareerHero.textColor"),
+    title: t("FinancialServicesHero.title"),
+    desc: t("FinancialServicesHero.desc"),
+    textColor: t("FinancialServicesHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
-    btnMode: t("CareerHero.btnMode"),
-    btnLink: t("CareerHero.btnLink"),
-    btnText: t("CareerHero.btnText"),
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default CareerHero;
+export default FinancialServicesHero;

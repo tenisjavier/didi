@@ -49,7 +49,7 @@
   "PaxCTA.desc": "Viajando con DiDi tienes tarifas más accesibles para que viajes al mismo lugar y llegues al mismo tiempo, pagando menos. \nCon DiDi tienes soporte 24/7 en todos tus viajes y puedes contar con nuestras herramientas de seguridad para que viajes con la tranquilidad que mereces. \n¡Es momento de redescubrir tu ciudad favorita de México en un DiDi! ",
   "PaxCTA.bullets": false,
   "PaxCTA.textColor": "gray-primary",
-  "PaxCTA.btnMode": "dark",
+  "PaxCTA.btnMode": "primary",
   "FleetAboutCTA.title": "DiDi Flotilla: Genera ganancias hasta durmiendo.",
   "FleetAboutCTA.desc": "¿Eres dueño de 1 o más autos? ¡Es momento de mejorar tus ganancias! Da de alta tu flotilla en la app DiDi Fleet. Monitorea y gestiona las ganancias de todos tus autos fácilmente desde tu celular.",
   "FleetAboutCTA.textColor": "gray-primary",
@@ -120,7 +120,7 @@
     },
     {
       "title": "Centro de Ayuda",
-      "desc": "Cuentas con DiDi 24/7 para escucharte en nuestro chat en vivo, para ayudarte.",
+      "desc": "En DiDi cuentas con soporte 24/7 por nuestro chat en vivo, para ayudarte siempre.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/mx/centro-de-ayuda/",
@@ -151,7 +151,7 @@
     },
     {
       "title": "",
-      "desc": "Soporte a pasajeros 24/7 por chat en vivo o teléfono.",
+      "desc": "Soporte a pasajeros 24/7 por chat en vivo.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "insideHeight": "h-20"
@@ -177,7 +177,7 @@
     },
     {
       "title": "Soporte 24/7",
-      "desc": "Estamos contigo en cada paso. Atención a conductores 800 988 8888",
+      "desc": "Estamos contigo en cada paso. Atención a conductores en nuestro chat en vivo.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "insideHeight": "h-20"
@@ -237,6 +237,7 @@
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en México",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Quieres ser socio conductor en DiDi?",
   "PaxBanner.desc": "Genera Ganancias de manera segura y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",
@@ -258,7 +259,7 @@
     },
     {
       "title": "Soporte 24/7",
-      "desc": "Contamos con soporte por Chat en vivo y por teléfono",
+      "desc": "Contamos con atención 24/7 en nuestro chat en vivo.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
@@ -628,7 +629,7 @@
   "SafetyGridAfterTrip.columns": [
     {
       "title": "17. Soporte DiDi 24/7",
-      "desc": "Llámanos al 800 725 8888, contamos con atención 24/7."
+      "desc": "Contamos con atención 24/7 en nuestro chat en vivo."
     },
     {
       "title": "18. Califica a tu Pasajero",
@@ -762,7 +763,7 @@
     },
     {
       "title": "18. Soporte 24/7",
-      "desc": "Llámanos al 800 988 8888, contamos con atención 24/7."
+      "desc": "Contamos con atención 24/7 en nuestro chat en vivo."
     },
     {
       "title": "19. Califica a tu Conductor",
@@ -790,7 +791,7 @@
   "HelpCenterFAQDrv.textColor": "gray-primary",
   "HelpCenterFAQDrv.bgColor": "bg-white",
   "HelpCenterFAQPax.title": "Preguntas Pasajeros",
-  "HelpCenterFAQPax.desc": "Chat en vivo con soporte 24/7 disponible en la sección inferior del menú de ayuda de la app DiDi Pasajero. \n Llámanos: \n 800 988 8888",
+  "HelpCenterFAQPax.desc": "Chat en vivo con soporte 24/7 disponible en la sección inferior del menú de ayuda de la app DiDi Pasajero.",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
   "ArticlesHero.title": "DiDi Artículos",
@@ -947,6 +948,35 @@
   "FleetHero.desc": "Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva rentando tus autos con DiDi Fleet.",
   "FleetHero.btnMode": "light",
   "FleetHero.textColor": "white",
+  "FinancialServicesHero.title": "DiDi Servicios Financieros",
+  "FinancialServicesHero.desc": "Conoce nuestra gama de productos financieros que te ayudarán al máximo.",
+  "FinancialServicesHero.textColor": "white",
+  "FinancialServicesHero.btnMode": "light",
+  "FinancialServicesColumns.bgColor": "bg-blue-primary",
+  "FinancialServicesColumns.title": "Información útil para usuarios y conductores",
+  "FinancialServicesColumns.textColor": "white",
+  "FinancialServicesColumns.columns": [
+    {
+      "title": "DiDiPay",
+      "desc": "Apaga tu cartera y activa DiDi Pay",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "/mx/didipay/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "DiDi Préstamos",
+      "desc": "Solicita un préstamo en DiDi Préstamos",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "https://prestamos.didiglobal.com/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "https://prestamos.didiglobal.com/"
+    }
+  ],
   "DiDiPayHero.title": "Apaga tu cartera, activa DiDi Pay",
   "DiDiPayHero.desc": "Baja la App y asocia tu tarjeta.",
   "DiDiPayHero.btnMode": "light",

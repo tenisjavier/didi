@@ -33,6 +33,7 @@ export interface CTAProps extends BtnProps {
     text: string;
   }[];
   reverse?: boolean;
+  RTL?: boolean;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -60,6 +61,7 @@ const CTASection = (props: CTAProps) => {
     btnArray,
     reverse,
     btnModeSecondary,
+    RTL
   } = props;
 
   let sectionBtn = (
@@ -150,9 +152,29 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
+  if (btnType === "bothFoodEn") {
+    sectionBtn = (
+      <>
+        <Btn btnType="foodEaterOnlineEn" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="foodEaterEn" btnModeSecondary={btnModeSecondary}></Btn>
+      </>
+    )
+  }
+
+  let dir : any = "ltr";
+  let textDir : any = "text-left";
+  let margin : any = "mr-4";
+
+  if(RTL) {
+    dir = "rtl";
+    textDir = "text-right";
+    margin = "ml-4";
+  }
 
   return (
     <section
+    style={{ direction: dir }}
       className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
     ${bgColor && bgColor}`}
     >
@@ -165,7 +187,7 @@ const CTASection = (props: CTAProps) => {
         {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {imageRawRender && imageRawRender}
         <div
-          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:text-left`}
+          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
         >
           {hero ? (
             <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
@@ -174,7 +196,7 @@ const CTASection = (props: CTAProps) => {
           )}
           {bullets && (
             <>
-              <ul className="mt-12 mb-2 list-none text-left text-xl">
+              <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
                 {bullets.map((item, index) => {
                   return (
                     <div key={index}>
@@ -182,14 +204,14 @@ const CTASection = (props: CTAProps) => {
                         {!customBulletIcon ? (
                           <FontAwesomeIcon
                             icon={faCarSide}
-                            className="mt-1 mr-4 text-orange-primary w-6"
+                            className={`mt-1 ${margin} text-orange-primary w-6`}
                             size="sm"
                           />
                         ) : (
                           icon && (
                             <FontAwesomeIcon
                               icon={icon}
-                              className=" mr-4 text-orange-primary w-6"
+                              className={`${margin} text-orange-primary w-6`}
                               size="sm"
                             />
                           )

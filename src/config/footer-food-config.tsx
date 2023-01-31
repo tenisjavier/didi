@@ -32,6 +32,10 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Privacidad", link: "/mx/legal/" },
     { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
   ],
+  mxen: [
+    { text: "Store", link: "/mx/food/en/restaurantes/" },
+    { text: "Delivery", link: "/mx/food/en/repartidores/" },
+  ],
   do: [
     { text: "Home", link: "/do/food/" },
     { text: "Restaurantes", link: "/do/food/restaurantes/" },

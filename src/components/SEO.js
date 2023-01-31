@@ -8,7 +8,7 @@ import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
 
-const SEO = ({ title, desc }) => {
+const SEO = ({ title, desc, index }) => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
@@ -50,13 +50,11 @@ const SEO = ({ title, desc }) => {
   let countryName = "";
 
   let lang = "en";
-  let cleanPath = pathname;
-  if (countryCode !== "en" && countryCode !== "es") {
+  let cleanPath = pathname.substring(3, pathname.length);
+  if (countryCode !== "en" && countryCode !== "es" && countryCode !== "mxen") {
     country = countries.filter((c) => c.code === countryCode).pop();
     countryName = country.name;
     lang = country.languageCode;
-
-    cleanPath = pathname.substring(3, pathname.length);
   }
 
   const meta = getMetaByPath(countryCode, cleanPath);
@@ -134,7 +132,7 @@ const SEO = ({ title, desc }) => {
       >
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
-        {pathname.includes("thejourney") ? (
+        {pathname.includes("thejourney") || !index ? (
           <meta name="robots" content="noindex"></meta>
         ) : null}
         <link rel="canonical" href={origin + pathname} />

@@ -20,6 +20,8 @@ const FoodAboutCTA = ({ image }: FoodAboutCTAProps) => {
     image: image,
     imageStyle: "z-10 m-4 h-80 w-100 rounded",
     reverse: true,
+    btnType: "foodEater",
+    btnMode: "primary",
   };
   return <CTASection {...props}></CTASection>;
 };

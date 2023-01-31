@@ -12,8 +12,8 @@ export const useCountry = () => {
   return useContext(CountryContext);
 };
 
-//@desc function used on every component that needs data from the translation file
-// return string, object or null
+//? function used on every component that needs data from the translation file
+//? return string, object or null
 export const t = (key: string, vars?: { [varKey: string]: any }) => {
   const { pathname } = useLocation();
   const locale = useCountry().code;
@@ -27,8 +27,8 @@ export const t = (key: string, vars?: { [varKey: string]: any }) => {
     const keys = Object.keys(vars);
     keys.forEach((k) => {
       if (k === "returnObjects") return;
-      const regExp = new RegExp(`{{${k}}}`);
-      value = value ? value.replace(regExp, vars[k]) : null;
+
+      value = value ? value.replaceAll("{{" + k + "}}", vars[k]) : null;
     });
   }
   return value;
@@ -50,16 +50,21 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     "nz",
     "au",
     "es",
-    "hk"
+    "hk",
   ];
   const { pathname } = useLocation();
   const subfolder = /^\/..\//.exec(pathname);
   let countryCode = subfolder ? subfolder[0].substring(1, 3) : "";
   countryCode = countries.includes(countryCode) ? countryCode : "en";
+  if (pathname.includes("/food/en/")) countryCode = countryCode + "en";
   let ns =
     pathname.includes("/food/") && !pathname.includes("/thejourney/")
       ? "food"
       : "translation";
+  if (pathname.includes("/food/en/")) {
+    ns = "enfood";
+  }
+
   let [country, updateCountry] = useState({
     code: countryCode,
     ns: ns,

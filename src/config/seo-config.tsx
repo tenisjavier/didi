@@ -266,6 +266,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
       desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
+    "/servicios-financieros/": {
+      title: "DiDi Servicios Financieros",
+      desc: "DiDi Servicios Financieros. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
     "/didipay-negocios/": {
       title: "DiDi Pay Negocios - Aumenta tus ventas",
       desc: "DiDi Pay para Negocios en México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
@@ -403,6 +407,28 @@ const seoMeta: AllSEOMetaInterface = {
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    },
+  },
+  mxen: {
+    "/food/en/": {
+      title: "Order meals through DiDi Food",
+      desc: "Order food at home from your favorite restaurants. It's fast, comfortable and cheap. Download the DiDi Food app for free and receive your order in minutes!",
+    },
+    "/food/en/contacto/": {
+      title: "DiDi Food: Contact our Customer Service",
+      desc: "If you are a delivery person, restaurant or user you can write to us for any problem you have with DiDi Food.",
+    },
+    "/food/en/acerca-didi-food/": {
+      title: "The Most Trusted Food App",
+      desc: "Order food at home from your favorite restaurants. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
+    },
+    "/food/en/repartidores/": {
+      title: "Sign up as a Delivery Man and Earn Money at DiDi Food",
+      desc: "As a dealer you control your times. Generate income in a reliable way. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
+    },
+    "/food/en/restaurantes/": {
+      title: "Register your Restaurant in DiDi Food",
+      desc: "Register your Restaurant in DiDi Food and start generating sales outside your physical location. Expand your business. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
     },
   },
   do: {
@@ -866,10 +892,6 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Legal",
       desc: "Review our privacy policy and other terms and conditions.",
     },
-    "/career/": {
-      title: "Work at DiDi",
-      desc: "¿Why work at DiDi Australia? Courageous Goals. Engaging Challenges.Tremendous Impact.",
-    },
     "/offers/": {
       title: "Best Offers in DiDi",
       desc: "Select you next discount for your next ride",
@@ -1053,10 +1075,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/legal/": {
       title: "Legal",
       desc: "Review our privacy policy and other terms and conditions.",
-    },
-    "/career/": {
-      title: "Work at DiDi",
-      desc: "¿Why work at DiDi Australia? Courageous Goals. Engaging Challenges.Tremendous Impact.",
     },
     "/offers/": {
       title: "Best Offers in DiDi",

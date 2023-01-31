@@ -45,7 +45,7 @@ const ArticlesTopStory = ({ data }: ArticlesTopStoryProps) => {
           imageContainer = <GatsbyImage
             image={getImage(ts.featuredImage)!}
               alt={ts.title}
-              className="z-10 m-4 w-2/3"
+              className="z-10 m-10 w-2/3"
           ></GatsbyImage>
         } else {
           imageContainer = <GatsbyImage

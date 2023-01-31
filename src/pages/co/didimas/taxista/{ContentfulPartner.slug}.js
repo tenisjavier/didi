@@ -1,38 +1,39 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import PartnerHero from "../../../components/sections/PartnerHero";
-import PartnerFeature from "../../../components/sections/PartnerFeature";
-import PartnerContent from "../../../components/sections/PartnerContent";
-import PartnersGrid from "../../../components/sections/PartnersGrid";
-import PartnersCTA from "../../../components/sections/PartnersCTA";
+import Layout from "../../../../components/Layout";
+import PartnerPrivateHero from "../../../../components/sections/PartnerPrivateHero";
+import PartnerPrivateFeature from "../../../../components/sections/PartnerPrivateFeature";
+import PartnerContent from "../../../../components/sections/PartnerContent";
+import PartnersGrid from "../../../../components/sections/PartnersGrid";
 
 const Partner = ({ data }) => {
-  const { heroTitle, heroDesc, heroImage } = data.contentfulPartner;
+  const { heroTitle, heroDesc, heroImage, promoLink, promoLinkText } =
+    data.contentfulPartner;
   const { featureTitle, featureDesc, featureImage } = data.contentfulPartner;
   const { content } = data.contentfulPartner;
-  const images = data.allContentfulAsset.nodes;
+
   const partners = data.allContentfulPartner.nodes;
-  const partnerCTAImage = images.filter((image) => {
-    return image.title === "co.PartnerCTA.image";
-  })[0];
+
   return (
-    <Layout>
-      <PartnerHero
+    <Layout index={false}>
+      <PartnerPrivateHero
         title={heroTitle}
         desc={heroDesc}
         image={heroImage}
-      ></PartnerHero>
+        btnLink={promoLink}
+        btnLinkText={promoLinkText}
+      ></PartnerPrivateHero>
       {featureTitle && (
-        <PartnerFeature
+        <PartnerPrivateFeature
           title={featureTitle}
           desc={featureDesc}
           image={featureImage}
-        ></PartnerFeature>
+          btnLink={promoLink}
+          btnLinkText={promoLinkText}
+        ></PartnerPrivateFeature>
       )}
       <PartnerContent content={content}></PartnerContent>
       <PartnersGrid data={partners}></PartnersGrid>
-      <PartnersCTA image={partnerCTAImage}></PartnersCTA>
     </Layout>
   );
 };
@@ -42,6 +43,8 @@ export default Partner;
 export const query = graphql`
   query ($id: String) {
     contentfulPartner(id: { eq: $id }) {
+      promoLink
+      promoLinkText
       heroTitle
       heroDesc
       heroImage {
@@ -78,17 +81,6 @@ export const query = graphql`
           gatsbyImageData
           description
         }
-      }
-    }
-    allContentfulAsset(
-      filter: { title: { in: ["co.PartnerCTA.image"] } }
-      sort: { title: ASC }
-    ) {
-      nodes {
-        id
-        title
-        description
-        gatsbyImageData
       }
     }
   }

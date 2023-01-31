@@ -97,6 +97,7 @@
   "PaxWhyDiDi.bgColor": "bg-white",
   "PaxWhyDiDi.btnMode": "primary",
   "SliderSection.title": "Nuestros Servicios en Argentina",
+  "SliderSectionCity.title": "Nuestros Servicios en {{city}}",
   "PaxBanner.title": "¿Querés ser conductor en DiDi?",
   "PaxBanner.desc": "Generá Dinero y maneja tus tiempos.",
   "PaxBanner.bgColor": "bg-orange-primary",

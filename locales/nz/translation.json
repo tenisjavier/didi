@@ -54,6 +54,7 @@
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
   "SliderSection.title": "Our Services in New Zealand",
+  "SliderSectionCity.title": "Our Services in {{city}}",
   "PaxBenefits.title": "Learn about our Benefits",
   "PaxBenefits.desc": "Download our App and enjoy the ride",
   "PaxBenefits.bgColor": "bg-white",
@@ -582,75 +583,6 @@
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
-  "CareerHero.title": "DiDi Careers",
-  "CareerHero.desc": "Courageous Goals. Engaging Challenges.Tremendous Impact.",
-  "CareerHero.textColor": "white",
-  "CareerHero.btnMode": "light",
-  "CareerHero.btnText": "View Jobs",
-  "CareerHero.btnLink": "https://jobs.lever.co/didi-global",
-  "CareerFeatures.title": "Why to start a career at DiDi?",
-  "CareerFeatures.bullets": [
-    "Leading transportation and convenience platform",
-    "Serving over 550 million customers all over the world from China to Latin America",
-    "10 billion passenger trips a year.",
-    "AI technology solutions meeting local needs",
-    "Inclusive and sustainable mobile transport"
-  ],
-  "CareerFeatures.desc": "Free access to a program that rewards the most committed drivers with lower services fee and bonus perks. Available in participating cities only.",
-  "CareerFeatures.textColor": "white",
-  "CareerFeatures.bgColor": "bg-blue-primary",
-  "CareerFeatures.btnMode": "primary",
-  "CareerColumns.bgColor": "bg-gray-light",
-  "CareerColumns.textColor": "gray-primary",
-  "CareerColumns.columns": [
-    {
-      "title": "User Value Creation",
-      "desc": "Why are we doing it? Is it user-oriented? Customer-centered? We are living in an “experience-driven era,” which means it is critical for us to truly understand our users and their needs, ensuring that we are working towards making a better journey for everyone.",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Win-Win Collaboration",
-      "desc": "Always looking to build solid, trust-based relationships with our partners and colleagues. We are constantly looking for solutions that add value to our company, our communities, and our users. ",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Data Driven Thinking",
-      "desc": "We accumulate data, we analyze, we transform it into action. Data and facts are “oro molido,” it helps us make better decisions and speak the same language.",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Integrity",
-      "desc": "We believe in doing the right thing, even if it means taking a longer path.",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Growth",
-      "desc": "We understand that in order to grow as individuals, we need to jump before we are ready, we need to get out of our comfort zone and try new things, new projects, new ideas, new models. Innovation is at the core of who we are! ",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Diversity",
-      "desc": "We truly are a diverse company that lives diversity every single day – from multicultural teams, to working in different languages, to fostering the different ideas harvested thanks to the variety of our backgrounds. We can truly be who we are, we are a family and we see the strength in our differences.",
-      "textColor": "gray-primary"
-    }
-  ],
-  "CareerBanner.title": "Wanna work at DiDi?",
-  "CareerBanner.desc": "Join one of the best places to work at",
-  "CareerBanner.bgColor": "bg-orange-primary",
-  "CareerBanner.textColor": "white",
-  "CareerBanner.btnMode": "light",
-  "CareerBanner.btnText": "View Jobs",
-  "CareerBanner.btnLink": "https://jobs.lever.co/didi-global",
-  "CareerWhyDiDi.title": "Join the Team",
-  "CareerWhyDiDi.bullets": [
-    "High performance team",
-    "Growth Mindset. Always Learning.",
-    "Values and respect first"
-  ],
-  "CareerFAQ.title": "F.A.Q",
-  "CareerFAQ.textColor": "gray-primary",
-  "CareerFAQ.bgColor": "bg-gray-light",
-  "OffersHero.title": "DiDi Offers",
   "OffersHero.desc": "Select you next discount for your next ride",
   "OffersHero.textColor": "white",
   "OffersHero.btnMode": "light",
