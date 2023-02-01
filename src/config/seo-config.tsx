@@ -414,19 +414,19 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Order meals through DiDi Food",
       desc: "Order food at home from your favorite restaurants. It's fast, comfortable and cheap. Download the DiDi Food app for free and receive your order in minutes!",
     },
-    "/food/en/contacto/": {
+    "/food/en/contact/": {
       title: "DiDi Food: Contact our Customer Service",
       desc: "If you are a delivery person, restaurant or user you can write to us for any problem you have with DiDi Food.",
     },
-    "/food/en/acerca-didi-food/": {
+    "/food/en/about/": {
       title: "The Most Trusted Food App",
       desc: "Order food at home from your favorite restaurants. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
     },
-    "/food/en/repartidores/": {
+    "/food/en/couriers/": {
       title: "Sign up as a Delivery Man and Earn Money at DiDi Food",
       desc: "As a dealer you control your times. Generate income in a reliable way. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
     },
-    "/food/en/restaurantes/": {
+    "/food/en/restaurants/": {
       title: "Register your Restaurant in DiDi Food",
       desc: "Register your Restaurant in DiDi Food and start generating sales outside your physical location. Expand your business. It is fast, comfortable and cheap. Download the DiDi Food app for free Receive your order in minutes!",
     },
