@@ -42,7 +42,10 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
+      filter: {
+        country: { elemMatch: { code: { eq: "mx" } } }
+        category: { eq: "food" }
+      }
     ) {
       nodes {
         name

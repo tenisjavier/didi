@@ -20,9 +20,7 @@ const RequisitosSocio = ({ data }) => {
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";
   })[0];
-  const faqDrv = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Express México"
-  );
+  const faqDrv = data.allContentfulProduct.nodes;
 
   return (
     <Layout>
@@ -64,7 +62,10 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
+      filter: {
+        country: { elemMatch: { code: { eq: "mx" } } }
+        name: { eq: "DiDi Express México" }
+      }
     ) {
       nodes {
         name
