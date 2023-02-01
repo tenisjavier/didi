@@ -192,29 +192,6 @@ const btnLinks: AllBtnInterface = {
       "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?lang=es-MX&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
     paymentBusinessText: "Iniciar Sesión",
   },
-  mxen: {
-    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
-    paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate en DiDi Conductor",
-    paxText: "Descarga DiDi Pasajero",
-    foodEaterText: "Order Now → Download App",
-    foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterOnlineText: "Order Now Without Downloading the App →",
-    foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/",
-    foodDeliveryLink:
-      "https://www.didi-food.com/es-MX/mobile-delivery?clientType=102&country=MX&utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
-    foodDeliveryText: "Learn More",
-    foodBusinessLink:
-      "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
-    foodBusinessText: "Learn More",
-    fleetText: "Descarga DiDi Fleet",
-    fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
-    paymentText: "Descarga DiDi Pay",
-    paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
-    paymentBusinessLink:
-      "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?lang=es-MX&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
-    paymentBusinessText: "Iniciar Sesión",
-  },
   nz: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
