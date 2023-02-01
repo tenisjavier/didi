@@ -252,11 +252,11 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
-      text: "DiDi Entregas",
+      text: "DiDi Entrega",
       url: "#",
       dropMenu: [
         {
-          text: "DiDi Entregas Business",
+          text: "DiDi Entrega Business",
           url: "https://didi-food.com/es-MX/entrega-business/home",
         },
       ],
