@@ -17,9 +17,13 @@ const Article = ({ data }) => {
   const isTopStory = articles.filter((article) => {
     return article.topStory === true;
   });
-  console.log(isTopStory);
-  if(isTopStory !== null && isTopStory !== undefined && isTopStory.length !== 0) {
-    articleTS = <ArticlesTopStory data={isTopStory}></ArticlesTopStory>
+
+  if (
+    isTopStory !== null &&
+    isTopStory !== undefined &&
+    isTopStory.length !== 0
+  ) {
+    articleTS = <ArticlesTopStory data={isTopStory}></ArticlesTopStory>;
   } else {
     articleTS = "";
   }
