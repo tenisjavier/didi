@@ -47,10 +47,7 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "mx" } } }
-        category: { eq: "driver" }
-      }
+      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
     ) {
       nodes {
         name
