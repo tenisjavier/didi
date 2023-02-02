@@ -13,7 +13,7 @@ const SobreDiDi = ({ data }) => {
     return image.title === "mx.DiDiPayHomeHero.image";
   })[0];
   const PrestamosHeroImage = images.filter((image) => {
-    return image.title === "mx.DiDiPrestamosHero.image";
+    return image.title === "mx.PrestamosHero.image";
   })[0];
 
   const columnsImages = [DiDiPayWhyDiDi, PrestamosHeroImage];
@@ -37,7 +37,7 @@ export const query = graphql`
           in: [
             "mx.DiDiPayBlogHero.bgImage"
             "mx.DiDiPayHomeHero.image"
-            "mx.DiDiPrestamosHero.image"
+            "mx.PrestamosHero.image"
           ]
         }
       }
