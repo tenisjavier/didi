@@ -170,7 +170,16 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
           );
         })}
       </ol>
-      {pathname.includes("/mx/food/") && (
+      {pathname.includes("/mx/food/") && 
+      !pathname.includes("/ciudad/") && 
+      !pathname.includes("/colonia/") && 
+      !pathname.includes("/blog/") &&
+      !pathname.includes("/clubdidi/") && 
+      !pathname.includes("/privacidad/") && 
+      !pathname.includes("/renta-de-equipo/") && 
+      !pathname.includes("/terminos-y-condiciones/") &&
+      !pathname.includes("/store-food-app/") &&
+      !pathname.includes("/preguntas-frecuentes/") && (
         <ol className="flex list-none p-0 m-0">
           <li>
             <Link to="/mx/food/en/"> EN </Link>
