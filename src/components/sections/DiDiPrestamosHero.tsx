@@ -8,7 +8,7 @@ interface DiDiPrestamosHeroProps {
     description: string;
     gatsbyImageData: any;
   };
-  bgImage: {
+  bgImage?: {
     title: string;
     description: string;
     gatsbyImageData: any;
@@ -25,9 +25,9 @@ const DiDiPrestamosHero = ({ bgImage, image }: DiDiPrestamosHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
     image: image,
-    imageStyle: "!z-10 m-4 w-100",
+    imageStyle: "!z-10 m-4 w-110",
     btnMode: t("DiDiPrestamosHero.btnMode"),
-    btnType: "payment",
+    btnType: "prestamos",
   };
   return <CTASection {...props}></CTASection>;
 };

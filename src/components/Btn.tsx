@@ -27,6 +27,7 @@ export interface BtnProps {
     | "foodDeliveryEn"
     | "foodBusinessHeroEn"
     | "foodDeliveryHeroEn"
+    | "prestamos"
     | "en";
   btnText2?: string;
   btnLink2?: string;
@@ -97,6 +98,9 @@ const Btn = ({
   } else if (btnType === "foodEaterOnlineEn") {
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
+  } else if (btnType === "prestamos") {
+    btnLink = btnData.prestamosLink;
+    btnText = btnText || btnData.prestamosText;
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
@@ -115,6 +119,9 @@ const Btn = ({
       btnText: e.target.innerText,
       countryCode: countryCode,
     });
+    if (btnType === "prestamos") {
+      console.log("prestamos clicked");
+    }
 
     window.location.replace(link);
   };

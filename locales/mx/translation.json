@@ -1088,12 +1088,16 @@
   "DiDiPayBlogColumns.btnText": "Leer Artículo",
   "DiDiPrestamosHero.title": "Obtener un préstamo personal es rápido, fácil y seguro.",
   "DiDiPrestamosHero.desc": "Solicita un préstamo de DiDi Préstamos",
+  "DiDiPrestamosHero.bgColor": "bg-white",
+  "DiDiPrestamosHero.textColor": "gray-primary",
   "DiDiPrestamosHero.btnMode": "primary",
   "DiDiPrestamosHero.btnText": "Solicitar ahora",
   "DiDiPrestamosHero.btnLink": "",
-  "PrestamosColumns.title": "¿Por qué elegir DiDi Préstamos?",
-  "PrestamosColumns.desc": "DiDi, líder mundial en innovación, se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
-  "PrestamosColumns.columns": [
+  "DiDiPrestamosColumns.title": "¿Por qué elegir DiDi Préstamos?",
+  "DiDiPrestamosColumns.desc": "DiDi, líder mundial en innovación, se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
+  "DiDiPrestamosColumns.bgColor": "bg-gray-light",
+  "DiDiPrestamosColumns.textColor": "gray-primary",
+  "DiDiPrestamosColumns.columns": [
     {
       "title": "Tasas accesibles",
       "desc": "desde 5% mensual"
@@ -1115,16 +1119,15 @@
       "desc": "Completa tu solicitud en DiDi"
     }
   ],
-  "PrestamosTasaInteres.title": "Tasa de interés competitiva",
-  "PrestamosTasaInteres.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria es de solo 5%. (*Tasa ordinaria mensual estimada).",
-  "PrestamosTasaInteres.btnMode": "dark",
-  "PrestamosTasaInteres.btnText": "¿Cómo solicitar tu préstamo?",
-  "PrestamosTasaInteres.btnLink": "javascript:;",
-  "PrestamosAprobacion.title": "Aprobación instantánea*",
-  "PrestamosAprobacion.desc": "Te enviaremos una notificación por mensaje de texto en caso de que se apruebe tu solicitud y recibirás el dinero en tu cuenta en menos de 2 minutos. * Aplican términos y condiciones.",
-  "PrestamosAprobacion.btnMode": "dark",
-  "PrestamosAprobacion.btnText": "¿Cómo solicitar tu préstamo?",
-  "PrestamosAprobacion.btnLink": "javascript:;",
+  "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva",
+  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria es de solo 5%. (*Tasa ordinaria mensual estimada).",
+  "DiDiPrestamosWhyDiDi.btnMode": "dark",
+  "DiDiPrestamosWhyDiDi.bgColor": "bg-white",
+  "DiDiPrestamosWhyDiDi.textColor": "gray-primary",
+  "DiDiPrestamosFeatures.title": "Aprobación instantánea*",
+  "DiDiPrestamosFeatures.desc": "Te enviaremos una notificación por mensaje de texto en caso de que se apruebe tu solicitud y recibirás el dinero en tu cuenta en menos de 2 minutos. * Aplican términos y condiciones.",
+  "DiDiPrestamosFeatures.bgColor": "bg-white",
+  "DiDiPrestamosFeatures.btnMode": "primary",
   "PrestamosGuideSlider.title": "¿Cómo solicito un préstamo en DiDi?",
   "PrestamosGuideSlider.dataTitles": [
     {

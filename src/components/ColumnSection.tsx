@@ -21,26 +21,38 @@ const ColumnsSection = ({
   bgColor,
   textColor,
   sectionID,
-  RTL
+  RTL,
 }: ColumnsSectionProps) => {
-  let dir : any = "ltr";
+  let dir: any = "ltr";
 
-  if(RTL) {
+  if (RTL) {
     dir = "rtl";
   }
   return (
-    <section style={{direction: dir}} id={sectionID} className={`${bgColor} text-${textColor} py-12`}>
-
+    <section
+      style={{ direction: dir }}
+      id={sectionID}
+      className={`${bgColor} text-${textColor} py-12`}
+    >
       <div className="container mx-auto flex flex-col flex-wrap justify-center md:justify-around">
-        {title && title.split("\n").map((str) => <h2 className="text-center text-3xl">{str}</h2>)}
-        {desc && desc.split("\n").map((str) => <p className="text-center">{str}</p>)}
+        {title &&
+          title
+            .split("\n")
+            .map((str) => <h2 className="text-center text-4xl">{str}</h2>)}
+        {desc &&
+          desc
+            .split("\n")
+            .map((str) => <p className="text-center text-lg">{str}</p>)}
 
         <div className={`mt-10 flex flex-wrap justify-around`}>
           {columns.map((col, index) => {
             return <Card {...col} key={index} index={index}></Card>;
           })}
         </div>
-        {small && small.split("\n").map((str) => <small className="text-center">{str}</small>)}
+        {small &&
+          small
+            .split("\n")
+            .map((str) => <small className="text-center">{str}</small>)}
       </div>
     </section>
   );

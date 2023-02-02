@@ -7,7 +7,7 @@ import Btn, { BtnProps } from "./Btn";
 export interface BannerProps extends BtnProps {
   title: string;
   desc?: string;
-  descText?: string
+  descText?: string;
   bgColor: string;
   textColor: string;
   height?: string;
@@ -42,14 +42,19 @@ const Banner = ({
       }`}
     >
       {reverse ? "" : <div className="mb-5 max-w-6xl text-center">{image}</div>}
-    
+
       <div className="container mx-auto flex max-w-6xl flex-col py-4  text-center">
         <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
-        
-        {descText && descText.split("\n").map((str) => <p className="text-base">{str}</p>)}
+
+        {descText &&
+          descText.split("\n").map((str) => <p className="text-base">{str}</p>)}
         <br />
         <p className="text-base">{desc}</p>
-        <span className={`flex justify-center ${(btnText != "VideoSection.btnText") ? "" : "hidden"}`}>
+        <span
+          className={`flex justify-center ${
+            btnText != "VideoSection.btnText" ? "" : "hidden"
+          }`}
+        >
           <Btn
             btnType={btnType}
             btnLink={btnLink}

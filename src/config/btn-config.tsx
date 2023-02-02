@@ -19,6 +19,8 @@ interface SingleBtnInterface {
   foodEaterText?: string;
   foodEaterOnlineLink?: string;
   foodEaterOnlineText?: string;
+  prestamosLink?: string;
+  prestamosText?: string;
 }
 
 interface AllBtnInterface {
@@ -168,6 +170,8 @@ const btnLinks: AllBtnInterface = {
     paymentBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?lang=es-MX&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
     paymentBusinessText: "Iniciar Sesión",
+    prestamosText: "Solicitar Ahora",
+    prestamosLink: "#",
   },
   mxen: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",

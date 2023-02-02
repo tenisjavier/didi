@@ -9,11 +9,12 @@ const DiDiPrestamosFAQ = ({ data }) => {
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "mx.PrestamosHero.bgImage";
   })[0];
+
   const faqs = data.allContentfulProduct.nodes[0].faq;
 
   return (
-    <Layout>
-      <DiDiPrestamosHero bgImage={homeHeroBgImage}></DiDiPrestamosHero>
+    <Layout index={false}>
+      <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
       <DiDiPayFAQs data={faqs.reverse()}></DiDiPayFAQs>
     </Layout>
   );
@@ -24,7 +25,7 @@ export default DiDiPrestamosFAQ;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.PrestamosHero.bgImage)/" } }
+      filter: { title: { regex: "/(mx.PrestamosHero.image)/" } }
     ) {
       nodes {
         id
