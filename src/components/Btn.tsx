@@ -127,7 +127,7 @@ const Btn = ({
   };
 
   return (
-    <div className={`my-2 btn-${btnMode} btn-${btnModeSecondary}`}>
+    <div className={`text-lg my-2 btn-${btnMode} btn-${btnModeSecondary}`}>
       <a
         onClick={(e) => handleClick(e)}
         className="block"

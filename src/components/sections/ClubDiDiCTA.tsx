@@ -12,7 +12,7 @@ interface ClubDiDiCTAProps {
 
 const ClubDiDiCTA = ({ bgImage }: ClubDiDiCTAProps) => {
   const props: CTAProps = {
-    hero: true,
+    hero: false,
     title: t("ClubDiDiCTA.title"),
     desc: t("ClubDiDiCTA.desc"),
     textColor: t("ClubDiDiCTA.textColor"),

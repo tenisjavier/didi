@@ -47,9 +47,9 @@ const Banner = ({
         <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
 
         {descText &&
-          descText.split("\n").map((str) => <p className="text-base">{str}</p>)}
+          descText.split("\n").map((str) => <p className=" text-lg">{str}</p>)}
         <br />
-        <p className="text-base">{desc}</p>
+        <p className="text-lg">{desc}</p>
         <span
           className={`flex justify-center ${
             btnText != "VideoSection.btnText" ? "" : "hidden"
