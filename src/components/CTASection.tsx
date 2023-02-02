@@ -61,7 +61,7 @@ const CTASection = (props: CTAProps) => {
     btnArray,
     reverse,
     btnModeSecondary,
-    RTL
+    RTL,
   } = props;
 
   let sectionBtn = (
@@ -122,14 +122,14 @@ const CTASection = (props: CTAProps) => {
         <br></br>
         <Btn btnType="foodEaterEn" btnModeSecondary={btnModeSecondary}></Btn>
       </>
-    )
+    );
   }
 
-  let dir : any = "ltr";
-  let textDir : any = "text-left";
-  let margin : any = "mr-4";
+  let dir: any = "ltr";
+  let textDir: any = "text-left";
+  let margin: any = "mr-4";
 
-  if(RTL) {
+  if (RTL) {
     dir = "rtl";
     textDir = "text-right";
     margin = "ml-4";
@@ -137,7 +137,7 @@ const CTASection = (props: CTAProps) => {
 
   return (
     <section
-    style={{ direction: dir }}
+      style={{ direction: dir }}
       className={`relative flex min-h-[40rem] w-full  items-center justify-center overflow-hidden
     ${bgColor && bgColor}`}
     >
@@ -153,9 +153,9 @@ const CTASection = (props: CTAProps) => {
           className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
         >
           {hero ? (
-            <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
+            <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
           ) : (
-            <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
+            <h2 className="font-bold text-4xl">{title}</h2>
           )}
           {bullets && (
             <>
@@ -199,7 +199,7 @@ const CTASection = (props: CTAProps) => {
           )}
           {desc &&
             desc.split("\n").map((str, index) => (
-              <p className="mb-5 text-lg" key={index}>
+              <p className="mb-10 text-lg" key={index}>
                 {str}
               </p>
             ))}
