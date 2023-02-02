@@ -2,7 +2,7 @@ import React from "react";
 import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
-const DiDiPayFAQs = ({ data }) => {
+const DiDiPayFAQs = ({ title, data }) => {
   let items = [];
   data.forEach((node) => {
     items.push({
@@ -12,7 +12,7 @@ const DiDiPayFAQs = ({ data }) => {
   });
 
   const props = {
-    title: t("DiDiPayFAQs.title"),
+    title: title || t("DiDiPayFAQs.title"),
     bgColor: t("DiDiPayFAQs.bgColor"),
     textColor: t("DiDiPayFAQs.textColor"),
     textAccordionColor: "orange-primary",

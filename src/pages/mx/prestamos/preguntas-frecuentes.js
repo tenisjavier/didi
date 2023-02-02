@@ -7,15 +7,59 @@ import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
 const DiDiPrestamosFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "mx.PrestamosHero.bgImage";
+    return image.title === "mx.PrestamosHero.image";
   })[0];
 
-  const faqs = data.allContentfulProduct.nodes[0].faq;
+  const faqsSobreNosotros = data.allContentfulProduct.nodes[0].faq.filter(
+    (item) =>
+      item.title === "¿Qué es DiDi Préstamos?" ||
+      item.title === "¿DiDi Préstamos es seguro? " ||
+      item.title === "¿Dónde puedo encontrar DiDi Préstamos?" ||
+      item.title ===
+        "¿Cómo puedo contactar al equipo de DiDi Préstamos / ¿Pedir ayuda?"
+  );
+  const faqsSolicitud = data.allContentfulProduct.nodes[0].faq.filter(
+    (item) =>
+      item.title ===
+        "¿Cuáles son los requisitos para solicitar un préstamo de DiDi Préstamos?" ||
+      item.title ===
+        "¿En cuánto tiempo puedo obtener una respuesta después de presentar la solicitud?" ||
+      item.title === "¿Cómo retirar dinero si la solicitud es aprobada?" ||
+      item.title === "¿Por qué se rechazó mi solicitud de préstamo?" ||
+      item.title === "¿Por qué no recibí el préstamo en mi cuenta bancaria?"
+  );
+  const faqsSobrePrestamos = data.allContentfulProduct.nodes[0].faq.filter(
+    (item) =>
+      item.title === "¿Cuál es el plazo del préstamo?" ||
+      item.title === "¿Cuál es el límite del préstamo?" ||
+      item.title === "¿Cuál es la tasa de interés?" ||
+      item.title === "¿Cómo puedo aumentar el límite del préstamo?"
+  );
+  const faqsPago = data.allContentfulProduct.nodes[0].faq.filter(
+    (item) =>
+      item.title === "¿Puedo pagar mi préstamo por adelantado?" ||
+      item.title === "¿Cómo puedo pagar?" ||
+      item.title === "¿Cómo pago en OXXO®?" ||
+      item.title === "¿Cómo pagar a través de SPEI®?" ||
+      item.title ===
+        "Hice una transferencia a través de SPEI® / Hice el pago en una tienda OXXO®, ¿por qué no cambió el estado del pago en la página de inicio de la aplicación?" ||
+      item.title ===
+        "¿Qué pasa si no pude pagar en la fecha límite de pago o antes?"
+  );
 
   return (
     <Layout index={false}>
       <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
-      <DiDiPayFAQs data={faqs.reverse()}></DiDiPayFAQs>
+      <DiDiPayFAQs
+        data={faqsSobreNosotros}
+        title="Sobre nosotros"
+      ></DiDiPayFAQs>
+      <DiDiPayFAQs data={faqsSolicitud} title="Solicitud"></DiDiPayFAQs>
+      <DiDiPayFAQs
+        data={faqsSobrePrestamos}
+        title="Sobre DiDi Préstamos"
+      ></DiDiPayFAQs>
+      <DiDiPayFAQs data={faqsPago} title="Pago"></DiDiPayFAQs>
     </Layout>
   );
 };
