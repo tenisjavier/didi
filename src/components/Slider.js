@@ -73,9 +73,9 @@ const SilderSection = (props) => {
                   />
                 </div>
                 <div className={idx === index ? textShow : textHide}>
-                  <h2 className="mt-0 text-center  text-3xl font-bold">
+                  <h3 className="mt-0 text-center  text-3xl font-bold">
                     {data.name}
-                  </h2>
+                  </h3>
                   <p className="my-2 text-justify text-base  2xl:text-lg">
                     {data.description && data.description}
                     {data.descriptionForPax && data.descriptionForPax}
