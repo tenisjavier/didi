@@ -261,23 +261,19 @@ const menuLinksFood: AllMenuInterface = {
   mxen: [
     {
       text: "Store",
-      url: "/mx/food/en/restaurantes/",
+      url: "/mx/food/en/restaurants/",
     },
     {
       text: "Delivery",
-      url: "/mx/food/en/repartidores/",
+      url: "/mx/food/en/couriers/",
     },
     {
       text: "About",
-      url: "/mx/food/en/acerca-didi-food/",
+      url: "/mx/food/en/about/",
     },
     {
       text: "Contact",
-      url: "/mx/food/en/contacto/",
-    },
-    {
-      text: "Blog",
-      url: "/mx/food/en/blog/",
+      url: "/mx/food/en/contact/",
     },
   ],
 };

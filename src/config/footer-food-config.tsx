@@ -33,8 +33,8 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Renta de equipo", link: "/mx/food/renta-de-equipo/" },
   ],
   mxen: [
-    { text: "Store", link: "/mx/food/en/restaurantes/" },
-    { text: "Delivery", link: "/mx/food/en/repartidores/" },
+    { text: "Store", link: "/mx/food/en/restaurants/" },
+    { text: "Delivery", link: "/mx/food/en/couriers/" },
   ],
   do: [
     { text: "Home", link: "/do/food/" },
