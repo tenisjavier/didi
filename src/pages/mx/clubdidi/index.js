@@ -31,11 +31,7 @@ const DiDiMas = ({ data }) => {
     return partner.name === "ARCO";
   });
   const partnerAuto = partners.filter((partner) => {
-    return (
-      partner.name === "Nissan" ||
-      partner.name === "Dalton Seminuevos" ||
-      partner.name === "Datamovil Arrendadora"
-    );
+    return partner.name === "Datamovil Arrendadora";
   });
   const partnerFinanzas = partners.filter((partner) => {
     return (
@@ -92,7 +88,7 @@ const DiDiMas = ({ data }) => {
         data={partnerCombustible}
       ></PartnersGrid>
       <PartnersGrid
-        title="Facilidades para comprar un auto"
+        title="Facilidades para arrendar un auto"
         bgColor="bg-white"
         sectionID="PartnerComprarAuto"
         data={partnerAuto}
