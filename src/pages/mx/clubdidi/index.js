@@ -24,9 +24,7 @@ const DiDiMas = ({ data }) => {
       partner.name === "Procapa Arrendamientos"
     );
   });
-  const partnerRefacciones = partners.filter((partner) => {
-    return partner.name === "Nissan";
-  });
+
   const partnerCombustible = partners.filter((partner) => {
     return partner.name === "ARCO";
   });
@@ -75,12 +73,7 @@ const DiDiMas = ({ data }) => {
         sectionID="PartnerRentarAuto"
         data={partnerRent}
       ></PartnersGrid>
-      <PartnersGrid
-        title="Descuentos para refacciones y autopartes"
-        bgColor="bg-white"
-        sectionID="PartnerRefacciones"
-        data={partnerRefacciones}
-      ></PartnersGrid>
+
       <PartnersGrid
         title="Descuentos en combustible"
         bgColor="bg-gray-light"
