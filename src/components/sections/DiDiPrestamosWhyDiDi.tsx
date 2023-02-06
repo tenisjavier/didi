@@ -19,8 +19,6 @@ const DiDiPrestamosWhyDiDi = ({ image }: DiDiPrestamosWhyDiDiProps) => {
     bgColor: t("DiDiPrestamosWhyDiDi.bgColor"),
     image: image,
     imageStyle: "z-10 m-4 w-110",
-    btnMode: t("DiDiPrestamosWhyDiDi.btnMode"),
-    btnType: "prestamos",
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;

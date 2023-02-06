@@ -96,6 +96,15 @@ const CTASection = (props: CTAProps) => {
       </>
     );
   }
+  if (btnType === "bothPrestamos") {
+    sectionBtn = (
+      <>
+        <Btn btnType="prestamosPax" btnMode={btnMode}></Btn>
+        <br></br>
+        <Btn btnType="prestamosDrv" btnMode={btnMode}></Btn>
+      </>
+    );
+  }
   if (btnArray && btnType == "custom") {
     sectionBtn = (
       <>

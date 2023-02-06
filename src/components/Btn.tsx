@@ -6,33 +6,39 @@ import gtmEvent from "../config/gtm";
 // @desc: Pax and Driver CTA buttons.  If not btnType is passed it will be a normal btn.
 // @props: btnType drv/pax/none | btnLink (normal btn) "url" | btnMode light/none | children: normal btn text
 
+type BtnType =
+  | "both"
+  | "drv"
+  | "pax"
+  | "fleet"
+  | "payment"
+  | "paymentBusiness"
+  | "foodBusiness"
+  | "foodDelivery"
+  | "foodEater"
+  | "foodEaterOnline"
+  | "custom"
+  | "bothFood"
+  | "bothFoodEn"
+  | "foodEaterOnlineEn"
+  | "foodEaterEn"
+  | "foodBusinessEn"
+  | "foodDeliveryEn"
+  | "foodBusinessHeroEn"
+  | "foodDeliveryHeroEn"
+  | "prestamosPax"
+  | "prestamosDrv"
+  | "bothPrestamos"
+  | "en";
+
+type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
+
 export interface BtnProps {
-  btnType?:
-    | "both"
-    | "drv"
-    | "pax"
-    | "fleet"
-    | "payment"
-    | "paymentBusiness"
-    | "foodBusiness"
-    | "foodDelivery"
-    | "foodEater"
-    | "foodEaterOnline"
-    | "custom"
-    | "bothFood"
-    | "bothFoodEn"
-    | "foodEaterOnlineEn"
-    | "foodEaterEn"
-    | "foodBusinessEn"
-    | "foodDeliveryEn"
-    | "foodBusinessHeroEn"
-    | "foodDeliveryHeroEn"
-    | "prestamos"
-    | "en";
+  btnType?: BtnType;
   btnText2?: string;
   btnLink2?: string;
-  btnMode?: "primary" | "dark" | "light" | "green" | "hidden";
-  btnModeSecondary?: "primary" | "dark" | "light" | "green" | "hidden";
+  btnMode?: BtnMode;
+  btnModeSecondary?: BtnMode;
   btnLink?: string;
   btnText?: string;
 }
@@ -98,9 +104,12 @@ const Btn = ({
   } else if (btnType === "foodEaterOnlineEn") {
     btnLink = btnData.foodEaterOnlineLink;
     btnText = btnText || btnData.foodEaterOnlineText;
-  } else if (btnType === "prestamos") {
-    btnLink = btnData.prestamosLink;
-    btnText = btnText || btnData.prestamosText;
+  } else if (btnType === "prestamosPax") {
+    btnLink = btnData.prestamosPaxLink;
+    btnText = btnText || btnData.prestamosPaxText;
+  } else if (btnType === "prestamosDrv") {
+    btnLink = btnData.prestamosDrvLink;
+    btnText = btnText || btnData.prestamosDrvText;
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
@@ -119,10 +128,6 @@ const Btn = ({
       btnText: e.target.innerText,
       countryCode: countryCode,
     });
-    if (btnType === "prestamos") {
-      console.log("prestamos clicked");
-    }
-
     window.location.replace(link);
   };
 
