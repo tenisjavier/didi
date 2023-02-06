@@ -1094,7 +1094,7 @@
   "DiDiPrestamosHero.btnText": "Solicitar ahora",
   "DiDiPrestamosHero.btnLink": "",
   "DiDiPrestamosColumns.title": "¿Por qué elegir DiDi Préstamos?",
-  "DiDiPrestamosColumns.desc": "DiDi, líder mundial en innovación, se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
+  "DiDiPrestamosColumns.desc": "DiDi se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
   "DiDiPrestamosColumns.bgColor": "bg-gray-light",
   "DiDiPrestamosColumns.textColor": "gray-primary",
   "DiDiPrestamosColumns.columns": [
@@ -1120,14 +1120,15 @@
     }
   ],
   "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva",
-  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria es de solo 5%. (*Tasa ordinaria mensual estimada).",
+  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria es de solo 5%. \n (*Tasa ordinaria mensual estimada).",
   "DiDiPrestamosWhyDiDi.btnMode": "dark",
   "DiDiPrestamosWhyDiDi.bgColor": "bg-white",
   "DiDiPrestamosWhyDiDi.textColor": "gray-primary",
   "DiDiPrestamosFeatures.title": "Aprobación instantánea*",
-  "DiDiPrestamosFeatures.desc": "Te enviaremos una notificación por mensaje de texto en caso de que se apruebe tu solicitud y recibirás el dinero en tu cuenta en menos de 2 minutos. * Aplican términos y condiciones.",
-  "DiDiPrestamosFeatures.bgColor": "bg-white",
-  "DiDiPrestamosFeatures.btnMode": "primary",
+  "DiDiPrestamosFeatures.desc": "Te enviaremos una notificación por mensaje de texto en caso de que se apruebe tu solicitud y recibirás el dinero en tu cuenta en menos de 2 minutos.\n * Aplican términos y condiciones.",
+  "DiDiPrestamosFeatures.bgColor": "bg-orange-primary",
+  "DiDiPrestamosFeatures.textColor": "white",
+  "DiDiPrestamosFeatures.btnMode": "light",
   "PrestamosGuideSlider.title": "¿Cómo solicito un préstamo en DiDi?",
   "PrestamosGuideSlider.dataTitles": [
     {
