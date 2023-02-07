@@ -220,7 +220,7 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/cl/driver/conductor-en-{{city}}/",
-  "TaxiHero.title": "ВОДИТЕЛЯМ таксопарка",
+  "TaxiHero.title": "Водителям таксопарков",
   "TaxiHero.desc": "Подключитесь к таксопарку и начните зарабатывать с DiDi. Мы подключаем к платформе только проверенных партнеров.",
   "TaxiHero.textColor": "white",
   "TaxiHero.btnMode": "primary",
