@@ -1,6 +1,12 @@
 // @desc: Create Redirects
 // @return: null
 const redirectsInit = async (graphql, createRedirect) => {
+  //testing subdomains
+  createRedirect({
+    fromPath: `https://chile.didiglobal.com/wp-admin/`,
+    toPath: `/cl/`,
+    isPermanent: true,
+  });
   // 301 restaurantes
   createRedirect({
     fromPath: `/cl/food/store/`,
