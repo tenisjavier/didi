@@ -1,20 +1,22 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../components/Layout";
-import FoodCityHero from "../../../../components/sections/FoodCityHero";
-import FoodCityBannerCTA from "../../../../components/sections/FoodCityBannerCTA";
-import FoodCityBannerCTA2 from "../../../../components/sections/FoodCityBannerCTA2";
-import FoodCityBannerCTA3 from "../../../../components/sections/FoodCityBannerCTA3";
-import FoodCityRestaurantCTA from "../../../../components/sections/FoodCityRestaurantCTA";
-import FoodMunicipalityList from "../../../../components/sections/FoodMunicipalityList";
-import FoodAppDownloads from "../../../../components/sections/FoodAppDownloads";
-import FoodNeighborhoodList from "../../../../components/sections/FoodNeighborhoodList";
+import Layout from "../../components/Layout";
+import FoodCityHero from "../../components/sections/FoodCityHero";
+import FoodCityBannerCTA from "../../components/sections/FoodCityBannerCTA";
+import FoodCityBannerCTA2 from "../../components/sections/FoodCityBannerCTA2";
+import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
+import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
+import FoodMunicipalityList from "../../components/sections/FoodMunicipalityList";
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const cities = data.allContentfulMunicipality.nodes;
   const neighbourhoods = data.allContentfulNeighbourhood.nodes;
   const name = data.contentfulMunicipality.name;
+  const cityName = data.contentfulMunicipality.city.name;
+  const citySlug = data.contentfulMunicipality.city.slug;
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -31,11 +33,26 @@ const FoodCity = ({ data }) => {
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
+  const customBreadcrumb = [
+    {
+      link: `https://web.didiglobal.com/mx/food/`, 
+      text: "Food"
+    },
+    {
+      link: `https://web.didiglobal.com/mx/food/${citySlug}`,
+      text: cityName
+    },
+    {
+      link: "#",
+      text: name
+    }
+  ]
 
   return (
     <Layout
       title={`Pide Comida a Domicilio  en ${name} CDMX `}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
+      customBreadcrumb={customBreadcrumb}
     >
       <FoodCityHero
         bgImage={foodHeroBgImage}
@@ -71,14 +88,24 @@ export const query = graphql`
     contentfulMunicipality(id: { eq: $id }) {
       name
       slug
-      city {
+      neighbourhood {
         name
       }
+      city {
+        name
+        slug
+      }
     }
-    allContentfulMunicipality {
+    allContentfulMunicipality (filter: {id: {ne: $id}, city: {country: {code: {eq: "mx"}}}}) {
       nodes {
         name
         slug
+        neighbourhood {
+          name
+        }
+        city {
+          name
+        }
       }
     }
     allContentfulNeighbourhood(
@@ -88,6 +115,12 @@ export const query = graphql`
       nodes {
         name
         slug
+        municipality {
+          name
+        }
+        city {
+          name
+        }
       }
     }
     allContentfulAsset(
