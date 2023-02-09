@@ -170,7 +170,7 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
           );
         })}
       </ol>
-      {pathname.includes("/mx/food/") &&
+      {/* {pathname.includes("/mx/food/") &&
         !pathname.includes("/mx/food/ciudad/") &&
         !pathname.includes("/mx/food/colonia/") &&
         !pathname.includes("/mx/food/blog/") &&
@@ -189,7 +189,7 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
               <Link to="/mx/food/"> ES </Link>
             </li>
           </ol>
-        )}
+        )} */}
 
       {pathname.includes("/thejourney/") && (
         <ol className="flex list-none p-0 m-0">
