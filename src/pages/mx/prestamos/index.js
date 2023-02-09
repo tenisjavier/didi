@@ -5,6 +5,7 @@ import DiDiPrestamosHero from "../../../components/sections/DiDiPrestamosHero";
 import DiDiPrestamosColumns from "../../../components/sections/DiDiPrestamosColumns";
 import DiDiPrestamosWhyDiDi from "../../../components/sections/DiDiPrestamosWhyDiDi";
 import DiDiPrestamosFeatures from "../../../components/sections/DiDiPrestamosFeatures";
+import DiDiPrestamosReviews from "../../../components/sections/DiDiPrestamosReviews";
 
 const DiDiPrestamos = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -26,6 +27,7 @@ const DiDiPrestamos = ({ data }) => {
       <DiDiPrestamosFeatures
         image={prestamosFeaturesImage}
       ></DiDiPrestamosFeatures>
+      <DiDiPrestamosReviews></DiDiPrestamosReviews>
     </Layout>
   );
 };
