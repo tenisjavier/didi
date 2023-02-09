@@ -22,6 +22,7 @@ const FoodCityBannerCTA3 = ({ image, data }: FoodCityBannerCTA3Props) => {
     bgColor: t("FoodCityBannerCTAThree.bgColor"),
     textColor: t("FoodCityBannerCTAThree.textColor"),
     image: image,
+    imageStyle: "z-10 m-4 w-100 rounded",
     bgImage: "z-10 m-4 w-100 rounded",
     btnMode: t("FoodCityBannerCTAThree.btnMode"),
     btnType: "foodEater",

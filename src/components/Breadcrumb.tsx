@@ -170,6 +170,7 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
           );
         })}
       </ol>
+<<<<<<< HEAD
       {pathname.includes("/mx/food/") && 
       !pathname.includes("/ciudad/") && 
       !pathname.includes("/colonia/") && 
@@ -190,6 +191,28 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
           </li>
         </ol>
       )}
+=======
+      {pathname.includes("/mx/food/") &&
+        !pathname.includes("/mx/food/ciudad/") &&
+        !pathname.includes("/mx/food/colonia/") &&
+        !pathname.includes("/mx/food/blog/") &&
+        !pathname.includes("/mx/food/clubdidi/") &&
+        !pathname.includes("/mx/food/privacidad/") &&
+        !pathname.includes("/mx/food/renta-de-equipo/") &&
+        !pathname.includes("/mx/food/terminos-y-condiciones/") &&
+        !pathname.includes("/mx/food/store-food-app/") &&
+        !pathname.includes("/mx/food/preguntas-frecuentes/") && (
+          <ol className="flex list-none p-0 m-0">
+            <li>
+              <Link to="/mx/food/en/"> EN </Link>
+            </li>
+            <li> | </li>
+            <li>
+              <Link to="/mx/food/"> ES </Link>
+            </li>
+          </ol>
+        )}
+>>>>>>> int/site
       {pathname.includes("/thejourney/") && (
         <ol className="flex list-none p-0 m-0">
           <li>
