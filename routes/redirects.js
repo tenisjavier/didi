@@ -1,6 +1,11 @@
 // @desc: Create Redirects
 // @return: null
 const redirectsInit = async (graphql, createRedirect) => {
+  createRedirect({
+    fromPath: `/mx/food/ciudad/ciudad-de-mexico-cmx/`,
+    toPath: `/mx/food/ciudad/ciudad-de-mexico-cdmx/`,
+    isPermanent: true,
+  });
   // 301 restaurantes
   createRedirect({
     fromPath: `/cl/food/store/`,

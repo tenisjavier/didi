@@ -6,7 +6,9 @@ const slugify = require("slugify");
 const placesInCityRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulCity {
+      allContentfulCity(
+        filter: { country: { code: { in: ["cl", "ar", "pe"] } } }
+      ) {
         nodes {
           id
           slug
