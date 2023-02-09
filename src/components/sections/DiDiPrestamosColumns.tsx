@@ -2,7 +2,6 @@ import React from "react";
 import { t } from "../../context/countryContext";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
-import ColumnSectionImageText from "./ColumnSectionImageText";
 
 interface DiDiPrestamosColumnsProps {
   images: {
