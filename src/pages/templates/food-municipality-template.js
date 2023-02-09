@@ -35,18 +35,18 @@ const FoodCity = ({ data }) => {
   });
   const customBreadcrumb = [
     {
-      link: `https://web.didiglobal.com/mx/food/`, 
-      text: "Food"
+      link: `https://web.didiglobal.com/mx/food/`,
+      text: "Food",
     },
     {
       link: `https://web.didiglobal.com/mx/food/${citySlug}`,
-      text: cityName
+      text: cityName,
     },
     {
       link: "#",
-      text: name
-    }
-  ]
+      text: name,
+    },
+  ];
 
   return (
     <Layout
@@ -75,7 +75,7 @@ const FoodCity = ({ data }) => {
         data={data.contentfulMunicipality}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
       <FoodNeighborhoodList data={neighbourhoods}></FoodNeighborhoodList>
     </Layout>
   );
@@ -96,7 +96,9 @@ export const query = graphql`
         slug
       }
     }
-    allContentfulMunicipality (filter: {id: {ne: $id}, city: {country: {code: {eq: "mx"}}}}) {
+    allContentfulMunicipality(
+      filter: { id: { ne: $id }, city: { country: { code: { eq: "mx" } } } }
+    ) {
       nodes {
         name
         slug

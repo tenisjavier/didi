@@ -76,7 +76,7 @@ const FoodCity = ({ data }) => {
         data={data.contentfulNeighbourhood}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
     </Layout>
   );
 };

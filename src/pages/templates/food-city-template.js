@@ -30,15 +30,15 @@ const FoodCity = ({ data }) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
   const customBreadcrumb = [
-    { 
-      link: `https://web.didiglobal.com/mx/food/`, 
-      text: "Food"
+    {
+      link: `https://web.didiglobal.com/mx/food/`,
+      text: "Food",
     },
     {
-      link: "#", 
-      text: name
-    }
-  ]
+      link: "#",
+      text: name,
+    },
+  ];
 
   return (
     <Layout
@@ -67,7 +67,7 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
     </Layout>
   );
 };
@@ -76,8 +76,10 @@ export default FoodCity;
 
 export const query = graphql`
   query ($id: String) {
-    allContentfulCity ( filter: {id: {ne: $id}, country: {code: {eq: "mx"}}}) {
-      nodes{
+    allContentfulCity(
+      filter: { id: { ne: $id }, country: { code: { eq: "mx" } } }
+    ) {
+      nodes {
         id
         name
         slug
