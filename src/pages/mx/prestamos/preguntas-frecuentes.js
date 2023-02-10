@@ -13,7 +13,7 @@ const DiDiPrestamosFAQ = ({ data }) => {
   const faqsSobreNosotros = data.allContentfulProduct.nodes[0].faq.filter(
     (item) =>
       item.title === "¿Qué es DiDi Préstamos?" ||
-      item.title === "¿DiDi Préstamos es seguro? " ||
+      item.title === "¿DiDi Préstamos es seguro?" ||
       item.title === "¿Dónde puedo encontrar DiDi Préstamos?" ||
       item.title ===
         "¿Cómo puedo contactar al equipo de DiDi Préstamos / ¿Pedir ayuda?"

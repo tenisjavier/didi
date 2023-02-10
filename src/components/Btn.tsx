@@ -133,6 +133,8 @@ const Btn = ({
 
   return (
     <div
+      tabIndex={0}
+      role="button"
       className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
     >
       <a
