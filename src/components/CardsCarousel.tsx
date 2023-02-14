@@ -12,10 +12,13 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
   const [index, setIndex] = useState(0);
   const carouselRef = useRef(null);
 
-  let btnStyleActive = "m-4 text-4xl cursor-pointer border-0";
-  let btnStyleDisabled = "m-4 text-4xl font-light text-gray-300 border-0";
+  let btnStyleActive =
+    "m-4 text-4xl border-0 p-0 outline-0 bg-inherit cursor-pointer hover:font-bold";
+  let btnStyleDisabled =
+    "m-4 text-4xl font-light text-gray-300 border-0 p-0 outline-0 bg-inherit";
 
   useEffect(() => {
+    // @ts-ignore
     carouselRef?.current?.scrollTo({
       left: index * 1450,
       behavior: "smooth",
@@ -23,7 +26,7 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
   }, [index]);
 
   return (
-    <section className={`w-full ${bgColor}`}>
+    <section className={`w-full ${bgColor} py-10`}>
       <div className="container mx-auto">
         <div className="flex justify-between mb-12 mx-4">
           <div>
@@ -39,10 +42,10 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
             </button>
             <button
               className={
-                index > cards.length / 4 ? btnStyleDisabled : btnStyleActive
+                index > cards.length / 3 ? btnStyleDisabled : btnStyleActive
               }
               onClick={() =>
-                index > cards.length / 4 ? null : setIndex(index + 1)
+                index > cards.length / 3 ? null : setIndex(index + 1)
               }
             >
               →

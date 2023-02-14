@@ -55,7 +55,7 @@ const CardsCarouselItem = ({
       className={`${
         type === "press" &&
         "group transition-all duration-130 hover:mt-0 hover:ease-in hover:h-[490px]"
-      } mt-6   relative flex  justify-between flex-col w-[345px] bg-white p-6 shadow-sm shadow-gray-200 snap-center h-[450px]   overflow-hidden flex-shrink-0 coursor-pointer`}
+      } mt-6   relative flex  justify-between flex-col w-[345px] bg-white p-6 shadow-md shadow-gray-200 snap-center h-[450px]   overflow-hidden flex-shrink-0 rounded`}
     >
       <div>
         {cardImage}

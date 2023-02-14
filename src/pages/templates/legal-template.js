@@ -35,6 +35,15 @@ export const query = graphql`
       slug
       content {
         raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
       }
     }
   }

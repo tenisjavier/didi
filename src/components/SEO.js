@@ -120,7 +120,7 @@ const SEO = ({ title, desc, index, schemaMarkup }) => {
   return (
     <>
       <Helmet
-        htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase()}` }}
+        htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase().slice(0,2)}` }}
         title={title}
       >
         { schemaMarkup &&
