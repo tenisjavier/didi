@@ -8,7 +8,7 @@ import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
 
-const SEO = ({ title, desc, index }) => {
+const SEO = ({ title, desc, index, schemaMarkup }) => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
@@ -123,6 +123,9 @@ const SEO = ({ title, desc, index }) => {
         htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase()}` }}
         title={title}
       >
+        { schemaMarkup &&
+          <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
+        }
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") || !index ? (
