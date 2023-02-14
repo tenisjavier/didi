@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import slugify from "react-slugify";
 import Layout from "../../../components/Layout";
 import LegalHero from "../../../components/sections/LegalHero";
 import ListSection from "../../../components/ListSection";
@@ -22,6 +21,7 @@ const Legal = ({ data }) => {
         "Driver Fatigue Management Policy",
         "General Terms and Conditions for Driver Offers",
         "Fee Schedule",
+        "Perth | Fare Increases",
       ].indexOf(p.name) > -1
   );
   const drvProgramPolicies = policies.filter(
@@ -54,25 +54,25 @@ const Legal = ({ data }) => {
   const drvPoliciesItems = drvPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: `/au/legal/${p.slug}`,
     };
   });
   const drvProgramPoliciesItems = drvProgramPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: `/au/legal/${p.slug}`,
     };
   });
   const paxPoliciesItems = paxPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: `/au/legal/${p.slug}`,
     };
   });
   const paxProgramPoliciesItems = paxProgramPolicies.map((p) => {
     return {
       text: p.name,
-      link: slugify(p.name),
+      link: `/au/legal/${p.slug}`,
     };
   });
   return (
@@ -112,6 +112,7 @@ export const query = graphql`
       nodes {
         id
         name
+        slug
       }
     }
   }
