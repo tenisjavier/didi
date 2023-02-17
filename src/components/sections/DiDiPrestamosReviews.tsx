@@ -17,7 +17,7 @@ const DiDiPrestamosReviews = ({ bgImage }: any) => {
     desc: "Muchos usuarios ya pidieron un préstamo en DiDi.",
     bgColor: "bg-white",
     bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full md:block ",
+    bgImageStyle: "!absolute z-0 h-full w-full md:block",
     cards: [
       {
         title: "Excelente servicio",
