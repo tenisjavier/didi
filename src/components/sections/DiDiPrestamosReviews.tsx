@@ -11,11 +11,13 @@ import CardsCarousel, { CardsCarouselProps } from "../CardsCarousel";
 //   }[];
 // }
 
-const DiDiPrestamosReviews = () => {
+const DiDiPrestamosReviews = ({ bgImage }: any) => {
   const props: CardsCarouselProps = {
     title: "¿Qué dicen los usuarios sobre nosotros?",
     desc: "Muchos usuarios ya pidieron un préstamo en DiDi.",
-    bgColor: "bg-gray-light",
+    bgColor: "bg-white",
+    bgImage: bgImage,
+    bgImageStyle: "!absolute z-0 h-full w-full md:block ",
     cards: [
       {
         title: "Excelente servicio",

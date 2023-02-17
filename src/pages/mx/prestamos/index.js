@@ -20,6 +20,9 @@ const DiDiPrestamos = ({ data }) => {
   const prestamosFeaturesImage = images.filter((image) => {
     return image.title === "mx.PrestamosFeatures.image";
   })[0];
+  const prestamosReviewsBgImage = images.filter((image) => {
+    return image.title === "mx.DiDiPrestamosReviews.bgImage";
+  })[0];
   const faqsSobreNosotros = data.allContentfulProduct.nodes[0].faq.filter(
     (item) =>
       item.title === "¿Qué es DiDi Préstamos?" ||
@@ -37,7 +40,9 @@ const DiDiPrestamos = ({ data }) => {
       <DiDiPrestamosFeatures
         image={prestamosFeaturesImage}
       ></DiDiPrestamosFeatures>
-      <DiDiPrestamosReviews></DiDiPrestamosReviews>
+      <DiDiPrestamosReviews
+        bgImage={prestamosReviewsBgImage}
+      ></DiDiPrestamosReviews>
       <DiDiPrestamosPress></DiDiPrestamosPress>
       <DiDiPayFAQs
         data={faqsSobreNosotros}
@@ -54,7 +59,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosFeatures.image)|(mx.PrestamosWhyDiDi.image)/"
+          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosFeatures.image)|(mx.DiDiPrestamosReviews.bgImage)|(mx.PrestamosWhyDiDi.image)/"
         }
       }
     ) {
