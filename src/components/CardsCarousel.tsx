@@ -1,14 +1,23 @@
 import React, { useState, useRef, useEffect } from "react";
 import CardsCarouselItem, { CardsCarouselItemProps } from "./CardsCarouselItem";
-
+import Image from "./Image";
 export interface CardsCarouselProps {
   title: string;
   desc: string;
   bgColor?: string;
+  bgImage?: any;
+  bgImageStyle?: string;
   cards: CardsCarouselItemProps[];
 }
 
-const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
+const CardsCarousel = ({
+  title,
+  desc,
+  bgColor,
+  bgImage,
+  bgImageStyle,
+  cards,
+}: CardsCarouselProps) => {
   const [index, setIndex] = useState(0);
   const carouselRef = useRef(null);
 
@@ -26,7 +35,9 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
   }, [index]);
 
   return (
-    <section className={`w-full ${bgColor} py-10`}>
+    <section
+      className={`w-full ${bgColor} py-10 relative min-h-[40rem] w-full  items-center justify-center overflow-hidden`}
+    >
       <div className="container mx-auto">
         <div className="flex justify-between mb-12 mx-4">
           <div>
@@ -63,6 +74,7 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
           })}
         </div>
       </div>
+      {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
     </section>
   );
 };
