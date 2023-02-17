@@ -15,7 +15,7 @@ const DiDiPrestamosPress = () => {
   const props: CardsCarouselProps = {
     title: "¿Qué dicen los medios sobre nosotros?",
     desc: "",
-    bgColor: "bg-white",
+    bgColor: "bg-gray-light",
     cards: [
       {
         title: "Dinero en Imagen",
