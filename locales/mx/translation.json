@@ -1073,6 +1073,7 @@
   ],
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
+  "DiDiPayFAQs.bgColor": "bg-white",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
   "DiDiPayBlogHero.title": "Bienvenido al Blog de DiDi Pay",
   "DiDiPayBlogHero.desc": "Lee nuestros post de consejos financieros",

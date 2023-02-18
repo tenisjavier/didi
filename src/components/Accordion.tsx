@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import {
   ContentfulRichTextGatsbyReference,
   RenderRichTextData,
@@ -36,7 +36,7 @@ const Accordion = ({
 
   const closeClass =
     "text-lg bg-gray-200 text-gray-primary py-0 w-full px-4 md:px-20 transition-all duration-700 overflow-hidden";
-  const openClass = `bg-white text-gray-primary w-full py-5 px-4 md:px-20 transition-all duration-700 text-lg overflow-hidden`;
+  const openClass = `bg-white text-gray-primary w-full py-5 px-4 md:px-20 transition-all duration-700 text-lg overflow-hidden border-none`;
   const toggtle = () => {
     setIsOpen(!isOpen);
     setHeight(isOpen ? `0px` : `${content1.current.scrollHeight + 50}px`);
@@ -45,14 +45,14 @@ const Accordion = ({
     <section id={slugify(title)} className="w-full">
       <div
         aria-hidden="true"
-        className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded px-10 lg:px-20 ${
-          isOpen ? "bg-white" : bgColor
+        className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded  border-solid border-gray-light px-10 lg:px-20 ${
+          isOpen ? "bg-white border-none" : bgColor
         }`}
         onClick={() => toggtle()}
       >
         <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
         <FontAwesomeIcon
-          icon={isOpen ? faMinusSquare : faPlusSquare}
+          icon={isOpen ? faMinusCircle : faPlusCircle}
           className={`text-${textColor} text-xl w-6`}
         />
       </div>
