@@ -56,7 +56,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-CL/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterText: "Pide Comida, Descarga la App",
   },
   hk: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/hkdriverhero",
@@ -74,7 +74,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-PE/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterText: "Pide Comida, Descarga la App",
   },
   ar: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
@@ -96,7 +96,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-CO/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterText: "Pide Comida, Descarga la App",
   },
   au: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
@@ -120,7 +120,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-DO/store",
     foodBusinessText: "Regístrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterText: "Pide Comida, Descarga la App",
   },
   ec: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ecdriverhero",
@@ -140,8 +140,8 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-CR/store",
     foodBusinessText: "Registrate como Comercio",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pedí Comida Ya → Descargá la App",
-    foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
+    foodEaterText: "Pedí Comid, Descargá la App",
+    foodEaterOnlineText: "Pide Comida sin App",
     foodEaterOnlineLink: "https://www.didi-food.com/es-CR/food/address/",
   },
   pa: {
@@ -155,13 +155,13 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
-    foodEaterText: "Pide Comida Ya → Descarga la App",
+    foodEaterText: "Pide Comida, Descarga la App",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterOnlineText: "Pide Comida, sin instalar la App → ",
+    foodEaterOnlineText: "Pide Comida sin la App",
     foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/",
     foodDeliveryLink:
       "https://www.didi-food.com/es-MX/mobile-delivery?clientType=102&country=MX&utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
-    foodDeliveryText: "Empezá a Repartir con DiDi Food",
+    foodDeliveryText: "Empieza a Repartir con DiDi Food",
     foodBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
     foodBusinessText: "Regístrate como Comercio",
