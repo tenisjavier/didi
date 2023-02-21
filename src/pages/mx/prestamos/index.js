@@ -1,8 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
+import {
+  faPercent,
+  faClock,
+  faThumbsUp,
+  faWallet,
+} from "@fortawesome/free-solid-svg-icons";
 import Layout from "../../../components/Layout";
 import DiDiPrestamosHero from "../../../components/sections/DiDiPrestamosHero";
-import DiDiPrestamosColumns from "../../../components/sections/DiDiPrestamosColumns";
+import DiDiPrestamosBenefits from "../../../components/sections/DiDiPrestamosBenefits";
 import DiDiPrestamosWhyDiDi from "../../../components/sections/DiDiPrestamosWhyDiDi";
 import DiDiPrestamosFeatures from "../../../components/sections/DiDiPrestamosFeatures";
 import DiDiPrestamosReviews from "../../../components/sections/DiDiPrestamosReviews";
@@ -11,8 +17,12 @@ import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
 
 const DiDiPrestamos = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const icons = [faPercent, faClock, faThumbsUp, faWallet];
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "mx.PrestamosHero.image";
+  })[0];
+  const drvBenefitsImage = images.filter((image) => {
+    return image.title === "mx.PrestamosFeatures.image";
   })[0];
   const prestamoWhyDiDiImage = images.filter((image) => {
     return image.title === "mx.PrestamosWhyDiDi.image";
@@ -35,7 +45,10 @@ const DiDiPrestamos = ({ data }) => {
   return (
     <Layout index={false}>
       <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
-      <DiDiPrestamosColumns></DiDiPrestamosColumns>
+      <DiDiPrestamosBenefits
+        image={drvBenefitsImage}
+        icons={icons}
+      ></DiDiPrestamosBenefits>
       <DiDiPrestamosWhyDiDi image={prestamoWhyDiDiImage}></DiDiPrestamosWhyDiDi>
       <DiDiPrestamosFeatures
         image={prestamosFeaturesImage}
