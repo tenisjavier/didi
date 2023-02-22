@@ -13,7 +13,7 @@ const ContactBenefits = ({ image, icons }) => {
       <GatsbyImage
         image={getImage(image)}
         alt={image.description}
-        className="z-10 m-4 mt-8 lg:mt-48 w-80"
+        className="z-10 m-4 mt-8 lg:mt-48 lg:w-80"
       ></GatsbyImage>
     ),
     columns: t("ContactBenefits.columns", { returnObjects: true }),
