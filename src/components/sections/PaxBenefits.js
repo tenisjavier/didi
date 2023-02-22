@@ -14,7 +14,7 @@ const PaxBenefits = ({ image, icons }) => {
       <GatsbyImage
         image={getImage(image)}
         alt={image.description}
-        className="z-10 m-4 mt-8 w-80"
+        className="z-10 m-4 mt-8 lg:w-80"
       ></GatsbyImage>
     ),
     columns: t("PaxBenefits.columns", { returnObjects: true }),

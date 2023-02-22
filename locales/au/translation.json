@@ -121,28 +121,28 @@
     {
       "title": "Increase your earning potential",
       "desc": "Take home more of the fare with DiDi’s industry-leading low Services Fees and additional bonuses.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
       "title": "Safety first",
       "desc": "Access in-app safety features and our 24/7 dedicated support team.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
       "title": "Be in control",
       "desc": "Pick up nearby riders or choose the location you want to drive in. ",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
       "title": "Weekly payouts",
       "desc": "Get paid weekly and earn flexibly. You decide when you want to earn.",
-      "bgColor": "bg-gray-light",
+      "bgColor": "bg-white",
       "textColor": "gray-primary",
 
       "width": "w-64"
