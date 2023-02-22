@@ -11,7 +11,7 @@ const insertBtnParams = () => {
   };
   var thisHostname = document.location.hostname;
   var thisDomain = getDomain_(thisHostname);
-  var referringDomain = getDomain_(document.referrer);
+  var referringDomain = getDomain_(referrer);
   // search is the parameters complete string without ?
   var search = window.location.search.slice(1);
 
@@ -87,7 +87,7 @@ const insertBtnParams = () => {
       url.indexOf("onelink.me/ixFb/") > -1 ||
       url.indexOf("onelink.me/Zkxc/") > -1
     ) {
-      url = getDeepLink(url, thisHostname);
+      url = getDeepLink(new URL(url));
       c.setAttribute("href", url);
     }
 
@@ -171,8 +171,9 @@ const insertBtnParams = () => {
 
   // @desc: function to create a deeplink long url with the correct channel text for download and channelId for H5
   // @return: return the one link url
-  function getDeepLink(url, thisHostname) {
+  function getDeepLink(url) {
     //map the organic channels and countries to the correct parameter
+
     const channels = {
       "(none)": 14,
       referral: 18,
@@ -208,56 +209,38 @@ const insertBtnParams = () => {
       hk: ["ZH", "zh-HK"],
     };
 
-    let start = url.indexOf("?");
-    let finish = url.lastIndexOf("/");
-    let search = url.substring(start);
-    let oldUrl = url.substring(0, finish);
+    let newUrl = new URL(url.origin + url.pathname.slice(0, 5)); // without any params for now
 
     // set correct parameters for onelink
-    const urlParams = new URLSearchParams(search);
-    let pid = urlParams.get("pid");
-    let utmSource = urlParams.get("utm_source");
-    let source = urlParams.get("source");
-    let rscSource = urlParams.get("rsc_source");
-    let rscMedia = urlParams.get("rsc_media");
-    let utmMedium = urlParams.get("utm_medium");
-    let c = urlParams.get("utm_campaign");
-    let campaign = urlParams.get("campaign");
-    let term = urlParams.get("utm_term");
-    let campaignId = urlParams.get("campaign_id");
-    let adgroupId = urlParams.get("ad_group_id");
-    let creativeId = urlParams.get("creative_id");
-    let targetId = urlParams.get("target_id");
-    let keyword = urlParams.get("keyword");
-    let matchtype = urlParams.get("matchtype");
-    let deviceModel = urlParams.get("devicemodel");
-    let adPosition = urlParams.get("adposition");
-    let placement = urlParams.get("placement");
-    let channel = urlParams.get("channel");
-    let rscChannel = urlParams.get("rsc_channel");
-    let rscProduct = urlParams.get("rsc_product");
-    let country = urlParams.get("country");
+
+    let pid = url.searchParams.get("pid");
+    let utmSource = url.searchParams.get("utm_source");
+    let source = url.searchParams.get("source");
+    let rscSource = url.searchParams.get("rsc_source");
+    let rscMedia = url.searchParams.get("rsc_media");
+    let utmMedium = url.searchParams.get("utm_medium");
+    let c = url.searchParams.get("utm_campaign");
+    let campaign = url.searchParams.get("campaign");
+    let term = url.searchParams.get("utm_term");
+    let campaignId = url.searchParams.get("campaign_id");
+    let adgroupId = url.searchParams.get("ad_group_id");
+    let creativeId = url.searchParams.get("creative_id");
+    let targetId = url.searchParams.get("target_id");
+    let keyword = url.searchParams.get("keyword");
+    let matchtype = url.searchParams.get("matchtype");
+    let deviceModel = url.searchParams.get("devicemodel");
+    let adPosition = url.searchParams.get("adposition");
+    let placement = url.searchParams.get("placement");
+    let channel = url.searchParams.get("channel");
+    let rscChannel = url.searchParams.get("rsc_channel");
+    let rscProduct = url.searchParams.get("rsc_product");
+    let country = countryCode.toUpperCase();
     // joveo 99 app
-    let device = urlParams.get("device");
-    let af_c_id = urlParams.get("af_c_id");
-    let af_channel = urlParams.get("af_channel");
-    let af_keywords = urlParams.get("af_keywords");
-    let af_adset = urlParams.get("af_adset");
-    let af_adset_id = urlParams.get("af_adset_id");
-    let af_ad = urlParams.get("af_ad");
-    let af_ua = urlParams.get("af_ua");
-    let af_ad_id = urlParams.get("af_ad_id");
-    let af_ad_type = urlParams.get("af_ad_type");
-    let af_siteid = urlParams.get("af_siteid");
-    let af_click_lookback = urlParams.get("af_click_lookback");
-    let advertising_id = urlParams.get("advertising_id");
-    let track_id = urlParams.get("track_id");
-    let trackid = urlParams.get("trackid");
-    let af_ip = urlParams.get("af_ip");
-    let af_lang = urlParams.get("af_lang");
-    let android_id = urlParams.get("android_id");
-    let joveoID = urlParams.get("joveoID");
-    let DIDI_CAMPAIGN_ID = urlParams.get("DIDI_CAMPAIGN_ID");
+
+    let af_c_id = url.searchParams.get("af_c_id");
+    let af_channel = url.searchParams.get("af_channel");
+    let af_adset_id = url.searchParams.get("af_adset_id");
+    let af_ad_id = url.searchParams.get("af_ad_id");
     let form_url =
       "https://page.didiglobal.com/driver-page/register/index.html";
 
@@ -311,56 +294,83 @@ const insertBtnParams = () => {
     }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
-    let newSearch = `?location_country=${countryLang[0]}&country=${country}&lang=${countryLang[1]}&channel=${channelId}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
-    let newSearchFood = `?pid=${pid}&c=${c}&af_web_dp=https%3A%2F%2Fwww.didi-food.com%2F${countryLang[1]}%2Fmobile-delivery%2Fguide%3FclientType=102%26country%3D${countryLang[0]}%26lang%3D${countryLang[1]}%26rsc_channel%3D${rscChannel}%26rsc_product%3D${rscProduct}%26rsc_source%3D${rscSource}%26rsc_media%3D${rscMedia}&af_adset=driver-page&af_ad=hero&campaign=${campaign}&utm_medium=${utmMedium}&utm_source=${utmSource}&utm_campaign=${c}&utm_term=${term}&source=${source}&campaign_id=${campaignId}&ad_group_id=${adgroupId}&creative_id=${creativeId}&target_id=${targetId}&keyword=${keyword}&matchtype=${matchtype}&devicemodel=${deviceModel}&adposition=${adPosition}&Placement=${placement}`;
-    // jovep 99 app
-    if (device) {
-      newSearch = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
-      newSearchFood = `?af_c_id=${af_c_id}&af_adset=${af_adset}&af_adset_id=${af_adset_id}&af_ad=${af_ad}&af_ad_id=${af_ad_id}&af_ad_type=${af_ad_type}&af_siteid=${af_siteid}&pid=jampp_int&c=${c}&af_click_lookback=${af_click_lookback}&trackid=${trackid}&advertising_id=${advertising_id}&track_id=${track_id}&af_ip=${af_ip}&af_lang=${af_lang}&redirect=true&af_ua=${af_ua}&android_id=${android_id}&joveoID=${joveoID}&DIDI_CAMPAIGN_ID=${DIDI_CAMPAIGN_ID}`;
+    newUrl.searchParams.set("location_country", countryLang[0]);
+    newUrl.searchParams.set("country", country);
+    newUrl.searchParams.set("lang", countryLang[1]);
+    newUrl.searchParams.set("channel", channelId);
+    newUrl.searchParams.set("pid", pid);
+    newUrl.searchParams.set("af_adset_id", af_adset_id);
+    newUrl.searchParams.set("af_ad_id", af_ad_id);
+    newUrl.searchParams.set("af_c_id", af_c_id);
+    newUrl.searchParams.set("af_channel", af_channel);
+    newUrl.searchParams.set("campaign", campaign);
+    newUrl.searchParams.set("utm_medium", utmMedium);
+    newUrl.searchParams.set("utm_source", utmSource);
+    newUrl.searchParams.set("utm_campaign", c);
+    newUrl.searchParams.set("utm_term", term);
+    newUrl.searchParams.set("source", source);
+    newUrl.searchParams.set("campaign_id", campaignId);
+    newUrl.searchParams.set("ad_group_id", adgroupId);
+    newUrl.searchParams.set("creative_id", creativeId);
+    newUrl.searchParams.set("target_id", targetId);
+    newUrl.searchParams.set("keyword", keyword);
+    newUrl.searchParams.set("matchtype", matchtype);
+    newUrl.searchParams.set("devicemodel", deviceModel);
+    newUrl.searchParams.set("adposition", adPosition);
+    newUrl.searchParams.set("placement", placement);
+    newUrl.searchParams.set("rsc_source", rscSource);
+    newUrl.searchParams.set("rsc_media", rscMedia);
+    newUrl.searchParams.set("rsc_channel", rscChannel);
+    newUrl.searchParams.set("rsc_product", rscProduct);
+    newUrl.searchParams.set("clientType", channelId);
 
-      return oldUrl + newSearch;
-    }
     if (
-      url.indexOf("me/mbwy/") > -1 ||
-      url.indexOf("me/o97G/") > -1 ||
-      url.indexOf("me/ixFb/") > -1 ||
-      url.indexOf("me/IY6B/") > -1 ||
-      url.indexOf("me/5xQ3/") > -1 ||
-      url.indexOf("page.didiglobal.com/driver-page/register") > -1
+      url.href.indexOf("me/mbwy/") > -1 ||
+      url.href.indexOf("me/o97G/") > -1 ||
+      url.href.indexOf("me/ixFb/") > -1 ||
+      url.href.indexOf("me/IY6B/") > -1 ||
+      url.href.indexOf("me/5xQ3/") > -1 ||
+      url.href.indexOf("page.didiglobal.com/driver-page/register") > -1
     ) {
-      return form_url + newSearch;
-    } else if (url.indexOf("me/zzaY/") > -1) {
-      return oldUrl + newSearchFood;
-    } else if (url.indexOf("fleet.onelink.me/tLtr/") > -1) {
-      return (
-        oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-fleet/`
+      newUrl.searchParams.set("af_r", form_url);
+      return newUrl.href;
+    } else if (url.href.indexOf("me/zzaY/") > -1) {
+      newUrl.searchParams.set(
+        "af_r",
+        `https://www.didi-food.com/${countryLang[1]}/mobile-delivery/guide/`
       );
-    } else if (url.indexOf("fleet.onelink.me/jjQA/") > -1) {
-      return (
-        oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-fleet/`
+
+      return newUrl.href;
+    } else if (
+      url.href.indexOf("fleet.onelink.me/tLtr/") > -1 ||
+      url.href.indexOf("fleet.onelink.me/jjQA/") > -1
+    ) {
+      newUrl.searchParams.set(
+        "af_web_dp",
+        `${document.location.origin}/${countryCode}/store-fleet/`
       );
-    } else if (url.indexOf("onelink.me/Zkxc/") > -1) {
-      return (
-        oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store-pay/`
+      return newUrl.href;
+    } else if (url.href.indexOf("onelink.me/Zkxc/") > -1) {
+      newUrl.searchParams.set(
+        "af_web_dp",
+        `${document.location.origin}/${countryCode}/store-pay/`
       );
-    } else if (url.indexOf("global-food-eater.onelink.me/4B2F/") > -1) {
-      return (
-        oldUrl +
-        `?pid=${pid}&c=${c}&rsc_source=${rscSource}&rsc_media=${rscMedia}&rsc_channel=${rscChannel}&rsc_product=${rscProduct}&af_channel=${af_channel}&af_c_id=${af_c_id}&af_adset_id=${af_adset_id}&af_ad_id=${af_ad_id}&af_keywords=${af_keywords}&af_siteid=${af_siteid}&af_web_dp=${document.location.origin}/${countryCode}/food/store-food-app/`
+      return newUrl.href;
+    } else if (url.href.indexOf("global-food-eater.onelink.me/4B2F/") > -1) {
+      newUrl.searchParams.set(
+        "af_web_dp",
+        `${document.location.origin}/${countryCode}/food/store-food-app`
       );
+      return newUrl.href;
     } else {
-      if (countryCode)
-        return (
-          oldUrl +
-          `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/${countryCode}/store/`
+      newUrl.searchParams.set("af_web_dp", `${document.location.origin}/store`);
+      if (countryCode) {
+        newUrl.searchParams.set(
+          "af_web_dp",
+          `${document.location.origin}/${countryCode}/store`
         );
-      return (
-        oldUrl +
-        `?pid=${pid}&c=${c}&af_channel=${utmSource}&af_c_id=${campaignId}&af_adset_id=${adgroupId}&af_ad_id=${creativeId}&af_keywords=${keyword}&af_siteid=${adPosition}&af_web_dp=${document.location.origin}/store/`
-      );
+      }
+      return newUrl.href;
     }
   }
 };
