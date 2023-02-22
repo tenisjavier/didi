@@ -303,6 +303,7 @@ const insertBtnParams = () => {
     newUrl.searchParams.set("af_ad_id", af_ad_id);
     newUrl.searchParams.set("af_c_id", af_c_id);
     newUrl.searchParams.set("af_channel", af_channel);
+    newUrl.searchParams.set("c", c);
     newUrl.searchParams.set("campaign", campaign);
     newUrl.searchParams.set("utm_medium", utmMedium);
     newUrl.searchParams.set("utm_source", utmSource);
