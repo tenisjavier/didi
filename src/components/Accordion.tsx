@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -7,6 +7,7 @@ import {
 } from "gatsby-source-contentful/rich-text";
 import RichContent from "./RichContent";
 import slugify from "react-slugify";
+import ConditionalWrapper from "./ConditionalWrapper";
 
 interface Accordion {
   title: string;
@@ -15,6 +16,7 @@ interface Accordion {
   bgColor: string;
   textColor: string;
   isClosed?: boolean;
+  type: string;
 }
 
 const Accordion = ({
@@ -24,6 +26,7 @@ const Accordion = ({
   textColor,
   normalText,
   isClosed,
+  type,
 }: Accordion) => {
   var [isOpen, setIsOpen] = useState(false);
   var [height, setHeight] = useState("0px");
@@ -50,7 +53,25 @@ const Accordion = ({
         }`}
         onClick={() => toggtle()}
       >
-        <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+        <ConditionalWrapper
+          condition={type === "faq"}
+          wrapper={ (children : any) => {
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <h3 itemProp="name" className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+              <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div itemProp="text">
+                  {children}
+                </div>
+              </div>
+            </div>
+              }
+            }
+        >
+          <Fragment>
+          <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+          </Fragment>
+        </ConditionalWrapper>
+        
         <FontAwesomeIcon
           icon={isOpen ? faMinusSquare : faPlusSquare}
           className={`text-${textColor} text-xl w-6`}
