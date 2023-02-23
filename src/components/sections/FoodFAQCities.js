@@ -3,7 +3,7 @@ import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
 const FoodFAQCities = ({data}) => {
-  const city = data.contentfulCity.name;
+  const city = JSON.stringify(data.name, "", 2).replace(/"/g, '');;
   const items = [
     {
       title: `¿Cómo pedir comida a domicilio en ${city} con DiDi Food?`,

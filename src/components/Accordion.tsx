@@ -46,50 +46,47 @@ const Accordion = ({
   };
   return (
     <section id={slugify(title)} className="w-full">
-      <div
-        aria-hidden="true"
-        className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded px-10 lg:px-20 ${
-          isOpen ? "bg-white" : bgColor
-        }`}
-        onClick={() => toggtle()}
-      >
-        <ConditionalWrapper
+      <ConditionalWrapper
           condition={type}
-          wrapper={ (children : any) => {
-            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-              <h3 itemProp="name" className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
-              <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <div itemProp="text">
-                  {children}
-                </div>
+          wrapper={(children: any) => 
+            <div>
+              <div
+                itemScope itemProp="mainEntity" itemType="https://schema.org/Question"
+                aria-hidden="true"
+                className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded px-10 lg:px-20 ${
+                isOpen ? "bg-white" : bgColor
+                }`}
+                onClick={() => toggtle()}
+              >
+                <h3 itemProp="name" className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+              <FontAwesomeIcon
+                icon={isOpen ? faMinusSquare : faPlusSquare}
+                className={`text-${textColor} text-xl w-6`}
+              />
               </div>
+                {children}
             </div>
-              }
             }
         >
           <Fragment>
-          <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+              <div
+                itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"
+                className={`accordion ${isOpen ? openClass : closeClass}`}
+                style={{ maxHeight: height }}
+                ref={content1}
+              >
+                <div itemProp="text">
+                  {content && <RichContent richContent={content}></RichContent>}
+                    {normalText &&
+                    normalText.split("\n").map((str, index) => (
+                  <p className="mb-5 text-lg" key={index}>
+                    {str}
+                  </p>
+              ))}
+                </div>
+              </div>
           </Fragment>
         </ConditionalWrapper>
-        
-        <FontAwesomeIcon
-          icon={isOpen ? faMinusSquare : faPlusSquare}
-          className={`text-${textColor} text-xl w-6`}
-        />
-      </div>
-      <div
-        className={`accordion ${isOpen ? openClass : closeClass}`}
-        style={{ maxHeight: height }}
-        ref={content1}
-      >
-        {content && <RichContent richContent={content}></RichContent>}
-        {normalText &&
-          normalText.split("\n").map((str, index) => (
-            <p className="mb-5 text-lg" key={index}>
-              {str}
-            </p>
-          ))}
-      </div>
     </section>
   );
 };
