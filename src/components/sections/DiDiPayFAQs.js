@@ -16,7 +16,7 @@ const DiDiPayFAQs = ({ title, data }) => {
     bgColor: t("DiDiPayFAQs.bgColor"),
     textColor: t("DiDiPayFAQs.textColor"),
     textAccordionColor: "orange-primary",
-    bgAccordionColor: "bg-gray-light",
+    bgAccordionColor: "bg-white",
     items: items,
   };
 

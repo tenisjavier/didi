@@ -1073,6 +1073,7 @@
   ],
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
+  "DiDiPayFAQs.bgColor": "bg-white",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
   "DiDiPayBlogHero.title": "Bienvenido al Blog de DiDi Pay",
   "DiDiPayBlogHero.desc": "Lee nuestros post de consejos financieros",
@@ -1093,6 +1094,39 @@
   "DiDiPrestamosHero.btnMode": "primary",
   "DiDiPrestamosHero.btnText": "Solicitar ahora",
   "DiDiPrestamosHero.btnLink": "",
+  "DiDiPrestamosBenefits.title": "¿Por qué elegir DiDi Préstamos?",
+  "DiDiPrestamosBenefits.desc": "DiDi se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
+  "DiDiPrestamosBenefits.bgColor": "bg-gray-light",
+  "DiDiPrestamosBenefits.columns": [
+    {
+      "title": "Tasas accesibles",
+      "desc": "desde 5% mensual",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Rápido y simple",
+      "desc": "El préstamo se refleja en minutos",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Fácil de usar",
+      "desc": "Requisitos sencillos",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    },
+    {
+      "title": "Flexible",
+      "desc": "Límite: MXN$300–30,000 \n Periodos: 15-91 días",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary",
+      "width": "w-64"
+    }
+  ],
   "DiDiPrestamosColumns.title": "¿Por qué elegir DiDi Préstamos?",
   "DiDiPrestamosColumns.desc": "DiDi se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
   "DiDiPrestamosColumns.bgColor": "bg-gray-light",

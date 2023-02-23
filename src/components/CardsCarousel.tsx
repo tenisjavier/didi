@@ -1,14 +1,23 @@
 import React, { useState, useRef, useEffect } from "react";
 import CardsCarouselItem, { CardsCarouselItemProps } from "./CardsCarouselItem";
-
+import Image from "./Image";
 export interface CardsCarouselProps {
   title: string;
   desc: string;
   bgColor?: string;
+  bgImage?: any;
+  bgImageStyle?: string;
   cards: CardsCarouselItemProps[];
 }
 
-const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
+const CardsCarousel = ({
+  title,
+  desc,
+  bgColor,
+  bgImage,
+  bgImageStyle,
+  cards,
+}: CardsCarouselProps) => {
   const [index, setIndex] = useState(0);
   const carouselRef = useRef(null);
 
@@ -26,8 +35,10 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
   }, [index]);
 
   return (
-    <section className={`w-full ${bgColor} py-10`}>
-      <div className="container mx-auto">
+    <section
+      className={`w-full flex ${bgColor} py-10 relative min-h-[40rem] items-center justify-center overflow-hidden`}
+    >
+      <div className="container mx-auto w-full z-10">
         <div className="flex justify-between mb-12 mx-4">
           <div>
             <h2 className="text-4xl font-bold py-4">{title}</h2>
@@ -54,7 +65,7 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
         </div>
         <div
           ref={carouselRef}
-          className="flex gap-8 snap-x w-full h-[500px]  overflow-x-auto lg:overflow-x-hidden px-8"
+          className="flex gap-8 snap-x w-full h-[500px]  overflow-x-hidden px-8"
         >
           {cards.map((card, index) => {
             return (
@@ -63,6 +74,7 @@ const CardsCarousel = ({ title, desc, bgColor, cards }: CardsCarouselProps) => {
           })}
         </div>
       </div>
+      {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
     </section>
   );
 };
