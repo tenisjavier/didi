@@ -54,7 +54,7 @@ const Accordion = ({
         onClick={() => toggtle()}
       >
         <ConditionalWrapper
-          condition={type === "faq"}
+          condition={type}
           wrapper={ (children : any) => {
             <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 itemProp="name" className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>

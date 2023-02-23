@@ -7,7 +7,7 @@ interface ConditionalWrapperProps {
 const ConditionalWrapper = ({ 
   condition, 
   wrapper, 
-  children 
+  children
 }: ConditionalWrapperProps) => {
   return(condition ? wrapper(children) : children);
 }
