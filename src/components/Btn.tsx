@@ -29,6 +29,7 @@ type BtnType =
   | "prestamosPax"
   | "prestamosDrv"
   | "bothPrestamos"
+  | "entregaBusiness"
   | "en";
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -110,6 +111,9 @@ const Btn = ({
   } else if (btnType === "prestamosDrv") {
     btnLink = btnData.prestamosDrvLink;
     btnText = btnText || btnData.prestamosDrvText;
+  } else if (btnType === "entregaBusiness") {
+    btnLink = btnData.entregaBusinessLink;
+    btnText = btnText || btnData.entregaBusinessText;
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
