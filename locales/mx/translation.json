@@ -1073,7 +1073,7 @@
   ],
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
-  "DiDiPayFAQs.bgColor": "bg-white",
+  "DiDiPayFAQs.bgColor": "bg-gray-light",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
   "DiDiPayBlogHero.title": "Bienvenido al Blog de DiDi Pay",
   "DiDiPayBlogHero.desc": "Lee nuestros post de consejos financieros",
@@ -1163,6 +1163,66 @@
   "DiDiPrestamosFeatures.bgColor": "bg-orange-primary",
   "DiDiPrestamosFeatures.textColor": "white",
   "DiDiPrestamosFeatures.btnMode": "light",
+  "DiDiPrestamosPaxGrid.bgColor": "bg-gray-light",
+  "DiDiPrestamosPaxGrid.title": "Soy Usuario: ¿Cómo solicito un préstamo en DiDi?",
+  "DiDiPrestamosPaxGrid.textColor": "gray-primary",
+  "DiDiPrestamosPaxGrid.columns": [
+    {
+      "title": "Abre la App de DiDi y abre el menú",
+      "desc": "No necesitas bajar una app extra.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Haz click en DiDi Préstamos",
+      "desc": "Si aún no puedes ver este servicio en la app, ¡no te preocupes! Pronto estaremos contigo.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuéntanos de Ti",
+      "desc": "INE/IFE",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuenta Beneficiario",
+      "desc": "Entra los datos correspondientes.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Solicita tu Préstamo Hoy",
+      "desc": "Espera un par de días para obtener respuesta",
+      "bgColor": "bg-gray-light"
+    }
+  ],
+  "DiDiPrestamosDrvGrid.bgColor": "bg-gray-light",
+  "DiDiPrestamosDrvGrid.title": "Soy Socio Conductor: ¿Cómo solicito un préstamo en DiDi?",
+  "DiDiPrestamosDrvGrid.textColor": "gray-primary",
+  "DiDiPrestamosDrvGrid.columns": [
+    {
+      "title": "Abre la App de DiDi Conductor y abre el menú",
+      "desc": "No necesitas bajar una app extra.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Haz click en DiDi Préstamos",
+      "desc": "Si aún no puedes ver este servicio en la app, ¡no te preocupes! Pronto estaremos contigo.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuéntanos de Ti",
+      "desc": "INE/IFE",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuenta Beneficiario",
+      "desc": "Entra los datos correspondientes.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Solicita tu Préstamo Hoy",
+      "desc": "Espera un par de días para obtener respuesta",
+      "bgColor": "bg-gray-light"
+    }
+  ],
   "PrestamosGuideSlider.title": "¿Cómo solicito un préstamo en DiDi?",
   "PrestamosGuideSlider.dataTitles": [
     {
@@ -1566,6 +1626,31 @@
       "btnText": "Ver documentación",
       "btnLink": "https://didipay.didiglobal.com/developer/docs/payment-solution/index.html?lang=en-us",
       "btnMode": "primary"
+    }
+  ],
+  "EntregaBusinessHero.title": " Con DiDi Entrega Business, envía todo lo que tus clientes necesiten. ",
+  "EntregaBusinessHero.desc": "Conoce el nuevo DiDi Entrega Business. Ahora podrás enviar varios paquetes a la vez y dar seguimiento a cada uno.",
+  "EntregaBusinessHero.textColor": "white",
+  "EntregaBusinessHero.btnMode": "light",
+  "EntregaBusinessColumns.bgColor": "bg-white",
+  "EntregaBusinessColumns.columns": [
+    {
+      "title": "Más paquetes en un mismo envío",
+      "desc": "Tienes la posibilidad de enviar hasta 10 paquetes simultáneamente",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "Funciones de Seguridad",
+      "desc": "Sigue en tiempo real tus envíos.",
+      "bgColor": "bg-green-primary",
+      "textColor": "white"
+    },
+    {
+      "title": "Económico y Práctico",
+      "desc": "Realiza envíos desde $20MXN usando tu computadora.",
+      "bgColor": "bg-gray-primary",
+      "textColor": "white"
     }
   ]
 }
