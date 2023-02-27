@@ -19,6 +19,7 @@ const HelpCenterFAQTaxi = ({ data }) => {
       bgAccordionColor="bg-gray-light"
       title={title}
       items={items}
+      type="faq"
     ></AccordionSection>
   );
 };

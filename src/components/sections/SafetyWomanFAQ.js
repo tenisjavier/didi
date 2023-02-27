@@ -18,6 +18,7 @@ const SafetyWomanFAQ = ({ faq }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-gray-light",
     items: items,
+    type: "faq"
   };
 
   return <AccordionSection {...props}></AccordionSection>;

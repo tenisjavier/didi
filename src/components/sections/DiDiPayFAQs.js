@@ -18,6 +18,7 @@ const DiDiPayFAQs = ({ title, data }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-white",
     items: items,
+    type: "faq"
   };
 
   return <AccordionSection {...props}></AccordionSection>;

@@ -18,6 +18,7 @@ const HelpCenterFAQ = ({ data, isClosed }) => {
     bgAccordionColor: "bg-white",
     items: items,
     isClosed: isClosed,
+    type: "faq"
   };
 
   return <AccordionSection {...props}></AccordionSection>;
