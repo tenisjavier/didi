@@ -1073,7 +1073,7 @@
   ],
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
-  "DiDiPayFAQs.bgColor": "bg-white",
+  "DiDiPayFAQs.bgColor": "bg-gray-light",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
   "DiDiPayBlogHero.title": "Bienvenido al Blog de DiDi Pay",
   "DiDiPayBlogHero.desc": "Lee nuestros post de consejos financieros",
@@ -1163,6 +1163,66 @@
   "DiDiPrestamosFeatures.bgColor": "bg-orange-primary",
   "DiDiPrestamosFeatures.textColor": "white",
   "DiDiPrestamosFeatures.btnMode": "light",
+  "DiDiPrestamosPaxGrid.bgColor": "bg-gray-light",
+  "DiDiPrestamosPaxGrid.title": "Soy Usuario: ¿Cómo solicito un préstamo en DiDi?",
+  "DiDiPrestamosPaxGrid.textColor": "gray-primary",
+  "DiDiPrestamosPaxGrid.columns": [
+    {
+      "title": "Abre la App de DiDi y abre el menú",
+      "desc": "No necesitas bajar una app extra.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Haz click en DiDi Préstamos",
+      "desc": "Si aún no puedes ver este servicio en la app, ¡no te preocupes! Pronto estaremos contigo.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuéntanos de Ti",
+      "desc": "INE/IFE",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuenta Beneficiario",
+      "desc": "Entra los datos correspondientes.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Solicita tu Préstamo Hoy",
+      "desc": "Espera un par de días para obtener respuesta",
+      "bgColor": "bg-gray-light"
+    }
+  ],
+  "DiDiPrestamosDrvGrid.bgColor": "bg-gray-light",
+  "DiDiPrestamosDrvGrid.title": "Soy Socio Conductor: ¿Cómo solicito un préstamo en DiDi?",
+  "DiDiPrestamosDrvGrid.textColor": "gray-primary",
+  "DiDiPrestamosDrvGrid.columns": [
+    {
+      "title": "Abre la App de DiDi Conductor y abre el menú",
+      "desc": "No necesitas bajar una app extra.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Haz click en DiDi Préstamos",
+      "desc": "Si aún no puedes ver este servicio en la app, ¡no te preocupes! Pronto estaremos contigo.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuéntanos de Ti",
+      "desc": "INE/IFE",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Cuenta Beneficiario",
+      "desc": "Entra los datos correspondientes.",
+      "bgColor": "bg-gray-light"
+    },
+    {
+      "title": "Solicita tu Préstamo Hoy",
+      "desc": "Espera un par de días para obtener respuesta",
+      "bgColor": "bg-gray-light"
+    }
+  ],
   "PrestamosGuideSlider.title": "¿Cómo solicito un préstamo en DiDi?",
   "PrestamosGuideSlider.dataTitles": [
     {
