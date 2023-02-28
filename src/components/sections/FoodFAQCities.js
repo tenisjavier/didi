@@ -2,7 +2,8 @@ import React from "react";
 import { t } from "../../context/countryContext";
 import AccordionSection from "../AccordionSection";
 
-const FoodFAQCities = ({ city }) => {
+const FoodFAQCities = ({data}) => {
+  const city = JSON.stringify(data.name, "", 2).replace(/"/g, '');;
   const items = [
     {
       title: `¿Cómo pedir comida a domicilio en ${city} con DiDi Food?`,
@@ -14,7 +15,7 @@ const FoodFAQCities = ({ city }) => {
     },
     {
       title: `¿Qué restaurantes llevan comida domicilio en ${city}`,
-      normalText: `En el App de DiDifood encontraras mas de null restaurantes con entrega a domicilio en ${city}`,
+      normalText: `En el App de DiDifood encontraras mas de 500 restaurantes con entrega a domicilio en ${city}`,
     },
     {
       title: `¿Hace DiDi Food entregas de comida en ${city}?`,
@@ -34,9 +35,25 @@ const FoodFAQCities = ({ city }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-white",
     items: items,
+    type: "faq",
   };
 
   return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default FoodFAQCities;
+
+// export const query = graphql`
+//   query ($id: String) {
+//     contentfulFaq(id: { eq: $id }) {
+//       id
+//       sys {
+//         contentType {
+//           sys {
+//             id
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

@@ -9,6 +9,7 @@ import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantC
 import FoodMunicipalityList from "../../components/sections/FoodMunicipalityList";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
+import FoodFAQCities from "../../components/sections/FoodFAQCities";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -77,6 +78,7 @@ const FoodCity = ({ data }) => {
       ></FoodCityBannerCTA3>
       {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
       <FoodNeighborhoodList data={neighbourhoods}></FoodNeighborhoodList>
+      <FoodFAQCities data={data.contentfulMunicipality.city}></FoodFAQCities>
     </Layout>
   );
 };

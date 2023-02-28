@@ -11,7 +11,8 @@ const AccordionSection = (props) => {
     textColor,
     textAccordionColor,
     isClosed,
-    RTL
+    RTL,
+    type
   } = props;
 
   let dir = "ltr";
@@ -39,6 +40,7 @@ const AccordionSection = (props) => {
                 textColor={textAccordionColor}
                 key={index}
                 isClosed={isClosed}
+                type={type}
               ></Accordion>
             );
           })}

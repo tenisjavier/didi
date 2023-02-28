@@ -21,6 +21,7 @@ const HelpCenterFAQDelivery = ({ data }) => {
       title="DiDi Entrega"
       desc={desc}
       items={items}
+      type="faq"
     ></AccordionSection>
   );
 };

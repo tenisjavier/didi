@@ -9,6 +9,7 @@ const Requirements = ({ data }) => {
     textColor: t("Requirements.textColor"),
     bgAccordionColor: "bg-white",
     textAccordionColor: "orange-primary",
+    type: "req"
   };
   let items = [];
   data.forEach((node) => {

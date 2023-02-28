@@ -20,6 +20,7 @@ const DiDiAmigoFAQ = ({ faqs }) => {
       bgAccordionColor="bg-gray-light"
       title={title}
       items={items}
+      type="faq"
     ></AccordionSection>
   );
 };

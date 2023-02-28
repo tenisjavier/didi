@@ -19,6 +19,7 @@ const FoodFAQ = ({ data, title, desc }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-gray-light",
     items: items,
+    type: "faq"
   };
 
   return <AccordionSection {...props}></AccordionSection>;
