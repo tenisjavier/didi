@@ -1,4 +1,4 @@
-import React, { useState, useRef, Fragment } from "react";
+import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -46,61 +46,62 @@ const Accordion = ({
   };
   return (
     <section id={slugify(title)} className="w-full">
-      { type === "faq" ?
-        <ConditionalWrapper
-            condition={true}
-            wrapper={(children: any) => 
-              <div>
-                <div
-                  itemScope itemProp="mainEntity" itemType="https://schema.org/Question"
-                  aria-hidden="true"
-                  className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded border-solid border-gray-light px-10 lg:px-20 ${
-                  isOpen ? "bg-white border-none" : bgColor
-                  }`}
-                  onClick={() => toggtle()}
-                >
-                  <h3 itemProp="name" className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
-                <FontAwesomeIcon
-                  icon={isOpen ? faMinusCircle : faPlusCircle}
-                  className={`text-${textColor} text-xl w-6`}
-                />
-                </div>
-                  {children}
-              </div>
-              }
+      <ConditionalWrapper
+        condition={type === "faq"}
+        wrapper={(children) => (
+          <div
+            itemScope
+            itemProp="mainEntity"
+            itemType="https://schema.org/Question"
           >
-            <Fragment>
+            {children}
+          </div>
+        )}
+      >
+        <>
+          <div
+            aria-hidden="true"
+            className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded  border-solid border-gray-light px-10 lg:px-20 ${
+              isOpen ? "bg-white border-none" : bgColor
+            }`}
+            onClick={() => toggtle()}
+          >
+            <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+            <FontAwesomeIcon
+              icon={isOpen ? faMinusCircle : faPlusCircle}
+              className={`text-${textColor} text-xl w-6`}
+            />
+          </div>
+          <div
+            className={`accordion ${isOpen ? openClass : closeClass}`}
+            style={{ maxHeight: height }}
+            ref={content1}
+          >
+            <ConditionalWrapper
+              condition={type === "faq"}
+              wrapper={(children) => (
                 <div
-                  itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"
-                  className={`accordion ${isOpen ? openClass : closeClass}`}
-                  style={{ maxHeight: height }}
-                  ref={content1}
+                  itemScope
+                  itemProp="acceptedAnswer"
+                  itemType="https://schema.org/Answer"
                 >
-                  <div itemProp="text">
-                    {content && <RichContent richContent={content}></RichContent>}
-                      {normalText &&
-                      normalText.split("\n").map((str, index) => (
+                  <div itemProp="text">{children}</div>
+                </div>
+              )}
+            >
+              <>
+                {content && <RichContent richContent={content}></RichContent>}
+                {normalText &&
+                  normalText.split("\n").map((str, index) => (
                     <p className="mb-5 text-lg" key={index}>
                       {str}
                     </p>
-                ))}
-                  </div>
-                </div>
-            </Fragment>
-          </ConditionalWrapper>
-        :   //? TAKES PLACE WHEN TYPE ! "faq"
-          <>
-            <div itemProp="text">
-              {content && <RichContent richContent={content}></RichContent>}
-              {normalText &&
-                normalText.split("\n").map((str, index) => (
-                  <p className="mb-5 text-lg" key={index}>
-                    {str}
-                  </p>
-                ))}
-            </div>
-          </>
-        }
+                  ))}
+              </>
+            </ConditionalWrapper>
+          </div>
+        </>
+      </ConditionalWrapper>
     </section>
   );
 };
