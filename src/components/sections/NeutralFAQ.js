@@ -1,5 +1,5 @@
 import React from "react";
-import AccordionNeutralSection from "../AccordionNeutralSection";
+import AccordionSection from "../AccordionSection";
 import { t } from "../../context/countryContext";
 
 const NeutralFAQ = ({ faqs, faqTitle }) => {
@@ -8,22 +8,22 @@ const NeutralFAQ = ({ faqs, faqTitle }) => {
   data.forEach((con, index) => {
     items.push({
       title: con.title,
-      content: con.content,
+      normalText: con.content,
     });
   });
 
   const title = faqTitle || "Preguntas frecuentes";
-
-  return (
-    <AccordionNeutralSection
-      bgColor="bg-white"
-      textColor="gray-primary"
-      textAccordionColor="orange-primary"
-      bgAccordionColor="bg-gray-light"
-      title={title}
-      items={items}
-    ></AccordionNeutralSection>
-  );
+  const props = {
+    title: title,
+    bgColor: "bg-white",
+    textColor: "gray-primary",
+    textAccordionColor: "orange-primary",
+    bgAccordionColor: "bg-gray-light",
+    title: title,
+    items: items,
+    type: "faq",
+  };
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default NeutralFAQ;
