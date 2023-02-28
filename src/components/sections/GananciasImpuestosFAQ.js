@@ -1,5 +1,5 @@
 import React from "react";
-import AccordionNeutralSection from "../AccordionNeutralSection";
+import AccordionSection from "../AccordionSection";
 import { t } from "../../context/countryContext";
 
 const GananciasImpuestosFAQ = () => {
@@ -8,25 +8,22 @@ const GananciasImpuestosFAQ = () => {
   data.forEach((con, index) => {
     items.push({
       title: con.title,
-      content: con.content,
+      normalText: con.content,
     });
   });
 
-  const title = "Impuestos";
-  const desc =
-    "Los impuestos que retiene / traslada la aplicación de manera diaria por obligación fiscal son los siguientes:";
+  const props = {
+    title: "Impuestos",
+    desc: "Los impuestos que retiene / traslada la aplicación de manera diaria por obligación fiscal son los siguientes:",
+    bgColor: t("HelpCenterFAQDrv.bgColor"),
+    textColor: t("HelpCenterFAQDrv.textColor"),
+    textAccordionColor: "orange-primary",
+    bgAccordionColor: "bg-gray-light",
+    items: items,
+    type: "faq",
+  };
 
-  return (
-    <AccordionNeutralSection
-      bgColor="bg-white"
-      textColor="gray-primary"
-      textAccordionColor="orange-primary"
-      bgAccordionColor="bg-gray-light"
-      title={title}
-      desc={desc}
-      items={items}
-    ></AccordionNeutralSection>
-  );
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default GananciasImpuestosFAQ;

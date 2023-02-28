@@ -1,5 +1,5 @@
 import React from "react";
-import AccordionNeutralSection from "../AccordionNeutralSection";
+import AccordionSection from "../AccordionSection";
 import { t } from "../../context/countryContext";
 
 const GananciasConceptosFAQ = () => {
@@ -8,22 +8,20 @@ const GananciasConceptosFAQ = () => {
   data.forEach((con, index) => {
     items.push({
       title: con.title,
-      content: con.content,
+      normalText: con.content,
     });
   });
 
-  const title = "Conoce los conceptos básicos de tus ganancias en DiDi";
-
-  return (
-    <AccordionNeutralSection
-      bgColor="bg-white"
-      textColor="gray-primary"
-      textAccordionColor="orange-primary"
-      bgAccordionColor="bg-gray-light"
-      title={title}
-      items={items}
-    ></AccordionNeutralSection>
-  );
+  const props = {
+    bgColor: "bg-white",
+    textColor: "gray-primary",
+    textAccordionColor: "orange-primary",
+    bgAccordionColor: "bg-gray-light",
+    title: "Conoce los conceptos básicos de tus ganancias en DiDi",
+    items: items,
+    type: "faq",
+  };
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default GananciasConceptosFAQ;
