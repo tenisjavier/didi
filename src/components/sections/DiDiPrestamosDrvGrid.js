@@ -19,7 +19,7 @@ const DiDiPrestamosDrvGrid = ({ images }) => {
         alt={images[index].description}
         width={700}
         height={700}
-        className="z-10 m-4 w-64"
+        className="z-10 m-8"
       ></GatsbyImage>
     );
   });
