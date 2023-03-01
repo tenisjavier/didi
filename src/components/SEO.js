@@ -120,7 +120,10 @@ const SEO = ({ title, desc, index, schema }) => {
   const htmlAttributes = {
     lang: `${lang}-${countryCode.toUpperCase().slice(0, 2)}`,
   };
-  if (schema === "faq") htmlAttributes.itemType = "https://schema.org/FAQPage";
+  if (schema === "faq") {
+    htmlAttributes.itemScope = "";
+    htmlAttributes.itemType = "https://schema.org/FAQPage";
+  }
 
   return (
     <>
