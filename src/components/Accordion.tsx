@@ -66,7 +66,12 @@ const Accordion = ({
             }`}
             onClick={() => toggtle()}
           >
-            <h3 className={`text-${textColor} text-md md:text-2xl`}>{title}</h3>
+            <h3
+              className={`text-${textColor} text-md md:text-2xl`}
+              itemProp="name"
+            >
+              {title}
+            </h3>
             <FontAwesomeIcon
               icon={isOpen ? faMinusCircle : faPlusCircle}
               className={`text-${textColor} text-xl w-6`}
