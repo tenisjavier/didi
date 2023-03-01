@@ -56,6 +56,7 @@ const FoodCity = ({ data }) => {
       title={`Pide Comida a Domicilio  en ${name} CDMX`}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
       customBreadcrumb={customBreadcrumb}
+      schema="faq"
     >
       <FoodCityHero
         bgImage={foodHeroBgImage}
