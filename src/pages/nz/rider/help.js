@@ -18,7 +18,7 @@ const HelpCenter = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout schema="faq">
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
       <HomeColumns images={homeColumnsImages}></HomeColumns>

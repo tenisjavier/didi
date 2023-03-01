@@ -8,7 +8,7 @@ import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
 
-const SEO = ({ title, desc, index }) => {
+const SEO = ({ title, desc, index, schema }) => {
   const data = useStaticQuery(graphql`
     {
       allContentfulCountry(
@@ -117,12 +117,14 @@ const SEO = ({ title, desc, index }) => {
   //   setIsVisible(false);
   // };
 
+  const htmlAttributes = {
+    lang: `${lang}-${countryCode.toUpperCase().slice(0, 2)}`,
+  };
+  if (schema === "faq") htmlAttributes.itemType = "https://schema.org/FAQPage";
+
   return (
     <>
-      <Helmet
-        htmlAttributes={{ lang: `${lang}-${countryCode.toUpperCase().slice(0,2)}` }}
-        title={title}
-      >
+      <Helmet htmlAttributes={htmlAttributes} title={title}>
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") || !index ? (

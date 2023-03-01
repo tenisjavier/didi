@@ -20,7 +20,7 @@ const CentroDeAyuda = ({ data }) => {
   );
 
   return (
-    <Layout>
+    <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
       <FoodFaqList title="Repartidores" faqs={faqDelivery[0].faq}></FoodFaqList>
       <FoodFaqList
