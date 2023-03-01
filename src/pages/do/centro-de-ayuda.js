@@ -17,7 +17,7 @@ const CentroDeAyuda = ({ data }) => {
     (node) => node.name === "DiDi Pasajero R. Dominicana"
   );
   return (
-    <Layout>
+    <Layout schema="faq">
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>

@@ -30,7 +30,7 @@ const DiDiPayFAQ = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout schema="faq">
       <DiDiPayHero
         bgImage={homeHeroBgImage}
         image={homeHeroImage}

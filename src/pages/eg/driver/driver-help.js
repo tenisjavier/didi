@@ -13,7 +13,7 @@ const HelpCenter = ({ data }) => {
     (node) => node.name === "DiDi Express Egypt"
   );
   return (
-    <Layout>
+    <Layout schema="faq">
       <HelpCenterHeroRTL bgImage={helpCenterBgImage}></HelpCenterHeroRTL>
       <HelpCenterFAQDrvRTL data={faqExpress[0]}></HelpCenterFAQDrvRTL>
     </Layout>

@@ -21,7 +21,7 @@ const CentroDeAyuda = ({ data }) => {
   );
 
   return (
-    <Layout>
+    <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
       <FoodFAQ title="Repartidores" desc=" " data={faqDelivery[0]}></FoodFAQ>
       <FoodFAQ title="Operaciones" desc=" " data={faqOperations[0]}></FoodFAQ>
