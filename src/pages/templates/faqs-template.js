@@ -38,7 +38,7 @@ const FaqsTemplate = ({ data }) => {
       ></FoodFaqHero>
     );
   return (
-    <Layout>
+    <Layout schema="faq">
       {hero}
       <FaqContent title={title} content={content}></FaqContent>
       {productFaqs && (
