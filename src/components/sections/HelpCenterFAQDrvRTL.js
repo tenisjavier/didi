@@ -18,7 +18,8 @@ const HelpCenterFAQDrvRTL = ({ data }) => {
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-gray-light",
     items: items,
-    RTL: true
+    RTL: true,
+    type: "faq"
   };
 
   return <AccordionSection {...props}></AccordionSection>;

@@ -8,6 +8,7 @@ import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodCityList from "../../components/sections/FoodCityList";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+import FoodFAQCities from "../../components/sections/FoodFAQCities";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -45,6 +46,7 @@ const FoodCity = ({ data }) => {
       title={`Pide Comida a Domicilio  en ${name} CDMX`}
       desc={`¿Qué se te antoja en este momento? Pide tu Comida a Domicilio en ${name} CDMX por DiDi Food y disfruta de los mejores restaurantes de Tláhuac, en minutos.`}
       customBreadcrumb={customBreadcrumb}
+      schema="faq"
     >
       <FoodCityHero
         bgImage={foodHeroBgImage}
@@ -68,6 +70,7 @@ const FoodCity = ({ data }) => {
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
       {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
+      <FoodFAQCities data={data.contentfulCity}></FoodFAQCities>
     </Layout>
   );
 };

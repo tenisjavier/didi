@@ -1,6 +1,6 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import AccordionOpenedSection from "../AccordionOpenedSection";
+import AccordionSection from "../AccordionSection";
 
 const FatiguePreventionFAQ = ({ data }) => {
   let items = [];
@@ -20,7 +20,7 @@ const FatiguePreventionFAQ = ({ data }) => {
     items: items,
   };
 
-  return <AccordionOpenedSection {...props}></AccordionOpenedSection>;
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default FatiguePreventionFAQ;

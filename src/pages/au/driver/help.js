@@ -18,7 +18,7 @@ const HelpCenter = ({ data }) => {
     return image.title.indexOf("au.HomeColumns.image") !== -1;
   });
   return (
-    <Layout>
+    <Layout schema="faq">
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <HomeColumns images={homeColumnsImages}></HomeColumns>

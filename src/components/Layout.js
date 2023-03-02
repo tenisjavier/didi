@@ -20,6 +20,7 @@ const Layout = ({
   sbDesc,
   sbCTA,
   password,
+  schema,
   children,
 }) => {
   const { pathname } = useLocation();
@@ -60,7 +61,7 @@ const Layout = ({
 
   const pageContent = (
     <>
-      <Seo title={title} desc={desc} index={index}></Seo>
+      <Seo title={title} desc={desc} index={index} schema={schema}></Seo>
       <Header customBreadcrumb={customBreadcrumb}></Header>
       {children}
       {sb && (

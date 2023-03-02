@@ -333,6 +333,8 @@ const insertBtnParams = () => {
       url.href.indexOf("me/5xQ3/") > -1 ||
       url.href.indexOf("page.didiglobal.com/driver-page/register") > -1
     ) {
+      if (window.location.href.indexOf("/mx/prestamos") !== -1)
+        return newUrl.href;
       newUrl.searchParams.set("af_r", form_url);
       return newUrl.href;
     } else if (url.href.indexOf("me/zzaY/") > -1) {
