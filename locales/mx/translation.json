@@ -1653,7 +1653,7 @@
       "textColor": "white"
     }
   ],
-  "EntregaBusinessGrid.bgColor": "bg-white",
+  "EntregaBusinessGrid.bgColor": "bg-gray-light",
   "EntregaBusinessGrid.textColor": "gray-primary",
   "EntregaBusinessGrid.columns": [
     {
@@ -1698,5 +1698,10 @@
       "textColor": "gray-primary",
       "width": "w-80"
     }
-  ]
+  ],
+  "EntregaBusinessDeliveryCTA.title": "¿Tienes una moto o bicicleta? ¡Conviértete en repartidor!",
+  "EntregaBusinessDeliveryCTA.desc": "Empieza a generar ganancias con DiDi Entrega Business o con DiDi Food. ¡Y lo mejor es que tú eliges cuándo y dónde repartir!",
+  "EntregaBusinessDeliveryCTA.btnLink": "/mx/seguridad/pasajeros/",
+  "EntregaBusinessDeliveryCTA.btnMode": "primary",
+  "EntregaBusinessDeliveryCTA.btnText": "Conoce más"
 }
