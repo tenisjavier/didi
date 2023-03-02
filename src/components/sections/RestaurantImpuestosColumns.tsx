@@ -10,10 +10,10 @@ import {
 import OneColumnsSection, { OneColumnsSectionProps } from "../OneColumnSection";
 
 interface RestaurantImpuestosColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
 }
 

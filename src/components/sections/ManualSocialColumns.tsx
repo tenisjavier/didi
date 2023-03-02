@@ -4,10 +4,10 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface ManualSocialColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
 }
 

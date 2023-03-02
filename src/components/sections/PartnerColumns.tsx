@@ -10,10 +10,10 @@ import {
 import LinkColumnSection, { ColumnsSectionProps } from "../LinkColumnSection";
 
 interface PartnerColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
   icons: any[];
   title?: string;

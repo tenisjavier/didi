@@ -1,6 +1,5 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
@@ -13,7 +12,7 @@ interface HomeColumnsProps {
   images: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
 }
 
@@ -24,26 +23,25 @@ const FleetColumns = ({ images }: HomeColumnsProps) => {
     columns: t("FleetColumns.columns", { returnObjects: true }),
   };
 
+  console.log(images);
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-4 w-48"
-        ></GatsbyImage>
-      );
+      col.image = images[index];
+      col.imageStyle = "z-10 m-4 w-48";
+      col.isImage = true;
     });
   } else {
+    props.columns[0].isImage = false;
     props.columns[0].image = (
       <FontAwesomeIcon icon={faQuoteRight} size="3x" className="w-12" />
     );
 
+    props.columns[1].isImage = false;
     props.columns[1].image = (
       <FontAwesomeIcon icon={faExclamationCircle} size="3x" className="w-12" />
     );
 
+    props.columns[2].isImage = false;
     props.columns[2].image = (
       <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" className="w-12" />
     );
