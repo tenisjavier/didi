@@ -1628,8 +1628,8 @@
       "btnMode": "primary"
     }
   ],
-  "EntregaBusinessHero.title": " Con DiDi Entrega Business, envía todo lo que tus clientes necesiten. ",
-  "EntregaBusinessHero.desc": "Conoce el nuevo DiDi Entrega Business. Ahora podrás enviar varios paquetes a la vez y dar seguimiento a cada uno.",
+  "EntregaBusinessHero.title": "DiDi Entrega Business: envía todo lo que tus clientes necesiten.",
+  "EntregaBusinessHero.desc": "Conoce este nuevo servicio con el que podrás enviar varios paquetes a la vez y rastrearlos.",
   "EntregaBusinessHero.textColor": "white",
   "EntregaBusinessHero.btnMode": "light",
   "EntregaBusinessColumns.bgColor": "bg-white",
@@ -1651,6 +1651,52 @@
       "desc": "Realiza envíos desde $20MXN usando tu computadora.",
       "bgColor": "bg-gray-primary",
       "textColor": "white"
+    }
+  ],
+  "EntregaBusinessGrid.bgColor": "bg-white",
+  "EntregaBusinessGrid.textColor": "gray-primary",
+  "EntregaBusinessGrid.columns": [
+    {
+      "title": "Excelentes Promociones",
+      "desc": "¡Obtén un 30% de descuento al solicitar dos o más envíos simultáneos!",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Código de seguridad",
+      "desc": "Tu cliente recibirá un PIN y tendrá que compartirlo para aceptar el paquete",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Flexibilidad en Pagos",
+      "desc": "Elige pagar con efectivo o tarjeta de crédito o débito",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Envíos simultáneos",
+      "desc": "Envía hasta 10 paquetes al mismo tiempo",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Facilidad",
+      "desc": "Un repartidor podría entregar hasta 4 pedidos en ubicaciones cercanas",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Comodidad",
+      "desc": "Envía paquetes fácilmente desde tu computadora. ¡Es más ágil y práctico!",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
     }
   ]
 }
