@@ -3,9 +3,9 @@ import React from "react";
 import { Link } from "gatsby";
 import Image from "../Image"
 import { t } from "../../context/countryContext";
-import ColumnNoLimitSection, {
+import ColumnSection, {
   ColumnsSectionProps,
-} from "../ColumnNoLimitSection";
+} from "../ColumnSection";
 
 interface TaxAdviceColumnsProps {
   images?: {
@@ -33,7 +33,7 @@ const TaxAdviceColumns = ({ images }: TaxAdviceColumnsProps) => {
     }
   });
 
-  return <ColumnNoLimitSection {...props}></ColumnNoLimitSection>;
+  return <ColumnSection {...props}></ColumnSection>;
 };
 
 export default TaxAdviceColumns;
