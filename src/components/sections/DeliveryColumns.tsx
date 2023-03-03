@@ -1,15 +1,13 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faZap } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface DeliveryColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
   icons: any[];
 }
@@ -23,15 +21,12 @@ const DeliveryColumns = ({ images, icons }: DeliveryColumnsProps) => {
 
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-2 w-72"
-        ></GatsbyImage>
-      );
+      col.imageStyle = "z-10 m-2 w-72";
+      col.isImage = true;
+      col.image = images[index];
     });
+
+    
   } else if (icons) {
     props.columns.forEach((col, index) => {
       col.image = <FontAwesomeIcon icon={icons[index]} size="3x" />;

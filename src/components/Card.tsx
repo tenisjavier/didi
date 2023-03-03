@@ -1,12 +1,10 @@
 import React, { ReactNode } from "react";
-import reactMarkdown from "react-markdown";
 import Btn, { BtnProps } from "./Btn";
 import Truncate from "react-truncate";
 import AnimatedNumber from "../components/AnimatedNumber";
+import Image from "../components/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faClock
-} from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
@@ -16,9 +14,12 @@ export interface CardProps extends BtnProps {
   desc?: string;
   bgColor: string;
   textColor: string;
-  image: React.ReactNode;
+  image: any;
+  imageStyle?: string;
+  isImage?: boolean;
   height?: string;
   insideHeight?: string;
+  truncate?: boolean;
   width?: string;
   index?: number;
   btnText2?: string;
@@ -42,8 +43,11 @@ const Card = (props: CardProps) => {
     bgColor,
     textColor,
     image,
+    imageStyle,
+    isImage,
     height,
     insideHeight,
+    truncate,
     width,
     btnLink,
     btnMode,
@@ -61,31 +65,42 @@ const Card = (props: CardProps) => {
     numberTitle,
     afterTitle,
     timeToRead,
-    RTL
+    RTL,
   } = props;
 
   let min = "";
-  if(timeToRead) {
-      min = "min";
-    if(Number(timeToRead) > 1) {
+  if (timeToRead) {
+    min = "min";
+    if (Number(timeToRead) > 1) {
       min = "mins";
     }
   }
 
-  let dir : any = "ltr";
+  let dir: any = "ltr";
 
-  if(RTL) {
+  if (RTL) {
     dir = "rtl";
   }
 
+  let isTruncate = <Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>;
+
+  if(!truncate && desc) {
+    isTruncate = <>{desc.split("\n").map((str) => <p className="text-center md:text-left">{str}</p>)}</>;
+  }
+
   return (
-    <div style={{direction: dir}}
+
+    <div
+      style={{ direction: dir }}
       className={` max-w-xs   rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
-      <div className="mb-5">{image}</div>
-
+      <div className="mb-5">
+        {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
+        {!isImage && image}
+      </div>
+      
       <div
-        className={`flex ${height} flex-col items-center justify-between px-6 py-4 text-center`}
+        className={`flex ${height} ${width} flex-col items-center justify-between px-6 py-4 text-center`}
       >
         <div className={`mb-4 ${insideHeight} `}>
           {animatedNumber && (
@@ -100,11 +115,8 @@ const Card = (props: CardProps) => {
             <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
           )}
           <p className={"text-lg"}></p>
-          {desc && (
-            <Truncate lines={8} ellipsis={<span>...</span>}>
-              {desc}
-            </Truncate>
-          )}
+          {desc && isTruncate}
+          
           {offer && (
             <p className="block">
               <span className="inline-block align-top">{offerTextBefore}</span>
@@ -120,9 +132,14 @@ const Card = (props: CardProps) => {
             small.split("\n").map((str) => <p className="text-start">{str}</p>)}
         </div>
         {timeToRead && (
-          <p><FontAwesomeIcon icon={faClock} className="w-3" /> <span>{timeToRead} {min}</span> </p>
+          <p>
+            <FontAwesomeIcon icon={faClock} className="w-3" />{" "}
+            <span>
+              {timeToRead} {min}
+            </span>{" "}
+          </p>
         )}
-        
+
         <div className="flex justify-center flex-col">
           <Btn
             btnType={btnType}

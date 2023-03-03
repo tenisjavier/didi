@@ -10,10 +10,10 @@ import {
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface FoodSafetyColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
   icons: any[];
 }
