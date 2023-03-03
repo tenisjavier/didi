@@ -771,5 +771,12 @@
   "PaxBanner.btnMode": "light",
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
   "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/",
-  "RepartidorHero.btnMode": "primary"
+  "RepartidorHero.btnMode": "primary",
+  "SmsCTA.title": "Planeja todo tu viaje desde la app",
+  "SmsCTA.desc": "Organiza tu escapada desde donde estés y descubre ofertas en la app.",
+  "SmsCTA.bgColor": "bg-white",
+  "SmsCTA.textColor": "gray-primary",
+  "SmsCTA.btnMode": "primary",
+  "SmsCTA.formTitle": "Recibe un enlace para descargarla",
+  "SmsCTA.formNote": "Al proporcionar tu número, aceptas recibir un mensaje de texto único automatizado con un enlace para descargarla app. Podrían aplicarse tarifas estándar de mensajes de texto"
 }

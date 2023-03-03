@@ -4,6 +4,9 @@ import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
+import ConditionalWrapper from "./ConditionalWrapper";
+import IntlTelInput from 'react-intl-tel-input';
+import 'react-intl-tel-input/dist/main.css';
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
 // @props for images: bgImage (optional) | image - if you want an image next to the text
@@ -34,6 +37,8 @@ export interface CTAProps extends BtnProps {
   }[];
   reverse?: boolean;
   RTL?: boolean;
+  smsFormTitle?: string;
+  smsFormNote?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -62,6 +67,8 @@ const CTASection = (props: CTAProps) => {
     reverse,
     btnModeSecondary,
     RTL,
+    smsFormTitle,
+    smsFormNote,
   } = props;
 
   let sectionBtn = (
@@ -228,7 +235,22 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          {sectionBtn}
+          <ConditionalWrapper condition={btnType === "submit"} wrapper={(children) => (
+            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div className="mb-4">
+                <IntlTelInput
+                  containerClassName="intl-tel-input"
+                  inputClassName="form-control"
+                  fieldName="Teléfono"
+                  autoPlaceholder = {true}
+                />,
+                {children}
+                <p className="text-xs">{smsFormNote}</p>
+              </div>
+            </form>
+          )}>
+            <>{sectionBtn}</>
+          </ConditionalWrapper>
         </div>
       </div>
       {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
