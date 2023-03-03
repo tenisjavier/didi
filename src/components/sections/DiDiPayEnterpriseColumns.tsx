@@ -1,14 +1,13 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface DiDiPayEnterpriseColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
   icons: any[];
 }
@@ -25,14 +24,9 @@ const DiDiPayEnterpriseColumns = ({
 
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-2 w-72"
-        ></GatsbyImage>
-      );
+      col.image = images[index];
+      col.imageStyle = "z-10 m-4 w-48";
+      col.isImage = true;
     });
   } else {
     props.columns.forEach((col, index) => {

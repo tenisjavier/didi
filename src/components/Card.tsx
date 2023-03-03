@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
-import reactMarkdown from "react-markdown";
 import Btn, { BtnProps } from "./Btn";
 import Truncate from "react-truncate";
 import AnimatedNumber from "../components/AnimatedNumber";
+import Image from "../components/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,9 +14,12 @@ export interface CardProps extends BtnProps {
   desc?: string;
   bgColor: string;
   textColor: string;
-  image: React.ReactNode;
+  image: any;
+  imageStyle?: string;
+  isImage?: boolean;
   height?: string;
   insideHeight?: string;
+  truncate?: boolean;
   width?: string;
   index?: number;
   btnText2?: string;
@@ -40,8 +43,11 @@ const Card = (props: CardProps) => {
     bgColor,
     textColor,
     image,
+    imageStyle,
+    isImage,
     height,
     insideHeight,
+    truncate,
     width,
     btnLink,
     btnMode,
@@ -76,13 +82,23 @@ const Card = (props: CardProps) => {
     dir = "rtl";
   }
 
+  let isTruncate = <Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>;
+
+  if(!truncate && desc) {
+    isTruncate = <>{desc.split("\n").map((str) => <p className="text-center md:text-left">{str}</p>)}</>;
+  }
+
   return (
+
     <div
       style={{ direction: dir }}
       className={` max-w-xs   rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
-      <div className="mb-5">{image}</div>
-
+      <div className="mb-5">
+        {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
+        {!isImage && image}
+      </div>
+      
       <div
         className={`flex ${height} ${width} flex-col items-center justify-between px-6 py-4 text-center`}
       >
@@ -99,11 +115,8 @@ const Card = (props: CardProps) => {
             <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
           )}
           <p className={"text-lg"}></p>
-          {desc && (
-            <Truncate lines={8} ellipsis={<span>...</span>}>
-              {desc}
-            </Truncate>
-          )}
+          {desc && isTruncate}
+          
           {offer && (
             <p className="block">
               <span className="inline-block align-top">{offerTextBefore}</span>

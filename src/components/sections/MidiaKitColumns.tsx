@@ -10,10 +10,10 @@ import {
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface MidiaKitColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
 }
 

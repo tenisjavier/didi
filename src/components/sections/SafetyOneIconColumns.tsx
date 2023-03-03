@@ -1,21 +1,20 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserShield,
   faDollarSign,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
-import ColumnNoLimitSection, {
+import ColumnSection, {
   ColumnsSectionProps,
-} from "../ColumnNoLimitSection";
+} from "../ColumnSection";
 
 interface SafetyOneIconColumnsProps {
-  images: {
+  images?: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
   icons: any;
 }
@@ -28,17 +27,12 @@ const SafetyOneIconColumns = ({ images, icons }: SafetyOneIconColumnsProps) => {
   };
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-4 w-48"
-        ></GatsbyImage>
-      );
+      col.image = images[index];
+      col.imageStyle = "z-10 m-4 w-48";
+      col.isImage = true;
     });
   } else if (icons) {
-    props.columns.forEach((col, index) => {
+    props.columns.forEach((col) => {
       col.image = <FontAwesomeIcon icon={icons} size="3x" className="w-12" />;
     });
   } else {
@@ -54,7 +48,7 @@ const SafetyOneIconColumns = ({ images, icons }: SafetyOneIconColumnsProps) => {
       <FontAwesomeIcon icon={faClock} size="3x" className="w-12" />
     );
   }
-  return <ColumnNoLimitSection {...props}></ColumnNoLimitSection>;
+  return <ColumnSection {...props}></ColumnSection>;
 };
 
 export default SafetyOneIconColumns;

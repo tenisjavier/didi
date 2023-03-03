@@ -1,11 +1,9 @@
 // @desc Article Grid used for navigation
 import React from "react";
-import { Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
-import ColumnsNoLimitSection, {
+import ColumnsSection, {
   ColumnsSectionProps,
-} from "../ColumnNoLimitSection";
+} from "../ColumnSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
@@ -17,7 +15,7 @@ interface DrvRequirementColumnsProps {
   images: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
 }
 
@@ -31,14 +29,12 @@ const DrvRequirementColumns = ({ images }: DrvRequirementColumnsProps) => {
 
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-4 w-48"
-        ></GatsbyImage>
-      );
+      col.image = images[index];
+      col.imageStyle = "z-10 m-4 w-48";
+      col.isImage = true;
+      col.height = "h-max";
+      col.insideHeight = "h-max";
+      col.truncate = false;
     });
   } else {
     props.columns[0].image = (
@@ -54,7 +50,7 @@ const DrvRequirementColumns = ({ images }: DrvRequirementColumnsProps) => {
     );
   }
 
-  return <ColumnsNoLimitSection {...props}></ColumnsNoLimitSection>;
+  return <ColumnsSection {...props}></ColumnsSection>;
 };
 
 export default DrvRequirementColumns;
