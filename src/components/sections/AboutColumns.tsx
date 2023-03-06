@@ -12,7 +12,7 @@ interface AboutColumnsProps {
     gatsbyImageData: React.ReactNode;
   }[];
 }
-
+//a
 const AboutColumns = ({ images }: AboutColumnsProps) => {
   const props: ColumnsSectionProps = {
     title: t("AboutColumns.title"),
