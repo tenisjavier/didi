@@ -19,7 +19,7 @@ const DiDiEntregaBusiness = ({ data }) => {
   })[0];
 
   return (
-    <Layout index={false}>
+    <Layout index={false} sb={false}>
       <EntregaBusinessHero bgImage={HeroBgImage}></EntregaBusinessHero>
       <EntregaBusinessColumns images={ColumnsImages}></EntregaBusinessColumns>
       <EntregaBusinessGrid></EntregaBusinessGrid>
