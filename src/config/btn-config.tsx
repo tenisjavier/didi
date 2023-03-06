@@ -162,7 +162,7 @@ const btnLinks: AllBtnInterface = {
     foodEaterOnlineText: "Pide Comida sin la App",
     foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery",
-    foodDeliveryText: "Empieza a Repartir con DiDi Food",
+    foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
     foodBusinessText: "Regístrate como Comercio",
