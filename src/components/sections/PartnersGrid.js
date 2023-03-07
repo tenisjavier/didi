@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
@@ -13,7 +13,7 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
   };
 
   props.columns = data.map((partner) => {
-    const image = getImage(partner.logo);
+    const image = partner.logo;
     const link = t("PartnersGrid.linkItem", {
       partnerName: partner.slug,
     });
@@ -23,11 +23,7 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }) => {
       height: "48",
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={image}
-            alt={partner.logo.description}
-            className="z-10 m-4"
-          ></GatsbyImage>
+          <Image imageData={image} imageStyle="z-10 m-4"></Image>
         </Link>
       ),
     };

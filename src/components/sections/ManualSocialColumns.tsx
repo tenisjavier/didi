@@ -1,6 +1,5 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface ManualSocialColumnsProps {
@@ -19,14 +18,10 @@ const ManualSocialColumns = ({ images }: ManualSocialColumnsProps) => {
   };
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-4 w-full"
-        ></GatsbyImage>
-      );
+      const image = images[index];
+      col.image = image;
+      col.imageStyle = "z-10 m-4 w-full";
+      col.isImage = true;
     });
   }
 

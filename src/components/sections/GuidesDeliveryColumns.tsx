@@ -1,7 +1,7 @@
 // @desc Guides Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -12,7 +12,7 @@ interface GuidesDeliveryColumnsProps {
         title: string;
         slug: string;
         excerpt: string;
-        featuredImage: ImageDataLike;
+        featuredImage: any;
       }[];
     };
   };
@@ -37,11 +37,7 @@ const GuidesDeliveryColumns = ({ data }: GuidesDeliveryColumnsProps) => {
       bgColor: "bg-white",
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={getImage(guide.featuredImage)!}
-            alt={guide.title}
-            className="z-10  m-4 h-56"
-          ></GatsbyImage>
+          <Image imageData={guide.featuredImage} imageStyle="z-10"></Image>
         </Link>
       ),
       btnText: t("GuidesDeliveryColumns.btnText"),

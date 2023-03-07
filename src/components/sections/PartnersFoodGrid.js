@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
+import Image from "../Image"
 import slugify from "react-slugify";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
@@ -14,7 +14,7 @@ const PartnersFoodGrid = ({ data, title, bgColor, textColor, sectionID }) => {
   };
 
   props.columns = data.map((partner) => {
-    const image = getImage(partner.logo);
+    const image = partner.logo;
     const link = t("PartnersFoodGrid.linkItem", {
       partnerName: slugify(partner.name),
     });
@@ -23,13 +23,7 @@ const PartnersFoodGrid = ({ data, title, bgColor, textColor, sectionID }) => {
       desc: partner.desc,
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={image}
-            alt={partner.logo.description}
-            width={700}
-            height={700}
-            className="z-10 m-4"
-          ></GatsbyImage>
+          <Image imageData={image} imageStyle="z-10 m-4"></Image>
         </Link>
       ),
     };

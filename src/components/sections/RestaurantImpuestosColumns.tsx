@@ -1,13 +1,12 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteRight,
   faExclamationCircle,
   faHeadphonesAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import OneColumnsSection, { OneColumnsSectionProps } from "../OneColumnSection";
+import ColumnSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface RestaurantImpuestosColumnsProps {
   images?: {
@@ -20,7 +19,7 @@ interface RestaurantImpuestosColumnsProps {
 const RestaurantImpuestosColumns = ({
   images,
 }: RestaurantImpuestosColumnsProps) => {
-  const props: OneColumnsSectionProps = {
+  const props: ColumnsSectionProps = {
     bgColor: t("RestaurantImpuestosColumns.bgColor"),
     textColor: t("RestaurantImpuestosColumns.textColor"),
     columns: t("RestaurantImpuestosColumns.columns", { returnObjects: true }),
@@ -28,14 +27,10 @@ const RestaurantImpuestosColumns = ({
 
   if (images) {
     props.columns.forEach((col, index) => {
-      const image = images[index].gatsbyImageData;
-      col.image = (
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10 m-4 w-full"
-        ></GatsbyImage>
-      );
+      const image = images[index];
+      col.image = image;
+      col.imageStyle = "z-10 m-4 w-full";
+      col.isImage = true;
     });
   } else {
     props.columns[0].image = (
@@ -50,7 +45,7 @@ const RestaurantImpuestosColumns = ({
       <FontAwesomeIcon icon={faHeadphonesAlt} size="3x" className="w-12" />
     );
   }
-  return <OneColumnsSection {...props}></OneColumnsSection>;
+  return <ColumnSection {...props}></ColumnSection>;
 };
 
 export default RestaurantImpuestosColumns;

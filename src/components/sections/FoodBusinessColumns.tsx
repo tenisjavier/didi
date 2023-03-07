@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -19,14 +18,12 @@ const FoodBusinessColumns = ({ images }: FoodBusinessColumnsProps) => {
   };
 
   props.columns.forEach((col, index) => {
-    const image = images[index].gatsbyImageData;
-    col.image = (
-      <GatsbyImage
-        image={image}
-        alt={images[index].description}
-        className="z-10"
-      ></GatsbyImage>
-    );
+    if(images) {
+      const image = images[index];
+      col.image = image;
+      col.imageStyle = "z-10";
+      col.isImage = true;
+    }
   });
 
   return <ColumnsSection {...props}></ColumnsSection>;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
@@ -12,7 +12,7 @@ const OffersGrid = ({ data }) => {
   };
 
   props.columns = data.map((offer) => {
-    const image = getImage(offer.image);
+    const image = offer.image;
     const link = t("OffersGrid.linkItem", {
       offerSlug: offer.slug,
     });
@@ -21,13 +21,7 @@ const OffersGrid = ({ data }) => {
       desc: offer.desc,
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={image}
-            alt={offer.image.description}
-            width={700}
-            height={700}
-            className="z-10 m-4 max-h-44"
-          ></GatsbyImage>
+          <Image imageData={image} imageStyle="z-10 m-4 max-h-44"></Image>
         </Link>
       ),
     };
