@@ -1,13 +1,28 @@
 import React from "react";
-import RichContent from "../RichContent";
+import { t } from "../../context/countryContext";
+import AccordionSection from "../AccordionSection";
 
 const FaqContent = ({ title, content }) => {
-  return (
-    <section className="text-gray-primary container mx-auto mb-32 md:px-28 pt-12">
-      <h2 className="text-center">{title}</h2>
-      <RichContent richContent={content}></RichContent>
-    </section>
-  );
+  let items = [
+    {
+      title: title,
+      content: content,
+    },
+  ];
+
+  const props = {
+    title: "",
+    desc: "",
+    bgColor: t("HelpCenterFAQDrv.bgColor"),
+    textColor: t("HelpCenterFAQDrv.textColor"),
+    textAccordionColor: "orange-primary",
+    bgAccordionColor: "bg-gray-light",
+    items: items,
+    type: "faq",
+    isClosed: false,
+  };
+
+  return <AccordionSection {...props}></AccordionSection>;
 };
 
 export default FaqContent;
