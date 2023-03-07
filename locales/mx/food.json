@@ -778,5 +778,5 @@
   "SmsCTA.textColor": "gray-primary",
   "SmsCTA.btnMode": "primary",
   "SmsCTA.formTitle": "Recibe un enlace para descargarla",
-  "SmsCTA.formNote": "Al proporcionar tu número, aceptas recibir un mensaje de texto único automatizado con un enlace para descargarla app. Podrían aplicarse tarifas estándar de mensajes de texto"
+  "SmsCTA.formNote": "Al proporcionar tu número, aceptas recibir un mensaje de texto único automatizado con un enlace para descargar la app. Podrían aplicarse tarifas estándar de mensajes de texto"
 }
