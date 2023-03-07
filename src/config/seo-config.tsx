@@ -294,6 +294,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Préstamos - Rápido, Fácil y Seguro.",
       desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
+    "/didi-entrega-business/": {
+      title: "DiDi Entrega para Empresas",
+      desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
