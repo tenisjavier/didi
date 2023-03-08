@@ -1,7 +1,7 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -13,14 +13,14 @@ interface FoodBlogColumns {
         slug: string;
         tags?: { name: string }[];
         excerpt: string;
-        featuredImage: ImageDataLike;
+        featuredImage: any;
       }[];
     };
   };
   tags?: { name: string }[];
 }
 
-const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
+const RelatedFoodBlogColumns = ({ data }: FoodBlogColumns) => {
   const props: ColumnsSectionProps = {
     title: t("FoodBlogColumns.title"),
     bgColor: t("RelatedFoodBlogColumns.bgColor"),
@@ -40,11 +40,7 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
       bgColor: "bg-white",
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={getImage(article.featuredImage)!}
-            alt={article.title}
-            className="z-10  m-4 h-56"
-          ></GatsbyImage>
+          <Image imageData={article.featuredImage} imageStyle="z-10 m-4 h-56"></Image>
         </Link>
       ),
       btnText: t("ArticlesColumns.btnText"),

@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import ColumnsSection from "../ColumnSection";
 
@@ -13,16 +12,10 @@ const SafetyGridPaxBeforeTrip = ({ images }) => {
   };
 
   props.columns.forEach((col, index) => {
-    const image = getImage(images[index]);
-    col.image = (
-      <GatsbyImage
-        image={image}
-        alt={images[index].description}
-        width={700}
-        height={700}
-        className="z-10 m-4"
-      ></GatsbyImage>
-    );
+    const image = images[index];
+    col.image = image;
+    col.imageStyle = "z-10 m-4";
+    col.isImage = true;
   });
 
   return <ColumnsSection {...props}></ColumnsSection>;

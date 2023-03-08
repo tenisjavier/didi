@@ -1,5 +1,6 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -7,7 +8,7 @@ interface FoodBusinessDownloadsProps {
   images: {
     title: string;
     description: string;
-    gatsbyImageData: IGatsbyImageData;
+    gatsbyImageData: React.ReactNode;
   }[];
 }
 
@@ -21,15 +22,11 @@ const FoodBusinessDownloads = ({ images }: FoodBusinessDownloadsProps) => {
   };
 
   props.columns.forEach((col: any, index: number) => {
-    const image = images[index].gatsbyImageData;
+    const image = images[index];
     col.image = (
-      <a href={col.linkItem}>
-        <GatsbyImage
-          image={image}
-          alt={images[index].description}
-          className="z-10"
-        ></GatsbyImage>
-      </a>
+      <Link to={col.linkItem}>
+        <Image imageData={image} imageStyle="z-10"></Image>
+      </Link>
     );
   });
 

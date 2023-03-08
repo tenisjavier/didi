@@ -1,6 +1,5 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserShield,
@@ -28,14 +27,10 @@ const FoodSafetyColumns = ({ images, icons }: FoodSafetyColumnsProps) => {
   if (images) {
     props.columns.forEach((col, index) => {
       if (col.image != false) {
-        const image = images[index].gatsbyImageData;
-        col.image = (
-          <GatsbyImage
-            image={image}
-            alt={images[index].description}
-            className="z-10 m-2 w-56"
-          ></GatsbyImage>
-        );
+        const image = images[index];
+        col.image = image;
+        col.imageStyle = "z-10 m-2 w-56";
+        col.isImage = true;
       }
     });
   } else if (icons) {

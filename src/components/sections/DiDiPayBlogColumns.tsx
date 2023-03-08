@@ -1,7 +1,7 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -12,7 +12,7 @@ interface DiDiPayBlogColumnsProps {
         title: string;
         slug: string;
         excerpt: string;
-        featuredImage: ImageDataLike;
+        featuredImage: any;
       }[];
     };
   };
@@ -39,11 +39,7 @@ const FoodBlogColumns = ({ data }: DiDiPayBlogColumnsProps) => {
       bgColor: "bg-white",
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={getImage(article.featuredImage)!}
-            alt={article.title}
-            className="z-10  m-4"
-          ></GatsbyImage>
+          <Image imageData={article.featuredImage} imageStyle="z-10 m-4"></Image>
         </Link>
       ),
       btnText: t("DiDiPayBlogColumns.btnText"),

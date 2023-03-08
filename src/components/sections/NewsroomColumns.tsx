@@ -1,7 +1,7 @@
 // @desc Article Grid used for navigation
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -12,7 +12,7 @@ interface NewsroomColumnsProps {
         title: string;
         slug: string;
         excerpt: string;
-        featuredImage: ImageDataLike;
+        featuredImage: any;
       }[];
     };
   };
@@ -32,20 +32,21 @@ const ArticlesColumns = ({ data }: NewsroomColumnsProps) => {
     const link = t("NewsroomColumns.linkItem", {
       article: article.slug,
     });
+    let image = null;
+
+    if(article.featuredImage) {
+      image = (
+        <Link to={link}>
+          <Image imageData={article.featuredImage} imageStyle="z-10"></Image>
+        </Link>
+      );
+    }
     return {
       title: <Link to={link}>{article.title}</Link>,
       desc: article.excerpt,
       textColor: "gray-primary",
       bgColor: "bg-white",
-      image: (
-        <Link to={link}>
-          <GatsbyImage
-            image={getImage(article.featuredImage)!}
-            alt={article.title}
-            className="z-10  m-4 h-56"
-          ></GatsbyImage>
-        </Link>
-      ),
+      image: image || "",
       btnText: t("NewsroomColumns.btnText"),
       btnLink: link,
       btnMode: t("NewsroomColumns.btnMode"),

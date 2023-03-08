@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { useCountry } from "../../context/countryContext";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Image from "../Image"
 import slugify from "react-slugify";
 import ColumnsSection from "../ColumnSection";
 
@@ -24,13 +24,7 @@ const PlacesPrimaryColumn = ({ data }) => {
       bgColor: "bg-white",
       image: (
         <Link to={link}>
-          <GatsbyImage
-            image={getImage(item.image)}
-            alt={item.title}
-            width={700}
-            height={700}
-            className="z-10  m-4 max-h-32"
-          ></GatsbyImage>
+          <Image imageData={item.image} imageStyle="z-10 m-4 max-h-32"></Image>
         </Link>
       ),
       btnText: "Saber Más",
