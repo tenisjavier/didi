@@ -4,6 +4,11 @@ import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
+import ConditionalWrapper from "./ConditionalWrapper";
+import {QRCodeSVG} from 'qrcode.react';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+import { useCountry } from "../context/countryContext";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
 // @props for images: bgImage (optional) | image - if you want an image next to the text
@@ -34,6 +39,8 @@ export interface CTAProps extends BtnProps {
   }[];
   reverse?: boolean;
   RTL?: boolean;
+  smsFormTitle?: string;
+  smsFormNote?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -62,6 +69,8 @@ const CTASection = (props: CTAProps) => {
     reverse,
     btnModeSecondary,
     RTL,
+    smsFormTitle,
+    smsFormNote,
   } = props;
 
   let sectionBtn = (
@@ -143,6 +152,8 @@ const CTASection = (props: CTAProps) => {
     textDir = "text-right";
     margin = "ml-4";
   }
+  
+  const country = useCountry().code;
 
   return (
     <section
@@ -228,7 +239,31 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          {sectionBtn}
+          <ConditionalWrapper condition={btnType === "submit"} wrapper={(children) => (
+            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div className="grid lg:justify-items-center md:grid-rows-1 sm:grid-rows-1">
+                <div className="grid xl:grid-cols-2 lg:grid-cols-1 sm:grid-cols-1 md:grid-cols-1">
+                  <div className="grid sm:w-2/2 lg:w-2/2 md:w-2/2 sm:h-2/2 md:h-2/2">
+                    <label className="w-2/2 block text-gray-700 text-sm font-bold mb-2 lg:justify-self-center md:justify-self-center sm:justify-self-center py-2 px-3 w-">
+                      {smsFormTitle}
+                    </label>
+                    <div className="lg:justify-self-start sm:justify-self-center md:justify-self-center lg:w-1/2">
+                    <PhoneInput country={country} enableSearch={true} autoFormat={true}></PhoneInput>
+                    </div>
+                    <div className="lg:justify-self-center sm:justify-self-center md:justify-self-center">
+                    {children}
+                    </div>
+                  </div>
+                  <div className="xl:visible lg:collapse lg:h-0 sm:collapse md:collapse">
+                  <QRCodeSVG value="https://play.google.com/store/apps/details?id=com.xiaojukeji.didi.global.customer" className="mx-4 w-full"/>
+                  </div>
+                </div>
+                <p className="text-xs">{smsFormNote}</p>
+              </div>
+            </form>
+          )}>
+            <>{sectionBtn}</>
+          </ConditionalWrapper>
         </div>
       </div>
       {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}

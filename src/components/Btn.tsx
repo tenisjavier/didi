@@ -30,7 +30,8 @@ type BtnType =
   | "prestamosDrv"
   | "bothPrestamos"
   | "entregaBusiness"
-  | "en";
+  | "en"
+  | "submit"
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
 
@@ -117,6 +118,8 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
+  } else if (btnType === "submit") {
+    btnText = btnText || btnData.smsCTAText;
   }
 
   const handleClick = (e: any) => {
