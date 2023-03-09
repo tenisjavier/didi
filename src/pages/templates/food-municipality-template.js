@@ -40,7 +40,7 @@ const FoodCity = ({ data }) => {
       text: "Food",
     },
     {
-      link: `https://web.didiglobal.com/mx/food/${citySlug}`,
+      link: `https://web.didiglobal.com/mx/food/ciudad/${citySlug}`,
       text: cityName,
     },
     {
