@@ -88,6 +88,10 @@ export const query = graphql`
         id
         name
         slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
       }
     }
     contentfulCity(id: { eq: $id }) {
