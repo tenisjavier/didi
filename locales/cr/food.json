@@ -171,10 +171,10 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contactanos",
-  "FoodContactHero.desc": "Si sos repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
+  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descargá la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "tel:+50641063372",
+  "FoodContactHero.btnText": "Contactá atraves de la app",
+  "FoodContactHero.btnLink": "https://global-food-eater.onelink.me/4B2F/homepage",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
@@ -186,11 +186,7 @@
           "info": "soporte.repartidor@cr.didiglobal.com",
           "infoColor": { "color": "#ff7d41" }
         },
-        {
-          "label": "Teléfono",
-          "info": "(+506) 4106 3372",
-          "infoColor": { "color": "#ff7d41" }
-        },
+
         {
           "label": "Centro de Experiencia",
           "info": "San Jose, San Jose, San Pedro de Montes de Oca, Plaza Carolina Local 1,2,3,4 (Local con Letrero de DiDi) Codigo Postal 11501",
@@ -212,11 +208,7 @@
       "title": "Soporte para Restaurantes",
       "desc": "",
       "contacts": [
-        {
-          "label": "Teléfono",
-          "info": "(+506) 41063372",
-          "infoColor": { "color": "#ff7d41" }
-        },
+
         {
           "label": "Correo electrónico",
           "info": "soporte.tienda@cr.didiglobal.com",

@@ -171,7 +171,7 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.btnText": "Descarga la App y Contáctanos",
+  "FoodContactHero.btnText": "Contáctanos atraves de la app",
   "FoodContactHero.btnLink": "https://global-food-eater.onelink.me/4B2F/homepage",
   "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descarga la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
@@ -187,22 +187,13 @@
           "info": "soporte.repartidor@cl.didiglobal.com",
           "infoColor": { "color": "#ff7d41" }
         },
-        {
-          "label": "Teléfono",
-          "info": "(+56) 227120527",
-          "infoColor": { "color": "#ff7d41" }
-        }
       ]
     },
     {
       "title": "Soporte para Restaurantes",
       "desc": "",
       "contacts": [
-        {
-          "label": "Teléfono",
-          "info": "(+56) 227120527",
-          "infoColor": { "color": "#ff7d41" }
-        },
+
         {
           "label": "Gran Valparaíso. Dirección",
           "info": "1/2 Oriente 1060 (Edificio Milenio), Of 501, Viña del Mar.",

@@ -171,10 +171,10 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "",
+  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descarga la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Teléfono",
-  "FoodContactHero.btnLink": "tel:+01 800 801 6888",
+  "FoodContactHero.btnText": "Contáctanos atraves de la app",
+  "FoodContactHero.btnLink": "https://global-food-eater.onelink.me/4B2F/homepage",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
