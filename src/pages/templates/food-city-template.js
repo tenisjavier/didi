@@ -29,7 +29,10 @@ const FoodCity = ({ data }) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
   const foodDeliveryDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+  return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+  });
+  const foodSMSImages = images.filter((image) => {
+  return image.title.indexOf("mx.FoodSMSCTA.image") !== -1;
   });
   const customBreadcrumb = [
     {
@@ -70,9 +73,13 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
+      {/* <div className="lg:hidden sm:block">
+        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      </div>
+      <div className="lg:block sm:hidden">
+        <SmsCTA image={foodDeliveryCTAImage}></SmsCTA>
+      </div> */}
       <FoodFAQCities data={data.contentfulCity}></FoodFAQCities>
-      {/* <SmsCTA image={foodDeliveryCTAImage}></SmsCTA> */}
     </Layout>
   );
 };
@@ -101,7 +108,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodSMSCTA.image)/"
         }
       }
     ) {
