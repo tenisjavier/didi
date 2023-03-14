@@ -18,8 +18,7 @@ const FoodContactHero = ({ bgImage }: FoodContactHeroProps) => {
     textColor: t("FoodContactHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full brightness-50  md:block",
-    btnText: t("FoodContactHero.btnText"),
-    btnLink: t("FoodContactHero.btnLink"),
+    btnType: "foodEater", 
     btnMode: t("FoodContactHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
