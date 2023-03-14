@@ -92,7 +92,7 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
-    fleetText: "Regístrate en DiDi Fleet",
+    fleetText: "Descarga DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
@@ -136,7 +136,7 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Registrate como Socio Conductor",
     paxText: "Descargá DiDi Pasajero",
-    fleetText: "Registrate en DiDi Fleet",
+    fleetText: "Descargá DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empezá a Repartir con DiDi Food",
