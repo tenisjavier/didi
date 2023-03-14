@@ -171,21 +171,15 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "",
+  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descarga la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Teléfono",
-  "FoodContactHero.btnLink": "tel:+01 800 801 6888",
+  "FoodContactHero.btnText": "Contáctanos a través de la app",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
       "title": "",
       "desc": "",
       "contacts": [
-        {
-          "label": "Teléfono",
-          "info": "01 800 801 6888",
-          "infoColor": { "color": "#ff7d41" }
-        },
         {
           "label": "Correo electrónico",
           "info": "soporte.food@mx.didiglobal.com",

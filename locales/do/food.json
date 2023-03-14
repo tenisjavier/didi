@@ -171,10 +171,9 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
+  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descarga la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "tel:+18299568643",
+  "FoodContactHero.btnText": "Contáctanos a través de la app",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
@@ -184,11 +183,6 @@
         {
           "label": "Correo electrónico: ",
           "info": "soporte.repartidor@do.didiglobal.com",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Teléfono",
-          "info": "(+1) 829 956 8643",
           "infoColor": { "color": "#ff7d41" }
         },
         {
