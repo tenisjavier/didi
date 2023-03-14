@@ -171,10 +171,9 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contactanos",
-  "FoodContactHero.desc": "Si sos repartidos, restaurante o usuario puedes llamarnos o escribirnos.",
+  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descargá la aplicación y dirigite al menú de ayuda, ahí encontrá el canal de chat en vivo o envianos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "tel:+50641063372",
+  "FoodContactHero.btnText": "Contactanos a través de la app",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
     {
@@ -184,11 +183,6 @@
         {
           "label": "Correo electrónico: ",
           "info": "soporte.repartidor@cr.didiglobal.com",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
-          "label": "Teléfono",
-          "info": "(+506) 4106 3372",
           "infoColor": { "color": "#ff7d41" }
         },
         {
