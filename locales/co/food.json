@@ -172,23 +172,12 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "Si eres repartidos, restaurante o usuario puedes llamar o escribirnos.",
+  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descarga la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
   "FoodContactHero.textColor": "white",
-  "FoodContactHero.btnText": "Llama a Soporte",
-  "FoodContactHero.btnLink": "tel:+576015801398",
+  "FoodContactHero.btnText": "Descarga la App y Contáctanos",
+  "FoodContactHero.btnLink": "https://global-food-eater.onelink.me/4B2F/homepage",
   "FoodContactHero.btnMode": "light",
   "FoodContact.contactSections": [
-    {
-      "title": "Soporte para Usuarios",
-      "desc": "",
-      "contacts": [
-        {
-          "label": "Teléfono",
-          "info": "(+57) 6015 801398",
-          "infoColor": { "color": "#ff7d41" }
-        }
-      ]
-    },
     {
       "title": "Soporte para Socios Repartidores",
       "desc": "",
