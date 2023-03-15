@@ -705,6 +705,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Fleet - Haz Dinero Hasta Durmiendo",
       desc: "DiDi Fleet en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
+    "/driver/didi-flex/": {
+      title: "DiDi Flex: Elige el precio sin afectar tu seguridad",
+      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
+    },
     "/sobre-didi/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",

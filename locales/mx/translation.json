@@ -390,8 +390,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Centro de Atención",
-      "desc": "Visita el centro de atención cuando lo requieras",
+      "title": "Driver Center",
+      "desc": "Driver Center",
       "textColor": "gray-primary"
     },
     {
@@ -400,8 +400,8 @@
       "textColor": "gray-primary"
     }
   ],
-  "DrvFlexHero.title": "DiDi Flex: Elige el precio sin afectar tu seguridad",
-  "DrvFlexHero.desc": "Nosotros te damos la FLEXibilidad y tú eliges lo que más te conviene.\n Disponible en Bucaramanga.",
+  "DrvFlexHero.title": "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Utiliza DiDi Flex y comienza ya a negociar tu precio. \n Disponible en: Villahermosa, Zacatecas, La Paz, Ensenada, Celaya, Los Mochis, Vallarta , Morelia, Irapuato, Tepic, Navojoa y Ciudad Obregón.",
   "DrvFlexHero.textColor": "white",
   "DrvFlexHero.btnMode": "light",
   "DrvFlexFeatures.title": "Beneficios DiDi Flex",
@@ -410,11 +410,13 @@
   "DrvFlexFeatures.bgColor": "bg-white",
   "DrvFlexFeatures.btnMode": "primary",
   "DrvFlexFeatures.bullets": [
-    "Nueva herramienta para atraer mayor demanda",
-    "Elige el arrendamiento que más te conviene por precio, distancia, destino y arrendatario.",
-    "Tienes certeza de que el destino no va a cambiar ni se agregaran paradas.",
-    "Buscar arrendamientos de mayores ingresos pagados por el arrendatario.",
-    "Contraoferta el precio de un arrendamiento si no estás de acuerdo."
+    "Contraoferta el precio de los viajes",
+    "Rechaza viajes sin penalización ni afectar tu tasa de aceptación",
+    "También cuenta para tus ganancias garantizadas",
+    "Elige el viaje que más te conviene del Centro de Viajes",
+    "Tienes la certeza de que no va a cambiar el destino del viaje",
+    "Sigues teniendo +20 funciones de seguridad",
+    "Te damos Soporte 24/7"
   ],
   "DiDiAmigoHero.title": "DiDi Amigo",
   "DiDiAmigoHero.desc": "Es la plataforma que te permite referir conductores, aunque no seas uno, para generar ganancias. \n Tu refieres, ellos manejan, todos ganan.",
