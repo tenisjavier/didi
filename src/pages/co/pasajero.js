@@ -64,6 +64,9 @@ export const query = graphql`
         image {
           gatsbyImageData
         }
+        imageForPax {
+          gatsbyImageData
+        }
         country {
           code
         }
