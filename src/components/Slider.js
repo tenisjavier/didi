@@ -60,6 +60,9 @@ const SilderSection = (props) => {
             <FontAwesomeIcon icon={faChevronRight} className="w-8" />
           </div>
           {items.map((data, idx) => {
+            let image = getImage(data.image.gatsbyImageData);
+            if (data.imageForPax)
+              image = getImage(data.imageForPax.gatsbyImageData);
             return (
               <div
                 key={idx}
@@ -67,7 +70,7 @@ const SilderSection = (props) => {
               >
                 <div className={idx === index ? showclass : hidclass}>
                   <GatsbyImage
-                    image={getImage(data.image.gatsbyImageData)}
+                    image={image}
                     className=" w-52 lg:w-64  2xl:w-80"
                     alt={data.name}
                   />
