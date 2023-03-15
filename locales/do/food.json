@@ -217,11 +217,6 @@
       "desc": "",
       "contacts": [
         {
-          "label": "Teléfono",
-          "info": "(+1) 829 956 8643",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
           "label": "Correo electrónico",
           "info": "soporte.tienda@rd.didiglobal.com",
           "infoColor": { "color": "#ff7d41" }
