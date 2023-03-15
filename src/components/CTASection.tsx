@@ -240,22 +240,22 @@ const CTASection = (props: CTAProps) => {
             </div>
           )}
           <ConditionalWrapper condition={btnType === "submit"} wrapper={(children) => (
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-              <div className="grid lg:justify-items-center md:grid-rows-1 sm:grid-rows-1">
-                <div className="grid xl:grid-cols-2 lg:grid-cols-1 sm:grid-cols-1 md:grid-cols-1">
+            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
+              <div className="grid justify-items-center">
+                <div className="grid xl:grid-cols-2 lg:grid-cols-1">
                   <div className="grid sm:w-2/2 lg:w-2/2 md:w-2/2 sm:h-2/2 md:h-2/2">
-                    <label className="w-2/2 block text-gray-700 text-sm font-bold mb-2 lg:justify-self-center md:justify-self-center sm:justify-self-center py-2 px-3 w-">
+                    <label className="w-2/2 block text-gray-700 text-sm font-bold mb-2 lg:justify-self-center md:justify-self-center sm:justify-self-center px-3 w-">
                       {smsFormTitle}
                     </label>
-                    <div className="lg:justify-self-start sm:justify-self-center md:justify-self-center lg:w-1/2">
-                    <PhoneInput country={country} enableSearch={true} autoFormat={true}></PhoneInput>
+                    <div className="">
+                      <PhoneInput country={country} enableSearch={true} autoFormat={true}></PhoneInput>
                     </div>
-                    <div className="lg:justify-self-center sm:justify-self-center md:justify-self-center">
-                    {children}
+                    <div className="grid justify-self-center">
+                      {children}
                     </div>
                   </div>
-                  <div className="xl:visible lg:collapse lg:h-0 sm:collapse md:collapse">
-                  <QRCodeSVG value="https://play.google.com/store/apps/details?id=com.xiaojukeji.didi.global.customer" className="mx-4 w-full"/>
+                  <div className="grid lg:justify-self-center xl:justify-self-end m-4">
+                    <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F/homepage"/>
                   </div>
                 </div>
                 <p className="text-xs">{smsFormNote}</p>

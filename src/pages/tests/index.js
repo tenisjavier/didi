@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FoodCityHero from "../../components/sections/FoodCityHero";
 import SmsCTA from "../../components/sections/SmsCTA"
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 
 
 const FoodCity = ({ data }) => {
@@ -16,6 +17,10 @@ const FoodCity = ({ data }) => {
   const foodDeliveryCTAImage = images.filter((image) => {
     return image.title === "mx.FoodDeliveryCTA.image";
   })[0];
+  const foodDeliveryDownloadsImages = images.filter((image) => {
+    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+    });
+    
   const customBreadcrumb = [
     {
       link: `https://web.didiglobal.com/mx/food/`,
@@ -39,7 +44,12 @@ const FoodCity = ({ data }) => {
         bgImage={foodHeroBgImage}
         data={data.contentfulCity}
       ></FoodCityHero>
-      <SmsCTA image={foodDeliveryCTAImage}></SmsCTA>
+      <div className="lg:hidden sm:block">
+        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      </div>
+      <div className="lg:block sm:hidden">
+        <SmsCTA image={foodDeliveryCTAImage}></SmsCTA>
+      </div>
     </Layout>
   );
 };
