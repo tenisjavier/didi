@@ -178,10 +178,60 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/co/driver/conductor-en-{{city}}/",
+  "DrvColumns.textColor": "gray-primary",
+  "DrvColumns.bgColor": "bg-white",
+  "DrvColumns.columns": [
+    {
+      "title": "Maneja tus Tiempos",
+      "desc": "Flexibilidad para que manejes tu tiempo como quieras",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contar con un equipo de soporte 24/7",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Genera más Ganancias",
+      "desc": "Genera más ganancias con nuestras promociones",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Conoce el Destino",
+      "desc": "Conoce el destino de un viaje antes de aceptarlo",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Driver Center",
+      "desc": "Driver Center",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Constante Mejora",
+      "desc": "Accede a soluciones automáticas dentro de la App",
+      "textColor": "gray-primary"
+    }
+  ],
   "TestimonialsHero.title": "En DiDi celebramos cada logro",
   "TestimonialsHero.desc": "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
   "TestimonialsHero.textColor": "white",
   "TestimonialsHero.btnMode": "light",
+  "DrvFlexHero.title": "DiDi Flex: Elige el precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Nosotros te damos la FLEXibilidad y tú eliges lo que más te conviene.\n Disponible en Bucaramanga.",
+  "DrvFlexHero.textColor": "white",
+  "DrvFlexHero.btnMode": "light",
+  "DrvFlexFeatures.title": "Beneficios DiDi Flex",
+  "DrvFlexFeatures.desc": "",
+  "DrvFlexFeatures.textColor": "gray-primary",
+  "DrvFlexFeatures.bgColor": "bg-white",
+  "DrvFlexFeatures.btnMode": "primary",
+  "DrvFlexFeatures.bullets": [
+    "Nueva herramienta para atraer mayor demanda",
+    "Elige el arrendamiento que más te conviene por precio, distancia, destino y arrendatario.",
+    "Tienes certeza de que el destino no va a cambiar ni se agregaran paradas.",
+    "Buscar arrendamientos de mayores ingresos pagados por el arrendatario.",
+    "Contraoferta el precio de un arrendamiento si no estás de acuerdo."
+  ],
   "TaxiHero.title": "Regístrate como Socio Taxista",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
