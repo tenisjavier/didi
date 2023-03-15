@@ -207,11 +207,6 @@
       "desc": "",
       "contacts": [
         {
-          "label": "Teléfono",
-          "info": "(+506) 41063372",
-          "infoColor": { "color": "#ff7d41" }
-        },
-        {
           "label": "Correo electrónico",
           "info": "soporte.tienda@cr.didiglobal.com",
           "infoColor": { "color": "#ff7d41" }
