@@ -34,10 +34,13 @@ const CentroDeAyuda = ({ data }) => {
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
       <HelpCenterFAQTaxi data={faqTaxi[0]}></HelpCenterFAQTaxi>
       <FaqList
-        title={"Más preguntas frecuentes para motoristas"}
+        title={"Más preguntas frecuentes para socios conductores"}
         faqs={faqExpress[0].faq}
       ></FaqList>
-      <FaqList title={"Más preguntas frecuentes para pasajeros"} faqs={faqPax[0].faq}></FaqList>
+      <FaqList
+        title={"Más preguntas frecuentes para pasajeros"}
+        faqs={faqPax[0].faq}
+      ></FaqList>
       <FaqList
         title={"Más preguntas frecuentes para DiDi Delivery"}
         faqs={faqDelivery[0].faq}
