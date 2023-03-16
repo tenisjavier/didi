@@ -23,7 +23,7 @@ const DiDiPrestamos = ({ data }) => {
     return image.title === "mx.PrestamosHero.image";
   })[0];
   const drvBenefitsImage = images.filter((image) => {
-    return image.title === "mx.PrestamosFeatures.image";
+    return image.title === "mx.PrestamosBenefits.image";
   })[0];
   const prestamoWhyDiDiImage = images.filter((image) => {
     return image.title === "mx.PrestamosWhyDiDi.image";
@@ -77,7 +77,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosFeatures.image)|(mx.PrestamosDrvGrid.image)|(mx.DiDiPrestamosReviews.bgImage)|(mx.PrestamosWhyDiDi.image)/"
+          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosBenefits.image)|(mx.PrestamosFeatures.image)|(mx.PrestamosDrvGrid.image)|(mx.DiDiPrestamosReviews.bgImage)|(mx.PrestamosWhyDiDi.image)/"
         }
       }
       sort: { title: ASC }
