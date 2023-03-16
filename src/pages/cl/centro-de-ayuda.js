@@ -7,6 +7,7 @@ import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
 import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
 import HelpCenterFAQTaxi from "../../components/sections/HelpCenterFAQTaxi";
 import HomeColumns from "../../components/sections/HomeColumns";
+import FaqList from "../../components/sections/FaqList";
 
 const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -32,7 +33,19 @@ const CentroDeAyuda = ({ data }) => {
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
       <HelpCenterFAQPax data={faqPax[0]}></HelpCenterFAQPax>
       <HelpCenterFAQTaxi data={faqTaxi[0]}></HelpCenterFAQTaxi>
-
+      <FaqList
+        title={"Más preguntas frecuentes para motoristas"}
+        faqs={faqExpress[0].faq}
+      ></FaqList>
+      <FaqList title={"Más preguntas frecuentes para pasajeros"} faqs={faqPax[0].faq}></FaqList>
+      <FaqList
+        title={"Más preguntas frecuentes para DiDi Delivery"}
+        faqs={faqDelivery[0].faq}
+      ></FaqList>
+      <FaqList
+        title={"Más preguntas frecuentes para DiDi Táxi"}
+        faqs={faqTaxi[0].faq}
+      ></FaqList>
       <HomeColumns></HomeColumns>
     </Layout>
   );
@@ -57,6 +70,7 @@ export const query = graphql`
         name
         faq {
           title
+          slug
           content {
             raw
             references {

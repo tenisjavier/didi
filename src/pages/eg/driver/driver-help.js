@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import HelpCenterHeroRTL from "../../../components/sections/HelpCenterHeroRTL";
 import HelpCenterFAQDrvRTL from "../../../components/sections/HelpCenterFAQDrvRTL";
+import FaqList from "../../../components/sections/FaqList";
 
 const HelpCenter = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -16,6 +17,7 @@ const HelpCenter = ({ data }) => {
     <Layout schema="faq">
       <HelpCenterHeroRTL bgImage={helpCenterBgImage}></HelpCenterHeroRTL>
       <HelpCenterFAQDrvRTL data={faqExpress[0]}></HelpCenterFAQDrvRTL>
+      <FaqList title={"المزيد من الأسئلة الشائعة للسائقين"} faqs={faqExpress[0].faq}></FaqList>
     </Layout>
   );
 };
@@ -42,6 +44,7 @@ export const query = graphql`
         name
         faq {
           title
+          slug
           content {
             raw
             references {
