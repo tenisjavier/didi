@@ -390,8 +390,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Centro de Atención",
-      "desc": "Visita el centro de atención cuando lo requieras",
+      "title": "Driver Center",
+      "desc": "Driver Center",
       "textColor": "gray-primary"
     },
     {
@@ -400,8 +400,8 @@
       "textColor": "gray-primary"
     }
   ],
-  "DrvFlexHero.title": "DiDi Flex: Elige el precio sin afectar tu seguridad",
-  "DrvFlexHero.desc": "Nosotros te damos la FLEXibilidad y tú eliges lo que más te conviene.\n Disponible en Bucaramanga.",
+  "DrvFlexHero.title": "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Utiliza DiDi Flex y comienza ya a negociar tu precio. \n Disponible en: Villahermosa, Zacatecas, La Paz, Ensenada, Celaya, Los Mochis, Vallarta , Morelia, Irapuato, Tepic, Navojoa y Ciudad Obregón.",
   "DrvFlexHero.textColor": "white",
   "DrvFlexHero.btnMode": "light",
   "DrvFlexFeatures.title": "Beneficios DiDi Flex",
@@ -410,11 +410,13 @@
   "DrvFlexFeatures.bgColor": "bg-white",
   "DrvFlexFeatures.btnMode": "primary",
   "DrvFlexFeatures.bullets": [
-    "Nueva herramienta para atraer mayor demanda",
-    "Elige el arrendamiento que más te conviene por precio, distancia, destino y arrendatario.",
-    "Tienes certeza de que el destino no va a cambiar ni se agregaran paradas.",
-    "Buscar arrendamientos de mayores ingresos pagados por el arrendatario.",
-    "Contraoferta el precio de un arrendamiento si no estás de acuerdo."
+    "Contraoferta el precio de los viajes",
+    "Rechaza viajes sin penalización ni afectar tu tasa de aceptación",
+    "También cuenta para tus ganancias garantizadas",
+    "Elige el viaje que más te conviene del Centro de Viajes",
+    "Tienes la certeza de que no va a cambiar el destino del viaje",
+    "Sigues teniendo +20 funciones de seguridad",
+    "Te damos Soporte 24/7"
   ],
   "DiDiAmigoHero.title": "DiDi Amigo",
   "DiDiAmigoHero.desc": "Es la plataforma que te permite referir conductores, aunque no seas uno, para generar ganancias. \n Tu refieres, ellos manejan, todos ganan.",
@@ -942,7 +944,7 @@
   "SBFoodBusiness.desc": "Crece tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Gana con Más Libertad",
-  "FleetHero.title": "Renta tus autos y genera ganancias",
+  "FleetHero.title": "DiDi Fleet: Renta tus autos y genera ganancias",
   "FleetHero.desc": "Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva rentando tus autos con DiDi Fleet.",
   "FleetHero.btnMode": "light",
   "FleetHero.textColor": "white",
@@ -1085,74 +1087,48 @@
   "DiDiPayBlogColumns.linkItem": "/mx/didipay/blog/{{article}}/",
   "DiDiPayBlogColumns.btnMode": "dark",
   "DiDiPayBlogColumns.btnText": "Leer Artículo",
-  "DiDiPrestamosHero.title": "Obtener un préstamo personal es rápido, fácil y seguro.",
-  "DiDiPrestamosHero.desc": "Solicita un préstamo de DiDi Préstamos",
+  "DiDiPrestamosHero.title": "Con DiDi Préstamos obtén hasta $30,000 m.n rápido, fácil y seguro",
+  "DiDiPrestamosHero.desc": "Solicita tu DiDi Préstamos en 5 minuto.",
   "DiDiPrestamosHero.bgColor": "bg-white",
   "DiDiPrestamosHero.textColor": "gray-primary",
   "DiDiPrestamosHero.btnMode": "primary",
   "DiDiPrestamosHero.btnText": "Solicitar ahora",
   "DiDiPrestamosHero.btnLink": "",
-  "DiDiPrestamosBenefits.title": "¿Por qué elegir DiDi Préstamos?",
-  "DiDiPrestamosBenefits.desc": "DiDi se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
+  "DiDiPrestamosBenefits.title": "¿Por qué debería elegir DiDi Préstamos?",
+  "DiDiPrestamosBenefits.desc": "Porque con nosotros todo es sencillito y sin complicaciones, aquí te contamos.",
   "DiDiPrestamosBenefits.bgColor": "bg-gray-light",
   "DiDiPrestamosBenefits.columns": [
     {
-      "title": "Tasas accesibles",
-      "desc": "desde 5% mensual",
+      "title": "Tasas de interés competitiva",
+      "desc": "Desde 5% al 12%",
       "bgColor": "bg-gray-light",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "Rápido y simple",
-      "desc": "El préstamo se refleja en minutos",
+      "title": "Rápido y fácil",
+      "desc": "En solo 5 minutos",
       "bgColor": "bg-gray-light",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "Fácil de usar",
-      "desc": "Requisitos sencillos",
+      "title": "100% en línea",
+      "desc": "Olvídate de las filas",
       "bgColor": "bg-gray-light",
       "textColor": "gray-primary",
       "width": "w-64"
     },
     {
-      "title": "Flexible",
-      "desc": "Límite: MXN$300–30,000 \n Periodos: 15-91 días",
+      "title": "Solicita tu préstamo sin AVAL",
+      "desc": "Sin garantía de un tercero",
       "bgColor": "bg-gray-light",
       "textColor": "gray-primary",
       "width": "w-64"
-    }
-  ],
-  "DiDiPrestamosColumns.title": "¿Por qué elegir DiDi Préstamos?",
-  "DiDiPrestamosColumns.desc": "DiDi se enorgullece de ofrecerte DiDi Préstamos, un servicio nuevo que permite a los usuarios acceder a préstamos personales para cubrir sus necesidades diarias.",
-  "DiDiPrestamosColumns.bgColor": "bg-gray-light",
-  "DiDiPrestamosColumns.textColor": "gray-primary",
-  "DiDiPrestamosColumns.columns": [
-    {
-      "title": "Tasas accesibles",
-      "desc": "desde 5% mensual"
-    },
-    {
-      "title": "Rápido y simple",
-      "desc": "El préstamo se refleja en minutos"
-    },
-    {
-      "title": "Fácil de usar",
-      "desc": "Requisitos sencillos"
-    },
-    {
-      "title": "Flexible",
-      "desc": "Límite: MXN$300–30,000 \n Periodos: 15-91 días"
-    },
-    {
-      "title": "Todo en un lugar",
-      "desc": "Completa tu solicitud en DiDi"
     }
   ],
   "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva",
-  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria es de solo 5%. \n (*Tasa ordinaria mensual estimada).",
+  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria va desde el 5% hasta el 12%. \n (*Tasa ordinaria mensual estimada).",
   "DiDiPrestamosWhyDiDi.btnMode": "dark",
   "DiDiPrestamosWhyDiDi.bgColor": "bg-white",
   "DiDiPrestamosWhyDiDi.textColor": "gray-primary",
@@ -1161,63 +1137,25 @@
   "DiDiPrestamosFeatures.bgColor": "bg-orange-primary",
   "DiDiPrestamosFeatures.textColor": "white",
   "DiDiPrestamosFeatures.btnMode": "light",
-  "DiDiPrestamosPaxGrid.bgColor": "bg-gray-light",
-  "DiDiPrestamosPaxGrid.title": "Soy Usuario: ¿Cómo solicito un préstamo en DiDi?",
-  "DiDiPrestamosPaxGrid.textColor": "gray-primary",
-  "DiDiPrestamosPaxGrid.columns": [
-    {
-      "title": "Abre la App de DiDi y abre el menú",
-      "desc": "No necesitas bajar una app extra.",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Haz click en DiDi Préstamos",
-      "desc": "Si aún no puedes ver este servicio en la app, ¡no te preocupes! Pronto estaremos contigo.",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Cuéntanos de Ti",
-      "desc": "INE/IFE",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Cuenta Beneficiario",
-      "desc": "Entra los datos correspondientes.",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Solicita tu Préstamo Hoy",
-      "desc": "Espera un par de días para obtener respuesta",
-      "bgColor": "bg-gray-light"
-    }
-  ],
   "DiDiPrestamosDrvGrid.bgColor": "bg-gray-light",
-  "DiDiPrestamosDrvGrid.title": "Soy Socio Conductor: ¿Cómo solicito un préstamo en DiDi?",
+  "DiDiPrestamosDrvGrid.title": "¿Cuál es el proceso para pedir un DiDi Préstamos?",
+  "DiDiPrestamosDrvGrid.desc": "Abre \"Mi billetera\" en DiDi, DiDi Food o abre la App de DiDi Préstamos y sigue estos 4 pasos:",
   "DiDiPrestamosDrvGrid.textColor": "gray-primary",
   "DiDiPrestamosDrvGrid.columns": [
     {
-      "title": "Abre la App de DiDi Conductor y abre el menú",
-      "desc": "No necesitas bajar una app extra.",
+      "title": "Haz clic \"Ver límite de préstamo\"",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Haz click en DiDi Préstamos",
-      "desc": "Si aún no puedes ver este servicio en la app, ¡no te preocupes! Pronto estaremos contigo.",
+      "title": "Envía tus datos personales, tu INE vigente y CLABE interbancaria",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Cuéntanos de Ti",
-      "desc": "INE/IFE",
+      "title": "Espera la autorización de tu préstamo",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Cuenta Beneficiario",
-      "desc": "Entra los datos correspondientes.",
-      "bgColor": "bg-gray-light"
-    },
-    {
-      "title": "Solicita tu Préstamo Hoy",
-      "desc": "Espera un par de días para obtener respuesta",
+      "title": "Una vez aprobado, entrar a DiDi Préstamos y elige el monto que deseas retirar y ¡listo! Espera a que se transfiera en tu cuenta bancaria.",
       "bgColor": "bg-gray-light"
     }
   ],

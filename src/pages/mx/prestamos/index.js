@@ -11,7 +11,6 @@ import DiDiPrestamosHero from "../../../components/sections/DiDiPrestamosHero";
 import DiDiPrestamosBenefits from "../../../components/sections/DiDiPrestamosBenefits";
 import DiDiPrestamosWhyDiDi from "../../../components/sections/DiDiPrestamosWhyDiDi";
 import DiDiPrestamosFeatures from "../../../components/sections/DiDiPrestamosFeatures";
-import DiDiPrestamosPaxGrid from "../../../components/sections/DiDiPrestamosPaxGrid";
 import DiDiPrestamosDrvGrid from "../../../components/sections/DiDiPrestamosDrvGrid";
 import DiDiPrestamosReviews from "../../../components/sections/DiDiPrestamosReviews";
 import DiDiPrestamosPress from "../../../components/sections/DiDiPrestamosPress";
@@ -24,14 +23,11 @@ const DiDiPrestamos = ({ data }) => {
     return image.title === "mx.PrestamosHero.image";
   })[0];
   const drvBenefitsImage = images.filter((image) => {
-    return image.title === "mx.PrestamosFeatures.image";
+    return image.title === "mx.PrestamosBenefits.image";
   })[0];
   const prestamoWhyDiDiImage = images.filter((image) => {
     return image.title === "mx.PrestamosWhyDiDi.image";
   })[0];
-  const prestamosPaxImages = images.filter((image) => {
-    return image.title.indexOf("mx.PrestamosPaxGrid.image") !== -1;
-  });
   const prestamosDrvImages = images.filter((image) => {
     return image.title.indexOf("mx.PrestamosDrvGrid.image") !== -1;
   });
@@ -61,7 +57,6 @@ const DiDiPrestamos = ({ data }) => {
       <DiDiPrestamosFeatures
         image={prestamosFeaturesImage}
       ></DiDiPrestamosFeatures>
-      <DiDiPrestamosPaxGrid images={prestamosPaxImages}></DiDiPrestamosPaxGrid>
       <DiDiPrestamosDrvGrid images={prestamosDrvImages}></DiDiPrestamosDrvGrid>
       <DiDiPrestamosReviews
         bgImage={prestamosReviewsBgImage}
@@ -82,7 +77,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosFeatures.image)|(mx.PrestamosPaxGrid.image)|(mx.PrestamosDrvGrid.image)|(mx.DiDiPrestamosReviews.bgImage)|(mx.PrestamosWhyDiDi.image)/"
+          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosBenefits.image)|(mx.PrestamosFeatures.image)|(mx.PrestamosDrvGrid.image)|(mx.DiDiPrestamosReviews.bgImage)|(mx.PrestamosWhyDiDi.image)/"
         }
       }
       sort: { title: ASC }

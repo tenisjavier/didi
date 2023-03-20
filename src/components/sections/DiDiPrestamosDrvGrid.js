@@ -6,6 +6,7 @@ import ColumnsSection from "../ColumnSection";
 const DiDiPrestamosDrvGrid = ({ images }) => {
   const props = {
     title: t("DiDiPrestamosDrvGrid.title"),
+    desc: t("DiDiPrestamosDrvGrid.desc"),
     bgColor: t("DiDiPrestamosDrvGrid.bgColor"),
     textColor: t("DiDiPrestamosDrvGrid.textColor"),
     columns: t("DiDiPrestamosDrvGrid.columns", { returnObjects: true }),

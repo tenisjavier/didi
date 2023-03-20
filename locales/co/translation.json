@@ -178,10 +178,60 @@
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
   "DrvCityList.linkItem": "/co/driver/conductor-en-{{city}}/",
+  "DrvColumns.textColor": "gray-primary",
+  "DrvColumns.bgColor": "bg-white",
+  "DrvColumns.columns": [
+    {
+      "title": "Maneja tus Tiempos",
+      "desc": "Flexibilidad para que manejes tu tiempo como quieras",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contar con un equipo de soporte 24/7",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Genera más Ganancias",
+      "desc": "Genera más ganancias con nuestras promociones",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Conoce el Destino",
+      "desc": "Conoce el destino de un viaje antes de aceptarlo",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Driver Center",
+      "desc": "Driver Center",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Constante Mejora",
+      "desc": "Accede a soluciones automáticas dentro de la App",
+      "textColor": "gray-primary"
+    }
+  ],
   "TestimonialsHero.title": "En DiDi celebramos cada logro",
   "TestimonialsHero.desc": "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
   "TestimonialsHero.textColor": "white",
   "TestimonialsHero.btnMode": "light",
+  "DrvFlexHero.title": "DiDi Flex: Elige el precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Nosotros te damos la FLEXibilidad y tú eliges lo que más te conviene.\n Disponible en Bucaramanga.",
+  "DrvFlexHero.textColor": "white",
+  "DrvFlexHero.btnMode": "light",
+  "DrvFlexFeatures.title": "Beneficios DiDi Flex",
+  "DrvFlexFeatures.desc": "",
+  "DrvFlexFeatures.textColor": "gray-primary",
+  "DrvFlexFeatures.bgColor": "bg-white",
+  "DrvFlexFeatures.btnMode": "primary",
+  "DrvFlexFeatures.bullets": [
+    "Nueva herramienta para atraer mayor demanda",
+    "Elige el arrendamiento que más te conviene por precio, distancia, destino y arrendatario.",
+    "Tienes certeza de que el destino no va a cambiar ni se agregaran paradas.",
+    "Buscar arrendamientos de mayores ingresos pagados por el arrendatario.",
+    "Contraoferta el precio de un arrendamiento si no estás de acuerdo."
+  ],
   "TaxiHero.title": "Regístrate como Socio Taxista",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
@@ -201,8 +251,8 @@
   "KnowMoreBanner.btnText": "Saber Más",
   "KnowMoreBanner.btnLink": "/co/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
-  "FleetHero.title": "DiDi Fleet: Haz dinero hasta durmiendo",
-  "FleetHero.desc": "Coordina el alquiler de tu carro a través de DiDi Fleet y genera ganancias sin salir de casa con una de las tasas más bajas del mercado. Ellos ganan, tú ganas.",
+  "FleetHero.title": "DiDi Fleet: Renta tus autos y genera ganancias",
+  "FleetHero.desc": "Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar arrendadores a tus autos. Genera ganancias de manera pasiva rentando tus autos con DiDi Fleet.",
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
@@ -505,6 +555,14 @@
   "HelpCenterFAQPax.desc": "",
   "HelpCenterFAQPax.textColor": "gray-primary",
   "HelpCenterFAQPax.bgColor": "bg-gray-light",
+  "FaqList.title": "Todas las preguntas frecuentes en DiDi Colombia",
+  "FaqList.desc": "Leer para más información",
+  "FaqList.bgColor": "bg-white",
+  "FaqList.textColor": "gray-primary",
+  "FaqList.linkItem": "/co/centro-de-ayuda/{{faqSlug}}/",
+  "FaqHero.bgColor": "bg-white",
+  "FaqHero.textColor": "white",
+  "FaqHero.btnMode": "primary",
   "ContactAuthorityHero.title": "Contacto para Autoridades",
   "ContactAuthorityHero.desc": "Si cuenta con oficio judicial o investigación en curso, remitir la solicitud de información por medio de una cuenta oficial a la casilla de correo: lert@didiglobal.com y será atendido por nuestro personal especializado. Si es parte de un organismo de seguridad que pertenezca a un área de investigación o prevención del delito para cualquier región en SSL y busca alguna reunión o acercamiento con el equipo de Relacionamiento con las Autoridades, escribanos a: lert@didiglobal.com",
   "ContactAuthorityHero.textColor": "white",
