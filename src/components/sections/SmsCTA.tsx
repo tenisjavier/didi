@@ -14,7 +14,6 @@ const SmsCTA = ({ image }: SmsCTAProps) => {
   const props: CTAProps = {
     hero: false,
     title: t("SmsCTA.title"),
-    desc: t("SmsCTA.desc"),
     bgColor: t("SmsCTA.bgColor"),
     textColor: t("SmsCTA.textColor"),
     image: image,
