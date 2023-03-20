@@ -685,10 +685,10 @@
   "FoodAppDownloads.bgColor": "bg-white",
   "FoodAppDownloads.columns": [
     {
-      "linkItem": "https://play.google.com/store/apps/details?id=com.xiaojukeji.didi.global.customer"
+      "linkItem": "https://global-food-eater.onelink.me/4B2F"
     },
     {
-      "linkItem": "https://apps.apple.com/MX/app/id1434256853?mt=8"
+      "linkItem": "https://global-food-eater.onelink.me/4B2F"
     }
   ],
   "FoodSafetyHero.title": "Comprometidos con la seguridad en cada entrega",
@@ -766,11 +766,11 @@
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
   "GuidesDeliveryColumns.linkItem": "/mx/food/repartidores/{{guide}}/",
   "RepartidorHero.btnMode": "primary",
-  "SmsCTA.title": "Planeja todo tu viaje desde la app",
-  "SmsCTA.desc": "Organiza tu escapada desde donde estés y descubre ofertas en la app.",
+  "SmsCTA.title": "Pide comida desde donde estés atraves de la app.",
+  "SmsCTA.desc": "",
   "SmsCTA.bgColor": "bg-white",
   "SmsCTA.textColor": "gray-primary",
   "SmsCTA.btnMode": "primary",
-  "SmsCTA.formTitle": "Recibe un enlace para descargarla",
+  "SmsCTA.formTitle": "Recibe un enlace en tu celular para descargar la app",
   "SmsCTA.formNote": "Al proporcionar tu número, aceptas recibir un mensaje de texto único automatizado con un enlace para descargar la app. Podrían aplicarse tarifas estándar de mensajes de texto"
 }

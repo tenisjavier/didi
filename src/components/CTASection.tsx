@@ -240,27 +240,28 @@ const CTASection = (props: CTAProps) => {
             </div>
           )}
           <ConditionalWrapper condition={btnType === "submit"} wrapper={(children) => (
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
-              <div className="grid justify-items-center">
-                <div className="grid xl:grid-cols-2 lg:grid-cols-1">
-                  <div className="grid sm:w-2/2 lg:w-2/2 md:w-2/2 sm:h-2/2 md:h-2/2">
-                    <label className="w-2/2 block text-gray-700 text-sm font-bold mb-2 lg:justify-self-center md:justify-self-center sm:justify-self-center px-3 w-">
-                      {smsFormTitle}
-                    </label>
-                    <div className="">
-                      <PhoneInput country={country} enableSearch={true} autoFormat={true}></PhoneInput>
-                    </div>
-                    <div className="grid justify-self-center">
-                      {children}
-                    </div>
+              <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
+
+                <div className="grid">
+                  <label className="">
+                  {smsFormTitle}
+                  </label>
+                  <div className="">
+                    <PhoneInput country={country} enableSearch={true} autoFormat={true} containerStyle={{width:'50px'}} inputStyle={{width: '250px'}}></PhoneInput>
                   </div>
-                  <div className="grid lg:justify-self-center xl:justify-self-end m-4">
-                    <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F/homepage"/>
+                  <div className="">
+                    {children}
                   </div>
                 </div>
-                <p className="text-xs">{smsFormNote}</p>
+
+                <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
+                  <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F"/>
+                  <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
+                </div>
+              <div className="col-span-2">
+                <p className="text-center text-xs">{smsFormNote}</p>
               </div>
-            </form>
+            </div>
           )}>
             <>{sectionBtn}</>
           </ConditionalWrapper>
