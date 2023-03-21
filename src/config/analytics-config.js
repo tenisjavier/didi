@@ -288,7 +288,11 @@ const insertBtnParams = () => {
             console.log("202303-heroOneBtn-imageDrv");
           }
         }
-        if (test_version === "quickbolt") {
+        if (test_version === "202303-original") {
+          adgroupId = "202303-original";
+          console.log("202303-original");
+        }
+        if (test_version === "202303-heroOneBtn-imageDrv") {
           adgroupId = "202303-heroOneBtn-imageDrv";
           console.log("202303-heroOneBtn-imageDrv");
         }
