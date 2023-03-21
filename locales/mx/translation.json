@@ -1102,29 +1102,25 @@
       "title": "Tasas de interés competitiva",
       "desc": "Desde 5% al 12%",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Rápido y fácil",
       "desc": "En solo 5 minutos",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "100% en línea",
       "desc": "Olvídate de las filas",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Solicita tu préstamo sin AVAL",
       "desc": "Sin garantía de un tercero",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva",
