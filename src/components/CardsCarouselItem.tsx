@@ -10,6 +10,7 @@ export interface CardsCarouselItemProps {
   reviewDate?: string;
   type: string;
   imageSrc: string;
+  link?: string;
 }
 
 const CardsCarouselItem = ({
@@ -22,6 +23,7 @@ const CardsCarouselItem = ({
   reviewRole,
   reviewDate,
   reviewGeo,
+  link,
 }: CardsCarouselItemProps) => {
   let cardImage: any;
   let cardLink: any;
@@ -33,7 +35,7 @@ const CardsCarouselItem = ({
         </a>
       </div>
     );
-    cardLink = <a href="#">Conoce Más →</a>;
+    cardLink = <a href={link}>Conoce Más →</a>;
   }
   if (type === "review") {
     cardImage = (
