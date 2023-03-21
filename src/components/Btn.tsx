@@ -31,7 +31,7 @@ type BtnType =
   | "bothPrestamos"
   | "entregaBusiness"
   | "en"
-  | "submit"
+  | "submit";
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
 
@@ -126,12 +126,15 @@ const Btn = ({
     e.preventDefault();
     const link = e.target.href;
     let form;
+    const url = new URL(link);
+    let ux = url.searchParams.get("ad_group_id")?.toString();
     if (btnType === "drv")
       form = link.includes("quickbolt") ? "quickbolt" : "h5";
     gtmEvent(`click-btn`, {
       btnType: btnType,
       btnLink: link,
       form: form,
+      ux: ux,
       btnText: e.target.innerText,
       countryCode: countryCode,
     });
