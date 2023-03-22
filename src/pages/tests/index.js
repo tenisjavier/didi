@@ -44,10 +44,10 @@ const FoodCity = ({ data }) => {
         bgImage={foodHeroBgImage}
         data={data.contentfulCity}
       ></FoodCityHero>
-      <div className="lg:hidden sm:block">
+      <div className="block lg:hidden xl:hidden">
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
-      <div className="lg:block sm:hidden">
+      <div className="hidden lg:block xl:block">
         <SmsCTA image={foodDeliveryCTAImage}></SmsCTA>
       </div>
     </Layout>
