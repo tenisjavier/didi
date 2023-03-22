@@ -25,6 +25,7 @@ const DiDiPrestamosPress = () => {
         type: "press",
         imageSrc:
           "https://s3-us01.didiglobal.com/silver-bullet-img/2022-02-25/QPP8zewMgI1_RutxIM4Fb-Dinero%20en%20Imagen@3x.png",
+        link: "https://www.dineroenimagen.com/empresas/didi-anuncia-prestamos-de-hasta-30-mil-pesos-asi-puedes-conseguirlo/138314",
       },
       {
         title: "Expansión",
@@ -34,6 +35,7 @@ const DiDiPrestamosPress = () => {
         type: "press",
         imageSrc:
           "https://s3-us01.didiglobal.com/silver-bullet-img/2022-02-25/EnWc9Mjd9BqkiQsmwhP_--Expansio%CC%81n@3x.png",
+        link: "https://expansion.mx/tecnologia/2021/10/20/didi-otorgara-prestamos-para-socios-y-usuarios-de-hasta-30-000-pesos",
       },
       {
         title: "El Financiero ",
@@ -43,6 +45,7 @@ const DiDiPrestamosPress = () => {
         type: "press",
         imageSrc:
           "https://s3-us01.didiglobal.com/silver-bullet-img/2022-02-25/f6IxAOr5Ujp0hk3XdbiuH-El%20Financiero@3x.png",
+        link: "https://www.elfinanciero.com.mx/empresas/2021/10/20/didi-prestamos-el-nuevo-servicio-de-creditos-de-hasta-30-mil-pesos-para-choferes-y-usuarios/",
       },
       {
         title: "Xataka",
@@ -52,6 +55,7 @@ const DiDiPrestamosPress = () => {
         type: "press",
         imageSrc:
           "https://s3-us01.didiglobal.com/silver-bullet-img/2022-03-01/41aCztTgkcvCAnz-0PHUh-%E6%9B%B4%E6%96%B0-Xataka@3x.png",
+        link: "https://www.xataka.com.mx/aplicaciones/didi-ahora-prestara-30-000-pesos-mexico-a-conductores-como-a-pasajeros-todo-que-hay-que-saber-didi-prestamos",
       },
       {
         title: "Milenio",
@@ -61,6 +65,7 @@ const DiDiPrestamosPress = () => {
         type: "press",
         imageSrc:
           "https://s3-us01.didiglobal.com/silver-bullet-img/2022-03-01/L4NJS4zqtz9UsQMyRazvL-%E6%9B%B4%E6%96%B0-Milenio@3x.png",
+        link: "https://www.milenio.com/negocios/didi-otorgara-prestamos-personales-usuarios-empleados",
       },
     ],
   };

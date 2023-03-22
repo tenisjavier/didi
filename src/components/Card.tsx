@@ -82,14 +82,23 @@ const Card = (props: CardProps) => {
     dir = "rtl";
   }
 
-  let isTruncate = <Truncate lines={8} ellipsis={<span>...</span>}>{desc}</Truncate>;
+  let isTruncate = (
+    <Truncate lines={8} ellipsis={<span>...</span>}>
+      {desc}
+    </Truncate>
+  );
 
-  if(!truncate && desc) {
-    isTruncate = <>{desc.split("\n").map((str) => <p className="text-center md:text-left">{str}</p>)}</>;
+  if (!truncate && desc) {
+    isTruncate = (
+      <>
+        {desc.split("\n").map((str) => (
+          <p className="text-center">{str}</p>
+        ))}
+      </>
+    );
   }
 
   return (
-
     <div
       style={{ direction: dir }}
       className={` max-w-xs   rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
@@ -98,7 +107,7 @@ const Card = (props: CardProps) => {
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {!isImage && image}
       </div>
-      
+
       <div
         className={`flex ${height} ${width} flex-col items-center justify-between px-6 py-4 text-center`}
       >
@@ -116,7 +125,7 @@ const Card = (props: CardProps) => {
           )}
           <p className={"text-lg"}></p>
           {desc && isTruncate}
-          
+
           {offer && (
             <p className="block">
               <span className="inline-block align-top">{offerTextBefore}</span>

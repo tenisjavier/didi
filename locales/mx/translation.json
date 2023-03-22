@@ -1088,7 +1088,7 @@
   "DiDiPayBlogColumns.btnMode": "dark",
   "DiDiPayBlogColumns.btnText": "Leer Artículo",
   "DiDiPrestamosHero.title": "Con DiDi Préstamos obtén hasta $30,000 m.n rápido, fácil y seguro",
-  "DiDiPrestamosHero.desc": "Solicita tu DiDi Préstamos en 5 minuto.",
+  "DiDiPrestamosHero.desc": "Solicita tu DiDi Préstamos en 5 minutos.",
   "DiDiPrestamosHero.bgColor": "bg-white",
   "DiDiPrestamosHero.textColor": "gray-primary",
   "DiDiPrestamosHero.btnMode": "primary",
@@ -1102,29 +1102,25 @@
       "title": "Tasas de interés competitiva",
       "desc": "Desde 5% al 12%",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Rápido y fácil",
       "desc": "En solo 5 minutos",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "100% en línea",
       "desc": "Olvídate de las filas",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Solicita tu préstamo sin AVAL",
       "desc": "Sin garantía de un tercero",
       "bgColor": "bg-gray-light",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva",
