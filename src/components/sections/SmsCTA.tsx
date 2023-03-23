@@ -17,11 +17,10 @@ const SmsCTA = ({ image }: SmsCTAProps) => {
     bgColor: t("SmsCTA.bgColor"),
     textColor: t("SmsCTA.textColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-100 rounded",
+    imageStyle: "z-10 m-4 xl:w-100 lg:w-80 rounded",
     btnMode: t("SmsCTA.btnMode"),
     btnType: "submit",
     smsFormTitle: t("SmsCTA.formTitle"),
-    smsFormNote: t("SmsCTA.formNote"),
     reverse: false,
   };
   return <CTASection {...props}></CTASection>;

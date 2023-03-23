@@ -70,7 +70,6 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
-    smsFormNote,
   } = props;
 
   let sectionBtn = (
@@ -258,9 +257,6 @@ const CTASection = (props: CTAProps) => {
                   <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F"/>
                   <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
                 </div>
-              <div className="col-span-2">
-                <p className="text-center text-xs">{smsFormNote}</p>
-              </div>
             </div>
           )}>
             <>{sectionBtn}</>
