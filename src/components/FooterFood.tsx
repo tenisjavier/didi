@@ -22,7 +22,7 @@ const FooterFood = () => {
       <div className="h-96 bg-gray-primary lg:h-80">
         <div className="container mx-auto flex h-full flex-wrap items-center justify-center">
           <div className="flex h-1/2 w-full flex-initial flex-col items-center justify-center lg:h-full lg:w-1/2">
-            <Link to="/pe/food">
+            <Link to={"/" + countryCode + "/food/"}>
               <StaticImage
                 src="../images/didi-food-logo.png"
                 alt="DiDi"
