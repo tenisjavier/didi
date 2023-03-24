@@ -46,7 +46,7 @@ const ColumnsSection = ({
 
         <div className={`mt-10 flex flex-wrap justify-around`}>
           {columns.map((col, index) => {
-            return <Card {...col} key={index} index={index}></Card>;
+            return <Card {...col} key={index}></Card>;
           })}
         </div>
         {small &&
