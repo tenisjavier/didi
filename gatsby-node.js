@@ -11,6 +11,7 @@ const redirects = require("./routes/redirects");
 const cityRoutes = require("./routes/food-city-routes");
 const municipalityRoutes = require("./routes/food-municipality-routes");
 const neighbourhoodRoutes = require("./routes/food-neighbourhood-routes");
+const featuresRoutes = require("./routes/features-routes");
 
 // Implement the Gatsby API “createPages”. This is called once the
 // each route will import a ContentType List from Contentful
@@ -33,4 +34,5 @@ exports.createPages = async ({
   await cityRoutes.init(graphql, createPage); 
   await municipalityRoutes.init(graphql, createPage); 
   await neighbourhoodRoutes.init(graphql, createPage); 
+  await featuresRoutes.init(graphql, createPage); 
 };

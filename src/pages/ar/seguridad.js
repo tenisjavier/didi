@@ -2,40 +2,43 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
-import SafetyGridBeforeTrip from "../../components/sections/SafetyGridBeforeTrip";
-import SafetyGridDuringTrip from "../../components/sections/SafetyGridDuringTrip";
-import SafetyGridAfterTrip from "../../components/sections/SafetyGridAfterTrip";
 import SafetyGridDrv from "../../components/sections/SafetyGridDrv";
+import SafetyFeaturesColumns from "../../components/sections/SafetyFeaturesColumns";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const features = data.allContentfulFeature.nodes;
+
+  let beforeTrip = false, duringTrip = false, afterTrip = false;
+
+  if(features) {
+    features.forEach(function(f, i){
+      if(String(f.type) === "before") {
+        beforeTrip = true;
+      }
+
+      if(String(f.type) === "during") {
+        duringTrip = true;
+      }
+
+      if(String(f.type) === "after") {
+        afterTrip = true;
+      }
+    });
+  }
   const safetyHeroBgImage = images.filter((image) => {
     return image.title === "ar.SafetyHero.bgImage";
   })[0];
-  const safetyGridBeforeTripImages = images.filter((image) => {
-    return image.title.indexOf("ar.SafetyGridBeforeTrip.image") !== -1;
-  });
-  const safetyGridDuringTripImages = images.filter((image) => {
-    return image.title.indexOf("ar.SafetyGridDuringTrip.image") !== -1;
-  });
-  const safetyGridAfterTripImages = images.filter((image) => {
-    return image.title.indexOf("ar.SafetyGridAfterTrip.image") !== -1;
-  });
+
   const safetyGridDrvImages = images.filter((image) => {
     return image.title.indexOf("ar.SafetyGridDrv.image") !== -1;
   });
   return (
     <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
-      <SafetyGridBeforeTrip
-        images={safetyGridBeforeTripImages}
-      ></SafetyGridBeforeTrip>
-      <SafetyGridDuringTrip
-        images={safetyGridDuringTripImages}
-      ></SafetyGridDuringTrip>
-      <SafetyGridAfterTrip
-        images={safetyGridAfterTripImages}
-      ></SafetyGridAfterTrip>
+      {beforeTrip && <SafetyFeaturesColumns title="Antes del Viaje" data={features}></SafetyFeaturesColumns>}
+      {duringTrip && <SafetyFeaturesColumns title="Durante el Viaje" data={features}></SafetyFeaturesColumns>}
+      {afterTrip && <SafetyFeaturesColumns title="Al Finalizar el Viaje" data={features}></SafetyFeaturesColumns>}
       <SafetyGridDrv images={safetyGridDrvImages}></SafetyGridDrv>
     </Layout>
   );
@@ -54,6 +57,20 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    allContentfulFeature(filter: {country: {code: {eq: "ar"}}, type: {ne: null}}) {
+      nodes {
+        id
+        slug
+        name
+        description
+        type
+        componentImages {
+          gatsbyImageData
+          description
+          title
+        }
       }
     }
   }
