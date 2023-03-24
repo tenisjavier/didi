@@ -14,7 +14,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     "gatsby-plugin-postcss",
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: { placeholder: `blurred` },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     "gatsby-plugin-bundle-stats",
