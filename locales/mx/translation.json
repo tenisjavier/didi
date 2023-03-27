@@ -678,6 +678,7 @@
       "bgColor": "bg-white"
     }
   ],
+  "SafetyFeatures.linkItem": "/mx/seguridad/funciones/{{feature}}",
   "SafetyGridPaxBeforeTrip.title": "Antes del viaje",
   "SafetyGridPaxBeforeTrip.columns": [
     {

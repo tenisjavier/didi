@@ -9,6 +9,7 @@
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
+  "SafetyFeatures.linkItem": "/pa/seguridad/funciones/{{feature}}",
   "DrvCTA.title": "Regístrate en DiDi Conductor",
   "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares de manera más segura y empieza a generar ingresos extra con DiDi. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bullets": false,
