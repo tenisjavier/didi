@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import DiDiPayHero from "../../components/sections/DiDiPayHero";
 import DiDiPayFAQs from "../../components/sections/DiDiPayFAQs";
+// import FaqList from "../../components/sections/FaqList";
 
 const DiDiPayFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -22,6 +23,7 @@ const DiDiPayFAQ = ({ data }) => {
       faq.title === "¿Cómo puedo hacer una recarga telefónica con DiDi Pay?" ||
       faq.title === "¿En qué ciudades opera DiDi Pay?" ||
       faq.title === "¿Qué puedo obtener con mi cuenta de DiDi Pay?" ||
+      faq.title === "Vacaciones y CASHBACK con Santander" ||
       faq.title === "Mi transacción falló" ||
       faq.title === "¿Por qué no tengo acceso a DiDi Pay?" ||
       faq.title === "¿Cómo me puedo contactar con Soporte DiDi?" ||
@@ -36,6 +38,10 @@ const DiDiPayFAQ = ({ data }) => {
         image={homeHeroImage}
       ></DiDiPayHero>
       <DiDiPayFAQs data={faqDiDiPay.reverse()}></DiDiPayFAQs>
+      {/* <FaqList
+        title={"Preguntas Frecuentes DiDi Pay"}
+        faqs={faqDiDiPay}
+      ></FaqList> */}
     </Layout>
   );
 };
