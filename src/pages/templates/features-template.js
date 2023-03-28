@@ -19,7 +19,7 @@ const Feature = ({ data }) => {
     features.name === "Fatigue Prevention Feature" ? false : true;
 
   return (
-    <Layout>
+    <Layout title={name} desc={description}>
       <FeatureHero
         title={name}
         desc={description}
