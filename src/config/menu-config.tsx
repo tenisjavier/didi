@@ -217,7 +217,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Préstamos",
-          url: "https://prestamos.didiglobal.com",
+          url: "/mx/prestamos/",
         },
         {
           text: "DiDi Pay FAQ",

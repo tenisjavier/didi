@@ -14,7 +14,7 @@
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
-  "SafetyCTA.btnLink": "seguridad/",
+  "SafetyCTA.btnLink": "/co/seguridad/",
   "SafetyFeatures.linkItem": "/co/seguridad/funciones/{{feature}}",
   "DrvCTA.title": "Regístrate en DiDi Conductor",
   "DrvCTA.desc": "Regístrate en DiDi y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a completar arrendamientos",
