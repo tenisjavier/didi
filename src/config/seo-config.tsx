@@ -697,6 +697,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Historias de Éxito de Socios Arrendadores",
       desc: "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
     },
+    "/driver/moto/": {
+      title: "DiDi Moto - Genera ingresos extra",
+      desc: "Genera inresos extra conectándote con DiDi Moto disponible ahora en Colombia.",
+    },
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi Taxi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
