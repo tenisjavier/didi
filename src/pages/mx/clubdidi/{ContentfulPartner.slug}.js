@@ -13,7 +13,7 @@ const Partner = ({ data }) => {
   const partners = data.allContentfulPartner.nodes;
 
   return (
-    <Layout>
+    <Layout title={heroTitle} desc={heroDesc}>
       <PartnerHero
         title={heroTitle}
         desc={heroDesc}
