@@ -6,9 +6,8 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
 import {QRCodeSVG} from 'qrcode.react';
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
 import { useCountry } from "../context/countryContext";
+import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
 // @props for images: bgImage (optional) | image - if you want an image next to the text
@@ -151,8 +150,6 @@ const CTASection = (props: CTAProps) => {
     textDir = "text-right";
     margin = "ml-4";
   }
-  
-  const country = useCountry().code;
 
   return (
     <section
@@ -238,26 +235,21 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper condition={btnType === "submit"} wrapper={(children) => (
+          <ConditionalWrapper condition={btnType === "submit"} wrapper={() => (
+            <form>
               <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
-
                 <div className="grid">
                   <label className="">
                   {smsFormTitle}
                   </label>
-                  <div className="">
-                    <PhoneInput country={country} enableSearch={true} autoFormat={true} containerStyle={{width:'50px'}} inputStyle={{width: '250px'}}></PhoneInput>
-                  </div>
-                  <div className="">
-                    {children}
-                  </div>
+                  <SmsSender></SmsSender>
                 </div>
-
                 <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
                   <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F"/>
                   <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
                 </div>
-            </div>
+              </div>
+            </form>
           )}>
             <>{sectionBtn}</>
           </ConditionalWrapper>
