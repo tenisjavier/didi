@@ -4,6 +4,7 @@ import AccordionSection from "../AccordionSection";
 
 const HelpCenterFAQ = ({ data, isClosed }) => {
   let items = [];
+  console.log(data);
   data.faq.forEach((node) => {
     items.push({
       title: node.title,
@@ -18,7 +19,7 @@ const HelpCenterFAQ = ({ data, isClosed }) => {
     bgAccordionColor: "bg-white",
     items: items,
     isClosed: isClosed,
-    type: "faq"
+    type: "faq",
   };
 
   return <AccordionSection {...props}></AccordionSection>;
