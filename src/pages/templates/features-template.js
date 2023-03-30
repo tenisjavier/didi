@@ -4,16 +4,18 @@ import Layout from "../../components/Layout";
 import FeatureHero from "../../components/sections/FeatureHero";
 import FeatureCTAComponent from "../../components/sections/FeatureCTAComponent";
 import HelpCenterFAQ from "../../components/sections/HelpCenterFAQ";
+import SafetyFeatureContent from "../../components/sections/SafetyFeatureContent";
 
 const Feature = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const { name, description, components, componentImages, category } =
+  const { name, description, components, componentImages, category, content } =
     data.contentfulFeature;
 
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("mx.HomeColumns.image") !== -1;
   });
-  const btnType = category[0] === "driver" ? "drv" : "pax";
+  console.log(name+" "+category);
+  const btnType = category === "driver" ? "drv" : "pax";
   const features = data.contentfulFeature;
   const isClosed =
     features.name === "Fatigue Prevention Feature" ? false : true;
@@ -31,12 +33,15 @@ const Feature = ({ data }) => {
             <FeatureCTAComponent
               title={comp.title}
               desc={comp.desc}
+              bullets={comp.bullets}
               image={componentImages[index]}
               btnType={btnType}
               key={index}
             ></FeatureCTAComponent>
           );
         })}
+      {content && <SafetyFeatureContent data={data}></SafetyFeatureContent>}
+      
       {data.contentfulFeature.faq && (
         <HelpCenterFAQ
           isClosed={isClosed}
@@ -88,12 +93,25 @@ export const query = graphql`
         meta {
           title
           desc
+          bullets
         }
       }
       componentImages {
         gatsbyImageData
         description
         title
+      }
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
       }
     }
   }

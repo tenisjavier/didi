@@ -551,6 +551,7 @@
   "SafetyGridBeforeTrip.bgColor": "bg-white",
   "SafetyGridBeforeTrip.title": "Antes del Viaje",
   "SafetyGridBeforeTrip.textColor": "gray-primary",
+  "SafetyGridBeforeTrip.urlBase": "/mx/seguridad/funciones/",
   "SafetyGridBeforeTrip.columns": [
     {
       "title": "1. Verificación facial del pasajero",
@@ -577,6 +578,7 @@
   "SafetyGridDuringTrip.title": "Durante el Viaje",
   "SafetyGridDuringTrip.desc": "",
   "SafetyGridDuringTrip.textColor": "white",
+  "SafetyGridDuringTrip.urlBase": "/mx/seguridad/funciones/",
   "SafetyGridDuringTrip.columns": [
     {
       "title": "6. Zonas de Riesgo",
@@ -626,6 +628,7 @@
   "SafetyGridAfterTrip.bgColor": "bg-gray-light",
   "SafetyGridAfterTrip.title": "Al Finalizar el Viaje",
   "SafetyGridAfterTrip.textColor": "gray-primary",
+  "SafetyGridAfterTrip.urlBase": "/mx/seguridad/funciones/",
   "SafetyGridAfterTrip.columns": [
     {
       "title": "17. Soporte DiDi 24/7",

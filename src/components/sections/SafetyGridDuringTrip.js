@@ -1,8 +1,11 @@
 import React from "react";
 import { t } from "../../context/countryContext";
+import { Link } from "gatsby";
+import Image from "../Image"
 import ColumnsSection from "../ColumnSection";
 
-const SafetyGridDuringTrip = ({ images }) => {
+const SafetyGridDuringTrip = ({ images, features }) => {
+  const urlBase = t("SafetyGridDuringTrip.urlBase");
   const props = {
     title: t("SafetyGridDuringTrip.title"),
     desc: t("SafetyGridDuringTrip.desc"),
@@ -13,9 +16,27 @@ const SafetyGridDuringTrip = ({ images }) => {
 
   props.columns.forEach((col, index) => {
     const image = images[index];
-    col.image = image;
-    col.imageStyle = "z-10 m-4";
-    col.isImage = true;
+    let feature;
+    if(features) {
+      feature = features.filter((f) => {
+        return col.title.toLowerCase().indexOf(f.name.toLowerCase()) !== -1;
+      });
+      if(feature[0]) {
+        console.log(feature[0].slug);
+        col.title = <Link to={urlBase+""+feature[0].slug}>{col.title}</Link>;
+        col.image = <Link to={urlBase+""+feature[0].slug}>
+                      <Image imageData={image} imageStyle="z-10 m-4"></Image>
+                    </Link>;
+      } else {
+        col.image = image;
+        col.imageStyle = "z-10 m-4";
+        col.isImage = true;
+      }
+    } else {
+      col.image = image;
+      col.imageStyle = "z-10 m-4";
+      col.isImage = true;
+    }
   });
 
   return <ColumnsSection {...props}></ColumnsSection>;
