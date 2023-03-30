@@ -20,6 +20,7 @@ const SafetyCTA = ({ bgImage, image }: SafetyCTAProps) => {
     hero: false,
     title: t("SafetyCTA.title"),
     desc: t("SafetyCTA.desc"),
+    bullets: t("SafetyCTA.bullets", { returnObjects: true }),
     textColor: t("SafetyCTA.textColor"),
     bgColor: t("SafetyCTA.bgColor"),
     bgImage: bgImage,
