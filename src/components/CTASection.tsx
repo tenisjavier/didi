@@ -6,7 +6,6 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
 import {QRCodeSVG} from 'qrcode.react';
-import { useCountry } from "../context/countryContext";
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
