@@ -41,6 +41,7 @@ export interface CTAProps extends BtnProps {
   RTL?: boolean;
   smsFormTitle?: string;
   smsFormNote?: string;
+  descBeforeBullets?: boolean;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -70,6 +71,7 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
+    descBeforeBullets
   } = props;
 
   let sectionBtn = (
@@ -153,7 +155,6 @@ const CTASection = (props: CTAProps) => {
   }
   
   const country = useCountry().code;
-
   return (
     <section
       style={{ direction: dir }}
@@ -176,7 +177,61 @@ const CTASection = (props: CTAProps) => {
           ) : (
             <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
           )}
-          {bullets && (
+          <ConditionalWrapper condition={descBeforeBullets === true} wrapper={() => ((
+            <>
+            {desc &&
+              desc.split("\n").map((str, index) => (
+                <p className="mb-10 text-lg" key={index}>
+                  {str}
+                </p>
+            ))}
+            {bullets && (
+              <>
+                <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                  {bullets.map((item, index) => {
+                    return (
+                      <div key={index}>
+                        <li className="flex">
+                          {!customBulletIcon ? (
+                            <FontAwesomeIcon
+                              icon={faCarSide}
+                              className={`mt-1 ${margin} text-orange-primary w-6`}
+                              size="sm"
+                            />
+                          ) : (
+                            icon && (
+                              <FontAwesomeIcon
+                                icon={icon}
+                                className={`${margin} text-orange-primary w-6`}
+                                size="sm"
+                              />
+                            )
+                          )}
+                          <div className="inline-block">
+                            {typeof item === "string"
+                              ? item.split("\n").map((str, index) => (
+                                  <p className="mt-0 mb-5 text-xl" key={index}>
+                                    {str}
+                                  </p>
+                                ))
+                              : item}
+                          </div>
+                        </li>
+                        <br></br>
+                      </div>
+                    );
+                  })}
+                </ul>
+                <br></br>
+              </>
+            )}
+            </>
+          ))}>
+            <></>
+          </ConditionalWrapper>
+          <ConditionalWrapper condition={descBeforeBullets != true} wrapper={() => ((
+            <>
+            {bullets && (
             <>
               <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
                 {bullets.map((item, index) => {
@@ -222,6 +277,11 @@ const CTASection = (props: CTAProps) => {
                 {str}
               </p>
             ))}
+            </>
+          ))}>
+            <></>
+          </ConditionalWrapper>
+          
           {link && (
             <p>
               <a className="mb-5 text-lg" href={"tel:" + link}>

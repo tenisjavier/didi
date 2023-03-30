@@ -8,6 +8,8 @@ import SafetyGridAfterTrip from "../../../components/sections/SafetyGridAfterTri
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const features = data.allContentfulFeature.nodes;
+
   const safetyHeroImage = images.filter((image) => {
     return image.title === "mx.SafetyDrv.image";
   })[0];
@@ -28,12 +30,15 @@ const Seguridad = ({ data }) => {
       <SafetyDrvImgHero image={safetyHeroImage}></SafetyDrvImgHero>
       <SafetyGridBeforeTrip
         images={safetyBeforeDrvColumns.reverse()}
+        features={features}
       ></SafetyGridBeforeTrip>
       <SafetyGridDuringTrip
         images={safetyDuringDrvColumns.reverse()}
+        features={features}
       ></SafetyGridDuringTrip>
       <SafetyGridAfterTrip
         images={safetyFinishedDrvColumns.reverse()}
+        features={features}
       ></SafetyGridAfterTrip>
     </Layout>
   );
@@ -56,6 +61,12 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    allContentfulFeature(filter: {country: {code: {eq: "mx"}}}) {
+      nodes {
+        name
+        slug
       }
     }
   }
