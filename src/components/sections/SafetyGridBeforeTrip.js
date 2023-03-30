@@ -15,15 +15,22 @@ const SafetyGridBeforeTrip = ({ images, features }) => {
 
   props.columns.forEach((col, index) => {
     const image = images[index];
-    const feature = features.filter((f) => {
-      return col.title.toLowerCase().indexOf(f.name.toLowerCase()) !== -1;
-    });
-    if(feature[0]) {
-      console.log(feature[0].slug);
-      col.title = <Link to={urlBase+""+feature[0].slug}>{col.title}</Link>;
-      col.image = <Link to={urlBase+""+feature[0].slug}>
-                    <Image imageData={image} imageStyle="z-10 m-4"></Image>
-                  </Link>;
+    let feature;
+    if(features) {
+      feature = features.filter((f) => {
+        return col.title.toLowerCase().indexOf(f.name.toLowerCase()) !== -1;
+      });
+      if(feature[0]) {
+        console.log(feature[0].slug);
+        col.title = <Link to={urlBase+""+feature[0].slug}>{col.title}</Link>;
+        col.image = <Link to={urlBase+""+feature[0].slug}>
+                      <Image imageData={image} imageStyle="z-10 m-4"></Image>
+                    </Link>;
+      } else {
+        col.image = image;
+        col.imageStyle = "z-10 m-4";
+        col.isImage = true;
+      }
     } else {
       col.image = image;
       col.imageStyle = "z-10 m-4";

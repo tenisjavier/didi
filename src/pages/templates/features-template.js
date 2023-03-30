@@ -14,7 +14,8 @@ const Feature = ({ data }) => {
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("mx.HomeColumns.image") !== -1;
   });
-  const btnType = category[0] === "driver" ? "drv" : "pax";
+  console.log(name+" "+category);
+  const btnType = category === "driver" ? "drv" : "pax";
   const features = data.contentfulFeature;
   const isClosed =
     features.name === "Fatigue Prevention Feature" ? false : true;

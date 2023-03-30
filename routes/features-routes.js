@@ -5,7 +5,9 @@ const path = require(`path`);
 const featuresRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulFeature {
+      allContentfulFeature(
+        filter: {slug: {ne: "reference-fix"}, category: {ne: null}, type: {ne: null}}
+      ) {
         nodes {
           id
           slug
