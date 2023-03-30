@@ -16,12 +16,13 @@ const SafetyGridAfterTrip = ({ images, features }) => {
   props.columns.forEach((col, index) => {
     const image = images[index];
     let feature;
-    if(features) {
+    if(features && col.title) {
       feature = features.filter((f) => {
-        return col.title.toLowerCase().indexOf(f.name.toLowerCase()) !== -1;
+        const minTitle = String(col.title).toLowerCase();
+        const minFTitle = String(f.name).toLowerCase();
+        return minTitle.indexOf(minFTitle) !== -1;
       });
       if(feature[0]) {
-        console.log(feature[0].slug);
         col.title = <Link to={urlBase+""+feature[0].slug}>{col.title}</Link>;
         col.image = <Link to={urlBase+""+feature[0].slug}>
                       <Image imageData={image} imageStyle="z-10 m-4"></Image>
