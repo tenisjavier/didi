@@ -450,6 +450,10 @@ const menuLinks: AllMenuInterface = {
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
         {
+          text: "DiDi Moto",
+          url: "/co/driver/moto/",
+        },
+        {
           text: "DiDi Flex",
           url: "/co/driver/didi-flex/",
         },
