@@ -14,7 +14,7 @@ const Feature = ({ data }) => {
   const homeColumnsImages = images.filter((image) => {
     return image.title.indexOf("mx.HomeColumns.image") !== -1;
   });
-  console.log(name+" "+category);
+  
   const btnType = category === "driver" ? "drv" : "pax";
   const features = data.contentfulFeature;
   const isClosed =
