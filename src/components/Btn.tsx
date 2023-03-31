@@ -31,8 +31,7 @@ type BtnType =
   | "bothPrestamos"
   | "entregaBusiness"
   | "en"
-  | "submit"
-  | undefined;
+  | "submit";
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
 
