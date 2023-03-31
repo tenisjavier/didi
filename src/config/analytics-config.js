@@ -2,7 +2,11 @@
 const insertBtnParams = () => {
   window.localStorage.removeItem("gatsby-i18next-language");
 
-  const countryCode = window.location.pathname.split("/")[1];
+  const countryCode =
+    window.location.host !== "99app.com"
+      ? window.location.pathname.split("/")[1]
+      : "br";
+
   var referrer = document.referrer;
   var gaReferral = {
     source: "(direct)",
@@ -80,7 +84,7 @@ const insertBtnParams = () => {
       url.indexOf("fleet.onelink.me/tLtr/") > -1 ||
       url.indexOf("fleet.onelink.me/jjQA/") > -1 ||
       url.indexOf("99.onelink.me/Mayr/") > -1 ||
-      url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
+      url.indexOf("onelink.me/IY6B/") > -1 ||
       url.indexOf("onelink.me/5xQ3/") > -1 ||
       url.indexOf("onelink.me/4B2F/") > -1 ||
       url.indexOf("onelink.me/zzaY/") > -1 ||
@@ -190,8 +194,7 @@ const insertBtnParams = () => {
 
     const countriesLanguage = {
       cl: ["CL", "es-CL"],
-      "99app": ["BR", "pt-BR"],
-      brasil: ["BR", "pt-BR"],
+      br: ["BR", "pt-BR"],
       ar: ["AR", "es-AR"],
       pe: ["PE", "es-PE"],
       mx: ["MX", "es-MX"],
