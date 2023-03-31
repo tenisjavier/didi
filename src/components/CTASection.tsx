@@ -5,7 +5,7 @@ import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
-import { QRCodeSVG } from "qrcode.react";
+import {QRCodeSVG} from 'qrcode.react';
 import { useCountry } from "../context/countryContext";
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
@@ -20,8 +20,6 @@ export interface CTAProps extends BtnProps {
   textColor: string;
   bgImage?: any;
   bgImageStyle?: string;
-  mobileBgImage?: any;
-  mobileBgImageStyle?: string;
   bgVideo?: any;
   imageRawRender?: any;
   bgColor?: string;
@@ -54,8 +52,6 @@ const CTASection = (props: CTAProps) => {
     textColor,
     bgImage,
     bgImageStyle,
-    mobileBgImage,
-    mobileBgImageStyle,
     bgVideo,
     imageRawRender,
     bgColor,
@@ -74,7 +70,7 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
-    descBeforeBullets,
+    descBeforeBullets
   } = props;
 
   let sectionBtn = (
@@ -156,7 +152,7 @@ const CTASection = (props: CTAProps) => {
     textDir = "text-right";
     margin = "ml-4";
   }
-
+  
   const country = useCountry().code;
 
   return (
@@ -181,123 +177,111 @@ const CTASection = (props: CTAProps) => {
           ) : (
             <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
           )}
-          <ConditionalWrapper
-            condition={descBeforeBullets === true}
-            wrapper={() => (
+          <ConditionalWrapper condition={descBeforeBullets === true} wrapper={() => ((
+            <>
+            {desc &&
+              desc.split("\n").map((str, index) => (
+                <p className="mb-10 text-lg" key={index}>
+                  {str}
+                </p>
+            ))}
+            {bullets && (
               <>
-                {desc &&
-                  desc.split("\n").map((str, index) => (
-                    <p className="mb-10 text-lg" key={index}>
-                      {str}
-                    </p>
-                  ))}
-                {bullets && (
-                  <>
-                    <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
-                      {bullets.map((item, index) => {
-                        return (
-                          <div key={index}>
-                            <li className="flex">
-                              {!customBulletIcon ? (
-                                <FontAwesomeIcon
-                                  icon={faCarSide}
-                                  className={`mt-1 ${margin} text-orange-primary w-6`}
-                                  size="sm"
-                                />
-                              ) : (
-                                icon && (
-                                  <FontAwesomeIcon
-                                    icon={icon}
-                                    className={`${margin} text-orange-primary w-6`}
-                                    size="sm"
-                                  />
-                                )
-                              )}
-                              <div className="inline-block">
-                                {typeof item === "string"
-                                  ? item.split("\n").map((str, index) => (
-                                      <p
-                                        className="mt-0 mb-5 text-xl"
-                                        key={index}
-                                      >
-                                        {str}
-                                      </p>
-                                    ))
-                                  : item}
-                              </div>
-                            </li>
-                            <br></br>
+                <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                  {bullets.map((item, index) => {
+                    return (
+                      <div key={index}>
+                        <li className="flex">
+                          {!customBulletIcon ? (
+                            <FontAwesomeIcon
+                              icon={faCarSide}
+                              className={`mt-1 ${margin} text-orange-primary w-6`}
+                              size="sm"
+                            />
+                          ) : (
+                            icon && (
+                              <FontAwesomeIcon
+                                icon={icon}
+                                className={`${margin} text-orange-primary w-6`}
+                                size="sm"
+                              />
+                            )
+                          )}
+                          <div className="inline-block">
+                            {typeof item === "string"
+                              ? item.split("\n").map((str, index) => (
+                                  <p className="mt-0 mb-5 text-xl" key={index}>
+                                    {str}
+                                  </p>
+                                ))
+                              : item}
                           </div>
-                        );
-                      })}
-                    </ul>
-                    <br></br>
-                  </>
-                )}
+                        </li>
+                        <br></br>
+                      </div>
+                    );
+                  })}
+                </ul>
+                <br></br>
               </>
             )}
-          >
+            </>
+          ))}>
             <></>
           </ConditionalWrapper>
-          <ConditionalWrapper
-            condition={descBeforeBullets != true}
-            wrapper={() => (
-              <>
-                {bullets && (
-                  <>
-                    <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
-                      {bullets.map((item, index) => {
-                        return (
-                          <div key={index}>
-                            <li className="flex">
-                              {!customBulletIcon ? (
-                                <FontAwesomeIcon
-                                  icon={faCarSide}
-                                  className={`mt-1 ${margin} text-orange-primary w-6`}
-                                  size="sm"
-                                />
-                              ) : (
-                                icon && (
-                                  <FontAwesomeIcon
-                                    icon={icon}
-                                    className={`${margin} text-orange-primary w-6`}
-                                    size="sm"
-                                  />
-                                )
-                              )}
-                              <div className="inline-block">
-                                {typeof item === "string"
-                                  ? item.split("\n").map((str, index) => (
-                                      <p
-                                        className="mt-0 mb-5 text-xl"
-                                        key={index}
-                                      >
-                                        {str}
-                                      </p>
-                                    ))
-                                  : item}
-                              </div>
-                            </li>
-                            <br></br>
-                          </div>
-                        );
-                      })}
-                    </ul>
-                    <br></br>
-                  </>
-                )}
-                {desc &&
-                  desc.split("\n").map((str, index) => (
-                    <p className="mb-10 text-lg" key={index}>
-                      {str}
-                    </p>
-                  ))}
-              </>
-            )}
-          >
+          <ConditionalWrapper condition={descBeforeBullets != true} wrapper={() => ((
+            <>
+            {bullets && (
+            <>
+              <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                {bullets.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <li className="flex">
+                        {!customBulletIcon ? (
+                          <FontAwesomeIcon
+                            icon={faCarSide}
+                            className={`mt-1 ${margin} text-orange-primary w-6`}
+                            size="sm"
+                          />
+                        ) : (
+                          icon && (
+                            <FontAwesomeIcon
+                              icon={icon}
+                              className={`${margin} text-orange-primary w-6`}
+                              size="sm"
+                            />
+                          )
+                        )}
+                        <div className="inline-block">
+                          {typeof item === "string"
+                            ? item.split("\n").map((str, index) => (
+                                <p className="mt-0 mb-5 text-xl" key={index}>
+                                  {str}
+                                </p>
+                              ))
+                            : item}
+                        </div>
+                      </li>
+                      <br></br>
+                    </div>
+                  );
+                })}
+              </ul>
+              <br></br>
+            </>
+          )}
+          {desc &&
+            desc.split("\n").map((str, index) => (
+              <p className="mb-10 text-lg" key={index}>
+                {str}
+              </p>
+            ))}
+            </>
+          ))}>
             <></>
           </ConditionalWrapper>
-
+          
           {link && (
             <p>
               <a className="mb-5 text-lg" href={"tel:" + link}>
@@ -314,37 +298,27 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper
-            condition={btnType === "submit"}
-            wrapper={() => (
-              <form>
-                <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8">
-                  <div className="grid">
-                    <label className="">{smsFormTitle}</label>
-                    <SmsSender></SmsSender>
-                  </div>
-                  <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
-                    <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F" />
-                    <p className="text-center text-xs">
-                      Escanea el código QR con la cámara de tu celular y
-                      descarga la app.
-                    </p>
-                  </div>
+          <ConditionalWrapper condition={btnType === "submit"} wrapper={() => (
+            <form>
+              <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
+                <div className="grid">
+                  <label className="">
+                  {smsFormTitle}
+                  </label>
+                  <SmsSender></SmsSender>
                 </div>
-              </form>
-            )}
-          >
+                <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
+                  <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F"/>
+                  <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
+                </div>
+              </div>
+            </form>
+          )}>
             <>{sectionBtn}</>
           </ConditionalWrapper>
         </div>
       </div>
       {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
-      {mobileBgImage && (
-        <Image
-          imageData={mobileBgImage}
-          imageStyle={mobileBgImageStyle}
-        ></Image>
-      )}
       {bgVideo && bgVideo}
     </section>
   );
