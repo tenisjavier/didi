@@ -7,7 +7,6 @@ import HelpCenterFAQ from "../../components/sections/HelpCenterFAQ";
 import SafetyFeatureContent from "../../components/sections/SafetyFeatureContent";
 
 const Feature = ({ data }) => {
-  const images = data.allContentfulAsset.nodes;
   const { name, description, components, componentImages, category, content } =
     data.contentfulFeature;
 
