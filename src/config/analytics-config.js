@@ -283,7 +283,6 @@ const insertBtnParams = () => {
       //? if is a old user
       if (test_version === "202304-home-heroOneBtn") {
         adgroupId = "202304-home-heroOneBtn";
-        console.log("202304-home-heroOneBtn");
       }
     }
 
