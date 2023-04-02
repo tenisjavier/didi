@@ -275,15 +275,30 @@ const insertBtnParams = () => {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
       campaignId = "refpage_" + window.location.pathname;
-
-      //? EXPERIMENT A/B other code in Layout
-      const test_version = window.localStorage.getItem("test_version");
-      adgroupId = "202304-home-original";
-
-      //? if is a old user
-      if (test_version === "202304-home-heroOneBtn") {
-        adgroupId = "202304-home-heroOneBtn";
-        console.log("202304-home-heroOneBtn");
+      if (window.location.pathname === "/mx/") {
+        adgroupId = "202303-original";
+        const test_version = window.localStorage.getItem("test_version");
+        if (!test_version) {
+          let group = Math.random();
+          window.localStorage.setItem("test_version", "202303-original");
+          console.log("202303-original");
+          if (group < 0.5) {
+            window.localStorage.setItem(
+              "test_version",
+              "202303-heroOneBtn-imageDrv"
+            );
+            adgroupId = "202303-heroOneBtn-imageDrv";
+            console.log("202303-heroOneBtn-imageDrv");
+          }
+        }
+        if (test_version === "202303-original") {
+          adgroupId = "202303-original";
+          console.log("202303-original");
+        }
+        if (test_version === "202303-heroOneBtn-imageDrv") {
+          adgroupId = "202303-heroOneBtn-imageDrv";
+          console.log("202303-heroOneBtn-imageDrv");
+        }
       }
     }
 
