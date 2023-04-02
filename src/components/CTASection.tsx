@@ -10,7 +10,7 @@ import { useCountry } from "../context/countryContext";
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
-// @props for images: bgImage (optional) | image - if you want an image next to the text
+// @props for images: bgImage (optional) | image - if you want an image next to the text, mobile images as well
 
 export interface CTAProps extends BtnProps {
   hero: boolean;
