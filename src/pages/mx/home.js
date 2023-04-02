@@ -8,7 +8,7 @@ import FoodCTA from "../../components/sections/FoodCTA";
 import FleetAboutCTA from "../../components/sections/FleetAboutCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 
-//? variant b home
+//? variant b
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
