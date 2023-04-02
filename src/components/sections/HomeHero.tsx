@@ -34,7 +34,7 @@ const HomeHero = ({
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full md:hidden ",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full md:!hidden ",
     btnMode: t("HomeHero.btnMode"),
     btnType: btnType || "both",
   };
