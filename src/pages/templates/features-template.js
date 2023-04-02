@@ -11,10 +11,6 @@ const Feature = ({ data }) => {
   const { name, description, components, componentImages, category, content } =
     data.contentfulFeature;
 
-  const homeColumnsImages = images.filter((image) => {
-    return image.title.indexOf("mx.HomeColumns.image") !== -1;
-  });
-  
   const btnType = category === "driver" ? "drv" : "pax";
   const features = data.contentfulFeature;
   const isClosed =
@@ -41,7 +37,7 @@ const Feature = ({ data }) => {
           );
         })}
       {content && <SafetyFeatureContent data={data}></SafetyFeatureContent>}
-      
+
       {data.contentfulFeature.faq && (
         <HelpCenterFAQ
           isClosed={isClosed}
