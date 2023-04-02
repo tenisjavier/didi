@@ -22,9 +22,7 @@ const Seguridad = ({ data }) => {
   const safetyFinishedDrvColumns = images.filter((image) => {
     return image.title === "mx.SafetyFinishDrvColumns.image";
   });
-  const safetyCOVIDDrvColumns = images.filter((image) => {
-    return image.title === "mx.SafetyCOVIDDrvColumns.image";
-  });
+
   return (
     <Layout>
       <SafetyDrvImgHero image={safetyHeroImage}></SafetyDrvImgHero>
@@ -63,7 +61,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulFeature(filter: {country: {code: {eq: "mx"}}}) {
+    allContentfulFeature(filter: { country: { code: { eq: "mx" } } }) {
       nodes {
         name
         slug
