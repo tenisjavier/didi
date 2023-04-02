@@ -54,7 +54,7 @@ const Layout = ({
     if (pathname === "/mx/" || pathname === "/mx/home/") {
       const test_version = window.localStorage.getItem("test_version");
 
-      //? if is a new user
+      //? if is a new user with no ls
       if (!test_version) {
         let group = Math.random();
         console.log("202304-home-original");
