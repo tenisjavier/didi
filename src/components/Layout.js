@@ -61,17 +61,20 @@ const Layout = ({
         window.localStorage.setItem("test_version", "202304-home-original");
         if (group < 0.5) {
           window.localStorage.setItem("test_version", "202304-home-heroOneBtn");
-          console.log("202304-home-heroOneBtn");
-          if (window.location.pathname === "/mx/")
+
+          if (window.location.pathname === "/mx/") {
             window.location.replace("/mx/home/");
+            return null;
+          }
         }
       }
 
       //? if is a old user
       if (test_version === "202304-home-heroOneBtn") {
-        console.log("202304-home-heroOneBtn");
-        if (window.location.pathname === "/mx/")
+        if (window.location.pathname === "/mx/") {
           window.location.replace("/mx/home/");
+          return null;
+        }
       }
     }
   }
