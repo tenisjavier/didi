@@ -128,6 +128,14 @@ const SEO = ({ title, desc, index, schema }) => {
   return (
     <>
       <Helmet htmlAttributes={htmlAttributes} title={title}>
+        {["none"].includes(country.code) && (
+          <script
+            src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"
+            type="text/javascript"
+            charset="UTF-8"
+            data-domain-script="6aaf46c0-1a10-4834-aa14-a2ccd88a1f94-test"
+          ></script>
+        )}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") || !index ? (
@@ -151,6 +159,7 @@ const SEO = ({ title, desc, index, schema }) => {
           // activate tracking pixel when DOM is mounted
           useEffect(() => {
             insertBtnParams();
+            //function OptanonWrapper() {}
           }, [])
         }
       </Helmet>
