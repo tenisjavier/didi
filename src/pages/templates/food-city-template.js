@@ -7,9 +7,7 @@ import FoodCityBannerCTA2 from "../../components/sections/FoodCityBannerCTA2";
 import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodCityList from "../../components/sections/FoodCityList";
-import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
-import SmsCTA from "../../components/sections/SmsCTA"
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -28,12 +26,7 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
-  const foodDeliveryDownloadsImages = images.filter((image) => {
-  return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
-  });
-  const foodSMSImages = images.filter((image) => {
-  return image.title.indexOf("mx.FoodSMSCTA.image") !== -1;
-  });
+
   const customBreadcrumb = [
     {
       link: `https://web.didiglobal.com/mx/food/`,
@@ -73,12 +66,6 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      {/* <div className="lg:hidden sm:block">
-        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
-      </div>
-      <div className="lg:block sm:hidden">
-        <SmsCTA image={foodDeliveryCTAImage}></SmsCTA>
-      </div> */}
       <FoodFAQCities data={data.contentfulCity}></FoodFAQCities>
     </Layout>
   );

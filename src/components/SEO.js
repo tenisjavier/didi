@@ -128,7 +128,7 @@ const SEO = ({ title, desc, index, schema }) => {
   return (
     <>
       <Helmet htmlAttributes={htmlAttributes} title={title}>
-        {["none"].includes(country.code) && (
+        {["au", "nz"].includes(country.code) && pathname === "/au/test/" && (
           <script
             src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"
             type="text/javascript"
@@ -159,7 +159,7 @@ const SEO = ({ title, desc, index, schema }) => {
           // activate tracking pixel when DOM is mounted
           useEffect(() => {
             insertBtnParams();
-            //function OptanonWrapper() {}
+            function OptanonWrapper() {}
           }, [])
         }
       </Helmet>

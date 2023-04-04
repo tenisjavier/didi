@@ -170,6 +170,10 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/conductor/",
       dropMenu: [
         {
+          text: "Socio Conductor",
+          url: "/mx/conductor/",
+        },
+        {
           text: "Requisitos para Conductores",
           url: "/mx/conductor/requisitos-para-conducir/",
         },
