@@ -3,7 +3,8 @@ const insertBtnParams = () => {
   window.localStorage.removeItem("gatsby-i18next-language");
 
   const countryCode =
-    window.location.host !== "99app.com"
+    window.location.host !== "99app.com" &&
+    window.location.host !== "stg.99app.com"
       ? window.location.pathname.split("/")[1]
       : "br";
 
