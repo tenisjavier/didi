@@ -125,6 +125,13 @@ const SEO = ({ title, desc, index, schema }) => {
     htmlAttributes.itemType = "https://schema.org/FAQPage";
   }
 
+  //? canonical definition, ab pages should redirect to original
+
+  const canonicalUrl =
+    pathname !== "/mx/home/"
+      ? origin + pathname
+      : "https://web.didiglobal.com/mx/";
+
   return (
     <>
       <Helmet htmlAttributes={htmlAttributes} title={title}>
@@ -141,7 +148,7 @@ const SEO = ({ title, desc, index, schema }) => {
         {pathname.includes("thejourney") || !index ? (
           <meta name="robots" content="noindex"></meta>
         ) : null}
-        <link rel="canonical" href={origin + pathname} />
+        <link rel="canonical" href={canonicalUrl} />
         {countries.map((c, index) => {
           const placeRegex = /(\/[A-Za-z]{2}\/$)/;
 
