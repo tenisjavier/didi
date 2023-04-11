@@ -124,7 +124,7 @@ const insertBtnParams = () => {
       return values;
     }
 
-    //if not is seo or web referral
+    //if not, is seo or web referral
     var searchEngines = {
       "yahoo.com": {
         p: "p",
@@ -166,6 +166,16 @@ const insertBtnParams = () => {
       values.medium = "organic";
 
       values.term = (term ? term[0].split("=")[1] : "") || "(not provided)";
+
+      //! special rule for ab testing
+
+      if (
+        document.referrer === "https://web.didiglobal.com/mx/" ||
+        document.referrer === "http://localhost:8000/mx/"
+      ) {
+        values.source = "google";
+        values.medium = "organic";
+      }
     } else if (referringDomain !== thisDomain) {
       values.source = a.hostname;
       values.medium = "referral";

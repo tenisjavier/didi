@@ -230,6 +230,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi México: Regístrate como Socio Conductor DiDi",
       desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y entrega y economy. Gana más y manejando menos.",
     },
+    "/home/": {
+      title: "DiDi México: Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y entrega y economy. Gana más y manejando menos.",
+    },
     "/pasajero/": {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi, DiDi Delivery y DiDi Economy están activos en México. Elige la mejor opción.",
