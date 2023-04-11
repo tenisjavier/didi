@@ -15,12 +15,14 @@ interface HomeHeroProps extends BtnProps {
     gatsbyImageData: any;
   };
   title?: string;
+  iframe?: string;
 }
 
 const HomeHero = ({
   bgImage,
   mobileBgImage,
   title,
+  iframe,
   btnType,
 }: HomeHeroProps) => {
   //? if there is a mobile image use that one
@@ -30,6 +32,7 @@ const HomeHero = ({
   const props: CTAProps = {
     hero: true,
     title: title || t("HomeHero.title"),
+    iframe: iframe,
     textColor: t("HomeHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
