@@ -31,7 +31,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout index={false}>
-      <HomeHero bgImage={homeHeroBgImage}></HomeHero>
+      <HomeHero bgImage={homeHeroBgImage} iframe="drv"></HomeHero>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
