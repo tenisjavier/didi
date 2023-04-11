@@ -90,27 +90,27 @@ const SEO = ({ title, desc, index, schema }) => {
 
   // POPUP LOGIC
   const isBrowser = typeof window !== "undefined";
-  const consentName = country.code + "_didi_consent";
+  // const consentName = country.code + "_didi_consent";
 
-  let shouldShowPopup = () => {
-    if (!isBrowser) return false;
-    return (
-      !window.localStorage.getItem(consentName) &&
-      ["nz", "au"].includes(country.code) &&
-      !window.sessionStorage.getItem(consentName)
-    );
-  };
-  const [isVisible, setIsVisible] = useState(shouldShowPopup());
+  // let shouldShowPopup = () => {
+  //   if (!isBrowser) return false;
+  //   return (
+  //     !window.localStorage.getItem(consentName) &&
+  //     ["nz", "au"].includes(country.code) &&
+  //     !window.sessionStorage.getItem(consentName)
+  //   );
+  // };
+  // const [isVisible, setIsVisible] = useState(shouldShowPopup());
 
-  const saveConsent = (value, storageType) => {
-    storageType.setItem(consentName, value);
-  };
+  // const saveConsent = (value, storageType) => {
+  //   storageType.setItem(consentName, value);
+  // };
 
-  const handleAcceptConsent = () => {
-    saveConsent("true", window.localStorage);
-    // gtmEvent(countryCode + "_accept_consent");
-    setIsVisible(false);
-  };
+  // const handleAcceptConsent = () => {
+  //   saveConsent("true", window.localStorage);
+  //   // gtmEvent(countryCode + "_accept_consent");
+  //   setIsVisible(false);
+  // };
 
   // const handleDenyConsent = () => {
   //   saveConsent("false", window.sessionStorage);
@@ -140,7 +140,7 @@ const SEO = ({ title, desc, index, schema }) => {
             src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"
             type="text/javascript"
             charset="UTF-8"
-            data-domain-script="6aaf46c0-1a10-4834-aa14-a2ccd88a1f94-test"
+            data-domain-script="f9f9aeb2-1532-4a70-bafe-28fce845d41c"
           ></script>
         )}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
@@ -170,12 +170,12 @@ const SEO = ({ title, desc, index, schema }) => {
           }, [])
         }
       </Helmet>
-      {isBrowser && (
+      {/* {isBrowser && (
         <ConsentPopup
           isVisible={isVisible}
           handleAccept={handleAcceptConsent}
         ></ConsentPopup>
-      )}
+      )} */}
     </>
   );
 };

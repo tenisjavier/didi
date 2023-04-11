@@ -15,6 +15,7 @@ import SmsSender from "./SmsSender";
 export interface CTAProps extends BtnProps {
   hero: boolean;
   title: string;
+  iframe?: string;
   desc?: string;
   link?: string;
   textColor: string;
@@ -49,6 +50,7 @@ const CTASection = (props: CTAProps) => {
   const {
     hero,
     title,
+    iframe,
     desc,
     link,
     textColor,
@@ -87,7 +89,7 @@ const CTASection = (props: CTAProps) => {
     ></Btn>
   );
 
-  // if btnType is both will print pax first and drv second
+  //? if btnType is both will print pax first and drv second
   if (btnType === "both") {
     sectionBtn = (
       <>
@@ -147,6 +149,10 @@ const CTASection = (props: CTAProps) => {
     );
   }
 
+  //? if iframe is not null then btns are hidden
+
+  if (iframe === "drv") sectionBtn = <></>;
+
   let dir: any = "ltr";
   let textDir: any = "text-left";
   let margin: any = "mr-4";
@@ -156,8 +162,6 @@ const CTASection = (props: CTAProps) => {
     textDir = "text-right";
     margin = "ml-4";
   }
-
-  const country = useCountry().code;
 
   return (
     <section
@@ -174,7 +178,7 @@ const CTASection = (props: CTAProps) => {
         {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {imageRawRender && imageRawRender}
         <div
-          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
+          className={`w-11/12  mt-16 text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
         >
           {hero ? (
             <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
@@ -337,6 +341,15 @@ const CTASection = (props: CTAProps) => {
             <>{sectionBtn}</>
           </ConditionalWrapper>
         </div>
+        {iframe === "drv" && (
+          <div className="mt-16  h-full flex justify-center lg:justify-end  z-20 shadow-lg lg:ml-8">
+            <iframe
+              id="h5"
+              src="https://anz-rides-driver.onelink.me/ixFb/ukdriverhero"
+              className="w-80 h-110  overflow-hidden rounded-lg"
+            ></iframe>
+          </div>
+        )}
       </div>
       {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
       {mobileBgImage && (
