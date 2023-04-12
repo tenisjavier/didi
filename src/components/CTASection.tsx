@@ -5,7 +5,6 @@ import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
-import {QRCodeSVG} from 'qrcode.react';
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -38,7 +37,7 @@ export interface CTAProps extends BtnProps {
   reverse?: boolean;
   RTL?: boolean;
   smsFormTitle?: string;
-  smsFormNote?: string;
+  qr?: React.ReactElement;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -68,6 +67,7 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
+    qr,
   } = props;
 
   let sectionBtn = (
@@ -234,7 +234,7 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper condition={btnType === "submit"} wrapper={() => (
+          <ConditionalWrapper condition={btnType === "smsCTA"} wrapper={() => (
             <form>
               <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
                 <div className="grid">
@@ -244,7 +244,7 @@ const CTASection = (props: CTAProps) => {
                   <SmsSender></SmsSender>
                 </div>
                 <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
-                  <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F"/>
+                  {qr}  
                   <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
                 </div>
               </div>
