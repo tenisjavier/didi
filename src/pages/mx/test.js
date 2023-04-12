@@ -32,7 +32,7 @@ const Index = ({ data }) => {
   //iframe test
   return (
     <Layout index={false}>
-      <HomeHero bgImage={homeHeroBgImage} iframe="drv"></HomeHero>
+      <HomeHero bgImage={homeHeroBgImage}></HomeHero>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
