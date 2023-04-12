@@ -342,11 +342,11 @@ const CTASection = (props: CTAProps) => {
           </ConditionalWrapper>
         </div>
         {iframe === "drv" && (
-          <div className="mt-16  h-full flex justify-center lg:justify-end  z-20 shadow-lg lg:ml-8">
+          <div className="mt-16  h-full flex justify-center lg:justify-end  z-20  lg:ml-8 overflow-hidden">
             <iframe
               id="h5"
               src="https://anz-rides-driver.onelink.me/ixFb/ukdriverhero"
-              className="w-80 h-110  overflow-hidden rounded-lg"
+              className="w-80 h-100   rounded-lg"
             ></iframe>
           </div>
         )}
