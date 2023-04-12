@@ -6,7 +6,9 @@ import HeroVideo from "../images/didi-home.mp4";
 import Layout from "../components/Layout";
 
 const Index = ({ data }) => {
-  const countries = data.allContentfulCountry.nodes;
+  const countries = data.allContentfulCountry.nodes.filter(
+    (c) => c.englishName !== "Hong Kong" && c.englishName !== "DiDi Global"
+  );
   const images = data.allContentfulAsset.nodes;
   const HomeAboutUsImage = images.filter((image) => {
     return image.title === "int.HomeAboutUs.image";

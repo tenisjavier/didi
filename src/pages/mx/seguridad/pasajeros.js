@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import SafetyPaxImgHero from "../../../components/sections/SafetyPaxImgHero";
-import SafetyPaxColumns from "../../../components/sections/SafetyPaxColumns";
 import SafetyGridPaxBeforeTrip from "../../../components/sections/SafetyGridPaxBeforeTrip";
 import SafetyGridPaxDuringTrip from "../../../components/sections/SafetyGridPaxDuringTrip";
 import SafetyGridPaxAfterTrip from "../../../components/sections/SafetyGridPaxAfterTrip";
@@ -21,9 +20,6 @@ const Seguridad = ({ data }) => {
   const safetyFinishedPaxColumns = images.filter((image) => {
     return image.title === "mx.SafetyFinishPaxColumns.image";
   });
-  const safetyCOVIDPaxColumns = images.filter((image) => {
-    return image.title === "mx.SafetyCOVIDPaxColumns.image";
-  });
 
   return (
     <Layout>
@@ -37,9 +33,6 @@ const Seguridad = ({ data }) => {
       <SafetyGridPaxAfterTrip
         images={safetyFinishedPaxColumns.reverse()}
       ></SafetyGridPaxAfterTrip>
-      <SafetyPaxColumns
-        images={safetyCOVIDPaxColumns.reverse()}
-      ></SafetyPaxColumns>
     </Layout>
   );
 };
@@ -51,7 +44,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.SafetyPax.image)|(mx.SafetyBeforePaxColumns.image)|(mx.SafetyCOVIDPaxColumns.image)|(mx.SafetyDuringPaxColumns.image)|(mx.SafetyFinishPaxColumns.image)/"
+          regex: "/(mx.SafetyPax.image)|(mx.SafetyBeforePaxColumns.image)|(mx.SafetyDuringPaxColumns.image)|(mx.SafetyFinishPaxColumns.image)/"
         }
       }
       sort: { title: ASC }

@@ -170,6 +170,10 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/conductor/",
       dropMenu: [
         {
+          text: "Socio Conductor",
+          url: "/mx/conductor/",
+        },
+        {
           text: "Requisitos para Conductores",
           url: "/mx/conductor/requisitos-para-conducir/",
         },
@@ -217,7 +221,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Préstamos",
-          url: "https://prestamos.didiglobal.com",
+          url: "/mx/prestamos/",
         },
         {
           text: "DiDi Pay FAQ",
@@ -448,6 +452,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
+        },
+        {
+          text: "DiDi Moto",
+          url: "/co/driver/moto/",
         },
         {
           text: "DiDi Flex",

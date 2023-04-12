@@ -22,7 +22,9 @@ const Footer = () => {
       }
     }
   `);
-  const countries = data.allContentfulCountry.nodes;
+  const countries = data.allContentfulCountry.nodes.filter(
+    (c: any) => c.englishName !== "Hong Kong" && c.englishName !== "DiDi Global"
+  );
   const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
   const countryCode = useCountry().code;
   const links = getFooterLinks(countryCode);

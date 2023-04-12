@@ -10,6 +10,7 @@
   "SafetyCTA.btnText": "Conoce más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/ec/seguridad/",
+  "SafetyFeatures.linkItem": "/ec/seguridad/funciones/{{feature}}",
   "HelloCTA.title": "Sobre DiDi",
   "HelloCTA.bullets": false,
   "HelloCTA.desc": "Nacimos en 2012 y hoy conectamos a +550 millones de usuarios con +31 millones de Socios Conductores en 260 de las ciudades más importantes del mundo.",

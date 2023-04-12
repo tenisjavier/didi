@@ -47,7 +47,7 @@ const DiDiPrestamos = ({ data }) => {
       item.title === "¿Cómo retirar dinero si la solicitud es aprobada?"
   );
   return (
-    <Layout index={false} sb={false}>
+    <Layout sb={false}>
       <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
       <DiDiPrestamosBenefits
         image={drvBenefitsImage}

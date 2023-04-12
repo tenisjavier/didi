@@ -9,6 +9,7 @@
   "SafetyCTA.btnText": "Conocé Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/cr/seguridad/",
+  "SafetyFeatures.linkItem": "/cr/seguridad/funciones/{{feature}}",
   "HelloCTA.title": "¡Hola!",
   "HelloCTA.bullets": false,
   "HelloCTA.desc": "Somos DiDi, la plataforma tecnológica de movilidad inteligente. #1 en el mundo.  Nacimos en 2012 y hoy conectamos a +550 millones de usuarios con +31 millones de Socios Conductores en 260 de las ciudades más importantes del mundo.",

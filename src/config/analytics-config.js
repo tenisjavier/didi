@@ -2,7 +2,12 @@
 const insertBtnParams = () => {
   window.localStorage.removeItem("gatsby-i18next-language");
 
-  const countryCode = window.location.pathname.split("/")[1];
+  const countryCode =
+    window.location.host !== "99app.com" &&
+    window.location.host !== "stg.99app.com"
+      ? window.location.pathname.split("/")[1]
+      : "br";
+
   var referrer = document.referrer;
   var gaReferral = {
     source: "(direct)",
@@ -80,7 +85,7 @@ const insertBtnParams = () => {
       url.indexOf("fleet.onelink.me/tLtr/") > -1 ||
       url.indexOf("fleet.onelink.me/jjQA/") > -1 ||
       url.indexOf("99.onelink.me/Mayr/") > -1 ||
-      url.indexOf("onelink.me/IY6B/b1f23260") > -1 ||
+      url.indexOf("onelink.me/IY6B/") > -1 ||
       url.indexOf("onelink.me/5xQ3/") > -1 ||
       url.indexOf("onelink.me/4B2F/") > -1 ||
       url.indexOf("onelink.me/zzaY/") > -1 ||
@@ -119,7 +124,7 @@ const insertBtnParams = () => {
       return values;
     }
 
-    //if not is seo or web referral
+    //if not, is seo or web referral
     var searchEngines = {
       "yahoo.com": {
         p: "p",
@@ -161,6 +166,16 @@ const insertBtnParams = () => {
       values.medium = "organic";
 
       values.term = (term ? term[0].split("=")[1] : "") || "(not provided)";
+
+      //! special rule for ab testing
+
+      if (
+        document.referrer === "https://web.didiglobal.com/mx/" ||
+        document.referrer === "http://localhost:8000/mx/"
+      ) {
+        values.source = "google";
+        values.medium = "organic";
+      }
     } else if (referringDomain !== thisDomain) {
       values.source = a.hostname;
       values.medium = "referral";
@@ -190,8 +205,7 @@ const insertBtnParams = () => {
 
     const countriesLanguage = {
       cl: ["CL", "es-CL"],
-      "99app": ["BR", "pt-BR"],
-      brasil: ["BR", "pt-BR"],
+      br: ["BR", "pt-BR"],
       ar: ["AR", "es-AR"],
       pe: ["PE", "es-PE"],
       mx: ["MX", "es-MX"],
@@ -272,30 +286,14 @@ const insertBtnParams = () => {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
       campaignId = "refpage_" + window.location.pathname;
-      if (window.location.pathname === "/mx/") {
-        adgroupId = "202303-original";
-        const test_version = window.localStorage.getItem("test_version");
-        if (!test_version) {
-          let group = Math.random();
-          window.localStorage.setItem("test_version", "202303-original");
-          console.log("202303-original");
-          if (group < 0.5) {
-            window.localStorage.setItem(
-              "test_version",
-              "202303-heroOneBtn-imageDrv"
-            );
-            adgroupId = "202303-heroOneBtn-imageDrv";
-            console.log("202303-heroOneBtn-imageDrv");
-          }
-        }
-        if (test_version === "202303-original") {
-          adgroupId = "202303-original";
-          console.log("202303-original");
-        }
-        if (test_version === "202303-heroOneBtn-imageDrv") {
-          adgroupId = "202303-heroOneBtn-imageDrv";
-          console.log("202303-heroOneBtn-imageDrv");
-        }
+
+      //? EXPERIMENT A/B other code in Layout
+      const test_version = window.localStorage.getItem("test_version");
+      adgroupId = "202304-home-original";
+
+      //? if is a old user
+      if (test_version === "202304-home-heroOneBtn") {
+        adgroupId = "202304-home-heroOneBtn";
       }
     }
 
@@ -342,6 +340,8 @@ const insertBtnParams = () => {
       if (window.location.href.indexOf("/mx/prestamos") !== -1)
         return newUrl.href;
       newUrl.searchParams.set("af_r", form_url);
+      if (document.getElementById("h5"))
+        document.getElementById("h5").src = form_url + newUrl.search;
       return newUrl.href;
     } else if (url.href.indexOf("me/zzaY/") > -1) {
       newUrl.searchParams.set(

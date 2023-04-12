@@ -19,7 +19,6 @@ const NeutralFAQ = ({ faqs, faqTitle }) => {
     textColor: "gray-primary",
     textAccordionColor: "orange-primary",
     bgAccordionColor: "bg-gray-light",
-    title: title,
     items: items,
     type: "faq",
   };

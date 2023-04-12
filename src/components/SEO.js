@@ -90,27 +90,27 @@ const SEO = ({ title, desc, index, schema }) => {
 
   // POPUP LOGIC
   const isBrowser = typeof window !== "undefined";
-  const consentName = country.code + "_didi_consent";
+  // const consentName = country.code + "_didi_consent";
 
-  let shouldShowPopup = () => {
-    if (!isBrowser) return false;
-    return (
-      !window.localStorage.getItem(consentName) &&
-      ["nz", "au"].includes(country.code) &&
-      !window.sessionStorage.getItem(consentName)
-    );
-  };
-  const [isVisible, setIsVisible] = useState(shouldShowPopup());
+  // let shouldShowPopup = () => {
+  //   if (!isBrowser) return false;
+  //   return (
+  //     !window.localStorage.getItem(consentName) &&
+  //     ["nz", "au"].includes(country.code) &&
+  //     !window.sessionStorage.getItem(consentName)
+  //   );
+  // };
+  // const [isVisible, setIsVisible] = useState(shouldShowPopup());
 
-  const saveConsent = (value, storageType) => {
-    storageType.setItem(consentName, value);
-  };
+  // const saveConsent = (value, storageType) => {
+  //   storageType.setItem(consentName, value);
+  // };
 
-  const handleAcceptConsent = () => {
-    saveConsent("true", window.localStorage);
-    // gtmEvent(countryCode + "_accept_consent");
-    setIsVisible(false);
-  };
+  // const handleAcceptConsent = () => {
+  //   saveConsent("true", window.localStorage);
+  //   // gtmEvent(countryCode + "_accept_consent");
+  //   setIsVisible(false);
+  // };
 
   // const handleDenyConsent = () => {
   //   saveConsent("false", window.sessionStorage);
@@ -125,15 +125,30 @@ const SEO = ({ title, desc, index, schema }) => {
     htmlAttributes.itemType = "https://schema.org/FAQPage";
   }
 
+  //? canonical definition, ab pages should redirect to original
+
+  const canonicalUrl =
+    pathname !== "/mx/home/"
+      ? origin + pathname
+      : "https://web.didiglobal.com/mx/";
+
   return (
     <>
       <Helmet htmlAttributes={htmlAttributes} title={title}>
+        {["au", "nz"].includes(country.code) && (
+          <script
+            src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"
+            type="text/javascript"
+            charset="UTF-8"
+            data-domain-script="f9f9aeb2-1532-4a70-bafe-28fce845d41c"
+          ></script>
+        )}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") || !index ? (
           <meta name="robots" content="noindex"></meta>
         ) : null}
-        <link rel="canonical" href={origin + pathname} />
+        <link rel="canonical" href={canonicalUrl} />
         {countries.map((c, index) => {
           const placeRegex = /(\/[A-Za-z]{2}\/$)/;
 
@@ -151,15 +166,16 @@ const SEO = ({ title, desc, index, schema }) => {
           // activate tracking pixel when DOM is mounted
           useEffect(() => {
             insertBtnParams();
+            function OptanonWrapper() {}
           }, [])
         }
       </Helmet>
-      {isBrowser && (
+      {/* {isBrowser && (
         <ConsentPopup
           isVisible={isVisible}
           handleAccept={handleAcceptConsent}
         ></ConsentPopup>
-      )}
+      )} */}
     </>
   );
 };
