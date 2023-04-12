@@ -7,7 +7,6 @@ import FoodCityBannerCTA2 from "../../components/sections/FoodCityBannerCTA2";
 import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
-import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
 
 const FoodCity = ({ data }) => {
@@ -33,9 +32,6 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
-  const foodDeliveryDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
-  });
 
   //! Is not a good solution needs refactor to be more flexible in other countries
   const customBreadcrumb = [
@@ -79,7 +75,6 @@ const FoodCity = ({ data }) => {
         data={data.contentfulNeighbourhood}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
       <FoodFAQCities data={data.contentfulNeighbourhood.city}></FoodFAQCities>
     </Layout>
   );

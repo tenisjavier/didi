@@ -16,13 +16,14 @@ interface FeatureCTAComponentProps {
     description: string;
     gatsbyImageData: any;
   };
+  bullets?: string[];
 }
 
 const FeatureCTAComponent = ({
   title,
   desc,
-  btnType,
   image,
+  bullets
 }: FeatureCTAComponentProps) => {
   const props: CTAProps = {
     hero: false,
@@ -31,9 +32,9 @@ const FeatureCTAComponent = ({
     textColor: "gray-primary",
     image: image,
     imageStyle: "z-10 m-4 w-80  rounded",
-    btnMode: "primary",
-    btnType: btnType,
     reverse: true,
+    bullets: bullets,
+    descBeforeBullets: true
   };
   return <CTASection {...props}></CTASection>;
 };

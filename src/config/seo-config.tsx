@@ -230,6 +230,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi México: Regístrate como Socio Conductor DiDi",
       desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y entrega y economy. Gana más y manejando menos.",
     },
+    "/home/": {
+      title: "DiDi México: Regístrate como Socio Conductor DiDi",
+      desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y entrega y economy. Gana más y manejando menos.",
+    },
     "/pasajero/": {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi, DiDi Delivery y DiDi Economy están activos en México. Elige la mejor opción.",
@@ -696,6 +700,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/driver/historias-de-exito/": {
       title: "Historias de Éxito de Socios Arrendadores",
       desc: "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
+    },
+    "/driver/moto/": {
+      title: "DiDi Moto - Genera ingresos extra",
+      desc: "Genera inresos extra conectándote con DiDi Moto disponible ahora en Colombia.",
     },
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",

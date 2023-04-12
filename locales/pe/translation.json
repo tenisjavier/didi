@@ -9,6 +9,7 @@
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "seguridad/",
+  "SafetyFeatures.linkItem": "/pe/seguridad/funciones/{{feature}}",
   "DrvCTA.title": "Ganancias Adicionales con DiDi",
   "DrvCTA.desc": "Conéctate con nuestros servicios de autos particulares de la manera más segura y empieza a generar ingresos extra con DiDi. Complementa tus ingresos conectándose a una de las app de movilidad más grande del mundo. Regístrate en DiDi con tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a manejar.",
   "DrvCTA.bgColor": "bg-gray-light",

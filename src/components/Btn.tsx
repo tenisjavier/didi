@@ -33,6 +33,7 @@ type BtnType =
   | "en"
   | "smsCTA";
 
+
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
 
 export interface BtnProps {

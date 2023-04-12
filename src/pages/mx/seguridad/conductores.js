@@ -2,13 +2,14 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import SafetyDrvImgHero from "../../../components/sections/SafetyDrvImgHero";
-import SafetyDrvColumns from "../../../components/sections/SafetyDrvColumns";
 import SafetyGridBeforeTrip from "../../../components/sections/SafetyGridBeforeTrip";
 import SafetyGridDuringTrip from "../../../components/sections/SafetyGridDuringTrip";
 import SafetyGridAfterTrip from "../../../components/sections/SafetyGridAfterTrip";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const features = data.allContentfulFeature.nodes;
+
   const safetyHeroImage = images.filter((image) => {
     return image.title === "mx.SafetyDrv.image";
   })[0];
@@ -21,24 +22,22 @@ const Seguridad = ({ data }) => {
   const safetyFinishedDrvColumns = images.filter((image) => {
     return image.title === "mx.SafetyFinishDrvColumns.image";
   });
-  const safetyCOVIDDrvColumns = images.filter((image) => {
-    return image.title === "mx.SafetyCOVIDDrvColumns.image";
-  });
+
   return (
     <Layout>
       <SafetyDrvImgHero image={safetyHeroImage}></SafetyDrvImgHero>
       <SafetyGridBeforeTrip
         images={safetyBeforeDrvColumns.reverse()}
+        features={features}
       ></SafetyGridBeforeTrip>
       <SafetyGridDuringTrip
         images={safetyDuringDrvColumns.reverse()}
+        features={features}
       ></SafetyGridDuringTrip>
       <SafetyGridAfterTrip
         images={safetyFinishedDrvColumns.reverse()}
+        features={features}
       ></SafetyGridAfterTrip>
-      <SafetyDrvColumns
-        images={safetyCOVIDDrvColumns.reverse()}
-      ></SafetyDrvColumns>
     </Layout>
   );
 };
@@ -50,7 +49,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.SafetyDrv.image)|(mx.SafetyBeforeDrvColumns.image)|(mx.SafetyCOVIDDrvColumns.image)|(mx.SafetyDuringDrvColumns.image)|(mx.SafetyFinishDrvColumns.image)/"
+          regex: "/(mx.SafetyDrv.image)|(mx.SafetyBeforeDrvColumns.image)|(mx.SafetyDuringDrvColumns.image)|(mx.SafetyFinishDrvColumns.image)/"
         }
       }
       sort: { title: ASC }
@@ -60,6 +59,12 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    allContentfulFeature(filter: { country: { code: { eq: "mx" } } }) {
+      nodes {
+        name
+        slug
       }
     }
   }

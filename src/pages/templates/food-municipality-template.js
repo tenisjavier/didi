@@ -7,7 +7,6 @@ import FoodCityBannerCTA2 from "../../components/sections/FoodCityBannerCTA2";
 import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodMunicipalityList from "../../components/sections/FoodMunicipalityList";
-import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
 
@@ -31,9 +30,6 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
-  const foodDeliveryDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
-  });
   const customBreadcrumb = [
     {
       link: `https://web.didiglobal.com/mx/food/`,

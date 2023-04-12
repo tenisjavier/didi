@@ -13,11 +13,14 @@ import SmsSender from "./SmsSender";
 export interface CTAProps extends BtnProps {
   hero: boolean;
   title: string;
+  iframe?: string;
   desc?: string;
   link?: string;
   textColor: string;
   bgImage?: any;
   bgImageStyle?: string;
+  mobileBgImage?: any;
+  mobileBgImageStyle?: string;
   bgVideo?: any;
   imageRawRender?: any;
   bgColor?: string;
@@ -38,17 +41,23 @@ export interface CTAProps extends BtnProps {
   RTL?: boolean;
   smsFormTitle?: string;
   qr?: React.ReactElement;
+  smsFormNote?: string;
+  descBeforeBullets?: boolean;
+
 }
 
 const CTASection = (props: CTAProps) => {
   const {
     hero,
     title,
+    iframe,
     desc,
     link,
     textColor,
     bgImage,
     bgImageStyle,
+    mobileBgImage,
+    mobileBgImageStyle,
     bgVideo,
     imageRawRender,
     bgColor,
@@ -68,6 +77,7 @@ const CTASection = (props: CTAProps) => {
     RTL,
     smsFormTitle,
     qr,
+    descBeforeBullets
   } = props;
 
   let sectionBtn = (
@@ -80,7 +90,7 @@ const CTASection = (props: CTAProps) => {
     ></Btn>
   );
 
-  // if btnType is both will print pax first and drv second
+  //? if btnType is both will print pax first and drv second
   if (btnType === "both") {
     sectionBtn = (
       <>
@@ -140,6 +150,10 @@ const CTASection = (props: CTAProps) => {
     );
   }
 
+  //? if iframe is not null then btns are hidden
+
+  if (iframe === "drv") sectionBtn = <></>;
+
   let dir: any = "ltr";
   let textDir: any = "text-left";
   let margin: any = "mr-4";
@@ -165,59 +179,130 @@ const CTASection = (props: CTAProps) => {
         {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {imageRawRender && imageRawRender}
         <div
-          className={`w-11/12   text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
+          className={`w-11/12  mt-16 text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
         >
           {hero ? (
             <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
           ) : (
             <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
           )}
-          {bullets && (
-            <>
-              <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
-                {bullets.map((item, index) => {
-                  return (
-                    <div key={index}>
-                      <li className="flex">
-                        {!customBulletIcon ? (
-                          <FontAwesomeIcon
-                            icon={faCarSide}
-                            className={`mt-1 ${margin} text-orange-primary w-6`}
-                            size="sm"
-                          />
-                        ) : (
-                          icon && (
-                            <FontAwesomeIcon
-                              icon={icon}
-                              className={`${margin} text-orange-primary w-6`}
-                              size="sm"
-                            />
-                          )
-                        )}
-                        <div className="inline-block">
-                          {typeof item === "string"
-                            ? item.split("\n").map((str, index) => (
-                                <p className="mt-0 mb-5 text-xl" key={index}>
-                                  {str}
-                                </p>
-                              ))
-                            : item}
-                        </div>
-                      </li>
-                      <br></br>
-                    </div>
-                  );
-                })}
-              </ul>
-              <br></br>
-            </>
-          )}
-          {desc &&
-            desc.split("\n").map((str, index) => (
-              <p className="mb-10 text-lg" key={index}>
-                {str}
-              </p>
-            ))}
+          <ConditionalWrapper
+            condition={descBeforeBullets === true}
+            wrapper={() => (
+              <>
+                {desc &&
+                  desc.split("\n").map((str, index) => (
+                    <p className="mb-10 text-lg" key={index}>
+                      {str}
+                    </p>
+                  ))}
+                {bullets && (
+                  <>
+                    <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                      {bullets.map((item, index) => {
+                        return (
+                          <div key={index}>
+                            <li className="flex">
+                              {!customBulletIcon ? (
+                                <FontAwesomeIcon
+                                  icon={faCarSide}
+                                  className={`mt-1 ${margin} text-orange-primary w-6`}
+                                  size="sm"
+                                />
+                              ) : (
+                                icon && (
+                                  <FontAwesomeIcon
+                                    icon={icon}
+                                    className={`${margin} text-orange-primary w-6`}
+                                    size="sm"
+                                  />
+                                )
+                              )}
+                              <div className="inline-block">
+                                {typeof item === "string"
+                                  ? item.split("\n").map((str, index) => (
+                                      <p
+                                        className="mt-0 mb-5 text-xl"
+                                        key={index}
+                                      >
+                                        {str}
+                                      </p>
+                                    ))
+                                  : item}
+                              </div>
+                            </li>
+                            <br></br>
+                          </div>
+                        );
+                      })}
+                    </ul>
+                    <br></br>
+                  </>
+                )}
+              </>
+            )}
+          >
+            <></>
+          </ConditionalWrapper>
+          <ConditionalWrapper
+            condition={descBeforeBullets != true}
+            wrapper={() => (
+              <>
+                {bullets && (
+                  <>
+                    <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                      {bullets.map((item, index) => {
+                        return (
+                          <div key={index}>
+                            <li className="flex">
+                              {!customBulletIcon ? (
+                                <FontAwesomeIcon
+                                  icon={faCarSide}
+                                  className={`mt-1 ${margin} text-orange-primary w-6`}
+                                  size="sm"
+                                />
+                              ) : (
+                                icon && (
+                                  <FontAwesomeIcon
+                                    icon={icon}
+                                    className={`${margin} text-orange-primary w-6`}
+                                    size="sm"
+                                  />
+                                )
+                              )}
+                              <div className="inline-block">
+                                {typeof item === "string"
+                                  ? item.split("\n").map((str, index) => (
+                                      <p
+                                        className="mt-0 mb-5 text-xl"
+                                        key={index}
+                                      >
+                                        {str}
+                                      </p>
+                                    ))
+                                  : item}
+                              </div>
+                            </li>
+                            <br></br>
+                          </div>
+                        );
+                      })}
+                    </ul>
+                    <br></br>
+                  </>
+                )}
+                {desc &&
+                  desc.split("\n").map((str, index) => (
+                    <p className="mb-10 text-lg" key={index}>
+                      {str}
+                    </p>
+                  ))}
+              </>
+            )}
+          >
+            <></>
+          </ConditionalWrapper>
+
           {link && (
             <p>
               <a className="mb-5 text-lg" href={"tel:" + link}>
@@ -246,15 +331,31 @@ const CTASection = (props: CTAProps) => {
                 <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
                   {qr}  
                   <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
+
                 </div>
-              </div>
-            </form>
-          )}>
+              </form>
+            )}
+          >
             <>{sectionBtn}</>
           </ConditionalWrapper>
         </div>
+        {iframe === "drv" && (
+          <div className="mt-16  h-full flex justify-center lg:justify-end  z-20  lg:ml-8 overflow-hidden">
+            <iframe
+              id="h5"
+              src="https://anz-rides-driver.onelink.me/ixFb/ukdriverhero"
+              className="w-80 h-100   rounded-lg"
+            ></iframe>
+          </div>
+        )}
       </div>
       {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle}></Image>}
+      {mobileBgImage && (
+        <Image
+          imageData={mobileBgImage}
+          imageStyle={mobileBgImageStyle}
+        ></Image>
+      )}
       {bgVideo && bgVideo}
     </section>
   );

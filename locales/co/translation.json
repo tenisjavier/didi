@@ -4,11 +4,18 @@
   "HomeHero.btnMode": "light",
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
   "SafetyCTA.desc": "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada arrendamiento",
+  "SafetyCTA.bullets": [
+    "Zona de Alerta",
+    "Patrullas de Reacción",
+    "Contactos de confianza",
+    "Soporte 24/7"
+  ],
   "SafetyCTA.textColor": "white",
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Saber Más",
   "SafetyCTA.btnMode": "light",
-  "SafetyCTA.btnLink": "seguridad/",
+  "SafetyCTA.btnLink": "/co/seguridad/",
+  "SafetyFeatures.linkItem": "/co/seguridad/funciones/{{feature}}",
   "DrvCTA.title": "Regístrate en DiDi Conductor",
   "DrvCTA.desc": "Regístrate en DiDi y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a completar arrendamientos",
   "DrvCTA.bullets": [
@@ -183,35 +190,39 @@
   "DrvColumns.columns": [
     {
       "title": "Maneja tus Tiempos",
-      "desc": "Flexibilidad para que manejes tu tiempo como quieras",
+      "desc": "Conectarte cuando quieras para que manejes tu tiempo como prefieras",
       "textColor": "gray-primary"
     },
     {
       "title": "Soporte 24/7",
-      "desc": "Contar con un equipo de soporte 24/7",
+      "desc": "Contar con un equipo que está siempre listo para ayudarte 24/7",
       "textColor": "gray-primary"
     },
     {
-      "title": "Genera más Ganancias",
-      "desc": "Genera más ganancias con nuestras promociones",
+      "title": "Genera más Ingresos",
+      "desc": "Genera más ingresos con nuestras promociones diarias",
       "textColor": "gray-primary"
     },
     {
-      "title": "Conoce el Destino",
-      "desc": "Conoce el destino de un viaje antes de aceptarlo",
+      "title": "Conocer el Destino",
+      "desc": "Conocer el destino de un arrendamiento antes de aceptarlo",
       "textColor": "gray-primary"
     },
     {
       "title": "Driver Center",
-      "desc": "Driver Center",
+      "desc": "Recibir soporte en la oficina privada",
       "textColor": "gray-primary"
     },
     {
       "title": "Constante Mejora",
-      "desc": "Accede a soluciones automáticas dentro de la App",
+      "desc": "Acceder a soluciones automáticas dentro de la App",
       "textColor": "gray-primary"
     }
   ],
+  "DrvMotoHero.title": "DiDi Moto disponible en Colombia",
+  "DrvMotoHero.desc": "Genera ingresos extra conectándose con DiDi Moto",
+  "DrvMotoHero.textColor": "white",
+  "DrvMotoHero.btnMode": "light",
   "TestimonialsHero.title": "En DiDi celebramos cada logro",
   "TestimonialsHero.desc": "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
   "TestimonialsHero.textColor": "white",

@@ -2,6 +2,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./locales/**/*.{js,jsx,json}"],
   theme: {
     extend: {
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-in forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
       spacing: {
         100: "26rem",
         105: "28rem",
@@ -40,6 +49,7 @@ module.exports = {
   },
   variants: {
     extend: {},
+    animation: ["motion-safe"],
   },
   plugins: [],
   corePlugins: {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useCountry, t } from "../context/countryContext";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../config/btn-config";
@@ -77,8 +77,26 @@ const SmartBanner = (props: SmartBannerProps) => {
     bannerDesc = "Rides, food and more";
   }
 
+  //? If users scrolls under H1 Hero SB is activated
+  useEffect(() => {
+    const sb = document.querySelector('[data-id="sb"]');
+    const h1 = document.querySelector("h1");
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) sb?.classList.add("animate-fadeIn");
+
+      if (entries[0].isIntersecting) sb?.classList.remove("animate-fadeIn");
+    });
+
+    if (h1) observer.observe(h1);
+  }, []);
+
   return (
-    <div className={"fixed bottom-0 z-20 h-auto w-full lg:hidden " + bgColor}>
+    <div
+      className={
+        "opacity-0 fixed bottom-0 z-20 h-auto w-full lg:hidden " + bgColor
+      }
+      data-id="sb"
+    >
       <div className="flex h-full items-center justify-between p-2">
         <span className="flex">{Logo}</span>
         <span className="ml-2">

@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FoodCityHero from "../../components/sections/FoodCityHero";
-import SmsCTA from "../../components/sections/SmsCTA"
+import SmsCTA from "../../components/sections/SmsCTA";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 import { QRCodeSVG } from "qrcode.react";
 
+
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const itemsList = data.allContentfulCity.nodes;
   const name = data.contentfulCity.name;
 
   const foodHeroBgImage = images.filter((image) => {
@@ -19,8 +19,8 @@ const FoodCity = ({ data }) => {
   })[0];
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
-    });
-    
+  });
+
   const customBreadcrumb = [
     {
       link: `https://web.didiglobal.com/mx/food/`,
@@ -61,7 +61,9 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
       ></FoodCityHero>
       <div className="block lg:hidden xl:hidden">
-        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+        <FoodAppDownloads
+          images={foodDeliveryDownloadsImages}
+        ></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
         <SmsCTA image={foodDeliveryCTAImage} qr={qr}></SmsCTA>

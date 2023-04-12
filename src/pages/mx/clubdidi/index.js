@@ -21,6 +21,7 @@ const DiDiMas = ({ data }) => {
       partner.name === "OneCarNow" ||
       partner.name === "Privauto" ||
       partner.name === "Autos a Tiempo" ||
+      partner.name === "Ventauto" ||
       partner.name === "Procapa Arrendamientos"
     );
   });
