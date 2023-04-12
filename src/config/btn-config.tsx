@@ -184,7 +184,7 @@ const btnLinks: AllBtnInterface = {
     entregaBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/3.1.0/index.html?appid=200044&role=1&source=70001&country_id=484&redirectUrl=https%3A%2F%2Fc.didi-food.com%2Flogin%2Fcallback%3FredirectUrl%3Dhttps%25253A%25252F%25252Fdidi-food.com%25252Fes-MX%25252Fentrega-business%25252Fhome%252523_callbackType%25253Dlogin&lang=es-MX",
     smsCTAText: "Descargar en mi celular",
-    smsCTABtnLink: "https://global-food-eater.onelink.me/4B2F?location_country=MX&country=MX&lang=es-MX&channel=14&pid=website_direct&af_adset_id=null&af_ad_id=null&af_c_id=null&af_channel=null&c=refpage_%2Fmx%2Ffood%2Fciudad%2Fciudad-de-mexico-cdmx%2F&campaign=refpage_%2Fmx%2Ffood%2Fciudad%2Fciudad-de-mexico-cdmx%2F&utm_medium=%28none%29&utm_source=%28direct%29&utm_campaign=refpage_%2Fmx%2Ffood%2Fciudad%2Fciudad-de-mexico-cdmx%2F&utm_term=null&source=null&campaign_id=refpage_%2Fmx%2Ffood%2Fciudad%2Fciudad-de-mexico-cdmx%2F&ad_group_id=202304-home-original&creative_id=null&target_id=null&keyword=null&matchtype=null&devicemodel=null&adposition=null&placement=null&rsc_source=null&rsc_media=null&rsc_channel=null&rsc_product=null&clientType=14&af_web_dp=https%3A%2F%2Fweb.didiglobal.com%2Fmx%2Ffood%2Fstore-food-app"
+    smsCTABtnLink: "https://global-food-eater.onelink.me/4B2F"
   },
   mxen: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
