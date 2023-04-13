@@ -33,7 +33,7 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
   const filteredArticles: any[] = [];
   const relatedArticles: any[] = [];
 
-  // Find related articles that match the second tag or any tag after that
+  //? Find related articles that match the second tag or any tag after that
   articles.forEach((article) => {
     if (!article.tags) {
       return;
@@ -62,12 +62,12 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
     }
   });
 
-  // Sort the related articles by tag matches in descending order
+  //? Sort the related articles by tag matches in descending order
   filteredArticles.sort(
     (a, b) => b.matchedTags.length - a.matchedTags.length
   );
 
-  // Add related articles that only match the first tag to the end of the array
+  //? Add related articles that only match the first tag to the end of the array
   articles.forEach((article) => {
     if (
       article.tags &&
@@ -81,7 +81,7 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
     }
   });
 
-  // Create the related article objects with the necessary information
+  //? Create the related article objects with the necessary information
   filteredArticles.forEach(({ article, matchedTags }) => {
     const link = t("FoodBlogColumns.linkItem", {
       article: article.slug,
