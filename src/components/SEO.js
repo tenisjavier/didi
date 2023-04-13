@@ -88,35 +88,6 @@ const SEO = ({ title, desc, index, schema }) => {
       "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.";
   }
 
-  // POPUP LOGIC
-  const isBrowser = typeof window !== "undefined";
-  // const consentName = country.code + "_didi_consent";
-
-  // let shouldShowPopup = () => {
-  //   if (!isBrowser) return false;
-  //   return (
-  //     !window.localStorage.getItem(consentName) &&
-  //     ["nz", "au"].includes(country.code) &&
-  //     !window.sessionStorage.getItem(consentName)
-  //   );
-  // };
-  // const [isVisible, setIsVisible] = useState(shouldShowPopup());
-
-  // const saveConsent = (value, storageType) => {
-  //   storageType.setItem(consentName, value);
-  // };
-
-  // const handleAcceptConsent = () => {
-  //   saveConsent("true", window.localStorage);
-  //   // gtmEvent(countryCode + "_accept_consent");
-  //   setIsVisible(false);
-  // };
-
-  // const handleDenyConsent = () => {
-  //   saveConsent("false", window.sessionStorage);
-  //   setIsVisible(false);
-  // };
-
   const htmlAttributes = {
     lang: `${lang}-${countryCode.toUpperCase().slice(0, 2)}`,
   };
@@ -141,6 +112,14 @@ const SEO = ({ title, desc, index, schema }) => {
             type="text/javascript"
             charset="UTF-8"
             data-domain-script="f9f9aeb2-1532-4a70-bafe-28fce845d41c"
+          ></script>
+        )}
+        {!["nz", "au", "ru", "eg"].includes(country.code) && (
+          <script
+            src="../../hotjar.js"
+            type="text/javascript"
+            charset="UTF-8"
+            async
           ></script>
         )}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
@@ -170,12 +149,6 @@ const SEO = ({ title, desc, index, schema }) => {
           }, [])
         }
       </Helmet>
-      {/* {isBrowser && (
-        <ConsentPopup
-          isVisible={isVisible}
-          handleAccept={handleAcceptConsent}
-        ></ConsentPopup>
-      )} */}
     </>
   );
 };
