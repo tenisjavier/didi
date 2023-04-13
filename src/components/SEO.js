@@ -135,7 +135,7 @@ const SEO = ({ title, desc, index, schema }) => {
   return (
     <>
       <Helmet htmlAttributes={htmlAttributes} title={title}>
-        {["aaa"].includes(country.code) && (
+        {["au", "nz"].includes(country.code) && (
           <script
             src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js"
             type="text/javascript"
