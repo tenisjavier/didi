@@ -101,17 +101,17 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={` max-w-xs   rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
+      className={`max-w-xs max-h-100 shadow-xl hover:shadow-2xl opacity-75 hover:opacity-100 rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
-      <div className="mb-5">
+      <div className="">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {!isImage && image}
       </div>
 
       <div
-        className={`flex ${height} ${width} flex-col items-center justify-between px-6 py-4 text-center`}
+        className={`flex ${height} ${width} flex-col items-center justify-between px-6 pb-4 text-center`}
       >
-        <div className={`mb-4 ${insideHeight} `}>
+        <div className={`flex items-start justify-center ${insideHeight} `}>
           {animatedNumber && (
             <AnimatedNumber
               number={0}
@@ -121,7 +121,7 @@ const Card = (props: CardProps) => {
             ></AnimatedNumber>
           )}
           {title && !animatedNumber && (
-            <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
+            <h4 className={`mb-4 text-xl font-bold self-start`}>{title}</h4>
           )}
           <p className={"text-lg"}></p>
           {desc && isTruncate}
