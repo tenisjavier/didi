@@ -31,8 +31,8 @@ type BtnType =
   | "bothPrestamos"
   | "entregaBusiness"
   | "en"
-  | "smsCTA";
-
+  | "submit"
+  | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
 
@@ -119,8 +119,8 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "smsCTA") {
-    btnLink = btnLink || btnData.smsCTABtnLink;
+  } else if (btnType === "submit") {
+    btnText = btnText || btnData.smsCTAText;
   }
 
   const handleClick = (e: any) => {
