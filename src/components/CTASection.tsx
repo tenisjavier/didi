@@ -5,8 +5,6 @@ import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
-import { QRCodeSVG } from "qrcode.react";
-import { useCountry } from "../context/countryContext";
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -42,8 +40,10 @@ export interface CTAProps extends BtnProps {
   reverse?: boolean;
   RTL?: boolean;
   smsFormTitle?: string;
+  qr?: React.ReactElement;
   smsFormNote?: string;
   descBeforeBullets?: boolean;
+
 }
 
 const CTASection = (props: CTAProps) => {
@@ -76,7 +76,8 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
-    descBeforeBullets,
+    qr,
+    descBeforeBullets
   } = props;
 
   let sectionBtn = (
@@ -318,22 +319,19 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper
-            condition={btnType === "submit"}
-            wrapper={() => (
-              <form>
-                <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8">
-                  <div className="grid">
-                    <label className="">{smsFormTitle}</label>
-                    <SmsSender></SmsSender>
-                  </div>
-                  <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
-                    <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F" />
-                    <p className="text-center text-xs">
-                      Escanea el código QR con la cámara de tu celular y
-                      descarga la app.
-                    </p>
-                  </div>
+          <ConditionalWrapper condition={btnType === "smsCTA"} wrapper={() => (
+            <form>
+              <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
+                <div className="grid">
+                  <label className="">
+                  {smsFormTitle}
+                  </label>
+                  <SmsSender></SmsSender>
+                </div>
+                <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
+                  {qr}  
+                  <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
+
                 </div>
               </form>
             )}
