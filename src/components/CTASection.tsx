@@ -331,10 +331,10 @@ const CTASection = (props: CTAProps) => {
                 <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
                   {qr}  
                   <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
-
                 </div>
-              </form>
-            )}
+              </div>
+            </form>
+          )}
           >
             <>{sectionBtn}</>
           </ConditionalWrapper>
