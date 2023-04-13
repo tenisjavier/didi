@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FoodCityHero from "../../components/sections/FoodCityHero";
@@ -8,9 +8,6 @@ import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodCityList from "../../components/sections/FoodCityList";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
-import SmsCTA from "../../components/sections/SmsCTA"
-import { QRCodeSVG } from "qrcode.react";
-
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -41,22 +38,6 @@ const FoodCity = ({ data }) => {
     },
   ];
 
-  const [QRUrl, setQRUrl] = useState(
-    "https://global-food-eater.onelink.me/xNlo"
-  );
-  const qr = (
-    <QRCodeSVG
-      value={QRUrl}
-    ></QRCodeSVG>
-  );
-
-  useEffect(() => {
-    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
-    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
-      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
-    }
-  }, []);
-
   return (
     <Layout
       title={`Pide Comida a Domicilio  en ${name}`}
@@ -85,12 +66,6 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      <div className="block lg:hidden xl:hidden">
-        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
-      </div>
-      <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodDeliveryCTAImage} qr={qr}></SmsCTA>
-      </div>
       <FoodFAQCities data={data.contentfulCity}></FoodFAQCities>
     </Layout>
   );
