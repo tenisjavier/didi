@@ -11,11 +11,7 @@ import { ab } from "../../config/ab";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const isBVersion = ab(
-    "2023-04-homemx-original-t1",
-    "2023-04-homemx-b-t1",
-    "t1"
-  );
+  const version = ab("2023-04-homemx-original-t1", "2023-04-homemx-b-t1", "t1");
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "mx.HomeHero.bgImage";
   })[0];
@@ -43,16 +39,15 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      {isBVersion ? (
+      {version === "b" && (
         <HomeHero
           title="Genera Ganancias en DiDi Conductor"
           bgImage={homeHeroBgImageB}
           mobileBgImage={homeHeroBgMobileImageB}
           btnType="drv"
         ></HomeHero>
-      ) : (
-        <HomeHero bgImage={homeHeroBgImage}></HomeHero>
       )}
+      {version === "a" && <HomeHero bgImage={homeHeroBgImage}></HomeHero>}
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>

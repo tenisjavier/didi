@@ -24,7 +24,7 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
           version: "b",
           versionName: bVersionName,
         });
-        return true;
+        return "b";
       }
     }
 
@@ -34,14 +34,14 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
         version: "b",
         versionName: bVersionName,
       });
-      return true;
+      return "b";
     }
   }
   gtmEvent(`ab-landing`, {
     version: "a",
     versionName: aVersionName,
   });
-  return false;
+  return "a";
 };
 
 export { ab };
