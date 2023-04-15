@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import ConsentPopup from "../components/ConsentPopup";
-// import gtmEvent from "../config/gtm";
+import React, { useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useCountry } from "../context/countryContext";
