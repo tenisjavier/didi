@@ -25,6 +25,13 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
           versionName: bVersionName,
         });
         return "b";
+      } else {
+        window.localStorage.setItem(ls, aVersionName);
+        gtmEvent(`ab-landing`, {
+          version: "a",
+          versionName: aVersionName,
+        });
+        return "a";
       }
     }
 
@@ -36,12 +43,16 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
       });
       return "b";
     }
+    if (test_version === aVersionName) {
+      gtmEvent(`ab-landing`, {
+        version: "a",
+        versionName: aVersionName,
+      });
+      return "a";
+    }
   }
-  gtmEvent(`ab-landing`, {
-    version: "a",
-    versionName: aVersionName,
-  });
-  return "a";
+
+  return null;
 };
 
 export { ab };

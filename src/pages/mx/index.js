@@ -39,6 +39,11 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
+      {!version && (
+        <div className="flex justify-center">
+          <img src="../../loading.gif"></img>
+        </div>
+      )}
       {version === "b" && (
         <HomeHero
           title="Genera Ganancias en DiDi Conductor"
