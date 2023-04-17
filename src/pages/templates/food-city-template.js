@@ -8,6 +8,7 @@ import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodCityList from "../../components/sections/FoodCityList";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 import SmsCTA from "../../components/sections/SmsCTA"
 import { QRCodeSVG } from "qrcode.react";
 
@@ -29,6 +30,9 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
+  const foodDeliveryDownloadsImages = images.filter((image) => {
+    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+  });
 
   const customBreadcrumb = [
     {
@@ -42,7 +46,7 @@ const FoodCity = ({ data }) => {
   ];
 
   const [QRUrl, setQRUrl] = useState(
-    "https://global-food-eater.onelink.me/xNlo"
+    "https://global-food-eater.onelink.me/4B2F/QRCODE"
   );
   const qr = (
     <QRCodeSVG

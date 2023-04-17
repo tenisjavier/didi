@@ -18,7 +18,7 @@ const SmsCTA = ({ image, qr }: SmsCTAProps) => {
     bgColor: t("SmsCTA.bgColor"),
     textColor: t("SmsCTA.textColor"),
     image: image,
-    imageStyle: "z-10 m-4 xl:w-100 lg:w-80 rounded",
+    imageStyle: "z-10 m-4 w-80 xl:w-100 mt-20 rounded",
     btnMode: t("SmsCTA.btnMode"),
     btnModeSecondary: "hidden",
     btnType: "smsCTA",

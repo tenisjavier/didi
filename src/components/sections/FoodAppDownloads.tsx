@@ -21,14 +21,18 @@ const FoodAppDownloads = ({ images }: FoodAppDownloadsProps) => {
     columns: t("FoodAppDownloads.columns", { returnObjects: true }),
   };
 
-  props.columns.forEach((col: any, index: number) => {
-    const image = images[index];
-    col.image = (
-      <Link to={col.linkItem}>
-        <Image imageData={image} imageStyle="z-10 m-4"></Image>
-      </Link>
-    );
-  });
+  console.log("Props Columns:", props.columns);
+
+  if (props.columns) {
+    props.columns.forEach((col: any, index: number) => {
+      const image = images[index];
+      col.image = (
+        <Link to={col.linkItem}>
+          <Image imageData={image} imageStyle="z-10 m-4"></Image>
+        </Link>
+      );
+    });
+  };
 
   return <ColumnsSection {...props}></ColumnsSection>;
 };

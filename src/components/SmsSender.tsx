@@ -4,8 +4,7 @@ import 'react-phone-input-2/lib/style.css'
 import { useCountry } from "../context/countryContext";
 
 function SmsSender() {
-  const country = useCountry().code.toUpperCase();
-  console.log('Country Code:', country)
+  const country = useCountry().code;
   const [phoneNumber, setPhoneNumber] = useState('');
   const [messageSent, setMessageSent] = useState(false);
   const [isValid, setIsValid] = useState(false);
@@ -14,7 +13,6 @@ function SmsSender() {
     setMessageSent(false);
     setPhoneNumber('');
     setIsValid(false);
-    console.log(messageSent);
     return false;
   }
 
