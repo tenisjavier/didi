@@ -267,7 +267,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Con nuestro programa de referidos DiDi Amigos puedes referir personas que les gustaría conducir con DiDi y ganas dinero si lo hacen.",
     },
     "/clubdidi/": {
-      title: "Club DiDi: La comunidad que te da beneficios exclusivos",
+      title:
+        "DiDiMás+: La comunidad de conductores que te da beneficios exclusivos",
       desc: "Descubre las ventajas de ser un conductor DiDi. Todos los descuentos y beneficios para conductores los encontraras aqui.",
     },
     "/conductor/mujeres-en-didi/": {

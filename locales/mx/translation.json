@@ -832,19 +832,19 @@
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/mx/guias/{{guide}}/",
-  "PartnersHero.title": "Club DiDi",
-  "PartnersHero.desc": "Conoce nuestro club de beneficios siendo Socio Conductor de DiDi. ",
+  "PartnersHero.title": "Logra Más con DiDiMás+",
+  "PartnersHero.desc": "DiDiMás+ es un programa que te da acceso a descuentos y a facilidades ofrecidas por aliados para ayudarte en tu día a día.",
   "PartnersHero.textColor": "white",
   "PartnersHero.bgColor": "bg-orange-primary",
   "PartnersHero.btnMode": "light",
   "PartnersGrid.bgColor": "bg-white",
-  "PartnersGrid.title": "Beneficios que siempre suman",
+  "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones",
   "PartnersGrid.textColor": "gray-primary",
   "PartnersGrid.linkItem": "/mx/clubdidi/{{partnerName}}/",
   "PartnerColumns.title": "¿Qué tipo de recompensas puedo obtener al ser parte de Club DiDi?",
   "PartnerColumns.columns": [
     {
-      "title": "Descontos en combustible"
+      "title": "Descuentos en combustible"
     },
     {
       "title": "Facilidades para comprar un auto"
