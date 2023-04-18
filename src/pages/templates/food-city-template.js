@@ -33,6 +33,9 @@ const FoodCity = ({ data }) => {
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
+  const foodSMSCTA = images.filter((image) => {
+    return image.title === "mx.FoodSMSCTA.image";
+  })[0];
 
   const customBreadcrumb = [
     {
@@ -93,7 +96,7 @@ const FoodCity = ({ data }) => {
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodDeliveryCTAImage} qr={qr}></SmsCTA>
+        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
       </div>
       <FoodFAQCities data={data.contentfulCity}></FoodFAQCities>
     </Layout>

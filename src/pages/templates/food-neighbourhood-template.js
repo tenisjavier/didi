@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FoodCityHero from "../../components/sections/FoodCityHero";
@@ -8,6 +8,9 @@ import FoodCityBannerCTA3 from "../../components/sections/FoodCityBannerCTA3";
 import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantCTA";
 import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+import SmsCTA from "../../components/sections/SmsCTA"
+import { QRCodeSVG } from "qrcode.react";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -32,6 +35,12 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
+  const foodSMSCTA = images.filter((image) => {
+    return image.title === "mx.FoodSMSCTA.image";
+  })[0];
+  const foodDeliveryDownloadsImages = images.filter((image) => {
+    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+  });
 
   //! Is not a good solution needs refactor to be more flexible in other countries
   const customBreadcrumb = [
@@ -46,6 +55,22 @@ const FoodCity = ({ data }) => {
     },
     { link: "#", text: name },
   ];
+
+  const [QRUrl, setQRUrl] = useState(
+    "https://global-food-eater.onelink.me/4B2F/QRCODE"
+  );
+  const qr = (
+    <QRCodeSVG
+      value={QRUrl}
+    ></QRCodeSVG>
+  );
+
+  useEffect(() => {
+    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
+    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
+      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
+    }
+  }, []);
 
   return (
     <Layout
@@ -75,6 +100,12 @@ const FoodCity = ({ data }) => {
         data={data.contentfulNeighbourhood}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
+      <div className="block lg:hidden xl:hidden">
+        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      </div>
+      <div className="hidden lg:block xl:block">
+        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
+      </div>
       <FoodFAQCities data={data.contentfulNeighbourhood.city}></FoodFAQCities>
     </Layout>
   );
@@ -103,7 +134,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodSMSCTA.image)/"
         }
       }
     ) {
