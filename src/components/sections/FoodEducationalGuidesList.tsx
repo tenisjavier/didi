@@ -1,7 +1,6 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import GuidesListSection, {GuideListSectionProps} from "../GuidesListSection";
-import Image from "../Image";
 
 interface GuidesListProps {
   title: string;
@@ -26,9 +25,13 @@ const FoodEducationalGuidesList = ({ title, faqs, city, images }: GuidesListProp
     bgColor: t("FoodEducationalGuidesList.bgColor"),
     textColor: t("FoodEducationalGuidesList.textColor"),
   };
-
+  console.log(faqs);
+  console.log(images);
   if (faqs) {
     props.items = faqs.map((faq, index) => {
+      const image = images[index];
+      console.log(faq.node);
+      console.log(image);
       const name =
         faq.node.title.length > 50 ? faq.node.title.slice(0, 50) + "..." : faq.node.title;
       return {
@@ -36,9 +39,7 @@ const FoodEducationalGuidesList = ({ title, faqs, city, images }: GuidesListProp
         link: t("FoodEducationalGuidesList.linkItem", {
           faqSlug: faq.node.slug,
         }),
-        image: (
-          <Image imageData={images[index]} imageStyle="z-10 m-4 max-h-44"></Image>
-        ),
+        image: image,
       };
     });
   }
