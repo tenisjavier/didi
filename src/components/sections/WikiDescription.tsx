@@ -6,7 +6,9 @@ import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 interface WikiProps {
   data: {
     name: string;
-    description: string;
+    description: {
+      description: string;
+    }
   }
 }
 
@@ -16,7 +18,7 @@ const WikiDescription = ({ data }: WikiProps) => {
     bgColor: "bg-gray-light",
     textColor: "gray-primary",
     title: "Descripción de " + data.name,
-    desc: data.description + " -- Fuente Wikipedia --",
+    desc: data.description.description + " -- Fuente Wikipedia --",
     imageRawRender: (
       <FontAwesomeIcon icon={faBookOpen} size="5x" className="w-24" />
     ),

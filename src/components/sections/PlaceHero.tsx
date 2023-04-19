@@ -17,7 +17,7 @@ const PlaceHero = ({ data }: PlaceProps) => {
   const imageData = {
     title: data.address,
     description: data.address,
-    gatsbyImageData: data.image,
+    gatsbyImageData: data.image.gatsbyImageData,
   };
 
   return (

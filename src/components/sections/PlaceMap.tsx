@@ -29,9 +29,9 @@ const PlaceMap = ({ data }: MapProps) => {
   } = data.contentfulPlace;
 
   const directions = data.allContentfulDirection.nodes;
-  let uniqueLines: any[];
+  let uniqueLines: any[] = [];
   const uniqueBusLines = directions.map((node) => {
-      if (uniqueLines.indexOf(node.lastLine) === -1 && node.lastLine[0] !== "L") {
+      if (uniqueLines!.indexOf(node.lastLine) === -1 && node.lastLine[0] !== "L") {
         uniqueLines.push(node.lastLine);
         return node.lastLine;
       }
@@ -40,7 +40,7 @@ const PlaceMap = ({ data }: MapProps) => {
 
   const uniqueMetroLines = directions.map((node) => {
       if (
-        uniqueLines.indexOf(node.lastLine) === -1 &&
+        uniqueLines!.indexOf(node.lastLine) === -1 &&
         node.lastLine[0] === "L"
       ) {
         uniqueLines.push(node.lastLine);
@@ -48,28 +48,7 @@ const PlaceMap = ({ data }: MapProps) => {
       }
       return null;
     }).filter((line) => line);
-
-  const bulletsProp: string[] = [
-    ""+<span>
-      <FontAwesomeIcon
-        icon={faBus}
-        className=" mr-4 text-orange-primary w-5 "
-        size="sm"
-      />
-      <b>Micro: </b>
-      {uniqueBusLines.join(", ")}
-    </span>+"",
-    ""+<span>
-      <FontAwesomeIcon
-        icon={faSubway}
-        className=" mr-4 text-orange-primary w-5"
-        size="sm"
-      />
-      <b>Metro: </b>
-      {uniqueMetroLines.join(", ")}
-    </span>+"",
-  ];
-
+    
   const props: CTAProps = {
     hero: false,
     title: t("PlaceMap.title", { placeName: name }),
@@ -84,7 +63,26 @@ const PlaceMap = ({ data }: MapProps) => {
 &markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
       ></img>
     ),
-    bullets: bulletsProp,
+    bullets: [
+      <span>
+        <FontAwesomeIcon
+          icon={faBus}
+          className=" mr-4 text-orange-primary w-5 "
+          size="sm"
+        />
+        <b>Micro: </b>
+        {uniqueBusLines.join(", ")}
+      </span>,
+      <span>
+        <FontAwesomeIcon
+          icon={faSubway}
+          className=" mr-4 text-orange-primary w-5"
+          size="sm"
+        />
+        <b>Metro: </b>
+        {uniqueMetroLines.join(", ")}
+      </span>
+    ],
     btnMode: t("PlaceMap.btnMode"),
     customBulletIcon: true,
     btnType: "pax",
