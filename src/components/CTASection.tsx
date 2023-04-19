@@ -28,7 +28,7 @@ export interface CTAProps extends BtnProps {
   bgColor?: string;
   image?: any;
   imageStyle?: string;
-  bullets?: string[]; // bullets can be jsx in place map
+  bullets?: string[] | JSX.Element[]; // bullets can be jsx in place map
   list?: {
     text: string;
     link: string;
