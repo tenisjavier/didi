@@ -12,10 +12,10 @@ const DiDiMas = ({ data }) => {
     return image.title === "mx.ClubDiDiHero.bgImage";
   })[0];
   const didiMasHeroImage = images.filter((image) => {
-    return image.title === "cl.DiDiMasHero.image";
+    return image.title === "mx.DiDiMasHero.image";
   })[0];
   const partnerColumns = images.filter((image) => {
-    return image.title === "mx.RewardsColumns.image";
+    return image.title.indexOf("mx.RewardsColumns.image") !== -1;
   });
   const partnerRent = partners.filter((partner) => {
     return (
@@ -48,7 +48,7 @@ const DiDiMas = ({ data }) => {
   });
 
   const partnerSalud = partners.filter((partner) => {
-    return partner.name === "IMSS";
+    return partner.name === "IMSS" || partner.name === "Medismart";
   });
   const partnerEducacion = partners.filter((partner) => {
     return partner.name === "Vinco";
@@ -72,7 +72,7 @@ const DiDiMas = ({ data }) => {
       ></PartnersHero>
       <PartnerColumns
         categoriesID={categoriesID}
-        images={partnerColumns.reverse()}
+        images={partnerColumns}
       ></PartnerColumns>
       <PartnersGrid
         title="Descuentos en combustible"

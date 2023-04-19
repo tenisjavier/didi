@@ -832,7 +832,7 @@
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/mx/guias/{{guide}}/",
-  "PartnersHero.title": "Logra Más con DiDiMás+",
+  "PartnersHero.title": "Logra MÁS con DiDiMás+",
   "PartnersHero.desc": "DiDiMás+ es un programa que te da acceso a descuentos y a facilidades ofrecidas por aliados para ayudarte en tu día a día.",
   "PartnersHero.textColor": "white",
   "PartnersHero.bgColor": "bg-orange-primary",
@@ -841,28 +841,28 @@
   "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones",
   "PartnersGrid.textColor": "gray-primary",
   "PartnersGrid.linkItem": "/mx/clubdidi/{{partnerName}}/",
-  "PartnerColumns.title": "¿Qué tipo de recompensas puedo obtener al ser parte de Club DiDi?",
+  "PartnerColumns.title": "Conoce los beneficios que tenemos para ti",
   "PartnerColumns.columns": [
     {
       "title": "Descuentos en combustible"
     },
     {
-      "title": "Facilidades para comprar un auto"
+      "title": "Facilidades al rentar un auto"
     },
     {
-      "title": "Descuentos en rentar un auto"
+      "title": "Administración de Flotilla"
     },
     {
-      "title": "Ayuda en tu contabilidad y en tus finanzas"
-    },
-    {
-      "title": "Préstamos"
+      "title": "Contabilidad y Finanzas"
     },
     {
       "title": "Descuentos en seguros de autos"
     },
     {
       "title": "Salud y bienestar"
+    },
+    {
+      "title": "Educación"
     }
   ],
   "PartnersCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
