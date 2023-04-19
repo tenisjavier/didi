@@ -12,7 +12,7 @@ interface PartnerColumnsProps {
   images?: {
     title: string;
     description: string;
-    gatsbyImageData: React.ReactNode;
+    gatsbyImageData: any;
   }[];
   icons: any[];
   title?: string;
@@ -37,9 +37,10 @@ const PartnerColumns = ({
     desc: desc,
     categoriesID: categoriesID,
   };
-  if (images) {
+  
+  if (images!.length > 0) {
     props.columns.forEach((col, index) => {
-      const image = images[index];
+      const image = images![index];
       col.image = image;
       col.imageStyle = "z-10 m-4 w-36";
       col.isImage = true;

@@ -24,7 +24,6 @@ interface PartnersGridProps {
 const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }: PartnersGridProps) => {
   const PropColumns = data.map((partner) => {
     const image = partner.logo;
-    console.log(partner);
     const link = t("PartnersGrid.linkItem", {
       partnerName: partner.slug,
     });
