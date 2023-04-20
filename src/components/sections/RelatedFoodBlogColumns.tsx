@@ -71,7 +71,7 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
   articles.forEach((article) => {
     if (
       article.tags &&
-      article.tags.some((tag) => tag.name === tags![0].name) &&
+      tags && tags.length > 0 && article.tags && article.tags.some((tag) => tag.name === tags![0].name) &&
       !filteredArticles.some((fa) => fa.article.slug === article.slug)
     ) {
       filteredArticles.push({
