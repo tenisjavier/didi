@@ -3,7 +3,6 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import { useCountry } from "../context/countryContext";
 
-
 function SmsSender() {
   const country = useCountry().code;
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -33,11 +32,10 @@ function SmsSender() {
       method: 'GET',
       mode: 'no-cors'
     })
-      .then(res => res.json())
-      .then(data => {
-        
-        console.log(data);
-        alert("Sms sent!");
+      .then(res => {
+        console.log(res);
+        setMessageSent(true);
+        return false;
       });
   }
 
@@ -49,9 +47,20 @@ function SmsSender() {
         autoFormat={true} 
         containerStyle={{width:'50px'}} 
         inputStyle={{width: '235px'}} 
-        value={phoneNumber} 
-        onChange={value => handleOnChange(value)}></PhoneInput>
-      <button disabled={!isValid} className='hover:bg-orange-700 hover:cursor-pointer active:bg-orange-900 lg:text-xs xl:text-base border-transparent text-white font-bold rounded-full bg-orange-primary text-lg md:text-base my-4 lg:ml-4 xl:ml-0 py-2 px-6 bg-orange' onClick={sendMessage} type='button'>Descargar en mi celular</button>
+        value={phoneNumber}
+        onChange={value => handleOnChange(value)}
+        ></PhoneInput>
+        <div>
+          {messageSent ? (
+            <div className='max-w-325px'>
+              <button className='hover:bg-orange-700 active:bg-orange-900 lg:text-xs xl:text-base border-transparent text-white font-bold rounded-full bg-orange-primary text-lg md:text-base my-4 lg:ml-4 xl:ml-0 py-2 px-6 bg-orange hover:cursor-pointer max-w-235px'
+                type='button'
+                onClick={resetMessageStatus}>Mensaje enviada!</button>
+            </div>
+          ) : (
+            <button className='hover:bg-orange-700 active:bg-orange-900 lg:text-xs xl:text-base border-transparent text-white font-bold rounded-full bg-orange-primary text-lg md:text-base my-4 lg:ml-4 xl:ml-0 py-2 px-6 bg-orange hover:cursor-pointer disabled:opacity-75' onClick={sendMessage} type='button' disabled={!isValid}>{messageSent ? "Sending..." : "Descargar en mi celular"}</button>
+          )}
+        </div>
     </div>
   );
 }
