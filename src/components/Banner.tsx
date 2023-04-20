@@ -6,7 +6,7 @@ import Btn, { BtnProps } from "./Btn";
 
 export interface BannerProps extends BtnProps {
   title: string;
-  desc?: string;
+  desc?: string | React.ReactNode;
   descText?: string;
   bgColor: string;
   textColor: string;

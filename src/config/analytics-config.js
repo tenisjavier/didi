@@ -166,16 +166,6 @@ const insertBtnParams = () => {
       values.medium = "organic";
 
       values.term = (term ? term[0].split("=")[1] : "") || "(not provided)";
-
-      //! special rule for ab testing
-
-      if (
-        document.referrer === "https://web.didiglobal.com/mx/" ||
-        document.referrer === "http://localhost:8000/mx/"
-      ) {
-        values.source = "google";
-        values.medium = "organic";
-      }
     } else if (referringDomain !== thisDomain) {
       values.source = a.hostname;
       values.medium = "referral";
@@ -184,11 +174,9 @@ const insertBtnParams = () => {
     return values;
   }
 
-  // @desc: function to create a deeplink long url with the correct channel text for download and channelId for H5
-  // @return: return the one link url
+  //? @desc: function to create a deeplink long url with the correct channel text for download and channelId for H5
+  //? @return: return the one link url
   function getDeepLink(url) {
-    //map the organic channels and countries to the correct parameter
-
     const channels = {
       "(none)": 14,
       referral: 18,
@@ -288,13 +276,8 @@ const insertBtnParams = () => {
       campaignId = "refpage_" + window.location.pathname;
 
       //? EXPERIMENT A/B other code in Layout
-      const test_version = window.localStorage.getItem("test_version");
-      adgroupId = "202304-home-original";
-
-      //? if is a old user
-      if (test_version === "202304-home-heroOneBtn") {
-        adgroupId = "202304-home-heroOneBtn";
-      }
+      const test_version = window.localStorage.getItem("t1");
+      adgroupId = test_version;
     }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];

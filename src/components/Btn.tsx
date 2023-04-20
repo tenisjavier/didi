@@ -31,7 +31,7 @@ type BtnType =
   | "bothPrestamos"
   | "entregaBusiness"
   | "en"
-  | "submit"
+  | "smsCTA"
   | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -119,7 +119,7 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "submit") {
+  } else if (btnType === "smsCTA") {
     btnText = btnText || btnData.smsCTAText;
   }
 
@@ -128,14 +128,14 @@ const Btn = ({
     const link = e.target.href;
     let form;
     const url = new URL(link);
-    let ux = url.searchParams.get("ad_group_id")?.toString();
+    let version = url.searchParams.get("ad_group_id")?.toString();
     if (btnType === "drv")
       form = link.includes("quickbolt") ? "quickbolt" : "h5";
     gtmEvent(`click-btn`, {
       btnType: btnType,
       btnLink: link,
       form: form,
-      ux: ux,
+      versionName: version,
       btnText: e.target.innerText,
       countryCode: countryCode,
     });

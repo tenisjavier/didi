@@ -135,7 +135,7 @@
     },
     {
       "title": "Botón de emergencia",
-      "desc": "Durante cualquier situación de emergencia , puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 911 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier situación de emergencia , puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 911.",
       "textColor": "gray-primary",
       "width": "w-100"
     },

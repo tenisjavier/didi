@@ -42,43 +42,6 @@ const Layout = ({
     setShowPassword(val);
   };
 
-  //* EXPERIMENT A/B
-
-  if (isBrowser) {
-    //? if was in a past experiment delete ls
-    if (
-      window.localStorage.getItem("test_version") &&
-      window.localStorage.getItem("test_version").indexOf("202303") > -1
-    )
-      window.localStorage.removeItem("test_version");
-    if (pathname === "/mx/" || pathname === "/mx/home/") {
-      const test_version = window.localStorage.getItem("test_version");
-
-      //? if is a new user with no ls
-      if (!test_version) {
-        let group = Math.random();
-        console.log("202304-home-original");
-        window.localStorage.setItem("test_version", "202304-home-original");
-        if (group < 0.5) {
-          window.localStorage.setItem("test_version", "202304-home-heroOneBtn");
-
-          if (window.location.pathname === "/mx/") {
-            window.location.replace("/mx/home/");
-            return null;
-          }
-        }
-      }
-
-      //? if is a old user
-      if (test_version === "202304-home-heroOneBtn") {
-        if (window.location.pathname === "/mx/") {
-          window.location.replace("/mx/home/");
-          return null;
-        }
-      }
-    }
-  }
-
   //?SmartBanners Rules per URL
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";

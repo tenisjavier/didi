@@ -13,10 +13,10 @@ interface Accordion {
   title: string;
   content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
   normalText?: string;
-  bgColor: string;
-  textColor: string;
+  bgColor?: string;
+  textColor?: string;
   isClosed?: boolean;
-  type: string;
+  type?: string;
 }
 
 const Accordion = ({
