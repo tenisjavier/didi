@@ -1,11 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
-import {
-  ContentfulRichTextGatsbyReference,
-  RenderRichTextData,
-} from "gatsby-source-contentful/rich-text";
-import RichContent from "./RichContent";
 
 export interface TableCities {
   city: string;
@@ -61,7 +56,7 @@ const AccordionTable = ({
       >
         {content && content.split("\n").map((str) => <p>{str}</p>)}
         <table style={{ borderCollapse: "collapse" }}>
-          {table?.map((tbl, index) => {
+          {table?.map((tbl) => {
             return (
               <tr style={{ border: "1px solid #eee" }}>
                 <td style={{ borderRight: "1px solid #eee" }} className="p-3">

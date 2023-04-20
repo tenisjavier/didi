@@ -26,7 +26,7 @@ export interface CTAProps extends BtnProps {
   bgColor?: string;
   image?: any;
   imageStyle?: string;
-  bullets?: string[]; // bullets can be jsx in place map
+  bullets?: string[] | JSX.Element[]; // bullets can be jsx in place map
   list?: {
     text: string;
     link: string;
@@ -40,10 +40,10 @@ export interface CTAProps extends BtnProps {
   reverse?: boolean;
   RTL?: boolean;
   smsFormTitle?: string;
-  qr?: React.ReactElement;
   smsFormNote?: string;
   descBeforeBullets?: boolean;
-
+  smsCTA?: string;
+  qr?: React.ReactNode;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -76,8 +76,8 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
+    descBeforeBullets,
     qr,
-    descBeforeBullets
   } = props;
 
   let sectionBtn = (
@@ -329,7 +329,7 @@ const CTASection = (props: CTAProps) => {
                     <SmsSender></SmsSender>
                   </div>
                   <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-6">
-                    {qr}  
+                    {qr}
                     <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
                   </div>
                 </div>

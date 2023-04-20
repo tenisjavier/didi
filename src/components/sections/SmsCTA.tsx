@@ -3,7 +3,7 @@ import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface SmsCTAProps {
-  qr: React.ReactElement;
+  qr: React.ReactNode;
   image: {
     title: string;
     description: string;
@@ -20,11 +20,10 @@ const SmsCTA = ({ image, qr }: SmsCTAProps) => {
     image: image,
     imageStyle: "z-10 m-4 w-80 xl:w-100 mt-20 rounded",
     btnMode: t("SmsCTA.btnMode"),
-    btnModeSecondary: "hidden",
     btnType: "smsCTA",
     smsFormTitle: t("SmsCTA.formTitle"),
     reverse: false,
-    qr: qr,
+    qr: qr
   };
   return <CTASection {...props}></CTASection>;
 };

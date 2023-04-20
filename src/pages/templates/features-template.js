@@ -7,8 +7,15 @@ import HelpCenterFAQ from "../../components/sections/HelpCenterFAQ";
 import SafetyFeatureContent from "../../components/sections/SafetyFeatureContent";
 
 const Feature = ({ data }) => {
-  const { name, description, components, componentImages, category, content } =
-    data.contentfulFeature;
+  const {
+    name,
+    description,
+    components,
+    componentImages,
+    category,
+    content,
+    image,
+  } = data.contentfulFeature;
 
   const btnType = category === "driver" ? "drv" : "pax";
   const features = data.contentfulFeature;
@@ -21,6 +28,7 @@ const Feature = ({ data }) => {
         title={name}
         desc={description}
         btnType={btnType}
+        image={image}
       ></FeatureHero>
       {components &&
         components.meta.map((comp, index) => {
@@ -65,6 +73,11 @@ export const query = graphql`
     contentfulFeature(id: { eq: $id }) {
       name
       description
+      image {
+        gatsbyImageData
+        description
+        title
+      }
       category
       faq {
         title

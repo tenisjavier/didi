@@ -605,23 +605,19 @@
       "desc": "Monitoreamos todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata."
     },
     {
-      "title": "12. Alianza con C5",
-      "desc": "Nos unimos al C5 de Guadalajara y del Estado de México. En caso de que necesites ayuda, se les notificará cuando presiones el Botón de Emergencia para que puedan asistirte."
-    },
-    {
-      "title": "13. Cámaras de Seguridad DiDi",
+      "title": "12. Cámaras de Seguridad DiDi",
       "desc": "Instalamos cámaras en más de 900 vehículos en Guadalajara. Si detectas alguna situación de riesgo, puedes presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y, de ser necesario, enviar apoyo a tu ubicación. *Disponible solo en Guadalajara."
     },
     {
-      "title": "14. DiDi Mujer",
+      "title": "13. DiDi Mujer",
       "desc": "¿Eres conductora? Con DiDi puedes decidir si quieres realizar viajes solo con pasajeras mujeres."
     },
     {
-      "title": "15. Viaje con Cobertura",
+      "title": "14. Viaje con Cobertura",
       "desc": "Cuando viajas en DiDi tienes una cobertura de responsabilidad civil que incluye gastos médicos por siniestro."
     },
     {
-      "title": "16. Inteligencia Artificial",
+      "title": "15. Inteligencia Artificial",
       "desc": "Usamos AI para cuidarte durante tus viajes. Nuestros modelos Hércules, Clío y Temis analizan características de los viajes, los pasajeros, zonas, horarios e historial para identificar cualquier riesgo y alertarte o rechazar esa solicitud."
     }
   ],
@@ -832,37 +828,37 @@
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/mx/guias/{{guide}}/",
-  "PartnersHero.title": "Club DiDi",
-  "PartnersHero.desc": "Conoce nuestro club de beneficios siendo Socio Conductor de DiDi. ",
+  "PartnersHero.title": "Logra MÁS con DiDiMás+",
+  "PartnersHero.desc": "DiDiMás+ es un programa que te da acceso a descuentos y a facilidades ofrecidas por aliados para ayudarte en tu día a día.",
   "PartnersHero.textColor": "white",
   "PartnersHero.bgColor": "bg-orange-primary",
   "PartnersHero.btnMode": "light",
   "PartnersGrid.bgColor": "bg-white",
-  "PartnersGrid.title": "Beneficios que siempre suman",
+  "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones",
   "PartnersGrid.textColor": "gray-primary",
   "PartnersGrid.linkItem": "/mx/clubdidi/{{partnerName}}/",
-  "PartnerColumns.title": "¿Qué tipo de recompensas puedo obtener al ser parte de Club DiDi?",
+  "PartnerColumns.title": "Conoce los beneficios que tenemos para ti",
   "PartnerColumns.columns": [
     {
-      "title": "Descontos en combustible"
+      "title": "Descuentos en combustible"
     },
     {
-      "title": "Facilidades para comprar un auto"
+      "title": "Facilidades al rentar un auto"
     },
     {
-      "title": "Descuentos en rentar un auto"
+      "title": "Administración de Flotilla"
     },
     {
-      "title": "Ayuda en tu contabilidad y en tus finanzas"
-    },
-    {
-      "title": "Préstamos"
+      "title": "Contabilidad y Finanzas"
     },
     {
       "title": "Descuentos en seguros de autos"
     },
     {
       "title": "Salud y bienestar"
+    },
+    {
+      "title": "Educación"
     }
   ],
   "PartnersCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
@@ -1510,6 +1506,10 @@
         {
           "city": "Torreón",
           "address": "Av. Escobedo Oriente primer piso Escobedo 46 oriente, Primero de Cobián Centro, 27000 Torreón, Coah."
+        },
+        {
+          "city": "Tuxla Gutiérrez",
+          "address": "Blvd. Belisario Domínguez 2116, Arboledas, 29030 Tuxla Gutiérrez, Chis."
         },
         {
           "city": "Vallarta",
