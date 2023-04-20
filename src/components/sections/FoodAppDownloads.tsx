@@ -8,7 +8,7 @@ interface FoodAppDownloadsProps {
   images: {
     title: string;
     description: string;
-    gatsbyImageData: React.ReactNode;
+    gatsbyImageData: any;
   }[];
 }
 
