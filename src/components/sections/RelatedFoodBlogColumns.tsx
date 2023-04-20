@@ -41,7 +41,7 @@ const RelatedFoodBlogColumns = ({ data, tags }: FoodBlogColumns) => {
 
     let secondTagIndex = tags && tags.length > 1 ? 1 : -1;
 
-    for (let i = 2; i < tags!.length; i++) {
+    for (let i = 2; i < (tags ? tags.length : 0); i++) {
       if (article.tags.some((tag) => tag.name === tags![i].name)) {
         secondTagIndex = i;
         break;
