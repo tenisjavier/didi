@@ -673,5 +673,10 @@
   "RestaurantBenefitsBanner.title": "En DiDi Food el contrato es sin plazos forzosos, sin esquema de exclusividad, ni penalización por salida de la aplicación.",
   "RestaurantBenefitsBanner.desc": "",
   "RestaurantBenefitsBanner.bgColor": "bg-orange-primary",
-  "RestaurantBenefitsBanner.textColor": "white"
+  "RestaurantBenefitsBanner.textColor": "white",
+  "GuideHero.textColor": "white",
+  "GuideHero.btnMode": "light",
+  "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
+  "GuidesDeliveryColumns.linkItem": "/cr/food/repartidores/{{guide}}/",
+  "RepartidorHero.btnMode": "primary"
 }

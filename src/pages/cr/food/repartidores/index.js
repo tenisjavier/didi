@@ -9,13 +9,13 @@ import FoodDeliveryStepsColumns from "../../../../components/sections/FoodDelive
 const FoodDelivery = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const foodDeliveryHeroBgImage = images.filter((image) => {
-    return image.title === "mx.FoodDeliveryHero.bgImage";
+    return image.title === "cr.FoodDeliveryHero.bgImage";
   })[0];
   const foodDeliveryColumnsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryColumns.image") !== -1;
+    return image.title.indexOf("cr.FoodDeliveryColumns.image") !== -1;
   });
   const foodDeliveryDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+    return image.title.indexOf("cr.FoodDeliveryDownloads.image") !== -1;
   });
   return (
     <Layout>
@@ -38,7 +38,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodDeliveryHero.bgImage)|(mx.FoodDeliveryColumns.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(cr.FoodDeliveryHero.bgImage)|(cr.FoodDeliveryColumns.image)|(cr.FoodDeliveryDownloads.image)/"
         }
       }
       sort: { title: ASC }
