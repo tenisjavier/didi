@@ -190,5 +190,10 @@
         }
       ]
     }
-  ]
+  ],
+  "GuideHero.textColor": "white",
+  "GuideHero.btnMode": "light",
+  "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
+  "GuidesDeliveryColumns.linkItem": "/pe/food/repartidores/{{guide}}/",
+  "RepartidorHero.btnMode": "primary"
 }

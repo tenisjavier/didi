@@ -242,5 +242,10 @@
   "PrivacyHero.linkItem": "/do/food/privacy/privacy/",
   "PrivacyCTA.title": "Revisa nuestra Políticas de Privacidad",
   "PrivacyCTA.textColor": "gray-primary",
-  "PrivacyCTA.btnMode": "dark"
+  "PrivacyCTA.btnMode": "dark",
+  "GuideHero.textColor": "white",
+  "GuideHero.btnMode": "light",
+  "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
+  "GuidesDeliveryColumns.linkItem": "/do/food/repartidores/{{guide}}/",
+  "RepartidorHero.btnMode": "primary"
 }
