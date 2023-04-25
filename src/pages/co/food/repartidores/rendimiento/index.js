@@ -11,7 +11,7 @@ const Rendimiento = ({ data }) => {
     return image.title === "mx.FoodDeliveryHero.bgImage";
   })[0];
   return (
-    <Layout>
+    <Layout index={false}>
       <FoodDeliveryHero bgImage={repartidoresHeroBgImage}></FoodDeliveryHero>
       <GuidesDeliveryColumns data={data}></GuidesDeliveryColumns>
       <Pagination data={data} postsPerPage={20}></Pagination>
