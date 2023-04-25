@@ -184,7 +184,11 @@ const CTASection = (props: CTAProps) => {
           {hero ? (
             <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
           ) : (
-            <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
+            btnType === "smsCTA" ? (
+              <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
+            ) : (
+              <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
+            )
           )}
           <ConditionalWrapper
             condition={descBeforeBullets === true}
