@@ -18,7 +18,7 @@ const FoodDelivery = ({ data }) => {
     return image.title.indexOf("cr.FoodDeliveryDownloads.image") !== -1;
   });
   return (
-    <Layout index={false}>
+    <Layout>
       <FoodDeliveryHero bgImage={foodDeliveryHeroBgImage}></FoodDeliveryHero>
       <FoodDeliveryColumns
         images={foodDeliveryColumnsImages}
