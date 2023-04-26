@@ -399,7 +399,7 @@
     },
     {
       "title": "7. Botón de Emergencia",
-      "desc": "Durante cualquier situación inesperada en tu arrendamiento, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123 y así mismo nuestro Centro de Soporte DiDi 24/ te contactará.",
+      "desc": "Durante cualquier situación inesperada en tu arrendamiento, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123.",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -477,7 +477,7 @@
   "SafetyGridWoman.columns": [
     {
       "title": "Botón de emergencia",
-      "desc": "Durante cualquier incidente o caso de violencia de género puedes presionar el botón de emergencia en la app que te conecta con la Línea Nacional de Emergencia 123 y nuestro Centro de Emergencias DiDi 24/7.",
+      "desc": "Durante cualquier incidente o caso de violencia de género puedes presionar el botón de emergencia en la app que te conecta directamente con la Línea Nacional de Emergencia 123.",
       "bgColor": "bg-white"
     },
     {
