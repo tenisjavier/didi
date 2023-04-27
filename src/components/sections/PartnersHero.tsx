@@ -22,11 +22,12 @@ const PartnersHero = ({ bgImage, image }: PartnersHeroProps) => {
     desc: t("PartnersHero.desc"),
     textColor: t("PartnersHero.textColor"),
     bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full brightness-75 md:block",
+    bgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:block",
     image: image,
     imageStyle: "z-10 m-4 w-100 rounded",
     btnMode: t("PartnersHero.btnMode"),
     btnType: "drv",
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };
