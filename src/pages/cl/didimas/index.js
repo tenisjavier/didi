@@ -12,18 +12,12 @@ const DiDiMas = ({ data }) => {
   const didiMasHeroBgImage = images.filter((image) => {
     return image.title === "cl.DiDiMasHero.bgImage";
   })[0];
-  const didiMasHeroImage = images.filter((image) => {
-    return image.title === "cl.DiDiMasHero.image";
-  })[0];
   const partnerCTAImage = images.filter((image) => {
     return image.title === "cl.PartnerCTA.image";
   })[0];
   return (
     <Layout>
-      <PartnersHero
-        bgImage={didiMasHeroBgImage}
-        image={didiMasHeroImage}
-      ></PartnersHero>
+      <PartnersHero bgImage={didiMasHeroBgImage}></PartnersHero>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
       <HomeColumns></HomeColumns>

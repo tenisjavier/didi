@@ -194,8 +194,8 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/conductor/didi-flex/",
         },
         {
-          text: "Club DiDi",
-          url: "/mx/clubdidi/",
+          text: "DiDiMás+",
+          url: "/mx/didimas/",
         },
         {
           text: "DiDi Amigo",

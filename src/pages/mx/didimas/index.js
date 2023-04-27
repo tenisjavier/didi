@@ -11,9 +11,6 @@ const DiDiMas = ({ data }) => {
   const didiMasHeroBgImage = images.filter((image) => {
     return image.title === "mx.ClubDiDiHero.bgImage";
   })[0];
-  const didiMasHeroImage = images.filter((image) => {
-    return image.title === "mx.DiDiMasHero.image";
-  })[0];
   const partnerColumns = images.filter((image) => {
     return image.title.indexOf("mx.RewardsColumns.image") !== -1;
   });
@@ -66,10 +63,7 @@ const DiDiMas = ({ data }) => {
 
   return (
     <Layout>
-      <PartnersHero
-        bgImage={didiMasHeroBgImage}
-        image={didiMasHeroImage}
-      ></PartnersHero>
+      <PartnersHero bgImage={didiMasHeroBgImage}></PartnersHero>
       <PartnerColumns
         categoriesID={categoriesID}
         images={partnerColumns}
@@ -126,7 +120,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.ClubDiDiHero.bgImage)|(mx.DiDiMasHero.image)|(mx.PartnerCTA)|(mx.RewardsColumns.image)/"
+          regex: "/(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.RewardsColumns.image)/"
         }
       }
       sort: { title: ASC }
