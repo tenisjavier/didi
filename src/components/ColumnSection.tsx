@@ -45,8 +45,9 @@ const ColumnsSection = ({
             .map((str) => <p className="text-center text-lg">{str}</p>)}
 
         <div className={`mt-10 flex flex-wrap justify-around`}>
-          {columns.map((col, index) => {
-            return <Card {...col} key={index}></Card>;
+          {columns &&
+            columns.map((col, index) => {
+              return <Card {...col} key={index}></Card>;
           })}
         </div>
         {small &&

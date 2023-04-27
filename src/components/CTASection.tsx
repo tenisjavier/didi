@@ -5,8 +5,6 @@ import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
-import { QRCodeSVG } from "qrcode.react";
-import { useCountry } from "../context/countryContext";
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -44,6 +42,8 @@ export interface CTAProps extends BtnProps {
   smsFormTitle?: string;
   smsFormNote?: string;
   descBeforeBullets?: boolean;
+  smsCTA?: string;
+  qr?: React.ReactNode;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -77,6 +77,7 @@ const CTASection = (props: CTAProps) => {
     RTL,
     smsFormTitle,
     descBeforeBullets,
+    qr,
   } = props;
 
   let sectionBtn = (
@@ -183,7 +184,11 @@ const CTASection = (props: CTAProps) => {
           {hero ? (
             <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
           ) : (
-            <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
+            btnType === "smsCTA" ? (
+              <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
+            ) : (
+              <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
+            )
           )}
           <ConditionalWrapper
             condition={descBeforeBullets === true}
@@ -318,25 +323,23 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper
-            condition={btnType === "submit"}
-            wrapper={() => (
-              <form>
-                <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8">
-                  <div className="grid">
-                    <label className="">{smsFormTitle}</label>
+          <ConditionalWrapper condition={btnType === "smsCTA"} wrapper={() => (
+            <form>
+              <div className="grid font-bold">
+                <p>Descarga DiDi Food App y ahorra más de un 50% en tu primera orden. Con estas ofertas en la app, ahorrarás más y podrás pedir comida rapidamente.</p>
+                <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
+                  <div className="grid font-bold mt-2">
+                    {smsFormTitle}
                     <SmsSender></SmsSender>
                   </div>
-                  <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-4">
-                    <QRCodeSVG value="https://global-food-eater.onelink.me/4B2F" />
-                    <p className="text-center text-xs">
-                      Escanea el código QR con la cámara de tu celular y
-                      descarga la app.
-                    </p>
+                  <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-6">
+                    {qr}
+                    <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
                   </div>
                 </div>
-              </form>
-            )}
+              </div>
+            </form>
+          )}
           >
             <>{sectionBtn}</>
           </ConditionalWrapper>
