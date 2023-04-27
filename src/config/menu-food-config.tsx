@@ -24,28 +24,6 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/cl/food/repartidores/",
-      dropMenu: [
-        {
-          text: "Club Repartidores",
-          url: "/cl/food/repartidores/club-repartidores/",
-        },
-        {
-          text: "Ganancias",
-          url: "/cl/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/cl/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/cl/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/cl/food/repartidores/seguridad/",
-        },
-      ],
     },
     {
       text: "Acerca",
@@ -148,28 +126,6 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/do/food/repartidores/",
-      dropMenu: [
-        {
-          text: "Club Repartidores",
-          url: "/do/food/repartidores/club-repartidores/",
-        },
-        {
-          text: "Ganancias",
-          url: "/do/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/do/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/do/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/do/food/repartidores/seguridad/",
-        },
-      ],
     },
     {
       text: "Acerca",
@@ -288,28 +244,6 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/co/food/repartidores/",
-      dropMenu: [
-        {
-          text: "Club Repartidores",
-          url: "/co/food/repartidores/club-repartidores/",
-        },
-        {
-          text: "Ganancias",
-          url: "/co/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/co/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/co/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/co/food/repartidores/seguridad/",
-        },
-      ],
     },
     {
       text: "Acerca",
@@ -332,28 +266,6 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/pe/food/repartidores/",
-      dropMenu: [
-        {
-          text: "Club Repartidores",
-          url: "/pe/food/repartidores/club-repartidores/",
-        },
-        {
-          text: "Ganancias",
-          url: "/pe/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/pe/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/pe/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/pe/food/repartidores/seguridad/",
-        },
-      ],
     },
     {
       text: "Acerca",
