@@ -1631,9 +1631,10 @@
       "width": "w-80"
     }
   ],
-  "EntregaBusinessDeliveryCTA.title": "¿Tienes una moto o bicicleta? ¡Conviértete en repartidor!",
-  "EntregaBusinessDeliveryCTA.desc": "Empieza a generar ganancias con DiDi Entrega Business o con DiDi Food. ¡Y lo mejor es que tú eliges cuándo y dónde repartir!",
-  "EntregaBusinessDeliveryCTA.btnLink": "/mx/seguridad/pasajeros/",
-  "EntregaBusinessDeliveryCTA.btnMode": "primary",
-  "EntregaBusinessDeliveryCTA.btnText": "Conoce más"
+  "EntregaBusinessCTA.title": "Regístrate en DiDi Entrega Business para envíos empresariales",
+  "EntregaBusinessCTA.desc": "Si necesitas enviar tus productos a tus clientes, conoce esta nueva opción web.",
+  "EntregaBusinessCTA.btnLink": "https://didi-food.com/es-MX/entrega-business/home",
+  "EntregaBusinessCTA.btnText": "Conoce Más Aquí",
+  "EntregaBusinessCTA.btnMode": "primary",
+  "EntregaBusinessCTA.bgColor": "bg-gray-light"
 }
