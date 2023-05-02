@@ -1560,12 +1560,12 @@
       "btnMode": "primary"
     }
   ],
-  "EntregaBusinessHero.title": "DiDi Entrega Business: envía todo lo que tus clientes necesiten.",
-  "EntregaBusinessHero.desc": "Conoce este nuevo servicio con el que podrás enviar varios paquetes a la vez y rastrearlos.",
-  "EntregaBusinessHero.textColor": "white",
-  "EntregaBusinessHero.btnMode": "light",
-  "EntregaBusinessColumns.bgColor": "bg-white",
-  "EntregaBusinessColumns.columns": [
+  "EntregaHero.title": "Para cosas grande o chicas, envíalas por DiDi Entrega",
+  "EntregaHero.desc": "",
+  "EntregaHero.textColor": "white",
+  "EntregaHero.btnMode": "light",
+  "EntregaColumns.bgColor": "bg-white",
+  "EntregaColumns.columns": [
     {
       "title": "Más paquetes en un mismo envío",
       "desc": "Tienes la posibilidad de enviar hasta 10 paquetes simultáneamente",
@@ -1585,47 +1585,47 @@
       "textColor": "white"
     }
   ],
-  "EntregaBusinessGrid.bgColor": "bg-gray-light",
-  "EntregaBusinessGrid.textColor": "gray-primary",
-  "EntregaBusinessGrid.columns": [
+  "EntregaGrid.bgColor": "bg-white",
+  "EntregaGrid.textColor": "gray-primary",
+  "EntregaGrid.columns": [
     {
-      "title": "Excelentes Promociones",
-      "desc": "¡Obtén un 30% de descuento al solicitar dos o más envíos simultáneos!",
+      "title": "Promociones",
+      "desc": "Realiza tus primeros envíos disfrutando de increíbles descuentos.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
     },
     {
-      "title": "Código de seguridad",
-      "desc": "Tu cliente recibirá un PIN y tendrá que compartirlo para aceptar el paquete",
+      "title": "Herramientas de Seguridad",
+      "desc": "Monitorea en tiempo real el recorrido de tu envío.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
     },
     {
-      "title": "Flexibilidad en Pagos",
-      "desc": "Elige pagar con efectivo o tarjeta de crédito o débito",
+      "title": "Variedad",
+      "desc": "Usa DiDi Entrega XL para envíos grandes y DiDi Entrega Light para envíos chicos.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
     },
     {
-      "title": "Envíos simultáneos",
-      "desc": "Envía hasta 10 paquetes al mismo tiempo",
+      "title": "Facilidades",
+      "desc": "Con tan solo unos clicls podrás realizar tus envíos a través de la app.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
     },
     {
-      "title": "Facilidad",
-      "desc": "Un repartidor podría entregar hasta 4 pedidos en ubicaciones cercanas",
+      "title": "Soporte 24/7",
+      "desc": "Contáctanos por medio de chat en vivo 24/7",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
     },
     {
-      "title": "Comodidad",
-      "desc": "Envía paquetes fácilmente desde tu computadora. ¡Es más ágil y práctico!",
+      "title": "Métodos de pago",
+      "desc": "Elige la opción que mejor se acomode a ti, sea efectivo o tarjeta.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
