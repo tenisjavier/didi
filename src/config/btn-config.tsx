@@ -4,6 +4,8 @@ interface SingleBtnInterface {
   drvLink: string;
   paxLink: string;
   drvText: string;
+  drvWhatsappLink?: string;
+  drvWhatsappText?: string;
   paxText: string;
   fleetLink?: string;
   fleetText?: string;
@@ -159,6 +161,8 @@ const btnLinks: AllBtnInterface = {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
+    drvWhatsappLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+    drvWhatsappText: "Regístrate con Whatsapp",
     paxText: "Descarga DiDi Pasajero",
     foodEaterText: "Pide Comida, Descarga la App",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",

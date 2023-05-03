@@ -255,21 +255,21 @@
       "desc": "Con DiDi ganas por kilómetro y por minuto recorridos",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "width": "w-64"
+      "width": "w-xs"
     },
     {
       "title": "Soporte 24/7",
       "desc": "Contamos con atención 24/7 en nuestro chat en vivo.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "width": "w-64"
+      "width": "w-xs"
     },
     {
       "title": "Kit de seguridad.",
       "desc": "Conduce tranquilo con las herramientas de seguridad. ",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "width": "w-64"
+      "width": "w-xs"
     },
     {
       "title": "Logra tus metas de ganancias",
@@ -277,7 +277,7 @@
       "bgColor": "bg-white",
       "textColor": "gray-primary",
 
-      "width": "w-64"
+      "width": "w-xs"
     }
   ],
   "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
