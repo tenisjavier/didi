@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
-interface EntregaBusinessGridProps {
+interface EntregaGridProps {
   images: {
     title: string;
     description: string;
@@ -19,18 +19,18 @@ interface EntregaBusinessGridProps {
   }[];
 }
 
-const EntregaBusinessGrid = ({ images }: EntregaBusinessGridProps) => {
+const EntregaGrid = ({ images }: EntregaGridProps) => {
   const props: ColumnsSectionProps = {
-    bgColor: t("EntregaBusinessGrid.bgColor"),
-    textColor: t("EntregaBusinessGrid.textColor"),
-    columns: t("EntregaBusinessGrid.columns", { returnObjects: true }),
+    bgColor: t("EntregaGrid.bgColor"),
+    textColor: t("EntregaGrid.textColor"),
+    columns: t("EntregaGrid.columns", { returnObjects: true }),
   };
 
   if (images) {
     props.columns.forEach((col, index) => {
       const image = images[index];
       col.image = image;
-      col.imageStyle = "z-10 m-4 w-48";
+      col.imageStyle = "z-10 m-4";
       col.isImage = true;
     });
   } else {
@@ -60,4 +60,4 @@ const EntregaBusinessGrid = ({ images }: EntregaBusinessGridProps) => {
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 
-export default EntregaBusinessGrid;
+export default EntregaGrid;

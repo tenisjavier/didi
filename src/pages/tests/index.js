@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FoodCityHero from "../../components/sections/FoodCityHero";
 import SmsCTA from "../../components/sections/SmsCTA";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+import { QRCodeSVG } from "qrcode.react";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -12,12 +13,12 @@ const FoodCity = ({ data }) => {
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
   })[0];
-  const foodDeliveryCTAImage = images.filter((image) => {
-    return image.title === "mx.FoodDeliveryCTA.image";
-  })[0];
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
+  const foodSMSCTA = images.filter((image) => {
+    return image.title === "mx.FoodSMSCTA.image";
+  })[0];
 
   const customBreadcrumb = [
     {
@@ -29,6 +30,22 @@ const FoodCity = ({ data }) => {
       text: name,
     },
   ];
+
+  const [QRUrl, setQRUrl] = useState(
+    "https://global-food-eater.onelink.me/4B2F/QRCODE"
+  );
+  const qr = (
+    <QRCodeSVG
+      value={QRUrl}
+    ></QRCodeSVG>
+  );
+
+  useEffect(() => {
+    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
+    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
+      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
+    }
+  }, []);
 
   return (
     <Layout
@@ -48,7 +65,7 @@ const FoodCity = ({ data }) => {
         ></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodDeliveryCTAImage}></SmsCTA>
+        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
       </div>
     </Layout>
   );
@@ -74,7 +91,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodSMSCTA.image)/"
         }
       }
     ) {

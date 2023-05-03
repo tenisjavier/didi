@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FoodCityHero from "../../components/sections/FoodCityHero";
@@ -9,6 +9,9 @@ import FoodCityRestaurantCTA from "../../components/sections/FoodCityRestaurantC
 import FoodMunicipalityList from "../../components/sections/FoodMunicipalityList";
 import FoodNeighborhoodList from "../../components/sections/FoodNeighborhoodList";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+import SmsCTA from "../../components/sections/SmsCTA"
+import { QRCodeSVG } from "qrcode.react";
 
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -30,6 +33,12 @@ const FoodCity = ({ data }) => {
   const foodCTA3Image = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
+  const foodSMSCTA = images.filter((image) => {
+    return image.title === "mx.FoodSMSCTA.image";
+  })[0];
+  const foodDeliveryDownloadsImages = images.filter((image) => {
+    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+  });
   const customBreadcrumb = [
     {
       link: `https://web.didiglobal.com/mx/food/`,
@@ -44,6 +53,22 @@ const FoodCity = ({ data }) => {
       text: name,
     },
   ];
+
+  const [QRUrl, setQRUrl] = useState(
+    "https://global-food-eater.onelink.me/4B2F/QRCODE"
+  );
+  const qr = (
+    <QRCodeSVG
+      value={QRUrl}
+    ></QRCodeSVG>
+  );
+
+  useEffect(() => {
+    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
+    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
+      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
+    }
+  }, []);
 
   return (
     <Layout
@@ -73,8 +98,13 @@ const FoodCity = ({ data }) => {
         data={data.contentfulMunicipality}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
-      {/* <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads> */}
       <FoodNeighborhoodList data={neighbourhoods}></FoodNeighborhoodList>
+      <div className="block lg:hidden xl:hidden">
+        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+      </div>
+      <div className="hidden lg:block xl:block">
+        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
+      </div>
       <FoodFAQCities data={data.contentfulMunicipality.city}></FoodFAQCities>
     </Layout>
   );
@@ -127,7 +157,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodCTA.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodCTA.image)|(mx.FoodSMSCTA.image)/"
         }
       }
     ) {

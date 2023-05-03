@@ -33,9 +33,10 @@ type BtnType =
   | "prestamosPax"
   | "prestamosDrv"
   | "bothPrestamos"
+  | "entrega"
   | "entregaBusiness"
   | "en"
-  | "submit"
+  | "smsCTA"
   | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -120,13 +121,13 @@ const Btn = ({
   } else if (btnType === "prestamosDrv") {
     btnLink = btnData.prestamosDrvLink;
     btnText = btnText || btnData.prestamosDrvText;
-  } else if (btnType === "entregaBusiness") {
-    btnLink = btnData.entregaBusinessLink;
-    btnText = btnText || btnData.entregaBusinessText;
+  } else if (btnType === "entrega") {
+    btnLink = btnData.entregaLink;
+    btnText = btnText || btnData.entregaText;
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "submit") {
+  } else if (btnType === "smsCTA") {
     btnText = btnText || btnData.smsCTAText;
   }
 

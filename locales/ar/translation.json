@@ -575,5 +575,31 @@
   "SBDrv.title": "DiDi Conductor",
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",
-  "SBPax.desc": "Pedí un Viaje"
+  "SBPax.desc": "Pedí un Viaje",
+  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
+  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.btnMode": "primary",
+  "RequirementHero.textColor": "white",
+  "DrvRequirementColumns.title": "",
+  "DrvRequirementColumns.columns": [
+    {
+      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
+      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+    },
+    {
+      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
+      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
+    },
+    {
+      "title": "Conductor: Quiero conducir y no tengo vehículo",
+      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+    }
+  ],
+  "VehicleRequirementCTA.title": "Requisitos del vehículo",
+  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n Para conocer la regulación aplicable en tu ciudad comunícate al 800 725 8888 o envía un correo a help.driver@mx.didiglobal.com. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
+  "BankInfoCTA.title": "Actualiza tu información bancaria",
+  "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
+  "BankInfoCTA.bgColor": "bg-gray-light",
+  "FindInfoCTA.title": "Encuentra tu centro DiDi más cercano",
+  "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com"
 }

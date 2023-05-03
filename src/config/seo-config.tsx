@@ -297,7 +297,11 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/prestamos/": {
       title: "DiDi Préstamos - Rápido, Fácil y Seguro.",
-      desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+      desc: "DiDi Préstamos. Con DiDi Préstamos obtén hasta $30,000 m.n rápido, fácil y seguro.Tasas de interés competitiva desde un 5% al 12%. En solo 5 minutos.",
+    },
+    "/entrega/": {
+      title: "DiDi Entrega: Envía cosas grandes o chicas.",
+      desc: "DiDi Entrega.",
     },
     "/didi-entrega-business/": {
       title: "DiDi Entrega para Empresas",
