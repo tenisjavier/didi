@@ -152,30 +152,46 @@ const Btn = ({
 
   return (
     <>
+      {!version &&
+        btnType === "drv" &&
+        window.innerWidth < 640 &&
+        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+          countryCode
+        ) && (
+          <div className="flex justify-center">
+            <img src="../../loading.gif" className="h-8"></img>
+          </div>
+        )}
       {version === "b" &&
-      btnType === "drv" &&
-      window.innerWidth < 640 &&
-      ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-        countryCode
-      ) ? (
-        <div
-          tabIndex={0}
-          role="button"
-          className={`text-md md:text-base my-2 btn-whatsapp`}
-        >
-          <a
-            onClick={(e) => handleClick(e)}
-            className="block"
-            href={btnLink || btnLink2}
+        btnType === "drv" &&
+        window.innerWidth < 640 &&
+        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+          countryCode
+        ) && (
+          <div
+            tabIndex={0}
+            role="button"
+            className={`text-md md:text-base my-2 btn-whatsapp`}
           >
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              className="mx-2 lg:mr-2 inline"
-            ></FontAwesomeIcon>{" "}
-            {btnText || btnText2}
-          </a>
-        </div>
-      ) : (
+            <a
+              onClick={(e) => handleClick(e)}
+              className="block"
+              href={btnLink || btnLink2}
+            >
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                className="mx-2 lg:mr-2 inline"
+              ></FontAwesomeIcon>{" "}
+              {btnText || btnText2}
+            </a>
+          </div>
+        )}
+
+      {(version === "a" ||
+        btnType !== "drv" ||
+        !["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+          countryCode
+        )) && (
         <div
           tabIndex={0}
           role="button"
