@@ -151,6 +151,7 @@ const Btn = ({
 
   return (
     <>
+
       {version === "b" &&
       btnType === "drv" &&
       window.innerWidth < 640 &&
@@ -166,6 +167,7 @@ const Btn = ({
             onClick={(e) => handleClick(e)}
             className="block"
             href={btnLink || btnLink2}
+
           >
             <FontAwesomeIcon
               icon={faWhatsapp}
