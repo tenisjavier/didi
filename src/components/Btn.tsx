@@ -149,7 +149,7 @@ const Btn = ({
     window.location.replace(link);
   };
   const isBrowser = typeof window !== "undefined";
-  return (
+ return (
     <>
       {!version &&
         isBrowser &&
