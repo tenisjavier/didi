@@ -1067,6 +1067,11 @@
       "height": "h-40"
     }
   ],
+  "DiDiPayFAQHero.title": "Preguntas Frecuentes",
+  "DiDiPayFAQHero.desc": "Resuelve tus dudas sobre los servicios de DiDi Pay",
+  "DiDiPayFAQHero.bgColor": "bg-gray-light",
+  "DiDiPayFAQHero.textColor": "white",
+  "DiDiPayFAQHero.btnMode": "light",
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
   "DiDiPayFAQs.bgColor": "bg-gray-light",
