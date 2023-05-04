@@ -272,7 +272,12 @@ const insertBtnParams = () => {
 
       //? EXPERIMENT A/B other code in Layout
       //if mobile
-      if (window.innerWidth < 640) {
+      if (
+        window.innerWidth < 640 &&
+        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+          countryCode
+        )
+      ) {
         const test_version = window.localStorage.getItem("t2");
         adgroupId = test_version;
 
