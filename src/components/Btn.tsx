@@ -148,8 +148,9 @@ const Btn = ({
     });
     window.location.replace(link);
   };
+  // verify windows
   const isBrowser = typeof window !== "undefined";
- return (
+  return (
     <>
       {!version &&
         isBrowser &&
@@ -188,26 +189,27 @@ const Btn = ({
           </div>
         )}
 
-      {(version === "a" ||
-        btnType !== "drv" ||
-        window.innerWidth >= 640 ||
-        !["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-          countryCode
-        )) && (
-        <div
-          tabIndex={0}
-          role="button"
-          className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
-        >
-          <a
-            onClick={(e) => handleClick(e)}
-            className="block"
-            href={btnLink || btnLink2}
+      {isBrowser &&
+        (version === "a" ||
+          btnType !== "drv" ||
+          window.innerWidth >= 640 ||
+          !["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+            countryCode
+          )) && (
+          <div
+            tabIndex={0}
+            role="button"
+            className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
           >
-            {btnText || btnText2}
-          </a>
-        </div>
-      )}
+            <a
+              onClick={(e) => handleClick(e)}
+              className="block"
+              href={btnLink || btnLink2}
+            >
+              {btnText || btnText2}
+            </a>
+          </div>
+        )}
     </>
   );
 };
