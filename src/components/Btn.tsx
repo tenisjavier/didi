@@ -33,10 +33,9 @@ type BtnType =
   | "prestamosPax"
   | "prestamosDrv"
   | "bothPrestamos"
-  | "entrega"
   | "entregaBusiness"
   | "en"
-  | "smsCTA"
+  | "submit"
   | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -121,13 +120,13 @@ const Btn = ({
   } else if (btnType === "prestamosDrv") {
     btnLink = btnData.prestamosDrvLink;
     btnText = btnText || btnData.prestamosDrvText;
-  } else if (btnType === "entrega") {
-    btnLink = btnData.entregaLink;
-    btnText = btnText || btnData.entregaText;
+  } else if (btnType === "entregaBusiness") {
+    btnLink = btnData.entregaBusinessLink;
+    btnText = btnText || btnData.entregaBusinessText;
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "smsCTA") {
+  } else if (btnType === "submit") {
     btnText = btnText || btnData.smsCTAText;
   }
 
@@ -149,52 +148,33 @@ const Btn = ({
     });
     window.location.replace(link);
   };
-  const isBrowser = typeof window !== "undefined";
 
   return (
     <>
-      {!version &&
-        isBrowser &&
-        btnType === "drv" &&
-        window.innerWidth < 640 &&
-        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-          countryCode
-        ) && (
-          <div className="flex justify-center">
-            <img src="../../loading.gif" className="h-8"></img>
-          </div>
-        )}
       {version === "b" &&
-        isBrowser &&
-        btnType === "drv" &&
-        window.innerWidth < 640 &&
-        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-          countryCode
-        ) && (
-          <div
-            tabIndex={0}
-            role="button"
-            className={`text-md md:text-base my-2 btn-whatsapp`}
+      btnType === "drv" &&
+      window.innerWidth < 640 &&
+      ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+        countryCode
+      ) ? (
+        <div
+          tabIndex={0}
+          role="button"
+          className={`text-md md:text-base my-2 btn-whatsapp`}
+        >
+          <a
+            onClick={(e) => handleClick(e)}
+            className="block"
+            href={btnLink || btnLink2}
           >
-            <a
-              onClick={(e) => handleClick(e)}
-              className="block"
-              href={btnLink || btnLink2}
-            >
-              <FontAwesomeIcon
-                icon={faWhatsapp}
-                className="mx-2 lg:mr-2 inline"
-              ></FontAwesomeIcon>{" "}
-              {btnText || btnText2}
-            </a>
-          </div>
-        )}
-
-      {(version === "a" ||
-        btnType !== "drv" ||
-        !["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-          countryCode
-        )) && (
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              className="mx-2 lg:mr-2 inline"
+            ></FontAwesomeIcon>{" "}
+            {btnText || btnText2}
+          </a>
+        </div>
+      ) : (
         <div
           tabIndex={0}
           role="button"
