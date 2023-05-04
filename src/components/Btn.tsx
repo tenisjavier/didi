@@ -149,12 +149,10 @@ const Btn = ({
     });
     window.location.replace(link);
   };
-  const isBrowser = typeof window !== "undefined";
 
   return (
     <>
       {!version &&
-        isBrowser &&
         btnType === "drv" &&
         window.innerWidth < 640 &&
         ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
@@ -165,7 +163,6 @@ const Btn = ({
           </div>
         )}
       {version === "b" &&
-        isBrowser &&
         btnType === "drv" &&
         window.innerWidth < 640 &&
         ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
