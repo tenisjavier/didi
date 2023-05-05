@@ -93,7 +93,7 @@
       "title": "Expande tu flota",
       "desc": "Regístrate aquí y conoce a nuestros aliados, estamos seguros que alguno te ayudará a lograr tus objetivos.",
       "btnMode": "primary",
-      "btnLink": "/mx/clubdidi/",
+      "btnLink": "/mx/didimas/",
       "btnText": "Clic aquí"
     }
   ],
@@ -298,7 +298,7 @@
   "ClubDiDiCTA.desc": "Tu entrada a descuentos, recompensas y servicios exclusivos. Club DiDi: un programa que te da acceso a descuentos y a facilidades ofrecidas por terceros para ayudarte en tu día a día.",
   "ClubDiDiCTA.btnMode": "light",
   "ClubDiDiCTA.btnText": "Conoce más",
-  "ClubDiDiCTA.btnLink": "/mx/clubdidi/",
+  "ClubDiDiCTA.btnLink": "/mx/didimas/",
   "ClubDiDiCTA.textColor": "white",
   "WomenDiDiCTA.title": "Mujeres en DiDi",
   "WomenDiDiCTA.bgColor": "bg-blue-primary",
@@ -832,7 +832,7 @@
   "PartnersGrid.bgColor": "bg-white",
   "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones",
   "PartnersGrid.textColor": "gray-primary",
-  "PartnersGrid.linkItem": "/mx/clubdidi/{{partnerName}}/",
+  "PartnersGrid.linkItem": "/mx/didimas/{{partnerName}}/",
   "PartnerColumns.title": "Conoce los beneficios que tenemos para ti",
   "PartnerColumns.columns": [
     {
