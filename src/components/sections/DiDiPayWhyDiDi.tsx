@@ -18,7 +18,7 @@ const DiDiPayWhyDiDi = ({ image }: DiDiPayWhyDiDiProps) => {
     textColor: t("DiDiPayWhyDiDi.textColor"),
     bgColor: t("DiDiPayWhyDiDi.bgColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-100 rounded-full",
+    imageStyle: "z-10 m-4 w-100",
     btnMode: t("DiDiPayWhyDiDi.btnMode"),
     btnType: "payment",
     reverse: false,

@@ -973,21 +973,26 @@
       "btnLink": "https://prestamos.didiglobal.com/"
     }
   ],
-  "DiDiPayHero.title": "Apaga tu cartera, activa DiDi Pay",
+  "DiDiPayHero.title": "Pagos seguros y sin comisiones desde tu teléfono con DiDi Pay",
   "DiDiPayHero.desc": "Baja la App y asocia tu tarjeta.",
   "DiDiPayHero.btnMode": "light",
   "DiDiPayHero.textColor": "white",
   "DiDiPayHero.bgColor": "bg-orange-primary",
-  "DiDiPayWhyDiDi.title": "Conoce los beneficios de tu billetera digital DiDi Pay",
-  "DiDiPayWhyDiDi.desc": "Añade hoy tu tarjeta de crédito o débito, de cualquier banco, a tu billetera en tu app DiDi y empieza a disfrutar de los beneficios de nuestras promociones y ofertas especiales.\n ¡Tu tiempo es muy valioso! Olvídate de las filas, mejor usa DiDi Pay para: \n 1. Recargar el tiempo aire de tu celular. \n 2. Pagar todos los recibos de tus servicios en segundos: agua, luz, teléfono, TV, internet y mucho más. \n 3. Comprar tarjetas de regalo electrónicas en muchos comercios.",
-  "DiDiPayWhyDiDi.btnMode": "dark",
+  "DiDiPayWhyDiDi.title": "Apaga tu cartera, activa DiDi Pay",
+  "DiDiPayWhyDiDi.desc": "Añade tu tarjeta de crédito o débito y disfruta de promociones, ofertas especiales y cupones de descuento. Encuentra estos servicios en \"Mi billetera\". ",
+  "DiDiPayWhyDiDi.btnMode": "primary",
   "DiDiPayWhyDiDi.textColor": "gray-primary",
   "DiDiPayWhyDiDi.bgColor": "bg-white",
-  "DiDiPayFeatures.title": "Crece las ventas de tu negocio",
-  "DiDiPayFeatures.desc": "Activa DiDi Pay como método de pago para aceptar cualquier tarjeta bancaria en tu comercio. Fácil, rápido, eficiente y mucho más conveniente. \n Se parte de nuestra red de comercios, ofrece tus productos o servicios a nuestros millones de usuarios a nivel nacional y ve cómo se incrementan tus ventas de inmediato.",
+  "DiDiPayFeatures.title": "Con tu billetera digital disfuta de todos estos beneficios",
+  "DiDiPayFeatures.bullets": [
+    "Paga tus recibos, recargas de tiempo aire, tarjetas de regalo, órdenes de comida y viajes con DiDi en cualquier momento.",
+    "Usa cualquier tarjeta de crédito o débito para hacer tus pagos de manera rápida y segura.",
+    "Olvídate de las comisiones, las filas y los horarios.",
+    "Disfruta de promociones únicas y cupones de descuento para todos los servicios."
+  ],
   "DiDiPayFeatures.btnMode": "primary",
   "DiDiPayFeatures.textColor": "gray-primary",
-  "DiDiPayFeatures.bgColor": "bg-gray-light",
+  "DiDiPayFeatures.bgColor": "bg-white",
   "DiDiPaySilderSection.title": "",
   "DiDiPaySilderSection.items": [
     {
@@ -1007,22 +1012,22 @@
       "description": "¡Listo! Ahora tienes un método de pago para usar cualquier servicio de DiDi Pay y disfrutar de promociones y beneficios únicos."
     }
   ],
-  "DiDiPayGrid.title": "Activa DiDi Pay y empieza hoy a disfrutar de sus beneficios.",
-  "DiDiPayGrid.desc": "¿Todavía haces fila para ponerle tiempo aire a tu celular? ¿vas al banco o a la tienda a pagar tus recibos? ¿recordar fechas no es lo tuyo? Los nuevos servicios de DiDi, te resuelven el día, te ahorran tiempo, dinero y esfuerzo.",
+  "DiDiPayGrid.title": "Ahorra hasta tu tiempo, paga desde donde estés con DiDi Pay.",
+  "DiDiPayGrid.desc": "Simplifica tu día con nuestros nuevos servicios.",
   "DiDiPayGrid.bgColor": "bg-gray-light",
   "DiDiPayGrid.textColor": "gray-primary",
   "DiDiPayGrid.columns": [
     {
       "title": "Tiempo Aire",
-      "desc": "Cárgale saldo a tu celular sin hacer filas. No te quedes sin datos, mejor, activa el modo chismecito cargando saldo en tu DiDi app con los servicios de DiDi Pay."
+      "desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más."
     },
     {
       "title": "Pago de servicios",
-      "desc": "Que no te corten la luz porque se te paso la fecha de pago.  Paga todos tus recibos como luz, agua, teléfono, internet, TV, tag, y mucho más, en un solo lugar a la hora que quieras y sin complicaciones."
+      "desc": "Paga tu recibo de CFE, Telmex, Izzi y más."
     },
     {
       "title": "Tarjeta de regalo",
-      "desc": "Para el amigo, la novia, tu mamá, tu hermano; para quien quieras y cuando quieras; resuelve ese regalo comprando tarjetas electrónicas de todo tipo con DiDi Pay."
+      "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay"
     }
   ],
   "DiDiPayColumns.title": "",
