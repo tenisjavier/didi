@@ -1030,9 +1030,21 @@
       "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay"
     }
   ],
+  "DiDiPayArticlesColumns.title": "Sigue nuestros artículos financieros.",
+  "DiDiPayArticlesColumns.desc": "",
+  "DiDiPayArticlesColumns.bgColor": "bg-gray-light",
+  "DiDiPayArticlesColumns.textColor": "gray-primary",
+  "DiDiPayArticlesColumns.linkItem": "/mx/didipay/blog/{{article}}/",
+  "DiDiPayBusinessCTA.title": "Crece las ventas de tu negocio",
+  "DiDiPayBusinessCTA.desc": "Activa DiDi Pay como método de pago para aceptar cualquier tarjeta bancaria en tu comercio. Fácil, rápido, eficiente y mucho más conveniente. \n Ofrece tus productos o servicios a nuestros millones de usuarios a nivel nacional y ve cómo se incrementan tus ventas de inmediato.",
+  "DiDiPayBusinessCTA.bgColor": "bg-orange-primary",
+  "DiDiPayBusinessCTA.textColor": "white",
+  "DiDiPayBusinessCTA.btnMode": "light",
+  "DiDiPayBusinessCTA.btnText": "Conoce más",
+  "DiDiPayBusinessCTA.btnLink": "#",
   "DiDiPayColumns.title": "",
   "DiDiPayColumns.desc": "",
-  "DiDiPayColumns.bgColor": "bg-orange-primary",
+  "DiDiPayColumns.bgColor": "bg-gray-light",
   "DiDiPayColumns.columns": [
     {
       "title": "Desarga la App",
