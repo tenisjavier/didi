@@ -12,6 +12,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/cr/leones/`,
+    toPath: `/cr/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/mx/food/ciudad/ciudad-de-mexico-cmx/`,
     toPath: `/mx/food/ciudad/ciudad-de-mexico-cdmx/`,
     isPermanent: true,

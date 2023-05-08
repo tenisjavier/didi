@@ -777,10 +777,6 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
-    {
-      text: "Leones al Volante",
-      url: "/cr/leones/",
-    },
   ],
   do: [
     {
