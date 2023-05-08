@@ -1,6 +1,6 @@
 import React from "react";
 import Btn, { BtnProps } from "./Btn";
-
+import Image from "../components/Image";
 // @desc: Pax and Driver CTA buttons.  If not type is passed it will be a normal btn.
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
 
@@ -12,8 +12,8 @@ export interface BannerProps extends BtnProps {
   textColor: string;
   height?: string;
   alignItems?: string;
+  justifyContent?: string;
   image?: React.ReactNode;
-  flexWrap?: string;
   reverse?: boolean;
 }
 
@@ -26,45 +26,51 @@ const Banner = ({
   image,
   height,
   alignItems,
+  justifyContent,
   btnLink,
   btnMode,
   btnType,
   btnText,
-  flexWrap,
   reverse,
 }: BannerProps) => {
   return (
     <div
-      className={`${flexWrap ? flexWrap : ""} flex w-full ${
-        alignItems ? alignItems : "items-center"
-      } justify-center rounded py-4 ${bgColor && bgColor} text-${textColor} ${
+      className={`rounded py-4 ${bgColor && bgColor} text-${textColor} ${
         height && height
       }`}
     >
-      {reverse ? "" : <div className="mb-5 max-w-6xl text-center">{image}</div>}
+      <div
+        className={`container mx-auto flex flex-wrap ${
+          reverse ? "flex-row-reverse" : ""
+        } w-full ${alignItems ? alignItems : "items-center"} ${
+          justifyContent ? justifyContent : "justify-center"
+        }`}
+      >
+        <div className="flex  flex-col py-4  text-center">
+          <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
 
-      <div className="container mx-auto flex max-w-6xl flex-col py-4  text-center">
-        <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
+          {descText &&
+            descText
+              .split("\n")
+              .map((str) => <p className=" text-lg">{str}</p>)}
+          <br />
+          <p className="text-lg">{desc}</p>
+          <span
+            className={`flex justify-center ${
+              btnText != "VideoSection.btnText" ? "" : "hidden"
+            }`}
+          >
+            <Btn
+              btnType={btnType}
+              btnLink={btnLink}
+              btnMode={btnMode}
+              btnText={btnText}
+            ></Btn>
+          </span>
+        </div>
 
-        {descText &&
-          descText.split("\n").map((str) => <p className=" text-lg">{str}</p>)}
-        <br />
-        <p className="text-lg">{desc}</p>
-        <span
-          className={`flex justify-center ${
-            btnText != "VideoSection.btnText" ? "" : "hidden"
-          }`}
-        >
-          <Btn
-            btnType={btnType}
-            btnLink={btnLink}
-            btnMode={btnMode}
-            btnText={btnText}
-          ></Btn>
-        </span>
+        {image ? <div className="mb-5 max-w-6xl text-center">{image}</div> : ""}
       </div>
-
-      {reverse ? <div className="mb-5 max-w-6xl text-center">{image}</div> : ""}
     </div>
   );
 };

@@ -175,7 +175,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessText: "Regístrate como Comercio",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
-    paymentText: "Descarga DiDi Pay",
+    paymentText: "Descarga DiDi",
     paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
     paymentBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?lang=es-MX&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
