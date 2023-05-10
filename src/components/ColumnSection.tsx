@@ -42,7 +42,7 @@ const ColumnsSection = ({
         {desc &&
           desc
             .split("\n")
-            .map((str) => <p className="text-center text-xl">{str}</p>)}
+            .map((str) => <p className="text-center text-lg">{str}</p>)}
 
         <div className={`mt-10 flex flex-wrap justify-around`}>
           {columns &&
