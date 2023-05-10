@@ -195,13 +195,13 @@ const CTASection = (props: CTAProps) => {
               <>
                 {desc &&
                   desc.split("\n").map((str, index) => (
-                    <p className="mb-10 text-xl" key={index}>
+                    <p className="mb-10 text-lg" key={index}>
                       {str}
                     </p>
                   ))}
                 {bullets && (
                   <>
-                    <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                    <ul className={`mt-12 mb-2 list-none ${textDir} text-lg`}>
                       {bullets.map((item, index) => {
                         return (
                           <div key={index}>
@@ -296,7 +296,7 @@ const CTASection = (props: CTAProps) => {
                 )}
                 {desc &&
                   desc.split("\n").map((str, index) => (
-                    <p className="mb-10 text-xl" key={index}>
+                    <p className="mb-10 text-lg" key={index}>
                       {str}
                     </p>
                   ))}
