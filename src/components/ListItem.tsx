@@ -43,7 +43,12 @@ const ListItem = ({ text, secondText, link, image }: ListItemProps) => {
       } border-gray-primary w-96 rounded border border-solid h-32 m-1 relative`}
     >
       {image && (
-        <Image imageData={image} imageStyle={"!absolute z-0 h-full w-full !block bg-cover brightness-50"}></Image>
+        <Image
+          imageData={image}
+          imageStyle={
+            "!absolute z-0 h-full w-full !block bg-cover brightness-50"
+          }
+        ></Image>
       )}
       {item}
     </li>
