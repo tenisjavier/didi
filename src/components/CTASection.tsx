@@ -184,12 +184,10 @@ const CTASection = (props: CTAProps) => {
         >
           {hero ? (
             <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
+          ) : btnType === "smsCTA" ? (
+            <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
           ) : (
-            btnType === "smsCTA" ? (
-              <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
-            ) : (
-              <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
-            )
+            <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
           )}
           <ConditionalWrapper
             condition={descBeforeBullets === true}
@@ -197,7 +195,7 @@ const CTASection = (props: CTAProps) => {
               <>
                 {desc &&
                   desc.split("\n").map((str, index) => (
-                    <p className="mb-10 text-lg" key={index}>
+                    <p className="mb-10 text-xl" key={index}>
                       {str}
                     </p>
                   ))}
@@ -298,7 +296,7 @@ const CTASection = (props: CTAProps) => {
                 )}
                 {desc &&
                   desc.split("\n").map((str, index) => (
-                    <p className="mb-10 text-lg" key={index}>
+                    <p className="mb-10 text-xl" key={index}>
                       {str}
                     </p>
                   ))}
@@ -324,23 +322,32 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper condition={btnType === "smsCTA"} wrapper={() => (
-            <form>
-              <div className="grid font-bold">
-                <p>Descarga DiDi Food App y ahorra más de un 50% en tu primera orden. Con estas ofertas en la app, ahorrarás más y podrás pedir comida rapidamente.</p>
-                <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8"> 
-                  <div className="grid font-bold mt-2">
-                    {smsFormTitle}
-                    <SmsSender></SmsSender>
-                  </div>
-                  <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-6">
-                    {qr}
-                    <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
+          <ConditionalWrapper
+            condition={btnType === "smsCTA"}
+            wrapper={() => (
+              <form>
+                <div className="grid font-bold">
+                  <p>
+                    Descarga DiDi Food App y ahorra más de un 50% en tu primera
+                    orden. Con estas ofertas en la app, ahorrarás más y podrás
+                    pedir comida rapidamente.
+                  </p>
+                  <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8">
+                    <div className="grid font-bold mt-2">
+                      {smsFormTitle}
+                      <SmsSender></SmsSender>
+                    </div>
+                    <div className="grid justify-items-center mx-5 items-center xl:pl-0 lg:pl-6">
+                      {qr}
+                      <p className="text-center text-xs">
+                        Escanea el código QR con la cámara de tu celular y
+                        descarga la app.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
-          )}
+              </form>
+            )}
           >
             <>{sectionBtn}</>
           </ConditionalWrapper>
