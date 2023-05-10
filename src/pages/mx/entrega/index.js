@@ -27,7 +27,7 @@ const Index = ({ data }) => {
     <Layout sb={false}>
       <EntregaHero bgImage={entregaBgImage}></EntregaHero>
       <EntregaGrid images={GridImages}></EntregaGrid>
-      <EntregaColumns images={ColumnsImages}></EntregaColumns>
+      <EntregaColumns images={ColumnsImages.reverse()}></EntregaColumns>
       <EntregaBusinessCTA image={entregaBusinessCTAImage}></EntregaBusinessCTA>
       <EntregaCityList data={cities}></EntregaCityList>
     </Layout>

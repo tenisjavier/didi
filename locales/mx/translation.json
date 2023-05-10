@@ -1586,7 +1586,7 @@
       "btnMode": "primary"
     }
   ],
-  "EntregaHero.title": "Para cosas grande o chicas, envíalas por DiDi Entrega",
+  "EntregaHero.title": "Para cosas grandes o chicas, envíalas por DiDi Entrega",
   "EntregaHero.desc": "",
   "EntregaHero.textColor": "white",
   "EntregaHero.btnMode": "light",
@@ -1601,8 +1601,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Conoce DiDi Entrega Moto",
-      "desc": "Realiza envíos en la red de repartidores en motos registrados en la app. Perfecto para envíos más pequeños y rápidos como llaves o documentos.",
+      "title": "Conoce DiDi Entrega Light",
+      "desc": "Realiza envíos en la red de repartidores en motos registradas en la app. Perfecto para envíos más pequeños y rápidos como llaves o documentos.",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
     }
@@ -1612,7 +1612,7 @@
   "EntregaGrid.columns": [
     {
       "title": "Promociones",
-      "desc": "Realiza tus primeros envíos disfrutando de increíbles descuentos.",
+      "desc": "Realiza envíos a precios accesibles.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
