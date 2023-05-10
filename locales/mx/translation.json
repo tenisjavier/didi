@@ -1590,25 +1590,21 @@
   "EntregaHero.desc": "",
   "EntregaHero.textColor": "white",
   "EntregaHero.btnMode": "light",
-  "EntregaColumns.bgColor": "bg-white",
+  "EntregaColumns.title": "Contamos con variedad de productos. ¡Elige el que mejor se acomode a tus necesidades!",
+  "EntregaColumns.bgColor": "bg-blue-primary",
+  "EntregaColumns.textColor": "white",
   "EntregaColumns.columns": [
     {
-      "title": "Más paquetes en un mismo envío",
-      "desc": "Tienes la posibilidad de enviar hasta 10 paquetes simultáneamente",
-      "bgColor": "bg-orange-primary",
-      "textColor": "white"
+      "title": "Conoce DiDi Entrega XL",
+      "desc": "Realiza envíos en los carros registrados en la app. Si cabe en la cajuela del vehículo, te lo enviamos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Funciones de Seguridad",
-      "desc": "Sigue en tiempo real tus envíos.",
-      "bgColor": "bg-green-primary",
-      "textColor": "white"
-    },
-    {
-      "title": "Económico y Práctico",
-      "desc": "Realiza envíos desde $20MXN usando tu computadora.",
-      "bgColor": "bg-gray-primary",
-      "textColor": "white"
+      "title": "Conoce DiDi Entrega Moto",
+      "desc": "Realiza envíos en la red de repartidores en motos registrados en la app. Perfecto para envíos más pequeños y rápidos como llaves o documentos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary"
     }
   ],
   "EntregaGrid.bgColor": "bg-white",
@@ -1657,6 +1653,11 @@
       "width": "w-80"
     }
   ],
+  "EntregaCityList.title": "Operamos en las siguientes ciudades en México",
+  "EntregaCityList.desc": "Descubre las ciudades de México donde esta operando DiDi Entrega",
+  "EntregaCityList.bgColor": "bg-white",
+  "EntregaCityList.textColor": "gray-primary",
+  "EntregaCityList.linkItem": "/mx/conductor/conductor-en-{{city}}/",
   "EntregaBusinessCTA.title": "Regístrate en DiDi Entrega Business para envíos empresariales",
   "EntregaBusinessCTA.desc": "Si necesitas enviar tus productos a tus clientes, conoce esta nueva opción web.",
   "EntregaBusinessCTA.btnLink": "https://didi-food.com/es-MX/entrega-business/home",
