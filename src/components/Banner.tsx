@@ -56,9 +56,9 @@ const Banner = ({
           {descText &&
             descText
               .split("\n")
-              .map((str) => <p className=" text-lg">{str}</p>)}
+              .map((str) => <p className=" text-xl">{str}</p>)}
           <br />
-          <p className="text-lg">{desc}</p>
+          <p className="text-xl">{desc}</p>
           <span
             className={`flex justify-center ${
               btnText != "VideoSection.btnText" ? "" : "hidden"
