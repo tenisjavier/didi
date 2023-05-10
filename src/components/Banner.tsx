@@ -46,7 +46,11 @@ const Banner = ({
           justifyContent ? justifyContent : "justify-center"
         }`}
       >
-        <div className="flex  flex-col py-4  text-center">
+        <div
+          className={`flex  flex-col py-4  ${
+            image ? "text-left" : "text-center"
+          }`}
+        >
           <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
 
           {descText &&
