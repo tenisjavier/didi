@@ -3,7 +3,8 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { useCountry } from "../context/countryContext";
 
-function SmsSender() {
+function SmsSender(smsType: any) {
+  console.log("SmsType: " + smsType)
   const country = useCountry().code;
   const [phoneNumber, setPhoneNumber] = useState('');
   const [messageSent, setMessageSent] = useState(false);
@@ -23,10 +24,15 @@ function SmsSender() {
       setIsValid(true);
     } else setIsValid(false)
   }
-
+  
   function sendMessage() {
-    const url = 'https://didi.mainserver.com.br/api/twilio/message/'+ '+' + phoneNumber;
-    console.log(url);
+    let url =  '';
+
+    if (String(smsType) === "RidesSmsCTA") {
+      url = 'https://didi.mainserver.com.br/api/twilio/message/rides/'+ '+' + phoneNumber;
+    } else url = 'https://didi.mainserver.com.br/api/twilio/message/food/'+ '+' + phoneNumber
+    
+    console.log("Url: "+ url);
 
     fetch(url, {
       method: 'GET',

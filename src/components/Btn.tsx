@@ -32,7 +32,8 @@ type BtnType =
   | "entrega"
   | "entregaBusiness"
   | "en"
-  | "smsCTA"
+  | "FoodSmsCTA"
+  | "RidesSmsCTA"
   | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -120,7 +121,7 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "smsCTA") {
+  } else if (btnType === "FoodSmsCTA" || "RidesSmsCTA") {
     btnText = btnText || btnData.smsCTAText;
   }
 
