@@ -7,7 +7,7 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
     //? if was in a past experiment delete ls
     if (window.localStorage.getItem("test_version"))
       window.localStorage.removeItem("test_version");
-
+    if (window.localStorage.getItem("t1")) window.localStorage.removeItem("t1");
     //? Only in Mexico HomePage run the test
 
     const test_version = window.localStorage.getItem(ls);

@@ -5,6 +5,7 @@ import Btn, { BtnProps } from "./Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image from "../components/Image";
 import ConditionalWrapper from "./ConditionalWrapper";
+import { QRCodeSVG } from "qrcode.react";
 import SmsSender from "./SmsSender";
 // @desc: Template for static Sections with bg image, title and text
 // @props : title | desc | btnType drv/pax/both | btnMode 'light'/'dark'/'primary | btnLink customLink| reverse "false" "true"
@@ -203,7 +204,7 @@ const CTASection = (props: CTAProps) => {
                   ))}
                 {bullets && (
                   <>
-                    <ul className={`mt-12 mb-2 list-none ${textDir} text-xl`}>
+                    <ul className={`mt-12 mb-2 list-none ${textDir} text-lg`}>
                       {bullets.map((item, index) => {
                         return (
                           <div key={index}>
@@ -227,7 +228,7 @@ const CTASection = (props: CTAProps) => {
                                 {typeof item === "string"
                                   ? item.split("\n").map((str, index) => (
                                       <p
-                                        className="mt-0 mb-5 text-xl"
+                                        className="mt-0 mb-5 text-lg"
                                         key={index}
                                       >
                                         {str}
@@ -279,7 +280,7 @@ const CTASection = (props: CTAProps) => {
                                 {typeof item === "string"
                                   ? item.split("\n").map((str, index) => (
                                       <p
-                                        className="mt-0 mb-5 text-xl"
+                                        className="mt-0 mb-5 text-lg"
                                         key={index}
                                       >
                                         {str}
@@ -344,9 +345,8 @@ const CTASection = (props: CTAProps) => {
                     }
                   </div>
                 </div>
-              </div>
-            </form>
-          )}
+              </form>
+            )}
           >
             <>{sectionBtn}</>
           </ConditionalWrapper>

@@ -1,6 +1,7 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import { BtnType } from "../Btn";
 
 interface DrvHeroProps {
   bgImage: {
@@ -8,10 +9,12 @@ interface DrvHeroProps {
     description: string;
     gatsbyImageData: any;
   };
+  btnType?: BtnType;
+  btnMode?: string;
   isRTL?: boolean;
 }
 
-const DrvHero = ({ bgImage, isRTL }: DrvHeroProps) => {
+const DrvHero = ({ bgImage, btnType, btnMode, isRTL }: DrvHeroProps) => {
   const props: CTAProps = {
     hero: true,
     title: t("DrvHero.title"),
@@ -19,9 +22,9 @@ const DrvHero = ({ bgImage, isRTL }: DrvHeroProps) => {
     textColor: t("DrvHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
-    btnMode: t("DrvHero.btnMode"),
-    btnType: "drv",
-    RTL: isRTL || false
+    btnMode: btnMode || t("DrvHero.btnMode"),
+    btnType: btnType || "drv",
+    RTL: isRTL || false,
   };
   return <CTASection {...props}></CTASection>;
 };

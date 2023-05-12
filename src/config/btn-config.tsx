@@ -4,6 +4,8 @@ interface SingleBtnInterface {
   drvLink: string;
   paxLink: string;
   drvText: string;
+  drvWhatsappLink?: string;
+  drvWhatsappText?: string;
   paxText: string;
   fleetLink?: string;
   fleetText?: string;
@@ -159,6 +161,8 @@ const btnLinks: AllBtnInterface = {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
+    drvWhatsappLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+    drvWhatsappText: "Regístrate con Whatsapp",
     paxText: "Descarga DiDi Pasajero",
     foodEaterText: "Pide Comida, Descarga la App",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
@@ -171,7 +175,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessText: "Regístrate como Comercio",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
-    paymentText: "Descarga DiDi Pay",
+    paymentText: "Descarga DiDi",
     paymentLink: "https://didi.onelink.me/Zkxc/didipaymx/",
     paymentBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?lang=es-MX&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
@@ -183,7 +187,7 @@ const btnLinks: AllBtnInterface = {
     prestamosDrvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     entregaText: "Usa DiDi Entrega",
     entregaLink:
-      "https://page.didiglobal.com/public-biz/pc-login/3.1.0/index.html?appid=200044&role=1&source=70001&country_id=484&redirectUrl=https%3A%2F%2Fc.didi-food.com%2Flogin%2Fcallback%3FredirectUrl%3Dhttps%25253A%25252F%25252Fdidi-food.com%25252Fes-MX%25252Fentrega-business%25252Fhome%252523_callbackType%25253Dlogin&lang=es-MX",
+      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     smsCTAText: "Descargar en mi celular",
   },
   mxen: {

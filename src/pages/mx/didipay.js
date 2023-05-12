@@ -5,8 +5,10 @@ import DiDiPayHero from "../../components/sections/DiDiPayHero";
 import DiDiPayWhyDiDi from "../../components/sections/DiDiPayWhyDiDi";
 import DiDiPayFeatures from "../../components/sections/DiDiPayFeatures";
 import DiDiPayGrid from "../../components/sections/DiDiPayGrid";
-import DiDiPaySilderSection from "../../components/sections/DiDiPaySliderSection";
+import DiDiPayBusinessCTA from "../../components/sections/DiDiPayBusinessCTA";
 import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
+import DiDiPayBanner from "../../components/sections/DiDiPayBanner";
+import DiDiPayArticlesColumns from "../../components/sections/DiDiPayArticlesColumns";
 
 const DiDiPay = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -22,9 +24,12 @@ const DiDiPay = ({ data }) => {
   const featuresImage = images.filter((image) => {
     return image.title === "mx.DiDiPayFeatures.image";
   })[0];
-  const sliderImages = images.filter((image) => {
-    return image.title.indexOf("mx.DiDiPaySlider.image") !== -1;
-  });
+  const businessCTAImage = images.filter((image) => {
+    return image.title === "mx.DiDiPayBusinessCTA.image";
+  })[0];
+  const bannerImage = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiPayBanner.image") !== -1;
+  })[0];
   const columnsImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiPayColumns.image") !== -1;
   });
@@ -36,9 +41,11 @@ const DiDiPay = ({ data }) => {
         image={homeHeroImage}
       ></DiDiPayHero>
       <DiDiPayWhyDiDi image={whyDiDiImage}></DiDiPayWhyDiDi>
-      <DiDiPayFeatures image={featuresImage}></DiDiPayFeatures>
-      <DiDiPaySilderSection images={sliderImages}></DiDiPaySilderSection>
       <DiDiPayGrid images={columnsImages.reverse()}></DiDiPayGrid>
+      <DiDiPayFeatures image={featuresImage}></DiDiPayFeatures>
+      <DiDiPayBanner image={bannerImage}></DiDiPayBanner>
+      <DiDiPayArticlesColumns data={data}></DiDiPayArticlesColumns>
+      <DiDiPayBusinessCTA image={businessCTAImage}></DiDiPayBusinessCTA>
       <DiDiPayColumns></DiDiPayColumns>
     </Layout>
   );
@@ -51,7 +58,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayHomeHero.image)|(mx.DiDiPayHomeHero.bgImage)|(mx.DiDiPayFeatures.image)|(mx.DiDiPayWhyDiDi.image)|(mx.DiDiPaySlider.image)|(mx.DiDiPayColumns.image)/"
+          regex: "/(mx.DiDiPayHomeHero.image)|(mx.DiDiPayHomeHero.bgImage)|(mx.DiDiPayFeatures.image)|(mx.DiDiPayWhyDiDi.image)|(mx.DiDiPayBusinessCTA.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayColumns.image)/"
         }
       }
     ) {
@@ -60,6 +67,20 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    allContentfulArticle(
+      filter: { category: { eq: "pay" }, country: { code: { eq: "mx" } } }
+      sort: { updatedAt: DESC }
+      limit: 3
+    ) {
+      nodes {
+        title
+        slug
+        excerpt
+        featuredImage {
+          gatsbyImageData
+        }
       }
     }
   }

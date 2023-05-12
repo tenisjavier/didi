@@ -1,6 +1,7 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 interface DiDiPayFeaturesProps {
   image: {
@@ -15,10 +16,13 @@ const DiDiPayFeatures = ({ image }: DiDiPayFeaturesProps) => {
     hero: false,
     title: t("DiDiPayFeatures.title"),
     desc: t("DiDiPayFeatures.desc"),
+    bullets: t("DiDiPayFeatures.bullets", { returnObjects: true }),
+    customBulletIcon: true,
+    icon: faCheck,
     textColor: t("DiDiPayFeatures.textColor"),
     bgColor: t("DiDiPayFeatures.bgColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-100 rounded-full",
+    imageStyle: "z-10 m-4 w-100",
     btnMode: t("DiDiPayFeatures.btnMode"),
     btnType: "payment",
     reverse: true,

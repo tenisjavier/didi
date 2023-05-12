@@ -29,6 +29,10 @@ const menuLinks: AllMenuInterface = {
           text: "Suppliers",
           url: "/suppliers/",
         },
+        {
+          text: "Careers",
+          url: "#",
+        },
       ],
     },
   ],
@@ -44,6 +48,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Suppliers",
           url: "/suppliers/",
+        },
+        {
+          text: "Careers",
+          url: "#",
         },
       ],
     },
@@ -259,6 +267,10 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Entrega",
       url: "#",
       dropMenu: [
+        {
+          text: "DiDi Entrega",
+          url: "/mx/entrega/",
+        },
         {
           text: "DiDi Entrega Business",
           url: "https://didi-food.com/es-MX/entrega-business/home",
@@ -776,10 +788,6 @@ const menuLinks: AllMenuInterface = {
           url: "/cr/centro-de-ayuda/",
         },
       ],
-    },
-    {
-      text: "Leones al Volante",
-      url: "/cr/leones/",
     },
   ],
   do: [

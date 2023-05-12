@@ -12,6 +12,7 @@ import "../styles/global.css";
 //? layout with global header, menu, smartbanner and footer
 const Layout = ({
   sb = true,
+  sbType,
   index = true,
   customBreadcrumb,
   title,
@@ -58,6 +59,7 @@ const Layout = ({
   if (pathname.includes("articulos")) smartBannerType = "pax";
   if (pathname.includes("newsroom")) smartBannerType = "pax";
   if (pathname === "/") smartBannerType = "en"; //? en is pax in english for the root pages
+  if (sbType) smartBannerType = sbType;
 
   const pageContent = (
     <>
