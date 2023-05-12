@@ -3,7 +3,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { useCountry } from "../context/countryContext";
 
-function SmsSender(smsType: any) {
+function SmsSender({ smsType }: any) {
   console.log("SmsType: " + smsType)
   const country = useCountry().code;
   const [phoneNumber, setPhoneNumber] = useState('');

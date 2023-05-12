@@ -339,8 +339,8 @@ const CTASection = (props: CTAProps) => {
                   <div className="grid font-bold mt-2">
                     {smsFormTitle}
                     {btnType === 'RidesSmsCTA' 
-                    ? <SmsSender smsType='RidesSmsCTA'></SmsSender>
-                    : <SmsSender smsType='FoodSmsCTA'></SmsSender>
+                    ? <SmsSender smsType={'RidesSmsCTA'}></SmsSender>
+                    : <SmsSender smsType={'FoodSmsCTA'}></SmsSender>
                     }
                   </div>
                 </div>
