@@ -260,6 +260,10 @@ const menuLinks: AllMenuInterface = {
       url: "#",
       dropMenu: [
         {
+          text: "DiDi Entrega",
+          url: "/mx/entrega/",
+        },
+        {
           text: "DiDi Entrega Business",
           url: "https://didi-food.com/es-MX/entrega-business/home",
         },

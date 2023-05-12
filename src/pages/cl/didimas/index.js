@@ -20,7 +20,10 @@ const DiDiMas = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <PartnersHero bgImage={didiMasHeroBgImage}></PartnersHero>
+      <PartnersHero
+        bgImage={didiMasHeroBgImage}
+        mobileBgImage={didiMasHeroMobileBgImage}
+      ></PartnersHero>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
       <HomeColumns></HomeColumns>
