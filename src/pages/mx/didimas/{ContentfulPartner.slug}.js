@@ -7,7 +7,8 @@ import PartnerContent from "../../../components/sections/PartnerContent";
 import PartnersGrid from "../../../components/sections/PartnersGrid";
 
 const Partner = ({ data }) => {
-  const { heroTitle, heroDesc, heroImage } = data.contentfulPartner;
+  const { heroTitle, heroDesc, heroImage, promoLink, promoLinkText } =
+    data.contentfulPartner;
   const { featureTitle, featureDesc, featureImage } = data.contentfulPartner;
   const { content } = data.contentfulPartner;
   const partners = data.allContentfulPartner.nodes;
@@ -18,11 +19,15 @@ const Partner = ({ data }) => {
         title={heroTitle}
         desc={heroDesc}
         image={heroImage}
+        btnLink={promoLink}
+        btnLinkText={promoLinkText}
       ></PartnerHero>
       <PartnerFeature
         title={featureTitle}
         desc={featureDesc}
         image={featureImage}
+        btnLink={promoLink}
+        btnLinkText={promoLinkText}
       ></PartnerFeature>
       <PartnerContent content={content}></PartnerContent>
       <PartnersGrid data={partners}></PartnersGrid>
@@ -38,6 +43,8 @@ export const query = graphql`
     contentfulPartner(id: { eq: $id }) {
       heroTitle
       heroDesc
+      promoLink
+      promoLinkText
       heroImage {
         gatsbyImageData
         description

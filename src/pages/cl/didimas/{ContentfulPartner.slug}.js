@@ -17,7 +17,7 @@ const Partner = ({ data }) => {
   const partnerCTAImage = images.filter((image) => {
     return image.title === "cl.PartnerCTA.image";
   })[0];
-  console.log(promoLinkText);
+
   return (
     <Layout>
       <PartnerHero
