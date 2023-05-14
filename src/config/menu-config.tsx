@@ -30,8 +30,8 @@ const menuLinks: AllMenuInterface = {
           url: "/suppliers/",
         },
         {
-          text: "Careers",
-          url: "#",
+          text: "Carreras",
+          url: "https://careers.didiglobal.com/",
         },
       ],
     },
@@ -51,7 +51,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Careers",
-          url: "#",
+          url: "https://careers.didiglobal.com/",
         },
       ],
     },
