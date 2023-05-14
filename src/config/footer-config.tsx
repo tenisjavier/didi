@@ -18,6 +18,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Carreras", link: "https://careers.didiglobal.com/" },
     { text: "Legal", link: "/cl/legal/" },
     { text: "Newsroom", link: "/cl/newsroom/" },
+    { text: "Trabaja en DiDi", link: "#" },
   ],
   hk: [
     { text: "的士服務", link: "/hk/ride/的士服務/" },
