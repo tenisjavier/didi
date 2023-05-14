@@ -409,7 +409,7 @@
     },
     {
       "title": "8. Monitoreo de Viaje en Tiempo Real",
-      "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta.",
+      "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma \"inmediata\". Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta. \n ** No disponible para Taxi. ",
       "bgColor": "bg-orange-primary"
     },
     {
