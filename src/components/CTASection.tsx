@@ -345,7 +345,8 @@ const CTASection = (props: CTAProps) => {
                     }
                   </div>
                 </div>
-              </form>
+              </div>
+            </form>
             )}
           >
             <>{sectionBtn}</>
