@@ -27,7 +27,7 @@ const Index = ({ data }) => {
     <Layout sb={false}>
       <EntregaHero bgImage={entregaBgImage}></EntregaHero>
       <EntregaGrid images={GridImages}></EntregaGrid>
-      <EntregaColumns images={ColumnsImages.reverse()}></EntregaColumns>
+      <EntregaColumns images={ColumnsImages}></EntregaColumns>
       <EntregaBusinessCTA image={entregaBusinessCTAImage}></EntregaBusinessCTA>
       <EntregaCityList data={cities}></EntregaCityList>
     </Layout>
@@ -44,6 +44,7 @@ export const query = graphql`
           regex: "/(mx.EntregaHero.bgImage)|(mx.EntregaGrid.image)|(mx.EntregaColumns.image)|(mx.EntregaBusinessCTA.image)/"
         }
       }
+      sort: { title: ASC }
     ) {
       nodes {
         id
