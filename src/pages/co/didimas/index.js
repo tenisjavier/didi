@@ -13,8 +13,8 @@ const DiDiMas = ({ data }) => {
   const didiMasHeroBgImage = images.filter((image) => {
     return image.title === "co.DiDiMasHero.bgImage";
   })[0];
-  const didiMasHeroImage = images.filter((image) => {
-    return image.title === "co.DiDiMasHero.image";
+  const didiMasHeroMobileBgImage = images.filter((image) => {
+    return image.title === "co.DiDiMasHeroMobile.bgImage";
   })[0];
   const partnerCTAImage = images.filter((image) => {
     return image.title === "co.PartnerCTA.image";
@@ -23,7 +23,7 @@ const DiDiMas = ({ data }) => {
     <Layout>
       <PartnersHero
         bgImage={didiMasHeroBgImage}
-        image={didiMasHeroImage}
+        mobileBgImage={didiMasHeroMobileBgImage}
       ></PartnersHero>
       <AboutClubDiDi></AboutClubDiDi>
       <PartnersGrid data={partners}></PartnersGrid>
@@ -36,7 +36,11 @@ const DiDiMas = ({ data }) => {
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { regex: "/(co.DiDiMasHero)|(co.PartnerCTA)/" } }
+      filter: {
+        title: {
+          regex: "/(co.DiDiMasHeroMobile)|(co.DiDiMasHero)|(co.PartnerCTA)/"
+        }
+      }
       sort: { title: ASC }
     ) {
       nodes {

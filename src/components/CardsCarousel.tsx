@@ -65,7 +65,7 @@ const CardsCarousel = ({
         </div>
         <div
           ref={carouselRef}
-          className="flex gap-8 snap-x w-full h-[500px]  overflow-x-hidden px-8"
+          className="flex gap-8 snap-x w-full h-[500px]  overflow-x-auto lg:overflow-x-hidden px-8"
         >
           {cards.map((card, index) => {
             return (

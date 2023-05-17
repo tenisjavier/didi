@@ -100,7 +100,10 @@ section.main-text ol li {
 }
 
 .btn-green {
-  @apply bg-green-primary shadow-green-primary/30 inline-block min-w-max cursor-pointer rounded-full py-3 px-8 font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white;
+  @apply bg-green-primary shadow-green-primary/30 inline-block min-w-max cursor-pointer rounded-full py-3 px-6 lg:px-8 font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white;
+}
+.btn-whatsapp {
+  @apply bg-whatsapp-primary shadow-whatsapp-primary/30 inline-block cursor-pointer rounded-full py-3 pl-2 pr-4 font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white border-solid border-2 border-white;
 }
 
 .btn-primary a {

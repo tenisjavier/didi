@@ -5,6 +5,8 @@ import CTASection, { CTAProps } from "../CTASection";
 interface PartnerHeroProps {
   title: string;
   desc: string;
+  btnLink: string;
+  btnLinkText: string;
   image: {
     title: string;
     description: string;
@@ -12,7 +14,13 @@ interface PartnerHeroProps {
   };
 }
 
-const PartnerHero = ({ title, desc, image }: PartnerHeroProps) => {
+const PartnerHero = ({
+  title,
+  desc,
+  image,
+  btnLink,
+  btnLinkText,
+}: PartnerHeroProps) => {
   const props: CTAProps = {
     hero: true,
     title: title,
@@ -22,10 +30,12 @@ const PartnerHero = ({ title, desc, image }: PartnerHeroProps) => {
     image: image,
     imageStyle: "z-10 m-4 w-100 rounded",
     btnMode: t("PartnerHero.btnMode"),
-    btnType: "drv",
+    ...(!btnLinkText ? { btnType: "drv" } : {}),
     reverse: true,
+    btnLink: btnLink || "",
+    btnText: btnLinkText || "",
   };
-
+  console.log(btnLinkText);
   return <CTASection {...props}></CTASection>;
 };
 

@@ -48,7 +48,7 @@ const ColumnsSection = ({
           {columns &&
             columns.map((col, index) => {
               return <Card {...col} key={index}></Card>;
-          })}
+            })}
         </div>
         {small &&
           small
