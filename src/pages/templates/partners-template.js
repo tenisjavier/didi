@@ -44,7 +44,7 @@ const Partner = ({ data }) => {
 export default Partner;
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $countryCode: String) {
     contentfulPartner(id: { eq: $id }) {
       heroTitle
       heroDesc
@@ -74,7 +74,7 @@ export const query = graphql`
       }
     }
     allContentfulPartner(
-      filter: { country: { code: { eq: "cl" } }, id: { ne: $id } }
+      filter: { country: { code: { eq: $countryCode } }, id: { ne: $id } }
     ) {
       nodes {
         name

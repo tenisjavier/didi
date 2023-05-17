@@ -30,21 +30,32 @@ const partnersRoutesInit = async (graphql, createPage) => {
 
   result.data.allContentfulPartner.nodes.forEach((node) => {
     const { id, slug, country } = node;
-    if(country?.code) {
-        let path = `/${country?.code}/didimas/${slug}`;
-        const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
+    if (country?.code) {
+      let path = `/${country?.code}/didimas/${slug}`;
+      const sslCountries = [
+        "cl",
+        "pe",
+        "ar",
+        "co",
+        "ec",
+        "do",
+        "cr",
+        "pa",
+        "mx",
+      ];
 
-        if (!sslCountries.includes(country.code)){
-            path = `/${country?.code}/didi-advance/${slug}`;
-        }
+      if (!sslCountries.includes(country.code)) {
+        path = `/${country?.code}/didi-advance/${slug}`;
+      }
 
-        createPage({
+      createPage({
         path: path,
         component: template,
         context: {
-            id: id
+          id: id,
+          countryCode: country.code,
         },
-        });
+      });
     }
   });
 };
