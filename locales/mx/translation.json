@@ -1590,7 +1590,7 @@
   "EntregaHero.desc": "",
   "EntregaHero.textColor": "white",
   "EntregaHero.btnMode": "light",
-  "EntregaColumns.title": "Contamos con variedad de productos. ¡Elige el que mejor se acomode a tus necesidades!",
+  "EntregaColumns.title": "Contamos con dos opciones de servicios. ¡Elige el que mejor se acomode a tus necesidades!",
   "EntregaColumns.bgColor": "bg-blue-primary",
   "EntregaColumns.textColor": "white",
   "EntregaColumns.columns": [
@@ -1611,7 +1611,7 @@
   "EntregaGrid.textColor": "gray-primary",
   "EntregaGrid.columns": [
     {
-      "title": "Promociones",
+      "title": "Ahorra en Envíos",
       "desc": "Realiza envíos a precios accesibles.",
       "bgColor": "white",
       "textColor": "gray-primary",
@@ -1632,8 +1632,8 @@
       "width": "w-80"
     },
     {
-      "title": "Facilidades",
-      "desc": "Con tan solo unos clicls podrás realizar tus envíos a través de la app.",
+      "title": "Fácil de Usar",
+      "desc": "Con tan solo unos clicks podrás realizar tus envíos a través de la app.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
