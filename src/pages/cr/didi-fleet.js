@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
 import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
+import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
 import FleetColumns from "../../components/sections/FleetColumns";
 import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
 import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
@@ -13,10 +14,15 @@ const Fleet = ({ data }) => {
   const fleetHeroBgImage = images.filter((image) => {
     return image.title === "cr.FleetHero.bgImage";
   })[0];
+  const fleetHeroBgImageMobile = images.filter((image) => {
+    return image.title === "cr.DiDiFleetHeroMobile.bgImage";
+  })[0];
   const FleetSocioCTAImage = images.filter((image) => {
     return image.title === "mx.FleetSocioCTA.image";
   })[0];
-
+  const FleetRegistraAutosCTAImage = images.filter((image) => {
+    return image.title === "mx.FleetRegistraAutos.image";
+  })[0];
   const FleetColumnsImages = images.filter((image) => {
     return image.title.indexOf("cr.FleetColumns.image") !== -1;
   });
@@ -29,8 +35,14 @@ const Fleet = ({ data }) => {
 
   return (
     <Layout>
-      <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
+      <FleetHero
+        bgImage={fleetHeroBgImage}
+        mobileBgImage={fleetHeroBgImageMobile}
+      ></FleetHero>
       <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
+      <FleetRegistraAutosCTA
+        image={FleetRegistraAutosCTAImage}
+      ></FleetRegistraAutosCTA>
       <DownloadFleetCTA image={fleetDownloadImage}></DownloadFleetCTA>
       <FleetStepsColumns images={FleetStepsColumnsImages}></FleetStepsColumns>
       <AboutDidiFleetVideo></AboutDidiFleetVideo>
@@ -46,7 +58,9 @@ export const query = graphql`
         title: {
           in: [
             "cr.FleetHero.bgImage"
+            "cr.DiDiFleetHeroMobile.bgImage"
             "mx.FleetSocioCTA.image"
+            "mx.FleetRegistraAutos.image"
             "cr.FleetWhyDiDi.image"
             "cr.FleetColumns.image"
             "cr.FleetStepsColumns.image"
