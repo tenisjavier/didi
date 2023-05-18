@@ -114,7 +114,7 @@ export const query = graphql`
             contentful_id
             title
             description
-            gatsbyImageData(width: 1000)
+            gatsbyImageData
             __typename
           }
         }
