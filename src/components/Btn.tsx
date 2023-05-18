@@ -128,7 +128,7 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "FoodSmsCTA" || "RidesSmsCTA") {
+  } else if (btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA") {
     btnText = btnText || btnData.smsCTAText;
   }
 
