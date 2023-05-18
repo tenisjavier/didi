@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
+import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
 import FleetColumns from "../../components/sections/FleetColumns";
 import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
 import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
@@ -12,6 +13,10 @@ const Fleet = ({ data }) => {
   const fleetHeroBgImage = images.filter((image) => {
     return image.title === "cr.FleetHero.bgImage";
   })[0];
+  const FleetSocioCTAImage = images.filter((image) => {
+    return image.title === "mx.FleetSocioCTA.image";
+  })[0];
+
   const FleetColumnsImages = images.filter((image) => {
     return image.title.indexOf("cr.FleetColumns.image") !== -1;
   });
@@ -25,6 +30,7 @@ const Fleet = ({ data }) => {
   return (
     <Layout>
       <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
+      <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
       <DownloadFleetCTA image={fleetDownloadImage}></DownloadFleetCTA>
       <FleetStepsColumns images={FleetStepsColumnsImages}></FleetStepsColumns>
       <AboutDidiFleetVideo></AboutDidiFleetVideo>
@@ -40,6 +46,7 @@ export const query = graphql`
         title: {
           in: [
             "cr.FleetHero.bgImage"
+            "mx.FleetSocioCTA.image"
             "cr.FleetWhyDiDi.image"
             "cr.FleetColumns.image"
             "cr.FleetStepsColumns.image"
