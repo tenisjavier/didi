@@ -266,6 +266,11 @@
   "FleetHero.desc": "Tú pones el carro y DiDi Fleet te ayuda a encontrar un usuario arrendador para alquilarlo y generar ganancias.",
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
+  "FleetSocioCTA.title": "Genera en promedio $1.200.000* alquilando tu carro  por mes",
+  "FleetSocioCTA.desc": "Genera en promedio $1.200.000* alquilando tu carro  por mes y recibe hasta $1.500.000** EXTRA por cada carro que alquiles usando la app y que complete el número de arrendamientos  en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Colombia.\n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi",
+  "FleetSocioCTA.btnText": "Conoce Más",
+  "FleetSocioCTA.btnLink": "#",
+  "FleetSocioCTA.btnMode": "dark",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un arrendador potencial. Verificamos todos los antecedentes de los arrendadores durante su proceso de registro.",
