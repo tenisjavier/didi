@@ -17,7 +17,7 @@ interface FleetHeroProps {
 
 const FleetHero = ({ bgImage, mobileBgImage }: FleetHeroProps) => {
   const bgImageStyle = mobileBgImage
-    ? "hidden !absolute z-0 h-full w-full md:block "
+    ? "hidden !absolute z-0 h-full w-full brightness-90 md:block "
     : "!absolute z-0 h-full w-full brightness-90 md:block ";
   const props: CTAProps = {
     hero: true,
@@ -27,7 +27,7 @@ const FleetHero = ({ bgImage, mobileBgImage }: FleetHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full md:!hidden ",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnMode: t("FleetHero.btnMode"),
     btnType: "fleet",
   };

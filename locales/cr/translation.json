@@ -238,6 +238,15 @@
   "FleetSocioCTA.btnText": "Conocé Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
+  "FleetRegistraAutos.title": "Con DiDi Fleet podés:",
+  "FleetRegistraAutos.desc": "",
+  "FleetRegistraAutos.bullets": [
+    "Generar en promedio ¢360.000* rentando tu carro durante el por mes",
+    "Alquilar tu carro mientras estudiás o trabajás.",
+    "Recibir promociones exclusivas en cualquier momento.",
+    "Administrar las ganancias de los viajes completados con tu carro."
+  ],
+  "FleetRegistraAutos.bgColor": "bg-gray-light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",

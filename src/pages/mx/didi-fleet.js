@@ -12,6 +12,9 @@ const DiDiFleet = ({ data }) => {
   const FleetHeroBgImage = images.filter((image) => {
     return image.title === "mx.DiDiFleetHero.bgImage";
   })[0];
+  const FleetHeroBgImageMobile = images.filter((image) => {
+    return image.title === "mx.DiDiFleetHeroMobile.bgImage";
+  })[0];
 
   const FleetSocioCTAImage = images.filter((image) => {
     return image.title === "mx.FleetSocioCTA.image";
@@ -27,7 +30,10 @@ const DiDiFleet = ({ data }) => {
 
   return (
     <Layout>
-      <FleetHero bgImage={FleetHeroBgImage}></FleetHero>
+      <FleetHero
+        bgImage={FleetHeroBgImage}
+        mobileBgImage={FleetHeroBgImageMobile}
+      ></FleetHero>
       <AboutDidiFleetVideo></AboutDidiFleetVideo>
       <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
       <FleetRegistraAutosCTA
@@ -47,6 +53,7 @@ export const query = graphql`
         title: {
           in: [
             "mx.DiDiFleetHero.bgImage"
+            "mx.DiDiFleetHeroMobile.bgImage"
             "mx.FleetSocioCTA.image"
             "mx.FleetRegistraAutos.image"
             "mx.FleetAgrega.image"

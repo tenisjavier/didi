@@ -14,6 +14,9 @@ const Fleet = ({ data }) => {
   const fleetHeroBgImage = images.filter((image) => {
     return image.title === "ar.FleetHero.bgImage";
   })[0];
+  const fleetHeroBgImageMobile = images.filter((image) => {
+    return image.title === "ar.DiDiFleetHeroMobile.bgImage";
+  })[0];
   const FleetSocioCTAImage = images.filter((image) => {
     return image.title === "ar.FleetSocioCTA.image";
   })[0];
@@ -33,7 +36,10 @@ const Fleet = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
+      <FleetHero
+        bgImage={fleetHeroBgImage}
+        mobileBgImage={fleetHeroBgImageMobile}
+      ></FleetHero>
       <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
       <FleetRegistraAutosCTA
         image={FleetRegistraAutosCTAImage}
@@ -52,7 +58,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(ar.FleetHero.bgImage)|(ar.FleetSocioCTA.image)|(ar.FleetRegistraAutos.image)|(ar.FleetAgrega.image)|(ar.FleetColumns.image)|(ar.FleetStepsColumns.image)|(ar.FleetDownload.image)/"
+          regex: "/(ar.FleetHero.bgImage)|(ar.DiDiFleetHeroMobile.bgImage)|(ar.FleetSocioCTA.image)|(ar.FleetRegistraAutos.image)|(ar.FleetAgrega.image)|(ar.FleetColumns.image)|(ar.FleetStepsColumns.image)|(ar.FleetDownload.image)/"
         }
       }
       sort: { title: ASC }

@@ -271,6 +271,16 @@
   "FleetSocioCTA.btnText": "Conoce Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
+  "FleetRegistraAutos.title": "Con DiDi Fleet puedes:",
+  "FleetRegistraAutos.desc": "",
+  "FleetRegistraAutos.bullets": [
+    "Generar en promedio $1.200.000* rentando tu carro durante por mes",
+    "Alquilar tu carro mientras estudias o trabajas.",
+    "Aprovechar de descuentos exclusivos de DiDiMás+ para ahorrar en el mantenimiento de tu carro.",
+    "Recibir promociones exclusivas en cualquier momento.",
+    "Administrar las ganancias de los arrendamientos completados con tu carro."
+  ],
+  "FleetRegistraAutos.bgColor": "bg-gray-light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un arrendador potencial. Verificamos todos los antecedentes de los arrendadores durante su proceso de registro.",
