@@ -238,6 +238,17 @@
   "FleetSocioCTA.btnText": "Conocé Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
+  "FleetSafety.title": "Con DiDi Fleet podés:",
+  "FleetSafety.desc": "",
+  "FleetSafety.bullets": [
+    "Generar ganancias  alquilando tu carro a un usuario conductor verificado y de confianza.",
+    "Rentarle tu carro a un usuario conductor que cuenta con verificación de antecedentes y cuya identidad es verificada mediante reconocimiento facial.",
+    "Monitorear los viajes que hayan completado los carros que alquilas.",
+    "¡Estar tranquilo! Tu carro y su usuario conductor cuentan con +20 funciones de seguridad.",
+    "Encontrar un usuario conductor con 5 estrellas y experiencia para alquilarle tu carro "
+  ],
+  "FleetSafety.bgColor": "bg-blue-primary",
+  "FleetSafety.textColor": "white",
   "FleetRegistraAutos.title": "Con DiDi Fleet podés:",
   "FleetRegistraAutos.desc": "",
   "FleetRegistraAutos.bullets": [

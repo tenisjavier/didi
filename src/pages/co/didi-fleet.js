@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
 import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
+import FleetSafety from "../../components/sections/FleetSafety";
 import FleetColumns from "../../components/sections/FleetColumns";
 import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
 
@@ -17,6 +18,9 @@ const Fleet = ({ data }) => {
   const FleetSocioCTAImage = images.filter((image) => {
     return image.title === "ar.FleetSocioCTA.image";
   })[0];
+  const FleetSafetyImage = images.filter((image) => {
+    return image.title === "co.SafetyCTA.image";
+  })[0];
   const FleetRegistraAutosCTAImage = images.filter((image) => {
     return image.title === "mx.FleetRegistraAutos.image";
   })[0];
@@ -28,6 +32,7 @@ const Fleet = ({ data }) => {
         mobileBgImage={fleetHeroBgImageMobile}
       ></FleetHero>
       <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
+      <FleetSafety image={FleetSafetyImage}></FleetSafety>
       <FleetRegistraAutosCTA
         image={FleetRegistraAutosCTAImage}
       ></FleetRegistraAutosCTA>
@@ -41,7 +46,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(co.FleetHero.bgImage)|(co.DiDiFleetHeroMobile.bgImage)|(ar.FleetSocioCTA.image)|(mx.FleetRegistraAutos.image)/"
+          regex: "/(co.FleetHero.bgImage)|(co.DiDiFleetHeroMobile.bgImage)|(co.SafetyCTA.image)|(ar.FleetSocioCTA.image)|(mx.FleetRegistraAutos.image)/"
         }
       }
       sort: { title: ASC }

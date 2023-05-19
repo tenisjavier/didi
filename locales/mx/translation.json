@@ -63,6 +63,17 @@
   "FleetSocioCTA.btnText": "Conoce Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
+  "FleetSafety.title": "Con DiDi Fleet puedes:",
+  "FleetSafety.desc": "",
+  "FleetSafety.bullets": [
+    "Ganar dinero rentando tu coche a un conductor verificado",
+    "Rentarle tu coche a un conductor que cuenta con verificación de antecedentes y cuya identidad es verificada mediante reconocimiento facial.",
+    "Monitorear los viajes que hayan completado los coche que rentas.",
+    "¡Estar tranquilo! Tu coche y su conductor cuentan con +20 funciones de seguridad.",
+    "Encontrar un conductor con 5 estrellas y experiencia para rentarle tu coche. "
+  ],
+  "FleetSafety.bgColor": "bg-blue-primary",
+  "FleetSafety.textColor": "white",
   "FleetRegistraAutos.title": "Con DiDi Fleet puedes:",
   "FleetRegistraAutos.desc": "",
   "FleetRegistraAutos.bullets": [
