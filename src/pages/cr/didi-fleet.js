@@ -7,7 +7,6 @@ import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosC
 import FleetColumns from "../../components/sections/FleetColumns";
 import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
 import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
-import DownloadFleetCTA from "../../components/sections/DownloadFleetCTA";
 
 const Fleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -23,15 +22,6 @@ const Fleet = ({ data }) => {
   const FleetRegistraAutosCTAImage = images.filter((image) => {
     return image.title === "mx.FleetRegistraAutos.image";
   })[0];
-  const FleetColumnsImages = images.filter((image) => {
-    return image.title.indexOf("cr.FleetColumns.image") !== -1;
-  });
-  const FleetStepsColumnsImages = images.filter((image) => {
-    return image.title.indexOf("cr.FleetStepsColumns.image") !== -1;
-  });
-  const fleetDownloadImage = images.filter((image) => {
-    return image.title === "cr.FleetDownload.image";
-  })[0];
 
   return (
     <Layout>
@@ -39,14 +29,12 @@ const Fleet = ({ data }) => {
         bgImage={fleetHeroBgImage}
         mobileBgImage={fleetHeroBgImageMobile}
       ></FleetHero>
+      <AboutDidiFleetVideo></AboutDidiFleetVideo>
       <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
       <FleetRegistraAutosCTA
         image={FleetRegistraAutosCTAImage}
       ></FleetRegistraAutosCTA>
-      <DownloadFleetCTA image={fleetDownloadImage}></DownloadFleetCTA>
-      <FleetStepsColumns images={FleetStepsColumnsImages}></FleetStepsColumns>
-      <AboutDidiFleetVideo></AboutDidiFleetVideo>
-      <FleetColumns images={FleetColumnsImages.reverse()}></FleetColumns>
+      <FleetColumns></FleetColumns>
     </Layout>
   );
 };
@@ -62,8 +50,6 @@ export const query = graphql`
             "mx.FleetSocioCTA.image"
             "mx.FleetRegistraAutos.image"
             "cr.FleetWhyDiDi.image"
-            "cr.FleetColumns.image"
-            "cr.FleetStepsColumns.image"
             "cr.FleetDownload.image"
           ]
         }

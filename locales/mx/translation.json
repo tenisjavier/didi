@@ -81,34 +81,24 @@
   "FleetAgregaCTA.btnLink": "https://page.linkeeglobal.com/global/quickbolt/page/online/f59e140d7477f4b7a7bf122ceda64151.html",
   "FleetColumns.columns": [
     {
-      "title": "¿Buscas conductores?",
-      "desc": "Si buscas conductores, haz clic aquí para registrarte y acceder a la base de conductores aprobados por DiDi.",
-      "btnMode": "primary",
-      "btnLink": "https://page.didiglobal.com/global/silver-bullet-online/9uppKJRLZaNLBIl37s0Y-?dchn=Q15o9&channel=2001&channel_id=2001&entrance_channel=20d",
-      "btnText": "Clic aquí"
+      "title": "1) Descarga DiDi Fleet",
+      "desc": "Comienza descargando DiDi Fleet en tu celular"
     },
     {
-      "title": "DiDi Match",
-      "desc": "Conoce la nueva herramienta que te conecta con tus conductores, dentro de tu aplicación.",
-      "btnMode": "primary",
-      "btnLink": "https://page.didiglobal.com/global/silver-bullet-online/9uppKJRLZaNLBIl37s0Y-?dchn=Q15o9&channel=2001&channel_id=2001&entrance_channel=20d",
-      "btnText": "Clic aquí"
+      "title": "2) Sube tus documentos ",
+      "desc": " Identificación oficial (INE/IFE), CURP y Licencia para conducir"
     },
     {
-      "title": "¿Buscas un auto?",
-      "desc": "Regístrate aquí y conoce a socios flotilleros, conecta con ellos y comienza a conducir con DiDi sin necesitar un auto.",
-      "btnMode": "primary",
-      "btnLink": "https://page.didiglobal.com/global/silver-bullet-online/PjJSkwYFWWLOnI4q3sF9-?dchn=K5KXA&channel=2001&channel_id=2001&entrance_channel=2001",
-      "btnText": "Clic aquí"
+      "title": "3) Agrega tus coches",
+      "desc": "Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: Tarjeta de circulación, Póliza de seguro del coche y TAG (para autos en la Ciudad de México)"
     },
     {
-      "title": "Expande tu flota",
-      "desc": "Regístrate aquí y conoce a nuestros aliados, estamos seguros que alguno te ayudará a lograr tus objetivos.",
-      "btnMode": "primary",
-      "btnLink": "/mx/didimas/",
-      "btnText": "Clic aquí"
+      "title": "4) Selecciona un conductor para alquilarle tu coche a través de la app",
+      "desc": "Ingresando al menú de conductores pulsando en buscar conductores"
     }
   ],
+  "FleetColumns.bgColor": "bg-blue-primary",
+  "FleetColumns.textColor": "white",
   "HomeColumns.bgColor": "bg-gray-light",
   "HomeColumns.textColor": "gray-primary",
   "HomeColumns.columns": [

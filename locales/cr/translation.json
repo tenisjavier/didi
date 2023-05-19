@@ -615,28 +615,28 @@
   "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/XbfHvQlFKlY",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
-  "FleetColumns.bgColor": "bg-green-primary",
+  "FleetColumns.bgColor": "bg-blue-primary",
   "FleetColumns.title": "Beneficios de DiDi Fleet",
   "FleetColumns.textColor": "white",
   "FleetColumns.columns": [
     {
-      "title": "Te conectamos con un socio conductor potencial",
-      "desc": "Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+      "title": "1) Descargá DiDi Fleet",
+      "desc": "",
       "textColor": "white"
     },
     {
-      "title": "¡Generá ganancias sin salir de casa!",
-      "desc": "Además, aprovechá una de las tasas de servicio más bajas del mercado.",
+      "title": "2) Subí tus documentos ",
+      "desc": "Licencia de conducción. Selfie con licencia de conducir",
       "textColor": "white"
     },
     {
-      "title": "Si necesitás asistencia",
-      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00.",
+      "title": "3) Agregá tus carros",
+      "desc": "Para subirlos a tu flotilla necesitarás los siguientes documentos para cada carro: Marchamó",
       "textColor": "white"
     },
     {
-      "title": "Monitorea los ingresos de las solicitudes generadas con tu vehículo",
-      "desc": "y recibí los pagos con tarjeta de crédito directamente en tu app.",
+      "title": "4) Seleccioná un conductor para alquilarle tu carro a través de la app",
+      "desc": "Ingresando al menú de conductores pulsando en buscar conductores",
       "textColor": "white"
     }
   ],
