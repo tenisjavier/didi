@@ -3,10 +3,10 @@ import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
 import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
+import FleetSafety from "../../components/sections/FleetSafety";
 import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
 import FleetColumns from "../../components/sections/FleetColumns";
 import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
-import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
 
 const Fleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -19,6 +19,9 @@ const Fleet = ({ data }) => {
   const FleetSocioCTAImage = images.filter((image) => {
     return image.title === "mx.FleetSocioCTA.image";
   })[0];
+  const FleetSafetyImage = images.filter((image) => {
+    return image.title === "cr.SafetyCTA.image";
+  })[0];
   const FleetRegistraAutosCTAImage = images.filter((image) => {
     return image.title === "mx.FleetRegistraAutos.image";
   })[0];
@@ -30,6 +33,7 @@ const Fleet = ({ data }) => {
         mobileBgImage={fleetHeroBgImageMobile}
       ></FleetHero>
       <AboutDidiFleetVideo></AboutDidiFleetVideo>
+      <FleetSafety image={FleetSafetyImage}></FleetSafety>
       <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
       <FleetRegistraAutosCTA
         image={FleetRegistraAutosCTAImage}
@@ -48,8 +52,8 @@ export const query = graphql`
             "cr.FleetHero.bgImage"
             "cr.DiDiFleetHeroMobile.bgImage"
             "mx.FleetSocioCTA.image"
+            "cr.SafetyCTA.image"
             "mx.FleetRegistraAutos.image"
-            "cr.FleetWhyDiDi.image"
             "cr.FleetDownload.image"
           ]
         }
