@@ -24,10 +24,6 @@ const DiDiFleet = ({ data }) => {
     return image.title === "mx.FleetRegistraAutos.image";
   })[0];
 
-  const FleetColumnsImage = images.filter((image) => {
-    return image.title === "mx.FleetColumns.image";
-  });
-
   return (
     <Layout>
       <FleetHero
@@ -39,7 +35,7 @@ const DiDiFleet = ({ data }) => {
       <FleetRegistraAutosCTA
         image={FleetRegistraAutosCTAImage}
       ></FleetRegistraAutosCTA>
-      <FleetColumns images={FleetColumnsImage.reverse()}></FleetColumns>
+      <FleetColumns></FleetColumns>
     </Layout>
   );
 };
@@ -57,7 +53,6 @@ export const query = graphql`
             "mx.FleetSocioCTA.image"
             "mx.FleetRegistraAutos.image"
             "mx.FleetAgrega.image"
-            "mx.FleetColumns.image"
           ]
         }
       }
