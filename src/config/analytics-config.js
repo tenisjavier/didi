@@ -179,7 +179,7 @@ const insertBtnParams = () => {
   function getDeepLink(url) {
     const channels = {
       "(none)": 14,
-      referral: 18,
+      referral: 17,
       organic: 19,
       email: 20,
     };
@@ -319,6 +319,12 @@ const insertBtnParams = () => {
     newUrl.searchParams.set("rsc_product", rscProduct);
     newUrl.searchParams.set("clientType", channelId);
     newUrl.searchParams.set("from_end", fromEnd);
+
+    //? if referral? save referral source
+
+    if (channelId === 17) source = referringDomain;
+
+    console.log(source);
 
     if (
       url.href.indexOf("me/mbwy/") > -1 ||
