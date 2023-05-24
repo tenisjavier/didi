@@ -32,6 +32,9 @@ module.exports = {
         green: {
           primary: "#16A34A",
         },
+        whatsapp: {
+          primary: "#25d366",
+        },
       },
       container: {
         padding: {

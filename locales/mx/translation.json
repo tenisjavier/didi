@@ -58,10 +58,33 @@
   "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/KVJnWPOtL1k",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
-  "FleetSocioCTA.title": "Registrate como socio flotilla:",
-  "FleetSocioCTA.desc": "Para registrarte necesitarás los siguientes documentos: \n 1. Identificación oficial (INE/IFE) \n 2. CURP \n 3. Licencia para conducir",
-  "FleetRegistraAutos.title": "Registra tus autos en la aplicación de DiDi Fleet:",
-  "FleetRegistraAutos.desc": "Una vez registrado y con tus documentos aprobados, podrás comenzar a agregar autos a tu flotilla. \n Para subir autos a tu flotilla necesitarás los siguientes documentos para cada vehículo: \n 1. Tarjeta de circulación \n 2. Póliza de seguro del auto \n 3. TAG(para autos en la Ciudad de México)",
+  "FleetSocioCTA.title": "Ganar en promedio $10.000* rentando tu coche",
+  "FleetSocioCTA.desc": "Ganar en promedio $10.000* rentando tu coche por mes y recibe hasta $5.800** EXTRA por cada coche que rentes en la app y que complete el número de viajes requerido en el tiempo establecido de la recompensa.\n *Renta promedio de vehículos en la app de Fleet en México.\n **Consulta Términos y Condiciones aquí [link] / Solo aplica para coches registrados por primera vez en la app de DiDi",
+  "FleetSocioCTA.btnText": "Conoce Más",
+  "FleetSocioCTA.btnLink": "#",
+  "FleetSocioCTA.btnMode": "dark",
+  "FleetSafety.title": "Con DiDi Fleet puedes:",
+  "FleetSafety.desc": "",
+  "FleetSafety.bullets": [
+    "Ganar dinero rentando tu coche a un conductor verificado",
+    "Rentarle tu coche a un conductor que cuenta con verificación de antecedentes y cuya identidad es verificada mediante reconocimiento facial.",
+    "Monitorear los viajes que hayan completado los coche que rentas.",
+    "¡Estar tranquilo! Tu coche y su conductor cuentan con +20 funciones de seguridad.",
+    "Encontrar un conductor con 5 estrellas y experiencia para rentarle tu coche. "
+  ],
+  "FleetSafety.bgColor": "bg-blue-primary",
+  "FleetSafety.textColor": "white",
+  "FleetRegistraAutos.title": "Con DiDi Fleet puedes:",
+  "FleetRegistraAutos.desc": "",
+  "FleetRegistraAutos.bullets": [
+    "Ganar en promedio $10.000* rentando tu coche por mes",
+    "Rentar tu coche mientras estudias o trabajas.",
+    "Rentar tu coche a un conductor, tener promociones especiales para ahorrar hasta un 50% en el seguro y cancelarlo cuando quieras.*",
+    "Aprovechar de descuentos exclusivos de DiDiMás+ para ahorrar en el mantenimiento de tu coche.*",
+    "Recibir recompensas exclusivas.*",
+    "Administrar las ganancias de los viajes completados con tu carro."
+  ],
+  "FleetRegistraAutos.bgColor": "bg-gray-light",
   "FleetAgregaCTA.title": "Agrega conductores a tu flotilla DiDi:",
   "FleetAgregaCTA.desc": "Una vez que tu auto o tus autos se encuentren aprobados, podrás agregar a tus conductores haciendo clic en la sección de “Conductores” dentro de tu app DiDi Fleet. \n ¿No conoces conductores para tu flota? \n No te preocupes, haz clic aquí y comienza a conectar con conductores previamente seleccionados listos para conducir.",
   "FleetAgregaCTA.btnMode": "primary",
@@ -69,34 +92,24 @@
   "FleetAgregaCTA.btnLink": "https://page.linkeeglobal.com/global/quickbolt/page/online/f59e140d7477f4b7a7bf122ceda64151.html",
   "FleetColumns.columns": [
     {
-      "title": "¿Buscas conductores?",
-      "desc": "Si buscas conductores, haz clic aquí para registrarte y acceder a la base de conductores aprobados por DiDi.",
-      "btnMode": "primary",
-      "btnLink": "https://page.didiglobal.com/global/silver-bullet-online/9uppKJRLZaNLBIl37s0Y-?dchn=Q15o9&channel=2001&channel_id=2001&entrance_channel=20d",
-      "btnText": "Clic aquí"
+      "title": "1) Descarga DiDi Fleet",
+      "desc": "Comienza descargando DiDi Fleet en tu celular"
     },
     {
-      "title": "DiDi Match",
-      "desc": "Conoce la nueva herramienta que te conecta con tus conductores, dentro de tu aplicación.",
-      "btnMode": "primary",
-      "btnLink": "https://page.didiglobal.com/global/silver-bullet-online/9uppKJRLZaNLBIl37s0Y-?dchn=Q15o9&channel=2001&channel_id=2001&entrance_channel=20d",
-      "btnText": "Clic aquí"
+      "title": "2) Sube tus documentos ",
+      "desc": " Identificación oficial (INE/IFE), CURP y Licencia para conducir"
     },
     {
-      "title": "¿Buscas un auto?",
-      "desc": "Regístrate aquí y conoce a socios flotilleros, conecta con ellos y comienza a conducir con DiDi sin necesitar un auto.",
-      "btnMode": "primary",
-      "btnLink": "https://page.didiglobal.com/global/silver-bullet-online/PjJSkwYFWWLOnI4q3sF9-?dchn=K5KXA&channel=2001&channel_id=2001&entrance_channel=2001",
-      "btnText": "Clic aquí"
+      "title": "3) Agrega tus coches",
+      "desc": "Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: Tarjeta de circulación, Póliza de seguro del coche y TAG (para autos en la Ciudad de México)"
     },
     {
-      "title": "Expande tu flota",
-      "desc": "Regístrate aquí y conoce a nuestros aliados, estamos seguros que alguno te ayudará a lograr tus objetivos.",
-      "btnMode": "primary",
-      "btnLink": "/mx/clubdidi/",
-      "btnText": "Clic aquí"
+      "title": "4) Selecciona un conductor para alquilarle tu coche a través de la app",
+      "desc": "Ingresando al menú de conductores pulsando en buscar conductores"
     }
   ],
+  "FleetColumns.bgColor": "bg-blue-primary",
+  "FleetColumns.textColor": "white",
   "HomeColumns.bgColor": "bg-gray-light",
   "HomeColumns.textColor": "gray-primary",
   "HomeColumns.columns": [
@@ -255,21 +268,21 @@
       "desc": "Con DiDi ganas por kilómetro y por minuto recorridos",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "width": "w-64"
+      "width": "w-xs"
     },
     {
       "title": "Soporte 24/7",
       "desc": "Contamos con atención 24/7 en nuestro chat en vivo.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "width": "w-64"
+      "width": "w-xs"
     },
     {
       "title": "Kit de seguridad.",
       "desc": "Conduce tranquilo con las herramientas de seguridad. ",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "width": "w-64"
+      "width": "w-xs"
     },
     {
       "title": "Logra tus metas de ganancias",
@@ -277,7 +290,7 @@
       "bgColor": "bg-white",
       "textColor": "gray-primary",
 
-      "width": "w-64"
+      "width": "w-xs"
     }
   ],
   "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
@@ -298,7 +311,7 @@
   "ClubDiDiCTA.desc": "Tu entrada a descuentos, recompensas y servicios exclusivos. Club DiDi: un programa que te da acceso a descuentos y a facilidades ofrecidas por terceros para ayudarte en tu día a día.",
   "ClubDiDiCTA.btnMode": "light",
   "ClubDiDiCTA.btnText": "Conoce más",
-  "ClubDiDiCTA.btnLink": "/mx/clubdidi/",
+  "ClubDiDiCTA.btnLink": "/mx/didimas/",
   "ClubDiDiCTA.textColor": "white",
   "WomenDiDiCTA.title": "Mujeres en DiDi",
   "WomenDiDiCTA.bgColor": "bg-blue-primary",
@@ -825,14 +838,14 @@
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/mx/guias/{{guide}}/",
   "PartnersHero.title": "Logra MÁS con DiDiMás+",
-  "PartnersHero.desc": "DiDiMás+ es un programa que te da acceso a descuentos y a facilidades ofrecidas por aliados para ayudarte en tu día a día.",
+  "PartnersHero.desc": "Para DiDi es muy importante apoyarte, por eso, nace DiDiMás+, un programa que te da acceso a descuentos y a facilidades ofrecidas por aliados para ayudarte a ti y a tu familia en su día a día.",
   "PartnersHero.textColor": "white",
   "PartnersHero.bgColor": "bg-orange-primary",
   "PartnersHero.btnMode": "light",
   "PartnersGrid.bgColor": "bg-white",
   "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones",
   "PartnersGrid.textColor": "gray-primary",
-  "PartnersGrid.linkItem": "/mx/clubdidi/{{partnerName}}/",
+  "PartnersGrid.linkItem": "/mx/didimas/{{partnerName}}/",
   "PartnerColumns.title": "Conoce los beneficios que tenemos para ti",
   "PartnerColumns.columns": [
     {
@@ -940,8 +953,8 @@
   "SBFoodBusiness.desc": "Crece tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Gana con Más Libertad",
-  "FleetHero.title": "DiDi Fleet: Renta tus autos y genera ganancias",
-  "FleetHero.desc": "Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar conductores a tus autos. Gana dinero de manera pasiva rentando tus autos con DiDi Fleet.",
+  "FleetHero.title": "DiDi Fleet: Deja que tu coche produzca por ti.",
+  "FleetHero.desc": "Tú pones el coche y DiDi Fleet te ayuda a encontrar un conductor para rentarlo y generar ganancias.",
   "FleetHero.btnMode": "light",
   "FleetHero.textColor": "white",
   "FinancialServicesHero.title": "DiDi Servicios Financieros",
@@ -973,21 +986,26 @@
       "btnLink": "https://prestamos.didiglobal.com/"
     }
   ],
-  "DiDiPayHero.title": "Apaga tu cartera, activa DiDi Pay",
+  "DiDiPayHero.title": "Pagos seguros y sin comisiones desde tu teléfono con DiDi Pay",
   "DiDiPayHero.desc": "Baja la App y asocia tu tarjeta.",
   "DiDiPayHero.btnMode": "light",
   "DiDiPayHero.textColor": "white",
   "DiDiPayHero.bgColor": "bg-orange-primary",
-  "DiDiPayWhyDiDi.title": "Conoce los beneficios de tu billetera digital DiDi Pay",
-  "DiDiPayWhyDiDi.desc": "Añade hoy tu tarjeta de crédito o débito, de cualquier banco, a tu billetera en tu app DiDi y empieza a disfrutar de los beneficios de nuestras promociones y ofertas especiales.\n ¡Tu tiempo es muy valioso! Olvídate de las filas, mejor usa DiDi Pay para: \n 1. Recargar el tiempo aire de tu celular. \n 2. Pagar todos los recibos de tus servicios en segundos: agua, luz, teléfono, TV, internet y mucho más. \n 3. Comprar tarjetas de regalo electrónicas en muchos comercios.",
-  "DiDiPayWhyDiDi.btnMode": "dark",
+  "DiDiPayWhyDiDi.title": "Apaga tu cartera, activa DiDi Pay",
+  "DiDiPayWhyDiDi.desc": "Añade tu tarjeta de crédito o débito y disfruta de promociones, ofertas especiales y cupones de descuento. Encuentra estos servicios en \"Mi billetera\". ",
+  "DiDiPayWhyDiDi.btnMode": "primary",
   "DiDiPayWhyDiDi.textColor": "gray-primary",
   "DiDiPayWhyDiDi.bgColor": "bg-white",
-  "DiDiPayFeatures.title": "Crece las ventas de tu negocio",
-  "DiDiPayFeatures.desc": "Activa DiDi Pay como método de pago para aceptar cualquier tarjeta bancaria en tu comercio. Fácil, rápido, eficiente y mucho más conveniente. \n Se parte de nuestra red de comercios, ofrece tus productos o servicios a nuestros millones de usuarios a nivel nacional y ve cómo se incrementan tus ventas de inmediato.",
+  "DiDiPayFeatures.title": "Con tu billetera digital disfuta de todos estos beneficios",
+  "DiDiPayFeatures.bullets": [
+    "Paga tus recibos, recargas de tiempo aire, tarjetas de regalo, órdenes de comida y viajes con DiDi en cualquier momento.",
+    "Usa cualquier tarjeta de crédito o débito para hacer tus pagos de manera rápida y segura.",
+    "Olvídate de las comisiones, las filas y los horarios.",
+    "Disfruta de promociones únicas y cupones de descuento para todos los servicios."
+  ],
   "DiDiPayFeatures.btnMode": "primary",
   "DiDiPayFeatures.textColor": "gray-primary",
-  "DiDiPayFeatures.bgColor": "bg-gray-light",
+  "DiDiPayFeatures.bgColor": "bg-white",
   "DiDiPaySilderSection.title": "",
   "DiDiPaySilderSection.items": [
     {
@@ -1007,27 +1025,43 @@
       "description": "¡Listo! Ahora tienes un método de pago para usar cualquier servicio de DiDi Pay y disfrutar de promociones y beneficios únicos."
     }
   ],
-  "DiDiPayGrid.title": "Activa DiDi Pay y empieza hoy a disfrutar de sus beneficios.",
-  "DiDiPayGrid.desc": "¿Todavía haces fila para ponerle tiempo aire a tu celular? ¿vas al banco o a la tienda a pagar tus recibos? ¿recordar fechas no es lo tuyo? Los nuevos servicios de DiDi, te resuelven el día, te ahorran tiempo, dinero y esfuerzo.",
+  "DiDiPayGrid.title": "Ahorra hasta tu tiempo, paga desde donde estés con DiDi Pay.",
+  "DiDiPayGrid.desc": "Simplifica tu día con nuestros nuevos servicios.",
   "DiDiPayGrid.bgColor": "bg-gray-light",
   "DiDiPayGrid.textColor": "gray-primary",
   "DiDiPayGrid.columns": [
     {
       "title": "Tiempo Aire",
-      "desc": "Cárgale saldo a tu celular sin hacer filas. No te quedes sin datos, mejor, activa el modo chismecito cargando saldo en tu DiDi app con los servicios de DiDi Pay."
+      "desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más."
     },
     {
       "title": "Pago de servicios",
-      "desc": "Que no te corten la luz porque se te paso la fecha de pago.  Paga todos tus recibos como luz, agua, teléfono, internet, TV, tag, y mucho más, en un solo lugar a la hora que quieras y sin complicaciones."
+      "desc": "Paga tu recibo de CFE, Telmex, Izzi y más."
     },
     {
       "title": "Tarjeta de regalo",
-      "desc": "Para el amigo, la novia, tu mamá, tu hermano; para quien quieras y cuando quieras; resuelve ese regalo comprando tarjetas electrónicas de todo tipo con DiDi Pay."
+      "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay"
     }
   ],
+  "DiDiPayArticlesColumns.title": "Sigue nuestros artículos financieros.",
+  "DiDiPayArticlesColumns.desc": "",
+  "DiDiPayArticlesColumns.bgColor": "bg-gray-light",
+  "DiDiPayArticlesColumns.textColor": "gray-primary",
+  "DiDiPayArticlesColumns.linkItem": "/mx/didipay/blog/{{article}}/",
+  "DiDiPayBusinessCTA.title": "Crece las ventas de tu negocio",
+  "DiDiPayBusinessCTA.desc": "Activa DiDi Pay como método de pago para aceptar cualquier tarjeta bancaria en tu comercio. Fácil, rápido, eficiente y mucho más conveniente. \n Ofrece tus productos o servicios a nuestros millones de usuarios a nivel nacional y ve cómo se incrementan tus ventas de inmediato.",
+  "DiDiPayBusinessCTA.bgColor": "bg-orange-primary",
+  "DiDiPayBusinessCTA.textColor": "white",
+  "DiDiPayBusinessCTA.btnMode": "light",
+  "DiDiPayBusinessCTA.btnText": "Conoce más",
+  "DiDiPayBusinessCTA.btnLink": "#",
+  "DiDiPayBanner.title": "La excusa perfecta para consentir",
+  "DiDiPayBanner.desc": "Regala tarjetas de tus marcas favoritas con DiDi Pay",
+  "DiDiPayBanner.bgColor": "bg-blue-primary",
+  "DiDiPayBanner.textColor": "white",
   "DiDiPayColumns.title": "",
   "DiDiPayColumns.desc": "",
-  "DiDiPayColumns.bgColor": "bg-orange-primary",
+  "DiDiPayColumns.bgColor": "bg-gray-light",
   "DiDiPayColumns.columns": [
     {
       "title": "Desarga la App",
@@ -1067,6 +1101,11 @@
       "height": "h-40"
     }
   ],
+  "DiDiPayFAQHero.title": "Preguntas Frecuentes",
+  "DiDiPayFAQHero.desc": "Resuelve tus dudas sobre los servicios de DiDi Pay",
+  "DiDiPayFAQHero.bgColor": "bg-gray-light",
+  "DiDiPayFAQHero.textColor": "white",
+  "DiDiPayFAQHero.btnMode": "light",
   "DiDiPayFAQs.title": "Preguntas Frecuentes",
   "DiDiPayFAQs.desc": "",
   "DiDiPayFAQs.bgColor": "bg-gray-light",
@@ -1568,37 +1607,33 @@
       "btnMode": "primary"
     }
   ],
-  "EntregaHero.title": "Para cosas grande o chicas, envíalas por DiDi Entrega",
+  "EntregaHero.title": "Para cosas grandes o chicas, envíalas por DiDi Entrega",
   "EntregaHero.desc": "",
   "EntregaHero.textColor": "white",
   "EntregaHero.btnMode": "light",
-  "EntregaColumns.bgColor": "bg-white",
+  "EntregaColumns.title": "Contamos con dos opciones de servicios. ¡Elige el que mejor se acomode a tus necesidades!",
+  "EntregaColumns.bgColor": "bg-blue-primary",
+  "EntregaColumns.textColor": "white",
   "EntregaColumns.columns": [
     {
-      "title": "Más paquetes en un mismo envío",
-      "desc": "Tienes la posibilidad de enviar hasta 10 paquetes simultáneamente",
-      "bgColor": "bg-orange-primary",
-      "textColor": "white"
+      "title": "Conoce DiDi Entrega XL",
+      "desc": "Realiza envíos en los carros registrados en la app. Si cabe en la cajuela del vehículo, te lo enviamos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary"
     },
     {
-      "title": "Funciones de Seguridad",
-      "desc": "Sigue en tiempo real tus envíos.",
-      "bgColor": "bg-green-primary",
-      "textColor": "white"
-    },
-    {
-      "title": "Económico y Práctico",
-      "desc": "Realiza envíos desde $20MXN usando tu computadora.",
-      "bgColor": "bg-gray-primary",
-      "textColor": "white"
+      "title": "Conoce DiDi Entrega Light",
+      "desc": "Realiza envíos en la red de repartidores en motos registradas en la app. Perfecto para envíos más pequeños y rápidos como llaves o documentos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary"
     }
   ],
   "EntregaGrid.bgColor": "bg-white",
   "EntregaGrid.textColor": "gray-primary",
   "EntregaGrid.columns": [
     {
-      "title": "Promociones",
-      "desc": "Realiza tus primeros envíos disfrutando de increíbles descuentos.",
+      "title": "Ahorra en Envíos",
+      "desc": "Realiza envíos a precios accesibles.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
@@ -1618,8 +1653,8 @@
       "width": "w-80"
     },
     {
-      "title": "Facilidades",
-      "desc": "Con tan solo unos clicls podrás realizar tus envíos a través de la app.",
+      "title": "Fácil de Usar",
+      "desc": "Con tan solo unos clicks podrás realizar tus envíos a través de la app.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
@@ -1639,6 +1674,11 @@
       "width": "w-80"
     }
   ],
+  "EntregaCityList.title": "Operamos en las siguientes ciudades en México",
+  "EntregaCityList.desc": "Descubre las ciudades de México donde esta operando DiDi Entrega",
+  "EntregaCityList.bgColor": "bg-white",
+  "EntregaCityList.textColor": "gray-primary",
+  "EntregaCityList.linkItem": "/mx/conductor/conductor-en-{{city}}/",
   "EntregaBusinessCTA.title": "Regístrate en DiDi Entrega Business para envíos empresariales",
   "EntregaBusinessCTA.desc": "Si necesitas enviar tus productos a tus clientes, conoce esta nueva opción web.",
   "EntregaBusinessCTA.btnLink": "https://didi-food.com/es-MX/entrega-business/home",

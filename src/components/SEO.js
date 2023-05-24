@@ -112,14 +112,14 @@ const SEO = ({ title, desc, index, schema }) => {
             data-domain-script="f9f9aeb2-1532-4a70-bafe-28fce845d41c"
           ></script>
         )}
-        {!["nz", "au", "ru", "eg"].includes(country.code) && (
+        {/* {!["nz", "au", "ru", "eg"].includes(country.code) && (
           <script
             src="../../hotjar.js"
             type="text/javascript"
             charset="UTF-8"
             async
           ></script>
-        )}
+        )} */}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
         {pathname.includes("thejourney") || !index ? (

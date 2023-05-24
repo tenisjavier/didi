@@ -24,7 +24,6 @@ const GananciasBanner = ({ image }: GananciasBannerProps) => {
           className="z-10 mt-10"
         ></GatsbyImage>
       ),
-      flexWrap: "flex-wrap",
       reverse: true,
     }),
   };

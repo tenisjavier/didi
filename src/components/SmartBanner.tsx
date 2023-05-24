@@ -7,6 +7,7 @@ interface SmartBannerProps {
   type:
     | "both"
     | "drv"
+    | "drvWhatsapp"
     | "pax"
     | "fleet"
     | "payment"
@@ -25,9 +26,9 @@ const SmartBanner = (props: SmartBannerProps) => {
   const btnData = getBtnLinks(countryCode);
   let btnText, Logo, bgColor, bannerTitle, bannerDesc;
 
-  const btnMode = "primary";
+  const btnMode = type === "drvWhatsapp" ? "whatsapp" : "primary";
 
-  if (type === "drv") {
+  if (type === "drv" || type === "drvWhatsapp") {
     btnText = btnData.drvText.replace(/ .*/, "");
     Logo = <DrvLogo></DrvLogo>;
     bgColor = "bg-white";

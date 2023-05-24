@@ -262,10 +262,36 @@
   "KnowMoreBanner.btnText": "Saber Más",
   "KnowMoreBanner.btnLink": "/co/centro-de-ayuda/",
   "KnowMoreBanner.btnMode": "light",
-  "FleetHero.title": "DiDi Fleet: Renta tus autos y genera ganancias",
-  "FleetHero.desc": "Si tienes uno o más autos que quieras rentabilizar, súbelos a la app de DiDi Fleet y podrás asociar arrendadores a tus autos. Genera ganancias de manera pasiva rentando tus autos con DiDi Fleet.",
+  "FleetHero.title": "DiDi Fleet: Deja que tu carro produzca por ti",
+  "FleetHero.desc": "Tú pones el carro y DiDi Fleet te ayuda a encontrar un usuario arrendador para alquilarlo y generar ganancias.",
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
+  "FleetSocioCTA.title": "Genera en promedio $1.200.000* alquilando tu carro  por mes",
+  "FleetSocioCTA.desc": "Genera en promedio $1.200.000* alquilando tu carro  por mes y recibe hasta $1.500.000** EXTRA por cada carro que alquiles usando la app y que complete el número de arrendamientos  en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Colombia.\n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi",
+  "FleetSocioCTA.btnText": "Conoce Más",
+  "FleetSocioCTA.btnLink": "#",
+  "FleetSocioCTA.btnMode": "dark",
+  "FleetSafety.title": "Con DiDi Fleet puedes:",
+  "FleetSafety.desc": "",
+  "FleetSafety.bullets": [
+    "Generar ganancias  alquilando tu carro a un arrendador verificado y de confianza.",
+    "Rentarle tu carro a un arrendador que cuenta con verificación de antecedentes y cuya identidad es verificada mediante reconocimiento facial.",
+    "Monitorear los arrendamientos que hayan completado los carros que alquilas.",
+    "¡Estar tranquilo! Tu carro y su arrendador cuentan con +20 funciones de seguridad.",
+    "Encontrar un arrendador con 5 estrellas y experiencia para alquilarle tu carro"
+  ],
+  "FleetSafety.bgColor": "bg-blue-primary",
+  "FleetSafety.textColor": "white",
+  "FleetRegistraAutos.title": "Con DiDi Fleet puedes:",
+  "FleetRegistraAutos.desc": "",
+  "FleetRegistraAutos.bullets": [
+    "Generar en promedio $1.200.000* rentando tu carro durante por mes",
+    "Alquilar tu carro mientras estudias o trabajas.",
+    "Aprovechar de descuentos exclusivos de DiDiMás+ para ahorrar en el mantenimiento de tu carro.",
+    "Recibir promociones exclusivas en cualquier momento.",
+    "Administrar las ganancias de los arrendamientos completados con tu carro."
+  ],
+  "FleetRegistraAutos.bgColor": "bg-gray-light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un arrendador potencial. Verificamos todos los antecedentes de los arrendadores durante su proceso de registro.",
@@ -284,31 +310,32 @@
   "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/o-NuCk2a6eI",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
-  "FleetColumns.bgColor": "bg-green-primary",
+  "FleetColumns.bgColor": "bg-blue-primary",
   "FleetColumns.title": "Beneficios de DiDi Fleet",
   "FleetColumns.textColor": "white",
   "FleetColumns.columns": [
     {
-      "title": "Te conectamos con un socio conductor potencial",
-      "desc": "Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+      "title": "1) Descarga DiDi Fleet",
+      "desc": "Comienza descargando DiDi Fleet en tu celular",
       "textColor": "white"
     },
     {
-      "title": "¡Genera ganancias sin salir de casa!",
-      "desc": "Además, aprovecha una de las tasas de servicio más bajas del mercado.",
+      "title": "2) Sube tus documentos",
+      "desc": "Licencia de conducción",
       "textColor": "white"
     },
     {
-      "title": "¡Cuentas con soporte 24/7!",
-      "desc": "y todas las funciones de seguridad DiDi.",
+      "title": "3) Agrega tus carros",
+      "desc": "Para subirlos a tu flotilla necesitarás los siguientes documentos para cada carro: Tarjeta de propiedad y SOAT",
       "textColor": "white"
     },
     {
-      "title": "Monitorea los ingresos de las solicitudes generadas con tu vehículo",
-      "desc": "y recibe los pagos con tarjeta de crédito directamente en tu app.",
+      "title": "4) Selecciona un arrendador para alquilarle tu carro a través de la app",
+      "desc": " Ingresando al menú de arrendador pulsando en buscar arrendadores",
       "textColor": "white"
     }
   ],
+
   "FleetStepsColumns.bgColor": "white",
   "FleetStepsColumns.columns": [
     {
@@ -409,7 +436,7 @@
     },
     {
       "title": "8. Monitoreo de Viaje en Tiempo Real",
-      "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma inmediata. Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta.",
+      "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma \"inmediata\". Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta. \n ** No disponible para Taxi. ",
       "bgColor": "bg-orange-primary"
     },
     {
@@ -672,7 +699,7 @@
   "AboutClubDiDiVideo.title": "Conoce la historia de Luis con DiDiMás+",
   "AboutClubDiDiVideo.video": "https://www.youtube.com/embed/JhROrI5TnI0",
   "AboutClubDiDiVideo.textColor": "white",
-  "AboutClubDiDiVideo.bgColor": "bg-orange-primary",
+  "AboutClubDiDiVideo.bgColor": "bg-blue-primary",
   "PartnersGrid.bgColor": "bg-white",
   "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones.",
   "PartnersGrid.desc": "Este programa te permite acceder a promociones brindadas por aliados en seguros, servicio técnico y muchos otros.",

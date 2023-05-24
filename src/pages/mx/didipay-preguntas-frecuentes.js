@@ -1,42 +1,40 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import DiDiPayHero from "../../components/sections/DiDiPayHero";
+import DiDiPayFAQHero from "../../components/sections/DiDiPayFAQHero";
 import DiDiPayFAQs from "../../components/sections/DiDiPayFAQs";
 // import FaqList from "../../components/sections/FaqList";
 
 const DiDiPayFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroImage = images.filter((image) => {
-    return image.title === "mx.DiDiPayHomeHero.image";
+    return image.title === "mx.DiDiPayFAQ.image";
   })[0];
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "mx.DiDiPayHomeHero.bgImage";
+    return image.title === "mx.DiDiPayFAQ.bgImage";
   })[0];
   const faqs = data.allContentfulFaq.nodes;
 
   const faqDiDiPay = faqs.filter((faq) => {
     return (
-      faq.title === "¿Qué es el DiDi Pay?" ||
-      faq.title === "¿Cómo puedo pagar mis servicios con DiDi Pay?" ||
+      faq.title === "¿Qué es DiDi Pay?" ||
+      faq.title ===
+        "¿Qué servicios puedo pagar con la billetera digital de DiDi Pay?" ||
+      faq.title === "¿Cómo puedo pagar servicios desde la app de DiDi?" ||
       faq.title === "¿Cómo puedo comprar una tarjeta de regalo con DiDi Pay?" ||
-      faq.title === "¿Cómo puedo hacer una recarga telefónica con DiDi Pay?" ||
-      faq.title === "¿En qué ciudades opera DiDi Pay?" ||
+      faq.title === "¿Cómo recargar saldo y megas desde la app de DiDi?" ||
       faq.title === "¿Qué puedo obtener con mi cuenta de DiDi Pay?" ||
       faq.title === "Vacaciones y CASHBACK con Santander" ||
-      faq.title === "Mi transacción falló" ||
-      faq.title === "¿Por qué no tengo acceso a DiDi Pay?" ||
-      faq.title === "¿Cómo me puedo contactar con Soporte DiDi?" ||
-      faq.title === "¿Qué servicios puedo pagar a través de DiDi Pay?"
+      faq.title === "¿Qué hacer si la transacción falla?"
     );
   });
 
   return (
     <Layout schema="faq">
-      <DiDiPayHero
+      <DiDiPayFAQHero
         bgImage={homeHeroBgImage}
         image={homeHeroImage}
-      ></DiDiPayHero>
+      ></DiDiPayFAQHero>
       <DiDiPayFAQs data={faqDiDiPay.reverse()}></DiDiPayFAQs>
       {/* <FaqList
         title={"Preguntas Frecuentes DiDi Pay"}
@@ -52,9 +50,7 @@ export const query = graphql`
   query {
     allContentfulAsset(
       filter: {
-        title: {
-          regex: "/(mx.DiDiPayHomeHero.image)|(mx.DiDiPayHomeHero.bgImage)/"
-        }
+        title: { regex: "/(mx.DiDiPayFAQ.image)|(mx.DiDiPayFAQ.bgImage)/" }
       }
     ) {
       nodes {

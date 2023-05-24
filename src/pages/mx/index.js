@@ -7,14 +7,9 @@ import DrvCTA from "../../components/sections/DrvCTA";
 import FoodCTA from "../../components/sections/FoodCTA";
 import FleetAboutCTA from "../../components/sections/FleetAboutCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
-import { ab } from "../../config/ab";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const version = ab("2023-04-homemx-original-t1", "2023-04-homemx-b-t1", "t1");
-  const homeHeroBgImage = images.filter((image) => {
-    return image.title === "mx.HomeHero.bgImage";
-  })[0];
   const homeHeroBgImageB = images.filter((image) => {
     return image.title === "mx.HomeHeroDesktopB.bgImage";
   })[0];
@@ -39,20 +34,12 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      {!version && (
-        <div className="flex justify-center">
-          <img src="../../loading.gif"></img>
-        </div>
-      )}
-      {version === "b" && (
-        <HomeHero
-          title="Genera Ganancias en DiDi Conductor"
-          bgImage={homeHeroBgImageB}
-          mobileBgImage={homeHeroBgMobileImageB}
-          btnType="drv"
-        ></HomeHero>
-      )}
-      {version === "a" && <HomeHero bgImage={homeHeroBgImage}></HomeHero>}
+      <HomeHero
+        title="Genera Ganancias en DiDi Conductor"
+        bgImage={homeHeroBgImageB}
+        mobileBgImage={homeHeroBgMobileImageB}
+      ></HomeHero>
+
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
@@ -70,7 +57,6 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "mx.HomeHero.bgImage"
             "mx.HomeHeroDesktopB.bgImage"
             "mx.HomeHeroMobileB.bgImage"
             "mx.SafetyCTA.image"

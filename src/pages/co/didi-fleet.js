@@ -2,32 +2,41 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import FleetHero from "../../components/sections/FleetHero";
+import FleetSocioCTA from "../../components/sections/FleetSocioCTA";
+import FleetSafety from "../../components/sections/FleetSafety";
 import FleetColumns from "../../components/sections/FleetColumns";
-// import AboutDidiFleetVideo from "../../components/sections/AboutDidiFleetVideo";
-import FleetStepsColumns from "../../components/sections/FleetStepsColumns";
-import DownloadFleetCTA from "../../components/sections/DownloadFleetCTA";
+import FleetRegistraAutosCTA from "../../components/sections/FleetRegistraAutosCTA";
 
 const Fleet = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const fleetHeroBgImage = images.filter((image) => {
     return image.title === "co.FleetHero.bgImage";
   })[0];
-  const FleetColumnsImages = images.filter((image) => {
-    return image.title.indexOf("co.FleetColumns.image") !== -1;
-  });
-  const FleetStepsColumnsImages = images.filter((image) => {
-    return image.title.indexOf("co.FleetStepsColumns.image") !== -1;
-  });
-  const fleetDownloadImage = images.filter((image) => {
-    return image.title === "co.FleetDownload.image";
+  const fleetHeroBgImageMobile = images.filter((image) => {
+    return image.title === "co.DiDiFleetHeroMobile.bgImage";
   })[0];
+  const FleetSocioCTAImage = images.filter((image) => {
+    return image.title === "ar.FleetSocioCTA.image";
+  })[0];
+  const FleetSafetyImage = images.filter((image) => {
+    return image.title === "co.SafetyCTA.image";
+  })[0];
+  const FleetRegistraAutosCTAImage = images.filter((image) => {
+    return image.title === "mx.FleetRegistraAutos.image";
+  })[0];
+
   return (
     <Layout>
-      <FleetHero bgImage={fleetHeroBgImage}></FleetHero>
-      <DownloadFleetCTA image={fleetDownloadImage}></DownloadFleetCTA>
-      <FleetStepsColumns images={FleetStepsColumnsImages}></FleetStepsColumns>
-      {/* <AboutDidiFleetVideo></AboutDidiFleetVideo> */}
-      <FleetColumns images={FleetColumnsImages.reverse()}></FleetColumns>
+      <FleetHero
+        bgImage={fleetHeroBgImage}
+        mobileBgImage={fleetHeroBgImageMobile}
+      ></FleetHero>
+      <FleetSocioCTA image={FleetSocioCTAImage}></FleetSocioCTA>
+      <FleetSafety image={FleetSafetyImage}></FleetSafety>
+      <FleetRegistraAutosCTA
+        image={FleetRegistraAutosCTAImage}
+      ></FleetRegistraAutosCTA>
+      <FleetColumns></FleetColumns>
     </Layout>
   );
 };
@@ -37,7 +46,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(co.FleetHero.bgImage)|(co.FleetColumns.image)|(co.FleetStepsColumns.image)|(co.FleetDownload.image)/"
+          regex: "/(co.FleetHero.bgImage)|(co.DiDiFleetHeroMobile.bgImage)|(co.SafetyCTA.image)|(ar.FleetSocioCTA.image)|(mx.FleetRegistraAutos.image)/"
         }
       }
       sort: { title: ASC }

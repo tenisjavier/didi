@@ -179,7 +179,7 @@ const insertBtnParams = () => {
   function getDeepLink(url) {
     const channels = {
       "(none)": 14,
-      referral: 18,
+      referral: 17,
       organic: 19,
       email: 20,
     };
@@ -237,7 +237,7 @@ const insertBtnParams = () => {
     let rscChannel = url.searchParams.get("rsc_channel");
     let rscProduct = url.searchParams.get("rsc_product");
     let country = countryCode.toUpperCase();
-    // joveo 99 app
+    let fromEnd = "h5";
 
     let af_c_id = url.searchParams.get("af_c_id");
     let af_channel = url.searchParams.get("af_channel");
@@ -265,20 +265,31 @@ const insertBtnParams = () => {
 
     // if is SEO, Direct or Web Referral -> Attricampaign will be the pathname
 
-    if (
-      channelId === 14 ||
-      channelId === 18 ||
-      channelId === 19 ||
-      channelId === 20
-    ) {
+    if (channelId === 14 || channelId === 17 || channelId === 19) {
       campaign = "refpage_" + window.location.pathname;
       c = "refpage_" + window.location.pathname;
       campaignId = "refpage_" + window.location.pathname;
 
       //? EXPERIMENT A/B other code in Layout
-      const test_version = window.localStorage.getItem("t1");
-      adgroupId = test_version;
+      //if mobile
+      if (
+        window.innerWidth < 640 &&
+        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+          countryCode
+        )
+      ) {
+        const test_version = window.localStorage.getItem("t2");
+        adgroupId = test_version;
+
+        const test_version_2 = window.localStorage.getItem("t2");
+        if (test_version_2 === "2023-05-h5-vs-ws-b-t2")
+          fromEnd = "WhatsappConf";
+      }
     }
+
+    //? if referral? save referral source
+
+    if (channelId === 17) source = referringDomain;
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
     newUrl.searchParams.set("location_country", countryLang[0]);
@@ -311,6 +322,7 @@ const insertBtnParams = () => {
     newUrl.searchParams.set("rsc_channel", rscChannel);
     newUrl.searchParams.set("rsc_product", rscProduct);
     newUrl.searchParams.set("clientType", channelId);
+    newUrl.searchParams.set("from_end", fromEnd);
 
     if (
       url.href.indexOf("me/mbwy/") > -1 ||
