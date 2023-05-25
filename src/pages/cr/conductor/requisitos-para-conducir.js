@@ -26,7 +26,7 @@ const RequisitosSocio = ({ data }) => {
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={false}>
+    <Layout index={true}>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
         images={DrvRequirementColumnsImage}
