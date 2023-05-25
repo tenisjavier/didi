@@ -1458,23 +1458,31 @@
   "TaxRequiredVideoSection.bgColor": "bg-gray-light",
   "TaxDeclarationCTA.title": "¿Qué recibirás de DiDi para hacer tus declaraciones fiscales?",
   "TaxDeclarationCTA.desc": "Podrás tramitar tu certificado de sellos digitales con el SAT. Estos documentos te los entregará el SAT en formato digital. \n Los sellos digitales se componen de los siguientes documentos. \n Certificados de retención de impuestos \n DiDi retendrá tus impuestos de manera semanal y te emitirá un certificado. \n • Conductores con cuenta bancaria recibirán un certificado semanal \n • Conductores con DiDi Pay recibirán un certificado diario \n Factura por tarifa de servicio \n • Todos los conductores recibirán una factura mensual con el resumen del mes anterior entero.",
-  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
-  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.title": "Requisitos para registrarte como conductor o convertirse en socio flotilla",
+  "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal (Opcional) \n Carta de No Antecedentes Penales \n 3) Registra tu vehículo \n Tarjeta de circulación \n Póliza de seguro del auto \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
+      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos \n INE | IFE \n Constancia de Situación Fiscal (opcional) \n 3) Agrega tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Tarjeta de circulación Póliza de seguro del auto \n 4) Selecciona un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal \n Carta de No Antecedentes Penales \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+    }, 
+    {
+      "title": "Conductor: Taxi",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal (Opcional) \n Carta de No Antecedentes Penales \n 3) Registra tu vehículo \n Tarjeta de circulación \n Póliza de seguro del auto \n El vehículo debe ser modelo 2007 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+    },
+    {
+      "title": "Conductor: Moto",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal (Opcional) \n Carta de No Antecedentes Penales \n 3) Registra tu vehículo \n Tarjeta de circulación \n Póliza de seguro del vehiculo \n El vehículo debe ser modelo 2000 en adelante \n La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",
