@@ -986,7 +986,7 @@
       "btnLink": "https://prestamos.didiglobal.com/"
     }
   ],
-  "DiDiPayHero.title": "Pagos seguros y sin comisiones desde tu teléfono con DiDi Pay",
+  "DiDiPayHero.title": "DiDi Pay: Pagos seguros y sin comisiones desde tu teléfono",
   "DiDiPayHero.desc": "Baja la App y asocia tu tarjeta.",
   "DiDiPayHero.btnMode": "light",
   "DiDiPayHero.textColor": "white",
@@ -1110,6 +1110,102 @@
   "DiDiPayFAQs.desc": "",
   "DiDiPayFAQs.bgColor": "bg-gray-light",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
+  "DiDiPayServiceHero.title": "Paga tus recibos de luz, agua y más desde el celular",
+  "DiDiPayServiceHero.desc": "¡Al corriente con los servicios! paga desde DiDi Pay.",
+  "DiDiPayServiceHero.btnMode": "light",
+  "DiDiPayServiceHero.textColor": "white",
+  "DiDiPayServiceHero.bgColor": "bg-orange-primary",
+  "DiDiPayServiceWhy.title": "Cómo pagar tus servicios con DiDi Pay",
+  "DiDiPayServiceWhy.desc": "1. Abre tu App DiDi y ve a la sección. \n2. Selecciona el servicio que deseas pagar, escanea el código de barras y confirma la cantidad. \n3. ¡Listo! paga sin comisiones con cualquier tarjeta. Disfruta de tus cupones de descuento.",
+  "DiDiPayServiceWhy.textColor": "gray-primary",
+  "DiDiPayServiceGrid.title": "Paga tus recibos con DiDi Pay",
+  "DiDiPayServiceGrid.desc": "Paga tus recibos de la CFE, Agua, IZZI, Totalplay, telmex y más sin hacer fila y sin comisiones.",
+  "DiDiPayServiceGrid.bgColor": "bg-gray-light",
+  "DiDiPayServiceGrid.textColor": "gray-primary",
+  "DiDiPayServiceGrid.columns": [
+    {
+      "title": "Paga el recibo de CFE en linea",
+      "desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más."
+    },
+    {
+      "title": "Paga el recibo del agua",
+      "desc": "Paga tu recibo de CFE, Telmex, Izzi y más."
+    },
+    {
+      "title": "Paga el servicio de internet",
+      "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay"
+    }
+  ],
+  "DiDiPayServiceColumns.title": "Paga tus recibos desde tu celular con tu App DiDi",
+  "DiDiPayServiceColumns.desc": "En solo 3 pasos paga tus recibos de la CFE, Agua, Telefonía, y más sin hacer fila y sin comisiones.",
+  "DiDiPayServiceColumns.bgColor": "bg-gray-light",
+  "DiDiPayServiceColumns.columns": [
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnMode": "light",
+      "btnText": "¿Qué es DiDi Pay?",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "¿Cómo funciona DiDi Pay?",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "Preguntas Frecuentes",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    }
+  ],
+  "DiDiPayGiftcardHero.title": "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay",
+  "DiDiPayGiftcardHero.desc": "Encuentra la tarjeta perfecta para cada ocasión.",
+  "DiDiPayGiftcardHero.btnMode": "light",
+  "DiDiPayGiftcardHero.textColor": "white",
+  "DiDiPayGiftcardHero.bgColor": "bg-orange-primary",
+  "DiDiPayGiftcardWhy.title": "Cómo comprar tarjetas de regalo con DiDi Pay",
+  "DiDiPayGiftcardWhy.desc": "1. Abre tu App DiDi y ve a la sección. \"Mi Billetera\" \n2. Selecciona la marca y el monto que deseas. \n3. ¡Listo! paga sin comisiones con cualquier tarjeta. Disfruta de tus cupones de descuento.\n4. Ahora ya tienes tu código para canjear tu tarjeta o regalársela a esa persona especial.",
+  "DiDiPayGiftcardWhy.textColor": "gray-primary",
+  "DiDiPayGiftcardFeatures.title": "Compra tarjetas de regalo",
+  "DiDiPayGiftcardFeatures.desc": "Encuentra tarjetas de regalo de Xbox, Shopify, Cinépolis y más.",
+  "DiDiPayGiftcardFeatures.bullets": [
+    "Compra tarjetas de regalo de streaming, cine, shopping y más.",
+    "Usa tus tarjetas favoritas de crédito o débito para hacer tus pagos.",
+    "Olvídate de las comisiones."
+  ],
+  "DiDiPayGiftcardFeatures.btnMode": "primary",
+  "DiDiPayGiftcardFeatures.textColor": "gray-primary",
+  "DiDiPayGiftcardFeatures.bgColor": "bg-gray-light",
+  "DiDiPayGiftcardColumns.title": "Compra tarjetas de regalo desde tu app DiDi.",
+  "DiDiPayGiftcardColumns.desc": "Encuentra el regalo perfecto para cualquier ocasión, no importa si es para tu mamá, tu papá, tu pareja o tu amix, con DiDi Pay seguri hay algo para todos.",
+  "DiDiPayGiftcardColumns.bgColor": "bg-gray-light",
+  "DiDiPayGiftcardColumns.columns": [
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnMode": "light",
+      "btnText": "¿Qué es DiDi Pay?",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "¿Cómo funciona DiDi Pay?",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "Preguntas Frecuentes",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    }
+  ],
   "DiDiPayBlogHero.title": "Bienvenido al Blog de DiDi Pay",
   "DiDiPayBlogHero.desc": "Lee nuestros post de consejos financieros",
   "DiDiPayBlogHero.textColor": "white",
