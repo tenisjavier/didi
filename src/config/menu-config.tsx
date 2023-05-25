@@ -70,6 +70,10 @@ const menuLinks: AllMenuInterface = {
           url: "/cl/driver/",
         },
         {
+          text: "Requisitos para Conductores",
+          url: "/cl/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
         },
@@ -320,6 +324,10 @@ const menuLinks: AllMenuInterface = {
           url: "/ar/driver/",
         },
         {
+          text: "Requisitos para Conductores",
+          url: "/ar/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
         },
@@ -386,6 +394,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Socio Conductor",
           url: "/pe/driver/",
+        },
+        {
+          text: "Requisitos para Conductores",
+          url: "/pe/conductor/requisitos-para-conducir/",
         },
         {
           text: "Regístrate Online",
@@ -460,6 +472,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Arrendador",
           url: "/co/driver/",
+        },
+        {
+          text: "Requisitos para Conductores",
+          url: "/co/conductor/requisitos-para-conducir/",
         },
         {
           text: "Regístrate Online",
@@ -740,6 +756,10 @@ const menuLinks: AllMenuInterface = {
           url: "/cr/driver/",
         },
         {
+          text: "Requisitos para Conductores",
+          url: "/cr/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
         },
@@ -802,6 +822,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Socio Conductor",
           url: "/do/driver/",
+        },
+        {
+          text: "Requisitos para Conductores",
+          url: "/do/conductor/requisitos-para-conducir/",
         },
         {
           text: "Socio Conductor Moto",
@@ -884,6 +908,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Socio Conductor",
           url: "/ec/driver/",
+        },
+        {
+          text: "Requisitos para Conductores",
+          url: "/ec/conductor/requisitos-para-conducir/",
         },
         {
           text: "Regístrate Online",
