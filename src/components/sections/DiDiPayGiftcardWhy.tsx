@@ -9,7 +9,7 @@ interface DiDiPayGiftcardWhyProps {
     gatsbyImageData: any;
   };
 }
-// test commit
+
 const DiDiPayGiftcardWhy = ({ image }: DiDiPayGiftcardWhyProps) => {
   const props: CTAProps = {
     hero: false,
