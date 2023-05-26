@@ -2,7 +2,7 @@ import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
-interface DiDiPayPhoneWhyProps {
+interface DiDiPayGiftcardWhyProps {
   image: {
     title: string;
     description: string;
@@ -10,13 +10,13 @@ interface DiDiPayPhoneWhyProps {
   };
 }
 
-const DiDiPayPhoneWhy = ({ image }: DiDiPayPhoneWhyProps) => {
+const DiDiPayGiftcardWhy = ({ image }: DiDiPayGiftcardWhyProps) => {
   const props: CTAProps = {
     hero: false,
-    title: t("DiDiPayPhoneWhy.title"),
-    desc: t("DiDiPayPhoneWhy.desc"),
-    textColor: t("DiDiPayPhoneWhy.textColor"),
-    bgColor: t("DiDiPayPhoneWhy.bgColor"),
+    title: t("DiDiPayGiftcardWhy.title"),
+    desc: t("DiDiPayGiftcardWhy.desc"),
+    textColor: t("DiDiPayGiftcardWhy.textColor"),
+    bgColor: t("DiDiPayGiftcardWhy.bgColor"),
     image: image,
     imageStyle: "z-10 m-4 w-100",
     reverse: false,
@@ -24,4 +24,4 @@ const DiDiPayPhoneWhy = ({ image }: DiDiPayPhoneWhyProps) => {
   return <CTASection {...props}></CTASection>;
 };
 
-export default DiDiPayPhoneWhy;
+export default DiDiPayGiftcardWhy;
