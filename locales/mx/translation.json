@@ -568,7 +568,7 @@
   "SafetyGridBeforeTrip.columns": [
     {
       "title": "1. Verificación facial del pasajero",
-      "desc": "Si el primer viaje del pasajero es en un horario nocturno, además de la documentación oficial, se deberá realizar una validación facial para poder solicitar el viaje."
+      "desc": "Verificamos la identidad del usuario para darte mayor seguridad en el viaje."
     },
     {
       "title": "2. Anonimización del Teléfono",
@@ -986,7 +986,7 @@
       "btnLink": "https://prestamos.didiglobal.com/"
     }
   ],
-  "DiDiPayHero.title": "Pagos seguros y sin comisiones desde tu teléfono con DiDi Pay",
+  "DiDiPayHero.title": "DiDi Pay: Pagos seguros y sin comisiones desde tu teléfono",
   "DiDiPayHero.desc": "Baja la App y asocia tu tarjeta.",
   "DiDiPayHero.btnMode": "light",
   "DiDiPayHero.textColor": "white",
@@ -1110,6 +1110,146 @@
   "DiDiPayFAQs.desc": "",
   "DiDiPayFAQs.bgColor": "bg-gray-light",
   "DiDiPDiDiPayFAQsayColumns.bgColor": "bg-orange-primary",
+  "DiDiPayServiceHero.title": "Paga tus recibos de luz, agua y más desde el celular",
+  "DiDiPayServiceHero.desc": "¡Al corriente con los servicios! paga desde DiDi Pay.",
+  "DiDiPayServiceHero.btnMode": "light",
+  "DiDiPayServiceHero.textColor": "white",
+  "DiDiPayServiceHero.bgColor": "bg-orange-primary",
+  "DiDiPayServiceWhy.title": "Cómo pagar tus servicios con DiDi Pay",
+  "DiDiPayServiceWhy.desc": "1. Abre tu App DiDi y ve a la sección. \n2. Selecciona el servicio que deseas pagar, escanea el código de barras y confirma la cantidad. \n3. ¡Listo! paga sin comisiones con cualquier tarjeta. Disfruta de tus cupones de descuento.",
+  "DiDiPayServiceWhy.textColor": "gray-primary",
+  "DiDiPayServiceGrid.title": "Paga tus recibos con DiDi Pay",
+  "DiDiPayServiceGrid.desc": "Paga tus recibos de la CFE, Agua, IZZI, Totalplay, telmex y más sin hacer fila y sin comisiones.",
+  "DiDiPayServiceGrid.bgColor": "bg-gray-light",
+  "DiDiPayServiceGrid.textColor": "gray-primary",
+  "DiDiPayServiceGrid.columns": [
+    {
+      "title": "Paga el recibo de CFE en linea",
+      "desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más."
+    },
+    {
+      "title": "Paga el recibo del agua",
+      "desc": "Paga tu recibo de CFE, Telmex, Izzi y más."
+    },
+    {
+      "title": "Paga el servicio de internet",
+      "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay"
+    }
+  ],
+  "DiDiPayServiceColumns.title": "Paga tus recibos desde tu celular con tu App DiDi",
+  "DiDiPayServiceColumns.desc": "En solo 3 pasos paga tus recibos de la CFE, Agua, Telefonía, y más sin hacer fila y sin comisiones.",
+  "DiDiPayServiceColumns.bgColor": "bg-gray-light",
+  "DiDiPayServiceColumns.columns": [
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnMode": "light",
+      "btnText": "¿Qué es DiDi Pay?",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "¿Cómo funciona DiDi Pay?",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "Contáctanos",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    }
+  ],
+  "DiDiPayGiftcardHero.title": "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay",
+  "DiDiPayGiftcardHero.desc": "Encuentra la tarjeta perfecta para cada ocasión.",
+  "DiDiPayGiftcardHero.btnMode": "light",
+  "DiDiPayGiftcardHero.textColor": "white",
+  "DiDiPayGiftcardHero.bgColor": "bg-orange-primary",
+  "DiDiPayGiftcardWhy.title": "Cómo comprar tarjetas de regalo con DiDi Pay",
+  "DiDiPayGiftcardWhy.desc": "1. Abre tu App DiDi y ve a la sección. \"Mi Billetera\" \n2. Selecciona la marca y el monto que deseas. \n3. ¡Listo! paga sin comisiones con cualquier tarjeta. Disfruta de tus cupones de descuento.\n4. Ahora ya tienes tu código para canjear tu tarjeta o regalársela a esa persona especial.",
+  "DiDiPayGiftcardWhy.textColor": "gray-primary",
+  "DiDiPayGiftcardFeatures.title": "Compra tarjetas de regalo",
+  "DiDiPayGiftcardFeatures.desc": "Encuentra tarjetas de regalo de Xbox, Shopify, Cinépolis y más.",
+  "DiDiPayGiftcardFeatures.bullets": [
+    "Compra tarjetas de regalo de streaming, cine, shopping y más.",
+    "Usa tus tarjetas favoritas de crédito o débito para hacer tus pagos.",
+    "Olvídate de las comisiones."
+  ],
+  "DiDiPayGiftcardFeatures.btnMode": "primary",
+  "DiDiPayGiftcardFeatures.textColor": "gray-primary",
+  "DiDiPayGiftcardFeatures.bgColor": "bg-gray-light",
+  "DiDiPayGiftcardColumns.title": "Compra tarjetas de regalo desde tu app DiDi.",
+  "DiDiPayGiftcardColumns.desc": "Encuentra el regalo perfecto para cualquier ocasión, no importa si es para tu mamá, tu papá, tu pareja o tu amix, con DiDi Pay seguri hay algo para todos.",
+  "DiDiPayGiftcardColumns.bgColor": "bg-gray-light",
+  "DiDiPayGiftcardColumns.columns": [
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnMode": "light",
+      "btnText": "¿Qué es DiDi Pay?",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "¿Cómo funciona DiDi Pay?",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "Contáctanos",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    }
+  ],
+  "DiDiPayPhoneHero.title": "Recarga tiempo aire y megas a cualquier número desde tu celular",
+  "DiDiPayPhoneHero.desc": "Haz recargas desde $10 m.n. sin comisiones.",
+  "DiDiPayPhoneHero.btnMode": "light",
+  "DiDiPayPhoneHero.textColor": "white",
+  "DiDiPayPhoneHero.bgColor": "bg-orange-primary",
+  "DiDiPayPhoneWhy.title": "Cómo recargar tiempo aire y megas con DiDi Pay",
+  "DiDiPayPhoneWhy.desc": "1. Abre tu App DiDi y ve a la sección. \"Mi Billetera\" \n2. Ingresa el número de teléfono al que quieres hacer la recarga. \n3. Selecciona el proveedor de telefonía y la cantidad o paquete que deseas. \n4. ¡Listo! paga sin comisiones con cualquier tarjeta. Disfruta de tus cupones de descuento.",
+  "DiDiPayPhoneWhy.textColor": "gray-primary",
+  "DiDiPayPhoneFeatures.title": "Tiempo Aire y megas",
+  "DiDiPayPhoneFeatures.desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más.",
+  "DiDiPayPhoneFeatures.bullets": [
+    "Recarga tiempo aire y megas a cualquier número desde $10 m.n.",
+    "Usa cualquier tarjeta de crédito o débito para hacer tus pagos de recargas.",
+    "Olvídate de las filas, las comisiones y los horarios."
+  ],
+  "DiDiPayPhoneFeatures.btnMode": "primary",
+  "DiDiPayPhoneFeatures.textColor": "gray-primary",
+  "DiDiPayPhoneFeatures.bgColor": "bg-gray-light",
+  "DiDiPayPhoneColumns.title": "Tiempo aire para cualquier número y desde $10 m.n.",
+  "DiDiPayPhoneColumns.desc": "Recarga saldo Telcel, Movistar, Bait y otros desde tu app DiDi. Ponle saldo a cualquier número de forma rápida y sin comisiones.",
+  "DiDiPayPhoneColumns.bgColor": "bg-gray-light",
+  "DiDiPayPhoneColumns.columns": [
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnMode": "light",
+      "btnText": "¿Qué es DiDi Pay?",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "¿Cómo funciona DiDi Pay?",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "Contáctanos",
+      "btnLink": "/mx/didipay-preguntas-frecuentes/",
+      "btnMode": "light"
+    }
+  ],
   "DiDiPayBlogHero.title": "Bienvenido al Blog de DiDi Pay",
   "DiDiPayBlogHero.desc": "Lee nuestros post de consejos financieros",
   "DiDiPayBlogHero.textColor": "white",
@@ -1362,24 +1502,24 @@
   "TaxRequiredVideoSection.bgColor": "bg-gray-light",
   "TaxDeclarationCTA.title": "¿Qué recibirás de DiDi para hacer tus declaraciones fiscales?",
   "TaxDeclarationCTA.desc": "Podrás tramitar tu certificado de sellos digitales con el SAT. Estos documentos te los entregará el SAT en formato digital. \n Los sellos digitales se componen de los siguientes documentos. \n Certificados de retención de impuestos \n DiDi retendrá tus impuestos de manera semanal y te emitirá un certificado. \n • Conductores con cuenta bancaria recibirán un certificado semanal \n • Conductores con DiDi Pay recibirán un certificado diario \n Factura por tarifa de servicio \n • Todos los conductores recibirán una factura mensual con el resumen del mes anterior entero.",
-  "RequirementHero.title": "Requisitos para registrarte como conductor o convertirse en socio flotilla",
-  "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
+  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
+  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal (Opcional) \n Carta de No Antecedentes Penales \n 3) Registra tu vehículo \n Tarjeta de circulación \n Póliza de seguro del auto \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
     },
     {
       "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos \n INE | IFE \n Constancia de Situación Fiscal (opcional) \n 3) Agrega tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Tarjeta de circulación Póliza de seguro del auto \n 4) Selecciona un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
     },
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal \n Carta de No Antecedentes Penales \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
-    }, 
+    },
     {
       "title": "Conductor: Taxi",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal (Opcional) \n Carta de No Antecedentes Penales \n 3) Registra tu vehículo \n Tarjeta de circulación \n Póliza de seguro del auto \n El vehículo debe ser modelo 2007 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"

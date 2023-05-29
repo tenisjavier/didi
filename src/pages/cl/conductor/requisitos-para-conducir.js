@@ -14,23 +14,22 @@ const RequisitosSocio = ({ data }) => {
   const RequirementHeroBgImage = images.filter((image) => {
     return image.title === "mx.RequirementHero.bgImage";
   })[0];
-  let DrvRequirementColumnsImage = images.filter((image) => {
+  const DrvRequirementColumnsImage = images.filter((image) => {
     return image.title === "mx.DrvRequirementColumns.image";
   });
-  if(DrvRequirementColumnsImage) {
+  if (DrvRequirementColumnsImage) {
     DrvRequirementColumnsImage.pop();
   }
-
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";
   })[0];
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={true}>
+    <Layout index={false}>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
-        images={DrvRequirementColumnsImage}
+        images={DrvRequirementColumnsImage.reverse()}
       ></DrvRequirementColumns>
       <VehicleRequirementCTA
         image={VehicleRequirementImage}

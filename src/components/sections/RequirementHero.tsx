@@ -1,17 +1,15 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
-import { BtnType } from "../Btn";
+import { BtnProps } from "../Btn";
 
-interface RequirementHeroProps {
+interface RequirementHeroProps extends BtnProps {
   title: string;
   bgImage: {
     title: string;
     description: string;
     gatsbyImageData: any;
   };
-  btnType?: BtnType;
-  btnMode?: string;
 }
 
 const RequirementHero = ({
