@@ -79,7 +79,7 @@ export default Pasajero;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: [ "mx.PaxHero.bgImage", "mx.PaxWhyDiDi.image", "mx.FoodSMSCTA.image", "mx.FoodDeliveryDownloads.image"] } }
+      filter: { title: { regex: "/(mx.PaxHero.bgImage)|(mx.PaxWhyDiDi.image)|(mx.FoodSMSCTA.image)|(mx.FoodDeliveryDownloads.image)/" } }
     ) {
       nodes {
         id
