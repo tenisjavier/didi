@@ -64,7 +64,7 @@ const Ciudades = ({ data }) => {
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
+        <SmsCTA image={foodSMSCTA} qr={qr} smsType="food"></SmsCTA>
       </div>
     </Layout>
   );

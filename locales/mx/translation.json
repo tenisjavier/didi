@@ -1684,5 +1684,7 @@
   "EntregaBusinessCTA.btnLink": "https://didi-food.com/es-MX/entrega-business/home",
   "EntregaBusinessCTA.btnText": "Conoce Más Aquí",
   "EntregaBusinessCTA.btnMode": "primary",
-  "EntregaBusinessCTA.bgColor": "bg-gray-light"
+  "EntregaBusinessCTA.bgColor": "bg-gray-light",
+  "RidesSmsCTA.title": "Pide un viaje desde donde estés atraves de la app.",
+  "RidesSmsCTA.desc": "Descarga la app DiDi pasajero y ahorra más de un 50% en tu primer viaje. Con DiDi viajaras más pagando menos."
 }
