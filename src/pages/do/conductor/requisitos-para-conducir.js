@@ -17,6 +17,10 @@ const RequisitosSocio = ({ data }) => {
   const DrvRequirementColumnsImage = images.filter((image) => {
     return image.title === "mx.DrvRequirementColumns.image";
   });
+  //? if statement to remove the second last image that is taxi since it is not on DO yet
+  if (DrvRequirementColumnsImage.length >= 2) {
+    DrvRequirementColumnsImage.splice(-2, 1);
+  }
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";
   })[0];
