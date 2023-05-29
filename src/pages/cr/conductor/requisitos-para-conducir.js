@@ -29,7 +29,7 @@ const RequisitosSocio = ({ data }) => {
     <Layout index={false}>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
-        images={DrvRequirementColumnsImage}
+        images={DrvRequirementColumnsImage.reverse()}
       ></DrvRequirementColumns>
       <VehicleRequirementCTA
         image={VehicleRequirementImage}
