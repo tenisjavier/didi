@@ -568,7 +568,7 @@
   "SafetyGridBeforeTrip.columns": [
     {
       "title": "1. Verificación facial del pasajero",
-      "desc": "Si el primer viaje del pasajero es en un horario nocturno, además de la documentación oficial, se deberá realizar una validación facial para poder solicitar el viaje."
+      "desc": "Verificamos la identidad del usuario para darte mayor seguridad en el viaje."
     },
     {
       "title": "2. Anonimización del Teléfono",
@@ -1379,7 +1379,7 @@
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal \n Carta de No Antecedentes Penales \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
-    }, 
+    },
     {
       "title": "Conductor: Taxi",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n INE | IFE \n Licencia de conducir \n Constancia de Situación Fiscal (Opcional) \n Carta de No Antecedentes Penales \n 3) Registra tu vehículo \n Tarjeta de circulación \n Póliza de seguro del auto \n El vehículo debe ser modelo 2007 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"

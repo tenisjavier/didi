@@ -489,21 +489,22 @@
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
+  "DrvRequirementColumns.gridCols": "grid-cols-3",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
+      "title": "Socio conductor: Tengo vehiculo y quiero conducir",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Cédula de identidad \n Licencia de Conducir \n 3) Registra tu vehículo \n Permiso de circulación \n El vehículo debe ser modelo 2008 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
+      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca",
       "desc": "1) Identificación oficial (INE/IFE) \n 2) Tarjeta de circulación \n 3) Póliza de seguro del auto \n 4) Registro Federal de Contribuyentes (RFC)"
     },
     {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
+      "title": "Socio Conductor: Quiero conducir y no tengo vehículo",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Cédula de identidad Licencia de Conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Taxi",
+      "title": "Conductor de Taxi",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Cédula de identidad \n Licencia de Conducir \n 3) Registra tu vehículo \n Permiso de circulación \n Cartón de recorrido \n El vehículo debe ser modelo 2010 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],

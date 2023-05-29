@@ -21,14 +21,14 @@ const RequisitosSocio = ({ data }) => {
   if (DrvRequirementColumnsImage.length >= 2) {
     DrvRequirementColumnsImage.splice(-2, 1);
   }
-  
+
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";
   })[0];
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={true}>
+    <Layout index={false}>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
         images={DrvRequirementColumnsImage}

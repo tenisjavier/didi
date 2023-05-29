@@ -17,7 +17,7 @@ const RequisitosSocio = ({ data }) => {
   const DrvRequirementColumnsImage = images.filter((image) => {
     return image.title === "mx.DrvRequirementColumns.image";
   });
-  if(DrvRequirementColumnsImage) {
+  if (DrvRequirementColumnsImage) {
     DrvRequirementColumnsImage.pop();
   }
   const VehicleRequirementImage = images.filter((image) => {
@@ -26,7 +26,7 @@ const RequisitosSocio = ({ data }) => {
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={true}>
+    <Layout index={false}>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
         images={DrvRequirementColumnsImage}
