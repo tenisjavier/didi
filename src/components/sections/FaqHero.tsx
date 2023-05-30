@@ -1,8 +1,9 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import { BtnProps } from "../Btn";
 
-interface FaqHeroProps {
+interface FaqHeroProps extends BtnProps {
   title: string;
   desc: string;
   bgImage: {
@@ -12,7 +13,7 @@ interface FaqHeroProps {
   };
 }
 
-const FaqHero = ({ title, desc, bgImage }: FaqHeroProps) => {
+const FaqHero = ({ title, desc, bgImage, btnType }: FaqHeroProps) => {
   const props: CTAProps = {
     hero: true,
     title: title,
@@ -21,7 +22,7 @@ const FaqHero = ({ title, desc, bgImage }: FaqHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full brightness-75 md:block",
     btnMode: t("FaqHero.btnMode"),
-    btnType: "both",
+    btnType: btnType || "both",
   };
   return <CTASection {...props}></CTASection>;
 };

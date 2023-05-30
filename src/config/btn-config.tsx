@@ -25,6 +25,10 @@ interface SingleBtnInterface {
   prestamosPaxText?: string;
   prestamosDrvLink?: string;
   prestamosDrvText?: string;
+  prestamosFAQLink?: string;
+  prestamosFAQText?: string;
+  payFAQLink?: string;
+  payFAQText?: string;
   entregaLink?: string;
   entregaText?: string;
   entregaBusinessLink?: string;
@@ -189,6 +193,10 @@ const btnLinks: AllBtnInterface = {
     entregaLink:
       "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     smsCTAText: "Descargar en mi celular",
+    prestamosFAQLink: "/mx/prestamos/preguntas-frecuentes/",
+    prestamosFAQText: "Preguntas frecuentes",
+    payFAQLink: "/mx/didipay-preguntas-frecuentes/",
+    payFAQText: "Preguntas frecuentes"
   },
   mxen: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
