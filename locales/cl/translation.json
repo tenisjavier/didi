@@ -489,18 +489,23 @@
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
+  "DrvRequirementColumns.gridCols": "grid-cols-3",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+      "title": "Socio conductor: Tengo vehiculo y quiero conducir",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Cédula de identidad \n Licencia de Conducir \n 3) Registra tu vehículo \n Permiso de circulación \n El vehículo debe ser modelo 2008 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
+      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca",
+      "desc": "1) Identificación oficial (INE/IFE) \n 2) Tarjeta de circulación \n 3) Póliza de seguro del auto \n 4) Registro Federal de Contribuyentes (RFC)"
     },
     {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+      "title": "Socio Conductor: Quiero conducir y no tengo vehículo",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Cédula de identidad Licencia de Conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+    },
+    {
+      "title": "Conductor de Taxi",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Cédula de identidad \n Licencia de Conducir \n 3) Registra tu vehículo \n Permiso de circulación \n Cartón de recorrido \n El vehículo debe ser modelo 2010 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",

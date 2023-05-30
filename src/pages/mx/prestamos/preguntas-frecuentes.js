@@ -48,7 +48,7 @@ const DiDiPrestamosFAQ = ({ data }) => {
   );
 
   return (
-    <Layout index={false} schema="faq">
+    <Layout schema="faq">
       <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
       <DiDiPayFAQs
         data={faqsSobreNosotros}
