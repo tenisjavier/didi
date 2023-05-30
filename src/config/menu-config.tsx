@@ -237,11 +237,11 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Préstamos",
-          url: "/mx/prestamos",
+          url: "/mx/prestamos/",
         },
         {
           text: "DiDi Préstamos FAQ",
-          url: "/mx/prestamos/preguntas-frecuentes",
+          url: "/mx/prestamos/preguntas-frecuentes/",
         },
         {
           text: "Blog DiDiPay",
