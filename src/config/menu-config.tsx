@@ -232,12 +232,16 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/didipay/",
         },
         {
-          text: "DiDi Préstamos",
-          url: "/mx/prestamos/",
-        },
-        {
           text: "DiDi Pay FAQ",
           url: "/mx/didipay-preguntas-frecuentes/",
+        },
+        {
+          text: "DiDi Préstamos",
+          url: "/mx/prestamos",
+        },
+        {
+          text: "DiDi Préstamos FAQ",
+          url: "/mx/prestamos/preguntas-frecuentes",
         },
         {
           text: "Blog DiDiPay",

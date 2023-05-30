@@ -15,7 +15,6 @@ const GuideListItem = ({ text, link, image }: GuideListProps) => {
       <Image imageData={image} imageStyle={"z-10 m-4 max-h-26"}></Image>
       <p className="mb-4 text-xl font-bold text-orange-primary">{text}</p>
       <Btn
-        btnType={"drv"}
         btnLink={link}
         btnMode={"primary"}
         btnText={"Conoce más"}
