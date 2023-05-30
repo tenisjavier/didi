@@ -184,7 +184,7 @@
   "DrvCityList.desc": "Descubre las ciudades de Colombia donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/co/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/co/conductor/conductor-en-{{city}}/",
   "DrvColumns.textColor": "gray-primary",
   "DrvColumns.bgColor": "bg-white",
   "DrvColumns.columns": [

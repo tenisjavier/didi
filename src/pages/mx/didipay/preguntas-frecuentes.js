@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import DiDiPayFAQHero from "../../components/sections/DiDiPayFAQHero";
-import DiDiPayFAQs from "../../components/sections/DiDiPayFAQs";
+import Layout from "../../../components/Layout";
+import DiDiPayFAQHero from "../../../components/sections/DiDiPayFAQHero";
+import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
 // import FaqList from "../../components/sections/FaqList";
 
 const DiDiPayFAQ = ({ data }) => {

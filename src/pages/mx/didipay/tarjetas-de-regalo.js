@@ -26,7 +26,7 @@ const Giftcards = ({ data }) => {
   })[0];
 
   return (
-    <Layout index={false}>
+    <Layout>
       <DiDiPayGiftcardHero
         bgImage={homeHeroBgImage}
         mobileBgImage={homeHeroMobileBgImage}

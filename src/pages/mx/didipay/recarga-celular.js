@@ -26,7 +26,7 @@ const DiDiPayPhone = ({ data }) => {
   })[0];
 
   return (
-    <Layout index={false}>
+    <Layout>
       <DiDiPayPhoneHero
         bgImage={homeHeroBgImage}
         mobileBgImage={homeHeroMobileBgImage}
