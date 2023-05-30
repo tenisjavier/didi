@@ -25,13 +25,10 @@ const FoodEducationalGuidesList = ({ title, faqs, city, images }: GuidesListProp
     bgColor: t("FoodEducationalGuidesList.bgColor"),
     textColor: t("FoodEducationalGuidesList.textColor"),
   };
-  console.log(faqs);
-  console.log(images);
+
   if (faqs) {
     props.items = faqs.map((faq, index) => {
       const image = images[index];
-      console.log(faq.node);
-      console.log(image);
       const name =
         faq.node.title.length > 50 ? faq.node.title.slice(0, 50) + "..." : faq.node.title;
       return {
