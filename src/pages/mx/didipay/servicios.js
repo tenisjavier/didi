@@ -26,7 +26,7 @@ const DiDiPayService = ({ data }) => {
   })[0];
 
   return (
-    <Layout index={false}>
+    <Layout>
       <DiDiPayServiceHero
         bgImage={homeHeroBgImage}
         mobileBgImage={homeHeroMobileBgImage}

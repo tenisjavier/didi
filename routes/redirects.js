@@ -2,6 +2,91 @@
 // @return: null
 const redirectsInit = async (graphql, createRedirect) => {
   createRedirect({
+    fromPath: `/pa/driver/`,
+    toPath: `/pa/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pa/driver/*`,
+    toPath: `/pa/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/driver/`,
+    toPath: `/cr/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/driver/*`,
+    toPath: `/cr/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/do/driver/`,
+    toPath: `/do/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/do/driver/*`,
+    toPath: `/do/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/ec/driver/`,
+    toPath: `/ec/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/ec/driver/*`,
+    toPath: `/ec/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/driver/`,
+    toPath: `/co/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/driver/*`,
+    toPath: `/co/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/ar/driver/`,
+    toPath: `/ar/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/ar/driver/*`,
+    toPath: `/ar/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cl/driver/`,
+    toPath: `/cl/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cl/driver/*`,
+    toPath: `/cl/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/driver/`,
+    toPath: `/pe/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/driver/*`,
+    toPath: `/pe/conductor/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/clubdidi/`,
+    toPath: `/mx/didimas/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/mx/clubdidi/`,
     toPath: `/mx/didimas/`,
     isPermanent: true,
@@ -9,6 +94,11 @@ const redirectsInit = async (graphql, createRedirect) => {
   createRedirect({
     fromPath: `/mx/clubdidi/*`,
     toPath: `/mx/didimas/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/didipay-preguntas-frecuentes/`,
+    toPath: `/mx/didipay/preguntas-frecuentes/`,
     isPermanent: true,
   });
   createRedirect({

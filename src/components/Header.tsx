@@ -53,6 +53,15 @@ const Navlogo = () => {
         width={150}
       />
     );
+  if (pathname.includes("/didipay/"))
+    logoImg = (
+      <StaticImage
+        src="../images/didi-pay-logo.png"
+        alt="DiDi"
+        className=""
+        width={150}
+      />
+    );
 
   let logoLink = `/${countryCode}/`;
   if (countryCode === "en") logoLink = "/";

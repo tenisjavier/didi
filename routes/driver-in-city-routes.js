@@ -37,9 +37,7 @@ const driverInCityRoutesInit = async (graphql, createPage) => {
     // create image name depending on country
     let img = `${country.code}.DrvHero.bgImage`;
     // create path depending on the language and category
-    let path = `/${country.code}/driver/conductor-en-${slug}/`;
-    if (country.code === "mx")
-      path = `/${country.code}/conductor/conductor-en-${slug}/`;
+    let path = `/${country.code}/conductor/conductor-en-${slug}/`;
     if (!sslCountries.includes(country.code))
       path = `/${country.code}/driver/driver-${slug}/`;
 

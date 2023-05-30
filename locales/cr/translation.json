@@ -228,7 +228,7 @@
   "DrvCityList.desc": "Descubre las ciudades de Costa Rica donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/cr/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/cr/conductor/conductor-en-{{city}}/",
   "FleetHero.title": "DiDi Fleet: Dejá que tu carro produzca por vos",
   "FleetHero.desc": "Vos ponés el carro y DiDi Fleet te ayuda a encontrar un usuario conductor para alquilarlo y generar ganancias.",
   "FleetHero.textColor": "white",

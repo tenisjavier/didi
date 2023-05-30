@@ -417,7 +417,7 @@
   "DrvCityList.desc": "Descubre las ciudades de Ecuador donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/ec/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/ec/conductor/conductor-en-{{city}}/",
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
