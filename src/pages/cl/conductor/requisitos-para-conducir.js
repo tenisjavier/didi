@@ -18,8 +18,7 @@ const RequisitosSocio = ({ data }) => {
     return image.title === "mx.DrvRequirementColumns.image";
   });
   if (DrvRequirementColumnsImage) {
-    DrvRequirementColumnsImage.pop();
-    DrvRequirementColumnsImage.splice(n, 1);
+    DrvRequirementColumnsImage.splice(1, 1);
   }
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";

@@ -21,7 +21,7 @@ const RequisitosSocio = ({ data }) => {
     return image.title === "mx.VehicleRequirementCTA.image";
   })[0];
   if (DrvRequirementColumnsImage) {
-    DrvRequirementColumnsImage.splice(arr, 1);
+    DrvRequirementColumnsImage.splice(1, 1);
     DrvRequirementColumnsImage.pop();
     DrvRequirementColumnsImage.pop();
   }

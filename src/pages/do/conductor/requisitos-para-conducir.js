@@ -19,7 +19,7 @@ const RequisitosSocio = ({ data }) => {
   });
   //? if statement to remove the second last image that is taxi since it is not on DO yet
   if (DrvRequirementColumnsImage.length >= 2) {
-    DrvRequirementColumnsImage.splice(2, 1);
+    DrvRequirementColumnsImage.splice(1, 1);
     DrvRequirementColumnsImage.splice(-2, 1);
   }
   const VehicleRequirementImage = images.filter((image) => {
