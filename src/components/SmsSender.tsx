@@ -53,12 +53,12 @@ function SmsSender({ smsType }: any) {
         onChange={value => handleOnChange(value)}
       />
         <div>
-          {isValid ? <div className="text-green-500 mt-2 text-sm">Valid number</div> : <div className="text-red-500 mt-2 text-sm">Invalid number</div>}
+          {isValid ? <div className="text-green-500 mt-2 text-sm">Numero OK</div> : <div className="text-red-500 mt-2 text-sm">Checa numero de celular</div>}
           {messageSent ? (
             <div className='max-w-325px'>
               <button className='hover:bg-orange-700 active:bg-orange-900 lg:text-xs xl:text-base border-transparent text-white font-bold rounded-full bg-orange-primary text-lg md:text-base my-4 lg:ml-4 xl:ml-0 py-2 px-6 bg-orange hover:cursor-pointer max-w-235px'
                 type='button'
-                onClick={resetMessageStatus}>Mensaje enviada!</button>
+                onClick={resetMessageStatus}>Enlace enviado a tu cellular!</button>
             </div>
           ) : (
             <button className={`hover:bg-orange-700 active:bg-orange-900 ${!isValid ? 'disabled:border-red-950 disabled:opacity-75' : ''} lg:text-xs xl:text-base border-transparent text-white font-bold rounded-full bg-orange-primary text-lg md:text-base my-4 lg:ml-4 xl:ml-0 py-2 px-6 bg-orange hover:cursor-pointer max-w-235px`}
