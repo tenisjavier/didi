@@ -19,9 +19,13 @@ const RequisitosSocio = ({ data }) => {
   });
   if (DrvRequirementColumnsImage) {
     DrvRequirementColumnsImage.pop();
+    DrvRequirementColumnsImage.splice(n, 1);
   }
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";
+  })[0];
+  const BankInfoCTAImage = images.filter((image) => {
+    return image.title === "mx.DiDiPayPhoneWhy.image";
   })[0];
   const faqDrv = data.allContentfulProduct.nodes;
 
@@ -29,12 +33,12 @@ const RequisitosSocio = ({ data }) => {
     <Layout index={false}>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
-        images={DrvRequirementColumnsImage.reverse()}
+        images={DrvRequirementColumnsImage}
       ></DrvRequirementColumns>
       <VehicleRequirementCTA
         image={VehicleRequirementImage}
       ></VehicleRequirementCTA>
-      <BankInfoCTA></BankInfoCTA>
+      <BankInfoCTA image={BankInfoCTAImage}></BankInfoCTA>
       <FaqList faqs={faqDrv[0].faq}></FaqList>
       <KnowMoreBanner></KnowMoreBanner>
     </Layout>
@@ -52,6 +56,7 @@ export const query = graphql`
             "mx.RequirementHero.bgImage"
             "mx.VehicleRequirementCTA.image"
             "mx.DrvRequirementColumns.image"
+            "mx.DiDiPayPhoneWhy.image"
           ]
         }
       }

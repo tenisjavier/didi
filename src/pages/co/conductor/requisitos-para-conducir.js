@@ -20,6 +20,9 @@ const RequisitosSocio = ({ data }) => {
   const VehicleRequirementImage = images.filter((image) => {
     return image.title === "mx.VehicleRequirementCTA.image";
   })[0];
+  const BankInfoCTAImage = images.filter((image) => {
+    return image.title === "mx.DiDiPayPhoneWhy.image";
+  })[0];
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
@@ -31,7 +34,7 @@ const RequisitosSocio = ({ data }) => {
       <VehicleRequirementCTA
         image={VehicleRequirementImage}
       ></VehicleRequirementCTA>
-      <BankInfoCTA></BankInfoCTA>
+      <BankInfoCTA image={BankInfoCTAImage}></BankInfoCTA>
       <FaqList faqs={faqDrv[0].faq}></FaqList>
       <KnowMoreBanner></KnowMoreBanner>
     </Layout>
@@ -49,6 +52,7 @@ export const query = graphql`
             "mx.RequirementHero.bgImage"
             "mx.VehicleRequirementCTA.image"
             "mx.DrvRequirementColumns.image"
+            "mx.DiDiPayPhoneWhy.image"
           ]
         }
       }
