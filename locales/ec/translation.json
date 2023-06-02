@@ -718,7 +718,7 @@
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",
   "SBPax.desc": "Pide un Viaje",
-  "RequirementHero.title": "Requisitos para registrarte como usuario conductor",
+  "RequirementHero.title": "Requisitos para registrarte como socio conductor",
   "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
@@ -726,11 +726,11 @@
   "DrvRequirementColumns.columns": [
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n 3) Registra tu vehículo \n Documento único de Matrícula \n El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) Registra tu vehículo: Documento único de Matrícula. El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",

@@ -26,7 +26,7 @@ const RequisitosSocio = ({ data }) => {
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={false}>
+    <Layout>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
         images={DrvRequirementColumnsImage}
@@ -78,7 +78,7 @@ export const query = graphql`
                 contentful_id
                 title
                 description
-                gatsbyImageData(width: 800)
+                gatsbyImageData(width: 400)
                 __typename
               }
             }

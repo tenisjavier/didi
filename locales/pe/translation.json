@@ -472,11 +472,11 @@
   "DrvRequirementColumns.columns": [
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n Antecedentes Penales \n 3) Registra tu vehículo \n Seguro del auto \n El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir y antecedentes penales \n 3) Registra tu vehículo: Seguro del auto. El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n Antecedentes Penales \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir y antecedentes penales \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",
