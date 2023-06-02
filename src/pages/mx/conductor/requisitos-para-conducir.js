@@ -51,9 +51,9 @@ export const query = graphql`
         title: {
           in: [
             "mx.RequirementHero.bgImage"
-            "mx.VehicleRequirementCTA.image"
             "mx.DrvRequirementColumns.image"
             "mx.DiDiPayPhoneWhy.image"
+            "mx.VehicleRequirementCTA.image"
           ]
         }
       }

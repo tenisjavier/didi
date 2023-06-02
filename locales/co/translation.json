@@ -780,31 +780,31 @@
   "SBPax.desc": "Pide un Viaje",
   "SBFleet.title": "Renta tus Autos",
   "SBFleet.desc": "Ganancias Extras",
-  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
-  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.title": "Requisitos para registrarte como arrendador o convertirse en socio flotilla",
+  "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducción \n 3) Registra tu vehículo \n Licencia de tránsito \n Seguro del auto (SOAT) \n El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Tengo vehículo y quiero conducir:",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: licencia de conducción \n 3) Registra tu vehículo: Licencia de tránsito y seguro del auto (SOAT). El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos \n Licencia de conduccion \n 3) Agrega tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Licencia de tránsito \n Seguro del auto (SOAT) \n El vehículo debe ser modelo 2000 en adelante \n 4) Selecciona un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio Flotilla: Tengo vehículo y quiero que alguien más conduzca:",
+      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos: licencia de conduccion \n 3) Agrega tus coches con los siguientes documentos para cada coche: Licencia de tránsito y seguro del auto (SOAT). El vehículo debe ser modelo 2000 en adelante \n 4) Selecciona un conductor para alquilarle tu coche a través de la app. Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conduccion \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Quiero conducir y no tengo vehículo",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conduccion \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Taxi",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducción \n 3) Registra tu vehículo \n Licencia de tránsito \n Seguro del auto (SOAT) \n Tarjeta de operación \n Tarjeta de control (Tarjetón) \n El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Taxi",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducción \n 3) Registra tu vehículo: Licencia de tránsito, Seguro del auto (SOAT), Tarjeta de operación y Tarjeta de control (Tarjetón). El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Moto",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducción \n 3) Registra tu vehículo \n Licencia de tránsito \n Seguro del vehiculo (SOAT) \n El vehículo debe ser modelo 2000 en adelante \n La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Moto",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducción \n 3) Registra tu vehículo: Licencia de tránsito y seguro del vehiculo (SOAT). El vehículo debe ser modelo 2000 en adelante. La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",

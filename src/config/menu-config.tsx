@@ -81,6 +81,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/cl/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/cl/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {
@@ -331,6 +335,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/ar/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/ar/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {
@@ -399,6 +407,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/pe/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/pe/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {
@@ -489,6 +501,10 @@ const menuLinks: AllMenuInterface = {
           text: "Historias de Éxito",
           url: "/co/conductor/historias-de-exito/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/co/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {
@@ -751,6 +767,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/cr/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/cr/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {
@@ -819,6 +839,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/do/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/do/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {
@@ -897,6 +921,10 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/ec/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/ec/conductor/requisitos-para-conducir/"
+        }
       ],
     },
     {

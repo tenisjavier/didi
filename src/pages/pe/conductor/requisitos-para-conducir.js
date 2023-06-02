@@ -3,10 +3,8 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import RequirementHero from "../../../components/sections/RequirementHero";
 import DrvRequirementColumns from "../../../components/sections/DrvRequirementColumns";
-import VehicleRequirementCTA from "../../../components/sections/VehicleRequirementCTA";
 import FaqList from "../../../components/sections/FaqList";
 import BankInfoCTA from "../../../components/sections/BankInfoCTA";
-import FindInfoCTA from "../../../components/sections/FindInfoCTA";
 import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 
 const RequisitosSocio = ({ data }) => {
@@ -17,9 +15,6 @@ const RequisitosSocio = ({ data }) => {
   const DrvRequirementColumnsImage = images.filter((image) => {
     return image.title === "mx.DrvRequirementColumns.image";
   });
-  const VehicleRequirementImage = images.filter((image) => {
-    return image.title === "mx.VehicleRequirementCTA.image";
-  })[0];
   if (DrvRequirementColumnsImage) {
     DrvRequirementColumnsImage.splice(1, 1);
     DrvRequirementColumnsImage.pop();
@@ -31,14 +26,11 @@ const RequisitosSocio = ({ data }) => {
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={false}>
+    <Layout>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
         images={DrvRequirementColumnsImage}
       ></DrvRequirementColumns>
-      <VehicleRequirementCTA
-        image={VehicleRequirementImage}
-      ></VehicleRequirementCTA>
       <BankInfoCTA image={BankInfoCTAImage}></BankInfoCTA>
       <FaqList faqs={faqDrv[0].faq}></FaqList>
       <KnowMoreBanner></KnowMoreBanner>
@@ -55,7 +47,6 @@ export const query = graphql`
         title: {
           in: [
             "mx.RequirementHero.bgImage"
-            "mx.VehicleRequirementCTA.image"
             "mx.DrvRequirementColumns.image"
             "mx.DiDiPayPhoneWhy.image"
           ]
@@ -87,7 +78,7 @@ export const query = graphql`
                 contentful_id
                 title
                 description
-                gatsbyImageData(width: 800)
+                gatsbyImageData(width: 400)
                 __typename
               }
             }
