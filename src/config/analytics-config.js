@@ -289,7 +289,10 @@ const insertBtnParams = () => {
 
     //? if referral? save referral source
 
-    if (channelId === 17) campaign = referringDomain;
+    if (channelId === 17) {
+      campaign = referringDomain;
+      c = referringDomain;
+    }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
     newUrl.searchParams.set("location_country", countryLang[0]);
