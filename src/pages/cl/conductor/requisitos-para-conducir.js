@@ -17,6 +17,7 @@ const RequisitosSocio = ({ data }) => {
   });
   if (DrvRequirementColumnsImage) {
     DrvRequirementColumnsImage.splice(1, 1);
+    DrvRequirementColumnsImage.splice(1, 1);
   }
   const BankInfoCTAImage = images.filter((image) => {
     return image.title === "mx.DiDiPayPhoneWhy.image";
