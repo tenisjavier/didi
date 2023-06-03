@@ -89,6 +89,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en las categorías express y taxi, ganando más y manejando menos.",
+    },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
@@ -481,6 +485,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Conduce y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
     },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
+    },
     "/conductor/moto/": {
       title: "DiDi Moto - Conduce y Genera Dinero",
       desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
@@ -544,6 +552,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Conduce y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en la categoría express y empieza a ganar más y manejando menos.",
     },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -578,6 +590,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/": {
       title: "DiDi Conductor - Manejá y Generá Dinero",
       desc: "DiDi Conductor, registrate como socio conductor en la categoría de express o taxi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Registrate como socio conductor en las categorías express, fleet, taxi y moto, ganando más y manejando menos.",
     },
     "/didi-fleet/": {
       title: "DiDi Fleet - Alquilá tus autos y generá ganancias",
@@ -638,7 +654,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
-
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
     "/sobre-didi/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -709,6 +728,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Ingresos Extra",
       desc: "DiDi Conductor en Colombia. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en las categorías express, moto, fleet y taxi, ganando más y manejando menos.",
     },
     "/didimas/": {
       title: "Promociones DiDiMás+ para Conductores",
@@ -808,6 +831,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en la categoría de express, ganando más y manejando menos.",
     },
     "/moto/": {
       title: "DiDi Moto - Maneja y Genera Dinero",
@@ -980,6 +1007,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/": {
       title: "DiDi Conductor - Manejá y Generá Dinero",
       desc: "DiDi Conductor. Revisá los requisitos. Registrate como socio conductor en la categoría express ganando más y conduciendo menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir en DiDi Conductor",
+      desc: "Requisitos para Conducir en DiDi Conductor. Regístrate como socio conductor en las categorías express y fleet, ganando más y manejando menos.",
     },
     "/food/": {
       title: "Pedí comida a través de DiDi Food",

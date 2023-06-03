@@ -484,7 +484,7 @@
   "SBFoodBusiness.desc": "Crece tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Gana con Más Libertad",
-  "RequirementHero.title": "Requisitos para registrarte como socio conductor",
+  "RequirementHero.title": "Requisitos para registrarte como Socio Conductor",
   "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
@@ -494,10 +494,6 @@
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir",
       "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Cédula de identidad y licencia de conducir \n 3) Registra tu vehículo: Permiso de circulación. El vehículo debe ser modelo 2008 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
-    },
-    {
-      "title": "Socio Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Cédula de identidad y licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor de Taxi",
