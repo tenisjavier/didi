@@ -233,7 +233,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Pay FAQ",
-          url: "/mx/didipay-preguntas-frecuentes/",
+          url: "/mx/didipay/preguntas-frecuentes/",
         },
         {
           text: "DiDi Préstamos",

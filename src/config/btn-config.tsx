@@ -195,8 +195,8 @@ const btnLinks: AllBtnInterface = {
     smsCTAText: "Descargar en mi celular",
     prestamosFAQLink: "/mx/prestamos/preguntas-frecuentes/",
     prestamosFAQText: "Preguntas frecuentes",
-    payFAQLink: "/mx/didipay-preguntas-frecuentes/",
-    payFAQText: "Preguntas frecuentes"
+    payFAQLink: "/mx/didipay/preguntas-frecuentes/",
+    payFAQText: "Preguntas frecuentes",
   },
   mxen: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",

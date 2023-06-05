@@ -287,7 +287,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pay Negocios - Aumenta tus ventas",
       desc: "DiDi Pay para Negocios en México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
-    "/didipay-preguntas-frecuentes/": {
+    "/didipay/preguntas-frecuentes/": {
       title: "Preguntas Frecuentes sobre DiDi Pay.",
       desc: "Revisa nuestras preguntas frecuentes sobre DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },

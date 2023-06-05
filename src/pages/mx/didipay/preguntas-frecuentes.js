@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import DiDiPayFAQHero from "../../components/sections/DiDiPayFAQHero";
-import DiDiPayFAQs from "../../components/sections/DiDiPayFAQs";
-import FaqList from "../../components/sections/FaqList";
+import Layout from "../../../components/Layout";
+import DiDiPayFAQHero from "../../../components/sections/DiDiPayFAQHero";
+import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
+import FaqList from "../../../components/sections/FaqList";
 
 const DiDiPayFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -28,8 +28,8 @@ const DiDiPayFAQ = ({ data }) => {
       faq.title === "¿Qué hacer si la transacción falla?"
     );
   });
-  console.log(faqDiDiPay)
-  let link = `/${faqDiDiPay[0].country.code}/didipay-preguntas-frecuentes/`;
+
+  let link = `/${faqDiDiPay[0].country.code}/didipay/preguntas-frecuentes/`;
 
   return (
     <Layout schema="faq">
@@ -38,11 +38,13 @@ const DiDiPayFAQ = ({ data }) => {
         image={homeHeroImage}
       ></DiDiPayFAQHero>
       <DiDiPayFAQs data={faqDiDiPay.reverse()}></DiDiPayFAQs>
-      {<FaqList
-        title={"Preguntas Frecuentes DiDi Pay"}
-        faqs={faqDiDiPay}
-        link={link}
-      ></FaqList>}
+      {
+        <FaqList
+          title={"Preguntas Frecuentes DiDi Pay"}
+          faqs={faqDiDiPay}
+          link={link}
+        ></FaqList>
+      }
     </Layout>
   );
 };

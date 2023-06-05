@@ -6,7 +6,6 @@ import FaqHero from "../../components/sections/FaqHero";
 import FoodFaqHero from "../../components/sections/FoodFaqHero";
 import FaqContent from "../../components/sections/FaqContent";
 import FaqList from "../../components/sections/FaqList";
-import DiDiPayFAQ from "../mx/didipay-preguntas-frecuentes";
 
 const FaqsTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -21,10 +20,9 @@ const FaqsTemplate = ({ data }) => {
   const productName =
     data.contentfulFaq.product != null ? data.contentfulFaq.product.name : "";
 
-
   let productFaqs;
 
-  if(productName) {
+  if (productName) {
     productFaqs = data.allContentfulProduct.nodes.faq;
   }
 
@@ -33,14 +31,15 @@ const FaqsTemplate = ({ data }) => {
   let faqDiDiPay;
   let faqListTitle = "";
 
-  if(pathname.includes("didipay-preguntas-frecuentes")) {
+  if (pathname.includes("didipay/preguntas-frecuentes")) {
     faqDiDiPay = data.allContentfulFaq.nodes.filter((faq) => {
       return (
         faq.title === "¿Qué es DiDi Pay?" ||
         faq.title ===
           "¿Qué servicios puedo pagar con la billetera digital de DiDi Pay?" ||
         faq.title === "¿Cómo puedo pagar servicios desde la app de DiDi?" ||
-        faq.title === "¿Cómo puedo comprar una tarjeta de regalo con DiDi Pay?" ||
+        faq.title ===
+          "¿Cómo puedo comprar una tarjeta de regalo con DiDi Pay?" ||
         faq.title === "¿Cómo recargar saldo y megas desde la app de DiDi?" ||
         faq.title === "¿Qué puedo obtener con mi cuenta de DiDi Pay?" ||
         faq.title === "Vacaciones y CASHBACK con Santander" ||
@@ -48,12 +47,12 @@ const FaqsTemplate = ({ data }) => {
       );
     });
 
-    link = `/${data.contentfulFaq.country.code}/didipay-preguntas-frecuentes/`;
+    link = `/${data.contentfulFaq.country.code}/didipay/preguntas-frecuentes/`;
     btnType = "payFAQ";
     faqListTitle = "Preguntas Frecuentes DiDi Pay";
   }
 
-  if(pathname.includes("/prestamos/preguntas-frecuentes/")) {
+  if (pathname.includes("/prestamos/preguntas-frecuentes/")) {
     productFaqs = data.allContentfulProduct.nodes.filter((node) => {
       return node.name === data.contentfulFaq.product[0].name;
     });
@@ -84,17 +83,21 @@ const FaqsTemplate = ({ data }) => {
     <Layout schema="faq">
       {hero}
       <FaqContent title={title} content={content}></FaqContent>
-      
 
-      {productFaqs && productFaqs.map((product) => {
+      {productFaqs &&
+        productFaqs.map((product) => {
           return (
-            <FaqList faqs={product.faq} link={link} title={faqListTitle}></FaqList>
+            <FaqList
+              faqs={product.faq}
+              link={link}
+              title={faqListTitle}
+            ></FaqList>
           );
-      })}
+        })}
 
-      {faqDiDiPay &&
+      {faqDiDiPay && (
         <FaqList faqs={faqDiDiPay} link={link} title={faqListTitle}></FaqList>
-      }
+      )}
     </Layout>
   );
 };
@@ -142,8 +145,8 @@ export const query = graphql`
       }
     }
     allContentfulProduct(
-      filter: {country: {elemMatch: {code: {eq: $countryCode}}}}
-    )  {
+      filter: { country: { elemMatch: { code: { eq: $countryCode } } } }
+    ) {
       nodes {
         name
         country {
