@@ -33,6 +33,7 @@ const Banner = ({
   btnText,
   reverse,
 }: BannerProps) => {
+  console.log(height);
   return (
     <div
       className={`rounded py-4 ${bgColor && bgColor} text-${textColor} ${
