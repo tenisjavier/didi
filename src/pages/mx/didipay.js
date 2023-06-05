@@ -7,7 +7,6 @@ import DiDiPayFeatures from "../../components/sections/DiDiPayFeatures";
 import DiDiPayGrid from "../../components/sections/DiDiPayGrid";
 import DiDiPayBusinessCTA from "../../components/sections/DiDiPayBusinessCTA";
 import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
-import DiDiPayBanner from "../../components/sections/DiDiPayBanner";
 import DiDiPayCarousel from "../../components/sections/DiDiPayCarousel";
 import DiDiPayArticlesColumns from "../../components/sections/DiDiPayArticlesColumns";
 
@@ -28,9 +27,6 @@ const DiDiPay = ({ data }) => {
   const businessCTAImage = images.filter((image) => {
     return image.title === "mx.DiDiPayBusinessCTA.image";
   })[0];
-  const bannerImage = images.filter((image) => {
-    return image.title.indexOf("mx.DiDiPayBanner.image") !== -1;
-  })[0];
   const columnsImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiPayColumns.image") !== -1;
   });
@@ -47,7 +43,9 @@ const DiDiPay = ({ data }) => {
       <DiDiPayWhyDiDi image={whyDiDiImage}></DiDiPayWhyDiDi>
       <DiDiPayGrid images={columnsImages.reverse()}></DiDiPayGrid>
       <DiDiPayFeatures image={featuresImage}></DiDiPayFeatures>
-      <DiDiPayCarousel images={DiDiPayCarouselImages.reverse()}></DiDiPayCarousel>
+      <DiDiPayCarousel
+        images={DiDiPayCarouselImages.reverse()}
+      ></DiDiPayCarousel>
       <DiDiPayArticlesColumns data={data}></DiDiPayArticlesColumns>
       <DiDiPayBusinessCTA image={businessCTAImage}></DiDiPayBusinessCTA>
       <DiDiPayColumns></DiDiPayColumns>

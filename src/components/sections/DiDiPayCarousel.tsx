@@ -4,22 +4,22 @@ import Carousel, { CarouselProps } from "../Carousel";
 import Image from "../Image";
 
 interface DiDiPayCarouselProps {
-    images?: {
-      title: string;
-      description: string;
-      gatsbyImageData: React.ReactNode;
-    }[];
+  images?: {
+    title: string;
+    description: string;
+    gatsbyImageData: React.ReactNode;
+  }[];
 }
 
 const DiDiPayCarousel = ({ images }: DiDiPayCarouselProps) => {
   const props: CarouselProps = {
     slides: [],
-    images: images
+    images: images,
   };
 
   const banners = [
     {
-      title: "!Siempre a tiempo con tus pagos!",
+      title: "¡Siempre a tiempo con tus pagos!",
       desc: "Con DiDi Pay ya no te olvidarás de pagar tus servicios a tiempo",
     },
     {
@@ -29,25 +29,20 @@ const DiDiPayCarousel = ({ images }: DiDiPayCarouselProps) => {
     {
       title: "Mantente conectado",
       desc: "Recarga tiempo aire desde $10 m.n., en donde estés y al número que tú quieras",
-    }
-  ]
+    },
+  ];
 
-  if(images) {
+  if (images) {
     props.slides = images.map((img, index) => {
       return {
         title: banners[index].title,
         desc: banners[index].desc,
         bgColor: t("DiDiPayBanner.bgColor"),
         textColor: t("DiDiPayBanner.textColor"),
-        image: (
-          <Image
-            imageData={img}
-            imageStyle="z-10 my-10 w-56"
-          ></Image>
-        ),
+        image: <Image imageData={img} imageStyle="z-10 my-10 w-56"></Image>,
         justifyContent: "justify-around",
-        height: "h-auto"
-      }
+        height: "h-auto",
+      };
     });
   }
   return <Carousel {...props}></Carousel>;
