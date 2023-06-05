@@ -7,14 +7,28 @@ import Banner, { BannerProps } from "./Banner";
 function NextArrow(props: any) {
   const { onClick } = props;
   return (
-    <button className={"absolute z-50 right-5 top-1/2 transform -translate-y-1/2 text-4xl sm:text-2sm border-0 p-0 outline-0 bg-inherit cursor-pointer hover:font-bold m-0"} onClick={onClick}>→</button>
+    <button
+      className={
+        "text-white absolute z-50 right-5 top-1/2 transform -translate-y-1/2 text-4xl sm:text-2sm border-0 p-0 outline-0 bg-inherit cursor-pointer hover:font-bold m-0"
+      }
+      onClick={onClick}
+    >
+      →
+    </button>
   );
 }
 
 function PrevArrow(props: any) {
   const { onClick } = props;
   return (
-    <button className={"absolute z-50 left-5 top-1/2 transform -translate-y-1/2 text-4xl sm:text-2sm border-0 p-0 outline-0 bg-inherit cursor-pointer hover:font-bold m-0"} onClick={onClick}>←</button>
+    <button
+      className={
+        "text-white absolute z-50 left-5 top-1/2 transform -translate-y-1/2 text-4xl sm:text-2sm border-0 p-0 outline-0 bg-inherit cursor-pointer hover:font-bold m-0"
+      }
+      onClick={onClick}
+    >
+      ←
+    </button>
   );
 }
 
@@ -35,7 +49,7 @@ const Carousel = (props: CarouselProps) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
   };
   /* <Image imageData={image} imageStyle={imageStyle}></Image> */
   return (
@@ -43,10 +57,9 @@ const Carousel = (props: CarouselProps) => {
       {props.slides &&
         props.slides.map((sld) => {
           return <Banner {...sld}></Banner>;
-        })
-      }
+        })}
     </Slider>
   );
-}
+};
 
 export default Carousel;
