@@ -6,7 +6,7 @@ import FaqHero from "../../components/sections/FaqHero";
 import FoodFaqHero from "../../components/sections/FoodFaqHero";
 import FaqContent from "../../components/sections/FaqContent";
 import FaqList from "../../components/sections/FaqList";
-import {renderRichText} from "gatsby-source-contentful/rich-text";
+import { renderRichText } from "gatsby-source-contentful/rich-text";
 
 const FaqsTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -49,7 +49,7 @@ const FaqsTemplate = ({ data }) => {
     });
 
     link = `/${data.contentfulFaq.country.code}/didipay/preguntas-frecuentes/`;
-    btnType = "payFAQ";
+    btnType = "payment";
     faqListTitle = "Preguntas Frecuentes DiDi Pay";
   }
 
@@ -59,7 +59,7 @@ const FaqsTemplate = ({ data }) => {
     });
 
     link = `/${data.contentfulFaq.country.code}/prestamos/preguntas-frecuentes/`;
-    btnType = "prestamosFAQ";
+    btnType = "prestamosPax";
     faqListTitle = "Más preguntas frecuentes DiDi Préstamos";
   }
 
@@ -84,12 +84,12 @@ const FaqsTemplate = ({ data }) => {
   let faqDesc = "";
   let contentlized = renderRichText(content);
 
-  contentlized.forEach(function(v, i){
-    if(v.type === "p") {
-      v.props.children.forEach(function(j) {
-        if(j.type === "b") {
+  contentlized.forEach(function (v, i) {
+    if (v.type === "p") {
+      v.props.children.forEach(function (j) {
+        if (j.type === "b") {
           faqDesc += j.props.children;
-        } else if(j.type === "a"){
+        } else if (j.type === "a") {
           faqDesc += j.props.children[0];
         } else {
           faqDesc += j;
@@ -98,7 +98,7 @@ const FaqsTemplate = ({ data }) => {
     }
   });
 
-  if(faqDesc.length > 160) {
+  if (faqDesc.length > 160) {
     faqDesc = faqDesc.substring(0, 160) + "...";
   }
 

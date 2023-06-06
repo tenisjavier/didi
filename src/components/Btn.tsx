@@ -32,8 +32,6 @@ type BtnType =
   | "foodDeliveryHeroEn"
   | "prestamosPax"
   | "prestamosDrv"
-  | "prestamosFAQ"
-  | "payFAQ"
   | "bothPrestamos"
   | "entrega"
   | "entregaBusiness"
@@ -132,12 +130,6 @@ const Btn = ({
     btnText = btnText || btnData.paxText;
   } else if (btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA") {
     btnText = btnText || btnData.smsCTAText;
-  } else if (btnType === "prestamosFAQ" ) {
-    btnLink = btnData.prestamosFAQLink;
-    btnText = btnData.prestamosFAQText;
-  } else if(btnType === "payFAQ") {
-    btnLink = btnData.payFAQLink;
-    btnText = btnData.payFAQText;
   }
 
   const handleClick = (e: any) => {
