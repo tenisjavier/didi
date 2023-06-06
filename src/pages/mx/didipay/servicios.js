@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import DiDiPayServiceHero from "../../../components/sections/DiDiPayServiceHero";
 import DiDiPayServiceWhy from "../../../components/sections/DiDiPayServiceWhy";
 import DiDiPayServiceGrid from "../../../components/sections/DiDiPayServiceGrid";
-import DiDiPayBanner from "../../../components/sections/DiDiPayBanner";
+import DiDiPayCarousel from "../../../components/sections/DiDiPayCarousel";
 import DiDiPayServiceColumns from "../../../components/sections/DiDiPayServiceColumns";
 
 const DiDiPayService = ({ data }) => {
@@ -21,19 +21,19 @@ const DiDiPayService = ({ data }) => {
   const columnsImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiPayServiceColumns.image") !== -1;
   });
-  const bannerImage = images.filter((image) => {
-    return image.title.indexOf("mx.DiDiPayBanner.image") !== -1;
-  })[0];
+  const DiDiPayCarouselImages = images.filter((image) => {
+    return image.title === "mx.DiDiPayCarousel.image";
+  });
 
   return (
-    <Layout index={false}>
+    <Layout>
       <DiDiPayServiceHero
         bgImage={homeHeroBgImage}
         mobileBgImage={homeHeroMobileBgImage}
       ></DiDiPayServiceHero>
       <DiDiPayServiceWhy image={whyDiDiImage}></DiDiPayServiceWhy>
       <DiDiPayServiceGrid images={columnsImages.reverse()}></DiDiPayServiceGrid>
-      <DiDiPayBanner image={bannerImage}></DiDiPayBanner>
+      <DiDiPayCarousel images={DiDiPayCarouselImages.reverse()}></DiDiPayCarousel>
       <DiDiPayServiceColumns></DiDiPayServiceColumns>
     </Layout>
   );
@@ -46,7 +46,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayServiceHero.bgImage)|(mx.DiDiPayServiceHeroMobile.bgImage)|(mx.DiDiPayServiceWhy.image)|(mx.DiDiPayServiceColumns.image)|(mx.DiDiPayBanner.image)/"
+          regex: "/(mx.DiDiPayServiceHero.bgImage)|(mx.DiDiPayServiceHeroMobile.bgImage)|(mx.DiDiPayServiceWhy.image)|(mx.DiDiPayServiceColumns.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)/"
         }
       }
     ) {

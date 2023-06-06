@@ -568,7 +568,7 @@
   "SafetyGridBeforeTrip.columns": [
     {
       "title": "1. Verificación facial del pasajero",
-      "desc": "Si el primer viaje del pasajero es en un horario nocturno, además de la documentación oficial, se deberá realizar una validación facial para poder solicitar el viaje."
+      "desc": "Verificamos la identidad del usuario para darte mayor seguridad en el viaje."
     },
     {
       "title": "2. Anonimización del Teléfono",
@@ -1203,6 +1203,49 @@
       "textColor": "gray-primary",
       "btnText": "Preguntas Frecuentes",
       "btnLink": "/mx/didipay/preguntas-frecuentes/",
+    }
+  ],
+  "DiDiPayPhoneHero.title": "Recarga tiempo aire y megas a cualquier número desde tu celular",
+  "DiDiPayPhoneHero.desc": "Haz recargas desde $10 m.n. sin comisiones.",
+  "DiDiPayPhoneHero.btnMode": "light",
+  "DiDiPayPhoneHero.textColor": "white",
+  "DiDiPayPhoneHero.bgColor": "bg-orange-primary",
+  "DiDiPayPhoneWhy.title": "Cómo recargar tiempo aire y megas con DiDi Pay",
+  "DiDiPayPhoneWhy.desc": "1. Abre tu App DiDi y ve a la sección. \"Mi Billetera\" \n2. Ingresa el número de teléfono al que quieres hacer la recarga. \n3. Selecciona el proveedor de telefonía y la cantidad o paquete que deseas. \n4. ¡Listo! paga sin comisiones con cualquier tarjeta. Disfruta de tus cupones de descuento.",
+  "DiDiPayPhoneWhy.textColor": "gray-primary",
+  "DiDiPayPhoneFeatures.title": "Tiempo Aire y megas",
+  "DiDiPayPhoneFeatures.desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más.",
+  "DiDiPayPhoneFeatures.bullets": [
+    "Recarga tiempo aire y megas a cualquier número desde $10 m.n.",
+    "Usa cualquier tarjeta de crédito o débito para hacer tus pagos de recargas.",
+    "Olvídate de las filas, las comisiones y los horarios."
+  ],
+  "DiDiPayPhoneFeatures.btnMode": "primary",
+  "DiDiPayPhoneFeatures.textColor": "gray-primary",
+  "DiDiPayPhoneFeatures.bgColor": "bg-gray-light",
+  "DiDiPayPhoneColumns.title": "Tiempo aire para cualquier número y desde $10 m.n.",
+  "DiDiPayPhoneColumns.desc": "Recarga saldo Telcel, Movistar, Bait y otros desde tu app DiDi. Ponle saldo a cualquier número de forma rápida y sin comisiones.",
+  "DiDiPayPhoneColumns.bgColor": "bg-gray-light",
+  "DiDiPayPhoneColumns.columns": [
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnMode": "light",
+      "btnText": "¿Qué es DiDi Pay?",
+      "btnLink": "/mx/didipay/"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "¿Cómo funciona DiDi Pay?",
+      "btnLink": "/mx/didipay/preguntas-frecuentes/",
+      "btnMode": "light"
+    },
+    {
+      "title": "",
+      "textColor": "gray-primary",
+      "btnText": "Contáctanos",
+      "btnLink": "/mx/didipay/preguntas-frecuentes/",
       "btnMode": "light"
     }
   ],
@@ -1470,7 +1513,7 @@
     },
     {
       "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos \n INE | IFE \n Constancia de Situación Fiscal (opcional) \n 3) Agrega tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Tarjeta de circulación Póliza de seguro del auto \n 4) Selecciona un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos \n INE | IFE \n Constancia de Situación Fiscal (opcional) \n 3) Agrega tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Tarjeta de circulación \n Póliza de seguro del auto \n 4) Selecciona un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",

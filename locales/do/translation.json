@@ -300,7 +300,7 @@
   "DrvCityList.desc": "Descubre las ciudades de República Dominicana donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/do/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/do/conductor/conductor-en-{{city}}/",
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
@@ -640,7 +640,7 @@
   "SBFoodBusiness.desc": "Crecé tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Ganá con Más Libertad",
-  "RequirementHero.title": "Requisitos para registrarte como conductor o convertirse en socio flotilla",
+  "RequirementHero.title": "Requisitos para registrarte como Socio Conductor ",
   "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
@@ -648,23 +648,15 @@
   "DrvRequirementColumns.columns": [
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n 3) Registra tu vehículo \n Certificado propiedad de vehículo \n Seguro del auto \n El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
-    },
-    {
-      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "1) Identificación oficial (INE/IFE) \n 2) Tarjeta de circulación \n 3) Póliza de seguro del auto \n 4) Registro Federal de Contribuyentes (RFC)"
-    },
-    {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) Registra tu vehículo: Certificado de propiedad de vehículo y seguro del auto. El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Moto",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducir \n 3) Registra tu vehículo \n Certificado de propiedad de vehículo \n Seguro del vehiculo \n Matricula o Carta de ruta \n El vehículo debe ser modelo 2000 en adelante \n La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) Registra tu vehículo: Certificado de propiedad de vehículo, seguro del vehiculo y matricula o carta de ruta. El vehículo debe ser modelo 2000 en adelante. La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",
-  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
+  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n Para conocer la regulación aplicable en tu ciudad comunícate al 800 725 8888 o envía un correo a help.driver@mx.didiglobal.com. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
   "BankInfoCTA.title": "Actualiza tu información bancaria",
   "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
   "BankInfoCTA.bgColor": "bg-gray-light",

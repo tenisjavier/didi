@@ -184,7 +184,7 @@
   "DrvCityList.desc": "Descubre las ciudades de Colombia donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/co/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/co/conductor/conductor-en-{{city}}/",
   "DrvColumns.textColor": "gray-primary",
   "DrvColumns.bgColor": "bg-white",
   "DrvColumns.columns": [
@@ -267,7 +267,7 @@
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
   "FleetSocioCTA.title": "Genera en promedio $1.200.000* alquilando tu carro  por mes",
-  "FleetSocioCTA.desc": "Genera en promedio $1.200.000* alquilando tu carro  por mes y recibe hasta $1.500.000** EXTRA por cada carro que alquiles usando la app y que complete el número de arrendamientos  en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Colombia.\n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi",
+  "FleetSocioCTA.desc": "Genera en promedio $1.200.000* alquilando tu carro  por mes y recibe hasta $2.000.000** EXTRA por cada carro que alquiles usando la app y que complete el número de arrendamientos  en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Colombia.\n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi",
   "FleetSocioCTA.btnText": "Conoce Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
@@ -780,35 +780,35 @@
   "SBPax.desc": "Pide un Viaje",
   "SBFleet.title": "Renta tus Autos",
   "SBFleet.desc": "Ganancias Extras",
-  "RequirementHero.title": "Requisitos para registrarte como conductor o convertirse en socio flotilla",
+  "RequirementHero.title": "Requisitos para registrarte en DiDi Conductor o convertirse en Socio Flotilla",
   "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducción \n 3) Registra tu vehículo \n Licencia de tránsito \n Seguro del auto (SOAT) \n El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Tengo vehículo y quiero conducir:",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: licencia de conducción \n 3) Registra tu vehículo: Licencia de tránsito y seguro del auto (SOAT). El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos \n Licencia de conduccion \n 3) Agrega tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Licencia de tránsito Seguro del auto (SOAT) \n El vehículo debe ser modelo 2000 en adelante \n 4) Selecciona un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio Flotilla: Tengo vehículo y quiero que alguien más conduzca:",
+      "desc": "1) Descarga DiDi Fleet \n 2) Sube tus documentos: licencia de conduccion \n 3) Agrega tus coches con los siguientes documentos para cada coche: Licencia de tránsito y seguro del auto (SOAT). El vehículo debe ser modelo 2000 en adelante \n 4) Selecciona un conductor para alquilarle tu coche a través de la app. Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conduccion \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Quiero conducir y no tengo vehículo",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conduccion \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Taxi",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducción \n 3) Registra tu vehículo \n Licencia de tránsito \n Seguro del auto (SOAT) \n Tarjeta de operación \n Tarjeta de control (Tarjetón) \n El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Taxi",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducción \n 3) Registra tu vehículo: Licencia de tránsito, Seguro del auto (SOAT), Tarjeta de operación y Tarjeta de control (Tarjetón). El vehículo debe ser modelo 2000 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Moto",
-      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos \n Licencia de conducción \n 3) Registra tu vehículo \n Licencia de tránsito \n Seguro del vehiculo (SOAT) \n El vehículo debe ser modelo 2000 en adelante \n La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio arrendador: Moto",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducción \n 3) Registra tu vehículo: Licencia de tránsito y seguro del vehiculo (SOAT). El vehículo debe ser modelo 2000 en adelante. La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",
-  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
+  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n Para conocer la regulación aplicable en tu ciudad comunícate al 800 725 8888 o envía un correo a help.driver@mx.didiglobal.com. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
   "BankInfoCTA.title": "Actualiza tu información bancaria",
   "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
   "BankInfoCTA.bgColor": "bg-gray-light",

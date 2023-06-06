@@ -228,13 +228,13 @@
   "DrvCityList.desc": "Descubre las ciudades de Costa Rica donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/cr/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/cr/conductor/conductor-en-{{city}}/",
   "FleetHero.title": "DiDi Fleet: Dejá que tu carro produzca por vos",
   "FleetHero.desc": "Vos ponés el carro y DiDi Fleet te ayuda a encontrar un usuario conductor para alquilarlo y generar ganancias.",
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
   "FleetSocioCTA.title": "Generá en promedio ¢360.000* alquilando tu carro por mes",
-  "FleetSocioCTA.desc": "Generá en promedio ¢360.000* alquilando tu carro por mes y recibí hasta ¢180.000** EXTRA por cada carro que alquiles usando la app y que complete el número de viajes en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Costa Rica. \n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi ",
+  "FleetSocioCTA.desc": "Generá en promedio ¢360.000* alquilando tu carro por mes y recibí hasta ¢280.000** EXTRA por cada carro que alquiles usando la app y que complete el número de viajes en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Costa Rica. \n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi ",
   "FleetSocioCTA.btnText": "Conocé Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
@@ -683,31 +683,31 @@
   "SBFoodBusiness.desc": "Crecé tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Ganá con Más Libertad",
-  "RequirementHero.title": "Requisitos para registrarte como conductor o convertirse en socio flotilla",
-  "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
+  "RequirementHero.title": "Requisitos para registrarte como Socio Conductor o Socio Flotilla",
+  "RequirementHero.desc": "Elegí cuando conectarte, genera ingresos y conectate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos Licencia de Conducir \n 3) Registrá tu vehículo \n Marchamo (Derecho de circulación) \n Seguro \n El vehículo debe ser modelo 2009 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio Conductor: Tengo vehiculo y quiero conducir:",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) Registrá tu vehículo: Marchamo (Derecho de circulación) y seguro. El vehículo debe ser modelo 2009 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "1) Descargá DiDi Fleet \n 2) Subí tus documentos \n Licencia de Conducir \n Selfie con licencia de conducir \n 3) Agregá tus coches \n Para subirlos a tu flotilla necesitarás los siguientes documentos para cada coche: \n Marchamo (Derecho de circulación) \n Seguro \n El vehículo debe ser modelo 2009 en adelante \n 4) Seleccioná un conductor para alquilarle tu coche a través de la app \n Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descargá DiDi Fleet \n 2) Subí tus documentos: Licencia de conducir, selfie con licencia de conducir \n 3) Agregá tus coches con los siguientes documentos para cada coche: Marchamo (Derecho de circulación) y seguro. El vehículo debe ser modelo 2009 en adelante \n 4) Seleccioná un conductor para alquilarle tu coche a través de la app. Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos \n Licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "title": "Socio Conductor: Quiero conducir y no tengo vehículo",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Taxi",
-      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos \n Licencia de Conducir \n 3) Registrá tu vehículo \n Marchamo (Derecho de circulación) \n Seguro \n Código de conductor \n El vehículo debe ser modelo 2004 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) Registrá tu vehículo: Marchamo (Derecho de circulación), seguro, código de conductor. El vehículo debe ser modelo 2004 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",
-  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
+  "VehicleRequirementCTA.desc": "Para aceptar un vehículo tendrá que estar en buen estado físico (sin daños estéticos), contar con 4 puertas, aire acondicionado y bolsas de aire, así como cumplir con los años de antigüedad mínimos en tu ciudad. \n Para conocer la regulación aplicable en tu ciudad comunícate al 800 725 8888 o envía un correo a help.driver@mx.didiglobal.com. \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)",
   "BankInfoCTA.title": "Actualiza tu información bancaria",
   "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
   "BankInfoCTA.bgColor": "bg-gray-light",

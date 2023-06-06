@@ -5,6 +5,7 @@ import DiDiPayFAQHero from "../../../components/sections/DiDiPayFAQHero";
 import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
 import FaqList from "../../../components/sections/FaqList";
 
+
 const DiDiPayFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroImage = images.filter((image) => {
@@ -29,7 +30,9 @@ const DiDiPayFAQ = ({ data }) => {
     );
   });
 
+
   let link = `/${faqDiDiPay[0].country.code}/didipay/preguntas-frecuentes/`;
+
 
   return (
     <Layout schema="faq">

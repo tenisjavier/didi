@@ -272,24 +272,27 @@ const insertBtnParams = () => {
 
       //? EXPERIMENT A/B other code in Layout
       //if mobile
-      if (
-        window.innerWidth < 640 &&
-        ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-          countryCode
-        )
-      ) {
-        const test_version = window.localStorage.getItem("t2");
-        adgroupId = test_version;
+      // if (
+      //   window.innerWidth < 640 &&
+      //   ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
+      //     countryCode
+      //   )
+      // ) {
+      //   const test_version = window.localStorage.getItem("t2");
+      //   adgroupId = test_version;
 
-        const test_version_2 = window.localStorage.getItem("t2");
-        if (test_version_2 === "2023-05-h5-vs-ws-b-t2")
-          fromEnd = "WhatsappConf";
-      }
+      //   const test_version_2 = window.localStorage.getItem("t2");
+      //   if (test_version_2 === "2023-05-h5-vs-ws-b-t2")
+      //     fromEnd = "WhatsappConf";
+      // }
     }
 
     //? if referral? save referral source
 
-    if (channelId === 17) source = referringDomain;
+    if (channelId === 17) {
+      campaign = referringDomain;
+      c = referringDomain;
+    }
 
     let countryLang = countriesLanguage[countryCode] || ["MX", "es-MX"];
     newUrl.searchParams.set("location_country", countryLang[0]);

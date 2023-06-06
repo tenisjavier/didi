@@ -6,7 +6,6 @@ import DrvRequirementColumns from "../../../components/sections/DrvRequirementCo
 import VehicleRequirementCTA from "../../../components/sections/VehicleRequirementCTA";
 import FaqList from "../../../components/sections/FaqList";
 import BankInfoCTA from "../../../components/sections/BankInfoCTA";
-import FindInfoCTA from "../../../components/sections/FindInfoCTA";
 import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 
 const RequisitosSocio = ({ data }) => {
@@ -23,10 +22,10 @@ const RequisitosSocio = ({ data }) => {
   const faqDrv = data.allContentfulProduct.nodes;
 
   return (
-    <Layout index={false}>
+    <Layout>
       <RequirementHero bgImage={RequirementHeroBgImage}></RequirementHero>
       <DrvRequirementColumns
-        images={DrvRequirementColumnsImage.reverse()}
+        images={DrvRequirementColumnsImage}
       ></DrvRequirementColumns>
       <VehicleRequirementCTA
         image={VehicleRequirementImage}
@@ -78,7 +77,7 @@ export const query = graphql`
                 contentful_id
                 title
                 description
-                gatsbyImageData(width: 800)
+                gatsbyImageData(width: 400)
                 __typename
               }
             }
