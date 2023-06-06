@@ -1823,5 +1823,15 @@
   "EntregaBusinessCTA.btnLink": "https://didi-food.com/es-MX/entrega-business/home",
   "EntregaBusinessCTA.btnText": "Conoce Más Aquí",
   "EntregaBusinessCTA.btnMode": "primary",
-  "EntregaBusinessCTA.bgColor": "bg-gray-light"
+  "EntregaBusinessCTA.bgColor": "bg-gray-light",
+  "IframeCTA.title": "Regístrate como Socio Conductor",
+  "IframeCTA.desc": "",
+  "IframeCTA.bullets": [
+    "Selecciona ciudad",
+    "Ingresa tu celular y acepta términos y condiciones.",
+    "Ingresa el código de confirmación que llegará a tu celular",
+    "Selecciona tipo de vehículo y continúa con los pasos"
+  ],
+  "IframeCTA.textColor": "gray-primary",
+  "IframeCTA.bgColor": "bg-gray-light"
 }

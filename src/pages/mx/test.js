@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import HomeHero from "../../components/sections/HomeHero";
+import DrvHero from "../../components/sections/DrvHero";
+import IframeCTA from "../../components/sections/IframeCTA";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import FoodCTA from "../../components/sections/FoodCTA";
@@ -31,8 +32,9 @@ const Index = ({ data }) => {
 
   //iframe test
   return (
-    <Layout index={false}>
-      <HomeHero bgImage={homeHeroBgImage} iframe="drv"></HomeHero>
+    <Layout index={false} sb={false}>
+      <DrvHero bgImage={homeHeroBgImage}></DrvHero>
+      <IframeCTA></IframeCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
