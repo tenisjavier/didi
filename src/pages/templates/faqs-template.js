@@ -6,6 +6,7 @@ import FaqHero from "../../components/sections/FaqHero";
 import FoodFaqHero from "../../components/sections/FoodFaqHero";
 import FaqContent from "../../components/sections/FaqContent";
 import FaqList from "../../components/sections/FaqList";
+import {renderRichText} from "gatsby-source-contentful/rich-text";
 
 const FaqsTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -79,8 +80,30 @@ const FaqsTemplate = ({ data }) => {
         bgImage={foodFaqBgImage}
       ></FoodFaqHero>
     );
+
+  let faqDesc = "";
+  let contentlized = renderRichText(content);
+
+  contentlized.forEach(function(v, i){
+    if(v.type === "p") {
+      v.props.children.forEach(function(j) {
+        if(j.type === "b") {
+          faqDesc += j.props.children;
+        } else if(j.type === "a"){
+          faqDesc += j.props.children[0];
+        } else {
+          faqDesc += j;
+        }
+      });
+    }
+  });
+
+  if(faqDesc.length > 160) {
+    faqDesc = faqDesc.substring(0, 160) + "...";
+  }
+
   return (
-    <Layout schema="faq">
+    <Layout schema="faq" title={title} desc={faqDesc}>
       {hero}
       <FaqContent title={title} content={content}></FaqContent>
 
