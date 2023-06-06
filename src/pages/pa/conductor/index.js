@@ -1,27 +1,26 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import DrvHero from "../../components/sections/DrvHero";
-import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
-import DrvVideoGrid from "../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../components/sections/DrvBanner";
-import DrvFeatures from "../../components/sections/DrvFeatures";
-import HomeColumns from "../../components/sections/PaxColumns";
-import DrvCityList from "../../components/sections/DrvCityList";
-import SilderSection from "../../components/sections/SliderSection";
-import Requirements from "../../components/sections/Requirements";
-import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
+import Layout from "../../../components/Layout";
+import DrvHero from "../../../components/sections/DrvHero";
+import DrvWhyDiDi from "../../../components/sections/DrvWhyDiDi";
+import HomeColumns from "../../../components/sections/PaxColumns";
+import Requirements from "../../../components/sections/Requirements";
+import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
+import DrvFeatures from "../../../components/sections/DrvFeatures";
+import SilderSection from "../../../components/sections/SliderSection";
+import DrvBanner from "../../../components/sections/DrvBanner";
+import DrvCityList from "../../../components/sections/DrvCityList";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "co.DrvHero.bgImage";
+    return image.title === "pa.DrvHero.bgImage";
   })[0];
   const drvWhyDiDiImage = images.filter((image) => {
-    return image.title === "co.DrvWhyDiDi.image";
+    return image.title === "pa.DrvWhyDiDi.image";
   })[0];
   const drvFeaturesImage = images.filter((image) => {
-    return image.title === "co.DrvFeatures.image";
+    return image.title === "pa.DrvFeatures.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
@@ -30,7 +29,6 @@ const Driver = ({ data }) => {
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
-      <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
       <DrvFeatures image={drvFeaturesImage}></DrvFeatures>
       <SilderSection
@@ -53,9 +51,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "co.DrvHero.bgImage"
-            "co.DrvWhyDiDi.image"
-            "co.DrvFeatures.image"
+            "pa.DrvHero.bgImage"
+            "pa.DrvWhyDiDi.image"
+            "pa.DrvFeatures.image"
           ]
         }
       }
@@ -69,7 +67,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "co" } } }
+        country: { elemMatch: { code: { eq: "pa" } } }
         category: { eq: "driver" }
       }
     ) {
@@ -89,7 +87,7 @@ export const query = graphql`
       }
     }
     allContentfulCity(
-      filter: { country: { code: { eq: "co" } } }
+      filter: { country: { code: { eq: "pa" } } }
       sort: { name: ASC }
     ) {
       nodes {

@@ -3,12 +3,17 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import DiDiPrestamosHero from "../../../components/sections/DiDiPrestamosHero";
 import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
+import FaqList from "../../../components/sections/FaqList";
 
 const DiDiPrestamosFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "mx.PrestamosHero.image";
   })[0];
+
+  const faqPrestamos = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Préstamos México"
+  );
 
   const faqsSobreNosotros = data.allContentfulProduct.nodes[0].faq.filter(
     (item) =>
@@ -46,9 +51,11 @@ const DiDiPrestamosFAQ = ({ data }) => {
       item.title ===
         "¿Qué pasa si no pude pagar en la fecha límite de pago o antes?"
   );
+  
+  let link = `/${faqPrestamos[0].country[0].code}/prestamos/preguntas-frecuentes/`;
 
   return (
-    <Layout index={false} schema="faq">
+    <Layout schema="faq">
       <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
       <DiDiPayFAQs
         data={faqsSobreNosotros}
@@ -60,6 +67,11 @@ const DiDiPrestamosFAQ = ({ data }) => {
         title="Sobre DiDi Préstamos"
       ></DiDiPayFAQs>
       <DiDiPayFAQs data={faqsPago} title="Pago"></DiDiPayFAQs>
+      <FaqList
+        title={"Más preguntas frecuentes de DiDi Préstamos"}
+        faqs={faqPrestamos[0].faq}
+        link={link}
+      ></FaqList>
     </Layout>
   );
 };
@@ -89,6 +101,7 @@ export const query = graphql`
         name
         faq {
           title
+          slug
           content {
             raw
             references {
@@ -101,6 +114,9 @@ export const query = graphql`
               }
             }
           }
+        }
+        country {
+          code
         }
       }
     }

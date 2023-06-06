@@ -182,7 +182,7 @@
   "DrvCityList.desc": "Descubrí las ciudades de Argentina donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/ar/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/ar/conductor/conductor-en-{{city}}/",
   "DrvMotoHero.title": "Aumentá tus Ganancias con DiDi Moto",
   "DrvMotoHero.desc": "Registrate en DiDi Moto y comenzá ya a generar ganancias cuando más te convenga.",
   "DrvMotoHero.textColor": "white",
@@ -211,7 +211,7 @@
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
   "FleetSocioCTA.title": "Generá en promedio $364.000* alquilando tu auto",
-  "FleetSocioCTA.desc": "Generá en promedio $364.000* alquilando tu auto por mes y recibí hasta $55.000** EXTRA por cada auto que alquiles en la app y que complete el número de viajes requerido en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Argentina \n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi",
+  "FleetSocioCTA.desc": "Generá en promedio $364.000* alquilando tu auto por mes y recibí hasta $100si.000** EXTRA por cada auto que alquiles en la app y que complete el número de viajes requerido en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Argentina \n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi",
   "FleetSocioCTA.btnText": "Conocé Más",
   "FleetSocioCTA.btnLink": "#",
   "FleetSocioCTA.btnMode": "dark",
@@ -595,23 +595,31 @@
   "SBDrv.desc": "Ganancias Extras",
   "SBPax.title": "DiDi Pasajero",
   "SBPax.desc": "Pedí un Viaje",
-  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
-  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.title": "Requisitos para registrarte como conductor o socio flotilla",
+  "RequirementHero.desc": "Elegí cuando conectarte, genera ingresos y conectate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+      "title": "Socio conductor: Tengo vehiculo y quiero conducir",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) Registrá tu vehículo: Cédula de identificación de vehículos y seguro del automotor. El vehículo debe ser modelo 2004 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
+      "desc": "1) Descargá DiDi Fleet \n 2) Subí tus documentos: Cedula de identidad \n 3) Agregá tus coches con los siguientes documentos: Cédula de identificación de vehículos, seguro del automotor. El vehículo debe ser modelo 2004 en adelante \n 4) Seleccioná un conductor para alquilarle tu coche a través de la app ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de Conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+    },
+    {
+      "title": "Conductor: Taxi",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) Registrá tu vehículo: Certificado de antecedentes penales, cédula de identificación de vehículos, seguro del automotor y licencia taximetro. El vehículo debe ser modelo 2009 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+    },
+    {
+      "title": "Conductor: Moto",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) Registra tu vehículo: Cédula de identificación de vehículos y seguro del automotor. El vehículo debe ser modelo 2012 en adelante. La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",

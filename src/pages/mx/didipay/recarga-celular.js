@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import DiDiPayPhoneHero from "../../../components/sections/DiDiPayPhoneHero";
 import DiDiPayPhoneWhy from "../../../components/sections/DiDiPayPhoneWhy";
 import DiDiPayPhoneFeatures from "../../../components/sections/DiDiPayPhoneFeatures";
-import DiDiPayBanner from "../../../components/sections/DiDiPayBanner";
+import DiDiPayCarousel from "../../../components/sections/DiDiPayCarousel";
 import DiDiPayPhoneColumns from "../../../components/sections/DiDiPayPhoneColumns";
 
 const DiDiPayPhone = ({ data }) => {
@@ -21,19 +21,20 @@ const DiDiPayPhone = ({ data }) => {
   const featuresDiDiImage = images.filter((image) => {
     return image.title === "mx.DiDiPayPhoneFeatures.image";
   })[0];
-  const bannerImage = images.filter((image) => {
-    return image.title.indexOf("mx.DiDiPayBanner.image") !== -1;
-  })[0];
+
+  const DiDiPayCarouselImages = images.filter((image) => {
+    return image.title === "mx.DiDiPayCarousel.image";
+  });
 
   return (
-    <Layout index={false}>
+    <Layout>
       <DiDiPayPhoneHero
         bgImage={homeHeroBgImage}
         mobileBgImage={homeHeroMobileBgImage}
       ></DiDiPayPhoneHero>
       <DiDiPayPhoneWhy image={whyDiDiImage}></DiDiPayPhoneWhy>
       <DiDiPayPhoneFeatures image={featuresDiDiImage}></DiDiPayPhoneFeatures>
-      <DiDiPayBanner image={bannerImage}></DiDiPayBanner>
+      <DiDiPayCarousel images={DiDiPayCarouselImages.reverse()}></DiDiPayCarousel>
       <DiDiPayPhoneColumns></DiDiPayPhoneColumns>
     </Layout>
   );
@@ -46,7 +47,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayPhoneHero.bgImage)|(mx.DiDiPayPhoneHeroMobile.bgImage)|(mx.DiDiPayPhoneWhy.image)|(mx.DiDiPayPhoneFeatures.image)|(mx.DiDiPayBanner.image)/"
+          regex: "/(mx.DiDiPayPhoneHero.bgImage)|(mx.DiDiPayPhoneHeroMobile.bgImage)|(mx.DiDiPayPhoneWhy.image)|(mx.DiDiPayPhoneFeatures.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)/"
         }
       }
     ) {

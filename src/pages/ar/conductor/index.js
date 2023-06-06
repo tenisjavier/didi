@@ -1,16 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import DrvHero from "../../components/sections/DrvHero";
-import DrvWhyDiDi from "../../components/sections/DrvWhyDiDi";
-import DrvVideoGrid from "../../components/sections/DrvVideoGrid";
-import DrvBanner from "../../components/sections/DrvBanner";
-import DrvFeatures from "../../components/sections/DrvFeatures";
-import SilderSection from "../../components/sections/SliderSection";
-import Requirements from "../../components/sections/Requirements";
-import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
-import DrvCityList from "../../components/sections/DrvCityList";
-import HomeColumns from "../../components/sections/HomeColumns";
+import Layout from "../../../components/Layout";
+import DrvHero from "../../../components/sections/DrvHero";
+import DrvWhyDiDi from "../../../components/sections/DrvWhyDiDi";
+import DrvVideoGrid from "../../../components/sections/DrvVideoGrid";
+import DrvBanner from "../../../components/sections/DrvBanner";
+import DrvFeatures from "../../../components/sections/DrvFeatures";
+import SilderSection from "../../../components/sections/SliderSection";
+import Requirements from "../../../components/sections/Requirements";
+import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
+import DrvCityList from "../../../components/sections/DrvCityList";
+import HomeColumns from "../../../components/sections/HomeColumns";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

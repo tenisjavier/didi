@@ -29,7 +29,7 @@ const DrvRequirementColumns = ({ images }: DrvRequirementColumnsProps) => {
   if (images) {
     props.columns.forEach((col, index) => {
       col.image = images[index];
-      col.imageStyle = "z-10 m-4 w-56";
+      col.imageStyle = "z-10 m-4 w-72";
       col.isImage = true;
       col.height = "h-max";
       col.insideHeight = "h-max";

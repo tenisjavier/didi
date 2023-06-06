@@ -174,7 +174,9 @@ const CTASection = (props: CTAProps) => {
       <div
         className={`container mx-auto flex w-full   flex-wrap items-center justify-center py-8 
  ${reverse && "flex-row-reverse"} ${
-          image || imageRawRender ? "xl:justify-between" : "xl:justify-start"
+          image || imageRawRender || iframe
+            ? "xl:justify-between"
+            : "xl:justify-start"
         }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
@@ -184,12 +186,10 @@ const CTASection = (props: CTAProps) => {
         >
           {hero ? (
             <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
+          ) : btnType === "FoodSmsCTA" || "RidesSmsCTA" ? (
+            <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
           ) : (
-            btnType === "FoodSmsCTA" || "RidesSmsCTA" ? (
-              <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
-            ) : (
-              <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
-            )
+            <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>
           )}
           <ConditionalWrapper
             condition={descBeforeBullets === true}
@@ -297,15 +297,17 @@ const CTASection = (props: CTAProps) => {
                   </>
                 )}
                 {desc &&
-                  desc.split("\n").map((str, index) => (
-                    btnType !== "FoodSmsCTA" || "RidesSmsCTA" ?
-                    <p className="mb-10 text-lg" key={index}>
-                      {str}
-                    </p> : 
-                    <p className="mb-10 text-lg font-bold" key={index}>
-                      {str}
-                    </p>
-                  ))}
+                  desc.split("\n").map((str, index) =>
+                    btnType !== "FoodSmsCTA" || "RidesSmsCTA" ? (
+                      <p className="mb-10 text-lg" key={index}>
+                        {str}
+                      </p>
+                    ) : (
+                      <p className="mb-10 text-lg font-bold" key={index}>
+                        {str}
+                      </p>
+                    )
+                  )}
               </>
             )}
           >
@@ -328,36 +330,48 @@ const CTASection = (props: CTAProps) => {
               ))}
             </div>
           )}
-          <ConditionalWrapper condition={btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA"} wrapper={() => (
-            <form>
-              <div className="grid font-bold">
-                <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8">
-                  <div className="grid w-150 justify-items-center mx-5 items-center xl:pl-0 lg:pl-6">
-                    {qr}
-                    <p className="text-center text-xs">Escanea el código QR con la cámara de tu celular y descarga la app.</p>
-                  </div>
-                  <div className="grid font-bold mt-2">
-                    {smsFormTitle}
-                    {btnType === 'RidesSmsCTA' 
-                    ? <SmsSender smsType={'RidesSmsCTA'}></SmsSender>
-                    : <SmsSender smsType={'FoodSmsCTA'}></SmsSender>
-                    }
+          <ConditionalWrapper
+            condition={btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA"}
+            wrapper={() => (
+              <form>
+                <div className="grid font-bold">
+                  <div className="grid justify-items-center grid-cols-2 xl:pl-0 lg:pl-8">
+                    <div className="grid w-150 justify-items-center mx-5 items-center xl:pl-0 lg:pl-6">
+                      {qr}
+                      <p className="text-center text-xs">
+                        Escanea el código QR con la cámara de tu celular y
+                        descarga la app.
+                      </p>
+                    </div>
+                    <div className="grid font-bold mt-2">
+                      {smsFormTitle}
+                      {btnType === "RidesSmsCTA" ? (
+                        <SmsSender smsType={"RidesSmsCTA"}></SmsSender>
+                      ) : (
+                        <SmsSender smsType={"FoodSmsCTA"}></SmsSender>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
-          )}
+              </form>
+            )}
           >
             <>{sectionBtn}</>
           </ConditionalWrapper>
         </div>
         {iframe === "drv" && (
-          <div className="mt-16  h-full flex justify-center lg:justify-end  z-20  lg:ml-8 overflow-hidden">
+          <div className="mt-16  h-full flex justify-center lg:justify-end  z-20  mb-10 lg:ml-8 overflow-hidden">
             <iframe
               id="h5"
               src="https://anz-rides-driver.onelink.me/ixFb/ukdriverhero"
-              className="w-80 h-100   rounded-lg"
+              className="w-96 h-110 rounded-lg border-0 overscroll-contain"
             ></iframe>
+            {/* <img
+              src="../../phone.png"
+              alt={"formulario"}
+              width={600}
+              className="absolute w-80 h-128 "
+            ></img> */}
           </div>
         )}
       </div>
