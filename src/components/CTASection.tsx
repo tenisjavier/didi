@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import Btn, { BtnProps } from "./Btn";
@@ -80,7 +80,10 @@ const CTASection = (props: CTAProps) => {
     descBeforeBullets,
     qr,
   } = props;
-
+  const [loading, setLoading] = useState(true);
+  const handleIframeLoad = () => {
+    setLoading(false);
+  };
   let sectionBtn = (
     <Btn
       btnType={btnType}
@@ -361,10 +364,12 @@ const CTASection = (props: CTAProps) => {
         </div>
         {iframe === "drv" && (
           <div className="mt-16  h-full flex justify-center lg:justify-end  z-20  mb-10 lg:ml-8 overflow-hidden">
+            {loading && <img src="../../loading.gif"></img>}
             <iframe
               id="h5"
-              src="https://anz-rides-driver.onelink.me/ixFb/ukdriverhero"
+              src="https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero"
               className="w-96 h-110 rounded-lg border-0 overscroll-contain"
+              onLoad={handleIframeLoad}
             ></iframe>
             {/* <img
               src="../../phone.png"

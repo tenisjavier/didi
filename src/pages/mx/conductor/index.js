@@ -17,8 +17,11 @@ import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 import VideoSection from "../../../components/sections/VideoSection";
 import ClubDiDiCTA from "../../../components/sections/ClubDiDiCTA";
 import WomenDiDiCTA from "../../../components/sections/WomenDiDiCTA";
+import IframeCTA from "../../../components/sections/IframeCTA";
+import { ab } from "../../../config/ab";
 
 const Conductor = ({ data }) => {
+  // const version = ab("2023-06-iframe-a-t3", "2023-06-iframe-b-t3", "t3");
   const images = data.allContentfulAsset.nodes;
   const icons = [faMoneyBillTransfer, faThumbsUp, faShieldHeart, faWallet];
   const drvHeroBgImage = images.filter((image) => {
@@ -39,6 +42,7 @@ const Conductor = ({ data }) => {
   return (
     <Layout>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
+      {/* {version === "b" && <IframeCTA bgImage={drvHeroBgImage}></IframeCTA>} */}
       <DrvBenefits image={drvBenefitsImage} icons={icons}></DrvBenefits>
       <DrvBanner></DrvBanner>
       <SilderSection

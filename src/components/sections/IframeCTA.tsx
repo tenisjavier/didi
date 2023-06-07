@@ -20,7 +20,7 @@ interface IframeCTAProps extends BtnProps {
 const IframeCTA = ({ bgImage, mobileBgImage, title }: IframeCTAProps) => {
   //? if there is a mobile image use that one
   const bgImageStyle = mobileBgImage
-    ? "hidden !absolute z-0 h-full w-full md:block "
+    ? "hidden !absolute z-0 h-full w-full md:block brightness"
     : "!absolute z-0 h-full w-full md:block ";
   const props: CTAProps = {
     hero: true,
