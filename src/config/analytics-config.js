@@ -17,36 +17,29 @@ const insertBtnParams = () => {
   var thisHostname = document.location.hostname;
   var thisDomain = getDomain_(thisHostname);
   var referringDomain = getDomain_(referrer);
+
   // search is the parameters complete string without ?
   var search = window.location.search.slice(1);
-
+  localStorage.setItem("urlSearch", search);
   // if does not have utms or gclid should be organic traffic
   if (search.indexOf("utm") === -1 && search.indexOf("gclid") === -1) {
-    if (
-      thisDomain !== referringDomain &&
-      !document.location.pathname.includes("store")
-    ) {
+    search = localStorage.getItem("urlSearch") || "";
+    if (thisDomain !== referringDomain) {
       //this function return if it is SEO, direct or referral
       var referringInfo = parseGaReferrer(referrer);
 
       // organic source and medium
 
-      gaReferral.source = referringInfo.source;
-      gaReferral.medium = referringInfo.medium;
       search =
         "utm_source=" +
-        gaReferral.source +
+        referringInfo.source +
         "&utm_medium=" +
-        gaReferral.medium +
+        referringInfo.medium +
         "&utm_campaign=" +
         gaReferral.campaign;
 
       localStorage.setItem("urlSearch", search);
-    } else {
-      search = localStorage.getItem("urlSearch") || "";
     }
-  } else {
-    localStorage.setItem("urlSearch", search);
   }
 
   var ga_id = getCookie("_gid");
@@ -141,6 +134,14 @@ const insertBtnParams = () => {
       "search.com": {
         p: "q",
         n: "search",
+      },
+      "didiglobal.com": {
+        p: "q",
+        n: "didiglobal",
+      },
+      "99app.com": {
+        p: "q",
+        n: "99app",
       },
       google: {
         p: "q",
@@ -249,11 +250,7 @@ const insertBtnParams = () => {
     let channelId;
     if (channel) {
       channelId = channel;
-      if (utmSource) {
-        pid = utmSource ? utmSource : "website_direct";
-      } else {
-        pid = source ? source : "website_direct";
-      }
+      pid = pid ? pid : "website_direct";
     }
 
     if (!pid) {
@@ -289,7 +286,14 @@ const insertBtnParams = () => {
 
     //? if referral? save referral source
 
-    if (channelId === 17) {
+    if (
+      channelId === 17 &&
+      (referringDomain === "" ||
+        referringDomain.indexOf("didiglobal.com") > -1 ||
+        referringDomain.indexOf("99app.com") > -1)
+    ) {
+      channelId = 19;
+      pid = "website_seo";
       campaign = referringDomain;
       c = referringDomain;
     }
