@@ -17,29 +17,37 @@ const insertBtnParams = () => {
   var thisHostname = document.location.hostname;
   var thisDomain = getDomain_(thisHostname);
   var referringDomain = getDomain_(referrer);
-
+  console.log(referringDomain);
   // search is the parameters complete string without ?
   var search = window.location.search.slice(1);
-  localStorage.setItem("urlSearch", search);
+
   // if does not have utms or gclid should be organic traffic
   if (search.indexOf("utm") === -1 && search.indexOf("gclid") === -1) {
-    search = localStorage.getItem("urlSearch") || "";
-    if (thisDomain !== referringDomain) {
+    if (
+      thisDomain !== referringDomain &&
+      !document.location.pathname.includes("store")
+    ) {
       //this function return if it is SEO, direct or referral
       var referringInfo = parseGaReferrer(referrer);
 
       // organic source and medium
 
+      gaReferral.source = referringInfo.source;
+      gaReferral.medium = referringInfo.medium;
       search =
         "utm_source=" +
-        referringInfo.source +
+        gaReferral.source +
         "&utm_medium=" +
-        referringInfo.medium +
+        gaReferral.medium +
         "&utm_campaign=" +
         gaReferral.campaign;
 
       localStorage.setItem("urlSearch", search);
+    } else {
+      search = localStorage.getItem("urlSearch") || "";
     }
+  } else {
+    localStorage.setItem("urlSearch", search);
   }
 
   var ga_id = getCookie("_gid");
@@ -134,14 +142,6 @@ const insertBtnParams = () => {
       "search.com": {
         p: "q",
         n: "search",
-      },
-      "didiglobal.com": {
-        p: "q",
-        n: "didiglobal",
-      },
-      "99app.com": {
-        p: "q",
-        n: "99app",
       },
       google: {
         p: "q",
@@ -250,7 +250,11 @@ const insertBtnParams = () => {
     let channelId;
     if (channel) {
       channelId = channel;
-      pid = pid ? pid : "website_direct";
+      if (utmSource) {
+        pid = utmSource ? utmSource : "website_direct";
+      } else {
+        pid = source ? source : "website_direct";
+      }
     }
 
     if (!pid) {
