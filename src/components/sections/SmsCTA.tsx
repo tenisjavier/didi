@@ -3,7 +3,7 @@ import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface SmsCTAProps {
-  smsType: string;
+  type: string;
   qr: React.ReactNode;
   image: {
     title: string;
@@ -12,19 +12,17 @@ interface SmsCTAProps {
   };
 }
 
-const SmsCTA = ({ image, qr, smsType }: SmsCTAProps) => {
-  const smsTitle = smsType === "food" ? t("FoodSmsCTA.title") : t("RidesSmsCTA.title");
-  const  smsDesc = smsType === "food" ? t("FoodSmsCTA.desc") : t("RidesSmsCTA.desc");
+const SmsCTA = ({ image, qr, type }: SmsCTAProps) => {
   const props: CTAProps = {
     hero: false,
-    title: smsTitle,
-    desc: smsDesc,
+    title: type === "rides" ? t("RidesSmsCTA.title") : t("FoodSmsCTA.title"),
+    desc: type === "rides" ? t("RidesSmsCTA.desc") : t("FoodSmsCTA.desc"),
     bgColor: t("SmsCTA.bgColor"),
     textColor: t("SmsCTA.textColor"),
     image: image,
     imageStyle: "z-10 m-4 w-80 xl:w-100 mt-20 rounded",
     btnMode: t("SmsCTA.btnMode"),
-    btnType: smsType ? "RidesSmsCTA" : "FoodSmsCTA",
+    btnType: type === "rides" ? "RidesSmsCTA" : "FoodSmsCTA",
     smsFormTitle: t("SmsCTA.formTitle"),
     reverse: false,
     qr: qr
