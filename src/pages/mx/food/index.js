@@ -26,10 +26,11 @@ const Food = ({ data }) => {
   const foodSMSCTA = images.filter((image) => {
     return image.title === "mx.FoodSMSCTA.image";
   })[0];
+  console.log(foodSMSCTA);
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
-  console.log("Images: " + foodDeliveryDownloadsImages)
+  console.log(foodDeliveryDownloadsImages)
 
   const [QRUrl, setQRUrl] = useState(
     "https://global-food-eater.onelink.me/4B2F/QRCODE"
@@ -40,12 +41,12 @@ const Food = ({ data }) => {
     ></QRCodeSVG>
   );
 
-  // useEffect(() => {
-  //   const btnPrimary = document.getElementsByClassName("btn-primary")[0];
-  //   if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
-  //     setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
+    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
+      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
+    }
+  }, []);
 
   return (
     <Layout>
@@ -57,7 +58,7 @@ const Food = ({ data }) => {
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodSMSCTA} qr={qr} smsType="food"></SmsCTA>
+        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
       </div>
     </Layout>
   );

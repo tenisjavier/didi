@@ -65,12 +65,12 @@ const FoodCity = ({ data }) => {
     ></QRCodeSVG>
   );
 
-  // useEffect(() => {
-  //   const btnPrimary = document.getElementsByClassName("btn-primary")[0];
-  //   if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
-  //     setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
+    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
+      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
+    }
+  }, []);
 
   return (
     <Layout
