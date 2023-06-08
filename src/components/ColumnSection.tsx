@@ -48,7 +48,7 @@ const ColumnsSection = ({
             .map((str) => <p className="text-center text-lg">{str}</p>)}
 
         <div
-          className={`mt-10 grid grid-cols-1 md:grid-cols-2 lg:${colsDesktop} gap-4`}
+          className={`mt-10 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-around gap-2`}
         >
           {columns &&
             columns.map((col, index) => {
