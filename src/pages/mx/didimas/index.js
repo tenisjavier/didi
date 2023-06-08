@@ -11,6 +11,9 @@ const DiDiMas = ({ data }) => {
   const didiMasHeroBgImage = images.filter((image) => {
     return image.title === "mx.ClubDiDiHero.bgImage";
   })[0];
+  const didiMasHeroimage = images.filter((image) => {
+    return image.title === "mx.ClubDiDiHero.bgImage";
+  })[0];
   const didiMasHeroMobileBgImage = images.filter((image) => {
     return image.title === "mx.DiDiMasHeroMobile.bgImage";
   })[0];
@@ -126,7 +129,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiMasHeroMobile)|(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.RewardsColumns.image)/"
+          regex: "/(mx.DiDiMasHeroMobile)|(mx.DiDiMasHero.image)|(mx.ClubDiDiHero.bgImage)|(mx.PartnerCTA)|(mx.RewardsColumns.image)/"
         }
       }
       sort: { title: ASC }

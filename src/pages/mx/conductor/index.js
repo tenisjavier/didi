@@ -21,7 +21,7 @@ import IframeCTA from "../../../components/sections/IframeCTA";
 import { ab } from "../../../config/ab";
 
 const Conductor = ({ data }) => {
-  // const version = ab("2023-06-iframe-a-t3", "2023-06-iframe-b-t3", "t3");
+  const version = ab("2023-06-iframe-a-t3", "2023-06-iframe-b-t3", "t3");
   const images = data.allContentfulAsset.nodes;
   const icons = [faMoneyBillTransfer, faThumbsUp, faShieldHeart, faWallet];
   const drvHeroBgImage = images.filter((image) => {
@@ -40,9 +40,9 @@ const Conductor = ({ data }) => {
   const cities = data.allContentfulCity.nodes;
 
   return (
-    <Layout>
+    <Layout sb={false}>
       <DrvHero bgImage={drvHeroBgImage}></DrvHero>
-      {/* {version === "b" && <IframeCTA bgImage={drvHeroBgImage}></IframeCTA>} */}
+      {version === "b" && <IframeCTA></IframeCTA>}
       <DrvBenefits image={drvBenefitsImage} icons={icons}></DrvBenefits>
       <DrvBanner></DrvBanner>
       <SilderSection

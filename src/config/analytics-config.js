@@ -272,20 +272,11 @@ const insertBtnParams = () => {
       campaignId = "refpage_" + window.location.pathname;
 
       //? EXPERIMENT A/B other code in Layout
-      //if mobile
-      // if (
-      //   window.innerWidth < 640 &&
-      //   ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
-      //     countryCode
-      //   )
-      // ) {
-      //   const test_version = window.localStorage.getItem("t2");
-      //   adgroupId = test_version;
 
-      //   const test_version_2 = window.localStorage.getItem("t2");
-      //   if (test_version_2 === "2023-05-h5-vs-ws-b-t2")
-      //     fromEnd = "WhatsappConf";
-      // }
+      if (["mx"].includes(countryCode)) {
+        const test_version = window.localStorage.getItem("t3");
+        adgroupId = test_version;
+      }
     }
 
     //? if referral? save referral source

@@ -23,7 +23,7 @@ const IframeCTA = ({ bgImage, mobileBgImage, title }: IframeCTAProps) => {
     ? "hidden !absolute z-0 h-full w-full md:block brightness"
     : "!absolute z-0 h-full w-full md:block ";
   const props: CTAProps = {
-    hero: true,
+    hero: false,
     title: title || t("IframeCTA.title"),
     desc: t("IframeCTA.desc"),
     bullets: t("IframeCTA.bullets", { returnObjects: true }),
