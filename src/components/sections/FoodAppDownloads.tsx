@@ -21,8 +21,6 @@ const FoodAppDownloads = ({ images }: FoodAppDownloadsProps) => {
     columns: t("FoodAppDownloads.columns", { returnObjects: true }),
   };
 
-  console.log("Props Columns:", props.columns);
-
   if (props.columns) {
     props.columns.forEach((col: any, index: number) => {
       const image = images[index];

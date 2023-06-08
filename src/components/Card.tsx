@@ -81,7 +81,6 @@ const Card = (props: CardProps) => {
   if (RTL) {
     dir = "rtl";
   }
-
   let isTruncate = (
     <Truncate lines={8} ellipsis={<span>...</span>}>
       {desc}

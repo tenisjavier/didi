@@ -1824,6 +1824,20 @@
   "EntregaBusinessCTA.btnText": "Conoce Más Aquí",
   "EntregaBusinessCTA.btnMode": "primary",
   "EntregaBusinessCTA.bgColor": "bg-gray-light",
+  "RidesSmsCTA.title": "Pide un viaje desde donde estés atraves de la app.",
+  "RidesSmsCTA.desc": "Descarga la app DiDi pasajero y ahorra más de un 50% en tu primer viaje. Con DiDi viajaras más pagando menos.",
+  "FoodAppDownloads.title": "Descárgate la App en tu Iphone o Android.",
+  "FoodAppDownloads.desc": "La comida que deseas está a unos minutos y 3 clics de distancia.",
+  "FoodAppDownloads.textColor": "gray-primary",
+  "FoodAppDownloads.bgColor": "bg-white",
+  "FoodAppDownloads.columns": [
+    {
+      "linkItem": "https://global-rides-passenger.onelink.me/xNlo/"
+    },
+    {
+      "linkItem": "https://global-rides-passenger.onelink.me/xNlo/"
+    }
+  ]
   "IframeCTA.title": "Regístrate como Socio Conductor",
   "IframeCTA.desc": "",
   "IframeCTA.bullets": [

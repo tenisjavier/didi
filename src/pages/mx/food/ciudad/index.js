@@ -44,12 +44,12 @@ const Ciudades = ({ data }) => {
     ></QRCodeSVG>
   );
 
-  useEffect(() => {
-    const btnPrimary = document.getElementsByClassName("btn-primary")[0];
-    if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
-      setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const btnPrimary = document.getElementsByClassName("btn-primary")[0];
+  //   if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
+  //     setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
+  //   }
+  // }, []);
 
   return (
     <Layout>
@@ -64,7 +64,7 @@ const Ciudades = ({ data }) => {
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
+        <SmsCTA image={foodSMSCTA} qr={qr} smsType="food"></SmsCTA>
       </div>
     </Layout>
   );
