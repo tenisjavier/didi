@@ -368,9 +368,12 @@ const CTASection = (props: CTAProps) => {
             <iframe
               id="h5"
               src="https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero"
-              className="w-96 h-110 rounded-lg border-0 overscroll-contain"
+              className={`${
+                loading ? "hidden" : "block"
+              }w-96 h-110 rounded-lg border-0 overscroll-contain`}
               onLoad={handleIframeLoad}
             ></iframe>
+
             {/* <img
               src="../../phone.png"
               alt={"formulario"}

@@ -837,7 +837,7 @@
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
   "GuidesColumns.linkItem": "/mx/guias/{{guide}}/",
-  "PartnersHero.title": "Logra MÁS con DiDiMás+",
+  "PartnersHero.title": "Para que siempre logres más usa DiDiMás+",
   "PartnersHero.desc": "Para DiDi es muy importante apoyarte, por eso, nace DiDiMás+, un programa que te da acceso a descuentos y a facilidades ofrecidas por aliados para ayudarte a ti y a tu familia en su día a día.",
   "PartnersHero.textColor": "white",
   "PartnersHero.bgColor": "bg-orange-primary",
@@ -1827,10 +1827,10 @@
   "IframeCTA.title": "Regístrate como Socio Conductor",
   "IframeCTA.desc": "",
   "IframeCTA.bullets": [
-    "Selecciona ciudad",
-    "Ingresa tu celular y acepta términos y condiciones.",
-    "Ingresa el código de confirmación que llegará a tu celular",
-    "Selecciona tipo de vehículo y continúa con los pasos"
+    "Selecciona ciudad.",
+    "Ingresa tu celular y acepta los \"términos y condiciones.\"",
+    "Ingresa el código de confirmación que llegará a tu celular.",
+    "Selecciona tipo de vehículo y continúa con los pasos."
   ],
   "IframeCTA.textColor": "gray-primary",
   "IframeCTA.bgColor": "bg-gray-light"
