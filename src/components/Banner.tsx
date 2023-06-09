@@ -15,6 +15,7 @@ export interface BannerProps extends BtnProps {
   justifyContent?: string;
   image?: React.ReactNode;
   reverse?: boolean;
+  isRounded?: boolean;
 }
 
 const Banner = ({
@@ -32,11 +33,15 @@ const Banner = ({
   btnType,
   btnText,
   reverse,
+  isRounded
 }: BannerProps) => {
-  console.log(height);
+  let rounded = "rounded";
+
+  if(!isRounded) 
+    rounded = "";
   return (
     <div
-      className={`rounded py-4 ${bgColor && bgColor} text-${textColor} ${
+      className={`${rounded} py-4 ${bgColor && bgColor} text-${textColor} ${
         height && height
       }`}
     >

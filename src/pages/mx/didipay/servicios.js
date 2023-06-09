@@ -5,6 +5,7 @@ import DiDiPayServiceHero from "../../../components/sections/DiDiPayServiceHero"
 import DiDiPayServiceWhy from "../../../components/sections/DiDiPayServiceWhy";
 import DiDiPayServiceGrid from "../../../components/sections/DiDiPayServiceGrid";
 import DiDiPayCarousel from "../../../components/sections/DiDiPayCarousel";
+import DiDiPayPartnersCarousel from "../../../components/sections/DiDiPayPartnersCarousel";
 import DiDiPayServiceColumns from "../../../components/sections/DiDiPayServiceColumns";
 
 const DiDiPayService = ({ data }) => {
@@ -24,6 +25,9 @@ const DiDiPayService = ({ data }) => {
   const DiDiPayCarouselImages = images.filter((image) => {
     return image.title === "mx.DiDiPayCarousel.image";
   });
+  const DiDiPayPartnersCarouselImages = images.filter((image) => {
+    return image.title === "mx.DiDiPayPartnersCarousel.image";
+  });
 
   return (
     <Layout>
@@ -33,6 +37,7 @@ const DiDiPayService = ({ data }) => {
       ></DiDiPayServiceHero>
       <DiDiPayServiceWhy image={whyDiDiImage}></DiDiPayServiceWhy>
       <DiDiPayServiceGrid images={columnsImages.reverse()}></DiDiPayServiceGrid>
+      <DiDiPayPartnersCarousel images={DiDiPayPartnersCarouselImages.reverse()}></DiDiPayPartnersCarousel>
       <DiDiPayCarousel images={DiDiPayCarouselImages.reverse()}></DiDiPayCarousel>
       <DiDiPayServiceColumns></DiDiPayServiceColumns>
     </Layout>
@@ -46,7 +51,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayServiceHero.bgImage)|(mx.DiDiPayServiceHeroMobile.bgImage)|(mx.DiDiPayServiceWhy.image)|(mx.DiDiPayServiceColumns.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)/"
+          regex: "/(mx.DiDiPayServiceHero.bgImage)|(mx.DiDiPayServiceHeroMobile.bgImage)|(mx.DiDiPayServiceWhy.image)|(mx.DiDiPayServiceColumns.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)|(mx.DiDiPayPartnersCarousel.image)/"
         }
       }
     ) {
