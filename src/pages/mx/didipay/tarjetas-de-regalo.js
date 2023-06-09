@@ -5,6 +5,7 @@ import DiDiPayGiftcardHero from "../../../components/sections/DiDiPayGiftcardHer
 import DiDiPayGiftcardWhy from "../../../components/sections/DiDiPayGiftcardWhy";
 import DiDiPayGiftcardFeatures from "../../../components/sections/DiDiPayGiftcardFeatures";
 import DiDiPayCarousel from "../../../components/sections/DiDiPayCarousel";
+import DiDiPayGiftcardCarousel from "../../../components/sections/DiDiPayGiftcardsCarousel";
 import DiDiPayGiftcardColumns from "../../../components/sections/DiDiPayGiftcardColumns";
 
 const Giftcards = ({ data }) => {
@@ -24,6 +25,11 @@ const Giftcards = ({ data }) => {
   const DiDiPayCarouselImages = images.filter((image) => {
     return image.title === "mx.DiDiPayCarousel.image";
   });
+  const DiDiPayGiftcardCarouselImages = images.filter((image) => {
+    return image.title === "mx.DiDiPayGiftcardCarousel.image";
+  });
+
+  console.log(DiDiPayGiftcardCarouselImages);
 
   return (
     <Layout>
@@ -35,6 +41,7 @@ const Giftcards = ({ data }) => {
       <DiDiPayGiftcardFeatures
         image={featuresDiDiImage}
       ></DiDiPayGiftcardFeatures>
+      <DiDiPayGiftcardCarousel images={DiDiPayGiftcardCarouselImages.reverse()}></DiDiPayGiftcardCarousel>
       <DiDiPayCarousel images={DiDiPayCarouselImages.reverse()}></DiDiPayCarousel>
       <DiDiPayGiftcardColumns></DiDiPayGiftcardColumns>
     </Layout>
@@ -48,7 +55,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayGiftcardHero.bgImage)|(mx.DiDiPayGiftcardHeroMobile.bgImage)|(mx.DiDiPayGiftcardWhy.image)|(mx.DiDiPayGiftcardFeatures.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)/"
+          regex: "/(mx.DiDiPayGiftcardHero.bgImage)|(mx.DiDiPayGiftcardHeroMobile.bgImage)|(mx.DiDiPayGiftcardWhy.image)|(mx.DiDiPayGiftcardFeatures.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)|(mx.DiDiPayGiftcardCarousel.image)/"
         }
       }
     ) {

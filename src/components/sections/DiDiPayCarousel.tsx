@@ -15,6 +15,10 @@ const DiDiPayCarousel = ({ images }: DiDiPayCarouselProps) => {
   const props: CarouselProps = {
     slides: [],
     images: images,
+    carouselType: "Banner",
+    arrowNext: "→",
+    arrowPrev: "←",
+    arrowColor: "text-white"
   };
 
   const banners = [
@@ -42,6 +46,7 @@ const DiDiPayCarousel = ({ images }: DiDiPayCarouselProps) => {
         image: <Image imageData={img} imageStyle="z-10 my-10 w-56"></Image>,
         justifyContent: "justify-around",
         height: "h-auto",
+        isRounded: false
       };
     });
   }
