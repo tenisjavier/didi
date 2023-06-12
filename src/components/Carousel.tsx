@@ -58,11 +58,11 @@ const Carousel = (props: CarouselProps) => {
 
   if(carouselType === "Banner") {
     sliderContent = slides?.map((sld) => {
-      return <div className={`p-4`}><Banner {...sld}></Banner></div>;
+      return <div><Banner {...sld}></Banner></div>;
     });
   } else if(carouselType === "Images") {
     sliderContent = images?.map((img) => {
-      return <div className={`p-4`}><Image imageData={img} imageStyle="z-10 my-10 w-full"></Image></div>;
+      return <div className={`p-4 max-w-xs flex align-center justify-self-center`}><Image imageData={img} imageStyle="z-10 my-10 w-full"></Image></div>;
     });
   }
 
@@ -70,11 +70,19 @@ const Carousel = (props: CarouselProps) => {
     dots: false,
     arrow: true,
     infinite: true,
-    centerMode: true,
     slidesToShow: toShow,
     slidesToScroll: toScroll,
     nextArrow: <NextArrow arrow={arrowNext} arrowColor={arrowColor} />,
     prevArrow: <PrevArrow arrow={arrowPrev} arrowColor={arrowColor} />,
+    responsive: [
+      {
+        breakpoint: 1079,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ]
   };
 
   return (
