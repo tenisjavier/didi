@@ -128,15 +128,82 @@ const SEO = ({ title, desc, index, schema }) => {
         <link rel="canonical" href={canonicalUrl} />
         {countries.map((c, index) => {
           const placeRegex = /(\/[A-Za-z]{2}\/$)/;
-
-          return placeRegex.test(pathname) ? (
-            <link
-              key={index}
-              rel="alternate"
-              href={origin + "/" + c.code + "/"}
-              hreflang={`${c.languageCode}-${c.code}`}
-            />
-          ) : null;
+          switch (pathname) {
+            case `/${countryCode}/`:
+              return (
+                <link
+                  key={index}
+                  rel="alternate"
+                  href={origin + "/" + c.code + "/"}
+                  hreflang={`${c.languageCode}-${c.code}`}
+                />
+              );
+              case `/${countryCode}/conductor/`:
+              case `/${countryCode}/driver/`:
+                if (["au", "eg", "nz", "ru"].includes(c.code)) {
+                  return (
+                    <link
+                      key={index}
+                      rel="alternate"
+                      href={origin + "/" + c.code + "/driver/"}
+                      hreflang={`${c.languageCode}-${c.code}`}
+                    />
+                  );
+                } else if (["hk"].includes(c.code)) {
+                  return null;
+                } else {
+                  return (
+                    <link
+                      key={index}
+                      rel="alternate"
+                      href={origin + "/" + c.code + "/conductor/"}
+                      hreflang={`${c.languageCode}-${c.code}`}
+                    />
+                  );
+                }
+            case `/${countryCode}/food/`:
+              if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+                return null;
+              }
+              else {
+              return (
+                <link
+                  key={index}
+                  rel="alternate"
+                  href={origin + "/" + c.code + "/food/"}
+                  hreflang={`${c.languageCode}-${c.code}`}
+                />
+              );
+              } 
+            case `/${countryCode}/food/repartidores/`:
+              if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+                return null;
+              } else {
+                return (
+                  <link
+                    key={index}
+                    rel="alternate"
+                    href={origin + "/" + c.code + "/food/repartidores"}
+                    hreflang={`${c.languageCode}-${c.code}`}
+                  />
+                );
+              }
+            case `/${countryCode}/food/restaurantes/`:
+              if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+                return null;
+              } else {
+                return (
+                  <link
+                    key={index}
+                    rel="alternate"
+                    href={origin + "/" + c.code + "/food/restaurantes"}
+                    hreflang={`${c.languageCode}-${c.code}`}
+                  />
+                );
+              }
+            default:
+              return null;
+          }
         })}
 
         {
