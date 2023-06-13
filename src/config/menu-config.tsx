@@ -83,8 +83,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/cl/conductor/requisitos-para-conducir/"
-        }
+          url: "/cl/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -337,8 +337,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/ar/conductor/requisitos-para-conducir/"
-        }
+          url: "/ar/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -409,8 +409,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/pe/conductor/requisitos-para-conducir/"
-        }
+          url: "/pe/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -503,8 +503,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/co/conductor/requisitos-para-conducir/"
-        }
+          url: "/co/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -684,14 +684,18 @@ const menuLinks: AllMenuInterface = {
       url: "/eg/driver/",
       dropMenu: [
         {
+          text: "السائق",
+          url: "/eg/driver/",
+        },
+        {
           text: "دليل بدء شريك",
           url: "/eg/driver/driver-starter-manual",
         },
-        {
-          text: "مساعدة الشريك السائق",
-          url: "/eg/driver/driver-help/",
-        },
       ],
+    },
+    {
+      text: "مساعدة الشريك السائق",
+      url: "/eg/help-center/",
     },
   ],
   pa: [
@@ -769,8 +773,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/cr/conductor/requisitos-para-conducir/"
-        }
+          url: "/cr/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -841,8 +845,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/do/conductor/requisitos-para-conducir/"
-        }
+          url: "/do/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -923,8 +927,8 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Requisitos Para Conducir",
-          url: "/ec/conductor/requisitos-para-conducir/"
-        }
+          url: "/ec/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
@@ -980,10 +984,6 @@ const menuLinks: AllMenuInterface = {
           url: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
         },
         {
-          text: "Driver Help",
-          url: "/nz/driver/help/",
-        },
-        {
           text: "DiDi Advance",
           url: "/nz/didi-advance/",
         },
@@ -1012,8 +1012,8 @@ const menuLinks: AllMenuInterface = {
       url: "/nz/about-us/",
       dropMenu: [
         {
-          text: "Driver Help",
-          url: "/nz/driver/help/",
+          text: "Help Center",
+          url: "/nz/help-center/",
         },
         {
           text: "Contact",
