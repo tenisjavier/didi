@@ -10,6 +10,7 @@ import ArticlesColumns from "../../components/sections/ArticlesColumns";
 import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
 import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
 import FoodBlogPostHero from "../../components/sections/FoodBlogPostHero";
+import CourierBlogPostHero from "../../components/sections/CourierBlogPostHero";
 import NewsroomColumns from "../../components/sections/NewsroomColumns";
 import PaxBanner from "../../components/sections/PaxBanner";
 import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
@@ -19,6 +20,7 @@ const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
   const title = data.contentfulArticle.seoTitle;
   const desc = data.contentfulArticle.seoDescription;
+  const category = data.contentfulArticle.category;
   const { pathname } = useLocation();
   let offerColumns;
 
@@ -63,6 +65,19 @@ const ArticlesTemplate = ({ data }) => {
     banner = null;
   }
 
+  console.log(category);
+
+  if(category[0] === "food-courier") {
+    hero = <CourierBlogPostHero data={data}></CourierBlogPostHero>;
+    banner = null;
+    columns = (
+      <RelatedFoodBlogColumns
+        data={data}
+        tags={data.contentfulArticle.tags}
+      ></RelatedFoodBlogColumns>
+    );
+  }
+
   return (
     <Layout title={title} desc={desc}>
       {hero}
@@ -99,6 +114,7 @@ export const query = graphql`
     contentfulArticle(id: { eq: $id }) {
       title
       excerpt
+      category
       author
       authorRole
       updatedAt
