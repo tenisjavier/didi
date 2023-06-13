@@ -1,11 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import OfferHero from "../../../components/sections/OfferHero";
-import OfferColumns from "../../../components/sections/OfferColumns";
-import OfferFeatures from "../../../components/sections/OfferFeatures";
+import Layout from "../../components/Layout";
+import OfferHero from "../../components/sections/OfferHero";
+import OfferColumns from "../../components/sections/OfferColumns";
+import OfferFeatures from "../../components/sections/OfferFeatures";
 
-const Partner = ({ data }) => {
+const Offer = ({ data }) => {
   const {
     heroTitle,
     heroDesc,
@@ -13,8 +13,6 @@ const Partner = ({ data }) => {
     featureTitle,
     featureDesc,
     featureImage,
-    featureBtnText,
-    featureBtnLink,
   } = data.contentfulOffer;
   const offer = data.contentfulOffer;
   const columns = [
@@ -46,14 +44,12 @@ const Partner = ({ data }) => {
         title={featureTitle}
         desc={featureDesc}
         image={featureImage}
-        btnLink={featureBtnLink}
-        btnText={featureBtnText}
       ></OfferFeatures>
     </Layout>
   );
 };
 
-export default Partner;
+export default Offer;
 
 export const query = graphql`
   query ($id: String) {
@@ -88,8 +84,6 @@ export const query = graphql`
         gatsbyImageData
         description
       }
-      featureBtnText
-      featureBtnLink
     }
     allContentfulAsset(
       filter: { title: { in: ["au.PartnerCTA.image"] } }

@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import RequirementHero from "../../../components/sections/RequirementHero";
-import RequirementRichContent from "../../../components/sections/RequirementRichContent";
-import DrvCityList from "../../../components/sections/DrvCityList";
+import Layout from "../../components/Layout";
+import RequirementHero from "../../components/sections/RequirementHero";
+import RequirementRichContent from "../../components/sections/RequirementRichContent";
+import DrvCityList from "../../components/sections/DrvCityList";
 
 const Requirement = ({ data }) => {
   const images = data.allContentfulAsset.nodes;

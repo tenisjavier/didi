@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import ProductHero from "../../../components/sections/ProductHero";
-import SilderSection from "../../../components/sections/SliderSection";
-import ProductCTAComponent from "../../../components/sections/ProductCTAComponent";
-import HelpCenterFAQPax from "../../../components/sections/HelpCenterFAQPax";
-import HomeColumns from "../../../components/sections/HomeColumns";
+import Layout from "../../components/Layout";
+import ProductHero from "../../components/sections/ProductHero";
+import SilderSection from "../../components/sections/SliderSection";
+import ProductCTAComponent from "../../components/sections/ProductCTAComponent";
+import HelpCenterFAQPax from "../../components/sections/HelpCenterFAQPax";
+import HomeColumns from "../../components/sections/HomeColumns";
 
-const Product = ({ data }) => {
+const ProductsTemplate = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const { name, description, components, componentImages } =
     data.contentfulProduct;
@@ -46,10 +46,10 @@ const Product = ({ data }) => {
   );
 };
 
-export default Product;
+export default ProductsTemplate;
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $countryCode: String) {
     allContentfulAsset(
       filter: {
         title: {
@@ -67,7 +67,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "au" } } }
+        country: { elemMatch: { code: { eq: $countryCode } } }
         category: { eq: "driver" }
       }
     ) {
