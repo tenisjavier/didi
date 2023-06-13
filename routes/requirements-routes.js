@@ -42,7 +42,8 @@ const requirementsRoutesInit = async (graphql, createPage) => {
       path: path,
       component: template,
       context: {
-        id: id
+        id: id,
+        countryCode: country.code
       },
     });
   });

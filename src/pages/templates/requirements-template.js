@@ -25,7 +25,7 @@ const Requirement = ({ data }) => {
 export default Requirement;
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $countryCode: String) {
     allContentfulAsset(
       filter: { title: { regex: "/(au.DrvHero.bgImage)/" } }
       sort: { title: ASC }
@@ -43,7 +43,7 @@ export const query = graphql`
         raw
       }
     }
-    contentfulCountry(code: { eq: "au" }) {
+    contentfulCountry(code: { eq: $countryCode }) {
       city {
         name
         slug
