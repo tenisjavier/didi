@@ -5,7 +5,11 @@ const path = require(`path`);
 const requirementsRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
   {
-    allContentfulRequirement {
+    allContentfulRequirement(
+      filter: {
+        country: { code: { in: ["au", "nz"] } }
+      }
+    ) {
       nodes {
         id
         slug

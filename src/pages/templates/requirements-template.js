@@ -17,7 +17,7 @@ const Requirement = ({ data }) => {
     <Layout title={title}>
       <RequirementHero title={title} bgImage={drvHeroBgImage}></RequirementHero>
       <RequirementRichContent data={data}></RequirementRichContent>
-      <DrvCityList data={cities}></DrvCityList>
+      {cities && <DrvCityList data={cities}></DrvCityList>}
     </Layout>
   );
 };
