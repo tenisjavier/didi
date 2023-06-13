@@ -91,7 +91,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express y taxi, ganando más y manejando menos",
     },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
@@ -487,7 +487,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos",
     },
     "/conductor/moto/": {
       title: "DiDi Moto - Conduce y Genera Dinero",
@@ -554,7 +554,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor, ganando más y manejando menos",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -593,7 +593,8 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos"
+      ,
     },
     "/didi-fleet/": {
       title: "DiDi Fleet - Alquilá tus autos y generá ganancias",
@@ -656,7 +657,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor, ganando más y manejando menos",
     },
     "/sobre-didi/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -731,7 +732,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/didimas/": {
       title: "Promociones DiDiMás+ para Conductores",
@@ -834,7 +835,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor, ganando más y manejando menos",
     },
     "/moto/": {
       title: "DiDi Moto - Maneja y Genera Dinero",
@@ -1010,7 +1011,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/food/": {
       title: "Pedí comida a través de DiDi Food",
