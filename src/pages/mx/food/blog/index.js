@@ -36,7 +36,7 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "food" }, country: { code: { eq: "mx" } } }
+      filter: { category: { in: ["food", "food-courier"] }, country: { code: { eq: "mx" } } }
       sort: { updatedAt: DESC }
     ) {
       nodes {

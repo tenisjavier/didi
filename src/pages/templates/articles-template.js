@@ -65,8 +65,6 @@ const ArticlesTemplate = ({ data }) => {
     banner = null;
   }
 
-  console.log(category);
-
   if(category[0] === "food-courier") {
     hero = <CourierBlogPostHero data={data}></CourierBlogPostHero>;
     banner = null;
