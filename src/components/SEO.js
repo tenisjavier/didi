@@ -101,6 +101,157 @@ const SEO = ({ title, desc, index, schema }) => {
       ? origin + pathname
       : "https://web.didiglobal.com/mx/";
 
+  //? Hreflang Logic
+  const hreflangs = countries.map((c, index) => {
+    switch (pathname) {
+      case `/`:
+        return (
+          <link
+            key={index}
+            rel="alternate"
+            href={origin + "/" + c.code + "/"}
+            hreflang={`${c.languageCode}-${c.code}`}
+          />
+        );
+      case `/${countryCode}/`:
+        return (
+          <link
+            key={index}
+            rel="alternate"
+            href={origin + "/" + c.code + "/"}
+            hreflang={`${c.languageCode}-${c.code}`}
+          />
+        );
+      case `/${countryCode}/conductor/`:
+      case `/${countryCode}/driver/`:
+        if (["au", "eg", "nz", "ru"].includes(c.code)) {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/driver/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        } else if (["hk"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/conductor/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      case `/${countryCode}/conductor/requisitos-para-conducir/`:
+        if (["au", "eg", "nz", "ru", "hk"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={
+                origin + "/" + c.code + "/conductor/requisitos-para-conducir/"
+              }
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      case `/${countryCode}/pasajero/`:
+      case `/${countryCode}/rider/`:
+        if (["au", "eg", "nz", "ru"].includes(c.code)) {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/rider/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        } else if (["hk"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/pasajero/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      case `/${countryCode}/centro-de-ayuda/`:
+      case `/${countryCode}/help-center/`:
+        if (["au", "eg", "nz"].includes(c.code)) {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/help-center/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        } else if (["hk", "ru"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/centro-de-ayuda/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      case `/${countryCode}/food/`:
+        if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/food/"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      case `/${countryCode}/food/repartidores/`:
+        if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/food/repartidores"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      case `/${countryCode}/food/restaurantes/`:
+        if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+          return null;
+        } else {
+          return (
+            <link
+              key={index}
+              rel="alternate"
+              href={origin + "/" + c.code + "/food/restaurantes"}
+              hreflang={`${c.languageCode}-${c.code}`}
+            />
+          );
+        }
+      default:
+        return null;
+    }
+  });
+
+  //? END of hreflang logic
+
   return (
     <>
       <Helmet htmlAttributes={htmlAttributes} title={title}>
@@ -126,19 +277,15 @@ const SEO = ({ title, desc, index, schema }) => {
           <meta name="robots" content="noindex"></meta>
         ) : null}
         <link rel="canonical" href={canonicalUrl} />
-        {countries.map((c, index) => {
-          const placeRegex = /(\/[A-Za-z]{2}\/$)/;
-
-          return placeRegex.test(pathname) ? (
-            <link
-              key={index}
-              rel="alternate"
-              href={origin + "/" + c.code + "/"}
-              hreflang={`${c.languageCode}-${c.code}`}
-            />
-          ) : null;
-        })}
-
+        {hreflangs}
+        {(pathname === "/" || pathname === `/${countryCode}/`) && (
+          <link
+            key={index}
+            rel="alternate"
+            href={origin}
+            hreflang={`x-default`}
+          />
+        )}
         {
           // activate tracking pixel when DOM is mounted
           useEffect(() => {

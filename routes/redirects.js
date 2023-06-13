@@ -245,6 +245,16 @@ const redirectsInit = async (graphql, createRedirect) => {
     toPath: `/mx/food/contacto/`,
     isPermanent: true,
   });
+  createRedirect({
+    fromPath: `/eg/driver/driver-help/*`,
+    toPath: `/eg/help-center/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/nz/driver/help/*`,
+    toPath: `/nz/help-center/*`,
+    isPermanent: true,
+  });
 };
 
 module.exports.init = redirectsInit;

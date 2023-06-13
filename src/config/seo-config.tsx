@@ -983,7 +983,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "انضم لشركائنا السائقين",
       desc: "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
     },
-    "/driver/driver-help/": {
+    "/help-center/": {
       title: "مساعدة الشريك السائق",
       desc: "",
     },
@@ -1084,7 +1084,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Driver - Drive and earn with DiDi",
       desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
     },
-    "/driver/help/": {
+    "/help-center/": {
       title: "Driver Help & FAQs",
       desc: "Need help? Have questions? We're here to assist you!",
     },
@@ -1132,10 +1132,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/safety/": {
       title: "Safety",
       desc: "Your safety comes first-- learn more about our industry-leading safety features.",
-    },
-    "/help-center/": {
-      title: "Help Center",
-      desc: "FAQs for DiDi riders and drivers.",
     },
     "/contact/": {
       title: "Contact Our Costumer Support Center",

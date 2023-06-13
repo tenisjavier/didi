@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import HelpCenterHero from "../../../components/sections/HelpCenterHero";
-import HelpCenterFAQDrv from "../../../components/sections/HelpCenterFAQDrv";
-import FaqList from "../../../components/sections/FaqList";
+import Layout from "../../components/Layout";
+import HelpCenterHero from "../../components/sections/HelpCenterHero";
+import HelpCenterFAQDrv from "../../components/sections/HelpCenterFAQDrv";
+import FaqList from "../../components/sections/FaqList";
 
 const HelpCenter = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -19,7 +19,10 @@ const HelpCenter = ({ data }) => {
     <Layout schema="faq">
       <HelpCenterHero bgImage={helpCenterBgImage}></HelpCenterHero>
       <HelpCenterFAQDrv data={faqExpress[0]}></HelpCenterFAQDrv>
-      <FaqList title={"More FAQ for Drivers"} faqs={faqExpress[0].faq}></FaqList>
+      <FaqList
+        title={"More FAQ for Drivers"}
+        faqs={faqExpress[0].faq}
+      ></FaqList>
     </Layout>
   );
 };
