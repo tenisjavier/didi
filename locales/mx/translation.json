@@ -1032,15 +1032,24 @@
   "DiDiPayGrid.columns": [
     {
       "title": "Tiempo Aire",
-      "desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más."
+      "desc": "Recarga saldo Movistar, Telcel, Unefon, AT&T y más.",
+      "btnMode": "primary",
+      "btnText": "Conoce más",
+      "btnLink": "/mx/didipay/recarga-celular/"
     },
     {
       "title": "Pago de servicios",
-      "desc": "Paga tu recibo de CFE, Telmex, Izzi y más."
+      "desc": "Paga tu recibo de CFE, Telmex, Izzi y más.",
+      "btnMode": "primary",
+      "btnText": "Conoce más",
+      "btnLink": "/mx/didipay/servicios/"
     },
     {
       "title": "Tarjeta de regalo",
-      "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay"
+      "desc": "Compra tarjetas electrónicas de todo tipo con DiDi Pay",
+      "btnMode": "primary",
+      "btnText": "Conoce más",
+      "btnLink": "/mx/didipay/tarjetas-de-regalo/"
     }
   ],
   "DiDiPayArticlesColumns.title": "Sigue nuestros artículos financieros.",

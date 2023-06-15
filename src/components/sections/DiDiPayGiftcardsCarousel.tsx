@@ -14,7 +14,7 @@ const DiDiPayPartnersCarousel = ({ images }: DiDiPayCarouselProps) => {
     slides: [],
     images: images,
     carouselType: "Images",
-    slidesToShow: 6,
+    slidesToShow: 4,
     arrowNext: ">",
     arrowPrev: "<",
     arrowColor: "text-orange-primary"

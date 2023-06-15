@@ -19,9 +19,6 @@ const DiDiPayBusinessCTA = ({ image }: DiDiPayBusinessCTAProps) => {
     bgColor: t("DiDiPayBusinessCTA.bgColor"),
     image: image,
     imageStyle: "z-10 m-4 w-100",
-    btnMode: t("DiDiPayBusinessCTA.btnMode"),
-    btnLink: t("DiDiPayBusinessCTA.btnLink"),
-    btnText: t("DiDiPayBusinessCTA.btnText"),
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;

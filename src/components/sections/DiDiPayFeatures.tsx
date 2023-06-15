@@ -23,8 +23,6 @@ const DiDiPayFeatures = ({ image }: DiDiPayFeaturesProps) => {
     bgColor: t("DiDiPayFeatures.bgColor"),
     image: image,
     imageStyle: "z-10 m-4 w-100",
-    btnMode: t("DiDiPayFeatures.btnMode"),
-    btnType: "payment",
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;
