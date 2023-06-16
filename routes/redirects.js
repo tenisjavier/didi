@@ -260,6 +260,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     toPath: `https://hk.didiglobal.com/`,
     isPermanent: true,
   });
+  createRedirect({
+    fromPath: `/hk/`,
+    toPath: `https://hk.didiglobal.com/`,
+    isPermanent: true,
+  });
 };
 
 module.exports.init = redirectsInit;
