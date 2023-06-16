@@ -142,40 +142,7 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-  hk: [
-    {
-      text: "乘搭",
-      url: "/hk/",
-      dropMenu: [
-        {
-          text: "的士服務",
-          url: "/hk/ride/的士服務",
-        },
-        {
-          text: "粵港跨境專車服務",
-          url: "/hk/ride/粵港跨境專車服務",
-        },
-      ],
-    },
-    {
-      text: "成為司機夥伴",
-      url: "/hk/taxi-driver/",
-    },
-    {
-      text: "防疫措施",
-      url: "/hk/coronavirus/",
-    },
-    {
-      text: "最新優惠",
-      url: "",
-      dropMenu: [
-        {
-          text: "遠DD, call DiDi! 程程85折!",
-          url: "/hk/遠dd-call-didi-程程85折",
-        },
-      ],
-    },
-  ],
+
   mx: [
     {
       text: "DiDi Conductor",

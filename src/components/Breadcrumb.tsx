@@ -61,7 +61,7 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
     );
 
   //* if custom breadcrumb is not passed then pathname breadcrumb take place
-  //* special rules for RU, EG and HK
+  //* special rules for RU, EG
   return (
     <nav className="bg-grey-light absolute top-24 z-10 hidden w-full  text-white justify-center rounded-md md:flex  md:justify-between px-6 py-4">
       <ol className="flex list-none p-0 m-0">
@@ -115,14 +115,6 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
                 break;
               case "newsroom":
                 itemPath = "Раздел новостей";
-                break;
-              default:
-                itemPath = decodeURI(dir);
-            }
-          } else if (countryCode == "hk") {
-            switch (decodeURI(dir)) {
-              case "ride":
-                itemPath = "騎";
                 break;
               default:
                 itemPath = decodeURI(dir);

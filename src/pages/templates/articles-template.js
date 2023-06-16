@@ -4,8 +4,6 @@ import React from "react";
 import Layout from "../../components/Layout";
 import ArticleContent from "../../components/sections/ArticleContent";
 import ArticleHero from "../../components/sections/ArticleHero";
-import ArticleNoBtnHero from "../../components/sections/ArticleNoBtnHero";
-import ArticleOfferColumns from "../../components/sections/ArticleOfferColumns";
 import ArticlesColumns from "../../components/sections/ArticlesColumns";
 import DiDiPayArticleHero from "../../components/sections/DiDiPayArticleHero";
 import DiDiPayBlogColumns from "../../components/sections/DiDiPayBlogColumns";
@@ -15,34 +13,17 @@ import NewsroomColumns from "../../components/sections/NewsroomColumns";
 import PaxBanner from "../../components/sections/PaxBanner";
 import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
 import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
-//dsss
+
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
   const title = data.contentfulArticle.seoTitle;
   const desc = data.contentfulArticle.seoDescription;
   const category = data.contentfulArticle.category;
   const { pathname } = useLocation();
-  let offerColumns;
 
   let hero = <ArticleHero data={data}></ArticleHero>;
   let banner = <PaxBanner></PaxBanner>;
-  if (pathname.includes("/hk/coronavirus")) {
-    hero = <ArticleNoBtnHero data={data}></ArticleNoBtnHero>;
-  }
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
-
-  if (pathname.includes("/hk") && !pathname.includes("/hk/coronavirus")) {
-    const images = data.allContentfulAsset.nodes;
-    const articleOfferColumnsImages = images.filter((image) => {
-      return image.title === "hk.ArticleOfferColumns.image";
-    });
-    banner = null;
-    offerColumns = (
-      <ArticleOfferColumns
-        images={articleOfferColumnsImages.reverse()}
-      ></ArticleOfferColumns>
-    );
-  }
 
   if (pathname.includes("newsroom"))
     columns = <NewsroomColumns data={data}></NewsroomColumns>;
@@ -65,7 +46,7 @@ const ArticlesTemplate = ({ data }) => {
     banner = null;
   }
 
-  if(category[0] === "food-courier") {
+  if (category[0] === "food-courier") {
     hero = <CourierBlogPostHero data={data}></CourierBlogPostHero>;
     banner = null;
     columns = (
@@ -80,9 +61,6 @@ const ArticlesTemplate = ({ data }) => {
     <Layout title={title} desc={desc}>
       {hero}
       <ArticleContent data={data}></ArticleContent>
-      {pathname.includes("/hk") &&
-        !pathname.includes("/hk/coronavirus") &&
-        offerColumns}
       {banner && banner}
       {articles.length && columns}
     </Layout>
