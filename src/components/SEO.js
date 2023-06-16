@@ -26,7 +26,6 @@ const SEO = ({ title, desc, index, schema }) => {
               "nz"
               "mx"
               "ru"
-              "hk"
             ]
           }
         }
@@ -133,8 +132,6 @@ const SEO = ({ title, desc, index, schema }) => {
               hreflang={`${c.languageCode}-${c.code}`}
             />
           );
-        } else if (["hk"].includes(c.code)) {
-          return null;
         } else {
           return (
             <link
@@ -146,7 +143,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/conductor/requisitos-para-conducir/`:
-        if (["au", "eg", "nz", "ru", "hk"].includes(c.code)) {
+        if (["au", "eg", "nz", "ru"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -171,8 +168,6 @@ const SEO = ({ title, desc, index, schema }) => {
               hreflang={`${c.languageCode}-${c.code}`}
             />
           );
-        } else if (["hk"].includes(c.code)) {
-          return null;
         } else {
           return (
             <link
@@ -194,7 +189,7 @@ const SEO = ({ title, desc, index, schema }) => {
               hreflang={`${c.languageCode}-${c.code}`}
             />
           );
-        } else if (["hk", "ru"].includes(c.code)) {
+        } else if (["ru"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -207,7 +202,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/food/`:
-        if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+        if (["au", "eg", "nz", "ru", "ar", "ec", "pa"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -220,7 +215,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/food/repartidores/`:
-        if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+        if (["au", "eg", "nz", "ru", "ar", "ec", "pa"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -233,7 +228,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/food/restaurantes/`:
-        if (["au", "eg", "nz", "ru", "hk", "ar", "ec", "pa"].includes(c.code)) {
+        if (["au", "eg", "nz", "ru", "ar", "ec", "pa"].includes(c.code)) {
           return null;
         } else {
           return (

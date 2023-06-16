@@ -209,7 +209,6 @@ const insertBtnParams = () => {
       nz: ["NZ", "en-NZ"],
       eg: ["EG", "ar-EG"],
       za: ["ZA", "en-ZA"],
-      hk: ["ZH", "zh-HK"],
     };
 
     let newUrl = new URL(url.origin + url.pathname.slice(0, 5)); // without any params for now

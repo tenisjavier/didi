@@ -179,56 +179,6 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
-  hk: {
-    "/": {
-      title: "網上call的士及粵港車 - DiDi 香港",
-      desc: "網上call的士及粵港車 - DiDi 香港",
-    },
-    "/ride/": {
-      title: "的士服務 - DiDi 香港",
-      desc: "的士服務 - DiDi 香港",
-    },
-    "/driver/": {
-      title: "成為司機夥伴 - DiDi 香港",
-      desc: "成為司機夥伴 - DiDi 香港",
-    },
-    "/taxi/": {
-      title: "成為司機夥伴 - DiDi 香港",
-      desc: "成為司機夥伴 - DiDi 香港",
-    },
-    "/coronavirus/": {
-      title: "同心抗疫 滴滴守護你的出行安全",
-      desc: "香港第五波疫情嚴峻，牽動著社會各界的心。滴滴香港積極推出線上及線下各項防疫措施，竭力爲司機夥伴和乘客的出行安全保駕護航",
-    },
-    "/ride/滴滴的士服務/": {
-      title: "的士服務 - DiDi 香港",
-      desc: "",
-    },
-    "/ride/粵港跨境專車服務/": {
-      title: "粵港跨境專車服務 - DiDi 香港",
-      desc: "",
-    },
-    "/點call-didi香港-didi-app-alipay-wechat-小程序/": {
-      title: "點call DiDi ? - DiDi 香港",
-      desc: "",
-    },
-    "/taxi-driver/": {
-      title: "成為司機夥伴 - DiDi 香港",
-      desc: "",
-    },
-    "/遠dd-call-didi-程程85折/": {
-      title: "遠DD, call DiDi! 程程85折! - DiDi 香港",
-      desc: "",
-    },
-    "/about-us/": {
-      title: "About us - DiDi 香港",
-      desc: "",
-    },
-    "/blog/": {
-      title: "Blog - DiDi 香港",
-      desc: "",
-    },
-  },
   mx: {
     "/": {
       title: "DiDi México: Regístrate como Socio Conductor DiDi",
@@ -593,8 +543,7 @@ const seoMeta: AllSEOMetaInterface = {
     },
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos"
-      ,
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/didi-fleet/": {
       title: "DiDi Fleet - Alquilá tus autos y generá ganancias",
