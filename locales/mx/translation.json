@@ -1068,19 +1068,19 @@
   "DiDiPayBanner.desc": "Regala tarjetas de tus marcas favoritas con DiDi Pay",
   "DiDiPayBanner.bgColor": "bg-blue-dark",
   "DiDiPayBanner.textColor": "white",
-  "DiDiPayColumns.title": "",
+  "DiDiPayColumns.title": "¿Tienes dudas?",
   "DiDiPayColumns.desc": "",
   "DiDiPayColumns.bgColor": "bg-gray-light",
   "DiDiPayColumns.columns": [
     {
-      "title": "Desarga la App",
+      "title": "",
+      "desc": "Encuentra nuestro chat en vivo de soporte dentro de la aplicación o contáctanos al 8009533300",
       "textColor": "gray-primary",
-      "btnType": "payment",
-      "btnMode": "light",
       "height": "h-40"
     },
     {
-      "title": "¿Tienes dudas?",
+      "title": "",
+      "desc": "Consulta nuestras preguntas frecuentes",
       "textColor": "gray-primary",
       "btnText": "Preguntas Frecuentes",
       "btnLink": "/mx/didipay/preguntas-frecuentes/",
@@ -1088,6 +1088,10 @@
       "height": "h-40"
     }
   ],
+  "DiDiPayFAQKnowMoreBanner.title": "¿Aún tienes dudas?",
+  "DiDiPayFAQKnowMoreBanner.desc": "Encuentra nuestro chat en vivo de soporte dentro de la aplicación o contáctanos al 8009533300",
+  "DiDiPayFAQKnowMoreBanner.bgColor": "bg-orange-primary",
+  "DiDiPayFAQKnowMoreBanner.textColor": "white",
   "DiDiPayBusinessColumns.title": "",
   "DiDiPayBusinessColumns.desc": "",
   "DiDiPayBusinessColumns.bgColor": "bg-orange-primary",

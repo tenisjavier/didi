@@ -4,7 +4,7 @@ import Layout from "../../../components/Layout";
 import DiDiPayFAQHero from "../../../components/sections/DiDiPayFAQHero";
 import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
 import FaqList from "../../../components/sections/FaqList";
-
+import DiDiPayFAQKnowMore from "../../../components/sections/DiDiPayFAQKnowMore";
 
 const DiDiPayFAQ = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -41,6 +41,7 @@ const DiDiPayFAQ = ({ data }) => {
         image={homeHeroImage}
       ></DiDiPayFAQHero>
       <DiDiPayFAQs data={faqDiDiPay.reverse()}></DiDiPayFAQs>
+      <DiDiPayFAQKnowMore></DiDiPayFAQKnowMore>
       {
         <FaqList
           title={"Preguntas Frecuentes DiDi Pay"}
