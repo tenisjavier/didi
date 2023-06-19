@@ -33,6 +33,9 @@ const DiDiPay = ({ data }) => {
   const DiDiPayCarouselImages = images.filter((image) => {
     return image.title === "mx.DiDiPayCarousel.image";
   });
+  const hColumnsImages = images.filter((image) => {
+    return image.title.indexOf("mx.DiDiPayHomeColumns.image") !== -1;
+  });
 
   return (
     <Layout>
@@ -48,7 +51,7 @@ const DiDiPay = ({ data }) => {
       ></DiDiPayCarousel>
       <DiDiPayArticlesColumns data={data}></DiDiPayArticlesColumns>
       <DiDiPayBusinessCTA image={businessCTAImage}></DiDiPayBusinessCTA>
-      <DiDiPayColumns></DiDiPayColumns>
+      <DiDiPayColumns images={hColumnsImages}></DiDiPayColumns>
     </Layout>
   );
 };
@@ -60,7 +63,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayHomeHeroMobile.bgImage)|(mx.DiDiPayHomeHero.bgImage)|(mx.DiDiPayFeatures.image)|(mx.DiDiPayWhyDiDi.image)|(mx.DiDiPayBusinessCTA.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayColumns.image)|(mx.DiDiPayCarousel.image)/"
+          regex: "/(mx.DiDiPayHomeHeroMobile.bgImage)|(mx.DiDiPayHomeHero.bgImage)|(mx.DiDiPayFeatures.image)|(mx.DiDiPayWhyDiDi.image)|(mx.DiDiPayBusinessCTA.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayColumns.image)|(mx.DiDiPayCarousel.image)|(mx.DiDiPayHomeColumns.image)/"
         }
       }
     ) {
