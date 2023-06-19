@@ -48,6 +48,26 @@ const partnersRoutesInit = async (graphql, createPage) => {
         path = `/${country?.code}/didi-advance/${slug}`;
       }
 
+      if(country?.code === "co") {
+        createPage({
+          path: `/${country?.code}/didimas/privado/${slug}`,
+          component: template,
+          context: {
+            id: id,
+            countryCode: country.code,
+          },
+        });
+
+        createPage({
+          path: `/${country?.code}/didimas/taxista/${slug}`,
+          component: template,
+          context: {
+            id: id,
+            countryCode: country.code,
+          },
+        });
+      }
+
       createPage({
         path: path,
         component: template,
