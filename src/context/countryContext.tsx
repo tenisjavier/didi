@@ -46,7 +46,6 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     "nz",
     "au",
     "es",
-    "hk",
   ];
   const { pathname } = useLocation();
   const subfolder = /^\/..\//.exec(pathname);
@@ -60,9 +59,8 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
   if (pathname.includes("/food/en/")) {
     ns = "enfood";
   }
-  if(pathname.includes("tests")) {
-    countryCode = "mx",
-    ns = "food"
+  if (pathname.includes("tests")) {
+    (countryCode = "mx"), (ns = "food");
   }
 
   let [country, updateCountry] = useState({

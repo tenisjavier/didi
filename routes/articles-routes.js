@@ -40,7 +40,8 @@ const articlesRoutesInit = async (graphql, createPage) => {
     const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
     // create path depending on the language and category
     let path = `/${country.code}/articulos/${slug}/`;
-    if (cleanCategory === "food") path = `/${country.code}/food/blog/${slug}/`;
+    if (cleanCategory === "food" || cleanCategory === "food-courier")
+      path = `/${country.code}/food/blog/${slug}/`;
     if (cleanCategory === "news") path = `/${country.code}/newsroom/${slug}/`;
     if (cleanCategory === "pr" && language === "en")
       path = `/thejourney/${slug}/`;
@@ -52,6 +53,7 @@ const articlesRoutesInit = async (graphql, createPage) => {
     if (
       !sslCountries.includes(country.code) &&
       cleanCategory !== "food" &&
+      cleanCategory !== "food-courier" &&
       country.code !== "ru" &&
       country.code !== "int" &&
       cleanCategory !== "pr"
@@ -59,10 +61,6 @@ const articlesRoutesInit = async (graphql, createPage) => {
       path = `/${country.code}/blog/${slug}/`;
     }
 
-    if(country.code === "hk" && slug == "coronavirus") {
-      path = `/${country.code}/${slug}/`;
-    }
-    
     createPage({
       path: path,
       component: template,

@@ -85,9 +85,13 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en Chile. Elige la mejor opción.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express y taxi, ganando más y manejando menos",
     },
     "/didimas/": {
       title: "Club de Beneficios DiDiMás+ para Conductores",
@@ -175,56 +179,6 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
   },
-  hk: {
-    "/": {
-      title: "網上call的士及粵港車 - DiDi 香港",
-      desc: "網上call的士及粵港車 - DiDi 香港",
-    },
-    "/ride/": {
-      title: "的士服務 - DiDi 香港",
-      desc: "的士服務 - DiDi 香港",
-    },
-    "/driver/": {
-      title: "成為司機夥伴 - DiDi 香港",
-      desc: "成為司機夥伴 - DiDi 香港",
-    },
-    "/taxi/": {
-      title: "成為司機夥伴 - DiDi 香港",
-      desc: "成為司機夥伴 - DiDi 香港",
-    },
-    "/coronavirus/": {
-      title: "同心抗疫 滴滴守護你的出行安全",
-      desc: "香港第五波疫情嚴峻，牽動著社會各界的心。滴滴香港積極推出線上及線下各項防疫措施，竭力爲司機夥伴和乘客的出行安全保駕護航",
-    },
-    "/ride/滴滴的士服務/": {
-      title: "的士服務 - DiDi 香港",
-      desc: "",
-    },
-    "/ride/粵港跨境專車服務/": {
-      title: "粵港跨境專車服務 - DiDi 香港",
-      desc: "",
-    },
-    "/點call-didi香港-didi-app-alipay-wechat-小程序/": {
-      title: "點call DiDi ? - DiDi 香港",
-      desc: "",
-    },
-    "/taxi-driver/": {
-      title: "成為司機夥伴 - DiDi 香港",
-      desc: "",
-    },
-    "/遠dd-call-didi-程程85折/": {
-      title: "遠DD, call DiDi! 程程85折! - DiDi 香港",
-      desc: "",
-    },
-    "/about-us/": {
-      title: "About us - DiDi 香港",
-      desc: "",
-    },
-    "/blog/": {
-      title: "Blog - DiDi 香港",
-      desc: "",
-    },
-  },
   mx: {
     "/": {
       title: "DiDi México: Regístrate como Socio Conductor DiDi",
@@ -247,8 +201,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
     },
     "/conductor/requisitos-para-conducir/": {
-      title: "Requisitos para Conducir o Convertirse en Socio",
-      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y delivery, ganando más y manejando menos.",
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi, moto y delivery, ganando más y manejando menos",
     },
     "/conductor/requisitos-fiscales/": {
       title: "Requisitos Fiscales para Conductores de DiDi en México",
@@ -279,6 +233,18 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pay - Baja la App y asocia tu tarjeta.",
       desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
+    "/didipay/recarga-celular/": {
+      title: "Recarga tiempo aire y megas a cualquier número desde tu celular",
+      desc: "Recarga tiempo aire y megas a cualquier número desde tu celular. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
+    "/didipay/servicios/": {
+      title: "Paga tus recibos de luz, agua y más",
+      desc: "Paga tus recibos de luz, agua y más. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
+    "/didipay/tarjeta-de-regalo/": {
+      title: "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay",
+      desc: "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
+    },
     "/servicios-financieros/": {
       title: "DiDi Servicios Financieros",
       desc: "DiDi Servicios Financieros. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
@@ -287,7 +253,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pay Negocios - Aumenta tus ventas",
       desc: "DiDi Pay para Negocios en México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
-    "/didipay-preguntas-frecuentes/": {
+    "/didipay/preguntas-frecuentes/": {
       title: "Preguntas Frecuentes sobre DiDi Pay.",
       desc: "Revisa nuestras preguntas frecuentes sobre DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
@@ -465,11 +431,15 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express, DiDi Taxi y DiDi Delivery están activos en República Dominicana. Elige la mejor opción.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Conduce y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
     },
-    "/driver/moto/": {
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos",
+    },
+    "/conductor/moto/": {
       title: "DiDi Moto - Conduce y Genera Dinero",
       desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
@@ -528,9 +498,13 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. Somos la App nº1 en movilidad del mundo. Ya nos encontramos en Ecuador.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Conduce y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en la categoría express y empieza a ganar más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor, ganando más y manejando menos",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -563,9 +537,13 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Pedí un DiDi y Viajá Seguro",
       desc: "DiDi Pasajero. DiDi en Argentina, viajá seguro, barato y rápido. DiDi Express y DiDi Taxi están activos en Argentina. Elegí la mejor opción.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Manejá y Generá Dinero",
       desc: "DiDi Conductor, registrate como socio conductor en la categoría de express o taxi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/didi-fleet/": {
       title: "DiDi Fleet - Alquilá tus autos y generá ganancias",
@@ -575,7 +553,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Taxi - Generá Ingresos Extra con DiDi",
       desc: "DiDi Taxi. Revisá los requisitos y registrate como socio taxista DiDi, ganando más y manejando menos. Si sos Socio Conductor llamános al +54 (11) 3987-6342",
     },
-    "/driver/moto/": {
+    "/conductor/moto/": {
       title: "DiDi Moto - Generá Ingresos Extra con DiDi",
       desc: "DiDi Moto en Argentina. Registrate en DiDi Moto en nuestra web y comenzá ya a generar ganancias cuando más te convenga.",
     },
@@ -622,11 +600,14 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Bája la App y Viaja Seguro",
       desc: "Pasajero. DiDi en Perú, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor en Perú. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
     },
-
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor, ganando más y manejando menos",
+    },
     "/sobre-didi/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -694,19 +675,23 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Muévete por tu Ciudad",
       desc: "Pasajero. DiDi en Colombia, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Ingresos Extra",
       desc: "DiDi Conductor en Colombia. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/didimas/": {
       title: "Promociones DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
-    "/driver/historias-de-exito/": {
+    "/conductor/historias-de-exito/": {
       title: "Historias de Éxito de Socios Arrendadores",
       desc: "Detrás de cada logro, hay una historia de éxito que contar. Conoce las historias que hoy nos quieren contar algunos socios arrendadores. ¿y tú qué esperas?",
     },
-    "/driver/moto/": {
+    "/conductor/moto/": {
       title: "DiDi Moto - Genera ingresos extra",
       desc: "Genera inresos extra conectándote con DiDi Moto disponible ahora en Colombia.",
     },
@@ -718,7 +703,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Fleet - Haz Dinero Hasta Durmiendo",
       desc: "DiDi Fleet en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
-    "/driver/didi-flex/": {
+    "/conductor/didi-flex/": {
       title: "DiDi Flex: Elige el precio sin afectar tu seguridad",
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
     },
@@ -793,9 +778,13 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Baja la App y Viaja Seguro",
       desc: "DiDi Pasajero. Viaja seguro, barato y rápido. DiDi Express y DiDi Moto están activos en Panamá. Elige la mejor opción.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Dinero",
       desc: "DiDi Conductor. Revisa los requisitos. Regístrate como socio conductor en las categorías express y moto, ganando más y manejando menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor, ganando más y manejando menos",
     },
     "/moto/": {
       title: "DiDi Moto - Maneja y Genera Dinero",
@@ -943,7 +932,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "انضم لشركائنا السائقين",
       desc: "ابدأ في تحقيق دخل متميز مع رسوم الخدمة التنافسية والدعم المحلي وميزات السلامة الرائدة.",
     },
-    "/driver/driver-help/": {
+    "/help-center/": {
       title: "مساعدة الشريك السائق",
       desc: "",
     },
@@ -965,9 +954,13 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Descargá la App y Viajá",
       desc: "DiDi Pasajero. Viajá seguro, barato y rápido. DiDi Express está disponible en Costa Rica. Elegí la mejor opción.",
     },
-    "/driver/": {
+    "/conductor/": {
       title: "DiDi Conductor - Manejá y Generá Dinero",
       desc: "DiDi Conductor. Revisá los requisitos. Registrate como socio conductor en la categoría express ganando más y conduciendo menos.",
+    },
+    "/conductor/requisitos-para-conducir/": {
+      title: "Requisitos para Conducir y empezar a Ganar Dinero",
+      desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/food/": {
       title: "Pedí comida a través de DiDi Food",
@@ -1040,7 +1033,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Driver - Drive and earn with DiDi",
       desc: "Start earning today as a driver-partner with industry-leading safety features and low service fees.",
     },
-    "/driver/help/": {
+    "/help-center/": {
       title: "Driver Help & FAQs",
       desc: "Need help? Have questions? We're here to assist you!",
     },
@@ -1088,10 +1081,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/safety/": {
       title: "Safety",
       desc: "Your safety comes first-- learn more about our industry-leading safety features.",
-    },
-    "/help-center/": {
-      title: "Help Center",
-      desc: "FAQs for DiDi riders and drivers.",
     },
     "/contact/": {
       title: "Contact Our Costumer Support Center",

@@ -15,6 +15,7 @@ export interface BannerProps extends BtnProps {
   justifyContent?: string;
   image?: React.ReactNode;
   reverse?: boolean;
+  isRounded?: boolean;
 }
 
 const Banner = ({
@@ -32,10 +33,15 @@ const Banner = ({
   btnType,
   btnText,
   reverse,
+  isRounded
 }: BannerProps) => {
+  let rounded = "rounded";
+
+  if(!isRounded) 
+    rounded = "";
   return (
     <div
-      className={`rounded py-4 ${bgColor && bgColor} text-${textColor} ${
+      className={`${rounded} py-4 ${bgColor && bgColor} text-${textColor} ${
         height && height
       }`}
     >
@@ -46,7 +52,11 @@ const Banner = ({
           justifyContent ? justifyContent : "justify-center"
         }`}
       >
-        <div className="flex  flex-col py-4  text-center">
+        <div
+          className={`flex  flex-col py-4  ${
+            image ? "text-left" : "text-center"
+          }`}
+        >
           <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
 
           {descText &&

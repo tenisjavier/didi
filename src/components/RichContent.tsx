@@ -117,7 +117,7 @@ const options: optionsInterface = {
       if (!node.data.target) return <div></div>;
       const { gatsbyImageData, title } = node.data.target;
       return (
-        <div className="my-12 flex w-full justify-center">
+        <div className="my-12 flex w-full justify-center mx-auto">
           <GatsbyImage
             className="max-w-xl md:max-w-4xl"
             image={getImage(gatsbyImageData)!}

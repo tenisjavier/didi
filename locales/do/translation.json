@@ -300,7 +300,7 @@
   "DrvCityList.desc": "Descubre las ciudades de República Dominicana donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/do/driver/conductor-en-{{city}}/",
+  "DrvCityList.linkItem": "/do/conductor/conductor-en-{{city}}/",
   "TaxiHero.title": "DiDi Taxi",
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
@@ -640,23 +640,19 @@
   "SBFoodBusiness.desc": "Crecé tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Ganá con Más Libertad",
-  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
-  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.title": "Requisitos para registrarte como Socio Conductor ",
+  "RequirementHero.desc": "Elige cuando conectarte, genera ingresos y conéctate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
       "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) Registra tu vehículo: Certificado de propiedad de vehículo y seguro del auto. El vehículo debe ser modelo 2006 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
-    },
-    {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+      "title": "Conductor: Moto",
+      "desc": "1) Descarga DiDi Conductor \n 2) Sube tus documentos: Licencia de conducir \n 3) Registra tu vehículo: Certificado de propiedad de vehículo, seguro del vehiculo y matricula o carta de ruta. El vehículo debe ser modelo 2000 en adelante. La Moto debe contar con un cilindraje minimo de 100cc \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",

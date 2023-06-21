@@ -12,6 +12,7 @@ interface DiDiPayColumnsProps {
 
 const DiDiPayColumns = ({ images }: DiDiPayColumnsProps) => {
   const props: ColumnsSectionProps = {
+    title: t("DiDiPayColumns.title"),
     bgColor: t("DiDiPayColumns.bgColor"),
     textColor: t("DiDiPayColumns.textColor"),
     columns: t("DiDiPayColumns.columns", { returnObjects: true }),

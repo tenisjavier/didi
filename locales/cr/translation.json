@@ -228,11 +228,36 @@
   "DrvCityList.desc": "Descubre las ciudades de Costa Rica donde esta operando DiDi",
   "DrvCityList.bgColor": "bg-white",
   "DrvCityList.textColor": "gray-primary",
-  "DrvCityList.linkItem": "/cr/driver/conductor-en-{{city}}/",
-  "FleetHero.title": "DiDi Fleet: Rentá tus autos y generá ganancias",
-  "FleetHero.desc": "Si tenés uno o más autos que querás rentabilizar, subílos a la app de DiDi Fleet y podrás asociar usuarios conductores a tus autos. Generá ganancias de manera pasiva rentando tus autos con DiDi Fleet.",
+  "DrvCityList.linkItem": "/cr/conductor/conductor-en-{{city}}/",
+  "FleetHero.title": "DiDi Fleet: Dejá que tu carro produzca por vos",
+  "FleetHero.desc": "Vos ponés el carro y DiDi Fleet te ayuda a encontrar un usuario conductor para alquilarlo y generar ganancias.",
   "FleetHero.textColor": "white",
   "FleetHero.btnMode": "light",
+  "FleetSocioCTA.title": "Generá en promedio ¢360.000* alquilando tu carro por mes",
+  "FleetSocioCTA.desc": "Generá en promedio ¢360.000* alquilando tu carro por mes y recibí hasta ¢280.000** EXTRA por cada carro que alquiles usando la app y que complete el número de viajes en el tiempo establecido de la promoción.\n *Alquiler promedio de vehículos en la app de Fleet en Costa Rica. \n **Aplica T&Cs / Solo aplica para carros nuevos en la app de DiDi ",
+  "FleetSocioCTA.btnText": "Conocé Más",
+  "FleetSocioCTA.btnLink": "#",
+  "FleetSocioCTA.btnMode": "dark",
+  "FleetSafety.title": "Con DiDi Fleet podés:",
+  "FleetSafety.desc": "",
+  "FleetSafety.bullets": [
+    "Generar ganancias  alquilando tu carro a un usuario conductor verificado y de confianza.",
+    "Rentarle tu carro a un usuario conductor que cuenta con verificación de antecedentes y cuya identidad es verificada mediante reconocimiento facial.",
+    "Monitorear los viajes que hayan completado los carros que alquilas.",
+    "¡Estar tranquilo! Tu carro y su usuario conductor cuentan con +20 funciones de seguridad.",
+    "Encontrar un usuario conductor con 5 estrellas y experiencia para alquilarle tu carro "
+  ],
+  "FleetSafety.bgColor": "bg-blue-primary",
+  "FleetSafety.textColor": "white",
+  "FleetRegistraAutos.title": "Con DiDi Fleet podés:",
+  "FleetRegistraAutos.desc": "",
+  "FleetRegistraAutos.bullets": [
+    "Generar en promedio ¢360.000* rentando tu carro durante el por mes",
+    "Alquilar tu carro mientras estudiás o trabajás.",
+    "Recibir promociones exclusivas en cualquier momento.",
+    "Administrar las ganancias de los viajes completados con tu carro."
+  ],
+  "FleetRegistraAutos.bgColor": "bg-gray-light",
   "FleetWhyDiDi.title": "Beneficios de DiDi Fleet",
   "FleetWhyDiDi.bullets": [
     "Te conectamos con un socio conductor potencial. Verificamos todos los antecedentes de los socios durante su proceso de registro.",
@@ -601,28 +626,28 @@
   "AboutDidiFleetVideo.video": "https://www.youtube.com/embed/XbfHvQlFKlY",
   "AboutDidiFleetVideo.textColor": "gray-primary",
   "AboutDidiFleetVideo.bgColor": "bg-gray-light",
-  "FleetColumns.bgColor": "bg-green-primary",
+  "FleetColumns.bgColor": "bg-blue-primary",
   "FleetColumns.title": "Beneficios de DiDi Fleet",
   "FleetColumns.textColor": "white",
   "FleetColumns.columns": [
     {
-      "title": "Te conectamos con un socio conductor potencial",
-      "desc": "Verificamos todos los antecedentes de los socios durante su proceso de registro.",
+      "title": "1) Descargá DiDi Fleet",
+      "desc": "",
       "textColor": "white"
     },
     {
-      "title": "¡Generá ganancias sin salir de casa!",
-      "desc": "Además, aprovechá una de las tasas de servicio más bajas del mercado.",
+      "title": "2) Subí tus documentos ",
+      "desc": "Licencia de conducción. Selfie con licencia de conducir",
       "textColor": "white"
     },
     {
-      "title": "Si necesitás asistencia",
-      "desc": "Contamos con soporte en nuestro Chat en vivo, allí atenderemos todas tus dudas y solicitudes. Tenemos un horario de 9:00 a 22:00.",
+      "title": "3) Agregá tus carros",
+      "desc": "Para subirlos a tu flotilla necesitarás los siguientes documentos para cada carro: Marchamó",
       "textColor": "white"
     },
     {
-      "title": "Monitorea los ingresos de las solicitudes generadas con tu vehículo",
-      "desc": "y recibí los pagos con tarjeta de crédito directamente en tu app.",
+      "title": "4) Seleccioná un conductor para alquilarle tu carro a través de la app",
+      "desc": "Ingresando al menú de conductores pulsando en buscar conductores",
       "textColor": "white"
     }
   ],
@@ -658,23 +683,27 @@
   "SBFoodBusiness.desc": "Crecé tu Negocio",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Ganá con Más Libertad",
-  "RequirementHero.title": "Requisitos para conducir o convertirse en socio",
-  "RequirementHero.desc": "Elige los horarios que más te convengan, genera  ingresos semanales asegurados y viaja con confianza con nuestro soporte 24/7. \n Regístrate como conductor y forma parte de nuestra comunidad.",
+  "RequirementHero.title": "Requisitos para registrarte como Socio Conductor o Socio Flotilla",
+  "RequirementHero.desc": "Elegí cuando conectarte, genera ingresos y conectate con confianza con nuestro soporte 24/7.",
   "RequirementHero.btnMode": "primary",
   "RequirementHero.textColor": "white",
   "DrvRequirementColumns.title": "",
   "DrvRequirementColumns.columns": [
     {
-      "title": "Socio conductor: Tengo vehiculo y quiero conducir:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC) \n • Carta de no antecedentes penales (CNAP) \n *Los documentos requeridos para el alta de conductor pueden variar por ciudad, para confirmar acude a tu centro de conductores más cercano o comunícate a nuestra línea de atención disponible 24/4  800 725 8888."
+      "title": "Socio Conductor: Tengo vehiculo y quiero conducir:",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) Registrá tu vehículo: Marchamo (Derecho de circulación) y seguro. El vehículo debe ser modelo 2009 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
       "title": "Socio Flotilla: Tengo vehiculo y quiero que alguien más conduzca:",
-      "desc": "• Identificación oficial (INE/IFE) \n • Tarjeta de circulación \n • Póliza de seguro del auto \n • Registro Federal de Contribuyentes (RFC)"
+      "desc": "1) Descargá DiDi Fleet \n 2) Subí tus documentos: Licencia de conducir, selfie con licencia de conducir \n 3) Agregá tus coches con los siguientes documentos para cada coche: Marchamo (Derecho de circulación) y seguro. El vehículo debe ser modelo 2009 en adelante \n 4) Seleccioná un conductor para alquilarle tu coche a través de la app. Ingresando al menú de conductores pulsando en buscar conductores \n 5) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     },
     {
-      "title": "Conductor: Quiero conducir y no tengo vehículo",
-      "desc": "• Identificación oficial (INE/IFE) \n • Licencia de conducir \n • Carta de no antecedentes penales (CNAP) \n"
+      "title": "Socio Conductor: Quiero conducir y no tengo vehículo",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) La aprobación de tus documentos puede tomar de 24 a 72 horas"
+    },
+    {
+      "title": "Conductor: Taxi",
+      "desc": "1) Descargá DiDi Conductor \n 2) Subí tus documentos: Licencia de conducir \n 3) Registrá tu vehículo: Marchamo (Derecho de circulación), seguro, código de conductor. El vehículo debe ser modelo 2004 en adelante \n 4) La aprobación de tus documentos puede tomar de 24 a 72 horas"
     }
   ],
   "VehicleRequirementCTA.title": "Requisitos del vehículo",

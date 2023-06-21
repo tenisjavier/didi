@@ -3,6 +3,7 @@ import Card, { CardProps } from "./Card";
 
 export interface ColumnsSectionProps {
   columns: CardProps[];
+  gridCols?: string;
   title?: string;
   desc?: string;
   small?: string;
@@ -15,6 +16,7 @@ export interface ColumnsSectionProps {
 
 const ColumnsSection = ({
   columns,
+  gridCols,
   title,
   desc,
   small,
@@ -28,6 +30,7 @@ const ColumnsSection = ({
   if (RTL) {
     dir = "rtl";
   }
+  const colsDesktop = gridCols ? gridCols : "grid-cols-3";
   return (
     <section
       style={{ direction: dir }}
@@ -44,11 +47,13 @@ const ColumnsSection = ({
             .split("\n")
             .map((str) => <p className="text-center text-lg">{str}</p>)}
 
-        <div className={`mt-10 flex flex-wrap justify-around`}>
+        <div
+          className={`mt-10 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-around gap-2`}
+        >
           {columns &&
             columns.map((col, index) => {
               return <Card {...col} key={index}></Card>;
-          })}
+            })}
         </div>
         {small &&
           small

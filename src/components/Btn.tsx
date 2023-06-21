@@ -2,9 +2,9 @@ import React from "react";
 import { useCountry } from "../context/countryContext";
 import { getBtnLinks } from "../config/btn-config";
 import gtmEvent from "../config/gtm";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { ab } from "../config/ab";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+// import { ab } from "../config/ab";
 
 // @desc: Pax and Driver CTA buttons.  If not btnType is passed it will be a normal btn.
 // @props: btnType drv/pax/none | btnLink (normal btn) "url" | btnMode light/none | children: normal btn text
@@ -36,7 +36,8 @@ type BtnType =
   | "entrega"
   | "entregaBusiness"
   | "en"
-  | "smsCTA"
+  | "FoodSmsCTA"
+  | "RidesSmsCTA"
   | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -61,7 +62,7 @@ const Btn = ({
 }: BtnProps) => {
   const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
-  const version = ab("2023-05-h5-vs-ws-a-t2", "2023-05-h5-vs-ws-b-t2", "t2");
+  // const version = ab("2023-05-h5-vs-ws-a-t2", "2023-05-h5-vs-ws-b-t2", "t2");
   if (btnType === "drv") {
     btnLink = btnData.drvLink;
     btnText = btnText || btnData.drvText;
@@ -127,7 +128,7 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "smsCTA") {
+  } else if (btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA") {
     btnText = btnText || btnData.smsCTAText;
   }
 
@@ -152,7 +153,7 @@ const Btn = ({
 
   return (
     <>
-      {version === "b" &&
+      {/* {version === "b" &&
       btnType === "drv" &&
       window.innerWidth < 640 &&
       ["mx", "co", "cl", "pe", "ec", "ar", "pa", "do", "cr"].includes(
@@ -175,21 +176,20 @@ const Btn = ({
             {btnText || btnText2}
           </a>
         </div>
-      ) : (
-        <div
-          tabIndex={0}
-          role="button"
-          className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+      ) : ( */}
+      <div
+        tabIndex={0}
+        role="button"
+        className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+      >
+        <a
+          onClick={(e) => handleClick(e)}
+          className="block"
+          href={btnLink || btnLink2}
         >
-          <a
-            onClick={(e) => handleClick(e)}
-            className="block"
-            href={btnLink || btnLink2}
-          >
-            {btnText || btnText2}
-          </a>
-        </div>
-      )}
+          {btnText || btnText2}
+        </a>
+      </div>
     </>
   );
 };

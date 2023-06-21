@@ -29,7 +29,7 @@ const ListItem = ({ text, secondText, link, image }: ListItemProps) => {
         <FontAwesomeIcon
           icon={faArrowCircleRight}
           size="1x"
-          className="w-4"
+          className={`w-4 ${link === "#" && "hidden"}`}
         ></FontAwesomeIcon>
       </Link>
     </div>

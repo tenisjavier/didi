@@ -30,8 +30,8 @@ const menuLinks: AllMenuInterface = {
           url: "/suppliers/",
         },
         {
-          text: "Careers",
-          url: "#",
+          text: "Carreras",
+          url: "https://careers.didiglobal.com/",
         },
       ],
     },
@@ -51,7 +51,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Careers",
-          url: "#",
+          url: "https://careers.didiglobal.com/",
         },
       ],
     },
@@ -63,11 +63,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/cl/driver/",
+      url: "/cl/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/cl/driver/",
+          url: "/cl/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -80,6 +80,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Ciudades Operativas",
           url: "/cl/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/cl/conductor/requisitos-para-conducir/",
         },
       ],
     },
@@ -138,40 +142,7 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-  hk: [
-    {
-      text: "乘搭",
-      url: "/hk/",
-      dropMenu: [
-        {
-          text: "的士服務",
-          url: "/hk/ride/的士服務",
-        },
-        {
-          text: "粵港跨境專車服務",
-          url: "/hk/ride/粵港跨境專車服務",
-        },
-      ],
-    },
-    {
-      text: "成為司機夥伴",
-      url: "/hk/taxi-driver/",
-    },
-    {
-      text: "防疫措施",
-      url: "/hk/coronavirus/",
-    },
-    {
-      text: "最新優惠",
-      url: "",
-      dropMenu: [
-        {
-          text: "遠DD, call DiDi! 程程85折!",
-          url: "/hk/遠dd-call-didi-程程85折",
-        },
-      ],
-    },
-  ],
+
   mx: [
     {
       text: "DiDi Conductor",
@@ -228,12 +199,16 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/didipay/",
         },
         {
+          text: "DiDi Pay FAQ",
+          url: "/mx/didipay/preguntas-frecuentes/",
+        },
+        {
           text: "DiDi Préstamos",
           url: "/mx/prestamos/",
         },
         {
-          text: "DiDi Pay FAQ",
-          url: "/mx/didipay-preguntas-frecuentes/",
+          text: "DiDi Préstamos FAQ",
+          url: "/mx/prestamos/preguntas-frecuentes/",
         },
         {
           text: "Blog DiDiPay",
@@ -267,6 +242,10 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Entrega",
       url: "#",
       dropMenu: [
+        {
+          text: "DiDi Entrega",
+          url: "/mx/entrega/",
+        },
         {
           text: "DiDi Entrega Business",
           url: "https://didi-food.com/es-MX/entrega-business/home",
@@ -309,11 +288,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/ar/driver/",
+      url: "/ar/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/ar/driver/",
+          url: "/ar/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -322,6 +301,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Ciudades Operativas",
           url: "/ar/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/ar/conductor/requisitos-para-conducir/",
         },
       ],
     },
@@ -335,7 +318,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Moto",
-      url: "/ar/driver/moto/",
+      url: "/ar/conductor/moto/",
     },
     {
       text: "Sobre DiDi",
@@ -377,11 +360,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/pe/driver/",
+      url: "/pe/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/pe/driver/",
+          url: "/pe/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -390,6 +373,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Ciudades Operativas",
           url: "/pe/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/pe/conductor/requisitos-para-conducir/",
         },
       ],
     },
@@ -451,11 +438,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/co/driver/",
+      url: "/co/conductor/",
       dropMenu: [
         {
           text: "Arrendador",
-          url: "/co/driver/",
+          url: "/co/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -463,11 +450,11 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Moto",
-          url: "/co/driver/moto/",
+          url: "/co/conductor/moto/",
         },
         {
           text: "DiDi Flex",
-          url: "/co/driver/didi-flex/",
+          url: "/co/conductor/didi-flex/",
         },
         {
           text: "DiDiMás+",
@@ -479,7 +466,11 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Historias de Éxito",
-          url: "/co/driver/historias-de-exito/",
+          url: "/co/conductor/historias-de-exito/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/co/conductor/requisitos-para-conducir/",
         },
       ],
     },
@@ -660,24 +651,28 @@ const menuLinks: AllMenuInterface = {
       url: "/eg/driver/",
       dropMenu: [
         {
+          text: "السائق",
+          url: "/eg/driver/",
+        },
+        {
           text: "دليل بدء شريك",
           url: "/eg/driver/driver-starter-manual",
         },
-        {
-          text: "مساعدة الشريك السائق",
-          url: "/eg/driver/driver-help/",
-        },
       ],
+    },
+    {
+      text: "مساعدة الشريك السائق",
+      url: "/eg/help-center/",
     },
   ],
   pa: [
     {
       text: "DiDi Conductor",
-      url: "/pa/driver/",
+      url: "/pa/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/pa/driver",
+          url: "/pa/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -729,11 +724,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/cr/driver/",
+      url: "/cr/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/cr/driver/",
+          url: "/cr/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -742,6 +737,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Ciudades Operativas",
           url: "/cr/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/cr/conductor/requisitos-para-conducir/",
         },
       ],
     },
@@ -793,15 +792,15 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/do/driver/",
+      url: "/do/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/do/driver/",
+          url: "/do/conductor/",
         },
         {
           text: "Socio Conductor Moto",
-          url: "/do/driver/moto/",
+          url: "/do/conductor/moto/",
         },
         {
           text: "Regístrate Online",
@@ -811,11 +810,15 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/do/ciudades/",
         },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/do/conductor/requisitos-para-conducir/",
+        },
       ],
     },
     {
       text: "DiDi Moto",
-      url: "/do/driver/moto/",
+      url: "/do/conductor/moto/",
     },
     {
       text: "DiDi Food",
@@ -875,11 +878,11 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Conductor",
-      url: "/ec/driver/",
+      url: "/ec/conductor/",
       dropMenu: [
         {
           text: "Socio Conductor",
-          url: "/ec/driver/",
+          url: "/ec/conductor/",
         },
         {
           text: "Regístrate Online",
@@ -888,6 +891,10 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Ciudades Operativas",
           url: "/ec/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/ec/conductor/requisitos-para-conducir/",
         },
       ],
     },
@@ -944,10 +951,6 @@ const menuLinks: AllMenuInterface = {
           url: "https://anz-rides-driver.onelink.me/ixFb/nzdriverhero",
         },
         {
-          text: "Driver Help",
-          url: "/nz/driver/help/",
-        },
-        {
           text: "DiDi Advance",
           url: "/nz/didi-advance/",
         },
@@ -976,8 +979,8 @@ const menuLinks: AllMenuInterface = {
       url: "/nz/about-us/",
       dropMenu: [
         {
-          text: "Driver Help",
-          url: "/nz/driver/help/",
+          text: "Help Center",
+          url: "/nz/help-center/",
         },
         {
           text: "Contact",

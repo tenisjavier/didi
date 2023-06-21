@@ -65,12 +65,6 @@ const btnLinks: AllBtnInterface = {
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida, Descarga la App",
   },
-  hk: {
-    drvLink: "https://ssa-rides-driver.onelink.me/mbwy/hkdriverhero",
-    paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "註冊成為司機",
-    paxText: "下載滴滴客運",
-  },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
@@ -120,7 +114,7 @@ const btnLinks: AllBtnInterface = {
   do: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Regístrate como Socio Conductor",
+    drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
@@ -138,7 +132,7 @@ const btnLinks: AllBtnInterface = {
   cr: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    drvText: "Registrate como Socio Conductor",
+    drvText: "Registrate en DiDi Conductor",
     paxText: "Descargá DiDi Pasajero",
     fleetText: "Descargá DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
@@ -187,7 +181,7 @@ const btnLinks: AllBtnInterface = {
     prestamosDrvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     entregaText: "Usa DiDi Entrega",
     entregaLink:
-      "https://page.didiglobal.com/public-biz/pc-login/3.1.0/index.html?appid=200044&role=1&source=70001&country_id=484&redirectUrl=https%3A%2F%2Fc.didi-food.com%2Flogin%2Fcallback%3FredirectUrl%3Dhttps%25253A%25252F%25252Fdidi-food.com%25252Fes-MX%25252Fentrega-business%25252Fhome%252523_callbackType%25253Dlogin&lang=es-MX",
+      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     smsCTAText: "Descargar en mi celular",
   },
   mxen: {

@@ -159,3 +159,13 @@ section.main-text ol li {
   background-color: #6b7280;
   color: white;
 }
+
+.slick-initialized .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-initialized .slick-track .slick-slide {
+  text-align: center;
+}

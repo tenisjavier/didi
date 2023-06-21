@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../Image"
+import Image from "../Image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -21,7 +21,13 @@ interface PartnersGridProps {
   sectionID: string;
 }
 
-const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }: PartnersGridProps) => {
+const PartnersGrid = ({
+  data,
+  title,
+  bgColor,
+  textColor,
+  sectionID,
+}: PartnersGridProps) => {
   const PropColumns = data.map((partner) => {
     const image = partner.logo;
     const link = t("PartnersGrid.linkItem", {
@@ -37,16 +43,16 @@ const PartnersGrid = ({ data, title, bgColor, textColor, sectionID }: PartnersGr
         </Link>
       ),
       bgColor: "white",
-      textColor: "gray-primary"
+      textColor: "gray-primary",
     };
   });
-  
+
   const props: ColumnsSectionProps = {
     title: title || t("PartnersGrid.title"),
     bgColor: bgColor || t("Partners.bgColor"),
     textColor: textColor || t("PartnersGrid.textColor"),
     sectionID: sectionID || t("PartnersGrid.sectionId"),
-    columns: PropColumns
+    columns: PropColumns,
   };
 
   return <ColumnsSection {...props}></ColumnsSection>;

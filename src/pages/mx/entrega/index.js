@@ -44,6 +44,7 @@ export const query = graphql`
           regex: "/(mx.EntregaHero.bgImage)|(mx.EntregaGrid.image)|(mx.EntregaColumns.image)|(mx.EntregaBusinessCTA.image)/"
         }
       }
+      sort: { title: ASC }
     ) {
       nodes {
         id
