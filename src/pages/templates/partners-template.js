@@ -19,7 +19,7 @@ const Partner = ({ data }) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout title={heroTitle} desc={heroDesc}>
       <PartnerHero
         title={heroTitle}
         desc={heroDesc}
@@ -81,7 +81,7 @@ export const query = graphql`
         slug
         desc
         logo {
-          gatsbyImageData
+          gatsbyImageData(height: 150)
           description
         }
       }

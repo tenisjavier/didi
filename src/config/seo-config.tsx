@@ -97,22 +97,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Club de Beneficios DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
-    "/didimas/copec/": {
-      title: "Copec y DiDi - Beneficios para Conductores",
-      desc: "Todos los socios conductores y taxistas inscritos en DiDi, que hayan realizado al menos 1 viaje en los últimos 6 meses, podrán acceder al siguiente descuento.",
-    },
-    "/didimas/carglass/": {
-      title: "Carglass y DiDi - Beneficios para Conductores",
-      desc: "Carglass es una empresa que se dedica a la reparación y sustitución de vidrios automotrices. Cuenta además con técnicos especializados y una flota para atender tus necesidades a domicilio.",
-    },
-    "/didimas/autofin/": {
-      title: "Autofin y DiDi - Beneficios para Conductores",
-      desc: "Autofin es una empresa que se especializa en crédito automotriz y además te asesora en la compra de tu próximo vehículo.",
-    },
-    "/didimas/movistar/": {
-      title: "Movistar y DiDi - Beneficios para Conductores",
-      desc: "Contrata por solo $7.990, un plan de telefonía móvil exclusivo que incluye el uso libre de la app DiDi Conductor, sin consumir tus gigas!",
-    },
+
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
@@ -277,22 +262,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Club de Beneficios DiDiMás+ para Conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
-    "/didimas/copec/": {
-      title: "Copec y DiDi - Beneficios para Conductores",
-      desc: "Todos los socios conductores y taxistas inscritos en DiDi, que hayan realizado al menos 1 viaje en los últimos 6 meses, podrán acceder al siguiente descuento.",
-    },
-    "/didimas/carglass/": {
-      title: "Carglass y DiDi - Beneficios para Conductores",
-      desc: "Carglass es una empresa que se dedica a la reparación y sustitución de vidrios automotrices. Cuenta además con técnicos especializados y una flota para atender tus necesidades a domicilio.",
-    },
-    "/didimas/autofin/": {
-      title: "Autofin y DiDi - Beneficios para Conductores",
-      desc: "Autofin es una empresa que se especializa en crédito automotriz y además te asesora en la compra de tu próximo vehículo.",
-    },
-    "/didimas/movistar/": {
-      title: "Movistar y DiDi - Beneficios para Conductores",
-      desc: "Contrata por solo $7.990, un plan de telefonía móvil exclusivo que incluye el uso libre de la app DiDi Conductor, sin consumir tus gigas!",
-    },
+
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
