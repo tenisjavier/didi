@@ -22,7 +22,7 @@ const DiDiMas = ({ data }) => {
   });
   const partnerRent = partners.filter((partner) => {
     return (
-      partner.name === "MiNave" ||
+      partner.name === "MI NAVE" ||
       partner.name === "Kovi" ||
       partner.name === "OneCarNow!" ||
       partner.name === "Privauto" ||
