@@ -28,6 +28,7 @@ const DiDiMas = ({ data }) => {
       partner.name === "Privauto" ||
       partner.name === "Datamovil Arrendadora" ||
       partner.name === "Ventauto" ||
+      partner.name === "Mare" ||
       partner.name === "Procapa Arrendamientos"
     );
   });
@@ -42,6 +43,7 @@ const DiDiMas = ({ data }) => {
     return (
       partner.name === "Consar" ||
       partner.name === "SimpleTAX" ||
+      partner.name === "Swartz" ||
       partner.name === "Cura Deuda"
     );
   });
@@ -147,7 +149,7 @@ export const query = graphql`
         slug
         desc
         logo {
-          gatsbyImageData
+          gatsbyImageData(height: 150)
           description
         }
       }

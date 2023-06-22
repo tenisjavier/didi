@@ -39,7 +39,7 @@ const PartnersGrid = ({
       height: "48",
       image: (
         <Link to={link}>
-          <Image imageData={image} imageStyle="z-10 m-4"></Image>
+          <Image imageData={image} imageStyle="z-10 m-4 max-h-40"></Image>
         </Link>
       ),
       bgColor: "white",
