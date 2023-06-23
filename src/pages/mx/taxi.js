@@ -4,6 +4,7 @@ import Layout from "../../components/Layout";
 import TaxiHero from "../../components/sections/TaxiHero";
 import TaxiWhyDidi from "../../components/sections/TaxiWhyDiDi";
 import Requirements from "../../components/sections/Requirements";
+import SafetyCTA from "../../components/sections/SafetyCTA";
 import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
 
@@ -13,7 +14,10 @@ const Taxi = ({ data }) => {
     return image.title === "mx.TaxiHero.bgImage";
   })[0];
   const taxiWhyDiDiImage = images.filter((image) => {
-    return image.title === "mxok.TaxiWhyDiDi.image";
+    return image.title === "mx.TaxiWhyDiDi.image";
+  })[0];
+  const safetyCTAImage = images.filter((image) => {
+    return image.title === "mx.SafetyCTA.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
 
@@ -22,6 +26,7 @@ const Taxi = ({ data }) => {
       <TaxiHero bgImage={taxiHeroBgImage}></TaxiHero>
       <TaxiWhyDidi image={taxiWhyDiDiImage}></TaxiWhyDidi>
       <Requirements data={products}></Requirements>
+      <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
     </Layout>
@@ -31,7 +36,15 @@ const Taxi = ({ data }) => {
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["mx.TaxiHero.bgImage", "mx.TaxiWhyDiDi.image"] } }
+      filter: {
+        title: {
+          in: [
+            "mx.TaxiHero.bgImage"
+            "mx.TaxiWhyDiDi.image"
+            "mx.SafetyCTA.image"
+          ]
+        }
+      }
     ) {
       nodes {
         id
