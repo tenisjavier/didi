@@ -42,7 +42,7 @@ const DiDiMas = ({ data }) => {
   const partnerFinanzas = partners.filter((partner) => {
     return (
       partner.name === "Consar" ||
-      partner.name === "SimpleTAX" ||
+      partner.name === "Simple Tax" ||
       partner.name === "Swartz" ||
       partner.name === "Cura Deuda"
     );
