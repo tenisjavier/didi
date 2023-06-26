@@ -557,27 +557,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/food/ciudad/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/food/ciudad/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
         output:'/cl/food/repartidores/' ,
         query: `
         {
@@ -831,27 +810,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/food/ciudad/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/food/ciudad/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
         output:'/co/food/repartidores/' ,
         query: `
         {
@@ -1054,27 +1012,6 @@ module.exports = {
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
           const pages = allPages.filter((page)=> page.path.includes(`/cr/food/blog/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/cr/food/ciudad/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/food/ciudad/`))
           return [...pages];
         },
       },
@@ -1306,27 +1243,6 @@ module.exports = {
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
           const pages = allPages.filter((page)=> page.path.includes(`/do/food/blog/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/do/food/ciudad/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/food/ciudad/`))
           return [...pages];
         },
       },
@@ -1897,7 +1813,6 @@ module.exports = {
         },
       },
     },
-
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
@@ -2359,27 +2274,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/food/ciudad/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/food/ciudad/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
         output:'/pe/food/repartidores/' ,
         query: `
         {
@@ -2419,7 +2313,6 @@ module.exports = {
         },
       },
     },
-
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
