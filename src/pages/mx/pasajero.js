@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import PaxHero from "../../components/sections/PaxHero";
@@ -16,6 +16,9 @@ const Pasajero = ({ data }) => {
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "mx.PaxHero.bgImage";
   })[0];
+  const paxHeroMobileBgImage = images.filter((image) => {
+    return image.title === "mx.PaxHeroMobile.bgImage";
+  })[0];
   const paxWhyDiDiImage = images.filter((image) => {
     return image.title === "mx.PaxWhyDiDi.image";
   })[0];
@@ -30,11 +33,7 @@ const Pasajero = ({ data }) => {
   const [QRUrl, setQRUrl] = useState(
     "https://global-rides-passenger.onelink.me/xNlo/QRCODE"
   );
-  const qr = (
-    <QRCodeSVG
-      value={QRUrl}
-    ></QRCodeSVG>
-  );
+  const qr = <QRCodeSVG value={QRUrl}></QRCodeSVG>;
 
   // useEffect(() => {
   //   const btnPrimary = document.getElementsByClassName("btn-primary")[0];
@@ -45,7 +44,10 @@ const Pasajero = ({ data }) => {
 
   return (
     <Layout>
-      <PaxHero bgImage={paxHeroBgImage}></PaxHero>
+      <PaxHero
+        bgImage={paxHeroBgImage}
+        mobileBgImage={paxHeroMobileBgImage}
+      ></PaxHero>
       <div className="hidden lg:block xl:block">
         <SmsCTA image={ridesSMSCTA} qr={qr} smsType={"rides"}></SmsCTA>
       </div>
@@ -63,7 +65,7 @@ const Pasajero = ({ data }) => {
       <PaxBanner></PaxBanner>
       <HomeColumns></HomeColumns>
       <div className="hidden lg:block xl:block">
-      <SmsCTA image={ridesSMSCTA} qr={qr} smsType={"rides"}></SmsCTA>
+        <SmsCTA image={ridesSMSCTA} qr={qr} smsType={"rides"}></SmsCTA>
       </div>
       <div className="block lg:hidden xl:hidden">
         <FoodAppDownloads
@@ -79,7 +81,11 @@ export default Pasajero;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { regex: "/(mx.PaxHero.bgImage)|(mx.PaxWhyDiDi.image)|(mx.FoodSMSCTA.image)|(mx.FoodDeliveryDownloads.image)/" } }
+      filter: {
+        title: {
+          regex: "/(mx.PaxHero.bgImage)|(mx.PaxHeroMobile.image)|(mx.PaxWhyDiDi.image)|(mx.FoodSMSCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+        }
+      }
     ) {
       nodes {
         id
