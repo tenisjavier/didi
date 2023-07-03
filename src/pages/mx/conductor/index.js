@@ -27,6 +27,9 @@ const Conductor = ({ data }) => {
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "mx.DrvHero.bgImage";
   })[0];
+  const drvHeroMobileBgImage = images.filter((image) => {
+    return image.title === "mx.DrvHeroMobile.bgImage";
+  })[0];
   const drvBenefitsImage = images.filter((image) => {
     return image.title === "mx.DrvBenefits.image";
   })[0];
@@ -41,7 +44,10 @@ const Conductor = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
+      <DrvHero
+        bgImage={drvHeroBgImage}
+        mobileBgImage={drvHeroMobileBgImage}
+      ></DrvHero>
       {version === "b" && <IframeCTA></IframeCTA>}
       <DrvBenefits image={drvBenefitsImage} icons={icons}></DrvBenefits>
       <DrvBanner></DrvBanner>
@@ -68,6 +74,7 @@ export const query = graphql`
         title: {
           in: [
             "mx.DrvHero.bgImage"
+            "mx.DrvHeroMobile.bgImage"
             "mx.ClubDiDiCTA.bgImage"
             "mx.WomenDiDiCTA.image"
             "mx.DrvBenefits.image"

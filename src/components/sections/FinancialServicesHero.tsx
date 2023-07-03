@@ -8,16 +8,29 @@ interface FinancialServicesHeroProps {
     description: string;
     gatsbyImageData: any;
   };
+  mobileBgImage?: {
+    title: string;
+    description: string;
+    gatsbyImageData: any;
+  };
 }
 
-const FinancialServicesHero = ({ bgImage }: FinancialServicesHeroProps) => {
+const FinancialServicesHero = ({
+  bgImage,
+  mobileBgImage,
+}: FinancialServicesHeroProps) => {
+  const bgImageStyle = mobileBgImage
+    ? "hidden !absolute z-0 h-full w-full brightness-75 md:block "
+    : "!absolute z-0 h-full w-full brightness-75 md:block ";
   const props: CTAProps = {
     hero: true,
     title: t("FinancialServicesHero.title"),
     desc: t("FinancialServicesHero.desc"),
     textColor: t("FinancialServicesHero.textColor"),
     bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full md:block",
+    bgImageStyle: bgImageStyle,
+    mobileBgImage: mobileBgImage,
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-75 md:!hidden ",
   };
   return <CTASection {...props}></CTASection>;
 };

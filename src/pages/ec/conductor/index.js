@@ -14,6 +14,9 @@ const Driver = ({ data }) => {
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "ec.DrvHero.bgImage";
   })[0];
+  const drvHeroMobileBgImage = images.filter((image) => {
+    return image.title === "ec.DrvHeroMobile.bgImage";
+  })[0];
   const drvWhyDiDiImage = images.filter((image) => {
     return image.title === "ec.DrvWhyDiDi.image";
   })[0];
@@ -22,7 +25,10 @@ const Driver = ({ data }) => {
 
   return (
     <Layout>
-      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
+      <DrvHero
+        bgImage={drvHeroBgImage}
+        mobileBgImage={drvHeroMobileBgImage}
+      ></DrvHero>
       <SilderSection
         data={products}
         title="Hay un DiDi para ti"
@@ -45,6 +51,7 @@ export const query = graphql`
         title: {
           in: [
             "ec.DrvHero.bgImage"
+            "ec.DrvHeroMobile.bgImage"
             "ec.DrvWhyDiDi.image"
             "ec.DrvFeatures.image"
           ]
