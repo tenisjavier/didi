@@ -12,10 +12,16 @@ const Pasajero = ({ data }) => {
   const paxHeroBgImage = images.filter((image) => {
     return image.title === "do.PaxHero.bgImage";
   })[0];
+  const paxHeroMobileBgImage = images.filter((image) => {
+    return image.title === "do.PaxHeroMobile.bgImage";
+  })[0];
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
-      <PaxHero bgImage={paxHeroBgImage}></PaxHero>
+      <PaxHero
+        bgImage={paxHeroBgImage}
+        mobileBgImage={paxHeroMobileBgImage}
+      ></PaxHero>
       <PaxColumns></PaxColumns>
       <LostItemsBanner></LostItemsBanner>
       <SilderSection
@@ -32,7 +38,15 @@ export default Pasajero;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["do.PaxHero.bgImage", "do.PaxWhyDiDi.image"] } }
+      filter: {
+        title: {
+          in: [
+            "do.PaxHero.bgImage"
+            "do.PaxHeroMobile.bgImage"
+            "do.PaxWhyDiDi.image"
+          ]
+        }
+      }
     ) {
       nodes {
         id
