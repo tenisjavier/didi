@@ -100,13 +100,13 @@ const FoodCity = ({ data }) => {
         data={data.contentfulNeighbourhood}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
+      <FoodFAQCities data={data.contentfulNeighbourhood.city}></FoodFAQCities>
       <div className="block lg:hidden xl:hidden">
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
       <div className="hidden lg:block xl:block">
         <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
       </div>
-      <FoodFAQCities data={data.contentfulNeighbourhood.city}></FoodFAQCities>
     </Layout>
   );
 };

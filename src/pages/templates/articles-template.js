@@ -13,6 +13,11 @@ import NewsroomColumns from "../../components/sections/NewsroomColumns";
 import PaxBanner from "../../components/sections/PaxBanner";
 import RelatedFoodBlogColumns from "../../components/sections/RelatedFoodBlogColumns";
 import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
+import SmsCTA from "../../components/sections/SmsCTA"
+import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
+
+import { QRCodeSVG } from "qrcode.react";
+import { useState } from "react";
 
 const ArticlesTemplate = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
@@ -21,13 +26,37 @@ const ArticlesTemplate = ({ data }) => {
   const category = data.contentfulArticle.category;
   const { pathname } = useLocation();
 
+  const [QRUrl, setQRUrl] = useState(
+    "https://global-food-eater.onelink.me/4B2F/QRCODE"
+  );
+  const qr = (
+    <QRCodeSVG
+      value={QRUrl}
+    ></QRCodeSVG>
+  );
+
+  const images = data.allContentfulAsset.nodes
+
+
+  const foodSMSCTA = images.filter((image) => {
+    return image.title === "mx.FoodSMSCTA.image";
+  })[0];
+
+  const foodDeliveryDownloadsImages = images.filter((image) => {
+    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+  });
+
   let hero = <ArticleHero data={data}></ArticleHero>;
   let banner = <PaxBanner></PaxBanner>;
   let columns = <ArticlesColumns data={data}></ArticlesColumns>;
+  let smsCTA
+  let foodAppDownloads
 
   if (pathname.includes("newsroom"))
     columns = <NewsroomColumns data={data}></NewsroomColumns>;
   if (pathname.includes("food/blog")) {
+    foodAppDownloads = <div className="block lg:hidden xl:hidden"><FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads></div>
+    smsCTA = <div className="hidden lg:block xl:block"><SmsCTA qr={qr} image={foodSMSCTA}></SmsCTA></div>
     hero = <FoodBlogPostHero data={data}></FoodBlogPostHero>;
     banner = null;
     columns = (
@@ -63,6 +92,8 @@ const ArticlesTemplate = ({ data }) => {
       <ArticleContent data={data}></ArticleContent>
       {banner && banner}
       {articles.length && columns}
+      {smsCTA && smsCTA}
+      {foodAppDownloads && foodAppDownloads}
     </Layout>
   );
 };
@@ -78,7 +109,7 @@ export const query = graphql`
     $tag: String
   ) {
     allContentfulAsset(
-      filter: { title: { in: ["hk.ArticleOfferColumns.image"] } }
+      filter: { title: { in: ["hk.ArticleOfferColumns.image", "mx.FoodSMSCTA.image", "mx.FoodDeliveryDownloads.image"] } }
     ) {
       nodes {
         id
