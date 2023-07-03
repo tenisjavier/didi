@@ -7,6 +7,8 @@ import SilderSection from "../../components/sections/SliderSection";
 import PaxWhyDiDi from "../../components/sections/PaxWhyDiDi";
 import PaxBanner from "../../components/sections/PaxBanner";
 import HomeColumns from "../../components/sections/HomeColumns";
+import LostItemsBanner from "../../components/sections/LostItemsBanner";
+
 
 const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -21,6 +23,7 @@ const Pasajero = ({ data }) => {
     <Layout>
       <PaxHero bgImage={paxHeroBgImage}></PaxHero>
       <PaxColumns></PaxColumns>
+      <LostItemsBanner></LostItemsBanner>
       <SilderSection
         data={products}
         title="Hay un DiDi para vos"

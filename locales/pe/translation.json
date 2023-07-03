@@ -481,5 +481,12 @@
   "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
   "BankInfoCTA.bgColor": "bg-gray-light",
   "FindInfoCTA.title": "Encuentra tu centro DiDi más cercano",
-  "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com"
+  "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com",
+  "LostItemsBanner.title": "¿Olvidaste un objeto en el vehículo?",
+  "LostItemsBanner.desc": "Da clic en el botón de abajo, dirígete a Preguntas Pasajeros > Inconvenientes con un arrendamiento  y en la sección Olvidé un objeto en el vehículo llena el formulario para poder ayudarte",
+  "LostItemsBanner.bgColor": "bg-blue-primary",
+  "LostItemsBanner.textColor": "white",
+  "LostItemsBanner.btnMode": "light",
+  "LostItemsBanner.btnText": "Cómo Recuperarlo",
+  "LostItemsBanner.btnLink": "/pe/centro-de-ayuda/#inconvenientes-con-un-arrendamiento"
 }
