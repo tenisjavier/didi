@@ -29,8 +29,6 @@ const Giftcards = ({ data }) => {
     return image.title === "mx.DiDiPayGiftcardCarousel.image";
   });
 
-  console.log(DiDiPayGiftcardCarouselImages);
-
   return (
     <Layout>
       <DiDiPayGiftcardHero

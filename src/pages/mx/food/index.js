@@ -29,7 +29,6 @@ const Food = ({ data }) => {
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
-  console.log("Images: " + foodDeliveryDownloadsImages)
 
   const [QRUrl, setQRUrl] = useState(
     "https://global-food-eater.onelink.me/4B2F/QRCODE"

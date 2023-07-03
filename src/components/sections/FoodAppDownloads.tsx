@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../Image"
+import Image from "../Image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -21,8 +21,6 @@ const FoodAppDownloads = ({ images }: FoodAppDownloadsProps) => {
     columns: t("FoodAppDownloads.columns", { returnObjects: true }),
   };
 
-  console.log("Props Columns:", props.columns);
-
   if (props.columns) {
     props.columns.forEach((col: any, index: number) => {
       const image = images[index];
@@ -32,7 +30,7 @@ const FoodAppDownloads = ({ images }: FoodAppDownloadsProps) => {
         </Link>
       );
     });
-  };
+  }
 
   return <ColumnsSection {...props}></ColumnsSection>;
 };

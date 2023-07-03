@@ -20,32 +20,30 @@ const FaqList = ({ title, faqs, city, link }: ListProps) => {
     textColor: t("FaqList.textColor"),
   };
 
-  
-
   if (faqs) {
     props.items = faqs.map((faq) => {
-      console.log(link);
       let linkFaq;
-      if(link) {
-        if(link === "") {
+      if (link) {
+        if (link === "") {
           linkFaq = t("FaqList.linkItem", {
             faqSlug: faq.slug,
           });
         } else {
-          linkFaq = link + faq.slug
+          linkFaq = link + faq.slug;
         }
       } else {
         linkFaq = t("FaqList.linkItem", {
           faqSlug: faq.slug,
         });
       }
-      const name = faq.title.length > 50 ? faq.title.slice(0, 50) + "..." : faq.title;
+      const name =
+        faq.title.length > 50 ? faq.title.slice(0, 50) + "..." : faq.title;
       return {
         text: name,
-        link: linkFaq
+        link: linkFaq,
       };
     });
-  }  
+  }
 
   return <ListSection {...props}></ListSection>;
 };

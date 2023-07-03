@@ -17,7 +17,6 @@ const SobreDiDi = ({ data }) => {
   })[0];
 
   const columnsImages = [DiDiPayWhyDiDi, PrestamosHeroImage];
-  console.log(columnsImages);
   return (
     <Layout>
       <FinancialServicesHero bgImage={homeHeroBgImage}></FinancialServicesHero>

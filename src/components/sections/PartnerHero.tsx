@@ -35,7 +35,7 @@ const PartnerHero = ({
     btnLink: btnLink || "",
     btnText: btnLinkText || "",
   };
-  console.log(btnLinkText);
+
   return <CTASection {...props}></CTASection>;
 };
 
