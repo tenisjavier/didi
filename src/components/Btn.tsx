@@ -9,7 +9,7 @@ import gtmEvent from "../config/gtm";
 // @desc: Pax and Driver CTA buttons.  If not btnType is passed it will be a normal btn.
 // @props: btnType drv/pax/none | btnLink (normal btn) "url" | btnMode light/none | children: normal btn text
 
-type BtnType =
+export type BtnType =
   | "both"
   | "drv"
   | "drvWhatsapp"

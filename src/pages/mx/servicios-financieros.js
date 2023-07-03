@@ -7,7 +7,10 @@ import FinancialServicesColumns from "../../components/sections/FinancialService
 const SobreDiDi = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "mx.DiDiPayBlogHero.bgImage";
+    return image.title === "mx.FinancialServices.bgImage";
+  })[0];
+  const homeHeroMobileBgImage = images.filter((image) => {
+    return image.title === "mx.FinancialServicesMobile.bgImage";
   })[0];
   const DiDiPayWhyDiDi = images.filter((image) => {
     return image.title === "mx.DiDiPayHomeHero.image";
@@ -17,10 +20,13 @@ const SobreDiDi = ({ data }) => {
   })[0];
 
   const columnsImages = [DiDiPayWhyDiDi, PrestamosHeroImage];
-  console.log(columnsImages);
+
   return (
     <Layout>
-      <FinancialServicesHero bgImage={homeHeroBgImage}></FinancialServicesHero>
+      <FinancialServicesHero
+        bgImage={homeHeroBgImage}
+        mobileBgImage={homeHeroMobileBgImage}
+      ></FinancialServicesHero>
       <FinancialServicesColumns
         images={columnsImages}
       ></FinancialServicesColumns>
@@ -36,7 +42,8 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "mx.DiDiPayBlogHero.bgImage"
+            "mx.FinancialServices.bgImage"
+            "mx.FinancialServicesMobile.bgImage"
             "mx.DiDiPayHomeHero.image"
             "mx.PrestamosHero.image"
           ]

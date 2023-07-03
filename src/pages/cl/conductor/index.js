@@ -17,6 +17,9 @@ const Driver = ({ data }) => {
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "cl.DrvHero.bgImage";
   })[0];
+  const drvHeroMobileBgImage = images.filter((image) => {
+    return image.title === "cl.DrvHeroMobile.bgImage";
+  })[0];
   const drvWhyDiDiImage = images.filter((image) => {
     return image.title === "cl.DrvWhyDiDi.image";
   })[0];
@@ -27,7 +30,10 @@ const Driver = ({ data }) => {
   const cities = data.allContentfulCity.nodes;
   return (
     <Layout>
-      <DrvHero bgImage={drvHeroBgImage}></DrvHero>
+      <DrvHero
+        bgImage={drvHeroBgImage}
+        mobileBgImage={drvHeroMobileBgImage}
+      ></DrvHero>
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
       <DrvVideoGrid></DrvVideoGrid>
       <DrvBanner></DrvBanner>
@@ -53,6 +59,7 @@ export const query = graphql`
         title: {
           in: [
             "cl.DrvHero.bgImage"
+            "cl.DrvHeroMobile.bgImage"
             "cl.DrvWhyDiDi.image"
             "cl.DrvFeatures.image"
           ]
