@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import FoodHeroDualLink from "../../../components/sections/FoodHeroDualLink";
+import FoodHero from "../../../components/sections/FoodHero";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
@@ -10,6 +10,9 @@ const Food = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "cr.FoodHero.bgImage";
+  })[0];
+  const foodHeroMobileBgImage = images.filter((image) => {
+    return image.title === "cr.FoodHeroMobile.bgImage";
   })[0];
   const foodColumnsImages = images.filter((image) => {
     return image.title.indexOf("cr.FoodColumns.image") !== -1;
@@ -22,7 +25,10 @@ const Food = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <FoodHeroDualLink bgImage={foodHeroBgImage}></FoodHeroDualLink>
+      <FoodHero
+        bgImage={foodHeroBgImage}
+        mobileBgImage={foodHeroMobileBgImage}
+      ></FoodHero>
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
@@ -37,7 +43,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(cr.FoodHero.bgImage)|(cr.FoodColumns.image)|(cr.FoodBusinessCTA.image)|(cr.FoodDeliveryCTA.image)/"
+          regex: "/(cr.FoodHero.bgImage)|(cr.FoodHeroMobile.bgImage)|(cr.FoodColumns.image)|(cr.FoodBusinessCTA.image)|(cr.FoodDeliveryCTA.image)/"
         }
       }
       sort: { title: ASC }

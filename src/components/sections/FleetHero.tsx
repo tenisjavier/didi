@@ -27,7 +27,7 @@ const FleetHero = ({ bgImage, mobileBgImage }: FleetHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-80 md:!hidden ",
     btnMode: t("FleetHero.btnMode"),
     btnType: "fleet",
   };

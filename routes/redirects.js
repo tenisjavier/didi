@@ -2,13 +2,13 @@
 // @return: null
 const redirectsInit = async (graphql, createRedirect) => {
   createRedirect({
-    fromPath: `/mx/seguridad/funciones/`,
-    toPath: `/mx/seguridad/`,
+    fromPath: `/mx/seguridad/conductores/funciones/`,
+    toPath: `/mx/seguridad/conductores/`,
     isPermanent: true,
   });
   createRedirect({
-    fromPath: `/mx/seguridad/funciones/*`,
-    toPath: `/mx/seguridad/*`,
+    fromPath: `/mx/seguridad/conductores/funciones/*`,
+    toPath: `/mx/seguridad/conductores/*`,
     isPermanent: true,
   });
   createRedirect({

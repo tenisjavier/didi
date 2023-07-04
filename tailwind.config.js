@@ -18,6 +18,9 @@ module.exports = {
         128: "768px",
         140: "880px",
       },
+      brightness: {
+        80: ".8",
+      },
       colors: {
         gray: {
           primary: "#0F1419", //5A5A5A
@@ -28,7 +31,7 @@ module.exports = {
         },
         blue: {
           primary: "#007DFF",
-          dark: "#3A33D9"
+          dark: "#3A33D9",
         },
         green: {
           primary: "#16A34A",
