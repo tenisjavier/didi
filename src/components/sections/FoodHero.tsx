@@ -8,16 +8,26 @@ interface FoodHeroProps {
     description: string;
     gatsbyImageData: any;
   };
+  mobileBgImage?: {
+    title: string;
+    description: string;
+    gatsbyImageData: any;
+  };
 }
 
-const FoodHero = ({ bgImage }: FoodHeroProps) => {
+const FoodHero = ({ bgImage, mobileBgImage }: FoodHeroProps) => {
+  const bgImageStyle = mobileBgImage
+    ? "hidden !absolute z-0 h-full w-full brightness-90 md:block "
+    : "!absolute z-0 h-full w-full brightness-90 md:block ";
   const props: CTAProps = {
     hero: true,
     title: t("FoodHero.title"),
     desc: t("FoodHero.desc"),
     textColor: t("FoodHero.textColor"),
     bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full brightness-50  md:block",
+    bgImageStyle: bgImageStyle,
+    mobileBgImage: mobileBgImage,
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-80 md:!hidden ",
     btnMode: t("FoodHero.btnMode"),
     btnType: "foodEater",
   };

@@ -2,7 +2,7 @@
   "FoodHero.title": "Tu comida cuando quieras, donde quieras",
   "FoodHero.desc": "Una plataforma de servicio a domicilio que lleva comida de tu restaurante favorito a tu puerta.",
   "FoodHero.textColor": "white",
-  "FoodHero.btnMode": "primary",
+  "FoodHero.btnMode": "light",
   "FoodColumns.bgColor": "bg-white",
   "FoodColumns.columns": [
     {

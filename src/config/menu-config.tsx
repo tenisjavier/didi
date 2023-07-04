@@ -35,6 +35,72 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
+    {
+      text: "Entra a tu País",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Argentina",
+          url: "/mx/",
+        },
+        {
+          text: "Australia",
+          url: "/au/",
+        },
+        {
+          text: "Brasil",
+          url: "https://99app.com/",
+        },
+        {
+          text: "Chile",
+          url: "/cl/",
+        },
+        {
+          text: "Colombia",
+          url: "/co/",
+        },
+        {
+          text: "Costa Rica",
+          url: "/cr/",
+        },
+        {
+          text: "República Dominicana",
+          url: "/do/",
+        },
+        {
+          text: "Ecuador",
+          url: "/ec/",
+        },
+        {
+          text: "Egipto",
+          url: "/eg/",
+        },
+        {
+          text: "Japón",
+          url: "https://didimobility.co.jp/",
+        },
+        {
+          text: "México",
+          url: "/mx/",
+        },
+        {
+          text: "Nueva Zelanda",
+          url: "/nz/",
+        },
+        {
+          text: "Panamá",
+          url: "/pa/",
+        },
+        {
+          text: "Perú",
+          url: "/pe/",
+        },
+        {
+          text: "Rusia",
+          url: "/ru/",
+        },
+      ],
+    },
   ],
   en: [
     {
@@ -52,6 +118,72 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Careers",
           url: "https://careers.didiglobal.com/",
+        },
+      ],
+    },
+    {
+      text: "Select your Country",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Argentina",
+          url: "/mx/",
+        },
+        {
+          text: "Australia",
+          url: "/au/",
+        },
+        {
+          text: "Brazil",
+          url: "https://99app.com/",
+        },
+        {
+          text: "Chile",
+          url: "/cl/",
+        },
+        {
+          text: "Colombia",
+          url: "/co/",
+        },
+        {
+          text: "Costa Rica",
+          url: "/cr/",
+        },
+        {
+          text: "Dominican Republic",
+          url: "/do/",
+        },
+        {
+          text: "Ecuador",
+          url: "/ec/",
+        },
+        {
+          text: "Egypt",
+          url: "/eg/",
+        },
+        {
+          text: "Japan",
+          url: "https://didimobility.co.jp/",
+        },
+        {
+          text: "Mexico",
+          url: "/mx/",
+        },
+        {
+          text: "New Zealand",
+          url: "/nz/",
+        },
+        {
+          text: "Panama",
+          url: "/pa/",
+        },
+        {
+          text: "Peru",
+          url: "/pe/",
+        },
+        {
+          text: "Russia",
+          url: "/ru/",
         },
       ],
     },

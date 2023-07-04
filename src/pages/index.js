@@ -90,9 +90,9 @@ const Index = ({ data }) => {
     <div>
       <Layout>
         <CTASection {...CTAProps} key={1}></CTASection>
+        <CTASection {...AboutDiDiProps} key={4}></CTASection>
         <CTASection {...AboutUsProps} key={2}></CTASection>
         <CTASection {...MissionProps} key={3}></CTASection>
-        <CTASection {...AboutDiDiProps} key={4}></CTASection>
       </Layout>
     </div>
   );

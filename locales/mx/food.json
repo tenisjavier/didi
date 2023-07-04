@@ -2,7 +2,7 @@
   "FoodHero.title": "Tu comida a domicilio cuando quieras, donde quieras",
   "FoodHero.desc": "DiDi Food es una plataforma de comida a domicilio que lleva los platillos de tu restaurante favorito hasta tu puerta.",
   "FoodHero.textColor": "white",
-  "FoodHero.btnMode": "primary",
+  "FoodHero.btnMode": "light",
   "FoodColumns.bgColor": "bg-white",
   "FoodColumns.columns": [
     {

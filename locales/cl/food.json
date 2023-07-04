@@ -2,7 +2,7 @@
   "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
   "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
   "FoodHero.textColor": "white",
-  "FoodHero.btnMode": "primary",
+  "FoodHero.btnMode": "light",
   "FoodColumns.bgColor": "bg-white",
   "FoodColumns.columns": [
     {
