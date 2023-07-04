@@ -83,7 +83,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.PaxHero.bgImage)|(mx.PaxHeroMobile.image)|(mx.PaxWhyDiDi.image)|(mx.FoodSMSCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.PaxHero.bgImage)|(mx.PaxHeroMobile.bgImage)|(mx.PaxWhyDiDi.image)|(mx.FoodSMSCTA.image)|(mx.FoodDeliveryDownloads.image)/"
         }
       }
     ) {
