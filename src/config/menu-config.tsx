@@ -618,7 +618,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "Fatigue Prevention Driver",
-          url: "/au/features/fatigue-prevention-feature/",
+          url: "/au/safety/fatigue-prevention-feature/",
         },
       ],
     },
