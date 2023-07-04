@@ -6,7 +6,11 @@ const featuresRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
       allContentfulFeature(
-        filter: {slug: {ne: "reference-fix"}, category: {ne: null}, type: {ne: null}}
+        filter: {
+          slug: { ne: "reference-fix" }
+          category: { ne: null }
+          type: { ne: null }
+        }
       ) {
         nodes {
           id
@@ -30,21 +34,20 @@ const featuresRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulFeature.nodes.forEach((node) => {
-    const { id, slug, country} = node;
+    const { id, slug, country } = node;
     const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
 
-    let path = `/${country.code}/safety/features/${slug}/`;
+    let path = `/${country.code}/safety/${slug}/`;
 
-    if(sslCountries.includes(country.code)) {
-      path = `/${country.code}/seguridad/funciones/${slug}/`;
+    if (sslCountries.includes(country.code)) {
+      path = `/${country.code}/seguridad/${slug}/`;
     }
-
 
     createPage({
       path: path,
       component: template,
       context: {
-        id: id
+        id: id,
       },
     });
   });
