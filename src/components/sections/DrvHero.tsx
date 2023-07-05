@@ -37,7 +37,7 @@ const DrvHero = ({
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-80 md:!hidden ",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnMode: btnMode || t("DrvHero.btnMode"),
     btnType: btnType || "drv",
     RTL: isRTL || false,
