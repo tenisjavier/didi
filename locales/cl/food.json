@@ -1,6 +1,6 @@
 {
   "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
-  "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.desc": "De tu restaurante favorito a la puerta de tu casa.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "light",
   "FoodColumns.bgColor": "bg-white",
@@ -143,7 +143,7 @@
     }
   ],
   "FoodAboutHero.title": "Acerca de DiDi Food",
-  "FoodAboutHero.desc": "Pide comida a través de nuestra plataforma o conviértete en un socio restaurante de DiDi Food y aprovecha los beneficios que tenemos para tu negocio.",
+  "FoodAboutHero.desc": "Pide comida a través de nuestra plataforma o conviértete en un socio restaurante de DiDi Food.",
   "FoodAboutHero.textColor": "white",
   "FoodAboutDeliveryCTA.title": "La plataforma rápida y confiable de intermediación de pedidos y entrega de comida.",
   "FoodAboutDeliveryCTA.desc": "Sobre nosotros – DiDi Food conecta usuarios con socios restaurantes y socios repartidores para llevar los mejores pedidos de comida a la puerta del usuario. A través de DiDi Food, puedes tener tu plato favorito en donde lo necesites, con un par de clics.",
@@ -171,7 +171,7 @@
   "StoreFoodAppHero.bgColor": "bg-orange-primary",
   "StoreFoodAppHero.btnMode": "light",
   "FoodContactHero.title": "Contáctanos",
-  "FoodContactHero.desc": "Para contactar al servicio de Soporte DiDi por favor descarga la aplicación y dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico y con gusto te ayudaremos.",
+  "FoodContactHero.desc": "Para contactar a soporte en la app dirígete al menú de ayuda, ahí encontrarás el canal de chat en vivo o envíanos un correo electrónico.",
   "FoodContactHero.btnText": "Contáctanos a través de la app",
   "FoodContactHero.textColor": "white",
   "FoodContactHero.btnMode": "light",

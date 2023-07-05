@@ -185,10 +185,10 @@ const CTASection = (props: CTAProps) => {
         {image && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {imageRawRender && imageRawRender}
         <div
-          className={`w-11/12  mt-16 text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
+          className={`w-11/12  lg:mt-16 text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
         >
           {hero ? (
-            <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
+            <h1 className="text-4xl font-bold md:text-5xl mt-0">{title}</h1>
           ) : btnType === "FoodSmsCTA" || "RidesSmsCTA" ? (
             <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>
           ) : (

@@ -27,7 +27,7 @@ const FoodHero = ({ bgImage, mobileBgImage }: FoodHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-80 md:!hidden ",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnMode: t("FoodHero.btnMode"),
     btnType: "foodEater",
   };
