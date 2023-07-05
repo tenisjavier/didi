@@ -1584,15 +1584,11 @@
         },
         {
           "city": "Ciudad de México",
-          "address": "Blvd. de la Sta. Cruz 142, Boulevares, 53140 Naucalpan de Juárez, Méx. \n Tlalpan 2268 colonia el centinela 04450 Ciudad de México, CDMX \n Blvd. de la Sta. Cruz 142, Boulevares, 53140 Naucalpan de Juárez, Méx."
+          "address": "Varsovia 36, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX / Calz. de Tlalpan 2268, El Centinela, Coyoacán, 04450 Ciudad de México, CDMX / Blvd. de la Sta. Cruz 142, Boulevares, 53140 Naucalpan de Juárez, Estado de México, Local 12"
         },
         {
           "city": "Ciudad Obregón",
           "address": "C. Hidalgo 516, Centro, Fundo Legal, 85000 Cd Obregón, Son."
-        },
-        {
-          "city": "Ciudad Victoria",
-          "address": "Hotel Victoria Inn. Ignacio Allende 814, Obrera, Cd. Victoria, Tamps. México. C.P. 87000"
         },
         {
           "city": "Colima",
@@ -1624,11 +1620,15 @@
         },
         {
           "city": "La Paz",
-          "address": "Plaza Bajamar, L18, Calle 5 de mayo esquina 18 de marzo, Zona Comercial, La Paz, BCS. CP 23000"
+          "address": "Plaza Paseo La Paz Local 10, Libramiento Daniel Roldan #1515 local, Colonia San Antonio el Zacatal. C.P. 23080 La Paz B.C.S."
         },
         {
           "city": "León",
           "address": "Plaza Forum Center, Boulevard Mariano Escobedo 2920, Col. El Tlacuache, 37500 Leon, Guanajuato."
+        },
+        {
+          "city": "Lomas Verdes CDMX",
+          "address": "Blvd. de la Sta. Cruz 142, Boulevares, 53140 Naucalpan de Juárez, Méx."
         },
         {
           "city": "Los Mochis – Guasave",
@@ -1667,10 +1667,6 @@
           "address": "Blvrd 14 Sur 4302, Zona Sin Asignación de Nombre de Col 50, Jardines de San Manuel, CP: 72570, Puebla, Puebla."
         },
         {
-          "city": "Puerto Escondido",
-          "address": "Calle Primera Sur, cuarta Oriente, 71980, Puerto Escondido Santa María Colotepec Oaxaca."
-        },
-        {
           "city": "Querétaro",
           "address": "Avenida Universidad 370 locales 106, 107 y 108, La Piedad, 76150 Santiago de Querétaro, Qro."
         },
@@ -1680,11 +1676,7 @@
         },
         {
           "city": "Saltillo",
-          "address": "25240, Blvd. Venustiano Carranza SN-S SERFIN, Jardín, Saltillo, Coah."
-        },
-        {
-          "city": "Tampico",
-          "address": "Hampton Inn by Hilton Tampico. Av. Hidalgo No. 2700 Col. Águila, Tampico, Tamps. México C.P. 89230"
+          "address": "C. Sauce 350, Jardín, 25240 Saltillo, Coah."
         },
         {
           "city": "Tepic",
