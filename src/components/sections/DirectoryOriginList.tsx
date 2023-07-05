@@ -1,6 +1,6 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import slugify from "react-slugify";
+import { customSlugify } from "../../util/customSlugify";
 import ListSection from "../ListSection";
 
 interface ListProps {
@@ -13,11 +13,11 @@ interface ListProps {
         destination: string;
         destinationAddress: string;
       }[];
-    }
+    };
     contentfulPlace: {
       name: string;
-    }
-  }
+    };
+  };
 }
 
 const DirectoryOriginList = ({ data }: ListProps) => {
@@ -25,14 +25,15 @@ const DirectoryOriginList = ({ data }: ListProps) => {
   const place = data.contentfulPlace;
 
   const items = directions.map((dir) => {
-    const origin = dir.origin.length > 30 ? dir.origin.slice(0, 30) + "..." : dir.origin;
+    const origin =
+      dir.origin.length > 30 ? dir.origin.slice(0, 30) + "..." : dir.origin;
     return {
       text: origin + " | " + dir.duration,
       secondText: dir.originAddress,
       link: t("DirectoryOriginList.linkItem", {
-        origin: slugify(dir.origin),
-        destination: slugify(dir.destination),
-        destinationAddress: slugify(dir.destinationAddress),
+        origin: customSlugify(dir.origin),
+        destination: customSlugify(dir.destination),
+        destinationAddress: customSlugify(dir.destinationAddress),
       }),
     };
   });

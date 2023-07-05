@@ -32,17 +32,18 @@ const directionsRoutesInit = async (graphql, createPage) => {
   const templatePath = `./src/pages/templates/directions-template.js`;
   const template = path.resolve(templatePath);
 
-  result.data.allContentfulDirection.nodes.forEach((node) => {
-    const { id, origin, destination, destinationAddress, city } = node;
-    let path = `/${city.country.code}/lugares/como-llegar-a-${slugify(
-      destination,
-      {
-        lower: true,
-      }
-    )}-desde-${slugify(origin, { lower: true })}_${slugify(destinationAddress, {
+
+  const customSlugify = (words) => {
+    return slugify(words, {
       lower: true,
       remove: /[,.()'"!:@]/g,
-    })}`;
+      strict: true
+    })
+  }
+
+  result.data.allContentfulDirection.nodes.forEach((node) => {
+    const { id, origin, destination, destinationAddress, city } = node;
+    let path = `/${city.country.code}/lugares/como-llegar-a-${customSlugify(destination)}-desde-${customSlugify(origin)}_${customSlugify(destinationAddress)}`;
 
     createPage({
       path: path,
