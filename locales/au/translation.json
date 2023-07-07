@@ -17,7 +17,7 @@
   "DrvPreventionFeatureBanner.textColor": "white",
   "DrvPreventionFeatureBanner.bgColor": "bg-orange-primary",
   "DrvPreventionFeatureBanner.btnText": "Read more",
-  "DrvPreventionFeatureBanner.btnLink": "/au/features/fatigue-prevention-feature/",
+  "DrvPreventionFeatureBanner.btnLink": "/au/safety/features/fatigue-prevention-feature/",
   "DrvPreventionFeatureBanner.btnMode": "light",
   "FatiguePreventionFAQ.title": "FAQ",
   "DrvCTA.title": "Become a driver",
