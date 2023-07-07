@@ -2,6 +2,22 @@
   "HomeHero.title": "Muévete por tu ciudad",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Conductor"
+    },
+    {
+      "title": "DiDi Pasajero"
+    },
+    {
+      "title": "DiDi Food"
+    },
+    {
+      "title": "Servicios Financieros"
+    }
+  ],
   "FoodCTA.title": "DiDi Food: Ordena comida a domicilio",
   "FoodCTA.desc": "¿Tienes hambre? \n ¡Puedes pedir comida ahora mismo a través de nuestro nuevo sitio DiDi Food! \n Rápido, fácil y asequible.",
   "FoodCTA.textColor": "white",
