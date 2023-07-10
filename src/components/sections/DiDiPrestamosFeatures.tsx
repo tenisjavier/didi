@@ -20,7 +20,7 @@ const DiDiPrestamosFeatures = ({ image }: DiDiPrestamosFeaturesProps) => {
     image: image,
     imageStyle: "z-10 m-4 w-110",
     btnMode: t("DiDiPrestamosFeatures.btnMode"),
-    btnType: "bothPrestamos",
+    btnType: "prestamosPax",
     reverse: false,
   };
   return <CTASection {...props}></CTASection>;

@@ -174,9 +174,8 @@ const btnLinks: AllBtnInterface = {
     paymentBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/3.0.7/index.html?lang=es-MX&role=5001&source=70001&appid=200026&redirectUrl=https%3A%2F%2Fdidipay.didiglobal.com%2Fmerchant%2Fapi%2Fouter%2Fuser%2Flogin%3FredirectUrl%3Dhttps%3A%2F%2Fdidipay.didiglobal.com#/",
     paymentBusinessText: "Iniciar Sesión",
-    prestamosPaxText: "Solicitar como Pasajero",
-    prestamosPaxLink:
-      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
+    prestamosPaxText: "Descarga DiDi Préstamos",
+    prestamosPaxLink: "https://global-cash.onelink.me/k8Zv/yf4oglpn",
     prestamosDrvText: "Solicitar como Conductor",
     prestamosDrvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     entregaText: "Usa DiDi Entrega",

@@ -94,7 +94,7 @@ const SmartBanner = (props: SmartBannerProps) => {
   return (
     <div
       className={
-        "opacity-0 fixed bottom-0 z-20 h-auto w-full lg:hidden " + bgColor
+        "opacity-0 fixed bottom-0 z-50 h-auto w-full lg:hidden " + bgColor
       }
       data-id="sb"
     >
