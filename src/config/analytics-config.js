@@ -91,6 +91,7 @@ const insertBtnParams = () => {
       url.indexOf("onelink.me/4B2F/") > -1 ||
       url.indexOf("onelink.me/zzaY/") > -1 ||
       url.indexOf("onelink.me/ixFb/") > -1 ||
+      url.indexOf("onelink.me/k8Zv/") > -1 ||
       url.indexOf("onelink.me/Zkxc/") > -1
     ) {
       url = getDeepLink(new URL(url));
@@ -330,11 +331,17 @@ const insertBtnParams = () => {
       url.href.indexOf("me/o97G/") > -1 ||
       url.href.indexOf("me/ixFb/") > -1 ||
       url.href.indexOf("me/IY6B/") > -1 ||
+      url.href.indexOf("me/k8Zv/") > -1 ||
       url.href.indexOf("me/5xQ3/") > -1 ||
       url.href.indexOf("page.didiglobal.com/driver-page/register") > -1
     ) {
-      if (window.location.href.indexOf("/mx/prestamos") !== -1)
+      if (window.location.href.indexOf("/mx/prestamos") !== -1) {
+        newUrl.searchParams.set(
+          "af_web_dp",
+          `${document.location.origin}/${countryCode}/prestamos/store-prestamos/`
+        );
         return newUrl.href;
+      }
       newUrl.searchParams.set("af_r", form_url);
       if (document.getElementById("h5"))
         document.getElementById("h5").src = form_url + newUrl.search;

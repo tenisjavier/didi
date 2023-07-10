@@ -51,11 +51,11 @@ const DiDiPrestamosFAQ = ({ data }) => {
       item.title ===
         "¿Qué pasa si no pude pagar en la fecha límite de pago o antes?"
   );
-  
+
   let link = `/${faqPrestamos[0].country[0].code}/prestamos/preguntas-frecuentes/`;
 
   return (
-    <Layout schema="faq">
+    <Layout schema="faq" sb={false}>
       <DiDiPrestamosHero image={homeHeroBgImage}></DiDiPrestamosHero>
       <DiDiPayFAQs
         data={faqsSobreNosotros}
