@@ -20,6 +20,8 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
     return item !== "";
   });
 
+  const isNotLink = ["features"];
+
   //* if cb is passed through Layout will replace actual pathname breadcrumb
   if (customBreadcrumb)
     return (
@@ -147,7 +149,8 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
                   ></FontAwesomeIcon>
                 </span>
 
-                {index !== directories.length - 1 ? (
+                {index !== directories.length - 1 &&
+                !isNotLink.includes(dir) ? (
                   <Link
                     to={"/" + directories.slice(0, index + 1).join("/") + "/"}
                     className=" hover:text-blue-700"
