@@ -27,7 +27,7 @@ const DiDiPrestamosHero = ({ bgImage, image }: DiDiPrestamosHeroProps) => {
     image: image,
     imageStyle: "!z-10 m-4 w-110",
     btnMode: t("DiDiPrestamosHero.btnMode"),
-    btnType: "prestamosPax",
+    btnType: "bothPrestamos",
   };
   return <CTASection {...props}></CTASection>;
 };
