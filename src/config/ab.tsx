@@ -9,6 +9,7 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
       window.localStorage.removeItem("test_version");
     if (window.localStorage.getItem("t1")) window.localStorage.removeItem("t1");
     if (window.localStorage.getItem("t2")) window.localStorage.removeItem("t2");
+    if (window.localStorage.getItem("t3")) window.localStorage.removeItem("t3");
     //? Only in Mexico HomePage run the test
 
     const test_version = window.localStorage.getItem(ls);
