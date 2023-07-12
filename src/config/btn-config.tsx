@@ -176,7 +176,7 @@ const btnLinks: AllBtnInterface = {
     paymentBusinessText: "Iniciar Sesión",
     prestamosPaxText: "Descarga DiDi Préstamos",
     prestamosPaxLink: "https://global-cash.onelink.me/k8Zv/yf4oglpn",
-    prestamosDrvText: "Solicítalo como DiDi Pasajero",
+    prestamosDrvText: "Solicítalo en DiDi",
     prestamosDrvLink:
       "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     entregaText: "Usa DiDi Entrega",
