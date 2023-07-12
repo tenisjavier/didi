@@ -483,7 +483,7 @@
   "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
   "TaxiHero.textColor": "white",
   "TaxiHero.btnMode": "primary",
-  "TaxiWhyDiDi.title": "Recibe pedidos a través de la app o recoge a los pasajeros conectando el viaje con DiDi Taxi",
+  "TaxiWhyDiDi.title": "DiDi Taxi es nuestra opción para seguir usando tu taxi con libertad y que puedas ganar más recibiendo viajes en la app",
   "TaxiWhyDiDi.bullets": [
     "¿Ya estas registrado como DiDi Taxista? Regístrate online y te explicamos cómo se usa la App.",
     "¿Ya hiciste viajes como DiDi Taxista? No olvides registrar tu cuenta bancaria para recibir tu pago. Acá te mostramos cómo.",
@@ -496,11 +496,12 @@
   "TaxiGI.textColor": "white",
   "TaxiGI.bgColor": "bg-blue-primary",
   "TaxiGI.btnMode": "light",
-  "TaxiEvent.title": "Te esperamos del 17 al 21 de Julio",
+  "TaxiEvent.title": "Te esperamos del 17 al 21 de Julio de 10 a.m. a 6 p.m. en el Hotel Galería Plaza Reforma en Hamburgo 195",
   "TaxiEvent.bullets": [
-    "Evento exclusivo para DiDi Taxi",
-    "Horario: 6pm Hotel Galería Reforma en Hamburgo 195.",
-    "Regalo de bienvenida"
+    "Completar tu registro",
+    "Recibir un regalo de bienvenida",
+    "Asistir a sesiones informativas sobre el uso de la app",
+    "Contamos con estacionamientos gratis"
   ],
   "TaxiEvent.desc": "",
   "TaxiEvent.textColor": "gray-primary",

@@ -32,8 +32,8 @@ const Taxi = ({ data }) => {
   return (
     <Layout index={false}>
       <TaxiHero bgImage={taxiHeroBgImage}></TaxiHero>
-      <TaxiGI image={taxiGIImage}></TaxiGI>
       <TaxiEvent image={taxiEventImage}></TaxiEvent>
+      <TaxiGI image={taxiGIImage}></TaxiGI>
       <TaxiWhyDidi image={taxiWhyDiDiImage}></TaxiWhyDidi>
       <Requirements data={products}></Requirements>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
