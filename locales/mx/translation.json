@@ -480,19 +480,19 @@
   "DiDiAmigoBanner.btnText": "Regístrate Ahora",
   "DiDiAmigoBanner.btnLink": "https://d.didiglobal.com/6bUx7",
   "TaxiHero.title": "DiDi Taxi",
-  "TaxiHero.desc": "Los taxis de siempre con acceso a la experiencia de servicio y la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
+  "TaxiHero.desc": "DiDi Taxi es nuestra opción para seguir usando tu taxi con libertad y que puedas ganar más recibiendo viajes en la app",
   "TaxiHero.textColor": "white",
   "TaxiHero.btnMode": "primary",
-  "TaxiWhyDiDi.title": "DiDi Taxi es nuestra opción para seguir usando tu taxi con libertad y que puedas ganar más recibiendo viajes en la app",
+  "TaxiWhyDiDi.title": "Recibe pedidos a través de la app o recoge a los pasajeros conectando el viaje con DiDi Taxi",
   "TaxiWhyDiDi.bullets": [
     "¿Ya estas registrado como DiDi Taxista? Regístrate online y te explicamos cómo se usa la App.",
     "¿Ya hiciste viajes como DiDi Taxista? No olvides registrar tu cuenta bancaria para recibir tu pago. Acá te mostramos cómo.",
-    "¿Más dudas? Tenemos expertos listos para ayudarle a completar su registro y responder cualquier duda que tenga. Teléfono: +56 2 29 38 93 02"
+    "¿Más dudas? Tenemos expertos listos para ayudarle a completar su registro y responder cualquier duda que tenga. Teléfono: 800 725 8888"
   ],
   "TaxiWhyDiDi.textColor": "gray-primary",
   "TaxiWhyDiDi.btnMode": "primary",
   "TaxiGI.title": "Te garantizamos hasta $6,000* en tu primera semana",
-  "TaxiGI.desc": "Esta promo es exclusiva para DiDi Taxi.Aplica Términos y Condiciones en: d.didiglobal.com/taximx1",
+  "TaxiGI.desc": "Esta promo es exclusiva para DiDi Taxi en Ciudad de México. Aplica Términos y Condiciones en: d.didiglobal.com/taximx1",
   "TaxiGI.textColor": "white",
   "TaxiGI.bgColor": "bg-blue-primary",
   "TaxiGI.btnMode": "light",

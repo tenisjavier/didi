@@ -12,7 +12,7 @@ interface HeaderProps extends BreadcrumbProps {}
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
     <>
-      <nav className="fixed z-30 h-20 w-full bg-gray-primary bg-opacity-80">
+      <nav className="fixed z-40 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
           <Menu></Menu>
@@ -29,28 +29,28 @@ const Navlogo = () => {
 
   let logoImg = (
     <StaticImage
-      src="../images/didi-logo.png"
+      src="../images/didi-logo-white.jpeg"
       alt="DiDi"
       className=""
-      width={100}
+      width={120}
     />
   );
   if (pathname.includes("food"))
     logoImg = (
       <StaticImage
-        src="../images/didi-food-logo.png"
+        src="../images/didi-food-logo-white.png"
         alt="DiDi"
         className=""
-        width={150}
+        width={120}
       />
     );
   if (pathname.includes("/co/food/"))
     logoImg = (
       <StaticImage
-        src="../images/logo-didi-food-colombia.png"
+        src="../images/didi-food-logo-colombia-white.png"
         alt="DiDi"
         className=""
-        width={150}
+        width={120}
       />
     );
   if (pathname.includes("/didipay/"))
@@ -59,7 +59,7 @@ const Navlogo = () => {
         src="../images/didi-pay-logo.png"
         alt="DiDi"
         className=""
-        width={150}
+        width={120}
       />
     );
 

@@ -3,6 +3,19 @@
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
   "HomeHero.btnText": "teste",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Conductor"
+    },
+    {
+      "title": "DiDi Pasajero"
+    },
+    {
+      "title": "DiDi Food"
+    }
+  ],
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
   "SafetyCTA.desc": "La seguridad de los Socios Conductores y usuarios es lo más importante para nosotros. Conoce las herramientas de seguridad que DiDi tiene a tu disposición para que viajes con tranquilidad.",
   "SafetyCTA.textColor": "white",
@@ -349,6 +362,10 @@
       "btnLink": "/cl/centro-de-ayuda/"
     }
   ],
+  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
+  "FoodHero.desc": "Pide comida a través de nuestra plataforma. De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.textColor": "white",
+  "FoodHero.btnMode": "light",
   "SafetyHero.title": "En DiDi tu seguridad no es un mito",
   "SafetyHero.desc": "Tu seguridad es nuestra prioridad y por eso queremos demostrar con acciones reales y específicas cómo DiDi te ofrece un viaje más tranquilo y seguro. Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje.",
   "SafetyHero.textColor": "white",
