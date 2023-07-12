@@ -77,7 +77,7 @@ export const query = graphql`
     allContentfulFaq(
       filter: {
         isEducationalGuide: { eq: true }
-        country: { code: { eq: "mx" } }
+        country: { code: { eq: "co" } }
       }
     ) {
       edges {

@@ -12,7 +12,7 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
-    fromPath: `/au/features/fatigue-prevention-feature/`,
+    fromPath: `/au/safety/fatigue-prevention-feature/`,
     toPath: `/au/safety/fatigue-prevention-feature/`,
     isPermanent: true,
   });

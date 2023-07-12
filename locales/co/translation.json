@@ -708,7 +708,7 @@
   "GuidesColumns.textColor": "white",
   "GuidesColumns.btnText": "Leer Artículo",
   "GuidesColumns.btnMode": "dark",
-  "GuidesColumns.linkItem": "/co/guias/{{guide}}/",
+  "GuidesColumns.linkItem": "/co/food/repartidores/{{guide}}/",
   "PartnersHero.title": "Para que siempre logres más usa DiDiMás",
   "PartnersHero.desc": "Un programa de aliados que ofrece promociones e información relevante para los arrendatarios y sus familias. ",
   "PartnersHero.textColor": "white",

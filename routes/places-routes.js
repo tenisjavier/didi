@@ -31,12 +31,18 @@ const placesRoutesInit = async (graphql, createPage) => {
   const templatePath = `./src/pages/templates/places-template.js`;
   const template = path.resolve(templatePath);
 
+  const customSlugify = (words) => {
+    return slugify(words, {
+      lower: true,
+      remove: /[,.()'"!:@]/g,
+      strict: true
+    })
+  }
+
   result.data.allContentfulPlace.nodes.forEach((node) => {
     const { id, name, address, city } = node;
 
-    let path = `/${city.country.code}/lugares/como-llegar-a-${slugify(name, {
-      lower: true,
-    })}_${slugify(address, { lower: true, remove: /[,.()'"!:@]/g })}`;
+    let path = `/${city.country.code}/lugares/como-llegar-a-${customSlugify(name)}_${customSlugify(address)}`;
 
     createPage({
       path: path,
