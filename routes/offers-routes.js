@@ -37,6 +37,10 @@ const offersRoutesInit = async (graphql, createPage) => {
       path = `/${country.code}/promociones/${slug}/`;
     }
 
+    if(country.code === "co" || country.code === "cr" || country.code === "mx") {
+      path = `/${country.code}/restaurantes/promociones-y-campanas/${slug}/`;
+    }
+
 
     createPage({
       path: path,
