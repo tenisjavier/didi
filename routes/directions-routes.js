@@ -42,8 +42,7 @@ const directionsRoutesInit = async (graphql, createPage) => {
 
   result.data.allContentfulDirection.nodes.forEach((node) => {
     const { id, origin, destination, destinationAddress, city } = node;
-    let path = `/${city.country.code}/lugares/como-llegar-a-${customSlugify(destination)}-
-    desde-${customSlugify(origin)}_${customSlugify(destinationAddress)}`;
+    let path = `/${city.country.code}/lugares/como-llegar-a-${customSlugify(destination)}-desde-${customSlugify(origin)}_${customSlugify(destinationAddress)}`;
 
     createPage({
       path: path,
