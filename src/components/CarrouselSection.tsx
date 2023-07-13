@@ -44,7 +44,7 @@ const CarrouselSection = ({
               } w-44 flex flex-col hover:cursor-pointer justify-center items-center h-full border-0 border-l-2 first:border-l-0 border-solid border-gray-light`}
             >
               <div>
-                <Image imageData={col.image}></Image>
+                <Image imageData={col.image} imageStyle="w-12 lg:w-14"></Image>
               </div>
               <div className="mt-2 text-center text-xs lg:text-sm px-2">
                 {col.title}
