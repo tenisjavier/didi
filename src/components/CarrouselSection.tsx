@@ -46,7 +46,7 @@ const CarrouselSection = ({
               <div>
                 <Image imageData={col.image} imageStyle="w-12 lg:w-14"></Image>
               </div>
-              <div className="mt-2 text-center text-xs lg:text-sm px-2">
+              <div className="mt-2 text-center h-8 lg:h-4 text-xs lg:text-sm px-2">
                 {col.title}
               </div>
             </div>
