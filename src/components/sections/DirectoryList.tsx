@@ -1,7 +1,7 @@
 import React from "react";
-import slugify from "react-slugify";
 import { t } from "../../context/countryContext";
 import ListSection from "../ListSection";
+import { customSlugify } from "../../util/customSlugify";
 
 interface ListProps {
   places: {
@@ -9,23 +9,22 @@ interface ListProps {
     address: string;
   }[];
   city: string;
-
 }
 
 const DirectoryList = ({ places, city }: ListProps) => {
-  if(places) {
+  if (places) {
     const items = places.map((place) => {
-      const name = place.name.length > 30 ? place.name.slice(0, 30) + "..." : place.name;
+      const name =
+        place.name.length > 30 ? place.name.slice(0, 30) + "..." : place.name;
       return {
         text: name,
         secondText: place.address,
         link: t("DirectoryList.linkItem", {
-          placeName: slugify(place.name),
-          placeAddress: slugify(place.address),
+          placeName: customSlugify(place.name),
+          placeAddress: customSlugify(place.address),
         }),
       };
     });
-    
 
     const props = {
       title: t("DirectoryList.title", { city }),
@@ -34,7 +33,6 @@ const DirectoryList = ({ places, city }: ListProps) => {
       textColor: t("DirectoryList.textColor"),
       items: items,
     };
-
 
     return <ListSection {...props}></ListSection>;
   } else {
