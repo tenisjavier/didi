@@ -7,8 +7,6 @@ import PaxColumns from "../../components/sections/PaxColumns";
 import SilderSection from "../../components/sections/SliderSection";
 import PaxBanner from "../../components/sections/PaxBanner";
 import HomeColumns from "../../components/sections/HomeColumns";
-import { QRCodeSVG } from "qrcode.react";
-import SmsCTA from "../../components/sections/SmsCTA";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 
 const Pasajero = ({ data }) => {
@@ -23,18 +21,9 @@ const Pasajero = ({ data }) => {
     return image.title === "mx.PaxWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
-  const ridesSMSCTA = images.filter((image) => {
-    return image.title === "mx.FoodSMSCTA.image";
-  })[0];
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
-
-  const [QRUrl, setQRUrl] = useState(
-    "https://global-rides-passenger.onelink.me/xNlo/QRCODE"
-  );
-  const qr = <QRCodeSVG value={QRUrl}></QRCodeSVG>;
-
   // useEffect(() => {
   //   const btnPrimary = document.getElementsByClassName("btn-primary")[0];
   //   if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
@@ -48,9 +37,6 @@ const Pasajero = ({ data }) => {
         bgImage={paxHeroBgImage}
         mobileBgImage={paxHeroMobileBgImage}
       ></PaxHero>
-      <div className="hidden lg:block xl:block">
-        <SmsCTA image={ridesSMSCTA} qr={qr} smsType={"rides"}></SmsCTA>
-      </div>
       <div className="block lg:hidden xl:hidden">
         <FoodAppDownloads
           images={foodDeliveryDownloadsImages}
@@ -64,9 +50,6 @@ const Pasajero = ({ data }) => {
       <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <PaxBanner></PaxBanner>
       <HomeColumns></HomeColumns>
-      <div className="hidden lg:block xl:block">
-        <SmsCTA image={ridesSMSCTA} qr={qr} smsType={"rides"}></SmsCTA>
-      </div>
       <div className="block lg:hidden xl:hidden">
         <FoodAppDownloads
           images={foodDeliveryDownloadsImages}
@@ -83,7 +66,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.PaxHero.bgImage)|(mx.PaxHeroMobile.bgImage)|(mx.PaxWhyDiDi.image)|(mx.FoodSMSCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.PaxHero.bgImage)|(mx.PaxHeroMobile.bgImage)|(mx.PaxWhyDiDi.image)|(mx.FoodDeliveryDownloads.image)/"
         }
       }
     ) {
