@@ -30,7 +30,7 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { country: { code: { eq: "co" } } }
+      filter: { category: { eq: "driver" }, country: { code: { eq: "co" } } }
       sort: { updatedAt: DESC }
       limit: 10
     ) {
