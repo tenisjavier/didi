@@ -180,8 +180,7 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
-        style={{ padding: 0 }}
+        className={`p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary} `}
       >
         <a
           onClick={(e) => handleClick(e)}
