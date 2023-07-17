@@ -272,9 +272,13 @@ const insertBtnParams = () => {
       campaignId = "refpage_" + window.location.pathname;
 
       //? EXPERIMENT A/B other code in Layout
-
-      if (["mx"].includes(countryCode)) {
-        const test_version = window.localStorage.getItem("t3");
+      console.log(countryCode);
+      if (
+        ["mx", "cl", "pe", "ar", "co", "ec", "do", "cr", "pa"].includes(
+          countryCode
+        )
+      ) {
+        const test_version = window.localStorage.getItem("t4");
         adgroupId = test_version;
       }
     }
