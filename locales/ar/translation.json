@@ -2,6 +2,16 @@
   "HomeHero.title": "Movete por tu ciudad",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Conductor"
+    },
+    {
+      "title": "DiDi Pasajero"
+    }
+  ],
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
   "SafetyCTA.desc": "Revisá todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
   "SafetyCTA.textColor": "white",

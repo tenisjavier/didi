@@ -32,7 +32,6 @@ const directionsRoutesInit = async (graphql, createPage) => {
   const templatePath = `./src/pages/templates/directions-template.js`;
   const template = path.resolve(templatePath);
 
-
   const customSlugify = (words) => {
     return slugify(words, {
       lower: true,

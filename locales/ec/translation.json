@@ -3,6 +3,16 @@
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
   "HomeHero.btnText": "teste",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Conductor"
+    },
+    {
+      "title": "DiDi Pasajero"
+    }
+  ],
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad.",
   "SafetyCTA.desc": "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que tu próxima solicitud de viaje en la app sea tan segura como tú esperas.",
   "SafetyCTA.textColor": "white",
@@ -23,7 +33,7 @@
   "AboutGlobalCTA.btnText": "Conoce más de DiDi Global",
   "AboutGlobalCTA.btnMode": "primary",
   "AboutGlobalCTA.btnLink": "http://www.didiglobal.com/",
-  "DrvCTA.title": "Conéctate con DiDi",
+  "DrvCTA.title": "Genera ingresos extra con DiDi Conductor",
   "DrvCTA.bullets": false,
   "DrvCTA.desc": "Conéctate con la app con impacto en la movilidad y obtén ingresos extra en tu tiempo libre. Registra tus datos y los de tu vehículo y comienza a generar ingresos adicionales. Tus documentos se validarán hasta 72 horas para que empieces a manejar.",
   "DrvCTA.bgColor": "bg-gray-light",
@@ -347,7 +357,7 @@
   "PaxBanner.bgColor": "bg-orange-primary",
   "PaxBanner.textColor": "white",
   "PaxBanner.btnMode": "light",
-  "DrvHero.title": "Conéctate con DiDi",
+  "DrvHero.title": "Genera ingresos extra con DiDi Conductor",
   "DrvHero.desc": "Regístrate como Socio Conductor y accede a una tasa de servicio competitiva por el uso de la app y muchas promociones",
   "DrvHero.textColor": "white",
   "DrvHero.btnMode": "light",

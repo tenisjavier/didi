@@ -2,6 +2,16 @@
   "HomeHero.title": "Muévete por tu ciudad",
   "HomeHero.textColor": "white",
   "HomeHero.btnMode": "light",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Conductor"
+    },
+    {
+      "title": "DiDi Pasajero"
+    }
+  ],
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
   "SafetyCTA.desc": "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje",
   "SafetyCTA.textColor": "white",
@@ -52,7 +62,7 @@
       "height": "h-80"
     }
   ],
-  "PaxHero.title": "SOLICITA VIAJES A TRAVÉS DE DIDI",
+  "PaxHero.title": "Solicita viajes a través de DiDi",
   "PaxHero.desc": "Es momento de redescubrir tu ciudad y recorrer cada rincón de ella a través de DiDi. Conéctate con viajes utilizando la app de movilidad inteligente #1 en el mundo.",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",

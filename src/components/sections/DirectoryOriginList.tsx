@@ -1,7 +1,7 @@
 import React from "react";
 import { t } from "../../context/countryContext";
-import { customSlugify } from "../../util/customSlugify";
 import ListSection from "../ListSection";
+import { customSlugify } from "../../util/customSlugify";
 
 interface ListProps {
   data: {
