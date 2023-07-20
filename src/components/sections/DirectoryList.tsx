@@ -16,6 +16,7 @@ const DirectoryList = ({ places, city }: ListProps) => {
     const items = places.map((place) => {
       const name =
         place.name.length > 30 ? place.name.slice(0, 30) + "..." : place.name;
+
       return {
         text: name,
         secondText: place.address,
