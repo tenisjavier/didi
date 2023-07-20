@@ -4,7 +4,6 @@ import { useCountry } from "../context/countryContext";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
-
 import Menu from "./Menu";
 
 interface HeaderProps extends BreadcrumbProps {}
@@ -12,7 +11,7 @@ interface HeaderProps extends BreadcrumbProps {}
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
     <>
-      <nav className="fixed z-40 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
+      <nav className="fixed z-40 xl:h-20 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
           <Menu></Menu>
@@ -29,10 +28,10 @@ const Navlogo = () => {
 
   let logoImg = (
     <StaticImage
-      src="../images/didi-logo-white.jpeg"
+      src="../images/didi-logo-without-bg.png"
       alt="DiDi"
-      className=""
-      width={120}
+      className="h-10"
+      objectFit="contain"
     />
   );
   if (pathname.includes("food"))
@@ -40,17 +39,17 @@ const Navlogo = () => {
       <StaticImage
         src="../images/didi-food-logo-white.png"
         alt="DiDi"
-        className=""
-        width={120}
+        className="h-10"
+        objectFit="contain"
       />
     );
   if (pathname.includes("/co/food/"))
     logoImg = (
       <StaticImage
-        src="../images/didi-food-logo-colombia-white.png"
+        src="../images/didi-food-logo-colombia.png"
         alt="DiDi"
-        className=""
-        width={120}
+        className="h-10"
+        objectFit="contain"
       />
     );
   if (pathname.includes("/didipay/"))
@@ -58,8 +57,8 @@ const Navlogo = () => {
       <StaticImage
         src="../images/didi-pay-logo.png"
         alt="DiDi"
-        className=""
-        width={120}
+        className="h-10"
+        objectFit="contain"
       />
     );
 
@@ -69,7 +68,7 @@ const Navlogo = () => {
   if (pathname.includes("/didipay/")) logoLink = `/${countryCode}/didipay/`;
 
   return (
-    <div className="p-3">
+    <div className="pl-8 min-w-[8%]">
       <Link className="" to={logoLink}>
         {logoImg}
       </Link>

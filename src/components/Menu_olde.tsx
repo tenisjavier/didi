@@ -15,7 +15,7 @@ import { getMenuLinksPr } from "../config/menu-pr-config";
 import gtmEvent from "../config/gtm";
 
 // @desc: Top Menu. Links from menu-config and menu-configFood.
-const Menu = () => {
+const MenuOlde = () => {
   const [open, setOpen] = useState(false);
   const countryCode = useCountry().code;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
@@ -47,7 +47,7 @@ const Menu = () => {
           "lg:block"
         }
       >
-        <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-white lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0">
+        <ul className="m-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary bg-white lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:p-0 gap-9">
           {
             <>
               {links &&
@@ -80,10 +80,16 @@ interface NavItemProps {
 const NavItem = ({ link, children }: NavItemProps) => {
   return (
     <li
-      className="group h-full flex w-full flex-col p-2 
-    text-gray-primary lg:w-44 lg:items-center lg:justify-center lg:p-0 "
+      className="group h-full flex w-full p-2 
+    text-gray-primary lg:w-auto lg:items-center lg:justify-center lg:p-0 gap-2.5"
     >
-      <a href={link.url} className="hover:text-orange-primary">
+      {link.text && (
+        <FontAwesomeIcon
+          icon={faBars}
+          className={`text-orange-primary text-xl w-6`}
+        />
+      )}
+      <a href={link.url} className="hover:text-orange-primary text-xl">
         {link.text}
       </a>
       {children}
@@ -115,7 +121,7 @@ const DropdownMenu = ({ links, countryCode }: DropdownMenuProps) => {
     const isCTA = url?.includes("onelink");
     return (
       <a
-        className="flex h-11 items-center pl-12  hover:text-orange-primary hover:bg-gray-light lg:justify-center lg:bg-white  lg:p-0"
+        className="flex h-11 items-center pl-12 hover:text-orange-primary hover:bg-gray-light lg:justify-start lg:bg-white  px-11"
         href={url}
         onClick={
           isCTA ? (e: any): void => handleItemClick(e, countryCode) : undefined
@@ -128,7 +134,7 @@ const DropdownMenu = ({ links, countryCode }: DropdownMenuProps) => {
 
   return (
     <div
-      className="top-14 w-full  transition group-hover:block lg:absolute  lg:w-56  lg:border-x-0 lg:border-t-2 
+      className="top-14 w-full  transition group-hover:block lg:absolute lg:w-80 lg:border-x-0 lg:border-t-2 
     lg:border-b-0 lg:border-solid lg:border-orange-primary lg:hidden"
     >
       {links.map((item, index) => (
@@ -138,4 +144,4 @@ const DropdownMenu = ({ links, countryCode }: DropdownMenuProps) => {
   );
 };
 
-export default Menu;
+export default MenuOlde;

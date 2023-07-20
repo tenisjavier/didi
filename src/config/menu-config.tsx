@@ -9,6 +9,7 @@ export interface SingleMenuItem {
   text: string;
   url: string;
   dropMenu?: SingleDropMenuItem[];
+  icon?: any;
 }
 
 interface AllMenuInterface {
@@ -20,6 +21,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "About DiDi",
       url: "#",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Contact Us",
@@ -106,6 +108,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "About DiDi",
       url: "#",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Contact Us",
@@ -192,10 +195,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/cl/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/cl/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -222,10 +227,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Taxi",
       url: "/cl/taxi/",
+      icon: "menu-drv",
     },
     {
       text: "DiDi Food",
       url: "/cl/food/",
+      icon: "menu-food",
       dropMenu: [
         {
           text: "Restaurantes",
@@ -248,6 +255,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Sobre DiDi",
       url: "/cl/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -262,6 +270,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -279,6 +288,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Conductor",
       url: "/mx/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -321,10 +331,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/mx/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "Servicios Financieros",
       url: "/mx/servicios-financieros/",
+      icon: "menu-financial-service",
       dropMenu: [
         {
           text: "DiDi Pay",
@@ -351,6 +363,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Food",
       url: "/mx/food/",
+      icon: "menu-food",
       dropMenu: [
         {
           text: "Restaurantes",
@@ -373,6 +386,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Entrega",
       url: "#",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "DiDi Entrega",
@@ -387,6 +401,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Sobre DiDi",
       url: "/mx/nosotros/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -401,6 +416,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -417,10 +433,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/ar/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/ar/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -443,18 +461,22 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Fleet",
       url: "/ar/didi-fleet/",
+      icon: "menu-drv",
     },
     {
       text: "DiDi Taxi",
       url: "/ar/taxi/",
+      icon: "menu-drv",
     },
     {
       text: "DiDi Moto",
       url: "/ar/conductor/moto/",
+      icon: "menu-delivery",
     },
     {
       text: "Sobre DiDi",
       url: "/ar/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -473,6 +495,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -489,10 +512,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/pe/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/pe/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -515,6 +540,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Food",
       url: "/pe/food/",
+      icon: "menu-food",
       dropMenu: [
         {
           text: "Restaurantes",
@@ -537,6 +563,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Sobre DiDi",
       url: "/pe/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -551,6 +578,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -567,10 +595,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/co/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/co/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Arrendador",
@@ -609,14 +639,17 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Taxi",
       url: "/co/taxi/",
+      icon: "menu-drv",
     },
     {
       text: "DiDi Fleet",
       url: "/co/didi-fleet/",
+      icon: "menu-drv",
     },
     {
       text: "DiDi Food",
       url: "/co/food/",
+      icon: "menu-food",
       dropMenu: [
         {
           text: "Restaurantes",
@@ -639,6 +672,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Sobre DiDi",
       url: "/co/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -657,6 +691,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -673,6 +708,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Rider",
       url: "/au/rider/",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Rider",
@@ -687,6 +723,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Driver",
       url: "/au/driver/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Driver",
@@ -713,6 +750,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Delivery",
       url: "/au/delivery/",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Personal",
@@ -735,6 +773,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Safety",
       url: "/au/safety/",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Driver Safety",
@@ -757,6 +796,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "About DiDi",
       url: "/au/about-us/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Help Center",
@@ -773,14 +813,17 @@ const menuLinks: AllMenuInterface = {
     {
       text: "نبذة عنا",
       url: "/eg/about-us/",
+      icon: "menu-help",
     },
     {
       text: "الراكب",
       url: "/eg/rider/",
+      icon: "menu-delivery",
     },
     {
       text: "السائق",
       url: "/eg/driver/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "السائق",
@@ -795,12 +838,14 @@ const menuLinks: AllMenuInterface = {
     {
       text: "مساعدة الشريك السائق",
       url: "/eg/help-center/",
+      icon: "menu-about",
     },
   ],
   pa: [
     {
       text: "DiDi Conductor",
       url: "/pa/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -819,10 +864,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/pa/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "Acerca de DiDi",
       url: "/pa/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -837,6 +884,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -853,10 +901,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/cr/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/cr/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -879,10 +929,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Fleet",
       url: "/cr/didi-fleet/",
+      icon: "menu-delivery",
     },
     {
       text: "DiDi Food",
       url: "/cr/food/",
+      icon: "menu-food",
       dropMenu: [
         {
           text: "Restaurantes",
@@ -905,6 +957,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Acerca de DiDi",
       url: "/cr/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -921,10 +974,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/do/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/do/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -951,10 +1006,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Moto",
       url: "/do/conductor/moto/",
+      icon: "menu-delivery",
     },
     {
       text: "DiDi Food",
       url: "/do/food/",
+      icon: "menu-food",
       dropMenu: [
         {
           text: "Restaurantes",
@@ -977,6 +1034,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Acerca de DiDi",
       url: "/do/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -991,6 +1049,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -1007,10 +1066,12 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Pasajero",
       url: "/ec/pasajero/",
+      icon: "menu-pax",
     },
     {
       text: "DiDi Conductor",
       url: "/ec/conductor/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Socio Conductor",
@@ -1033,6 +1094,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Acerca de DiDi",
       url: "/ec/sobre-didi/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Seguridad",
@@ -1047,6 +1109,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Contenido",
       url: "#",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Guías",
@@ -1063,6 +1126,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Rider",
       url: "/nz/rider/",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Rider",
@@ -1125,6 +1189,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Водителям",
       url: "/ru/driver/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Водителям таксопарков",
@@ -1139,18 +1204,22 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Пассажирам",
       url: "/ru/rider/",
+      icon: "menu-delivery",
     },
     {
       text: "Владельцам таксопарков",
       url: "/ru/fleet/",
+      icon: "menu-delivery",
     },
     {
       text: "Безопасность",
       url: "/ru/safety/",
+      icon: "menu-about",
     },
     {
       text: "О нас",
       url: "/ru/about-didi/",
+      icon: "menu-help",
     },
   ],
 };
