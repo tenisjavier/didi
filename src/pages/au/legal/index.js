@@ -20,7 +20,7 @@ const Legal = ({ data }) => {
         "Driver Complaint Handling Policy",
         "Driver Fatigue Management Policy",
         "General Terms and Conditions for Driver Offers",
-        "Fee Schedule",
+        "DiDi Fee Schedule",
         "Perth | Fare Increases",
       ].indexOf(p.name) > -1
   );
