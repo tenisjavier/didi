@@ -42,7 +42,7 @@ const Menu = () => {
     <div className="flex h-full items-center">
       <FontAwesomeIcon
         icon={faBars}
-        className="m-4 cursor-pointer text-gray-primary xl:hidden w-5 "
+        className="m-4 cursor-pointer text-gray-primary lg:hidden w-5 "
         size="lg"
         onClick={() => {
           setMenuOpen(!menuOpen);
@@ -54,7 +54,7 @@ const Menu = () => {
           (menuOpen
             ? "fixed left-0 top-14 right-0 bottom-0 overflow-y-scroll lg:absolute  bg-white "
             : "hidden ") +
-          "xl:block"
+          "lg:block"
         }
       >
         <ul

@@ -13,7 +13,7 @@ const DropdownMenu = ({ links, countryCode, isOpen }: DropdownMenuProps) => {
     <div
       className={`${
         isOpen ? "block" : "hidden"
-      } xl:bg-[#f2f2f2] bg-[#EDECEC] top-14 xl:top-20 w-full lg:group-hover:block lg:hidden lg:absolute lg:w-80 transition-all`}
+      } xl:bg-[#f2f2f2] bg-[#EDECEC] top-14 w-full lg:group-hover:block lg:hidden lg:absolute lg:w-80 transition-all`}
     >
       {links.map((item, index) => (
         <DropdownItem

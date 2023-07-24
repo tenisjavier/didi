@@ -11,7 +11,7 @@ interface HeaderProps extends BreadcrumbProps {}
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
     <>
-      <nav className="fixed z-40 xl:h-20 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
+      <nav className="fixed z-40 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
           <Menu></Menu>
@@ -30,7 +30,7 @@ const Navlogo = () => {
     <StaticImage
       src="../images/didi-logo-without-bg.png"
       alt="DiDi"
-      className="h-10"
+      className="w-28"
       objectFit="contain"
     />
   );
