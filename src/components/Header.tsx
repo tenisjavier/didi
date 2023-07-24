@@ -39,7 +39,7 @@ const Navlogo = () => {
       <StaticImage
         src="../images/didi-food-logo-white.png"
         alt="DiDi"
-        className="h-10"
+        className="w-28"
         objectFit="contain"
       />
     );
@@ -48,7 +48,7 @@ const Navlogo = () => {
       <StaticImage
         src="../images/didi-food-logo-colombia.png"
         alt="DiDi"
-        className="h-10"
+        className="w-28"
         objectFit="contain"
       />
     );
@@ -57,7 +57,7 @@ const Navlogo = () => {
       <StaticImage
         src="../images/didi-pay-logo.png"
         alt="DiDi"
-        className="h-10"
+        className="w-28"
         objectFit="contain"
       />
     );
