@@ -193,22 +193,21 @@ const menuLinks: AllMenuInterface = {
   ],
   cl: [
     {
-      text: "DiDi Pasajero",
-      url: "/cl/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/cl/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/cl/conductor/",
         },
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/cl/conductor/requisitos-para-conducir/",
         },
         {
           text: "Club DiDiMás+",
@@ -218,9 +217,20 @@ const menuLinks: AllMenuInterface = {
           text: "Ciudades Operativas",
           url: "/cl/ciudades/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/cl/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/cl/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/cl/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
@@ -228,27 +238,10 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Taxi",
       url: "/cl/taxi/",
       icon: "menu-drv",
-    },
-    {
-      text: "DiDi Food",
-      url: "/cl/food/",
-      icon: "menu-food",
       dropMenu: [
         {
-          text: "Restaurantes",
-          url: "/cl/food/restaurantes/",
-        },
-        {
-          text: "Socio Repartidor",
-          url: "/cl/food/repartidores/",
-        },
-        {
-          text: "Acerca",
-          url: "/cl/food/acerca-didi-food/",
-        },
-        {
-          text: "Contacto",
-          url: "/cl/food/contacto/",
+          text: "DiDi Taxi",
+          url: "/cl/taxi/",
         },
       ],
     },
@@ -291,16 +284,16 @@ const menuLinks: AllMenuInterface = {
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/mx/conductor/",
-        },
-        {
-          text: "Requisitos para Conductores",
-          url: "/mx/conductor/requisitos-para-conducir/",
         },
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+        },
+        {
+          text: "Requisitos para Conductores",
+          url: "/mx/conductor/requisitos-para-conducir/",
         },
         {
           text: "Gananciar en DiDi",
@@ -332,6 +325,16 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Pasajero",
       url: "/mx/pasajero/",
       icon: "menu-pax",
+      dropMenu: [
+        {
+          text: "DiDi Pasajero",
+          url: "/mx/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
+        },
+      ],
     },
     {
       text: "Servicios Financieros",
@@ -343,12 +346,12 @@ const menuLinks: AllMenuInterface = {
           url: "/mx/didipay/",
         },
         {
-          text: "DiDi Pay FAQ",
-          url: "/mx/didipay/preguntas-frecuentes/",
-        },
-        {
           text: "DiDi Préstamos",
           url: "/mx/prestamos/",
+        },
+        {
+          text: "DiDi Pay FAQ",
+          url: "/mx/didipay/preguntas-frecuentes/",
         },
         {
           text: "DiDi Préstamos FAQ",
@@ -365,6 +368,10 @@ const menuLinks: AllMenuInterface = {
       url: "/mx/food/",
       icon: "menu-food",
       dropMenu: [
+        {
+          text: "DiDi Food",
+          url: "/mx/food/",
+        },
         {
           text: "Restaurantes",
           url: "/mx/food/restaurantes/",
@@ -431,47 +438,79 @@ const menuLinks: AllMenuInterface = {
   ],
   ar: [
     {
-      text: "DiDi Pasajero",
-      url: "/ar/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/ar/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/ar/conductor/",
+        },
+        {
+          text: "DiDi Moto",
+          url: "/ar/conductor/moto/",
         },
         {
           text: "Regístrate Online",
           url: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
         },
         {
+          text: "Requisitos Para Conducir",
+          url: "/ar/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/ar/ciudades/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/ar/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/ar/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/ar/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
     {
       text: "DiDi Fleet",
       url: "/ar/didi-fleet/",
-      icon: "menu-drv",
+      icon: "menu-pax",
+      dropMenu: [
+        {
+          text: "DiDi Fleet",
+          url: "/ar/didi-fleet/",
+        },
+      ],
     },
     {
       text: "DiDi Taxi",
       url: "/ar/taxi/",
       icon: "menu-drv",
+      dropMenu: [
+        {
+          text: "DiDi Taxi",
+          url: "/ar/taxi/",
+        },
+      ],
     },
     {
       text: "DiDi Moto",
       url: "/ar/conductor/moto/",
       icon: "menu-delivery",
+      dropMenu: [
+        {
+          text: "DiDi Moto",
+          url: "/ar/conductor/moto/",
+        },
+      ],
     },
     {
       text: "Sobre DiDi",
@@ -510,17 +549,12 @@ const menuLinks: AllMenuInterface = {
   ],
   pe: [
     {
-      text: "DiDi Pasajero",
-      url: "/pe/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/pe/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/pe/conductor/",
         },
         {
@@ -528,12 +562,27 @@ const menuLinks: AllMenuInterface = {
           url: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
         },
         {
+          text: "Requisitos Para Conducir",
+          url: "/pe/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/pe/ciudades/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/pe/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/pe/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/pe/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
@@ -542,6 +591,10 @@ const menuLinks: AllMenuInterface = {
       url: "/pe/food/",
       icon: "menu-food",
       dropMenu: [
+        {
+          text: "DiDi Food",
+          url: "/pe/food/",
+        },
         {
           text: "Restaurantes",
           url: "/pe/food/restaurantes/",
@@ -593,26 +646,25 @@ const menuLinks: AllMenuInterface = {
   ],
   co: [
     {
-      text: "DiDi Pasajero",
-      url: "/co/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/co/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Arrendador",
+          text: "DiDi Conductor",
           url: "/co/conductor/",
+        },
+        {
+          text: "DiDi Moto",
+          url: "/co/conductor/moto/",
         },
         {
           text: "Regístrate Online",
           url: "https://page.didiglobal.com/driver-page/register/index.html",
         },
         {
-          text: "DiDi Moto",
-          url: "/co/conductor/moto/",
+          text: "Requisitos Para Conducir",
+          url: "/co/conductor/requisitos-para-conducir/",
         },
         {
           text: "DiDi Flex",
@@ -630,9 +682,20 @@ const menuLinks: AllMenuInterface = {
           text: "Historias de Éxito",
           url: "/co/conductor/historias-de-exito/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/co/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/co/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/co/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
@@ -640,17 +703,33 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Taxi",
       url: "/co/taxi/",
       icon: "menu-drv",
+      dropMenu: [
+        {
+          text: "DiDi Taxi",
+          url: "/co/taxi/",
+        },
+      ],
     },
     {
       text: "DiDi Fleet",
       url: "/co/didi-fleet/",
-      icon: "menu-drv",
+      icon: "menu-pax",
+      dropMenu: [
+        {
+          text: "DiDi Fleet",
+          url: "/co/didi-fleet/",
+        },
+      ],
     },
     {
       text: "DiDi Food",
       url: "/co/food/",
       icon: "menu-food",
       dropMenu: [
+        {
+          text: "DiDi Food",
+          url: "/co/food/",
+        },
         {
           text: "Restaurantes",
           url: "/co/food/restaurantes/",
@@ -899,17 +978,12 @@ const menuLinks: AllMenuInterface = {
   ],
   cr: [
     {
-      text: "DiDi Pasajero",
-      url: "/cr/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/cr/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/cr/conductor/",
         },
         {
@@ -917,25 +991,50 @@ const menuLinks: AllMenuInterface = {
           url: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
         },
         {
+          text: "Requisitos Para Conducir",
+          url: "/cr/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/cr/ciudades/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/cr/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/cr/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/cr/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
     {
       text: "DiDi Fleet",
       url: "/cr/didi-fleet/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
+      dropMenu: [
+        {
+          text: "DiDi Fleet",
+          url: "/cr/didi-fleet/",
+        },
+      ],
     },
     {
       text: "DiDi Food",
       url: "/cr/food/",
       icon: "menu-food",
       dropMenu: [
+        {
+          text: "DiDi Food",
+          url: "/cr/food/",
+        },
         {
           text: "Restaurantes",
           url: "/cr/food/restaurantes/",
@@ -972,21 +1071,16 @@ const menuLinks: AllMenuInterface = {
   ],
   do: [
     {
-      text: "DiDi Pasajero",
-      url: "/do/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/do/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/do/conductor/",
         },
         {
-          text: "Socio Conductor Moto",
+          text: "DiDi Moto",
           url: "/do/conductor/moto/",
         },
         {
@@ -994,12 +1088,27 @@ const menuLinks: AllMenuInterface = {
           url: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
         },
         {
+          text: "Requisitos Para Conducir",
+          url: "/do/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/do/ciudades/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/do/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/do/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/do/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
@@ -1007,27 +1116,14 @@ const menuLinks: AllMenuInterface = {
       text: "DiDi Moto",
       url: "/do/conductor/moto/",
       icon: "menu-delivery",
-    },
-    {
-      text: "DiDi Food",
-      url: "/do/food/",
-      icon: "menu-food",
       dropMenu: [
         {
-          text: "Restaurantes",
-          url: "/do/food/restaurantes/",
+          text: "DiDi Moto",
+          url: "/do/conductor/moto/",
         },
         {
-          text: "Socio Repartidor",
-          url: "/do/food/repartidores/",
-        },
-        {
-          text: "Acerca",
-          url: "/do/food/acerca-didi-food/",
-        },
-        {
-          text: "Contacto",
-          url: "/do/food/contacto/",
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
@@ -1064,17 +1160,12 @@ const menuLinks: AllMenuInterface = {
   ],
   ec: [
     {
-      text: "DiDi Pasajero",
-      url: "/ec/pasajero/",
-      icon: "menu-pax",
-    },
-    {
       text: "DiDi Conductor",
       url: "/ec/conductor/",
       icon: "menu-drv",
       dropMenu: [
         {
-          text: "Socio Conductor",
+          text: "DiDi Conductor",
           url: "/ec/conductor/",
         },
         {
@@ -1082,12 +1173,27 @@ const menuLinks: AllMenuInterface = {
           url: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
         },
         {
+          text: "Requisitos Para Conducir",
+          url: "/ec/conductor/requisitos-para-conducir/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/ec/ciudades/",
         },
+      ],
+    },
+    {
+      text: "DiDi Pasajero",
+      url: "/ec/pasajero/",
+      icon: "menu-pax",
+      dropMenu: [
         {
-          text: "Requisitos Para Conducir",
-          url: "/ec/conductor/requisitos-para-conducir/",
+          text: "DiDi Pasajero",
+          url: "/ec/pasajero/",
+        },
+        {
+          text: "Descarga la App",
+          url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
       ],
     },
@@ -1209,7 +1315,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Владельцам таксопарков",
       url: "/ru/fleet/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
     },
     {
       text: "Безопасность",

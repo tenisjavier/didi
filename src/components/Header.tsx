@@ -29,36 +29,33 @@ const Navlogo = () => {
   let logoImg = (
     <StaticImage
       src="../images/didi-logo-without-bg.png"
-      alt="DiDi"
-      className="w-28"
-      objectFit="contain"
+      alt="DiDi Logo"
+      width={80}
     />
   );
   if (pathname.includes("food"))
     logoImg = (
       <StaticImage
         src="../images/didi-food-logo-white.png"
-        alt="DiDi"
-        className="w-28"
-        objectFit="contain"
+        alt="DiDi Food Logo"
+        width={120}
+        className=""
       />
     );
   if (pathname.includes("/co/food/"))
     logoImg = (
       <StaticImage
         src="../images/didi-food-logo-colombia.png"
-        alt="DiDi"
-        className="w-28"
-        objectFit="contain"
+        alt="DiDi Food Logo Colombia"
+        width={120}
       />
     );
   if (pathname.includes("/didipay/"))
     logoImg = (
       <StaticImage
         src="../images/didi-pay-logo.png"
-        alt="DiDi"
-        className="w-28"
-        objectFit="contain"
+        alt="DiDi Pay Logo"
+        width={120}
       />
     );
 
@@ -68,7 +65,7 @@ const Navlogo = () => {
   if (pathname.includes("/didipay/")) logoLink = `/${countryCode}/didipay/`;
 
   return (
-    <div className="pl-8 min-w-[8%]">
+    <div className="pl-8">
       <Link className="" to={logoLink}>
         {logoImg}
       </Link>
