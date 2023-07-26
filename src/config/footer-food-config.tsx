@@ -9,17 +9,7 @@ interface AllFooterInterface {
 
 const footerLinksFood: AllFooterInterface = {
   int: [],
-  cl: [
-    { text: "Home", link: "/cl/food/" },
-    { text: "Restaurantes", link: "/cl/food/restaurantes/" },
-    { text: "Socio repartidor", link: "/cl/food/repartidores/" },
-    { text: "Acerca", link: "/cl/food/acerca-didi-food/" },
-    { text: "Contacto", link: "/cl/food/contacto/" },
-    { text: "Blog", link: "/cl/food/blog/" },
-    { text: "Terms and Conditions", link: "/cl/food/terminos-y-condiciones/" },
-    { text: "Privacidad", link: "/cl/food/privacidad/" },
-    { text: "Renta de equipo", link: "/cl/food/renta-de-equipo/" },
-  ],
+
   mx: [
     { text: "Restaurantes", link: "/mx/food/restaurantes/" },
     { text: "Socio repartidor", link: "/mx/food/repartidores/" },
@@ -35,17 +25,6 @@ const footerLinksFood: AllFooterInterface = {
   mxen: [
     { text: "Store", link: "/mx/food/en/restaurants/" },
     { text: "Delivery", link: "/mx/food/en/couriers/" },
-  ],
-  do: [
-    { text: "Home", link: "/do/food/" },
-    { text: "Restaurantes", link: "/do/food/restaurantes/" },
-    { text: "Socio repartidor", link: "/do/food/repartidores/" },
-    { text: "Acerca", link: "/do/food/acerca-didi-food/" },
-    { text: "Contacto", link: "/do/food/contacto/" },
-    { text: "Blog", link: "/do/food/blog/" },
-    { text: "Terms and Conditions", link: "/do/food/terminos-y-condiciones/" },
-    { text: "Privacidad", link: "/do/food/privacidad/" },
-    { text: "Renta de equipo", link: "/do/food/renta-de-equipo/" },
   ],
   cr: [
     { text: "Home", link: "/cr/food/" },

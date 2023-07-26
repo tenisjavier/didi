@@ -77,7 +77,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/' ,
+        output: "/ar/",
         query: `
         {
           allSitePage {
@@ -89,7 +89,7 @@ module.exports = {
       `,
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          const pages = allPages.filter((page)=> {
+          const pages = allPages.filter((page) => {
             return (
               page.path.includes(`/ar/`) &&
               !page.path.includes(`/ar/conductor/`) &&
@@ -107,7 +107,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/conductor/' ,
+        output: "/ar/conductor/",
         query: `
         {
           allSitePage {
@@ -120,7 +120,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ar/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ar/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -128,7 +130,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/articulos/' ,
+        output: "/ar/articulos/",
         query: `
         {
           allSitePage {
@@ -141,7 +143,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ar/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ar/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -149,7 +153,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/newsroom/' ,
+        output: "/ar/newsroom/",
         query: `
         {
           allSitePage {
@@ -162,7 +166,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ar/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ar/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -170,7 +176,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/guias/' ,
+        output: "/ar/guias/",
         query: `
         {
           allSitePage {
@@ -183,7 +189,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ar/guias/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ar/guias/`)
+          );
           return [...pages];
         },
       },
@@ -191,7 +199,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/legal/' ,
+        output: "/ar/legal/",
         query: `
         {
           allSitePage {
@@ -204,7 +212,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ar/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ar/legal/`)
+          );
           return [...pages];
         },
       },
@@ -212,7 +222,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ar/centro-de-ayuda/' ,
+        output: "/ar/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -225,7 +235,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ar/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ar/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -233,7 +245,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/au/' ,
+        output: "/au/",
         query: `
         {
           allSitePage {
@@ -262,7 +274,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/au/driver/' ,
+        output: "/au/driver/",
         query: `
         {
           allSitePage {
@@ -275,7 +287,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/au/driver/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/au/driver/`)
+          );
           return [...pages];
         },
       },
@@ -283,7 +297,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/au/blog/' ,
+        output: "/au/blog/",
         query: `
         {
           allSitePage {
@@ -296,7 +310,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/au/blog/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/au/blog/`)
+          );
           return [...pages];
         },
       },
@@ -304,7 +320,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/au/legal/' ,
+        output: "/au/legal/",
         query: `
         {
           allSitePage {
@@ -317,7 +333,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/au/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/au/legal/`)
+          );
           return [...pages];
         },
       },
@@ -325,7 +343,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/au/help-center/' ,
+        output: "/au/help-center/",
         query: `
         {
           allSitePage {
@@ -338,7 +356,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/au/help-center/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/au/help-center/`)
+          );
           return [...pages];
         },
       },
@@ -346,7 +366,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/' ,
+        output: "/cl/",
         query: `
         {
           allSitePage {
@@ -367,11 +387,7 @@ module.exports = {
               !page.path.includes(`/cl/newsroom/`) &&
               !page.path.includes(`/cl/guias/`) &&
               !page.path.includes(`/cl/legal/`) &&
-              !page.path.includes(`/cl/centro-de-ayuda/`) &&
-              !page.path.includes(`/cl/food/blog/`) &&
-              !page.path.includes(`/cl/food/ciudad/`) &&
-              !page.path.includes(`/cl/food/repartidores/`) &&
-              !page.path.includes(`/cl/food/restaurantes/`)
+              !page.path.includes(`/cl/centro-de-ayuda/`)
             );
           });
           return [...pages];
@@ -381,7 +397,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/conductor/' ,
+        output: "/cl/conductor/",
         query: `
         {
           allSitePage {
@@ -394,7 +410,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cl/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -402,7 +420,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/articulos/' ,
+        output: "/cl/articulos/",
         query: `
         {
           allSitePage {
@@ -415,7 +433,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cl/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -423,7 +443,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/newsroom/' ,
+        output: "/cl/newsroom/",
         query: `
         {
           allSitePage {
@@ -436,7 +456,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cl/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -444,7 +466,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/guias/' ,
+        output: "/cl/guias/",
         query: `
         {
           allSitePage {
@@ -457,7 +479,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/guias/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cl/guias/`)
+          );
           return [...pages];
         },
       },
@@ -465,7 +489,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/legal/' ,
+        output: "/cl/legal/",
         query: `
         {
           allSitePage {
@@ -478,7 +502,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cl/legal/`)
+          );
           return [...pages];
         },
       },
@@ -486,7 +512,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/centro-de-ayuda/' ,
+        output: "/cl/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -499,7 +525,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cl/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -507,99 +535,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cl/food/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page) => {
-            return (
-              page.path.includes(`/cl/food/`) &&
-              !page.path.includes(`/cl/food/blog/`) &&
-              !page.path.includes(`/cl/food/ciudad/`) &&
-              !page.path.includes(`/cl/food/repartidores/`) &&
-              !page.path.includes(`/cl/food/restaurantes/`)
-            );
-          });
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/cl/food/blog/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/food/blog/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/cl/food/repartidores/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/food/repartidores/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/cl/food/restaurantes/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cl/food/restaurantes/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/co/' ,
+        output: "/co/",
         query: `
         {
           allSitePage {
@@ -634,7 +570,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/conductor/' ,
+        output: "/co/conductor/",
         query: `
         {
           allSitePage {
@@ -647,7 +583,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -655,7 +593,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/articulos/' ,
+        output: "/co/articulos/",
         query: `
         {
           allSitePage {
@@ -668,7 +606,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -676,7 +616,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/newsroom/' ,
+        output: "/co/newsroom/",
         query: `
         {
           allSitePage {
@@ -689,7 +629,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -697,7 +639,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/guias/' ,
+        output: "/co/guias/",
         query: `
         {
           allSitePage {
@@ -710,7 +652,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/guias/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/guias/`)
+          );
           return [...pages];
         },
       },
@@ -718,7 +662,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/legal/' ,
+        output: "/co/legal/",
         query: `
         {
           allSitePage {
@@ -731,7 +675,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/legal/`)
+          );
           return [...pages];
         },
       },
@@ -739,7 +685,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/centro-de-ayuda/' ,
+        output: "/co/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -752,7 +698,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -760,7 +708,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/food/' ,
+        output: "/co/food/",
         query: `
         {
           allSitePage {
@@ -789,7 +737,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/food/blog/' ,
+        output: "/co/food/blog/",
         query: `
         {
           allSitePage {
@@ -802,7 +750,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/food/blog/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/food/blog/`)
+          );
           return [...pages];
         },
       },
@@ -810,7 +760,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/food/repartidores/' ,
+        output: "/co/food/repartidores/",
         query: `
         {
           allSitePage {
@@ -823,7 +773,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/food/repartidores/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/food/repartidores/`)
+          );
           return [...pages];
         },
       },
@@ -831,7 +783,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/co/food/restaurantes/' ,
+        output: "/co/food/restaurantes/",
         query: `
         {
           allSitePage {
@@ -844,7 +796,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/co/food/restaurantes/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/co/food/restaurantes/`)
+          );
           return [...pages];
         },
       },
@@ -852,7 +806,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/' ,
+        output: "/cr/",
         query: `
         {
           allSitePage {
@@ -885,7 +839,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/conductor/' ,
+        output: "/cr/conductor/",
         query: `
         {
           allSitePage {
@@ -898,7 +852,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -906,7 +862,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/newsroom/' ,
+        output: "/cr/newsroom/",
         query: `
         {
           allSitePage {
@@ -919,7 +875,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -927,7 +885,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/legal/' ,
+        output: "/cr/legal/",
         query: `
         {
           allSitePage {
@@ -940,7 +898,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/legal/`)
+          );
           return [...pages];
         },
       },
@@ -948,7 +908,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/centro-de-ayuda/' ,
+        output: "/cr/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -961,7 +921,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -969,7 +931,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/food/' ,
+        output: "/cr/food/",
         query: `
         {
           allSitePage {
@@ -998,7 +960,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/food/blog/' ,
+        output: "/cr/food/blog/",
         query: `
         {
           allSitePage {
@@ -1011,7 +973,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/food/blog/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/food/blog/`)
+          );
           return [...pages];
         },
       },
@@ -1019,7 +983,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/food/repartidores/' ,
+        output: "/cr/food/repartidores/",
         query: `
         {
           allSitePage {
@@ -1032,7 +996,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/food/repartidores/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/food/repartidores/`)
+          );
           return [...pages];
         },
       },
@@ -1040,7 +1006,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/cr/food/restaurantes/' ,
+        output: "/cr/food/restaurantes/",
         query: `
         {
           allSitePage {
@@ -1053,7 +1019,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/cr/food/restaurantes/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/cr/food/restaurantes/`)
+          );
           return [...pages];
         },
       },
@@ -1061,7 +1029,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/' ,
+        output: "/do/",
         query: `
         {
           allSitePage {
@@ -1081,11 +1049,7 @@ module.exports = {
               !page.path.includes(`/do/conductor/`) &&
               !page.path.includes(`/do/newsroom/`) &&
               !page.path.includes(`/do/legal/`) &&
-              !page.path.includes(`/do/centro-de-ayuda/`) &&
-              !page.path.includes(`/do/food/blog/`) &&
-              !page.path.includes(`/do/food/ciudad/`) &&
-              !page.path.includes(`/do/food/repartidores/`) &&
-              !page.path.includes(`/do/food/restaurantes/`)
+              !page.path.includes(`/do/centro-de-ayuda/`)
             );
           });
           return [...pages];
@@ -1095,7 +1059,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/articulos/' ,
+        output: "/do/articulos/",
         query: `
         {
           allSitePage {
@@ -1108,7 +1072,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/do/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -1116,7 +1082,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/conductor/' ,
+        output: "/do/conductor/",
         query: `
         {
           allSitePage {
@@ -1129,7 +1095,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/do/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -1137,7 +1105,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/newsroom/' ,
+        output: "/do/newsroom/",
         query: `
         {
           allSitePage {
@@ -1150,7 +1118,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/do/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -1158,7 +1128,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/legal/' ,
+        output: "/do/legal/",
         query: `
         {
           allSitePage {
@@ -1171,7 +1141,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/do/legal/`)
+          );
           return [...pages];
         },
       },
@@ -1179,7 +1151,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/centro-de-ayuda/' ,
+        output: "/do/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -1192,107 +1164,18 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/do/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
     },
+
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/do/food/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page) => {
-            return (
-              page.path.includes(`/do/food/`) &&
-              !page.path.includes(`/do/food/blog/`) &&
-              !page.path.includes(`/do/food/ciudad/`) &&
-              !page.path.includes(`/do/food/repartidores/`) &&
-              !page.path.includes(`/do/food/restaurantes/`)
-            );
-          });
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/do/food/blog/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/food/blog/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/do/food/repartidores/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/food/repartidores/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/do/food/restaurantes/' ,
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/do/food/restaurantes/`))
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output:'/ec/' ,
+        output: "/ec/",
         query: `
         {
           allSitePage {
@@ -1322,7 +1205,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ec/articulos/' ,
+        output: "/ec/articulos/",
         query: `
         {
           allSitePage {
@@ -1335,7 +1218,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ec/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ec/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -1343,7 +1228,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ec/conductor/' ,
+        output: "/ec/conductor/",
         query: `
         {
           allSitePage {
@@ -1356,7 +1241,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ec/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ec/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -1364,7 +1251,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ec/newsroom/' ,
+        output: "/ec/newsroom/",
         query: `
         {
           allSitePage {
@@ -1377,7 +1264,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ec/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ec/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -1385,7 +1274,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ec/legal/' ,
+        output: "/ec/legal/",
         query: `
         {
           allSitePage {
@@ -1398,7 +1287,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ec/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ec/legal/`)
+          );
           return [...pages];
         },
       },
@@ -1406,7 +1297,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ec/centro-de-ayuda/' ,
+        output: "/ec/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -1419,7 +1310,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ec/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ec/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -1427,7 +1320,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/eg/' ,
+        output: "/eg/",
         query: `
         {
           allSitePage {
@@ -1454,7 +1347,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/eg/driver/' ,
+        output: "/eg/driver/",
         query: `
         {
           allSitePage {
@@ -1467,7 +1360,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/eg/driver/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/eg/driver/`)
+          );
           return [...pages];
         },
       },
@@ -1475,7 +1370,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/eg/centro-de-ayuda/' ,
+        output: "/eg/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -1488,7 +1383,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/eg/help-center/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/eg/help-center/`)
+          );
           return [...pages];
         },
       },
@@ -1496,7 +1393,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/' ,
+        output: "/mx/",
         query: `
         {
           allSitePage {
@@ -1534,7 +1431,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/conductor' ,
+        output: "/mx/conductor",
         query: `
         {
           allSitePage {
@@ -1547,7 +1444,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/mx/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -1555,7 +1454,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/articulos/' ,
+        output: "/mx/articulos/",
         query: `
         {
           allSitePage {
@@ -1568,7 +1467,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -1576,7 +1477,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/newsroom/' ,
+        output: "/mx/newsroom/",
         query: `
         {
           allSitePage {
@@ -1589,7 +1490,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -1597,7 +1500,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/guias/' ,
+        output: "/mx/guias/",
         query: `
         {
           allSitePage {
@@ -1610,7 +1513,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/guias/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/guias/`)
+          );
           return [...pages];
         },
       },
@@ -1618,7 +1523,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/legal/' ,
+        output: "/mx/legal/",
         query: `
         {
           allSitePage {
@@ -1631,7 +1536,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/legal/`)
+          );
           return [...pages];
         },
       },
@@ -1639,7 +1546,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/centro-de-ayuda/' ,
+        output: "/mx/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -1652,7 +1559,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -1660,7 +1569,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/food/' ,
+        output: "/mx/food/",
         query: `
         {
           allSitePage {
@@ -1690,7 +1599,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/food/blog/' ,
+        output: "/mx/food/blog/",
         query: `
         {
           allSitePage {
@@ -1703,7 +1612,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/food/blog/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/food/blog/`)
+          );
           return [...pages];
         },
       },
@@ -1711,7 +1622,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/food/ciudad/' ,
+        output: "/mx/food/ciudad/",
         query: `
         {
           allSitePage {
@@ -1724,7 +1635,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/food/ciudad/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/food/ciudad/`)
+          );
           return [...pages];
         },
       },
@@ -1732,7 +1645,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/food/colonia/',
+        output: "/mx/food/colonia/",
         query: `
         {
           allSitePage {
@@ -1745,7 +1658,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/food/colonia/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/food/colonia/`)
+          );
           return [...pages];
         },
       },
@@ -1753,7 +1668,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/food/repartidores/',
+        output: "/mx/food/repartidores/",
         query: `
         {
           allSitePage {
@@ -1766,7 +1681,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/food/repartidores/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/food/repartidores/`)
+          );
           return [...pages];
         },
       },
@@ -1774,7 +1691,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/food/restaurantes/',
+        output: "/mx/food/restaurantes/",
         query: `
         {
           allSitePage {
@@ -1787,7 +1704,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/food/restaurantes/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/food/restaurantes/`)
+          );
           return [...pages];
         },
       },
@@ -1795,7 +1714,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/didipay/',
+        output: "/mx/didipay/",
         query: `
         {
           allSitePage {
@@ -1808,7 +1727,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/didipay/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/didipay/`)
+          );
           return [...pages];
         },
       },
@@ -1816,7 +1737,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/mx/prestamos/',
+        output: "/mx/prestamos/",
         query: `
         {
           allSitePage {
@@ -1829,7 +1750,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page) => page.path.includes(`/mx/prestamos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/mx/prestamos/`)
+          );
           return [...pages];
         },
       },
@@ -1837,7 +1760,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/nz/' ,
+        output: "/nz/",
         query: `
         {
           allSitePage {
@@ -1866,7 +1789,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/nz/driver/' ,
+        output: "/nz/driver/",
         query: `
         {
           allSitePage {
@@ -1879,7 +1802,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/nz/driver/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/nz/driver/`)
+          );
           return [...pages];
         },
       },
@@ -1887,7 +1812,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/nz/blog/' ,
+        output: "/nz/blog/",
         query: `
         {
           allSitePage {
@@ -1900,7 +1825,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/nz/blog/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/nz/blog/`)
+          );
           return [...pages];
         },
       },
@@ -1908,7 +1835,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/nz/legal/' ,
+        output: "/nz/legal/",
         query: `
         {
           allSitePage {
@@ -1921,7 +1848,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/nz/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/nz/legal/`)
+          );
           return [...pages];
         },
       },
@@ -1929,7 +1858,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/nz/help-center/' ,
+        output: "/nz/help-center/",
         query: `
         {
           allSitePage {
@@ -1942,7 +1871,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/nz/help-center/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/nz/help-center/`)
+          );
           return [...pages];
         },
       },
@@ -1950,7 +1881,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pa/' ,
+        output: "/pa/",
         query: `
         {
           allSitePage {
@@ -1980,7 +1911,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pa/articulos/' ,
+        output: "/pa/articulos/",
         query: `
         {
           allSitePage {
@@ -1993,7 +1924,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pa/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pa/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -2001,7 +1934,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pa/conductor/' ,
+        output: "/pa/conductor/",
         query: `
         {
           allSitePage {
@@ -2014,7 +1947,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pa/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pa/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -2022,7 +1957,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pa/newsroom/' ,
+        output: "/pa/newsroom/",
         query: `
         {
           allSitePage {
@@ -2035,7 +1970,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pa/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pa/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -2043,7 +1980,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pa/legal/' ,
+        output: "/pa/legal/",
         query: `
         {
           allSitePage {
@@ -2056,7 +1993,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pa/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pa/legal/`)
+          );
           return [...pages];
         },
       },
@@ -2064,7 +2003,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pa/centro-de-ayuda/' ,
+        output: "/pa/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -2077,7 +2016,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pa/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pa/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -2085,7 +2026,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/' ,
+        output: "/pe/",
         query: `
         {
           allSitePage {
@@ -2119,7 +2060,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/articulos/' ,
+        output: "/pe/articulos/",
         query: `
         {
           allSitePage {
@@ -2132,7 +2073,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/articulos/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/articulos/`)
+          );
           return [...pages];
         },
       },
@@ -2140,7 +2083,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/conductor/' ,
+        output: "/pe/conductor/",
         query: `
         {
           allSitePage {
@@ -2153,7 +2096,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/conductor/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/conductor/`)
+          );
           return [...pages];
         },
       },
@@ -2161,7 +2106,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/newsroom/' ,
+        output: "/pe/newsroom/",
         query: `
         {
           allSitePage {
@@ -2174,7 +2119,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -2182,7 +2129,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/legal/' ,
+        output: "/pe/legal/",
         query: `
         {
           allSitePage {
@@ -2195,7 +2142,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/legal/`)
+          );
           return [...pages];
         },
       },
@@ -2203,7 +2152,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/centro-de-ayuda/' ,
+        output: "/pe/centro-de-ayuda/",
         query: `
         {
           allSitePage {
@@ -2216,7 +2165,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/centro-de-ayuda/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/centro-de-ayuda/`)
+          );
           return [...pages];
         },
       },
@@ -2224,7 +2175,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/food/' ,
+        output: "/pe/food/",
         query: `
         {
           allSitePage {
@@ -2253,7 +2204,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/food/blog/' ,
+        output: "/pe/food/blog/",
         query: `
         {
           allSitePage {
@@ -2266,7 +2217,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/food/blog/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/food/blog/`)
+          );
           return [...pages];
         },
       },
@@ -2274,7 +2227,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/food/repartidores/' ,
+        output: "/pe/food/repartidores/",
         query: `
         {
           allSitePage {
@@ -2287,7 +2240,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/food/repartidores/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/food/repartidores/`)
+          );
           return [...pages];
         },
       },
@@ -2295,7 +2250,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/pe/food/restaurantes/' ,
+        output: "/pe/food/restaurantes/",
         query: `
         {
           allSitePage {
@@ -2308,7 +2263,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/pe/food/restaurantes/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/pe/food/restaurantes/`)
+          );
           return [...pages];
         },
       },
@@ -2316,7 +2273,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ru/' ,
+        output: "/ru/",
         query: `
         {
           allSitePage {
@@ -2343,7 +2300,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ru/newsroom/' ,
+        output: "/ru/newsroom/",
         query: `
         {
           allSitePage {
@@ -2356,7 +2313,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ru/newsroom/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ru/newsroom/`)
+          );
           return [...pages];
         },
       },
@@ -2364,7 +2323,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output:'/ru/legal/' ,
+        output: "/ru/legal/",
         query: `
         {
           allSitePage {
@@ -2377,7 +2336,9 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
-          const pages = allPages.filter((page)=> page.path.includes(`/ru/legal/`))
+          const pages = allPages.filter((page) =>
+            page.path.includes(`/ru/legal/`)
+          );
           return [...pages];
         },
       },
@@ -2397,12 +2358,12 @@ module.exports = {
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           let pages = allPages.filter((page) => {
-            return(
-              !page.path.includes(`/ar/`) && 
+            return (
+              !page.path.includes(`/ar/`) &&
               !page.path.includes(`/au/`) &&
-              !page.path.includes(`/cl/`) && 
-              !page.path.includes(`/co/`) && 
-              !page.path.includes(`/cr/`) && 
+              !page.path.includes(`/cl/`) &&
+              !page.path.includes(`/co/`) &&
+              !page.path.includes(`/cr/`) &&
               !page.path.includes(`/do/`) &&
               !page.path.includes(`/ec/`) &&
               !page.path.includes(`/eg/`) &&
@@ -2412,27 +2373,27 @@ module.exports = {
               !page.path.includes(`/pa/`) &&
               !page.path.includes(`/pe/`) &&
               !page.path.includes(`/ru/`)
-            )
+            );
           });
 
-          pages.push({path: siteUrl+"/ar/sitemap-0"});
-          pages.push({path: siteUrl+"/au/sitemap-0"});
-          pages.push({path: siteUrl+"/cl/sitemap-0"});
-          pages.push({path: siteUrl+"/co/sitemap-0"});
-          pages.push({path: siteUrl+"/cr/sitemap-0"});
-          pages.push({path: siteUrl+"/do/sitemap-0"});
-          pages.push({path: siteUrl+"/ec/sitemap-0"});
-          pages.push({path: siteUrl+"/eg/sitemap-0"});
-          pages.push({path: siteUrl+"/hk/sitemap-0"});
-          pages.push({path: siteUrl+"/mx/sitemap-0"});
-          pages.push({path: siteUrl+"/nz/sitemap-0"});
-          pages.push({path: siteUrl+"/pa/sitemap-0"});
-          pages.push({path: siteUrl+"/pe/sitemap-0"});
-          pages.push({path: siteUrl+"/ru/sitemap-0"});
+          pages.push({ path: siteUrl + "/ar/sitemap-0" });
+          pages.push({ path: siteUrl + "/au/sitemap-0" });
+          pages.push({ path: siteUrl + "/cl/sitemap-0" });
+          pages.push({ path: siteUrl + "/co/sitemap-0" });
+          pages.push({ path: siteUrl + "/cr/sitemap-0" });
+          pages.push({ path: siteUrl + "/do/sitemap-0" });
+          pages.push({ path: siteUrl + "/ec/sitemap-0" });
+          pages.push({ path: siteUrl + "/eg/sitemap-0" });
+          pages.push({ path: siteUrl + "/hk/sitemap-0" });
+          pages.push({ path: siteUrl + "/mx/sitemap-0" });
+          pages.push({ path: siteUrl + "/nz/sitemap-0" });
+          pages.push({ path: siteUrl + "/pa/sitemap-0" });
+          pages.push({ path: siteUrl + "/pe/sitemap-0" });
+          pages.push({ path: siteUrl + "/ru/sitemap-0" });
 
           return [...pages];
         },
-      }
+      },
     },
   ],
 };
