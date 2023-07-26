@@ -4,7 +4,6 @@ import { useCountry } from "../context/countryContext";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
-
 import Menu from "./Menu";
 
 interface HeaderProps extends BreadcrumbProps {}
@@ -29,27 +28,25 @@ const Navlogo = () => {
 
   let logoImg = (
     <StaticImage
-      src="../images/didi-logo-white.jpeg"
-      alt="DiDi"
-      className=""
-      width={120}
+      src="../images/didi-logo-without-bg.png"
+      alt="DiDi Logo"
+      width={80}
     />
   );
   if (pathname.includes("food"))
     logoImg = (
       <StaticImage
         src="../images/didi-food-logo-white.png"
-        alt="DiDi"
-        className=""
+        alt="DiDi Food Logo"
         width={120}
+        className=""
       />
     );
   if (pathname.includes("/co/food/"))
     logoImg = (
       <StaticImage
-        src="../images/didi-food-logo-colombia-white.png"
-        alt="DiDi"
-        className=""
+        src="../images/didi-food-logo-colombia.png"
+        alt="DiDi Food Logo Colombia"
         width={120}
       />
     );
@@ -57,8 +54,7 @@ const Navlogo = () => {
     logoImg = (
       <StaticImage
         src="../images/didi-pay-logo.png"
-        alt="DiDi"
-        className=""
+        alt="DiDi Pay Logo"
         width={120}
       />
     );
@@ -69,7 +65,7 @@ const Navlogo = () => {
   if (pathname.includes("/didipay/")) logoLink = `/${countryCode}/didipay/`;
 
   return (
-    <div className="p-3">
+    <div className="pl-8">
       <Link className="" to={logoLink}>
         {logoImg}
       </Link>
