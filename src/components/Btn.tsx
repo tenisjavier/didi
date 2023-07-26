@@ -148,7 +148,7 @@ const Btn = ({
       btnText: e.target.innerText,
       countryCode: countryCode,
     });
-    window.location.replace(link);
+    window.location.href = link;
   };
 
   return (
@@ -180,11 +180,11 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+        className={`p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary} `}
       >
         <a
           onClick={(e) => handleClick(e)}
-          className="block"
+          className="block px-8 py-3"
           href={btnLink || btnLink2}
         >
           {btnText || btnText2}

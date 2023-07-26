@@ -7,8 +7,6 @@ import FoodBusinessCTA from "../../../../components/sections/FoodBusinessCTA";
 import FoodDeliveryCTA from "../../../../components/sections/FoodDeliveryCTA";
 import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessDownloads";
 import FoodAppDownloads from "../../../../components/sections/FoodAppDownloads";
-import SmsCTA from "../../../../components/sections/SmsCTA"
-import { QRCodeSVG } from "qrcode.react";
 
 const Ciudades = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -28,21 +26,10 @@ const Ciudades = ({ data }) => {
   const filteredCities = cities.filter((city) => {
     return city.restaurant != null;
   });
-  const foodSMSCTA = images.filter((image) => {
-    return image.title === "mx.FoodSMSCTA.image";
-  })[0];
+
   const foodDeliveryDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
-
-  const [QRUrl, setQRUrl] = useState(
-    "https://global-food-eater.onelink.me/4B2F/QRCODE"
-  );
-  const qr = (
-    <QRCodeSVG
-      value={QRUrl}
-    ></QRCodeSVG>
-  );
 
   //useEffect(() => {
     //const btnPrimary = document.getElementsByClassName("btn-primary")[0];
@@ -63,9 +50,6 @@ const Ciudades = ({ data }) => {
       <div className="block lg:hidden xl:hidden">
         <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
       </div>
-      <div className="hidden lg:block xl:block">
-        <SmsCTA image={foodSMSCTA} qr={qr}></SmsCTA>
-      </div>
     </Layout>
   );
 };
@@ -75,7 +59,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)|(mx.FoodDeliveryDownloads.image)|(mx.FoodSMSCTA.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)|(mx.FoodDeliveryDownloads.image)/"
         }
       }
     ) {

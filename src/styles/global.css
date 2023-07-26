@@ -92,7 +92,7 @@ section.main-text ol li {
 }
 
 .btn-primary {
-  @apply bg-orange-primary shadow-orange-primary/30 inline-block min-w-max cursor-pointer rounded-full py-3 px-8 font-semibold text-white shadow-xl hover:bg-orange-700 hover:text-white;
+  @apply bg-orange-primary shadow-orange-primary/30 inline-block min-w-max cursor-pointer rounded-full font-semibold text-white shadow-xl hover:bg-orange-700 hover:text-white;
 }
 
 .btn-primary a {
@@ -100,7 +100,7 @@ section.main-text ol li {
 }
 
 .btn-green {
-  @apply bg-green-primary shadow-green-primary/30 inline-block min-w-max cursor-pointer rounded-full py-3 px-6 lg:px-8 font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white;
+  @apply bg-green-primary shadow-green-primary/30 inline-block min-w-max cursor-pointer rounded-full font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white;
 }
 .btn-whatsapp {
   @apply bg-whatsapp-primary shadow-whatsapp-primary/30 inline-block cursor-pointer rounded-full py-3 pl-2 pr-4 font-semibold text-white shadow-xl hover:bg-green-700 hover:text-white border-solid border-2 border-white;
@@ -111,14 +111,14 @@ section.main-text ol li {
 }
 
 .btn-light {
-  @apply hover:bg-gray-primary text-gray-primary shadow-gray-primary/10 inline-block min-w-max cursor-pointer rounded-full bg-white py-3 px-8  font-semibold shadow-xl hover:text-white;
+  @apply hover:bg-gray-primary text-gray-primary shadow-gray-primary/10 inline-block min-w-max cursor-pointer rounded-full bg-white font-semibold shadow-xl hover:text-white;
 }
 .btn-light a {
   @apply hover:text-white;
 }
 
 .btn-dark {
-  @apply hover:bg-gray-primary shadow-gray-primary/20 inline-block min-w-max cursor-pointer rounded-full bg-gray-500 py-3 px-8 font-semibold  text-white shadow-xl hover:text-white;
+  @apply hover:bg-gray-primary shadow-gray-primary/20 inline-block min-w-max cursor-pointer rounded-full bg-gray-500 font-semibold  text-white shadow-xl hover:text-white;
 }
 .btn-dark a {
   @apply hover:text-white;
