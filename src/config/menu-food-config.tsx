@@ -16,50 +16,6 @@ interface AllMenuInterface {
 }
 
 const menuLinksFood: AllMenuInterface = {
-  cl: [
-    {
-      text: "Restaurantes",
-      url: "/cl/food/restaurantes/",
-    },
-    {
-      text: "Socio repartidor",
-      url: "/cl/food/repartidores/",
-      dropMenu: [
-        {
-          text: "Club Repartidores",
-          url: "/cl/food/repartidores/club-repartidores/",
-        },
-        {
-          text: "Ganancias",
-          url: "/cl/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/cl/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/cl/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/cl/food/repartidores/seguridad/",
-        },
-      ],
-    },
-    {
-      text: "Acerca",
-      url: "/cl/food/acerca-didi-food/",
-    },
-    {
-      text: "Contacto",
-      url: "/cl/food/contacto/",
-    },
-    {
-      text: "Blog",
-      url: "/cl/food/blog/",
-    },
-  ],
   mx: [
     {
       text: "Restaurantes",
@@ -140,50 +96,7 @@ const menuLinksFood: AllMenuInterface = {
       url: "/mx/food/blog/",
     },
   ],
-  do: [
-    {
-      text: "Restaurantes",
-      url: "/do/food/restaurantes/",
-    },
-    {
-      text: "Socio repartidor",
-      url: "/do/food/repartidores/",
-      dropMenu: [
-        {
-          text: "Club Repartidores",
-          url: "/do/food/repartidores/club-repartidores/",
-        },
-        {
-          text: "Ganancias",
-          url: "/do/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/do/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/do/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/do/food/repartidores/seguridad/",
-        },
-      ],
-    },
-    {
-      text: "Acerca",
-      url: "/do/food/acerca-didi-food/",
-    },
-    {
-      text: "Contacto",
-      url: "/do/food/contacto/",
-    },
-    {
-      text: "Blog",
-      url: "/do/food/blog/",
-    },
-  ],
+
   cr: [
     {
       text: "Restaurantes",

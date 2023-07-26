@@ -102,30 +102,6 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
-    "/food/": {
-      title: "Pide comida a través de DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/restaurantes/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/repartidores/": {
-      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
-      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/acerca-didi-food/": {
-      title: "La App de Comida Más Confiable",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/contacto/": {
-      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
-      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
-    },
-    "/food/blog/": {
-      title: "Artículos de Comida y Restaurantes",
-      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
-    },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -412,30 +388,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/moto/": {
       title: "DiDi Moto - Conduce y Genera Dinero",
       desc: "DiDi en República Dominicana, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
-    },
-    "/food/": {
-      title: "Pide comida a través de DiDi Food",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/restaurantes/": {
-      title: "Inscribe tu Comercio en DiDi Food",
-      desc: "Inscribe tu Comercio en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/repartidores/": {
-      title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
-      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/acerca-didi-food/": {
-      title: "La App de Comida Más Confiable",
-      desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
-    },
-    "/food/contacto/": {
-      title: "DiDi Food: Contacta nuestro Servicio al Cliente",
-      desc: "Si eres repartidos, restaurante o usuario puedes escribirnos por cualquier problema que tengas con DiDi Food.",
-    },
-    "/food/blog/": {
-      title: "Artículos de Comida y Restaurantes",
-      desc: "Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
