@@ -188,6 +188,70 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
+  cl: [
+    {
+      text: "DiDi Pasajero",
+      url: "/cl/pasajero/",
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/cl/conductor/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/cl/conductor/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
+        },
+        {
+          text: "Club DiDiMás+",
+          url: "/cl/didimas/",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/cl/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/cl/conductor/requisitos-para-conducir/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Taxi",
+      url: "/cl/taxi/",
+    },
+    {
+      text: "Sobre DiDi",
+      url: "/cl/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/cl/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/cl/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/cl/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/cl/articulos/",
+        },
+      ],
+    },
+  ],
 
   mx: [
     {
@@ -827,6 +891,71 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Centro de Ayuda",
           url: "/cr/centro-de-ayuda/",
+        },
+      ],
+    },
+  ],
+  do: [
+    {
+      text: "DiDi Pasajero",
+      url: "/do/pasajero/",
+    },
+    {
+      text: "DiDi Conductor",
+      url: "/do/conductor/",
+      dropMenu: [
+        {
+          text: "Socio Conductor",
+          url: "/do/conductor/",
+        },
+        {
+          text: "Socio Conductor Moto",
+          url: "/do/conductor/moto/",
+        },
+        {
+          text: "Regístrate Online",
+          url: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
+        },
+        {
+          text: "Ciudades Operativas",
+          url: "/do/ciudades/",
+        },
+        {
+          text: "Requisitos Para Conducir",
+          url: "/do/conductor/requisitos-para-conducir/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Moto",
+      url: "/do/conductor/moto/",
+    },
+
+    {
+      text: "Acerca de DiDi",
+      url: "/do/sobre-didi/",
+      dropMenu: [
+        {
+          text: "Seguridad",
+          url: "/do/seguridad/",
+        },
+        {
+          text: "Centro de Ayuda",
+          url: "/do/centro-de-ayuda/",
+        },
+      ],
+    },
+    {
+      text: "Contenido",
+      url: "#",
+      dropMenu: [
+        {
+          text: "Guías",
+          url: "/do/guias/",
+        },
+        {
+          text: "Artículos",
+          url: "/do/articulos/",
         },
       ],
     },
