@@ -4,7 +4,6 @@ import Layout from "../../components/Layout";
 import HomeHero from "../../components/sections/HomeHero";
 import DrvHero from "../../components/sections/DrvHero";
 import PaxHero from "../../components/sections/PaxHero";
-import FoodHero from "../../components/sections/FoodHero";
 import HeroCarrousel from "../../components/sections/HeroCarrousel";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
@@ -41,12 +40,6 @@ const Index = ({ data }) => {
   })[0];
   const paxHeroMobileBgImage = images.filter((image) => {
     return image.title === "do.PaxHeroMobile.bgImage";
-  })[0];
-  const foodHeroBgImage = images.filter((image) => {
-    return image.title === "do.FoodHero.bgImage";
-  })[0];
-  const foodHeroMobileBgImage = images.filter((image) => {
-    return image.title === "do.FoodHeroMobile.bgImage";
   })[0];
   const carrouselIcons0 = images.filter((image) => {
     return image.title === "carrousel-icon-drv";
@@ -89,12 +82,6 @@ const Index = ({ data }) => {
               mobileBgImage={paxHeroMobileBgImage}
             ></PaxHero>
           </div>
-          <div className={`${activeHero !== 2 && "hidden"} `}>
-            <FoodHero
-              bgImage={foodHeroBgImage}
-              mobileBgImage={foodHeroMobileBgImage}
-            ></FoodHero>
-          </div>
           <HeroCarrousel
             images={carrouselIcons}
             updateHero={updateHero}
@@ -123,8 +110,6 @@ export const query = graphql`
             "do.DrvHeroMobile.bgImage"
             "do.PaxHero.bgImage"
             "do.PaxHeroMobile.bgImage"
-            "do.FoodHero.bgImage"
-            "do.FoodHeroMobile.bgImage"
             "do.FinancialServices.bgImage"
             "do.FinancialServicesMobile.bgImage"
             "carrousel-icon-drv"
