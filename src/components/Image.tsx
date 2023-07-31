@@ -1,16 +1,18 @@
 //? This component is to encapsule the specific image component of the framework
 
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 
 //* if framework change this should be updated
 
+export type ImageDataType = {
+  title: string;
+  description: string;
+  gatsbyImageData: IGatsbyImageData;
+};
+
 interface ImageProps {
-  imageData: {
-    title: string;
-    description: string;
-    gatsbyImageData: any;
-  };
+  imageData: ImageDataType;
   imageStyle?: string;
 }
 
