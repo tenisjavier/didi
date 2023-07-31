@@ -15,6 +15,9 @@ const Seguridad = ({ data }) => {
     return image.title === "mx.SafetyBeforePaxColumns.image";
   });
   const safetyDuringPaxColumns = images.filter((image) => {
+    if(image.filename === "mx.SafetyDuringPaxColumns.image-4.png"){
+      return
+    }
     return image.title === "mx.SafetyDuringPaxColumns.image";
   });
   const safetyFinishedPaxColumns = images.filter((image) => {
@@ -54,6 +57,7 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+        filename
       }
     }
   }

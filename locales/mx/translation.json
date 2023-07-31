@@ -779,38 +779,34 @@
       "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911 y DiDi rastreará tu ubicación exacta."
     },
     {
-      "title": "11. Grabación de Audio Manual o Automática",
-      "desc": "En cada viaje tienes la opción de grabar el audio de tu viaje, o también puedes activar la grabación automática para que todos tus viajes se graben sin excepción. Calma, escuchamos tu audio solo si reportas un incidente de seguridad. Puedes reportar usando el Botón de Emergencia."
-    },
-    {
-      "title": "12. Cámaras de Seguridad",
+      "title": "11. Cámaras de Seguridad",
       "desc": "Instalamos cámaras en más de 900 vehículos en Guadalajara. Si existe alguna situación de riesgo, tu conductor puede presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y, de ser necesario, enviar apoyo a tu ubicación. *Disponible solo en Guadalajara."
     },
     {
-      "title": "13. Localización GPS",
+      "title": "12. Localización GPS",
       "desc": "Rastreamos por GPS todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata."
     },
     {
-      "title": "14. Cobertura Adicional",
+      "title": "13. Cobertura Adicional",
       "desc": "Con DiDi cuentas con Cobertura Adicional a la del vehículo para cada viaje; es una cobertura de responsabilidad civil que incluye gastos médicos por siniestro."
     },
     {
-      "title": "15. Inteligencia Artificial",
+      "title": "14. Inteligencia Artificial",
       "desc": "Usamos AI para cuidarte durante tus viajes. Por ejemplo, Pitia es un modelo que analiza hora, lugar y otras variables para asignar solo a conductores más experimentados."
     }
   ],
   "SafetyGridPaxAfterTrip.title": "Al finalizar el viaje",
   "SafetyGridPaxAfterTrip.columns": [
     {
-      "title": "17. Recuperación de Objetos Olvidados",
+      "title": "15. Recuperación de Objetos Olvidados",
       "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al conductor para acordar la devolución."
     },
     {
-      "title": "18. Soporte 24/7",
+      "title": "16. Soporte 24/7",
       "desc": "Contamos con atención 24/7 en nuestro chat en vivo."
     },
     {
-      "title": "19. Califica a tu Conductor",
+      "title": "17. Califica a tu Conductor",
       "desc": "Califica a tu conductor después de cada viaje. Si tuviste una mala experiencia, puedes seleccionar “No volver a viajar con este conductor” y reportar cualquier conducta inapropiada. También puedes calificar con 5 estrellas si el servicio te gustó mucho."
     }
   ],
@@ -818,11 +814,11 @@
   "SafetyPaxColumns.desc": "Para DiDi es muy importante seguir los lineamientos de protección ante el COVID-19. Por eso implementamos las siguientes medidas de prevención:",
   "SafetyPaxColumns.columns": [
     {
-      "title": "20. DiDi Prevent",
+      "title": "18. DiDi Prevent",
       "desc": "Al conectarse, todos los conductores pasan por una verificación de uso de cubrebocas a través de inteligencia artificial. Para completarla, deben mandar una selfie, una foto demostrando que desinfectaron su vehículo y voluntariamente reportan su temperatura corporal dentro de los límites normales. Cuando aprueban la validación comienzan a recibir viajes."
     },
     {
-      "title": "21. Barrera Plástica y Material Desinfectante",
+      "title": "19. Barrera Plástica y Material Desinfectante",
       "desc": "Los conductores pueden instalar una división plástica para separar los asientos delanteros de los traseros. Deben usar cubrebocas y tener líquido desinfectante a tu disposición."
     }
   ],
