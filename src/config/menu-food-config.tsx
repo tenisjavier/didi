@@ -241,6 +241,12 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Tienda",
       url: "/pe/food/restaurantes/",
+      dropMenu: [
+        {
+          text: "Kit Digital",
+          url: "/pe/food/restaurantes/kit-digital/",
+        },
+      ],
     },
     {
       text: "Socio repartidor",

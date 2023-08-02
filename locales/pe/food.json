@@ -191,6 +191,61 @@
       ]
     }
   ],
+  "RestaurantHeroKitDigital.title": " Kit Digital",
+  "RestaurantHeroKitDigital.textColor": "white",
+  "RestaurantHeroKitDigital.desc": "Impulsa la visibilidad de tu restaurante y con ello tus ventas en nuestra aplicación.",
+  "MidiaKitColumns.bgColor": "bg-orange-primary",
+  "MidiaKitColumns.textColor": "gray-primary",
+  "MidiaKitColumns.columns": [
+    {
+      "title": "Logo acompanãndo tu marca",
+      "desc": "Accede a plantillas de nuestro logotipo en alianza con tu marca (debéras reemplazar el espacio de la marca con tu logotipo).",
+      "textColor": "gray-primary",
+      "btnText": "Descargar Logo en Alianza",
+      "btnLink": "https://didicolombia.box.com/s/6e1oks90aieeyaz7pcqk891yif187ysp",
+      "btnMode": "light"
+    },
+    {
+      "title": "Guía general sobre Redes Sociales para restaurantes",
+      "desc": "Recomendaciones sobre la importancia de tener presencia en las redes sociales, beneficios y guías para que puedas manejarlos",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Guía General",
+      "btnLink": "https://didicolombia.box.com/s/9ypxq7eg97v27jmg34e0n4pxcdodhslp",
+      "btnMode": "light"
+    },
+    {
+      "title": "Guía de Plantillas de Contenido para Redes Sociales",
+      "desc": "Guia con instrucciones de uso de nuestras Plantillas de contenido",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Plantillas",
+      "btnLink": "https://didicolombia.box.com/s/m5jzdjvophi3ppwete9smjs59ubqok7y",
+      "btnMode": "light"
+    },
+    {
+      "title": "Insignias “Pide en DiDi Food”",
+      "desc": "Descarga nuestras insignias “Pide en DiDi Food” y “Disponible en DiDi Food” para que agregues a tus publicaciones en redes sociales.",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Insignias",
+      "btnLink": "https://didicolombia.box.com/s/rhnasf1lnvsfd51kp0axploljurzbwko",
+      "btnMode": "light"
+    },
+    {
+      "title": "Guía básico sobre Redes Sociales para restaurantes",
+      "desc": "Versión básica de nuestra Guía general sobre Redes Sociales para restaurantes.",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Guía Básica",
+      "btnLink": "https://didicolombia.box.com/s/3i606r46jg0z8ze5cybyrju1g4roxp6i",
+      "btnMode": "light"
+    },
+    {
+      "title": "Plantillas de Contenido",
+      "desc": "Material listo para usar genérico y personalizable para que empieces a generar contenido en tus redes sociales.",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Insignias",
+      "btnLink": "https://didicolombia.box.com/s/n35ufhwc2vj3gxuekdclgeszfc2c2ar5",
+      "btnMode": "light"
+    }
+  ],
   "GuideHero.textColor": "white",
   "GuideHero.btnMode": "light",
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",

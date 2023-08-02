@@ -1,34 +1,47 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../../components/Layout";
+import FaqContent from "../../../../../components/sections/FaqContent";
 import RestaurantHeroKitDigital from "../../../../../components/sections/RestaurantHeroKitDigital";
-import MidiaKitColumns from "../../../../../components/sections/Food/Restaurants/MidiaKitColumns";
 
-
-const Restaurant = ({ data }) => {
+const Privacy = ({ data }) => {
+  const { title, content } = data.contentfulFaq;
   const images = data.allContentfulAsset.nodes;
   const RestaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.RestaurantHeroKitDigital.bgImage";
   })[0];
-
   return (
     <Layout>
       <RestaurantHeroKitDigital
         bgImage={RestaurantHeroBgImage}
       ></RestaurantHeroKitDigital>
-      <MidiaKitColumns></MidiaKitColumns>
+      <FaqContent title={title} content={content}></FaqContent>
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
-    allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(mx.RestaurantHeroKitDigital.bgImage)|(mx.DiDiRestaurantImpuesto.image)|(mx.DiDiRestaurantImpuestosColumn.image)/"
+    contentfulFaq(title: { eq: "Editar Plantillas con PowerPoint" }) {
+      title
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 800)
+            __typename
+          }
         }
       }
+      product {
+        name
+      }
+    }
+    allContentfulAsset(
+      filter: { title: { regex: "/(mx.RestaurantHeroKitDigital.bgImage)/" } }
     ) {
       nodes {
         id
@@ -40,4 +53,4 @@ export const query = graphql`
   }
 `;
 
-export default Restaurant;
+export default Privacy;

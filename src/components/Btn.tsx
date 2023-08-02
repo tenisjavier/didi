@@ -50,6 +50,7 @@ export interface BtnProps {
   btnModeSecondary?: BtnMode;
   btnLink?: string;
   btnText?: string;
+  redirectOutPage?: boolean;
 }
 const Btn = ({
   btnType,
@@ -59,6 +60,7 @@ const Btn = ({
   btnModeSecondary,
   btnText2,
   btnLink2,
+  redirectOutPage,
 }: BtnProps) => {
   const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
@@ -133,6 +135,7 @@ const Btn = ({
   }
 
   const handleClick = (e: any) => {
+    if (redirectOutPage) return;
     e.preventDefault();
     const link = e.target.href;
     let form;
@@ -180,12 +183,13 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary} `}
+        className={`p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         <a
           onClick={(e) => handleClick(e)}
           className="block px-8 py-3"
           href={btnLink || btnLink2}
+          target={`${redirectOutPage ? "_blank" : ""}`}
         >
           {btnText || btnText2}
         </a>
