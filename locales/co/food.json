@@ -472,37 +472,51 @@
   "MidiaKitColumns.textColor": "gray-primary",
   "MidiaKitColumns.columns": [
     {
-      "title": "Logotipos",
-      "desc": "Accede a nuestros logotipos y las distintas variaciones del mismo para tus publicaciones en redes sociales",
+      "title": "Logo acompanãndo tu marca",
+      "desc": "Accede a plantillas de nuestro logotipo en alianza con tu marca (debéras reemplazar el espacio de la marca con tu logotipo).",
       "textColor": "gray-primary",
-      "btnText": "Clic Aqui",
-      "btnLink": "https://drive.google.com/uc?id=1K4MHqw51M3fteu5qv6kjG1bC_7J1sqln&export=download",
+      "btnText": "Descargar Logo en Alianza",
+      "btnLink": "/co/Logos-CO.zip",
       "btnMode": "light"
     },
     {
-      "title": "Plantillas para Redes Sociales",
-      "desc": "Comparte nuestras plantillas en tus redes, para dar a conocer en tus redes las promociones que tengas activas con nosotros,",
+      "title": "Guía general sobre Redes Sociales para restaurantes",
+      "desc": "Recomendaciones sobre la importancia de tener presencia en las redes sociales, beneficios y guías para que puedas manejarlos",
       "textColor": "gray-primary",
-      "btnText": "Descarga material para redes sociales",
-      "btnLink": "https://drive.google.com/drive/folders/1MfmH64UEDlKfT3nXX9S8rl6y41o3XRE-?usp=sharing",
-      "btnText2": "Manual para redes Sociales",
-      "btnLink2": "/mx/food/restaurantes/kit-digital/manual-para-redes-sociales",
+      "btnText": "Descarga Guía General",
+      "btnLink": "/co/Guia-General-sobre-Redes-Sociales-para-Restaurantes-CO.pdf",
       "btnMode": "light"
     },
     {
-      "title": "Manual de Fotografías",
-      "desc": "De la vista nace el antojo... \n Te enseñamos a tomar las mejores fotografías de tus platillos, con el fin de que tu restaurante pueda aumentar sus ventas hasta un 30% más.",
+      "title": "Guía de Plantillas de Contenido para Redes Sociales",
+      "desc": "Guia con instrucciones de uso de nuestras Plantillas de contenido",
       "textColor": "gray-primary",
-      "btnText": "Descarga Manual de Fotografías",
-      "btnLink": "https://drive.google.com/file/d/18KzuC4CzZX6r_vfJyd4gx-ndBjKLcPCU/view",
+      "btnText": "Descarga Plantillas",
+      "btnLink": "/co/Plantillas-de-contenido-para-Redes-Sociales-CO.pdf",
       "btnMode": "light"
     },
     {
-      "title": "Recomendaciones Generales",
-      "desc": "Tenemos los mejores consejos para que aumentes la visibilidad de tu restaurante e incrementes con ello tus ventas.",
+      "title": "Insignias “Pide en DiDi Food”",
+      "desc": "Descarga nuestras insignias “Pide en DiDi Food” y “Disponible en DiDi Food” para que agregues a tus publicaciones en redes sociales.",
       "textColor": "gray-primary",
-      "btnText": "Descarga material para redes sociales",
-      "btnLink": "/mx/food/restaurantes/guias-educaionales",
+      "btnText": "Descarga Insignias",
+      "btnLink": "/co/Insignias-CO.zip",
+      "btnMode": "light"
+    },
+    {
+      "title": "Guía básico sobre Redes Sociales para restaurantes",
+      "desc": "Versión básica de nuestra Guía general sobre Redes Sociales para restaurantes.",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Guía Básica",
+      "btnLink": "/co/Guia-Basico-General-sobre-Redes-Sociales-para-Restaurantes-CO.pdf",
+      "btnMode": "light"
+    },
+    {
+      "title": "Plantillas de Contenido",
+      "desc": "Material listo para usar genérico y personalizable para que empieces a generar contenido en tus redes sociales.",
+      "textColor": "gray-primary",
+      "btnText": "Descarga Insignias",
+      "btnLink": "/co/Plantillas-CO.zip",
       "btnMode": "light"
     }
   ],
