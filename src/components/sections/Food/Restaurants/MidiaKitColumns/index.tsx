@@ -45,6 +45,7 @@ const MidiaKitColumns = ({ images }: MidiaKitColumnsProps) => {
                 btnMode={col.btnMode}
                 btnText={col.btnText}
                 notRedirectOutPage
+                download
               />
             </div>
           );

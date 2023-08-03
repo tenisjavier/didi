@@ -431,7 +431,7 @@
       "desc": "Accede a plantillas de nuestro logotipo en alianza con tu marca (debéras reemplazar el espacio de la marca con tu logotipo).",
       "textColor": "gray-primary",
       "btnText": "Descargar Logo en Alianza",
-      "btnLink": "https://didicolombia.box.com/s/6e1oks90aieeyaz7pcqk891yif187ysp",
+      "btnLink": "/cr/Logos-CR.zip",
       "btnMode": "light"
     },
     {
@@ -439,7 +439,7 @@
       "desc": "Recomendaciones sobre la importancia de tener presencia en las redes sociales, beneficios y guías para que puedas manejarlos",
       "textColor": "gray-primary",
       "btnText": "Descarga Guía General",
-      "btnLink": "https://didicolombia.box.com/s/6k2o1xsw0mr4vc58qrcy6o00i0kiaxid",
+      "btnLink": "/cr/Guia-General-sobre-Redes-Sociales-para-Restaurantes-CR.pdf",
       "btnMode": "light"
     },
     {
@@ -447,7 +447,7 @@
       "desc": "Guia con instrucciones de uso de nuestras Plantillas de contenido",
       "textColor": "gray-primary",
       "btnText": "Descarga Plantillas",
-      "btnLink": "https://didicolombia.box.com/s/gbsvqbgxd71sazectsqj6cbdnvmuj473",
+      "btnLink": "/cr/Plantillas-de-contenido-para-Redes-Sociales-CR.pdf",
       "btnMode": "light"
     },
     {
@@ -455,7 +455,7 @@
       "desc": "Descarga nuestras insignias “Pide en DiDi Food” y “Disponible en DiDi Food” para que agregues a tus publicaciones en redes sociales.",
       "textColor": "gray-primary",
       "btnText": "Descarga Insignias",
-      "btnLink": "https://didicolombia.box.com/s/wbda6w3hbx5bab9sl849ckzus53cmidi",
+      "btnLink": "/cr/Insignias-CR.zip",
       "btnMode": "light"
     },
     {
@@ -463,7 +463,7 @@
       "desc": "Versión básica de nuestra Guía general sobre Redes Sociales para restaurantes.",
       "textColor": "gray-primary",
       "btnText": "Descarga Guía Básica",
-      "btnLink": "https://didicolombia.box.com/s/ai11kdp194a4el0clt3q5nn6v0ir56bo",
+      "btnLink": "/cr/Guia-Basico-General-sobre-Redes-Sociales-para-Restaurantes-CR.pdf",
       "btnMode": "light"
     },
     {
@@ -471,7 +471,7 @@
       "desc": "Material listo para usar genérico y personalizable para que empieces a generar contenido en tus redes sociales.",
       "textColor": "gray-primary",
       "btnText": "Descarga Insignias",
-      "btnLink": "https://didicolombia.box.com/s/zcm3ujlzruozprpe57ro4nmaj8c2g3xj",
+      "btnLink": "/cr/Plantillas-CR.zip",
       "btnMode": "light"
     }
   ],

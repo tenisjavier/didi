@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCountry } from "../context/countryContext";
 import { getBtnLinks } from "../config/btn-config";
 import gtmEvent from "../config/gtm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 // import { ab } from "../config/ab";
@@ -51,6 +53,7 @@ export interface BtnProps {
   btnLink?: string;
   btnText?: string;
   notRedirectOutPage?: boolean;
+  download?: boolean;
 }
 const Btn = ({
   btnType,
@@ -61,9 +64,13 @@ const Btn = ({
   btnText2,
   btnLink2,
   notRedirectOutPage,
+  download,
 }: BtnProps) => {
   const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
+
+  const [isLoading, setIsLoading] = useState(false);
+
   // const version = ab("2023-05-h5-vs-ws-a-t2", "2023-05-h5-vs-ws-b-t2", "t2");
   if (btnType === "drv") {
     btnLink = btnData.drvLink;
@@ -135,7 +142,15 @@ const Btn = ({
   }
 
   const handleClick = (e: any) => {
-    if (notRedirectOutPage) return;
+    if (notRedirectOutPage) {
+      if (download) {
+        setIsLoading(true);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 500);
+      }
+      return;
+    }
     e.preventDefault();
     const link = e.target.href;
     let form;
@@ -185,14 +200,22 @@ const Btn = ({
         role="button"
         className={`p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
-        <a
-          onClick={(e) => handleClick(e)}
-          className="block px-8 py-3"
-          href={btnLink || btnLink2}
-          target={`${notRedirectOutPage ? "_blank" : ""}`}
-        >
-          {btnText || btnText2}
-        </a>
+        {isLoading ? (
+          <FontAwesomeIcon
+            className="animate-spin px-8 py-3.5"
+            icon={faSpinner}
+          />
+        ) : (
+          <a
+            onClick={(e) => handleClick(e)}
+            className={`block px-8 py-3 ${isLoading && ""} `}
+            href={btnLink || btnLink2}
+            target={`${notRedirectOutPage ? "_blank" : ""}`}
+            download={download}
+          >
+            {btnText || btnText2}
+          </a>
+        )}
       </div>
     </>
   );
