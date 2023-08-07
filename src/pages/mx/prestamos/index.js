@@ -44,7 +44,7 @@ const DiDiPrestamos = ({ data }) => {
       item.title === "¿Dónde puedo encontrar DiDi Préstamos?" ||
       item.title ===
         "¿Cuáles son los requisitos para solicitar un préstamo de DiDi Préstamos?" ||
-      item.title === "¿Cómo retirar dinero si la solicitud es aprobada?"
+      item.title === "¿Cómo retirar dinero si la solicitud es aprobada?" || item.title === "Conoce la lista de despachos de cobranza de DiDi Préstamos"
   );
   return (
     <Layout sb={false}>

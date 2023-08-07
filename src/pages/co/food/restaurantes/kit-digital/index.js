@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../../components/Layout";
 import RestaurantHeroKitDigital from "../../../../../components/sections/RestaurantHeroKitDigital";
-import MidiaKitColumns from "../../../../../components/sections/MidiaKitColumns";
+import MidiaKitColumns from "../../../../../components/sections/Food/Restaurants/MidiaKitColumns";
 
 const Restaurant = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
