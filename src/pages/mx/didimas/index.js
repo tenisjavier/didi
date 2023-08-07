@@ -61,12 +61,12 @@ const DiDiMas = ({ data }) => {
 
   const categoriesID = [
     "PartnerCombustible",
-    "PartnerComprarAuto",
     "PartnerRentarAuto",
+    "PartnerComprarAuto",
     "PartnerFinanzas",
-    "PartnerPrestamos",
-    "PartnerEducacion",
+    "PartnerSeguros",
     "PartnerSalud",
+    "PartnerEducacion",
   ];
 
   return (
@@ -107,7 +107,7 @@ const DiDiMas = ({ data }) => {
       <PartnersGrid
         title="Descuentos en Seguro de Auto"
         bgColor="bg-white"
-        sectionID="PartnerSalud"
+        sectionID="PartnerSeguros"
         data={partnerSeguros}
       ></PartnersGrid>
       <PartnersGrid
