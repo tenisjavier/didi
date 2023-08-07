@@ -75,6 +75,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Seguridad",
           url: "/mx/food/repartidores/seguridad/",
         },
+        {
+          text: "Guías",
+          url: "/mx/food/repartidores/guias/",
+        },
       ],
     },
     {
@@ -152,6 +156,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Seguridad",
           url: "/cr/food/repartidores/seguridad/",
         },
+        {
+          text: "Guías",
+          url: "/cr/food/repartidores/guias/",
+        },
       ],
     },
     {
@@ -221,6 +229,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Seguridad",
           url: "/co/food/repartidores/seguridad/",
+        },
+        {
+          text: "Guías",
+          url: "/co/food/repartidores/guias/",
         },
       ],
     },
