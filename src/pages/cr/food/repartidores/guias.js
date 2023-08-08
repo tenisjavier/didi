@@ -4,6 +4,7 @@ import Layout from "../../../../components/Layout";
 import FoodDeliveryHero from "../../../../components/sections/FoodDeliveryHero";
 import GuidesDeliveryColumns from "../../../../components/sections/GuidesDeliveryColumns";
 import Pagination from "../../../../components/Pagination";
+import ArticlesColumns from "../../../../components/sections/ArticlesColumns";
 
 const FoodBlog = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -13,7 +14,7 @@ const FoodBlog = ({ data }) => {
   return (
     <Layout index={false}>
       <FoodDeliveryHero bgImage={repartidoresHeroBgImage}></FoodDeliveryHero>
-      <GuidesDeliveryColumns data={data}></GuidesDeliveryColumns>
+      <ArticlesColumns data={data}></ArticlesColumns>
       <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
@@ -31,7 +32,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulGuide(filter: { category: { eq: "delivery" },  country: { code: { eq: "cr" } } }) {
+    allContentfulArticle(filter: { category: { eq: "food-courier" },  country: { code: { eq: "cr" } } }) {
       nodes {
         title
         slug

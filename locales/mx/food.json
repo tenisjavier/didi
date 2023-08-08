@@ -787,5 +787,10 @@
   "SmsCTA.bgColor": "bg-white",
   "SmsCTA.textColor": "gray-primary",
   "SmsCTA.btnMode": "primary",
-  "SmsCTA.formTitle": "Recibe un enlace en tu celular para descargar la app"
+  "SmsCTA.formTitle": "Recibe un enlace en tu celular para descargar la app",
+  "ArticlesColumns.bgColor": "bg-blue-primary",
+  "ArticlesColumns.textColor": "white",
+  "ArticlesColumns.btnText": "Leer Artículo",
+  "ArticlesColumns.btnMode": "primary",
+  "ArticlesColumns.linkItem": "/mx/food/repartidores/{{article}}/"
 }

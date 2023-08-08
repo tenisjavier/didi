@@ -40,8 +40,10 @@ const articlesRoutesInit = async (graphql, createPage) => {
     const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
     // create path depending on the language and category
     let path = `/${country.code}/articulos/${slug}/`;
-    if (cleanCategory === "food" || cleanCategory === "food-courier")
+    if (cleanCategory === "food")
       path = `/${country.code}/food/blog/${slug}/`;
+    if (cleanCategory === "food-courier")
+      path = `/${country.code}/food/repartidores/${slug}/`;
     if (cleanCategory === "news") path = `/${country.code}/newsroom/${slug}/`;
     if (cleanCategory === "pr" && language === "en")
       path = `/thejourney/${slug}/`;

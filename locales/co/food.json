@@ -737,5 +737,10 @@
   "GuideHero.btnMode": "light",
   "GuidesDeliveryColumns.bgColor": "bg-blue-primary",
   "GuidesDeliveryColumns.linkItem": "/co/food/repartidores/{{guide}}/",
-  "RepartidorHero.btnMode": "primary"
+  "RepartidorHero.btnMode": "primary",
+  "ArticlesColumns.bgColor": "bg-blue-primary",
+  "ArticlesColumns.textColor": "white",
+  "ArticlesColumns.btnText": "Leer Artículo",
+  "ArticlesColumns.btnMode": "primary",
+  "ArticlesColumns.linkItem": "/co/food/repartidores/{{article}}/"
 }
