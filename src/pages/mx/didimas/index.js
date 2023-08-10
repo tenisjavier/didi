@@ -55,7 +55,10 @@ const DiDiMas = ({ data }) => {
   });
 
   const partnerSalud = partners.filter((partner) => {
-    return partner.name === "IMSS" || partner.name === "Medismart";
+    return (
+      partner.name === "IMSS" || partner.name === "Medismart" ||
+      partner.name === "Lagom"
+    )
   });
   const partnerEducacion = partners.filter((partner) => {
     return partner.name === "Vinco";
