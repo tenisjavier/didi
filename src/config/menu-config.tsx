@@ -791,7 +791,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Rider",
       url: "/au/rider/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
       dropMenu: [
         {
           text: "Rider",
@@ -833,7 +833,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Delivery",
       url: "/au/delivery/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
       dropMenu: [
         {
           text: "Personal",
@@ -901,7 +901,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "الراكب",
       url: "/eg/rider/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
     },
     {
       text: "السائق",
@@ -1232,7 +1232,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Rider",
       url: "/nz/rider/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
       dropMenu: [
         {
           text: "Rider",
@@ -1243,6 +1243,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Driver",
       url: "/nz/driver/",
+      icon: "menu-drv",
       dropMenu: [
         {
           text: "Driver",
@@ -1265,6 +1266,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Safety",
       url: "/nz/safety/",
+      icon: "menu-about",
       dropMenu: [
         {
           text: "Driver Safety",
@@ -1279,6 +1281,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "About DiDi",
       url: "/nz/about-us/",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Help Center",
@@ -1310,7 +1313,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "Пассажирам",
       url: "/ru/rider/",
-      icon: "menu-delivery",
+      icon: "menu-pax",
     },
     {
       text: "Владельцам таксопарков",
