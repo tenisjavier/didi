@@ -8,6 +8,7 @@ import PartnerColumns from "../../../components/sections/PartnerColumns";
 const DiDiMas = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const partners = data.allContentfulPartner.nodes;
+
   const didiMasHeroBgImage = images.filter((image) => {
     return image.title === "mx.ClubDiDiHero.bgImage";
   })[0];
@@ -20,6 +21,7 @@ const DiDiMas = ({ data }) => {
   const partnerColumns = images.filter((image) => {
     return image.title.indexOf("mx.RewardsColumns.image") !== -1;
   });
+
   const partnerRent = partners.filter((partner) => {
     return (
       partner.name === "MI NAVE" ||
@@ -59,6 +61,10 @@ const DiDiMas = ({ data }) => {
     return partner.name === "Vinco";
   });
 
+  const partnerTelefonia = partners.filter((partner) => {
+    return partner.name === "Figou";
+  });
+
   const categoriesID = [
     "PartnerCombustible",
     "PartnerRentarAuto",
@@ -67,6 +73,7 @@ const DiDiMas = ({ data }) => {
     "PartnerSeguros",
     "PartnerSalud",
     "PartnerEducacion",
+    "PartnerTelefonia"
   ];
 
   return (
@@ -121,6 +128,12 @@ const DiDiMas = ({ data }) => {
         bgColor="bg-white"
         sectionID="PartnerEducacion"
         data={partnerEducacion}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Telefonia"
+        bgColor="bg-gray-light"
+        sectionID="PartnerTelefonia"
+        data={partnerTelefonia}
       ></PartnersGrid>
     </Layout>
   );

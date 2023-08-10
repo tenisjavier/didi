@@ -309,7 +309,6 @@
       "desc": "Descubre nuestro asistente de ganancias. Recibe tus ganancias diarias con DiDi Pay.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-
       "width": "w-xs"
     }
   ],
@@ -461,9 +460,15 @@
   "DiDiAmigoColumns.bgColor": "bg-gray-light",
   "DiDiAmigoColumns.textColor": "gray-primary",
   "DiDiAmigoColumns.columns": [
-    { "title": "Regístrate" },
-    { "title": "Refiere" },
-    { "title": "Gana" }
+    {
+      "title": "Regístrate"
+    },
+    {
+      "title": "Refiere"
+    },
+    {
+      "title": "Gana"
+    }
   ],
   "DiDiAmigoLegal.title": "Conoce los avisos de Privacidad",
   "DiDiAmigoLegal.desc": "Lee atentamente las condiciones antes de referir",
@@ -899,6 +904,9 @@
     },
     {
       "title": "Educación"
+    },
+    {
+      "title": "Telefonia"
     }
   ],
   "PartnersCTA.title": "Con DiDiMás+ mientras más manejes, más beneficios obtendrás",
