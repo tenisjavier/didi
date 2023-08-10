@@ -51,8 +51,8 @@ const articlesRoutesInit = async (graphql, createPage) => {
       path = `/es/thejourney/${slug}/`;
     if (cleanCategory === "pay")
     path = `/${country.code}/didipay/blog/${slug}/`;
-
-    //? Precisa alterar após popular artigos com a categoria "prestamos" (Criar caso para prestamos)
+    if (cleanCategory === "prestamos")
+    path = `/${country.code}/prestamos/blog/${slug}/`;
   
     if (
       !sslCountries.includes(country.code) &&
