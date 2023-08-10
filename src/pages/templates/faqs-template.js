@@ -37,13 +37,13 @@ const FaqsTemplate = ({ data }) => {
       return (
         faq.title === "¿Qué es DiDi Pay?" ||
         faq.title ===
-          "¿Qué servicios puedo pagar con la billetera digital de DiDi Pay?" ||
+        "¿Qué servicios puedo pagar con la billetera digital de DiDi Pay?" ||
         faq.title === "¿Cómo puedo pagar servicios desde la app de DiDi?" ||
         faq.title ===
-          "¿Cómo puedo comprar una tarjeta de regalo con DiDi Pay?" ||
+        "¿Cómo puedo comprar una tarjeta de regalo con DiDi Pay?" ||
         faq.title === "¿Cómo recargar saldo y megas desde la app de DiDi?" ||
         faq.title === "¿Qué puedo obtener con mi cuenta de DiDi Pay?" ||
-        faq.title === "Vacaciones y CASHBACK con Santander" ||
+        faq.title === "¿Puedo obtener un reembolso de lo que deposité a mi Saldo DiDi?" ||
         faq.title === "¿Qué hacer si la transacción falla?"
       );
     });
