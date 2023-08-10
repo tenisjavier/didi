@@ -76,9 +76,10 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     smsFormTitle,
-    descBeforeBullets,
+    descBeforeBullets = true,
     qr,
   } = props;
+
 
   const isRtl = RTL ? "rtl" : "ltr";
   const textDir = RTL ? "text-right" : "text-left";
@@ -99,11 +100,10 @@ const CTASection = (props: CTAProps) => {
       desc &&
       desc.split("\n").map((str, index) => (
         <p
-          className={`mb-10 text-lg ${
-            btnType !== "FoodSmsCTA" && btnType !== "RidesSmsCTA"
-              ? ""
-              : "font-bold"
-          }`}
+          className={`mb-10 text-lg ${btnType !== "FoodSmsCTA" && btnType !== "RidesSmsCTA"
+            ? ""
+            : "font-bold"
+            }`}
           key={index}
         >
           {str}
@@ -115,18 +115,15 @@ const CTASection = (props: CTAProps) => {
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${
-        bgColor && bgColor
-      }`}
+      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
+        }`}
     >
       <div
-        className={`container mx-auto flex w-full flex-wrap items-center justify-center py-12 ${
-          reverse ? "flex-row-reverse" : ""
-        } ${
-          image || imageRawRender || iframe
+        className={`container mx-auto flex w-full flex-wrap items-center justify-center py-12 ${reverse ? "flex-row-reverse" : ""
+          } ${image || imageRawRender || iframe
             ? "xl:justify-between"
             : "xl:justify-start"
-        }`}
+          }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
         {imageRawRender && imageRawRender}
@@ -136,9 +133,8 @@ const CTASection = (props: CTAProps) => {
         >
           {getTitleElement()}
           <div
-            className={`flex ${
-              descBeforeBullets ? "flex-col" : "flex-col-reverse"
-            }`}
+            className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
+              }`}
           >
             {renderSectionDesc()}
 
