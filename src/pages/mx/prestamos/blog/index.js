@@ -20,8 +20,7 @@ const DiDiPrestamosBlog = ({ data }) => {
 };
 
 export default DiDiPrestamosBlog;
-//? Precisa modificar os filtros após popular o contentful com artigos de categoria "prestamos" 
-//? Também seria legal uma hero image pra pagina nova
+//? Solicitar imagem nova pro Hero do Blog Prestamos?
 export const query = graphql`
   query {
     allContentfulAsset(
@@ -35,7 +34,7 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { eq: "pay" }, country: { code: { eq: "mx" } } } 
+      filter: { category: { eq: "prestamos" }, country: { code: { eq: "mx" } } } 
       sort: { updatedAt: DESC }
     ) {
       nodes {

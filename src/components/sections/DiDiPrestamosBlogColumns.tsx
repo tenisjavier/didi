@@ -27,9 +27,8 @@ const DiDiPrestamosBlogColumns = ({ data }: DiDiPrestamosBlogColumnsProps) => {
   };
 
   const articles = data.allContentfulArticle.nodes;
-  //? Precisa alterar após popular artigos com a categoria "prestamos" (Alterar para usar o link de DiDiPrestamosBlogColumns.linkItem)
   props.columns = articles.map((article) => {
-    const link = t("DiDiPayBlogColumns.linkItem", {
+    const link = t("DiDiPrestamosBlogColumns.linkItem", {
       article: article.slug,
     });
     return {
