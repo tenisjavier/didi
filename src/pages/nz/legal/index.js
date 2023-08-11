@@ -49,13 +49,6 @@ const Legal = ({ data }) => {
       p.name === "Rider Standard Terms for Delivery Services"
   );
 
-  const privacyPolicies = policies.filter(
-    (p) =>
-      [
-        "Privacy Policy"
-      ].indexOf(p.name) > -1
-  );
-
   const drvPoliciesItems = drvPolicies.map((p) => {
     return {
       text: p.name,
@@ -80,18 +73,10 @@ const Legal = ({ data }) => {
       link: p.slug,
     };
   });
-  const privacyPoliciesItems = privacyPolicies.map((p) => {
-    return {
-      text: p.name,
-      link: `/nz/legal/${p.slug}`,
-    };
-  });
-  privacyPoliciesItems.push(
-    {
-      text: "Privacy Center",
-      link: `https://privacy-center.didiglobal.com/NZ/home`
-    }
-  )
+  const privacyPoliciesItems = [{
+    text: "Privacy Center",
+    link: `https://privacy-center.didiglobal.com/NZ/home`
+  }];
   return (
     <Layout>
       <LegalHero bgImage={homeHeroBgImage}></LegalHero>
