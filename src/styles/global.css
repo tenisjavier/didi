@@ -169,3 +169,27 @@ section.main-text ol li {
 .slick-initialized .slick-track .slick-slide {
   text-align: center;
 }
+
+.slider-thumb-icon {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #ccc;
+  outline: none;
+}
+
+.slider-thumb-icon::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: url("/car.png"); /* Caminho para o ícone */
+  cursor: pointer;
+}
+
+.slider-thumb-icon::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: url("/car.png"); /* Caminho para o ícone */
+  cursor: pointer;
+}
