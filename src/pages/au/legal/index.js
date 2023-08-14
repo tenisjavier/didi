@@ -75,19 +75,18 @@ const Legal = ({ data }) => {
       link: `/au/legal/${p.slug}`,
     };
   });
+  const privacyPoliciesItems = [{
+    text: "Privacy Center",
+    link: `https://privacy-center.didiglobal.com/AU/home`
+  }];
   return (
     <Layout>
       <LegalHero bgImage={homeHeroBgImage}></LegalHero>
       <ListSection title="Driver" items={drvPoliciesItems}></ListSection>
-      <ListSection
-        title="Driver Program Specific Terms"
-        items={drvProgramPoliciesItems}
-      ></ListSection>
+      <ListSection title="Driver Program Specific Terms" items={drvProgramPoliciesItems}></ListSection>
       <ListSection title="Rider" items={paxPoliciesItems}></ListSection>
-      <ListSection
-        title="Rider Program Specific Terms"
-        items={paxProgramPoliciesItems}
-      ></ListSection>
+      <ListSection title="Rider Program Specific Terms" items={paxProgramPoliciesItems}></ListSection>
+      <ListSection title="Privacy" items={privacyPoliciesItems}></ListSection>
     </Layout>
   );
 };
