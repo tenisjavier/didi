@@ -505,5 +505,6 @@
   "LostItemsBanner.textColor": "white",
   "LostItemsBanner.btnMode": "light",
   "LostItemsBanner.btnText": "Cómo Recuperarlo",
-  "LostItemsBanner.btnLink": "/pe/centro-de-ayuda/#inconvenientes-con-un-arrendamiento"
+  "LostItemsBanner.btnLink": "/pe/centro-de-ayuda/#inconvenientes-con-un-arrendamiento",
+  "Conductor.Moto.linkItem": "/pe/conductor/moto/"
 }
