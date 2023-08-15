@@ -2,14 +2,19 @@ import React, { useEffect } from "react"
 
 const Moto = () => {
 
+  const ref = React.createRef()
 
   useEffect(() => {
-    window.location.href = "https://didicolombia.app.box.com/s/bvf1fdl3718t2jgf5dgn46up6rsd0c9o/file/1278795086141"
+    ref.current.click()
+
+    window.location.href = "/pe/conductor/"
   }, [])
 
   return (
     <div>
-      <h1>Redirecting...</h1>
+      <a download href="/pe/PE_Supply_Moto_Recomendaciones_de_seguridad_vial.pdf" ref={ref}>
+        <h1>Downlaoding...</h1>
+      </a>
     </div>
   )
 }
