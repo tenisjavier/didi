@@ -171,25 +171,29 @@ section.main-text ol li {
 }
 
 .slider-thumb-icon {
-  -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 10px;
-  background: #ccc;
+  /* background: #ccc; */
   outline: none;
+  z-index: 4000;
 }
 
 .slider-thumb-icon::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  background: url("/car.png"); /* Caminho para o ícone */
+  width: 106px;
+  height: 72px;
+  background-image: url("/car.png"); /* Caminho para o ícone */
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
+  background-position: center;
 }
 
-.slider-thumb-icon::-moz-range-thumb {
+.slider-thumb-icon::-webkit-range-thumb {
   width: 20px;
   height: 20px;
-  background: url("/car.png"); /* Caminho para o ícone */
+  background-image: url("/car.png"); /* Caminho para o ícone */
   cursor: pointer;
+  background-color: red;
 }

@@ -26,7 +26,12 @@ const Calculator = ({ cities }: CalculatorProps) => {
     setAmount(value * 10);
   }
 
-  //-webkit-slider-thumb
+  // Calculate car position based on the selected hours
+  const calculateCarPosition = () => {
+    const selectedIndex = steps.indexOf(hoursPerWeek);
+    const stepWidth = 100 / (steps.length - 1);
+    return selectedIndex * stepWidth;
+  };
 
   return (
     <div className="bg-orange-primary my-10 p-10 flex flex-col justify-center">
@@ -43,10 +48,9 @@ const Calculator = ({ cities }: CalculatorProps) => {
           <p className="">Resultado: {amount !== 0 && amount}</p>
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 relative">
         <input
-          className="w-full h-2 outline-none"
-
+          className="w-full h-2 slider-thumb-icon"
           type="range"
           min={0}
           max={steps.length - 1}
@@ -55,10 +59,9 @@ const Calculator = ({ cities }: CalculatorProps) => {
         />
         <div className="flex justify-between mt-4">
           {steps.map((step, index) => (
-            <span key={index} className={step === hoursPerWeek ? "text-orange-600" : ""}>{step}</span>
+            <span key={index} className={`${step === hoursPerWeek ? "text-orange-600" : ""} w-20 text-center text-xl`}>{step}</span>
           ))}
         </div>
-        <img src="/car.png" width={20} height={20} />
       </div>
     </div>
   );
