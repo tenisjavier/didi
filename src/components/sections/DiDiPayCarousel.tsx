@@ -39,8 +39,8 @@ const DiDiPayCarousel = ({ images }: DiDiPayCarouselProps) => {
   if (images) {
     props.slides = images.map((img, index) => {
       return {
-        title: banners[index].title,
-        desc: banners[index].desc,
+        title: banners[index]?.title,
+        desc: banners[index]?.desc,
         bgColor: t("DiDiPayBanner.bgColor"),
         textColor: t("DiDiPayBanner.textColor"),
         image: <Image imageData={img} imageStyle="z-10 my-10 w-56"></Image>,
