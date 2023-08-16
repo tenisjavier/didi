@@ -91,7 +91,6 @@
       "desc": "With an average industry-leading Services Fee, every ride taken with DiDi allows Australian rideshare drivers to earn more of the fare.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-
       "width": "w-64"
     }
   ],
@@ -144,7 +143,6 @@
       "desc": "Get paid weekly and earn flexibly. You decide when you want to earn.",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-
       "width": "w-64"
     }
   ],
@@ -347,20 +345,17 @@
     {
       "title": "SOS Button",
       "desc": "With the tap of a button, you can contact law enforcement and emergency services. Your location details will also be shown in-app for easy reference.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Unmatch drivers",
       "desc": "If you think that any of your drivers were not up to standard you can now unmatch with them so your trip requests are never dispatched to them again. Please remember if there was a serious incident to report it to us.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Share trip",
       "desc": "Our live GPS tracking allows you to share your trip with your Trusted Contacts. This can be found in the Safety Toolkit.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Private Numbers",
@@ -371,68 +366,57 @@
     {
       "title": "Hidden Addresses",
       "desc": "To protect your personal information, your specific pick up and drop off addresses are hidden after the trip finishes.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Driver Screening",
       "desc": "To ensure all DiDi driver-partners are of the highest quality, they’re required to pass a series of safety verifications and background checks prior to driving.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Facial Verification",
       "desc": "Facial verification matches a picture of your driver against the approved profile picture to make sure that it is not someone else driving.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "TripCheck",
       "desc": "If anything unusual is detected during your trip you will receive a notification. If there is a problem our safety toolkit and SOS button will be made available to you.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "24/7 Incident Response Team",
       "desc": "If you ever feel unsafe during a trip, you can get in touch with our Incident Response Team for immediate assistance.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Trusted Contacts",
       "desc": "Add your family and friends as Trusted Contacts to track your live location in a single tap.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Driver Fatigue Prevention",
       "desc": "All DiDi driver-partners undertake compulsory safety training before they take their first trip meaning you can ride with confidence.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "TripChoice",
       "desc": "This feature allows female driver-partners the choice to be matched with only female riders. ",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Preview Driver",
       "desc": "You can view your  driver’s info, including their name, profile picture, and Star Rating before your ride starts. ",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "Driver Education",
       "desc": "All DiDi driver-partners undertake compulsory safety training before they take their first trip meaning you can ride with confidence.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     },
     {
       "title": "DiDi Sal",
       "desc": "DiDi Sal is a new in-trip safety assistant that works together with existing safety features to help keep you safe.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
+      "bgColor": "bg-white"
     }
   ],
   "SafetyGridDrv.bgColor": "bg-white",
@@ -564,7 +548,6 @@
       "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team via email at help.safety@didiglobal.com",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-
       "width": "w-64"
     }
   ],

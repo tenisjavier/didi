@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Image from "../Image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 interface SafetyFeaturesGrid {
   features: {
@@ -12,7 +13,7 @@ interface SafetyFeaturesGrid {
   images: {
     title: string;
     description: string;
-    gatsbyImageData: React.ReactNode;
+    gatsbyImageData: IGatsbyImageData;
   }[];
 }
 
@@ -47,7 +48,7 @@ const SafetyGridDuringTrip = ({ images, features }: SafetyFeaturesGrid) => {
     return {
       title: link,
       desc: c.desc,
-      textColor: "white",
+      textColor: c.textColor,
       bgColor: "transparent",
       image: colImage,
     };
