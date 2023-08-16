@@ -29,10 +29,10 @@ const Index = ({ data }) => {
   };
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "mx.HomeHeroDesktopB.bgImage";
+    return image.title === "mx.HomeHeroDesktop.bgImage";
   })[0];
   const homeHeroBgMobileImageB = images.filter((image) => {
-    return image.title === "mx.HomeHeroMobileB.bgImage";
+    return image.title === "mx.HomeHeroMobile.bgImage";
   })[0];
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "mx.DrvHero.bgImage";
@@ -151,8 +151,8 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "mx.HomeHeroDesktopB.bgImage"
-            "mx.HomeHeroMobileB.bgImage"
+            "mx.HomeHeroDesktop.bgImage"
+            "mx.HomeHeroMobile.bgImage"
             "mx.DrvHero.bgImage"
             "mx.DrvHeroMobile.bgImage"
             "mx.PaxHero.bgImage"

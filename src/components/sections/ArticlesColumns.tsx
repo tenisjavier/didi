@@ -45,9 +45,18 @@ const ArticlesColumns = ({ data, height }: ArticlesColumnsProps) => {
 
       article.readTime = String(timeToRead());
     }
-    const link = t("ArticlesColumns.linkItem", {
+    let link = t("ArticlesColumns.linkItem", {
       article: article.slug,
     });
+
+    console.log("Article category: ", article.category[0])
+
+    if(article.category[0] === "prestamos") {
+      link = t("PrestamosArticlesColumns.linkItem", {
+        article: article.slug,
+      });
+    }
+    
     return {
       title: <Link to={link}>{article.title}</Link>,
       desc: article.excerpt,
