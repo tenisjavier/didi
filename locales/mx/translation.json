@@ -853,6 +853,7 @@
   "ArticlesColumns.btnText": "Leer Artículo",
   "ArticlesColumns.btnMode": "dark",
   "ArticlesColumns.linkItem": "/mx/articulos/{{article}}/",
+  "PrestamosArticlesColumns.linkItem": "/mx/prestamos/blog/{{article}}/",
   "NewsroomColumns.title": "Comunicados Oficiales DiDi",
   "NewsroomColumns.bgColor": "bg-blue-primary",
   "NewsroomColumns.textColor": "white",

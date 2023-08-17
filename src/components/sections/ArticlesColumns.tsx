@@ -5,6 +5,7 @@ import Image from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer";
+import { Block } from "@contentful/rich-text-types";
 
 interface ArticlesColumnsProps {
   data: {
@@ -16,7 +17,7 @@ interface ArticlesColumnsProps {
         excerpt: string;
         readTime: string;
         featuredImage: any;
-        content: {raw: string;};
+        content: { raw: string; };
       }[];
     };
   };
@@ -34,20 +35,32 @@ const ArticlesColumns = ({ data, height }: ArticlesColumnsProps) => {
   const articles = data.allContentfulArticle.nodes;
 
   props.columns = articles.map((article) => {
-    if(article.category == "pr" && article.readTime == null ) {
+    let dataTxt = {};
+    if (article.category == "pr" && article.readTime == null) {
       const timeToRead = () => {
-        const dataTxt = JSON.parse(article.content.raw);
-        const allText = documentToPlainTextString(dataTxt);
-        
-        const readingSpeed = 250;
-        return Math.ceil(Number(allText.length) / readingSpeed);
+        try {
+          dataTxt = JSON.parse(article.content.raw);
+          const allText = documentToPlainTextString(dataTxt as Block);
+          const readingSpeed = 250;
+          return Math.ceil(Number(allText.length) / readingSpeed);
+        } catch (error) {
+          console.error("Falha ao interpretar JSON:", error);
+        }
+        return 0;
       }
 
       article.readTime = String(timeToRead());
     }
-    const link = t("ArticlesColumns.linkItem", {
+    let link = t("ArticlesColumns.linkItem", {
       article: article.slug,
     });
+
+    if (article?.category?.[0] === "prestamos") {
+      link = t("PrestamosArticlesColumns.linkItem", {
+        article: article.slug,
+      });
+    }
+
     return {
       title: <Link to={link}>{article.title}</Link>,
       desc: article.excerpt,
