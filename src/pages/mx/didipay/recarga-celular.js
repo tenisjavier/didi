@@ -6,6 +6,7 @@ import DiDiPayPhoneWhy from "../../../components/sections/DiDiPayPhoneWhy";
 import DiDiPayPhoneFeatures from "../../../components/sections/DiDiPayPhoneFeatures";
 import DiDiPayCarousel from "../../../components/sections/DiDiPayCarousel";
 import DiDiPayPhoneColumns from "../../../components/sections/DiDiPayPhoneColumns";
+import DiDiPayGiftcardCarousel from "../../../components/sections/DiDiPayGiftcardsCarousel";
 
 const DiDiPayPhone = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -26,6 +27,10 @@ const DiDiPayPhone = ({ data }) => {
     return image.title === "mx.DiDiPayCarousel.image";
   });
 
+  const DiDiPayRecargaCelularGiftcardCarousel = images.filter((image) => {
+    return image.title === "mx.DiDiPayRecargaCelularGiftcardCarousel.image";
+  });
+
   return (
     <Layout>
       <DiDiPayPhoneHero
@@ -34,6 +39,7 @@ const DiDiPayPhone = ({ data }) => {
       ></DiDiPayPhoneHero>
       <DiDiPayPhoneWhy image={whyDiDiImage}></DiDiPayPhoneWhy>
       <DiDiPayPhoneFeatures image={featuresDiDiImage}></DiDiPayPhoneFeatures>
+      <DiDiPayGiftcardCarousel images={DiDiPayRecargaCelularGiftcardCarousel.reverse()}></DiDiPayGiftcardCarousel>
       <DiDiPayCarousel images={DiDiPayCarouselImages.reverse()}></DiDiPayCarousel>
       <DiDiPayPhoneColumns></DiDiPayPhoneColumns>
     </Layout>
@@ -47,7 +53,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayPhoneHero.bgImage)|(mx.DiDiPayPhoneHeroMobile.bgImage)|(mx.DiDiPayPhoneWhy.image)|(mx.DiDiPayPhoneFeatures.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)/"
+          regex: "/(mx.DiDiPayPhoneHero.bgImage)|(mx.DiDiPayPhoneHeroMobile.bgImage)|(mx.DiDiPayPhoneWhy.image)|(mx.DiDiPayPhoneFeatures.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayCarousel.image)|(mx.DiDiPayRecargaCelularGiftcardCarousel.image)/"
         }
       }
     ) {
