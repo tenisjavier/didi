@@ -94,10 +94,9 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express y taxi, ganando más y manejando menos",
     },
     "/didimas/": {
-      title: "Club de Beneficios DiDiMás+ para Conductores",
+      title: "DiDiMás+ Beneficios para conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
-
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
@@ -235,10 +234,9 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "DiDi Pay México. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
     "/didimas/": {
-      title: "Club de Beneficios DiDiMás+ para Conductores",
+      title: "DiDiMás+ Beneficios para conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
-
     "/taxi/": {
       title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
       desc: "DiDi en México, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
@@ -606,7 +604,11 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
     },
     "/didimas/": {
-      title: "Promociones DiDiMás+ para Conductores",
+      title: "Club de Beneficios DiDiMás+ para Conductores",
+      desc: "Beneficios para Conductores DiDiMás+. DiDi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
+    },
+    "/didimas/privado/": {
+      title: "DiDiMás+ Beneficios para conductores",
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
     "/conductor/historias-de-exito/": {
@@ -1049,9 +1051,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-        title: placeTitle,
-        desc: `${placeTitle}`,
-      }
+      title: placeTitle,
+      desc: `${placeTitle}`,
+    }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;
