@@ -33,6 +33,14 @@ const SectionBtn = ({
   btnLink,
   btnText
 }: SectionsBtnProps) => {
+
+  const groupOfButtons = ["default",
+    "both"
+    , "bothFood"
+    , "bothPrestamos"
+    , "custom"
+    , "bothFoodEn"]
+
   const sectionsBtnConfig: SectionsBtnType = {
     default: [
       {
@@ -95,7 +103,7 @@ const SectionBtn = ({
 
   let GroupBtnType: BtnProps[] = []
 
-  if (!btnType) {
+  if (!btnType || !groupOfButtons.includes(btnType)) {
     GroupBtnType = sectionsBtnConfig["default"]
   } else {
     GroupBtnType = sectionsBtnConfig[btnType as sectionType]
