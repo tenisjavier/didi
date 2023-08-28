@@ -51,7 +51,7 @@ const Conductor = ({ data }) => {
         data={products}
         title="Hay un DiDi para ti"
       ></SilderSection>
-      <VideoSection></VideoSection>
+      {/* <VideoSection></VideoSection> */}
       <Requirements data={products}></Requirements>
       <ClubDiDiCTA bgImage={clubDiDiBgImage}></ClubDiDiCTA>
       <WomenDiDiCTA image={aboutWomenDrvImage}></WomenDiDiCTA>

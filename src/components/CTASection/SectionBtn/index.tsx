@@ -31,6 +31,7 @@ const SectionBtn = ({
   btnModeSecondary,
   btnArray,
   btnLink,
+  btnText
 }: SectionsBtnProps) => {
   const sectionsBtnConfig: SectionsBtnType = {
     default: [
@@ -39,6 +40,7 @@ const SectionBtn = ({
         btnMode,
         btnModeSecondary,
         btnLink,
+        btnText,
       },
     ],
     both: [
@@ -91,9 +93,13 @@ const SectionBtn = ({
     ],
   };
 
-  const GroupBtnType: BtnProps[] = btnType
-    ? sectionsBtnConfig[btnType as sectionType] || sectionsBtnConfig["default"]
-    : [];
+  let GroupBtnType: BtnProps[] = []
+
+  if (!btnType) {
+    GroupBtnType = sectionsBtnConfig["default"]
+  } else {
+    GroupBtnType = sectionsBtnConfig[btnType as sectionType]
+  }
 
   return (
     <>
