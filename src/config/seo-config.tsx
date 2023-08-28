@@ -225,6 +225,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Préstamos - Rápido, Fácil y Seguro.",
       desc: "DiDi Préstamos. Con DiDi Préstamos obtén hasta $30,000 m.n rápido, fácil y seguro.Tasas de interés competitiva desde un 5% al 12%. En solo 5 minutos.",
     },
+    "/prestamos/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes sobre DiDi Préstamos.",
+      desc: "Revisa nuestras preguntas frecuentes sobre DiDi Préstamos. Somos un servicio financiero que está aquí para ayudarte, te prestamos dinero rápido y fácil para lo que necesites. ",
+    },
     "/entrega/": {
       title: "DiDi Entrega: Envía cosas grandes o chicas.",
       desc: "DiDi Entrega.",
@@ -1051,9 +1055,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-      title: placeTitle,
-      desc: `${placeTitle}`,
-    }
+        title: placeTitle,
+        desc: `${placeTitle}`,
+      }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;
