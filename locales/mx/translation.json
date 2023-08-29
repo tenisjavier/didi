@@ -1915,5 +1915,29 @@
     {
       "linkItem": "https://global-rides-passenger.onelink.me/xNlo/"
     }
-  ]
+  ],
+  "VikingSection": {
+    "vikingColOne": {
+      "title": "Pal",
+      "subTitle": "ufffff",
+      "btnText": "Descarga Didi Pasajero",
+      "btnLink": "/mx/store",
+      "btnMode": "primary",
+      "bgColor": "",
+      "textColor": "text-blue-primary"
+    },
+    "vikingColTwo": {
+      "title": "Pal",
+      "subTitle": "ñaaam",
+      "btnText": "Descarga Didi Food",
+      "btnLink": "",
+      "btnMode": "primary",
+      "bgColor": "",
+      "textColor": "text-yellow-400"
+    },
+    "vikingFooter": {
+      "text": "Lo bueno es que hay Didi",
+      "imageName": "didi-logo.png"
+    }
+  }
 }

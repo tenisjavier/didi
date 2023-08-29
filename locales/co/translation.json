@@ -348,7 +348,6 @@
       "textColor": "white"
     }
   ],
-
   "FleetStepsColumns.bgColor": "white",
   "FleetStepsColumns.columns": [
     {
@@ -830,5 +829,29 @@
   "BankInfoCTA.desc": "Queremos ayudarte a actualizar tus datos, sigue los siguientes pasos dentro de la app: \n 1. Haz clic en tu perfil y después en tu nombre \n 2. Haz clic en cuenta bancaria \n 3. Da clic en “Agregar” \n 4. Ingresa todos los datos solicitados en los espacios y da clic en “Enviar” \n 5. Verifica que tus datos sean correctos y da clic en “Confirmar”",
   "BankInfoCTA.bgColor": "bg-gray-light",
   "FindInfoCTA.title": "Encuentra tu centro DiDi más cercano",
-  "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com"
+  "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com",
+  "VikingSection": {
+    "vikingColOne": {
+      "title": "Pal",
+      "subTitle": "ufffff",
+      "btnText": "Descarga Didi Pasajero",
+      "btnLink": "",
+      "btnMode": "primary",
+      "bgColor": "",
+      "textColor": "text-blue-primary"
+    },
+    "vikingColTwo": {
+      "title": "Pal",
+      "subTitle": "ñaaam",
+      "btnText": "Descarga Didi Food",
+      "btnLink": "",
+      "btnMode": "primary",
+      "bgColor": "bg-yellow-400",
+      "textColor": "text-black"
+    },
+    "vikingFooter": {
+      "text": "Lo bueno es que hay Didi",
+      "imageName": "didi-logo.png"
+    }
+  }
 }
