@@ -22,8 +22,8 @@ const menuLinksFood: AllMenuInterface = {
       url: "/mx/food/restaurantes/",
       dropMenu: [
         {
-          text: "Registro",
-          url: "/mx/food/restaurantes/registro/",
+          text: "Registra tu Restaurante",
+          url: "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
         },
         {
           text: "Impuestos",
@@ -107,8 +107,8 @@ const menuLinksFood: AllMenuInterface = {
       url: "/cr/food/restaurantes/",
       dropMenu: [
         {
-          text: "Registro",
-          url: "/cr/food/restaurantes/registro/",
+          text: "Registra tu Restaurante",
+          url: "https://www.didi-food.com/es-CR/food/address/",
         },
         {
           text: "Guías",
@@ -181,8 +181,8 @@ const menuLinksFood: AllMenuInterface = {
       url: "/co/food/restaurantes/",
       dropMenu: [
         {
-          text: "Registro",
-          url: "/co/food/restaurantes/registro/",
+          text: "Registra tu Restaurante",
+          url: "https://www.didi-food.com/es-CO/store",
         },
         {
           text: "Guías",
@@ -251,7 +251,7 @@ const menuLinksFood: AllMenuInterface = {
   ],
   pe: [
     {
-      text: "Tienda",
+      text: "Restaurantes",
       url: "/pe/food/restaurantes/",
       dropMenu: [
         {

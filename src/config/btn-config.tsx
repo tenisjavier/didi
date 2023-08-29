@@ -51,19 +51,13 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://www.didi-food.com/es-419/mobile-delivery/guide",
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
-    foodBusinessText: "Regístrate como Comercio",
+    foodBusinessText: "Registra tu Restaurante",
   },
   cl: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
-    foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
-    foodDeliveryText: "Empieza a Repartir con DiDi Food",
-    foodBusinessLink: "https://www.didi-food.com/es-CL/store",
-    foodBusinessText: "Regístrate como Comercio",
-    foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida, Descarga la App",
   },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
@@ -73,7 +67,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
     foodBusinessLink: "https://www.didi-food.com/es-PE/store",
-    foodBusinessText: "Regístrate como Comercio",
+    foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida, Descarga la App",
   },
@@ -95,7 +89,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empieza a Repartir con DiDi Food",
     foodBusinessLink: "https://www.didi-food.com/es-CO/store",
-    foodBusinessText: "Regístrate como Comercio",
+    foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida, Descarga la App",
   },
@@ -116,12 +110,6 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
-    foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
-    foodDeliveryText: "Empieza a Repartir con DiDi Food",
-    foodBusinessLink: "https://www.didi-food.com/es-DO/store",
-    foodBusinessText: "Regístrate como Comercio",
-    foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida, Descarga la App",
   },
   ec: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ecdriverhero",
@@ -139,7 +127,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Empezá a Repartir con DiDi Food",
     foodBusinessLink: "https://www.didi-food.com/es-CR/store",
-    foodBusinessText: "Registrate como Comercio",
+    foodBusinessText: "Registrá tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pedí Comida, Descargá la App",
     foodEaterOnlineText: "Pide Comida sin App",
@@ -166,7 +154,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink:
       "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
-    foodBusinessText: "Regístrate como Comercio",
+    foodBusinessText: "Registra tu Restaurante",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
     paymentText: "Descarga DiDi",
