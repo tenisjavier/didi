@@ -1817,13 +1817,13 @@
   "EntregaColumns.textColor": "white",
   "EntregaColumns.columns": [
     {
-      "title": "Conoce DiDi Entrega XL",
+      "title": "Conoce DiDi Entrega Auto",
       "desc": "Realiza envíos en los carros registrados en la app. Si cabe en la cajuela del vehículo, te lo enviamos.",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
-      "title": "Conoce DiDi Entrega Light",
+      "title": "Conoce DiDi Entrega Moto",
       "desc": "Realiza envíos en la red de repartidores en motos registradas en la app. Perfecto para envíos más pequeños y rápidos como llaves o documentos.",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
