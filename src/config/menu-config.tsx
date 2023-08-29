@@ -771,21 +771,6 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
-    {
-      text: "Contenido",
-      url: "#",
-      icon: "menu-about",
-      dropMenu: [
-        {
-          text: "Guías",
-          url: "/co/guias/",
-        },
-        {
-          text: "Artículos",
-          url: "/co/articulos/",
-        },
-      ],
-    },
   ],
   au: [
     {
@@ -964,21 +949,6 @@ const menuLinks: AllMenuInterface = {
         },
       ],
     },
-    {
-      text: "Contenido",
-      url: "#",
-      icon: "menu-about",
-      dropMenu: [
-        {
-          text: "Guías",
-          url: "/pa/guias/",
-        },
-        {
-          text: "Artículos",
-          url: "/pa/articulos/",
-        },
-      ],
-    },
   ],
   cr: [
     {
@@ -1124,7 +1094,7 @@ const menuLinks: AllMenuInterface = {
         {
           text: "DiDi Moto",
           url: "/do/conductor/moto/",
-        }
+        },
       ],
     },
     {
@@ -1139,21 +1109,6 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Centro de Ayuda",
           url: "/do/centro-de-ayuda/",
-        },
-      ],
-    },
-    {
-      text: "Contenido",
-      url: "#",
-      icon: "menu-about",
-      dropMenu: [
-        {
-          text: "Guías",
-          url: "/do/guias/",
-        },
-        {
-          text: "Artículos",
-          url: "/do/articulos/",
         },
       ],
     },
@@ -1209,21 +1164,6 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Centro de Ayuda",
           url: "/ec/centro-de-ayuda/",
-        },
-      ],
-    },
-    {
-      text: "Contenido",
-      url: "#",
-      icon: "menu-about",
-      dropMenu: [
-        {
-          text: "Guías",
-          url: "/ec/guias/",
-        },
-        {
-          text: "Artículos",
-          url: "/ec/articulos/",
         },
       ],
     },
