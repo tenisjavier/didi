@@ -107,7 +107,7 @@ const menuLinksFood: AllMenuInterface = {
       url: "/cr/food/restaurantes/",
       dropMenu: [
         {
-          text: "Registra tu Restaurante",
+          text: "Registrá tu Restaurante",
           url: "https://www.didi-food.com/es-CR/food/address/",
         },
         {

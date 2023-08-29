@@ -12,6 +12,21 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/cr/food/restaurantes/registro/`,
+    toPath: `https://www.didi-food.com/es-CR/store`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/restaurantes/registro/`,
+    toPath: `https://www.didi-food.com/es-CO/store`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/restaurantes/registro/`,
+    toPath: `https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/cl/food/`,
     toPath: `/mx/food/`,
     isPermanent: true,
