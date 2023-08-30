@@ -1916,28 +1916,20 @@
       "linkItem": "https://global-rides-passenger.onelink.me/xNlo/"
     }
   ],
-  "VikingSection": {
-    "vikingColOne": {
-      "title": "Pal",
-      "subTitle": "ufffff",
-      "btnText": "Descarga Didi Pasajero",
-      "btnLink": "/mx/store",
-      "btnMode": "primary",
-      "bgColor": "",
-      "textColor": "text-blue-primary"
-    },
-    "vikingColTwo": {
-      "title": "Pal",
-      "subTitle": "ñaaam",
-      "btnText": "Descarga Didi Food",
-      "btnLink": "",
-      "btnMode": "primary",
-      "bgColor": "",
-      "textColor": "text-yellow-400"
-    },
-    "vikingFooter": {
-      "text": "Lo bueno es que hay Didi",
-      "imageName": "didi-logo.png"
-    }
-  }
+  "VikingSection.vikingColOne.title": "Pal",
+  "VikingSection.vikingColOne.subTitle": "ufffff",
+  "VikingSection.vikingColOne.btnText": "Descarga Didi Pasajero",
+  "VikingSection.vikingColOne.btnLink": "",
+  "VikingSection.vikingColOne.btnMode": "primary",
+  "VikingSection.vikingColOne.bgColor": "",
+  "VikingSection.vikingColOne.textColor": "text-blue-primary",
+  "VikingSection.vikingColTwo.title": "Pal",
+  "VikingSection.vikingColTwo.subTitle": "ñaaam",
+  "VikingSection.vikingColTwo.btnText": "Descarga Didi Food",
+  "VikingSection.vikingColTwo.btnLink": "",
+  "VikingSection.vikingColTwo.btnMode": "primary",
+  "VikingSection.vikingColTwo.bgColor": "",
+  "VikingSection.vikingColTwo.textColor": "text-yellow-400",
+  "VikingSection.vikingFooter.text": "Lo bueno es que hay Didi",
+  "VikingSection.vikingFooter.imageName": "didi-logo.png"
 }

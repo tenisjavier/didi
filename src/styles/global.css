@@ -24,6 +24,15 @@
     letter-spacing: 0.05em;
     src: url("../fonts/Aspira_Heavy.otf") format("otf");
   }
+
+  @font-face {
+      font-family: 'Goruts Xbold';
+      src: url('../fonts/Goruts.woff2') format('woff2'),
+          url('../fonts/Goruts.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+  }
 }
 
 body {
