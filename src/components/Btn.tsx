@@ -54,6 +54,7 @@ export interface BtnProps {
   btnText?: string;
   notRedirectOutPage?: boolean;
   download?: boolean;
+  btnTextCenter?: boolean;
 }
 const Btn = ({
   btnType,
@@ -65,6 +66,7 @@ const Btn = ({
   btnLink2,
   notRedirectOutPage,
   download,
+  btnTextCenter
 }: BtnProps) => {
   const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
@@ -198,7 +200,7 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+        className={`${btnTextCenter ? 'text-center' : ''} p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         {isLoading ? (
           <FontAwesomeIcon
