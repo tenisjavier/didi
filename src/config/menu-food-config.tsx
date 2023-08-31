@@ -34,7 +34,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/restaurantes/guias-educacionales/",
         },
         {
-          text: "FAQs",
+          text: "DiDi Food FAQ",
           url: "/mx/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -115,7 +115,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/cr/food/restaurantes/guias-educacionales/",
         },
         {
-          text: "FAQs",
+          text: "DiDi Food FAQ",
           url: "/cr/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -189,7 +189,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/co/food/restaurantes/guias-educacionales/",
         },
         {
-          text: "FAQs",
+          text: "DiDi Food FAQs",
           url: "/co/food/restaurantes/preguntas-frecuentes/",
         },
         {

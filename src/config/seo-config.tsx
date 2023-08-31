@@ -282,6 +282,10 @@ const seoMeta: AllSEOMetaInterface = {
         "Blog DiDi Food: Temas de Comida, Restaurantes y Gastronomía Mexicana",
       desc: "En el blog de DiDi Food encontrarás recomendaciones sobre restaurantes de moda, platillos, rutas gastronómicas y tendencias del sector. Descubrenos",
     },
+    "/food/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes DiDi Food México",
+      desc: "¿Tienes dudas sobre DiDi Food? Consulta nuestra sección de preguntas frecuentes a continuación:",
+    },
     "/food/restaurantes/impuestos/": {
       title: "Restaurantes - Impuestos",
       desc: "Restaurantes - Impuestos. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
