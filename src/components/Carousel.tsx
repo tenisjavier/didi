@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner, { BannerProps } from "./Banner";
 import Image from "./Image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 function NextArrow(props: any) {
   const { onClick, arrow, arrowColor } = props;
@@ -38,7 +39,7 @@ export interface CarouselProps {
   images?: {
     title: string;
     description: string;
-    gatsbyImageData: React.ReactNode;
+    gatsbyImageData: IGatsbyImageData;
   }[];
   carouselType: string;
   slidesToShow?: number;
@@ -46,21 +47,23 @@ export interface CarouselProps {
   arrowNext?: string;
   arrowPrev?: string;
   arrowColor?: string;
+  isAutoPlay?: boolean;
+  speedAutoPlay?: number;
 }
 
 const Carousel = (props: CarouselProps) => {
-  const { slides, carouselType, slidesToShow, slidesToScroll, images, arrowNext, arrowPrev, arrowColor } = props;
+  const { speedAutoPlay, isAutoPlay, slides, carouselType, slidesToShow, slidesToScroll, images, arrowNext, arrowPrev, arrowColor } = props;
 
   const toShow = (slidesToShow) ? slidesToShow : 1;
   const toScroll = (slidesToScroll) ? slidesToShow : 1;
 
   let sliderContent;
 
-  if(carouselType === "Banner") {
+  if (carouselType === "Banner") {
     sliderContent = slides?.map((sld) => {
       return <div><Banner {...sld}></Banner></div>;
     });
-  } else if(carouselType === "Images") {
+  } else if (carouselType === "Images") {
     sliderContent = images?.map((img) => {
       return <div className={`p-4 max-w-xs flex align-center justify-self-center`}><Image imageData={img} imageStyle="z-10 my-10 w-full"></Image></div>;
     });
@@ -70,10 +73,16 @@ const Carousel = (props: CarouselProps) => {
     dots: false,
     arrow: true,
     infinite: true,
+    autoplay: isAutoPlay,
+    speed: speedAutoPlay,
+    autoplaySpeed: 0,
     slidesToShow: toShow,
     slidesToScroll: toScroll,
+    pauseOnHover: false,
+    cssEase: "linear",
     nextArrow: <NextArrow arrow={arrowNext} arrowColor={arrowColor} />,
     prevArrow: <PrevArrow arrow={arrowPrev} arrowColor={arrowColor} />,
+
     responsive: [
       {
         breakpoint: 1079,
