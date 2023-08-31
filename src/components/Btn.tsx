@@ -40,6 +40,8 @@ export type BtnType =
   | "en"
   | "FoodSmsCTA"
   | "RidesSmsCTA"
+  | "BothCredit"
+  | "BothCredit2"
   | undefined;
 
 type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -141,6 +143,12 @@ const Btn = ({
     btnText = btnText || btnData.paxText;
   } else if (btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA") {
     btnText = btnText || btnData.smsCTAText;
+  } else if (btnType === "BothCredit") {
+    btnText = btnText || btnData.creditText;
+    btnLink = btnLink || btnData.creditLink;
+  } else if (btnType === "BothCredit2") {
+    btnText = btnText || btnData.creditText2;
+    btnLink = btnLink || btnData.creditLink2;
   }
 
   const handleClick = (e: any) => {

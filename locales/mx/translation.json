@@ -1931,5 +1931,11 @@
   "VikingSection.vikingColTwo.bgColor": "",
   "VikingSection.vikingColTwo.textColor": "text-yellow-400",
   "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
-  "VikingSection.vikingFooter.imageName": "didi-logo.png"
+  "VikingSection.vikingFooter.imageName": "didi-logo.png",
+  "DiDiCreditHero.title": "La única tarjeta con recompensas y sin costos.",
+  "DiDiCreditHero.desc": "Pídela en 5 minutos.",
+  "DiDiCreditHero.bgColor": "bg-white",
+  "DiDiCreditHero.textColor": "gray-primary",
+  "DiDiCreditHero.btnMode": "primary",
+  "DiDiCreditHeroSecondary.btnMode": "primary"
 }
