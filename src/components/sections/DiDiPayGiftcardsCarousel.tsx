@@ -1,11 +1,12 @@
 import React from "react";
 import Carousel, { CarouselProps } from "../Carousel";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 interface DiDiPayCarouselProps {
   images?: {
     title: string;
     description: string;
-    gatsbyImageData: React.ReactNode;
+    gatsbyImageData: IGatsbyImageData;
   }[];
 }
 
@@ -17,7 +18,7 @@ const DiDiPayPartnersCarousel = ({ images }: DiDiPayCarouselProps) => {
     slidesToShow: 4,
     arrowNext: ">",
     arrowPrev: "<",
-    arrowColor: "text-orange-primary"
+    arrowColor: "text-orange-primary",
   };
 
   return <Carousel {...props}></Carousel>;
