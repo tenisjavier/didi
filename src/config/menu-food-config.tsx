@@ -9,6 +9,7 @@ export interface SingleMenuItemFood {
   text: string;
   url: string;
   dropMenu?: SingleDropMenuItem[];
+  icon?: string;
 }
 
 interface AllMenuInterface {
@@ -20,6 +21,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Restaurantes",
       url: "/mx/food/restaurantes/",
+      icon: "menu-restaurant",
       dropMenu: [
         {
           text: "Registra tu Restaurante",
@@ -54,6 +56,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/mx/food/repartidores/",
+      icon: "menu-pay",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -84,6 +87,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/mx/food/acerca-didi-food/",
+      icon: "menu-more",
       dropMenu: [
         {
           text: "Preguntas Frecuentes",
@@ -94,10 +98,12 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Contacto",
       url: "/mx/food/contacto/",
+      icon: "menu-contact",
     },
     {
       text: "Blog",
       url: "/mx/food/blog/",
+      icon: "menu-blog",
     },
   ],
 
@@ -105,6 +111,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Restaurantes",
       url: "/cr/food/restaurantes/",
+      icon: "menu-restaurant",
       dropMenu: [
         {
           text: "Registrá tu Restaurante",
@@ -135,6 +142,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/cr/food/repartidores/",
+      icon: "menu-pay",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -165,20 +173,24 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/cr/food/acerca-didi-food/",
+      icon: "menu-more",
     },
     {
       text: "Contacto",
       url: "/cr/food/contacto/",
+      icon: "menu-contact",
     },
     {
       text: "Blog",
       url: "/cr/food/blog/",
+      icon: "menu-blog",
     },
   ],
   co: [
     {
       text: "Restaurantes",
       url: "/co/food/restaurantes/",
+      icon: "menu-restaurant",
       dropMenu: [
         {
           text: "Registra tu Restaurante",
@@ -209,6 +221,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/co/food/repartidores/",
+      icon: "menu-pay",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -239,20 +252,24 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/co/food/acerca-didi-food/",
+      icon: "menu-more",
     },
     {
       text: "Contacto",
       url: "/co/food/contacto/",
+      icon: "menu-contact",
     },
     {
       text: "Blog",
       url: "/co/food/blog",
+      icon: "menu-blog",
     },
   ],
   pe: [
     {
       text: "Restaurantes",
       url: "/pe/food/restaurantes/",
+      icon: "menu-restaurant",
       dropMenu: [
         {
           text: "Kit Digital",
@@ -263,6 +280,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/pe/food/repartidores/",
+      icon: "menu-pay",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -289,32 +307,39 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/pe/food/acerca-didi-food/",
+      icon: "menu-more",
     },
     {
       text: "Contacto",
       url: "/pe/food/contacto/",
+      icon: "menu-contact",
     },
     {
       text: "Blog",
       url: "/pe/food/blog",
+      icon: "menu-blog",
     },
   ],
   mxen: [
     {
       text: "Store",
       url: "/mx/food/en/restaurants/",
+      icon: "menu-restaurant",
     },
     {
       text: "Delivery",
       url: "/mx/food/en/couriers/",
+      icon: "menu-delivery",
     },
     {
       text: "About",
       url: "/mx/food/en/about/",
+      icon: "menu-about",
     },
     {
       text: "Contact",
       url: "/mx/food/en/contact/",
+      icon: "menu-contact",
     },
   ],
 };
