@@ -1931,5 +1931,46 @@
   "VikingSection.vikingColTwo.bgColor": "",
   "VikingSection.vikingColTwo.textColor": "text-yellow-400",
   "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
-  "VikingSection.vikingFooter.imageName": "didi-logo.png"
+  "VikingSection.vikingFooter.imageName": "didi-logo.png",
+  "DiDiCreditHero.title": "La única tarjeta con recompensas y sin costos.",
+  "DiDiCreditHero.desc": "Pídela en 5 minutos.",
+  "DiDiCreditHero.bgColor": "bg-white",
+  "DiDiCreditHero.textColor": "gray-primary",
+  "DiDiCreditHero.btnMode": "primary",
+  "DiDiCreditHeroSecondary.btnMode": "primary",
+  "DiDiCreditBenefits.title": "La tarjeta de crédito que te pone las cosas fáciles (de verdad).",
+  "DiDiCreditBenefits.desc": "",
+  "DiDiCreditBenefits.bgColor": "bg-gray-light",
+  "DiDiCreditBenefits.columns": [
+    {
+      "title": "Sin anualidad ni comisiones ocultas ",
+      "desc": "",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Hasta 3% de CASHBACK que podrás usar para pagar tu tarjeta, en DiDi y DiDi Food, tú decides.",
+      "desc": "",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Creada por DiDi respaldad por Mastercard",
+      "desc": "",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Para ti  24/7 en Soporte DiDi a través del chat de la app.",
+      "desc": "",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    }
+  ],
+  "DiDiCreditFeatures.title": "¡CASHBACK todos los días!",
+  "DiDiCreditFeatures.desc": "Te regresamos un porcentaje de tus compras que puedes usar para pagar tu tarjeta, viajar en DiDi o pedir comida en DiDi Food. \n 3% de CASHBACK* en DiDi Food \n 1% de CASHBACK* en DiDi \n 1% de CASHBACK* en miles de establecimientos más \n *Aplican Términos y Condiciones.",
+  "DiDiCreditFeatures.bgColor": "bg-orange-primary",
+  "DiDiCreditFeatures.textColor": "white",
+  "DiDiCreditFeatures.btnMode": "light",
+  "DiDiCreditFeaturesSecondary.btnMode": "light"
 }

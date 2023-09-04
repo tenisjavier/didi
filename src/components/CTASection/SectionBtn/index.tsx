@@ -8,6 +8,7 @@ type SectionsBtnType = {
   bothPrestamos: BtnProps[];
   custom: BtnProps[];
   bothFoodEn: BtnProps[];
+  BothCredit: BtnProps[];
 };
 
 type sectionType =
@@ -16,7 +17,8 @@ type sectionType =
   | "bothFood"
   | "bothPrestamos"
   | "custom"
-  | "bothFoodEn";
+  | "bothFoodEn"
+  | "BothCredit";
 
 interface SectionsBtnProps extends BtnProps {
   btnArray?: {
@@ -39,7 +41,8 @@ const SectionBtn = ({
     , "bothFood"
     , "bothPrestamos"
     , "custom"
-    , "bothFoodEn"]
+    , "bothFoodEn"
+    , "BothCredit"]
 
   const sectionsBtnConfig: SectionsBtnType = {
     default: [
@@ -99,6 +102,16 @@ const SectionBtn = ({
         btnModeSecondary: btnModeSecondary,
       },
     ],
+    BothCredit: [
+      {
+        btnType: "BothCredit",
+        btnMode: btnMode
+      },
+      {
+        btnType: "BothCredit2",
+        btnMode: btnModeSecondary
+      }
+    ]
   };
 
   let GroupBtnType: BtnProps[] = []
