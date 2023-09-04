@@ -56,7 +56,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/mx/food/repartidores/",
-      icon: "menu-pay",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -87,7 +87,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/mx/food/acerca-didi-food/",
-      icon: "menu-more",
+      icon: "menu-help",
       dropMenu: [
         {
           text: "Preguntas Frecuentes",
@@ -142,7 +142,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/cr/food/repartidores/",
-      icon: "menu-pay",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -173,7 +173,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/cr/food/acerca-didi-food/",
-      icon: "menu-more",
+      icon: "menu-help",
     },
     {
       text: "Contacto",
@@ -221,7 +221,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/co/food/repartidores/",
-      icon: "menu-pay",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -252,7 +252,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/co/food/acerca-didi-food/",
-      icon: "menu-more",
+      icon: "menu-help",
     },
     {
       text: "Contacto",
@@ -280,7 +280,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Socio repartidor",
       url: "/pe/food/repartidores/",
-      icon: "menu-pay",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "Club Repartidores",
@@ -307,7 +307,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "Acerca",
       url: "/pe/food/acerca-didi-food/",
-      icon: "menu-more",
+      icon: "menu-help",
     },
     {
       text: "Contacto",
@@ -334,7 +334,7 @@ const menuLinksFood: AllMenuInterface = {
     {
       text: "About",
       url: "/mx/food/en/about/",
-      icon: "menu-about",
+      icon: "menu-help",
     },
     {
       text: "Contact",
