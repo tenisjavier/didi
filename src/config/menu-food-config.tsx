@@ -33,7 +33,7 @@ const menuLinksFood: AllMenuInterface = {
         },
         {
           text: "Guías",
-          url: "/mx/food/restaurantes/guias-educacionales/",
+          url: "/mx/food/restaurantes/",
         },
         {
           text: "DiDi Food FAQ",
@@ -119,7 +119,7 @@ const menuLinksFood: AllMenuInterface = {
         },
         {
           text: "Guías",
-          url: "/cr/food/restaurantes/guias-educacionales/",
+          url: "/cr/food/restaurantes/",
         },
         {
           text: "DiDi Food FAQ",
@@ -174,6 +174,12 @@ const menuLinksFood: AllMenuInterface = {
       text: "Acerca",
       url: "/cr/food/acerca-didi-food/",
       icon: "menu-help",
+      dropMenu: [
+        {
+          text: "Preguntas Frecuentes",
+          url: "/cr/food/preguntas-frecuentes/",
+        }
+      ]
     },
     {
       text: "Contacto",
@@ -198,7 +204,7 @@ const menuLinksFood: AllMenuInterface = {
         },
         {
           text: "Guías",
-          url: "/co/food/restaurantes/guias-educacionales/",
+          url: "/co/food/restaurantes/",
         },
         {
           text: "DiDi Food FAQs",
@@ -253,6 +259,12 @@ const menuLinksFood: AllMenuInterface = {
       text: "Acerca",
       url: "/co/food/acerca-didi-food/",
       icon: "menu-help",
+      dropMenu: [
+        {
+          text: "Preguntas Frecuentes",
+          url: "/co/food/preguntas-frecuentes/",
+        }
+      ]
     },
     {
       text: "Contacto",
@@ -308,6 +320,12 @@ const menuLinksFood: AllMenuInterface = {
       text: "Acerca",
       url: "/pe/food/acerca-didi-food/",
       icon: "menu-help",
+      dropMenu: [
+        {
+          text: "Preguntas Frecuentes",
+          url: "/pe/food/preguntas-frecuentes/",
+        }
+      ]
     },
     {
       text: "Contacto",

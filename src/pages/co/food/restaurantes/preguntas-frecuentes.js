@@ -30,7 +30,7 @@ const CentroDeAyuda = ({ data }) => {
       <FoodFaqList
         title="Tu Tienda"
         faqs={faqStore[0].faq}
-        urlPrefix="/co/food/restaurantes/guias-educacionales/"
+        urlPrefix="/co/food/restaurantes/"
       ></FoodFaqList>
     </Layout>
   );

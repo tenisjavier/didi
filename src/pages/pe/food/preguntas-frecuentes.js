@@ -1,8 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../components/Layout";
-import FaqFoodHero from "../../../../components/sections/FaqFoodHero";
-import FoodFaqList from "../../../../components/sections/FoodFaqList";
+import Layout from "../../../components/Layout";
+import FaqFoodHero from "../../../components/sections/FaqFoodHero";
+import FoodFAQ from "../../../components/sections/FoodFAQ";
+import MoreQuestionsCTA from "../../../components/sections/MoreQuestionsCTA";
+import FaqList from "../../../components/sections/FaqList";
 
 const CentroDeAyuda = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -19,19 +21,30 @@ const CentroDeAyuda = ({ data }) => {
     (node) => node.name === "DiDi Restaurant Tienda"
   );
 
+  let link = `/pe/food/restaurantes/preguntas-frecuentes/`;
+
   return (
     <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
-      <FoodFaqList title="Repartidores" faqs={faqDelivery[0].faq}></FoodFaqList>
-      <FoodFaqList
-        title="Operaciones"
+      <FoodFAQ title="Repartidores" desc=" " data={faqDelivery[0]}></FoodFAQ>
+      <FoodFAQ title="Operaciones" desc=" " data={faqOperations[0]}></FoodFAQ>
+      <FoodFAQ title="Tu Tienda" desc=" " data={faqStore[0]}></FoodFAQ>
+      <FaqList
+        title={"Repartidores"}
+        faqs={faqDelivery[0].faq}
+        link={link}
+        ></FaqList>
+      <FaqList
+        title={"Operaciones"}
         faqs={faqOperations[0].faq}
-      ></FoodFaqList>
-      <FoodFaqList
-        title="Tu Tienda"
+        link={link}
+        ></FaqList>
+      <FaqList
+        title={"Tu Tienda"}
         faqs={faqStore[0].faq}
-        urlPrefix="/mx/food/restaurantes/"
-      ></FoodFaqList>
+        link={link}
+        ></FaqList>
+      {/* <MoreQuestionsCTA></MoreQuestionsCTA> */}
     </Layout>
   );
 };
@@ -46,8 +59,12 @@ export const query = graphql`
         gatsbyImageData
       }
     }
+
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
+      filter: {
+        country: { elemMatch: { code: { eq: "mx" } } }
+        category: { eq: "food" }
+      }
     ) {
       nodes {
         name

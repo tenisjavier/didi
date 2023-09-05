@@ -290,7 +290,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Restaurantes - Impuestos",
       desc: "Restaurantes - Impuestos. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
-    "/food/restaurantes/guias-educacionales/": {
+    "/food/restaurantes/": {
       title: "Restaurantes - Guías Educacionales",
       desc: "Restaurantes - Guías Educacionales. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },

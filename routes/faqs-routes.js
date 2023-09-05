@@ -43,8 +43,8 @@ const faqsRoutesInit = async (graphql, createPage) => {
       path = `/${country.code}/centro-de-ayuda/${slug}/`;
     if (product && product[0].category[0] === "food")
       path = `/${country.code}/food/restaurantes/preguntas-frecuentes/${slug}/`;
-    if (Boolean(isEducationalGuide))
-      path = `/${country.code}/food/restaurantes/guias-educacionales/${slug}/`;
+    if (product && product[0].category[0] === "food" && product[0].name === "DiDi Restaurant Tienda")
+      path = `/${country.code}/delivery/preguntas-frecuentes/${slug}/`;
 
     if (type && type[0] === "prestamos") {
       path = `/${country.code}/prestamos/preguntas-frecuentes/${slug}/`;
