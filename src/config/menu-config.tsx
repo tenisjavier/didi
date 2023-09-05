@@ -10,6 +10,7 @@ export interface SingleMenuItem {
   url: string;
   dropMenu?: SingleDropMenuItem[];
   icon?: any;
+  src?: string;
 }
 
 interface AllMenuInterface {
@@ -1278,3 +1279,52 @@ const getMenuLinks = (countryCode: string) => {
 };
 
 export { getMenuLinks };
+
+export const menuFlagsCountry = [
+ {
+    text: "ARG",
+    url: "/ar/",
+    icon: "/flagsCountry/ar.png",
+ },
+ {
+    text: "CHIL",
+    url: "/cl/",
+    icon: "/flagsCountry/cl.png",
+ },
+ {
+    text: "COL",
+    url: "/co/",
+    icon: "/flagsCountry/co.png",
+ },
+ {
+    text: "CRSTR",
+    url: "/cr/",
+    icon: "/flagsCountry/cstr.png",
+ },
+ {
+    text: "DOMR",
+    url: "/do/",
+    icon: "/flagsCountry/do.png",
+ },
+ {
+    text: "ECUA",
+    url: "/ec/",
+    icon: "/flagsCountry/ecua.png",
+ },
+ {
+    text: "MEX",
+    url: "/mx/",
+    icon: "/flagsCountry/mx.png",
+ },
+ {
+    text: "PAN",
+    url: "/pa/",
+    icon: "/flagsCountry/pan.png",
+ },
+ {
+    text: "PERU",
+    url: "/pe/",
+    icon: "/flagsCountry/pe.png",
+ }
+]
+

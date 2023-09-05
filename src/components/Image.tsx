@@ -8,18 +8,36 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 export type ImageDataType = {
   title: string;
   description: string;
-  gatsbyImageData: IGatsbyImageData;
+  gatsbyImageData?: IGatsbyImageData;
 };
 
 interface ImageProps {
   imageData: ImageDataType;
   imageStyle?: string;
+  src?: string;
 }
 
-const Image = ({ imageData, imageStyle }: ImageProps) => {
+const Image = ({ imageData, imageStyle, src }: ImageProps) => {
+  if (src) {
+    imageData = {
+      title: imageData.title,
+      description: imageData.description,
+      gatsbyImageData: {
+        height: 30,
+        width: 30,
+        layout: "constrained",
+        images: {
+          fallback: {
+            src,
+          }
+        }
+      }
+    }
+  }
+
   return (
     <GatsbyImage
-      image={imageData.gatsbyImageData}
+      image={imageData.gatsbyImageData as IGatsbyImageData}
       alt={imageData.description}
       className={imageStyle}
     ></GatsbyImage>
