@@ -22,14 +22,14 @@ const MenuCountryFlags = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const currentCountry = menuFlagsCountry.find((item) => item.url.replace(/\//g, '') === countryCode);
+  const currentCountry = menuFlagsCountry.find((item) => item.text.toLocaleLowerCase() === countryCode);
 
   return (
     <div className="flex h-full items-center lg:hidden ">
       {currentCountry && (
         <div
           className={
-            `${menuOpen ? "w-24 p-4" : "w-10 p-2"} h-10 rounded-full bg-gray-200 
+            `${menuOpen ? "w-20 p-3" : "w-10 p-2"} h-10 rounded-full bg-gray-200 
             flex items-center cursor-pointer 
             relative transition-all duration-300`}
           onClick={() => {
@@ -52,9 +52,9 @@ const MenuCountryFlags = () => {
       <div
         className={`${menuOpen ? "fixed" : "hidden"
           } w-screen h-screen left-0 top-14 transition-opacity duration-300`}
-        style={{ background: "rgba(0, 0, 0, 0.8)" }}
+        style={{ background: "rgba(0, 0, 0, 0.6)" }}
       >
-        <div className={"w-auto h-fit fixed top-20 right-[45px] bottom-0 flex justify-center"}>
+        <div className={"w-auto h-fit fixed top-20 right-[50px] bottom-0 flex justify-center"}>
           <ul
             className={`rounded-2xl m-0 p-2 flex flex-col items-center bg-white gap-4 ${menuOpen
               ? "opacity-100 translate-y-0 animate-fadeIn"

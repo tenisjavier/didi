@@ -17,7 +17,7 @@ const NavList = ({ links, countryCode }: NavListProps) => {
             <NavItem
               key={index}
               link={menuLink}
-              isSelected={menuLink?.url?.replace(/\//g, '') === countryCode}
+              isSelected={menuLink.text.toLocaleLowerCase() === countryCode}
             />
           ));
         }, [links])}

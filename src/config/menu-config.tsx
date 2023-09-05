@@ -1281,50 +1281,50 @@ const getMenuLinks = (countryCode: string) => {
 export { getMenuLinks };
 
 export const menuFlagsCountry = [
- {
-    text: "ARG",
+  {
+    text: "AR",
     url: "/ar/",
     icon: "/flagsCountry/ar.png",
- },
- {
-    text: "CHIL",
+  },
+  {
+    text: "CL",
     url: "/cl/",
     icon: "/flagsCountry/cl.png",
- },
- {
-    text: "COL",
+  },
+  {
+    text: "CO",
     url: "/co/",
     icon: "/flagsCountry/co.png",
- },
- {
-    text: "CRSTR",
+  },
+  {
+    text: "CR",
     url: "/cr/",
-    icon: "/flagsCountry/cstr.png",
- },
- {
-    text: "DOMR",
+    icon: "/flagsCountry/cr.png",
+  },
+  {
+    text: "DO",
     url: "/do/",
     icon: "/flagsCountry/do.png",
- },
- {
-    text: "ECUA",
+  },
+  {
+    text: "EC",
     url: "/ec/",
-    icon: "/flagsCountry/ecua.png",
- },
- {
-    text: "MEX",
+    icon: "/flagsCountry/ec.png",
+  },
+  {
+    text: "MX",
     url: "/mx/",
     icon: "/flagsCountry/mx.png",
- },
- {
-    text: "PAN",
+  },
+  {
+    text: "PA",
     url: "/pa/",
-    icon: "/flagsCountry/pan.png",
- },
- {
-    text: "PERU",
+    icon: "/flagsCountry/pa.png",
+  },
+  {
+    text: "PE",
     url: "/pe/",
     icon: "/flagsCountry/pe.png",
- }
+  }
 ]
 
