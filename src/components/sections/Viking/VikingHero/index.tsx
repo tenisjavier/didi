@@ -11,22 +11,35 @@ interface VikingHeroProps {
 
 
 const VikingHero = ({ imageOne, imageTwo }: VikingHeroProps) => {
+  const colOne: VikingSectionProps['colOne'] = {
+    image: imageOne,
+    title: t('VikingSection.vikingColOne.title'),
+    subTitle: t("VikingSection.vikingColOne.subTitle"),
+    btnText: t("VikingSection.vikingColOne.btnText"),
+    btnLink: t("VikingSection.vikingColOne.btnLink"),
+    bgColorCard: t("VikingSection.vikingColOne.bgColor"),
+    textColor: t("VikingSection.vikingColOne.textColor"),
+    btnType: t("VikingSection.vikingColOne.btnType"),
+    btnMode: t("VikingSection.vikingColOne.btnMode"),
+  }
+
+  const colTwo: VikingSectionProps['colTwo'] = {
+    image: imageTwo,
+    title: t('VikingSection.vikingColTwo.title'),
+    subTitle: t("VikingSection.vikingColTwo.subTitle"),
+    btnText: t("VikingSection.vikingColTwo.btnText"),
+    btnLink: t("VikingSection.vikingColTwo.btnLink"),
+    bgColorCard: t("VikingSection.vikingColTwo.bgColor"),
+    textColor: t("VikingSection.vikingColTwo.textColor"),
+    btnType: t("VikingSection.vikingColTwo.btnType"),
+    btnMode: t("VikingSection.vikingColTwo.btnMode"),
+  }
+
   const props: VikingSectionProps = {
-    imageOne: imageOne,
-    imageTwo: imageTwo,
-    titleOne: t('VikingSection.vikingColOne.title'),
-    titleTwo: t("VikingSection.vikingColTwo.title"),
-    subTitleOne: t("VikingSection.vikingColOne.subTitle"),
-    subTitleTwo: t("VikingSection.vikingColTwo.subTitle"),
-    btnLinkOne: t("VikingSection.vikingColOne.btnLink"),
-    btnLinkTwo: t("VikingSection.vikingColTwo.btnLink"),
-    btnTextOne: t("VikingSection.vikingColOne.btnText"),
-    btnTextTwo: t("VikingSection.vikingColTwo.btnText"),
-    bgColOne: t("VikingSection.vikingColOne.bgColor"),
-    bgColTwo: t("VikingSection.vikingColTwo.bgColor"),
-    textColorColOne: t("VikingSection.vikingColOne.textColor"),
-    textColorColTwo: t("VikingSection.vikingColTwo.textColor"),
+    colOne,
+    colTwo,
     textFooter: t("VikingSection.vikingFooter.text"),
+    hasTwoColumns: t("VikingSection.hasTwoColumns"),
   };
   return <VikingSection {...props}></VikingSection>;
 };

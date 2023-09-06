@@ -645,5 +645,15 @@
   "LostItemsBanner.textColor": "white",
   "LostItemsBanner.btnMode": "light",
   "LostItemsBanner.btnText": "Cómo Recuperarlo",
-  "LostItemsBanner.btnLink": "/ar/centro-de-ayuda/#inconvenientes-con-un-arrendamiento"
+  "LostItemsBanner.btnLink": "/ar/centro-de-ayuda/#inconvenientes-con-un-arrendamiento",
+  "VikingSection.vikingColOne.title": "Pa'l",
+  "VikingSection.vikingColOne.subTitle": "apuro",
+  "VikingSection.vikingColOne.btnText": "Descarga DiDi Pasajero",
+  "VikingSection.vikingColOne.btnLink": "",
+  "VikingSection.vikingColOne.btnType": "pax",
+  "VikingSection.vikingColOne.btnMode": "light",
+  "VikingSection.vikingColOne.bgColor": "",
+  "VikingSection.vikingColOne.textColor": "text-blue-primary",
+  "VikingSection.hasTwoColumns": false,
+  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi"
 }
