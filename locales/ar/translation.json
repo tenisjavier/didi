@@ -650,9 +650,10 @@
   "VikingSection.vikingColOne.subTitle": "apuro",
   "VikingSection.vikingColOne.btnText": "Descarga DiDi Pasajero",
   "VikingSection.vikingColOne.btnLink": "",
-  "VikingSection.vikingColOne.btnMode": "primary",
+  "VikingSection.vikingColOne.btnType": "pax",
+  "VikingSection.vikingColOne.btnMode": "light",
   "VikingSection.vikingColOne.bgColor": "",
   "VikingSection.vikingColOne.textColor": "text-blue-primary",
-  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
-  "VikingSection.vikingFooter.imageName": "didi-logo.png"
+  "VikingSection.hasTwoColumns": false,
+  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi"
 }

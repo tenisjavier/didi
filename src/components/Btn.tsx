@@ -44,7 +44,7 @@ export type BtnType =
   | "BothCredit2"
   | undefined;
 
-type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
+export type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
 
 export interface BtnProps {
   btnType?: BtnType;

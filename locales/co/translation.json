@@ -834,16 +834,18 @@
   "VikingSection.vikingColOne.subTitle": "ufffff",
   "VikingSection.vikingColOne.btnText": "Descarga DiDi Pasajero",
   "VikingSection.vikingColOne.btnLink": "",
-  "VikingSection.vikingColOne.btnMode": "primary",
+  "VikingSection.vikingColOne.btnMode": "light",
+  "VikingSection.vikingColOne.btnType": "pax",
   "VikingSection.vikingColOne.bgColor": "",
   "VikingSection.vikingColOne.textColor": "text-blue-primary",
   "VikingSection.vikingColTwo.title": "Pal",
   "VikingSection.vikingColTwo.subTitle": "ñaaam",
   "VikingSection.vikingColTwo.btnText": "Descarga DiDi Food",
   "VikingSection.vikingColTwo.btnLink": "",
-  "VikingSection.vikingColTwo.btnMode": "primary",
+  "VikingSection.vikingColTwo.btnMode": "light",
+  "VikingSection.vikingColTwo.btnType": "foodEater",
   "VikingSection.vikingColTwo.bgColor": "bg-yellow-400",
   "VikingSection.vikingColTwo.textColor": "text-black",
-  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
-  "VikingSection.vikingFooter.imageName": "didi-logo.png"
+  "VikingSection.hasTwoColumns": true,
+  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi"
 }

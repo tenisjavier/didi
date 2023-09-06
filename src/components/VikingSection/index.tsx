@@ -1,44 +1,35 @@
 import React from "react"
-import Btn from "../Btn"
-import Image, { ImageDataType } from "../Image"
-import { StaticImage } from "gatsby-plugin-image"
+import { ImageDataType } from "../Image"
+import Card from "./VikingCard"
+import VikingFooter from "./VikingFooter"
+import { BtnMode, BtnType } from "../Btn"
+
+type ColumType = {
+  image: ImageDataType,
+  title: string,
+  subTitle: string,
+  btnText: string,
+  btnLink: string,
+  bgColorCard: string,
+  textColor: string,
+  btnType: BtnType,
+  btnMode: BtnMode,
+}
 
 export interface VikingSectionProps {
-  imageOne: ImageDataType,
-  imageTwo: ImageDataType,
-  didiLogo?: ImageDataType,
-  titleOne: string,
-  titleTwo: string,
-  subTitleOne: string,
-  subTitleTwo: string,
-  btnTextOne: string,
-  btnTextTwo: string,
-  btnLinkOne: string,
-  btnLinkTwo: string,
-  bgColOne: string,
-  bgColTwo: string,
-  textColorColOne: string,
-  textColorColTwo: string,
+  colOne: ColumType,
+  colTwo: ColumType,
   textFooter: string,
+  hasTwoColumns?: boolean,
 }
 
 const VikingSection = ({
-  imageOne,
-  imageTwo,
-  titleOne,
-  titleTwo,
-  subTitleOne,
-  subTitleTwo,
-  btnTextOne,
-  btnTextTwo,
-  btnLinkOne,
-  btnLinkTwo,
-  bgColOne,
-  bgColTwo,
-  textColorColOne,
-  textColorColTwo,
-  textFooter
+  colOne,
+  colTwo,
+  textFooter,
+  hasTwoColumns = true
 }: VikingSectionProps) => {
+
   return (
     <div
       className="flex justify-center items-center h-full lg:h-screen bg-orange-primary"
@@ -46,32 +37,30 @@ const VikingSection = ({
         background: "linear-gradient(135deg, rgba(255,165,84,1) 0%, rgba(255,97,38,1) 100%)"
       }}
     >
-      <div className={`lg:grid ${titleTwo ? "lg:grid-cols-2" : "lg:grid-cols-1"} flex flex-col justify-center lg:h-screen lg:w-screen w-full h-full mt-8`}>
-        <div className={`flex flex-col items-center justify-center ${textColorColOne} ${bgColOne} px-8 py-16 h-full lg:h-auto`}>
-          <div className="flex flex-col font-bold">
-            <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0">{titleOne} <Image imageStyle="lg:w-[120px] w-[90px]" imageData={imageOne} /></p>
-            <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0 ">{subTitleOne}</p>
-            <Btn btnTextCenter btnType="pax" btnMode="light" btnText={btnTextOne}></Btn>
-          </div>
-        </div>
-        {titleTwo && (
-          <div className={`flex flex-col justify-center items-center ${textColorColTwo} ${bgColTwo} px-8 py-16  h-full lg:h-auto`}>
-            <div className="flex flex-col font-bold">
-              <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0">{titleTwo} <Image imageStyle="lg:w-[120px] w-[90px]" imageData={imageTwo} /></p>
-              <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0 ">{subTitleTwo}</p>
-              <Btn btnTextCenter btnType="foodEater" btnMode="light" btnText={btnTextTwo}></Btn>
-            </div>
-          </div>
+      <div className={`lg:grid ${hasTwoColumns ? "lg:grid-cols-2" : "lg:grid-cols-1"} flex flex-col justify-center lg:h-screen lg:w-screen w-full h-full mt-8`}>
+        <Card
+          image={colOne.image}
+          title={colOne.title}
+          subTitle={colOne.subTitle}
+          btnText={colOne.btnText}
+          bgColorCard={colOne.bgColorCard}
+          textColor={colOne.textColor}
+          btnType={colOne.btnType}
+          btnMode={colOne.btnMode}
+        />
+        {hasTwoColumns && (
+          <Card
+            image={colTwo.image}
+            title={colTwo.title}
+            subTitle={colTwo.subTitle}
+            btnText={colTwo.btnText}
+            bgColorCard={colTwo.bgColorCard}
+            textColor={colTwo.textColor}
+            btnType={colTwo.btnType}
+            btnMode={colTwo.btnMode}
+          />
         )}
-        <div
-          className="col-span-2 flex items-center justify-center w-full h-full lg:h-auto p-8 lg:p-0 flex-wrap"
-          style={{
-            background: "linear-gradient(135deg, rgba(255,165,84,1) 0%, rgba(255,97,38,1) 100%)"
-          }}
-        >
-          <p className="lg:text-5xl text-3xl text-center p-0 m-0 text-white">{textFooter}</p>
-          <StaticImage src={"../../images/didi-logo.png"} alt={"DiDi Logo"} className="lg:w-64 w-36" />
-        </div>
+        <VikingFooter text={textFooter} />
       </div>
     </div>
   )
