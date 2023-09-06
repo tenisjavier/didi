@@ -11,11 +11,9 @@ const NavItem: FC<NavItemProps> = ({ link, isSelected }) => {
 
   const { text, url, icon } = link || {};
 
-  console.log("isSelected", isSelected);
-
-
   const handleNavigator = (event: React.MouseEvent) => {
     event.preventDefault();
+
     window.location.href = url;
   }
 

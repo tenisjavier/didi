@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useCountry } from "../../context/countryContext";
 import { menuFlagsCountry } from "../../config/menu-config";
 import NavList from "./NavList";
@@ -6,6 +6,7 @@ import Image from "../Image";
 
 const MenuCountryFlags = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const countryCode = useCountry().code;
 
   useEffect(() => {
@@ -21,6 +22,12 @@ const MenuCountryFlags = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const handleOpenMenu = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (dropdownRef.current === e.target) {
+      setMenuOpen(false);
+    }
+  };
 
   const currentCountry = menuFlagsCountry.find((item) => item.text.toLocaleLowerCase() === countryCode);
 
@@ -53,8 +60,10 @@ const MenuCountryFlags = () => {
         className={`${menuOpen ? "fixed" : "hidden"
           } w-screen h-screen left-0 top-14 transition-opacity duration-300`}
         style={{ background: "rgba(0, 0, 0, 0.6)" }}
+        onClick={handleOpenMenu}
+        ref={dropdownRef}
       >
-        <div className={"w-auto h-fit fixed top-20 right-[50px] bottom-0 flex justify-center"}>
+        <div className={"menu-content w-auto h-fit fixed top-20 right-[50px] bottom-0 flex justify-center"}>
           <ul
             className={`rounded-2xl m-0 p-2 flex flex-col items-center bg-white gap-4 ${menuOpen
               ? "opacity-100 translate-y-0 animate-fadeIn"
