@@ -46,7 +46,7 @@ const VikingSection = ({
         background: "linear-gradient(135deg, rgba(255,165,84,1) 0%, rgba(255,97,38,1) 100%)"
       }}
     >
-      <div className="lg:grid lg:grid-cols-2 flex flex-col justify-center lg:h-screen lg:w-screen w-full h-full mt-8">
+      <div className={`lg:grid ${titleTwo ? "lg:grid-cols-2" : "lg:grid-cols-1"} flex flex-col justify-center lg:h-screen lg:w-screen w-full h-full mt-8`}>
         <div className={`flex flex-col items-center justify-center ${textColorColOne} ${bgColOne} px-8 py-16 h-full lg:h-auto`}>
           <div className="flex flex-col font-bold">
             <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0">{titleOne} <Image imageStyle="lg:w-[120px] w-[90px]" imageData={imageOne} /></p>
@@ -54,13 +54,15 @@ const VikingSection = ({
             <Btn btnTextCenter btnType="pax" btnMode="light" btnText={btnTextOne}></Btn>
           </div>
         </div>
-        <div className={`flex flex-col justify-center items-center ${textColorColTwo} ${bgColTwo} px-8 py-16  h-full lg:h-auto`}>
-          <div className="flex flex-col font-bold">
-            <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0">{titleTwo} <Image imageStyle="lg:w-[120px] w-[90px]" imageData={imageTwo} /></p>
-            <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0 ">{subTitleTwo}</p>
-            <Btn btnTextCenter btnType="foodEater" btnMode="light" btnText={btnTextTwo}></Btn>
+        {titleTwo && (
+          <div className={`flex flex-col justify-center items-center ${textColorColTwo} ${bgColTwo} px-8 py-16  h-full lg:h-auto`}>
+            <div className="flex flex-col font-bold">
+              <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0">{titleTwo} <Image imageStyle="lg:w-[120px] w-[90px]" imageData={imageTwo} /></p>
+              <p className="font-GorutsXbold lg:text-9xl text-8xl text-left p-0 m-0 ">{subTitleTwo}</p>
+              <Btn btnTextCenter btnType="foodEater" btnMode="light" btnText={btnTextTwo}></Btn>
+            </div>
           </div>
-        </div>
+        )}
         <div
           className="col-span-2 flex items-center justify-center w-full h-full lg:h-auto p-8 lg:p-0 flex-wrap"
           style={{
