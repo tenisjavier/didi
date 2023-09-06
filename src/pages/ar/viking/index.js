@@ -5,7 +5,6 @@ import VikingHero from "../../../components/sections/Viking/VikingHero"
 import Layout from "../../../components/Layout";
 
 const Viking = ({ data }) => {
-  console.log(data)
   const images = data.allContentfulAsset.nodes
 
   const palImageSteeringWheel = images.filter((image) => {
