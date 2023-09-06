@@ -31,7 +31,7 @@ const menuLinksPay: AllMenuInterface = {
     {
       text: "Recarga tu Celular",
       url: "/mx/didipay/recarga-celular/",
-      icon: "menu-about",
+      icon: "menu-phone-recharge",
     },
     {
       text: "Tarjetas de Regalo",

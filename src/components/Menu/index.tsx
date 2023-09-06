@@ -104,6 +104,7 @@ function NavListQuery({
               "menu-contact"
               "menu-blog"
               "menu-more"
+              "menu-phone-recharge"
             ]
           }
         }
