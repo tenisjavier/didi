@@ -19,11 +19,7 @@ const Store = ({ data }) => {
   );
 
   useEffect(() => {
-    let url = new URL(
-      document
-        .getElementsByClassName("btn-light")[0]
-        .getElementsByTagName("a")[0].href
-    );
+    let url = new URL(window.location.href);
     //? only af params
     let pid = url.searchParams.get("pid");
     let c = url.searchParams.get("c");
