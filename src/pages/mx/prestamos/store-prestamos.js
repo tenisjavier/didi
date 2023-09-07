@@ -19,11 +19,27 @@ const Store = () => {
   );
 
   useEffect(() => {
-    setQRUrl(
+    let url = new URL(
       document
         .getElementsByClassName("btn-light")[0]
         .getElementsByTagName("a")[0].href
     );
+    //? only af params
+    let pid = url.searchParams.get("pid");
+    let c = url.searchParams.get("c");
+    let af_ad_id = url.searchParams.get("af_ad_id");
+    let af_adset_id = url.searchParams.get("af_adset_id");
+    let af_c_id = url.searchParams.get("af_c_id");
+    let af_channel = url.searchParams.get("af_channel");
+    let af_url = new URL(url.origin + url.pathname);
+    af_url.searchParams.set("pid", pid);
+    af_url.searchParams.set("c", c);
+    af_url.searchParams.set("af_ad_id", af_ad_id);
+    af_url.searchParams.set("af_adset_id", af_adset_id);
+    af_url.searchParams.set("af_c_id", af_c_id);
+    af_url.searchParams.set("af_channel", af_channel);
+
+    setQRUrl(af_url.href);
   }, []);
 
   return (
