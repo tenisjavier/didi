@@ -17,7 +17,6 @@ const insertBtnParams = () => {
   var thisHostname = document.location.hostname;
   var thisDomain = getDomain_(thisHostname);
   var referringDomain = getDomain_(referrer);
-  console.log(referringDomain);
   // search is the parameters complete string without ?
   var search = window.location.search.slice(1);
 
