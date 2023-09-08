@@ -24,7 +24,7 @@ const Store = () => {
       document
         .getElementsByClassName("btn-light")[0]
         .getElementsByTagName("a")[0].href
-    ).origin;
+    );
     //? only af params
     let pid = url.searchParams.get("pid");
     let c = url.searchParams.get("c");
@@ -32,7 +32,7 @@ const Store = () => {
     let af_adset_id = url.searchParams.get("af_adset_id");
     let af_c_id = url.searchParams.get("af_c_id");
     let af_channel = url.searchParams.get("af_channel");
-    let af_url = new URL(btnOneLink + url.pathname);
+    let af_url = new URL(btnOneLink.origin + btnOneLink.pathname);
     af_url.searchParams.set("pid", pid);
     af_url.searchParams.set("c", c);
     af_url.searchParams.set("af_ad_id", af_ad_id);
