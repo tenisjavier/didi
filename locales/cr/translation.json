@@ -54,6 +54,7 @@
   "TaxiHero.desc": "Generá ingresos extra conectándote con DiDi Taxi",
   "TaxiHero.textColor": "white",
   "TaxiHero.btnMode": "primary",
+  "Taxi.btnMode": "primary",
   "TaxiWhyDiDi.title": "Recibe pedidos a través de la app o recoge a los pasajeros conectando el viaje con DiDi Taxi",
   "TaxiWhyDiDi.bullets": [
     "¿Ya estas registrado como DiDi Taxista? Regístrate online y te explicamos cómo se usa la App.",
@@ -108,8 +109,8 @@
   ],
   "TaxiSafety.textColor": "white",
   "TaxiSafety.bgColor": "bg-blue-primary",
-  "TaxiContact.title": "Contá con más de 20 funciones de seguridad:",
-  "TaxiContact.desc": "Visitanos en nuestro Centro de Experiencia: ",
+  "TaxiContact.title": "¿Necesitás atención personalizada?",
+  "TaxiContact.desc": "Visitanos en nuestro Centro de Experiencia:",
   "TaxiContact.bullets": [
     "Soporte en el proceso de registro",
     "Atención personalizada para solucionar dudas sobre el uso de la app",

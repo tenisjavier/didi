@@ -150,11 +150,11 @@ const CTASection = (props: CTAProps) => {
               />
             )}
             {descFooter && (
-              <>
+              <div className="my-6">
                 {descFooter.map((str, index) => (
-                  <p key={index} className="p-0 m-0 text-start">{str}</p>
+                  <p key={index} className="p-0 m-0 my-1 text-start">{str}</p>
                 ))}
-              </>
+              </div>
             )}
           </div>
           {link && <SectionLink link={link} />}

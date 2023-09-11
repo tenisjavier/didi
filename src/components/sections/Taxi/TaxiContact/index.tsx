@@ -23,6 +23,8 @@ const TaxiContact = ({ image }: TaxiRegisterProps) => {
     imageStyle: "z-10 m-4 w-100 rounded-full",
     reverse: true,
     descFooter: t("TaxiContact.descFooter", { returnObjects: true }),
+    btnMode: t("Taxi.btnMode"),
+    btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -23,6 +23,9 @@ const TaxiSafety = ({ image }: TaxiVFEProps) => {
     image: image,
     imageStyle: "z-10 m-4 w-100 rounded-full",
     reverse: false,
+    btnText: t("SafetyCTA.btnText"),
+    btnLink: t("SafetyCTA.btnLink"),
+    btnMode: t("SafetyCTA.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };

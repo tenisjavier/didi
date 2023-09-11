@@ -24,6 +24,8 @@ const TaxiRegister = ({ image }: TaxiRegisterProps) => {
     imageStyle: "z-10 m-4 w-100 rounded-full",
     reverse: true,
     descFooter: t("TaxiRegister.descFooter", { returnObjects: true }),
+    btnMode: t("Taxi.btnMode"),
+    btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };

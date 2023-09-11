@@ -22,6 +22,8 @@ const TaxiVFE = ({ image }: TaxiVFEProps) => {
     image: image,
     imageStyle: "z-10 m-4 w-100 rounded-full",
     reverse: false,
+    btnMode: t("Taxi.btnMode"),
+    btnType: "drv",
   };
   return <CTASection {...props}></CTASection>;
 };
