@@ -1,25 +1,28 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import { ImageDataType } from "../Image";
 
 interface TaxiHeroProps {
-  bgImage: {
-    title: string;
-    description: string;
-    gatsbyImageData: any;
-  };
+  bgImage: ImageDataType,
+  mobileBgImage?: ImageDataType
 }
 
-const TaxiHero = ({ bgImage }: TaxiHeroProps) => {
+const TaxiHero = ({ bgImage, mobileBgImage }: TaxiHeroProps) => {
+  const bgImageStyle = mobileBgImage
+    ? "hidden !absolute z-0 h-full w-full md:block brightness-50"
+    : "!absolute z-0 h-full w-full md:block ";
   const props: CTAProps = {
     hero: true,
     title: t("TaxiHero.title"),
     desc: t("TaxiHero.desc"),
     textColor: t("TaxiHero.textColor"),
-    bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full brightness-50 md:block",
     btnMode: t("TaxiHero.btnMode"),
     btnType: "drv",
+    bgImage,
+    mobileBgImage,
+    bgImageStyle,
+    mobileBgImageStyle: "!absolute z-0 h-full w-full md:!hidden brightness-50",
   };
   return <CTASection {...props}></CTASection>;
 };

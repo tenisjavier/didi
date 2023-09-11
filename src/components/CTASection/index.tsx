@@ -44,6 +44,7 @@ export interface CTAProps extends BtnProps {
   FoodSmsCTA?: string;
   RidesSmsCTA?: string;
   qr?: React.ReactNode;
+  descFooter?: string[] | JSX.Element[];
 }
 
 const CTASection = (props: CTAProps) => {
@@ -78,6 +79,7 @@ const CTASection = (props: CTAProps) => {
     smsFormTitle,
     descBeforeBullets = true,
     qr,
+    descFooter,
   } = props;
 
 
@@ -147,6 +149,13 @@ const CTASection = (props: CTAProps) => {
                 icon={icon}
               />
             )}
+            {descFooter && (
+              <div className="my-6">
+                {descFooter.map((str, index) => (
+                  <p key={index} className="p-0 m-0 my-1 text-start">{str}</p>
+                ))}
+              </div>
+            )}
           </div>
           {link && <SectionLink link={link} />}
           {list && <SectionList list={list} />}
@@ -180,6 +189,7 @@ const CTASection = (props: CTAProps) => {
       )}
 
       {bgVideo && bgVideo}
+
     </section>
   );
 };
