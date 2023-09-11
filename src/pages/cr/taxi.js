@@ -2,17 +2,14 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import TaxiHero from "../../components/sections/TaxiHero";
-import TaxiWhyDidi from "../../components/sections/TaxiWhyDiDi";
 import Requirements from "../../components/sections/Requirements";
 import HomeColumns from "../../components/sections/HomeColumns";
 import KnowMoreBanner from "../../components/sections/KnowMoreBanner";
-import useScreenSize  from "../../hooks/useScreenSize";
 import TaxiVFE from "../../components/sections/Taxi/TaxiVFE";
 import TaxiRegister from "../../components/sections/Taxi/TaxiRegister";
 import TaxiSafety from "../../components/sections/Taxi/TaxiSafety";
 import TaxiContact from "../../components/sections/Taxi/TaxiContact";
-import ContactColumns from "../../components/sections/ContactColumns";
-import ContactBenefits from "../../components/sections/ContactBenefits";
+
 const Taxi = ({ data }) => {
 
   const images = data.allContentfulAsset.nodes;
