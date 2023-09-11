@@ -14,12 +14,12 @@ import TaxiContact from "../../components/sections/Taxi/TaxiContact";
 import ContactColumns from "../../components/sections/ContactColumns";
 import ContactBenefits from "../../components/sections/ContactBenefits";
 const Taxi = ({ data }) => {
-  let bgImage = null;
+
   const images = data.allContentfulAsset.nodes;
   const taxiHeroBgImage = images.filter((image) => {
     return image.title === "cr.TaxiHero.bgImage";
   })[0];
-  bgImage = taxiHeroBgImage;
+
   const taxiHeroMobileBgImage = images.filter((image) => {
     return image.title === "cr.TaxiHeroMobile.bgImage";
   })[0];
@@ -27,18 +27,26 @@ const Taxi = ({ data }) => {
     return image.title === "cl.TaxiWhyDiDi.image";
   })[0];
 
-  const products = data.allContentfulProduct.nodes;
+  const drvCTAImage = images.filter((image) => {
+    return image.title === "cr.DrvCTA.image";
+  })[0]
 
-  if(useScreenSize() < 1280) {
-    bgImage = taxiHeroMobileBgImage;
-  }
+  const taxiGIImage = images.filter((image) => {
+    return image.title === "mx.TaxiGI.image";
+  })[0];
+
+  const safetyCTAImage = images.filter((image) => {
+    return image.title === "mx.SafetyCTA.image";
+  })[0];
+
+  const products = data.allContentfulProduct.nodes;
 
   return (
     <Layout>
-      <TaxiHero bgImage={bgImage}></TaxiHero>
-      <TaxiVFE image={taxiWhyDiDiImage}></TaxiVFE>
-      <TaxiRegister image={taxiWhyDiDiImage}></TaxiRegister>
-      <TaxiSafety image={taxiWhyDiDiImage}></TaxiSafety>
+      <TaxiHero bgImage={taxiHeroBgImage} mobileBgImage={taxiHeroMobileBgImage}></TaxiHero>
+      <TaxiVFE image={taxiGIImage}></TaxiVFE>
+      <TaxiRegister image={drvCTAImage}></TaxiRegister>
+      <TaxiSafety image={safetyCTAImage}></TaxiSafety>
       <TaxiContact image={taxiWhyDiDiImage}></TaxiContact>
       {/* <ContactColumns></ContactColumns>
       <ContactBenefits></ContactBenefits> */}
@@ -52,7 +60,14 @@ const Taxi = ({ data }) => {
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["cr.TaxiHero.bgImage", "cr.TaxiHeroMobile.bgImage", "cl.TaxiWhyDiDi.image"] } }
+      filter: { title: { in: [
+        "cr.TaxiHero.bgImage", 
+        "cr.TaxiHeroMobile.bgImage", 
+        "cl.TaxiWhyDiDi.image",
+        "cr.DrvCTA.image",
+        "mx.TaxiGI.image",
+        "mx.SafetyCTA.image",
+      ] } }
     ) {
       nodes {
         id
