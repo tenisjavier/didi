@@ -3,8 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner, { BannerProps } from "./Banner";
-import Image from "./Image";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import Image, { ImageDataType } from "./Image";
 
 function NextArrow(props: any) {
   const { onClick, arrow, arrowColor } = props;
@@ -36,12 +35,8 @@ function PrevArrow(props: any) {
 
 export interface CarouselProps {
   slides?: BannerProps[];
-  images?: {
-    title: string;
-    description: string;
-    gatsbyImageData: IGatsbyImageData;
-  }[];
-  carouselType: string;
+  images?: ImageDataType[];
+  carouselType: 'Banner' | 'Images';
   slidesToShow?: number;
   slidesToScroll?: number;
   arrowNext?: string;
@@ -65,7 +60,7 @@ const Carousel = (props: CarouselProps) => {
     });
   } else if (carouselType === "Images") {
     sliderContent = images?.map((img) => {
-      return <div className={`p-4 max-w-xs flex align-center justify-self-center`}><Image imageData={img} imageStyle="z-10 my-10 w-full"></Image></div>;
+      return <div className={`flex align-center justify-self-center`}><Image imageData={img} imageStyle="z-10 w-full"></Image></div>;
     });
   }
 
