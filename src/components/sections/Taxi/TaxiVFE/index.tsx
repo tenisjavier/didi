@@ -12,7 +12,6 @@ interface TaxiVFEProps {
 }
 
 const TaxiVFE = ({ image }: TaxiVFEProps) => {
-
   const props: CTAProps = {
     hero: false,
     title: t("TaxiVFE.title"),
@@ -20,7 +19,7 @@ const TaxiVFE = ({ image }: TaxiVFEProps) => {
     bullets: t("TaxiVFE.bullets", { returnObjects: true }),
     textColor: t("TaxiVFE.textColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-100 rounded-full",
+    imageStyle: "z-10 m-4 w-100",
     reverse: false,
     btnMode: t("Taxi.btnMode"),
     btnType: "drv",
