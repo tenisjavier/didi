@@ -4,13 +4,13 @@ import CTASection, { CTAProps } from "../CTASection";
 import { ImageDataType } from "../Image";
 
 interface TaxiHeroProps {
-  bgImage: ImageDataType,
-  mobileBgImage?: ImageDataType
+  bgImage: ImageDataType;
+  mobileBgImage?: ImageDataType;
 }
 
 const TaxiHero = ({ bgImage, mobileBgImage }: TaxiHeroProps) => {
   const bgImageStyle = mobileBgImage
-    ? "hidden !absolute z-0 h-full w-full md:block brightness-50"
+    ? "hidden !absolute z-0 h-full w-full md:block brightness-90"
     : "!absolute z-0 h-full w-full md:block ";
   const props: CTAProps = {
     hero: true,
@@ -22,7 +22,7 @@ const TaxiHero = ({ bgImage, mobileBgImage }: TaxiHeroProps) => {
     bgImage,
     mobileBgImage,
     bgImageStyle,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full md:!hidden brightness-50",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full md:!hidden brightness-90",
   };
   return <CTASection {...props}></CTASection>;
 };

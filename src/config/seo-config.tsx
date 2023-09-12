@@ -98,8 +98,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Beneficios para Conductores DiDiMás+. DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. ",
     },
     "/taxi/": {
-      title: "DiDi Taxi - Genera Ingresos Extra con DiDi",
-      desc: "DiDi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
+      title: "DiDi Taxi en Chile - Genera Ingresos Extra",
+      desc: "DiDi Taxi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
@@ -889,6 +889,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
       desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
+    },
+    "/taxi/": {
+      title: "DiDi Taxi en Costa Rica - Generá Ingresos Extra",
+      desc: "DiDi Taxi en Costa Rica, registrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
     "/food/": {
       title: "Pedí comida a través de DiDi Food",
