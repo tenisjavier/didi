@@ -53,7 +53,7 @@
   "TaxiHero.title": "DiDi Taxi disponible en Costa Rica",
   "TaxiHero.desc": "Generá ingresos extra conectándote con DiDi Taxi",
   "TaxiHero.textColor": "white",
-  "TaxiHero.btnMode": "primary",
+  "TaxiHero.btnMode": "light",
   "Taxi.btnMode": "primary",
   "TaxiWhyDiDi.title": "Recibe pedidos a través de la app o recoge a los pasajeros conectando el viaje con DiDi Taxi",
   "TaxiWhyDiDi.bullets": [
@@ -70,30 +70,9 @@
     "Contar con un equipo que está siempre listo para ayudarte 24/7",
     "Generar más ingresos con nuestras promociones diarias",
     "Conocer el destino de un viaje antes de aceptarlo",
-    "Acceder a soluciones automáticas dentro de la app",
-    "Recibir la transferencia de tus ganancias semanalmente",
-    "Hacer seguimiento de tus ganancias",
-    "Mantenerte informado a través de notificaciones y mensajes de la app"
+    "Recibir la transferencia de tus ganancias semanalmente"
   ],
   "TaxiVFE.textColor": "gray-primary",
-  "TaxiRegister.title": "Registro Taxi (Desplegable)",
-  "TaxiRegister.desc": "Requisitos para tu registro:",
-  "TaxiRegister.bullets": [
-    "1. Licencia de Conducir",
-    "2. Foto de perfil",
-    "3. Marchamo",
-    "4. Código de conductor",
-    "5. Foto de perfil"
-  ],
-  "TaxiRegister.descFooter": [
-    "Tu taxi debe ser modelo 2002 en adelante",
-    "Debés tener al menos 18 años de edad",
-    "Información importante:",
-    "Debés subir una foto clara de tu documento original sin cortar las esquinas del mismo",
-    "La revisión de tus documentos puede tomar de 24 a 48 horas",
-    "Solo te podés registrar en un producto, DiDi Taxi o DiDi Express"
-  ],
-  "TaxiRegister.textColor": "gray-primary",
   "TaxiSafety.title": "Contá con más de 20 funciones de seguridad:",
   "TaxiSafety.bullets": [
     "Zonas de Alerta",
