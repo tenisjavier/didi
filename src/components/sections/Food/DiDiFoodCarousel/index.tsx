@@ -13,7 +13,7 @@ const DiDiFoodCarousel = ({ images }: DiDiFoodCarouselProps) => {
     carouselType: "Images",
     slidesToShow: 4,
     isAutoPlay: true,
-    speedAutoPlay: 3000,
+    speedAutoPlay: 10000,
   };
 
   return <Carousel {...props}></Carousel>;
