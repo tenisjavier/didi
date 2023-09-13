@@ -15,7 +15,6 @@ const FoodBlog = ({ data }) => {
     <Layout>
       <FoodDeliveryHero bgImage={repartidoresHeroBgImage}></FoodDeliveryHero>
       <ArticlesColumns data={data}></ArticlesColumns>
-      <Pagination data={data} postsPerPage={20}></Pagination>
     </Layout>
   );
 };

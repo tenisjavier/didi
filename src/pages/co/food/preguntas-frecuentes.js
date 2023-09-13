@@ -3,10 +3,9 @@ import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import FaqFoodHero from "../../../components/sections/FaqFoodHero";
 import FoodFAQ from "../../../components/sections/FoodFAQ";
-import MoreQuestionsCTA from "../../../components/sections/MoreQuestionsCTA";
 import FaqList from "../../../components/sections/FaqList";
 
-const CentroDeAyuda = ({ data }) => {
+const FoodPreguntasFrecuentes = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
     return image.title === "mx.FaqFoodHero.bgImage";
@@ -21,7 +20,9 @@ const CentroDeAyuda = ({ data }) => {
     (node) => node.name === "DiDi Restaurant Tienda"
   );
 
-  let link = `/co/food/restaurantes/preguntas-frecuentes/`;
+  const link = `/co/food/restaurantes/preguntas-frecuentes/`;
+  const linkRepartidores = `/co/food/repartidores/preguntas-frecuentes/`
+
 
   return (
     <Layout schema="faq">
@@ -32,7 +33,7 @@ const CentroDeAyuda = ({ data }) => {
       <FaqList
         title={"Repartidores"}
         faqs={faqDelivery[0].faq}
-        link={link}
+        link={linkRepartidores}
         ></FaqList>
       <FaqList
         title={"Operaciones"}
@@ -89,4 +90,4 @@ export const query = graphql`
   }
 `;
 
-export default CentroDeAyuda;
+export default FoodPreguntasFrecuentes;

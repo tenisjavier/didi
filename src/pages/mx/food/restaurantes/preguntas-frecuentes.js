@@ -4,7 +4,7 @@ import Layout from "../../../../components/Layout";
 import FaqFoodHero from "../../../../components/sections/FaqFoodHero";
 import FoodFaqList from "../../../../components/sections/FoodFaqList";
 
-const CentroDeAyuda = ({ data }) => {
+const RestaurantePreguntasFrecuentes = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
     return image.title === "mx.FaqFoodHero.bgImage";
@@ -22,7 +22,11 @@ const CentroDeAyuda = ({ data }) => {
   return (
     <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
-      <FoodFaqList title="Repartidores" faqs={faqDelivery[0].faq}></FoodFaqList>
+      <FoodFaqList 
+        title="Repartidores" 
+        faqs={faqDelivery[0].faq}
+        urlPrefix="/mx/food/repartidores/preguntas-frecuentes/"
+      ></FoodFaqList>
       <FoodFaqList
         title="Operaciones"
         faqs={faqOperations[0].faq}
@@ -30,7 +34,7 @@ const CentroDeAyuda = ({ data }) => {
       <FoodFaqList
         title="Tu Tienda"
         faqs={faqStore[0].faq}
-        urlPrefix="/mx/food/restaurantes/"
+        urlPrefix="/mx/food/restaurantes/preguntas-frecuentes/"
       ></FoodFaqList>
     </Layout>
   );
@@ -72,4 +76,4 @@ export const query = graphql`
   }
 `;
 
-export default CentroDeAyuda;
+export default RestaurantePreguntasFrecuentes;
