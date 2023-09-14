@@ -6,6 +6,7 @@ import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
 import FoodAppDownloads from "../../../components/sections/FoodAppDownloads";
+import DiDiFoodCarousel from "../../../components/sections/Food/DiDiFoodCarousel";
 
 const Food = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -28,12 +29,17 @@ const Food = ({ data }) => {
     return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
   });
 
+  const DiDiFoodCarouselImages = images.filter((image) => {
+    return image.title === "mx.DiDiFoodCarousel.image";
+  })
+
   return (
     <Layout>
       <FoodHero
         bgImage={foodHeroBgImage}
         mobileBgImage={foodHeroMobileBgImage}
       ></FoodHero>
+      <DiDiFoodCarousel images={DiDiFoodCarouselImages.reverse()}></DiDiFoodCarousel>
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
@@ -53,7 +59,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodHeroMobile.bgImage)|(mx.FoodColumns.image)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(mx.FoodHero.bgImage)|(mx.FoodHeroMobile.bgImage)|(mx.FoodColumns.image)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.DiDiFoodCarousel.image)/"
         }
       }
       sort: { title: ASC }
