@@ -61,7 +61,14 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulFeature(filter: { country: { code: { eq: "mx" } } }) {
+    allContentfulFeature(
+      filter: { 
+        country: { code: { eq: "mx" } },
+        category: {
+          eq: "driver"
+        }
+      }
+      ) {
       nodes {
         name
         slug

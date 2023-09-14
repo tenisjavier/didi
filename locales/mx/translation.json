@@ -732,6 +732,7 @@
   ],
   "SafetyFeatures.linkItem": "/mx/seguridad/funciones/{{feature}}",
   "SafetyGridPaxBeforeTrip.title": "Antes del viaje",
+  "SafetyGridPaxBeforeTrip.urlBase": "/mx/seguridad/",
   "SafetyGridPaxBeforeTrip.columns": [
     {
       "title": "1. Verificación de Conductores",
@@ -739,7 +740,7 @@
       "width": "w-72"
     },
     {
-      "title": "2. Reconocimiento Facial",
+      "title": "2. Reconocimiento facial a conductores",
       "desc": "Para conectarse a su cuenta, los conductores realizan una prueba de Reconocimiento Facial para validar su identidad.",
       "width": "w-72"
     },
