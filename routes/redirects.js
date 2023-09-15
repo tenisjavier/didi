@@ -2,6 +2,146 @@
 // @return: null
 const redirectsInit = async (graphql, createRedirect) => {
   createRedirect({
+    fromPath: `/co/food/repartidores/club-repartidores/`,
+    toPath: `/co/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/repartidores/club-repartidores/`,
+    toPath: `/cr/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/repartidores/club-repartidores/`,
+    toPath: `/mx/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/repartidores/club-repartidores/`,
+    toPath: `/pe/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/repartidores/rendimiento/`,
+    toPath: `/co/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/repartidores/rendimiento/`,
+    toPath: `/cr/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/repartidores/rendimiento/`,
+    toPath: `/mx/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/repartidores/rendimiento/`,
+    toPath: `/pe/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/repartidores/ganancias/`,
+    toPath: `/co/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/repartidores/ganancias/`,
+    toPath: `/cr/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/repartidores/ganancias/`,
+    toPath: `/mx/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/repartidores/ganancias/`,
+    toPath: `/pe/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/repartidores/seguridad/`,
+    toPath: `/co/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/repartidores/seguridad/`,
+    toPath: `/cr/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/repartidores/seguridad/`,
+    toPath: `/mx/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/repartidores/seguridad/`,
+    toPath: `/pe/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/repartidores/registro/`,
+    toPath: `/co/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/repartidores/registro/`,
+    toPath: `/cr/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/repartidores/registro/`,
+    toPath: `/mx/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/repartidores/registro/`,
+    toPath: `/pe/food/repartidores/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/restaurantes/guias-educacionales/*`,
+    toPath: `/co/food/restaurantes/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/restaurantes/guias-educacionales/*`,
+    toPath: `/cr/food/restaurantes/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/restaurantes/guias-educacionales/*`,
+    toPath: `/pe/food/restaurantes/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/restaurantes/guias-educacionales/*`,
+    toPath: `/mx/food/restaurantes/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/repartidores/guias-educacionales/*`,
+    toPath: `/co/food/repartidores/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/repartidores/guias-educacionales/*`,
+    toPath: `/cr/food/repartidores/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/food/repartidores/guias-educacionales/*`,
+    toPath: `/pe/food/repartidores/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/repartidores/guias-educacionales/*`,
+    toPath: `/mx/food/repartidores/preguntas-frecuentes/*`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/ru/`,
     toPath: `/`,
     isPermanent: true,

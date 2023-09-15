@@ -74,7 +74,7 @@ const footerLinks: AllFooterInterface = {
     { text: "DiDi Driver", link: "/au/driver/" },
     { text: "DiDi Rider", link: "/au/rider/" },
     { text: "Blog", link: "/au/blog/" },
-    { text: "Offers", link: "/au/offers/" },
+    // { text: "Offers", link: "/au/offers/" },
     { text: "Careers", link: "https://careers.didiglobal.com/" },
     { text: "Legal", link: "/au/legal/" },
     { text: "Contact", link: "/au/contact/" },
