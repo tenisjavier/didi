@@ -2270,79 +2270,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output: "/ru/",
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page) => {
-            return (
-              page.path.includes(`/ru/`) &&
-              !page.path.includes(`/ru/newsroom/`) &&
-              !page.path.includes(`/ru/legal/`)
-            );
-          });
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output: "/ru/newsroom/",
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page) =>
-            page.path.includes(`/ru/newsroom/`)
-          );
-          return [...pages];
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output: "/ru/legal/",
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          console.log(allPages);
-          const pages = allPages.filter((page) =>
-            page.path.includes(`/ru/legal/`)
-          );
-          return [...pages];
-        },
-      },
-    },
+
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
@@ -2371,8 +2299,7 @@ module.exports = {
               !page.path.includes(`/mx/`) &&
               !page.path.includes(`/nz/`) &&
               !page.path.includes(`/pa/`) &&
-              !page.path.includes(`/pe/`) &&
-              !page.path.includes(`/ru/`)
+              !page.path.includes(`/pe/`)
             );
           });
 
@@ -2389,7 +2316,6 @@ module.exports = {
           pages.push({ path: siteUrl + "/nz/sitemap-0" });
           pages.push({ path: siteUrl + "/pa/sitemap-0" });
           pages.push({ path: siteUrl + "/pe/sitemap-0" });
-          pages.push({ path: siteUrl + "/ru/sitemap-0" });
 
           return [...pages];
         },

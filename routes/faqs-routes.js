@@ -36,7 +36,6 @@ const faqsRoutesInit = async (graphql, createPage) => {
   result.data.allContentfulFaq.nodes.forEach((node) => {
     const { id, slug, country, isEducationalGuide, product, type } = node;
     if (!country && !slug) return;
-    if (country.code === "ru") return;
     const sslCountries = ["cl", "pe", "ar", "co", "ec", "do", "cr", "pa", "mx"];
     let path = `/${country.code}/help-center/${slug}`;
     if (sslCountries.includes(country.code))

@@ -15,7 +15,6 @@ const Footer = () => {
           arabicName
           englishName
           spanishName
-          russianName
           chineseName
           hostname
         }
@@ -58,13 +57,11 @@ const Footer = () => {
                       key={index}
                       className="text-sm text-yellow-500 hover:text-yellow-300"
                     >
-                      {countryCode === "ru" ? c.russianName : null}
                       {countryCode === "eg" ? c.arabicName : null}
                       {sslCountries.includes(countryCode)
                         ? c.spanishName
                         : null}
                       {countryCode !== "eg" &&
-                      countryCode !== "ru" &&
                       !sslCountries.includes(countryCode)
                         ? c.englishName
                         : null}
@@ -79,13 +76,11 @@ const Footer = () => {
                         href={c.hostname}
                         className="text-sm text-yellow-500 hover:text-yellow-300"
                       >
-                        {countryCode === "ru" ? c.russianName : null}
                         {countryCode === "eg" ? c.arabicName : null}
                         {sslCountries.includes(countryCode)
                           ? c.spanishName
                           : null}
                         {countryCode !== "eg" &&
-                        countryCode !== "ru" &&
                         !sslCountries.includes(countryCode)
                           ? c.englishName
                           : null}
@@ -113,15 +108,8 @@ const Footer = () => {
                     width={200}
                   ></StaticImage>
                 )}
-                {countryCode === "ru" && (
-                  <StaticImage
-                    alt="Logo Stores"
-                    src="../images/android-ios-russian.png"
-                    width={200}
-                  ></StaticImage>
-                )}
-                {countryCode !== "ru" &&
-                  countryCode !== "eg" &&
+
+                {countryCode !== "eg" &&
                   !sslCountries.includes(countryCode) && (
                     <StaticImage
                       alt="Logo Stores"

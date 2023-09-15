@@ -42,7 +42,6 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     "cr",
     "mx",
     "eg",
-    "ru",
     "nz",
     "au",
     "es",

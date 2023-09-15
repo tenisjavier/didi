@@ -26,9 +26,6 @@ const ProductsTemplate = ({ data }) => {
 
   let homeColumns = <HomeColumns images={homeColumnsImages}></HomeColumns>;
 
-  if(pathname.includes("/ru/")) {
-    homeColumns = <HomeAltColumns></HomeAltColumns>;
-  }
   return (
     <Layout>
       <ProductHero
