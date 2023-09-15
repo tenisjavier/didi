@@ -333,10 +333,6 @@ const menuLinks: AllMenuInterface = {
           text: "Peru",
           url: "/thejourney/peru/",
         },
-        {
-          text: "Russia",
-          url: "/thejourney/russia/",
-        },
       ],
     },
   ],

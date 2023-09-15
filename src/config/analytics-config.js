@@ -203,7 +203,6 @@ const insertBtnParams = () => {
       do: ["DO", "es-DO"],
       cr: ["CR", "es-CR"],
       pa: ["PA", "es-PA"],
-      ru: ["RU", "ru-RU"],
       kz: ["KZ", "kk-KZ"],
       au: ["AU", "en-AU"],
       nz: ["NZ", "en-NZ"],

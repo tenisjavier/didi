@@ -25,7 +25,6 @@ const SEO = ({ title, desc, index, schema }) => {
               "eg"
               "nz"
               "mx"
-              "ru"
             ]
           }
         }
@@ -57,15 +56,10 @@ const SEO = ({ title, desc, index, schema }) => {
   const meta = getMetaByPath(countryCode, cleanPath);
   if (!title) {
     title = meta.title;
-    if (countryCode === "ru") {
-      title = decodeURI(meta.title);
-    }
   }
   if (!desc) {
     desc = meta.desc;
   }
-
-  if (pathname.includes("/ru/")) countryName = "Россия";
 
   if (pathname.includes("/food/")) {
     title = title + " | DiDi Food " + (countryName || "Global");
@@ -123,7 +117,7 @@ const SEO = ({ title, desc, index, schema }) => {
         );
       case `/${countryCode}/conductor/`:
       case `/${countryCode}/driver/`:
-        if (["au", "eg", "nz", "ru"].includes(c.code)) {
+        if (["au", "eg", "nz"].includes(c.code)) {
           return (
             <link
               key={index}
@@ -143,7 +137,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/conductor/requisitos-para-conducir/`:
-        if (["au", "eg", "nz", "ru"].includes(c.code)) {
+        if (["au", "eg", "nz"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -159,7 +153,7 @@ const SEO = ({ title, desc, index, schema }) => {
         }
       case `/${countryCode}/pasajero/`:
       case `/${countryCode}/rider/`:
-        if (["au", "eg", "nz", "ru"].includes(c.code)) {
+        if (["au", "eg", "nz"].includes(c.code)) {
           return (
             <link
               key={index}
@@ -189,8 +183,6 @@ const SEO = ({ title, desc, index, schema }) => {
               hreflang={`${c.languageCode}-${c.code}`}
             />
           );
-        } else if (["ru"].includes(c.code)) {
-          return null;
         } else {
           return (
             <link
@@ -202,7 +194,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/food/`:
-        if (["au", "eg", "nz", "ru", "ar", "ec", "pa"].includes(c.code)) {
+        if (["au", "eg", "nz", "ar", "ec", "pa"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -215,7 +207,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/food/repartidores/`:
-        if (["au", "eg", "nz", "ru", "ar", "ec", "pa"].includes(c.code)) {
+        if (["au", "eg", "nz", "ar", "ec", "pa"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -228,7 +220,7 @@ const SEO = ({ title, desc, index, schema }) => {
           );
         }
       case `/${countryCode}/food/restaurantes/`:
-        if (["au", "eg", "nz", "ru", "ar", "ec", "pa"].includes(c.code)) {
+        if (["au", "eg", "nz", "ar", "ec", "pa"].includes(c.code)) {
           return null;
         } else {
           return (
@@ -258,7 +250,7 @@ const SEO = ({ title, desc, index, schema }) => {
             data-domain-script="f9f9aeb2-1532-4a70-bafe-28fce845d41c"
           ></script>
         )}
-        {/* {!["nz", "au", "ru", "eg"].includes(country.code) && (
+        {/* {!["nz", "au", "eg"].includes(country.code) && (
           <script
             src="../../hotjar.js"
             type="text/javascript"
