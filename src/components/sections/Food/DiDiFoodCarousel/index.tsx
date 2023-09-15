@@ -11,11 +11,12 @@ const DiDiFoodCarousel = ({ images }: DiDiFoodCarouselProps) => {
     slides: [],
     images,
     carouselType: "Images",
-    slidesToShow: 4,
+    slidesToShow: 5,
     isAutoPlay: true,
     speedAutoPlay: 10000,
-    imageContainerStyle: "w-32",
-    imageStyle: "w-32",
+    imageContainerStyle: "",
+    imageStyle: "",
+    slidesToShowMobile: 2,
   };
 
   return <Carousel {...props}></Carousel>;

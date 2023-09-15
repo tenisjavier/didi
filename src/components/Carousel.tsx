@@ -36,6 +36,7 @@ export interface CarouselProps {
   imagesMobile?: ImageDataType[];
   carouselType: "Banner" | "Images";
   slidesToShow?: number;
+  slidesToShowMobile?: number;
   slidesToScroll?: number;
   arrowNext?: string;
   arrowPrev?: string;
@@ -53,6 +54,7 @@ const Carousel = (props: CarouselProps) => {
     slides,
     carouselType,
     slidesToShow,
+    slidesToShowMobile = 1,
     slidesToScroll,
     images,
     imagesMobile,
@@ -68,7 +70,6 @@ const Carousel = (props: CarouselProps) => {
   const toShow = slidesToShow ? slidesToShow : 1;
   const toScroll = slidesToScroll ? slidesToShow : 1;
   const breakpoint = 1079;
-
   const isMobile = imagesMobile && imagesMobile.length > 0 && screenSize <= breakpoint
 
   let sliderContent;
@@ -85,8 +86,8 @@ const Carousel = (props: CarouselProps) => {
     const imagesData = isMobile ? imagesMobile : images
     sliderContent = imagesData?.map((img) => {
       return (
-        <div className={`${imageContainerStyle} flex align-center justify-self-center`}>
-          <Image imageData={img} imageStyle={`${imageStyle} z-10 object-fit`}></Image>
+        <div className={`${imageContainerStyle} flex align-center justify-self-center w-full`}>
+          <Image imageData={img} imageStyle={`${imageStyle} z-10 object-fit w-full`}></Image>
         </div>
       );
     });
@@ -110,7 +111,7 @@ const Carousel = (props: CarouselProps) => {
       {
         breakpoint,
         settings: {
-          slidesToShow: isMobile ? toShow : 1,
+          slidesToShow: slidesToShowMobile,
           slidesToScroll: 1,
         },
       },

@@ -28,6 +28,7 @@ const DiDiPayAutoCarousel = ({ images, imagesMobile }: DiDiPayAutoCarouselProps)
     isAutoPlay: true,
     speedAutoPlay: 10000,
     imagesMobile: customSlidesMobile,
+    slidesToShowMobile: 2,
   };
 
   return <Carousel {...props}></Carousel>;
