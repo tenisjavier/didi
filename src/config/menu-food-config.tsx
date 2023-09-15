@@ -59,8 +59,8 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Guías",
-          url: "/mx/food/repartidores/guias/",
+          text: "Regístrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
           text: "Repartidores FAQ",
@@ -129,8 +129,8 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Guías",
-          url: "/cr/food/repartidores/guias/",
+          text: "Registrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
           text: "Repartidores FAQ",
@@ -146,8 +146,8 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Preguntas Frecuentes",
           url: "/cr/food/preguntas-frecuentes/",
-        }
-      ]
+        },
+      ],
     },
     {
       text: "Contacto",
@@ -198,8 +198,8 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Guías",
-          url: "/co/food/repartidores/guias/",
+          text: "Registrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
           text: "Repartidores FAQ",
@@ -215,8 +215,8 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Preguntas Frecuentes",
           url: "/co/food/preguntas-frecuentes/",
-        }
-      ]
+        },
+      ],
     },
     {
       text: "Contacto",
@@ -247,24 +247,12 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Club Repartidores",
-          url: "/pe/food/repartidores/club-repartidores/",
+          text: "Regístrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
-          text: "Ganancias",
-          url: "/pe/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/pe/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/pe/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/pe/food/repartidores/seguridad/",
+          text: "Repartidores FAQ",
+          url: "/pe/food/repartidores/preguntas-frecuentes/",
         },
       ],
     },
@@ -276,8 +264,8 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Preguntas Frecuentes",
           url: "/pe/food/preguntas-frecuentes/",
-        }
-      ]
+        },
+      ],
     },
     {
       text: "Contacto",
