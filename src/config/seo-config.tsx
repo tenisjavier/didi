@@ -219,6 +219,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
+    "/food/repartidores/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes para Repartidores de DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
     "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
@@ -247,10 +251,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/food/restaurantes/impuestos/": {
       title: "Restaurantes - Impuestos",
       desc: "Restaurantes - Impuestos. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
-    },
-    "/food/restaurantes/guias-educacionales/": {
-      title: "Restaurantes - Guías Educacionales",
-      desc: "Restaurantes - Guías Educacionales. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/food/restaurantes/promociones-y-campanas/": {
       title: "Restaurantes - Promociones y Campañas",
@@ -642,6 +642,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
+    "/food/repartidores/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes para Repartidores de DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
     "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
@@ -864,6 +868,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Inscribite como Repartidor y Ganá Dinero en DiDi Food",
       desc: "Como repartidor controlás tus tiempos. Generá ingresos de una manera confiable. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
+    "/food/repartidores/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes para Repartidores de DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
     "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pedí comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
@@ -1017,9 +1025,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-        title: placeTitle,
-        desc: `${placeTitle}`,
-      }
+      title: placeTitle,
+      desc: `${placeTitle}`,
+    }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;

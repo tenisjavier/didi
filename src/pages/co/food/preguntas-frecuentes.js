@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../../components/Layout";
-import FaqFoodHero from "../../../../components/sections/FaqFoodHero";
-import FoodFaqList from "../../../../components/sections/FoodFaqList";
+import Layout from "../../../components/Layout";
+import FaqFoodHero from "../../../components/sections/FaqFoodHero";
+import FoodFAQ from "../../../components/sections/FoodFAQ";
+import FaqList from "../../../components/sections/FaqList";
 
-const RestaurantePreguntasFrecuentes = ({ data }) => {
+const FoodPreguntasFrecuentes = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const helpCenterBgImage = images.filter((image) => {
     return image.title === "mx.FaqFoodHero.bgImage";
@@ -19,23 +20,32 @@ const RestaurantePreguntasFrecuentes = ({ data }) => {
     (node) => node.name === "DiDi Restaurant Tienda"
   );
 
+  const link = `/co/food/restaurantes/preguntas-frecuentes/`;
+  const linkRepartidores = `/co/food/repartidores/preguntas-frecuentes/`
+
+
   return (
     <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
-      <FoodFaqList 
-        title="Repartidores" 
+      <FoodFAQ title="Repartidores" desc=" " data={faqDelivery[0]}></FoodFAQ>
+      <FoodFAQ title="Operaciones" desc=" " data={faqOperations[0]}></FoodFAQ>
+      <FoodFAQ title="Tu Tienda" desc=" " data={faqStore[0]}></FoodFAQ>
+      <FaqList
+        title={"Repartidores"}
         faqs={faqDelivery[0].faq}
-        urlPrefix="/mx/food/repartidores/preguntas-frecuentes/"
-      ></FoodFaqList>
-      <FoodFaqList
-        title="Operaciones"
+        link={linkRepartidores}
+        ></FaqList>
+      <FaqList
+        title={"Operaciones"}
         faqs={faqOperations[0].faq}
-      ></FoodFaqList>
-      <FoodFaqList
-        title="Tu Tienda"
+        link={link}
+        ></FaqList>
+      <FaqList
+        title={"Tu Tienda"}
         faqs={faqStore[0].faq}
-        urlPrefix="/mx/food/restaurantes/preguntas-frecuentes/"
-      ></FoodFaqList>
+        link={link}
+        ></FaqList>
+      {/* <MoreQuestionsCTA></MoreQuestionsCTA> */}
     </Layout>
   );
 };
@@ -50,8 +60,12 @@ export const query = graphql`
         gatsbyImageData
       }
     }
+
     allContentfulProduct(
-      filter: { country: { elemMatch: { code: { eq: "mx" } } } }
+      filter: {
+        country: { elemMatch: { code: { eq: "co" } } }
+        category: { eq: "food" }
+      }
     ) {
       nodes {
         name
@@ -76,4 +90,4 @@ export const query = graphql`
   }
 `;
 
-export default RestaurantePreguntasFrecuentes;
+export default FoodPreguntasFrecuentes;

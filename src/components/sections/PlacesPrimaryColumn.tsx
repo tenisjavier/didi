@@ -3,8 +3,9 @@ import React from "react";
 import { Link } from "gatsby";
 import { useCountry } from "../../context/countryContext";
 import Image from "../Image"
-import slugify from "react-slugify";
+
 import ColumnsSection from "../ColumnSection";
+import { customSlugify } from "../../util/customSlugify";
 
 interface PrimaryColumnsProps {
   data: {
@@ -28,9 +29,9 @@ const PlacesPrimaryColumn = ({ data }: PrimaryColumnsProps) => {
   const textColor = "white";
   type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
   let columns = data.map((item) => {
-    const link = `/${countryCode}/lugares/como-llegar-a-${slugify(
+    const link = `/${countryCode}/lugares/como-llegar-a-${customSlugify(
       item.name
-    )}_${slugify(item.address)}`;
+    )}_${customSlugify(item.address)}`;
     return {
       title: (<Link to={link}>{item.name}</Link>),
       desc: item.address,
