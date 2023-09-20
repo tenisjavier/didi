@@ -32,11 +32,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/restaurantes/impuestos/",
         },
         {
-          text: "Guías",
-          url: "/mx/food/restaurantes/guias-educacionales",
-        },
-        {
-          text: "DiDi Food FAQ",
+          text: "Restaurantes FAQ",
           url: "/mx/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -46,10 +42,6 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Promociones y Campañas",
           url: "/mx/food/restaurantes/promociones-y-campanas/",
-        },
-        {
-          text: "Descarga",
-          url: "/mx/food/restaurantes/descarga/",
         },
       ],
     },
@@ -106,7 +98,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/cr/food/restaurantes/",
         },
         {
-          text: "DiDi Food FAQ",
+          text: "Restaurantes FAQ",
           url: "/cr/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -116,10 +108,6 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Promociones y Campañas",
           url: "/cr/food/restaurantes/promociones-y-campanas/",
-        },
-        {
-          text: "Descarga",
-          url: "/cr/food/restaurantes/descarga/",
         },
       ],
     },
@@ -171,11 +159,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "https://www.didi-food.com/es-CO/store",
         },
         {
-          text: "Guías",
-          url: "/co/food/restaurantes/",
-        },
-        {
-          text: "DiDi Food FAQs",
+          text: "Restaurantes FAQ",
           url: "/co/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -185,10 +169,6 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Promociones y Campañas",
           url: "/co/food/restaurantes/promociones-y-campanas/",
-        },
-        {
-          text: "Descarga",
-          url: "/co/food/restaurantes/descarga/",
         },
       ],
     },
