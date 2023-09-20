@@ -159,7 +159,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Paga tus recibos de luz, agua y más",
       desc: "Paga tus recibos de luz, agua y más. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
-    "/didipay/tarjeta-de-regalo/": {
+    "/didipay/tarjetas-de-regalo/": {
       title: "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay",
       desc: "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
@@ -1025,9 +1025,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-      title: placeTitle,
-      desc: `${placeTitle}`,
-    }
+        title: placeTitle,
+        desc: `${placeTitle}`,
+      }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;

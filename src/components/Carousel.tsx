@@ -72,8 +72,8 @@ const Carousel = (props: CarouselProps) => {
   } else if (carouselType === "Images") {
     sliderContent = images?.map((img) => {
       return (
-        <div className={`flex align-center justify-self-center h-32`}>
-          <Image imageData={img} imageStyle="z-10 h-32 object-fit"></Image>
+        <div className={`flex align-center justify-self-center `}>
+          <Image imageData={img} imageStyle="z-10 object-fit"></Image>
         </div>
       );
     });
