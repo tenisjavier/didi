@@ -18,12 +18,12 @@ export interface SliderProps {
       title: string;
       description: string;
       gatsbyImageData: any;
-    },
+    };
     imageForPax: {
       title: string;
       description: string;
       gatsbyImageData: any;
-    }
+    };
   }[];
 }
 
@@ -80,15 +80,17 @@ const SliderSection = ({ title, items }: SliderProps) => {
           </div>
           {items.map((data, idx) => {
             let image = data.image;
-            if (data.imageForPax)
-              image = data.imageForPax;
+            if (data.imageForPax) image = data.imageForPax;
             return (
               <div
                 key={idx}
                 className="absolute left-10 top-4 flex h-full w-4/5 flex-col items-center justify-start lg:left-24 lg:flex-row lg:justify-center"
               >
                 <div className={idx === index ? showclass : hidclass}>
-                  <Image imageData={image} imageStyle={"w-52 lg:w-64  2xl:w-80"}></Image>
+                  <Image
+                    imageData={image}
+                    imageStyle={"w-52 lg:w-64  2xl:w-80"}
+                  ></Image>
                 </div>
                 <div className={idx === index ? textShow : textHide}>
                   <h3 className="mt-0 text-center  text-3xl font-bold">
