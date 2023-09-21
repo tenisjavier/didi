@@ -98,10 +98,6 @@ const menuLinks: AllMenuInterface = {
           text: "Perú",
           url: "/pe/",
         },
-        {
-          text: "Rusia",
-          url: "/ru/",
-        },
       ],
     },
   ],
@@ -184,10 +180,6 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Peru",
           url: "/pe/",
-        },
-        {
-          text: "Russia",
-          url: "/ru/",
         },
       ],
     },
@@ -1235,43 +1227,6 @@ const menuLinks: AllMenuInterface = {
       ],
     },
   ],
-  ru: [
-    {
-      text: "Водителям",
-      url: "/ru/driver/",
-      icon: "menu-drv",
-      dropMenu: [
-        {
-          text: "Водителям таксопарков",
-          url: "/ru/taxi",
-        },
-        {
-          text: "Водителям-партнерам в статусе ИП",
-          url: "/ru/driver-partner",
-        },
-      ],
-    },
-    {
-      text: "Пассажирам",
-      url: "/ru/rider/",
-      icon: "menu-pax",
-    },
-    {
-      text: "Владельцам таксопарков",
-      url: "/ru/fleet/",
-      icon: "menu-pax",
-    },
-    {
-      text: "Безопасность",
-      url: "/ru/safety/",
-      icon: "menu-about",
-    },
-    {
-      text: "О нас",
-      url: "/ru/about-didi/",
-      icon: "menu-help",
-    },
-  ],
 };
 
 const getMenuLinks = (countryCode: string) => {
@@ -1325,6 +1280,5 @@ export const menuFlagsCountry = [
     text: "PE",
     url: "/pe/",
     icon: "/flagsCountry/pe.png",
-  }
-]
-
+  },
+];

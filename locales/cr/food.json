@@ -617,7 +617,7 @@
   "FoodFaqHero.textColor": "white",
   "FaqFoodHero.textColor": "white",
   "FoodFaqHero.btnMode": "primary",
-  "FoodEducationalGuidesList.linkItem": "/cr/food/restaurantes/guias-educacionales/{{faqSlug}}",
+  "FoodEducationalGuidesList.linkItem": "/cr/food/restaurantes/preguntas-frecuentes/{{faqSlug}}",
   "FoodEducationalGuidesList.desc": "",
   "EducationalGuideFoodHero.title": "Guías Educacionales",
   "EducationalGuideFoodHero.desc": "Conoce todo acerca de tu app",

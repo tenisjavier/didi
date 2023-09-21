@@ -89,38 +89,6 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
               default:
                 itemPath = dir;
             }
-          } else if (countryCode == "ru") {
-            switch (decodeURI(dir)) {
-              case "about-didi":
-                itemPath = "О нас";
-                break;
-              case "rider":
-                itemPath = "Пассажир";
-                break;
-              case "driver":
-                itemPath = "Водитель";
-                break;
-              case "driver-partner":
-                itemPath = "Водитель-партнер";
-                break;
-              case "safety":
-                itemPath = "Безопасность";
-                break;
-              case "taxi":
-                itemPath = "Водитель таксопарка";
-                break;
-              case "fleet":
-                itemPath = "Владельцам таксопарков";
-                break;
-              case "legal":
-                itemPath = "Юридическая информация";
-                break;
-              case "newsroom":
-                itemPath = "Раздел новостей";
-                break;
-              default:
-                itemPath = decodeURI(dir);
-            }
           }
 
           if (index === 0) {

@@ -20,14 +20,13 @@ const FaqList = ({ title, faqs, city, link }: ListProps) => {
     textColor: t("FaqList.textColor"),
   };
 
-  
+
 
   if (faqs) {
     props.items = faqs.map((faq) => {
-      console.log(link);
       let linkFaq;
-      if(link) {
-        if(link === "") {
+      if (link) {
+        if (link === "") {
           linkFaq = t("FaqList.linkItem", {
             faqSlug: faq.slug,
           });
@@ -45,7 +44,7 @@ const FaqList = ({ title, faqs, city, link }: ListProps) => {
         link: linkFaq
       };
     });
-  }  
+  }
 
   return <ListSection {...props}></ListSection>;
 };

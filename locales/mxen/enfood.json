@@ -221,7 +221,7 @@
   "FoodFaqHero.textColor": "white",
   "FaqFoodHero.textColor": "white",
   "FoodFaqHero.btnMode": "primary",
-  "FoodEducationalGuidesList.linkItem": "/mx/food/restaurantes/guias-educacionales/{{faqSlug}}",
+  "FoodEducationalGuidesList.linkItem": "/mx/food/restaurantes/{{faqSlug}}",
   "FoodEducationalGuidesList.desc": "",
   "EducationalGuideFoodHero.title": "Guías Educacionales",
   "EducationalGuideFoodHero.desc": "Conoce todo acerca de tu app",
@@ -539,7 +539,7 @@
       "desc": "Tenemos los mejores consejos para que aumentes la visibilidad de tu restaurante e incrementes con ello tus ventas.",
       "textColor": "gray-primary",
       "btnText": "Descarga material para redes sociales",
-      "btnLink": "/mx/food/restaurantes/guias-educacionales/",
+      "btnLink": "/mx/food/restaurantes/",
       "btnMode": "light"
     }
   ],

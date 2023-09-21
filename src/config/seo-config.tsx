@@ -34,48 +34,6 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "DiDi Global is the world's leading mobile transportation platform offering a full range of app-based services to users around the world.",
     },
   },
-  ru: {
-    "/": {
-      title: "Переходи на DiDi",
-      desc: "DiDi Россия — ведущая в мире мобильная транспортная платформа, предлагающая пользователям по всему миру полный спектр услуг на основе приложений.",
-    },
-    "/rider/": {
-      title: "Поездки с DiDi ",
-      desc: "Совершайте поездки с DiDi, международной технологической платформой, которая предоставляет сервис сотням миллионов пассажиров благодаря передовым технологиям и инновациям.",
-    },
-    "/driver/": {
-      title: "Водителям",
-      desc: "DiDi прибывает в Россию, становится водителем-партнером Didi и ездит с самой низкой комиссией с транспортным приложением номер 1 в мире",
-    },
-    "/driver-partner/": {
-      title: "Водителям-партнерам",
-      desc: "DiDi прибывает в Россию, становится водителем-партнером Didi и ездит с самой низкой комиссией с транспортным приложением номер 1 в мире",
-    },
-    "/taxi/": {
-      title: "Водителям таксопарков",
-      desc: "DiDi Global — ведущая в мире мобильная транспортная платформа, предлагающая пользователям по всему миру полный спектр услуг на основе приложений.",
-    },
-    "/safety/": {
-      title: "Безопасность",
-      desc: "DiDi Global — ведущая в мире мобильная транспортная платформа, предлагающая пользователям по всему миру полный спектр услуг на основе приложений.",
-    },
-    "/fleet/": {
-      title: "DiDi для таксопарков",
-      desc: "DiDi Global — ведущая в мире мобильная транспортная платформа, предлагающая пользователям по всему миру полный спектр услуг на основе приложений.",
-    },
-    "/about-didi/": {
-      title: "О нас",
-      desc: "Мы — DiDi, глобальная технологическая платформа.",
-    },
-    "/newsroom/": {
-      title: "Новости",
-      desc: "Раздел новостей о DiDi в России. Узнайте обо всех новостях в этом разделе.",
-    },
-    "/legal/": {
-      title: "Юридическая информация",
-      desc: "Это наш раздел наших условий и положений, созданных юридической сферой DiDi.",
-    },
-  },
   cl: {
     "/": {
       title: "Regístrate como Socio Conductor DiDi",
@@ -201,7 +159,7 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Paga tus recibos de luz, agua y más",
       desc: "Paga tus recibos de luz, agua y más. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
-    "/didipay/tarjeta-de-regalo/": {
+    "/didipay/tarjetas-de-regalo/": {
       title: "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay",
       desc: "Compra tarjetas de regalo de tus marcas favoritas con DiDi Pay. DiDi Pay te permite hacer recargas telefónicas, comprar tarjetas de regalo y pagar diversos servicios, como el agua, la luz, planes de telefonía y muchos más, todo desde la comodidad de tu app DiDi.",
     },
@@ -261,6 +219,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
+    "/food/repartidores/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes para Repartidores de DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
     "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
@@ -289,10 +251,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/food/restaurantes/impuestos/": {
       title: "Restaurantes - Impuestos",
       desc: "Restaurantes - Impuestos. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
-    },
-    "/food/restaurantes/guias-educacionales/": {
-      title: "Restaurantes - Guías Educacionales",
-      desc: "Restaurantes - Guías Educacionales. Lee y conoce lugares ricos para ir a comer. Consejos de cocina y más con DiDi Food Blog.",
     },
     "/food/restaurantes/promociones-y-campanas/": {
       title: "Restaurantes - Promociones y Campañas",
@@ -684,6 +642,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
       desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
+    "/food/repartidores/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes para Repartidores de DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+    },
     "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
@@ -905,6 +867,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/food/repartidores/": {
       title: "Inscribite como Repartidor y Ganá Dinero en DiDi Food",
       desc: "Como repartidor controlás tus tiempos. Generá ingresos de una manera confiable. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
+    },
+    "/food/repartidores/preguntas-frecuentes/": {
+      title: "Preguntas Frecuentes para Repartidores de DiDi Food",
+      desc: "Como repartidor controlas tus tiempos. Genera ingresos de una manera confiable. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/acerca-didi-food/": {
       title: "La App de Comida Más Confiable",

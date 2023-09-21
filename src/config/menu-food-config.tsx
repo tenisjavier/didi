@@ -32,11 +32,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/restaurantes/impuestos/",
         },
         {
-          text: "Guías",
-          url: "/mx/food/restaurantes/guias-educacionales/",
-        },
-        {
-          text: "DiDi Food FAQ",
+          text: "Restaurantes FAQ",
           url: "/mx/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -47,10 +43,6 @@ const menuLinksFood: AllMenuInterface = {
           text: "Promociones y Campañas",
           url: "/mx/food/restaurantes/promociones-y-campanas/",
         },
-        {
-          text: "Descarga",
-          url: "/mx/food/restaurantes/descarga/",
-        },
       ],
     },
     {
@@ -59,28 +51,12 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Club Repartidores",
-          url: "/mx/food/repartidores/club-repartidores/",
+          text: "Regístrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
-          text: "Ganancias",
-          url: "/mx/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/mx/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/mx/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/mx/food/repartidores/seguridad/",
-        },
-        {
-          text: "Guías",
-          url: "/mx/food/repartidores/guias/",
+          text: "Repartidores FAQ",
+          url: "/mx/food/repartidores/preguntas-frecuentes/",
         },
       ],
     },
@@ -119,10 +95,10 @@ const menuLinksFood: AllMenuInterface = {
         },
         {
           text: "Guías",
-          url: "/cr/food/restaurantes/guias-educacionales/",
+          url: "/cr/food/restaurantes/",
         },
         {
-          text: "DiDi Food FAQ",
+          text: "Restaurantes FAQ",
           url: "/cr/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -133,10 +109,6 @@ const menuLinksFood: AllMenuInterface = {
           text: "Promociones y Campañas",
           url: "/cr/food/restaurantes/promociones-y-campanas/",
         },
-        {
-          text: "Descarga",
-          url: "/cr/food/restaurantes/descarga/",
-        },
       ],
     },
     {
@@ -145,28 +117,12 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Club Repartidores",
-          url: "/cr/food/repartidores/club-repartidores/",
+          text: "Registrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
-          text: "Ganancias",
-          url: "/cr/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/cr/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/cr/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/cr/food/repartidores/seguridad/",
-        },
-        {
-          text: "Guías",
-          url: "/cr/food/repartidores/guias/",
+          text: "Repartidores FAQ",
+          url: "/cr/food/repartidores/preguntas-frecuentes/",
         },
       ],
     },
@@ -174,6 +130,12 @@ const menuLinksFood: AllMenuInterface = {
       text: "Acerca",
       url: "/cr/food/acerca-didi-food/",
       icon: "menu-help",
+      dropMenu: [
+        {
+          text: "Preguntas Frecuentes",
+          url: "/cr/food/preguntas-frecuentes/",
+        },
+      ],
     },
     {
       text: "Contacto",
@@ -197,11 +159,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "https://www.didi-food.com/es-CO/store",
         },
         {
-          text: "Guías",
-          url: "/co/food/restaurantes/guias-educacionales/",
-        },
-        {
-          text: "DiDi Food FAQs",
+          text: "Restaurantes FAQ",
           url: "/co/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -212,10 +170,6 @@ const menuLinksFood: AllMenuInterface = {
           text: "Promociones y Campañas",
           url: "/co/food/restaurantes/promociones-y-campanas/",
         },
-        {
-          text: "Descarga",
-          url: "/co/food/restaurantes/descarga/",
-        },
       ],
     },
     {
@@ -224,28 +178,12 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Club Repartidores",
-          url: "/co/food/repartidores/club-repartidores/",
+          text: "Registrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
-          text: "Ganancias",
-          url: "/co/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/co/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/co/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/co/food/repartidores/seguridad/",
-        },
-        {
-          text: "Guías",
-          url: "/co/food/repartidores/guias/",
+          text: "Repartidores FAQ",
+          url: "/co/food/repartidores/preguntas-frecuentes/",
         },
       ],
     },
@@ -253,6 +191,12 @@ const menuLinksFood: AllMenuInterface = {
       text: "Acerca",
       url: "/co/food/acerca-didi-food/",
       icon: "menu-help",
+      dropMenu: [
+        {
+          text: "Preguntas Frecuentes",
+          url: "/co/food/preguntas-frecuentes/",
+        },
+      ],
     },
     {
       text: "Contacto",
@@ -283,24 +227,12 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-delivery",
       dropMenu: [
         {
-          text: "Club Repartidores",
-          url: "/pe/food/repartidores/club-repartidores/",
+          text: "Regístrate como Repartidor",
+          url: "https://global-food-courier.onelink.me/zzaY/delivery",
         },
         {
-          text: "Ganancias",
-          url: "/pe/food/repartidores/ganancias/",
-        },
-        {
-          text: "Registro",
-          url: "/pe/food/repartidores/registro/",
-        },
-        {
-          text: "Rendimiento",
-          url: "/pe/food/repartidores/rendimiento/",
-        },
-        {
-          text: "Seguridad",
-          url: "/pe/food/repartidores/seguridad/",
+          text: "Repartidores FAQ",
+          url: "/pe/food/repartidores/preguntas-frecuentes/",
         },
       ],
     },
@@ -308,6 +240,12 @@ const menuLinksFood: AllMenuInterface = {
       text: "Acerca",
       url: "/pe/food/acerca-didi-food/",
       icon: "menu-help",
+      dropMenu: [
+        {
+          text: "Preguntas Frecuentes",
+          url: "/pe/food/preguntas-frecuentes/",
+        },
+      ],
     },
     {
       text: "Contacto",

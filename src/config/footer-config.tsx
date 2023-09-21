@@ -74,7 +74,7 @@ const footerLinks: AllFooterInterface = {
     { text: "DiDi Driver", link: "/au/driver/" },
     { text: "DiDi Rider", link: "/au/rider/" },
     { text: "Blog", link: "/au/blog/" },
-    { text: "Offers", link: "/au/offers/" },
+    // { text: "Offers", link: "/au/offers/" },
     { text: "Careers", link: "https://careers.didiglobal.com/" },
     { text: "Legal", link: "/au/legal/" },
     { text: "Contact", link: "/au/contact/" },
@@ -104,13 +104,6 @@ const footerLinks: AllFooterInterface = {
     { text: "Careers", link: "https://careers.didiglobal.com/" },
     { text: "Offers", link: "/nz/offers/" },
     { text: "Legal", link: "/nz/legal/" },
-  ],
-  ru: [
-    { text: "Водителям", link: "/ru/driver/" },
-    { text: "Пассажирам", link: "/ru/rider/" },
-    { text: "Безопасность", link: "/ru/safety/" },
-    { text: "Юридическая информация", link: "/ru/legal/" },
-    { text: "Раздел новостей", link: "/ru/newsroom/" },
   ],
 };
 

@@ -81,6 +81,17 @@ const FaqsTemplate = ({ data }) => {
       ></FoodFaqHero>
     );
 
+    if(pathname.includes("/repartidores")){
+      hero = (
+        <FoodFaqHero
+          title={title}
+          desc={productName}
+          bgImage={foodFaqBgImage}
+        ></FoodFaqHero>
+      );
+    }
+      
+
   let faqDesc = "";
   let contentlized = renderRichText(content);
 

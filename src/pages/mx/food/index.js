@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "@reach/router";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import FoodHero from "../../../components/sections/FoodHero";
@@ -31,7 +32,7 @@ const Food = ({ data }) => {
 
   const DiDiFoodCarouselImages = images.filter((image) => {
     return image.title === "mx.DiDiFoodCarousel.image";
-  })
+  });
 
   return (
     <Layout>
@@ -39,7 +40,11 @@ const Food = ({ data }) => {
         bgImage={foodHeroBgImage}
         mobileBgImage={foodHeroMobileBgImage}
       ></FoodHero>
-      <DiDiFoodCarousel images={DiDiFoodCarouselImages.reverse()}></DiDiFoodCarousel>
+      {useLocation().search === "?test=day" && (
+        <DiDiFoodCarousel
+          images={DiDiFoodCarouselImages.reverse()}
+        ></DiDiFoodCarousel>
+      )}
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
