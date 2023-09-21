@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../Image";
+import Image, { ImageDataType } from "../Image";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
@@ -9,11 +9,7 @@ interface SafetyFeaturesGrid {
     name: string;
     slug: string;
   }[];
-  images: {
-    title: string;
-    description: string;
-    gatsbyImageData: React.ReactNode;
-  }[];
+  images: ImageDataType[];
 }
 
 const SafetyGridBeforeTrip = ({ images, features }: SafetyFeaturesGrid) => {
