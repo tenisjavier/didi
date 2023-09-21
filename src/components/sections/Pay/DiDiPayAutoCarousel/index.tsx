@@ -24,11 +24,13 @@ const DiDiPayAutoCarousel = ({ images, imagesMobile }: DiDiPayAutoCarouselProps)
     slides: [],
     images: customSlides,
     carouselType: "Images",
-    slidesToShow: 2,
+    slidesToShow: 1,
     isAutoPlay: true,
     speedAutoPlay: 10000,
     imagesMobile: customSlidesMobile,
-    slidesToShowMobile: 2,
+    slidesToShowMobile: 1,
+    imageContainerStyle: "xl:h-105", //448px
+    imageStyle: "xl:h-105", //448px
   };
 
   return <Carousel {...props}></Carousel>;
