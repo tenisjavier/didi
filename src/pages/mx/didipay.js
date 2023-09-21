@@ -9,7 +9,6 @@ import DiDiPayBusinessCTA from "../../components/sections/DiDiPayBusinessCTA";
 import DiDiPayColumns from "../../components/sections/DiDiPayColumns";
 import DiDiPayCarousel from "../../components/sections/DiDiPayCarousel";
 import DiDiPayArticlesColumns from "../../components/sections/DiDiPayArticlesColumns";
-import DiDiPayAutoCarousel from "../../components/sections/Pay/DiDiPayAutoCarousel";
 
 const DiDiPay = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -34,12 +33,6 @@ const DiDiPay = ({ data }) => {
   const DiDiPayCarouselImages = images.filter((image) => {
     return image.title === "mx.DiDiPayCarousel.image";
   });
-  const DiDiPayAutoCarouselImages = images.filter((image) => {
-    return image.title === "mx.DiDiPayAutoCarousel.image";
-  });
-  const DiDiPayAutoCarouselMobileImages = images.filter((image) => {
-    return image.title === "mx.DiDiPayAutoCarouselMobile.image";
-  });
   const hColumnsImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiPayHomeColumns.image") !== -1;
   });
@@ -56,10 +49,6 @@ const DiDiPay = ({ data }) => {
       <DiDiPayCarousel
         images={DiDiPayCarouselImages.reverse()}
       ></DiDiPayCarousel>
-      <DiDiPayAutoCarousel 
-        images={DiDiPayAutoCarouselImages.reverse()}
-        imagesMobile={DiDiPayAutoCarouselMobileImages.reverse()}
-      ></DiDiPayAutoCarousel>
       <DiDiPayArticlesColumns data={data}></DiDiPayArticlesColumns>
       <DiDiPayBusinessCTA image={businessCTAImage}></DiDiPayBusinessCTA>
       <DiDiPayColumns images={hColumnsImages}></DiDiPayColumns>
@@ -74,7 +63,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiPayHomeHeroMobile.bgImage)|(mx.DiDiPayHomeHero.bgImage)|(mx.DiDiPayFeatures.image)|(mx.DiDiPayWhyDiDi.image)|(mx.DiDiPayBusinessCTA.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayColumns.image)|(mx.DiDiPayCarousel.image)|(mx.DiDiPayHomeColumns.image)|(mx.DiDiPayAutoCarouselMobile.image)|(mx.DiDiPayAutoCarousel.image)/"
+          regex: "/(mx.DiDiPayHomeHeroMobile.bgImage)|(mx.DiDiPayHomeHero.bgImage)|(mx.DiDiPayFeatures.image)|(mx.DiDiPayWhyDiDi.image)|(mx.DiDiPayBusinessCTA.image)|(mx.DiDiPayBanner.image)|(mx.DiDiPayColumns.image)|(mx.DiDiPayCarousel.image)|(mx.DiDiPayHomeColumns.image)/"
         }
       }
     ) {
