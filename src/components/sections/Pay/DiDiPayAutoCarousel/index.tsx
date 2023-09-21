@@ -8,7 +8,7 @@ interface DiDiPayAutoCarouselProps {
 }
 
 const DiDiPayAutoCarousel = ({ images, imagesMobile }: DiDiPayAutoCarouselProps) => {
-  const slidesToShow = 2;
+  const slidesToShow = 1;
   let customSlides = images;
   let customSlidesMobile = imagesMobile;
 
@@ -24,11 +24,11 @@ const DiDiPayAutoCarousel = ({ images, imagesMobile }: DiDiPayAutoCarouselProps)
     slides: [],
     images: customSlides,
     carouselType: "Images",
-    slidesToShow: 1,
+    slidesToShow: slidesToShow,
     isAutoPlay: true,
     speedAutoPlay: 10000,
     imagesMobile: customSlidesMobile,
-    slidesToShowMobile: 1,
+    slidesToShowMobile: slidesToShow,
     imageContainerStyle: "xl:h-105", //448px
     imageStyle: "xl:h-105", //448px
   };
