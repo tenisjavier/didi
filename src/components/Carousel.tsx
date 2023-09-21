@@ -1,9 +1,10 @@
 import React from "react";
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner, { BannerProps } from "./Banner";
 import Image, { ImageDataType } from "./Image";
+import useScreenSize from "../hooks/useScreenSize";
 
 function NextArrow(props: any) {
   const { onClick, arrow, arrowColor } = props;
@@ -32,14 +33,18 @@ function PrevArrow(props: any) {
 export interface CarouselProps {
   slides?: BannerProps[];
   images?: ImageDataType[];
+  imagesMobile?: ImageDataType[];
   carouselType: "Banner" | "Images";
   slidesToShow?: number;
+  slidesToShowMobile?: number;
   slidesToScroll?: number;
   arrowNext?: string;
   arrowPrev?: string;
   arrowColor?: string;
   isAutoPlay?: boolean;
   speedAutoPlay?: number;
+  imageContainerStyle?: string;
+  imageStyle?: string;
 }
 
 const Carousel = (props: CarouselProps) => {
@@ -49,15 +54,23 @@ const Carousel = (props: CarouselProps) => {
     slides,
     carouselType,
     slidesToShow,
+    slidesToShowMobile = 1,
     slidesToScroll,
     images,
+    imagesMobile,
     arrowNext,
     arrowPrev,
     arrowColor,
+    imageContainerStyle,
+    imageStyle
   } = props;
+
+  const screenSize = useScreenSize()
 
   const toShow = slidesToShow ? slidesToShow : 1;
   const toScroll = slidesToScroll ? slidesToShow : 1;
+  const breakpoint = 1079;
+  const isMobile = imagesMobile && imagesMobile.length > 0 && screenSize <= breakpoint
 
   let sliderContent;
 
@@ -70,18 +83,19 @@ const Carousel = (props: CarouselProps) => {
       );
     });
   } else if (carouselType === "Images") {
-    sliderContent = images?.map((img) => {
+    const imagesData = isMobile ? imagesMobile : images
+    sliderContent = imagesData?.map((img) => {
       return (
-        <div className={`flex align-center justify-self-center `}>
-          <Image imageData={img} imageStyle="z-10 object-fit"></Image>
+        <div className={`${imageContainerStyle} flex align-center justify-self-center w-full`}>
+          <Image imageData={img} imageStyle={`${imageStyle} z-10 object-fit w-full`}></Image>
         </div>
       );
     });
   }
 
-  var settings = {
+  var settings: Settings = {
     dots: false,
-    arrow: true,
+    arrows: true,
     infinite: true,
     autoplay: isAutoPlay,
     speed: speedAutoPlay,
@@ -95,9 +109,9 @@ const Carousel = (props: CarouselProps) => {
 
     responsive: [
       {
-        breakpoint: 1079,
+        breakpoint,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: slidesToShowMobile,
           slidesToScroll: 1,
         },
       },
