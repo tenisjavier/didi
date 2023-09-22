@@ -12,6 +12,7 @@ export interface ColumnsSectionProps {
   sectionID?: string;
   width?: string;
   RTL?: boolean;
+  hasGrid?: boolean;
 }
 
 const ColumnsSection = ({
@@ -24,6 +25,7 @@ const ColumnsSection = ({
   textColor,
   sectionID,
   RTL,
+  hasGrid
 }: ColumnsSectionProps) => {
   let dir: any = "ltr";
 
@@ -48,7 +50,7 @@ const ColumnsSection = ({
             .map((str) => <p className="text-center text-lg">{str}</p>)}
 
         <div
-          className={`mt-10 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-around gap-2`}
+          className={`grid grid-cols-1 md:grid-cols-2 ${hasGrid ? 'grid-cols-2 gap-10' : 'lg:flex lg:flex-wrap gap-2'} mt-10  lg:justify-around `}
         >
           {columns &&
             columns.map((col, index) => {

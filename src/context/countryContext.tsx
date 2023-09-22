@@ -1,5 +1,5 @@
 //@desc context in charge of passing the country and the text translation function t()
-import React, { useContext, createContext, useState, useMemo } from "react";
+import React, { useContext, createContext, useState } from "react";
 import { useLocation } from "@reach/router";
 
 interface CountryProviderProps {
@@ -60,6 +60,10 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
   }
   if (pathname.includes("tests")) {
     (countryCode = "mx"), (ns = "food");
+  }
+
+  if (pathname.includes("card")) {
+    ns = "card";
   }
 
   let [country, updateCountry] = useState({

@@ -62,11 +62,20 @@ const Navlogo = () => {
         width={120}
       />
     );
+  if (pathname.includes("/card/"))
+    logoImg = (
+      <StaticImage
+        src="../images/didi-logo-card.png"
+        alt="DiDi Card"
+        width={120}
+      />
+    );
 
   let logoLink = `/${countryCode}/`;
   if (countryCode === "en") logoLink = "/";
   if (pathname.includes("food")) logoLink = `/${countryCode}/food/`;
   if (pathname.includes("/didipay/")) logoLink = `/${countryCode}/didipay/`;
+  if (pathname.includes("/card/")) logoLink = `/${countryCode}/card/`;
 
   return (
     <div className="pl-8">

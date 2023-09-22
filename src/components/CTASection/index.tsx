@@ -8,6 +8,7 @@ import SectionLink from "./SectionLink";
 import SectionForm from "./SectionForm";
 import SectionIframe from "./SectionIframe";
 import SectionList from "./SectionList";
+import SectionBulletsCreditCard, { sectionBulletsCreditCardType } from "./SectionBulletsCreditCard";
 
 export interface CTAProps extends BtnProps {
   hero: boolean;
@@ -45,6 +46,9 @@ export interface CTAProps extends BtnProps {
   RidesSmsCTA?: string;
   qr?: React.ReactNode;
   descFooter?: string[] | JSX.Element[];
+  bulletsCreditCard?: sectionBulletsCreditCardType[];
+  bulletsConfigColumn?: "default" | "singleColumn";
+  bgColumTitle?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -80,8 +84,10 @@ const CTASection = (props: CTAProps) => {
     descBeforeBullets = true,
     qr,
     descFooter,
+    bulletsCreditCard,
+    bulletsConfigColumn = 'default',
+    bgColumTitle
   } = props;
-
 
   const isRtl = RTL ? "rtl" : "ltr";
   const textDir = RTL ? "text-right" : "text-left";
@@ -128,10 +134,30 @@ const CTASection = (props: CTAProps) => {
           }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
+        {bullets && bulletsConfigColumn === "singleColumn" && (
+          <SectionBullets
+            bullets={bullets}
+            customBulletIcon={customBulletIcon}
+            margin={margin}
+            textDir={textDir}
+            icon={icon}
+          />
+        )}
+
+        {bulletsCreditCard && bulletsConfigColumn === "singleColumn" && (
+          <SectionBulletsCreditCard
+            bullets={bulletsCreditCard}
+            customBulletIcon={customBulletIcon}
+            margin={margin}
+            textDir={textDir}
+            icon={icon}
+          />
+        )}
+
         {imageRawRender && imageRawRender}
 
         <div
-          className={`w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} z-10 xl:${textDir}`}
+          className={`w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
         >
           {getTitleElement()}
           <div
@@ -140,9 +166,18 @@ const CTASection = (props: CTAProps) => {
           >
             {renderSectionDesc()}
 
-            {bullets && (
+            {bullets && bulletsConfigColumn === "default" && (
               <SectionBullets
                 bullets={bullets}
+                customBulletIcon={customBulletIcon}
+                margin={margin}
+                textDir={textDir}
+                icon={icon}
+              />
+            )}
+            {bulletsCreditCard && bulletsConfigColumn === "default" && (
+              <SectionBulletsCreditCard
+                bullets={bulletsCreditCard}
                 customBulletIcon={customBulletIcon}
                 margin={margin}
                 textDir={textDir}
