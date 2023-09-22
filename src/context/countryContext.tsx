@@ -62,7 +62,7 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     (countryCode = "mx"), (ns = "food");
   }
 
-  if (pathname.includes("card")) {
+  if (pathname.includes("/mx/card")) {
     ns = "card";
   }
 
