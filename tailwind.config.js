@@ -29,6 +29,7 @@ module.exports = {
         gray: {
           primary: "#0F1419", //5A5A5A
           light: "#E7E7E7",
+          median: "#5A5A5A",
         },
         orange: {
           primary: "#FF7D41",

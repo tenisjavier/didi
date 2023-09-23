@@ -40,7 +40,7 @@ const Card = ({ data }) => {
       <CardHero
         image={creditCardHeroImage}
       ></CardHero>
-      <ShortText/>
+      <ShortText />
       <CreditCardCTA 
         image={CreditCardCTAImage}
       />

@@ -15,9 +15,11 @@ const CreditCardCTA = ({ image }: CreditCardCTAProps) => {
       text: t("CreditCardCTA.footerLink.text"),
       link: t("CreditCardCTA.footerLink.link"),
       textColor: t("CreditCardCTA.footerLink.textColor"),
+      hasIcon: true,
     },
     bullets: {
       bullets: t("CreditCardCTA.bullets", { returnObjects: true }),
+      icon: 'faArrowRight',
     }
   }
   const colTwo: ColumType = {

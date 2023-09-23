@@ -4,12 +4,12 @@
   "CardHero.textColor": "white",
   "CardHero.btnMode": "light",
   "CardHero.bgColor": "bg-orange-primary",
-  "CreditCardCTA.title": "La tarjeta de crédito que te pone las cosas fáciles, de verdad.",
+  "CreditCardCTA.title": "La {tarjeta de crédito} que te pone las cosas fáciles, {de verdad.}",
   "CreditCardCTA.bullets": [
     "Sin anualidad ni comisiones ocultas.",
-    "Hasta 3% de CASHBACK que podrás usar para pagar tu tarjeta, en DiDi y DiDi Food, tú decides.",
-    "Creada por DiDi y respaldada por Mastercard.",
-    "Para ti 24/7 en Soporte DiDi a través del chat de la app."
+    "Hasta {3% de CASHBACK} que podrás usar para pagar tu tarjeta, en {DiDi} y {DiDi Food}, tú decides.",
+    "Creada por {DiDi} y respaldada por Mastercard.",
+    "Para ti 24/7 en {Soporte DiDi} a través del chat de la app."
   ],
   "CreditCardCTA.iconBullets": "arrow-right",
   "CreditCardCTA.iconColor": "primary",
@@ -24,30 +24,33 @@
   "CashBack.bgColor": "bg-orange-primary",
   "CashBack.bullets": [
     {
-      "text": "3% de CASHBACK en DiDi Food",
-      "icon": "mx.CreditCardFoodIcon.image"
+      "text": "de CASHBACK en {DiDi Food}",
+      "icon": "icon-food",
+      "percentCashBack": "3"
     },
     {
-      "text": "1% de CASHBACK en DiDi",
-      "icon": "mx.CreditCardCarIcon.image"
+      "text": "de CASHBACK en {DiDi}",
+      "icon": "icon-car",
+      "percentCashBack": "1"
     },
     {
-      "text": "1% de CASHBACK en miles de establecimientos más",
-      "icon": "mx.CreditCardShopIcon.image"
+      "text": "de CASHBACK en {miles} de establecimientos más",
+      "icon": "icon-shop",
+      "percentCashBack": "1"
     }
   ],
   "CashBack.footerLink.text": "Consulta Términos y Condiciones",
   "CashBack.footerLink.link": "",
   "CashBack.footerLink.textColor": "text-orange-primary",
-  "ShortText.title": "Recibe hasta 3% de CASHBACK* todos los días.",
+  "ShortText.title": "Recibe hasta {3% de CASHBACK*} todos los días.",
   "ShortText.textColor": "black",
-  "BeneficiosCTA.sectionTitle": "Sí, con DiDi Card tienes beneficios reales todos los días.",
+  "BeneficiosCTA.sectionTitle": "Sí, con {DiDi Card} tienes {beneficios reales} todos los días.",
   "BeneficiosCTAColOne.title": "MSI - Meses Sin Intereses.",
   "BeneficiosCTAColOne.textColor": "text-gray-primary",
   "BeneficiosCTAColOne.footerLink.text": "Ver más",
   "BeneficiosCTAColOne.footerLink.link": "",
   "BeneficiosCTAColOne.footerLink.textColor": "text-orange-primary",
-  "BeneficiosCTAColTwo.title": "Ofertas exclusivas solo con tu DiDi Card.",
+  "BeneficiosCTAColTwo.title": "Ofertas exclusivas solo con tu {DiDi Card}.",
   "BeneficiosCTAColTwo.textColor": "text-gray-primary",
   "BeneficiosCTAColTwo.footerLink.text": "Conocer más",
   "BeneficiosCTAColTwo.footerLink.link": "",
@@ -55,11 +58,11 @@
   "BeneficiosHero.title": "Sí, con DiDi Card tienes beneficios reales todos los días.",
   "BeneficiosHero.textColor": "white",
   "BeneficiosHero.bgColor": "bg-orange-primary",
-  "TasasCTA.title": "Tasas y costos con transparencia.",
+  "TasasCTA.title": "Tasas y costos {con transparencia}.",
   "TasasCTA.bullets": [
-    "Costo Anual Total promedio de 93,8%",
-    "Tasa de interés Promedio ponderada anual fija del 38.5%",
-    "Fecha de cálculo: 17 de enero de 2023"
+    "Costo Anual Total promedio de {93,8%}",
+    "Tasa de interés Promedio ponderada anual fija del {38.5%}",
+    "Fecha de cálculo: {17 de enero de 2023}"
   ],
   "TasasCTA.descFooter": ["Regigold, S.A. DE C.V., SOFOM, E.N.R."],
   "TasasCTA.textColor": "",
@@ -87,7 +90,7 @@
     "Tus datos son solo \n tuyos, nos asegramos \n de no compartirlos."
   ],
   "SeguroCTAColTwo.textColor": "text-white",
-  "SolicitaCTA.title": "Para pedirlasolo necesitas:",
+  "SolicitaCTA.title": "Para pedirla {solo necesitas}:",
   "SolicitaCTA.bullets": [
     "Ser mayor de edad.",
     "Tener una INE/IFE vigente.",
