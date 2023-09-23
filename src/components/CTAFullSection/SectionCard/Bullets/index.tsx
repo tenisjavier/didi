@@ -31,10 +31,11 @@ const Bullets = ({
 
   return (
     <ul
-      className={`p-0 mt-12 mb-6 list-none ${textDir} text-xl flex flex-col gap-12`}
+      className={`w-full lg:max-w-none p-0 mt-12 mb-6 list-none ${textDir} text-xl flex flex-col gap-12`}
     >
       {creditCardCashBackBullets && creditCardCashBackBullets?.map((item, index) => (
         <CreditCardCashBackBullets
+          key={index}
           text={item.text}
           icon={item.icon}
           percentCashBack={item.percentCashBack} />
