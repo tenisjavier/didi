@@ -34,6 +34,8 @@ export interface CardProps extends BtnProps {
   afterTitle?: string;
   timeToRead?: string;
   RTL?: boolean;
+  rounded?: string;
+  customWidth?: string;
 }
 
 const Card = (props: CardProps) => {
@@ -66,6 +68,8 @@ const Card = (props: CardProps) => {
     afterTitle,
     timeToRead,
     RTL,
+    rounded,
+    customWidth,
   } = props;
 
   let min = "";
@@ -101,7 +105,7 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={` max-w-xs   rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
+      className={`${customWidth ? customWidth : 'max-w-xs'}  ${rounded} rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
       <div className="mb-5">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}

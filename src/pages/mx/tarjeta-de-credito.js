@@ -1,38 +1,64 @@
 import React from "react";
 import { graphql } from "gatsby";
-import {
-  faPercent,
-  faClock,
-  faThumbsUp,
-  faWallet,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Layout from "../../components/Layout";
 import DiDiCreditHero from "../../components/sections/DiDiCreditHero";
-import DiDiCreditBenefits from "../../components/sections/DiDiCreditBenefits";
+import DiDiCreditBanner from "../../components/sections/DiDiCreditBanner";
 import DiDiCreditFeatures from "../../components/sections/DiDiCreditFeatures";
-
+import DiDiCreditColumns from "../../components/sections/DiDiCreditColumns";
+import DiDiCreditBannerBenefits from "../../components/sections/DiDiCreditBannerBenefits";
+import DiDiCreditBenefits from "../../components/sections/DiDiCreditBenefits";
+import DiDiCreditRequirements from "../../components/sections/DiDiCreditRequirements";
+import DiDiCreditWhy from "../../components/sections/DiDiCreditWhy";
+import DiDiCreditFAQ from "../../components/sections/DiDiCreditFAQ";
 const DiDiCredit = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const icons = [faPercent, faClock, faThumbsUp, faWallet];
-  const homeHeroBgImage = images.filter((image) => {
-    return image.title === "mx.PrestamosHero.image";
+  const faqs = data.allContentfulFaq.nodes;
+  const cardHeroBgImage = images.filter((image) => {
+    return image.title === "mx.CreditCardHero.image";
   })[0];
-  const drvBenefitsImage = images.filter((image) => {
-    return image.title === "mx.PrestamosBenefits.image";
+  const cardFeaturesImage = images.filter((image) => {
+    return image.title === "mx.CreditCardCTA.image";
   })[0];
-  const prestamosFeaturesImage = images.filter((image) => {
-    return image.title === "mx.PrestamosFeatures.image";
+  const cardBenefitsImage = images.filter((image) => {
+    return image.title === "mx.CreditCardSeguroCTA.image";
+  })[0];
+  const iconCard = images.filter((image) => {
+    return image.title === "mx.CreditCardMoneyIcon.image";
+  })[0];
+  const iconSms = images.filter((image) => {
+    return image.title === "mx.CreditCardNotificationIcon.image";
+  })[0];
+  const iconLock = images.filter((image) => {
+    return image.title === "mx.CreditCardLockIcon.image";
+  })[0];
+  const iconShield = images.filter((image) => {
+    return image.title === "mx.CreditCardShieldIcon.image";
+  })[0];
+  const icons = [iconCard, iconSms, iconLock, iconShield];
+
+  const cardRequirementsImage = images.filter((image) => {
+    return image.title === "mx.CreditCardCTA2.image";
+  })[0];
+  const cardWhyImage = images.filter((image) => {
+    return image.title === "mx.CreditFaqCard.image";
   })[0];
   return (
     <Layout sb={false} index={false}>
-      <DiDiCreditHero image={homeHeroBgImage}></DiDiCreditHero>
+      <DiDiCreditHero image={cardHeroBgImage}></DiDiCreditHero>
+      <DiDiCreditBanner></DiDiCreditBanner>
+      <DiDiCreditFeatures image={cardFeaturesImage}></DiDiCreditFeatures>
+      {/* <DiDiCreditColumns></DiDiCreditColumns> */}
+      <DiDiCreditBannerBenefits></DiDiCreditBannerBenefits>
       <DiDiCreditBenefits
-        image={drvBenefitsImage}
-        icons={icons}
+        images={icons}
+        image={cardBenefitsImage}
       ></DiDiCreditBenefits>
-      <DiDiCreditFeatures
-        image={prestamosFeaturesImage}
-      ></DiDiCreditFeatures>
+      <DiDiCreditRequirements
+        image={cardRequirementsImage}
+      ></DiDiCreditRequirements>
+      <DiDiCreditWhy image={cardWhyImage}></DiDiCreditWhy>
+      <DiDiCreditFAQ data={faqs}></DiDiCreditFAQ>
     </Layout>
   );
 };
@@ -44,7 +70,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.PrestamosHero.image)|(mx.PrestamosBenefits.image)|(mx.PrestamosFeatures.image)|(mx.PrestamosDrvGrid.image)|(mx.DiDiPrestamosReviews.bgImage)|(mx.PrestamosWhyDiDi.image)/"
+          regex: "/(mx.CreditCardHero.image)|(mx.CreditCardCTA.image)|(mx.CreditCardSeguroCTA.image)|(mx.CreditCardMoneyIcon.image)|(mx.CreditCardLockIcon.image)|(mx.CreditCardShieldIcon.image)|(mx.CreditCardNotificationIcon.image)|(mx.CreditCardCTA2.image)|(mx.CreditFaqCard.image)/"
         }
       }
       sort: { title: ASC }
@@ -56,26 +82,21 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "mx" } } }
-        name: { eq: "DiDi Préstamos México" }
-      }
+    allContentfulFaq(
+      filter: { country: { code: { eq: "mx" } }, type: { eq: "card" } }
     ) {
       nodes {
-        name
-        faq {
-          title
-          content {
-            raw
-            references {
-              ... on ContentfulAsset {
-                contentful_id
-                title
-                description
-                gatsbyImageData(width: 800)
-                __typename
-              }
+        slug
+        title
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
             }
           }
         }

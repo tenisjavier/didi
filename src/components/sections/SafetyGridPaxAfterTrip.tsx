@@ -1,16 +1,19 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
+import Image, { ImageDataType } from "../Image";
+import { Link } from "gatsby";
 
 interface SafetyFeaturesGrid {
-  images: {
-    title: string;
-    description: string;
-    gatsbyImageData: React.ReactNode;
+  features: {
+    name: string;
+    slug: string;
   }[];
+  images: ImageDataType[];
 }
 
-const SafetyGridPaxAfterTrip = ({ images }: SafetyFeaturesGrid) => {
+const SafetyGridPaxAfterTrip = ({ images, features }: SafetyFeaturesGrid) => {
+  const urlBase = t("SafetyGridPaxBeforeTrip.urlBase");
   const props: ColumnsSectionProps = {
     title: t("SafetyGridPaxAfterTrip.title"),
     bgColor: t("SafetyGridPaxAfterTrip.bgColor"),
@@ -19,12 +22,36 @@ const SafetyGridPaxAfterTrip = ({ images }: SafetyFeaturesGrid) => {
     width: "w-72",
   };
 
-  props.columns.forEach((col, index) => {
+  props.columns = props.columns.map((c, index) => {
     const image = images[index];
-    col.image = image;
-    col.imageStyle = "z-10 m-4";
-    col.isImage = true;
+    c.imageStyle = "z-10 m-4";
+    c.isImage = true;
+    let link = c.title;
+    let colImage = <Image imageData={image || images[0]} imageStyle="z-10 m-4"></Image>;
+    if (features) {
+      let feature = features.filter((f) => {
+        const minTitle = String(c.title).toLowerCase();
+        const minFTitle = String(f.name).toLowerCase();
+        return minTitle.indexOf(minFTitle) !== -1;
+      });
+      if (feature[0]) {
+        link = <Link to={urlBase + "" + feature[0].slug}>{c.title}</Link>;
+        colImage = (
+          <Link to={urlBase + "" + feature[0].slug}>
+            <Image imageData={image || images[0]} imageStyle="z-10 m-4"></Image>
+          </Link>
+        );
+      }
+    }
+    return {
+      title: link,
+      desc: c.desc,
+      textColor: "gray-primary",
+      bgColor: "transparent",
+      image: colImage,
+    };
   });
+
   return <ColumnsSection {...props}></ColumnsSection>;
 };
 

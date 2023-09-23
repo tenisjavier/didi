@@ -6,9 +6,10 @@ import DropdownMenu from "./DropdownMenu";
 interface NavListProps {
   links: SingleMenuItem[];
   countryCode: string;
+  pathName?: string;
 }
 
-const NavList = ({ links, countryCode }: NavListProps) => {
+const NavList = ({ links, countryCode, pathName }: NavListProps) => {
   const [dropdownOpen, setDropdownOpen] = useState<{
     [key: string]: boolean;
   }>({});
@@ -21,6 +22,7 @@ const NavList = ({ links, countryCode }: NavListProps) => {
             <NavItem
               key={index}
               link={menuLink}
+              pathname={pathName}
               handleOpen={(key, value) =>
                 setDropdownOpen({ ...dropdownOpen, [key]: value })
               }

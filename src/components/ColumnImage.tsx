@@ -8,14 +8,22 @@ interface ColumnImageProps {
   desc?: string;
   textColor?: string;
   image?: any;
-  reverse?: boolean; 
+  reverse?: boolean;
 }
 
-const ColumnImage = ({ columns, bgColor, title, desc, textColor, image, reverse }: ColumnImageProps) => {
+const ColumnImage = ({
+  columns,
+  bgColor,
+  title,
+  desc,
+  textColor,
+  image,
+  reverse,
+}: ColumnImageProps) => {
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
       <div className="container mx-auto flex w-full  flex-col justify-center">
-        {title && <h2 className="text-center text-3xl">{title}</h2>}
+        {title && <h2 className="text-center text-4xl">{title}</h2>}
         {desc && <p className="text-center">{desc}</p>}
         <div
           className={`flex w-full ${

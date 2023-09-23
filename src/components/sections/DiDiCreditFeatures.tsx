@@ -1,6 +1,8 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 interface DiDiCreditFeaturesProps {
   image: {
@@ -15,13 +17,16 @@ const DiDiCreditFeatures = ({ image }: DiDiCreditFeaturesProps) => {
     hero: false,
     title: t("DiDiCreditFeatures.title"),
     desc: t("DiDiCreditFeatures.desc"),
+    bullets: t("DiDiCreditFeatures.bullets", { returnObjects: true }),
     textColor: t("DiDiCreditFeatures.textColor"),
     bgColor: t("DiDiCreditFeatures.bgColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-110",
+    imageStyle: "z-10 m-4 w-110 h-full",
     btnMode: t("DiDiCreditFeatures.btnMode"),
-    btnType: "BothCredit",
-    btnModeSecondary: t("DiDiCreditFeaturesSecondary.btnMode")
+    btnType: "card",
+    reverse: true,
+    icon: faArrowRight,
+    customBulletIcon: true,
   };
   return <CTASection {...props}></CTASection>;
 };

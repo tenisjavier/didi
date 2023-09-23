@@ -13,7 +13,6 @@ interface SafetyFeaturesGrid {
 }
 const SafetyGridPaxBeforeTrip = ({ images, features }: SafetyFeaturesGrid) => {
   const urlBase = t("SafetyGridPaxBeforeTrip.urlBase");
-  console.log("features", features)
   const props: ColumnsSectionProps = {
     title: t("SafetyGridPaxBeforeTrip.title"),
     bgColor: t("SafetyGridPaxBeforeTrip.bgColor"),
@@ -22,6 +21,8 @@ const SafetyGridPaxBeforeTrip = ({ images, features }: SafetyFeaturesGrid) => {
     width: "w-72",
   };
 
+  console.log("SafetyGridPaxBeforeTrip", images);
+  console.log("SafetyGridPaxBeforeTrip", props.columns);
   props.columns = props.columns.map((c, index) => {
     const image = images[index];
     c.imageStyle = "z-10 m-4";

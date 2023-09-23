@@ -8,7 +8,8 @@ import { getMenuLinksFood } from "../../config/menu-food-config";
 import { getMenuLinksPay } from "../../config/menu-pay-config";
 import { getMenuLinksPr } from "../../config/menu-pr-config";
 import NavList from "./NavList";
-import { graphql, useStaticQuery, StaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+import { getMenuLinksCard } from "../../config/menu-card-config";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ const Menu = () => {
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const menuLinksPay: SingleMenuItem[] = getMenuLinksPay(countryCode);
+  const menuLinksCard: SingleMenuItem[] = getMenuLinksCard(countryCode);
   const menuLinksPr: SingleMenuItem[] = getMenuLinksPr(countryCode);
   const { pathname } = useLocation();
 
@@ -23,6 +25,7 @@ const Menu = () => {
   if (pathname.includes("food")) links = menuLinksFood;
   if (pathname.includes("/didipay/")) links = menuLinksPay;
   if (pathname.includes("thejourney")) links = menuLinksPr;
+  if (pathname.includes("card")) links = menuLinksCard;
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,7 +64,7 @@ const Menu = () => {
           className={`${menuOpen ? "min-h-[100vh] pb-20" : ""
             } m-0 p-0 flex flex-col items-center border-x-0 border-b-0  border-t border-solid border-orange-primary xl:bg-white bg-[#F2F2F2] lg:h-full lg:flex-row lg:border-0 lg:bg-transparent lg:px-5 gap-4`}
         >
-          <NavListQuery links={links} countryCode={countryCode} />
+          <NavListQuery pathName={pathname} links={links} countryCode={countryCode} />
         </ul>
       </div>
     </div>
@@ -80,9 +83,11 @@ type IconType = {
 function NavListQuery({
   links,
   countryCode,
+  pathName
 }: {
   links: SingleMenuItem[];
   countryCode: string;
+  pathName?: string;
 }) {
   const data = useStaticQuery(graphql`
     query allContentfulAsset {
@@ -131,5 +136,5 @@ function NavListQuery({
     };
   });
 
-  return <NavList links={formatLinks} countryCode={countryCode} />;
+  return <NavList pathName={pathName} links={formatLinks} countryCode={countryCode} />;
 }
