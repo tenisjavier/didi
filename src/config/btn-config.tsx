@@ -29,11 +29,8 @@ interface SingleBtnInterface {
   entregaText?: string;
   entregaBusinessLink?: string;
   entregaBusinessText?: string;
-  smsCTAText?: string;
   creditText?: string;
   creditLink?: string;
-  creditText2?: string;
-  creditLink2?: string;
 }
 
 interface AllBtnInterface {
@@ -174,11 +171,8 @@ const btnLinks: AllBtnInterface = {
     entregaText: "Usa DiDi Entrega",
     entregaLink:
       "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
-    smsCTAText: "Descargar en mi celular",
-    creditText: "Solicitar tarjeta en DiDi Pasajero App",
-    creditLink: "",
-    creditText2: "Solicitar tarjeta em DiDi Finanzas App",
-    creditLink2: "",
+    creditText: "Solicitar en DiDi App",
+    creditLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
   },
   mxen: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",

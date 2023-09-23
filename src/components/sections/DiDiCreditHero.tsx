@@ -27,8 +27,9 @@ const DiDiCreditHero = ({ bgImage, image }: DiDiCreditHeroProps) => {
     image: image,
     imageStyle: "!z-10 m-4 w-110",
     btnMode: t("DiDiCreditHero.btnMode"),
-    btnType: "BothCredit",
-    btnModeSecondary: t("DiDiCreditHeroSecondary.btnMode")
+    btnType: "card",
+    btnText: t("DiDiCreditHero.btnText"),
+    reverse: true,
   };
   return <CTASection {...props}></CTASection>;
 };

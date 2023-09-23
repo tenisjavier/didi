@@ -187,6 +187,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Preguntas Frecuentes sobre DiDi Préstamos.",
       desc: "Revisa nuestras preguntas frecuentes sobre DiDi Préstamos. Somos un servicio financiero que está aquí para ayudarte, te prestamos dinero rápido y fácil para lo que necesites. ",
     },
+    "/tarjeta-de-credito/": {
+      title: "Tarjeta de Crédito DiDi",
+      desc: "La nueva tarjeta con beneficios diarios y sin comisiones ocultas. Pídela en 5 minutos",
+    },
     "/entrega/": {
       title: "DiDi Entrega: Envía cosas grandes o chicas.",
       desc: "DiDi Entrega.",

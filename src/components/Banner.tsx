@@ -16,6 +16,7 @@ export interface BannerProps extends BtnProps {
   image?: React.ReactNode;
   reverse?: boolean;
   isRounded?: boolean;
+  borderColor?: string;
 }
 
 const Banner = ({
@@ -33,16 +34,18 @@ const Banner = ({
   btnType,
   btnText,
   reverse,
-  isRounded
+  isRounded,
+  borderColor,
 }: BannerProps) => {
   let rounded = "rounded";
 
-  if(!isRounded) 
-    rounded = "";
+  if (!isRounded) rounded = "";
   return (
     <div
-      className={`${rounded} py-4 ${bgColor && bgColor} text-${textColor} ${
-        height && height
+      className={`${rounded} py-0 lg:py-4 ${
+        bgColor && bgColor
+      } text-${textColor} ${height && height} ${
+        borderColor && "border-solid border border-" + borderColor
       }`}
     >
       <div
@@ -53,18 +56,18 @@ const Banner = ({
         }`}
       >
         <div
-          className={`flex  flex-col py-4  ${
+          className={`flex  flex-col py-4  px-4 lg:px-0  ${
             image ? "text-left" : "text-center"
           }`}
         >
-          <h3 className={`mb-2 text-4xl font-bold `}>{title}</h3>
+          <h3 className={`mb-2 text-3xl lg:text-4xl font-bold `}>{title}</h3>
 
           {descText &&
             descText
               .split("\n")
               .map((str) => <p className=" text-lg">{str}</p>)}
-          <br />
-          <p className="text-lg">{desc}</p>
+
+          {desc && <p className="text-lg">{desc}</p>}
           <span
             className={`flex justify-center ${
               btnText != "VideoSection.btnText" ? "" : "hidden"

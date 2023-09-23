@@ -38,10 +38,7 @@ export type BtnType =
   | "entrega"
   | "entregaBusiness"
   | "en"
-  | "FoodSmsCTA"
-  | "RidesSmsCTA"
-  | "BothCredit"
-  | "BothCredit2"
+  | "card"
   | undefined;
 
 export type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
@@ -68,7 +65,7 @@ const Btn = ({
   btnLink2,
   notRedirectOutPage,
   download,
-  btnTextCenter
+  btnTextCenter,
 }: BtnProps) => {
   const countryCode = useCountry().code;
   const btnData = getBtnLinks(countryCode);
@@ -141,14 +138,9 @@ const Btn = ({
   } else if (btnType === "en") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
-  } else if (btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA") {
-    btnText = btnText || btnData.smsCTAText;
-  } else if (btnType === "BothCredit") {
+  } else if (btnType === "card") {
     btnText = btnText || btnData.creditText;
     btnLink = btnLink || btnData.creditLink;
-  } else if (btnType === "BothCredit2") {
-    btnText = btnText || btnData.creditText2;
-    btnLink = btnLink || btnData.creditLink2;
   }
 
   const handleClick = (e: any) => {
@@ -208,7 +200,9 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`${btnTextCenter ? 'text-center' : ''} p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+        className={`${
+          btnTextCenter ? "text-center" : ""
+        } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         {isLoading ? (
           <FontAwesomeIcon

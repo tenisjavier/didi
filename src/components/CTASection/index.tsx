@@ -8,7 +8,9 @@ import SectionLink from "./SectionLink";
 import SectionForm from "./SectionForm";
 import SectionIframe from "./SectionIframe";
 import SectionList from "./SectionList";
-import SectionBulletsCreditCard, { sectionBulletsCreditCardType } from "./SectionBulletsCreditCard";
+import SectionBulletsCreditCard, {
+  sectionBulletsCreditCardType,
+} from "./SectionBulletsCreditCard";
 
 export interface CTAProps extends BtnProps {
   hero: boolean;
@@ -39,16 +41,12 @@ export interface CTAProps extends BtnProps {
   }[];
   reverse?: boolean;
   RTL?: boolean;
-  smsFormTitle?: string;
-  smsFormNote?: string;
   descBeforeBullets?: boolean;
-  FoodSmsCTA?: string;
-  RidesSmsCTA?: string;
-  qr?: React.ReactNode;
   descFooter?: string[] | JSX.Element[];
   bulletsCreditCard?: sectionBulletsCreditCardType[];
   bulletsConfigColumn?: "default" | "singleColumn";
   bgColumTitle?: string;
+  borderColor?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -80,13 +78,12 @@ const CTASection = (props: CTAProps) => {
     reverse,
     btnModeSecondary,
     RTL,
-    smsFormTitle,
     descBeforeBullets = true,
-    qr,
     descFooter,
     bulletsCreditCard,
-    bulletsConfigColumn = 'default',
-    bgColumTitle
+    bulletsConfigColumn = "default",
+    bgColumTitle,
+    borderColor,
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
@@ -96,8 +93,6 @@ const CTASection = (props: CTAProps) => {
   const getTitleElement = () => {
     if (hero) {
       return <h1 className="text-4xl font-bold md:text-5xl mt-0">{title}</h1>;
-    } else if (btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA") {
-      return <h3 className="font-bold text-3xl md:text-4xl">{title}</h3>;
     } else {
       return <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>;
     }
@@ -107,13 +102,7 @@ const CTASection = (props: CTAProps) => {
     return (
       desc &&
       desc.split("\n").map((str, index) => (
-        <p
-          className={`mb-10 text-lg ${btnType !== "FoodSmsCTA" && btnType !== "RidesSmsCTA"
-            ? ""
-            : "font-bold"
-            }`}
-          key={index}
-        >
+        <p className={`mb-10 text-lg`} key={index}>
           {str}
         </p>
       ))
@@ -123,15 +112,18 @@ const CTASection = (props: CTAProps) => {
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        }`}
+      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${
+        bgColor && bgColor
+      } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`container mx-auto flex w-full flex-wrap items-center justify-center py-12 ${reverse ? "flex-row-reverse" : ""
-          } ${image || imageRawRender || iframe
+        className={`container mx-auto flex w-full flex-wrap items-center justify-center py-12 ${
+          reverse ? "flex-row-reverse" : ""
+        } ${
+          image || imageRawRender || iframe
             ? "xl:justify-between"
             : "xl:justify-start"
-          }`}
+        }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
         {bullets && bulletsConfigColumn === "singleColumn" && (
@@ -161,8 +153,9 @@ const CTASection = (props: CTAProps) => {
         >
           {getTitleElement()}
           <div
-            className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
-              }`}
+            className={`flex ${
+              descBeforeBullets ? "flex-col" : "flex-col-reverse"
+            }`}
           >
             {renderSectionDesc()}
 
@@ -187,31 +180,24 @@ const CTASection = (props: CTAProps) => {
             {descFooter && (
               <div className="my-6">
                 {descFooter.map((str, index) => (
-                  <p key={index} className="p-0 m-0 my-1 text-start">{str}</p>
+                  <p key={index} className="p-0 m-0 my-1 text-start">
+                    {str}
+                  </p>
                 ))}
               </div>
             )}
           </div>
           {link && <SectionLink link={link} />}
           {list && <SectionList list={list} />}
-          {btnType === "FoodSmsCTA" || btnType === "RidesSmsCTA" ? (
-            <div className="bg-red-400">
-              <SectionForm
-                btnType={btnType}
-                qr={qr}
-                smsFormTitle={smsFormTitle}
-              />
-            </div>
-          ) : (
-            <SectionBtn
-              btnType={btnType}
-              btnMode={btnMode}
-              btnModeSecondary={btnModeSecondary}
-              btnLink={btnLink}
-              btnText={btnText}
-              btnArray={btnArray}
-            />
-          )}
+
+          <SectionBtn
+            btnType={btnType}
+            btnMode={btnMode}
+            btnModeSecondary={btnModeSecondary}
+            btnLink={btnLink}
+            btnText={btnText}
+            btnArray={btnArray}
+          />
         </div>
 
         {iframe === "drv" && <SectionIframe />}
@@ -224,7 +210,6 @@ const CTASection = (props: CTAProps) => {
       )}
 
       {bgVideo && bgVideo}
-
     </section>
   );
 };

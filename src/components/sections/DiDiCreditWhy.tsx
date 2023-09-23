@@ -4,7 +4,7 @@ import CTASection, { CTAProps } from "../CTASection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-interface DiDiCreditFeaturesProps {
+interface DiDiCreditWhyProps {
   image: {
     title: string;
     description: string;
@@ -12,23 +12,22 @@ interface DiDiCreditFeaturesProps {
   };
 }
 
-const DiDiCreditFeatures = ({ image }: DiDiCreditFeaturesProps) => {
+const DiDiCreditWhy = ({ image }: DiDiCreditWhyProps) => {
   const props: CTAProps = {
     hero: false,
-    title: t("DiDiCreditFeatures.title"),
-    desc: t("DiDiCreditFeatures.desc"),
-    bullets: t("DiDiCreditFeatures.bullets", { returnObjects: true }),
-    textColor: t("DiDiCreditFeatures.textColor"),
-    bgColor: t("DiDiCreditFeatures.bgColor"),
+    title: t("DiDiCreditWhy.title"),
+    desc: t("DiDiCreditWhy.desc"),
+    bullets: t("DiDiCreditWhy.bullets", { returnObjects: true }),
+    textColor: t("DiDiCreditWhy.textColor"),
+    bgColor: t("DiDiCreditWhy.bgColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-110 h-full",
-    btnMode: t("DiDiCreditFeatures.btnMode"),
-    btnType: "card",
+    imageStyle: "z-10 m-4 w-110",
     reverse: true,
     icon: faArrowRight,
     customBulletIcon: true,
+    borderColor: "orange-primary",
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default DiDiCreditFeatures;
+export default DiDiCreditWhy;

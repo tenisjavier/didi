@@ -1960,45 +1960,107 @@
   "VikingSection.vikingColTwo.textColor": "text-yellow-400",
   "VikingSection.hasTwoColumns": true,
   "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
-  "DiDiCreditHero.title": "La única tarjeta con recompensas y sin costos.",
+  "DiDiCreditHero.title": "La nueva tarjeta con beneficios diarios y sin comisiones ocultas",
   "DiDiCreditHero.desc": "Pídela en 5 minutos.",
-  "DiDiCreditHero.bgColor": "bg-white",
-  "DiDiCreditHero.textColor": "gray-primary",
-  "DiDiCreditHero.btnMode": "primary",
-  "DiDiCreditHeroSecondary.btnMode": "primary",
-  "DiDiCreditBenefits.title": "La tarjeta de crédito que te pone las cosas fáciles (de verdad).",
-  "DiDiCreditBenefits.desc": "",
-  "DiDiCreditBenefits.bgColor": "bg-gray-light",
-  "DiDiCreditBenefits.columns": [
+  "DiDiCreditHero.bgColor": "bg-orange-primary",
+  "DiDiCreditHero.textColor": "white",
+  "DiDiCreditHero.btnMode": "light",
+  "DiDiCreditHero.btnText": "Solicitar en DiDi app",
+  "DiDiCreditBanner.title": "Recibe hasta 3% de CASHBACK* todos los días",
+  "DiDiCreditBanner.desc": "",
+  "DiDiCreditBanner.bgColor": "bg-white",
+  "DiDiCreditBanner.textColor": "orange-primary",
+  "DiDiCreditBanner.btnMode": "light",
+  "DiDiCreditBannerBenefits.title": "Sí, con DiDi Card tienes beneficios reales todos los días",
+  "DiDiCreditBannerBenefits.desc": "",
+  "DiDiCreditBannerBenefits.bgColor": "bg-white",
+  "DiDiCreditBannerBenefits.textColor": "orange-primary",
+  "DiDiCreditBannerBenefits.btnMode": "light",
+  "DiDiCreditFeatures.title": "La tarjeta de crédito que te pone las cosas fáciles, de verdad.",
+  "DiDiCreditFeatures.bullets": [
+    "Sin anualidad ni comisiones ocultas",
+    "Hasta 3% de CASHBACK que podrás usar para pagar tu tarjeta, en DiDi y DiDi Food, tú decides.",
+    "Creada por DiDi respaldad por Mastercard",
+    "Para ti  24/7 en Soporte DiDi a través del chat de la app."
+  ],
+  "DiDiCreditFeatures.bgColor": "bg-white",
+  "DiDiCreditFeatures.textColor": "gray-primary",
+  "DiDiCreditFeatures.btnMode": "primary",
+  "DiDiCreditColumns.title": "Sí, con DiDi Card tienes beneficios reales todos los días",
+  "DiDiCreditColumns.desc": "",
+  "DiDiCreditColumns.bgColor": "bg-white",
+  "DiDiCreditColumns.textColor": "gray-primary",
+  "DiDiCreditColumns.columns": [
     {
-      "title": "Sin anualidad ni comisiones ocultas ",
-      "desc": "",
-      "bgColor": "bg-gray-light",
+      "title": "MSI",
+      "desc": "Meses sin Intereses",
+      "bgColor": "white",
       "textColor": "gray-primary"
     },
     {
-      "title": "Hasta 3% de CASHBACK que podrás usar para pagar tu tarjeta, en DiDi y DiDi Food, tú decides.",
-      "desc": "",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Creada por DiDi respaldad por Mastercard",
-      "desc": "",
-      "bgColor": "bg-gray-light",
-      "textColor": "gray-primary"
-    },
-    {
-      "title": "Para ti  24/7 en Soporte DiDi a través del chat de la app.",
-      "desc": "",
-      "bgColor": "bg-gray-light",
+      "title": "Ofertas Exclusivas",
+      "desc": "solo con tu DiDi Card",
+      "bgColor": "white",
       "textColor": "gray-primary"
     }
   ],
-  "DiDiCreditFeatures.title": "¡CASHBACK todos los días!",
-  "DiDiCreditFeatures.desc": "Te regresamos un porcentaje de tus compras que puedes usar para pagar tu tarjeta, viajar en DiDi o pedir comida en DiDi Food. \n 3% de CASHBACK* en DiDi Food \n 1% de CASHBACK* en DiDi \n 1% de CASHBACK* en miles de establecimientos más \n *Aplican Términos y Condiciones.",
-  "DiDiCreditFeatures.bgColor": "bg-orange-primary",
-  "DiDiCreditFeatures.textColor": "white",
-  "DiDiCreditFeatures.btnMode": "light",
-  "DiDiCreditFeaturesSecondary.btnMode": "light"
+  "DiDiCreditBenefits.title": "Siéntete Seguro",
+  "DiDiCreditBenefits.desc": "Creada por DiDi y respaldada por Mastercard",
+  "DiDiCreditBenefits.bgColor": "bg-orange-primary",
+  "DiDiCreditBenefits.textColor": "white",
+  "DiDiCreditBenefits.columns": [
+    {
+      "title": "",
+      "desc": "Con el CVV dinámico tus compras en línea son más seguras",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white",
+      "width": "w-xs"
+    },
+    {
+      "title": "",
+      "desc": "Recibe notificaciones de todas tus transacciones",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white",
+      "width": "w-xs"
+    },
+    {
+      "title": "",
+      "desc": "Bloquea tu tarjeta en cualquier momento desde la app DiDi ",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white",
+      "width": "w-xs"
+    },
+    {
+      "title": "",
+      "desc": "Tus datos son solo tuyos nos aseguramos de no compartirlos",
+      "bgColor": "bg-orange-primary",
+      "textColor": "white",
+      "width": "w-xs"
+    }
+  ],
+  "DiDiCreditRequirements.title": "Para pedirla solo necesitas:",
+  "DiDiCreditRequirements.bullets": [
+    "Ser mayor de edad.",
+    "Tener una INE/IFE vigente",
+    "Tener un comprobante de domicilio",
+    "Tener tu RFC a la mano"
+  ],
+  "DiDiCreditRequirements.bgColor": "bg-white",
+  "DiDiCreditRequirements.textColor": "gray-primary",
+  "DiDiCreditRequirements.btnMode": "primary",
+  "DiDiCreditWhy.title": "Tasas y costos con transparencia",
+  "DiDiCreditWhy.desc": "Regigold, S.A. DE C.V., SOFOM, E.N.R.",
+  "DiDiCreditWhy.bullets": [
+    "Costo Anual Total promedio de 92,3%",
+    "Tasa de interés promedio ponderada anual fija del 67,2%",
+    "Fecha de cálculo: 17 de Enero 2023"
+  ],
+  "DiDiCreditWhy.bgColor": "bg-white",
+  "DiDiCreditWhy.textColor": "gray-primary",
+  "DiDiCreditFAQ.title": "¿Tienes más dudas? Acá las puedes resolver:",
+  "DiDiCreditFAQ.desc": "",
+  "DiDiCreditFAQ.textColor": "white",
+  "DiDiCreditFAQ.bgColor": "bg-orange-primary",
+  "DiDiCreditFAQ.textAccordionColor": "orange-primary",
+  "DiDiCreditFAQ.bgAccordionColor": "bg-white"
 }

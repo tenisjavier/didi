@@ -1,37 +1,35 @@
 import React from "react";
 import Image from "../Image";
 import { t } from "../../context/countryContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import ColumnImage from "../ColumnImage";
 
 interface BenefitsProps {
   image: any;
+  images?: any;
   icons: IconProp[];
 }
 
-const DiDiCreditBenefits = ({ image, icons }: BenefitsProps) => {
+const DiDiCreditBenefits = ({ image, images }: BenefitsProps) => {
   const props = {
     title: t("DiDiCreditBenefits.title"),
     desc: t("DiDiCreditBenefits.desc"),
     bgColor: t("DiDiCreditBenefits.bgColor"),
-    textColor: "gray-primary",
+    textColor: t("DiDiCreditBenefits.textColor"),
     image: (
-      <Image imageData={image} imageStyle={"z-10 m-4 mt-8 lg:w-80"}></Image>
+      <Image imageData={image} imageStyle={"z-10 m-4 mt-8 lg:w-96"}></Image>
     ),
     columns: t("DiDiCreditBenefits.columns", { returnObjects: true }),
     reverse: false,
   };
 
-  icons.forEach((icon, index) => {
-    props.columns[index].image = (
-      <FontAwesomeIcon
-        icon={icon}
-        size="4x"
-        className="text-orange-primary w-16"
-      />
-    );
-  });
+  if (images) {
+    props.columns.forEach((col: any, index: string) => {
+      col.image = images[index];
+      col.imageStyle = "w-8";
+      col.isImage = true;
+    });
+  }
 
   return <ColumnImage {...props}></ColumnImage>;
 };
