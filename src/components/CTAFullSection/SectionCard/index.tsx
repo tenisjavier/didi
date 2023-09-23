@@ -1,7 +1,9 @@
 import React from "react";
-import Btn, { BtnType, BtnMode } from "../../Btn";
+import { BtnType, BtnMode } from "../../Btn";
 import Image, { ImageDataType } from "../../Image";
 import Bullets, { BulletsProps } from "./Bullets";
+import textHighlighter from "../../../util/textHighlighter";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export interface SectionCardProps {
   image?: ImageDataType,
@@ -21,6 +23,7 @@ export interface SectionCardProps {
     text: string,
     link: string,
     textColor: string,
+    hasIcon?: boolean,
   },
   descFooter?: {
     text: string,
@@ -53,14 +56,23 @@ const SectionCard: React.FC<SectionCardProps> = ({
         <div className={`flex flex-col justify-center items-center ${textColor} ${bgColorCard} px-28 py-16 h-full lg:h-auto`}
         >
           <div className={`flex flex-col font-bold`} >
-            <h1 className="lg:text-5xl text-4xl text-left p-0 m-0">{title}</h1>
-            <p className="lg:text-5xl text-4xl text-left p-0 m-0 font-normal">{subTitle}</p>
-            <p className="lg:text-lg text-left p-0 m-0 mt-12">{desc}</p>
+            <h1 className="lg:text-5xl text-4xl text-left p-0 m-0">{textHighlighter(title)}</h1>
+            <p className="lg:text-5xl text-4xl text-left p-0 m-0 font-normal">{textHighlighter(subTitle)}</p>
+            <p className="lg:text-lg text-left p-0 m-0 mt-12">{textHighlighter(desc)}</p>
             {bullets && <Bullets {...bullets} />}
-            {footerLink && <a className={`lg:text-lg ${footerLink.textColor}`} href={footerLink.link}>{footerLink.text}</a>}
+            {footerLink && (
+              <a
+                className={`lg:text-lg underline underline-offset-8 ${footerLink.textColor}`}
+                href={footerLink.link}>
+                {footerLink.text}
+                {footerLink.hasIcon && <Image imageData={{
+                  title: 'arrow',
+                  description: 'arrow',
+                }}
+                  src="/icon/icon-arrow-up-right.svg" imageStyle="w-6" />}
+              </a>
+            )}
             {descFooter && <p className={`lg:text-lg ${descFooter.textColor}`}>{descFooter.text}</p>}
-            {/* <Btn btnTextCenter btnType={btnType} btnMode={btnMode} btnText={btnText}></Btn> */}
-            {/* {} */}
           </div>
         </div>
       )}

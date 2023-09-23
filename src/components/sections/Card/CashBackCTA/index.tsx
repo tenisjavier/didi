@@ -16,7 +16,7 @@ const CashBackCTA = ({ }: CashBackCTAProps) => {
 
   const colTwo: ColumType = {
     bullets: {
-      creditCardBullets: t("CashBack.bullets", { returnObjects: true }),
+      creditCardCashBackBullets: t("CashBack.bullets", { returnObjects: true }),
     },
     footerLink: {
       link: t("CashBack.footerLink.link"),

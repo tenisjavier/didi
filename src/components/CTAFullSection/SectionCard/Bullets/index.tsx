@@ -1,20 +1,17 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faCarSide } from "@fortawesome/free-solid-svg-icons";
+import { faCarSide, faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import textHighlighter from "../../../../util/textHighlighter";
+import CreditCardCashBackBullets, { CreditCardCashBackBulletsProps } from "./CreditCardCashBackBullets";
 
-type CreditCardBullets = {
-  text: string;
-  icon: IconProp;
-}
 
 export interface BulletsProps {
   bullets?: string[] | JSX.Element[];
   textDir?: string;
   margin?: string;
   customBulletIcon?: boolean;
-  icon?: IconProp;
-  creditCardBullets?: CreditCardBullets[];
+  creditCardCashBackBullets?: CreditCardCashBackBulletsProps[];
+  icon?: 'faCarSide' | 'faArrowRight' | 'faCheck'
 }
 
 const Bullets = ({
@@ -23,37 +20,28 @@ const Bullets = ({
   textDir,
   margin,
   icon,
-  creditCardBullets
+  creditCardCashBackBullets
 }: BulletsProps) => {
+
+  const icons = {
+    faCarSide,
+    faArrowRight,
+    faCheck
+  }
+
   return (
     <ul
-      className={`p-0 mt-12 mb-6 list-none ${textDir} text-xl flex flex-col gap-6`}
+      className={`p-0 mt-12 mb-6 list-none ${textDir} text-xl flex flex-col gap-12`}
     >
-      {creditCardBullets && creditCardBullets?.map((item, index) => (
-        <li key={index} className="flex gap-4">
-          {!customBulletIcon ? (
-            <FontAwesomeIcon
-              icon={faCarSide}
-              className={`mt-1 ${margin} text-orange-primary w-6`}
-              size="sm"
-            />
-          ) : (
-            icon && (
-              <FontAwesomeIcon
-                icon={icon}
-                className={`${margin} text-orange-primary w-6`}
-                size="sm"
-              />
-            )
-          )}
-          <div className="inline-block">
-            <p className="mt-0 mb-5 text-xl">{item.text}</p>
-          </div>
-        </li>
+      {creditCardCashBackBullets && creditCardCashBackBullets?.map((item, index) => (
+        <CreditCardCashBackBullets
+          text={item.text}
+          icon={item.icon}
+          percentCashBack={item.percentCashBack} />
       ))}
       {bullets && bullets?.map((item, index) => (
         <li key={index} className="flex gap-4">
-          {!customBulletIcon ? (
+          {!customBulletIcon && !icon ? (
             <FontAwesomeIcon
               icon={faCarSide}
               className={`mt-1 ${margin} text-orange-primary w-6`}
@@ -62,7 +50,7 @@ const Bullets = ({
           ) : (
             icon && (
               <FontAwesomeIcon
-                icon={icon}
+                icon={icons[icon]}
                 className={`${margin} text-orange-primary w-6`}
                 size="sm"
               />
@@ -72,7 +60,7 @@ const Bullets = ({
             {typeof item === "string"
               ? item.split("\n").map((str, index) => (
                 <p className="mt-0 mb-5 text-xl" key={index}>
-                  {str}
+                  {textHighlighter(str)}
                 </p>
               ))
               : item}

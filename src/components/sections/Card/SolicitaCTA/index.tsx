@@ -19,9 +19,9 @@ const SolicitaCTA = ({ image }: SolicitaCTAProps) => {
       title: t("SolicitaCTA.title"),
       bullets: {
         bullets: t("SolicitaCTA.bullets", { returnObjects: true }),
+        icon: 'faCheck',
       },
     },
-    reverse: true,
   };
   return <CTAFullSection {...props}></CTAFullSection>;
 };
