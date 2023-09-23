@@ -15,7 +15,7 @@ const CreditCardCashBackBullets: React.FC<CreditCardCashBackBulletsProps> = ({
 }) => {
   return (
     <li
-      className="flex gap-4 rounded-3xl pt-10 px-8 pb-6 relative"
+      className="lg:w-full flex gap-4 rounded-3xl lg:pt-10 lg:px-8 lg:pb-6 pt-8 px-4 pb-2 relative"
       style={{
         border: '1px solid #D7D7D7',
       }}

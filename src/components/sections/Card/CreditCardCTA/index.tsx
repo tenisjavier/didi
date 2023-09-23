@@ -25,8 +25,8 @@ const CreditCardCTA = ({ image }: CreditCardCTAProps) => {
   const colTwo: ColumType = {
     image: image,
     type: "imageCard",
-    imageStyle: "z-10 w-full h-full",
-    containerImageStyle: "w-full h-full"
+    imageStyle: "lg:w-full lg:h-full w-11/12",
+    containerImageStyle: "w-full h-full lg:mb-0 mb-16"
   }
 
   const props: CTAFullSectionProps = {

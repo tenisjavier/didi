@@ -11,7 +11,7 @@ const SolicitaCTA = ({ image }: SolicitaCTAProps) => {
 
   const props: CTAFullSectionProps = {
     colOne: {
-      imageStyle: "",
+      imageStyle: "mt-4 lg:mt-0",
       image,
       type: 'imageCard',
     },

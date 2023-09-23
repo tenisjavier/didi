@@ -49,11 +49,11 @@ const SectionCard: React.FC<SectionCardProps> = ({
   return (
     <>
       {image && type === 'imageCard' ? (
-        <div className={`flex w-full h-full justify-center items-center ${containerImageStyle}`}>
-          <Image imageStyle={`${imageStyle}`} imageData={image} />
+        <div className={`w-full h-full flex justify-center items-center ${containerImageStyle}`}>
+          <Image imageStyle={`${imageStyle} `} imageData={image} />
         </div>
       ) : (
-        <div className={`flex flex-col justify-center items-center ${textColor} ${bgColorCard} px-28 py-16 h-full lg:h-auto`}
+        <div className={`flex flex-col justify-center items-center ${textColor} ${bgColorCard} px-4 py-4 lg:px-28 lg:py-16 h-full lg:h-auto`}
         >
           <div className={`flex flex-col font-bold`} >
             <h1 className="lg:text-5xl text-4xl text-left p-0 m-0">{textHighlighter(title)}</h1>
