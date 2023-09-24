@@ -27,7 +27,11 @@ const ColumnImage = ({
   return (
     <section className={`${bgColor} text-${textColor} py-12`}>
       <div className="container mx-auto flex w-full  flex-col justify-center">
-        {title && <h2 className="text-3xl lg:text-4xl text-left">{title}</h2>}
+        {title && (
+          <h2 className="text-3xl lg:text-4xl text-left lg:text-center">
+            {title}
+          </h2>
+        )}
         {desc && <p className="text-center">{desc}</p>}
 
         <div
