@@ -7,7 +7,7 @@ import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
 import Menu from "./Menu";
 import MenuCountryFlags from "./MenuCountryFlags";
 
-interface HeaderProps extends BreadcrumbProps { }
+interface HeaderProps extends BreadcrumbProps {}
 
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
@@ -62,7 +62,7 @@ const Navlogo = () => {
         width={120}
       />
     );
-  if (pathname.includes("/card/"))
+  if (pathname.includes("/tarjeta-de-credito/"))
     logoImg = (
       <StaticImage
         src="../images/didi-logo-card.png"
