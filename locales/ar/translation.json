@@ -480,30 +480,25 @@
       "title": "Conductor",
       "desc": "Si sos conductor, llamá al +54 (11) 3987-6342 para que podamos resolver tus consultas de manera personalizada.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Driver Center",
       "desc": "Si sos conductor, te podés acercar al Driver Center para tener una atención especializada y exclusiva para conductores. Dirección: Loyola 501, Villa Crespo, CABA.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Pasajero",
       "desc": "Para tus consultas y solicitudes te invitamos a usar nuestro Chat en Vivo 24/7 en el menú de Ayuda de tu app DiDi Pasajero.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Prensa",
       "desc": "Si formás parte de la prensa argentina, podés contactarnos a través del siguiente mail: argentinaprensa@didiglobal.com",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "ArticlesHero.title": "DiDi Artículos",

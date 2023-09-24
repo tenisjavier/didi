@@ -16,11 +16,9 @@ const DiDiCreditBenefits = ({ image, images }: BenefitsProps) => {
     desc: t("DiDiCreditBenefits.desc"),
     bgColor: t("DiDiCreditBenefits.bgColor"),
     textColor: t("DiDiCreditBenefits.textColor"),
-    image: (
-      <Image imageData={image} imageStyle={"z-10 m-4 mt-8 lg:w-96"}></Image>
-    ),
+    image: <Image imageData={image} imageStyle={"z-10 mt-8 "}></Image>,
     columns: t("DiDiCreditBenefits.columns", { returnObjects: true }),
-    reverse: false,
+    imageAlignment: "center",
   };
 
   if (images) {

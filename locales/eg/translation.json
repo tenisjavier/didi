@@ -89,29 +89,25 @@
       "title": "أجرة منخفضة بشكل يومي",
       "desc": "مسافة أبعد بتكلفة أقل، وذلك بفضل أجرة دي دي اليومية المنخفضة، بالإضافة إلى العروض الترويجية.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "السرعة والموثوقية",
       "desc": "مشوارك جاهز في الموعد الذي يناسبك.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "السلامة أولاً",
       "desc": "استمتع بمزيد من راحة البال عند الركوب مع الشركاء السائقين الذين تم التحقق منهم مسبقًا، واحصل على ميزات السلامة داخل التطبيق، بالإضافة إلى طرق الدفع الآمنة.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "مشاوير ترسم الابتسامة على وجهك",
       "desc": "نتعامل مع شركائنا السائقين بشكل يتسم بالاحترام ويتيح لك الاستمتاع بمشوارك بكل هدوء.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "PaxWhyDiDi.title": "Get FREE* rides",
@@ -150,29 +146,25 @@
       "title": "زيادة دخلك مع دي دي",
       "desc": "احصل على نسبة أكبر من الأجرة مع رسوم الخدمة التنافسية من دي دي والعروض الترويجية الرائعة.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "السلامة أولاً",
       "desc": "الوصول إلى ميزات السلامة الرائدة المتوفرة من دي دي داخل التطبيق ودعم السائق على مدار الساعة.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "ساعات عمل مرنة",
       "desc": "اختر مكان وزمان القيادة.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "مجتمع سائقين نشط",
       "desc": "انضم إلى مجتمع الشركاء السائقين مع دي دي على مستوى العالم.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "Requirements.title": "متطلبات أن تصبح سائقًا",

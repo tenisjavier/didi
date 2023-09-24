@@ -628,43 +628,37 @@
       "title": "1. El área interesada deberá girar un oficio dirigido a DiDi",
       "desc": "",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "2. Verificar que el equipo de LERT confirme la recepción",
       "desc": "",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "3. Verificar que el equipo de LERT responda de recibido",
       "desc": "",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "4. Podrá Solicitar Datos de Usuarios",
       "desc": "Datos Registro de Socios y Usuarios",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "5. Datos del Viaje",
       "desc": "Rutas, Audio Grabados, Datos del Vehiculo.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "6. Información Complementaria",
       "desc": "Otros viajes del socio y usuarios",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "ContactAuthorityBanner.title": "Tenga en Cuenta",

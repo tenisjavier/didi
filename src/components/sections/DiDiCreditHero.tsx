@@ -25,7 +25,7 @@ const DiDiCreditHero = ({ bgImage, image }: DiDiCreditHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
     image: image,
-    imageStyle: "!z-10 m-4 w-110",
+    imageStyle: "!z-10 m-4 w-128",
     btnMode: t("DiDiCreditHero.btnMode"),
     btnType: "card",
     btnText: t("DiDiCreditHero.btnText"),
