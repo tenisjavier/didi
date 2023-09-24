@@ -21,7 +21,7 @@ const DiDiCreditFeatures = ({ image }: DiDiCreditFeaturesProps) => {
     textColor: t("DiDiCreditFeatures.textColor"),
     bgColor: t("DiDiCreditFeatures.bgColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-110 h-full",
+    imageStyle: "z-10 m-4 w-110",
     btnMode: t("DiDiCreditFeatures.btnMode"),
     btnType: "card",
     reverse: true,

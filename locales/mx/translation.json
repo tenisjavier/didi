@@ -287,29 +287,25 @@
       "title": "Ganancias por distancia y tiempo",
       "desc": "Con DiDi ganas por kilómetro y por minuto recorridos",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-xs"
+      "textColor": "gray-primary"
     },
     {
       "title": "Soporte 24/7",
       "desc": "Contamos con atención 24/7 en nuestro chat en vivo.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-xs"
+      "textColor": "gray-primary"
     },
     {
       "title": "Kit de seguridad.",
       "desc": "Conduce tranquilo con las herramientas de seguridad. ",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-xs"
+      "textColor": "gray-primary"
     },
     {
       "title": "Logra tus metas de ganancias",
       "desc": "Descubre nuestro asistente de ganancias. Recibe tus ganancias diarias con DiDi Pay.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-xs"
+      "textColor": "gray-primary"
     }
   ],
   "DrvWhyDiDi.title": "Tu seguridad es nuestra prioridad. Por eso tenemos herramientas pensadas para ti:",
@@ -2013,29 +2009,25 @@
       "title": "",
       "desc": "Con el CVV dinámico tus compras en línea son más seguras",
       "bgColor": "bg-orange-primary",
-      "textColor": "white",
-      "width": "w-xs"
+      "textColor": "white"
     },
     {
       "title": "",
       "desc": "Recibe notificaciones de todas tus transacciones",
       "bgColor": "bg-orange-primary",
-      "textColor": "white",
-      "width": "w-xs"
+      "textColor": "white"
     },
     {
       "title": "",
       "desc": "Bloquea tu tarjeta en cualquier momento desde la app DiDi ",
       "bgColor": "bg-orange-primary",
-      "textColor": "white",
-      "width": "w-xs"
+      "textColor": "white"
     },
     {
       "title": "",
       "desc": "Tus datos son solo tuyos nos aseguramos de no compartirlos",
       "bgColor": "bg-orange-primary",
-      "textColor": "white",
-      "width": "w-xs"
+      "textColor": "white"
     }
   ],
   "DiDiCreditRequirements.title": "Para pedirla solo necesitas:",

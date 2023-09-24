@@ -63,30 +63,25 @@
       "title": "Affordable fares",
       "desc": "Let your dollar travel further with DiDi’s everyday low fares and offers.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Quick & Reliable",
       "desc": "Your ride is ready in minutes. Break free from timetables and request a ride on your own watch.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Safety first",
       "desc": "Get added peace of mind when you ride with pre-screened drivers, built-in safety features, and pay as you go with secure cashless payments.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Happy drivers equals happy rides",
       "desc": "With an average industry-leading Services Fee, every ride taken with DiDi allows Australian rideshare drivers to earn more of the fare.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "PaxWhyDiDi.title": "Get FREE* rides",
@@ -116,30 +111,25 @@
       "title": "Increase your earning potential",
       "desc": "Take home more of the fare with DiDi’s industry-leading low Services Fees and additional bonuses.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Safety first",
       "desc": "Access in-app safety features and our 24/7 dedicated support team.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Be in control",
       "desc": "Pick up nearby riders or choose the location you want to drive in. ",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Weekly payouts",
       "desc": "Get paid weekly and earn flexibly. You decide when you want to earn.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "Requirements.title": "Requirements to become a Driver",
@@ -440,30 +430,25 @@
       "title": "What do you need?",
       "desc": "DiDi Customer Support can assist you with any enquiries, issues, or questions you have with DiDi.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Call us",
       "desc": "You can speak to our Customer Support Team by calling 1800 413 678.",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Email us",
       "desc": "Need further information, you can contact DiDi Customer Support directly via email at help.driver@au.didiglobal.com or help.rider@au.didiglobal.com ",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-      "width": "w-64"
+      "textColor": "gray-primary"
     },
     {
       "title": "Urgent Contact",
       "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team on +61 2 8488 0901 or via email at help.safety@didiglobal.com",
       "bgColor": "bg-white",
-      "textColor": "gray-primary",
-
-      "width": "w-64"
+      "textColor": "gray-primary"
     }
   ],
   "AboutWomenDrvHero.title": "About Women Drivers",

@@ -5,7 +5,6 @@ import Image, { ImageDataType } from "../../components/Image";
 import SectionBtn from "./SectionBtn";
 import SectionBullets from "./SectionBullets";
 import SectionLink from "./SectionLink";
-import SectionForm from "./SectionForm";
 import SectionIframe from "./SectionIframe";
 import SectionList from "./SectionList";
 import SectionBulletsCreditCard, {
@@ -117,9 +116,10 @@ const CTASection = (props: CTAProps) => {
       } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`container mx-auto flex w-full flex-wrap items-center justify-center py-12 ${
-          reverse ? "flex-row-reverse" : ""
-        } ${
+        className={`container mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${
+          reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
+        } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
+        ${
           image || imageRawRender || iframe
             ? "xl:justify-between"
             : "xl:justify-start"
