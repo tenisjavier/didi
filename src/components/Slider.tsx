@@ -60,7 +60,9 @@ const SliderSection = ({ title, items }: SliderProps) => {
   return (
     <section className="min-h-[40rem]">
       <div className="container mx-auto text-gray-primary">
-        <h2 className="mt-10 text-center text-4xl font-bold">{title}</h2>
+        <h2 className="mt-10 text-left lg:text-center text-3xl lg:text-4xl font-bold">
+          {title}
+        </h2>
         <div className="group relative my-4  mx-2 h-128 lg:mx-20 lg:h-110">
           <div
             className="absolute top-48 left-2 w-fit cursor-pointer p-2 text-4xl opacity-0 duration-300 ease-in hover:bg-gray-300 group-hover:opacity-100 group-hover:transition-all md:top-2/3 lg:left-8
@@ -93,7 +95,7 @@ const SliderSection = ({ title, items }: SliderProps) => {
                   ></Image>
                 </div>
                 <div className={idx === index ? textShow : textHide}>
-                  <h3 className="mt-0 text-center  text-3xl font-bold">
+                  <h3 className="mt-0 text-center  text-2xl lg:text-3xl font-bold">
                     {data.name}
                   </h3>
                   <p className="my-2 text-justify text-base  2xl:text-lg">

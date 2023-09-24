@@ -66,7 +66,7 @@ const btnLinks: AllBtnInterface = {
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
-    foodDeliveryText: "Empieza a Repartir con DiDi Food",
+    foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-PE/store",
     foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
@@ -88,7 +88,7 @@ const btnLinks: AllBtnInterface = {
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
-    foodDeliveryText: "Empieza a Repartir con DiDi Food",
+    foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-CO/store",
     foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
@@ -126,7 +126,7 @@ const btnLinks: AllBtnInterface = {
     fleetText: "Descargá DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
-    foodDeliveryText: "Empezá a Repartir con DiDi Food",
+    foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-CR/store",
     foodBusinessText: "Registrá tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",

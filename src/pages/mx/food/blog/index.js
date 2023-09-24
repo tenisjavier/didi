@@ -12,12 +12,8 @@ const FoodBlog = ({ data }) => {
   })[0];
   return (
     <Layout>
-      <div className="lg:block hidden">
-        <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
-      </div>
-      <div className="pt-8 lg:pt-0 bg-orange-primary">
-        <FoodBlogColumns  data={data}></FoodBlogColumns>
-      </div>
+      <FoodBlogHero bgImage={articlesHeroBgImage}></FoodBlogHero>
+      <FoodBlogColumns data={data}></FoodBlogColumns>
       <Pagination data={data} postsPerPage={50}></Pagination>
     </Layout>
   );
@@ -36,7 +32,10 @@ export const query = graphql`
       }
     }
     allContentfulArticle(
-      filter: { category: { in: ["food", "food-courier"] }, country: { code: { eq: "mx" } } }
+      filter: {
+        category: { in: ["food", "food-courier"] }
+        country: { code: { eq: "mx" } }
+      }
       sort: { updatedAt: DESC }
     ) {
       nodes {

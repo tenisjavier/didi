@@ -25,14 +25,13 @@ const ColumnsSection = ({
   textColor,
   sectionID,
   RTL,
-  hasGrid
+  hasGrid,
 }: ColumnsSectionProps) => {
   let dir: any = "ltr";
 
   if (RTL) {
     dir = "rtl";
   }
-  const colsDesktop = gridCols ? gridCols : "grid-cols-3";
   return (
     <section
       style={{ direction: dir }}
@@ -43,14 +42,20 @@ const ColumnsSection = ({
         {title &&
           title
             .split("\n")
-            .map((str) => <h2 className="text-center text-4xl">{str}</h2>)}
+            .map((str) => (
+              <h2 className="text-left lg:text-center text-4xl">{str}</h2>
+            ))}
         {desc &&
           desc
             .split("\n")
-            .map((str) => <p className="text-center text-lg">{str}</p>)}
+            .map((str) => (
+              <p className="text-left lg:text-center text-lg">{str}</p>
+            ))}
 
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 ${hasGrid ? 'grid-cols-2 gap-10' : 'lg:flex lg:flex-wrap gap-2'} mt-10  lg:justify-around `}
+          className={`grid grid-cols-1 md:grid-cols-2 ${
+            hasGrid ? "grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"
+          } mt-10  lg:justify-around `}
         >
           {columns &&
             columns.map((col, index) => {

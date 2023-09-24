@@ -60,14 +60,18 @@ const Banner = ({
             image ? "text-left" : "text-center"
           }`}
         >
-          <h3 className={`mb-2 text-3xl lg:text-4xl font-bold `}>{title}</h3>
+          <h3
+            className={`mb-2 text-3xl lg:text-4xl text-left lg:text-center font-bold `}
+          >
+            {title}
+          </h3>
 
           {descText &&
             descText
               .split("\n")
               .map((str) => <p className=" text-lg">{str}</p>)}
 
-          {desc && <p className="text-lg">{desc}</p>}
+          {desc && <p className="text-lg text-left lg:text-center">{desc}</p>}
           <span
             className={`flex justify-center ${
               btnText != "VideoSection.btnText" ? "" : "hidden"

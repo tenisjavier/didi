@@ -24,6 +24,10 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-restaurant",
       dropMenu: [
         {
+          text: "Restaurantes",
+          url: "/mx/food/restaurantes/",
+        },
+        {
           text: "Registra tu Restaurante",
           url: "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
         },
@@ -50,6 +54,10 @@ const menuLinksFood: AllMenuInterface = {
       url: "/mx/food/repartidores/",
       icon: "menu-delivery",
       dropMenu: [
+        {
+          text: "Socio Repartidor",
+          url: "/mx/food/repartidores/",
+        },
         {
           text: "Regístrate como Repartidor",
           url: "https://global-food-courier.onelink.me/zzaY/delivery",
@@ -155,6 +163,10 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-restaurant",
       dropMenu: [
         {
+          text: "Restaurantes",
+          url: "/co/food/restaurantes/",
+        },
+        {
           text: "Registra tu Restaurante",
           url: "https://www.didi-food.com/es-CO/store",
         },
@@ -177,6 +189,10 @@ const menuLinksFood: AllMenuInterface = {
       url: "/co/food/repartidores/",
       icon: "menu-delivery",
       dropMenu: [
+        {
+          text: "Socio repartidor",
+          url: "/co/food/repartidores/",
+        },
         {
           text: "Registrate como Repartidor",
           url: "https://global-food-courier.onelink.me/zzaY/delivery",
@@ -216,6 +232,14 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-restaurant",
       dropMenu: [
         {
+          text: "Restaurantes",
+          url: "/pe/food/restaurantes/",
+        },
+        {
+          text: "Registra tu Restaurante",
+          url: "https://www.didi-food.com/es-PE/store",
+        },
+        {
           text: "Kit Digital",
           url: "/pe/food/restaurantes/kit-digital/",
         },
@@ -226,6 +250,10 @@ const menuLinksFood: AllMenuInterface = {
       url: "/pe/food/repartidores/",
       icon: "menu-delivery",
       dropMenu: [
+        {
+          text: "Socio Repartidor",
+          url: "/pe/food/repartidores/",
+        },
         {
           text: "Regístrate como Repartidor",
           url: "https://global-food-courier.onelink.me/zzaY/delivery",
