@@ -40,7 +40,7 @@ const ListItem = ({ text, secondText, link, image }: ListItemProps) => {
     <li
       className={`${
         image ? "text-white" : "text-blue-primary"
-      } border-gray-primary w-96 rounded border border-solid h-32 m-1 relative`}
+      } border-gray-primary  rounded border border-solid h-32  relative`}
     >
       {image && (
         <Image

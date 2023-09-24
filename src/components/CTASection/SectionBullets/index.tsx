@@ -20,7 +20,7 @@ const SectionBullets = ({
 }: SectionBulletsProps) => {
   return (
     <ul
-      className={`mt-12 mb-6 list-none ${textDir} text-xl flex flex-col gap-3`}
+      className={`p-0 lg:pl-12 mt-8 mb-6 list-none ${textDir} text-xl flex flex-col gap-3`}
     >
       {bullets?.map((item, index) => (
         <li key={index} className="flex">
@@ -42,10 +42,10 @@ const SectionBullets = ({
           <div className="inline-block">
             {typeof item === "string"
               ? item.split("\n").map((str, index) => (
-                <p className="mt-0 mb-5 text-xl" key={index}>
-                  {str}
-                </p>
-              ))
+                  <p className="mt-0 mb-5 text-xl" key={index}>
+                    {str}
+                  </p>
+                ))
               : item}
           </div>
         </li>

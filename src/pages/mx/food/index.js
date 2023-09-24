@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useLocation } from "@reach/router";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
@@ -6,7 +6,6 @@ import FoodHero from "../../../components/sections/FoodHero";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
-import FoodAppDownloads from "../../../components/sections/FoodAppDownloads";
 import DiDiFoodCarousel from "../../../components/sections/Food/DiDiFoodCarousel";
 
 const Food = ({ data }) => {
@@ -48,11 +47,6 @@ const Food = ({ data }) => {
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
-      <div className="block lg:hidden xl:hidden">
-        <FoodAppDownloads
-          images={foodDeliveryDownloadsImages}
-        ></FoodAppDownloads>
-      </div>
     </Layout>
   );
 };

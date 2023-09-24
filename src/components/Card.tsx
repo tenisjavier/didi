@@ -105,7 +105,9 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={`${customWidth ? customWidth : 'max-w-xs'}  ${rounded} rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
+      className={`${
+        customWidth ? customWidth : "max-w-xs"
+      }  ${rounded} rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
       <div className="mb-5">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
@@ -125,7 +127,7 @@ const Card = (props: CardProps) => {
             ></AnimatedNumber>
           )}
           {title && !animatedNumber && (
-            <h4 className={`mb-4 text-xl font-bold `}>{title}</h4>
+            <h4 className={`mb-4 text-xl font-bold lg:text-center`}>{title}</h4>
           )}
           <p className={"text-lg"}></p>
           {desc && isTruncate}

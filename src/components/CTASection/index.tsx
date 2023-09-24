@@ -93,7 +93,9 @@ const CTASection = (props: CTAProps) => {
     if (hero) {
       return <h1 className="text-4xl font-bold md:text-5xl mt-0">{title}</h1>;
     } else {
-      return <h2 className="font-bold text-3xl md:text-4xl">{title}</h2>;
+      return (
+        <h2 className="font-bold text-3xl md:text-4xl text-left">{title}</h2>
+      );
     }
   };
 
@@ -101,7 +103,7 @@ const CTASection = (props: CTAProps) => {
     return (
       desc &&
       desc.split("\n").map((str, index) => (
-        <p className={`mb-10 text-lg`} key={index}>
+        <p className={`mb-10 text-lg text-left`} key={index}>
           {str}
         </p>
       ))

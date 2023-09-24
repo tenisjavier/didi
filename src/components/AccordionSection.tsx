@@ -26,7 +26,18 @@ interface AccordionSectionProps {
   type?: string;
 }
 
-const AccordionSection = ({ items, bgColor, bgAccordionColor, title, desc, textColor, textAccordionColor, isClosed, RTL, type }: AccordionSectionProps) => {
+const AccordionSection = ({
+  items,
+  bgColor,
+  bgAccordionColor,
+  title,
+  desc,
+  textColor,
+  textAccordionColor,
+  isClosed,
+  RTL,
+  type,
+}: AccordionSectionProps) => {
   let dir: any = "ltr";
   let textDir = "text-left";
 
@@ -35,8 +46,8 @@ const AccordionSection = ({ items, bgColor, bgAccordionColor, title, desc, textC
     textDir = "text-right";
   }
   const directionStyle: React.CSSProperties = {
-    direction: dir
-  }
+    direction: dir,
+  };
   return (
     <section
       style={directionStyle}
@@ -44,7 +55,7 @@ const AccordionSection = ({ items, bgColor, bgAccordionColor, title, desc, textC
     >
       <div className="container mx-auto flex flex-col justify-center">
         {title && (
-          <h2 className={`text-center text-3xl md:${textDir}`}>{title}</h2>
+          <h2 className={`text-4xl md:${textDir} text-left`}>{title}</h2>
         )}
         {desc &&
           desc
