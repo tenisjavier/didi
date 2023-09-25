@@ -39,10 +39,12 @@ const ArticlesColumns = ({ data, height }: ArticlesColumnsProps) => {
     if (article.category == "pr" && article.readTime == null) {
       const timeToRead = () => {
         try {
-          dataTxt = JSON.parse(article.content.raw);
-          const allText = documentToPlainTextString(dataTxt as Block);
-          const readingSpeed = 250;
-          return Math.ceil(Number(allText.length) / readingSpeed);
+          if (article.content.raw) {
+            dataTxt = JSON.parse(article.content.raw);
+            const allText = documentToPlainTextString(dataTxt as Block);
+            const readingSpeed = 250;
+            return Math.ceil(Number(allText.length) / readingSpeed);
+          }
         } catch (error) {
           console.error("Falha ao interpretar JSON:", error);
         }
