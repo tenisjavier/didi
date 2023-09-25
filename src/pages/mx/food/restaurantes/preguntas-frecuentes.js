@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FaqFoodHero from "../../../../components/sections/FaqFoodHero";
 import FoodFaqList from "../../../../components/sections/FoodFaqList";
+import FoodFAQ from "../../../../components/sections/FoodFAQ";
 
 const RestaurantePreguntasFrecuentes = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -18,10 +19,16 @@ const RestaurantePreguntasFrecuentes = ({ data }) => {
   const faqStore = data.allContentfulProduct.nodes.filter(
     (node) => node.name === "DiDi Restaurant Tienda"
   );
+  const accordionFaqs = [
+    {
+      faq: data.allContentfulFaq.nodes
+    }
+  ]
 
   return (
     <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
+      <FoodFAQ title="Tienda" desc=" " data={accordionFaqs[0]}></FoodFAQ>
       <FoodFaqList 
         title="Repartidores" 
         faqs={faqDelivery[0].faq}
@@ -68,6 +75,28 @@ export const query = graphql`
                 gatsbyImageData(width: 800)
                 __typename
               }
+            }
+          }
+        }
+      }
+    }
+    allContentfulFaq(
+      filter: {
+        type: { eq: "food" }
+      }
+    ) {
+      nodes {
+        title
+        slug
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData
+              __typename
             }
           }
         }
