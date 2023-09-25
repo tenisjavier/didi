@@ -62,10 +62,6 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
     (countryCode = "mx"), (ns = "food");
   }
 
-  if (pathname.includes("/mx/card")) {
-    ns = "card";
-  }
-
   let [country, updateCountry] = useState({
     code: countryCode,
     ns: ns,
