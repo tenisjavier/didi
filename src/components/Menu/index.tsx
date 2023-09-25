@@ -25,7 +25,7 @@ const Menu = () => {
   if (pathname.includes("food")) links = menuLinksFood;
   if (pathname.includes("/didipay/")) links = menuLinksPay;
   if (pathname.includes("thejourney")) links = menuLinksPr;
-  if (pathname.includes("card")) links = menuLinksCard;
+  if (pathname.includes("tarjeta-de-credito")) links = menuLinksCard;
 
   useEffect(() => {
     const handleResize = () => {

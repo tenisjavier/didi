@@ -7,9 +7,10 @@ import SectionBullets from "./SectionBullets";
 import SectionLink from "./SectionLink";
 import SectionIframe from "./SectionIframe";
 import SectionList from "./SectionList";
-import SectionBulletsCreditCard, {
-  sectionBulletsCreditCardType,
-} from "./SectionBulletsCreditCard";
+import SectionCreditCardCashBackBullets, {
+  SectionCreditCardCashBackBulletsProps,
+} from "./SectionCreditCardCashBackBullets";
+import textHighlighter from "../../util/textHighlighter";
 
 export interface CTAProps extends BtnProps {
   hero: boolean;
@@ -42,10 +43,15 @@ export interface CTAProps extends BtnProps {
   RTL?: boolean;
   descBeforeBullets?: boolean;
   descFooter?: string[] | JSX.Element[];
-  bulletsCreditCard?: sectionBulletsCreditCardType[];
+  bulletsCreditCard?: SectionCreditCardCashBackBulletsProps;
   bulletsConfigColumn?: "default" | "singleColumn";
   bgColumTitle?: string;
   borderColor?: string;
+  hasTextHighlighterBullets?: boolean;
+  textHighlighterConfig?: {
+    hasTextHighlighter: boolean;
+    style?: string;
+  };
 }
 
 const CTASection = (props: CTAProps) => {
@@ -83,6 +89,8 @@ const CTASection = (props: CTAProps) => {
     bulletsConfigColumn = "default",
     bgColumTitle,
     borderColor,
+    textHighlighterConfig,
+    hasTextHighlighterBullets
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
@@ -91,10 +99,10 @@ const CTASection = (props: CTAProps) => {
 
   const getTitleElement = () => {
     if (hero) {
-      return <h1 className="text-4xl font-bold md:text-5xl mt-0">{title}</h1>;
+      return <h1 className="text-4xl font-bold md:text-5xl mt-0">{textHighlighterConfig?.hasTextHighlighter ? textHighlighter(title, textHighlighterConfig.style) : title}</h1>;
     } else {
       return (
-        <h2 className="font-bold text-3xl md:text-4xl text-left">{title}</h2>
+        <h2 className="font-bold text-3xl md:text-4xl text-left">{textHighlighterConfig?.hasTextHighlighter ? textHighlighter(title, textHighlighterConfig.style) : title}</h2>
       );
     }
   };
@@ -113,19 +121,16 @@ const CTASection = (props: CTAProps) => {
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${
-        bgColor && bgColor
-      } ${borderColor && "border-solid border border-" + borderColor}`}
+      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
+        } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`container mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${
-          reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
-        } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
-        ${
-          image || imageRawRender || iframe
+        className={`container mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
+          } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
+        ${image || imageRawRender || iframe || bulletsConfigColumn === "singleColumn"
             ? "xl:justify-between"
             : "xl:justify-start"
-        }`}
+          }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
         {bullets && bulletsConfigColumn === "singleColumn" && (
@@ -135,16 +140,13 @@ const CTASection = (props: CTAProps) => {
             margin={margin}
             textDir={textDir}
             icon={icon}
+            hasTextHighlighter={hasTextHighlighterBullets}
           />
         )}
 
         {bulletsCreditCard && bulletsConfigColumn === "singleColumn" && (
-          <SectionBulletsCreditCard
-            bullets={bulletsCreditCard}
-            customBulletIcon={customBulletIcon}
-            margin={margin}
-            textDir={textDir}
-            icon={icon}
+          <SectionCreditCardCashBackBullets
+            creditCardCashBackBullets={bulletsCreditCard.creditCardCashBackBullets}
           />
         )}
 
@@ -155,9 +157,8 @@ const CTASection = (props: CTAProps) => {
         >
           {getTitleElement()}
           <div
-            className={`flex ${
-              descBeforeBullets ? "flex-col" : "flex-col-reverse"
-            }`}
+            className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
+              }`}
           >
             {renderSectionDesc()}
 
@@ -168,15 +169,12 @@ const CTASection = (props: CTAProps) => {
                 margin={margin}
                 textDir={textDir}
                 icon={icon}
+                hasTextHighlighter={hasTextHighlighterBullets}
               />
             )}
             {bulletsCreditCard && bulletsConfigColumn === "default" && (
-              <SectionBulletsCreditCard
-                bullets={bulletsCreditCard}
-                customBulletIcon={customBulletIcon}
-                margin={margin}
-                textDir={textDir}
-                icon={icon}
+              <SectionCreditCardCashBackBullets
+                creditCardCashBackBullets={bulletsCreditCard.creditCardCashBackBullets}
               />
             )}
             {descFooter && (

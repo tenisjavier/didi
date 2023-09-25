@@ -5,7 +5,7 @@ import Image from "../components/Image";
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
 
 export interface BannerProps extends BtnProps {
-  title: string;
+  title: string | React.ReactNode;
   desc?: string | React.ReactNode;
   descText?: string;
   bgColor: string;
@@ -42,23 +42,18 @@ const Banner = ({
   if (!isRounded) rounded = "";
   return (
     <div
-      className={`${rounded} py-0 lg:py-4 ${
-        bgColor && bgColor
-      } text-${textColor} ${height && height} ${
-        borderColor && "border-solid border border-" + borderColor
-      }`}
+      className={`${rounded} py-0 lg:py-4 ${bgColor && bgColor
+        } text-${textColor} ${height && height} ${borderColor && "border-solid border border-" + borderColor
+        }`}
     >
       <div
-        className={`container mx-auto flex flex-wrap ${
-          reverse ? "flex-row-reverse" : ""
-        } w-full ${alignItems ? alignItems : "items-center"} ${
-          justifyContent ? justifyContent : "justify-center"
-        }`}
+        className={`container mx-auto flex flex-wrap ${reverse ? "flex-row-reverse" : ""
+          } w-full ${alignItems ? alignItems : "items-center"} ${justifyContent ? justifyContent : "justify-center"
+          }`}
       >
         <div
-          className={`flex  flex-col py-4  px-4 lg:px-0  ${
-            image ? "text-left" : "text-center"
-          }`}
+          className={`flex  flex-col py-4  px-4 lg:px-0  ${image ? "text-left" : "text-center"
+            }`}
         >
           <h3
             className={`mb-2 text-3xl lg:text-4xl text-left lg:text-center font-bold `}
@@ -73,9 +68,8 @@ const Banner = ({
 
           {desc && <p className="text-lg text-left lg:text-center">{desc}</p>}
           <span
-            className={`flex justify-center ${
-              btnText != "VideoSection.btnText" ? "" : "hidden"
-            }`}
+            className={`flex justify-center ${btnText != "VideoSection.btnText" ? "" : "hidden"
+              }`}
           >
             <Btn
               btnType={btnType}

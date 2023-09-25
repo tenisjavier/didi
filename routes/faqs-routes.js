@@ -66,6 +66,10 @@ const faqsRoutesInit = async (graphql, createPage) => {
       path = `/${country.code}/food/repartidores/preguntas-frecuentes/${slug}`
     }
 
+    if(type && type[0] === "card"){
+      path = `/${country.code}/tarjeta-de-credito/preguntas-frecuentes/${slug}`
+    }
+
 
     createPage({
       path: path,

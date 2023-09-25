@@ -4,7 +4,7 @@ import Card from "./Card";
 interface ColumnImageProps {
   columns: any[];
   bgColor?: string;
-  title: string;
+  title: string | React.ReactNode;
   desc?: string;
   textColor?: string;
   image?: any;

@@ -7,7 +7,7 @@ import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
 import Menu from "./Menu";
 import MenuCountryFlags from "./MenuCountryFlags";
 
-interface HeaderProps extends BreadcrumbProps {}
+interface HeaderProps extends BreadcrumbProps { }
 
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
@@ -75,7 +75,7 @@ const Navlogo = () => {
   if (countryCode === "en") logoLink = "/";
   if (pathname.includes("food")) logoLink = `/${countryCode}/food/`;
   if (pathname.includes("/didipay/")) logoLink = `/${countryCode}/didipay/`;
-  if (pathname.includes("/card/")) logoLink = `/${countryCode}/card/`;
+  if (pathname.includes("/tarjeta-de-credito/")) logoLink = `/${countryCode}/tarjeta-de-credito/`;
 
   return (
     <div className="pl-8">

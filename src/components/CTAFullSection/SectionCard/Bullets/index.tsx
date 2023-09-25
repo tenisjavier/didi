@@ -20,7 +20,7 @@ const Bullets = ({
   textDir,
   margin,
   icon,
-  creditCardCashBackBullets
+  creditCardCashBackBullets,
 }: BulletsProps) => {
 
   const icons = {

@@ -35,7 +35,7 @@ const CTAFullSection = ({
 }: CTAFullSectionProps) => {
 
   return (
-    <div
+    <section
       className={`relative flex flex-col justify-center items-center  ${isFullScreen && 'lg:h-screen h-full'} ${maxWidthSection}  ${bgSection}`}
     >
       {titleSection && <SectionTitle title={titleSection} textColor={textColorSection} subTitle={subTitleSection} />}
@@ -48,7 +48,7 @@ const CTAFullSection = ({
         )}
         {hasDivider && <SectionDivider />}
       </div>
-    </div>
+    </section>
   )
 }
 
