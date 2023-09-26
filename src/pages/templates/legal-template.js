@@ -14,7 +14,7 @@ const Policies = ({ data }) => {
 
   return (
     <Layout>
-      <PoliciesHero bgImage={policiesBgImage} title={name}></PoliciesHero>
+      {/* <PoliciesHero bgImage={policiesBgImage} title={name}></PoliciesHero> */}
       <TermsAndConditionsContent data={data}></TermsAndConditionsContent>
     </Layout>
   );
