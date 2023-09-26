@@ -102,7 +102,7 @@ const footerLinks: AllFooterInterface = {
     { text: "DiDi Rider", link: "/nz/rider/" },
     { text: "Blog", link: "/nz/blog/" },
     { text: "Careers", link: "https://careers.didiglobal.com/" },
-    { text: "Offers", link: "/nz/offers/" },
+    // { text: "Offers", link: "/nz/offers/" },
     { text: "Legal", link: "/nz/legal/" },
   ],
 };

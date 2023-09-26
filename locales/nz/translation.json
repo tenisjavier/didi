@@ -433,20 +433,14 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Call us",
-      "desc": "You can speak to our Customer Support Team by calling 1800 413 678.",
-      "bgColor": "bg-white",
-      "textColor": "gray-primary"
-    },
-    {
       "title": "Email us",
-      "desc": "Need further information, you can contact DiDi Customer Support directly via email at help.driver@au.didiglobal.com or help.rider@au.didiglobal.com ",
+      "desc": "Need further information, you can contact DiDi Customer Support directly via email at help.driver@nz.didiglobal.com or help.rider@nz.didiglobal.com ",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
     {
       "title": "Urgent Contact",
-      "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team on +61 2 8488 0901 or via email at help.safety@didiglobal.com",
+      "desc": "For any safety critical incidents, you can contact the 24/7 DiDi Incident Response Team via email at help.safety.nz@didiglobal.com",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
     }

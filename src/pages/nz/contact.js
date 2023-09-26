@@ -14,7 +14,7 @@ const Contact = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const icons = [
     faHandshakeAngle,
-    faPhoneVolume,
+    // faPhoneVolume,
     faEnvelope,
     faExclamationCircle,
   ];

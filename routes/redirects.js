@@ -481,6 +481,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/nz/offers/`,
+    toPath: `/nz/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/hk/*`,
     toPath: `https://hk.didiglobal.com/`,
     isPermanent: true,
