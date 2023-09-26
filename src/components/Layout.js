@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import FooterFood from "./FooterFood";
 import SmartBanner from "./SmartBanner";
 import PasswordPopup from "./PasswordPopup";
-import DiDiCreditFooter from './DiDiCreditFooter'
+import DiDiCreditFooter from "./DiDiCreditFooter";
 import "../styles/global.css";
 
 //? layout with global header, menu, smartbanner and footer
@@ -59,9 +59,9 @@ const Layout = ({
   if (pathname.includes("pasajero")) smartBannerType = "pax";
   if (pathname.includes("articulos")) smartBannerType = "pax";
   if (pathname.includes("newsroom")) smartBannerType = "pax";
+  if (pathname.includes("/tarjeta-de-credito")) smartBannerType = "card";
   if (pathname === "/") smartBannerType = "en"; //? en is pax in english for the root pages
   if (sbType) smartBannerType = sbType;
-
 
   const isFood = pathname.includes("/food") && !pathname.includes("thejourney");
   const isTarjeta = pathname.includes("/tarjeta-de-credito");
@@ -85,8 +85,7 @@ const Layout = ({
         <DiDiCreditFooter></DiDiCreditFooter>
       ) : (
         <Footer></Footer>
-      ) 
-      }
+      )}
     </>
   );
   return (

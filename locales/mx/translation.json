@@ -987,7 +987,7 @@
   "LegalHero.btnMode": "hidden",
   "LegalHero.linkItem": "http://privacycenter.didiglobal.com/MX/privacy-notice/747f22cd40983ba85de5260aaf4d40b3/Mexico",
   "StoreHero.title": "Escanéa el QR con tu celular ",
-  "StoreHero.desc": "Descarga DiDi Pasajero escaneando el código con tu celular",
+  "StoreHero.desc": "Descarga DiDi escaneando el código con tu celular y ten acceso a viajes, comida y servicios financieros.",
   "StoreHero.textColor": "white",
   "StoreHero.bgColor": "bg-orange-primary",
   "StoreHero.btnMode": "light",
@@ -2079,7 +2079,6 @@
     },
     {
       "title": "Recibe notificaciones inmediatas con cada compra."
-
     },
     {
       "title": "Bloquea y desbloquea tarjeta desde la app."
@@ -2106,5 +2105,7 @@
       "icon": "icon-shop",
       "percentCashBack": "1"
     }
-  ]
+  ],
+  "SBDiDiCredit.title": "DiDi Card",
+  "SBDiDiCredit.desc": "Todo en una app"
 }

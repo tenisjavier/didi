@@ -41,7 +41,13 @@ export type BtnType =
   | "card"
   | undefined;
 
-export type BtnMode = "primary" | "dark" | "light" | "green" | "hidden";
+export type BtnMode =
+  | "primary"
+  | "dark"
+  | "light"
+  | "green"
+  | "hidden"
+  | "whatsapp";
 
 export interface BtnProps {
   btnType?: BtnType;
