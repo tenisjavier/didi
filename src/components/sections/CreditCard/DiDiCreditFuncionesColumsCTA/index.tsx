@@ -30,6 +30,9 @@ const DiDiCreditFuncionesColumsCTA = ({ images }: DiDiCreditFuncionesColumsCTAPr
       col.customWidth = "w-full";
       col.textColor = t("DiDiCreditFuncionesColums.columns.textColor");
       col.reverse = true;
+      col.hasTextHighlighter = true;
+      col.titleStyles = "font-normal";
+      col.textHighlighterStyle = "text-white font-bold"
     });
   }
   return <ColumnsSection {...props}></ColumnsSection>;

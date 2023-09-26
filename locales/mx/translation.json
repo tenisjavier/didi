@@ -2076,16 +2076,16 @@
   "DiDiCreditFuncionesColums.columns.bgColor": "bg-orange-primary",
   "DiDiCreditFuncionesColums.columns": [
     {
-      "title": "Obtén CASHBACK diario ilimitado con cada compra."
+      "title": "Obtén {CASHBACK} diario {ilimitado} con cada compra."
     },
     {
-      "title": "Revisa tu resumen por semana, mes o año."
+      "title": "Revisa tu resumen por {semana, mes o año.}"
     },
     {
-      "title": "Recibe notificaciones inmediatas con cada compra."
+      "title": "Recibe {notificaciones inmediatas} con cada compra."
     },
     {
-      "title": "Bloquea y desbloquea tarjeta desde la app."
+      "title": "{Bloquea y desbloquea} tarjeta desde la app."
     }
   ],
   "DiDiCreditCashBack.title": "CASH {BACK}",
