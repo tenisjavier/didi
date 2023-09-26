@@ -2,6 +2,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import textHighlighter from "../../../util/textHighlighter";
 
 interface SectionBulletsProps {
   bullets?: string[] | JSX.Element[];
@@ -9,6 +10,7 @@ interface SectionBulletsProps {
   margin: string;
   customBulletIcon?: boolean;
   icon?: IconProp;
+  hasTextHighlighter?: boolean;
 }
 
 const SectionBullets = ({
@@ -17,6 +19,7 @@ const SectionBullets = ({
   textDir,
   margin,
   icon,
+  hasTextHighlighter,
 }: SectionBulletsProps) => {
   return (
     <ul
@@ -42,10 +45,10 @@ const SectionBullets = ({
           <div className="inline-block">
             {typeof item === "string"
               ? item.split("\n").map((str, index) => (
-                  <p className="mt-0 mb-5 text-xl" key={index}>
-                    {str}
-                  </p>
-                ))
+                <p className="mt-0 mb-5 text-xl" key={index}>
+                  {hasTextHighlighter ? textHighlighter(str, 'font-bold') : str}
+                </p>
+              ))
               : item}
           </div>
         </li>

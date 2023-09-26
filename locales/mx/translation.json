@@ -1962,27 +1962,27 @@
   "DiDiCreditHero.textColor": "white",
   "DiDiCreditHero.btnMode": "light",
   "DiDiCreditHero.btnText": "Solicitar en DiDi app",
-  "DiDiCreditBanner.title": "Recibe hasta 3% de CASHBACK* todos los días",
+  "DiDiCreditBanner.title": "Recibe hasta {3% de CASHBACK*} todos los días",
   "DiDiCreditBanner.desc": "",
   "DiDiCreditBanner.bgColor": "bg-white",
-  "DiDiCreditBanner.textColor": "orange-primary",
+  "DiDiCreditBanner.textColor": "gray-primary",
   "DiDiCreditBanner.btnMode": "light",
-  "DiDiCreditBannerBenefits.title": "Sí, con DiDi Card tienes beneficios reales todos los días",
+  "DiDiCreditBannerBenefits.title": "Sí, con {DiDi Card} tienes {beneficios reales} todos los días",
   "DiDiCreditBannerBenefits.desc": "",
   "DiDiCreditBannerBenefits.bgColor": "bg-white",
-  "DiDiCreditBannerBenefits.textColor": "orange-primary",
+  "DiDiCreditBannerBenefits.textColor": "gray-primary",
   "DiDiCreditBannerBenefits.btnMode": "light",
-  "DiDiCreditFeatures.title": "La tarjeta de crédito que te pone las cosas fáciles, de verdad.",
+  "DiDiCreditFeatures.title": "La {tarjeta de crédito} que te pone las cosas fáciles, {de verdad.}",
   "DiDiCreditFeatures.bullets": [
     "Sin anualidad ni comisiones ocultas",
-    "Hasta 3% de CASHBACK que podrás usar para pagar tu tarjeta, en DiDi y DiDi Food, tú decides.",
-    "Creada por DiDi respaldad por Mastercard",
-    "Para ti  24/7 en Soporte DiDi a través del chat de la app."
+    "Hasta {3% de CASHBACK} que podrás usar para pagar tu tarjeta, en {DiDi} y {DiDi Food}, tú decides.",
+    "Creada por {DiDi} respaldad por {Mastercard}",
+    "Para ti  24/7 en {Soporte DiDi} a través del chat de la app."
   ],
   "DiDiCreditFeatures.bgColor": "bg-white",
   "DiDiCreditFeatures.textColor": "gray-primary",
   "DiDiCreditFeatures.btnMode": "primary",
-  "DiDiCreditColumns.title": "Sí, con DiDi Card tienes beneficios reales todos los días",
+  "DiDiCreditColumns.title": "Sí, con {DiDi Card} tienes {beneficios reales} todos los días",
   "DiDiCreditColumns.desc": "",
   "DiDiCreditColumns.bgColor": "bg-white",
   "DiDiCreditColumns.textColor": "gray-primary",
@@ -2030,7 +2030,7 @@
       "textColor": "white"
     }
   ],
-  "DiDiCreditRequirements.title": "Para pedirla solo necesitas:",
+  "DiDiCreditRequirements.title": "Para pedirla {solo necesitas}:",
   "DiDiCreditRequirements.bullets": [
     "Ser mayor de edad.",
     "Tener una INE/IFE vigente",
@@ -2040,12 +2040,12 @@
   "DiDiCreditRequirements.bgColor": "bg-white",
   "DiDiCreditRequirements.textColor": "gray-primary",
   "DiDiCreditRequirements.btnMode": "primary",
-  "DiDiCreditWhy.title": "Tasas y costos con transparencia",
+  "DiDiCreditWhy.title": "Tasas y costos {con transparencia}",
   "DiDiCreditWhy.desc": "Regigold, S.A. DE C.V., SOFOM, E.N.R.",
   "DiDiCreditWhy.bullets": [
-    "Costo Anual Total promedio de 92,3%",
-    "Tasa de interés promedio ponderada anual fija del 67,2%",
-    "Fecha de cálculo: 17 de Enero 2023"
+    "Costo Anual Total promedio de {92,3%}",
+    "Tasa de interés promedio ponderada anual fija del {67,2%}",
+    "Fecha de cálculo: {17 de Enero 2023}"
   ],
   "DiDiCreditWhy.bgColor": "bg-white",
   "DiDiCreditWhy.textColor": "gray-primary",
@@ -2054,5 +2054,57 @@
   "DiDiCreditFAQ.textColor": "white",
   "DiDiCreditFAQ.bgColor": "bg-orange-primary",
   "DiDiCreditFAQ.textAccordionColor": "orange-primary",
-  "DiDiCreditFAQ.bgAccordionColor": "bg-white"
+  "DiDiCreditFAQ.bgAccordionColor": "bg-white",
+  "DiDiCreditBeneficiosHero.title": "Beneficios que solo pasan con tu DiDi Card",
+  "DiDiCreditBeneficiosHero.textColor": "white",
+  "DiDiCreditBeneficiosHero.bgColor": "bg-orange-primary",
+  "DiDiCreditBlogHero.title": "Blog",
+  "DiDiCreditBlogHero.desc": "",
+  "DiDiCreditBlogHero.textColor": "white",
+  "DiDiCreditBlogHero.bgColor": "bg-orange-primary",
+  "DiDiCreditFaqHero.title": "¿Preguntas?",
+  "DiDiCreditFaqHero.desc": "",
+  "DiDiCreditFaqHero.textColor": "white",
+  "DiDiCreditFaqHero.bgColor": "bg-orange-primary",
+  "DiDiCreditFuncionesHero.title": "DiDi Card te a pone fácil.",
+  "DiDiCreditFuncionesHero.desc": "Desde personalizar tu límite de crédito, ver tus gastos mensuales por categoria, hasta bloquear tu tarjeta desde la App.",
+  "DiDiCreditFuncionesHero.textColor": "white",
+  "DiDiCreditFuncionesHero.bgColor": "bg-orange-primary",
+  "DiDiCreditFuncionesColumsCTA.columns": [
+    {
+      "title": "Obtén CASHBACK diario ilimitado con cada compra."
+    },
+    {
+      "title": "Revisa tu resumen por semana, mes o año."
+    },
+    {
+      "title": "Recibe notificaciones inmediatas con cada compra."
+
+    },
+    {
+      "title": "Bloquea y desbloquea tarjeta desde la app."
+    }
+  ],
+  "DiDiCreditCashBack.title": "CASH {BACK}",
+  "DiDiCreditCashBack.subTitle": "¡todos los días!",
+  "DiDiCreditCashBack.desc": "Te regresamos un porcentaje de tus compras que puedes usar para pagar tu tarjeta, viajar en DiDi o pedir comida en DiDi Food.",
+  "DiDiCreditCashBack.textColor": "text-white",
+  "DiDiCreditCashBackColOne.bgColor": "bg-orange-primary",
+  "DiDiCreditCashBack.bullets": [
+    {
+      "text": "de CASHBACK en {DiDi Food}",
+      "icon": "icon-food",
+      "percentCashBack": "3"
+    },
+    {
+      "text": "de CASHBACK en {DiDi}",
+      "icon": "icon-car",
+      "percentCashBack": "1"
+    },
+    {
+      "text": "de CASHBACK en {miles} de establecimientos más",
+      "icon": "icon-shop",
+      "percentCashBack": "1"
+    }
+  ]
 }

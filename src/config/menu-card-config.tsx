@@ -19,19 +19,19 @@ const menuLinksCard: AllMenuInterface = {
   mx: [
     {
       text: "Funciones",
-      url: "/mx/card/funciones/",
+      url: "/mx/tarjeta-de-credito/funciones/",
     },
     {
       text: "Beneficios",
-      url: "/mx/card/beneficios/",
+      url: "/mx/tarjeta-de-credito/beneficios/",
     },
     {
       text: "Blog",
-      url: "/mx/card/blog/",
+      url: "/mx/tarjeta-de-credito/blog/",
     },
     {
       text: "Preguntas frecuentes",
-      url: "/mx/card/preguntas-frecuentes/",
+      url: "/mx/tarjeta-de-credito/preguntas-frecuentes/",
     },
   ],
 };
