@@ -9,14 +9,14 @@ interface ContentProps {
   data: {
     contentfulLegal: {
       content: RenderRichTextData<ContentfulRichTextGatsbyReference>;
-    }
+    };
   };
 }
 
 const TermsAndConditionsContent = ({ data }: ContentProps) => {
   const richContent = data.contentfulLegal.content;
   return (
-    <section className="text-gray-primary container mx-auto mb-32 pt-24 md:px-28">
+    <section className="text-gray-primary container mx-auto mb-32 pt-24 lg:pt-32 md:px-28 ">
       <RichContent richContent={richContent}></RichContent>
     </section>
   );
