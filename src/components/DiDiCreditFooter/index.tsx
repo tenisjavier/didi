@@ -1,5 +1,3 @@
-import { faFacebook, faInstagram, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Image from "../Image";
 import FooterColumn from "./FooterColumn";
@@ -14,7 +12,7 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({ }) => {
 
   return (
     <footer className='bg-gray-median text-white flex justify-center flex-col items-center'>
-      <div className="lg:gap-16 p-24 flex flex-col gap-16">
+      <div className="lg:gap-16 lg:p-24 p-6 flex flex-col gap-16">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-32 items-start justify-between">
           <FooterColumn title={contactanos.title} items={contactanos.items} />
           <FooterColumn title={regulacion.title} items={regulacion.items} />
