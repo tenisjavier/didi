@@ -17,6 +17,7 @@ const FuncionesHero = ({ image }: FuncionesHeroProps) => {
     bgColor: t("DiDiCreditFuncionesHero.bgColor"),
     image: image,
     reverse: true,
+    whiteRight: true,
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Card, { CardProps } from "./Card";
+import textHighlighter from "../util/textHighlighter";
 
 export interface ColumnsSectionProps {
   columns: CardProps[];
@@ -13,6 +14,8 @@ export interface ColumnsSectionProps {
   width?: string;
   RTL?: boolean;
   hasGrid?: boolean;
+  hasTextHighlight?: boolean;
+  textHighlightStyles?: string;
 }
 
 const ColumnsSection = ({
@@ -26,6 +29,8 @@ const ColumnsSection = ({
   sectionID,
   RTL,
   hasGrid,
+  hasTextHighlight,
+  textHighlightStyles,
 }: ColumnsSectionProps) => {
   let dir: any = "ltr";
 
@@ -43,7 +48,7 @@ const ColumnsSection = ({
           title
             .split("\n")
             .map((str) => (
-              <h2 className="text-left lg:text-center text-4xl">{str}</h2>
+              <h2 className="text-left lg:text-center text-4xl">{hasTextHighlight ? textHighlighter(str, textHighlightStyles) : str}</h2>
             ))}
         {desc &&
           desc
@@ -53,9 +58,8 @@ const ColumnsSection = ({
             ))}
 
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 ${
-            hasGrid ? "grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"
-          } mt-10  lg:justify-around `}
+          className={`grid grid-cols-1 md:grid-cols-2 ${hasGrid ? "lg:grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"
+            } mt-10  lg:justify-around `}
         >
           {columns &&
             columns.map((col, index) => {

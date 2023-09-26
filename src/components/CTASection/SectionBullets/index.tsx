@@ -11,6 +11,7 @@ interface SectionBulletsProps {
   customBulletIcon?: boolean;
   icon?: IconProp;
   hasTextHighlighter?: boolean;
+  textHighlighterStyle?: string;
 }
 
 const SectionBullets = ({
