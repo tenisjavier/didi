@@ -36,6 +36,7 @@ export interface CardProps extends BtnProps {
   RTL?: boolean;
   rounded?: string;
   customWidth?: string;
+  reverse?: boolean;
 }
 
 const Card = (props: CardProps) => {
@@ -70,6 +71,7 @@ const Card = (props: CardProps) => {
     RTL,
     rounded,
     customWidth,
+    reverse
   } = props;
 
   let min = "";
@@ -105,9 +107,8 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={`${
-        customWidth ? customWidth : "max-w-xs"
-      }  ${rounded} rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
+      className={`${customWidth ? customWidth : "max-w-xs"
+        }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
       <div className="mb-5">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}

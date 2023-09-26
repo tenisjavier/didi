@@ -26,12 +26,12 @@
   }
 
   @font-face {
-      font-family: 'Goruts Xbold';
-      src: url('../fonts/Goruts.woff2') format('woff2'),
-          url('../fonts/Goruts.woff') format('woff');
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
+    font-family: "Goruts Xbold";
+    src: url("../fonts/Goruts.woff2") format("woff2"),
+      url("../fonts/Goruts.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
   }
 }
 
@@ -177,4 +177,21 @@ section.main-text ol li {
 
 .slick-initialized .slick-track .slick-slide {
   text-align: center;
+}
+
+.white-right::before {
+  content: "";
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .white-right::before {
+    width: 0%;
+    height: 0%;
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BtnProps } from "../Btn";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Image, { ImageDataType } from "../../components/Image";
@@ -52,6 +52,8 @@ export interface CTAProps extends BtnProps {
     hasTextHighlighter: boolean;
     style?: string;
   };
+  textHighlighterStyle?: string;
+  whiteRight?: boolean;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -90,7 +92,9 @@ const CTASection = (props: CTAProps) => {
     bgColumTitle,
     borderColor,
     textHighlighterConfig,
-    hasTextHighlighterBullets
+    hasTextHighlighterBullets,
+    textHighlighterStyle,
+    whiteRight,
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
@@ -99,23 +103,49 @@ const CTASection = (props: CTAProps) => {
 
   const getTitleElement = () => {
     if (hero) {
-      return <h1 className="text-4xl font-bold md:text-5xl mt-0">{textHighlighterConfig?.hasTextHighlighter ? textHighlighter(title, textHighlighterConfig.style) : title}</h1>;
+      return (
+        <h1 className="text-4xl font-bold md:text-5xl mt-0">
+          {title && title.split("\n").map((str, index) => (
+            <Fragment key={index}>
+              {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
+              < br />
+            </Fragment>
+          ))}
+        </h1>
+      )
     } else {
       return (
-        <h2 className="font-bold text-3xl md:text-4xl text-left">{textHighlighterConfig?.hasTextHighlighter ? textHighlighter(title, textHighlighterConfig.style) : title}</h2>
+        <h2 className="font-bold text-3xl md:text-4xl text-left">
+          {title && title.split("\n").map((str, index) => (
+            <Fragment key={index}>
+              {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
+              < br />
+            </Fragment>
+          ))}
+        </h2>
       );
     }
   };
 
   const renderSectionDesc = () => {
     return (
-      desc &&
-      desc.split("\n").map((str, index) => (
-        <p className={`mb-10 text-lg text-left`} key={index}>
-          {str}
-        </p>
-      ))
-    );
+      <p className={`mb-10 text-lg`}>
+        {desc && desc.split('\n').map((str, index) => (
+          <Fragment key={index}>
+            {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
+            < br />
+          </Fragment>
+        ))}
+      </p>
+    )
+    // return (
+    //   desc &&
+    //   desc.split("\n").map((str, index) => (
+    //     <p className={`mb-10 text-lg text-left`} key={index}>
+    //       {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
+    //     </p>
+    //   ))
+    // );
   };
 
   return (
@@ -125,10 +155,10 @@ const CTASection = (props: CTAProps) => {
         } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`container mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
+        className={`${whiteRight ? 'white-right' : 'container'}  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
           } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
         ${image || imageRawRender || iframe || bulletsConfigColumn === "singleColumn"
-            ? "xl:justify-between"
+            ? whiteRight ? "xl:justify-center" : "xl:justify-between"
             : "xl:justify-start"
           }`}
       >

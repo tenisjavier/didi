@@ -2055,7 +2055,7 @@
   "DiDiCreditFAQ.bgColor": "bg-orange-primary",
   "DiDiCreditFAQ.textAccordionColor": "orange-primary",
   "DiDiCreditFAQ.bgAccordionColor": "bg-white",
-  "DiDiCreditBeneficiosHero.title": "Beneficios que solo pasan con tu DiDi Card",
+  "DiDiCreditBeneficiosHero.title": "Beneficios que \n solo pasan con \n tu DiDi Card",
   "DiDiCreditBeneficiosHero.textColor": "white",
   "DiDiCreditBeneficiosHero.bgColor": "bg-orange-primary",
   "DiDiCreditBlogHero.title": "Blog",
@@ -2066,11 +2066,15 @@
   "DiDiCreditFaqHero.desc": "",
   "DiDiCreditFaqHero.textColor": "white",
   "DiDiCreditFaqHero.bgColor": "bg-orange-primary",
-  "DiDiCreditFuncionesHero.title": "DiDi Card te a pone fácil.",
-  "DiDiCreditFuncionesHero.desc": "Desde personalizar tu límite de crédito, ver tus gastos mensuales por categoria, hasta bloquear tu tarjeta desde la App.",
+  "DiDiCreditFuncionesHero.title": "DiDi Card te \n la pone fácil.",
+  "DiDiCreditFuncionesHero.desc": "Desde personalizar tu límite de crédito, ver tus \n gastos mensuales por categoria, hasta bloquear tu \n tarjeta desde la App.",
   "DiDiCreditFuncionesHero.textColor": "white",
   "DiDiCreditFuncionesHero.bgColor": "bg-orange-primary",
-  "DiDiCreditFuncionesColumsCTA.columns": [
+  "DiDiCreditFuncionesColums.title": "La {tarjeta de crédito} que te pone las cosas fáciles.",
+  "DiDiCreditFuncionesColums.textColor": "gray-primary",
+  "DiDiCreditFuncionesColums.columns.textColor": "white",
+  "DiDiCreditFuncionesColums.columns.bgColor": "bg-orange-primary",
+  "DiDiCreditFuncionesColums.columns": [
     {
       "title": "Obtén CASHBACK diario ilimitado con cada compra."
     },
