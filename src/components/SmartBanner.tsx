@@ -3,6 +3,7 @@ import { useCountry, t } from "../context/countryContext";
 import { StaticImage } from "gatsby-plugin-image";
 import { getBtnLinks } from "../config/btn-config";
 import Btn from "../components/Btn";
+
 interface SmartBannerProps {
   type:
     | "both"
@@ -14,6 +15,7 @@ interface SmartBannerProps {
     | "foodBusiness"
     | "foodDelivery"
     | "foodEater"
+    | "card"
     | "en";
   sbTitle?: string;
   sbDesc?: string;
@@ -76,6 +78,12 @@ const SmartBanner = (props: SmartBannerProps) => {
     bgColor = "bg-white";
     bannerTitle = "Download DiDi";
     bannerDesc = "Rides, food and more";
+  } else if (type === "card") {
+    btnText = sbCTA || btnData.paxText.replace(/ .*/, "");
+    Logo = <PaxLogo></PaxLogo>;
+    bgColor = "bg-white";
+    bannerTitle = sbTitle || t("SBDiDiCredit.title");
+    bannerDesc = sbDesc || t("SBDiDiCredit.desc");
   }
 
   //? If users scrolls under H1 Hero SB is activated
@@ -152,7 +160,7 @@ const DiDiPay = () => {
     <div className="p-3">
       <StaticImage
         src="../images/drv-logo.png"
-        alt="didi conductor logo"
+        alt="didi pay logo"
         className=""
         width={50}
       />

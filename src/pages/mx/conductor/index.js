@@ -40,7 +40,7 @@ const Conductor = ({ data }) => {
   const cities = data.allContentfulCity.nodes;
 
   return (
-    <Layout sb={false}>
+    <Layout>
       <DrvHero
         bgImage={drvHeroBgImage}
         mobileBgImage={drvHeroMobileBgImage}
