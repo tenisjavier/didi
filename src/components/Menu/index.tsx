@@ -10,9 +10,11 @@ import { getMenuLinksPr } from "../../config/menu-pr-config";
 import NavList from "./NavList";
 import { graphql, useStaticQuery } from "gatsby";
 import { getMenuLinksCard } from "../../config/menu-card-config";
+import useScreenSize from "../../hooks/useScreenSize";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const screenSize = useScreenSize();
   const countryCode = useCountry().code;
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
@@ -28,18 +30,10 @@ const Menu = () => {
   if (pathname.includes("tarjeta-de-credito")) links = menuLinksCard;
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1024) {
-        setMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    if (screenSize > 1024) {
+      setMenuOpen(false);
+    }
+  }, [screenSize]);
 
   return (
     <div className="flex h-full items-center">
