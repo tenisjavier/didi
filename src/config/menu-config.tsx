@@ -335,28 +335,16 @@ const menuLinks: AllMenuInterface = {
       icon: "menu-financial-service",
       dropMenu: [
         {
+          text: "DiDi Card",
+          url: "/mx/tarjeta-de-credito/",
+        },
+        {
           text: "DiDi Pay",
           url: "/mx/didipay/",
         },
         {
-          text: "Blog DiDiPay",
-          url: "/mx/didipay/blog/",
-        },
-        {
-          text: "DiDi Pay FAQ",
-          url: "/mx/didipay/preguntas-frecuentes/",
-        },
-        {
           text: "DiDi Préstamos",
           url: "/mx/prestamos/",
-        },
-        {
-          text: "Blog DiDi Préstamos",
-          url: "/mx/prestamos/blog",
-        },
-        {
-          text: "DiDi Préstamos FAQ",
-          url: "/mx/prestamos/preguntas-frecuentes/",
         },
       ],
     },

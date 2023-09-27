@@ -1,4 +1,3 @@
-
 export interface SingleDropMenuItem {
   text?: string;
   url?: string;
@@ -21,14 +20,14 @@ const menuLinksCard: AllMenuInterface = {
       text: "Funciones",
       url: "/mx/tarjeta-de-credito/funciones/",
     },
-    {
-      text: "Beneficios",
-      url: "/mx/tarjeta-de-credito/beneficios/",
-    },
-    {
-      text: "Blog",
-      url: "/mx/tarjeta-de-credito/blog/",
-    },
+    // {
+    //   text: "Beneficios",
+    //   url: "/mx/tarjeta-de-credito/beneficios/",
+    // },
+    // {
+    //   text: "Blog",
+    //   url: "/mx/tarjeta-de-credito/blog/",
+    // },
     {
       text: "Preguntas frecuentes",
       url: "/mx/tarjeta-de-credito/preguntas-frecuentes/",

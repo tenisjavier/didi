@@ -44,7 +44,7 @@ const DiDiCredit = ({ data }) => {
     return image.title === "mx.CreditFaqCard.image";
   })[0];
   return (
-    <Layout index={false}>
+    <Layout>
       <DiDiCreditHero image={cardHeroBgImage}></DiDiCreditHero>
       <DiDiCreditBanner></DiDiCreditBanner>
       <DiDiCreditFeatures image={cardFeaturesImage}></DiDiCreditFeatures>
