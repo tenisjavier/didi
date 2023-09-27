@@ -5,6 +5,7 @@ import AnimatedNumber from "../components/AnimatedNumber";
 import Image from "../components/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
+import textHighlighter from "../util/textHighlighter";
 
 // @desc: card component for making columns or cards
 // @props: type drv/pax/none | link (normal btn) "url" | mode light/none | children: normal btn text
@@ -36,6 +37,10 @@ export interface CardProps extends BtnProps {
   RTL?: boolean;
   rounded?: string;
   customWidth?: string;
+  reverse?: boolean;
+  hasTextHighlighter?: boolean;
+  textHighlighterStyle?: string;
+  titleStyles?: string;
 }
 
 const Card = (props: CardProps) => {
@@ -70,6 +75,10 @@ const Card = (props: CardProps) => {
     RTL,
     rounded,
     customWidth,
+    reverse,
+    hasTextHighlighter,
+    textHighlighterStyle,
+    titleStyles
   } = props;
 
   let min = "";
@@ -105,9 +114,8 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={`${
-        customWidth ? customWidth : "max-w-xs"
-      }  ${rounded} rounded ${bgColor} text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
+      className={`${customWidth ? customWidth : "max-w-xs"
+        }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
       <div className="mb-5">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
@@ -127,7 +135,7 @@ const Card = (props: CardProps) => {
             ></AnimatedNumber>
           )}
           {title && !animatedNumber && (
-            <h4 className={`mb-4 text-xl font-bold lg:text-center`}>{title}</h4>
+            <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
           )}
           <p className={"text-lg"}></p>
           {desc && isTruncate}

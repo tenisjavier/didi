@@ -12,21 +12,27 @@ interface DiDiCreditFuncionesColumsCTAProps {
 
 const DiDiCreditFuncionesColumsCTA = ({ images }: DiDiCreditFuncionesColumsCTAProps) => {
   const props: ColumnsSectionProps = {
-    columns: t("DiDiCreditFuncionesColumsCTA.columns", { returnObjects: true }),
-    textColor: "white",
+    columns: t("DiDiCreditFuncionesColums.columns", { returnObjects: true }),
+    textColor: t("DiDiCreditFuncionesColums.textColor"),
     bgColor: "",
     hasGrid: true,
+    title: t("DiDiCreditFuncionesColums.title"),
+    hasTextHighlight: true,
   };
 
-  console.log(props.columns);
   if (images) {
     props.columns.forEach((col, index) => {
       col.image = images[index];
-      col.imageStyle = "z-10 m-4 w-48";
+      col.imageStyle = "z-10 m-4 lg:w-44 w-auto";
       col.isImage = true;
-      col.bgColor = "bg-orange-primary";
+      col.bgColor = t("DiDiCreditFuncionesColums.columns.bgColor");
       col.rounded = "rounded-[32px]";
       col.customWidth = "w-full";
+      col.textColor = t("DiDiCreditFuncionesColums.columns.textColor");
+      col.reverse = true;
+      col.hasTextHighlighter = true;
+      col.titleStyles = "font-normal";
+      col.textHighlighterStyle = "text-white font-bold"
     });
   }
   return <ColumnsSection {...props}></ColumnsSection>;

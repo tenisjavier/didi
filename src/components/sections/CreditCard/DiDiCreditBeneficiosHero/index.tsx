@@ -15,6 +15,7 @@ const DiDiCreditBeneficiosHero = ({ image }: DiDiCreditBeneficiosHeroProps) => {
     bgColor: t("DiDiCreditBeneficiosHero.bgColor"),
     image: image,
     reverse: true,
+    whiteRight: true,
   };
   return <CTASection {...props}></CTASection>;
 };
