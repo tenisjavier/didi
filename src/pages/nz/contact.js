@@ -14,7 +14,7 @@ const Contact = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const icons = [
     faHandshakeAngle,
-    faPhoneVolume,
+    // faPhoneVolume,
     faEnvelope,
     faExclamationCircle,
   ];
@@ -27,7 +27,7 @@ const Contact = ({ data }) => {
 
   return (
     <Layout>
-      <ContactHero bgImage={homeHeroBgImage}></ContactHero>
+      {/* <ContactHero bgImage={homeHeroBgImage}></ContactHero> */}
       <ContactBenefits
         image={ContactBenefitsImage}
         icons={icons}
