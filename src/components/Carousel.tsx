@@ -88,9 +88,7 @@ const Carousel = (props: CarouselProps) => {
     const imagesData = isMobile ? imagesMobile : images
     sliderContent = imagesData?.map((img) => {
       return (
-        <div className={`${imageContainerStyle} flex align-center justify-self-center w-full`}>
-          <Image imageData={img} imageStyle={`${imageStyle} z-10 object-fit w-full`}></Image>
-        </div>
+        <Image imageData={img} imageStyle={`${imageStyle} z-10 w-full`}></Image>
       );
     });
   }
