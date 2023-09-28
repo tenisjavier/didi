@@ -2111,5 +2111,33 @@
     }
   ],
   "SBDiDiCredit.title": "DiDi Card",
-  "SBDiDiCredit.desc": "Todo en una app"
+  "SBDiDiCredit.desc": "Todo en una app",
+  "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.subTitle": "¿Tienes vehículo de?",
+  "VehicleSection.vehicles": [
+    {
+      "text": "4 ruedas",
+      "image": "/car.png"
+    },
+    {
+      "text": "2 ruedas",
+      "image": "/motorcycle.png"
+    }
+  ],
+  "VehicleSection.bulletTitle": "Hay un DIDI para ti.",
+  "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuendo a tus necesidades:",
+  "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
+  "VehicleSection.bulletsCar": [
+    "Express",
+    "Fleet",
+    "Flex",
+    "Entrega",
+    "Taxi"
+  ],
+  "VehicleSection.bulletsMotorcycle": [
+    "Moto",
+    "Entrega Light"
+  ],
+  "VehicleSection.btnType": "drv",
+  "VehicleSection.btnMode": "primary"
 }

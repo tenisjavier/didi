@@ -11,6 +11,7 @@ import DrvCTA from "../../components/sections/DrvCTA";
 import FoodCTA from "../../components/sections/FoodCTA";
 import FleetAboutCTA from "../../components/sections/FleetAboutCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
+import DriverCTA from "../../components/sections/Drv/DrvCTA";
 
 const Index = ({ data }) => {
   const [activeHero, setActiveHero] = useState(0);
@@ -111,6 +112,7 @@ const Index = ({ data }) => {
       </>
 
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
+      <DriverCTA></DriverCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <FleetAboutCTA image={FleetAboutCTAImage}></FleetAboutCTA>
