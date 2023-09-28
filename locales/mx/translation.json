@@ -641,32 +641,29 @@
       "title": "8. Compartir Viaje",
       "desc": "Comparte los datos y ubicación del viaje en tiempo real, desde la app."
     },
+ 
     {
-      "title": "9. Grabación de Audio Manual o Automática",
-      "desc": "En cada viaje tienes la opción de grabar el audio de tu viaje, o también puedes activar la grabación automática para que todos tus viajes se graben sin excepción. Tranquilo, escuchamos tu audio solo si reportas un incidente de seguridad. Puedes reportar usando el Botón de Emergencia."
-    },
-    {
-      "title": "10. Botón de Emergencia",
+      "title": "9. Botón de Emergencia",
       "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911 y DiDi rastreará tu ubicación exacta."
     },
     {
-      "title": "11. Localización GPS",
+      "title": "10. Localización GPS",
       "desc": "Monitoreamos todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata."
     },
     {
-      "title": "12. Cámaras de Seguridad DiDi",
+      "title": "11. Cámaras de Seguridad DiDi",
       "desc": "Instalamos cámaras en más de 900 vehículos en Guadalajara. Si detectas alguna situación de riesgo, puedes presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y, de ser necesario, enviar apoyo a tu ubicación. *Disponible solo en Guadalajara."
     },
     {
-      "title": "13. DiDi Mujer",
+      "title": "12. DiDi Mujer",
       "desc": "¿Eres conductora? Con DiDi puedes decidir si quieres realizar viajes solo con pasajeras mujeres."
     },
     {
-      "title": "14. Viaje con Cobertura",
+      "title": "13. Viaje con Cobertura",
       "desc": "Cuando viajas en DiDi tienes una cobertura de responsabilidad civil que incluye gastos médicos por siniestro."
     },
     {
-      "title": "15. Inteligencia Artificial",
+      "title": "14. Inteligencia Artificial",
       "desc": "Usamos AI para cuidarte durante tus viajes. Nuestros modelos Hércules, Clío y Temis analizan características de los viajes, los pasajeros, zonas, horarios e historial para identificar cualquier riesgo y alertarte o rechazar esa solicitud."
     }
   ],
@@ -676,15 +673,15 @@
   "SafetyGridAfterTrip.urlBase": "/mx/seguridad/",
   "SafetyGridAfterTrip.columns": [
     {
-      "title": "17. Soporte DiDi 24/7",
+      "title": "15. Soporte DiDi 24/7",
       "desc": "Contamos con atención 24/7 en nuestro chat en vivo."
     },
     {
-      "title": "18. Califica a tu Pasajero",
+      "title": "16. Califica a tu Pasajero",
       "desc": "Califica a tu pasajero después de cada viaje. Si tuviste una mala experiencia puedes seleccionar “No volver a viajar con este pasajero” y reportar cualquier conducta inapropiada."
     },
     {
-      "title": "19. Evita viajar con el mismo pasajero",
+      "title": "17. Evita viajar con el mismo pasajero",
       "desc": "Si así lo prefieres, puedes elegir la opción de no volver a viajar con alguna persona."
     }
   ],
@@ -807,32 +804,27 @@
       "title": "15. Alianza C5",
       "desc": "Nos unimos al C5 de Guadalajara y del Estado de México. En caso de que necesites ayuda, se les notificará cuando presiones el Botón de Emergencia para que puedan asistirte.",
       "width": "w-72"
-    },
-    {
-      "title": "16. Grabación de Audio Manual o automática",
-      "desc": "En cada viaje tienes la opción de grabar el audio de tu viaje, o también puedes activar la grabación automática para que todos tus viajes se graben sin excepción.",
-      "width": "w-72"
     }
   ],
   "SafetyGridPaxAfterTrip.title": "Al finalizar el viaje",
   "SafetyGridPaxAfterTrip.columns": [
     {
-      "title": "17. Recuperación de Objetos Olvidados",
+      "title": "16. Recuperación de Objetos Olvidados",
       "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al conductor para acordar la devolución.",
       "width": "w-72"
     },
     {
-      "title": "18. Soporte 24/7",
+      "title": "17. Soporte 24/7",
       "desc": "Contamos con atención 24/7 en nuestro chat en vivo.",
       "width": "w-72"
     },
     {
-      "title": "19. Califica a tu Conductor",
+      "title": "18. Califica a tu Conductor",
       "desc": "Califica a tu conductor después de cada viaje. Si tuviste una mala experiencia, puedes seleccionar “No volver a viajar con este conductor” y reportar cualquier conducta inapropiada. También puedes calificar con 5 estrellas si el servicio te gustó mucho.",
       "width": "w-72"
     },
     {
-      "title": "20. Bloquear a conductor",
+      "title": "19. Bloquear a conductor",
       "desc": "Si tuviste una mala experiencia, puedes seleccionar “No volver a viajar con este conductor” y reportar cualquier conducta inapropiada.",
       "width": "w-72"
     }
