@@ -50,7 +50,7 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
           ></FooterItem>
           <br></br>
           <FooterItem
-            link="/mx/legal/despachos-de-cobranza-didi-card"
+            link="/mx/legal/consulta-costos-y-comisiones"
             text="Consulta costos y comisiones"
           ></FooterItem>
         </div>
