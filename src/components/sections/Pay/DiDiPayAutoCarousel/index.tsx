@@ -29,8 +29,7 @@ const DiDiPayAutoCarousel = ({ images, imagesMobile }: DiDiPayAutoCarouselProps)
     speedAutoPlay: 10000,
     imagesMobile: customSlidesMobile,
     slidesToShowMobile: slidesToShow,
-    imageContainerStyle: "w-full h-full",
-    imageStyle: "w-full h-full ultra-wide-height-fix",
+    imageStyle: "w-full h-full ultra-wide-height-fix lg:hidden",
   };
 
   return <Carousel {...props}></Carousel>;
