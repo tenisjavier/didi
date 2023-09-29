@@ -27,6 +27,40 @@ const Food = ({ data }) => {
   const DiDiFoodCarouselImages = images.filter((image) => {
     return image.title === "pe.DiDiFoodCarousel.image";
   });
+
+  //Set the order of the carousel's brands.
+  const order = [
+    "KFC",
+    "Papa Johns",
+    "Little Caesars",
+    "Subway",
+    "Mc Donalds",
+    "Dunkin Donuts",
+    "Popeyes",
+    "chinawok",
+    "Norkys",
+    "Mr. Sushi",
+    "Bembos",
+    "ROKYS",
+  ];
+
+  const DiDiFoodCarouselImagesSorted = DiDiFoodCarouselImages.sort((a, b) => {
+    const indexA = order.indexOf(a.description);
+    const indexB = order.indexOf(b.description);
+
+    if (indexA !== -1 && indexB !== -1) {
+      return indexA - indexB;
+    }
+
+    if (indexA !== -1) {
+      return -1;
+    } else if (indexB !== -1) {
+      return 1;
+    }
+
+    return 0;
+  });
+
   return (
     <Layout>
       <FoodHero
@@ -35,7 +69,7 @@ const Food = ({ data }) => {
       ></FoodHero>
       {useLocation().search === "?test=day" && (
         <DiDiFoodCarousel
-          images={DiDiFoodCarouselImages.reverse()}
+          images={DiDiFoodCarouselImagesSorted}
         ></DiDiFoodCarousel>
       )}
       <FoodColumns images={foodColumnsImages}></FoodColumns>

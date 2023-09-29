@@ -28,6 +28,44 @@ const Food = ({ data }) => {
   const DiDiFoodCarouselImages = images.filter((image) => {
     return image.title === "cr.DiDiFoodCarousel.image";
   });
+
+  //Set the order of the carousel's brands.
+  const order = [
+    "MCD",
+    "Tacobell",
+    "Little Caesars",
+    "Burger King",
+    "Pizza Hut",
+    "Ready Pizza",
+    "Starbucks",
+    "Domino's",
+    "Carl's Jr",
+    "Nacion Sushi",
+    "Pops",
+    "Juan Valdez",
+    "Papa Johns",
+    "Johnny Rockets",
+    "Tico Burguesas",
+    "Spoon",
+  ];
+
+  const DiDiFoodCarouselImagesSorted = DiDiFoodCarouselImages.sort((a, b) => {
+    const indexA = order.indexOf(a.description);
+    const indexB = order.indexOf(b.description);
+
+    if (indexA !== -1 && indexB !== -1) {
+      return indexA - indexB;
+    }
+
+    if (indexA !== -1) {
+      return -1;
+    } else if (indexB !== -1) {
+      return 1;
+    }
+
+    return 0;
+  });
+
   return (
     <Layout>
       <FoodHero
@@ -36,7 +74,7 @@ const Food = ({ data }) => {
       ></FoodHero>
       {useLocation().search === "?test=day" && (
         <DiDiFoodCarousel
-          images={DiDiFoodCarouselImages.reverse()}
+          images={DiDiFoodCarouselImagesSorted}
         ></DiDiFoodCarousel>
       )}
       <FoodColumns images={foodColumnsImages}></FoodColumns>

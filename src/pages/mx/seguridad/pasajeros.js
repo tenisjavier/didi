@@ -17,14 +17,17 @@ const Seguridad = ({ data }) => {
     return image.title === "mx.SafetyBeforePaxColumns.image";
   });
   const safetyDuringPaxColumns = images.filter((image) => {
-    if(image.filename === "mx.SafetyDuringPaxColumns.image-4.png"){
-      return
+    if (image.filename === "mx.SafetyDuringPaxColumns.image-4.png") {
+      return;
     }
     return image.title === "mx.SafetyDuringPaxColumns.image";
   });
   const safetyFinishedPaxColumns = images.filter((image) => {
     return image.title === "mx.SafetyFinishPaxColumns.image";
   });
+
+  console.log(features);
+  console.log(safetyDuringPaxColumns);
 
   return (
     <Layout>
@@ -66,13 +69,8 @@ export const query = graphql`
       }
     }
     allContentfulFeature(
-      filter: { 
-        country: { code: { eq: "mx" } },
-        category: {
-          eq: "pax"
-        }
-      }
-      ) {
+      filter: { country: { code: { eq: "mx" } }, category: { eq: "pax" } }
+    ) {
       nodes {
         name
         slug
