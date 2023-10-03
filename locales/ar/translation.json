@@ -650,5 +650,24 @@
   "VikingSection.vikingColOne.bgColor": "",
   "VikingSection.vikingColOne.textColor": "text-blue-primary",
   "VikingSection.hasTwoColumns": false,
-  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi"
+  "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
+  "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.subTitle": "¿Tienes vehículo de?",
+  "VehicleSection.vehicles": [
+    {
+      "text": "4 ruedas",
+      "image": "/car.png"
+    },
+    {
+      "text": "2 ruedas",
+      "image": "/motorcycle.png"
+    }
+  ],
+  "VehicleSection.bulletTitle": "Hay un DiDi para ti.",
+  "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuerdo a tus necesidades:",
+  "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
+  "VehicleSection.bulletsCar": ["Express", "Fleet", "Taxi"],
+  "VehicleSection.bulletsMotorcycle": ["Moto"],
+  "VehicleSection.btnType": "drv",
+  "VehicleSection.btnMode": "primary"
 }
