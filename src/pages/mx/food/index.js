@@ -33,6 +33,52 @@ const Food = ({ data }) => {
     return image.title === "mx.DiDiFoodCarousel.image";
   });
 
+  console.log(DiDiFoodCarouselImages);
+
+  //Set the order of the carousel's brands.
+  const order = [
+    "Little Caesars",
+    "Cinepolis",
+    "KFC",
+    "Starbucks",
+    "Burger King",
+    "Domino's",
+    "Mc Delivery",
+    "Sushi Roll",
+    "Pizza Hut",
+    "Lucky Sushi",
+    "FreshSalads",
+    "Cassava Roots",
+    "Alitas",
+    "Okuma Sushi",
+    "Las Quekas Factory",
+    "Santa Alitas",
+    "Pizza Maestra",
+    "Sticks",
+    "Tlaquepaque",
+    "Pizza Deprizza",
+    "Los Tarascos",
+    "Lecaroz",
+    "Don Pancho",
+  ];
+
+  const DiDiFoodCarouselImagesSorted = DiDiFoodCarouselImages.sort((a, b) => {
+    const indexA = order.indexOf(a.description);
+    const indexB = order.indexOf(b.description);
+
+    if (indexA !== -1 && indexB !== -1) {
+      return indexA - indexB;
+    }
+
+    if (indexA !== -1) {
+      return -1;
+    } else if (indexB !== -1) {
+      return 1;
+    }
+
+    return 0;
+  });
+
   return (
     <Layout>
       <FoodHero
@@ -41,7 +87,7 @@ const Food = ({ data }) => {
       ></FoodHero>
       {useLocation().search === "?test=day" && (
         <DiDiFoodCarousel
-          images={DiDiFoodCarouselImages.reverse()}
+          images={DiDiFoodCarouselImagesSorted}
         ></DiDiFoodCarousel>
       )}
       <FoodColumns images={foodColumnsImages}></FoodColumns>
