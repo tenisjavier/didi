@@ -1870,7 +1870,7 @@
     },
     {
       "title": "Variedad",
-      "desc": "Usa DiDi Entrega XL para envíos grandes y DiDi Entrega Light para envíos chicos.",
+      "desc": "Usa DiDi Entrega para envíos grandes y DiDi Entrega Light para envíos chicos.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
@@ -2124,20 +2124,11 @@
       "image": "/motorcycle.png"
     }
   ],
-  "VehicleSection.bulletTitle": "Hay un DIDI para ti.",
-  "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuendo a tus necesidades:",
+  "VehicleSection.bulletTitle": "Hay un DiDi para ti.",
+  "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuerdo a tus necesidades:",
   "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
-  "VehicleSection.bulletsCar": [
-    "Express",
-    "Fleet",
-    "Flex",
-    "Entrega",
-    "Taxi"
-  ],
-  "VehicleSection.bulletsMotorcycle": [
-    "Moto",
-    "Entrega Light"
-  ],
+  "VehicleSection.bulletsCar": ["Express", "Fleet", "Flex", "Entrega", "Taxi"],
+  "VehicleSection.bulletsMotorcycle": ["Entrega Light"],
   "VehicleSection.btnType": "drv",
   "VehicleSection.btnMode": "primary"
 }

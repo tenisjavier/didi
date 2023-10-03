@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import HeroCarrousel from "../../components/sections/HeroCarrousel";
+import DriverCTA from "../../components/sections/Drv/DrvCTA";
 import DrvHero from "../../components/sections/DrvHero";
 import PaxHero from "../../components/sections/PaxHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
@@ -66,6 +68,7 @@ const Index = ({ data }) => {
           updateHero={updateHero}
         ></HeroCarrousel>
       </>
+      {useLocation().search === "?test=day" && <DriverCTA></DriverCTA>}
       <DrvCTA image={drvCTAImage} bullets={false}></DrvCTA>
       <PaxCTA image={paxCTAImage} bullets={false}></PaxCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>

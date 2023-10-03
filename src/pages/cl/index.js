@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import HeroCarrousel from "../../components/sections/HeroCarrousel";
 import DrvHero from "../../components/sections/DrvHero";
 import PaxHero from "../../components/sections/PaxHero";
 import SafetyCTA from "../../components/sections/SafetyCTA";
+import DriverCTA from "../../components/sections/Drv/DrvCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HomeColumns from "../../components/sections/HomeColumns";
@@ -65,6 +67,7 @@ const Index = ({ data }) => {
         ></HeroCarrousel>
       </>
 
+      {useLocation().search === "?test=day" && <DriverCTA></DriverCTA>}
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>

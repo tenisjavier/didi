@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
-
 import DrvHero from "../../components/sections/DrvHero";
+import DriverCTA from "../../components/sections/Drv/DrvCTA";
 import PaxHero from "../../components/sections/PaxHero";
-import FoodHero from "../../components/sections/FoodHero";
 import HeroCarrousel from "../../components/sections/HeroCarrousel";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DrvCTA from "../../components/sections/DrvCTA";
@@ -31,23 +31,15 @@ const Index = ({ data }) => {
   const paxHeroMobileBgImage = images.filter((image) => {
     return image.title === "do.PaxHeroMobile.bgImage";
   })[0];
-  const foodHeroBgImage = images.filter((image) => {
-    return image.title === "do.FoodHero.bgImage";
-  })[0];
-  const foodHeroMobileBgImage = images.filter((image) => {
-    return image.title === "do.FoodHeroMobile.bgImage";
-  })[0];
+
   const carrouselIcons0 = images.filter((image) => {
     return image.title === "carrousel-icon-drv";
   })[0];
   const carrouselIcons1 = images.filter((image) => {
     return image.title === "carrousel-icon-pax";
   })[0];
-  const carrouselIcons2 = images.filter((image) => {
-    return image.title === "carrousel-icon-food";
-  })[0];
 
-  const carrouselIcons = [carrouselIcons0, carrouselIcons1, carrouselIcons2];
+  const carrouselIcons = [carrouselIcons0, carrouselIcons1];
   const safetyCTAImage = images.filter((image) => {
     return image.title === "do.SafetyCTA.image";
   })[0];
@@ -76,17 +68,12 @@ const Index = ({ data }) => {
             mobileBgImage={paxHeroMobileBgImage}
           ></PaxHero>
         </div>
-        <div className={`${activeHero !== 2 && "hidden"} `}>
-          <FoodHero
-            bgImage={foodHeroBgImage}
-            mobileBgImage={foodHeroMobileBgImage}
-          ></FoodHero>
-        </div>
         <HeroCarrousel
           images={carrouselIcons}
           updateHero={updateHero}
         ></HeroCarrousel>
       </>
+      {useLocation().search === "?test=day" && <DriverCTA></DriverCTA>}
       <DrvCTA image={drvCTAImage} bullets={false}></DrvCTA>
       <PaxCTA image={paxCTAImage} bullets={false}></PaxCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
@@ -109,13 +96,10 @@ export const query = graphql`
             "do.DrvHeroMobile.bgImage"
             "do.PaxHero.bgImage"
             "do.PaxHeroMobile.bgImage"
-            "do.FoodHero.bgImage"
-            "do.FoodHeroMobile.bgImage"
             "do.FinancialServices.bgImage"
             "do.FinancialServicesMobile.bgImage"
             "carrousel-icon-drv"
             "carrousel-icon-pax"
-            "carrousel-icon-food"
             "do.HelloCTA.image"
             "do.SafetyCTA.image"
             "do.DrvCTA.image"

@@ -1,8 +1,10 @@
 import React from "react";
 import { t } from "../../../../context/countryContext";
-import CTADriverSection, { CTADriverSectionProps } from "../../../CTADriverSection";
+import CTADriverSection, {
+  CTADriverSectionProps,
+} from "../../../CTADriverSection";
 
-const DiDiCreditBanner = () => {
+const VehicleSection = () => {
   const props: CTADriverSectionProps = {
     title: t("VehicleSection.title"),
     subTitle: t("VehicleSection.subTitle"),
@@ -19,4 +21,4 @@ const DiDiCreditBanner = () => {
   return <CTADriverSection {...props}></CTADriverSection>;
 };
 
-export default DiDiCreditBanner;
+export default VehicleSection;
