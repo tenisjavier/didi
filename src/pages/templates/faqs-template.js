@@ -4,7 +4,7 @@ import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import FaqHero from "../../components/sections/FaqHero";
 import FoodFaqHero from "../../components/sections/FoodFaqHero";
-// import DiDiCreditFaqHero from "../../components/sections/CreditCard/DiDiCreditFAQ";
+import DiDiCreditFaqHero from "../../components/sections/CreditCard/DiDiCreditFaqHero";
 import FaqContent from "../../components/sections/FaqContent";
 import FaqList from "../../components/sections/FaqList";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
@@ -95,15 +95,17 @@ const FaqsTemplate = ({ data }) => {
       );
     }
 
-    // if(pathname.includes("/tarjeta-de-credito")){
-    //   hero = (
-    //     <DiDiCreditFaqHero
-    //       title={title}
-    //       desc={productName}
-    //       bgImage={CreditFaqHeroImage}
-    //     ></DiDiCreditFaqHero>
-    //   );
-    // }
+    if(pathname.includes("/tarjeta-de-credito")){
+      hero = (
+        <DiDiCreditFaqHero
+          title={title}
+          bgImage={helpCenterBgImage}
+          btnMode="primary"
+          btnType="pax"
+          btnText="Solicitar en DiDi app"
+        ></DiDiCreditFaqHero>
+      );
+    }
       
 
   let faqDesc = "";
