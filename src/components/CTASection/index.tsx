@@ -54,6 +54,8 @@ export interface CTAProps extends BtnProps {
   };
   textHighlighterStyle?: string;
   whiteRight?: boolean;
+  mobileTitlePosition?: "top" | "bottom" | "center" | "left" | "right";
+  mobileTitleStyle?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -95,11 +97,20 @@ const CTASection = (props: CTAProps) => {
     hasTextHighlighterBullets,
     textHighlighterStyle,
     whiteRight,
+    mobileTitlePosition,
+    mobileTitleStyle
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
   const textDir = RTL ? "text-right" : "text-left";
   const margin = RTL ? "ml-4" : "mr-4";
+  const mobileTitlePositions = {
+    top: "text-top",
+    bottom: "text-bottom",
+    center: "text-center",
+    left: "text-left",
+    right: "text-right",
+  }
 
   const getTitleElement = () => {
     if (hero) {
@@ -138,21 +149,13 @@ const CTASection = (props: CTAProps) => {
         ))}
       </p>
     )
-    // return (
-    //   desc &&
-    //   desc.split("\n").map((str, index) => (
-    //     <p className={`mb-10 text-lg text-left`} key={index}>
-    //       {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
-    //     </p>
-    //   ))
-    // );
   };
 
   return (
     <section
       style={{ direction: isRtl }}
       className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        } ${borderColor && "border-solid border border-" + borderColor}`}
+        } ${borderColor && "border-solid border border-" + borderColor} ${mobileTitlePosition && mobileTitlePositions[mobileTitlePosition]} ${mobileTitleStyle}]}`}
     >
       <div
         className={`${whiteRight ? 'white-right' : 'container'}  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
