@@ -747,6 +747,7 @@
   "FindInfoCTA.title": "Encuentra tu centro DiDi más cercano",
   "FindInfoCTA.desc": "Si tienes alguna duda, visítanos en nuestro Centro DiDi o contáctanos a través de: \n • Línea de atención 24/7 800 725 8888 \n • Escríbenos al correo help.driver@mx.didiglobal.com",
   "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.bgColor": "bg-gray-light",
   "VehicleSection.subTitle": "¿Tienes vehículo de?",
   "VehicleSection.vehicles": [
     {

@@ -971,6 +971,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Taxi",
+      url: "/cr/taxi/",
+      icon: "menu-drv",
+      dropMenu: [
+        {
+          text: "DiDi Taxi",
+          url: "/cr/taxi/",
+        },
+      ],
+    },
+    {
       text: "DiDi Fleet",
       url: "/cr/didi-fleet/",
       icon: "menu-pax",

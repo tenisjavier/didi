@@ -11,9 +11,15 @@ import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HelloCTA from "../../components/sections/HelloCTA";
 import HomeColumns from "../../components/sections/HomeColumns";
+import { ab } from "../../config/ab";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const version = ab(
+    "2023-10-DrvHomeWheels-t5",
+    "2023-10-DrvHomeOriginal-t5",
+    "t5"
+  );
   const [activeHero, setActiveHero] = useState(0);
   const updateHero = (id) => {
     setActiveHero(id);
@@ -73,8 +79,8 @@ const Index = ({ data }) => {
           updateHero={updateHero}
         ></HeroCarrousel>
       </>
-      {useLocation().search === "?test=day" && <DriverCTA></DriverCTA>}
-      <DrvCTA image={drvCTAImage} bullets={false}></DrvCTA>
+      {version === "a" && <DriverCTA></DriverCTA>}
+      {version === "b" && <DrvCTA image={drvCTAImage}></DrvCTA>}
       <PaxCTA image={paxCTAImage} bullets={false}></PaxCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <HelloCTA image={helloImage}></HelloCTA>

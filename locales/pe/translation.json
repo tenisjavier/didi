@@ -508,6 +508,7 @@
   "LostItemsBanner.btnLink": "/pe/centro-de-ayuda/#inconvenientes-con-un-arrendamiento",
   "Conductor.Moto.linkItem": "/pe/conductor/moto/",
   "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.bgColor": "bg-gray-light",
   "VehicleSection.subTitle": "¿Tienes vehículo de?",
   "VehicleSection.vehicles": [
     {

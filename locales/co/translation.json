@@ -843,6 +843,7 @@
   "VikingSection.hasTwoColumns": true,
   "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
   "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.bgColor": "bg-gray-light",
   "VehicleSection.subTitle": "¿Tienes vehículo de?",
   "VehicleSection.vehicles": [
     {
