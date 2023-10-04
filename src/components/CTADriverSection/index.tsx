@@ -12,6 +12,7 @@ type vehicleType = {
 
 export interface CTADriverSectionProps {
   title: string;
+  bgColor: string;
   subTitle: string;
   vehicles: vehicleType[];
   bulletTitle: string;
@@ -25,6 +26,7 @@ export interface CTADriverSectionProps {
 
 const CTADriverSection: React.FC<CTADriverSectionProps> = ({
   title,
+  bgColor,
   subTitle,
   vehicles,
   bulletTitle,
@@ -42,7 +44,9 @@ const CTADriverSection: React.FC<CTADriverSectionProps> = ({
   };
 
   return (
-    <div className="flex justify-center items-center py-20">
+    <section
+      className={`flex justify-center items-center py-20 ${bgColor && bgColor}`}
+    >
       <div className="flex justify-center container flex-col">
         <h2 className="text-4xl">{title}</h2>
         <h5 className="text-lg font-bold text-orange-primary">{subTitle}</h5>
@@ -70,7 +74,7 @@ const CTADriverSection: React.FC<CTADriverSectionProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

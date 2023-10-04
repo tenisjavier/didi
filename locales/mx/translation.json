@@ -2105,6 +2105,7 @@
   "SBDiDiCredit.title": "DiDi Card",
   "SBDiDiCredit.desc": "Todo en una app",
   "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.bgColor": "bg-gray-light",
   "VehicleSection.subTitle": "¿Tienes vehículo de?",
   "VehicleSection.vehicles": [
     {

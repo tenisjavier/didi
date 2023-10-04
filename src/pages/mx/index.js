@@ -13,6 +13,7 @@ import FoodCTA from "../../components/sections/FoodCTA";
 import FleetAboutCTA from "../../components/sections/FleetAboutCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import DriverCTA from "../../components/sections/Drv/DrvCTA";
+import { ab } from "../../config/ab";
 
 const Index = ({ data }) => {
   const [activeHero, setActiveHero] = useState(0);
@@ -20,6 +21,11 @@ const Index = ({ data }) => {
     setActiveHero(id);
   };
   const images = data.allContentfulAsset.nodes;
+  const version = ab(
+    "2023-10-DrvHomeWheels-t5",
+    "2023-10-DrvHomeOriginal-t5",
+    "t5"
+  );
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "mx.DrvHero.bgImage";
   })[0];
@@ -111,9 +117,9 @@ const Index = ({ data }) => {
           updateHero={updateHero}
         ></HeroCarrousel>
       </>
-      {useLocation().search === "?test=day" && <DriverCTA></DriverCTA>}
+      {version === "a" && <DriverCTA></DriverCTA>}
+      {version === "b" && <DrvCTA image={drvCTAImage}></DrvCTA>}
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
-      <DrvCTA image={drvCTAImage}></DrvCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <FleetAboutCTA image={FleetAboutCTAImage}></FleetAboutCTA>
       <FoodCTA image={FoodCTAImage}></FoodCTA>
