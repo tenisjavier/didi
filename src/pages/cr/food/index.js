@@ -1,21 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import { graphql } from "gatsby";
 import { useLocation } from "@reach/router";
 import Layout from "../../../components/Layout";
-import FoodHero from "../../../components/sections/FoodHero";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
 import DiDiFoodCarousel from "../../../components/sections/Food/DiDiFoodCarousel";
+import DiDiFoodHeroCarousel from "../../../components/sections/Food/DiDiFoodHeroCarousel";
+import HeroCarrousel from "../../../components/sections/HeroCarrousel";
 
 const Food = ({ data }) => {
+  const [activeHero, setActiveHero] = useState(0);
+  const updateHero = (id) => {
+    setActiveHero(id);
+  };
+
   const images = data.allContentfulAsset.nodes;
-  const foodHeroBgImage = images.filter((image) => {
-    return image.title === "cr.FoodHero.bgImage";
-  })[0];
-  const foodHeroMobileBgImage = images.filter((image) => {
-    return image.title === "cr.FoodHeroMobile.bgImage";
-  })[0];
+
   const foodColumnsImages = images.filter((image) => {
     return image.title.indexOf("cr.FoodColumns.image") !== -1;
   });
@@ -28,6 +29,43 @@ const Food = ({ data }) => {
   const DiDiFoodCarouselImages = images.filter((image) => {
     return image.title === "cr.DiDiFoodCarousel.image";
   });
+
+  const foodHeroBgImage = images.filter((image) => {
+    return image.title === "cr.DiDiFood-bgImage.image";
+  })[0];
+  const foodHeroBgImageMobile = images.filter((image) => {
+    return image.title === "cr.DiDiFood-bgImage-mobile.image";
+  })[0];
+
+  const repartidoresHeroBgImage = images.filter((image) => {
+    return image.title === "cr.DiDiRepartidores-bgImage.image";
+  })[0];
+  const repartidoresHeroBgImageMobile = images.filter((image) => {
+    return image.title === "cr.DiDiRepartidores-bgImage-mobile.image";
+  })[0];
+
+  const restaurantHeroBgImage = images.filter((image) => {
+    return image.title === "cr.DiDiRestaurant-bgImage.image";
+  })[0];
+  const restaurantHeroBgImageMobile = images.filter((image) => {
+    return image.title === "cr.DiDiRestaurant-bgImage-mobile.image";
+  })[0];
+
+  const carrouselIcons0 = images.filter((image) => {
+    return image.title === "carousel_food_icon"
+  })[0];
+  const carrouselIcons1 = images.filter((image) => {
+    return image.title === "carousel_courier_icon"
+  })[0];
+  const carrouselIcons2 = images.filter((image) => {
+    return image.title === "carousel_restaurant_icon"
+  })[0];
+
+  const carrouselIcons = [
+    carrouselIcons0,
+    carrouselIcons1,
+    carrouselIcons2,
+  ];
 
   //Set the order of the carousel's brands.
   const order = [
@@ -68,10 +106,34 @@ const Food = ({ data }) => {
 
   return (
     <Layout>
-      <FoodHero
-        bgImage={foodHeroBgImage}
-        mobileBgImage={foodHeroMobileBgImage}
-      ></FoodHero>
+        <>
+        <div className={`${activeHero !== 0 && "hidden"} `}>
+          <DiDiFoodHeroCarousel
+          bgImage={foodHeroBgImage}
+          mobileBgImage={foodHeroBgImageMobile}
+          type="food"
+        ></DiDiFoodHeroCarousel>
+        </div>
+        <div className={`${activeHero !== 1 && "hidden"} `}>
+          <DiDiFoodHeroCarousel 
+          bgImage={repartidoresHeroBgImage}
+          mobileBgImage={repartidoresHeroBgImageMobile}
+          type="repartidor"
+          ></DiDiFoodHeroCarousel>
+        </div>
+        <div className={`${activeHero !== 2 && "hidden"} `}>
+          <DiDiFoodHeroCarousel
+            bgImage={restaurantHeroBgImage}
+            mobileBgImage={restaurantHeroBgImageMobile}
+            type="restaurant"
+          ></DiDiFoodHeroCarousel>
+        </div>
+        <HeroCarrousel
+          images={carrouselIcons}
+          updateHero={updateHero}
+          position="onHero"          
+        ></HeroCarrousel>
+      </>
       {useLocation().search === "?test=day" && (
         <DiDiFoodCarousel
           images={DiDiFoodCarouselImagesSorted}
@@ -91,7 +153,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(cr.FoodHero.bgImage)|(cr.FoodHeroMobile.bgImage)|(cr.FoodColumns.image)|(cr.FoodBusinessCTA.image)|(cr.FoodDeliveryCTA.image)|(cr.DiDiFoodCarousel.image)/"
+          regex: "/(carousel_food_icon)|(carousel_courier_icon)|(carousel_restaurant_icon)|(cr.DiDiRestaurant-bgImage-mobile.image)|(cr.DiDiFood-bgImage-mobile.image)|(cr.DiDiRepartidores-bgImage-mobile.image)|(cr.DiDiRestaurant-bgImage.image)|(cr.DiDiFood-bgImage.image)|(cr.DiDiRepartidores-bgImage.image)|(cr.FoodHero.bgImage)|(cr.FoodHeroMobile.bgImage)|(cr.FoodColumns.image)|(cr.FoodBusinessCTA.image)|(cr.FoodDeliveryCTA.image)|(cr.DiDiFoodCarousel.image)/"
         }
       }
       sort: { title: ASC }

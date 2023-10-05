@@ -697,5 +697,36 @@
   "ArticlesColumns.textColor": "white",
   "ArticlesColumns.btnText": "Leer Artículo",
   "ArticlesColumns.btnMode": "primary",
-  "ArticlesColumns.linkItem": "/cr/food/repartidores/{{article}}/"
+  "ArticlesColumns.linkItem": "/cr/food/repartidores/{{article}}/",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Food",
+      "icon": "carousel_food_"
+    },
+    {
+      "title": "Socio Repartidor",
+      "icon": "carousel_courier_"
+    },
+    {
+      "title": "Restaurantes",
+      "icon": "carousel_restaurant_"
+    }
+  ],
+  "FoodHeroCarousel.title": "{Combos} \n desde {$99} m.n.",
+  "FoodHeroCarousel.btnText": "Pide aquí",
+  "FoodHeroCarousel.btnType": "food",
+  "FoodHeroCarousel.btnMode": "light",
+  "FoodHeroCarousel.textColor": "white",
+  "RestaurantHeroCarousel.title": "Únete a DiDi Food y \n ve crecer tu negocio",
+  "RestaurantHeroCarousel.btnText": "Registra tu restaurante",
+  "RestaurantHeroCarousel.btnType": "restaurant",
+  "RestaurantHeroCarousel.btnMode": "light",
+  "RestaurantHeroCarousel.textColor": "white",
+  "RepartidorHeroCarousel.title": "¡Únete a DiDi Food! \n Obtén excelentes ganancias \n y otras recompensas.",
+  "RepartidorHeroCarousel.btnText": "Regístrate como Repartidor",
+  "RepartidorHeroCarousel.btnType": "courier",
+  "RepartidorHeroCarousel.btnMode": "light",
+  "RepartidorHeroCarousel.textColor": "white"
 }

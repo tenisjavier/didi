@@ -38,7 +38,6 @@ const Food = ({ data }) => {
     return image.title === "mx.DiDiRestaurant-bgImage-mobile.image";
   })[0];
 
-  console.log(images);
 
   const foodColumnsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodColumns.image") !== -1;
