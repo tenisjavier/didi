@@ -54,8 +54,8 @@ export interface CTAProps extends BtnProps {
   };
   textHighlighterStyle?: string;
   whiteRight?: boolean;
-  mobileTitlePosition?: "top" | "bottom" | "center" | "left" | "right";
-  mobileTitleStyle?: string;
+  mobileTitlePosition?: string;
+  titleStyle?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -98,24 +98,17 @@ const CTASection = (props: CTAProps) => {
     textHighlighterStyle,
     whiteRight,
     mobileTitlePosition,
-    mobileTitleStyle
+    titleStyle
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
   const textDir = RTL ? "text-right" : "text-left";
   const margin = RTL ? "ml-4" : "mr-4";
-  const mobileTitlePositions = {
-    top: "text-top",
-    bottom: "text-bottom",
-    center: "text-center",
-    left: "text-left",
-    right: "text-right",
-  }
 
   const getTitleElement = () => {
     if (hero) {
       return (
-        <h1 className="text-4xl font-bold md:text-5xl mt-0">
+        <h1 className={`${titleStyle} text-4xl font-bold md:text-5xl mt-0`}>
           {title && title.split("\n").map((str, index) => (
             <Fragment key={index}>
               {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
@@ -155,7 +148,7 @@ const CTASection = (props: CTAProps) => {
     <section
       style={{ direction: isRtl }}
       className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        } ${borderColor && "border-solid border border-" + borderColor} ${mobileTitlePosition && mobileTitlePositions[mobileTitlePosition]} ${mobileTitleStyle}]}`}
+        } ${borderColor && "border-solid border border-" + borderColor} ${mobileTitlePosition && mobileTitlePosition}}`}
     >
       <div
         className={`${whiteRight ? 'white-right' : 'container'}  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
@@ -186,14 +179,16 @@ const CTASection = (props: CTAProps) => {
         {imageRawRender && imageRawRender}
 
         <div
-          className={`w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
+          className={`${mobileTitlePosition && mobileTitlePosition} w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
         >
           {getTitleElement()}
           <div
             className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
               }`}
           >
-            {renderSectionDesc()}
+            {desc && (
+              renderSectionDesc()
+            )}
 
             {bullets && bulletsConfigColumn === "default" && (
               <SectionBullets

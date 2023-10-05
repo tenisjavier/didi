@@ -1,15 +1,12 @@
 import React, {useState} from "react";
-import { useLocation } from "@reach/router";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
-import FoodHero from "../../../components/sections/FoodHero";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
 import DiDiFoodCarousel from "../../../components/sections/Food/DiDiFoodCarousel";
 import HeroCarrousel from "../../../components/sections/HeroCarrousel";
-import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
-import FoodDeliveryHero from "../../../components/sections/FoodDeliveryHero";
+import DiDiFoodHeroCarousel from "../../../components/sections/Food/DiDiFoodHeroCarousel";
 
 
 const Food = ({ data }) => {
@@ -23,16 +20,25 @@ const Food = ({ data }) => {
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.DiDiFood-bgImage.image";
   })[0];
-  const foodHeroMobileBgImage = images.filter((image) => {
-    return image.title === "mx.DiDiFood-bgImage.image";
+  const foodHeroBgImageMobile = images.filter((image) => {
+    return image.title === "mx.DiDiFood-bgImage-mobile.image";
   })[0];
 
   const repartidoresHeroBgImage = images.filter((image) => {
     return image.title === "mx.DiDiRepartidores-bgImage.image";
   })[0];
+  const repartidoresHeroBgImageMobile = images.filter((image) => {
+    return image.title === "mx.DiDiRepartidores-bgImage-mobile.image";
+  })[0];
+
   const restaurantHeroBgImage = images.filter((image) => {
     return image.title === "mx.DiDiRestaurant-bgImage.image";
   })[0];
+  const restaurantHeroBgImageMobile = images.filter((image) => {
+    return image.title === "mx.DiDiRestaurant-bgImage-mobile.image";
+  })[0];
+
+  console.log(images);
 
   const foodColumnsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodColumns.image") !== -1;
@@ -43,9 +49,6 @@ const Food = ({ data }) => {
   const foodDeliveryCTAImage = images.filter((image) => {
     return image.title === "mx.FoodDeliveryCTA.image";
   })[0];
-  const foodDeliveryDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
-  });
 
   const DiDiFoodCarouselImages = images.filter((image) => {
     return image.title === "mx.DiDiFoodCarousel.image";
@@ -115,18 +118,25 @@ const Food = ({ data }) => {
     <Layout>
         <>
         <div className={`${activeHero !== 0 && "hidden"} `}>
-          <FoodHero
+          <DiDiFoodHeroCarousel
           bgImage={foodHeroBgImage}
-          mobileBgImage={foodHeroMobileBgImage}
-        ></FoodHero>
+          mobileBgImage={foodHeroBgImageMobile}
+          type="food"
+        ></DiDiFoodHeroCarousel>
         </div>
         <div className={`${activeHero !== 1 && "hidden"} `}>
-          <FoodDeliveryHero bgImage={repartidoresHeroBgImage}></FoodDeliveryHero>
+          <DiDiFoodHeroCarousel 
+          bgImage={repartidoresHeroBgImage}
+          mobileBgImage={repartidoresHeroBgImageMobile}
+          type="repartidor"
+          ></DiDiFoodHeroCarousel>
         </div>
         <div className={`${activeHero !== 2 && "hidden"} `}>
-          <FoodBusinessHero
+          <DiDiFoodHeroCarousel
             bgImage={restaurantHeroBgImage}
-          ></FoodBusinessHero>
+            mobileBgImage={restaurantHeroBgImageMobile}
+            type="restaurant"
+          ></DiDiFoodHeroCarousel>
         </div>
         <HeroCarrousel
           images={carrouselIcons}
@@ -134,12 +144,6 @@ const Food = ({ data }) => {
           position="onHero"          
         ></HeroCarrousel>
       </>
-
-      {/* {useLocation().search === "?test=day" && (
-        <DiDiFoodCarousel
-          images={DiDiFoodCarouselImagesSorted}
-        ></DiDiFoodCarousel>
-       )} */}
       <DiDiFoodCarousel
           images={DiDiFoodCarouselImagesSorted}
         ></DiDiFoodCarousel>
@@ -157,7 +161,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.DiDiRestaurant-bgImage.image)|(mx.DiDiFood-bgImage.image)|(mx.DiDiRepartidores-bgImage.image)|(mx.FoodDeliveryHero.bgImage)|(mx.FoodBusinessHero.bgImage)|(mx.FoodHero.bgImage)|(mx.FoodHeroMobile.bgImage)|(mx.FoodColumns.image)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.DiDiFoodCarousel.image)|(carousel_food_icon)|(carousel_courier_icon)|(carousel_restaurant_icon)/"
+          regex: "/(mx.DiDiRestaurant-bgImage-mobile.image)|(mx.DiDiFood-bgImage-mobile.image)|(mx.DiDiRepartidores-bgImage-mobile.image)|(mx.DiDiRestaurant-bgImage.image)|(mx.DiDiFood-bgImage.image)|(mx.DiDiRepartidores-bgImage.image)|(mx.FoodDeliveryHero.bgImage)|(mx.FoodBusinessHero.bgImage)|(mx.FoodHero.bgImage)|(mx.FoodHeroMobile.bgImage)|(mx.FoodColumns.image)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodDeliveryDownloads.image)|(mx.DiDiFoodCarousel.image)|(carousel_food_icon)|(carousel_courier_icon)|(carousel_restaurant_icon)/"
         }
       }
       sort: { title: ASC }
