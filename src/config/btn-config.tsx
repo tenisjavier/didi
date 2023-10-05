@@ -59,6 +59,9 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
+    entregaText: "Usa DiDi Entrega",
+    entregaLink:
+      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
   },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
@@ -92,7 +95,10 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-CO/store",
     foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Descarga DiDi Food",
+    foodEaterText: "Pide Comida, Descarga la App",
+    entregaText: "Usa DiDi Entrega",
+    entregaLink:
+      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
   },
   au: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
