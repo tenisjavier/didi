@@ -54,6 +54,7 @@ export interface CTAProps extends BtnProps {
   };
   textHighlighterStyle?: string;
   whiteRight?: boolean;
+  mobileTitlePosition?: string;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -95,6 +96,7 @@ const CTASection = (props: CTAProps) => {
     hasTextHighlighterBullets,
     textHighlighterStyle,
     whiteRight,
+    mobileTitlePosition,
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
@@ -104,24 +106,30 @@ const CTASection = (props: CTAProps) => {
   const getTitleElement = () => {
     if (hero) {
       return (
-        <h1 className="text-4xl font-bold md:text-5xl mt-0">
-          {title && title.split("\n").map((str, index) => (
-            <Fragment key={index}>
-              {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
-              < br />
-            </Fragment>
-          ))}
+        <h1 className={` text-4xl font-bold md:text-5xl mt-0`}>
+          {title &&
+            title.split("\n").map((str, index) => (
+              <Fragment key={index}>
+                {textHighlighterConfig?.hasTextHighlighter
+                  ? textHighlighter(str, textHighlighterConfig.style)
+                  : str}
+                <br />
+              </Fragment>
+            ))}
         </h1>
-      )
+      );
     } else {
       return (
         <h2 className="font-bold text-3xl md:text-4xl text-left">
-          {title && title.split("\n").map((str, index) => (
-            <Fragment key={index}>
-              {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
-              < br />
-            </Fragment>
-          ))}
+          {title &&
+            title.split("\n").map((str, index) => (
+              <Fragment key={index}>
+                {textHighlighterConfig?.hasTextHighlighter
+                  ? textHighlighter(str, textHighlighterConfig.style)
+                  : str}
+                <br />
+              </Fragment>
+            ))}
         </h2>
       );
     }
@@ -130,37 +138,42 @@ const CTASection = (props: CTAProps) => {
   const renderSectionDesc = () => {
     return (
       <p className={`mb-10 text-lg`}>
-        {desc && desc.split('\n').map((str, index) => (
-          <Fragment key={index}>
-            {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
-            < br />
-          </Fragment>
-        ))}
+        {desc &&
+          desc.split("\n").map((str, index) => (
+            <Fragment key={index}>
+              {textHighlighterConfig?.hasTextHighlighter
+                ? textHighlighter(str, textHighlighterConfig.style)
+                : str}
+              <br />
+            </Fragment>
+          ))}
       </p>
-    )
-    // return (
-    //   desc &&
-    //   desc.split("\n").map((str, index) => (
-    //     <p className={`mb-10 text-lg text-left`} key={index}>
-    //       {textHighlighterConfig?.hasTextHighlighter ? textHighlighter(str, textHighlighterConfig.style) : str}
-    //     </p>
-    //   ))
-    // );
+    );
   };
 
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        } ${borderColor && "border-solid border border-" + borderColor}`}
+      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${
+        bgColor && bgColor
+      } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`${whiteRight ? 'white-right' : 'container'}  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
-          } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
-        ${image || imageRawRender || iframe || bulletsConfigColumn === "singleColumn"
-            ? whiteRight ? "xl:justify-center" : "xl:justify-between"
+        className={`${
+          whiteRight ? "white-right" : "container"
+        }  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${
+          reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
+        } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
+        ${
+          image ||
+          imageRawRender ||
+          iframe ||
+          bulletsConfigColumn === "singleColumn"
+            ? whiteRight
+              ? "xl:justify-center"
+              : "xl:justify-between"
             : "xl:justify-start"
-          }`}
+        }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
         {bullets && bulletsConfigColumn === "singleColumn" && (
@@ -176,21 +189,26 @@ const CTASection = (props: CTAProps) => {
 
         {bulletsCreditCard && bulletsConfigColumn === "singleColumn" && (
           <SectionCreditCardCashBackBullets
-            creditCardCashBackBullets={bulletsCreditCard.creditCardCashBackBullets}
+            creditCardCashBackBullets={
+              bulletsCreditCard.creditCardCashBackBullets
+            }
           />
         )}
 
         {imageRawRender && imageRawRender}
 
         <div
-          className={`w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
+          className={`${
+            mobileTitlePosition === "top" ? "absolute top-24 md:static" : ""
+          } w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
         >
           {getTitleElement()}
           <div
-            className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
-              }`}
+            className={`flex ${
+              descBeforeBullets ? "flex-col" : "flex-col-reverse"
+            }`}
           >
-            {renderSectionDesc()}
+            {desc && renderSectionDesc()}
 
             {bullets && bulletsConfigColumn === "default" && (
               <SectionBullets
@@ -204,7 +222,9 @@ const CTASection = (props: CTAProps) => {
             )}
             {bulletsCreditCard && bulletsConfigColumn === "default" && (
               <SectionCreditCardCashBackBullets
-                creditCardCashBackBullets={bulletsCreditCard.creditCardCashBackBullets}
+                creditCardCashBackBullets={
+                  bulletsCreditCard.creditCardCashBackBullets
+                }
               />
             )}
             {descFooter && (

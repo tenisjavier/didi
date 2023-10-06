@@ -11,6 +11,9 @@ const FoodDelivery = ({ data }) => {
   const foodDeliveryHeroBgImage = images.filter((image) => {
     return image.title === "cr.FoodDeliveryHero.bgImage";
   })[0];
+  const foodDeliveryHeroMobileBgImage = images.filter((image) => {
+    return image.title === "cr.FoodDeliveryHeroMobile.bgImage";
+  })[0];
   const foodDeliveryColumnsImages = images.filter((image) => {
     return image.title.indexOf("cr.FoodDeliveryColumns.image") !== -1;
   });
@@ -19,7 +22,10 @@ const FoodDelivery = ({ data }) => {
   });
   return (
     <Layout>
-      <FoodDeliveryHero bgImage={foodDeliveryHeroBgImage}></FoodDeliveryHero>
+      <FoodDeliveryHero
+        bgImage={foodDeliveryHeroBgImage}
+        mobileBgImage={foodDeliveryHeroMobileBgImage}
+      ></FoodDeliveryHero>
       <FoodDeliveryColumns
         images={foodDeliveryColumnsImages}
       ></FoodDeliveryColumns>
@@ -38,7 +44,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(cr.FoodDeliveryHero.bgImage)|(cr.FoodDeliveryColumns.image)|(cr.FoodDeliveryDownloads.image)/"
+          regex: "/(cr.FoodDeliveryHero.bgImage)|(cr.FoodDeliveryHeroMobile.bgImage)|(cr.FoodDeliveryColumns.image)|(cr.FoodDeliveryDownloads.image)/"
         }
       }
       sort: { title: ASC }

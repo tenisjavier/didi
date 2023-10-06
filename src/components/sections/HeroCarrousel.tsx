@@ -10,14 +10,17 @@ interface HeroCarrouselProps {
     gatsbyImageData: React.ReactNode;
   }[];
   updateHero: any;
+  position?: "onHero" | "onSection" | "onMiddleSection";
 }
-const HeroCarrousel = ({ images, updateHero }: HeroCarrouselProps) => {
+const HeroCarrousel = ({ images, updateHero, position }: HeroCarrouselProps) => {
   const props: CarrouselSectionProps = {
     bgColor: t("HeroCarrousel.bgColor"),
     textColor: t("HeroCarrousel.textColor"),
     updateHero: updateHero,
     columns: t("HeroCarrousel.columns", { returnObjects: true }),
+    position: position,
   };
+
   props.columns.forEach((col: any, index: number) => {
     col.image = images[index];
   });

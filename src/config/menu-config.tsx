@@ -489,7 +489,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Moto",
       url: "/ar/conductor/moto/",
-      icon: "menu-delivery-box",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "DiDi Moto",
@@ -1081,7 +1081,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Moto",
       url: "/do/conductor/moto/",
-      icon: "menu-delivery-box",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "DiDi Moto",
