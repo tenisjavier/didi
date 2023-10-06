@@ -25,10 +25,6 @@
   "FoodCTA.btnText": "Ir a DiDi Food",
   "FoodCTA.btnMode": "light",
   "FoodCTA.btnLink": "https://www.didi-food.com/es-MX/food/",
-  "FoodHero.title": "Tu comida a domicilio cuando quieras, donde quieras",
-  "FoodHero.desc": "Te llevamos los platillos de tu restaurante favorito hasta tu puerta.",
-  "FoodHero.textColor": "white",
-  "FoodHero.btnMode": "light",
   "SafetyCTA.title": "Viaja tranquilo",
   "SafetyCTA.desc": "En DiDi no queremos decirte que ”tu seguridad es nuestra prioridad”. En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
   "SafetyCTA.textColor": "white",
@@ -641,7 +637,7 @@
       "title": "8. Compartir Viaje",
       "desc": "Comparte los datos y ubicación del viaje en tiempo real, desde la app."
     },
- 
+
     {
       "title": "9. Botón de Emergencia",
       "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911 y DiDi rastreará tu ubicación exacta."

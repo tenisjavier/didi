@@ -1,5 +1,5 @@
 {
-  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
+  "FoodHero.title": "DiDi Food. {Combos} desde {$17.500}",
   "FoodHero.desc": "De tu restaurante favorito a la puerta de tu casa.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "light",
@@ -35,10 +35,9 @@
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
   "FoodBusinessHero.title": "¡Únete con DiDi Food y ve crecer a tu restaurante!",
-  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida. \n Teléfono de servicio comercial:",
-  "FoodBusinessHero.link": "+6015801398",
+  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida. \n Teléfono de servicio comercial: +6015801398",
   "FoodBusinessHero.textColor": "white",
-  "FoodBusinessHero.btnMode": "primary",
+  "FoodBusinessHero.btnMode": "light",
   "FoodBusinessColumns.bgColor": "bg-white",
   "FoodBusinessColumns.textColor": "gray-primary",
   "FoodBusinessColumns.columns": [
@@ -80,10 +79,10 @@
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
+  "FoodDeliveryHero.title": "Únete como Repartidor de DiDi Food.",
   "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
   "FoodDeliveryHero.textColor": "white",
-  "FoodDeliveryHero.btnMode": "primary",
+  "FoodDeliveryHero.btnMode": "light",
   "FoodDeliveryColumns.bgColor": "white",
   "FoodDeliveryColumns.textColor": "gray-primary",
   "FoodDeliveryColumns.columns": [

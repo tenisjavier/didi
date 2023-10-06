@@ -3,6 +3,8 @@ import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface FoodHeroProps {
+  title?: string;
+  desc?: string;
   bgImage: {
     title: string;
     description: string;
@@ -13,16 +15,23 @@ interface FoodHeroProps {
     description: string;
     gatsbyImageData: any;
   };
+  mobileTitlePosition?: "top" | "middle";
 }
 
-const FoodHero = ({ bgImage, mobileBgImage }: FoodHeroProps) => {
+const FoodHero = ({
+  title,
+  desc,
+  bgImage,
+  mobileBgImage,
+  mobileTitlePosition,
+}: FoodHeroProps) => {
   const bgImageStyle = mobileBgImage
     ? "hidden !absolute z-0 h-full w-full brightness-90 md:block "
     : "!absolute z-0 h-full w-full brightness-90 md:block ";
   const props: CTAProps = {
     hero: true,
-    title: t("FoodHero.title"),
-    desc: t("FoodHero.desc"),
+    title: title || t("FoodHero.title"),
+    desc: desc || t("FoodHero.desc"),
     textColor: t("FoodHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
@@ -30,6 +39,11 @@ const FoodHero = ({ bgImage, mobileBgImage }: FoodHeroProps) => {
     mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnMode: t("FoodHero.btnMode"),
     btnType: "foodEater",
+    mobileTitlePosition: mobileTitlePosition,
+    textHighlighterConfig: {
+      hasTextHighlighter: true,
+      style: "text-white  font-black text-5xl md:text-6xl",
+    },
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -1,13 +1,15 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 import Layout from "../../../components/Layout";
-import DiDiFoodHeroCarousel from "../../../components/sections/Food/DiDiFoodHeroCarousel";
 import HeroCarrousel from "../../../components/sections/HeroCarrousel";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
 import FoodDeliveryCTA from "../../../components/sections/FoodDeliveryCTA";
 import DiDiFoodCarousel from "../../../components/sections/Food/DiDiFoodCarousel";
-
+import FoodDeliveryHero from "../../../components/sections/FoodDeliveryHero";
+import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
+import FoodHero from "../../../components/sections/FoodHero";
 
 const Food = ({ data }) => {
   const [activeHero, setActiveHero] = useState(0);
@@ -31,41 +33,36 @@ const Food = ({ data }) => {
   });
 
   const foodHeroBgImage = images.filter((image) => {
-    return image.title === "pe.DiDiFood-bgImage.image";
+    return image.title === "pe.FoodHero.bgImage";
   })[0];
   const foodHeroBgImageMobile = images.filter((image) => {
-    return image.title === "pe.DiDiFood-bgImage-mobile.image";
+    return image.title === "pe.FoodHeroMobile.bgImage";
   })[0];
 
   const repartidoresHeroBgImage = images.filter((image) => {
-    return image.title === "pe.DiDiRepartidores-bgImage.image";
+    return image.title === "pe.FoodDeliveryHero.bgImage";
   })[0];
   const repartidoresHeroBgImageMobile = images.filter((image) => {
-    return image.title === "pe.DiDiRepartidores-bgImage-mobile.image";
+    return image.title === "pe.FoodDeliveryHeroMobile.bgImage";
   })[0];
 
   const restaurantHeroBgImage = images.filter((image) => {
-    return image.title === "pe.DiDiRestaurant-bgImage.image";
+    return image.title === "pe.FoodBusinessHero.bgImage";
   })[0];
   const restaurantHeroBgImageMobile = images.filter((image) => {
-    return image.title === "pe.DiDiRestaurant-bgImage-mobile.image";
+    return image.title === "pe.FoodBusinessHeroMobile.bgImage";
   })[0];
-
   const carrouselIcons0 = images.filter((image) => {
-    return image.title === "carousel_food_icon"
+    return image.title === "carousel_food_icon";
   })[0];
   const carrouselIcons1 = images.filter((image) => {
-    return image.title === "carousel_courier_icon"
+    return image.title === "carousel_courier_icon";
   })[0];
   const carrouselIcons2 = images.filter((image) => {
-    return image.title === "carousel_restaurant_icon"
+    return image.title === "carousel_restaurant_icon";
   })[0];
 
-  const carrouselIcons = [
-    carrouselIcons0,
-    carrouselIcons1,
-    carrouselIcons2,
-  ];
+  const carrouselIcons = [carrouselIcons0, carrouselIcons1, carrouselIcons2];
 
   //Set the order of the carousel's brands.
   const order = [
@@ -101,38 +98,52 @@ const Food = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout sb={false}>
+      {useLocation().search === "?test=day" && (
         <>
-        <div className={`${activeHero !== 0 && "hidden"} `}>
-          <DiDiFoodHeroCarousel
+          <div className={`${activeHero !== 0 && "hidden"} `}>
+            <FoodHero
+              desc=" "
+              bgImage={foodHeroBgImage}
+              mobileBgImage={foodHeroBgImageMobile}
+              mobileTitlePosition="top"
+            ></FoodHero>
+          </div>
+          <div className={`${activeHero !== 1 && "hidden"} `}>
+            <FoodDeliveryHero
+              desc=" "
+              bgImage={repartidoresHeroBgImage}
+              mobileBgImage={repartidoresHeroBgImageMobile}
+              mobileTitlePosition="top"
+            ></FoodDeliveryHero>
+          </div>
+          <div className={`${activeHero !== 2 && "hidden"} `}>
+            <FoodBusinessHero
+              desc=" "
+              bgImage={restaurantHeroBgImage}
+              mobileBgImage={restaurantHeroBgImageMobile}
+              mobileTitlePosition="top"
+            ></FoodBusinessHero>
+          </div>
+          <HeroCarrousel
+            images={carrouselIcons}
+            updateHero={updateHero}
+            position="onHero"
+          ></HeroCarrousel>
+
+          <DiDiFoodCarousel
+            images={DiDiFoodCarouselImagesSorted}
+          ></DiDiFoodCarousel>
+        </>
+      )}
+      {useLocation().search !== "?test=day" && (
+        <FoodHero
+          desc=" "
           bgImage={foodHeroBgImage}
           mobileBgImage={foodHeroBgImageMobile}
-          type="food"
-        ></DiDiFoodHeroCarousel>
-        </div>
-        <div className={`${activeHero !== 1 && "hidden"} `}>
-          <DiDiFoodHeroCarousel 
-          bgImage={repartidoresHeroBgImage}
-          mobileBgImage={repartidoresHeroBgImageMobile}
-          type="repartidor"
-          ></DiDiFoodHeroCarousel>
-        </div>
-        <div className={`${activeHero !== 2 && "hidden"} `}>
-          <DiDiFoodHeroCarousel
-            bgImage={restaurantHeroBgImage}
-            mobileBgImage={restaurantHeroBgImageMobile}
-            type="restaurant"
-          ></DiDiFoodHeroCarousel>
-        </div>
-        <HeroCarrousel
-          images={carrouselIcons}
-          updateHero={updateHero}
-          position="onHero"          
-        ></HeroCarrousel>
-      </>
-        <DiDiFoodCarousel
-          images={DiDiFoodCarouselImagesSorted}
-        ></DiDiFoodCarousel>
+          mobileTitlePosition="top"
+        ></FoodHero>
+      )}
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
@@ -147,7 +158,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(carousel_food_icon)|(carousel_courier_icon)|(carousel_restaurant_icon)|(pe.DiDiRestaurant-bgImage-mobile.image)|(pe.DiDiFood-bgImage-mobile.image)|(pe.DiDiRepartidores-bgImage-mobile.image)|(pe.DiDiRestaurant-bgImage.image)|(pe.DiDiFood-bgImage.image)|(pe.DiDiRepartidores-bgImage.image)|(pe.FoodHero.bgImage)|(pe.FoodHeroMobile.bgImage)|(pe.FoodColumns.image)|(pe.FoodBusinessCTA.image)|(pe.FoodDeliveryCTA.image)|(pe.DiDiFoodCarousel.image)/"
+          regex: "/(carousel_food_icon)|(carousel_courier_icon)|(carousel_restaurant_icon)|(pe.FoodHero.bgImage)|(pe.FoodHeroMobile.bgImage)|(pe.FoodDeliveryHero.bgImage)|(pe.FoodDeliveryHeroMobile.bgImage)|(pe.FoodBusinessHero.bgImage)|(pe.FoodBusinessHeroMobile.bgImage)|(pe.FoodColumns.image)|(pe.FoodBusinessCTA.image)|(pe.FoodDeliveryCTA.image)|(pe.DiDiFoodCarousel.image)/"
         }
       }
       sort: { title: ASC }
