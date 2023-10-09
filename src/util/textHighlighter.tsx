@@ -39,6 +39,9 @@ const textHighlighter = (text?: string, styles?: string) => {
 export default textHighlighter;
 
 const isHTML = (str: string): boolean => {
+  if (typeof window === "undefined") {
+    return false;
+  }
   const doc = new DOMParser().parseFromString(str, "text/html");
   return Array.from(doc.body.childNodes).some(node => node.nodeType === 1); // NodeType 1 é ELEMENT_NODE
 };
