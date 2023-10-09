@@ -861,5 +861,78 @@
   "VehicleSection.bulletsCar": ["Express", "Fleet", "Flex", "Entrega", "Taxi"],
   "VehicleSection.bulletsMotorcycle": ["Moto"],
   "VehicleSection.btnType": "drv",
-  "VehicleSection.btnMode": "primary"
+  "VehicleSection.btnMode": "primary",
+  "DiDiExtraPlusHero.title": "{Refiere y} \n {gana}",
+  "DiDiExtraPlusHero.desc": "Acumula puntos y \n canjéalos por premios",
+  "DiDiExtraPlusHero.textColor": "white",
+  "DiDiExtraPlusPartnerCTA.desc": "Participar es muy fácil, invita a tus amigos a conectarse con DiDi y realizar su primera solicitud de arrendamiento en Express+, la nueva versión de la app que te permite elegir el precio de tu arrendamiento de manera fácil y rápida.",
+  "DiDiExtraPlusPartnerCTA.bullets": [
+    "Por cada referido ganas 10 puntos",
+    "Por cada referido que realice su primera solicitud de arrendamiento en Express+ ganas 250 puntos",
+    "¡Anímate! Entre más refieras, más ganas 🌟"
+  ],
+  "DiDiExtraPlusPartnerCTA.textColor": "gray-primary",
+  "DiDiExtraPlusScore.title": "Conoce aquí tu puntaje",
+  "DiDiExtraPlusScore.btnText": "Clic aquí",
+  "DiDiExtraPlusScore.btnMode": "primary",
+  "DiDiExtraPlusScore.btnLink": "",
+  "DiDiExtraPlusScore.textColor": "gray-primary",
+  "DiDiExtraPlusScore.bullets": [
+    "Los puntos se actualizan una vez por semana y esta actualización se verá reflejada los días sábados entre el 16 de Octubre de 2023 y el 2 de Diciembre"
+  ],
+  "DiDiExtraPlusAwardsColumn.title": "Tenemos increíbles premios para ti, conócelos aquí👇",
+  "DiDiExtraPlusAwardsColumn.textColor": "white",
+  "DiDiExtraPlusAwardsColumn.columns": [
+    {
+      "title": "Iphone 13 128 GB",
+      "imageName": "celular",
+      "btnText": "10.000 puntos"
+    },
+    {
+      "title": "SAMSUNG TV 60’’ LED UHD4K Smart TV",
+      "imageName": "tv",
+      "btnText": "7.500 puntos"
+    },
+    {
+      "title": "Galaxy Buds2 Pro",
+      "imageName": "audifonos",
+      "btnText": "6.000 puntos"
+    },
+    {
+      "title": "Pasaporte All Access Expodrinks para 2 personas",
+      "imageName": "bebidas",
+      "btnText": "3.000 puntos"
+    },
+    {
+      "title": "Bono Crepes & Waffles de $50.000",
+      "imageName": "crepes",
+      "btnText": "1.750 puntos"
+    },
+    {
+      "title": "Entrada 2 Personas Cine Colombia Buenavista Dinamix 4D",
+      "imageName": "cine",
+      "desc": "(Crispetas grandes + 2 gaseosas + 2 perros calientes + Kit Kat + Jet)",
+      "btnText": "2.000 puntos"
+    },
+    {
+      "title": "​Bono de regalo Netflix por 1 mes",
+      "imageName": "netflix",
+      "btnText": "1.500 puntos"
+    },
+    {
+      "title": "Pin Paramount Plus por 1 mes",
+      "imageName": "paramount",
+      "btnText": "1.250 puntos"
+    }
+  ],
+  "DiDiExtraPlusAwardsColumn.col.textColor": "white",
+  "DiDiExtraPlusChangePoints.title": "¿Estás listo para canjear tus puntos por premios?",
+  "DiDiExtraPlusChangePoints.desc": "Una vez tengas los puntos necesarios, podrás llenar el formulario para redimirlos en el premio que quieras",
+  "DiDiExtraPlusChangePoints.btnText": "Pulsa aquí",
+  "DiDiExtraPlusChangePoints.btnMode": "primary",
+  "DiDiExtraPlusChangePoints.btnLink": "",
+  "DiDiExtraPlusChangePoints.bullets": [
+    "*Recuerda verificar que cumplas con la cantidad de puntos requeridos para canjearlos en premios, y con los términos y condiciones.",
+    "*Válido hasta 27/11/2023. Unidades limitadas disponibles. Aplica T&Cs: {<a class='underline text-blue-primary' href='/co/refiere-y-gana-con-didi/terminos-y-condiciones'>terminos-y-condiciones</a>}"
+  ]
 }

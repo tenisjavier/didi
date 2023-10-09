@@ -7,11 +7,11 @@ import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
 import Menu from "./Menu";
 import MenuCountryFlags from "./MenuCountryFlags";
 
-interface HeaderProps extends BreadcrumbProps {}
+interface HeaderProps extends BreadcrumbProps { }
 
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
-    <>
+    <div className="h-14 w-full">
       <nav className="fixed z-40 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
@@ -22,7 +22,7 @@ const Header = ({ customBreadcrumb }: HeaderProps) => {
         </div>
       </nav>
       <Breadcrumb customBreadcrumb={customBreadcrumb}></Breadcrumb>
-    </>
+    </div>
   );
 };
 

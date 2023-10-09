@@ -100,6 +100,10 @@ section.main-text ol li {
   @apply mt-3 mb-3;
 }
 
+.btn-static {
+  @apply bg-blue-primary shadow-orange-primary/30 inline-block min-w-max rounded-full font-semibold text-white shadow-xl;
+}
+
 .btn-primary {
   @apply bg-orange-primary shadow-orange-primary/30 inline-block min-w-max cursor-pointer rounded-full font-semibold text-white shadow-xl hover:bg-orange-700 hover:text-white;
 }

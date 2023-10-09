@@ -42,7 +42,7 @@ const FoodHero = ({
     mobileTitlePosition: mobileTitlePosition,
     textHighlighterConfig: {
       hasTextHighlighter: true,
-      style: "text-white  font-black text-5xl md:text-6xl",
+      style: "text-white lg:!text-9xl",
     },
   };
   return <CTASection {...props}></CTASection>;
