@@ -1,5 +1,5 @@
 {
-  "FoodHero.title": "DiDi Food. {Combos} desde {$99} m.n.",
+  "FoodHero.title": "DiDi Food Combos \n desde $99 m.n.",
   "FoodHero.desc": "Te llevamos los platillos de tu restaurante favorito hasta tu puerta.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "light",
@@ -809,7 +809,7 @@
       "icon": "carousel_restaurant_"
     }
   ],
-  "FoodHeroCarousel.title": "{Combos} \n desde {$99} m.n.",
+  "FoodHeroCarousel.title": "Combos desde $99 m.n.",
   "FoodHeroCarousel.btnText": "Pide aquí",
   "FoodHeroCarousel.btnType": "food",
   "FoodHeroCarousel.btnMode": "light",
