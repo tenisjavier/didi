@@ -40,10 +40,6 @@ const FoodHero = ({
     btnMode: t("FoodHero.btnMode"),
     btnType: "foodEater",
     mobileTitlePosition: mobileTitlePosition,
-    textHighlighterConfig: {
-      hasTextHighlighter: true,
-      style: "text-white  font-black text-5xl md:text-6xl",
-    },
   };
   return <CTASection {...props}></CTASection>;
 };
