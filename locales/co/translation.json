@@ -866,7 +866,7 @@
   "EntregaHero.desc": "",
   "EntregaHero.textColor": "white",
   "EntregaHero.btnMode": "light",
-  "EntregaColumns.title": "Contamos con dos opciones de servicios. ¡Elige el que mejor se acomode a tus necesidades!",
+  "EntregaColumns.title": "Nuestras etregas usan DiDi Entrega Auto.",
   "EntregaColumns.bgColor": "bg-blue-primary",
   "EntregaColumns.textColor": "white",
   "EntregaColumns.columns": [
@@ -896,7 +896,7 @@
     },
     {
       "title": "Variedad",
-      "desc": "Usa DiDi Entrega para envíos grandes y DiDi Entrega Light para envíos chicos.",
+      "desc": "Usa DiDi Entrega para envíos grandes y para envíos chicos.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"

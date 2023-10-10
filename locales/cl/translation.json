@@ -553,13 +553,13 @@
   "EntregaHero.desc": "",
   "EntregaHero.textColor": "white",
   "EntregaHero.btnMode": "light",
-  "EntregaColumns.title": "Contamos con dos opciones de servicios. ¡Elige el que mejor se acomode a tus necesidades!",
+  "EntregaColumns.title": "Nuestras etregas usan DiDi Entrega Auto.",
   "EntregaColumns.bgColor": "bg-blue-primary",
   "EntregaColumns.textColor": "white",
   "EntregaColumns.columns": [
     {
       "title": "Conoce DiDi Entrega Auto",
-      "desc": "Realiza envíos en los carros registrados en la app. Si cabe en la cajuela del vehículo, te lo enviamos.",
+      "desc": "Realiza envíos en los autos registrados en la app. Si cabe en la maleta del auto, te lo enviamos.",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
     }
@@ -583,7 +583,7 @@
     },
     {
       "title": "Variedad",
-      "desc": "Usa DiDi Entrega para envíos grandes y DiDi Entrega Light para envíos chicos.",
+      "desc": "Usa DiDi Entrega para envíos grandes o envíos chicos.",
       "bgColor": "white",
       "textColor": "gray-primary",
       "width": "w-80"
