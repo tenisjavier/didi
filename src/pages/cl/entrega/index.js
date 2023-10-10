@@ -9,7 +9,7 @@ import EntregaCityList from "../../../components/sections/EntregaCityList";
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const entregaBgImage = images.filter((image) => {
-    return image.title === "mx.EntregaHero.bgImage";
+    return image.title === "cl.EntregaHero.bgImage";
   })[0];
   const GridImages = images.filter((image) => {
     return image.title.indexOf("EntregaGrid.image") !== -1;
@@ -19,8 +19,8 @@ const Index = ({ data }) => {
   });
 
   const cities = data.allContentfulCity.nodes.filter((city) => {
-    return city.name === 'Santiago'
-  })
+    return city.name === "Santiago";
+  });
 
   return (
     <Layout sb={false}>
@@ -39,7 +39,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.EntregaHero.bgImage)|(mx.EntregaGrid.image)|(mx.EntregaColumns.image)|(mx.EntregaBusinessCTA.image)/"
+          regex: "/(cl.EntregaHero.bgImage)|(cl.EntregaGrid.image)|(cl.EntregaColumns.image)|(cl.EntregaBusinessCTA.image)/"
         }
       }
       sort: { title: ASC }
