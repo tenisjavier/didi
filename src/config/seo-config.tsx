@@ -59,6 +59,11 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Taxi en Chile - Genera Ingresos Extra",
       desc: "DiDi Taxi en Chile, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
+    "/entrega/": {
+      title: "DiDi Entrega: Envía cosas grandes o chicas",
+      desc: "DiDi Entrega en Chile. Realiza envíos en los autos registrados en la app. Si cabe en la maleta del auto, te lo enviamos.",
+    },
+
     "/sobre-didi/": {
       title: "¿Tienes Preguntas sobre DiDi? Revisa las Respuestas",
       desc: "Tanto si eres conductor o usuario de DiDi revisa las principales dudas que el resto de las personas tienen. Así tendrás una mejor experiencia.",
@@ -600,6 +605,10 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/didi-flex/": {
       title: "DiDi Flex: Elige el precio sin afectar tu seguridad",
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
+    },
+    "/entrega/": {
+      title: "DiDi Entrega: Envía cosas grandes o chicas",
+      desc: "DiDi Entrega en Colombia. Realiza envíos en los carros registrados en la app. Si cabe en la cajuela del carro, te lo enviamos.",
     },
     "/sobre-didi/": {
       title: "Tienes Preguntas sobre DiDi? Revisa las Respuestas",
