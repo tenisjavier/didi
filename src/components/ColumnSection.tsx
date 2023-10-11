@@ -4,7 +4,6 @@ import textHighlighter from "../util/textHighlighter";
 
 export interface ColumnsSectionProps {
   columns: CardProps[];
-  gridCols?: string;
   title?: string;
   desc?: string;
   small?: string;
@@ -16,11 +15,12 @@ export interface ColumnsSectionProps {
   hasGrid?: boolean;
   hasTextHighlight?: boolean;
   textHighlightStyles?: string;
+  gridCols?: string;
+  gridConfig?: string;
 }
 
 const ColumnsSection = ({
   columns,
-  gridCols,
   title,
   desc,
   small,
@@ -31,12 +31,16 @@ const ColumnsSection = ({
   hasGrid,
   hasTextHighlight,
   textHighlightStyles,
+  gridConfig,
 }: ColumnsSectionProps) => {
   let dir: any = "ltr";
+
+  const grid = gridConfig || `grid grid-cols-1 md:grid-cols-2 ${hasGrid ? "lg:grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"}`
 
   if (RTL) {
     dir = "rtl";
   }
+
   return (
     <section
       style={{ direction: dir }}
@@ -58,8 +62,7 @@ const ColumnsSection = ({
             ))}
 
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 ${hasGrid ? "lg:grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"
-            } mt-10  lg:justify-around `}
+          className={`${gridConfig || grid} mt-10  lg:justify-around `}
         >
           {columns &&
             columns.map((col, index) => {

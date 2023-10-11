@@ -40,6 +40,7 @@ const FoodHero = ({
     btnMode: t("FoodHero.btnMode"),
     btnType: "foodEater",
     mobileTitlePosition: mobileTitlePosition,
+
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -41,6 +41,9 @@ export interface CardProps extends BtnProps {
   hasTextHighlighter?: boolean;
   textHighlighterStyle?: string;
   titleStyles?: string;
+  imageName?: string;
+  titlePosition?: "beforeImage" | "afterImage";
+  descPosition?: "beforeBtn" | "afterBtn";
 }
 
 const Card = (props: CardProps) => {
@@ -78,7 +81,9 @@ const Card = (props: CardProps) => {
     reverse,
     hasTextHighlighter,
     textHighlighterStyle,
-    titleStyles
+    titleStyles,
+    titlePosition = "afterImage",
+    descPosition = "beforeBtn"
   } = props;
 
   let min = "";
@@ -117,6 +122,9 @@ const Card = (props: CardProps) => {
       className={`${customWidth ? customWidth : "max-w-xs"
         }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
+      {titlePosition === "beforeImage" && title && (
+        <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
+      )}
       <div className="mb-5">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
         {!isImage && image}
@@ -134,11 +142,11 @@ const Card = (props: CardProps) => {
               identifier={"value-" + numberTitle}
             ></AnimatedNumber>
           )}
-          {title && !animatedNumber && (
+          {titlePosition === "afterImage" && title && !animatedNumber && (
             <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
           )}
           <p className={"text-lg"}></p>
-          {desc && isTruncate}
+          {descPosition === "beforeBtn" && desc && isTruncate}
 
           {offer && (
             <p className="block">
@@ -179,6 +187,7 @@ const Card = (props: CardProps) => {
             ></Btn>
           )}
         </div>
+        {descPosition === "afterBtn" && desc && isTruncate}
       </div>
     </div>
   );
