@@ -18,12 +18,13 @@ const DiDiExpressPlusPartner = ({ image }: DiDiExpressPlusPartnerProps) => {
     textColor: t("DiDiExtraPlusPartnerCTA.textColor"),
     bgColor: t("DiDiExtraPlusPartnerCTA.bgColor"),
     image: image,
-    imageStyle: "!z-10 m-4 w-128",
+    imageStyle: "!z-10 m-4 w-128 mr-20",
     btnMode: t("DiDiExtraPlusPartnerCTA.btnMode"),
     btnType: "card",
     btnText: t("DiDiExtraPlusPartnerCTA.btnText"),
     reverse: false,
-    bullets: t("DiDiExtraPlusPartnerCTA.bullets", { returnObjects: true })
+    bullets: t("DiDiExtraPlusPartnerCTA.bullets", { returnObjects: true }),
+    hasTextHighlighterBullets: true,
   };
   return (
     <CTASection {...props}></CTASection>
