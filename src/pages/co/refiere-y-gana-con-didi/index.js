@@ -29,7 +29,10 @@ const ganaConDidi = ({ data }) => {
   });
 
   return (
-    <Layout>
+    <Layout
+      title={"Refiere y Gana"}
+      desc={"Acumula puntos y canjéalos por premios"}
+    >
       <DiDiExpressPlus
         bgImage={didiExpressPlusHeroBgImage}
         bgMobile={didiExpressPlusHeroBgImageMobile}
