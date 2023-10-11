@@ -1,10 +1,9 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import { BtnType } from "../Btn";
 
-interface FoodHeroProps {
-  title?: string;
-  desc?: string;
+interface FoodDeliveryGuideHeroProps {
   bgImage: {
     title: string;
     description: string;
@@ -15,34 +14,35 @@ interface FoodHeroProps {
     description: string;
     gatsbyImageData: any;
   };
-  mobileTitlePosition?: "top" | "middle";
+  btnType?: BtnType;
+  btnMode?: string;
+  isRTL?: boolean;
 }
 
-const FoodHero = ({
-  title,
-  desc,
+const FoodDeliveryGuideHero = ({
   bgImage,
   mobileBgImage,
-  mobileTitlePosition,
-}: FoodHeroProps) => {
+  btnType,
+  btnMode,
+  isRTL,
+}: FoodDeliveryGuideHeroProps) => {
   const bgImageStyle = mobileBgImage
     ? "hidden !absolute z-0 h-full w-full brightness-90 md:block "
     : "!absolute z-0 h-full w-full brightness-90 md:block ";
   const props: CTAProps = {
     hero: true,
-    title: title || t("FoodHero.title"),
-    desc: desc || t("FoodHero.desc"),
-    textColor: t("FoodHero.textColor"),
+    title: t("FoodDeliveryGuideHero.title"),
+    desc: t("FoodDeliveryGuideHero.desc"),
+    textColor: t("FoodDeliveryGuideHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
     mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
-    btnMode: t("FoodHero.btnMode"),
-    btnType: "foodEater",
-    mobileTitlePosition: mobileTitlePosition,
-
+    btnMode: btnMode || t("FoodDeliveryGuideHero.btnMode"),
+    btnType: btnType || "foodDelivery",
+    RTL: isRTL || false,
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default FoodHero;
+export default FoodDeliveryGuideHero;

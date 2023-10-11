@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
-import { useLocation } from "@reach/router";
 import Layout from "../../../components/Layout";
 import FoodBusinessCTA from "../../../components/sections/FoodBusinessCTA";
 import FoodColumns from "../../../components/sections/FoodColumns";
@@ -10,13 +9,17 @@ import HeroCarrousel from "../../../components/sections/HeroCarrousel";
 import FoodDeliveryHero from "../../../components/sections/FoodDeliveryHero";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
 import FoodHero from "../../../components/sections/FoodHero";
-
+import { ab } from "../../../config/ab";
 const Food = ({ data }) => {
   const [activeHero, setActiveHero] = useState(0);
   const updateHero = (id) => {
     setActiveHero(id);
   };
-
+  const version = ab(
+    "2023-10-FoodHomeCarrousels-t6",
+    "2023-10-FoodHomeOriginal-t6",
+    "t6"
+  );
   const images = data.allContentfulAsset.nodes;
 
   const foodColumnsImages = images.filter((image) => {
@@ -99,7 +102,7 @@ const Food = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      {useLocation().search === "?test=day" && (
+      {version === "a" && (
         <>
           <div className={`${activeHero !== 0 && "hidden"} `}>
             <FoodHero
@@ -136,12 +139,11 @@ const Food = ({ data }) => {
           ></DiDiFoodCarousel>
         </>
       )}
-      {useLocation().search !== "?test=day" && (
+      {version === "b" && (
         <FoodHero
-          desc=" "
           bgImage={foodHeroBgImage}
           mobileBgImage={foodHeroBgImageMobile}
-          mobileTitlePosition="top"
+          mobileTitlePosition="center"
         ></FoodHero>
       )}
       <FoodColumns images={foodColumnsImages}></FoodColumns>

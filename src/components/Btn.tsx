@@ -166,6 +166,8 @@ const Btn = ({
     let form;
     const url = new URL(link);
     let version = url.searchParams.get("ad_group_id")?.toString();
+    if (url.searchParams.get("c")?.toString().includes("/food"))
+      version = localStorage.getItem("t6")?.toString();
     if (btnType === "drv")
       form = link.includes("quickbolt") ? "quickbolt" : "h5";
     gtmEvent(`click-btn`, {

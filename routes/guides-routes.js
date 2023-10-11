@@ -6,10 +6,11 @@ const slugify = require("slugify");
 const guidesRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulGuide(filter: { category: { ne: "delivery" } }) {
+      allContentfulGuide {
         nodes {
           id
           slug
+          category
           country {
             code
           }
@@ -29,8 +30,14 @@ const guidesRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulGuide.nodes.forEach((node) => {
-    const { id, slug, country } = node;
+    const { id, slug, country, category } = node;
     let path = `/${country.code}/guias/${slug}`;
+
+    if (category == "delivery") {
+      path = `/${country.code}/food/repartidores/guias/${slug}`;
+    } else if (category == "restaurant") {
+      path = `/${country.code}/food/restaurantes/guias/${slug}`;
+    }
 
     createPage({
       path: path,
@@ -39,6 +46,7 @@ const guidesRoutesInit = async (graphql, createPage) => {
         id: id,
         slug: slug,
         countryCode: country.code,
+        category: category,
       },
     });
   });

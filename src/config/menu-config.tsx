@@ -239,6 +239,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Entrega",
+      url: "/cl/entrega/",
+      icon: "menu-delivery-box",
+      dropMenu: [
+        {
+          text: "DiDi Entrega",
+          url: "/cl/entrega/",
+        },
+      ],
+    },
+    {
       text: "Sobre DiDi",
       url: "/cl/sobre-didi/",
       icon: "menu-help",
@@ -377,7 +388,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Entrega",
-      url: "#",
+      url: "/mx/entrega/",
       icon: "menu-delivery-box",
       dropMenu: [
         {
@@ -730,6 +741,17 @@ const menuLinks: AllMenuInterface = {
         {
           text: "Contacto",
           url: "/co/food/contacto/",
+        },
+      ],
+    },
+    {
+      text: "DiDi Entrega",
+      url: "/co/entrega/",
+      icon: "menu-delivery-box",
+      dropMenu: [
+        {
+          text: "DiDi Entrega",
+          url: "/co/entrega/",
         },
       ],
     },

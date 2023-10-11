@@ -589,6 +589,10 @@
   "AboutCountryCTA.title": "DiDi en México",
   "AboutCountryCTA.desc": "En 2018 llegamos a México, con un gran objetivo: Transformar la movilidad. \n Hoy tenemos operaciones en más de 50 ciudades del país con nuestros productos: DiDi Express, DiDi Taxi, DiDi Connect, DiDi Economy, DiDi Entrega, DiDi Hero, DiDi Protect, DiDi Vacúnate y DiDi Food.",
   "AboutCountryCTA.bullets": false,
+  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
+  "FoodHero.desc": "De tu restaurante favorito a la puerta de tu casa.",
+  "FoodHero.textColor": "white",
+  "FoodHero.btnMode": "light",
   "SafetyHero.title": "En DiDi tu seguridad es nuestra prioridad",
   "SafetyHero.desc": "Revisa todas las funciones de seguridad que tiene nuestra app, antes, durante y después de cada viaje.",
   "SafetyHero.textColor": "white",
@@ -648,7 +652,7 @@
     },
     {
       "title": "11. Cámaras de Seguridad DiDi",
-      "desc": "Instalamos cámaras en más de 900 vehículos en Guadalajara. Si detectas alguna situación de riesgo, puedes presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y, de ser necesario, enviar apoyo a tu ubicación. *Disponible solo en Guadalajara."
+      "desc": "Si detectas una situación de riesgo, puedes presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y enviar apoyo si es necesario. *Disponible en Ciudad de México y Guadalajara."
     },
     {
       "title": "12. DiDi Mujer",
