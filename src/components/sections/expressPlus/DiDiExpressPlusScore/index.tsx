@@ -20,8 +20,8 @@ const DiDiExpressPlusScore = ({ image }: DiDiExpressPlusScoreProps) => {
     image: image,
     imageStyle: "!z-10 m-4 w-128",
     btnMode: t("DiDiExtraPlusScore.btnMode"),
-    btnType: "card",
     btnText: t("DiDiExtraPlusScore.btnText"),
+    btnLink: t("DiDiExtraPlusScore.btnLink"),
     reverse: true,
     bullets: t("DiDiExtraPlusScore.bullets", { returnObjects: true })
   };

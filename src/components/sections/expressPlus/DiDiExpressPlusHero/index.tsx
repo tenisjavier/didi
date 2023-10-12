@@ -23,8 +23,8 @@ const DiDiExpressPlusHero = ({ bgImage, bgMobile }: DiDiExpressPlusHeroProps) =>
     mobileTitlePosition: "top",
     imageStyle: "!z-10 m-4 w-128",
     btnMode: t("DiDiExtraPlusHero.btnMode"),
-    btnType: "card",
     btnText: t("DiDiExtraPlusHero.btnText"),
+    btnLink: t("DiDiExtraPlusHero.btnLink"),
     textHighlighterConfig: {
       hasTextHighlighter: true,
       style: "text-white  font-black text-5xl md:text-6xl",
