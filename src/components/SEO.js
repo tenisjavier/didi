@@ -5,6 +5,7 @@ import { useCountry } from "../context/countryContext";
 import { useLocation } from "@reach/router";
 import { getMetaByPath } from "../config/seo-config";
 import insertBtnParams from "../config/analytics-config";
+import saveFirstPage from "../config/save-first-page-config";
 
 const SEO = ({ title, desc, index, schema }) => {
   const data = useStaticQuery(graphql`
@@ -276,6 +277,7 @@ const SEO = ({ title, desc, index, schema }) => {
         {
           // activate tracking pixel when DOM is mounted
           useEffect(() => {
+            saveFirstPage();
             insertBtnParams();
             function OptanonWrapper() {}
           }, [])

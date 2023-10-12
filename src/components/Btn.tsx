@@ -170,6 +170,7 @@ const Btn = ({
       version = localStorage.getItem("t6")?.toString();
     if (btnType === "drv")
       form = link.includes("quickbolt") ? "quickbolt" : "h5";
+    let firstVisitedPage = window.localStorage.getItem("firstVisitedPage") || undefined;
     gtmEvent(`click-btn`, {
       btnType: btnType,
       btnLink: link,
@@ -177,6 +178,7 @@ const Btn = ({
       versionName: version,
       btnText: e.target.innerText,
       countryCode: countryCode,
+      firstVisitedPage: firstVisitedPage 
     });
     window.location.href = link;
   };
