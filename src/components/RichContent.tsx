@@ -116,6 +116,20 @@ const options: optionsInterface = {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       if (!node.data.target) return <div></div>;
       const { gatsbyImageData, title } = node.data.target;
+      if (title.includes("didiImage")) {
+        if (gatsbyImageData.width === 300 && gatsbyImageData.height === 600) {
+          gatsbyImageData.width = 150;
+          gatsbyImageData.height = 300;
+        }
+        if (gatsbyImageData.width === 150 && gatsbyImageData.height === 150) {
+          gatsbyImageData.width = 100;
+          gatsbyImageData.height = 100;
+        }
+        if (gatsbyImageData.width === 300 && gatsbyImageData.height === 300) {
+          gatsbyImageData.width = 200;
+          gatsbyImageData.height = 200;
+        }
+      }
       return (
         <div className="my-12 flex w-full justify-center mx-auto">
           <GatsbyImage
