@@ -48,7 +48,7 @@ export type BtnMode =
   | "green"
   | "hidden"
   | "whatsapp"
-  | "static"
+  | "static";
 
 export interface BtnProps {
   btnType?: BtnType;
@@ -151,7 +151,7 @@ const Btn = ({
   }
 
   const handleClick = (e: any) => {
-    if (btnMode === 'static') return;
+    if (btnMode === "static") return;
     if (notRedirectOutPage) {
       if (download) {
         setIsLoading(true);
@@ -170,7 +170,11 @@ const Btn = ({
       version = localStorage.getItem("t6")?.toString();
     if (btnType === "drv")
       form = link.includes("quickbolt") ? "quickbolt" : "h5";
-    let firstVisitedPage = window.localStorage.getItem("firstVisitedPage") || undefined;
+
+    let firstVisitedPage;
+    if (typeof window !== "undefined") {
+      firstVisitedPage = window.localStorage.getItem("firstVisitedPage");
+    }
     gtmEvent(`click-btn`, {
       btnType: btnType,
       btnLink: link,
@@ -178,7 +182,7 @@ const Btn = ({
       versionName: version,
       btnText: e.target.innerText,
       countryCode: countryCode,
-      firstVisitedPage: firstVisitedPage 
+      firstVisitedPage: firstVisitedPage || undefined,
     });
     window.location.href = link;
   };
@@ -212,8 +216,9 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`${btnTextCenter ? "text-center" : ""
-          } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+        className={`${
+          btnTextCenter ? "text-center" : ""
+        } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         {isLoading ? (
           <FontAwesomeIcon
