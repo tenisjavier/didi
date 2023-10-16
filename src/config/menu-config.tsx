@@ -239,6 +239,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Entrega",
+      url: "/cl/entrega/",
+      icon: "menu-delivery-box",
+      dropMenu: [
+        {
+          text: "DiDi Entrega",
+          url: "/cl/entrega/",
+        },
+      ],
+    },
+    {
       text: "Sobre DiDi",
       url: "/cl/sobre-didi/",
       icon: "menu-help",
@@ -377,7 +388,7 @@ const menuLinks: AllMenuInterface = {
     },
     {
       text: "DiDi Entrega",
-      url: "#",
+      url: "/mx/entrega/",
       icon: "menu-delivery-box",
       dropMenu: [
         {
@@ -489,7 +500,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Moto",
       url: "/ar/conductor/moto/",
-      icon: "menu-delivery-box",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "DiDi Moto",
@@ -734,6 +745,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Entrega",
+      url: "/co/entrega/",
+      icon: "menu-delivery-box",
+      dropMenu: [
+        {
+          text: "DiDi Entrega",
+          url: "/co/entrega/",
+        },
+      ],
+    },
+    {
       text: "Sobre DiDi",
       url: "/co/sobre-didi/",
       icon: "menu-help",
@@ -971,6 +993,17 @@ const menuLinks: AllMenuInterface = {
       ],
     },
     {
+      text: "DiDi Taxi",
+      url: "/cr/taxi/",
+      icon: "menu-drv",
+      dropMenu: [
+        {
+          text: "DiDi Taxi",
+          url: "/cr/taxi/",
+        },
+      ],
+    },
+    {
       text: "DiDi Fleet",
       url: "/cr/didi-fleet/",
       icon: "menu-pax",
@@ -1070,7 +1103,7 @@ const menuLinks: AllMenuInterface = {
     {
       text: "DiDi Moto",
       url: "/do/conductor/moto/",
-      icon: "menu-delivery-box",
+      icon: "menu-delivery",
       dropMenu: [
         {
           text: "DiDi Moto",

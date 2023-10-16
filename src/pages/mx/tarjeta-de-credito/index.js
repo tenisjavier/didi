@@ -11,6 +11,7 @@ import DiDiCreditRequirements from "../../../components/sections/CreditCard/DiDi
 import DiDiCreditWhy from "../../../components/sections/CreditCard/DiDiCreditWhy";
 import DiDiCreditFAQ from "../../../components/sections/CreditCard/DiDiCreditFAQ";
 import DiDiCreditCachBack from "../../../components/sections/CreditCard/DiDiCreditCashBack";
+
 const DiDiCredit = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const faqs = data.allContentfulFaq.nodes;
@@ -60,6 +61,7 @@ const DiDiCredit = ({ data }) => {
       ></DiDiCreditRequirements>
       <DiDiCreditWhy image={cardWhyImage}></DiDiCreditWhy>
       <DiDiCreditFAQ data={faqs}></DiDiCreditFAQ>
+
     </Layout>
   );
 };

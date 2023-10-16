@@ -59,6 +59,9 @@ const btnLinks: AllBtnInterface = {
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
+    entregaText: "Usa DiDi Entrega",
+    entregaLink:
+      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
   },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
@@ -70,7 +73,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-PE/store",
     foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pide Comida, Descarga la App",
+    foodEaterText: "Descarga DiDi Food",
   },
   ar: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
@@ -93,6 +96,9 @@ const btnLinks: AllBtnInterface = {
     foodBusinessText: "Registra tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida, Descarga la App",
+    entregaText: "Usa DiDi Entrega",
+    entregaLink:
+      "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
   },
   au: {
     drvLink: "https://anz-rides-driver.onelink.me/ixFb/ukdriverhero",
@@ -130,7 +136,7 @@ const btnLinks: AllBtnInterface = {
     foodBusinessLink: "https://www.didi-food.com/es-CR/store",
     foodBusinessText: "Registrá tu Restaurante",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
-    foodEaterText: "Pedí Comida, Descargá la App",
+    foodEaterText: "Descarga DiDi Food",
     foodEaterOnlineText: "Pide Comida sin App",
     foodEaterOnlineLink: "https://www.didi-food.com/es-CR/food/address/",
   },
@@ -147,7 +153,7 @@ const btnLinks: AllBtnInterface = {
     drvWhatsappLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     drvWhatsappText: "Regístrate con Whatsapp",
     paxText: "Descarga DiDi Pasajero",
-    foodEaterText: "Pide Comida, Descarga la App",
+    foodEaterText: "Descarga DiDi Food",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterOnlineText: "Pide Comida sin la App",
     foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/",

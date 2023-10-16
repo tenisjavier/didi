@@ -98,6 +98,10 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-restaurant",
       dropMenu: [
         {
+          text: "Restaurantes",
+          url: "/cr/food/restaurantes/",
+        },
+        {
           text: "Registrá tu Restaurante",
           url: "https://www.didi-food.com/es-CR/food/address/",
         },
@@ -120,10 +124,14 @@ const menuLinksFood: AllMenuInterface = {
       ],
     },
     {
-      text: "Socio repartidor",
+      text: "Socio Repartidor",
       url: "/cr/food/repartidores/",
       icon: "menu-delivery",
       dropMenu: [
+        {
+          text: "Socio Repartidor",
+          url: "/cr/food/repartidores/",
+        },
         {
           text: "Registrate como Repartidor",
           url: "https://global-food-courier.onelink.me/zzaY/delivery",

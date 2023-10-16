@@ -535,6 +535,7 @@
   "VikingSection.hasTwoColumns": false,
   "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
   "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.bgColor": "bg-gray-light",
   "VehicleSection.subTitle": "¿Tienes vehículo de?",
   "VehicleSection.vehicles": [
     {
@@ -547,5 +548,71 @@
   "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
   "VehicleSection.bulletsCar": ["Express", "Entrega", "Taxi"],
   "VehicleSection.btnType": "drv",
-  "VehicleSection.btnMode": "primary"
+  "VehicleSection.btnMode": "primary",
+  "EntregaHero.title": "DiDi Entrega: Envía cosas grandes o chicas ",
+  "EntregaHero.desc": "",
+  "EntregaHero.textColor": "white",
+  "EntregaHero.btnMode": "light",
+  "EntregaColumns.title": "Nuestras etregas usan DiDi Entrega Auto.",
+  "EntregaColumns.bgColor": "bg-blue-primary",
+  "EntregaColumns.textColor": "white",
+  "EntregaColumns.columns": [
+    {
+      "title": "Conoce DiDi Entrega Auto",
+      "desc": "Realiza envíos en los autos registrados en la app. Si cabe en la maleta del auto, te lo enviamos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary"
+    }
+  ],
+  "EntregaGrid.bgColor": "bg-white",
+  "EntregaGrid.textColor": "gray-primary",
+  "EntregaGrid.columns": [
+    {
+      "title": "Ahorra en Envíos",
+      "desc": "Realiza envíos a precios accesibles.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Herramientas de Seguridad",
+      "desc": "Monitorea en tiempo real el recorrido de tu envío.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Variedad",
+      "desc": "Usa DiDi Entrega para envíos grandes o envíos chicos.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Fácil de Usar",
+      "desc": "Con tan solo unos clicks podrás realizar tus envíos a través de la app.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contáctanos por medio de chat en vivo 24/7",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Métodos de pago",
+      "desc": "Elige la opción que mejor se acomode a ti, sea efectivo o tarjeta.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    }
+  ],
+  "EntregaCityList.title": "Operamos en las siguientes ciudades en Chile",
+  "EntregaCityList.desc": "Descubre las ciudades de Chile donde esta operando DiDi Entrega",
+  "EntregaCityList.bgColor": "bg-white",
+  "EntregaCityList.textColor": "gray-primary",
+  "EntregaCityList.linkItem": "/cl/conductor/conductor-en-{{city}}/"
 }

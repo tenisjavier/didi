@@ -15,7 +15,9 @@ const EntregaCityList = ({ data }: ListProps) => {
     return {
       text: city.name,
       secondText: "",
-      link: "#",
+      link: t("EntregaCityList.linkItem", {
+        city: city.slug,
+      }),
       image: city.image,
     };
   });

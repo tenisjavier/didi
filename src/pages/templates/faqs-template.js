@@ -4,7 +4,6 @@ import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import FaqHero from "../../components/sections/FaqHero";
 import FoodFaqHero from "../../components/sections/FoodFaqHero";
-// import DiDiCreditFaqHero from "../../components/sections/CreditCard/DiDiCreditFAQ";
 import FaqContent from "../../components/sections/FaqContent";
 import FaqList from "../../components/sections/FaqList";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
@@ -17,9 +16,6 @@ const FaqsTemplate = ({ data }) => {
   const foodFaqBgImage = images.filter((image) => {
     return image.title === "mx.FaqFoodHero.bgImage";
   })[0];
-  const CreditFaqHeroImage = images.filter((image) => {
-    return image.title === "mx.CreditFaqHero.image";
-  })[0];
   const { title, content } = data.contentfulFaq;
   const { pathname } = useLocation();
   const productName =
@@ -31,6 +27,7 @@ const FaqsTemplate = ({ data }) => {
     productFaqs = data.allContentfulProduct.nodes.faq;
   }
 
+  let btnText = "";
   let btnType = "";
   let link = "";
   let faqDiDiPay;
@@ -95,15 +92,19 @@ const FaqsTemplate = ({ data }) => {
       );
     }
 
-    // if(pathname.includes("/tarjeta-de-credito")){
-    //   hero = (
-    //     <DiDiCreditFaqHero
-    //       title={title}
-    //       desc={productName}
-    //       bgImage={CreditFaqHeroImage}
-    //     ></DiDiCreditFaqHero>
-    //   );
-    // }
+    if(pathname.includes("/tarjeta-de-credito")){
+      btnText = "Solicitar en DiDi app";
+      btnType = "pax";
+
+      hero = (
+        <FaqHero
+          title={title}
+          bgImage={helpCenterBgImage}
+          btnType={btnType}
+          btnText={btnText}
+        ></FaqHero>
+      );
+    }
       
 
   let faqDesc = "";

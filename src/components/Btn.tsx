@@ -47,7 +47,8 @@ export type BtnMode =
   | "light"
   | "green"
   | "hidden"
-  | "whatsapp";
+  | "whatsapp"
+  | "static"
 
 export interface BtnProps {
   btnType?: BtnType;
@@ -150,6 +151,7 @@ const Btn = ({
   }
 
   const handleClick = (e: any) => {
+    if (btnMode === 'static') return;
     if (notRedirectOutPage) {
       if (download) {
         setIsLoading(true);
@@ -164,6 +166,8 @@ const Btn = ({
     let form;
     const url = new URL(link);
     let version = url.searchParams.get("ad_group_id")?.toString();
+    if (url.searchParams.get("c")?.toString().includes("/food"))
+      version = localStorage.getItem("t6")?.toString();
     if (btnType === "drv")
       form = link.includes("quickbolt") ? "quickbolt" : "h5";
     gtmEvent(`click-btn`, {
@@ -206,9 +210,8 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`${
-          btnTextCenter ? "text-center" : ""
-        } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+        className={`${btnTextCenter ? "text-center" : ""
+          } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         {isLoading ? (
           <FontAwesomeIcon

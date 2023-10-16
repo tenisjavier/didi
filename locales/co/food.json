@@ -1,5 +1,5 @@
 {
-  "FoodHero.title": "DiDi Food: Tu comida cuando quieras, donde quieras",
+  "FoodHero.title": "DiDi Food. Combos desde $17.500",
   "FoodHero.desc": "De tu restaurante favorito a la puerta de tu casa.",
   "FoodHero.textColor": "white",
   "FoodHero.btnMode": "light",
@@ -35,10 +35,9 @@
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
   "FoodBusinessHero.title": "¡Únete con DiDi Food y ve crecer a tu restaurante!",
-  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida. \n Teléfono de servicio comercial:",
-  "FoodBusinessHero.link": "+6015801398",
+  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida. \n Teléfono de servicio comercial: +6015801398",
   "FoodBusinessHero.textColor": "white",
-  "FoodBusinessHero.btnMode": "primary",
+  "FoodBusinessHero.btnMode": "light",
   "FoodBusinessColumns.bgColor": "bg-white",
   "FoodBusinessColumns.textColor": "gray-primary",
   "FoodBusinessColumns.columns": [
@@ -80,10 +79,10 @@
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "FoodDeliveryHero.title": "¡Conéctate con DiDi Food! Genera ganancias adicionales",
+  "FoodDeliveryHero.title": "Únete como Repartidor de DiDi Food.",
   "FoodDeliveryHero.desc": "Comenzar es sencillo y tú mismo estableces tu horario",
   "FoodDeliveryHero.textColor": "white",
-  "FoodDeliveryHero.btnMode": "primary",
+  "FoodDeliveryHero.btnMode": "light",
   "FoodDeliveryColumns.bgColor": "white",
   "FoodDeliveryColumns.textColor": "gray-primary",
   "FoodDeliveryColumns.columns": [
@@ -742,5 +741,36 @@
   "ArticlesColumns.textColor": "white",
   "ArticlesColumns.btnText": "Leer Artículo",
   "ArticlesColumns.btnMode": "primary",
-  "ArticlesColumns.linkItem": "/co/food/repartidores/{{article}}/"
+  "ArticlesColumns.linkItem": "/co/food/repartidores/{{article}}/",
+  "HeroCarrousel.bgColor": "bg-white",
+  "HeroCarrousel.textColor": "gray-primary",
+  "HeroCarrousel.columns": [
+    {
+      "title": "DiDi Food",
+      "icon": "carousel_food_"
+    },
+    {
+      "title": "Socio Repartidor",
+      "icon": "carousel_courier_"
+    },
+    {
+      "title": "Restaurantes",
+      "icon": "carousel_restaurant_"
+    }
+  ],
+  "FoodHeroCarousel.title": "{Combos} \n desde {$99} m.n.",
+  "FoodHeroCarousel.btnText": "Pide aquí",
+  "FoodHeroCarousel.btnType": "food",
+  "FoodHeroCarousel.btnMode": "light",
+  "FoodHeroCarousel.textColor": "white",
+  "RestaurantHeroCarousel.title": "Únete a DiDi Food y \n ve crecer tu negocio",
+  "RestaurantHeroCarousel.btnText": "Registra tu restaurante",
+  "RestaurantHeroCarousel.btnType": "restaurant",
+  "RestaurantHeroCarousel.btnMode": "light",
+  "RestaurantHeroCarousel.textColor": "white",
+  "RepartidorHeroCarousel.title": "¡Únete a DiDi Food! \n Obtén excelentes ganancias \n y otras recompensas.",
+  "RepartidorHeroCarousel.btnText": "Regístrate como Repartidor",
+  "RepartidorHeroCarousel.btnType": "courier",
+  "RepartidorHeroCarousel.btnMode": "light",
+  "RepartidorHeroCarousel.textColor": "white"
 }

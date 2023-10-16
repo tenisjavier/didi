@@ -3,23 +3,43 @@ import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
 interface FoodDeliveryHeroProps {
+  title?: string;
+  desc?: string;
   bgImage: {
     title: string;
     description: string;
     gatsbyImageData: any;
   };
+  mobileBgImage?: {
+    title: string;
+    description: string;
+    gatsbyImageData: any;
+  };
+  mobileTitlePosition?: "top" | "middle";
 }
 
-const FoodDeliveryHero = ({ bgImage }: FoodDeliveryHeroProps) => {
+const FoodDeliveryHero = ({
+  title,
+  desc,
+  bgImage,
+  mobileBgImage,
+  mobileTitlePosition,
+}: FoodDeliveryHeroProps) => {
+  const bgImageStyle = mobileBgImage
+    ? "hidden !absolute z-0 h-full w-full brightness-90 md:block "
+    : "!absolute z-0 h-full w-full brightness-90 md:block ";
   const props: CTAProps = {
     hero: true,
-    title: t("FoodDeliveryHero.title"),
-    desc: t("FoodDeliveryHero.desc"),
+    title: title || t("FoodDeliveryHero.title"),
+    desc: desc || t("FoodDeliveryHero.desc"),
     textColor: t("FoodDeliveryHero.textColor"),
     bgImage: bgImage,
-    bgImageStyle: "!absolute z-0 h-full w-full brightness-50  md:block",
+    bgImageStyle: bgImageStyle,
+    mobileBgImage: mobileBgImage,
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnMode: t("FoodDeliveryHero.btnMode"),
     btnType: "foodDelivery",
+    mobileTitlePosition: mobileTitlePosition,
   };
   return <CTASection {...props}></CTASection>;
 };

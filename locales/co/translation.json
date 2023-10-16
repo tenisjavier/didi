@@ -843,6 +843,7 @@
   "VikingSection.hasTwoColumns": true,
   "VikingSection.vikingFooter.text": "Lo bueno es que hay DiDi",
   "VehicleSection.title": "Genera ganancias en DiDi Conductor",
+  "VehicleSection.bgColor": "bg-gray-light",
   "VehicleSection.subTitle": "¿Tienes vehículo de?",
   "VehicleSection.vehicles": [
     {
@@ -860,5 +861,142 @@
   "VehicleSection.bulletsCar": ["Express", "Fleet", "Flex", "Entrega", "Taxi"],
   "VehicleSection.bulletsMotorcycle": ["Moto"],
   "VehicleSection.btnType": "drv",
-  "VehicleSection.btnMode": "primary"
+  "VehicleSection.btnMode": "primary",
+  "DiDiExtraPlusHero.title": "{Refiere y} \n {gana}",
+  "DiDiExtraPlusHero.desc": "Acumula puntos y canjéalos por premios",
+  "DiDiExtraPlusHero.textColor": "white",
+  "DiDiExtraPlusHero.btnText": "Refiere aquí",
+  "DiDiExtraPlusHero.btnMode": "light",
+  "DiDiExtraPlusHero.btnLink": " http://d.didiglobal.com/MgMFeature",
+  "DiDiExtraPlusPartnerCTA.desc": "Participar es muy fácil, invita a tus amigos a conectarse con DiDi y realizar su primera solicitud de arrendamiento en Express+, la nueva versión de la app que te permite elegir el precio de tu arrendamiento de manera fácil y rápida. \n  \n Puedes invitarlos compartiendo tu código a través de redes sociales, mensajes de texto o en persona. Entre más creativo seas, ¡mucho mejor!",
+  "DiDiExtraPlusPartnerCTA.bullets": [
+    "Por cada referido ganas {10} puntos",
+    "Por cada referido que realice su primera solicitud de arrendamiento en Express+ ganas {250} puntos",
+    "¡Anímate! Entre más refieras, más ganas 🌟"
+  ],
+  "DiDiExtraPlusPartnerCTA.textColor": "gray-primary",
+  "DiDiExtraPlusScore.title": "Conoce aquí tu puntaje",
+  "DiDiExtraPlusScore.btnText": "Clic aquí",
+  "DiDiExtraPlusScore.btnMode": "primary",
+  "DiDiExtraPlusScore.btnLink": "http://www.refiereyganacondidi.co",
+  "DiDiExtraPlusScore.textColor": "gray-primary",
+  "DiDiExtraPlusScore.bullets": [
+    "Los puntos se actualizan una vez por semana y esta actualización se verá reflejada los días sábados entre el 16 de Octubre de 2023 y el 2 de Diciembre"
+  ],
+  "DiDiExtraPlusAwardsColumn.title": "Tenemos increíbles premios para ti, conócelos aquí👇",
+  "DiDiExtraPlusAwardsColumn.textColor": "white",
+  "DiDiExtraPlusAwardsColumn.columns": [
+    {
+      "title": "iPhone 13 128 GB",
+      "imageName": "celular",
+      "btnText": "10.000 puntos"
+    },
+    {
+      "title": "SAMSUNG TV 60’’ LED UHD4K Smart TV",
+      "imageName": "tv",
+      "btnText": "7.500 puntos"
+    },
+    {
+      "title": "Galaxy Buds2 Pro",
+      "imageName": "audifonos",
+      "btnText": "6.000 puntos"
+    },
+    {
+      "title": "Bono Crepes & Waffles de $50.000",
+      "imageName": "crepes",
+      "btnText": "1.750 puntos"
+    },
+    {
+      "title": "Entrada 2 Personas Cine Colombia Buenavista Dinamix 4D",
+      "imageName": "cine",
+      "desc": "(Crispetas grandes + 2 gaseosas + 2 perros calientes + Kit Kat + Jet)",
+      "btnText": "2.000 puntos"
+    },
+    {
+      "title": "​Bono de regalo Netflix por 1 mes",
+      "imageName": "netflix",
+      "btnText": "1.500 puntos"
+    },
+    {
+      "title": "Pin Paramount Plus por 1 mes",
+      "imageName": "paramount",
+      "btnText": "1.250 puntos"
+    }
+  ],
+  "DiDiExtraPlusAwardsColumn.col.textColor": "white",
+  "DiDiExtraPlusChangePoints.title": "¿Estás listo para canjear tus puntos por premios?",
+  "DiDiExtraPlusChangePoints.desc": "Una vez tengas los puntos necesarios, podrás llenar el formulario para redimirlos en el premio que quieras",
+  "DiDiExtraPlusChangePoints.btnText": "Pulsa aquí",
+  "DiDiExtraPlusChangePoints.btnMode": "primary",
+  "DiDiExtraPlusChangePoints.btnLink": "https://forms.gle/YgNCxNPLuTUS5PNVA",
+  "DiDiExtraPlusChangePoints.bullets": [
+    "*Recuerda verificar que cumplas con la cantidad de puntos requeridos para canjearlos en premios, y con los términos y condiciones.",
+    "*Válido hasta 27/11/2023. Unidades limitadas disponibles. Aplica T&Cs: {<a class='underline text-blue-primary' href='/co/refiere-y-gana-con-didi/terminos-y-condiciones'>terminos-y-condiciones</a>}"
+  ],
+  "EntregaHero.title": "DiDi Entrega: Envía cosas grandes o chicas ",
+  "EntregaHero.desc": "",
+  "EntregaHero.textColor": "white",
+  "EntregaHero.btnMode": "light",
+  "EntregaColumns.title": "Nuestras etregas usan DiDi Entrega Auto.",
+  "EntregaColumns.bgColor": "bg-blue-primary",
+  "EntregaColumns.textColor": "white",
+  "EntregaColumns.columns": [
+    {
+      "title": "Conoce DiDi Entrega Auto",
+      "desc": "Realiza envíos en los carros registrados en la app. Si cabe en la cajuela del vehículo, te lo enviamos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary"
+    }
+  ],
+  "EntregaGrid.bgColor": "bg-white",
+  "EntregaGrid.textColor": "gray-primary",
+  "EntregaGrid.columns": [
+    {
+      "title": "Ahorra en Envíos",
+      "desc": "Realiza envíos a precios accesibles.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Herramientas de Seguridad",
+      "desc": "Monitorea en tiempo real el recorrido de tu envío.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Variedad",
+      "desc": "Usa DiDi Entrega para envíos grandes y para envíos chicos.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Fácil de Usar",
+      "desc": "Con tan solo unos clicks podrás realizar tus envíos a través de la app.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contáctanos por medio de chat en vivo 24/7",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    },
+    {
+      "title": "Métodos de pago",
+      "desc": "Elige la opción que mejor se acomode a ti, sea efectivo o tarjeta.",
+      "bgColor": "white",
+      "textColor": "gray-primary",
+      "width": "w-80"
+    }
+  ],
+  "EntregaCityList.title": "Operamos en las siguientes ciudades en Colombia",
+  "EntregaCityList.desc": "Descubre las ciudades de Colombia donde esta operando DiDi Entrega",
+  "EntregaCityList.bgColor": "bg-white",
+  "EntregaCityList.textColor": "gray-primary",
+  "EntregaCityList.linkItem": "/co/conductor/conductor-en-{{city}}/"
 }

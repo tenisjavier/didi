@@ -7,6 +7,7 @@ import CTADriverSection, {
 const VehicleSection = () => {
   const props: CTADriverSectionProps = {
     title: t("VehicleSection.title"),
+    bgColor: t("VehicleSection.bgColor"),
     subTitle: t("VehicleSection.subTitle"),
     vehicles: t("VehicleSection.vehicles"),
     bulletTitle: t("VehicleSection.bulletTitle"),

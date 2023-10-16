@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import DiDiCreditFaqHero from "../../../../components/sections/CreditCard/DiDiCreditFaqHero";
 import DiDiCreditFAQ from "../../../../components/sections/CreditCard/DiDiCreditFAQ";
+import FaqList from "../../../../components/sections/FaqList";
 
 const Faq = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -11,12 +12,19 @@ const Faq = ({ data }) => {
     return image.title === "mx.CreditFaqHero.image";
   })[0];
 
+  const creditCardLink = "/mx/tarjeta-de-credito/preguntas-frecuentes/";
+
   return (
     <Layout>
       <DiDiCreditFaqHero
         image={CreditFaqHeroImage}
       ></DiDiCreditFaqHero>
       <DiDiCreditFAQ  data={faqs}></DiDiCreditFAQ>
+      <FaqList
+        title={"Tarjeta de crédito DiDi"}
+        faqs={faqs}
+        link={creditCardLink}
+        ></FaqList>
     </Layout>
   );
 };

@@ -11,7 +11,7 @@ interface HeaderProps extends BreadcrumbProps { }
 
 const Header = ({ customBreadcrumb }: HeaderProps) => {
   return (
-    <>
+    <div className="h-14 w-full">
       <nav className="fixed z-40 h-14 w-full shadow-sm  shadow-orange-primary bg-white ">
         <div className="flex h-full items-center justify-between">
           <Navlogo />
@@ -22,7 +22,7 @@ const Header = ({ customBreadcrumb }: HeaderProps) => {
         </div>
       </nav>
       <Breadcrumb customBreadcrumb={customBreadcrumb}></Breadcrumb>
-    </>
+    </div>
   );
 };
 
@@ -40,7 +40,7 @@ const Navlogo = () => {
   if (pathname.includes("food"))
     logoImg = (
       <StaticImage
-        src="../images/didi-food-logo-white.png"
+        src="../images/didi-food-logo.png"
         alt="DiDi Food Logo"
         width={120}
         className=""
@@ -75,7 +75,8 @@ const Navlogo = () => {
   if (countryCode === "en") logoLink = "/";
   if (pathname.includes("food")) logoLink = `/${countryCode}/food/`;
   if (pathname.includes("/didipay/")) logoLink = `/${countryCode}/didipay/`;
-  if (pathname.includes("/tarjeta-de-credito/")) logoLink = `/${countryCode}/tarjeta-de-credito/`;
+  if (pathname.includes("/tarjeta-de-credito/"))
+    logoLink = `/${countryCode}/tarjeta-de-credito/`;
 
   return (
     <div className="pl-8">

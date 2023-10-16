@@ -13,7 +13,7 @@ interface FaqHeroProps extends BtnProps {
   };
 }
 
-const FaqHero = ({ title, desc, bgImage, btnType }: FaqHeroProps) => {
+const FaqHero = ({ title, desc, bgImage, btnType, btnText }: FaqHeroProps) => {
   const props: CTAProps = {
     hero: true,
     title: title,
@@ -23,6 +23,7 @@ const FaqHero = ({ title, desc, bgImage, btnType }: FaqHeroProps) => {
     bgImageStyle: "!absolute z-0 h-full w-full brightness-75 md:block",
     btnMode: t("FaqHero.btnMode"),
     btnType: btnType || "both",
+    btnText,
   };
   return <CTASection {...props}></CTASection>;
 };
