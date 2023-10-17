@@ -19,17 +19,16 @@ const DiDiExpressPlusAwardsColumn = ({ images }: DiDiExpressPlusAwardsColumnProp
     hasGrid: true,
     title: t("DiDiExtraPlusAwardsColumn.title"),
     hasTextHighlight: true,
-    gridConfig: "grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4",
+    gridConfig: "flex flex-wrap justify-center gap-4",
   };
 
   if (images) {
     props.columns.forEach((col) => {
       col.image = images.find((image) => col.imageName ? image.title.includes(col.imageName) : 'image');
-      col.imageStyle = "z-10 m-4 lg:w-44 w-auto rounded-[16px]";
+      col.imageStyle = "z-10 m-4 lg:w-44 w-[200px] rounded-[16px]";
       col.isImage = true;
       col.bgColor = t("DiDiExtraPlusAwardsColumn.col.bgColor");
       col.rounded = "rounded-[32px]";
-      col.customWidth = "w-full";
       col.textColor = t("DiDiExtraPlusAwardsColumn.col.textColor");
       col.titlePosition = "beforeImage";
       col.descPosition = "afterBtn";
