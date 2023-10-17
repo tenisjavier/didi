@@ -40,6 +40,8 @@ export interface CardProps extends BtnProps {
   reverse?: boolean;
   hasTextHighlighter?: boolean;
   textHighlighterStyle?: string;
+  hasTextHighlighterDesc?: boolean;
+  hasTextHighlighterDescStyle?: string;
   titleStyles?: string;
   imageName?: string;
   titlePosition?: "beforeImage" | "afterImage";
@@ -83,7 +85,9 @@ const Card = (props: CardProps) => {
     textHighlighterStyle,
     titleStyles,
     titlePosition = "afterImage",
-    descPosition = "beforeBtn"
+    descPosition = "beforeBtn",
+    hasTextHighlighterDesc,
+    hasTextHighlighterDescStyle
   } = props;
 
   let min = "";
@@ -110,7 +114,7 @@ const Card = (props: CardProps) => {
     isTruncate = (
       <>
         {desc.split("\n").map((str) => (
-          <p className="text-center">{str}</p>
+          <p className="text-center">{hasTextHighlighterDesc ? textHighlighter(str, hasTextHighlighterDescStyle) : str}</p>
         ))}
       </>
     );
