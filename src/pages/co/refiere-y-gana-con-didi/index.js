@@ -9,6 +9,7 @@ import DiDiExtraPlusChangePoints from "../../../components/sections/expressPlus/
 
 const ganaConDidi = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+
   const didiExpressPlusPartnerImage = images.filter((image) => {
     return image.title === "co.expressPlusPartner.image";
   })[0];
