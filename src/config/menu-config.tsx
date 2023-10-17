@@ -44,7 +44,7 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "Argentina",
-          url: "/mx/",
+          url: "/ar/",
         },
         {
           text: "Australia",
@@ -127,7 +127,7 @@ const menuLinks: AllMenuInterface = {
       dropMenu: [
         {
           text: "Argentina",
-          url: "/mx/",
+          url: "/ar/",
         },
         {
           text: "Australia",

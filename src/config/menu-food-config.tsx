@@ -29,14 +29,14 @@ const menuLinksFood: AllMenuInterface = {
         },
         {
           text: "Registra tu Restaurante",
-          url: "https://page.didiglobal.com/public-biz/pc-login/2.0.0/index.html?source=70001&appid=50002&role=13&country_id=484&lang=es-MX&redirectUrl=%2F%2Fcrm.didi-food.com%2Fcrm%2FselfEntry%2Fpassport%2FsetCookie%3FjumpPage%3Dhttps%253A%252F%252Fwww.didi-food.com%252Fes-MX%252Fstore%252Fself-onboarding%252Flist#",
+          url: "https://www.didi-food.com/es-MX/store",
         },
         {
           text: "Impuestos",
           url: "/mx/food/restaurantes/impuestos/",
         },
         {
-          text: "Restaurantes FAQ",
+          text: "Preguntas frecuentes",
           url: "/mx/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -110,7 +110,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/cr/food/restaurantes/",
         },
         {
-          text: "Restaurantes FAQ",
+          text: "Preguntas frecuentes",
           url: "/cr/food/restaurantes/preguntas-frecuentes/",
         },
         {
@@ -179,7 +179,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "https://www.didi-food.com/es-CO/store",
         },
         {
-          text: "Restaurantes FAQ",
+          text: "Preguntas frecuentes",
           url: "/co/food/restaurantes/preguntas-frecuentes/",
         },
         {
