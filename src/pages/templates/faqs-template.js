@@ -178,7 +178,7 @@ export const query = graphql`
             contentful_id
             title
             description
-            gatsbyImageData(width: 800)
+            gatsbyImageData
             __typename
           }
         }
@@ -211,7 +211,7 @@ export const query = graphql`
                 contentful_id
                 title
                 description
-                gatsbyImageData(width: 800)
+                gatsbyImageData
                 __typename
               }
             }
@@ -234,7 +234,7 @@ export const query = graphql`
               contentful_id
               title
               description
-              gatsbyImageData(width: 800)
+              gatsbyImageData
               __typename
             }
           }
