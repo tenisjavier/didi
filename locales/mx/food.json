@@ -80,11 +80,11 @@
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "FoodDeliveryHero.title": "Únete como Repartidor de DiDi Food. ",
+  "FoodDeliveryHero.title": "Regístrate como Repartidor en la app de DiDi Food. ",
   "FoodDeliveryHero.desc": "Obtén ganancias y otras recompensas",
   "FoodDeliveryHero.textColor": "white",
   "FoodDeliveryHero.btnMode": "light",
-  "FoodDeliveryGuideHero.title": "Únete como Repartidor de DiDi Food.",
+  "FoodDeliveryGuideHero.title": "Regístrate como Repartidor en la app de DiDi Food. ",
   "FoodDeliveryGuideHero.desc": "Obtén ganancias y otras recompensas",
   "FoodDeliveryGuideHero.textColor": "white",
   "FoodDeliveryGuideHero.btnMode": "light",
@@ -543,7 +543,7 @@
       "btnMode": "light"
     },
     {
-      "title": "Guía de Plantillas de Contenido para Redes Sociales",
+      "title": "Plantillas de Contenido para Redes Sociales",
       "desc": "Guia con instrucciones de uso de nuestras Plantillas de contenido",
       "textColor": "gray-primary",
       "btnText": "Descarga Plantillas",
@@ -552,26 +552,10 @@
     },
     {
       "title": "Insignias “Pide en DiDi Food”",
-      "desc": "Descarga nuestras insignias “Pide en DiDi Food” y “Disponible en DiDi Food” para que agregues a tus publicaciones en redes sociales.",
+      "desc": "Si no quieres usar nuestras plantillas de contenido también encuentra  sellos o  insignias “Pide en DiDi Food” y “Disponible en DiDi Food” para que agregues a tus publicaciones en redes sociales.",
       "textColor": "gray-primary",
       "btnText": "Descarga Insignias",
       "btnLink": "/mx/Insignia-MX.zip",
-      "btnMode": "light"
-    },
-    {
-      "title": "Guía básico sobre Redes Sociales para restaurantes",
-      "desc": "Versión básica de nuestra Guía general sobre Redes Sociales para restaurantes.",
-      "textColor": "gray-primary",
-      "btnText": "Descarga Guía Básica",
-      "btnLink": "/mx/Guia-Basico-General-sobre-Redes-Sociales-para-Restaurantes-MX.pdf",
-      "btnMode": "light"
-    },
-    {
-      "title": "Plantillas de Contenido",
-      "desc": "Material listo para usar genérico y personalizable para que empieces a generar contenido en tus redes sociales.",
-      "textColor": "gray-primary",
-      "btnText": "Descarga Insignias",
-      "btnLink": "/mx/Plantillas-MX.zip",
       "btnMode": "light"
     }
   ],

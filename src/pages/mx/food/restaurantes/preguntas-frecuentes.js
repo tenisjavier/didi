@@ -21,16 +21,19 @@ const RestaurantePreguntasFrecuentes = ({ data }) => {
   );
   const accordionFaqs = [
     {
-      faq: data.allContentfulFaq.nodes
-    }
-  ]
+      faq: data.allContentfulFaq.nodes,
+    },
+  ];
 
   return (
     <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
       <FoodFAQ title="Tienda" desc=" " data={accordionFaqs[0]}></FoodFAQ>
-      <FoodFaqList 
-        title="Repartidores" 
+      <FoodFAQ title="Repartidores" desc=" " data={faqDelivery[0]}></FoodFAQ>
+      <FoodFAQ title="Operaciones" desc=" " data={faqOperations[0]}></FoodFAQ>
+      <FoodFAQ title="Tu Tienda" desc=" " data={faqStore[0]}></FoodFAQ>
+      <FoodFaqList
+        title="Repartidores"
         faqs={faqDelivery[0].faq}
         urlPrefix="/mx/food/repartidores/preguntas-frecuentes/"
       ></FoodFaqList>
@@ -80,11 +83,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulFaq(
-      filter: {
-        type: { eq: "food" }
-      }
-    ) {
+    allContentfulFaq(filter: { type: { eq: "food" } }) {
       nodes {
         title
         slug
