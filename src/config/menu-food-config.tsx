@@ -47,6 +47,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Promociones y Campañas",
           url: "/mx/food/restaurantes/promociones-y-campanas/",
         },
+        {
+          text: "Guías",
+          url: "/mx/food/restaurantes/guias/",
+        },
       ],
     },
     {
@@ -65,6 +69,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Repartidores FAQ",
           url: "/mx/food/repartidores/preguntas-frecuentes/",
+        },
+        {
+          text: "Guías",
+          url: "/mx/food/repartidores/guias/",
         },
       ],
     },
