@@ -24,6 +24,9 @@ const ganaConDidi = ({ data }) => {
   const didiExpressPlusHeroBgImageMobile = images.filter((image) => {
     return image.title === "co.expressplus.bgImageMobile";
   })[0];
+  const didiExpressPlusPointsImage = images.filter((image) => {
+    return image.title === "co.expressPlusPoints.image";
+  })[0];
 
   const awardsImages = images.filter((image) => {
     return image.title.includes("co.DiDiExtraPlus");
@@ -48,7 +51,7 @@ const ganaConDidi = ({ data }) => {
         images={awardsImages}
       ></DiDiExpressPlusAwardsColumn>
       <DiDiExtraPlusChangePoints
-        image={didiExpressPlusScoreImage}
+        image={didiExpressPlusPointsImage}
       ></DiDiExtraPlusChangePoints>
     </Layout>
   );
@@ -74,6 +77,7 @@ export const query = graphql`
             "co.DiDiExtraPlus.audifonos.image"
             "co.DiDiExtraPlus.tv.image"
             "co.DiDiExtraPlus.bebidas.image"
+            "co.expressPlusPoints.image"
           ]
         }
       }
