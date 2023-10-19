@@ -154,22 +154,26 @@ const CTASection = (props: CTAProps) => {
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        } ${borderColor && "border-solid border border-" + borderColor}`}
+      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${
+        bgColor && bgColor
+      } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`${whiteRight ? "white-right" : "container"
-          }  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
-          } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
-        ${image ||
-            imageRawRender ||
-            iframe ||
-            bulletsConfigColumn === "singleColumn"
+        className={`${
+          whiteRight ? "white-right" : "container"
+        }  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${
+          reverse && hero ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
+        } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
+        ${
+          image ||
+          imageRawRender ||
+          iframe ||
+          bulletsConfigColumn === "singleColumn"
             ? whiteRight
               ? "xl:justify-center"
               : "xl:justify-between"
             : "xl:justify-start"
-          }`}
+        }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
         {bullets && bulletsConfigColumn === "singleColumn" && (
@@ -194,13 +198,15 @@ const CTASection = (props: CTAProps) => {
         {imageRawRender && imageRawRender}
 
         <div
-          className={`${mobileTitlePosition === "top" ? "absolute top-24 md:static" : ""
-            } w-11/12 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
+          className={`${
+            mobileTitlePosition === "top" ? "absolute top-24 md:static" : ""
+          } w-11/12 mb-8 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
         >
           {getTitleElement()}
           <div
-            className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
-              }`}
+            className={`flex ${
+              descBeforeBullets ? "flex-col" : "flex-col-reverse"
+            }`}
           >
             {desc && renderSectionDesc()}
 
