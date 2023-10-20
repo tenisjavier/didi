@@ -260,7 +260,7 @@
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "linkItem": "/au/safety/",
-      "btnText": "Know More",
+      "btnText": "Learn more",
       "btnMode": "dark",
       "btnLink": "/au/safety/"
     },
@@ -270,7 +270,7 @@
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "linkItem": "/au/driver/help/",
-      "btnText": "Know More",
+      "btnText": "Learn more",
       "btnMode": "dark",
       "btnLink": "/au/driver/help/"
     },
@@ -280,7 +280,7 @@
       "bgColor": "bg-white",
       "textColor": "gray-primary",
       "linkItem": "/au/rider/help/",
-      "btnText": "Know More",
+      "btnText": "Learn more",
       "btnMode": "dark",
       "btnLink": "/au/rider/help/"
     }

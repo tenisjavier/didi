@@ -130,6 +130,34 @@ const options: optionsInterface = {
           gatsbyImageData.height = 200;
         }
       }
+      if (title === "guia_mp_repartidor1" || title === "guia_mp_repartidor3") {
+        //2917x4700
+        gatsbyImageData.width = 400;
+        gatsbyImageData.height = 650;
+      }
+      if (title === "guia_mp_repartidor2") {
+        //2917x6600
+        gatsbyImageData.width = 400;
+        gatsbyImageData.height = 905;
+      }
+      if (title === "guia_mp_restaurante1") {
+        //2917x6100
+        gatsbyImageData.width = 400;
+        gatsbyImageData.height = 844;
+      }
+      if (
+        title === "guia_mp_restaurante2" ||
+        title === "guia_mp_restaurante3"
+      ) {
+        //2917x5500
+        gatsbyImageData.width = 400;
+        gatsbyImageData.height = 755;
+      }
+      if (title === "guia_mp_restaurante4" || title === "guia_mp_repartidor4") {
+        //2917x4100-4200
+        gatsbyImageData.width = 400;
+        gatsbyImageData.height = 570;
+      }
       return (
         <div className="my-12 flex w-full justify-center mx-auto">
           <GatsbyImage
