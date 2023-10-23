@@ -294,28 +294,6 @@ const menuLinksFood: AllMenuInterface = {
       icon: "menu-blog",
     },
   ],
-  mxen: [
-    {
-      text: "Store",
-      url: "/mx/food/en/restaurants/",
-      icon: "menu-restaurant",
-    },
-    {
-      text: "Delivery",
-      url: "/mx/food/en/couriers/",
-      icon: "menu-delivery",
-    },
-    {
-      text: "About",
-      url: "/mx/food/en/about/",
-      icon: "menu-help",
-    },
-    {
-      text: "Contact",
-      url: "/mx/food/en/contact/",
-      icon: "menu-contact",
-    },
-  ],
 };
 
 const getMenuLinksFood = (countryCode: string) => {
