@@ -137,7 +137,7 @@ const CTASection = (props: CTAProps) => {
 
   const renderSectionDesc = () => {
     return (
-      <p className={`mb-10 text-lg`}>
+      <p className={`mb-10 text-lg text-left`}>
         {desc &&
           desc.split("\n").map((str, index) => (
             <Fragment key={index}>
@@ -162,8 +162,10 @@ const CTASection = (props: CTAProps) => {
         className={`${
           whiteRight ? "white-right" : "container"
         }  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${
-          reverse && hero ? "flex-row-reverse flex-wrap-reverse" : "flex-wrap"
-        } ${hero && reverse ? "pt-28 lg:pt-12" : ""} 
+          reverse && hero
+            ? "flex-row-reverse flex-wrap-reverse pt-28 lg:pt-12 "
+            : "flex-wrap "
+        } ${reverse ? "flex-row-reverse" : ""} 
         ${
           image ||
           imageRawRender ||
