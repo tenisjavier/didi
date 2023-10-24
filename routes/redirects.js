@@ -374,7 +374,12 @@ const redirectsInit = async (graphql, createRedirect) => {
   });
   createRedirect({
     fromPath: `/mx/food/en/store/`,
-    toPath: `/mx/food/en/restaurantes/`,
+    toPath: `/mx/food/restaurantes/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/mx/food/en/`,
+    toPath: `/mx/food/`,
     isPermanent: true,
   });
   // 301 repartidores
@@ -410,7 +415,7 @@ const redirectsInit = async (graphql, createRedirect) => {
   });
   createRedirect({
     fromPath: `/mx/food/en/delivery/`,
-    toPath: `/mx/food/en/repartidores/`,
+    toPath: `/mx/food/repartidores/`,
     isPermanent: true,
   });
   // 301 acerca
