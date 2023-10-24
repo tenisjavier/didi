@@ -111,7 +111,7 @@ const menuLinksFood: AllMenuInterface = {
         },
         {
           text: "Registrá tu Restaurante",
-          url: "https://www.didi-food.com/es-CR/food/address/",
+          url: "https://www.didi-food.com/es-CR/store",
         },
         {
           text: "Guías de uso de la app",

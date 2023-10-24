@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FaqFoodHero from "../../../../components/sections/FaqFoodHero";
 import FoodFaqList from "../../../../components/sections/FoodFaqList";
+import FoodFAQ from "../../../../components/sections/FoodFAQ";
 
 const RestaurantePreguntasFrecuentes = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -22,8 +23,11 @@ const RestaurantePreguntasFrecuentes = ({ data }) => {
   return (
     <Layout schema="faq">
       <FaqFoodHero bgImage={helpCenterBgImage}></FaqFoodHero>
-      <FoodFaqList 
-        title="Repartidores" 
+      <FoodFAQ title="Repartidores" desc=" " data={faqDelivery[0]}></FoodFAQ>
+      <FoodFAQ title="Operaciones" desc=" " data={faqOperations[0]}></FoodFAQ>
+      <FoodFAQ title="Tu Tienda" desc=" " data={faqStore[0]}></FoodFAQ>
+      <FoodFaqList
+        title="Repartidores"
         faqs={faqDelivery[0].faq}
         urlPrefix="/cr/food/repartidores/preguntas-frecuentes/"
       ></FoodFaqList>
