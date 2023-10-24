@@ -3,21 +3,28 @@ import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 
-interface GuideHero {
+interface GuideHeroDelivery {
   data: {
     title: string;
     excerpt: string;
     featuredImage: ImageDataLike;
+    featuredImageMobile: ImageDataLike;
   };
 }
 
-const GuideHero = ({ data }: GuideHero) => {
-  const { title, excerpt, featuredImage } = data;
+const GuideHeroDelivery = ({ data }: GuideHeroDelivery) => {
+  const { title, excerpt, featuredImage, featuredImageMobile } = data;
   const image = getImage(featuredImage);
+  const imageMobile = getImage(featuredImageMobile);
   const bgImage = {
     title: title,
     description: title,
     gatsbyImageData: image,
+  };
+  const mobileBgImage = {
+    title: title,
+    description: title,
+    gatsbyImageData: imageMobile,
   };
   const props: CTAProps = {
     hero: true,
@@ -26,10 +33,12 @@ const GuideHero = ({ data }: GuideHero) => {
     textColor: t("GuideHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block brightness-75",
+    mobileBgImage: mobileBgImage,
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnType: "foodDelivery",
     btnMode: t("GuideHero.btnMode"),
   };
   return <CTASection {...props}></CTASection>;
 };
 
-export default GuideHero;
+export default GuideHeroDelivery;
