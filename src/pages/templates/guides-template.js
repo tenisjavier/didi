@@ -88,6 +88,9 @@ export const query = graphql`
       featuredImage {
         gatsbyImageData
       }
+      featuredImageMobile {
+        gatsbyImageData
+      }
     }
     allContentfulGuide(
       filter: {
