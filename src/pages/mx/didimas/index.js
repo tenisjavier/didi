@@ -27,7 +27,7 @@ const DiDiMas = ({ data }) => {
       partner.name === "MI NAVE" ||
       partner.name === "Kovi" ||
       partner.name === "OneCarNow!" ||
-      partner.name === "Privauto" ||
+      partner.name === "Punto" ||
       partner.name === "Datamovil Arrendadora" ||
       partner.name === "Ventauto" ||
       partner.name === "Mare" ||
