@@ -48,7 +48,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/restaurantes/promociones-y-campanas/",
         },
         {
-          text: "Guías",
+          text: "Guías de uso de la app",
           url: "/mx/food/restaurantes/guias/",
         },
       ],
@@ -71,7 +71,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/repartidores/preguntas-frecuentes/",
         },
         {
-          text: "Guías",
+          text: "Guías de uso de la app",
           url: "/mx/food/repartidores/guias/",
         },
       ],
@@ -114,7 +114,7 @@ const menuLinksFood: AllMenuInterface = {
           url: "https://www.didi-food.com/es-CR/food/address/",
         },
         {
-          text: "Guías",
+          text: "Guías de uso de la app",
           url: "/cr/food/restaurantes/",
         },
         {
