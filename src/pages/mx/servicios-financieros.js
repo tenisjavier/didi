@@ -19,7 +19,11 @@ const SobreDiDi = ({ data }) => {
     return image.title === "mx.PrestamosHero.image";
   })[0];
 
-  const columnsImages = [DiDiPayWhyDiDi, PrestamosHeroImage];
+  const DiDiCrediCard = images.filter((image) => {
+    return image.title === "mx.CreditCardWithoutBg.image";
+  })[0];
+
+  const columnsImages = [DiDiCrediCard, DiDiPayWhyDiDi, PrestamosHeroImage];
 
   return (
     <Layout>
@@ -46,6 +50,7 @@ export const query = graphql`
             "mx.FinancialServicesMobile.bgImage"
             "mx.DiDiPayHomeHero.image"
             "mx.PrestamosHero.image"
+            "mx.CreditCardWithoutBg.image"
           ]
         }
       }

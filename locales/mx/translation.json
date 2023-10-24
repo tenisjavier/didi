@@ -1025,6 +1025,16 @@
   "FinancialServicesColumns.textColor": "white",
   "FinancialServicesColumns.columns": [
     {
+      "title": "DiDi Card",
+      "desc": "Pídela en 5 minutos.",
+      "bgColor": "bg-white",
+      "textColor": "gray-primary",
+      "linkItem": "/mx/tarjeta-de-credito/",
+      "btnText": "Saber Más",
+      "btnMode": "dark",
+      "btnLink": "/mx/tarjeta-de-credito/"
+    },
+    {
       "title": "DiDiPay",
       "desc": "Apaga tu cartera y activa DiDi Pay",
       "bgColor": "bg-white",
@@ -1039,10 +1049,10 @@
       "desc": "Solicita un préstamo en DiDi Préstamos",
       "bgColor": "bg-white",
       "textColor": "gray-primary",
-      "linkItem": "https://prestamos.didiglobal.com/",
+      "linkItem": "/mx/prestamos/",
       "btnText": "Saber Más",
       "btnMode": "dark",
-      "btnLink": "https://prestamos.didiglobal.com/"
+      "btnLink": "/mx/prestamos/"
     }
   ],
   "DiDiPayHero.title": "DiDi Pay: Pagos seguros y sin comisiones desde tu teléfono",
