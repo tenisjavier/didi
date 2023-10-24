@@ -322,6 +322,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/mx/didimas/privauto`,
+    toPath: `/mx/didimas/punto`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/mx/didipay-preguntas-frecuentes/`,
     toPath: `/mx/didipay/preguntas-frecuentes/`,
     isPermanent: true,
