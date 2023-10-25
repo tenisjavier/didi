@@ -13,9 +13,9 @@ import { ab } from "../../../config/ab";
 
 const Food = ({ data }) => {
   const version = ab(
-    "2023-10-FoodHomeCarrousels-t6",
-    "2023-10-FoodHomeOriginal-t6",
-    "t6"
+    "2023-11-FoodHomeOriginal-t7",
+    "2023-11-FoodHomeCarrousels-t7",
+    "t7"
   );
   const [activeHero, setActiveHero] = useState(0);
   const updateHero = (id) => {
@@ -117,50 +117,42 @@ const Food = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      {version === "a" && (
-        <>
-          <div className={`${activeHero !== 0 && "hidden"} `}>
-            <FoodHero
-              desc=" "
-              bgImage={foodHeroBgImage}
-              mobileBgImage={foodHeroBgImageMobile}
-              mobileTitlePosition="top"
-            ></FoodHero>
-          </div>
-          <div className={`${activeHero !== 1 && "hidden"} `}>
-            <FoodDeliveryHero
-              desc=" "
-              bgImage={repartidoresHeroBgImage}
-              mobileBgImage={repartidoresHeroBgImageMobile}
-              mobileTitlePosition="top"
-            ></FoodDeliveryHero>
-          </div>
-          <div className={`${activeHero !== 2 && "hidden"} `}>
-            <FoodBusinessHero
-              desc=" "
-              bgImage={restaurantHeroBgImage}
-              mobileBgImage={restaurantHeroBgImageMobile}
-              mobileTitlePosition="top"
-            ></FoodBusinessHero>
-          </div>
-          <HeroCarrousel
-            images={carrouselIcons}
-            updateHero={updateHero}
-            position="onHero"
-          ></HeroCarrousel>
-
+      <>
+        <div className={`${activeHero !== 0 && "hidden"} `}>
+          <FoodHero
+            desc=" "
+            bgImage={foodHeroBgImage}
+            mobileBgImage={foodHeroBgImageMobile}
+            mobileTitlePosition="top"
+          ></FoodHero>
+        </div>
+        <div className={`${activeHero !== 1 && "hidden"} `}>
+          <FoodDeliveryHero
+            desc=" "
+            bgImage={repartidoresHeroBgImage}
+            mobileBgImage={repartidoresHeroBgImageMobile}
+            mobileTitlePosition="top"
+          ></FoodDeliveryHero>
+        </div>
+        <div className={`${activeHero !== 2 && "hidden"} `}>
+          <FoodBusinessHero
+            desc=" "
+            bgImage={restaurantHeroBgImage}
+            mobileBgImage={restaurantHeroBgImageMobile}
+            mobileTitlePosition="top"
+          ></FoodBusinessHero>
+        </div>
+        <HeroCarrousel
+          images={carrouselIcons}
+          updateHero={updateHero}
+          position="onHero"
+        ></HeroCarrousel>
+        {version === "b" && (
           <DiDiFoodCarousel
             images={DiDiFoodCarouselImagesSorted}
           ></DiDiFoodCarousel>
-        </>
-      )}
-      {version === "b" && (
-        <FoodHero
-          bgImage={foodHeroBgImage}
-          mobileBgImage={foodHeroBgImageMobile}
-          mobileTitlePosition="center"
-        ></FoodHero>
-      )}
+        )}
+      </>
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>

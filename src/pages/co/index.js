@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
-import { useLocation } from "@reach/router";
 import Layout from "../../components/Layout";
 import DrvHero from "../../components/sections/DrvHero";
 import PaxHero from "../../components/sections/PaxHero";
@@ -8,18 +7,11 @@ import FoodHero from "../../components/sections/FoodHero";
 import HeroCarrousel from "../../components/sections/HeroCarrousel";
 import SafetyCTA from "../../components/sections/SafetyCTA";
 import DriverCTA from "../../components/sections/Drv/DrvCTA";
-import DrvCTA from "../../components/sections/DrvCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import HomeColumns from "../../components/sections/HomeColumns";
-import { ab } from "../../config/ab";
 
 const Index = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
-  const version = ab(
-    "2023-10-DrvHomeWheels-t5",
-    "2023-10-DrvHomeOriginal-t5",
-    "t5"
-  );
   const [activeHero, setActiveHero] = useState(0);
   const updateHero = (id) => {
     setActiveHero(id);
@@ -56,9 +48,7 @@ const Index = ({ data }) => {
   const safetyCTAImage = images.filter((image) => {
     return image.title === "co.SafetyCTA.image";
   })[0];
-  const drvCTAImage = images.filter((image) => {
-    return image.title === "co.DrvCTA.image";
-  })[0];
+
   const paxCTAImage = images.filter((image) => {
     return image.title === "co.PaxCTA.image";
   })[0];
@@ -89,8 +79,8 @@ const Index = ({ data }) => {
           updateHero={updateHero}
         ></HeroCarrousel>
       </>
-      {version === "a" && <DriverCTA></DriverCTA>}
-      {version === "b" && <DrvCTA image={drvCTAImage}></DrvCTA>}
+      <DriverCTA></DriverCTA>
+
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <HomeColumns></HomeColumns>
@@ -119,7 +109,6 @@ export const query = graphql`
             "carrousel-icon-pax"
             "carrousel-icon-food"
             "co.SafetyCTA.image"
-            "co.DrvCTA.image"
             "co.PaxCTA.image"
           ]
         }

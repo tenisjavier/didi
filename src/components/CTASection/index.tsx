@@ -5,7 +5,6 @@ import Image, { ImageDataType } from "../../components/Image";
 import SectionBtn from "./SectionBtn";
 import SectionBullets from "./SectionBullets";
 import SectionLink from "./SectionLink";
-import SectionIframe from "./SectionIframe";
 import SectionList from "./SectionList";
 import SectionCreditCardCashBackBullets, {
   SectionCreditCardCashBackBulletsProps,
@@ -15,7 +14,6 @@ import textHighlighter from "../../util/textHighlighter";
 export interface CTAProps extends BtnProps {
   hero: boolean;
   title: string;
-  iframe?: string;
   desc?: string;
   link?: string;
   textColor: string;
@@ -42,7 +40,6 @@ export interface CTAProps extends BtnProps {
   reverse?: boolean;
   RTL?: boolean;
   descBeforeBullets?: boolean;
-  descFooter?: string[] | JSX.Element[];
   bulletsCreditCard?: SectionCreditCardCashBackBulletsProps;
   bulletsConfigColumn?: "default" | "singleColumn";
   bgColumTitle?: string;
@@ -52,7 +49,6 @@ export interface CTAProps extends BtnProps {
     hasTextHighlighter: boolean;
     style?: string;
   };
-  textHighlighterStyle?: string;
   whiteRight?: boolean;
   mobileTitlePosition?: string;
 }
@@ -61,7 +57,6 @@ const CTASection = (props: CTAProps) => {
   const {
     hero,
     title,
-    iframe,
     desc,
     link,
     textColor,
@@ -87,14 +82,12 @@ const CTASection = (props: CTAProps) => {
     btnModeSecondary,
     RTL,
     descBeforeBullets = true,
-    descFooter,
     bulletsCreditCard,
     bulletsConfigColumn = "default",
     bgColumTitle,
     borderColor,
     textHighlighterConfig,
     hasTextHighlighterBullets,
-    textHighlighterStyle,
     whiteRight,
     mobileTitlePosition,
   } = props;
@@ -120,7 +113,7 @@ const CTASection = (props: CTAProps) => {
       );
     } else {
       return (
-        <h2 className="font-bold text-3xl md:text-4xl text-left">
+        <h2 className="font-bold text-3xl md:text-4xl">
           {title &&
             title.split("\n").map((str, index) => (
               <Fragment key={index}>
@@ -167,10 +160,7 @@ const CTASection = (props: CTAProps) => {
             : "flex-wrap "
         } ${reverse ? "flex-row-reverse" : ""} 
         ${
-          image ||
-          imageRawRender ||
-          iframe ||
-          bulletsConfigColumn === "singleColumn"
+          image || imageRawRender || bulletsConfigColumn === "singleColumn"
             ? whiteRight
               ? "xl:justify-center"
               : "xl:justify-between"
@@ -202,7 +192,7 @@ const CTASection = (props: CTAProps) => {
         <div
           className={`${
             mobileTitlePosition === "top" ? "absolute top-24 md:static" : ""
-          } w-11/12 mb-8 lg:mt-16 text-center lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 xl:${textDir}`}
+          } w-11/12 mb-8  lg:mt-16 lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 lg:${textDir}`}
         >
           {getTitleElement()}
           <div
@@ -229,30 +219,20 @@ const CTASection = (props: CTAProps) => {
                 }
               />
             )}
-            {descFooter && (
-              <div className="my-6">
-                {descFooter.map((str, index) => (
-                  <p key={index} className="p-0 m-0 my-1 text-start">
-                    {str}
-                  </p>
-                ))}
-              </div>
-            )}
           </div>
           {link && <SectionLink link={link} />}
           {list && <SectionList list={list} />}
-
-          <SectionBtn
-            btnType={btnType}
-            btnMode={btnMode}
-            btnModeSecondary={btnModeSecondary}
-            btnLink={btnLink}
-            btnText={btnText}
-            btnArray={btnArray}
-          />
+          <div className="text-center lg:text-left">
+            <SectionBtn
+              btnType={btnType}
+              btnMode={btnMode}
+              btnModeSecondary={btnModeSecondary}
+              btnLink={btnLink}
+              btnText={btnText}
+              btnArray={btnArray}
+            />
+          </div>
         </div>
-
-        {iframe === "drv" && <SectionIframe />}
       </div>
 
       {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle} />}

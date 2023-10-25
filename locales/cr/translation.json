@@ -88,20 +88,12 @@
   ],
   "TaxiSafety.textColor": "white",
   "TaxiSafety.bgColor": "bg-blue-primary",
-  "TaxiContact.title": "¿Necesitás atención personalizada?",
-  "TaxiContact.desc": "Visitanos en nuestro Centro de Experiencia:",
+  "TaxiContact.title": "¿Necesitás atención personalizada?. ",
+  "TaxiContact.desc": "Visitanos en nuestro Centro de Experiencia:\n Horarios de atención:Lunes a viernes: 8:00 am a 5:00 p.m / Sábados: 8:00 am a 12:00 p.m (medio día). Plaza Carolina Local 1,2,3,4. \n También podés llamar a nuestra línea de asistencia: +506 41046048",
   "TaxiContact.bullets": [
     "Soporte en el proceso de registro",
     "Atención personalizada para solucionar dudas sobre el uso de la app",
     "Sesiones informativas del uso de la aplicación"
-  ],
-  "TaxiContact.descFooter": [
-    "Horarios de atención:",
-    "Lunes a viernes: 8:00 am a 5:00 p.m",
-    "Sábados: 8:00 am a 12:00 p.m (medio día)",
-    "Plaza Carolina Local 1,2,3,4",
-    "También podés llamar a nuestra línea de asistencia",
-    "+506 41046048"
   ],
   "TaxiContact.textColor": "gray-primary",
   "TaxiContactColumns.contacts": [

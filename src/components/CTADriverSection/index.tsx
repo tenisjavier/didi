@@ -51,7 +51,7 @@ const CTADriverSection: React.FC<CTADriverSectionProps> = ({
         <h2 className="text-4xl">{title}</h2>
         <h5 className="text-lg font-bold text-orange-primary">{subTitle}</h5>
         <div className="flex lg:flex-row flex-col justify-between gap-6">
-          <div className="flex gap-4 items-center flex-wrap lg:flex-nowrap">
+          <div className="grid grid-cols-2 gap-4 items-center">
             {vehicles?.map((item, index) => (
               <VehicleOption
                 key={index}

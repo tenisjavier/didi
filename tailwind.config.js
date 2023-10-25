@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./locales/**/*.{js,jsx,json}"],
   theme: {
     fontFamily: {
-      'GorutsXbold': ['Goruts Xbold', 'sans-serif'],
+      GorutsXbold: ["Goruts Xbold", "sans-serif"],
     },
     extend: {
       animation: {
@@ -18,6 +18,7 @@ module.exports = {
         100: "26rem",
         105: "28rem",
         110: "30rem",
+        115: "34rem",
         120: "688px",
         128: "768px",
         140: "880px",
