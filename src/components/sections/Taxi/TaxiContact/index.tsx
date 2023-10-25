@@ -12,7 +12,6 @@ interface TaxiRegisterProps {
 }
 
 const TaxiContact = ({ image }: TaxiRegisterProps) => {
-
   const props: CTAProps = {
     hero: false,
     title: t("TaxiContact.title"),
@@ -22,7 +21,6 @@ const TaxiContact = ({ image }: TaxiRegisterProps) => {
     image: image,
     imageStyle: "z-10 m-4 w-100 rounded-full",
     reverse: true,
-    descFooter: t("TaxiContact.descFooter", { returnObjects: true }),
     btnMode: t("Taxi.btnMode"),
     btnType: "drv",
   };

@@ -8,12 +8,10 @@ import FoodHero from "../../components/sections/FoodHero";
 import FinancialServicesHero from "../../components/sections/FinancialServicesHero";
 import HeroCarrousel from "../../components/sections/HeroCarrousel";
 import SafetyCTA from "../../components/sections/SafetyCTA";
-import DrvCTA from "../../components/sections/DrvCTA";
 import FoodCTA from "../../components/sections/FoodCTA";
 import FleetAboutCTA from "../../components/sections/FleetAboutCTA";
 import PaxCTA from "../../components/sections/PaxCTA";
 import DriverCTA from "../../components/sections/Drv/DrvCTA";
-import { ab } from "../../config/ab";
 
 const Index = ({ data }) => {
   const [activeHero, setActiveHero] = useState(0);
@@ -21,11 +19,7 @@ const Index = ({ data }) => {
     setActiveHero(id);
   };
   const images = data.allContentfulAsset.nodes;
-  const version = ab(
-    "2023-10-DrvHomeWheels-t5",
-    "2023-10-DrvHomeOriginal-t5",
-    "t5"
-  );
+
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "mx.DrvHero.bgImage";
   })[0];
@@ -72,9 +66,6 @@ const Index = ({ data }) => {
   const safetyCTAImage = images.filter((image) => {
     return image.title === "mx.SafetyCTA.image";
   })[0];
-  const drvCTAImage = images.filter((image) => {
-    return image.title === "mx.DrvCTA.image";
-  })[0];
   const FoodCTAImage = images.filter((image) => {
     return image.title === "mx.FoodCTA.image";
   })[0];
@@ -117,8 +108,7 @@ const Index = ({ data }) => {
           updateHero={updateHero}
         ></HeroCarrousel>
       </>
-      {version === "a" && <DriverCTA></DriverCTA>}
-      {version === "b" && <DrvCTA image={drvCTAImage}></DrvCTA>}
+      <DriverCTA></DriverCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <FleetAboutCTA image={FleetAboutCTAImage}></FleetAboutCTA>
