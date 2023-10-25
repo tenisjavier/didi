@@ -11,7 +11,6 @@ import {
 } from "../config/menu-config";
 import { getMenuLinksFood } from "../config/menu-food-config";
 import { getMenuLinksPay } from "../config/menu-pay-config";
-import { getMenuLinksPr } from "../config/menu-pr-config";
 import gtmEvent from "../config/gtm";
 
 // @desc: Top Menu. Links from menu-config and menu-configFood.
@@ -21,13 +20,11 @@ const MenuOlde = () => {
   const menuLinks: SingleMenuItem[] = getMenuLinks(countryCode);
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const menuLinksPay: SingleMenuItem[] = getMenuLinksPay(countryCode);
-  const menuLinksPr: SingleMenuItem[] = getMenuLinksPr(countryCode);
   const { pathname } = useLocation();
 
   let links = menuLinks;
   if (pathname.includes("food")) links = menuLinksFood;
   if (pathname.includes("/didipay/")) links = menuLinksPay;
-  if (pathname.includes("thejourney")) links = menuLinksPr;
   return (
     <div className="flex h-full items-center">
       <FontAwesomeIcon
