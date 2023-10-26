@@ -48,7 +48,7 @@ const Layout = ({
   let smartBannerType = "drv";
   if (pathname.includes("didi-fleet")) smartBannerType = "fleet";
   if (pathname.includes("didipay")) smartBannerType = "payment";
-  if (pathname.includes("/food") && !pathname.includes("thejourney"))
+  if (pathname.includes("/food"))
     smartBannerType = "foodEater";
   if (pathname.includes("food/restaurantes")) smartBannerType = "foodBusiness";
   if (pathname.includes("food/repartidores")) smartBannerType = "foodDelivery";
@@ -63,7 +63,7 @@ const Layout = ({
   if (pathname === "/") smartBannerType = "en"; //? en is pax in english for the root pages
   if (sbType) smartBannerType = sbType;
 
-  const isFood = pathname.includes("/food") && !pathname.includes("thejourney");
+  const isFood = pathname.includes("/food");
   const isTarjeta = pathname.includes("/tarjeta-de-credito");
 
   const pageContent = (

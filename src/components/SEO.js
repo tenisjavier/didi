@@ -261,9 +261,6 @@ const SEO = ({ title, desc, index, schema }) => {
         )} */}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
-        {pathname.includes("thejourney") || !index ? (
-          <meta name="robots" content="noindex"></meta>
-        ) : null}
         <link rel="canonical" href={canonicalUrl} />
         {hreflangs}
         {(pathname === "/" || pathname === `/${countryCode}/`) && (

@@ -153,18 +153,6 @@ const Breadcrumb = ({ customBreadcrumb }: BreadcrumbProps) => {
             </li>
           </ol>
         )} */}
-
-      {pathname.includes("/thejourney/") && (
-        <ol className="flex list-none p-0 m-0">
-          <li>
-            <Link to="/thejourney/"> EN </Link>
-          </li>
-          <li> | </li>
-          <li>
-            <Link to="/es/thejourney/"> ES </Link>
-          </li>
-        </ol>
-      )}
     </nav>
   );
 };

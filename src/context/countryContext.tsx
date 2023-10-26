@@ -51,7 +51,7 @@ export const CountryProvider = ({ children }: CountryProviderProps) => {
   let countryCode = subfolder ? subfolder[0].substring(1, 3) : "";
   countryCode = countries.includes(countryCode) ? countryCode : "en";
   let ns =
-    pathname.includes("/food/") && !pathname.includes("/thejourney/")
+    pathname.includes("/food/")
       ? "food"
       : "translation";
   if (pathname.includes("tests")) {
