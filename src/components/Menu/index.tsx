@@ -6,7 +6,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { getMenuLinks, SingleMenuItem } from "../../config/menu-config";
 import { getMenuLinksFood } from "../../config/menu-food-config";
 import { getMenuLinksPay } from "../../config/menu-pay-config";
-import { getMenuLinksPr } from "../../config/menu-pr-config";
 import NavList from "./NavList";
 import { graphql, useStaticQuery } from "gatsby";
 import { getMenuLinksCard } from "../../config/menu-card-config";
@@ -20,13 +19,11 @@ const Menu = () => {
   const menuLinksFood: SingleMenuItem[] = getMenuLinksFood(countryCode);
   const menuLinksPay: SingleMenuItem[] = getMenuLinksPay(countryCode);
   const menuLinksCard: SingleMenuItem[] = getMenuLinksCard(countryCode);
-  const menuLinksPr: SingleMenuItem[] = getMenuLinksPr(countryCode);
   const { pathname } = useLocation();
 
   let links = menuLinks;
   if (pathname.includes("food")) links = menuLinksFood;
   if (pathname.includes("/didipay/")) links = menuLinksPay;
-  if (pathname.includes("thejourney")) links = menuLinksPr;
   if (pathname.includes("tarjeta-de-credito")) links = menuLinksCard;
 
   useEffect(() => {

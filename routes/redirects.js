@@ -7,6 +7,11 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/thejourney/`,
+    toPath: `/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/co/food/restaurantes/descarga/`,
     toPath: `/co/food/restaurantes/`,
     isPermanent: true,
