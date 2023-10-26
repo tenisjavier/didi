@@ -135,6 +135,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "¿Cuánto dinero pueden ganar los conductores a través de DiDi?",
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi México. Considerando retenciones de impuestos como ISR e IVA",
     },
+    "/conductor/didi-confort/": {
+      title: "DiDi Confort: Genera hasta 50%* más ganancias conectándote con DiDi Confort",
+      desc: "En DiDi constantemente estamos trabajando para ofrecer nuevas soluciones tecnológicas a nuestros usuarios . Por eso, DiDi Confort esta activo en Bogotá buscando ofrecer una mejor experiencia a todos.",
+    },
     "/conductor/didi-flex/": {
       title: "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
