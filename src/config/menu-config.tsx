@@ -663,6 +663,10 @@ const menuLinks: AllMenuInterface = {
           url: "/co/conductor/requisitos-para-conducir/",
         },
         {
+          text: "DiDi Confort",
+          url: "/co/conductor/didi-confort/",
+        },
+        {
           text: "DiDi Flex",
           url: "/co/conductor/didi-flex/",
         },

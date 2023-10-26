@@ -32,14 +32,14 @@ const FoodBusinessGuideHero = ({
   const props: CTAProps = {
     hero: true,
     title: t("FoodBusinessGuideHero.title"),
-    desc: t("FoodBusinessGuideHero.desc"),
+    // desc: t("FoodBusinessGuideHero.desc"),
     textColor: t("FoodBusinessHero.textColor"),
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
     mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
-    btnMode: btnMode || t("FoodBusinessHero.btnMode"),
-    btnType: btnType || "foodBusiness",
+    // btnMode: btnMode || t("FoodBusinessHero.btnMode"),
+    // btnType: btnType || "foodBusiness",
     RTL: isRTL || false,
   };
   return <CTASection {...props}></CTASection>;

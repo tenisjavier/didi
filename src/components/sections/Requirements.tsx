@@ -7,13 +7,14 @@ import {
 } from "gatsby-source-contentful/rich-text";
 
 interface RequirementsProps {
+  title?: string;
   data: {
     name: string;
     requirement: RenderRichTextData<ContentfulRichTextGatsbyReference>;
   }[];
 }
 
-const Requirements = ({ data }: RequirementsProps) => {
+const Requirements = ({ title, data }: RequirementsProps) => {
   let items = data.map((node) => {
     return {
       title: node.name,
@@ -22,7 +23,7 @@ const Requirements = ({ data }: RequirementsProps) => {
   });
 
   const props = {
-    title: t("Requirements.title"),
+    title: title || t("Requirements.title"),
     bgColor: t("Requirements.bgColor"),
     textColor: t("Requirements.textColor"),
     bgAccordionColor: "bg-white",
