@@ -23,6 +23,18 @@
     "Contactos de confianza",
     "Soporte 24/7"
   ],
+  "SafetyCTAConfort.title": "Cuenta con más de 20 funciones de seguridad:",
+  "SafetyCTAConfort.desc": "",
+  "SafetyCTAConfort.bullets": [
+    "Zona de Alerta",
+    "Patrullas de Reacción",
+    "Contactos de confianza",
+    "Privacidad de números telefónicos",
+    "Soporte 24/7",
+    "Reconocimiento facial del usuario arrendatario.",
+    "Visualización del destino. ",
+    "Botón de Emergencia."
+  ],
   "SafetyCTA.textColor": "white",
   "SafetyCTA.bgColor": "bg-blue-primary",
   "SafetyCTA.btnText": "Saber Más",
@@ -255,6 +267,23 @@
     "Tienes certeza de que el destino no va a cambiar ni se agregaran paradas.",
     "Buscar arrendamientos de mayores ingresos pagados por el arrendatario.",
     "Contraoferta el precio de un arrendamiento si no estás de acuerdo."
+  ],
+  "DrvConfortHero.title": "DiDi Confort disponible en Bogotá",
+  "DrvConfortHero.desc": "Genera hasta 50%* más ganancias conectándote con DiDi Confort",
+  "DrvConfortHero.textColor": "white",
+  "DrvConfortHero.btnMode": "light",
+  "DrvConfortFeatures.title": "Genera ganancias extra con DiDi Confort ",
+  "DrvConfortFeatures.desc": "Usando DiDi Confort puedes:",
+  "DrvConfortFeatures.textColor": "gray-primary",
+  "DrvConfortFeatures.bgColor": "bg-white",
+  "DrvConfortFeatures.btnMode": "primary",
+  "DrvConfortFeatures.bullets": [
+    "Generar hasta 50% más ganancias que con Express.",
+    "Conectarte cuando quieras para que manejes tu tiempo como prefieras.",
+    "Contar con un equipo que está siempre listo para ayudarte 24/7.",
+    "Conocer el destino de una solicitud de arrendamiento antes de aceptarlo.",
+    "Recibir soporte en el centro de experiencia.",
+    "Acceder a soluciones automáticas dentro de la app."
   ],
   "TaxiHero.title": "Regístrate como Socio Taxista",
   "TaxiHero.desc": "Los taxis de siempre con la tecnología DiDi. Recibe pedidos de viaje a través de la app o recoge a los usuarios en la calle y conecta el viaje a través de DiDi Taxi.",
