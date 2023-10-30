@@ -57,9 +57,10 @@ const DiDiMas = ({ data }) => {
 
   const partnerSalud = partners.filter((partner) => {
     return (
-      partner.name === "IMSS" || partner.name === "Medismart" ||
+      partner.name === "IMSS" ||
+      partner.name === "Medismart" ||
       partner.name === "Lagom"
-    )
+    );
   });
   const partnerEducacion = partners.filter((partner) => {
     return partner.name === "Vinco";
@@ -67,6 +68,10 @@ const DiDiMas = ({ data }) => {
 
   const partnerTelefonia = partners.filter((partner) => {
     return partner.name === "Figou";
+  });
+
+  const partnerEntretenimiento = partners.filter((partner) => {
+    return partner.name === "Cinepolis";
   });
 
   const categoriesID = [
@@ -77,7 +82,9 @@ const DiDiMas = ({ data }) => {
     "PartnerSeguros",
     "PartnerSalud",
     "PartnerEducacion",
-    "PartnerTelefonia"
+    "PartnerTelefonia",
+    "PartnerEntretenimiento",
+    "PartnerProductos",
   ];
 
   return (
@@ -90,6 +97,18 @@ const DiDiMas = ({ data }) => {
         categoriesID={categoriesID}
         images={partnerColumns}
       ></PartnerColumns>
+      <PartnersGrid
+        title="Descuentos en Entretenimiento"
+        bgColor="bg-gray-light"
+        sectionID="PartnerEntretenimiento"
+        data={partnerEntretenimiento}
+      ></PartnersGrid>
+      <PartnersGrid
+        title="Descuentos en Productos"
+        bgColor="bg-gray-light"
+        sectionID="PartnerProductos"
+        data={partnerProductos}
+      ></PartnersGrid>
       <PartnersGrid
         title="Descuentos en combustible"
         bgColor="bg-gray-light"
