@@ -23,6 +23,7 @@ const DrvConfortFeatures = ({ image }: DrvConfortFeaturesProps) => {
     btnMode: t("DrvConfortFeatures.btnMode"),
     btnType: "drv",
     reverse: true,
+    centralized: true,
   };
   return <CTASection {...props}></CTASection>;
 };

@@ -51,6 +51,7 @@ export interface CTAProps extends BtnProps {
   };
   whiteRight?: boolean;
   mobileTitlePosition?: string;
+  centralized?: boolean;
 }
 
 const CTASection = (props: CTAProps) => {
@@ -90,6 +91,7 @@ const CTASection = (props: CTAProps) => {
     hasTextHighlighterBullets,
     whiteRight,
     mobileTitlePosition,
+    centralized,
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
@@ -159,6 +161,7 @@ const CTASection = (props: CTAProps) => {
             ? "flex-row-reverse flex-wrap-reverse pt-28 lg:pt-12 "
             : "flex-wrap "
         } ${reverse ? "flex-row-reverse" : ""} 
+          ${centralized ? "xl:justify-center" : ""}
         ${
           image || imageRawRender || bulletsConfigColumn === "singleColumn"
             ? whiteRight

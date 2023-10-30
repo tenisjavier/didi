@@ -455,6 +455,10 @@ const menuLinks: AllMenuInterface = {
           url: "/ar/conductor/requisitos-para-conducir/",
         },
         {
+          text: "DiDi Amigo",
+          url: "/ar/conductor/didi-amigo/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/ar/ciudades/",
         },

@@ -11,22 +11,18 @@ const DiDiConfort = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
 
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "co.DrvHero.bgImage";
+    return image.title === "co.confort.hero.web";
   })[0];
 
   const safetyCTAImage = images.filter((image) => {
     return image.title === "co.SafetyCTA.image";
   })[0];
 
-  const flexFeaturesImage = images.filter((image) => {
-    return image.title === "hk.CarModelColumns.image";
-  })[0];
-
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
       <DrvConfortHero bgImage={drvHeroBgImage}></DrvConfortHero>
-      <DrvConfortFeatures image={flexFeaturesImage}></DrvConfortFeatures>
+      <DrvConfortFeatures></DrvConfortFeatures>
       <Requirements
         title="Requisitos DiDi Confort"
         data={products}
@@ -45,10 +41,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "co.DrvHero.bgImage"
+            "co.confort.hero.web"
             "do.DrvColumns.image"
             "co.SafetyCTA.image"
-            "hk.CarModelColumns.image"
           ]
         }
       }
