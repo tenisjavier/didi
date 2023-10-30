@@ -92,7 +92,6 @@ export const query = graphql`
       excerpt
       category
       author
-      authorRole
       updatedAt
       tags {
         name
