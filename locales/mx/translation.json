@@ -900,6 +900,12 @@
   "PartnerColumns.title": "Conoce los beneficios que tenemos para ti",
   "PartnerColumns.columns": [
     {
+      "title": "Descuentos en Entretenimiento"
+    },
+    {
+      "title": "Descuentos en Productos"
+    },
+    {
       "title": "Descuentos en combustible"
     },
     {

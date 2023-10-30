@@ -19,7 +19,7 @@ const DiDiConfort = ({ data }) => {
   })[0];
 
   const flexFeaturesImage = images.filter((image) => {
-    return image.title === "co.DrvFlexFeatures.image";
+    return image.title === "hk.CarModelColumns.image";
   })[0];
 
   const products = data.allContentfulProduct.nodes;
@@ -48,7 +48,7 @@ export const query = graphql`
             "co.DrvHero.bgImage"
             "do.DrvColumns.image"
             "co.SafetyCTA.image"
-            "co.DrvFlexFeatures.image"
+            "hk.CarModelColumns.image"
           ]
         }
       }

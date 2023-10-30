@@ -22,6 +22,14 @@ const DiDiMas = ({ data }) => {
     return image.title.indexOf("mx.RewardsColumns.image") !== -1;
   });
 
+  partnerColumns.sort((a, b) => {
+    const numeroA = parseInt(a.title.match(/\d+/)[0], 10);
+    const numeroB = parseInt(b.title.match(/\d+/)[0], 10);
+    return numeroA - numeroB;
+  });
+
+  console.log(partnerColumns);
+
   const partnerRent = partners.filter((partner) => {
     return (
       partner.name === "MI NAVE" ||
@@ -45,9 +53,10 @@ const DiDiMas = ({ data }) => {
   const partnerFinanzas = partners.filter((partner) => {
     return (
       partner.name === "Consar" ||
-      partner.name === "Simple Tax" ||
+      partner.name === "Kipu" ||
       partner.name === "Swartz" ||
-      partner.name === "Cura Deuda"
+      partner.name === "Cura Deuda" ||
+      partner.name === "Heru"
     );
   });
 
@@ -74,7 +83,13 @@ const DiDiMas = ({ data }) => {
     return partner.name === "Cinepolis";
   });
 
+  const partnerProductos = partners.filter((partner) => {
+    return partner.name === "Claro - Autos y celulares";
+  });
+
   const categoriesID = [
+    "PartnerEntretenimiento",
+    "PartnerProductos",
     "PartnerCombustible",
     "PartnerRentarAuto",
     "PartnerComprarAuto",
@@ -83,8 +98,6 @@ const DiDiMas = ({ data }) => {
     "PartnerSalud",
     "PartnerEducacion",
     "PartnerTelefonia",
-    "PartnerEntretenimiento",
-    "PartnerProductos",
   ];
 
   return (
