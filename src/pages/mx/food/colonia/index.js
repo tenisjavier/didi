@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodHero from "../../../../components/sections/FoodHero";
-import FoodMunicipalityList from "../../../../components/sections/FoodMunicipalityList";
 import FoodBusinessCTA from "../../../../components/sections/FoodBusinessCTA";
 import FoodDeliveryCTA from "../../../../components/sections/FoodDeliveryCTA";
 import FoodBusinessDownloads from "../../../../components/sections/FoodBusinessDownloads";
@@ -21,12 +20,11 @@ const Ciudades = ({ data }) => {
   const foodBusinessDownloadsImages = images.filter((image) => {
     return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
   });
-  const cities = data.allContentfulMunicipality.nodes;
+
 
   return (
     <Layout>
       <FoodHero bgImage={drvHeroBgImage}></FoodHero>
-      <FoodMunicipalityList data={cities}></FoodMunicipalityList>
       <FoodBusinessDownloads
         images={foodBusinessDownloadsImages}
       ></FoodBusinessDownloads>
@@ -50,12 +48,6 @@ export const query = graphql`
         title
         description
         gatsbyImageData
-      }
-    }
-    allContentfulMunicipality {
-      nodes {
-        name
-        slug
       }
     }
   }

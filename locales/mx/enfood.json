@@ -677,14 +677,6 @@
       "height": "h-80"
     }
   ],
-  "neighborhood.title": "Explore the best restaurants with home delivery near you",
-  "neighborhood.bgColor": "bg-white",
-  "neighborhood.textColor": "gray-primary",
-  "neighborhood.linkItem": "/mx/food/colonia/{{neighborhood}}/",
-  "municipality.title": "Explore the best restaurants with home delivery near you",
-  "municipality.bgColor": "bg-white",
-  "municipality.textColor": "gray-primary",
-  "municipality.linkItem": "/mx/food/delegacion/{{municipality}}/",
   "FoodAppDownloads.title": "Descárgate la App en tu Iphone o Android.",
   "FoodAppDownloads.desc": "La comida que deseas está a unos minutos y 3 clics de distancia.",
   "FoodAppDownloads.textColor": "gray-primary",

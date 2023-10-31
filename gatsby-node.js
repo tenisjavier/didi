@@ -8,8 +8,6 @@ const legalRoutes = require("./routes/legal-routes");
 const faqsRoutes = require("./routes/faqs-routes");
 const redirects = require("./routes/redirects");
 const cityRoutes = require("./routes/food-city-routes");
-const municipalityRoutes = require("./routes/food-municipality-routes");
-const neighbourhoodRoutes = require("./routes/food-neighbourhood-routes");
 const featuresRoutes = require("./routes/features-routes");
 const partnersRoutes = require("./routes/partners-routes");
 const productsRoutes = require("./routes/products-routes");
@@ -34,8 +32,6 @@ exports.createPages = async ({
   await legalRoutes.init(graphql, createPage);
   await faqsRoutes.init(graphql, createPage);
   await cityRoutes.init(graphql, createPage);
-  await municipalityRoutes.init(graphql, createPage);
-  await neighbourhoodRoutes.init(graphql, createPage);
   await featuresRoutes.init(graphql, createPage);
   await partnersRoutes.init(graphql, createPage);
   await productsRoutes.init(graphql, createPage);

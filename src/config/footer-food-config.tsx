@@ -14,7 +14,6 @@ const footerLinksFood: AllFooterInterface = {
     { text: "Restaurantes", link: "/mx/food/restaurantes/" },
     { text: "Socio repartidor", link: "/mx/food/repartidores/" },
     { text: "Ciudades Disponibles", link: "/mx/food/ciudad/" },
-    { text: "Delegaciones", link: "/mx/food/colonia/" },
     {
       text: "Términos y Condiciones",
       link: "/mx/legal/",

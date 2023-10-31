@@ -1417,7 +1417,6 @@ module.exports = {
               !page.path.includes(`/mx/centro-de-ayuda/`) &&
               !page.path.includes(`/mx/food/blog/`) &&
               !page.path.includes(`/mx/food/ciudad/`) &&
-              !page.path.includes(`/mx/food/colonia/`) &&
               !page.path.includes(`/mx/food/repartidores/`) &&
               !page.path.includes(`/mx/food/restaurantes/`) &&
               !page.path.includes(`/mx/didipay/`) &&
@@ -1587,7 +1586,6 @@ module.exports = {
               page.path.includes(`/mx/food/`) &&
               !page.path.includes(`/mx/food/blog/`) &&
               !page.path.includes(`/mx/food/ciudad/`) &&
-              !page.path.includes(`/mx/food/colonia/`) &&
               !page.path.includes(`/mx/food/repartidores/`) &&
               !page.path.includes(`/mx/food/restaurantes/`)
             );
@@ -1645,7 +1643,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output: "/mx/food/colonia/",
+        output: "/mx/food/",
         query: `
         {
           allSitePage {
@@ -1659,7 +1657,7 @@ module.exports = {
         resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           console.log(allPages);
           const pages = allPages.filter((page) =>
-            page.path.includes(`/mx/food/colonia/`)
+            page.path.includes(`/mx/food/`)
           );
           return [...pages];
         },
