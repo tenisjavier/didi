@@ -91,9 +91,19 @@ export const query = graphql`
         phone
         requirement {
           raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
+            }
+          }
         }
         image {
           gatsbyImageData
+          title
         }
         country {
           code
@@ -131,6 +141,7 @@ export const query = graphql`
         image {
           gatsbyImageData
           description
+          title
         }
       }
     }
