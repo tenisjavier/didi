@@ -136,7 +136,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi México. Considerando retenciones de impuestos como ISR e IVA",
     },
     "/conductor/didi-confort/": {
-      title: "DiDi Confort: Genera hasta 50%* más ganancias conectándote con DiDi Confort",
+      title:
+        "DiDi Confort: Genera hasta 50%* más ganancias conectándote con DiDi Confort",
       desc: "En DiDi constantemente estamos trabajando para ofrecer nuevas soluciones tecnológicas a nuestros usuarios . Por eso, DiDi Confort esta activo en Bogotá buscando ofrecer una mejor experiencia a todos.",
     },
     "/conductor/didi-flex/": {
@@ -417,6 +418,11 @@ const seoMeta: AllSEOMetaInterface = {
     "/conductor/requisitos-para-conducir/": {
       title: "Requisitos para Conducir y empezar a Ganar Dinero",
       desc: "Requisitos para Conducir en DiDi. Regístrate como socio conductor en las categorías express, taxi y moto, ganando más y manejando menos",
+    },
+    "/conductor/didi-amigo/": {
+      title:
+        "DiDi Amigo Argentina: Registrate, referí posibles conductores y ganá.",
+      desc: "Con nuestro programa de referidos DiDi Amigos puedes referir personas que les gustaría conducir con DiDi y ganás dinero si lo hacen.",
     },
     "/didi-fleet/": {
       title: "DiDi Fleet - Alquilá tus autos y generá ganancias",
