@@ -693,14 +693,6 @@
       "height": "h-80"
     }
   ],
-  "neighborhood.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
-  "neighborhood.bgColor": "bg-white",
-  "neighborhood.textColor": "gray-primary",
-  "neighborhood.linkItem": "/mx/food/colonia/{{city}}/",
-  "municipality.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
-  "municipality.bgColor": "bg-white",
-  "municipality.textColor": "gray-primary",
-  "municipality.linkItem": "/mx/food/colonia/{{city}}/",
   "FoodAppDownloads.title": "Descárgate la App en tu Iphone o Android.",
   "FoodAppDownloads.desc": "La comida que deseas está a unos minutos y 3 clics de distancia.",
   "FoodAppDownloads.textColor": "gray-primary",
