@@ -261,6 +261,16 @@ const SEO = ({ title, desc, index, schema }) => {
         )} */}
         <meta name="title" content={`${title}`} data-react-helmet="true"></meta>
         <meta name="description" content={desc} />
+        {
+          <script type="application/ld+json">
+            {`{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "DiDi",
+            "url": "https://web.didiglobal.com/",
+            }`}
+          </script>
+        }
         <link rel="canonical" href={canonicalUrl} />
         {hreflangs}
         {(pathname === "/" || pathname === `/${countryCode}/`) && (
