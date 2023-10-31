@@ -19,11 +19,11 @@ const DiDiAmigoFAQ = ({ faqs }: FAQProps) => {
   const items = faqs.map((con) => {
     return {
       title: con.title,
-      content: con.content
+      content: con.content,
     };
   });
 
-  const title = "Conoce más sobre DiDi Amigo";
+  const title = "Conocé más sobre DiDi Amigo";
 
   return (
     <AccordionSection
