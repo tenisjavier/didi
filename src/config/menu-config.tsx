@@ -699,7 +699,7 @@ const menuLinks: AllMenuInterface = {
         },
         {
           text: "DiDi Moto",
-          url: "/co/moto/",
+          url: "/co/pasajero/moto/",
         },
         {
           text: "Descarga la App",

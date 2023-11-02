@@ -1,46 +1,46 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import PaxHeroMoto from "../../components/sections/PaxHeroMoto";
-import LostItemsBanner from "../../components/sections/LostItemsBanner";
-import PaxColumnsMoto from "../../components/sections/PaxColumnsMoto";
-import SilderSection from "../../components/sections/SliderSection";
-import PaxWhyDiDiMoto from "../../components/sections/PaxWhyDiDiMoto";
-import PaxBanner from "../../components/sections/PaxBanner";
-import HomeColumns from "../../components/sections/HomeColumns";
+import Layout from "../../../components/Layout";
+import PaxHero from "../../../components/sections/PaxHero";
+import LostItemsBanner from "../../../components/sections/LostItemsBanner";
+import PaxColumns from "../../../components/sections/PaxColumns";
+import SilderSection from "../../../components/sections/SliderSection";
+import PaxWhyDiDi from "../../../components/sections/PaxWhyDiDi";
+import PaxBanner from "../../../components/sections/PaxBanner";
+import HomeColumns from "../../../components/sections/HomeColumns";
 
-const Moto = ({ data }) => {
+const Pasajero = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const paxHeroBgImage = images.filter((image) => {
-    return image.title === "co.PaxHeroMoto.bgImage";
+    return image.title === "co.PaxHero.bgImage";
   })[0];
   const paxHeroMobileBgImage = images.filter((image) => {
     return image.title === "co.PaxHeroMobile.bgImage";
   })[0];
-  const PaxWhyDiDiImage = images.filter((image) => {
-    return image.title === "co.PaxWhyDiDiMoto.image";
+  const paxWhyDiDiImage = images.filter((image) => {
+    return image.title === "co.PaxWhyDiDi.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
   return (
     <Layout>
-      <PaxHeroMoto
+      <PaxHero
         bgImage={paxHeroBgImage}
         mobileBgImage={paxHeroMobileBgImage}
-      ></PaxHeroMoto>
-      <PaxColumnsMoto></PaxColumnsMoto>
+      ></PaxHero>
+      <PaxColumns></PaxColumns>
       <LostItemsBanner></LostItemsBanner>
       <SilderSection
         data={products}
         title="Hay un DiDi Para ti"
       ></SilderSection>
-      <PaxWhyDiDiMoto image={PaxWhyDiDiImage}></PaxWhyDiDiMoto>
+      <PaxWhyDiDi image={paxWhyDiDiImage}></PaxWhyDiDi>
       <PaxBanner></PaxBanner>
       <HomeColumns></HomeColumns>
     </Layout>
   );
 };
 
-export default Moto;
+export default Pasajero;
 
 export const query = graphql`
   query {
@@ -48,9 +48,9 @@ export const query = graphql`
       filter: {
         title: {
           in: [
-            "co.PaxHeroMoto.bgImage"
+            "co.PaxHero.bgImage"
             "co.PaxHeroMobile.bgImage"
-            "co.PaxWhyDiDiMoto.image"
+            "co.PaxWhyDiDi.image"
           ]
         }
       }

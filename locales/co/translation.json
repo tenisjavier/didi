@@ -163,6 +163,9 @@
     "Es muy importante que mantengas la postura correcta durante todo el viaje.",
     "Evita llevar objetos de gran tamaño."
   ],
+  "PaxWhyDiDiMoto.bgColor": "bg-gray-light",
+  "PaxWhyDiDiMoto.textColor": "gray-primary",
+  "PaxWhyDiDiMoto.btnMode": "primary",
   "PaxWhyDiDi.desc": false,
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.bgColor": "bg-white",
