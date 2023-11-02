@@ -554,6 +554,10 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Pasajero - Muévete por tu Ciudad",
       desc: "Pasajero. DiDi en Colombia, regístrate como socio conductor en la categoría express. Gana Dinero extra manejando con DiDi.",
     },
+    "/pasajero/moto/": {
+      title: "Pide un DiDi Moto - Llega antes pagando menos",
+      desc: "DiDi Moto, precios justos, llega antes pagando menos. Siempre utiliza un casco de correctamente ajustado.Es muy importante que mantengas la postura correcta durante todo el viaje.",
+    },
     "/conductor/": {
       title: "DiDi Conductor - Maneja y Genera Ingresos Extra",
       desc: "DiDi Conductor en Colombia. Revisa los requisitos para convertirte en socio conductor. Regístrate como socio conductor en la categoría express, ganando más y manejando menos.",
