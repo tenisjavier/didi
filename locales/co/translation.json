@@ -96,6 +96,10 @@
   "PaxHero.desc": "La app donde recibes más y viajas mejor.",
   "PaxHero.textColor": "white",
   "PaxHero.btnMode": "light",
+  "PaxHeroMoto.title": "Pide un DiDi Moto",
+  "PaxHeroMoto.desc": "Precios justos. Llega antes pagando menos.",
+  "PaxHeroMoto.textColor": "white",
+  "PaxHeroMoto.btnMode": "light",
   "LostItemsBanner.title": "¿Olvidaste un objeto en el vehículo?",
   "LostItemsBanner.desc": "Da clic en el botón de abajo, dirígete a Preguntas Pasajeros > Inconvenientes con un arrendamiento  y en la sección Olvidé un objeto en el vehículo llena el formulario para poder ayudarte",
   "LostItemsBanner.bgColor": "bg-blue-primary",
@@ -125,12 +129,43 @@
       "textColor": "gray-primary"
     }
   ],
+  "PaxColumnsMoto.title": "Ventajas de DiDi Moto",
+  "PaxColumnsMoto.bgColor": "bg-white",
+  "PaxColumnsMoto.textColor": "gray-primary",
+  "PaxColumnsMoto.columns": [
+    {
+      "title": "Accesible",
+      "desc": "",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Te conectas con arrendadores verificados",
+      "desc": "",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Evitas el Tráfico",
+      "desc": "",
+      "bgColor": "white",
+      "textColor": "gray-primary"
+    }
+  ],
   "PaxWhyDiDi.title": "Utiliza DiDi",
   "PaxWhyDiDi.bullets": [
     "Solicita tus arrendamientos, obtén un arrendamiento de vehículo en minutos, a cualquier hora y en cualquier día del año.",
     "Cotiza los precios de todos los tipos de viaje, desde los traslados diarios hasta las salidas nocturnas.",
     "DiDi es una app que conecta arrendatarios con arrendadores."
   ],
+  "PaxWhyDiDiMoto.title": "Siempre utiliza un casco de correctamente ajustado",
+  "PaxWhyDiDiMoto.bullets": [
+    "Es muy importante que mantengas la postura correcta durante todo el viaje.",
+    "Evita llevar objetos de gran tamaño."
+  ],
+  "PaxWhyDiDiMoto.bgColor": "bg-gray-light",
+  "PaxWhyDiDiMoto.textColor": "gray-primary",
+  "PaxWhyDiDiMoto.btnMode": "primary",
   "PaxWhyDiDi.desc": false,
   "PaxWhyDiDi.textColor": "gray-primary",
   "PaxWhyDiDi.bgColor": "bg-white",

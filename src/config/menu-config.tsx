@@ -698,6 +698,10 @@ const menuLinks: AllMenuInterface = {
           url: "/co/pasajero/",
         },
         {
+          text: "DiDi Moto",
+          url: "/co/pasajero/moto/",
+        },
+        {
           text: "Descarga la App",
           url: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
         },
