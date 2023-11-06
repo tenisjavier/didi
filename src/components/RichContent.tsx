@@ -158,6 +158,10 @@ const options: optionsInterface = {
         gatsbyImageData.width = 400;
         gatsbyImageData.height = 570;
       }
+      if (title === "qr-mach") {
+        gatsbyImageData.width = 250;
+        gatsbyImageData.height = 250;
+      }
       return (
         <div className="my-12 flex w-full justify-center mx-auto">
           <GatsbyImage
