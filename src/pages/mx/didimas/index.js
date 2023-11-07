@@ -45,7 +45,7 @@ const DiDiMas = ({ data }) => {
   });
 
   const partnerCombustible = partners.filter((partner) => {
-    return partner.name === "ARCO";
+    return partner.name === "ARCO" || partner.name === "Gulf";
   });
   const partnerAuto = partners.filter((partner) => {
     return partner.name === "Autos a Tiempo";
