@@ -5,7 +5,7 @@ import { t } from "../../context/countryContext";
 interface FAQProps {
   data: {
     title: string;
-    normalText: string;
+    content: string;
   }[];
 }
 
@@ -14,7 +14,7 @@ const GananciasImpuestosFAQ = ({ data }: FAQProps) => {
   let items = data.map((con) => {
     return {
       title: con.title,
-      normalText: con.normalText,
+      normalText: con.content,
     };
   });
 
