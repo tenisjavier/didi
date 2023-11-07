@@ -50,6 +50,9 @@ export const query = graphql`
     contentfulCity(id: { eq: $id }) {
       name
       slug
+      image {
+        gatsbyImageData
+      }
       product {
         name
         description

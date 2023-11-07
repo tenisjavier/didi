@@ -1,22 +1,21 @@
 import React from "react";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
+import Image, { ImageDataType } from "../Image";
 
 interface DrvCityHeroProps {
   data: {
     name: string;
-    geometry: {
-      lat: string;
-      lon: string;
-    };
+    image?: ImageDataType;
   };
   isRTL?: boolean;
 }
 
 const DrvCityHero = ({ data, isRTL }: DrvCityHeroProps) => {
+  console.log(data);
   const {
     name,
-    geometry: { lat, lon },
+    image,
   } = data;
 
   const props: CTAProps = {
@@ -26,12 +25,9 @@ const DrvCityHero = ({ data, isRTL }: DrvCityHeroProps) => {
     textColor: t("DrvCityHero.textColor"),
     bgColor: t("DrvCityHero.bgColor"),
     imageRawRender: (
-      <img
-        className="z-10 m-4 w-full rounded md:w-100 lg:w-110"
-        alt={name + " mapa"}
-        src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=12&size=1200x500&maptype=roadmap
-&markers=color:red%7C${lat},${lon}&key=${process.env.GATSBY_GOOGLE_API_KEY}`}
-      ></img>
+      <>
+        {image && <Image imageData={image} imageStyle="!z-10 m-4 w-100 h-100" />}
+      </>
     ),
     btnMode: t("DrvCityHero.btnMode"),
     btnType: "drv",
