@@ -31,9 +31,6 @@ const DrvCity = ({ data }) => {
         <SilderSectionCity data={product} city={name}></SilderSectionCity>
       )}
       <Requirements data={requirements}></Requirements>
-      {places.length ? (
-        <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
-      ) : null}
       {data.contentfulOffice ? (
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}

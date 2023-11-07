@@ -515,6 +515,21 @@ const redirectsInit = async (graphql, createRedirect) => {
     toPath: `https://hk.didiglobal.com/`,
     isPermanent: true,
   });
+  createRedirect({
+    fromPath: `/ar/lugares/`,
+    toPath: `/ar/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cl/lugares/`,
+    toPath: `/cl/conductor/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/lugares/`,
+    toPath: `/pe/conductor/`,
+    isPermanent: true,
+  });
 };
 
 module.exports.init = redirectsInit;
