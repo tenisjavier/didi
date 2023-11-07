@@ -5,16 +5,17 @@ import { t } from "../../context/countryContext";
 interface FAQProps {
   data: {
     title: string;
-    normalText: string;
+    content: string;
   }[];
 }
 
 const GananciasConceptosFAQ = ({ data }: FAQProps) => {
   data = t("GananciasConceptosFAQ.items", { returnObjects: true });
   let items = data.map((con) => {
+    console.log(con);
     return {
       title: con.title,
-      normalText: con.normalText,
+      normalText: con.content,
     };
   });
 
