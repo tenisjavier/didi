@@ -32,11 +32,6 @@ export const query = graphql`
     contentfulCity(id: { eq: $id }) {
       name
       slug
-      place {
-        name
-        address
-        placeId
-      }
     }
   }
 `;

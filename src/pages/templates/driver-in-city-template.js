@@ -7,7 +7,6 @@ import SilderSectionCity from "../../components/sections/SliderSectionCity";
 import DrvCityList from "../../components/sections/DrvCityList";
 import DrvCityOffice from "../../components/sections/DrvCityOffice";
 import Requirements from "../../components/sections/Requirements";
-import PlacesPrimaryColumn from "../../components/sections/PlacesPrimaryColumn";
 
 const DrvCity = ({ data }) => {
   const { name, product } = data.contentfulCity;
@@ -15,7 +14,6 @@ const DrvCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images[0];
   const requirements = data.allContentfulRequirement.nodes;
-  const places = data.allContentfulPlace.nodes.slice(0, 3);
   const cities = data.allContentfulCity.nodes;
   let RTL = false;
   if (country === "eg") {
@@ -31,9 +29,6 @@ const DrvCity = ({ data }) => {
         <SilderSectionCity data={product} city={name}></SilderSectionCity>
       )}
       <Requirements data={requirements}></Requirements>
-      {places.length ? (
-        <PlacesPrimaryColumn data={places}></PlacesPrimaryColumn>
-      ) : null}
       {data.contentfulOffice ? (
         <DrvCityOffice data={data.contentfulOffice}></DrvCityOffice>
       ) : null}
@@ -63,10 +58,6 @@ export const query = graphql`
           code
         }
       }
-      geometry {
-        lat
-        lon
-      }
       country {
         code
       }
@@ -95,21 +86,6 @@ export const query = graphql`
         name
         requirement {
           raw
-        }
-      }
-    }
-    allContentfulPlace(
-      filter: { city: { id: { eq: $id } }, primary: { eq: true } }
-    ) {
-      nodes {
-        name
-        address
-        image {
-          gatsbyImageData
-        }
-        city {
-          name
-          slug
         }
       }
     }
