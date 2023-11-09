@@ -521,12 +521,27 @@ const redirectsInit = async (graphql, createRedirect) => {
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/ar/lugares/*`,
+    toPath: `/ar/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/cl/lugares/`,
     toPath: `/cl/`,
     isPermanent: true,
   });
   createRedirect({
+    fromPath: `/cl/lugares/*`,
+    toPath: `/cl/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/pe/lugares/`,
+    toPath: `/pe/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/pe/lugares/*`,
     toPath: `/pe/`,
     isPermanent: true,
   });
