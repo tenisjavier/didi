@@ -93,10 +93,6 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Servicios de DiDi por Ciudad.",
       desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
     },
-    "/lugares/": {
-      title: "Viaja a Distintos Lugares de Interés",
-      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
-    },
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
@@ -535,10 +531,6 @@ const seoMeta: AllSEOMetaInterface = {
     "/ciudades/": {
       title: "Servicios de DiDi por Ciudad.",
       desc: "Conoce que servicios DiDi se encuentran en tu ciudad. Si quieres ser socio conductor revisa los requisitos.",
-    },
-    "/lugares/": {
-      title: "Viaja a Distintos Lugares de Interés",
-      desc: "Viaja a distintos puntos de la ciudad con DiDi. DiDi es la manera más rápida y segura de viajar. Baja la aplicación ya.",
     },
     "/legal/": {
       title: "Términos y Condiciones y Políticas de Privacidad.",
