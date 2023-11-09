@@ -40,7 +40,8 @@ const DiDiMas = ({ data }) => {
       partner.name === "Datamovil Arrendadora" ||
       partner.name === "Ventauto" ||
       partner.name === "Mare" ||
-      partner.name === "Procapa Arrendamientos"
+      partner.name === "Procapa Arrendamientos" ||
+      partner.name === "Keko App"
     );
   });
 
