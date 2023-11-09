@@ -13,7 +13,6 @@ const footerLinks: AllFooterInterface = {
   cl: [
     { text: "Socio Conductor", link: "/cl/conductor/" },
     { text: "Pasajero", link: "/cl/pasajero/" },
-    { text: "Lugares", link: "/cl/lugares/" },
     { text: "Seguridad", link: "/cl/seguridad/" },
     { text: "Carreras", link: "https://careers.didiglobal.com/" },
     { text: "Legal", link: "/cl/legal/" },
@@ -48,7 +47,6 @@ const footerLinks: AllFooterInterface = {
   ar: [
     { text: "Pasajero", link: "/ar/pasajero/" },
     { text: "Socio Conductor", link: "/ar/conductor/" },
-    { text: "Lugares", link: "/ar/lugares/" },
     { text: "DiDi Taxi", link: "/ar/taxi/" },
     { text: "Carreras", link: "https://careers.didiglobal.com/" },
     { text: "Legal", link: "/ar/legal/" },
@@ -57,7 +55,6 @@ const footerLinks: AllFooterInterface = {
   pe: [
     { text: "Socio Conductor", link: "/pe/conductor/" },
     { text: "Pasajero", link: "/pe/pasajero/" },
-    { text: "Lugares", link: "/pe/lugares/" },
     { text: "Carreras", link: "https://careers.didiglobal.com/" },
     { text: "Legal", link: "/pe/legal/" },
     { text: "Newsroom", link: "/pe/newsroom/" },
