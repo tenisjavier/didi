@@ -42,6 +42,8 @@ export interface CardProps extends BtnProps {
   textHighlighterStyle?: string;
   titleStyles?: string;
   imageName?: string;
+  hasTextHighlighterDesc?: boolean;
+  hasTextHighlighterDescStyle?: string;
   titlePosition?: "beforeImage" | "afterImage";
   descPosition?: "beforeBtn" | "afterBtn";
 }
@@ -82,6 +84,8 @@ const Card = (props: CardProps) => {
     hasTextHighlighter,
     textHighlighterStyle,
     titleStyles,
+    hasTextHighlighterDesc,
+    hasTextHighlighterDescStyle,
     titlePosition = "afterImage",
     descPosition = "beforeBtn"
   } = props;
@@ -110,7 +114,7 @@ const Card = (props: CardProps) => {
     isTruncate = (
       <>
         {desc.split("\n").map((str) => (
-          <p className="text-center">{str}</p>
+          <p className="text-center">{hasTextHighlighterDesc ? textHighlighter(str, hasTextHighlighterDescStyle) : str}</p>
         ))}
       </>
     );

@@ -2071,38 +2071,42 @@
   "DiDiCreditBeneficiosColumns.columns": [
     {
       "title": "Justo",
+      "imageName": "Justo",
       "desc": "35% de cashback con vigencia de 30 días en el wallets Justo. PromoCode Septiembre: {DIDICARDJ1}"
     },
     {
       "title": "Office Depot",
+      "imageName": "Office Depot",
       "desc": "10% off en tienda online con DiDi Card usando el código {DiDi-12AC}"
     },
     {
       "title": "Radioshack",
+      "imageName": "Radioshack",
       "desc": "10% off en compra mínima de $1,4999 en bocinas y audífonos con el código: {DIDIRS-AUD}"
     },
     {
       "title": "Medicato",
+      "imageName": "Medicato",
       "desc": "60% off en la suscripción mensual, trimestral o anual."
     },
     {
       "title": "Coderhouse",
+      "imageName": "Coderhouse",
       "desc": "25% off adicional en la CoderBeca en todos los cursos y carreras usando el código: {didicoder}"
     },
     {
       "title": "Innerassiste",
+      "imageName": "Innerassiste",
       "desc": "Hasta 45% de descuento en el seguro de tu mascota y hasta 30% de descuento en el seguro de tu dispositivos electrónicos"
     },
     {
-      "title": "Gaia",
-      "desc": "3% off con el {código GAIADIDHDB + Envio Gratis* + Hasta 60%} off por aniversario"
-    },
-    {
       "title": "Cinepolis",
+      "imageName": "Cinepolis",
       "desc": "2x1 en boletos en sala tradicional en Cinepolis con el código {26FD86YBE5QC4FWD}"
     },
     {
-      "title": "Mercadolibre",
+      "title": "Mercado Libre",
+      "imageName": "Mercado Libre",
       "desc": "10% off en Mercadolibre con el código {MASTER10}"
     }
   ],

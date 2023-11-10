@@ -20,10 +20,10 @@ const menuLinksCard: AllMenuInterface = {
       text: "Funciones",
       url: "/mx/tarjeta-de-credito/funciones/",
     },
-    // {
-    //   text: "Beneficios",
-    //   url: "/mx/tarjeta-de-credito/beneficios/",
-    // },
+     {
+       text: "Beneficios",
+       url: "/mx/tarjeta-de-credito/beneficios/",
+     },
     // {
     //   text: "Blog",
     //   url: "/mx/tarjeta-de-credito/blog/",
