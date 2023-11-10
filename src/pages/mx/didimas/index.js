@@ -32,7 +32,7 @@ const DiDiMas = ({ data }) => {
 
   const partnerRent = partners.filter((partner) => {
     return (
-      partner.name === "MI NAVE" ||
+      partner.name === "Mi Nave" ||
       partner.name === "Kovi" ||
       partner.name === "OneCarNow!" ||
       partner.name === "Punto" ||
@@ -40,7 +40,8 @@ const DiDiMas = ({ data }) => {
       partner.name === "Datamovil Arrendadora" ||
       partner.name === "Ventauto" ||
       partner.name === "Mare" ||
-      partner.name === "Procapa Arrendamientos"
+      partner.name === "Procapa Arrendamientos" ||
+      partner.name === "Keko App"
     );
   });
 
