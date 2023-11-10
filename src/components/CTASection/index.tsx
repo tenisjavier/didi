@@ -99,13 +99,13 @@ const CTASection = (props: CTAProps) => {
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
-  const textDir = RTL || alignRight ? "text-right" : "text-left";
-  const margin = RTL || alignRight ? "ml-4" : "mr-4";
+  const textDir = RTL ? "text-right" : "text-left";
+  const margin = RTL ? "ml-4" : "mr-4";
 
   const getTitleElement = () => {
     if (hero) {
       return (
-        <h1 className={`text-4xl font-bold md:text-5xl mt-0 ${alignRight ? 'text-right' : ''}`}>
+        <h1 className={`text-4xl font-bold md:text-5xl mt-0 ${alignRight ? 'text-center lg:text-right' : ''}`}>
           {title &&
             title.split("\n").map((str, index) => (
               <Fragment key={index}>
@@ -136,7 +136,7 @@ const CTASection = (props: CTAProps) => {
 
   const renderSectionDesc = () => {
     return (
-      <p className={`mb-10 text-lg ${alignRight ? 'text-right' : 'text-left'}`}>
+      <p className={`mb-10 text-lg ${alignRight ? 'text-center lg:text-right' : 'text-left'}`}>
         {desc &&
           desc.split("\n").map((str, index) => (
             <Fragment key={index}>
@@ -158,7 +158,7 @@ const CTASection = (props: CTAProps) => {
     >
       <div
         className={`${whiteRight ? "white-right" : containerDisabled ? "lg:px-40 " : "container"
-          }  mx-auto flex w-full lg:flex-nowrap items-center justify-center py-12 ${reverse && hero
+          }  mx-auto flex w-full lg:flex-nowrap items-center ${alignRight ? '' : 'justify-center'}  py-12 ${reverse && hero
             ? "flex-row-reverse flex-wrap-reverse pt-28 lg:pt-12 "
             : "flex-wrap "
           } ${reverse ? "flex-row-reverse" : ""} 

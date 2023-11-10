@@ -10,6 +10,7 @@ const partnersRoutes = require("./routes/partners-routes");
 const productsRoutes = require("./routes/products-routes");
 const requirementsRoutes = require("./routes/requirements-routes");
 const offersRoutes = require("./routes/offers-routes");
+const airportRoutes = require("./routes/airport-routes");
 
 // Implement the Gatsby API “createPages”. This is called once the
 // each route will import a ContentType List from Contentful
@@ -31,4 +32,5 @@ exports.createPages = async ({
   await productsRoutes.init(graphql, createPage);
   await requirementsRoutes.init(graphql, createPage);
   await offersRoutes.init(graphql, createPage);
+  await airportRoutes.init(graphql, createPage);
 };

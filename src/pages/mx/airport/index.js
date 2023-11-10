@@ -3,14 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../../../components/Layout";
 import DiDiAirportHero from "../../../components/sections/Airport/DiDiAirportHero";
-import DiDiCreditBanner from "../../../components/sections/CreditCard/DiDiCreditBanner";
-import DiDiCreditFeatures from "../../../components/sections/CreditCard/DiDiCreditFeatures";
-import DiDiCreditBannerBenefits from "../../../components/sections/CreditCard/DiDiCreditBannerBenefits";
-import DiDiCreditBenefits from "../../../components/sections/CreditCard/DiDiCreditBenefits";
-import DiDiCreditRequirements from "../../../components/sections/CreditCard/DiDiCreditRequirements";
-import DiDiCreditWhy from "../../../components/sections/CreditCard/DiDiCreditWhy";
-import DiDiCreditFAQ from "../../../components/sections/CreditCard/DiDiCreditFAQ";
-import DiDiCreditCachBack from "../../../components/sections/CreditCard/DiDiCreditCashBack";
+import DiDiAirportCityList from "../../../components/sections/Airport/DiDiAirportCityList";
 
 const Airport = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -23,32 +16,7 @@ const Airport = ({ data }) => {
     return image.title === "mx.DiDiAirportHeroMobile.bgImage";
   })[0];
 
-  const cardFeaturesImage = images.filter((image) => {
-    return image.title === "mx.CreditCardCTA.image";
-  })[0];
-  const cardBenefitsImage = images.filter((image) => {
-    return image.title === "mx.CreditCardSeguroCTA.image";
-  })[0];
-  const iconCard = images.filter((image) => {
-    return image.title === "mx.CreditCardMoneyIcon.image";
-  })[0];
-  const iconSms = images.filter((image) => {
-    return image.title === "mx.CreditCardNotificationIcon.image";
-  })[0];
-  const iconLock = images.filter((image) => {
-    return image.title === "mx.CreditCardLockIcon.image";
-  })[0];
-  const iconShield = images.filter((image) => {
-    return image.title === "mx.CreditCardShieldIcon.image";
-  })[0];
-  const icons = [iconCard, iconSms, iconLock, iconShield];
-
-  const cardRequirementsImage = images.filter((image) => {
-    return image.title === "mx.CreditCardCTA2.image";
-  })[0];
-  const cardWhyImage = images.filter((image) => {
-    return image.title === "mx.CreditFaqCard.image";
-  })[0];
+  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -56,20 +24,7 @@ const Airport = ({ data }) => {
         bgImage={AirportHeroBgImage}
         bgImageMobile={AirportHeroBgImageMobile}
       ></DiDiAirportHero>
-      <DiDiCreditBanner></DiDiCreditBanner>
-      <DiDiCreditFeatures image={cardFeaturesImage}></DiDiCreditFeatures>
-      {/* <DiDiCreditColumns></DiDiCreditColumns> */}
-      <DiDiCreditCachBack></DiDiCreditCachBack>
-      <DiDiCreditBannerBenefits></DiDiCreditBannerBenefits>
-      <DiDiCreditBenefits
-        images={icons}
-        image={cardBenefitsImage}
-      ></DiDiCreditBenefits>
-      <DiDiCreditRequirements
-        image={cardRequirementsImage}
-      ></DiDiCreditRequirements>
-      <DiDiCreditWhy image={cardWhyImage}></DiDiCreditWhy>
-      <DiDiCreditFAQ data={faqs}></DiDiCreditFAQ>
+      <DiDiAirportCityList data={cities}></DiDiAirportCityList>
     </Layout>
   );
 };
@@ -110,6 +65,19 @@ export const query = graphql`
               __typename
             }
           }
+        }
+      }
+    }
+    allContentfulCity(
+      filter: { hasAirport: { eq: true }, country: { code: { eq: "mx" } } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
         }
       }
     }

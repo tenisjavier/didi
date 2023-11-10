@@ -29,6 +29,7 @@ const DiDiAirportHero = ({ bgImage, bgImageMobile }: DiDiAirportHeroProps) => {
     containerDisabled: true,
     reverse: true,
     alignRight: true,
+    mobileTitlePosition: "top"
   };
   return <CTASection {...props}></CTASection>;
 };
