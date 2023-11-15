@@ -9,11 +9,20 @@ interface GuideHero {
     excerpt: string;
     featuredImage: ImageDataLike;
     featuredImageMobile: ImageDataLike;
+    btnCustomLink?: string;
+    btnCustomText?: string;
   };
 }
 
 const GuideHero = ({ data }: GuideHero) => {
-  const { title, excerpt, featuredImage, featuredImageMobile } = data;
+  const {
+    title,
+    excerpt,
+    featuredImage,
+    featuredImageMobile,
+    btnCustomText,
+    btnCustomLink,
+  } = data;
   const image = getImage(featuredImage);
   const imageMobile = getImage(featuredImageMobile);
   const bgImage = {
@@ -37,7 +46,10 @@ const GuideHero = ({ data }: GuideHero) => {
     mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
     btnType: "foodBusiness",
     btnMode: t("GuideHero.btnMode"),
+    ...(btnCustomText && { btnText: btnCustomText }),
+    ...(btnCustomLink && { btnLink: btnCustomLink }),
   };
+  console.log(props);
   return <CTASection {...props}></CTASection>;
 };
 

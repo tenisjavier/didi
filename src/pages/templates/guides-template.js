@@ -20,7 +20,6 @@ const GuideTemplate = ({ data, pageContext }) => {
 
   const category = data.contentfulGuide.category[0];
 
-  console.log(category);
   let GuideHeroToRender;
   let GuideColumnsToRender;
   let BannerToRender;
@@ -91,6 +90,8 @@ export const query = graphql`
       featuredImageMobile {
         gatsbyImageData
       }
+      btnCustomLink
+      btnCustomText
     }
     allContentfulGuide(
       filter: {
