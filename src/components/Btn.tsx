@@ -99,7 +99,7 @@ const Btn = ({
     btnLink = btnData.paymentBusinessLink;
     btnText = btnText || btnData.paymentBusinessText;
   } else if (btnType === "foodBusiness") {
-    btnLink = btnData.foodBusinessLink;
+    btnLink = btnLink || btnData.foodBusinessLink;
     btnText = btnText || btnData.foodBusinessText;
   } else if (btnType === "foodDelivery") {
     btnLink = btnData.foodDeliveryLink;
