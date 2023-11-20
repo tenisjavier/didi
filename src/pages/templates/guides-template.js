@@ -50,12 +50,18 @@ const GuideTemplate = ({ data, pageContext }) => {
       break;
   }
 
+  const hasContent =
+    JSON.parse(richContent?.raw).content?.lenght > 0 ||
+    JSON.parse(richContent?.raw).content?.[0].content?.[0]?.value !== " ";
+
   return (
     <Layout title={title} desc={desc}>
       {GuideHeroToRender}
-      <section className="container mx-auto mb-32 text-gray-primary md:px-28 mt-16">
-        <RichContent richContent={richContent}></RichContent>
-      </section>
+      {hasContent && (
+        <section className="container mx-auto mb-32 text-gray-primary md:px-28 mt-16">
+          <RichContent richContent={richContent}></RichContent>
+        </section>
+      )}
       {BannerToRender}
       {GuideColumnsToRender}
     </Layout>
