@@ -17,6 +17,13 @@ interface optionsInterface {
   };
 }
 
+//? function that returns the image width form the title
+function extractImageWidth(str: string) {
+  const regex = /lg:(\d+)/;
+  const match = str.match(regex);
+  return match ? match[1] : null;
+}
+
 const options: optionsInterface = {
   renderMark: {
     [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
@@ -115,7 +122,10 @@ const options: optionsInterface = {
     },
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       if (!node.data.target) return <div></div>;
-      const { gatsbyImageData, title } = node.data.target;
+
+      const { gatsbyImageData, title, description } = node.data.target;
+      let customWidth = extractImageWidth(title);
+
       if (title.includes("didiImage")) {
         if (gatsbyImageData.width === 300 && gatsbyImageData.height === 600) {
           gatsbyImageData.width = 150;
@@ -162,12 +172,20 @@ const options: optionsInterface = {
         gatsbyImageData.width = 250;
         gatsbyImageData.height = 250;
       }
+      //custom witdh could be w-[400px],w-[300px], w-[200px]
+
+      if (customWidth === "600") customWidth = "lg:w-[600px]";
+      if (customWidth === "500") customWidth = "lg:w-[500px]";
+      if (customWidth === "400") customWidth = "lg:w-[400px]";
+      if (customWidth === "300") customWidth = "lg:w-[300px]";
+      if (customWidth === "200") customWidth = "lg:w-[200px]";
+      if (customWidth === "100") customWidth = "lg:w-[200px]";
       return (
         <div className="my-12 flex w-full justify-center mx-auto">
           <GatsbyImage
-            className="max-w-xl md:max-w-4xl"
+            className={`max-w-xl ${customWidth ? customWidth : "lg:max-w-4xl"}`}
             image={getImage(gatsbyImageData)!}
-            alt={title}
+            alt={description || title}
           ></GatsbyImage>
         </div>
       );
