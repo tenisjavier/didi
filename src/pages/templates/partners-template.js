@@ -18,6 +18,9 @@ const Partner = ({ data }) => {
     return image.title === "cl.PartnerCTA.image";
   })[0];
 
+  console.log("partners", partners);
+  console.log("heroImage", heroImage);
+
   return (
     <Layout title={heroTitle} desc={heroDesc}>
       <PartnerHero

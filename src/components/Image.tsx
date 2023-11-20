@@ -37,8 +37,8 @@ const Image = ({ imageData, imageStyle, src }: ImageProps) => {
 
   return (
     <GatsbyImage
-      image={imageData.gatsbyImageData as IGatsbyImageData}
-      alt={imageData.description}
+      image={imageData?.gatsbyImageData as IGatsbyImageData}
+      alt={imageData?.description}
       className={imageStyle}
     ></GatsbyImage>
   );
