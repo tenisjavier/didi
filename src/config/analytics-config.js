@@ -286,8 +286,8 @@ const insertBtnParams = () => {
     if (
       channelId === 17 &&
       (referringDomain === "" ||
-        referringDomain.indexOf("didiglobal.com") > -1 ||
-        referringDomain.indexOf("99app.com") > -1)
+        referringDomain.indexOf("didi") > -1 ||
+        referringDomain.indexOf("99") > -1)
     ) {
       channelId = 19;
       pid = "website_seo";
