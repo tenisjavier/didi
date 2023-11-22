@@ -2201,5 +2201,11 @@
   "DiDiAirporCitytHero.bgColor": "bg-blue-primary",
   "DiDiAirporCitytHero.btnMode": "light",
   "DiDiAirporCitytHero.btnText": "Pide tu viaje",
-  "DiDiAirporCitytHero.textColor": "white"
+  "DiDiAirporCitytHero.textColor": "white",
+  "DiDiAirporDistance.title": "¿Desde que puntos de la {{cityName}} se puede llegar de forma rápido, segura y accesible?",
+  "DiDiAirporDistance.bgColor": "bg-white",
+  "DiDiAirporDistance.textColor": "gray-primary",
+  "DiDiAirporInterstingPoints.title": "Puntos de interés en el aeropuerto de {{cityName}}",
+  "DiDiAirporInterstingPoints.bgColor": "bg-white",
+  "DiDiAirporInterstingPoints.textColor": "gray-primary"
 }
