@@ -21,7 +21,7 @@ interface FAQProps {
 }
 
 const DiDiAirportInterstingPoints = ({ data, cityName }: FAQProps) => {
-  let items = data.faq.map((node) => {
+  let items = data?.faq?.map((node) => {
     return {
       title: node.title,
       content: node.content,

@@ -4,21 +4,24 @@ import Layout from "../../components/Layout";
 import DiDiAiportCityHero from "../../components/sections/Airport/DiDiAiportCityHero";
 import DiDiAirportDistanceFaqs from "../../components/sections/Airport/DiDiAirportDistanceFaqs";
 import DiDiAirportInterstingPoints from "../../components/sections/Airport/DiDiAirportInterstingPoints";
-import FaqList from "../../components/sections/FaqList";
 
 const Airport = ({ data }) => {
-  const { name, imageMap, product, slug, country } = data.contentfulCity;
+  const { name, imageMap, product } = data.contentfulCity;
 
-  const link = `/${country.code}/aeropuerto/${slug}/`;
+  const productInterstingPoints = product.find(
+    (item) => item.name === "DiDi Airport Interest Point MX"
+  );
 
-  const faqsInterstingPoints = product
-    .find((item) => item.name === "DiDi Airport Interest Point MX")
-    .faq.filter((item) => item.relatedCity === name)
+  const productDistance = product.find(
+    (item) => item.name === "DiDi Airport Distance MX"
+  );
+
+  const faqsInterstingPoints = productInterstingPoints.faq
+    .filter((item) => item.relatedCity === name)
     .reverse();
 
-  const faqsDistance = product
-    .find((item) => item.name === "DiDi Airport Distance MX")
-    .faq.filter((item) => item.relatedCity === name)
+  const faqsDistance = productDistance?.faq
+    .filter((item) => item.relatedCity === name)
     .reverse();
 
   return (
