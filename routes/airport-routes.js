@@ -6,18 +6,14 @@ const slugify = require("slugify");
 const airportRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulCity(
-        filter: {
-          product: { elemMatch: { category: { in: "driver" } } }
-          hasAirport: { eq: true }
-        }
-      ) {
+      allContentfulCity(filter: { hasAirport: { eq: true } }) {
         nodes {
           country {
             code
           }
           slug
           id
+          name
         }
       }
     }
@@ -41,17 +37,24 @@ const airportRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulCity.nodes.forEach((node) => {
-    const { id, slug, country } = node;
+    const { id, slug, country, name } = node;
 
     let path = `/${customSlugify(country.code)}/airport/${customSlugify(
       slug
     )}/`;
+
+    if (country.code === "mx") {
+      path = `/${customSlugify(country.code)}/aeropuerto/${customSlugify(
+        slug
+      )}/`;
+    }
 
     createPage({
       path: path,
       component: template,
       context: {
         id,
+        name,
       },
     });
   });

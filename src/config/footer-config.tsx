@@ -27,6 +27,7 @@ const footerLinks: AllFooterInterface = {
     { text: "Legal", link: "/mx/legal/" },
     { text: "Carreras", link: "https://careers.didiglobal.com/" },
     { text: "Newsroom", link: "/mx/newsroom/" },
+    { text: "Aeropuerto", link: "/mx/aeropuerto/" }
   ],
   do: [
     { text: "Socio Conductor", link: "/do/conductor/" },
