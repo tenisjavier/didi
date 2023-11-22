@@ -2072,42 +2072,68 @@
     {
       "title": "Justo",
       "imageName": "Justo",
-      "desc": "35% de cashback con vigencia de 30 días en el wallets Justo. PromoCode Septiembre: {DIDICARDJ1}"
+      "desc": "35% de cashback",
+      "linkItem": "/mx/didimas/justo/"
     },
     {
       "title": "Office Depot",
       "imageName": "Office Depot",
-      "desc": "10% off en tienda online con DiDi Card usando el código {DiDi-12AC}"
+      "desc": "10% off en tienda online",
+      "linkItem": "/mx/didimas/office-depot/"
     },
     {
       "title": "Radioshack",
       "imageName": "Radioshack",
-      "desc": "10% off en compra mínima de $1,4999 en bocinas y audífonos con el código: {DIDIRS-AUD}"
+      "desc": "10% off ",
+      "linkItem": "/mx/didimas/radioshack/"
     },
     {
       "title": "Medicato",
       "imageName": "Medicato",
-      "desc": "60% off en la suscripción mensual, trimestral o anual."
+      "desc": "60% off en la suscripción",
+      "linkItem": "/mx/didimas/medicato/"
     },
     {
       "title": "Coderhouse",
       "imageName": "Coderhouse",
-      "desc": "25% off adicional en la CoderBeca en todos los cursos y carreras usando el código: {didicoder}"
+      "desc": "25% off adicional en la CoderBeca ",
+      "linkItem": "/mx/didimas/coderhouse-mx/"
+    },
+    {
+      "title": "Smart Fit",
+      "imageName": "Smartfit",
+      "desc": "Inscripción a sólo $10 en el SMART PLAN o inscripción a $10 + primer mes a $399 en el BLACK PLAN",
+      "linkItem": "/mx/didimas/smart-fit/"
+    },
+    {
+      "title": "Envia Flores",
+      "imageName": "Envia Flores",
+      "desc": "16% off",
+      "linkItem": "/mx/didimas/envia-flores/"
+    },
+    {
+      "title": "Fitpass",
+      "imageName": "fitpass_logo",
+      "desc": "10% en el primer mes de la membresía Fitpass Pro",
+      "linkItem": "/mx/didimas/fitpass/"
     },
     {
       "title": "Innerassiste",
       "imageName": "Innerassiste",
-      "desc": "Hasta 45% de descuento en el seguro de tu mascota y hasta 30% de descuento en el seguro de tu dispositivos electrónicos"
+      "desc": "Hasta 45% de descuento en el seguro de tu mascota",
+      "linkItem": "/mx/didimas/innerasisste/"
     },
     {
       "title": "Cinepolis",
       "imageName": "Cinepolis",
-      "desc": "2x1 en boletos en sala tradicional en Cinepolis con el código {26FD86YBE5QC4FWD}"
+      "desc": "2x1 en boletos",
+      "linkItem": "/mx/didimas/cinepolis-mx/"
     },
     {
       "title": "Mercado Libre",
       "imageName": "Mercado Libre",
-      "desc": "10% off en Mercadolibre con el código {MASTER10}"
+      "desc": "10% off",
+      "linkItem": "/mx/didimas/mercadolibre/"
     }
   ],
   "DiDiCreditBlogHero.title": "Blog",
