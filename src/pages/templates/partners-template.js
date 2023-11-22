@@ -30,13 +30,15 @@ const Partner = ({ data }) => {
         btnLink={promoLink}
         btnLinkText={promoLinkText}
       ></PartnerHero>
-      <PartnerFeature
-        title={featureTitle}
-        desc={featureDesc}
-        image={featureImage}
-        btnLink={promoLink}
-        btnLinkText={promoLinkText}
-      ></PartnerFeature>
+       {featureTitle && (
+        <PartnerFeature
+          title={featureTitle}
+          desc={featureDesc}
+          image={featureImage}
+          btnLink={promoLink}
+          btnLinkText={promoLinkText}
+        ></PartnerFeature>
+      )}
       <PartnerContent content={content}></PartnerContent>
       <PartnersGrid data={partners}></PartnersGrid>
       <PartnersCTA image={partnerCTAImage}></PartnersCTA>
