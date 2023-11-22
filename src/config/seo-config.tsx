@@ -315,6 +315,11 @@ const seoMeta: AllSEOMetaInterface = {
       title: "Términos y Condiciones y Políticas de Privacidad.",
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
     },
+    "/aeropuerto/": {
+      title: "DiDi Aeropuerto",
+      desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
+    }
+
   },
   do: {
     "/": {
@@ -1007,7 +1012,7 @@ const getMetaByPath = (
   path: string
 ): SEOMetaItemInterface => {
   const placeRegex =
-    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/newsroom\/(.+))|(\/centro-de-ayuda\/(.+))|(\/help-center\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/conductor\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))/;
+    /(\/lugares\/(.+))|(\/articulos\/(.+))|(\/legal\/(.+))|(\/newsroom\/(.+))|(\/centro-de-ayuda\/(.+))|(\/help-center\/(.+))|(\/guias\/(.+))|(\/ciudades\/(.+))|(\/driver\/(.+))|(\/conductor\/(.+))|(\/rider\/(.+))|(\/food\/city\/(.+))|(\/food\/blog\/(.+))|(\/aeropuerto\/(.+))/;
   const defaultMetas = {
     title: "DiDi Global: More than a Journey",
     desc: "Didi Chuxing is the world’s leading mobile transportation platform. The company offers a full range of mobile tech-based mobility options for over 450 million users, including Taxi, Premier, Express, Hitch, Luxe, Bus, Designated Driving, Car Rental, Enterprise Solutions and Bike-Sharing",
@@ -1022,9 +1027,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-        title: placeTitle,
-        desc: `${placeTitle}`,
-      }
+      title: placeTitle,
+      desc: `${placeTitle}`,
+    }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;
