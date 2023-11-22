@@ -28,7 +28,7 @@ const PartnerHero = ({
     textColor: t("PartnerHero.textColor"),
     bgColor: t("PartnerHero.bgColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-100 rounded",
+    imageStyle: "z-10 m-4 w-100 rounded object-fit-contain",
     btnMode: t("PartnerHero.btnMode"),
     ...(!btnLinkText ? { btnType: "drv" } : {}),
     reverse: true,

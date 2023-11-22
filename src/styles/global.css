@@ -205,3 +205,7 @@ section.main-text ol li {
     height: 450px;
   }
 }
+
+.object-fit-contain img {
+  object-fit: contain !important;
+}

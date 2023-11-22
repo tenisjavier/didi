@@ -23,6 +23,9 @@ const Beneficios = ({ data }) => {
     "Medicato",
     "Innerassiste",
     "Mercado Libre",
+    "Smartfit",
+    "Envia Flores",
+    "fitpass_logo"
   ];
   
   const beneficiosColumnsImage = images.filter((image) => {
@@ -47,7 +50,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.BeneficiosHero.image)|(mx.CreditFaqCard.image)|(Cinepolis)|(Coderhouse)|(Justo)|(Radioshack)|(Office Depot)|(Medicato)|(Innerassiste)|(Mercado Libre)/"
+          regex: "/(mx.BeneficiosHero.image)|(mx.CreditFaqCard.image)|(Cinepolis)|(Coderhouse)|(Justo)|(Radioshack)|(Office Depot)|(Medicato)|(Innerassiste)|(Mercado Libre)|(Smartfit)|(Envia Flores)|(fitpass_logo)/"
         }
       }
       sort: { title: ASC }
