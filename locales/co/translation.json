@@ -1067,7 +1067,7 @@
   "DiDiAmigoHero.desc": "Referí conductores, aunque no seas uno, para generar ganancias. Vos referís, ellos manejan, todos ganan.",
   "DiDiAmigoHero.textColor": "white",
   "DiDiAmigoHero.btnText": "Regístrate Ahora",
-  "DiDiAmigoHero.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=CO&byPromoterPersonTool=1#/driver",
+  "DiDiAmigoHero.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=AR&byPromoterPersonTool=1#/driver",
   "DiDiAmigoHero.btnMode": "light",
   "DiDiAmigoColumns.title": "¿Cómo generar ganancias con DiDi amigo?",
   "DiDiAmigoColumns.bgColor": "bg-gray-light",
@@ -1096,5 +1096,5 @@
   "DiDiAmigoBanner.bgColor": "bg-blue-primary",
   "DiDiAmigoBanner.btnMode": "light",
   "DiDiAmigoBanner.btnText": "Registrate ahora",
-  "DiDiAmigoBanner.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=CO&byPromoterPersonTool=1#/driver"
+  "DiDiAmigoBanner.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=AR&byPromoterPersonTool=1#/driver"
 }
