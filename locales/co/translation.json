@@ -1062,5 +1062,39 @@
   "EntregaCityList.desc": "Descubre las ciudades de Colombia donde esta operando DiDi Entrega",
   "EntregaCityList.bgColor": "bg-white",
   "EntregaCityList.textColor": "gray-primary",
-  "EntregaCityList.linkItem": "/co/conductor/conductor-en-{{city}}/"
+  "EntregaCityList.linkItem": "/co/conductor/conductor-en-{{city}}/",
+  "DiDiAmigoHero.title": "DiDi Amigo",
+  "DiDiAmigoHero.desc": "Referí conductores, aunque no seas uno, para generar ganancias. Vos referís, ellos manejan, todos ganan.",
+  "DiDiAmigoHero.textColor": "white",
+  "DiDiAmigoHero.btnText": "Regístrate Ahora",
+  "DiDiAmigoHero.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=CO&byPromoterPersonTool=1#/driver",
+  "DiDiAmigoHero.btnMode": "light",
+  "DiDiAmigoColumns.title": "¿Cómo generar ganancias con DiDi amigo?",
+  "DiDiAmigoColumns.bgColor": "bg-gray-light",
+  "DiDiAmigoColumns.textColor": "gray-primary",
+  "DiDiAmigoColumns.columns": [
+    {
+      "title": "Regístrate"
+    },
+    {
+      "title": "Referí"
+    },
+    {
+      "title": "Generá ganancias"
+    }
+  ],
+  "DiDiAmigoLegal.title": "Conocé los avisos de privacidad.",
+  "DiDiAmigoLegal.desc": "Leé atentamente las condiciones antes de referir.",
+  "DiDiAmigoLegal.textColor": "white",
+  "DiDiAmigoLegal.bgColor": "bg-orange-primary",
+  "DiDiAmigoLegal.btnMode": "light",
+  "DiDiAmigoLegal.btnText": "Términos y condiciones",
+  "DiDiAmigoLegal.btnLink": "https://privacycenter.didiglobal.com/CO/privacy-notice/2fc1f1dd95289a395c91245028383bed/Colombia",
+  "DiDiAmigoBanner.title": "Comenzá a referir ahora.",
+  "DiDiAmigoBanner.desc": "Comenzá tu proceso de registro.",
+  "DiDiAmigoBanner.textColor": "white",
+  "DiDiAmigoBanner.bgColor": "bg-blue-primary",
+  "DiDiAmigoBanner.btnMode": "light",
+  "DiDiAmigoBanner.btnText": "Registrate ahora",
+  "DiDiAmigoBanner.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=CO&byPromoterPersonTool=1#/driver"
 }

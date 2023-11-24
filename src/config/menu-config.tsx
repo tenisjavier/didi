@@ -686,6 +686,10 @@ const menuLinks: AllMenuInterface = {
           text: "Historias de Éxito",
           url: "/co/conductor/historias-de-exito/",
         },
+        {
+          text: "DiDi Amigo",
+          url: "/co/conductor/didi-amigo/",
+        }
       ],
     },
     {
