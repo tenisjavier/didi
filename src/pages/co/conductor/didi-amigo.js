@@ -50,12 +50,12 @@ export const query = graphql`
     }
     allContentfulFaq(
       filter: {
-        country: { code: { eq: "ar" } }
+        country: { code: { eq: "co" } }
         title: {
           in: [
-            "¿Cómo registrarte en DiDi Amigo?"
+            "¿Cómo funciona la plataforma ?"
             "¿Cómo recibir tus ganancias?"
-            "¿Cómo funciona la plataforma?"
+            "¿Cómo registrarse en DiDi Amigo?"
           ]
         }
       }
