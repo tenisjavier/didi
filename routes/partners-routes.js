@@ -10,6 +10,7 @@ const partnersRoutesInit = async (graphql, createPage) => {
         nodes {
           id
           slug
+          category
           country {
             code
           }
@@ -29,9 +30,10 @@ const partnersRoutesInit = async (graphql, createPage) => {
   const template = path.resolve(templatePath);
 
   result.data.allContentfulPartner.nodes.forEach((node) => {
-    const { id, slug, country } = node;
+    const { id, slug, country, category } = node;
     if (country?.code) {
       let path = `/${country?.code}/didimas/${slug}`;
+
       const sslCountries = [
         "cl",
         "pe",
@@ -44,17 +46,30 @@ const partnersRoutesInit = async (graphql, createPage) => {
         "mx",
       ];
 
+      if (category.includes("creditCard")) {
+        createPage({
+          path: `/${country?.code}/tarjeta-de-credito/beneficios/${slug}`,
+          component: template,
+          context: {
+            id: id,
+            countryCode: country.code,
+            category,
+          },
+        });
+      }
+
       if (!sslCountries.includes(country.code)) {
         path = `/${country?.code}/didi-advance/${slug}`;
       }
 
-      if(country?.code === "co") {
+      if (country?.code === "co") {
         createPage({
           path: `/${country?.code}/didimas/privado/${slug}`,
           component: template,
           context: {
             id: id,
             countryCode: country.code,
+            category,
           },
         });
 
@@ -64,8 +79,13 @@ const partnersRoutesInit = async (graphql, createPage) => {
           context: {
             id: id,
             countryCode: country.code,
+            category,
           },
         });
+      }
+
+      if (category.includes("creditCard") && !category.includes("didimas")) {
+        return;
       }
 
       createPage({
@@ -74,6 +94,7 @@ const partnersRoutesInit = async (graphql, createPage) => {
         context: {
           id: id,
           countryCode: country.code,
+          category,
         },
       });
     }
