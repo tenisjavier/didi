@@ -2220,7 +2220,7 @@
   "DiDiAirportHero.btnType": "pax",
   "DiDiAirportCityList.title": "Tu Aeropuerto Ideal a un Clic de Distancia",
   "DiDiAirportCityList.desc": "¿Necesitas detalies sobre cómo moverte desde el aeropuerto de llegada o salida? Selecciona tu aeropuerto y obtén información adicional",
-  "DiDiAirportCityList.linkItem": "/mx/airport/{{slug}}",
+  "DiDiAirportCityList.linkItem": "/mx/aeropuerto/{{slug}}",
   "DiDiAirportCityList.bgColor": "bg-white",
   "DiDiAirportCityList.textColor": "gray-primary",
   "DiDiAirporCitytHero.title": "Ciudades cercanas al \n aeropuerto de la \n {{cityName}} \n en donde opera DiDi",

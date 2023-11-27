@@ -11,7 +11,6 @@ interface ListProps {
 }
 
 const DiDiAirportCityList = ({ data }: ListProps) => {
-  console.log(data);
   const items = data.map((city) => {
     return {
       text: city.name,
