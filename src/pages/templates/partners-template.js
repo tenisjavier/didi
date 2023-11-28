@@ -30,7 +30,7 @@ const Partner = ({ data }) => {
         btnLink={promoLink}
         btnLinkText={promoLinkText}
       ></PartnerHero>
-       {featureTitle && (
+      {featureTitle && (
         <PartnerFeature
           title={featureTitle}
           desc={featureDesc}
@@ -49,7 +49,7 @@ const Partner = ({ data }) => {
 export default Partner;
 
 export const query = graphql`
-  query ($id: String, $countryCode: String) {
+  query ($id: String, $countryCode: String, $category: [String]) {
     contentfulPartner(id: { eq: $id }) {
       heroTitle
       heroDesc
@@ -79,12 +79,17 @@ export const query = graphql`
       }
     }
     allContentfulPartner(
-      filter: { country: { code: { eq: $countryCode } }, id: { ne: $id } }
+      filter: {
+        country: { code: { eq: $countryCode } }
+        id: { ne: $id }
+        category: { in: $category }
+      }
     ) {
       nodes {
         name
         slug
         desc
+        category
         logo {
           gatsbyImageData(height: 150)
           description

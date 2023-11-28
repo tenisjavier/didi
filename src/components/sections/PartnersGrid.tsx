@@ -8,6 +8,7 @@ interface PartnersGridProps {
   data: {
     name: string;
     desc: string;
+    category: string;
     logo: {
       title: string;
       description: string;
@@ -30,9 +31,18 @@ const PartnersGrid = ({
 }: PartnersGridProps) => {
   const PropColumns = data.map((partner) => {
     const image = partner.logo;
-    const link = t("PartnersGrid.linkItem", {
+
+    let link = t("PartnersGrid.linkItem", {
       partnerName: partner.slug,
     });
+
+    if (partner?.category?.includes("creditCard")) {
+      link = t("PartnersGrid.linkItem2", {
+        partnerName: partner.slug,
+      });
+    }
+
+
     return {
       title: <Link to={link}>{partner.name}</Link>,
       desc: partner.desc,

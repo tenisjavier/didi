@@ -897,6 +897,7 @@
   "PartnersGrid.title": "Esto es solo el comienzo, pronto vendrán más promociones",
   "PartnersGrid.textColor": "gray-primary",
   "PartnersGrid.linkItem": "/mx/didimas/{{partnerName}}/",
+  "PartnersGrid.linkItem2": "/mx/tarjeta-de-credito/beneficios/{{partnerName}}/",
   "PartnerColumns.title": "Conoce los beneficios que tenemos para ti",
   "PartnerColumns.columns": [
     {
@@ -2065,67 +2066,67 @@
       "title": "Justo",
       "imageName": "Justo",
       "desc": "35% de cashback",
-      "linkItem": "/mx/didimas/justo/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/justo/"
     },
     {
       "title": "Office Depot",
       "imageName": "Office Depot",
       "desc": "10% off en tienda online",
-      "linkItem": "/mx/didimas/office-depot/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/office-depot/"
     },
     {
       "title": "Radioshack",
       "imageName": "Radioshack",
       "desc": "10% off ",
-      "linkItem": "/mx/didimas/radioshack/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/radioshack/"
     },
     {
       "title": "Medicato",
       "imageName": "Medicato",
       "desc": "60% off en la suscripción",
-      "linkItem": "/mx/didimas/medicato/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/medicato/"
     },
     {
       "title": "Coderhouse",
       "imageName": "Coderhouse",
       "desc": "25% off adicional en la CoderBeca ",
-      "linkItem": "/mx/didimas/coderhouse-mx/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/coderhouse-mx/"
     },
     {
       "title": "Smart Fit",
       "imageName": "Smartfit",
       "desc": "Inscripción a sólo $10 en el SMART PLAN o inscripción a $10 + primer mes a $399 en el BLACK PLAN",
-      "linkItem": "/mx/didimas/smart-fit/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/smart-fit/"
     },
     {
       "title": "Envia Flores",
       "imageName": "Envia Flores",
       "desc": "16% off",
-      "linkItem": "/mx/didimas/envia-flores/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/envia-flores/"
     },
     {
       "title": "Fitpass",
       "imageName": "fitpass_logo",
       "desc": "10% en el primer mes de la membresía Fitpass Pro",
-      "linkItem": "/mx/didimas/fitpass/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/fitpass/"
     },
     {
       "title": "Innerassiste",
       "imageName": "Innerassiste",
       "desc": "Hasta 45% de descuento en el seguro de tu mascota",
-      "linkItem": "/mx/didimas/innerasisste/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/innerasisste/"
     },
     {
       "title": "Cinepolis",
       "imageName": "Cinepolis",
       "desc": "2x1 en boletos",
-      "linkItem": "/mx/didimas/cinepolis-mx/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/cinepolis-mx/"
     },
     {
       "title": "Mercado Libre",
       "imageName": "Mercado Libre",
       "desc": "10% off",
-      "linkItem": "/mx/didimas/mercadolibre/"
+      "linkItem": "/mx/tarjeta-de-credito/beneficios/mercadolibre/"
     }
   ],
   "DiDiCreditBlogHero.title": "Blog",
