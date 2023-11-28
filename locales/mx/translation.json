@@ -1678,10 +1678,6 @@
           "address": "C. Hidalgo 516, Centro, Fundo Legal, 85000 Cd Obregón, Son."
         },
         {
-          "city": "Colima",
-          "address": "FastOffice, Aldama #552, Piso 2 Int. 11, Colonia Centro, 28000 Colima, Col."
-        },
-        {
           "city": "Cuernavaca",
           "address": "Plaza Corporativo DD 1000 Av. Domingo diez 1003 Col del empleado Cuernavaca Morelos CP 62230."
         },
@@ -1720,10 +1716,6 @@
         {
           "city": "Los Mochis – Guasave",
           "address": "Blvd. Rosendo G. Castro Pte. 518, Local 5, Centro, 81200 Los Mochis, Sin."
-        },
-        {
-          "city": "Manzanillo",
-          "address": "Edificio Torre Puerto. Blvd. Miguel de la Madrid 426, Piso 1 Int. 17, 28239 Manzanillo, Col."
         },
         {
           "city": "Mazatlán",
@@ -1767,7 +1759,7 @@
         },
         {
           "city": "Tepic",
-          "address": "City Express. Colima 93 Sur Col, San Antonio, 63159 Tepic, Nay."
+          "address": "Buenos AAires 68, Cd del Valle, 63157 Tepic, Nay."
         },
         {
           "city": "Tijuana",
