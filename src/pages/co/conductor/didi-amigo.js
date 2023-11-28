@@ -53,7 +53,7 @@ export const query = graphql`
         country: { code: { eq: "co" } }
         title: {
           in: [
-            "¿Cómo funciona la plataforma ?"
+            "¿Cómo funciona el programa ?"
             "¿Cómo recibir tus ganancias?"
             "¿Cómo registrarse en DiDi Amigo?"
           ]
