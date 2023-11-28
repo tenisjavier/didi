@@ -1064,12 +1064,12 @@
   "EntregaCityList.textColor": "gray-primary",
   "EntregaCityList.linkItem": "/co/conductor/conductor-en-{{city}}/",
   "DiDiAmigoHero.title": "DiDi Amigo",
-  "DiDiAmigoHero.desc": "Referí conductores, aunque no seas uno, para generar ganancias. Vos referís, ellos manejan, todos ganan.",
+  "DiDiAmigoHero.desc": "Refiere usuarios arrendadores, aunque no seas uno, para generar ganancias. Tú refieres, ellos se conectan , todos ganan.",
   "DiDiAmigoHero.textColor": "white",
   "DiDiAmigoHero.btnText": "Regístrate Ahora",
   "DiDiAmigoHero.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=AR&byPromoterPersonTool=1#/driver",
   "DiDiAmigoHero.btnMode": "light",
-  "DiDiAmigoColumns.title": "¿Cómo generar ganancias con DiDi amigo?",
+  "DiDiAmigoColumns.title": "¿Cómo generar ganancias usando DiDi amigo?",
   "DiDiAmigoColumns.bgColor": "bg-gray-light",
   "DiDiAmigoColumns.textColor": "gray-primary",
   "DiDiAmigoColumns.columns": [
@@ -1077,10 +1077,10 @@
       "title": "Regístrate"
     },
     {
-      "title": "Referí"
+      "title": "Refiere"
     },
     {
-      "title": "Generá ganancias"
+      "title": "Genera ganancias"
     }
   ],
   "DiDiAmigoLegal.title": "Conocé los avisos de privacidad.",
