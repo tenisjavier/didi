@@ -6,6 +6,7 @@ import {
 } from "gatsby-source-contentful/rich-text";
 
 interface FAQProps {
+  title?: string;
   faqs: {
     title: string;
     content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
@@ -15,7 +16,7 @@ interface FAQProps {
   }[];
 }
 
-const DiDiAmigoFAQ = ({ faqs }: FAQProps) => {
+const DiDiAmigoFAQ = ({ faqs, title }: FAQProps) => {
   const items = faqs.map((con) => {
     return {
       title: con.title,
@@ -23,7 +24,7 @@ const DiDiAmigoFAQ = ({ faqs }: FAQProps) => {
     };
   });
 
-  const title = "Conocé más sobre DiDi Amigo";
+  title = title || "Conocé más sobre DiDi Amigo";
 
   return (
     <AccordionSection

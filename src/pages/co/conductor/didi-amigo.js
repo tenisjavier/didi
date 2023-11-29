@@ -22,7 +22,10 @@ const DiDiAmigo = ({ data }) => {
     <Layout>
       <DiDiAmigoHero bgImage={amigoHeroBgImage}></DiDiAmigoHero>
       <DiDiAmigoColumns images={amigoColumnsImage}></DiDiAmigoColumns>
-      <DiDiAmigoFAQ faqs={faqs}></DiDiAmigoFAQ>
+      <DiDiAmigoFAQ
+        faqs={faqs}
+        title={"Conoce más sobre DiDi Amigo"}
+      ></DiDiAmigoFAQ>
       <DiDiAmigoLegal></DiDiAmigoLegal>
       <DiDiAmigoBanner></DiDiAmigoBanner>
     </Layout>
