@@ -65,7 +65,7 @@ const Index = ({ data }) => {
 
       <DriverCTA></DriverCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
-      <PaxCTA image={paxCTAImage}></PaxCTA>
+      <PaxCTA image={paxCTAImage} imageStyle="z-10 m-4 w-100 rounded"></PaxCTA>
       <HomeColumns></HomeColumns>
     </Layout>
   );
