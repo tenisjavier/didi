@@ -1083,18 +1083,18 @@
       "title": "Genera ganancias"
     }
   ],
-  "DiDiAmigoLegal.title": "Conocé los avisos de privacidad.",
-  "DiDiAmigoLegal.desc": "Leé atentamente las condiciones antes de referir.",
+  "DiDiAmigoLegal.title": "Conoce los avisos de privacidad.",
+  "DiDiAmigoLegal.desc": "Lee atentamente las condiciones antes de referir.",
   "DiDiAmigoLegal.textColor": "white",
   "DiDiAmigoLegal.bgColor": "bg-orange-primary",
   "DiDiAmigoLegal.btnMode": "light",
   "DiDiAmigoLegal.btnText": "Términos y condiciones",
   "DiDiAmigoLegal.btnLink": "https://privacycenter.didiglobal.com/CO/privacy-notice/2fc1f1dd95289a395c91245028383bed/Colombia",
-  "DiDiAmigoBanner.title": "Comenzá a referir ahora.",
-  "DiDiAmigoBanner.desc": "Comenzá tu proceso de registro.",
+  "DiDiAmigoBanner.title": "Comienza a referir ahora.",
+  "DiDiAmigoBanner.desc": "Comienza tu proceso de registro.",
   "DiDiAmigoBanner.textColor": "white",
   "DiDiAmigoBanner.bgColor": "bg-blue-primary",
   "DiDiAmigoBanner.btnMode": "light",
-  "DiDiAmigoBanner.btnText": "Registrate ahora",
+  "DiDiAmigoBanner.btnText": "Regístrate ahora",
   "DiDiAmigoBanner.btnLink": "https://page.didiglobal.com/ibt/promoter/index.html?lang=es-419&location_country=AR&byPromoterPersonTool=1#/driver"
 }
