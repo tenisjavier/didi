@@ -13,6 +13,13 @@
       "title": "DiDi Pasajero"
     }
   ],
+  "PaxCTAApp.title": "La nueva app de DiDi Conductor",
+  "PaxCTAApp.desc": "",
+  "PaxCTAApp.bullets": [
+    "Más claridad en tus ganancias",
+    "Personaliza la forma en la que ves tus ingresos",
+    "Fácil de usar"
+  ],
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad.",
   "SafetyCTA.desc": "Conoce aquí las funcionalidades y medidas de seguridad que hemos tomado para que tu próxima solicitud de viaje en la app sea tan segura como tú esperas.",
   "SafetyCTA.textColor": "white",
