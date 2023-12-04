@@ -664,6 +664,13 @@
       "image": "/motorcycle.png"
     }
   ],
+  "PaxCTAApp.title": "La nueva app de DiDi Conductor",
+  "PaxCTAApp.desc": "",
+  "PaxCTAApp.bullets": [
+    "Más claridad en tus ganancias",
+    "Personalizá la forma en la que ves tus ingresos",
+    "Fácil de usar"
+  ],
   "VehicleSection.bulletTitle": "Hay un DiDi para ti.",
   "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuerdo a tus necesidades:",
   "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",

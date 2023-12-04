@@ -1083,6 +1083,13 @@
       "title": "Genera ganancias"
     }
   ],
+  "PaxCTAApp.title": "La nueva app para arrendadores",
+  "PaxCTAApp.desc": "",
+  "PaxCTAApp.bullets": [
+    "Más claridad en tus ganancias",
+    "Personaliza la forma en la que ves tus ingresos",
+    "Fácil de usar"
+  ],
   "DiDiAmigoLegal.title": "Conoce los avisos de privacidad.",
   "DiDiAmigoLegal.desc": "Lee atentamente las condiciones antes de referir.",
   "DiDiAmigoLegal.textColor": "white",

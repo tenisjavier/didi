@@ -15,6 +15,13 @@
       "title": "DiDi Food"
     }
   ],
+  "PaxCTAApp.title": "La nueva app de DiDi Conductor",
+  "PaxCTAApp.desc": "",
+  "PaxCTAApp.bullets": [
+    "Más claridad en tus ganancias",
+    "Personalizá la forma en la que ves tus ingresos",
+    "Fácil de usar"
+  ],
   "SafetyCTA.title": "En DiDi, tu seguridad es nuestra prioridad",
   "SafetyCTA.desc": "La seguridad de los Socios Conductores y usuarios es lo más importante para nosotros. Conocé las herramientas de seguridad que DiDi tiene a tu disposición para que viajés con tranquilidad.",
   "SafetyCTA.textColor": "white",

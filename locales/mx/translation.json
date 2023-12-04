@@ -66,6 +66,13 @@
   "PaxCTA.bullets": false,
   "PaxCTA.textColor": "gray-primary",
   "PaxCTA.btnMode": "primary",
+  "PaxCTAApp.title": "La nueva app de DiDi Conductor",
+  "PaxCTAApp.desc": "",
+  "PaxCTAApp.bullets": [
+    "Más claridad en tus ganancias",
+    "Personaliza la forma en la que ves tus ingresos",
+    "Fácil de usar"
+  ],
   "FleetAboutCTA.title": "DiDi Flotilla: Genera ganancias hasta durmiendo.",
   "FleetAboutCTA.desc": "¿Eres dueño de 1 o más autos? ¡Es momento de mejorar tus ganancias! Da de alta tu flotilla en la app DiDi Fleet. Monitorea y gestiona las ganancias de todos tus autos fácilmente desde tu celular.",
   "FleetAboutCTA.textColor": "gray-primary",
