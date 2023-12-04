@@ -8,9 +8,10 @@ interface PaxCTA {
     description: string;
     gatsbyImageData: any;
   };
+  imageStyle?: string;
 }
 
-const PaxCTA = ({ image }: PaxCTA) => {
+const PaxCTA = ({ image, imageStyle }: PaxCTA) => {
   const props: CTAProps = {
     hero: false,
     title: t("PaxCTA.title"),
@@ -18,7 +19,7 @@ const PaxCTA = ({ image }: PaxCTA) => {
     bullets: t("PaxCTA.bullets", { returnObjects: true }),
     textColor: t("PaxCTA.textColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-100 rounded-full",
+    imageStyle: imageStyle || "z-10 m-4 w-100 rounded-full",
     btnMode: t("PaxCTA.btnMode"),
     btnType: "pax",
     reverse: true,

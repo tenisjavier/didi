@@ -24,6 +24,8 @@ const Pasajero = ({ data }) => {
   return (
     <Layout>
       <PaxHero
+        bgImageStyle={"hidden z-0 brightness-90 md:block justify-content align-left p-20"}
+        bgColor="flex bg-orange-500 h-5 p-20"
         bgImage={paxHeroBgImage}
         mobileBgImage={paxHeroMobileBgImage}
       ></PaxHero>
