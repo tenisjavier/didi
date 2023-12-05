@@ -4,7 +4,7 @@ import { getBtnLinks } from "../config/btn-config";
 import gtmEvent from "../config/gtm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { ab } from "../config/ab";
+// import { ab } from "../config/ab";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 // import { ab } from "../config/ab";
@@ -81,22 +81,22 @@ const Btn = ({
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const versiontest = ab(
-    "2023-12-h5-vs-qb-a-t8",
-    "2023-12-h5-vs-qb-b-t8",
-    "t8"
-  );
+  // const versiontest = ab(
+  //   "2023-12-h5-vs-qb-a-t8",
+  //   "2023-12-h5-vs-qb-b-t8",
+  //   "t8"
+  // );
   if (btnType === "drv") {
-    btnLink = btnData.drvLink;
+    btnLink = btnData.drvLinkQB;
     btnText = btnText || btnData.drvText;
-    if (versiontest === "b") btnLink = btnData.drvLinkQB;
+    //if (versiontest === "b") btnLink = btnData.drvLinkQB;
   } else if (btnType === "drvWhatsapp") {
     btnLink = btnData.drvWhatsappLink;
     btnText = btnText || btnData.drvWhatsappText;
   } else if (btnType === "moto") {
-    btnLink = btnData.motoLink;
+    btnLink = btnData.motoLinkQB;
     btnText = btnText || btnData.motoText;
-    if (versiontest === "b") btnLink = btnData.motoLinkQB;
+    //if (versiontest === "b") btnLink = btnData.motoLinkQB;
   } else if (btnType === "pax") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
