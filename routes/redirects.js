@@ -2,6 +2,21 @@
 // @return: null
 const redirectsInit = async (graphql, createRedirect) => {
   createRedirect({
+    fromPath: `/mx/food/restaurantes/promociones-y-campanas/`,
+    toPath: `/mx/food/restaurantes/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/co/food/restaurantes/promociones-y-campanas/`,
+    toPath: `/co/food/restaurantes/`,
+    isPermanent: true,
+  });
+  createRedirect({
+    fromPath: `/cr/food/restaurantes/promociones-y-campanas/`,
+    toPath: `/cr/food/restaurantes/`,
+    isPermanent: true,
+  });
+  createRedirect({
     fromPath: `/mx/food/restaurantes/descarga/`,
     toPath: `/mx/food/restaurantes/`,
     isPermanent: true,
