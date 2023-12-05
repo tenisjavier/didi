@@ -87,7 +87,7 @@ const Btn = ({
   //   "t8"
   // );
   if (btnType === "drv") {
-    btnLink = btnData.drvLinkQB;
+    btnLink = btnData.drvLinkQB || btnData.drvLink;
     btnText = btnText || btnData.drvText;
     //if (versiontest === "b") btnLink = btnData.drvLinkQB;
   } else if (btnType === "drvWhatsapp") {
