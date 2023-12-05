@@ -17,6 +17,7 @@ import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 import VideoSection from "../../../components/sections/VideoSection";
 import ClubDiDiCTA from "../../../components/sections/ClubDiDiCTA";
 import WomenDiDiCTA from "../../../components/sections/WomenDiDiCTA";
+import PaxCTAApp from "../../../components/sections/PaxCTAApp";
 
 const Conductor = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -36,6 +37,9 @@ const Conductor = ({ data }) => {
   const aboutWomenDrvImage = images.filter((image) => {
     return image.title === "mx.WomenDiDiCTA.image";
   })[0];
+  const paxCTAAppImage = images.filter((image) => {
+    return image.title === "mx.PaxCTAApp.image";
+  })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
 
@@ -53,6 +57,7 @@ const Conductor = ({ data }) => {
       ></SilderSection>
       {/* <VideoSection></VideoSection> */}
       <Requirements data={products}></Requirements>
+      <PaxCTAApp image={paxCTAAppImage}></PaxCTAApp>
       <ClubDiDiCTA bgImage={clubDiDiBgImage}></ClubDiDiCTA>
       <WomenDiDiCTA image={aboutWomenDrvImage}></WomenDiDiCTA>
       <DrvCityList data={cities}></DrvCityList>
@@ -74,6 +79,7 @@ export const query = graphql`
             "mx.ClubDiDiCTA.bgImage"
             "mx.WomenDiDiCTA.image"
             "mx.DrvBenefits.image"
+            "mx.PaxCTAApp.image"
           ]
         }
       }
