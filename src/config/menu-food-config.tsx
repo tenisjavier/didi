@@ -44,10 +44,6 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/restaurantes/kit-digital/",
         },
         {
-          text: "Promociones y Campañas",
-          url: "/mx/food/restaurantes/promociones-y-campanas/",
-        },
-        {
           text: "Guías de uso de la app",
           url: "/mx/food/restaurantes/guias/",
         },
@@ -125,10 +121,6 @@ const menuLinksFood: AllMenuInterface = {
           text: "Kit Digital",
           url: "/cr/food/restaurantes/kit-digital/",
         },
-        {
-          text: "Promociones y Campañas",
-          url: "/cr/food/restaurantes/promociones-y-campanas/",
-        },
       ],
     },
     {
@@ -193,10 +185,6 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Kit Digital",
           url: "/co/food/restaurantes/kit-digital/",
-        },
-        {
-          text: "Promociones y Campañas",
-          url: "/co/food/restaurantes/promociones-y-campanas/",
         },
       ],
     },

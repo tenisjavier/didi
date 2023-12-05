@@ -9,14 +9,8 @@ import HeroCarrousel from "../../../components/sections/HeroCarrousel";
 import FoodDeliveryHero from "../../../components/sections/FoodDeliveryHero";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
 import FoodHero from "../../../components/sections/FoodHero";
-import { ab } from "../../../config/ab";
 
 const Food = ({ data }) => {
-  const version = ab(
-    "2023-11-FoodHomeOriginal-t7",
-    "2023-11-FoodHomeCarrousels-t7",
-    "t7"
-  );
   const [activeHero, setActiveHero] = useState(0);
   const updateHero = (id) => {
     setActiveHero(id);
@@ -147,13 +141,11 @@ const Food = ({ data }) => {
           updateHero={updateHero}
           position="onHero"
         ></HeroCarrousel>
-        {version === "b" && (
-          <DiDiFoodCarousel
-            images={DiDiFoodCarouselImagesSorted}
-          ></DiDiFoodCarousel>
-        )}
       </>
       <FoodColumns images={foodColumnsImages}></FoodColumns>
+      <DiDiFoodCarousel
+        images={DiDiFoodCarouselImagesSorted}
+      ></DiDiFoodCarousel>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>
       <FoodDeliveryCTA image={foodDeliveryCTAImage}></FoodDeliveryCTA>
     </Layout>
