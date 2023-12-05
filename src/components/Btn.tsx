@@ -4,6 +4,7 @@ import { getBtnLinks } from "../config/btn-config";
 import gtmEvent from "../config/gtm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { ab } from "../config/ab";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 // import { ab } from "../config/ab";
@@ -14,6 +15,7 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 export type BtnType =
   | "both"
   | "drv"
+  | "moto"
   | "drvWhatsapp"
   | "pax"
   | "fleet"
@@ -79,13 +81,22 @@ const Btn = ({
 
   const [isLoading, setIsLoading] = useState(false);
 
-  // const version = ab("2023-05-h5-vs-ws-a-t2", "2023-05-h5-vs-ws-b-t2", "t2");
+  const versiontest = ab(
+    "2023-12-h5-vs-qb-a-t8",
+    "2023-12-h5-vs-qb-b-t8",
+    "t8"
+  );
   if (btnType === "drv") {
     btnLink = btnData.drvLink;
     btnText = btnText || btnData.drvText;
+    if (versiontest === "b") btnLink = btnData.drvLinkQB;
   } else if (btnType === "drvWhatsapp") {
     btnLink = btnData.drvWhatsappLink;
     btnText = btnText || btnData.drvWhatsappText;
+  } else if (btnType === "moto") {
+    btnLink = btnData.motoLink;
+    btnText = btnText || btnData.motoText;
+    if (versiontest === "b") btnLink = btnData.motoLinkQB;
   } else if (btnType === "pax") {
     btnLink = btnData.paxLink;
     btnText = btnText || btnData.paxText;
@@ -167,10 +178,10 @@ const Btn = ({
     const url = new URL(link);
     let version = url.searchParams.get("ad_group_id")?.toString();
     if (url.searchParams.get("c")?.toString().includes("/food"))
-      version = localStorage.getItem("t7")?.toString();
-    if (btnType === "drv")
-      form = link.includes("quickbolt") ? "quickbolt" : "h5";
-
+      version = localStorage.getItem("t8")?.toString();
+    if (btnType === "drv") {
+      form = link.includes("silver-bullet-online") ? "quickbolt" : "h5";
+    }
     let firstVisitedPage;
     if (typeof window !== "undefined") {
       firstVisitedPage = window.localStorage.getItem("firstVisitedPage");
@@ -216,8 +227,9 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`${btnTextCenter ? "text-center" : ""
-          } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
+        className={`${
+          btnTextCenter ? "text-center" : ""
+        } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         {isLoading ? (
           <FontAwesomeIcon
