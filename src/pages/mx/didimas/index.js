@@ -62,10 +62,7 @@ const DiDiMas = ({ data }) => {
   });
 
   const partnerSeguros = partners.filter((partner) => {
-    return (
-      partner.name === "DiAseguro" ||
-      partner.name === "SpeeDee"
-    );
+    return partner.name === "DiAseguro";
   });
 
   const partnerSalud = partners.filter((partner) => {
@@ -90,7 +87,8 @@ const DiDiMas = ({ data }) => {
   const partnerProductos = partners.filter((partner) => {
     return (
       partner.name === "Claro - Autos y celulares" ||
-      partner.name === "Xiaomi Store"
+      partner.name === "Xiaomi Store" ||
+      partner.name === "SpeeDee"
     );
   });
 
