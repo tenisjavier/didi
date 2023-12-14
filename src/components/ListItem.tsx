@@ -16,7 +16,7 @@ const ListItem = ({ text, secondText, link, image, contentful_id }: ListItemProp
   const subText = secondText && secondText.slice(0, 40).concat("...");
 
   const item = link ? (
-    <div className={`id-${contentful_id} flex items-center justify-between px-4`}>
+    <div className={`id-${contentful_id} list-section-item flex items-center justify-between px-4`}>
       <span className="z-10">
         <p>
           <Link to={link}>{text}</Link>
