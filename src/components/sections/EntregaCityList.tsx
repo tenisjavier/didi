@@ -7,6 +7,7 @@ interface ListProps {
     name: string;
     slug: string;
     image: any;
+    contentful_id: string;
   }[];
 }
 
@@ -19,6 +20,7 @@ const EntregaCityList = ({ data }: ListProps) => {
         city: city.slug,
       }),
       image: city.image,
+      contentful_id: city.contentful_id
     };
   });
 

@@ -8,6 +8,7 @@ import {
 
 interface FAQProps {
   data: {
+    contentful_id: string;
     faq: {
       title: string;
       content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
@@ -38,6 +39,7 @@ const HelpCenterFAQDrv = ({ data }: FAQProps) => {
     bgAccordionColor: "bg-gray-light",
     items: items,
     type: "faq",
+    contentful_id: data.contentful_id
   };
 
   return <AccordionSection {...props}></AccordionSection>;

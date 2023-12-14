@@ -7,12 +7,14 @@ import {
 
 interface FAQProps {
   data: {
+    contentful_id: string;
     faq: {
       title: string;
       content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
       bgColor: string;
       textColor: string;
       type: string;
+      contentful_id: string;
     }[]
   };
 }
@@ -22,6 +24,7 @@ const HelpCenterFAQTaxi = ({ data }: FAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id
     };
   });
 
@@ -35,6 +38,7 @@ const HelpCenterFAQTaxi = ({ data }: FAQProps) => {
       title={title}
       items={items}
       type="faq"
+      contentful_id={data.contentful_id}
     ></AccordionSection>
   );
 };

@@ -27,6 +27,7 @@ export const query = graphql`
       name
       code
       city {
+        contentful_id
         name
         slug
         image {

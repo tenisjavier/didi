@@ -9,6 +9,7 @@ interface ListProps {
     secondText: string;
     link: string;
     image: any;
+    contentful_id: string;
   }[];
 }
 
@@ -19,6 +20,7 @@ const CityList = ({ cities }: ListProps) => {
       secondText: "",
       link: t("CityList.linkItem", { city: slugify(city.name) }),
       image: city.image,
+      contentful_id: city.contentful_id
     };
   });
 

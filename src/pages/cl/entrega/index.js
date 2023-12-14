@@ -59,6 +59,7 @@ export const query = graphql`
       sort: { name: ASC }
     ) {
       nodes {
+        contentful_id
         name
         slug
         image {

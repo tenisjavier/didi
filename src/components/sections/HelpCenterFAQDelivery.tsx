@@ -7,6 +7,7 @@ import {
 
 interface FAQProps {
   data: {
+    contentful_id: string;
     faq: {
       title: string;
       content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
@@ -42,6 +43,7 @@ const HelpCenterFAQDelivery = ({ data }: FAQProps) => {
       desc={desc}
       items={items}
       type="faq"
+      contentful_id={data.contentful_id}
     ></AccordionSection>
   );
 };
