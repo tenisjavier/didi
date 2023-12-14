@@ -9,9 +9,11 @@ export interface ListSectionProps {
     secondText?: string;
     link?: string;
     image?: any;
+    contentful_id?: string;
   }[];
   bgColor?: string;
   textColor?: string;
+  contentful_id?: string;
 }
 
 const ListSection = ({
@@ -20,10 +22,11 @@ const ListSection = ({
   items,
   bgColor,
   textColor,
+  contentful_id,
 }: ListSectionProps) => {
   return (
     <section
-      className={`container text-${textColor} ${bgColor} py-12 text-left w-full mx-auto`}
+      className={`id-${contentful_id} container text-${textColor} ${bgColor} py-12 text-left w-full mx-auto`}
     >
       <h2 className="text-3xl ">{title}</h2>
       <p>{desc}</p>

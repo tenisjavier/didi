@@ -68,6 +68,7 @@ export const query = graphql`
       nodes {
         name
         faq {
+          id
           title
           slug
           content {

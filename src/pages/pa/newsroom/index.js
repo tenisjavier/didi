@@ -35,6 +35,7 @@ export const query = graphql`
       limit: 10
     ) {
       nodes {
+        contentful_id
         title
         slug
         excerpt

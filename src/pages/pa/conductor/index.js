@@ -79,6 +79,7 @@ export const query = graphql`
       }
     ) {
       nodes {
+        contentful_id
         name
         description
         phone
@@ -98,6 +99,7 @@ export const query = graphql`
       sort: { name: ASC }
     ) {
       nodes {
+        contentful_id
         name
         slug
         image {

@@ -42,9 +42,9 @@ const Banner = ({
   if (!isRounded) rounded = "";
   return (
     <div
-      className={`${rounded} py-0 lg:py-4 ${bgColor && bgColor
+      className={`banner ${rounded} py-0 lg:py-4 ${bgColor && bgColor
         } text-${textColor} ${height && height} ${borderColor && "border-solid border border-" + borderColor
-        }`}
+        } ${reverse ? "reverse" : ""}`}
     >
       <div
         className={`container mx-auto flex flex-wrap ${reverse ? "flex-row-reverse" : ""
@@ -56,7 +56,7 @@ const Banner = ({
             }`}
         >
           <h3
-            className={`mb-2 text-3xl lg:text-4xl text-left lg:text-center font-bold `}
+            className={`banner-title mb-2 text-3xl lg:text-4xl text-left lg:text-center font-bold `}
           >
             {title}
           </h3>
@@ -64,9 +64,9 @@ const Banner = ({
           {descText &&
             descText
               .split("\n")
-              .map((str) => <p className=" text-lg">{str}</p>)}
+              .map((str) => <p className="banner-desc text-lg">{str}</p>)}
 
-          {desc && <p className="text-lg text-left lg:text-center">{desc}</p>}
+          {desc && <p className="banner-desc text-lg text-left lg:text-center">{desc}</p>}
           <span
             className={`flex justify-center ${btnText != "VideoSection.btnText" ? "" : "hidden"
               }`}
@@ -80,7 +80,7 @@ const Banner = ({
           </span>
         </div>
 
-        {image ? <div className="mb-5 max-w-6xl text-center">{image}</div> : ""}
+        {image ? <div className="banner-image mb-5 max-w-6xl text-center">{image}</div> : ""}
       </div>
     </div>
   );

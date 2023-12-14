@@ -13,9 +13,11 @@ interface FAQProps {
       bgColor: string;
       textColor: string;
       type: string;
+      contentful_id: string;
     }[]
   };
   isClosed: boolean;
+  contentful_id: string;
 }
 
 const HelpCenterFAQDelivery = ({ data }: FAQProps) => {
@@ -23,6 +25,7 @@ const HelpCenterFAQDelivery = ({ data }: FAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id
     };
   });
 

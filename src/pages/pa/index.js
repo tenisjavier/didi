@@ -41,16 +41,28 @@ const Index = ({ data }) => {
     return image.title === "pa.PaxCTA.image";
   })[0];
 
+  const homeColumnsImages = images.filter((image) => {
+    return (
+      image.title === "logo-question" ||
+      image.title === "logo-document" ||
+      image.title === "logo-quotes"
+    );
+  });
+
   return (
     <Layout sb={false}>
-      <>
-        <div className={`${activeHero !== 0 && "hidden"} `}>
+      <div className="carousel-section">
+        <divconte
+          className={`${activeHero !== 0 && "hidden"} carousel-section-item`}
+        >
           <DrvHero
             bgImage={drvHeroBgImage}
             mobileBgImage={drvHeroMobileBgImage}
           ></DrvHero>
-        </div>
-        <div className={`${activeHero !== 1 && "hidden"} `}>
+        </divconte>
+        <div
+          className={`${activeHero !== 1 && "hidden"} carousel-section-item`}
+        >
           <PaxHero
             bgImage={paxHeroBgImage}
             mobileBgImage={paxHeroMobileBgImage}
@@ -60,7 +72,7 @@ const Index = ({ data }) => {
           images={carrouselIcons}
           updateHero={updateHero}
         ></HeroCarrousel>
-      </>
+      </div>
       <DriverCTA></DriverCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
@@ -86,6 +98,9 @@ export const query = graphql`
             "carrousel-icon-pax"
             "pa.SafetyCTA.image"
             "pa.PaxCTA.image"
+            "logo-question"
+            "logo-document"
+            "logo-quotes"
           ]
         }
       }

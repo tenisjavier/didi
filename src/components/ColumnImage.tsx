@@ -25,17 +25,17 @@ const ColumnImage = ({
   if (imageAlignment === "center") indexImage = 1;
   if (imageAlignment === "right") indexImage = 2;
   return (
-    <section className={`${bgColor} text-${textColor} py-12`}>
+    <section className={`column-image ${bgColor} text-${textColor} py-12`}>
       <div className="container mx-auto flex w-full  flex-col justify-center">
         {title && (
-          <h2 className="text-3xl lg:text-4xl text-left lg:text-center">
+          <h2 className="column-image-title text-3xl lg:text-4xl text-left lg:text-center">
             {title}
           </h2>
         )}
-        {desc && <p className="text-center">{desc}</p>}
+        {desc && <p className="column-image-desc text-center">{desc}</p>}
 
         <div
-          className={`mt-10 grid-cols-1 gap-2 md:grid md:grid-cols-3 align-center justify-center `}
+          className={`columns mt-10 grid-cols-1 gap-2 md:grid md:grid-cols-3 align-center justify-center `}
         >
           {columns.map((col, index) => {
             if (index === 0)

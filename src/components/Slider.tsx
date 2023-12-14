@@ -58,9 +58,9 @@ const SliderSection = ({ title, items }: SliderProps) => {
     "transition-opacity transition-colors duration-500 ease-in opacity-770 text-gray-300 text-base lg:text-lg mr-3 cursor-pointer";
 
   return (
-    <section className="min-h-[40rem]">
+    <section className="slider-section min-h-[40rem]">
       <div className="container mx-auto text-gray-primary">
-        <h2 className="mt-10 text-left lg:text-center text-3xl lg:text-4xl font-bold">
+        <h2 className="slider-section-title mt-10 text-left lg:text-center text-3xl lg:text-4xl font-bold">
           {title}
         </h2>
         <div className="group relative my-4  mx-2 h-128 lg:mx-20 lg:h-110">
@@ -95,15 +95,15 @@ const SliderSection = ({ title, items }: SliderProps) => {
                   ></Image>
                 </div>
                 <div className={idx === index ? textShow : textHide}>
-                  <h3 className="mt-0 text-center  text-2xl lg:text-3xl font-bold">
+                  <h3 className="slider-content-title mt-0 text-center  text-2xl lg:text-3xl font-bold">
                     {data.name}
                   </h3>
-                  <p className="my-2 text-justify text-base  2xl:text-lg">
+                  <p className="slider-content-desc my-2 text-justify text-base  2xl:text-lg">
                     {data.description && data.description}
                     {data.descriptionForPax && data.descriptionForPax}
                   </p>
                   {data.des2 ? (
-                    <p className="my-2 text-justify text-base 2xl:text-lg">
+                    <p className="slider-content-desc-2 my-2 text-justify text-base 2xl:text-lg">
                       {" "}
                       {data.des2}{" "}
                     </p>

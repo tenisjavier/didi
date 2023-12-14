@@ -105,7 +105,7 @@ const CTASection = (props: CTAProps) => {
   const getTitleElement = () => {
     if (hero) {
       return (
-        <h1 className={`text-4xl font-bold md:text-5xl mt-0 ${alignRight ? 'text-center lg:text-right' : ''}`}>
+        <h1 className={`cta-title text-${textColor} text-4xl font-bold md:text-5xl mt-0 ${alignRight ? 'text-center lg:text-right' : ''}`}>
           {title &&
             title.split("\n").map((str, index) => (
               <Fragment key={index}>
@@ -119,7 +119,7 @@ const CTASection = (props: CTAProps) => {
       );
     } else {
       return (
-        <h2 className="font-bold text-3xl md:text-4xl">
+        <h2 className={`cta-title text-${textColor} font-bold text-3xl md:text-4xl`}>
           {title &&
             title.split("\n").map((str, index) => (
               <Fragment key={index}>
@@ -136,7 +136,7 @@ const CTASection = (props: CTAProps) => {
 
   const renderSectionDesc = () => {
     return (
-      <p className={`mb-10 text-lg ${alignRight ? 'text-center lg:text-right' : 'text-left'}`}>
+      <p className={`cta-desc mb-10 text-lg text-${textColor} ${alignRight ? 'text-center lg:text-right' : 'text-left'}`}>
         {desc &&
           desc.split("\n").map((str, index) => (
             <Fragment key={index}>
@@ -153,8 +153,8 @@ const CTASection = (props: CTAProps) => {
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        } ${borderColor && "border-solid border border-" + borderColor}`}
+      className={`cta-section relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
+        } ${borderColor && "border-solid border border-" + borderColor} ${hero ? "isHero" : ""} ${reverse ? "reverse" : ""}`}
     >
       <div
         className={`${whiteRight ? "white-right" : containerDisabled ? "lg:px-40 " : "container"
@@ -170,7 +170,7 @@ const CTASection = (props: CTAProps) => {
             : "xl:justify-start"
           }`}
       >
-        {image && <Image imageData={image} imageStyle={imageStyle} />}
+        {image && <Image imageData={image} imageStyle={`cta-image ${imageStyle}`} />}
         {bullets && bulletsConfigColumn === "singleColumn" && (
           <SectionBullets
             bullets={bullets}
@@ -236,10 +236,10 @@ const CTASection = (props: CTAProps) => {
         </div>
       </div>
 
-      {bgImage && <Image imageData={bgImage} imageStyle={bgImageStyle} />}
+      {bgImage && <Image imageData={bgImage} imageStyle={`cta-bg-image ${bgImageStyle}`} />}
 
       {mobileBgImage && (
-        <Image imageData={mobileBgImage} imageStyle={mobileBgImageStyle} />
+        <Image imageData={mobileBgImage} imageStyle={`cta-bg-image-mobile ${mobileBgImageStyle}`} />
       )}
 
       {bgVideo && bgVideo}

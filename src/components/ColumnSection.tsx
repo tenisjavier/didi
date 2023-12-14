@@ -45,24 +45,24 @@ const ColumnsSection = ({
     <section
       style={{ direction: dir }}
       id={sectionID}
-      className={`${bgColor} text-${textColor} py-12`}
+      className={`${bgColor} text-${textColor} py-12 column ${RTL ? "RTL" : ""} -${grid}-`}
     >
       <div className="container mx-auto flex flex-col flex-wrap justify-center md:justify-around">
         {title &&
           title
             .split("\n")
             .map((str) => (
-              <h2 className="text-left lg:text-center text-4xl">{hasTextHighlight ? textHighlighter(str, textHighlightStyles) : str}</h2>
+              <h2 className="column-title text-left lg:text-center text-4xl">{hasTextHighlight ? textHighlighter(str, textHighlightStyles) : str}</h2>
             ))}
         {desc &&
           desc
             .split("\n")
             .map((str) => (
-              <p className="text-left lg:text-center text-lg">{str}</p>
+              <p className="column-desc text-left lg:text-center text-lg">{str}</p>
             ))}
 
         <div
-          className={`${gridConfig || grid} mt-10  lg:justify-around `}
+          className={`column-cards ${gridConfig || grid} mt-10  lg:justify-around `}
         >
           {columns &&
             columns.map((col, index) => {
@@ -72,7 +72,7 @@ const ColumnsSection = ({
         {small &&
           small
             .split("\n")
-            .map((str) => <small className="text-center">{str}</small>)}
+            .map((str) => <small className="column-small text-center">{str}</small>)}
       </div>
     </section>
   );

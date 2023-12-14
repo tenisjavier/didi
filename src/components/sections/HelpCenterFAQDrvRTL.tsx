@@ -14,6 +14,7 @@ interface FAQProps {
       bgColor: string;
       textColor: string;
       type: string;
+      contentful_id: string;
     }[]
   };
   isClosed: boolean;

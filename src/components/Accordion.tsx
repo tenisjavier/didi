@@ -17,6 +17,7 @@ interface Accordion {
   textColor?: string;
   isClosed?: boolean;
   type?: string;
+  contentful_id?: string;
 }
 
 const Accordion = ({
@@ -27,6 +28,7 @@ const Accordion = ({
   normalText,
   isClosed,
   type,
+  contentful_id
 }: Accordion) => {
   var [isOpen, setIsOpen] = useState(false);
   var [height, setHeight] = useState("0px");
@@ -45,7 +47,7 @@ const Accordion = ({
     setHeight(isOpen ? `0px` : `${content1.current.scrollHeight + 50}px`);
   };
   return (
-    <section id={slugify(title)} className="w-full">
+    <section id={slugify(title)} className={`accordion-item id-${contentful_id} accordion w-full`}>
       <ConditionalWrapper
         condition={type === "faq"}
         wrapper={(children) => (
@@ -61,13 +63,12 @@ const Accordion = ({
         <>
           <div
             aria-hidden="true"
-            className={`mt-6 flex w-full cursor-pointer items-center justify-between rounded  border-solid border-gray-light px-10 lg:px-20 ${
-              isOpen ? "bg-white border-none" : bgColor
-            }`}
+            className={`accordion-item-container mt-6 flex w-full cursor-pointer items-center justify-between rounded  border-solid border-gray-light px-10 lg:px-20 ${isOpen ? "bg-white border-none" : bgColor
+              }`}
             onClick={() => toggtle()}
           >
             <h3
-              className={`text-${textColor} text-md md:text-2xl`}
+              className={`accordion-item-title text-${textColor} text-md md:text-2xl`}
               itemProp="name"
             >
               {title}
@@ -90,15 +91,17 @@ const Accordion = ({
                   itemProp="acceptedAnswer"
                   itemType="https://schema.org/Answer"
                 >
-                  <div itemProp="text">{children}</div>
+                  <div itemProp="accordion-faq text">{children}</div>
                 </div>
               )}
             >
               <>
-                {content && <RichContent richContent={content}></RichContent>}
+                <div className="accordion-rich-content">
+                  {content && <RichContent richContent={content}></RichContent>}
+                </div>
                 {normalText &&
                   normalText.split("\n").map((str, index) => (
-                    <p className="mb-5 text-lg" key={index}>
+                    <p className="accordion-item-str mb-5 text-lg" key={index}>
                       {str}
                     </p>
                   ))}

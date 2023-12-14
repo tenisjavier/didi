@@ -29,6 +29,7 @@ const Image = ({ imageData, imageStyle, src }: ImageProps) => {
         images: {
           fallback: {
             src,
+            srcSet: src,
           }
         }
       }
@@ -36,11 +37,14 @@ const Image = ({ imageData, imageStyle, src }: ImageProps) => {
   }
 
   return (
+    // <div id={imageData?.gatsbyImageData?.images?.fallback?.src} className={imageStyle}>
     <GatsbyImage
       image={imageData?.gatsbyImageData as IGatsbyImageData}
       alt={imageData?.description}
       className={imageStyle}
+      id={imageData?.gatsbyImageData?.images?.fallback?.src}
     ></GatsbyImage>
+    // </div>
   );
 };
 

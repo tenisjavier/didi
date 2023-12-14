@@ -14,6 +14,7 @@ interface AccordionSectionProps {
     textColor?: string;
     isClosed?: boolean;
     type?: string;
+    contentful_id?: string;
   }[];
   bgColor: string;
   bgAccordionColor: string;
@@ -24,6 +25,7 @@ interface AccordionSectionProps {
   isClosed?: boolean;
   RTL?: boolean;
   type?: string;
+  contentful_id?: string;
 }
 
 const AccordionSection = ({
@@ -37,6 +39,7 @@ const AccordionSection = ({
   isClosed,
   RTL,
   type,
+  contentful_id,
 }: AccordionSectionProps) => {
   let dir: any = "ltr";
   let textDir = "text-left";
@@ -51,16 +54,16 @@ const AccordionSection = ({
   return (
     <section
       style={directionStyle}
-      className={`${bgColor} text-${textColor} py-12`}
+      className={`id-${contentful_id} accordion-section ${bgColor} text-${textColor} py-12`}
     >
       <div className="container mx-auto flex flex-col justify-center">
         {title && (
-          <h2 className={`text-4xl md:${textDir} text-left`}>{title}</h2>
+          <h2 className={`accordion-section-title text-4xl md:${textDir} text-left`}>{title}</h2>
         )}
         {desc &&
           desc
             .split("\n")
-            .map((str) => <p className={`text-center md:${textDir}`}>{str}</p>)}
+            .map((str) => <p className={`accordion-section-desc text-center md:${textDir}`}>{str}</p>)}
         <div className={`flex flex-wrap justify-around `}>
           {items.map((item, index) => {
             return (

@@ -105,7 +105,7 @@ const Card = (props: CardProps) => {
   }
 
   let isTruncate = (
-    <Truncate lines={8} ellipsis={<span>...</span>}>
+    <Truncate className="card-desc" lines={8} ellipsis={<span>...</span>}>
       {desc}
     </Truncate>
   );
@@ -114,7 +114,7 @@ const Card = (props: CardProps) => {
     isTruncate = (
       <>
         {desc.split("\n").map((str) => (
-          <p className="text-center">{hasTextHighlighterDesc ? textHighlighter(str, hasTextHighlighterDescStyle) : str}</p>
+          <p className="text-center card-desc">{hasTextHighlighterDesc ? textHighlighter(str, hasTextHighlighterDescStyle) : str}</p>
         ))}
       </>
     );
@@ -123,14 +123,14 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={`${customWidth ? customWidth : "max-w-xs"
+      className={`card ${customWidth ? customWidth : "max-w-xs"
         }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
     >
       {titlePosition === "beforeImage" && title && (
-        <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
+        <h4 className={`card-title mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
       )}
-      <div className="mb-5">
-        {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
+      <div className="mb-5 card-group-image">
+        {isImage && <Image imageData={image} imageStyle={`card-image ${imageStyle}`}></Image>}
         {!isImage && image}
       </div>
 
@@ -147,24 +147,24 @@ const Card = (props: CardProps) => {
             ></AnimatedNumber>
           )}
           {titlePosition === "afterImage" && title && !animatedNumber && (
-            <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
+            <h4 className={`card-title mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
           )}
-          <p className={"text-lg"}></p>
+          {/* <p className={"card-desc text-lg"}></p> */}
           {descPosition === "beforeBtn" && desc && isTruncate}
 
           {offer && (
             <p className="block">
-              <span className="inline-block align-top">{offerTextBefore}</span>
-              <span className="inline-block text-7xl text-orange-primary">
+              <span className="card-offer-text-before inline-block align-top">{offerTextBefore}</span>
+              <span className="card-offer-text inline-block text-7xl text-orange-primary">
                 {offerText}
               </span>
-              <span className="inline-block align-baseline">
+              <span className="card-offer-text-after inline-block align-baseline">
                 {offerTextAfter}
               </span>
             </p>
           )}
           {small &&
-            small.split("\n").map((str) => <p className="text-start">{str}</p>)}
+            small.split("\n").map((str) => <p className="text-start card-small">{str}</p>)}
         </div>
         {timeToRead && (
           <p>
@@ -175,7 +175,7 @@ const Card = (props: CardProps) => {
           </p>
         )}
 
-        <div className="flex justify-center flex-col">
+        <div className="flex justify-center flex-col ">
           <Btn
             btnType={btnType}
             btnLink={btnLink}

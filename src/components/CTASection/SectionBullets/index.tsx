@@ -46,7 +46,7 @@ const SectionBullets = ({
           <div className="inline-block">
             {typeof item === "string"
               ? item.split("\n").map((str, index) => (
-                <p className="mt-0 mb-5 text-xl" key={index}>
+                <p className="cta-bullets mt-0 mb-5 text-xl" key={index}>
                   {hasTextHighlighter ? textHighlighter(str, 'font-bold') : str}
                 </p>
               ))

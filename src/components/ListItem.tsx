@@ -9,13 +9,14 @@ interface ListItemProps {
   secondText?: string;
   link?: string;
   image?: any;
+  contentful_id?: string;
 }
 
-const ListItem = ({ text, secondText, link, image }: ListItemProps) => {
+const ListItem = ({ text, secondText, link, image, contentful_id }: ListItemProps) => {
   const subText = secondText && secondText.slice(0, 40).concat("...");
 
   const item = link ? (
-    <div className=" flex items-center justify-between px-4">
+    <div className={`id-${contentful_id} flex items-center justify-between px-4`}>
       <span className="z-10">
         <p>
           <Link to={link}>{text}</Link>
@@ -38,9 +39,8 @@ const ListItem = ({ text, secondText, link, image }: ListItemProps) => {
   );
   return (
     <li
-      className={`${
-        image ? "text-white" : "text-blue-primary"
-      } border-gray-primary  rounded border border-solid h-32  relative`}
+      className={`id-${contentful_id} ${image ? "text-white" : "text-blue-primary"
+        } border-gray-primary  rounded border border-solid h-32  relative`}
     >
       {image && (
         <Image

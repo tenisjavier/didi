@@ -11,6 +11,7 @@ interface RequirementsProps {
   data: {
     name: string;
     requirement: RenderRichTextData<ContentfulRichTextGatsbyReference>;
+    contentful_id: string,
   }[];
 }
 
@@ -19,6 +20,7 @@ const Requirements = ({ title, data }: RequirementsProps) => {
     return {
       title: node.name,
       content: node.requirement,
+      contentful_id: node.contentful_id,
     };
   });
 

@@ -216,7 +216,7 @@ const Btn = ({
       <div
         tabIndex={0}
         role="button"
-        className={`${btnTextCenter ? "text-center" : ""
+        className={`button btn-type-${btnType} btn-mode-${btnMode} ${btnTextCenter ? "text-center" : ""
           } p-0 text-lg md:text-base my-2 btn-${btnMode} btn-${btnModeSecondary}`}
       >
         {isLoading ? (

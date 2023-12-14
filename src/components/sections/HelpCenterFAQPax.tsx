@@ -8,12 +8,14 @@ import {
 
 interface FAQProps {
   data: {
+    contentful_id: string;
     faq: {
       title: string;
       content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
       bgColor: string;
       textColor: string;
       type: string;
+      contentful_id: string;
     }[]
   };
   isClosed: boolean;
@@ -25,9 +27,10 @@ const HelpCenterFAQPax = ({ data, isClosed, title }: FAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id,
     };
   });
-  
+
   const props = {
     title: title || t("HelpCenterFAQPax.title"),
     desc: t("HelpCenterFAQPax.desc"),
@@ -38,6 +41,7 @@ const HelpCenterFAQPax = ({ data, isClosed, title }: FAQProps) => {
     items: items,
     isClosed: isClosed,
     type: "faq",
+    contentful_id: data.contentful_id
   };
 
   return <AccordionSection {...props}></AccordionSection>;

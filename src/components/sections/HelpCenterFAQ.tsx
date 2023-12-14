@@ -14,6 +14,7 @@ interface FAQProps {
       bgColor: string;
       textColor: string;
       type: string;
+      contentful_id: string;
     }[]
   };
   isClosed: boolean;
@@ -26,7 +27,7 @@ const HelpCenterFAQ = ({ data, isClosed }: FAQProps) => {
       content: node.content,
     };
   });
-  
+
   const props = {
     title: t("HelpCenterFAQ.title"),
     bgColor: t("HelpCenterFAQ.bgColor"),
