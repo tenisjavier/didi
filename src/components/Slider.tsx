@@ -86,12 +86,12 @@ const SliderSection = ({ title, items }: SliderProps) => {
             return (
               <div
                 key={idx}
-                className="absolute left-10 top-4 flex h-full w-4/5 flex-col items-center justify-start lg:left-24 lg:flex-row lg:justify-center"
+                className="slider-content absolute left-10 top-4 flex h-full w-4/5 flex-col items-center justify-start lg:left-24 lg:flex-row lg:justify-center"
               >
                 <div className={idx === index ? showclass : hidclass}>
                   <Image
                     imageData={image}
-                    imageStyle={"w-52 lg:w-64  2xl:w-80"}
+                    imageStyle={"w-52 lg:w-64  2xl:w-80 slider-content-image"}
                   ></Image>
                 </div>
                 <div className={idx === index ? textShow : textHide}>
