@@ -140,6 +140,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Repartidores FAQ",
           url: "/cr/food/repartidores/preguntas-frecuentes/",
         },
+        {
+          text: "Guías de uso de la app",
+          url: "/cr/food/repartidores/guias/",
+        },
       ],
     },
     {
@@ -205,6 +209,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Repartidores FAQ",
           url: "/co/food/repartidores/preguntas-frecuentes/",
         },
+        {
+          text: "Guías de uso de la app",
+          url: "/co/food/repartidores/guias/",
+        },
       ],
     },
     {
@@ -265,6 +273,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Repartidores FAQ",
           url: "/pe/food/repartidores/preguntas-frecuentes/",
+        },
+        {
+          text: "Guías de uso de la app",
+          url: "/pe/food/repartidores/guias/",
         },
       ],
     },
