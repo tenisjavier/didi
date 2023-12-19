@@ -51,7 +51,7 @@ export const query = graphql`
       }
     }
     allContentfulGuide(
-      filter: { category: { eq: "delivery" }, country: { code: { eq: "mx" } } }
+      filter: { category: { eq: "delivery" }, country: { code: { eq: "pe" } } }
       sort: { updatedAt: DESC }
     ) {
       nodes {
