@@ -121,6 +121,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Kit Digital",
           url: "/cr/food/restaurantes/kit-digital/",
         },
+        {
+          text: "Guías de uso de la app",
+          url: "/cr/food/restaurantes/guias/",
+        },
       ],
     },
     {
@@ -190,6 +194,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Kit Digital",
           url: "/co/food/restaurantes/kit-digital/",
         },
+        {
+          text: "Guías de uso de la app",
+          url: "/co/food/restaurantes/guias/",
+        },
       ],
     },
     {
@@ -254,6 +262,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Kit Digital",
           url: "/pe/food/restaurantes/kit-digital/",
+        },
+        {
+          text: "Guías de uso de la app",
+          url: "/pe/food/restaurantes/guias/",
         },
       ],
     },
