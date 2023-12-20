@@ -44,16 +44,22 @@ const Index = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      <>
-        <div className={`${activeHero !== 0 && "hidden"} `}>
+      <div className="carousel-section">
+        <div
+          className={`${activeHero !== 0 && "hidden"} carousel-section-item`}
+        >
           <DrvHero
             bgImage={drvHeroBgImage}
             mobileBgImage={drvHeroMobileBgImage}
           ></DrvHero>
         </div>
-        <div className={`${activeHero !== 1 && "hidden"} `}>
+        <div
+          className={`${activeHero !== 1 && "hidden"} carousel-section-item`}
+        >
           <PaxHero
-            bgImageStyle={"hidden z-0 brightness-90 md:block justify-content align-left p-20"}
+            bgImageStyle={
+              "hidden z-0 brightness-90 md:block justify-content align-left p-20"
+            }
             bgColor="flex bg-orange-500 h-5 p-20"
             bgImage={paxHeroBgImage}
             mobileBgImage={paxHeroMobileBgImage}
@@ -63,7 +69,7 @@ const Index = ({ data }) => {
           images={carrouselIcons}
           updateHero={updateHero}
         ></HeroCarrousel>
-      </>
+      </div>
 
       <DriverCTA></DriverCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>

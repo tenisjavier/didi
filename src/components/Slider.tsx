@@ -10,6 +10,7 @@ import {
 export interface SliderProps {
   title: string;
   items: {
+    contentful_id: string;
     name: string;
     description: string;
     descriptionForPax: string;

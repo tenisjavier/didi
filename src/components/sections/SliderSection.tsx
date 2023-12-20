@@ -8,6 +8,7 @@ interface SliderSectionProps {
     description: string;
     descriptionForPax: string;
     des2: string;
+    contentful_id: string;
     image: {
       title: string;
       description: string;
@@ -20,6 +21,7 @@ interface SliderSectionProps {
     }
   }[];
   title: string;
+  contentful_id: string;
 }
 
 const SilderSection = ({ data, title }: SliderSectionProps) => {
