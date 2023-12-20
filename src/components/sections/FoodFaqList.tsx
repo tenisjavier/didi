@@ -7,6 +7,7 @@ interface ListProps {
   faqs: {
     title: string;
     slug: string;
+    contentful_id: string;
   }[];
   city: string;
   urlPrefix: string;
@@ -21,11 +22,12 @@ const FoodFaqList = ({ title, faqs, city, urlPrefix }: ListProps) => {
       let link = urlPrefix
         ? urlPrefix + `${faq.slug}/`
         : t("FoodFaqList.linkItem", {
-            faqSlug: faq.slug,
-          });
+          faqSlug: faq.slug,
+        });
       return {
         text: name,
         link: link,
+        contentful_id: faq.contentful_id,
       };
     });
   }

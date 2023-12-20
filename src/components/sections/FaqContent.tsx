@@ -9,13 +9,15 @@ import {
 
 interface FAQProps {
   title: string;
+  contentful_id: string;
   content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
 }
 
-const FaqContent = ({ title, content }: FAQProps) => {
+const FaqContent = ({ title, content, contentful_id }: FAQProps) => {
   const items = [{
     title: title,
     content: content,
+    contentful_id
   }];
 
   const props = {

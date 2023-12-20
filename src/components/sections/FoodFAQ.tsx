@@ -9,6 +9,7 @@ import {
 interface FAQProps {
   data: {
     faq: {
+      contentful_id: string;
       title: string;
       content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
     }[];
@@ -22,6 +23,7 @@ const FoodFAQ = ({ data, title, desc }: FAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id,
     };
   });
 

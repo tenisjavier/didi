@@ -59,7 +59,9 @@ export const query = graphql`
     ) {
       nodes {
         name
+        contentful_id
         faq {
+          contentful_id
           title
           slug
           content {

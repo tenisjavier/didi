@@ -109,8 +109,10 @@ const Food = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      <>
-        <div className={`${activeHero !== 0 && "hidden"} `}>
+      <div className="carousel-section">
+        <div
+          className={`${activeHero !== 0 && "hidden"} carousel-section-item`}
+        >
           <FoodHero
             desc=" "
             bgImage={foodHeroBgImage}
@@ -118,7 +120,9 @@ const Food = ({ data }) => {
             mobileTitlePosition="top"
           ></FoodHero>
         </div>
-        <div className={`${activeHero !== 1 && "hidden"} `}>
+        <div
+          className={`${activeHero !== 1 && "hidden"} carousel-section-item`}
+        >
           <FoodDeliveryHero
             desc=" "
             bgImage={repartidoresHeroBgImage}
@@ -126,7 +130,9 @@ const Food = ({ data }) => {
             mobileTitlePosition="top"
           ></FoodDeliveryHero>
         </div>
-        <div className={`${activeHero !== 2 && "hidden"} `}>
+        <div
+          className={`${activeHero !== 2 && "hidden"} carousel-section-item`}
+        >
           <FoodBusinessHero
             desc=" "
             bgImage={restaurantHeroBgImage}
@@ -144,7 +150,7 @@ const Food = ({ data }) => {
             images={DiDiFoodCarouselImagesSorted}
           ></DiDiFoodCarousel>
         )}
-      </>
+      </div>
 
       <FoodColumns images={foodColumnsImages}></FoodColumns>
       <FoodBusinessCTA image={foodBusinessCTAImage}></FoodBusinessCTA>

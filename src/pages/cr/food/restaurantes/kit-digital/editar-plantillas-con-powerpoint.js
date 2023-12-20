@@ -24,6 +24,7 @@ export const query = graphql`
   query {
     contentfulFaq(title: { eq: "Editar Plantillas con PowerPoint" }) {
       title
+      contentful_id
       content {
         raw
         references {
