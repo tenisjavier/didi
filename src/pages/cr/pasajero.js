@@ -17,6 +17,7 @@ const Pasajero = ({ data }) => {
     return image.title === "cr.PaxHeroMobile.bgImage";
   })[0];
   const products = data.allContentfulProduct.nodes;
+
   return (
     <Layout>
       <PaxHero
