@@ -60,6 +60,7 @@ export const query = graphql`
       }
     ) {
       nodes {
+        contentful_id
         id
         title
         content {

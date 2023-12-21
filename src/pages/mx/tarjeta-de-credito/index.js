@@ -89,6 +89,7 @@ export const query = graphql`
       filter: { country: { code: { eq: "mx" } }, type: { eq: "card" } }
     ) {
       nodes {
+        contentful_id
         slug
         title
         content {

@@ -9,11 +9,13 @@ import {
 
 interface DiDiCreditFAQProps {
   data: {
+    contentful_id: string;
     title: string;
     content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
   }[];
   title: string;
   desc: string;
+  contentful_id?: string;
 }
 
 const DiDiCreditFAQ = ({ data, title, desc }: DiDiCreditFAQProps) => {
@@ -31,6 +33,7 @@ const DiDiCreditFAQ = ({ data, title, desc }: DiDiCreditFAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id
     };
   });
 

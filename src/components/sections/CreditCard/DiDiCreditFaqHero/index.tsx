@@ -5,6 +5,7 @@ import CTASection, { CTAProps } from "../../../CTASection";
 
 interface DiDiCreditFaqHeroProps {
   image?: ImageDataType;
+  contentful_id?: string;
 }
 
 const DiDiCreditFaqHero = ({ image }: DiDiCreditFaqHeroProps) => {

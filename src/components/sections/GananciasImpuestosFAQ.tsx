@@ -6,6 +6,7 @@ interface FAQProps {
   data: {
     title: string;
     content: string;
+    contentful_id?: string;
   }[];
 }
 

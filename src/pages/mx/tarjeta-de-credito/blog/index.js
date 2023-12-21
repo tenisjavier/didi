@@ -56,6 +56,7 @@ export const query = graphql`
           }
         }){
         nodes {
+          contentful_id
           slug
           title
           content {

@@ -78,26 +78,26 @@ const Index = ({ data }) => {
 
   return (
     <Layout sb={false}>
-      <>
-        <div className={`${activeHero !== 0 && "hidden"} `}>
+      <div className="carousel-section">
+        <div className={`${activeHero !== 0 && "hidden"} carousel-section-item`}>
           <DrvHero
             bgImage={drvHeroBgImage}
             mobileBgImage={drvHeroMobileBgImage}
           ></DrvHero>
         </div>
-        <div className={`${activeHero !== 1 && "hidden"} `}>
+        <div className={`${activeHero !== 1 && "hidden"} carousel-section-item`}>
           <PaxHero
             bgImage={paxHeroBgImage}
             mobileBgImage={paxHeroMobileBgImage}
           ></PaxHero>
         </div>
-        <div className={`${activeHero !== 2 && "hidden"} `}>
+        <div className={`${activeHero !== 2 && "hidden"} carousel-section-item`}>
           <FoodHero
             bgImage={foodHeroBgImage}
             mobileBgImage={foodHeroMobileBgImage}
           ></FoodHero>
         </div>
-        <div className={`${activeHero !== 3 && "hidden"} `}>
+        <div className={`${activeHero !== 3 && "hidden"} carousel-section-item`}>
           <FinancialServicesHero
             bgImage={FSBgImage}
             mobileBgImage={FSMobileBgImage}
@@ -107,7 +107,7 @@ const Index = ({ data }) => {
           images={carrouselIcons}
           updateHero={updateHero}
         ></HeroCarrousel>
-      </>
+      </div>
       <DriverCTA></DriverCTA>
       <SafetyCTA image={safetyCTAImage}></SafetyCTA>
       <PaxCTA image={paxCTAImage}></PaxCTA>
