@@ -22,6 +22,7 @@ const DiDiAmigoFAQ = ({ faqs, title }: FAQProps) => {
     return {
       title: con.title,
       content: con.content,
+      contentful_id: con.contentful_id
     };
   });
 

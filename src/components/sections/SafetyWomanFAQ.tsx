@@ -10,6 +10,7 @@ interface FAQProps {
   faq: {
     title: string;
     content?: RenderRichTextData<ContentfulRichTextGatsbyReference>;
+    contentful_id?: string;
   }[];
 }
 
@@ -18,6 +19,7 @@ const SafetyWomanFAQ = ({ faq }: FAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id
     };
   });
 
