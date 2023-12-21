@@ -72,6 +72,7 @@ export const query = graphql`
 
     allContentfulFaq(filter: { country: { code: { eq: "mx" } } }) {
       nodes {
+        contentful_id
         title
         slug
         type

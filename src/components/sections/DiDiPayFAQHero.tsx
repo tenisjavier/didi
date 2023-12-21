@@ -13,6 +13,7 @@ interface DiDiPayFAQHeroProps {
     description: string;
     gatsbyImageData: any;
   };
+  contentful_id?: string;
 }
 
 const DiDiPayFAQHero = ({ bgImage, image }: DiDiPayFAQHeroProps) => {

@@ -17,6 +17,7 @@ const GananciasConceptosFAQ = ({ data }: FAQProps) => {
     return {
       title: con.title,
       normalText: con.content,
+      contentful_id: con.contentful_id
     };
   });
 
