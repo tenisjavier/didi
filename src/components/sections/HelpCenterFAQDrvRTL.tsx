@@ -25,6 +25,7 @@ const HelpCenterFAQDrvRTL = ({ data }: FAQProps) => {
     return {
       title: node.title,
       content: node.content,
+      contentful_id: node.contentful_id,
     };
   });
 

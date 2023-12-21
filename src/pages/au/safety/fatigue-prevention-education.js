@@ -66,6 +66,7 @@ export const query = graphql`
     }
     allContentfulFaq(filter: { country: { code: { eq: "au" } } }) {
       nodes {
+        contentful_id
         title
         slug
         content {

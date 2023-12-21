@@ -7,6 +7,7 @@ interface HelpCenterHeroProps {
     title: string;
     description: string;
     gatsbyImageData: any;
+    contentful_id?: string;
   };
 }
 
