@@ -35,6 +35,7 @@ export const query = graphql`
     }
     allContentfulOffer(filter: { country: { code: { eq: "mx" } } }) {
       nodes {
+        contentful_id
         name
         slug
         desc
