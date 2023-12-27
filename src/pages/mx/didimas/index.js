@@ -85,7 +85,11 @@ const DiDiMas = ({ data }) => {
   });
 
   const partnerProductos = partners.filter((partner) => {
-    return partner.name === "Claro - Autos y celulares";
+    return (
+      partner.name === "Claro - Autos y celulares" ||
+      partner.name === "Xiaomi Store" ||
+      partner.name === "SpeeDee"
+    );
   });
 
   const categoriesID = [

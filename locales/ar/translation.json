@@ -150,7 +150,7 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Driver Center",
+      "title": "DiDi Club",
       "desc": "Visitá nuestro centro de atención.",
       "textColor": "gray-primary"
     },
@@ -483,8 +483,8 @@
       "textColor": "gray-primary"
     },
     {
-      "title": "Driver Center",
-      "desc": "Si sos conductor, te podés acercar al Driver Center para tener una atención especializada y exclusiva para conductores. Dirección: Loyola 501, Villa Crespo, CABA.",
+      "title": "DiDi Club",
+      "desc": "Si sos conductor, te podés acercar al DiDi Club para tener una atención especializada y exclusiva para conductores. Dirección: San Juan 2743, CABA.",
       "bgColor": "bg-white",
       "textColor": "gray-primary"
     },
@@ -541,7 +541,7 @@
   "DrvCityHero.textColor": "white",
   "DrvCityHero.bgColor": "bg-blue-primary",
   "DrvCityHero.btnMode": "primary",
-  "DrvCityOffice.title": "Driver Center {{city}}",
+  "DrvCityOffice.title": "DiDi Club {{city}}",
   "DrvCityOffice.desc": "Dirección: {{officeAddress}} {{officePhone}}",
   "DrvCityOffice.textColor": "gray-primary",
   "DrvCityOffice.bgColor": "bg-white",

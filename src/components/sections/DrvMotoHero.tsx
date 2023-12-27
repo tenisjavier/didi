@@ -19,7 +19,7 @@ const DrvMotoHero = ({ bgImage }: DrvHeroProps) => {
     bgImage: bgImage,
     bgImageStyle: "!absolute z-0 h-full w-full md:block",
     btnMode: t("DrvMotoHero.btnMode"),
-    btnType: "drv",
+    btnType: "moto",
   };
   return <CTASection {...props}></CTASection>;
 };

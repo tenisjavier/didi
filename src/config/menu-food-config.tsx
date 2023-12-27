@@ -44,10 +44,6 @@ const menuLinksFood: AllMenuInterface = {
           url: "/mx/food/restaurantes/kit-digital/",
         },
         {
-          text: "Promociones y Campañas",
-          url: "/mx/food/restaurantes/promociones-y-campanas/",
-        },
-        {
           text: "Guías de uso de la app",
           url: "/mx/food/restaurantes/guias/",
         },
@@ -126,8 +122,8 @@ const menuLinksFood: AllMenuInterface = {
           url: "/cr/food/restaurantes/kit-digital/",
         },
         {
-          text: "Promociones y Campañas",
-          url: "/cr/food/restaurantes/promociones-y-campanas/",
+          text: "Guías de uso de la app",
+          url: "/cr/food/restaurantes/guias/",
         },
       ],
     },
@@ -147,6 +143,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Repartidores FAQ",
           url: "/cr/food/repartidores/preguntas-frecuentes/",
+        },
+        {
+          text: "Guías de uso de la app",
+          url: "/cr/food/repartidores/guias/",
         },
       ],
     },
@@ -195,8 +195,8 @@ const menuLinksFood: AllMenuInterface = {
           url: "/co/food/restaurantes/kit-digital/",
         },
         {
-          text: "Promociones y Campañas",
-          url: "/co/food/restaurantes/promociones-y-campanas/",
+          text: "Guías de uso de la app",
+          url: "/co/food/restaurantes/guias/",
         },
       ],
     },
@@ -216,6 +216,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Repartidores FAQ",
           url: "/co/food/repartidores/preguntas-frecuentes/",
+        },
+        {
+          text: "Guías de uso de la app",
+          url: "/co/food/repartidores/guias/",
         },
       ],
     },
@@ -259,6 +263,10 @@ const menuLinksFood: AllMenuInterface = {
           text: "Kit Digital",
           url: "/pe/food/restaurantes/kit-digital/",
         },
+        {
+          text: "Guías de uso de la app",
+          url: "/pe/food/restaurantes/guias/",
+        },
       ],
     },
     {
@@ -277,6 +285,10 @@ const menuLinksFood: AllMenuInterface = {
         {
           text: "Repartidores FAQ",
           url: "/pe/food/repartidores/preguntas-frecuentes/",
+        },
+        {
+          text: "Guías de uso de la app",
+          url: "/pe/food/repartidores/guias/",
         },
       ],
     },

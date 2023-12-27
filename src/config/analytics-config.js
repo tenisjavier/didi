@@ -81,6 +81,8 @@ const insertBtnParams = () => {
     // if it is a deeplink, get the long url version with correct parameters
     if (
       url.indexOf("ssa-rides-driver.onelink.me/mbwy/") > -1 ||
+      url.indexOf("https://page.didiglobal.com/global/silver-bullet-online/") >
+        -1 ||
       url.indexOf("global-rides-passenger.onelink.me/xNlo/") > -1 ||
       url.indexOf("fleet.onelink.me/tLtr/") > -1 ||
       url.indexOf("fleet.onelink.me/jjQA/") > -1 ||
@@ -211,7 +213,8 @@ const insertBtnParams = () => {
     };
 
     let newUrl = new URL(url.origin + url.pathname.slice(0, 5)); // without any params for now
-
+    if (url.pathname.includes("silver-bullet-online"))
+      newUrl = new URL(url.origin + url.pathname);
     // set correct parameters for onelink
 
     let pid = url.searchParams.get("pid");
@@ -276,7 +279,7 @@ const insertBtnParams = () => {
           countryCode
         )
       ) {
-        const test_version = window.localStorage.getItem("t5");
+        const test_version = window.localStorage.getItem("t8");
         adgroupId = test_version;
       }
     }

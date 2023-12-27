@@ -10,6 +10,7 @@ import DrvFeatures from "../../../components/sections/DrvFeatures";
 import SilderSection from "../../../components/sections/SliderSection";
 import DrvBanner from "../../../components/sections/DrvBanner";
 import DrvCityList from "../../../components/sections/DrvCityList";
+import PaxCTAApp from "../../../components/sections/PaxCTAApp";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -24,6 +25,9 @@ const Driver = ({ data }) => {
   })[0];
   const drvFeaturesImage = images.filter((image) => {
     return image.title === "cr.DrvFeatures.image";
+  })[0];
+  const paxCTAAppImage = images.filter((image) => {
+    return image.title === "cr.PaxCTAApp.image";
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
@@ -42,6 +46,7 @@ const Driver = ({ data }) => {
         title="Hay un DiDi para vos"
       ></SilderSection>
       <Requirements data={products}></Requirements>
+      <PaxCTAApp image={paxCTAAppImage}></PaxCTAApp>
       <KnowMoreBanner></KnowMoreBanner>
       <HomeColumns></HomeColumns>
       <DrvCityList data={cities}></DrvCityList>
@@ -61,6 +66,7 @@ export const query = graphql`
             "cr.DrvHeroMobile.bgImage"
             "cr.DrvWhyDiDi.image"
             "cr.DrvFeatures.image"
+            "cr.PaxCTAApp.image"
           ]
         }
       }

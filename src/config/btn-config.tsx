@@ -2,6 +2,10 @@
 
 interface SingleBtnInterface {
   drvLink: string;
+  drvLinkQB?: string;
+  motoLink?: string;
+  motoText?: string;
+  motoLinkQB?: string;
   paxLink: string;
   drvText: string;
   drvWhatsappLink?: string;
@@ -56,6 +60,8 @@ const btnLinks: AllBtnInterface = {
   },
   cl: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-cl",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
@@ -65,6 +71,8 @@ const btnLinks: AllBtnInterface = {
   },
   pe: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/pedriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-pe",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
@@ -77,16 +85,28 @@ const btnLinks: AllBtnInterface = {
   },
   ar: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-ar",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Registrate como Conductor",
+    motoText: "Registrate en DiDi Moto",
+    motoLink: "https://ssa-rides-driver.onelink.me/mbwy/ardriverhero",
+    motoLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-moto-ar",
     paxText: "Descargá DiDi Pasajero",
     fleetText: "Descargá DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
   },
   co: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/codriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-co",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
+    motoText: "Regístrate en DiDi Moto",
+    motoLink: "https://ssa-rides-driver.onelink.me/mbwy/codriverhero",
+    motoLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-moto-co",
     paxText: "Descarga DiDi Pasajero",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "http://fleet.onelink.me/tLtr/fleetmacregion",
@@ -114,18 +134,24 @@ const btnLinks: AllBtnInterface = {
   },
   do: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-do",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
   },
   ec: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/ecdriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-ec",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Conductor",
     paxText: "Descarga DiDi Pasajero",
   },
   cr: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/crdriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-cr",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Registrate en DiDi Conductor",
     paxText: "Descargá DiDi Pasajero",
@@ -142,14 +168,22 @@ const btnLinks: AllBtnInterface = {
   },
   pa: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/padriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-pa",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate como Socio Conductor",
     paxText: "Descarga DiDi Pasajero",
   },
   mx: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+    drvLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-mx",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
+    motoText: "Regístrate en DiDi Moto",
+    motoLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
+    motoLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-moto-mx",
     drvWhatsappLink: "https://ssa-rides-driver.onelink.me/mbwy/mxdriverhero",
     drvWhatsappText: "Regístrate con Whatsapp",
     paxText: "Descarga DiDi Pasajero",
