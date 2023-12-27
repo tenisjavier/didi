@@ -5,6 +5,7 @@ import CTASection, { CTAProps } from "../CTASection";
 interface FoodFaqHeroProps {
   title: string;
   desc: string;
+  contentful_id: string;
   bgImage: {
     title: string;
     description: string;

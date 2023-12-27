@@ -6,6 +6,7 @@ import { BtnProps } from "../Btn";
 interface FaqHeroProps extends BtnProps {
   title: string;
   desc: string;
+  contentful_id: string,
   bgImage: {
     title: string;
     description: string;

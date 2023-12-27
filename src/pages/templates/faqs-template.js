@@ -169,6 +169,7 @@ export const query = graphql`
       }
     }
     contentfulFaq(id: { eq: $id }) {
+      contentful_id
       title
       type
       content {

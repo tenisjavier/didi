@@ -79,6 +79,7 @@ export const query = graphql`
       }
     ) {
       nodes {
+        contentful_id
         name
         description
         image {
@@ -90,9 +91,11 @@ export const query = graphql`
       }
     }
     contentfulProduct(id: { eq: $id }) {
+      contentful_id
       name
       description
       faq {
+        contentful_id
         title
         content {
           raw
