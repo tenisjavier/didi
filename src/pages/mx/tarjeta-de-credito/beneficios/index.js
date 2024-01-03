@@ -25,9 +25,9 @@ const Beneficios = ({ data }) => {
     "Mercado Libre",
     "Smartfit",
     "Envia Flores",
-    "fitpass_logo"
+    "fitpass_logo",
   ];
-  
+
   const beneficiosColumnsImage = images.filter((image) => {
     return imageBeneficiosColumns.includes(image.title);
   });
@@ -37,7 +37,9 @@ const Beneficios = ({ data }) => {
       <DiDiCreditBeneficiosHero
         image={BeneficiosHeroImage}
       ></DiDiCreditBeneficiosHero>
-     <DiDiCreditBeneficiosColumns imagesdata={beneficiosColumnsImage}></DiDiCreditBeneficiosColumns>
+      <DiDiCreditBeneficiosColumns
+        imagesdata={beneficiosColumnsImage}
+      ></DiDiCreditBeneficiosColumns>
       <DiDiCreditFAQ data={faqs}></DiDiCreditFAQ>
     </Layout>
   );
@@ -62,31 +64,26 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulFaq (filter: {
-          country: {
-            code: {eq: "mx"}
-          }
-          type: {
-            eq: "card"
-          }
-        }){
-        nodes {
-          contentful_id
-          slug
-          title
-          content {
-            raw
-            references {
-              ... on ContentfulAsset {
-                contentful_id
-                title
-                description
-                gatsbyImageData(width: 800)
-                __typename
-              }
+    allContentfulFaq(
+      filter: { country: { code: { eq: "mx" } }, type: { eq: "card" } }
+    ) {
+      nodes {
+        contentful_id
+        slug
+        title
+        content {
+          raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              title
+              description
+              gatsbyImageData(width: 800)
+              __typename
             }
           }
         }
       }
+    }
   }
 `;

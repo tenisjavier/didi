@@ -27,7 +27,7 @@ const SeguridadParaMujeres = ({ data }) => {
         bgImage={safetyWomanBgImage}
         image={safetyWomanImage}
       ></SafetyWomanHero>
-      <SafetyWomanBanner></SafetyWomanBanner>
+      {/* <SafetyWomanBanner></SafetyWomanBanner> */}
       <SafetyGridWoman images={safetyWomanGridImages}></SafetyGridWoman>
       <AboutSafetyWomanVideo></AboutSafetyWomanVideo>
       <SafetyGridWomanSteps></SafetyGridWomanSteps>

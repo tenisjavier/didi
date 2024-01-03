@@ -13,11 +13,11 @@ const RepartidoresPreguntasFrecuentes = ({ data }) => {
 
   const faqDelivery = [
     {
-      faq: data.allContentfulFaq.nodes
-    }
-  ]
+      faq: data.allContentfulFaq.nodes,
+    },
+  ];
 
-  const linkRepartidores = `/mx/food/repartidores/preguntas-frecuentes/`
+  const linkRepartidores = `/mx/food/repartidores/preguntas-frecuentes/`;
 
   return (
     <Layout schema="faq">
@@ -27,7 +27,7 @@ const RepartidoresPreguntasFrecuentes = ({ data }) => {
         title={"Repartidores"}
         faqs={faqDelivery[0].faq}
         link={linkRepartidores}
-        ></FaqList>
+      ></FaqList>
     </Layout>
   );
 };
@@ -44,12 +44,10 @@ export const query = graphql`
     }
 
     allContentfulFaq(
-      filter: {
-        country:  { code: { eq: "mx" } } 
-        type: { eq: "delivery" }
-      }
+      filter: { country: { code: { eq: "mx" } }, type: { eq: "delivery" } }
     ) {
       nodes {
+        contentful_id
         title
         slug
         content {

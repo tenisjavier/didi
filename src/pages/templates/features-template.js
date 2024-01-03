@@ -80,6 +80,7 @@ export const query = graphql`
       }
       category
       faq {
+        contentful_id
         title
         content {
           raw

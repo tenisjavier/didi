@@ -22,8 +22,7 @@ const FoodPreguntasFrecuentes = ({ data }) => {
   );
 
   const link = `/mx/food/restaurantes/preguntas-frecuentes/`;
-  const linkRepartidores = `/mx/food/repartidores/preguntas-frecuentes/`
-
+  const linkRepartidores = `/mx/food/repartidores/preguntas-frecuentes/`;
 
   return (
     <Layout schema="faq">
@@ -35,17 +34,13 @@ const FoodPreguntasFrecuentes = ({ data }) => {
         title={"Repartidores"}
         faqs={faqDelivery[0].faq}
         link={linkRepartidores}
-        ></FaqList>
+      ></FaqList>
       <FaqList
         title={"Operaciones"}
         faqs={faqOperations[0].faq}
         link={link}
-        ></FaqList>
-      <FaqList
-        title={"Tu Tienda"}
-        faqs={faqStore[0].faq}
-        link={link}
-        ></FaqList>
+      ></FaqList>
+      <FaqList title={"Tu Tienda"} faqs={faqStore[0].faq} link={link}></FaqList>
       <MoreQuestionsCTA></MoreQuestionsCTA>
     </Layout>
   );
@@ -70,7 +65,9 @@ export const query = graphql`
     ) {
       nodes {
         name
+        contentful_id
         faq {
+          contentful_id
           title
           slug
           content {

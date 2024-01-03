@@ -65,7 +65,9 @@ export const query = graphql`
     ) {
       nodes {
         name
+        contentful_id
         faq {
+          contentful_id
           title
           slug
           content {
@@ -85,6 +87,7 @@ export const query = graphql`
     }
     allContentfulFaq(filter: { type: { eq: "food" } }) {
       nodes {
+        contentful_id
         title
         slug
         content {
