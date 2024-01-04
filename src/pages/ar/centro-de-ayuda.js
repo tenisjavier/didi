@@ -53,8 +53,10 @@ export const query = graphql`
       filter: { country: { elemMatch: { code: { eq: "ar" } } } }
     ) {
       nodes {
+        contentful_id
         name
         faq {
+          contentful_id
           title
           slug
           content {

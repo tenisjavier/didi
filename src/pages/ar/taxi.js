@@ -46,6 +46,7 @@ export const query = graphql`
       }
     ) {
       nodes {
+        contentful_id
         name
         phone
         requirement {
