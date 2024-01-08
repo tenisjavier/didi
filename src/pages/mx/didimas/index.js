@@ -28,8 +28,6 @@ const DiDiMas = ({ data }) => {
     return numeroA - numeroB;
   });
 
-  console.log(partnerColumns);
-
   const partnerRent = partners.filter((partner) => {
     return (
       partner.name === "Mi Nave" ||
@@ -41,6 +39,7 @@ const DiDiMas = ({ data }) => {
       partner.name === "Ventauto" ||
       partner.name === "Mare" ||
       partner.name === "Procapa Arrendamientos" ||
+      partner.name === "Veikul" ||
       partner.name === "Keko App"
     );
   });
@@ -69,6 +68,7 @@ const DiDiMas = ({ data }) => {
     return (
       partner.name === "IMSS" ||
       partner.name === "Medismart" ||
+      partner.name === "Smart Fit" ||
       partner.name === "Lagom"
     );
   });
@@ -77,11 +77,11 @@ const DiDiMas = ({ data }) => {
   });
 
   const partnerTelefonia = partners.filter((partner) => {
-    return partner.name === "Figou";
+    return partner.name === "Figou" || partner.name === "Telfin";
   });
 
   const partnerEntretenimiento = partners.filter((partner) => {
-    return partner.name === "Cinepolis";
+    return partner.name === "Cinepolis" || partner.name === "Six Flags";
   });
 
   const partnerProductos = partners.filter((partner) => {
@@ -89,6 +89,14 @@ const DiDiMas = ({ data }) => {
       partner.name === "Claro - Autos y celulares" ||
       partner.name === "Xiaomi Store" ||
       partner.name === "SpeeDee"
+    );
+  });
+
+  const partnerComida = partners.filter((partner) => {
+    return (
+      partner.name === "7 Eleven" ||
+      partner.name === "Papa John's" ||
+      partner.name === "El Portón"
     );
   });
 
@@ -147,6 +155,12 @@ const DiDiMas = ({ data }) => {
         data={partnerAuto}
       ></PartnersGrid>
       <PartnersGrid
+        title="Descuento en Restaurantes"
+        bgColor="bg-gray-light"
+        sectionID="PartnerComida"
+        data={partnerComida}
+      ></PartnersGrid>
+      <PartnersGrid
         title="Contabilidad y Finanzas"
         bgColor="bg-gray-light"
         sectionID="PartnerFinanzas"
@@ -159,7 +173,7 @@ const DiDiMas = ({ data }) => {
         data={partnerSeguros}
       ></PartnersGrid>
       <PartnersGrid
-        title="Salud y bienestar"
+        title="Salud y deportes"
         bgColor="bg-gray-light"
         sectionID="PartnerSalud"
         data={partnerSalud}
