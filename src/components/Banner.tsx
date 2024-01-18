@@ -6,7 +6,7 @@ import Image from "../components/Image";
 
 export interface BannerProps extends BtnProps {
   title: string | React.ReactNode;
-  desc?: string;
+  desc?: string | React.ReactNode;
   descText?: string;
   bgColor: string;
   textColor: string;
@@ -61,17 +61,18 @@ const Banner = ({
             {title}
           </h3>
 
+
           {descText &&
             descText
               .split("\n")
               .map((str) => <p className=" text-lg">{str}</p>)}
 
-          {desc &&
+          {desc && typeof desc === 'string' &&
             desc
               .split("\n")
               .map((str) => <p className="text-lg text-left lg:text-center">{str}</p>)}
 
-          {/* {desc && <p className="text-lg text-left lg:text-center">{desc}</p>} */}
+          {desc &&  typeof desc !== 'string' && <p className="text-lg text-left lg:text-center">{desc}</p>}
           <span
             className={`flex justify-center ${btnText != "VideoSection.btnText" ? "" : "hidden"
               }`}
