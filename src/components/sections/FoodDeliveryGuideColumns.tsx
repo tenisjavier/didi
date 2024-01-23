@@ -45,6 +45,7 @@ const FoodDeliveryGuideColumns = ({ data }: GuidesColumnsProps) => {
       ),
       btnText: t("FoodDeliveryGuideColumns.btnText"),
       btnLink: link,
+      btnType: 'custom',
       btnMode: t("FoodDeliveryGuideColumns.btnMode"),
       height: "h-110",
     };

@@ -84,14 +84,15 @@ const SectionBtn = ({
         btnMode: btnMode,
       },
     ],
-    custom:
-      btnArray?.map((item) => {
-        return {
-          btnText: item.text,
-          btnLink: item.link,
-          btnMode: btnMode,
-        };
-      }) || [],
+    custom: [
+      {
+        btnType,
+        btnMode,
+        btnModeSecondary,
+        btnLink,
+        btnText,
+      }
+    ],
     bothFoodEn: [
       {
         btnType: "foodEaterOnlineEn",
