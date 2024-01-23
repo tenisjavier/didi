@@ -946,6 +946,34 @@
   "PartnerHero.textColor": "white",
   "PartnerHero.bgColor": "bg-orange-primary",
   "PartnerHero.btnMode": "light",
+  "DiDiFleetDiDiMasPartnersHero.title": "",
+  "DiDiFleetDiDiMasPartnersHero.desc": "",
+  "DiDiFleetDiDiMasPartnersHero.textColor": "white",
+  "DiDiFleetDiDiMasPartnersHero.bgColor": "bg-orange-primary",
+  "DiDiFleetDiDiMasPartnersHero.btnMode": "light",
+  "DiDiFleetDiDiMasPartnerColumns.title": "Conoce los beneficios que tenemos para ti",
+  "DiDiFleetDiDiMasPartnerColumns.columns": [
+    {
+      "title": "Descuentos en seguros de autos",
+      "imageName": "mx.RewardsColumns.image-7"
+    },
+    {
+      "title": "Contabilidad y Finanzas",
+      "imageName": "mx.RewardsColumns.image-6"
+    },
+    {
+      "title": "Salud y deporte",
+      "imageName": "mx.RewardsColumns.image-8"
+    },
+    {
+      "title": "Descuentos en combustible",
+      "imageName": "mx.RewardsColumns.image-3"
+    },
+    {
+      "title": "Otros beneficios",
+      "imageName": "mx.RewardsColumns.image-10"
+    }
+  ],
   "DrvCityHero.title": "Socios Conductores en {{city}}",
   "DrvCityHero.desc": "¿Quieres convertirte en Socio Conductor DiDi en {{city}}?. Regístrate online. ",
   "DrvCityHero.textColor": "white",

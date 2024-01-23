@@ -54,8 +54,8 @@ export const query = graphql`
         title: {
           in: [
             "mx.DiDiFleetHero.bgImage"
-            "mx.SafetyCTA.image"
             "mx.DiDiFleetHeroMobile.bgImage"
+            "mx.SafetyCTA.image"
             "mx.FleetSocioCTA.image"
             "mx.FleetRegistraAutos.image"
             "mx.FleetAgrega.image"
