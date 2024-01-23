@@ -44,7 +44,7 @@ const GuideHero = ({ data }: GuideHero) => {
     bgImageStyle: "!absolute z-0 h-full w-full md:block brightness-75",
     mobileBgImage: mobileBgImage,
     mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
-    btnType: "foodBusiness",
+    btnType: btnCustomText || btnCustomLink ? 'custom' : 'foodBusiness',
     btnMode: t("GuideHero.btnMode"),
     ...(btnCustomText && { btnText: btnCustomText }),
     ...(btnCustomLink && { btnLink: btnCustomLink }),

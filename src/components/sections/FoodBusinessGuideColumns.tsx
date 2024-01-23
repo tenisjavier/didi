@@ -45,6 +45,7 @@ const FoodBusinessGuideColumns = ({ data }: GuidesColumnsProps) => {
       ),
       btnText: t("FoodBusinessGuideColumns.btnText"),
       btnLink: link,
+      btnType: 'custom',
       btnMode: t("FoodBusinessGuideColumns.btnMode"),
       height: "h-110",
     };
