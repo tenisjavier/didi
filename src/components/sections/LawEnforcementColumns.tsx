@@ -21,7 +21,8 @@ const LawEnforcementColumns = ({ }: LawEnforcementColumns) => {
     // gridConfig: "2"
   };
 
-  props.columns.forEach(() => {
+  props.columns.forEach((col, index) => {
+    col.iconTop = <div className="absolute left-2/4 transform -translate-x-2/4 -top-4 font-bold rounded-full bg-orange-primary px-4 py-2 text-white">{index + 1}</div>
   });
 
   return <ColumnsSection {...props}></ColumnsSection>;

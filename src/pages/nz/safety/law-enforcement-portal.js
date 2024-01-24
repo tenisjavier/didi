@@ -5,7 +5,7 @@ import LawEnforcementHero from "../../../components/sections/LawEnforcementHero"
 import LawEnforcementFAQ from "../../../components/sections/LawEnforcementFAQ";
 import LawEnforcementBannerOne from "../../../components/sections/LawEnforcementBannerOne";
 import LawEnforcementBannerTwo from "../../../components/sections/LawEnforcementBannerTwo";
-import LawEnforcementBannerThree from "../../../components/sections/LawEnforcementBannerThree";
+import LawEnforcementRequestColumns from "../../../components/sections/LawEnforcementRequestColumns";
 import LawEnforcementColumns from "../../../components/sections/LawEnforcementColumns";
 import LawEnforcementBannerSix from "../../../components/sections/LawEnforcementBannerSix";
 
@@ -32,12 +32,12 @@ const LawEnforcement = ({ data }) => {
 
   return (
     <Layout>
-      <LawEnforcementHero
+    <LawEnforcementHero
         bgImage={driveLawEnforcementHeroBgImage}
       ></LawEnforcementHero>
       <LawEnforcementBannerOne></LawEnforcementBannerOne>
       <LawEnforcementBannerTwo></LawEnforcementBannerTwo>
-      <LawEnforcementBannerThree></LawEnforcementBannerThree>
+      <LawEnforcementRequestColumns></LawEnforcementRequestColumns>
       <LawEnforcementColumns></LawEnforcementColumns>
       <LawEnforcementBannerSix></LawEnforcementBannerSix>
       <LawEnforcementFAQ data={faqLawEnforcement}></LawEnforcementFAQ>
