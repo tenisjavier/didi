@@ -41,6 +41,24 @@
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/co/seguridad/",
   "SafetyFeatures.linkItem": "/co/seguridad/funciones/{{feature}}",
+  "SafetyDrvCTA.title": "Seguridad para conductores",
+  "SafetyDrvCTA.desc": "Conoce más sobre las funciones de seguridad para conductores en DiDi",
+  "SafetyDrvCTA.btnLink": "/co/seguridad/conductores/",
+  "SafetyDrvCTA.btnMode": "primary",
+  "SafetyDrvCTA.btnText": "Conoce más",
+  "SafetyPaxCTA.title": "Seguridad para pasajeros",
+  "SafetyPaxCTA.desc": "Conoce más sobre las funciones de seguridad para pasajeros en DiDi",
+  "SafetyPaxCTA.btnLink": "/co/seguridad/pasajeros/",
+  "SafetyPaxCTA.btnMode": "primary",
+  "SafetyPaxCTA.btnText": "Conoce más",
+  "SafetyDrvImgHero.title": "Conduce con tranquilidad",
+  "SafetyDrvImgHero.desc": "En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
+  "SafetyDrvImgHero.textColor": "white",
+  "SafetyDrvImgHero.bgColor": "bg-blue-primary",
+  "SafetyPaxImgHero.title": "Viaja con tranquilidad",
+  "SafetyPaxImgHero.desc": "En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
+  "SafetyPaxImgHero.textColor": "white",
+  "SafetyPaxImgHero.bgColor": "bg-blue-primary",
   "DrvCTA.title": "Regístrate en DiDi Conductor",
   "DrvCTA.desc": "Regístrate en DiDi y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a completar arrendamientos",
   "DrvCTA.bullets": [
@@ -467,30 +485,33 @@
   "SafetyGridBeforeTrip.bgColor": "bg-white",
   "SafetyGridBeforeTrip.title": "Antes del Arrendamiento",
   "SafetyGridBeforeTrip.textColor": "gray-primary",
+  "SafetyGridBeforeTrip.urlBase": "/co/seguridad/",
+  "SafetyGridDuringTrip.urlBase": "/co/seguridad/",
+  "SafetyGridAfterTrip.urlBase": "/co/seguridad/",
   "SafetyGridBeforeTrip.columns": [
     {
-      "title": "1. Chequeo de Antecedentes del Arrendador",
-      "desc": "Para que una persona pueda registrarse como arrendador o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
+      "title": "1. Verificación de los pasajeros ",
+      "desc": "Verificamos a los pasajeros a través de distintas herramientas de seguridad para que viajes tranquilo y seguro",
       "bgColor": "bg-white"
     },
     {
-      "title": "2. Reconocimiento Facial para Arrendadores",
-      "desc": "Con esta función hacemos un reconocimiento facial de manera aleatoria para asegurar que el socio que se conecta a la app sea el mismo registrado en la app a través de una selfie.",
+      "title": "2. Usando la app de DiDi sabes exactamente a dónde vas ",
+      "desc": "DiDi te muestra el destino del pasajero antes de aceptar el viaje.",
       "bgColor": "bg-white"
     },
     {
-      "title": "3. Información del Arrendador",
-      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del arrendador, el número de arrendamientos, el tiempo en la app, la calificación, los datos del vehículo y los comentarios de los usuarios.",
+      "title": "3. Contactos de confianza ",
+      "desc": "Comparte tu ubicación en tiempo real desde la app",
       "bgColor": "bg-white"
     },
     {
-      "title": "4. Contactos de Confianza",
-      "desc": "Puedes elegir hasta cinco personas de tus contactos de confianza para compartirles tus solicitudes en tiempo real.",
+      "title": "4. Anonimización del Teléfono ",
+      "desc": "Encriptamos tu número de teléfono para que el pasajero no tenga tus datos reales. Solo podrán contactarse por temas de servicio a través de la app.",
       "bgColor": "bg-white"
     },
     {
-      "title": "5. Número privado",
-      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre arrendatarios y arrendadores usando la aplicación NO mostrarán tu número real.",
+      "title": "5. DiDi invitado ",
+      "desc": "Se trata de una función para que los pasajeros puedan indicar en la app si están pidiendo el viaje para alguien más. Así, tú sabrás exactamente a quién recoges",
       "bgColor": "bg-white"
     }
   ],
@@ -500,27 +521,37 @@
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
-      "title": "6. Compartir tu Ubicación",
+      "title": "6. Botón de emergencia ",
       "desc": "En DiDi, puedes compartir tu ubicación en tiempo real con cualquer contacto que tú elijas con tan solo un click.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "7. Botón de Emergencia",
+      "title": "7. Monitoreo de Viaje ",
       "desc": "Durante cualquier situación inesperada en tu arrendamiento, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "8. Patrullas de Reacción",
+      "title": "8. Zonas de Riesgo ",
       "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Soporte DiDi 24/7 en caso de alguna emergencia.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "8. Monitoreo de Viaje en Tiempo Real",
+      "title": "8. Compartir viaje ",
       "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma \"inmediata\". Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta. \n ** No disponible para Taxi. ",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "9. Seguro de Responsabilidad Civil y Accidentes Personales",
+      "title": "9. DiDi Mujer ",
+      "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "bgColor": "bg-orange-primary"
+    },
+    {
+      "title": "10. Inteligencia artificial ",
+      "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "bgColor": "bg-orange-primary"
+    },
+    {
+      "title": "11. Viaje con cobertura ",
       "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
@@ -530,12 +561,12 @@
   "SafetyGridAfterTrip.textColor": "gray-primary",
   "SafetyGridAfterTrip.columns": [
     {
-      "title": "11. Centro de Soporte 24/7",
+      "title": "12. Tú decides con quién viajar ",
       "desc": "Contamos con un equipo calificado para apoyarte 24/7 durante cualquier emergencia o inconveniente.",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "12. Desvincular Arrendador",
+      "title": "13. Estamos para ti 24/7 ",
       "desc": "Si te sentiste incómodo o inseguro, al terminar tu solicitud, en el menú de calificación, encontrarás el botón de desvinculación de arrendador/socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener arrendamientos con esta persona.",
       "bgColor": "bg-gray-light"
     }
