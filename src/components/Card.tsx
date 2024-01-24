@@ -46,6 +46,7 @@ export interface CardProps extends BtnProps {
   hasTextHighlighterDescStyle?: string;
   titlePosition?: "beforeImage" | "afterImage";
   descPosition?: "beforeBtn" | "afterBtn";
+  iconTop?: React.ReactNode;
 }
 
 const Card = (props: CardProps) => {
@@ -87,7 +88,8 @@ const Card = (props: CardProps) => {
     hasTextHighlighterDesc,
     hasTextHighlighterDescStyle,
     titlePosition = "afterImage",
-    descPosition = "beforeBtn"
+    descPosition = "beforeBtn",
+    iconTop,
   } = props;
 
   let min = "";
@@ -124,8 +126,9 @@ const Card = (props: CardProps) => {
     <div
       style={{ direction: dir }}
       className={`${customWidth ? customWidth : "max-w-xs"
-        }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index}`}
+        }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index} relative`}
     >
+      {iconTop}
       {titlePosition === "beforeImage" && title && (
         <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
       )}

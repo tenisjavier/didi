@@ -664,8 +664,47 @@
     }
   ],
   "LawEnforcementBannerSix.title": "Please Note:",
-  "LawEnforcementBannerSix.desc": " - The request must be accompanied by a signed and/or stamped Legal, Official Document and/or a signed and/or stamped DiDi Data Request Form.\n - The signed document should originate from an authorised official and authorised authority.\n - The request should adhere to the Terms and Conditions stipulated in our DiDi Law Enforcement Portal.\n - Our assessment indicates that the requested information is not reasonably necessary for the ongoing investigation. ",
+  "LawEnforcementBannerSix.desc": " • The request must be accompanied by a signed and/or stamped Legal, Official Document and/or a signed and/or stamped DiDi Data Request Form.\n • The signed document should originate from an authorised official and authorised authority.\n • The request should adhere to the Terms and Conditions stipulated in our DiDi Law Enforcement Portal.\n • Our assessment indicates that the requested information is not reasonably necessary for the ongoing investigation. ",
   "LawEnforcementBannerSix.descText": "Please ensure that the request contains sufficient data to carry out the investigation and includes the official email from the authorities. The final outcome will be available within the portal itself. Your request may be rejected if it does not meet the minimum requirements essential for processing, as outlined below:",
   "LawEnforcementBannerSix.textColor": "white",
+  "LawEnforcementFAQ.title": "FAQs",
+  "LawEnforcementRequestColumns.title": "How to Make a Request",
+  "LawEnforcementRequestColumns.textColor": "gray-primary",
+  "LawEnforcementRequestColumns.bgColor": "bg-white",
+  "LawEnforcementRequestColumns.btnMode": "primary",
+  "LawEnforcementRequestColumns.btnText": "Access Portal",
+  "LawEnforcementRequestColumns.btnLink": "https://lert.didiglobal.com/NZ/login",
+  "LawEnforcementRequestColumns.columns": [
+    {
+      "desc": "If you already have an account registered in our LERT Portal, please login and submit your request through the same account. If you do not have an existing account on our LERT Portal, please use the ‘Sign up now’ button located at the bottom of the portal. Upon completion, you will receive a confirmation email including a password from noreply@anz.didiglobal.com. Please ensure that this email address is whitelisted to prevent any communication issues",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "Please use the email address and password to log in to the platform. We strongly recommend updating your password to your own choosing by clicking ‘Forgot Password’. In the unfortunate event of forgetting or misplacing your password, the creation of a new account may become necessary, potentially leading to the loss of vital information. To safeguard against such situations, we advise storing this email in a secure and easily accessible location, or, better yet, promptly updating the password to one that is more secure and memorable to you.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "To create a new request, please click Create a New Request.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "Please provide all the requested information. Please note that an official Legal request letter is a prerequisite for processing your inquiry. Alternatively, you may complete the DiDi data request form, sign it, and submit it as an official request letter through the LERT Portal.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "DiDi Law Enforcement Team will review your request and will provide the response to the request.",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    },
+    {
+      "desc": "Once the request is completed, you will receive an email confirmation and you may log into the Portal and download the results. Should you have encounter any issues during registration or sending the request, please do not hesitate to contact us at lert@anz.didiglobal.com",
+      "bgColor": "bg-gray-light",
+      "textColor": "gray-primary"
+    }
+  ],
   "LawEnforcementBannerSix.bgColor": "bg-orange-primary"
 }

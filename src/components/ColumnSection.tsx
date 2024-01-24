@@ -1,6 +1,7 @@
 import React from "react";
 import Card, { CardProps } from "./Card";
 import textHighlighter from "../util/textHighlighter";
+import Btn, { BtnMode, BtnType } from "./Btn";
 
 export interface ColumnsSectionProps {
   columns: CardProps[];
@@ -17,6 +18,10 @@ export interface ColumnsSectionProps {
   textHighlightStyles?: string;
   gridCols?: string;
   gridConfig?: string;
+  btnMode?: BtnMode;
+  btnType?: BtnType;
+  btnLink?: string | undefined;
+  btnText?: string | undefined;
 }
 
 const ColumnsSection = ({
@@ -32,6 +37,10 @@ const ColumnsSection = ({
   hasTextHighlight,
   textHighlightStyles,
   gridConfig,
+  btnMode,
+  btnType,
+  btnLink,
+  btnText,
 }: ColumnsSectionProps) => {
   let dir: any = "ltr";
 
@@ -64,6 +73,7 @@ const ColumnsSection = ({
         <div
           className={`${gridConfig || grid} mt-10  lg:justify-around `}
         >
+
           {columns &&
             columns.map((col, index) => {
               return <Card {...col} key={index}></Card>;
@@ -74,6 +84,17 @@ const ColumnsSection = ({
             .split("\n")
             .map((str) => <small className="text-center">{str}</small>)}
       </div>
+      <span
+        className={`flex justify-center ${btnText != "VideoSection.btnText" ? "" : "hidden"
+          }`}
+      >
+        <Btn
+          btnType={btnType}
+          btnLink={btnLink}
+          btnMode={btnMode}
+          btnText={btnText}
+        ></Btn>
+      </span>
     </section>
   );
 };

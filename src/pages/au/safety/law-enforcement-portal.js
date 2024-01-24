@@ -8,6 +8,7 @@ import LawEnforcementBannerTwo from "../../../components/sections/LawEnforcement
 import LawEnforcementBannerThree from "../../../components/sections/LawEnforcementBannerThree";
 import LawEnforcementColumns from "../../../components/sections/LawEnforcementColumns";
 import LawEnforcementBannerSix from "../../../components/sections/LawEnforcementBannerSix";
+import LawEnforcementRequestColumns from "../../../components/sections/LawEnforcementRequestColumns";
 
 
 const LawEnforcement = ({ data }) => {
@@ -37,7 +38,7 @@ const LawEnforcement = ({ data }) => {
       ></LawEnforcementHero>
       <LawEnforcementBannerOne></LawEnforcementBannerOne>
       <LawEnforcementBannerTwo></LawEnforcementBannerTwo>
-      <LawEnforcementBannerThree></LawEnforcementBannerThree>
+      <LawEnforcementRequestColumns></LawEnforcementRequestColumns>
       <LawEnforcementColumns></LawEnforcementColumns>
       <LawEnforcementBannerSix></LawEnforcementBannerSix>
       <LawEnforcementFAQ data={faqLawEnforcement}></LawEnforcementFAQ>
