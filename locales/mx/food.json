@@ -36,8 +36,7 @@
   "FoodDeliveryCTA.btnMode": "primary",
   "FoodBusinessGuideHero.title": "Mejora tu experiencia con la app. Conoce aquí guías y contenido educativo",
   "FoodBusinessGuideHero.desc": "Teléfono comercial: 800-801-6888. \n WhatsApp: +52 55 6270 5369",
-  "FoodBusinessHero.title": "Registra tu Restaurante",
-  "FoodBusinessHero.desc": "Teléfono comercial: 800-801-6888. \n WhatsApp: +52 55 6270 5369",
+  "FoodBusinessHero.title": "Únete a DiDi \n Food y ve crecer \n tu negocio",
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "light",
   "FoodBusinessColumns.bgColor": "bg-white",
@@ -62,19 +61,70 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessDownloads.title": "Descargar tienda de DiDi Food",
-  "FoodBusinessDownloads.desc": "¡Optimiza tu negocio y empieza a recibir más pedidos!",
+  "FoodBusinessBenefitsColumns.bgColor": "bg-white",
+  "FoodBusinessBenefitsColumns.textColor": "gray-primary",
+  "FoodBusinessBenefitsColumns.columns": [
+    {
+      "desc": "Tendrás la posibilidad de incrementar al doble tus ventas, sin cambios en tus costos fijos al usar la app",
+      "imageName": "graph-icon"
+    },
+    {
+      "desc": "Aumenta la posibilidad de adquirir más clientes al tener mayor cobertura y visibilidad, dando a conocer tu marca a través de la app",
+      "imageName": "money-card-icon"
+    },
+    {
+      "desc": "Los repartidores que ofrecen sus servicios de entrega a través de la app se encargarán de entregar los pedidos a tus clientes",
+      "imageName": "funny-icon"
+    },
+    {
+      "desc": "Recibe atención personalizada y profesional para impulsar el desempeño de tu tienda en la app",
+      "imageName": "delivery-icon"
+    },
+    {
+      "desc": "Participa en programas de promociones co-financiadas por DiDi Food (Podrás consultar términos y condiciones de cada promoción en la app)",
+      "imageName": "wifi-icon"
+    }
+  ],
+  "FoodBusinessFollowingStepsCTA.title": "Únete a DiDi Food siguiendo estos \n sencillos pasos",
+  "FoodBusinessFollowingStepsCTA.bgColor": "bg-white",
+  "FoodBusinessFollowingStepsCTA.textColor": "gray-primary",
+  "FoodBusinessFollowingStepsCTA.bullets": [
+    "1 - Registra tu tienda en la app \n Es importante que durante el proceso de registro incluyas toda la información solicitada para\n poder acceder a la aplicación",
+    "2 - Personaliza tu tienda \n Haz brillar tu tienda en la app, esta te permite personalizar tu menú con fotos y descripciones \n para incrementar tus posibilidades de éxito en la aplicación",
+    "3 - Conéctate a la app y comienza a recibir pedidos \n Tenemos un tiempo estimado de 8 días hábiles para que puedas conectarte desde que \n recibamos todos tus documentos"
+  ],
+  "FoodBusinessRequirementsColumns.title": "Para que tengas un registro exitoso necesitas seguir los siguientes pasos:",
+  "FoodBusinessRequirementsColumns.bgColor": "bg-white",
+  "FoodBusinessRequirementsColumns.textColor": "gray-primary",
+  "FoodBusinessRequirementsColumns.columns": [
+    {
+      "desc": "{Ingresa la información} \n {básica de tu tienda} \n -Nombre de la tienda \n -Dirección \n -Numero telefonico \n -Categoría \n -Fotografía de la fachada \n -Comprobante de domicilio no mayor a 3 meses",
+      "imageName": "restaurant-icon"
+    },
+    {
+      "desc": "{Realiza la carga de:} \n -Persona física \n -información del representante legal \n -INE \n -CURP \n -RFC** \n {Persona moral} \n -Acta constitutiva \n -Poder del representante legal \n -INE/IFE o Pasaporte vigente del representante legal \n -Constancia de Situación Fiscal",
+      "imageName": "id-card-icon-orange"
+    },
+    {
+      "desc": "{Sube los documentos} \n {básicos de tu negocio} \n -CLABE \n -Estado de cuenta no mayor a 3 meses",
+      "imageName": "check-list-icon"
+    },
+    {
+      "desc": "{Carga tu Menu} \n Archivo con todos los platillos y sus precios \n Carga de fotografías del menú",
+      "imageName": "menu-food-phone-icon"
+    }
+  ],
+  "FoodBusinessDownloads.title": "Aún no descargas la app de DiDi, te invitamos a hacerlo",
   "FoodBusinessDownloads.textColor": "gray-primary",
   "FoodBusinessDownloads.bgColor": "bg-white",
   "FoodBusinessDownloads.columns": [
     {
-      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
+      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+      "iconName": "mx.FoodBusinessDownloads.image-4"
     },
     {
-      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/app/global-merchant-application-mexicoPad-release_1.2.34_2021030503.apk?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
-    },
-    {
-      "linkItem": "https://d.didiglobal.com/3cikL?utm_source=(direct)&utm_medium=(none)&utm_campaign=none"
+      "linkItem": "https://d.didiglobal.com/3cikL?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+      "iconName": "mx.FoodBusinessDownloads.image-3"
     }
   ],
   "Requirements.title": "Requerimientos para ser Socio Restaurante",

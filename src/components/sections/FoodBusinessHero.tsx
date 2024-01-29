@@ -42,6 +42,10 @@ const FoodBusinessHero = ({
     btnType: "foodBusiness",
     link: t("FoodBusinessHero.link"),
     mobileTitlePosition: mobileTitlePosition,
+    contactButtons: {
+      phoneNumber: "tel:800-801-6888",
+      whatsapp: "https://wa.me/525562705369"
+    }
   };
   return <CTASection {...props}></CTASection>;
 };

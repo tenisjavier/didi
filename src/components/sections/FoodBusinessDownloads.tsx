@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../Image"
+import Image, { ImageDataType } from "../Image"
 import { t } from "../../context/countryContext";
 import ColumnsSection, { ColumnsSectionProps } from "../ColumnSection";
 
 interface FoodBusinessDownloadsProps {
-  images: {
-    title: string;
-    description: string;
-    gatsbyImageData: React.ReactNode;
-  }[];
+  images: ImageDataType[];
 }
 
 const FoodBusinessDownloads = ({ images }: FoodBusinessDownloadsProps) => {

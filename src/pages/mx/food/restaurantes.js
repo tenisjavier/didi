@@ -2,24 +2,55 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
-import FoodBusinessColumns from "../../../components/sections/FoodBusinessColumns";
+import FoodBusinessFollowingStepsCTA from "../../../components/sections/FoodBusinessFollowingStepsCTA";
+import FoodBusinessBenefitsColumns from "../../../components/sections/FoodBusinessBenefitsColumns";
 import FoodBusinessDownloads from "../../../components/sections/FoodBusinessDownloads";
 import FoodCityList from "../../../components/sections/FoodCityList";
 import RestaurantSocialColumns from "../../../components/sections/RestaurantSocialColumns";
+import FoodBusinessRequirementsColumns from "../../../components/sections/FoodBusinessRequirementsColumns";
+import FoodBusinessFaqs from "../../../components/sections/FoodBusinessFAQ";
 
 const FoodBusiness = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+
+  const faqRestaurant = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Restaurant Tienda"
+  );
+
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodBusinessHero.bgImage";
+  })[0];
+  const foodFollowingStepsImage = images.filter((image) => {
+    return image.title === "mx.followingSteps.image";
   })[0];
   const foodHeroBgMobileImage = images.filter((image) => {
     return image.title === "mx.FoodBusinessHeroMobile.bgImage";
   })[0];
-  const foodBusinessColumnsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodBusinessColumns.image") !== -1;
+
+  const foodBusinessBenefitsColumnsImages = images.filter((image) => {
+    return (
+      image.title === "graph-icon" ||
+      image.title === "money-card-icon" ||
+      image.title === "funny-icon" ||
+      image.title === "delivery-icon" ||
+      image.title === "wifi-icon"
+    );
   });
+
+  const foodBusinessRequirementsColumnsImages = images.filter((image) => {
+    return (
+      image.title === "restaurant-icon" ||
+      image.title === "id-card-icon-orange" ||
+      image.title === "check-list-icon" ||
+      image.title === "menu-food-phone-icon"
+    );
+  });
+
   const foodBusinessDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
+    return (
+      image.title === "mx.FoodBusinessDownloads.image-3" ||
+      image.title === "mx.FoodBusinessDownloads.image-4"
+    );
   });
   const socialImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiRestaurantSocial.image") !== -1;
@@ -35,11 +66,23 @@ const FoodBusiness = ({ data }) => {
         bgImage={foodHeroBgImage}
         mobileBgImage={foodHeroBgMobileImage}
       ></FoodBusinessHero>
-      <FoodBusinessColumns
-        images={foodBusinessColumnsImages}
-      ></FoodBusinessColumns>
+      <FoodBusinessBenefitsColumns
+        images={foodBusinessBenefitsColumnsImages}
+      ></FoodBusinessBenefitsColumns>
+      <FoodBusinessFollowingStepsCTA
+        image={foodFollowingStepsImage}
+      ></FoodBusinessFollowingStepsCTA>
+      <FoodBusinessRequirementsColumns
+        images={foodBusinessRequirementsColumnsImages}
+      ></FoodBusinessRequirementsColumns>
+      {/* <FoodBusinessFaqs
+        title="Las aplicaciones que facilitan la solicitud y entrega de comida a domicilio son actualmente la opción #1 para pedir comida. 
+        Los usuarios tienen acceso a su comida favorita a un click de distancia"
+        desc=" "
+        data={faqRestaurant[0]}
+      ></FoodBusinessFaqs> */}
       <FoodBusinessDownloads
-        images={foodBusinessDownloadsImages}
+        images={foodBusinessDownloadsImages.reverse()}
       ></FoodBusinessDownloads>
       <FoodCityList data={filteredCities}></FoodCityList>
       <RestaurantSocialColumns
@@ -56,7 +99,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodBusinessHero.bgImage)||(mx.FoodBusinessHeroMobile.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)|(mx.DiDiRestaurantSocial.image)/"
+          regex: "/(restaurant-icon)|(id-card-icon-orange)|(check-list-icon)|(menu-food-phone-icon)|(mx.followingSteps.image)|(graph-icon)|(money-card-icon)|(funny-icon)|(delivery-icon)|(wifi-icon)|(mx.FoodBusinessHero.bgImage)||(mx.FoodBusinessHeroMobile.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)|(mx.DiDiRestaurantSocial.image)/"
         }
       }
       sort: { title: ASC }
@@ -70,7 +113,7 @@ export const query = graphql`
     }
     allContentfulProduct(
       filter: {
-        country: { elemMatch: { code: { eq: "cl" } } }
+        country: { elemMatch: { code: { eq: "mx" } } }
         category: { eq: "food" }
         name: { eq: "Food Business" }
       }
@@ -96,6 +139,33 @@ export const query = graphql`
         }
         restaurant {
           name
+        }
+      }
+    }
+
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "mx" } } }
+        category: { eq: "food" }
+      }
+    ) {
+      nodes {
+        name
+        faq {
+          title
+          slug
+          content {
+            raw
+            references {
+              ... on ContentfulAsset {
+                contentful_id
+                title
+                description
+                gatsbyImageData(width: 800)
+                __typename
+              }
+            }
+          }
         }
       }
     }
