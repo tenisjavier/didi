@@ -65,52 +65,52 @@
   "FoodBusinessBenefitsColumns.textColor": "gray-primary",
   "FoodBusinessBenefitsColumns.columns": [
     {
-      "desc": "Tendrás la posibilidad de incrementar al doble tus ventas, sin cambios en tus costos fijos al usar la app",
+      "desc": "Tendrás la posibilidad de duplicar tus ventas sin aumentar tus costos fijos al usar la app.",
       "imageName": "graph-icon"
     },
     {
-      "desc": "Aumenta la posibilidad de adquirir más clientes al tener mayor cobertura y visibilidad, dando a conocer tu marca a través de la app",
+      "desc": "Potencia el éxito de tu tienda con la app DiDi Food, incrementando la cobertura y visibilidad que ofrece la aplicación para atraer nuevos clientes.",
       "imageName": "money-card-icon"
     },
     {
-      "desc": "Los repartidores que ofrecen sus servicios de entrega a través de la app se encargarán de entregar los pedidos a tus clientes",
+      "desc": "Optimiza tu servicio de entrega, los usuarios repartidores que ofrecen sus servicios de entrega a través de la aplicación se encargarán de entregar tus pedidos mejorando la experiencia del usuario comensal.",
       "imageName": "funny-icon"
     },
     {
-      "desc": "Recibe atención personalizada y profesional para impulsar el desempeño de tu tienda en la app",
+      "desc": "Potencia el uso de la aplicación con las herramientas de atención personalizada y profesional, posibilitando que tomes decisiones informadas y estratégicas al momento de crear tu cuenta en la app",
       "imageName": "delivery-icon"
     },
     {
-      "desc": "Participa en programas de promociones co-financiadas por DiDi Food (Podrás consultar términos y condiciones de cada promoción en la app)",
+      "desc": "Aprovecha las emocionantes promociones exclusivas de la app de DiDi Food para posibilitar el crecimiento de tu negocio.",
       "imageName": "wifi-icon"
     }
   ],
-  "FoodBusinessFollowingStepsCTA.title": "Únete a DiDi Food siguiendo estos \n sencillos pasos",
+  "FoodBusinessFollowingStepsCTA.title": "¡Conectarte con DiDi Food es muy fácil! \n Sigue los siguientes pasos",
   "FoodBusinessFollowingStepsCTA.bgColor": "bg-white",
   "FoodBusinessFollowingStepsCTA.textColor": "gray-primary",
   "FoodBusinessFollowingStepsCTA.bullets": [
-    "1 - Registra tu tienda en la app \n Es importante que durante el proceso de registro incluyas toda la información solicitada para\n poder acceder a la aplicación",
-    "2 - Personaliza tu tienda \n Haz brillar tu tienda en la app, esta te permite personalizar tu menú con fotos y descripciones \n para incrementar tus posibilidades de éxito en la aplicación",
-    "3 - Conéctate a la app y comienza a recibir pedidos \n Tenemos un tiempo estimado de 8 días hábiles para que puedas conectarte desde que \n recibamos todos tus documentos"
+    "1 - Registra tu tienda en la app \n Ten a la mano toda la documentación necesaria para completar tu registro y activar tu perfil.",
+    "2 - Personaliza tu tienda \n Haz brillar tu tienda en la app, puedes personalizar tu menú con fotos y descripciones para incrementar tus posibilidades de éxito.",
+    "3 - Conéctate a la app y comienza a recibir pedidos \n Una vez tengamos tu documentación completa, tu cuenta estará activa en un tiempo estimado de 8 días hábiles."
   ],
   "FoodBusinessRequirementsColumns.title": "Para que tengas un registro exitoso necesitas seguir los siguientes pasos:",
   "FoodBusinessRequirementsColumns.bgColor": "bg-white",
   "FoodBusinessRequirementsColumns.textColor": "gray-primary",
   "FoodBusinessRequirementsColumns.columns": [
     {
-      "desc": "{Ingresa la información} \n {básica de tu tienda} \n -Nombre de la tienda \n -Dirección \n -Numero telefonico \n -Categoría \n -Fotografía de la fachada \n -Comprobante de domicilio no mayor a 3 meses",
+      "desc": "{Ingresa la información} \n {básica de tu tienda} \n - Nombre de la tienda \n - Dirección \n - Numero telefonico \n - Categoría \n - Fotografía de la fachada \n - Comprobante de domicilio no mayor a 3 meses",
       "imageName": "restaurant-icon"
     },
     {
-      "desc": "{Realiza la carga de:} \n -Persona física \n -información del representante legal \n -INE \n -CURP \n -RFC** \n {Persona moral} \n -Acta constitutiva \n -Poder del representante legal \n -INE/IFE o Pasaporte vigente del representante legal \n -Constancia de Situación Fiscal",
+      "desc": "{Realiza la carga de:} \n - Persona física \n - información del representante legal \n - INE/IFE o Pasaporte vigente \n - CURP \n - RFC** \n {Persona moral} \n - Acta constitutiva \n - Poder del representante legal \n - INE/IFE o Pasaporte vigente del representante legal \n - Constancia de Situación Fiscal",
       "imageName": "id-card-icon-orange"
     },
     {
-      "desc": "{Sube los documentos} \n {básicos de tu negocio} \n -CLABE \n -Estado de cuenta no mayor a 3 meses",
+      "desc": "{Sube los documentos} \n {básicos de tu negocio} \n - CLABE \n - Estado de cuenta no mayor a 3 meses",
       "imageName": "check-list-icon"
     },
     {
-      "desc": "{Carga tu Menu} \n Archivo con todos los platillos y sus precios \n Carga de fotografías del menú",
+      "desc": "{Carga tu Menu} \n - Archivo con todos los platillos y sus precios \n - Carga de fotografías del menú",
       "imageName": "menu-food-phone-icon"
     }
   ],
