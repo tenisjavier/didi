@@ -191,7 +191,8 @@ const btnLinks: AllBtnInterface = {
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterOnlineText: "Pide Comida sin la App",
     foodEaterOnlineLink: "https://www.didi-food.com/es-MX/food/feed/",
-    foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery",
+    foodDeliveryLink:
+      "https://page.didiglobal.com/global/silver-bullet-online/socio-repartidos-mx",
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-MX/store",
     foodBusinessText: "Registra tu Restaurante",
