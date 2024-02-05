@@ -35,10 +35,76 @@
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
   "FoodBusinessGuideHero.title": "Mejora tu experiencia con la app. Conoce aquí guías y contenido educativo",
-  "FoodBusinessHero.title": "¡Únete con DiDi Food y ve crecer a tu restaurante!",
-  "FoodBusinessHero.desc": "Plataforma rápida y confiable de entrega de comida. \n Teléfono de servicio comercial: +6015801398",
+  "FoodBusinessHero.title": "Únete a DiDi \n Food y ve crecer \n tu negocio",
+  "FoodBusinessHero.phone": "tel:+5715801398",
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "light",
+  "FoodBusinessBenefitsColumns.bgColor": "bg-white",
+  "FoodBusinessBenefitsColumns.textColor": "gray-primary",
+  "FoodBusinessBenefitsColumns.columns": [
+    {
+      "desc": "Tendrás la posibilidad de duplicar tus ventas sin aumentar tus costos fijos al usar la app.",
+      "imageName": "graph-icon"
+    },
+    {
+      "desc": "Potencia el éxito de tu tienda con la app DiDi Food, incrementando la cobertura y visibilidad que ofrece la aplicación para atraer nuevos clientes.",
+      "imageName": "money-card-icon"
+    },
+    {
+      "desc": "Optimiza tu servicio de entrega, los usuarios repartidores que ofrecen sus servicios de entrega a través de la aplicación se encargarán de entregar tus pedidos mejorando la experiencia del usuario comensal.",
+      "imageName": "funny-icon"
+    },
+    {
+      "desc": "Potencia el uso de la aplicación con las herramientas de atención personalizada y profesional, posibilitando que tomes decisiones informadas y estratégicas al momento de crear tu cuenta en la app",
+      "imageName": "delivery-icon"
+    },
+    {
+      "desc": "Aprovecha las emocionantes promociones exclusivas de la app de DiDi Food para posibilitar el crecimiento de tu negocio.",
+      "imageName": "wifi-icon"
+    }
+  ],
+  "FoodBusinessFollowingStepsCTA.title": "¡Conectarte con DiDi Food es muy fácil! \n Sigue los siguientes pasos",
+  "FoodBusinessFollowingStepsCTA.bgColor": "bg-white",
+  "FoodBusinessFollowingStepsCTA.textColor": "gray-primary",
+  "FoodBusinessFollowingStepsCTA.bullets": [
+    "1 - Registra tu tienda en la app \n Ten a la mano toda la documentación necesaria para completar tu registro y activar tu perfil.",
+    "2 - Personaliza tu tienda \n Haz brillar tu tienda en la app, puedes personalizar tu menú con fotos y descripciones para incrementar tus posibilidades de éxito.",
+    "3 - Conéctate a la app y comienza a recibir pedidos \n Una vez tengamos tu documentación completa, tu cuenta estará activa en un tiempo estimado de 8 días hábiles."
+  ],
+  "FoodBusinessRequirementsColumns.title": "Para conectarte a la app, te recomendamos seguir los siguientes pasos:",
+  "FoodBusinessRequirementsColumns.bgColor": "bg-white",
+  "FoodBusinessRequirementsColumns.textColor": "gray-primary",
+  "FoodBusinessRequirementsColumns.columns": [
+    {
+      "desc": "{Ingresa la información} \n {básica de tu tienda} \n - Nombre de la tienda \n - Dirección \n - Número telefónico \n - Categoría \n - Fotografía de la fachada \n - Comprobante de domicilio no mayor a 3 meses",
+      "imageName": "restaurant-icon"
+    },
+    {
+      "desc": "{Realiza la carga de:} \n - información del representante legal  \n - Cédula de Ciudadanía, Cédula de Extranjería o Permiso Especial de Permanencia (Personanatural) \n - RUT (Persona jurídica) con vigencia de máximo un año",
+      "imageName": "id-card-icon-orange"
+    },
+    {
+      "desc": "{Sube los documentos} \n {básicos de tu negocio} \n - CLABE \n - Estado de cuenta no mayor a 3 meses",
+      "imageName": "check-list-icon"
+    },
+    {
+      "desc": "{Carga tu Menu} \n - Archivo con todos los platillos y sus precios \n - Carga de fotografías del menú",
+      "imageName": "menu-food-phone-icon"
+    }
+  ],
+  "FoodBusinessDownloads.title": "Aún no descargas la app de DiDi, te invitamos a hacerlo",
+  "FoodBusinessDownloads.textColor": "gray-primary",
+  "FoodBusinessDownloads.bgColor": "bg-white",
+  "FoodBusinessDownloads.columns": [
+    {
+      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+      "iconName": "mx.FoodBusinessDownloads.image-4"
+    },
+    {
+      "linkItem": "https://d.didiglobal.com/3cikL?utm_source=(direct)&utm_medium=(none)&utm_campaign=none",
+      "iconName": "mx.FoodBusinessDownloads.image-3"
+    }
+  ],
   "FoodDeliveryGuideHero.title": "Mejora tu experiencia con la app. Conoce aquí guías y contenido educativo",
   "FoodDeliveryGuideHero.desc": "Obtén ganancias y otras recompensas",
   "FoodDeliveryGuideHero.textColor": "white",
@@ -83,22 +149,6 @@
       "textColor": "white"
     }
   ],
-  "FoodBusinessDownloads.title": "Descargar DiDi Food para Tienda",
-  "FoodBusinessDownloads.desc": "¡Optimiza tu negocio y empieza a recibir más pedidos!",
-  "FoodBusinessDownloads.textColor": "gray-primary",
-  "FoodBusinessDownloads.bgColor": "bg-white",
-  "FoodBusinessDownloads.columns": [
-    {
-      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/pc/client/DiDiStore_win32_1.2.20.exe"
-    },
-    {
-      "linkItem": "https://img0.didiglobal.com/static/soda_static/b/app/global-merchant-application-mexicoPad-release_1.2.34_2021030503.apk"
-    },
-    {
-      "linkItem": "https://d.didiglobal.com/3cikL"
-    }
-  ],
-
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
@@ -299,7 +349,7 @@
       "desc": "Más de 30 millones de pesos en descuentos y promociones, propina de apoyo y guías de salud para los establecimientos.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
-      "btnLink": "/mx/centro-de-ayuda/",
+      "btnLink": "/co/centro-de-ayuda/",
       "btnMode": "light",
       "height": "h-80"
     },
@@ -308,7 +358,7 @@
       "desc": "Fondo económico para repartidores en cuarentena o con COVID-19. Entrega semanal de 10 mil kits de higiene y más de 1 millon en total.",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
-      "btnLink": "/mx/legal/",
+      "btnLink": "/co/legal/",
       "btnMode": "light",
       "height": "h-80"
     },
@@ -317,7 +367,7 @@
       "desc": "Campaña DiDi Hero de apoyo a los trabajadores de la salud, donación de comidas a hospitales, campañas de homenaje a las personas en primera línea de ayuda",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
-      "btnLink": "/mx/centro-de-ayuda/",
+      "btnLink": "/co/centro-de-ayuda/",
       "btnMode": "light",
       "height": "h-80"
     }
@@ -704,7 +754,7 @@
   "FoodCityList.title": "Explora los mejores restaurantes con delivery a domicilio cerca de ti",
   "FoodCityList.bgColor": "bg-white",
   "FoodCityList.textColor": "gray-primary",
-  "FoodCityList.linkItem": "/mx/food/ciudad/{{city}}/",
+  "FoodCityList.linkItem": "/co/food/ciudad/{{city}}/",
   "FoodCityBannerCTA.title": "Comida rápida y económica a domicilio en {{city}}",
   "FoodCityBannerCTA.desc": "¿Estás buscando los mejores platillos rápidos en {{city}}? Descubre los restaurantes más económicos en {{city}} con entrega a domicilio por parte de los socios repartidores que utilizan la app de DiDi Food. Así que si tienes antojo y ya sabes lo que quieres comer, pide ya y recibe tu pedido en tan solo unos minutos. \n La app de DiDi Food te permite encontrar los restaurantes más baratos de {{city}}, bien sea para desayunar, almorzar, cenar o simples refrigerios. Descubre cientos de restaurantes económicos con entrega a domicilio en {{city}}, pide tu comida ya y sigue la entrega del socio repartidor minuto a minuto.",
   "FoodCityBannerCTA.bgColor": "bg-orange-primary",

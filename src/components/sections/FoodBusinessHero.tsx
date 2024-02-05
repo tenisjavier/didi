@@ -43,8 +43,8 @@ const FoodBusinessHero = ({
     link: t("FoodBusinessHero.link"),
     mobileTitlePosition: mobileTitlePosition,
     contactButtons: {
-      phoneNumber: "tel:800-801-6888",
-      whatsapp: "https://wa.me/525562705369"
+      phoneNumber: t("FoodBusinessHero.phone"),
+      whatsapp: t("FoodBusinessHero.whatsapp")
     }
   };
   return <CTASection {...props}></CTASection>;

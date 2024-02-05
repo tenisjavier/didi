@@ -4,7 +4,6 @@ import Layout from "../../../components/Layout";
 import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
 import FoodBusinessFollowingStepsCTA from "../../../components/sections/FoodBusinessFollowingStepsCTA";
 import FoodBusinessBenefitsColumns from "../../../components/sections/FoodBusinessBenefitsColumns";
-import FoodBusinessDownloads from "../../../components/sections/FoodBusinessDownloads";
 import FoodCityList from "../../../components/sections/FoodCityList";
 import RestaurantSocialColumns from "../../../components/sections/RestaurantSocialColumns";
 import FoodBusinessRequirementsColumns from "../../../components/sections/FoodBusinessRequirementsColumns";
@@ -46,19 +45,11 @@ const FoodBusiness = ({ data }) => {
     );
   });
 
-  const foodBusinessDownloadsImages = images.filter((image) => {
-    return (
-      image.title === "mx.FoodBusinessDownloads.image-3" ||
-      image.title === "mx.FoodBusinessDownloads.image-4"
-    );
-  });
   const socialImages = images.filter((image) => {
     return image.title.indexOf("mx.DiDiRestaurantSocial.image") !== -1;
   });
+
   const cities = data.allContentfulCity.nodes;
-  const filteredCities = cities.filter((city) => {
-    return city.restaurant != null;
-  });
 
   return (
     <Layout>
@@ -82,10 +73,7 @@ const FoodBusiness = ({ data }) => {
         desc=" "
         data={faqRestaurantApp[0]}
       ></FoodBusinessFaqs>
-      <FoodBusinessDownloads
-        images={foodBusinessDownloadsImages.reverse()}
-      ></FoodBusinessDownloads>
-      <FoodCityList data={filteredCities}></FoodCityList>
+      <FoodCityList data={cities}></FoodCityList>
       <RestaurantSocialColumns
         images={socialImages.reverse()}
       ></RestaurantSocialColumns>
@@ -100,7 +88,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(restaurant-icon)|(id-card-icon-orange)|(check-list-icon)|(menu-food-phone-icon)|(mx.followingSteps.image)|(graph-icon)|(money-card-icon)|(funny-icon)|(delivery-icon)|(wifi-icon)|(mx.FoodBusinessHero.bgImage)||(mx.FoodBusinessHeroMobile.bgImage)|(mx.FoodBusinessColumns.image)|(mx.FoodBusinessDownloads.image)|(mx.DiDiRestaurantSocial.image)/"
+          regex: "/(restaurant-icon)|(id-card-icon-orange)|(check-list-icon)|(menu-food-phone-icon)|(mx.followingSteps.image)|(graph-icon)|(money-card-icon)|(funny-icon)|(delivery-icon)|(wifi-icon)|(mx.FoodBusinessHero.bgImage)||(mx.FoodBusinessHeroMobile.bgImage)|(mx.FoodBusinessColumns.image)|(mx.DiDiRestaurantSocial.image)/"
         }
       }
       sort: { title: ASC }
@@ -139,7 +127,10 @@ export const query = graphql`
       }
     }
     allContentfulCity(
-      filter: { country: { code: { eq: "mx" } } }
+      filter: {
+        country: { code: { eq: "mx" } }
+        product: { elemMatch: { category: { eq: "food" } } }
+      }
       sort: { name: ASC }
     ) {
       nodes {

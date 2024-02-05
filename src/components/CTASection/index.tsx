@@ -239,26 +239,35 @@ const CTASection = (props: CTAProps) => {
             />
             {contactButtons && (
               <div className={`mt-10 flex items-center gap-7 justify-center lg:pl-4 pl-0 ${alignRight ? 'lg:justify-end' : 'lg:justify-start'}`}>
-                <a href={contactButtons.phoneNumber}>
-                  <Image
-                    imageData={{
-                      title: "Phone Number",
-                      description: "Phone Number"
-                    }}
-                    imageStyle="w-9 h-9"
-                    src="/icon/phone.png"
-                  />
-                </a>
-                <a href={contactButtons.whatsapp}>
-                  <Image
-                    imageData={{
-                      title: "WhatsApp Number",
-                      description: "WhatsApp Number"
-                    }}
-                    imageStyle="w-9 h-9"
-                    src="/icon/whatsapp.png"
-                  />
-                </a>
+                {contactButtons.phoneNumber ? (
+                  <a href={contactButtons.phoneNumber}>
+                    <Image
+                      imageData={{
+                        title: "Phone Number",
+                        description: "Phone Number"
+                      }}
+                      imageStyle="w-9 h-9"
+                      src="/icon/phone.png"
+                    />
+                  </a>
+                ) : (
+                  <></>
+                )}
+
+                {contactButtons.whatsapp ? (
+                  <a href={contactButtons.whatsapp}>
+                    <Image
+                      imageData={{
+                        title: "WhatsApp Number",
+                        description: "WhatsApp Number"
+                      }}
+                      imageStyle="w-9 h-9"
+                      src="/icon/whatsapp.png"
+                    />
+                  </a>
+                ) : (
+                  <></>
+                )}
               </div>
             )}
           </div>
