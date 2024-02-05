@@ -240,7 +240,7 @@ const CTASection = (props: CTAProps) => {
             {contactButtons && (
               <div className={`mt-10 flex items-center gap-7 justify-center lg:pl-4 pl-0 ${alignRight ? 'lg:justify-end' : 'lg:justify-start'}`}>
                 {contactButtons.phoneNumber ? (
-                  <a href={contactButtons.phoneNumber}>
+                  <a href={contactButtons.phoneNumber} target="_blank">
                     <Image
                       imageData={{
                         title: "Phone Number",
@@ -255,7 +255,7 @@ const CTASection = (props: CTAProps) => {
                 )}
 
                 {contactButtons.whatsapp ? (
-                  <a href={contactButtons.whatsapp}>
+                  <a href={contactButtons.whatsapp} target="_blank">
                     <Image
                       imageData={{
                         title: "WhatsApp Number",
