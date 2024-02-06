@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
-import SafetyColumns from "../../components/sections/SafetyColumns";
+import SafetyDrvCTA from "../../components/sections/SafetyDrvCTA";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -11,13 +11,14 @@ const Seguridad = ({ data }) => {
     return image.title === "do.SafetyHero.bgImage";
   })[0];
 
-  const safetyColumnsImage = images.filter((image) => {
-    return image.title === "do.SafetyColumns.image";
-  });
+  const safetyDrvImage = images.filter((image) => {
+    return image.title === "mx.DrvSafety.image";
+  })[0];
+
   return (
     <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
-      <SafetyColumns images={safetyColumnsImage.reverse()}></SafetyColumns>
+      <SafetyDrvCTA image={safetyDrvImage}></SafetyDrvCTA>
     </Layout>
   );
 };
@@ -27,9 +28,7 @@ export default Seguridad;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: {
-        title: { in: ["do.SafetyHero.bgImage", "do.SafetyColumns.image"] }
-      }
+      filter: { title: { in: ["do.SafetyHero.bgImage", "mx.DrvSafety.image"] } }
     ) {
       nodes {
         id
