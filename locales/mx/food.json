@@ -66,7 +66,7 @@
   "FoodBusinessBenefitsColumns.textColor": "gray-primary",
   "FoodBusinessBenefitsColumns.columns": [
     {
-      "desc": "Tendrás la posibilidad de duplicar tus ventas sin aumentar tus costos fijos al usar la app.",
+      "desc": "Tendrás la posibilidad de {duplicar tus ventas} sin aumentar tus costos fijos al usar la app.",
       "imageName": "graph-icon"
     },
     {

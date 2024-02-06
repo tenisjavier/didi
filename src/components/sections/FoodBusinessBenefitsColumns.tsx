@@ -23,7 +23,12 @@ const FoodBusinessBenefitsColumns = ({ images }: FoodBusinessBenefitsColumnsProp
       col.imageStyle = "z-10";
       col.isImage = true;
     }
+    col.hasTextHighlighterDesc = true;
+    col.hasTextHighlighterDescStyle = 'font-bold';
   });
+
+
+  console.log(props.columns)
 
   return <ColumnsSection {...props}></ColumnsSection>;
 };
