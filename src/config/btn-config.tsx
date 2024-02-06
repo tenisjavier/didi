@@ -56,7 +56,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://www.didi-food.com/es-419/mobile-delivery/guide",
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://page.xiaojukeji.com/active/ddpage_0seSZl6c.html",
-    foodBusinessText: "Registra tu Restaurante",
+    foodBusinessText: "Registra tu Tienda",
   },
   cl: {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/cldriverhero",
@@ -79,7 +79,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-PE/store",
-    foodBusinessText: "Registra tu Restaurante",
+    foodBusinessText: "Registra tu Tienda",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Descarga DiDi Food",
   },
@@ -113,7 +113,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery", //  https://www.didi-food.com/es-419/mobile-delivery/guide
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-CO/store",
-    foodBusinessText: "Registra tu Restaurante",
+    foodBusinessText: "Registra tu Tienda",
     foodEaterLink: "https://global-food-eater.onelink.me/4B2F/homepage",
     foodEaterText: "Pide Comida, Descarga la App",
     entregaText: "Usa DiDi Entrega",
@@ -194,7 +194,7 @@ const btnLinks: AllBtnInterface = {
     foodDeliveryLink: "https://global-food-courier.onelink.me/zzaY/delivery",
     foodDeliveryText: "Regístrate como Repartidor",
     foodBusinessLink: "https://www.didi-food.com/es-MX/store",
-    foodBusinessText: "Registra tu Restaurante",
+    foodBusinessText: "Registra tu Tienda",
     fleetText: "Descarga DiDi Fleet",
     fleetLink: "https://fleet.onelink.me/jjQA/okks91lv",
     paymentText: "Descarga DiDi",

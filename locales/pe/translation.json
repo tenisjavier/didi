@@ -73,7 +73,7 @@
     },
     {
       "title": "Centro de Ayuda",
-      "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte. \n Seguridad: (01) 510 2788  \n Si eres usuario: (01) 510 2787 \n Si eres socio conductor: (01) 510 2783",
+      "desc": "Cuentas con DiDi 24/7 para escucharte, para ayudarte. \n Seguridad: (01) 510 2788  \n Si eres socio conductor: (01) 510 2783",
       "textColor": "gray-primary",
       "btnText": "Saber Más",
       "btnLink": "/pe/centro-de-ayuda/",
@@ -96,7 +96,7 @@
     },
     {
       "title": "Precio Asequible",
-      "desc": "Solicita viajes desde S/ 5 soles*.",
+      "desc": "Solicita viajes desde S/ 7 soles*.",
       "bgColor": "white",
       "textColor": "gray-primary"
     },
