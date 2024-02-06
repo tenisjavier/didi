@@ -76,19 +76,23 @@
   "FoodBusinessRequirementsColumns.textColor": "gray-primary",
   "FoodBusinessRequirementsColumns.columns": [
     {
-      "desc": "{Ingresa la información} \n {básica de tu tienda} \n - Nombre de la tienda \n - Dirección \n - Número telefónico \n - Categoría \n - Fotografía de la fachada \n - Comprobante de domicilio no mayor a 3 meses",
+      "title": "Ingresa la información \n básica de tu tienda",
+      "desc": "- Nombre de la tienda \n - Dirección \n - Número telefónico \n - Categoría \n - Fotografía de la fachada \n - Comprobante de domicilio no mayor a 3 meses",
       "imageName": "restaurant-icon"
     },
     {
-      "desc": "{Realiza la carga de:} \n - información del representante legal  \n - Cédula de Ciudadanía, Cédula de Extranjería o Permiso Especial de Permanencia (Personanatural) \n - RUT (Persona jurídica) con vigencia de máximo un año",
+      "title": "Realiza la carga de:",
+      "desc": "- información del representante legal  \n - Cédula de Ciudadanía, Cédula de Extranjería o Permiso Especial de Permanencia (Personanatural) \n - RUT (Persona jurídica) con vigencia de máximo un año",
       "imageName": "id-card-icon-orange"
     },
     {
-      "desc": "{Sube los documentos} \n {básicos de tu negocio} \n - CLABE \n - Estado de cuenta no mayor a 3 meses",
+      "title": "Sube los documentos \n básicos de tu negocio",
+      "desc": "- CLABE \n - Estado de cuenta no mayor a 3 meses",
       "imageName": "check-list-icon"
     },
     {
-      "desc": "{Carga tu Menu} \n - Archivo con todos los platillos y sus precios \n - Carga de fotografías del menú",
+      "title": "Carga tu Menu",
+      "desc": "- Archivo con todos los platillos y sus precios \n - Carga de fotografías del menú",
       "imageName": "menu-food-phone-icon"
     }
   ],

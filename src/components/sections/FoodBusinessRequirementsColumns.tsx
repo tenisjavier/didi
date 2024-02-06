@@ -23,7 +23,7 @@ const FoodBusinessRequirementsColumns = ({ images }: FoodBusinessRequirementsCol
       col.imageStyle = "z-10";
       col.isImage = true;
       col.hasTextHighlighterDesc = true;
-      col.hasTextHighlighterDescStyle = "font-bold !text-gray-primary"
+      col.hasTextHighlighterDescStyle = "font-bold text-xl !text-gray-primary"
     }
   });
 

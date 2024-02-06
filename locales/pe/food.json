@@ -76,19 +76,23 @@
   "FoodBusinessRequirementsColumns.textColor": "gray-primary",
   "FoodBusinessRequirementsColumns.columns": [
     {
-      "desc": "{Ingresa la información} \n {básica de tu tienda} \n - Nombre de la tienda \n - Dirección \n - Número telefónico \n - Categoría \n - Fotografía de la fachada \n - Comprobante de domicilio no mayor a 3 meses",
+      "title": "Ingresa la información \n básica de tu tienda",
+      "desc": "- Nombre de la tienda \n - Dirección \n - Número telefónico \n - Categoría \n - Fotografía de la fachada \n - Comprobante de domicilio no mayor a 3 meses",
       "imageName": "restaurant-icon"
     },
     {
-      "desc": "{Realiza la carga de:} \n - información del representante legal  \n - Documento de identidad: DNI (Ticket de renovación y C4), Carnet de extranjería (Renovación en migración) \n - RUC inicia con 10 o RUC inicia con 15 (Extranjeros) [Persona Física] \n - RUC 20 (Persona jurídica) + Vigencia de poder (Vigencia 3 meses)",
+      "title": "Realiza la carga de:",
+      "desc": "- información del representante legal  \n - Documento de identidad: DNI (Ticket de renovación y C4), Carnet de extranjería (Renovación en migración) \n - RUC inicia con 10 o RUC inicia con 15 (Extranjeros) [Persona Física] \n - RUC 20 (Persona jurídica) + Vigencia de poder (Vigencia 3 meses)",
       "imageName": "id-card-icon-orange"
     },
     {
-      "desc": "{Sube los documentos} \n {básicos de tu negocio} \n - Estado de cuenta o cuenta bancaria con logo del banco",
+      "title": "Sube los documentos \n básicos de tu negocio",
+      "desc": "- Estado de cuenta o cuenta bancaria con logo del banco",
       "imageName": "check-list-icon"
     },
     {
-      "desc": "{Carga tu Menu} \n - Archivo con todos los platillos y sus precios \n - Carga de fotografías del menú",
+      "title": "Carga tu Menu",
+      "desc": "- Archivo con todos los platillos y sus precios \n - Carga de fotografías del menú",
       "imageName": "menu-food-phone-icon"
     }
   ],
