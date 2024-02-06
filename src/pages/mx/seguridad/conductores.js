@@ -13,31 +13,13 @@ const Seguridad = ({ data }) => {
   const safetyHeroImage = images.filter((image) => {
     return image.title === "mx.SafetyDrv.image";
   })[0];
-  const safetyBeforeDrvColumns = images.filter((image) => {
-    return image.title === "mx.SafetyBeforeDrvColumns.image";
-  });
-  const safetyDuringDrvColumns = images.filter((image) => {
-    return image.title === "mx.SafetyDuringDrvColumns.image";
-  });
-  const safetyFinishedDrvColumns = images.filter((image) => {
-    return image.title === "mx.SafetyFinishDrvColumns.image";
-  });
 
   return (
     <Layout>
       <SafetyDrvImgHero image={safetyHeroImage}></SafetyDrvImgHero>
-      <SafetyGridBeforeTrip
-        images={safetyBeforeDrvColumns.reverse()}
-        features={features}
-      ></SafetyGridBeforeTrip>
-      <SafetyGridDuringTrip
-        images={safetyDuringDrvColumns.reverse()}
-        features={features}
-      ></SafetyGridDuringTrip>
-      <SafetyGridAfterTrip
-        images={safetyFinishedDrvColumns.reverse()}
-        features={features}
-      ></SafetyGridAfterTrip>
+      <SafetyGridBeforeTrip features={features}></SafetyGridBeforeTrip>
+      <SafetyGridDuringTrip features={features}></SafetyGridDuringTrip>
+      <SafetyGridAfterTrip features={features}></SafetyGridAfterTrip>
     </Layout>
   );
 };
@@ -62,16 +44,17 @@ export const query = graphql`
       }
     }
     allContentfulFeature(
-      filter: { 
-        country: { code: { eq: "mx" } },
-        category: {
-          eq: "driver"
-        }
-      }
-      ) {
+      filter: { country: { code: { eq: "mx" } }, category: { eq: "driver" } }
+    ) {
       nodes {
         name
         slug
+        image {
+          id
+          title
+          description
+          gatsbyImageData
+        }
       }
     }
   }
