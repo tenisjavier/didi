@@ -39,23 +39,23 @@
   "FoodBusinessBenefitsColumns.textColor": "gray-primary",
   "FoodBusinessBenefitsColumns.columns": [
     {
-      "desc": "Tendrás la posibilidad de duplicar tus ventas sin aumentar tus costos fijos al usar la app.",
+      "desc": "Tendrás la posibilidad de {duplicar tus ventas} sin aumentar tus costos fijos al usar la app.",
       "imageName": "graph-icon"
     },
     {
-      "desc": "Potencia el éxito de tu tienda con la app DiDi Food, incrementando la cobertura y visibilidad que ofrece la aplicación para atraer nuevos clientes.",
+      "desc": "Potenciá el éxito de tu tienda con la app DiDi Food, {incrementando la cobertura y visibilidad} que ofrece la aplicación para atraer nuevos clientes.",
       "imageName": "money-card-icon"
     },
     {
-      "desc": "Optimiza tu servicio de entrega, los usuarios repartidores que ofrecen sus servicios de entrega a través de la aplicación se encargarán de entregar tus pedidos mejorando la experiencia del usuario comensal.",
+      "desc": "{Optimizá tu servicio de entrega}, los usuarios repartidores que ofrecen sus servicios de entrega a través de la aplicación se encargarán de entregar tus pedidos mejorando la experiencia del usuario comensal.",
       "imageName": "funny-icon"
     },
     {
-      "desc": "Potencia el uso de la aplicación con las herramientas de atención personalizada y profesional, posibilitando que tomes decisiones informadas y estratégicas al momento de crear tu cuenta en la app",
+      "desc": "Potenciá el uso de la aplicación con las {herramientas de atención personalizada y profesional}, posibilitando que tomes decisiones informadas y estratégicas al momento de crear tu cuenta en la app",
       "imageName": "delivery-icon"
     },
     {
-      "desc": "Aprovecha las emocionantes promociones exclusivas de la app de DiDi Food para posibilitar el crecimiento de tu negocio.",
+      "desc": "Aprovechá las emocionantes {promociones exclusivas de la app de DiDi Food} para posibilitar el crecimiento de tu negocio.",
       "imageName": "wifi-icon"
     }
   ],
@@ -64,7 +64,7 @@
   "FoodBusinessFollowingStepsCTA.textColor": "gray-primary",
   "FoodBusinessFollowingStepsCTA.bullets": [
     "1 - Registra tu tienda en la app \n Ten a la mano toda la documentación necesaria para completar tu registro y activar tu perfil.",
-    "2 - Personaliza tu tienda \n Haz brillar tu tienda en la app, puedes personalizar tu menú con fotos y descripciones para incrementar tus posibilidades de éxito.",
+    "2 - Personaliza tu cuenta \n Haz brillar tu tienda en la app, puedes personalizar tu menú con fotos y descripciones para incrementar tus posibilidades de éxito.",
     "3 - Conéctate a la app y comienza a recibir pedidos \n Una vez tengamos tu documentación completa, tu cuenta estará activa en un tiempo estimado de 8 días hábiles."
   ],
   "FoodBusinessRequirementsColumns.title": "Para conectarte a la app, te recomendamos seguir los siguientes pasos:",

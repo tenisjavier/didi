@@ -61,7 +61,7 @@ const SmartBanner = (props: SmartBannerProps) => {
     bannerTitle = t("SBFoodEater.title");
     bannerDesc = t("SBFoodEater.desc");
   } else if (type === "foodBusiness") {
-    btnText = "Descargar";
+    btnText = "Regístrate";
     Logo = <FoodEaterLogo></FoodEaterLogo>;
     bgColor = "bg-white";
     bannerTitle = t("SBFoodBusiness.title");

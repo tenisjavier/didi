@@ -67,9 +67,7 @@ const FoodBusiness = ({ data }) => {
         images={foodBusinessRequirementsColumnsImages}
       ></FoodBusinessRequirementsColumns>
       <FoodBusinessFaqs
-        title={`Las aplicaciones que facilitan la intermediación de entrega de comida a domicilio son actualmente la
-        opción elegida de los usuarios para pedir comida. Los usuarios tienen acceso a su comida favorita a
-        través de la app a un click de distancia`}
+        title={`Preguntas Frecuentes`}
         desc=" "
         data={faqRestaurantApp[0]}
       ></FoodBusinessFaqs>
