@@ -15,6 +15,7 @@ const textHighlighter = (text?: string, styles?: string) => {
     return null;
   }
 
+
   const textWithSpan = matches.map((segment, index) => {
     if (segment.startsWith("{") && segment.endsWith("}")) {
       const content = segment.slice(1, -1); // Remove os {}

@@ -54,6 +54,10 @@ export interface CTAProps extends BtnProps {
   centralized?: boolean;
   containerDisabled?: boolean;
   alignRight?: boolean;
+  contactButtons?: {
+    phoneNumber: string;
+    whatsapp: string;
+  };
 }
 
 const CTASection = (props: CTAProps) => {
@@ -96,6 +100,7 @@ const CTASection = (props: CTAProps) => {
     centralized,
     containerDisabled,
     alignRight,
+    contactButtons,
   } = props;
 
   const isRtl = RTL ? "rtl" : "ltr";
@@ -232,6 +237,39 @@ const CTASection = (props: CTAProps) => {
               btnText={btnText}
               btnArray={btnArray}
             />
+            {contactButtons && (
+              <div className={`mt-10 flex items-center gap-7 justify-center lg:pl-4 pl-0 ${alignRight ? 'lg:justify-end' : 'lg:justify-start'}`}>
+                {contactButtons.phoneNumber ? (
+                  <a href={contactButtons.phoneNumber} target="_blank">
+                    <Image
+                      imageData={{
+                        title: "Phone Number",
+                        description: "Phone Number"
+                      }}
+                      imageStyle="w-9 h-9"
+                      src="/icon/phone.png"
+                    />
+                  </a>
+                ) : (
+                  <></>
+                )}
+
+                {contactButtons.whatsapp ? (
+                  <a href={contactButtons.whatsapp} target="_blank">
+                    <Image
+                      imageData={{
+                        title: "WhatsApp Number",
+                        description: "WhatsApp Number"
+                      }}
+                      imageStyle="w-9 h-9"
+                      src="/icon/whatsapp.png"
+                    />
+                  </a>
+                ) : (
+                  <></>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodHero from "../../../../components/sections/FoodHero";
@@ -11,21 +11,21 @@ import FoodAppDownloads from "../../../../components/sections/FoodAppDownloads";
 const Ciudades = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
-    return image.title === "mx.FoodHero.bgImage";
+    return image.title === "co.FoodHero.bgImage";
   })[0];
   const foodBusinessCTAImage = images.filter((image) => {
-    return image.title === "mx.FoodBusinessCTA.image";
+    return image.title === "co.FoodBusinessCTA.image";
   })[0];
   const foodDeliveryCTAImage = images.filter((image) => {
-    return image.title === "mx.FoodDeliveryCTA.image";
+    return image.title === "co.FoodDeliveryCTA.image";
   })[0];
   const foodBusinessDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodBusinessDownloads.image") !== -1;
+    return image.title.indexOf("co.FoodBusinessDownloads.image") !== -1;
   });
   const cities = data.allContentfulCity.nodes;
 
   const foodDeliveryDownloadsImages = images.filter((image) => {
-    return image.title.indexOf("mx.FoodDeliveryDownloads.image") !== -1;
+    return image.title.indexOf("co.FoodDeliveryDownloads.image") !== -1;
   });
 
   return (
@@ -51,7 +51,7 @@ export const query = graphql`
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/(mx.FoodHero.bgImage)|(mx.FoodBusinessCTA.image)|(mx.FoodDeliveryCTA.image)|(mx.FoodBusinessDownloads.image)|(mx.FoodDeliveryDownloads.image)/"
+          regex: "/(co.FoodHero.bgImage)|(co.FoodBusinessCTA.image)|(co.FoodDeliveryCTA.image)|(co.FoodBusinessDownloads.image)|(co.FoodDeliveryDownloads.image)/"
         }
       }
     ) {
@@ -64,7 +64,7 @@ export const query = graphql`
     }
     allContentfulCity(
       filter: {
-        country: { code: { eq: "mx" } }
+        country: { code: { eq: "co" } }
         product: { elemMatch: { category: { eq: "food" } } }
       }
       sort: { name: ASC }

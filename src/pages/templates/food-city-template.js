@@ -10,11 +10,11 @@ import FoodCityList from "../../components/sections/FoodCityList";
 import FoodFAQCities from "../../components/sections/FoodFAQCities";
 import FoodAppDownloads from "../../components/sections/FoodAppDownloads";
 
-
 const FoodCity = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const itemsList = data.allContentfulCity.nodes;
   const name = data.contentfulCity.name;
+  const countryCode = data?.contentfulCity?.country?.code;
 
   const foodHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodHero.bgImage";
@@ -34,7 +34,7 @@ const FoodCity = ({ data }) => {
 
   const customBreadcrumb = [
     {
-      link: `https://web.didiglobal.com/mx/food/`,
+      link: `https://web.didiglobal.com/${countryCode}/food/`,
       text: "Food",
     },
     {
@@ -42,13 +42,6 @@ const FoodCity = ({ data }) => {
       text: name,
     },
   ];
-
-  // useEffect(() => {
-  //   const btnPrimary = document.getElementsByClassName("btn-primary")[0];
-  //   if (btnPrimary && btnPrimary.getElementsByTagName("a")[0]) {
-  //     setQRUrl(btnPrimary.getElementsByTagName("a")[0].href);
-  //   }
-  // }, []);
 
   return (
     <Layout
@@ -73,13 +66,19 @@ const FoodCity = ({ data }) => {
         data={data.contentfulCity}
         image={foodDeliveryCTAImage}
       ></FoodCityBannerCTA2>
-      <FoodCityList data={itemsList}></FoodCityList>
+      {itemsList && itemsList?.length > 0 ? (
+        <FoodCityList data={itemsList}></FoodCityList>
+      ) : (
+        <></>
+      )}
       <FoodCityBannerCTA3
         data={data.contentfulCity}
         image={foodCTA3Image}
       ></FoodCityBannerCTA3>
       <div className="block lg:hidden xl:hidden">
-        <FoodAppDownloads images={foodDeliveryDownloadsImages}></FoodAppDownloads>
+        <FoodAppDownloads
+          images={foodDeliveryDownloadsImages}
+        ></FoodAppDownloads>
       </div>
       <FoodFAQCities data={data.contentfulCity}></FoodFAQCities>
     </Layout>
@@ -89,9 +88,13 @@ const FoodCity = ({ data }) => {
 export default FoodCity;
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String, $countryCode: String) {
     allContentfulCity(
-      filter: { id: { ne: $id }, country: { code: { eq: "mx" } } }
+      filter: {
+        id: { ne: $id }
+        country: { code: { eq: $countryCode } }
+        product: { elemMatch: { category: { eq: "food" } } }
+      }
     ) {
       nodes {
         id
@@ -106,6 +109,9 @@ export const query = graphql`
     contentfulCity(id: { eq: $id }) {
       name
       slug
+      country {
+        code
+      }
     }
     allContentfulAsset(
       filter: {

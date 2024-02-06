@@ -116,7 +116,11 @@ const Card = (props: CardProps) => {
     isTruncate = (
       <>
         {desc.split("\n").map((str) => (
-          <p className="text-center">{hasTextHighlighterDesc ? textHighlighter(str, hasTextHighlighterDescStyle) : str}</p>
+          <p className="text-center  p-0 m-0">
+            {hasTextHighlighterDesc
+              ? textHighlighter(str, hasTextHighlighterDescStyle)
+              : str}
+          </p>
         ))}
       </>
     );
@@ -125,12 +129,19 @@ const Card = (props: CardProps) => {
   return (
     <div
       style={{ direction: dir }}
-      className={`${customWidth ? customWidth : "max-w-xs"
-        }  ${rounded} rounded ${bgColor} ${reverse ? 'flex flex-col-reverse justify-between' : ''}  text-${textColor} my-3 text-center lg:mx-4 card-${index} relative`}
+      className={`${
+        customWidth ? customWidth : "max-w-xs"
+      }  ${rounded} rounded ${bgColor} ${
+        reverse ? "flex flex-col-reverse justify-between" : ""
+      }  text-${textColor} my-3 text-center lg:mx-4 card-${index} relative`}
     >
       {iconTop}
       {titlePosition === "beforeImage" && title && (
-        <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
+        <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>
+          {hasTextHighlighter
+            ? textHighlighter(title as string, textHighlighterStyle)
+            : title}
+        </h4>
       )}
       <div className="mb-5">
         {isImage && <Image imageData={image} imageStyle={imageStyle}></Image>}
@@ -150,7 +161,13 @@ const Card = (props: CardProps) => {
             ></AnimatedNumber>
           )}
           {titlePosition === "afterImage" && title && !animatedNumber && (
-            <h4 className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}>{hasTextHighlighter ? textHighlighter(title as string, textHighlighterStyle) : title}</h4>
+            <h4
+              className={`mb-4 text-xl font-bold lg:text-center ${titleStyles}`}
+            >
+              {hasTextHighlighter
+                ? textHighlighter(title as string, textHighlighterStyle)
+                : title}
+            </h4>
           )}
           <p className={"text-lg"}></p>
           {descPosition === "beforeBtn" && desc && isTruncate}

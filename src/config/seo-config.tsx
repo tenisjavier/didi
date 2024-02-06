@@ -226,8 +226,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/restaurantes/": {
-      title: "Inscribe tu Restaurante en DiDi Food",
-      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Registra tu Tienda o Restaurante y crece con DiDi Food",
+      desc: "Inscribe tu Tienda o Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
@@ -318,8 +318,7 @@ const seoMeta: AllSEOMetaInterface = {
     "/aeropuerto/": {
       title: "DiDi Aeropuerto",
       desc: "Conoce nuestros términos y condiciones para el uso del sitio web además de nuestras políticas de privacidad.",
-    }
-
+    },
   },
   do: {
     "/": {
@@ -505,8 +504,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/restaurantes/": {
-      title: "Inscribe tu Restaurante en DiDi Food",
-      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Registra tu Tienda o Restaurante y crece con DiDi Food",
+      desc: "Inscribe tu Tienda o Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
@@ -637,8 +636,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Pide comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/restaurantes/": {
-      title: "Inscribe tu Restaurante en DiDi Food",
-      desc: "Inscribe tu Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
+      title: "Registra tu Tienda o Restaurante y crece con DiDi Food",
+      desc: "Inscribe tu Tienda o Restaurante en DiDi Food y empieza a generar ventas fuera de tu local físico. Expande tu negocio. Es rápido, cómodo y barato. Descarga gratis la app de DiDi Food ¡Recibe tu pedido en minutos!",
     },
     "/food/repartidores/": {
       title: "Inscríbete como Repartidor y Gana Dinero en DiDi Food",
@@ -863,8 +862,8 @@ const seoMeta: AllSEOMetaInterface = {
       desc: "Pedí comida a domicilio de tus restaurantes favoritos. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
     "/food/restaurantes/": {
-      title: "Inscribí tu Comercio en DiDi Food",
-      desc: "Inscribí tu Comercio en DiDi Food y empezá a generar ventas fuera de tu local físico. Expandí tu negocio. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
+      title: "Registrá tu Tienda o Restaurante y crece con DiDi Food",
+      desc: "Registrá tu Tienda o Restaurante en DiDi Food y empezá a generar ventas fuera de tu local físico. Expandí tu negocio. Es rápido, cómodo y barato. Descargá gratis la app de DiDi Food ¡Recibí tu pedido en minutos!",
     },
     "/food/repartidores/": {
       title: "Inscribite como Repartidor y Ganá Dinero en DiDi Food",
@@ -1027,9 +1026,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-      title: placeTitle,
-      desc: `${placeTitle}`,
-    }
+        title: placeTitle,
+        desc: `${placeTitle}`,
+      }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;

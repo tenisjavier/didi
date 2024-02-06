@@ -1,17 +1,21 @@
 const path = require(`path`);
-const slugify = require("slugify");
 
 // @desc: Create Routes for all countries and pass pageContext to template
 // @return: null
 const cityRoutesInit = async (graphql, createPage) => {
   const result = await graphql(`
     {
-      allContentfulCity(filter: {country: {code: {eq: "mx"}, product: {elemMatch: {category: {eq: "food"}}}}}) {
+      allContentfulCity(
+        filter: {
+          country: { code: { in: ["mx", "co", "cr", "pe"] } }
+          product: { elemMatch: { category: { eq: "food" } } }
+        }
+      ) {
         nodes {
           id
           name
           slug
-          country{
+          country {
             name
             code
           }
@@ -33,8 +37,8 @@ const cityRoutesInit = async (graphql, createPage) => {
   result.data.allContentfulCity.nodes.forEach((node) => {
     const { id, country, slug } = node;
     const citySlug = slug;
-    
-    if(country?.code) {
+
+    if (country?.code) {
       let path = `/${country.code}/food/ciudad/${citySlug}/`;
 
       createPage({
@@ -42,6 +46,7 @@ const cityRoutesInit = async (graphql, createPage) => {
         component: template,
         context: {
           id: id,
+          countryCode: country?.code,
         },
       });
     }

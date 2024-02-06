@@ -42,6 +42,10 @@ const FoodBusinessHero = ({
     btnType: "foodBusiness",
     link: t("FoodBusinessHero.link"),
     mobileTitlePosition: mobileTitlePosition,
+    contactButtons: {
+      phoneNumber: t("FoodBusinessHero.phone"),
+      whatsapp: t("FoodBusinessHero.whatsapp")
+    }
   };
   return <CTASection {...props}></CTASection>;
 };
