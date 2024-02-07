@@ -526,7 +526,61 @@
   "VehicleSection.bulletTitle": "Hay un DiDi para ti.",
   "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuerdo a tus necesidades:",
   "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
-  "VehicleSection.bulletsCar": ["Express"],
+  "VehicleSection.bulletsCar": [
+    "Express"
+  ],
   "VehicleSection.btnType": "drv",
-  "VehicleSection.btnMode": "primary"
+  "VehicleSection.btnMode": "primary",
+  "DrvFlexHero.title": "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Utiliza DiDi Flex y comienza ya a negociar tu precio. \n Disponible en: Arequipa, Cusco y Lima.",
+  "DrvFlexHero.textColor": "white",
+  "DrvFlexHero.btnMode": "light",
+  "DrvFlexFeatures.title": "Beneficios DiDi Flex",
+  "DrvFlexFeatures.desc": "",
+  "DrvFlexFeatures.textColor": "gray-primary",
+  "DrvFlexFeatures.bgColor": "bg-white",
+  "DrvFlexFeatures.btnMode": "primary",
+  "DrvFlexFeatures.bullets": [
+    "Contraoferta el precio de los viajes",
+    "Rechaza viajes sin penalización ni afectar tu tasa de aceptación",
+    "También cuenta para tus ganancias garantizadas",
+    "Elige el viaje que más te conviene del Centro de Viajes",
+    "Tienes la certeza de que no va a cambiar el destino del viaje",
+    "Sigues teniendo +20 funciones de seguridad",
+    "Te damos Soporte 24/7"
+  ],
+  "DrvColumns.textColor": "gray-primary",
+  "DrvColumns.bgColor": "bg-white",
+  "DrvColumns.columns": [
+    {
+      "title": "Maneja tus Tiempos",
+      "desc": "Flexibilidad para que manejes tu tiempo como quieras",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Soporte 24/7",
+      "desc": "Contar con un equipo de soporte 24/7",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Genera más Ganancias",
+      "desc": "Genera más ganancias con nuestras promociones",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Conoce el Destino",
+      "desc": "Conoce el destino de un viaje antes de aceptarlo",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Driver Center",
+      "desc": "Driver Center",
+      "textColor": "gray-primary"
+    },
+    {
+      "title": "Constante Mejora",
+      "desc": "Accede a soluciones automáticas dentro de la App",
+      "textColor": "gray-primary"
+    }
+  ]
 }
