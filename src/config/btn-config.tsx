@@ -136,6 +136,9 @@ const btnLinks: AllBtnInterface = {
     drvLink: "https://ssa-rides-driver.onelink.me/mbwy/dodriverhero",
     drvLinkQB:
       "https://page.didiglobal.com/global/silver-bullet-online/didi-dvr-do",
+    motoText: "Regístrate en DiDi Moto",
+    motoLinkQB:
+      "https://page.didiglobal.com/global/silver-bullet-online/didi-moto-do",
     paxLink: "https://global-rides-passenger.onelink.me/xNlo/globalhomepage",
     drvText: "Regístrate en DiDi Conductor",
     paxText: "Descarga DiDi Pasajero",
