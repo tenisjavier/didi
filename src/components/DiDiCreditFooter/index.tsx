@@ -45,11 +45,11 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
             </p>
           </div>
           <FooterItem
-            link="https://web.didiglobal.com/tarjeta-de-credito/tc-servicios-financieros.pdf"
+            link="https://web.didiglobal.com/mx/tarjeta-de-credito/tc-servicios-financieros.pdf"
             text="Términos y Condiciones generales"
           ></FooterItem>
           <FooterItem
-            link="https://web.didiglobal.com/tarjeta-de-credito/tc-cashback.pdf"
+            link="https://web.didiglobal.com/mx/tarjeta-de-credito/tc-cashback.pdf"
             text="Términos y Condiciones de Cashback"
           ></FooterItem>
           <br></br>
