@@ -18,12 +18,17 @@ import VideoSection from "../../../components/sections/VideoSection";
 import ClubDiDiCTA from "../../../components/sections/ClubDiDiCTA";
 import WomenDiDiCTA from "../../../components/sections/WomenDiDiCTA";
 import PaxCTAApp from "../../../components/sections/PaxCTAApp";
+import { ab } from "../../../config/ab";
+import DrvHeroB from "../../../components/sections/DrvHeroB";
 
 const Conductor = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const icons = [faMoneyBillTransfer, faThumbsUp, faShieldHeart, faWallet];
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "mx.DrvHero.bgImage";
+  })[0];
+  const imagehero = images.filter((image) => {
+    return image.title === "Driver GIF";
   })[0];
   const drvHeroMobileBgImage = images.filter((image) => {
     return image.title === "mx.DrvHeroMobile.bgImage";
@@ -43,12 +48,17 @@ const Conductor = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
 
+  const version = ab("202402-animationhero-a", "202402-animationhero-b", "t9");
   return (
     <Layout>
-      <DrvHero
-        bgImage={drvHeroBgImage}
-        mobileBgImage={drvHeroMobileBgImage}
-      ></DrvHero>
+      {version === "a" && (
+        <DrvHero
+          bgImage={drvHeroBgImage}
+          mobileBgImage={drvHeroMobileBgImage}
+        ></DrvHero>
+      )}
+      {version === "b" && <DrvHeroB image={imagehero}></DrvHeroB>}
+
       <DrvBenefits image={drvBenefitsImage} icons={icons}></DrvBenefits>
       <DrvBanner></DrvBanner>
       <SilderSection
@@ -80,6 +90,7 @@ export const query = graphql`
             "mx.WomenDiDiCTA.image"
             "mx.DrvBenefits.image"
             "mx.PaxCTAApp.image"
+            "Driver GIF"
           ]
         }
       }

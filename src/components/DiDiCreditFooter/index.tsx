@@ -45,8 +45,12 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
             </p>
           </div>
           <FooterItem
-            link="https://privacy-center.didiglobal.com/MX/privacy-notice/6e82a0c4e8becd1ab7788c1978c2f719/Mexico"
-            text="Consulta Términos y Condiciones generales aquí"
+            link="https://web.didiglobal.com/tarjeta-de-credito/tc-servicios-financieros.pdf"
+            text="Términos y Condiciones generales"
+          ></FooterItem>
+          <FooterItem
+            link="https://web.didiglobal.com/tarjeta-de-credito/tc-cashback.pdf"
+            text="Términos y Condiciones de Cashback"
           ></FooterItem>
           <br></br>
           <FooterItem

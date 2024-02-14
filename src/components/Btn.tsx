@@ -178,7 +178,7 @@ const Btn = ({
     const url = new URL(link);
     let version = url.searchParams.get("ad_group_id")?.toString();
     if (url.searchParams.get("c")?.toString().includes("/food"))
-      version = localStorage.getItem("t8")?.toString();
+      version = localStorage.getItem("t9")?.toString();
     if (btnType === "drv") {
       form = link.includes("silver-bullet-online") ? "quickbolt" : "h5";
     }

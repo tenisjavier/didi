@@ -110,7 +110,11 @@ const CTASection = (props: CTAProps) => {
   const getTitleElement = () => {
     if (hero) {
       return (
-        <h1 className={`text-4xl font-bold md:text-5xl mt-0 ${alignRight ? 'text-center lg:text-right' : ''}`}>
+        <h1
+          className={`text-4xl font-bold md:text-5xl mt-0 ${
+            alignRight ? "text-center lg:text-right" : ""
+          }`}
+        >
           {title &&
             title.split("\n").map((str, index) => (
               <Fragment key={index}>
@@ -141,7 +145,11 @@ const CTASection = (props: CTAProps) => {
 
   const renderSectionDesc = () => {
     return (
-      <p className={`mb-10 text-lg ${alignRight ? 'text-center lg:text-right' : 'text-left'}`}>
+      <p
+        className={`mb-10 text-lg ${
+          alignRight ? "text-center lg:text-right" : "text-left"
+        }`}
+      >
         {desc &&
           desc.split("\n").map((str, index) => (
             <Fragment key={index}>
@@ -158,22 +166,32 @@ const CTASection = (props: CTAProps) => {
   return (
     <section
       style={{ direction: isRtl }}
-      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${bgColor && bgColor
-        } ${borderColor && "border-solid border border-" + borderColor}`}
+      className={`relative flex min-h-[40rem] w-full items-center justify-center overflow-hidden ${
+        bgColor && bgColor
+      } ${borderColor && "border-solid border border-" + borderColor}`}
     >
       <div
-        className={`${whiteRight ? "white-right" : containerDisabled ? "lg:px-40 " : "container"
-          }  mx-auto flex w-full lg:flex-nowrap items-center ${alignRight ? '' : 'justify-center'}  py-12 ${reverse && hero
+        className={`${
+          whiteRight
+            ? "white-right"
+            : containerDisabled
+            ? "lg:px-40 "
+            : "container"
+        }  mx-auto flex w-full lg:flex-nowrap items-center ${
+          alignRight ? "" : "justify-center"
+        }  ${
+          reverse && hero
             ? "flex-row-reverse flex-wrap-reverse pt-28 lg:pt-12 "
             : "flex-wrap "
-          } ${reverse ? "flex-row-reverse" : ""} 
+        } ${reverse ? "flex-row-reverse" : ""} 
           ${centralized ? "xl:justify-center" : ""}
-        ${image || imageRawRender || bulletsConfigColumn === "singleColumn"
+        ${
+          image || imageRawRender || bulletsConfigColumn === "singleColumn"
             ? whiteRight
               ? "xl:justify-center"
               : "xl:justify-between"
             : "xl:justify-start"
-          }`}
+        }`}
       >
         {image && <Image imageData={image} imageStyle={imageStyle} />}
         {bullets && bulletsConfigColumn === "singleColumn" && (
@@ -198,13 +216,15 @@ const CTASection = (props: CTAProps) => {
         {imageRawRender && imageRawRender}
 
         <div
-          className={`${mobileTitlePosition === "top" ? "absolute top-24 md:static" : ""
-            } w-11/12 mb-8  lg:mt-16 lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 lg:${textDir}`}
+          className={`${
+            mobileTitlePosition === "top" ? "absolute top-24 md:static" : ""
+          } w-11/12 mb-8  lg:mt-16 lg:w-1/2 text-${textColor} ${bgColumTitle} z-10 lg:${textDir}`}
         >
           {getTitleElement()}
           <div
-            className={`flex ${descBeforeBullets ? "flex-col" : "flex-col-reverse"
-              }`}
+            className={`flex ${
+              descBeforeBullets ? "flex-col" : "flex-col-reverse"
+            }`}
           >
             {desc && renderSectionDesc()}
 
@@ -228,7 +248,11 @@ const CTASection = (props: CTAProps) => {
           </div>
           {link && <SectionLink link={link} />}
           {list && <SectionList list={list} />}
-          <div className={`text-center ${alignRight ? 'lg:text-right' : 'lg:text-left'}`}>
+          <div
+            className={`text-center ${
+              alignRight ? "lg:text-right" : "lg:text-left"
+            }`}
+          >
             <SectionBtn
               btnType={btnType}
               btnMode={btnMode}
@@ -238,13 +262,17 @@ const CTASection = (props: CTAProps) => {
               btnArray={btnArray}
             />
             {contactButtons && (
-              <div className={`mt-10 flex items-center gap-7 justify-center lg:pl-4 pl-0 ${alignRight ? 'lg:justify-end' : 'lg:justify-start'}`}>
+              <div
+                className={`mt-10 flex items-center gap-7 justify-center lg:pl-4 pl-0 ${
+                  alignRight ? "lg:justify-end" : "lg:justify-start"
+                }`}
+              >
                 {contactButtons.phoneNumber ? (
                   <a href={contactButtons.phoneNumber} target="_blank">
                     <Image
                       imageData={{
                         title: "Phone Number",
-                        description: "Phone Number"
+                        description: "Phone Number",
                       }}
                       imageStyle="w-9 h-9"
                       src="/icon/phone.png"
@@ -259,7 +287,7 @@ const CTASection = (props: CTAProps) => {
                     <Image
                       imageData={{
                         title: "WhatsApp Number",
-                        description: "WhatsApp Number"
+                        description: "WhatsApp Number",
                       }}
                       imageStyle="w-9 h-9"
                       src="/icon/whatsapp.png"

@@ -11,11 +11,16 @@ import SilderSection from "../../../components/sections/SliderSection";
 import DrvBanner from "../../../components/sections/DrvBanner";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import PaxCTAApp from "../../../components/sections/PaxCTAApp";
+import { ab } from "../../../config/ab";
+import DrvHeroB from "../../../components/sections/DrvHeroB";
 
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const drvHeroBgImage = images.filter((image) => {
     return image.title === "pa.DrvHero.bgImage";
+  })[0];
+  const imagehero = images.filter((image) => {
+    return image.title === "Driver GIF";
   })[0];
   const drvHeroMobileBgImage = images.filter((image) => {
     return image.title === "pa.DrvHeroMobile.bgImage";
@@ -32,12 +37,17 @@ const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
 
+  const version = ab("202402-animationhero-a", "202402-animationhero-b", "t9");
   return (
     <Layout>
-      <DrvHero
-        bgImage={drvHeroBgImage}
-        mobileBgImage={drvHeroMobileBgImage}
-      ></DrvHero>
+      {version === "a" && (
+        <DrvHero
+          bgImage={drvHeroBgImage}
+          mobileBgImage={drvHeroMobileBgImage}
+        ></DrvHero>
+      )}
+      {version === "b" && <DrvHeroB image={imagehero}></DrvHeroB>}
+
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
       <DrvBanner></DrvBanner>
       <DrvFeatures image={drvFeaturesImage}></DrvFeatures>
@@ -67,6 +77,7 @@ export const query = graphql`
             "pa.DrvWhyDiDi.image"
             "pa.DrvFeatures.image"
             "pa.PaxCTAApp.image"
+            "Driver GIF"
           ]
         }
       }
