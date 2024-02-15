@@ -19,9 +19,9 @@ const FoodBusiness = ({ data }) => {
     return image.title === "co.FoodBusinessHeroMobile.bgImage";
   })[0];
 
-  // const faqRestaurantApp = data.allContentfulProduct.nodes.filter(
-  //   (node) => node.name === "DiDi Restaurant APP"
-  // );
+  const faqRestaurantApp = data.allContentfulProduct.nodes.filter(
+    (node) => node.name === "DiDi Restaurant APP"
+  );
 
   const foodFollowingStepsImage = images.filter((image) => {
     return image.title === "co.followingSteps.image";
@@ -67,11 +67,11 @@ const FoodBusiness = ({ data }) => {
       <FoodBusinessRequirementsColumns
         images={foodBusinessRequirementsColumnsImages}
       ></FoodBusinessRequirementsColumns>
-      {/* <FoodBusinessFaqs
+      <FoodBusinessFaqs
         title={`Preguntas Frecuentes`}
         desc=" "
         data={faqRestaurantApp[0]}
-      ></FoodBusinessFaqs> */}
+      ></FoodBusinessFaqs>
       <FoodCityList data={cities}></FoodCityList>
       <RestaurantSocialColumns
         images={socialImages.reverse()}
@@ -81,31 +81,7 @@ const FoodBusiness = ({ data }) => {
 };
 
 export default FoodBusiness;
-// allContentfulProduct(
-//   filter: {
-//     country: { elemMatch: { code: { eq: "co" } } }
-//     category: { eq: "food" }
-//     name: { eq: "DiDi Restaurant APP" }
-//   }
-// ) {
-//   nodes {
-//     name
-//     faq {
-//       title
-//       content {
-//         raw
-//         references {
-//           ... on ContentfulAsset {
-//             contentful_id
-//             title
-//             description
-//             gatsbyImageData(width: 800)
-//             __typename
-//           }
-//         }
-//       }
-//     }
-//   }
+
 export const query = graphql`
   query {
     allContentfulAsset(
@@ -140,6 +116,32 @@ export const query = graphql`
         }
         restaurant {
           name
+        }
+      }
+    }
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "co" } } }
+        category: { eq: "food" }
+        name: { eq: "DiDi Restaurant APP" }
+      }
+    ) {
+      nodes {
+        name
+        faq {
+          title
+          content {
+            raw
+            references {
+              ... on ContentfulAsset {
+                contentful_id
+                title
+                description
+                gatsbyImageData(width: 800)
+                __typename
+              }
+            }
+          }
         }
       }
     }
