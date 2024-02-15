@@ -566,6 +566,10 @@ const menuLinks: AllMenuInterface = {
           url: "/pe/conductor/requisitos-para-conducir/",
         },
         {
+          text: "DiDi Flex",
+          url: "/pe/conductor/didi-flex/",
+        },
+        {
           text: "Ciudades Operativas",
           url: "/pe/ciudades/",
         },
