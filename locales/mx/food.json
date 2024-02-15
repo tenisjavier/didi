@@ -105,7 +105,7 @@
     },
     {
       "title": "Realiza la carga de:",
-      "desc": "{Persona física} \n - información del representante legal \n - INE/IFE o Pasaporte vigente \n - CURP \n - RFC** \n {Persona moral} \n - Acta constitutiva \n - Poder del representante legal \n - INE/IFE o Pasaporte vigente del representante legal \n - Constancia de Situación Fiscal",
+      "desc": "{Persona física} \n - Información del representante legal \n - INE/IFE o Pasaporte vigente \n - CURP \n - RFC** \n {Persona moral} \n - Acta constitutiva \n - Poder del representante legal \n - INE/IFE o Pasaporte vigente del representante legal \n - Constancia de Situación Fiscal",
       "imageName": "id-card-icon-orange"
     },
     {
