@@ -51,7 +51,7 @@ const FoodBusiness = ({ data }) => {
     return image.title.indexOf("pe.DiDiRestaurantSocial.image") !== -1;
   });
 
-  // const cities = data.allContentfulCity.nodes;
+  const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -73,7 +73,7 @@ const FoodBusiness = ({ data }) => {
         desc=" "
         data={faqRestaurantApp[0]}
       ></FoodBusinessFaqs> */}
-      {/* <FoodCityList data={cities}></FoodCityList> */}
+      <FoodCityList data={cities}></FoodCityList>
       <RestaurantSocialColumns
         images={socialImages.reverse()}
       ></RestaurantSocialColumns>
@@ -109,25 +109,6 @@ export default FoodBusiness;
 //   }
 // }
 
-// allContentfulCity(
-//   filter: {
-//     country: { code: { eq: "pe" } }
-//     product: { elemMatch: { category: { eq: "food" } } }
-//   }
-//   sort: { name: ASC }
-// ) {
-//   nodes {
-//     name
-//     slug
-//     image {
-//       gatsbyImageData(width: 400)
-//       description
-//     }
-//     restaurant {
-//       name
-//     }
-//   }
-// }
 export const query = graphql`
   query {
     allContentfulAsset(
@@ -143,6 +124,25 @@ export const query = graphql`
         title
         description
         gatsbyImageData
+      }
+    }
+    allContentfulCity(
+      filter: {
+        country: { code: { eq: "pe" } }
+        product: { elemMatch: { category: { eq: "food" } } }
+      }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        name
+        slug
+        image {
+          gatsbyImageData(width: 400)
+          description
+        }
+        restaurant {
+          name
+        }
       }
     }
   }
