@@ -20,9 +20,9 @@ const FoodBusiness = ({ data }) => {
     return image.title === "pe.FoodBusinessHeroMobile.bgImage";
   })[0];
 
-  const faqRestaurantApp = data.allContentfulProduct.nodes.filter(
-    (node) => node.name === "DiDi Restaurant APP"
-  );
+  // const faqRestaurantApp = data.allContentfulProduct.nodes.filter(
+  //   (node) => node.name === "DiDi Restaurant APP"
+  // );
 
   const foodFollowingStepsImage = images.filter((image) => {
     return image.title === "pe.followingSteps.image";
@@ -51,7 +51,7 @@ const FoodBusiness = ({ data }) => {
     return image.title.indexOf("pe.DiDiRestaurantSocial.image") !== -1;
   });
 
-  const cities = data.allContentfulCity.nodes;
+  // const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -68,12 +68,12 @@ const FoodBusiness = ({ data }) => {
       <FoodBusinessRequirementsColumns
         images={foodBusinessRequirementsColumnsImages}
       ></FoodBusinessRequirementsColumns>
-      <FoodBusinessFaqs
+      {/* <FoodBusinessFaqs
         title={`Preguntas Frecuentes`}
         desc=" "
         data={faqRestaurantApp[0]}
-      ></FoodBusinessFaqs>
-      <FoodCityList data={cities}></FoodCityList>
+      ></FoodBusinessFaqs> */}
+      {/* <FoodCityList data={cities}></FoodCityList> */}
       <RestaurantSocialColumns
         images={socialImages.reverse()}
       ></RestaurantSocialColumns>
@@ -82,13 +82,58 @@ const FoodBusiness = ({ data }) => {
 };
 
 export default FoodBusiness;
+// allContentfulProduct(
+//   filter: {
+//     country: { elemMatch: { code: { eq: "pe" } } }
+//     category: { eq: "food" }
+//     name: { eq: "DiDi Restaurant APP" }
+//   }
+// ) {
+//   nodes {
+//     name
+//     faq {
+//       title
+//       content {
+//         raw
+//         references {
+//           ... on ContentfulAsset {
+//             contentful_id
+//             title
+//             description
+//             gatsbyImageData(width: 800)
+//             __typename
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
+// allContentfulCity(
+//   filter: {
+//     country: { code: { eq: "pe" } }
+//     product: { elemMatch: { category: { eq: "food" } } }
+//   }
+//   sort: { name: ASC }
+// ) {
+//   nodes {
+//     name
+//     slug
+//     image {
+//       gatsbyImageData(width: 400)
+//       description
+//     }
+//     restaurant {
+//       name
+//     }
+//   }
+// }
 export const query = graphql`
   query {
     allContentfulAsset(
       filter: {
         title: {
-          regex: "/|(graph-icon)|(money-card-icon)|(funny-icon)|(delivery-icon)|(pe.DiDiRestaurantSocial.image)|(wifi-icon)|(restaurant-icon)|(id-card-icon-orange)|(check-list-icon)|(menu-food-phone-icon)|(pe.followingSteps.image)|(pe.FoodBusinessHero.bgImage)|(pe.FoodBusinessHeroMobile.bgImage)/"
+          regex: "/(graph-icon)|(money-card-icon)|(funny-icon)|(delivery-icon)|(pe.DiDiRestaurantSocial.image)|(wifi-icon)|(restaurant-icon)|(id-card-icon-orange)|(check-list-icon)|(menu-food-phone-icon)|(pe.followingSteps.image)|(pe.FoodBusinessHero.bgImage)|(pe.FoodBusinessHeroMobile.bgImage)/"
         }
       }
       sort: { title: ASC }
@@ -98,51 +143,6 @@ export const query = graphql`
         title
         description
         gatsbyImageData
-      }
-    }
-    allContentfulProduct(
-      filter: {
-        country: { elemMatch: { code: { eq: "pe" } } }
-        category: { eq: "food" }
-        name: { eq: "DiDi Restaurant APP" }
-      }
-    ) {
-      nodes {
-        name
-        faq {
-          title
-          content {
-            raw
-            references {
-              ... on ContentfulAsset {
-                contentful_id
-                title
-                description
-                gatsbyImageData(width: 800)
-                __typename
-              }
-            }
-          }
-        }
-      }
-    }
-    allContentfulCity(
-      filter: {
-        country: { code: { eq: "pe" } }
-        product: { elemMatch: { category: { eq: "food" } } }
-      }
-      sort: { name: ASC }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
-        restaurant {
-          name
-        }
       }
     }
   }

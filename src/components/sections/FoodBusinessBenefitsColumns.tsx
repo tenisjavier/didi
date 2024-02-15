@@ -10,7 +10,9 @@ interface FoodBusinessBenefitsColumnsProps {
   }[];
 }
 
-const FoodBusinessBenefitsColumns = ({ images }: FoodBusinessBenefitsColumnsProps) => {
+const FoodBusinessBenefitsColumns = ({
+  images,
+}: FoodBusinessBenefitsColumnsProps) => {
   const props: ColumnsSectionProps = {
     bgColor: t("FoodBusinessBenefitsColumns.bgColor"),
     textColor: t("FoodBusinessBenefitsColumns.textColor"),
@@ -24,11 +26,8 @@ const FoodBusinessBenefitsColumns = ({ images }: FoodBusinessBenefitsColumnsProp
       col.isImage = true;
     }
     col.hasTextHighlighterDesc = true;
-    col.hasTextHighlighterDescStyle = 'font-bold';
+    col.hasTextHighlighterDescStyle = "font-bold";
   });
-
-
-  console.log(props.columns)
 
   return <ColumnsSection {...props}></ColumnsSection>;
 };
