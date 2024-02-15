@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../../../components/Layout";
-import FoodBusinessHero from "../../../components/sections/FoodBusinessHero";
-import FoodBusinessFollowingStepsCTA from "../../../components/sections/FoodBusinessFollowingStepsCTA";
-import FoodBusinessBenefitsColumns from "../../../components/sections/FoodBusinessBenefitsColumns";
-import FoodCityList from "../../../components/sections/FoodCityList";
-import RestaurantSocialColumns from "../../../components/sections/RestaurantSocialColumns";
-import FoodBusinessRequirementsColumns from "../../../components/sections/FoodBusinessRequirementsColumns";
-import FoodBusinessFaqs from "../../../components/sections/FoodBusinessFAQ";
+import Layout from "../../../../components/Layout";
+import FoodBusinessHero from "../../../../components/sections/FoodBusinessHero";
+import FoodBusinessFollowingStepsCTA from "../../../../components/sections/FoodBusinessFollowingStepsCTA";
+import FoodBusinessBenefitsColumns from "../../../../components/sections/FoodBusinessBenefitsColumns";
+import FoodCityList from "../../../../components/sections/FoodCityList";
+import RestaurantSocialColumns from "../../../../components/sections/RestaurantSocialColumns";
+import FoodBusinessRequirementsColumns from "../../../../components/sections/FoodBusinessRequirementsColumns";
+import FoodBusinessFaqs from "../../../../components/sections/FoodBusinessFAQ";
 
 const FoodBusiness = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
