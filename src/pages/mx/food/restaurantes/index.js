@@ -49,7 +49,7 @@ const FoodBusiness = ({ data }) => {
     return image.title.indexOf("mx.DiDiRestaurantSocial.image") !== -1;
   });
 
-  const cities = data.allContentfulCity.nodes;
+  // const cities = data.allContentfulCity.nodes;
 
   return (
     <Layout>
@@ -71,7 +71,7 @@ const FoodBusiness = ({ data }) => {
         desc=" "
         data={faqRestaurantApp[0]}
       ></FoodBusinessFaqs> */}
-      <FoodCityList data={cities}></FoodCityList>
+      {/* <FoodCityList data={cities}></FoodCityList> */}
       <RestaurantSocialColumns
         images={socialImages.reverse()}
       ></RestaurantSocialColumns>
@@ -98,28 +98,27 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    allContentfulCity(
-      filter: {
-        country: { code: { eq: "mx" } }
-        product: { elemMatch: { category: { eq: "food" } } }
-      }
-      sort: { name: ASC }
-    ) {
-      nodes {
-        name
-        slug
-        image {
-          gatsbyImageData(width: 400)
-          description
-        }
-        restaurant {
-          name
-        }
-      }
-    }
   }
 `;
-
+// allContentfulCity(
+//   filter: {
+//     country: { code: { eq: "mx" } }
+//     product: { elemMatch: { category: { eq: "food" } } }
+//   }
+//   sort: { name: ASC }
+// ) {
+//   nodes {
+//     name
+//     slug
+//     image {
+//       gatsbyImageData(width: 400)
+//       description
+//     }
+//     restaurant {
+//       name
+//     }
+//   }
+// }
 // allContentfulProduct(
 //   filter: {
 //     country: { elemMatch: { code: { eq: "mx" } } }
