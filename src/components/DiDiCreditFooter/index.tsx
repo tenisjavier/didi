@@ -4,9 +4,9 @@ import FooterColumn from "./FooterColumn";
 import { getFooterTarjetaDeCreditoLinks } from "../../config/footer-tarjeta-de-credito-config";
 import FooterItem from "./FooterItem";
 
-interface DiDiCreditFooterProps {}
+interface DiDiCreditFooterProps { }
 
-const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
+const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({ }) => {
   const countryCode = "mx";
   const { contactanos, regulacion, blog, siguenos } =
     getFooterTarjetaDeCreditoLinks(countryCode);
@@ -45,17 +45,8 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
             </p>
           </div>
           <FooterItem
-            link="https://web.didiglobal.com/mx/tarjeta-de-credito/tc-servicios-financieros.pdf"
-            text="Términos y Condiciones generales"
-          ></FooterItem>
-          <FooterItem
-            link="https://web.didiglobal.com/mx/tarjeta-de-credito/tc-cashback.pdf"
-            text="Términos y Condiciones de Cashback"
-          ></FooterItem>
-          <br></br>
-          <FooterItem
-            link="/mx/legal/consulta-costos-y-comisiones"
-            text="Consulta costos y comisiones"
+            link="legal"
+            text="Legal"
           ></FooterItem>
         </div>
       </div>
