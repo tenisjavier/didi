@@ -287,11 +287,11 @@
   "TestimonialsHero.desc": "Detrás de cada logro, hay una historia de éxito que contar.",
   "TestimonialsHero.textColor": "white",
   "TestimonialsHero.btnMode": "light",
-  "DrvFlexHero.title": "DiDi Flex: Elige el precio sin afectar tu seguridad",
+  "DrvFlexHero.title": "DiDi Pon tu Precio: Elige el precio sin afectar tu seguridad",
   "DrvFlexHero.desc": "Nosotros te damos la FLEXibilidad y tú eliges lo que más te conviene.\n Disponible en Bucaramanga.",
   "DrvFlexHero.textColor": "black",
   "DrvFlexHero.btnMode": "light",
-  "DrvFlexFeatures.title": "Beneficios DiDi Flex",
+  "DrvFlexFeatures.title": "Beneficios DiDi Pon tu Precio",
   "DrvFlexFeatures.desc": "",
   "DrvFlexFeatures.textColor": "gray-primary",
   "DrvFlexFeatures.bgColor": "bg-white",
@@ -922,8 +922,16 @@
   "VehicleSection.bulletTitle": "Hay un DiDi para ti.",
   "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuerdo a tus necesidades:",
   "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
-  "VehicleSection.bulletsCar": ["Express", "Fleet", "Flex", "Entrega", "Taxi"],
-  "VehicleSection.bulletsMotorcycle": ["Moto"],
+  "VehicleSection.bulletsCar": [
+    "Express",
+    "Fleet",
+    "Pon tu Precio",
+    "Entrega",
+    "Taxi"
+  ],
+  "VehicleSection.bulletsMotorcycle": [
+    "Moto"
+  ],
   "VehicleSection.btnType": "drv",
   "VehicleSection.btnMode": "primary",
   "DiDiExtraPlusHero.title": "{Refiere y} \n {gana}",

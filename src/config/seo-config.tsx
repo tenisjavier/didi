@@ -136,9 +136,9 @@ const seoMeta: AllSEOMetaInterface = {
         "DiDi Confort: Genera hasta 50%* más ganancias conectándote con DiDi Confort",
       desc: "En DiDi constantemente estamos trabajando para ofrecer nuevas soluciones tecnológicas a nuestros usuarios . Por eso, DiDi Confort esta activo en Bogotá buscando ofrecer una mejor experiencia a todos.",
     },
-    "/conductor/didi-flex/": {
-      title: "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
-      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
+    "/conductor/didi-pontuprecio/": {
+      title: "DiDi Pon tu Precio: Negocia tu precio sin afectar tu seguridad",
+      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Pon tu Precio México. Considerando retenciones de impuestos como ISR e IVA.",
     },
     "/conductor/didi-amigo/": {
       title: "DiDi Amigo: Regístrate, refiere posibles conductores y gana.",
@@ -586,9 +586,9 @@ const seoMeta: AllSEOMetaInterface = {
       title: "DiDi Fleet - Haz Dinero Hasta Durmiendo",
       desc: "DiDi Fleet en Colombia, regístrate como socio conductor en las categorías express, taxi y fleet ganando más y manejando menos. La App nº1 en movilidad llegó.",
     },
-    "/conductor/didi-flex/": {
-      title: "DiDi Flex: Elige el precio sin afectar tu seguridad",
-      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Flex México. Considerando retenciones de impuestos como ISR e IVA.",
+    "/conductor/didi-pontuprecio/": {
+      title: "DiDi Pon tu Precio: Elige el precio sin afectar tu seguridad",
+      desc: "Descubre cómo se calculan las tarifas y cuánto puedes ganar como conductor registrado en DiDi Pon tu Precio México. Considerando retenciones de impuestos como ISR e IVA.",
     },
     "/entrega/": {
       title: "DiDi Entrega: Envía cosas grandes o chicas",
@@ -1026,9 +1026,9 @@ const getMetaByPath = (
 
   const metas = placeRegex.test(path)
     ? {
-        title: placeTitle,
-        desc: `${placeTitle}`,
-      }
+      title: placeTitle,
+      desc: `${placeTitle}`,
+    }
     : defaultMetas;
 
   return seoMeta[countryCode][path] || metas;

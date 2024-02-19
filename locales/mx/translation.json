@@ -431,11 +431,11 @@
       "textColor": "gray-primary"
     }
   ],
-  "DrvFlexHero.title": "DiDi Flex: Negocia tu precio sin afectar tu seguridad",
-  "DrvFlexHero.desc": "Utiliza DiDi Flex y comienza ya a negociar tu precio. \n Disponible en: Villahermosa, Zacatecas, La Paz, Ensenada, Celaya, Los Mochis, Vallarta , Morelia, Irapuato, Tepic, Navojoa y Ciudad Obregón.",
+  "DrvFlexHero.title": "DiDi Pon tu Precio: Negocia tu precio sin afectar tu seguridad",
+  "DrvFlexHero.desc": "Utiliza DiDi Pon tu Precio y comienza ya a negociar tu precio. \n Disponible en: Villahermosa, Zacatecas, La Paz, Ensenada, Celaya, Los Mochis, Vallarta , Morelia, Irapuato, Tepic, Navojoa y Ciudad Obregón.",
   "DrvFlexHero.textColor": "white",
   "DrvFlexHero.btnMode": "light",
-  "DrvFlexFeatures.title": "Beneficios DiDi Flex",
+  "DrvFlexFeatures.title": "Beneficios DiDi Pon tu Precio",
   "DrvFlexFeatures.desc": "",
   "DrvFlexFeatures.textColor": "gray-primary",
   "DrvFlexFeatures.bgColor": "bg-white",
@@ -648,7 +648,6 @@
       "title": "8. Compartir Viaje",
       "desc": "Comparte los datos y ubicación del viaje en tiempo real, desde la app."
     },
-
     {
       "title": "9. Botón de Emergencia",
       "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911 y DiDi rastreará tu ubicación exacta."
@@ -2203,8 +2202,16 @@
   "VehicleSection.bulletTitle": "Hay un DiDi para ti.",
   "VehicleSection.bulletDesc": "Contamos con diferentes modalidades de acuerdo a tus necesidades:",
   "VehicleSection.bulletFooter": "Completa tu processo de registro en linea.",
-  "VehicleSection.bulletsCar": ["Express", "Fleet", "Flex", "Entrega", "Taxi"],
-  "VehicleSection.bulletsMotorcycle": ["Entrega Light"],
+  "VehicleSection.bulletsCar": [
+    "Express",
+    "Fleet",
+    "Pon tu Precio",
+    "Entrega",
+    "Taxi"
+  ],
+  "VehicleSection.bulletsMotorcycle": [
+    "Entrega Light"
+  ],
   "VehicleSection.btnType": "drv",
   "VehicleSection.btnMode": "primary",
   "DiDiAirportHero.title": "Desde el aeropuerto al \n corazón de tu ciudad \n con DiDi",
