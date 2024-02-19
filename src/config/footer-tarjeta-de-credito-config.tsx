@@ -39,6 +39,7 @@ const footerLinks: AllFooterInterface = {
         { text: "CONDUSEF", link: "/mx/legal/condusef-didi-card/" },
         { text: "CNBV", link: "https://www.gob.mx/cnbv" },
         { text: "Despachos de Cobranza", link: "/mx/legal/despachos-de-cobranza-didi-card" },
+        { text: "Documentos Legales", link: "/mx/tarjeta-de-credito/legal" },
       ],
       title: "Regulación",
     },

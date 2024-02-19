@@ -44,10 +44,6 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({ }) => {
               Valores.
             </p>
           </div>
-          <FooterItem
-            link="legal"
-            text="Legal"
-          ></FooterItem>
         </div>
       </div>
       <div className="w-full bg-orange-primary text-center py-6 px-6">
