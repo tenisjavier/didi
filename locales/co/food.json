@@ -35,7 +35,7 @@
   "FoodDeliveryCTA.textColor": "gray-primary",
   "FoodDeliveryCTA.btnMode": "primary",
   "FoodBusinessGuideHero.title": "Mejora tu experiencia con la app. Conoce aquí guías y contenido educativo",
-  "FoodBusinessHero.title": "Registra tu Tienda\n y crece con DiDi Food",
+  "FoodBusinessHero.title": "Registra tu Restaurante\n y crece con DiDi Food",
   "FoodBusinessHero.phone": "tel:+5715801398",
   "FoodBusinessHero.textColor": "white",
   "FoodBusinessHero.btnMode": "light",
@@ -82,7 +82,7 @@
     },
     {
       "title": "Realiza la carga de:",
-      "desc": "- Información del representante legal  \n - Cédula de Ciudadanía, Cédula de Extranjería o Permiso Especial de Permanencia (Personanatural) \n - RUT (Persona jurídica) con vigencia de máximo un año",
+      "desc": "- información del representante legal  \n - Cédula de Ciudadanía, Cédula de Extranjería o Permiso Especial de Permanencia (Personanatural) \n - RUT (Persona jurídica) con vigencia de máximo un año",
       "imageName": "id-card-icon-orange"
     },
     {
@@ -332,7 +332,7 @@
   "SBPax.desc": "Pedí un Viaje",
   "SBFoodEater.title": "DiDi Food",
   "SBFoodEater.desc": "Comida a Domicilio",
-  "SBFoodBusiness.title": "Registra tu Tienda",
+  "SBFoodBusiness.title": "Registra tu Restaurante",
   "SBFoodBusiness.desc": "Crece con DiDi",
   "SBFoodDelivery.title": "DiDi Repartidor",
   "SBFoodDelivery.desc": "Ganancias Extras",
