@@ -44,7 +44,11 @@ const ColumnsSection = ({
 }: ColumnsSectionProps) => {
   let dir: any = "ltr";
 
-  const grid = gridConfig || `grid grid-cols-1 md:grid-cols-2 ${hasGrid ? "lg:grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"}`
+  const grid =
+    gridConfig ||
+    `grid grid-cols-1 md:grid-cols-2 ${
+      hasGrid ? "lg:grid-cols-2 gap-10" : "lg:flex lg:flex-wrap gap-2"
+    }`;
 
   if (RTL) {
     dir = "rtl";
@@ -56,12 +60,16 @@ const ColumnsSection = ({
       id={sectionID}
       className={`${bgColor} text-${textColor} py-12`}
     >
-      <div className="container mx-auto flex flex-col flex-wrap justify-center md:justify-around">
+      <div className="container mx-auto flex flex-col flex-wrap justify-center items-center md:justify-around">
         {title &&
           title
             .split("\n")
             .map((str) => (
-              <h2 className="text-left lg:text-center text-4xl">{hasTextHighlight ? textHighlighter(str, textHighlightStyles) : str}</h2>
+              <h2 className="text-left lg:text-center text-4xl">
+                {hasTextHighlight
+                  ? textHighlighter(str, textHighlightStyles)
+                  : str}
+              </h2>
             ))}
         {desc &&
           desc
@@ -70,10 +78,7 @@ const ColumnsSection = ({
               <p className="text-left lg:text-center text-lg">{str}</p>
             ))}
 
-        <div
-          className={`${gridConfig || grid} mt-10  lg:justify-around `}
-        >
-
+        <div className={`${gridConfig || grid} mt-10  lg:justify-around `}>
           {columns &&
             columns.map((col, index) => {
               return <Card {...col} key={index}></Card>;
@@ -85,8 +90,9 @@ const ColumnsSection = ({
             .map((str) => <small className="text-center">{str}</small>)}
       </div>
       <span
-        className={`flex justify-center ${btnText != "VideoSection.btnText" ? "" : "hidden"
-          }`}
+        className={`flex justify-center ${
+          btnText != "VideoSection.btnText" ? "" : "hidden"
+        }`}
       >
         <Btn
           btnType={btnType}
