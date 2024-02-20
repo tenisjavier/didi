@@ -4,9 +4,9 @@ import FooterColumn from "./FooterColumn";
 import { getFooterTarjetaDeCreditoLinks } from "../../config/footer-tarjeta-de-credito-config";
 import FooterItem from "./FooterItem";
 
-interface DiDiCreditFooterProps { }
+interface DiDiCreditFooterProps {}
 
-const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({ }) => {
+const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
   const countryCode = "mx";
   const { contactanos, regulacion, blog, siguenos } =
     getFooterTarjetaDeCreditoLinks(countryCode);
@@ -38,10 +38,12 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({ }) => {
             />
             <p>
               © 2020 Regigold, S.A. DE C.V., SOFOM, E.N.R. (DiDi Card) es una
-              entidad financiera <br /> registrada y supervisada por la Comisión
-              Nacional para la Protección y Defensa de <br /> los Usuarios de
-              Servicios Financieros y por la Comisión Nacional Bancaria de
-              Valores.
+              entidad financiera registrada y supervisada por la Comisión
+              Nacional para la Protección y Defensa de los Usuarios de Servicios
+              Financieros y se encuentra sujeta a la supervisión de la Comisión
+              Nacional Bancaria y de Valores, únicamente para efectos de lo
+              dispuesto por el artículo 56 de la Ley General de Organizaciones y
+              Actividades Auxiliares del Crédito.
             </p>
           </div>
         </div>
