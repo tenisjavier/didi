@@ -2,9 +2,9 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import FoodDeliveryHero from "../../../../components/sections/FoodDeliveryHero";
-// import FoodDeliveryColumns from "../../../../components/sections/FoodDeliveryColumns";
-// import FoodDeliveryDownloads from "../../../../components/sections/FoodDeliveryDownloads";
-// import FoodDeliveryStepsColumns from "../../../../components/sections/FoodDeliveryStepsColumns";
+import FoodDeliveryColumns from "../../../../components/sections/FoodDeliveryColumns";
+import FoodDeliveryDownloads from "../../../../components/sections/FoodDeliveryDownloads";
+import FoodDeliveryStepsColumns from "../../../../components/sections/FoodDeliveryStepsColumns";
 import PaxWhyDiDiRepartidor from "../../../../components/sections/PaxWhyDiDiRepartidor";
 import RepartidorBanner from "../../../../components/sections/RepartidorBanner";
 import PaxWhyDiDiRegistro from "../../../../components/sections/PaxWhyDiDiRegistro";
@@ -13,7 +13,7 @@ import RequirementsRepartidor from "../../../../components/sections/Requirements
 import DiDiRepartidoresFAQs from "../../../../components/sections/DiDiRepartidoresFAQs";
 import KnowMoreBanner from "../../../../components/sections/KnowMoreBanner";
 
-const FoodDelivery = ({ data }) => {
+const FoodDelivery = ({ data, location }) => {
   const images = data.allContentfulAsset.nodes;
   const foodDeliveryHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodDeliveryHero.bgImage";
@@ -35,32 +35,42 @@ const FoodDelivery = ({ data }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   const faqs = data.allContentfulFaq.nodes;
+  const params = new URLSearchParams(location.search);
+  const test = params.get("test");
   return (
     <Layout>
       <FoodDeliveryHero
         bgImage={foodDeliveryHeroBgImage}
         mobileBgImage={foodDeliveryHeroMobileBgImage}
       ></FoodDeliveryHero>
-      <PaxWhyDiDiRepartidor image={paxWhyDiDiImage}></PaxWhyDiDiRepartidor>
-      <RepartidorBanner></RepartidorBanner>
-      <RepartidorRegistroBanner></RepartidorRegistroBanner>
-      <PaxWhyDiDiRegistro image={paxWhyDiDiRegistro}></PaxWhyDiDiRegistro>
-      <RequirementsRepartidor
-      title="Requerimientos para registrarse en DiDi Repartidor según tu vehículo"
-      data={products}
-      ></RequirementsRepartidor>
-      <DiDiRepartidoresFAQs 
-      faqs={faqs}
-      title="Preguntas Frecuentes"
-      ></DiDiRepartidoresFAQs>
-       <KnowMoreBanner></KnowMoreBanner>
-      {/* <FoodDeliveryColumns
-        images={foodDeliveryColumnsImages}
-      ></FoodDeliveryColumns>
-      <FoodDeliveryStepsColumns></FoodDeliveryStepsColumns>
-      <FoodDeliveryDownloads
-        images={foodDeliveryDownloadsImages}
-      ></FoodDeliveryDownloads> */}
+      {test === "true" && (
+        <>
+          <PaxWhyDiDiRepartidor image={paxWhyDiDiImage}></PaxWhyDiDiRepartidor>
+          <RepartidorBanner></RepartidorBanner>
+          <RepartidorRegistroBanner></RepartidorRegistroBanner>
+          <PaxWhyDiDiRegistro image={paxWhyDiDiRegistro}></PaxWhyDiDiRegistro>
+          <RequirementsRepartidor
+            title="Requerimientos para registrarse en DiDi Repartidor según tu vehículo"
+            data={products}
+          ></RequirementsRepartidor>
+          <DiDiRepartidoresFAQs
+            faqs={faqs}
+            title="Preguntas Frecuentes"
+          ></DiDiRepartidoresFAQs>
+          <KnowMoreBanner></KnowMoreBanner>
+        </>
+      )}
+      {test !== "true" && (
+        <>
+          <FoodDeliveryColumns
+            images={foodDeliveryColumnsImages}
+          ></FoodDeliveryColumns>
+          <FoodDeliveryStepsColumns></FoodDeliveryStepsColumns>
+          <FoodDeliveryDownloads
+            images={foodDeliveryDownloadsImages}
+          ></FoodDeliveryDownloads>{" "}
+        </>
+      )}
     </Layout>
   );
 };
@@ -114,40 +124,48 @@ export const query = graphql`
         }
       }
     }
-  allContentfulProduct(
-    filter: {
-      country: { elemMatch: { code: { eq: "mx" } } }
-      name: { in: ["Automóvil", "Motocicleta","Bicicleta/bicicleta eléctrica", "Consideraciones para tus docs"]}
-    }
-  ) {
-    nodes {
-      name
-      description
-      phone
-      requirement {
-        raw
+    allContentfulProduct(
+      filter: {
+        country: { elemMatch: { code: { eq: "mx" } } }
+        name: {
+          in: [
+            "Automóvil"
+            "Motocicleta"
+            "Bicicleta/bicicleta eléctrica"
+            "Consideraciones para tus docs"
+          ]
+        }
       }
-      image {
-        gatsbyImageData
-      }
-      country {
-        code
-      }
-      faq {
-        title
-        content {
+    ) {
+      nodes {
+        name
+        description
+        phone
+        requirement {
           raw
-          references {
-            ... on ContentfulAsset {
-              contentful_id
-              title
-              description
-              gatsbyImageData(width: 800)
-              __typename
+        }
+        image {
+          gatsbyImageData
+        }
+        country {
+          code
+        }
+        faq {
+          title
+          content {
+            raw
+            references {
+              ... on ContentfulAsset {
+                contentful_id
+                title
+                description
+                gatsbyImageData(width: 800)
+                __typename
+              }
             }
           }
         }
       }
     }
   }
-}`;
+`;

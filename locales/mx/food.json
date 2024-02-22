@@ -173,7 +173,7 @@
   "RepartidorRegistroBanner.descText": "¿Sabías que el 99.99% de las entregas ocurren sin ningún inconveniente de seguridad?",
   "RepartidorRegistroBanner.bgColor": "bg-blue-primary",
   "RepartidorRegistroBanner.textColor": "white",
-  "RepartidorRegistroBanner.btnMode": "primary",
+  "RepartidorRegistroBanner.btnMode": "light",
   "RepartidorRegistroBanner.btnText": "Conoce más aquí",
   "RepartidorRegistroBanner.btnLink": "https://h5.didiglobal.com/silver-bullet-online/Ps86SG6ra3IwyI4On69ij",
   "RequirementsRepartidor.title": "Requerimientos para registrarse en DiDi Repartidor según tu vehículo",
