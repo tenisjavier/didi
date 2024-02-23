@@ -29,11 +29,7 @@ export default Seguridad;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: {
-        title: {
-          regex: "/(mx.SafetyDrv.image)|(mx.SafetyBeforeDrvColumns.image)|(mx.SafetyDuringDrvColumns.image)|(mx.SafetyFinishDrvColumns.image)/"
-        }
-      }
+      filter: { title: { regex: "/(mx.SafetyDrv.image)/" } }
       sort: { title: ASC }
     ) {
       nodes {
@@ -44,7 +40,7 @@ export const query = graphql`
       }
     }
     allContentfulFeature(
-      filter: { country: { code: { eq: "mx" } }, category: { eq: "driver" } }
+      filter: { country: { code: { eq: "co" } }, category: { eq: "driver" } }
     ) {
       nodes {
         name

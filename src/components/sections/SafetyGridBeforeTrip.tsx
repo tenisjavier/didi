@@ -8,12 +8,14 @@ interface SafetyFeaturesGrid {
   features: {
     name: string;
     slug: string;
+    image: ImageDataType;
   }[];
   images: ImageDataType[];
 }
 
 const SafetyGridBeforeTrip = ({ images, features }: SafetyFeaturesGrid) => {
   const urlBase = t("SafetyGridBeforeTrip.urlBase");
+
   const props: ColumnsSectionProps = {
     title: t("SafetyGridBeforeTrip.title"),
     bgColor: t("SafetyGridBeforeTrip.bgColor"),
@@ -22,19 +24,23 @@ const SafetyGridBeforeTrip = ({ images, features }: SafetyFeaturesGrid) => {
   };
 
   props.columns = props.columns.map((c, index) => {
-    const image = images[index];
+    let image = images?.[index];
     let link = c.title;
     let colImage = <Image imageData={image} imageStyle="z-10 m-4"></Image>;
     if (features) {
-      let feature = features.filter((f) => {
+      let feature = features?.filter((f) => {
         const minTitle = String(c.title).toLowerCase();
         const minFTitle = String(f.name).toLowerCase();
         return minTitle.indexOf(minFTitle) !== -1;
       });
-      if (feature[0]) {
-        link = <Link to={urlBase + "" + feature[0].slug}>{c.title}</Link>;
+
+      image = features?.find((f) => f?.name === feature?.[0]?.name)?.image || image
+      colImage = <Image imageData={image} imageStyle="z-10 m-4"></Image>;
+
+      if (feature?.[0]) {
+        link = <Link to={urlBase + "" + feature?.[0].slug}>{c.title}</Link>;
         colImage = (
-          <Link to={urlBase + "" + feature[0].slug}>
+          <Link to={urlBase + "" + feature?.[0].slug}>
             <Image imageData={image} imageStyle="z-10 m-4"></Image>
           </Link>
         );

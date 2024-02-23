@@ -1,5 +1,4 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { t } from "../../context/countryContext";
 import CTASection, { CTAProps } from "../CTASection";
 

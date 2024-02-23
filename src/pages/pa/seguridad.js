@@ -2,7 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import SafetyHero from "../../components/sections/SafetyHero";
-import SafetyColumns from "../../components/sections/SafetyColumns";
+import SafetyDrvCTA from "../../components/sections/SafetyDrvCTA";
+import SafetyPaxCTA from "../../components/sections/SafetyPaxCTA";
 
 const Seguridad = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -11,14 +12,19 @@ const Seguridad = ({ data }) => {
     return image.title === "pa.SafetyHero.bgImage";
   })[0];
 
-  const safetyColumnsImage = images.filter((image) => {
-    return image.title === "pa.SafetyColumns.image";
-  });
+  const safetyDrvImage = images.filter((image) => {
+    return image.title === "mx.DrvSafety.image";
+  })[0];
+
+  const safetyPaxImage = images.filter((image) => {
+    return image.title === "mx.PaxSafety.image";
+  })[0];
 
   return (
     <Layout>
       <SafetyHero bgImage={safetyHeroBgImage}></SafetyHero>
-      <SafetyColumns images={safetyColumnsImage.reverse()}></SafetyColumns>
+      <SafetyDrvCTA image={safetyDrvImage}></SafetyDrvCTA>
+      <SafetyPaxCTA image={safetyPaxImage}></SafetyPaxCTA>
     </Layout>
   );
 };
@@ -29,7 +35,13 @@ export const query = graphql`
   query {
     allContentfulAsset(
       filter: {
-        title: { in: ["pa.SafetyHero.bgImage", "pa.SafetyColumns.image"] }
+        title: {
+          in: [
+            "pa.SafetyHero.bgImage"
+            "mx.DrvSafety.image"
+            "mx.PaxSafety.image"
+          ]
+        }
       }
     ) {
       nodes {

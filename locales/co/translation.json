@@ -41,6 +41,24 @@
   "SafetyCTA.btnMode": "light",
   "SafetyCTA.btnLink": "/co/seguridad/",
   "SafetyFeatures.linkItem": "/co/seguridad/funciones/{{feature}}",
+  "SafetyDrvCTA.title": "Seguridad para conductores",
+  "SafetyDrvCTA.desc": "Conoce más sobre las funciones de seguridad para conductores en DiDi",
+  "SafetyDrvCTA.btnLink": "/co/seguridad/conductores/",
+  "SafetyDrvCTA.btnMode": "primary",
+  "SafetyDrvCTA.btnText": "Conoce más",
+  "SafetyPaxCTA.title": "Seguridad para pasajeros",
+  "SafetyPaxCTA.desc": "Conoce más sobre las funciones de seguridad para pasajeros en DiDi",
+  "SafetyPaxCTA.btnLink": "/co/seguridad/pasajeros/",
+  "SafetyPaxCTA.btnMode": "primary",
+  "SafetyPaxCTA.btnText": "Conoce más",
+  "SafetyDrvImgHero.title": "Conduce con tranquilidad",
+  "SafetyDrvImgHero.desc": "En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
+  "SafetyDrvImgHero.textColor": "white",
+  "SafetyDrvImgHero.bgColor": "bg-blue-primary",
+  "SafetyPaxImgHero.title": "Viaja con tranquilidad",
+  "SafetyPaxImgHero.desc": "En DiDi queremos demostrarte, con funciones específicas, todo lo que te ofrecemos para que viajes tranquilo.",
+  "SafetyPaxImgHero.textColor": "white",
+  "SafetyPaxImgHero.bgColor": "bg-blue-primary",
   "DrvCTA.title": "Regístrate en DiDi Conductor",
   "DrvCTA.desc": "Regístrate en DiDi y comienza a generar ingresos adicionales. Estarás activo entre 24 a 48 horas para que empieces a completar arrendamientos",
   "DrvCTA.bullets": [
@@ -465,77 +483,90 @@
   "SafetyHero.textColor": "white",
   "SafetyHero.btnMode": "light",
   "SafetyGridBeforeTrip.bgColor": "bg-white",
-  "SafetyGridBeforeTrip.title": "Antes del Arrendamiento",
+  "SafetyGridBeforeTrip.title": "Antes del Viaje",
   "SafetyGridBeforeTrip.textColor": "gray-primary",
+  "SafetyGridBeforeTrip.urlBase": "/co/seguridad/",
+  "SafetyGridDuringTrip.urlBase": "/co/seguridad/",
+  "SafetyGridAfterTrip.urlBase": "/co/seguridad/",
   "SafetyGridBeforeTrip.columns": [
     {
-      "title": "1. Chequeo de Antecedentes del Arrendador",
-      "desc": "Para que una persona pueda registrarse como arrendador o socio taxista en DiDi, debe pasar por una serie de validaciones de documentos personales.",
+      "title": "1. Verificación de los pasajeros ",
+      "desc": "Verificamos a los pasajeros a través de distintas herramientas de seguridad para que viajes tranquilo y seguro",
       "bgColor": "bg-white"
     },
     {
-      "title": "2. Reconocimiento Facial para Arrendadores",
-      "desc": "Con esta función hacemos un reconocimiento facial de manera aleatoria para asegurar que el socio que se conecta a la app sea el mismo registrado en la app a través de una selfie.",
+      "title": "2. Usando la app de DiDi sabes exactamente a dónde vas ",
+      "desc": "DiDi te muestra el destino del pasajero antes de aceptar el viaje.",
       "bgColor": "bg-white"
     },
     {
-      "title": "3. Información del Arrendador",
-      "desc": "Antes de subir al auto, la app te mostrará el nombre, la foto del arrendador, el número de arrendamientos, el tiempo en la app, la calificación, los datos del vehículo y los comentarios de los usuarios.",
+      "title": "3. Contactos de confianza ",
+      "desc": "Comparte tu ubicación en tiempo real desde la app",
       "bgColor": "bg-white"
     },
     {
-      "title": "4. Contactos de Confianza",
-      "desc": "Puedes elegir hasta cinco personas de tus contactos de confianza para compartirles tus solicitudes en tiempo real.",
+      "title": "4. Anonimización del Teléfono ",
+      "desc": "Encriptamos tu número de teléfono para que el pasajero no tenga tus datos reales. Solo podrán contactarse por temas de servicio a través de la app.",
       "bgColor": "bg-white"
     },
     {
-      "title": "5. Número privado",
-      "desc": "En DiDi protegemos tu número telefónico y tus datos personales. Las llamadas realizadas entre arrendatarios y arrendadores usando la aplicación NO mostrarán tu número real.",
+      "title": "5. DiDi invitado ",
+      "desc": "Se trata de una función para que los pasajeros puedan indicar en la app si están pidiendo el viaje para alguien más. Así, tú sabrás exactamente a quién recoges",
       "bgColor": "bg-white"
     }
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
-  "SafetyGridDuringTrip.title": "Durante el Arrendamiento",
+  "SafetyGridDuringTrip.title": "Durante el Viaje",
   "SafetyGridDuringTrip.desc": false,
   "SafetyGridDuringTrip.textColor": "white",
   "SafetyGridDuringTrip.columns": [
     {
-      "title": "6. Compartir tu Ubicación",
+      "title": "6. Botón de emergencia ",
       "desc": "En DiDi, puedes compartir tu ubicación en tiempo real con cualquer contacto que tú elijas con tan solo un click.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "7. Botón de Emergencia",
+      "title": "7. Monitoreo de Viaje ",
       "desc": "Durante cualquier situación inesperada en tu arrendamiento, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "8. Patrullas de Reacción",
+      "title": "8. Zonas de Riesgo ",
       "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Soporte DiDi 24/7 en caso de alguna emergencia.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "8. Monitoreo de Viaje en Tiempo Real",
+      "title": "9. Comparte tu ubicación ",
       "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma \"inmediata\". Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta. \n ** No disponible para Taxi. ",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "9. Seguro de Responsabilidad Civil y Accidentes Personales",
+      "title": "10. DiDi Mujer ",
+      "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "bgColor": "bg-orange-primary"
+    },
+    {
+      "title": "11. Sent(a)te Seguro, Hércules te cuida ",
+      "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
+      "bgColor": "bg-orange-primary"
+    },
+    {
+      "title": "12. Viaje con cobertura ",
       "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
   ],
   "SafetyGridAfterTrip.bgColor": "bg-gray-light",
-  "SafetyGridAfterTrip.title": "Al Finalizar el Arrendamiento",
+  "SafetyGridAfterTrip.title": "Al Finalizar el Viaje",
   "SafetyGridAfterTrip.textColor": "gray-primary",
   "SafetyGridAfterTrip.columns": [
     {
-      "title": "11. Centro de Soporte 24/7",
+      "title": "13. Tú decides con quién viajar ",
       "desc": "Contamos con un equipo calificado para apoyarte 24/7 durante cualquier emergencia o inconveniente.",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "12. Desvincular Arrendador",
+      "title": "14. Estamos para ti 24/7 ",
       "desc": "Si te sentiste incómodo o inseguro, al terminar tu solicitud, en el menú de calificación, encontrarás el botón de desvinculación de arrendador/socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener arrendamientos con esta persona.",
       "bgColor": "bg-gray-light"
     }
@@ -564,6 +595,123 @@
       "title": "Información del usuario",
       "desc": "Si eres socio conductor/taxista, la aplicación te mostrará quién es el pasajero y podrás ver todos los detalles antes de iniciar el viaje, incluso el destino al que se dirige.",
       "bgColor": "bg-white"
+    }
+  ],
+  "SafetyGridPaxBeforeTrip.title": "Antes del viaje",
+  "SafetyGridPaxBeforeTrip.urlBase": "/co/seguridad/",
+  "SafetyGridPaxBeforeTrip.columns": [
+    {
+      "title": "1. Verificación de Conductores",
+      "desc": "Realizamos una validación estricta del perfil de todos los conductores revisando más de 10 documentos. *Los requisitos pueden cambiar por ciudad.",
+      "width": "w-72"
+    },
+    {
+      "title": "2. Reconocimiento facial a conductores",
+      "desc": "Para conectarse a su cuenta, los conductores realizan una prueba de Reconocimiento Facial para validar su identidad.",
+      "width": "w-72"
+    },
+    {
+      "title": "3. Pruebas de Confianza",
+      "desc": "En ciertos casos, los conductores realizan una prueba presencial de conducta con reacción pupilar. ",
+      "width": "w-72"
+    },
+    {
+      "title": "4. Información del Viaje",
+      "desc": "Antes de subir al auto, la app te mostrará el nombre y la foto del conductor, los filtros seguridad que aprobó, número de viajes, tiempo en la plataforma y los datos del vehículo.",
+      "width": "w-72"
+    },
+    {
+      "title": "5. Anonimización del Teléfono",
+      "desc": "Encriptamos tu número de teléfono para que el conductor no tenga tus datos reales. Solo se pueden contactar por temas de servicio a través de la app.",
+      "width": "w-72"
+    },
+    {
+      "title": "6. Contactos de Confianza",
+      "desc": "Puedes elegir hasta 5 personas para compartirles tus viajes en tiempo real.",
+      "width": "w-72"
+    },
+    {
+      "title": "7. DiDi Invitado",
+      "desc": "¿Le pides el viaje a alguien más? Con esta nueva herramienta tu invitado va a poder ver su viaje en tiempo real desde su teléfono, así como los datos del auto y conductor.",
+      "width": "w-72"
+    }
+  ],
+  "SafetyGridPaxDuringTrip.title": "Durante el viaje",
+  "SafetyGridPaxDuringTrip.columns": [
+    {
+      "title": "8. Botón de Emergencia",
+      "desc": "Cuando presiones el botón de 911, te redirigiremos directamente con la policía.",
+      "width": "w-72"
+    },
+    {
+      "title": "9. Compartir Viaje",
+      "desc": "Cuando viajas en DiDi puedes compartir tu ubicación en tiempo real y los datos del viaje.",
+      "width": "w-72"
+    },
+    {
+      "title": "10. Monitoreo de Viaje",
+      "desc": "Si necesitas ayuda, presiona el Botón de Emergencia dentro de tu app para enlazarte al 911 y DiDi rastreará tu ubicación exacta.",
+      "width": "w-72"
+    },
+    {
+      "title": "11. Cámaras de Seguridad",
+      "desc": "Instalamos cámaras en más de 900 vehículos en Guadalajara. Si existe alguna situación de riesgo, tu conductor puede presionar el Botón de Emergencia y se comenzará a grabar el video del viaje. Soporte DiDi recibe una alerta para evaluar la situación en tiempo real y, de ser necesario, enviar apoyo a tu ubicación. *Disponible solo en Guadalajara.",
+      "width": "w-72"
+    },
+    {
+      "title": "12. Localización GPS",
+      "desc": "Rastreamos por GPS todos los viajes para que, si reportas un incidente, podamos reaccionar de forma inmediata.",
+      "width": "w-72"
+    },
+    {
+      "title": "13. Cobertura Adicional",
+      "desc": "Con DiDi cuentas con Cobertura Adicional a la del vehículo para cada viaje; es una cobertura de responsabilidad civil que incluye gastos médicos por siniestro.",
+      "width": "w-72"
+    },
+    {
+      "title": "14. Inteligencia Artificial",
+      "desc": "Usamos AI para cuidarte durante tus viajes. Por ejemplo, Pitia es un modelo que analiza hora, lugar y otras variables para asignar solo a conductores más experimentados.",
+      "width": "w-72"
+    },
+    {
+      "title": "15. Alianza C5",
+      "desc": "Nos unimos al C5 de Guadalajara y del Estado de México. En caso de que necesites ayuda, se les notificará cuando presiones el Botón de Emergencia para que puedan asistirte.",
+      "width": "w-72"
+    }
+  ],
+  "SafetyGridPaxAfterTrip.title": "Al finalizar el viaje",
+  "SafetyGridPaxAfterTrip.columns": [
+    {
+      "title": "16. Recuperación de Objetos Olvidados",
+      "desc": "¿Olvidaste algo en el vehículo? Con DiDi puedes contactar directamente al conductor para acordar la devolución.",
+      "width": "w-72"
+    },
+    {
+      "title": "17. Soporte 24/7",
+      "desc": "Contamos con atención 24/7 en nuestro chat en vivo.",
+      "width": "w-72"
+    },
+    {
+      "title": "18. Califica a tu Conductor",
+      "desc": "Califica a tu conductor después de cada viaje. Si tuviste una mala experiencia, puedes seleccionar “No volver a viajar con este conductor” y reportar cualquier conducta inapropiada. También puedes calificar con 5 estrellas si el servicio te gustó mucho.",
+      "width": "w-72"
+    },
+    {
+      "title": "19. Bloquear a conductor",
+      "desc": "Si tuviste una mala experiencia, puedes seleccionar “No volver a viajar con este conductor” y reportar cualquier conducta inapropiada.",
+      "width": "w-72"
+    }
+  ],
+  "SafetyPaxColumns.title": "Seguridad ante COVID-19",
+  "SafetyPaxColumns.desc": "Para DiDi es muy importante seguir los lineamientos de protección ante el COVID-19. Por eso implementamos las siguientes medidas de prevención:",
+  "SafetyPaxColumns.columns": [
+    {
+      "title": "18. DiDi Prevent",
+      "desc": "Al conectarse, todos los conductores pasan por una verificación de uso de cubrebocas a través de inteligencia artificial. Para completarla, deben mandar una selfie, una foto demostrando que desinfectaron su vehículo y voluntariamente reportan su temperatura corporal dentro de los límites normales. Cuando aprueban la validación comienzan a recibir viajes."
+    },
+    {
+      "title": "19. Barrera Plástica y Material Desinfectante",
+      "desc": "Los conductores pueden instalar una división plástica para separar los asientos delanteros de los traseros. Deben usar cubrebocas y tener líquido desinfectante a tu disposición."
     }
   ],
   "SafetyWomanHero.title": "Espacios seguros para mujeres",
