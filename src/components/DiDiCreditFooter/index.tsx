@@ -38,25 +38,14 @@ const DiDiCreditFooter: React.FC<DiDiCreditFooterProps> = ({}) => {
             />
             <p>
               © 2020 Regigold, S.A. DE C.V., SOFOM, E.N.R. (DiDi Card) es una
-              entidad financiera <br /> registrada y supervisada por la Comisión
-              Nacional para la Protección y Defensa de <br /> los Usuarios de
-              Servicios Financieros y por la Comisión Nacional Bancaria de
-              Valores.
+              entidad financiera registrada y supervisada por la Comisión
+              Nacional para la Protección y Defensa de los Usuarios de Servicios
+              Financieros y se encuentra sujeta a la supervisión de la Comisión
+              Nacional Bancaria y de Valores, únicamente para efectos de lo
+              dispuesto por el artículo 56 de la Ley General de Organizaciones y
+              Actividades Auxiliares del Crédito.
             </p>
           </div>
-          <FooterItem
-            link="https://web.didiglobal.com/mx/tarjeta-de-credito/tc-servicios-financieros.pdf"
-            text="Términos y Condiciones generales"
-          ></FooterItem>
-          <FooterItem
-            link="https://web.didiglobal.com/mx/tarjeta-de-credito/tc-cashback.pdf"
-            text="Términos y Condiciones de Cashback"
-          ></FooterItem>
-          <br></br>
-          <FooterItem
-            link="/mx/legal/consulta-costos-y-comisiones"
-            text="Consulta costos y comisiones"
-          ></FooterItem>
         </div>
       </div>
       <div className="w-full bg-orange-primary text-center py-6 px-6">
