@@ -1375,19 +1375,19 @@
   "DiDiPayBlogColumns.linkItem": "/mx/didipay/blog/{{article}}/",
   "DiDiPayBlogColumns.btnMode": "dark",
   "DiDiPayBlogColumns.btnText": "Leer Artículo",
-  "DiDiPrestamosHero.title": "Con DiDi Préstamos obtén hasta $30,000 m.n rápido, fácil y seguro",
-  "DiDiPrestamosHero.desc": "Solicita tu DiDi Préstamos en 5 minutos.",
+  "DiDiPrestamosHero.title": "Con DiDi Préstamos obtén hasta $26,800 m.n rápido, fácil y seguro",
+  "DiDiPrestamosHero.desc": "Solicita tu DiDi crédito en 5 minutos.",
   "DiDiPrestamosHero.bgColor": "bg-white",
   "DiDiPrestamosHero.textColor": "gray-primary",
   "DiDiPrestamosHero.btnMode": "primary",
   "DiDiPrestamosHero.btnText": "Solicitar ahora",
   "DiDiPrestamosHero.btnLink": "",
   "DiDiPrestamosBenefits.title": "¿Por qué debería elegir DiDi Préstamos?",
-  "DiDiPrestamosBenefits.desc": "Porque con nosotros todo es sencillito y sin complicaciones, aquí te contamos.",
+  "DiDiPrestamosBenefits.desc": "DiDi Préstamos ofrece un servicio de crédito personal para cubrir tus necesidades financieras, como consumo diario, viajes, decoración y otros. Al cumplir con los requisitos para aplicar por un crédito, y ser validado por la compañía, se te transferirá el dinero aprobado a tu cuenta bancaria ingresada previamente. Los créditos son aplicables en toda la República Mexicana.",
   "DiDiPrestamosBenefits.bgColor": "bg-gray-light",
   "DiDiPrestamosBenefits.columns": [
     {
-      "title": "Tasas de interés competitiva",
+      "title": "Tasas de interés competitiva ¹",
       "desc": "Desde 5% al 12%",
       "bgColor": "bg-gray-light",
       "textColor": "gray-primary"
@@ -1411,8 +1411,8 @@
       "textColor": "gray-primary"
     }
   ],
-  "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva",
-  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un préstamo, la tasa de interés ordinaria va desde el 5% hasta el 12%. \n (*Tasa ordinaria mensual estimada).",
+  "DiDiPrestamosWhyDiDi.title": "Tasa de interés competitiva ¹",
+  "DiDiPrestamosWhyDiDi.desc": "Deja tú lo fácil que es solicitar un crédito, la tasa de interés ordinaria va desde el 5% hasta el 12%. \n (Del 5 al 12% anual brutos).",
   "DiDiPrestamosWhyDiDi.btnMode": "dark",
   "DiDiPrestamosWhyDiDi.bgColor": "bg-white",
   "DiDiPrestamosWhyDiDi.textColor": "gray-primary",
@@ -1422,12 +1422,12 @@
   "DiDiPrestamosFeatures.textColor": "white",
   "DiDiPrestamosFeatures.btnMode": "light",
   "DiDiPrestamosDrvGrid.bgColor": "bg-gray-light",
-  "DiDiPrestamosDrvGrid.title": "¿Cuál es el proceso para pedir un DiDi Préstamos?",
-  "DiDiPrestamosDrvGrid.desc": "Abre \"Mi billetera\" en DiDi, DiDi Food o abre la App de DiDi Préstamos y sigue estos 4 pasos:",
+  "DiDiPrestamosDrvGrid.title": "¿Cuál es el proceso para pedir un crédito en DiDi Préstamos?",
+  "DiDiPrestamosDrvGrid.desc": "Abre \"Mi billetera\" en DiDi, DiDi Food o abre la App de DiDi Finanzas y sigue estos 4 pasos:",
   "DiDiPrestamosDrvGrid.textColor": "gray-primary",
   "DiDiPrestamosDrvGrid.columns": [
     {
-      "title": "Haz clic \"Ver límite de préstamo\"",
+      "title": "Haz clic en \"Activar en 3 pasos\"",
       "bgColor": "bg-gray-light"
     },
     {
@@ -1435,11 +1435,11 @@
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Espera la autorización de tu préstamo",
+      "title": "Espera la autorización de tu crédito",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "Una vez aprobado, entrar a DiDi Préstamos y elige el monto que deseas retirar y ¡listo! Espera a que se transfiera en tu cuenta bancaria.",
+      "title": "Una vez aprobado, entrar a DiDi Finanzas  y elige el monto que deseas retirar y ¡listo! Espera a que se transfiera en tu cuenta bancaria.",
       "bgColor": "bg-gray-light"
     }
   ],
@@ -1459,7 +1459,7 @@
     }
   ],
   "PrestamosReviewSlider.title": "¿Qué dicen los usuarios sobre nosotros?",
-  "PrestamosReviewSlider.desc": "Muchos usuarios ya pidieron un préstamo en DiDi.",
+  "PrestamosReviewSlider.desc": "Muchos usuarios ya pidieron un crédito en DiDi.",
   "PrestamosReviewSlider.dataTitles": [
     {
       "name": "Leire",
