@@ -15,6 +15,7 @@ import DiDiPrestamosDrvGrid from "../../../components/sections/DiDiPrestamosDrvG
 import DiDiPrestamosReviews from "../../../components/sections/DiDiPrestamosReviews";
 import DiDiPrestamosPress from "../../../components/sections/DiDiPrestamosPress";
 import DiDiPayFAQs from "../../../components/sections/DiDiPayFAQs";
+import DiDiPrestamosFooter from "../../../components/DiDiPrestamosFooter";
 
 const DiDiPrestamos = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
@@ -44,7 +45,7 @@ const DiDiPrestamos = ({ data }) => {
       item.title === "¿Dónde puedo encontrar DiDi Préstamos?" ||
       item.title ===
         "¿Cuáles son los requisitos para solicitar un préstamo de DiDi Préstamos?" ||
-      item.title === "¿Cómo retirar dinero si la solicitud es aprobada?" || item.title === "Conoce la lista de despachos de cobranza de DiDi Préstamos"
+      item.title === "¿Cómo retirar dinero si la solicitud es aprobada?" 
   );
   return (
     <Layout sb={false}>
@@ -66,6 +67,7 @@ const DiDiPrestamos = ({ data }) => {
         data={faqsSobreNosotros}
         title="Preguntas Frecuentes"
       ></DiDiPayFAQs>
+      <DiDiPrestamosFooter></DiDiPrestamosFooter>
     </Layout>
   );
 };
