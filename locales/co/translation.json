@@ -980,7 +980,7 @@
   "LegalHero.desc": "Revisa nuestra sección de términos y condiciones además de nuestras política de privacidad.",
   "LegalHero.textColor": "white",
   "LegalHero.btnMode": "light",
-  "LegalHero.linkItem": "/co/legal/terminos-y-condiciones-arrendatario/",
+  "LegalHero.linkItem": "/co/legal/2024-co-terminos-y-condiciones-de-uso-usuario-arrendatario.pdf",
   "LegalCTA.title": "Revisa nuestra Políticas de Privacidad",
   "LegalCTA.desc": "Revisa en qué consiste nuestras políticas de privacidad",
   "LegalHero.btnText": "Términos y Condiciones",
@@ -1077,9 +1077,7 @@
     "Entrega",
     "Taxi"
   ],
-  "VehicleSection.bulletsMotorcycle": [
-    "Moto"
-  ],
+  "VehicleSection.bulletsMotorcycle": ["Moto"],
   "VehicleSection.btnType": "drv",
   "VehicleSection.btnMode": "primary",
   "DiDiExtraPlusHero.title": "{Refiere y} \n {gana}",
