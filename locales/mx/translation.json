@@ -2060,9 +2060,9 @@
   "DiDiCreditWhy.title": "Tasas y costos {con transparencia}",
   "DiDiCreditWhy.desc": "Regigold, S.A. DE C.V., SOFOM, E.N.R.",
   "DiDiCreditWhy.bullets": [
-    "Costo Anual Total promedio de {92,3%}, sin IVA",
+    "Costo Anual Total promedio de {92.3%}, sin IVA",
     "Fecha de cálculo: {30 de Agosto 2023}",
-    "Tasa de interés promedio ponderada anual fija del {67,2%}, sin IVA"
+    "Tasa de interés promedio ponderada anual fija del {67.2%}, sin IVA"
   ],
   "DiDiCreditWhy.bgColor": "bg-white",
   "DiDiCreditWhy.textColor": "gray-primary",
@@ -2216,9 +2216,7 @@
     "Entrega",
     "Taxi"
   ],
-  "VehicleSection.bulletsMotorcycle": [
-    "Entrega Light"
-  ],
+  "VehicleSection.bulletsMotorcycle": ["Entrega Light"],
   "VehicleSection.btnType": "drv",
   "VehicleSection.btnMode": "primary",
   "DiDiAirportHero.title": "Desde el aeropuerto al \n corazón de tu ciudad \n con DiDi",

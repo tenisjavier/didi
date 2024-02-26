@@ -2,21 +2,19 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../components/Layout";
 import LegalHero from "../../../components/sections/LegalHero";
-import LegalCTA from "../../../components/sections/LegalCTA";
+import LegalContent from "../../../components/sections/LegalContent";
 
 const Legal = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
   const homeHeroBgImage = images.filter((image) => {
-    return image.title === "do.HomeHero.bgImage";
+    return image.title === "ec.HomeHero.bgImage";
   })[0];
-  const legalCTAImage = images.filter((image) => {
-    return image.title === "do.PaxCTA.image";
-  })[0];
+  const content = data.contentfulLegal.content;
 
   return (
     <Layout>
       <LegalHero bgImage={homeHeroBgImage}></LegalHero>
-      <LegalCTA image={legalCTAImage}></LegalCTA>
+      <LegalContent content={content}></LegalContent>
     </Layout>
   );
 };
@@ -26,13 +24,28 @@ export default Legal;
 export const query = graphql`
   query {
     allContentfulAsset(
-      filter: { title: { in: ["do.HomeHero.bgImage", "do.PaxCTA.image"] } }
+      filter: { title: { in: ["ec.HomeHero.bgImage", "ec.PaxCTA.image"] } }
     ) {
       nodes {
         id
         title
         description
         gatsbyImageData
+      }
+    }
+    contentfulLegal(name: { eq: "Legal Ecuador" }) {
+      name
+      content {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
       }
     }
   }
