@@ -4,11 +4,12 @@ import Layout from "../../../components/Layout";
 import DiDiExpressPlusLegal from "../../../components/sections/expressPlus/DiDiExpressPlusLegal";
 
 const ganaConDidi = ({ data }) => {
+  const content = data?.contentfulLegal?.content;
   return (
     <Layout>
-      <DiDiExpressPlusLegal
-        content={data.contentfulLegal.content}
-      ></DiDiExpressPlusLegal>
+      {content && (
+        <DiDiExpressPlusLegal content={content}></DiDiExpressPlusLegal>
+      )}
     </Layout>
   );
 };
