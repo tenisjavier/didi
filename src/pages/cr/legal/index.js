@@ -9,12 +9,12 @@ const Legal = ({ data }) => {
   const homeHeroBgImage = images.filter((image) => {
     return image.title === "cr.HomeHero.bgImage";
   })[0];
-  const content = data.contentfulLegal.content;
+  const content = data?.contentfulLegal?.content;
 
   return (
     <Layout>
       <LegalHero bgImage={homeHeroBgImage}></LegalHero>
-      <LegalContent content={content}></LegalContent>
+      {content && <LegalContent content={content}></LegalContent>}
     </Layout>
   );
 };

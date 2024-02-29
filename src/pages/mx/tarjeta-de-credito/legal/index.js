@@ -11,12 +11,12 @@ const DiDiCredit = ({ data }) => {
     return image.title === "mx.CreditCardHero.image";
   })[0];
 
-  const content = data.contentfulLegal.content;
+  const content = data?.contentfulLegal?.content;
 
   return (
     <Layout>
       <DiDiCreditLegalHero image={cardHeroBgImage}></DiDiCreditLegalHero>
-      <LegalContent content={content}></LegalContent>
+      {content && <LegalContent content={content}></LegalContent>}
     </Layout>
   );
 };
