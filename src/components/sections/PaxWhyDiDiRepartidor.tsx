@@ -19,10 +19,9 @@ const PaxWhyDiDiRepartidor = ({ image }: PaxWhyDiDiRepartidorProps) => {
     bgColor: t("PaxWhyDiDiRepartidor.bgColor"),
     textColor: t("PaxWhyDiDiRepartidor.textColor"),
     image: image,
-    imageStyle: "z-10 m-4 w-110 h-100",
+    imageStyle: "z-10 m-4 w-110 h-auto object-contain",
     btnMode: t("PaxWhyDiDiRepartidor.btnMode"),
-    btnLink: t("PaxWhyDiDiRepartidor.btnLink"),
-    btnText: "Regístrate como Repartidor",
+    btnType: "foodDelivery",
     reverse: true,
   };
   return <CTASection {...props}></CTASection>;
