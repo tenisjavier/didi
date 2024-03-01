@@ -14,7 +14,8 @@ const ab = (aVersionName: string, bVersionName: string, ls: string) => {
     if (window.localStorage.getItem("t5")) window.localStorage.removeItem("t5");
     if (window.localStorage.getItem("t6")) window.localStorage.removeItem("t6");
     if (window.localStorage.getItem("t7")) window.localStorage.removeItem("t7");
-    if (window.localStorage.getItem("t8")) window.localStorage.removeItem("t7");
+    if (window.localStorage.getItem("t8")) window.localStorage.removeItem("t8");
+    if (window.localStorage.getItem("t9")) window.localStorage.removeItem("t9");
     //? Only in Mexico HomePage run the test
 
     const test_version = window.localStorage.getItem(ls);

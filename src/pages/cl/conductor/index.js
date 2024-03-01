@@ -13,7 +13,7 @@ import SilderSection from "../../../components/sections/SliderSection";
 import Requirements from "../../../components/sections/Requirements";
 import KnowMoreBanner from "../../../components/sections/KnowMoreBanner";
 import PaxCTAApp from "../../../components/sections/PaxCTAApp";
-import { ab } from "../../../config/ab";
+
 const Driver = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
 
@@ -38,16 +38,9 @@ const Driver = ({ data }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
-  const version = ab("202402-animationhero-a", "202402-animationhero-b", "t9");
   return (
     <Layout>
-      {version === "a" && (
-        <DrvHero
-          bgImage={drvHeroBgImage}
-          mobileBgImage={drvHeroMobileBgImage}
-        ></DrvHero>
-      )}
-      {version === "b" && <DrvHeroB image={imagehero}></DrvHeroB>}
+      <DrvHeroB image={imagehero}></DrvHeroB>
 
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
       <DrvVideoGrid></DrvVideoGrid>

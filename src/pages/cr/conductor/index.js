@@ -11,7 +11,6 @@ import SilderSection from "../../../components/sections/SliderSection";
 import DrvBanner from "../../../components/sections/DrvBanner";
 import DrvCityList from "../../../components/sections/DrvCityList";
 import PaxCTAApp from "../../../components/sections/PaxCTAApp";
-import { ab } from "../../../config/ab";
 import DrvHeroB from "../../../components/sections/DrvHeroB";
 
 const Driver = ({ data }) => {
@@ -37,16 +36,9 @@ const Driver = ({ data }) => {
   const products = data.allContentfulProduct.nodes;
   const cities = data.allContentfulCity.nodes;
 
-  const version = ab("202402-animationhero-a", "202402-animationhero-b", "t9");
   return (
     <Layout>
-      {version === "a" && (
-        <DrvHero
-          bgImage={drvHeroBgImage}
-          mobileBgImage={drvHeroMobileBgImage}
-        ></DrvHero>
-      )}
-      {version === "b" && <DrvHeroB image={imagehero}></DrvHeroB>}
+      <DrvHeroB image={imagehero}></DrvHeroB>
 
       <DrvWhyDiDi image={drvWhyDiDiImage}></DrvWhyDiDi>
       <DrvBanner></DrvBanner>
