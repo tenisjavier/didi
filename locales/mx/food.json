@@ -134,13 +134,13 @@
   ],
   "PaxWhyDiDiRepartidor.title": "Por qué ser usuario Repartidor",
   "PaxWhyDiDiRepartidor.bullets": [
-    "Regístrate fácilmente",
-    "Establece tu propio horario y aprovecha tu tiempo al máximo, tú decides cuándo y cuánto conectarte.",
-    "Recibe tus pagos semanalmente.",
-    "Viaja con tranquilidad. Tu seguridad es nuestra prioridad, y estamos aquí para cuidarte.",
-    "Accede a una serie de beneficios exclusivos en educación, salud, servicios financierso, entre otros. ¡Aprovéchalos!"
+    "Regístrate fácilmente.",
+    "Establece tu propio horario y aprovecha tu tiempo al máximo.",
+    "Recibe tus ganancias semanalmente.",
+    "Tu seguridad es importante y por eso la app cuenta con funciones de seguridad para ti.",
+    "Posibilidad de accerder a una serie de beneficios exclusivos para repartidores en educación, salud, servicios financieros, entre otros."
   ],
-  "PaxWhyDiDiRepartidor.desc": "Hacer entregas con la app de DiDi Food es una excelente opción si estás buscando nuevas formas de generar ingresos y tener flexibilidad ",
+  "PaxWhyDiDiRepartidor.desc": "Hacer entregas con la app de DiDi Repartidor es una excelente opción si estás buscando nuevas formas de generar ganancias y tener flexibilidad",
   "PaxWhyDiDiRepartidor.bgColor": "bg-white",
   "PaxWhyDiDiRepartidor.textColor": "gray-primary",
   "PaxWhyDiDiRepartidor.btnMode": "primary",
@@ -154,23 +154,23 @@
     "Carga tus documentos en la app .Asegúrate que sean legibles y vigentes",
     "Sube tu foto de perfil (Con buena luz y descubre tu cara de cualquier accesorio)",
     "Verifica que todos tus documentos hayan subido correctamente",
-    "Espera tu confirmación"
+    "Espera la confirmación del registro de tu cuenta."
   ],
   "PaxWhyDiDiRegistro.desc": "",
   "PaxWhyDiDiRegistro.bgColor": "bg-white",
   "PaxWhyDiDiRegistro.textColor": "gray-primary",
   "PaxWhyDiDiRegistro.btnMode": "primary",
-  "RepartidorBanner.title": "¿Cuánto puedes ganar repartiendo con DiDi Food?",
-  "RepartidorBanner.desc": "Tus ganancias varian según el lugar donde te conectes, la cantidad de tiempo y los momentos de conexión. Recuerda que al conectarte durante los días y horas de mayor demanda, podrás aumentar tus ganancias.",
-  "RepartidorBanner.descText": "",
+  "RepartidorBanner.title": "¿Cuánto puedes generar repartiendo con DiDi Repartidor?",
+  "RepartidorBanner.descText": "Tus ganancias varian según el lugar donde te conectes, la cantidad de tiempo y los momentos de conexión. Recuerda que al conectarte durante los días y horas de mayor demanda, podrás aumentar tus ganancias.",
+  "RepartidorBanner.desc": "*Las ganancias se comparten con fines informativos y son el resultado de una muestra representativa de repartidores en las ciudades indicadas en el año 2023. DiDi Food no ofrece garantía alguna respecto al la cantidad de ganancias indicadas.\n**Zona Norte: Monterrey, Mexicali, Juarez, Chihuahua, Tijuana, Ensenada, Matamoros, Nuevo Laredo, Nogales.",
   "RepartidorBanner.bgColor": "bg-orange-primary",
   "RepartidorBanner.textColor": "white",
   "RepartidorBanner.btnMode": "light",
   "RepartidorBanner.btnText": "Conoce más aquí",
   "RepartidorBanner.btnLink": "https://www.youtube.com/watch?v=qec62sGKw-A&t=1s",
-  "RepartidorRegistroBanner.title": "En DiDi Food estamos comprometidos con tu seguridad",
-  "RepartidorRegistroBanner.desc": "Sabemos lo importante que es para ti sentirte tranquilo cuando haces entregas. Por eso, ponemos a tu disposición una amplia gama de herramientas de seguridad y coberturas adicionales para proporcionarte tranquilidad completa durante tus viajes.",
-  "RepartidorRegistroBanner.descText": "¿Sabías que el 99.99% de las entregas ocurren sin ningún inconveniente de seguridad?",
+  "RepartidorRegistroBanner.title": "¿Sabías que el 99.99%* de las entregas ocurren sin ningún inconveniente de seguridad?",
+  "RepartidorRegistroBanner.desc": "** Estadistica basada en el porcentaje de incidentes con relación al total de ordenes/entregas (Data de MX 2023)",
+  "RepartidorRegistroBanner.descText": "En DiDi Repartidor ponemos a tu disposición una amplia gama de herramientas de seguridad y coberturas adicionales para proporcionarte tranquilidad completa durante tus entregas.  ",
   "RepartidorRegistroBanner.bgColor": "bg-blue-primary",
   "RepartidorRegistroBanner.textColor": "white",
   "RepartidorRegistroBanner.btnMode": "light",
@@ -192,8 +192,8 @@
   "Requirements.title": "Requerimientos para ser Socio Restaurante",
   "Requirements.bgColor": "bg-gray-light",
   "Requirements.textColor": "bg-white",
-  "FoodDeliveryHero.title": "Regístrate como Repartidor en la app de DiDi Food. ",
-  "FoodDeliveryHero.desc": "Obtén ganancias y otras recompensas",
+  "FoodDeliveryHero.title": "Registrate como Repartidor en la app de DiDi Repartidor",
+  "FoodDeliveryHero.desc": "Reparte para generar ganancias adicionales, y disfruta de la libertad de utilizar la app cuando quieras",
   "FoodDeliveryHero.textColor": "white",
   "FoodDeliveryHero.btnMode": "light",
   "FoodDeliveryGuideHero.title": "Mejora tu experiencia con la app. Conoce aquí guías y contenido educativo",
@@ -319,7 +319,9 @@
         {
           "label": "Correo electrónico",
           "info": "soporte.food@mx.didiglobal.com",
-          "infoColor": { "color": "#ff7d41" }
+          "infoColor": {
+            "color": "#ff7d41"
+          }
         }
       ]
     }
