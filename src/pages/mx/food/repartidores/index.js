@@ -99,9 +99,9 @@ export const query = graphql`
         country: { code: { eq: "mx" } }
         title: {
           in: [
-            "¿Cuanto gana un repartidor de DiDi?"
-            "¿Qué vehículos se permiten en DiDi Repartidor?"
-            "¿Cómo ser repartidor de DiDi?"
+            "¿Cuántas ganancias puede generar un repartidor al utilizar la app de DiDi Repartidor?"
+            "¿Qué vehículos se permiten registrar en la app DiDi Repartidor?"
+            "¿Cómo registrarme como repartidor en la app de DiDi Repartidor? "
             "¿Cómo contactar a Soporte DiDi?"
           ]
         }
