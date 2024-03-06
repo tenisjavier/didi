@@ -615,7 +615,7 @@
       "bgColor": "bg-white"
     },
     {
-      "title": "2. Usando la app de DiDi sabes exactamente a dónde vas ",
+      "title": "2. Visibilidad del destino ",
       "desc": "DiDi te muestra el destino del pasajero antes de aceptar el viaje.",
       "bgColor": "bg-white"
     },
@@ -633,6 +633,11 @@
       "title": "5. DiDi invitado ",
       "desc": "Se trata de una función para que los pasajeros puedan indicar en la app si están pidiendo el viaje para alguien más. Así, tú sabrás exactamente a quién recoges",
       "bgColor": "bg-white"
+    },
+    {
+      "title": "6. Información del pasajero ",
+      "desc": "Encontrarás en tu tarjeta de viaje  la información necesaria del pasajero y la solicitud antes de aceptar el viaje",
+      "bgColor": "bg-white"
     }
   ],
   "SafetyGridDuringTrip.bgColor": "bg-orange-primary",
@@ -642,42 +647,42 @@
   "SafetyGridDuringTrip.urlBase": "/mx/seguridad/",
   "SafetyGridDuringTrip.columns": [
     {
-      "title": "6. Botón de emergencia ",
+      "title": "7. Botón de emergencia ",
       "desc": "En DiDi, puedes compartir tu ubicación en tiempo real con cualquer contacto que tú elijas con tan solo un click.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "7. Monitoreo de Viaje ",
-      "desc": "Durante cualquier situación inesperada en tu arrendamiento, puedes presionar el botón de emergencia en la app, el cual te conecta con el 123.",
+      "title": "8. Monitoreo de Viaje ",
+      "desc": "Monitoreamos tu viaje vía GPS durante los viajes, si se detecta alguna anomalía, nos pondremos en contacto contigo para saber si requieres apoyo adicional.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "8. Zonas de Riesgo ",
+      "title": "9. Zonas de Riesgo ",
       "desc": "Se ha habilitado a las patrullas de asistencia, las mismas que serán activadas por el Centro de Soporte DiDi 24/7 en caso de alguna emergencia.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "9. Comparte tu ubicación ",
-      "desc": "Rastreamos en tiempo real por medio de GPS para que, en caso de un incidente, parada inesperada, o desvío en la ruta podamos reaccionar de forma \"inmediata\". Si necesitas ayuda presiona el Botón de servicios de emergencia dentro de tu app para enlazarte al 123 y rastrear tu ubicación exacta. \n ** No disponible para Taxi. ",
+      "title": "10. Compartir viaje ",
+      "desc": "Comparte los datos y ubicación del viaje en tiempo real, desde la app.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "10. DiDi Mujer ",
+      "title": "11. DiDi Mujer ",
       "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "11. Sent(a)te Seguro, Hércules te cuida ",
+      "title": "12. Inteligencia artificial ",
       "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "12. ¡Optimizamos el botón de emergencia! ",
+      "title": "13. ¡Optimizamos el botón de emergencia! ",
       "desc": "Nos aliamos con los C5 de Guadalajara y del Estado de México. En caso de que necesites ayuda, al presionar el Botón de Emergencia, la llamada será directamente dirigida a ellos para que puedan brindarte la atención que requieras.",
       "bgColor": "bg-orange-primary"
     },
     {
-      "title": "13. Viaje con cobertura ",
+      "title": "14. Viaje con cobertura ",
       "desc": "Todas los arrendamientos realizados a través de la aplicación cuentan con un seguro de accidentes personales y responsabilidad civil para terceros y usuarios.",
       "bgColor": "bg-orange-primary"
     }
@@ -688,12 +693,12 @@
   "SafetyGridAfterTrip.urlBase": "/mx/seguridad/",
   "SafetyGridAfterTrip.columns": [
     {
-      "title": "14. Tú decides con quién viajar ",
+      "title": "15. Califica/Bloquea al pasajero ",
       "desc": "Contamos con un equipo calificado para apoyarte 24/7 durante cualquier emergencia o inconveniente.",
       "bgColor": "bg-gray-light"
     },
     {
-      "title": "15. Estamos para ti 24/7 ",
+      "title": "16. Soporte 24/7 ",
       "desc": "Si te sentiste incómodo o inseguro, al terminar tu solicitud, en el menú de calificación, encontrarás el botón de desvinculación de arrendador/socio taxista. Esto evitará que, en futuras oportunidades, vuelvas a tener arrendamientos con esta persona.",
       "bgColor": "bg-gray-light"
     }
