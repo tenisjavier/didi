@@ -13,11 +13,11 @@ interface ListProps {
 }
 
 const CityList = ({ cities }: ListProps) => {
-  const items = cities.map((city) => {
+  const items = cities?.map((city) => {
     return {
-      text: city.name,
+      text: city?.name,
       secondText: "",
-      link: t("CityList.linkItem", { city: slugify(city.name) }),
+      link: t("CityList.linkItem", { city: slugify(city?.name) }),
       image: city.image,
     };
   });
