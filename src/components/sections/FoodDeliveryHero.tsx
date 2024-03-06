@@ -26,8 +26,8 @@ const FoodDeliveryHero = ({
   mobileTitlePosition,
 }: FoodDeliveryHeroProps) => {
   const bgImageStyle = mobileBgImage
-    ? "hidden !absolute z-0 h-full w-full brightness-90 md:block "
-    : "!absolute z-0 h-full w-full brightness-90 md:block ";
+    ? "hidden !absolute z-0 h-full w-full brightness-75 md:block "
+    : "!absolute z-0 h-full w-full brightness-75 md:block ";
   const props: CTAProps = {
     hero: true,
     title: title || t("FoodDeliveryHero.title"),
@@ -36,7 +36,7 @@ const FoodDeliveryHero = ({
     bgImage: bgImage,
     bgImageStyle: bgImageStyle,
     mobileBgImage: mobileBgImage,
-    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-90 md:!hidden ",
+    mobileBgImageStyle: "!absolute z-0 h-full w-full brightness-75 md:!hidden ",
     btnMode: t("FoodDeliveryHero.btnMode"),
     btnType: "foodDelivery",
     mobileTitlePosition: mobileTitlePosition,

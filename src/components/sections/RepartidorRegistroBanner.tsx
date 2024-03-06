@@ -9,9 +9,9 @@ const RepartidorRegistroBanner = () => {
     descText: t("RepartidorRegistroBanner.descText"),
     bgColor: t("RepartidorRegistroBanner.bgColor"),
     textColor: t("RepartidorRegistroBanner.textColor"),
-    btnMode: t("RepartidorRegistroBanner.btnMode"),
-    btnText: t("RepartidorRegistroBanner.btnText"),
-    btnLink: t("RepartidorRegistroBanner.btnLink"),
+    // btnMode: t("RepartidorRegistroBanner.btnMode"),
+    // btnText: t("RepartidorRegistroBanner.btnText"),
+    // btnLink: t("RepartidorRegistroBanner.btnLink"),
   };
 
   return <Banner {...props}></Banner>;
