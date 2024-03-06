@@ -161,7 +161,7 @@
   "PaxWhyDiDiRegistro.textColor": "gray-primary",
   "PaxWhyDiDiRegistro.btnMode": "primary",
   "RepartidorBanner.title": "¿Cuánto puedes generar repartiendo con DiDi Repartidor?",
-  "RepartidorBanner.descText": "Tus ganancias varian según el lugar donde te conectes, la cantidad de tiempo y los momentos de conexión. Recuerda que al conectarte durante los días y horas de mayor demanda, podrás aumentar tus ganancias.",
+  "RepartidorBanner.descText": "Tus ganancias varian según el lugar donde te conectes, la cantidad de tiempo y los momentos de conexión. Recuerda que al conectarte durante los días y horas de mayor demanda, podrás aumentar tus ganancias. \n Sin embargo, aquí te ofrecemos un rango aproximado: Zona norte: entre $800 y $1000 pesos por utilizar la app 8 horas Otras ciudades: entre $500 y $650 por utilizar la app 8 horas. Estas cifras son aproximadas y se basan en el promedio de ganancias por hora de los repartidores activos de DiDi Repartidor en el año 2023.",
   "RepartidorBanner.desc": "*Las ganancias se comparten con fines informativos y son el resultado de una muestra representativa de repartidores en las ciudades indicadas en el año 2023. DiDi Food no ofrece garantía alguna respecto al la cantidad de ganancias indicadas.\n**Zona Norte: Monterrey, Mexicali, Juarez, Chihuahua, Tijuana, Ensenada, Matamoros, Nuevo Laredo, Nogales.",
   "RepartidorBanner.bgColor": "bg-orange-primary",
   "RepartidorBanner.textColor": "white",
