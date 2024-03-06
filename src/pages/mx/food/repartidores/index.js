@@ -12,9 +12,11 @@ import RepartidorRegistroBanner from "../../../../components/sections/Repartidor
 import RequirementsRepartidor from "../../../../components/sections/RequirementsRepartidor";
 import DiDiRepartidoresFAQs from "../../../../components/sections/DiDiRepartidoresFAQs";
 import KnowMoreBanner from "../../../../components/sections/KnowMoreBanner";
+import { ab } from "../../../../config/ab";
 
-const FoodDelivery = ({ data, location }) => {
+const FoodDelivery = ({ data }) => {
   const images = data.allContentfulAsset.nodes;
+  const version = ab("202403-courier-original", "202403-courier-revamp", "t10");
   const foodDeliveryHeroBgImage = images.filter((image) => {
     return image.title === "mx.FoodDeliveryHero.bgImage";
   })[0];
@@ -35,15 +37,14 @@ const FoodDelivery = ({ data, location }) => {
   })[0];
   const products = data.allContentfulProduct.nodes;
   const faqs = data.allContentfulFaq.nodes;
-  const params = new URLSearchParams(location.search);
-  const test = params.get("test");
+
   return (
     <Layout>
       <FoodDeliveryHero
         bgImage={foodDeliveryHeroBgImage}
         mobileBgImage={foodDeliveryHeroMobileBgImage}
       ></FoodDeliveryHero>
-      {test === "true" && (
+       {version === "b" && (
         <>
           <PaxWhyDiDiRepartidor image={paxWhyDiDiImage}></PaxWhyDiDiRepartidor>
           <RepartidorBanner></RepartidorBanner>
@@ -60,7 +61,7 @@ const FoodDelivery = ({ data, location }) => {
           <KnowMoreBanner></KnowMoreBanner>
         </>
       )}
-      {test !== "true" && (
+      {version === "a" && (
         <>
           <FoodDeliveryColumns
             images={foodDeliveryColumnsImages}
